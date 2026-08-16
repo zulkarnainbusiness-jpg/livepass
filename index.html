@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./mountain-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIVEPASSWATCH | Real-Time Mountain Pass Status, Road Conditions & Alerts</title>
+    <meta name="description" content="Check real-time mountain pass status, live webcams, snow depth, road conditions, and closures worldwide. Know before you go with LivePassWatch." />
+    <meta name="keywords" content="mountain pass status, road closures, Snoqualmie Pass, winter driving, mountain pass webcams, chain laws, live road conditions" />
+    <meta property="og:title" content="LIVEPASSWATCH - Know Before You Go" />
+    <meta property="og:description" content="Real-time global mountain pass tracking, alerts, road conditions, and live cameras." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.livepasswatch.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script type="module" crossorigin src="./assets/index-CbPDqcnU.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CFiQUDu6.css">
+  </head>
+  <body>
+    <!-- SPA redirect handler for GitHub Pages -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <div id="root"></div>
+  </body>
+</html>
