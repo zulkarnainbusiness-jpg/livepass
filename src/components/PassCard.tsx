@@ -12,7 +12,9 @@ export const PassCard: React.FC<PassCardProps> = ({ pass }) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    navigate(`/passes/${pass.country.toLowerCase().replace(/\s+/g, '-')}/${pass.state.toLowerCase().replace(/[\s\/]+/g, '-')}/${pass.slug}`);
+    const countrySlug = pass.country.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
+    const stateSlug = pass.state.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
+    navigate(`/passes/${countrySlug}/${stateSlug}/${pass.slug}`);
   };
 
   return (

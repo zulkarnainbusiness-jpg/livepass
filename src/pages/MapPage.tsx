@@ -53,7 +53,7 @@ export const MapPage: React.FC = () => {
       <SEOHelper
         title="Interactive Mountain Pass Map & Overview"
         description="Explore live mountain pass status across North America, Europe, the Himalayas, Andes, and Southern Alps with real-time road conditions and webcam markers."
-        canonicalUrl="https://www.livepasswatch.com/map"
+        canonicalUrl="https://www.livepasswatch.info/map"
       />
 
       <div className="app-container">

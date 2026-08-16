@@ -47,9 +47,10 @@ export const Footer: React.FC = () => {
               <li><Link to="/passes/united-states/washington/snoqualmie-pass">Snoqualmie Pass (I-90)</Link></li>
               <li><Link to="/passes/united-states/washington/stevens-pass">Stevens Pass (US-2)</Link></li>
               <li><Link to="/passes/united-states/california/donner-pass">Donner Pass (I-80)</Link></li>
-              <li><Link to="/passes/united-states/colorado/berthoud-pass">Berthoud Pass (US-40)</Link></li>
+              <li><Link to="/passes/india/jammu-and-kashmir/zoji-la">Zoji La Pass (NH-1)</Link></li>
               <li><Link to="/passes/india/ladakh/khardung-la">Khardung La Pass</Link></li>
-              <li><Link to="/passes/switzerland/valais/furka-pass">Furka Pass (Alps)</Link></li>
+              <li><Link to="/passes/switzerland/valais-uri/furka-pass">Furka Pass (Alps)</Link></li>
+              <li><Link to="/passes/italy/south-tyrol-lombardy/stelvio-pass">Stelvio Pass (SS38)</Link></li>
             </ul>
           </div>
 
@@ -70,7 +71,7 @@ export const Footer: React.FC = () => {
         {/* Footer Bottom */}
         <div className="footer-bottom-bar">
           <div className="footer-copyright">
-            © {new Date().getFullYear()} LIVEPASSWATCH (www.livepasswatch.com). All rights reserved. Real-time mountain pass tracking platform.
+            © {new Date().getFullYear()} LIVEPASSWATCH (www.livepasswatch.info). All rights reserved. Real-time mountain pass tracking platform.
           </div>
           <div className="footer-disclaimer">
             Always verify road conditions with local transportation departments and highway patrol before traveling.

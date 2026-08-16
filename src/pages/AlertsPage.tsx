@@ -96,8 +96,8 @@ export const AlertsPage: React.FC = () => {
   };
 
   const handleAlertClick = (alert: typeof alertsData[0]) => {
-    const countrySlug = alert.country.toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
-    const stateSlug = alert.state.toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
+    const countrySlug = alert.country.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
+    const stateSlug = alert.state.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
     navigate(`/passes/${countrySlug}/${stateSlug}/${alert.slug}`);
   };
 
@@ -106,7 +106,7 @@ export const AlertsPage: React.FC = () => {
       <SEOHelper
         title="Pass Alerts, Closures & Travel Advisories"
         description="Real-time mountain pass alerts, road closures, winter weather warnings, and highway clearance reports worldwide."
-        canonicalUrl="https://www.livepasswatch.com/alerts"
+        canonicalUrl="https://www.livepasswatch.info/alerts"
       />
 
       <div className="app-container">

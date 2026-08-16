@@ -43,6 +43,7 @@ import { MountainPass } from '../types';
 import { StatusBadge } from '../components/StatusBadge';
 import { TrustBar } from '../components/TrustBar';
 import { MapComponent } from '../components/MapComponent';
+import { NotFoundPage } from './StaticPages';
 import { SEOHelper } from '../components/SEOHelper';
 import './PassDetailPage.css';
 
@@ -54,8 +55,8 @@ export const PassDetailPage: React.FC = () => {
   // Robust slug extraction: from route params or last segment of pathname
   const pathSegments = location.pathname.split('?')[0].split('/').filter(Boolean);
   const lastPathSegment = pathSegments.length > 0 ? pathSegments[pathSegments.length - 1] : undefined;
-  const targetSlug = slug || (lastPathSegment && lastPathSegment !== 'passes' ? lastPathSegment : 'stelvio-pass');
-  const pass: MountainPass = getPassBySlug(targetSlug) || passesData.find(p => p.slug === 'stelvio-pass') || passesData[0];
+  const targetSlug = slug || (lastPathSegment && lastPathSegment !== 'passes' ? lastPathSegment : '');
+  const pass = getPassBySlug(targetSlug);
 
   // UI States
   const [isFavorite, setIsFavorite] = useState(false);
@@ -65,6 +66,11 @@ export const PassDetailPage: React.FC = () => {
   const [cameraError, setCameraError] = useState(false);
   const [isRefreshingCam, setIsRefreshingCam] = useState(false);
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
+
+  // If pass is not found in database, return custom 404 Page (Phase 3 & 29 compliance)
+  if (!pass) {
+    return <NotFoundPage />;
+  }
 
   // Check localStorage for favorite state
   useEffect(() => {
@@ -125,10 +131,19 @@ export const PassDetailPage: React.FC = () => {
   };
 
   // Structured Data Schema for Mountain Pass & SEO
-  const canonicalCountry = pass.country.split('/')[0].trim().toLowerCase().replace(/\s+/g, '-');
-  const canonicalState = pass.state.split('/')[0].trim().toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-').replace(/-+/g, '-');
-  const canonicalUrl = `https://www.livepasswatch.com/passes/${canonicalCountry}/${canonicalState}/${pass.slug}`;
-  const passFullImage = pass.image.startsWith('http') ? pass.image : `https://www.livepasswatch.com${pass.image}`;
+  const cleanSlug = (str: string) => str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[\s\/]+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+
+  const canonicalCountry = cleanSlug(pass.country);
+  const canonicalState = cleanSlug(pass.state);
+  const canonicalUrl = `https://www.livepasswatch.info/passes/${canonicalCountry}/${canonicalState}/${pass.slug}`;
+  const passFullImage = pass.image.startsWith('http') ? pass.image : `https://www.livepasswatch.info${pass.image.startsWith('/') ? '' : '/'}${pass.image}`;
 
   const imageAltText = pass.slug === 'zoji-la-pass' || pass.slug === 'zoji-la'
     ? 'Zoji La Pass in Jammu and Kashmir'
@@ -148,10 +163,10 @@ export const PassDetailPage: React.FC = () => {
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.livepasswatch.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Passes", "item": "https://www.livepasswatch.com/passes" },
-          { "@type": "ListItem", "position": 3, "name": pass.country.split('/')[0].trim(), "item": `https://www.livepasswatch.com/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}` },
-          ...(pass.state ? [{ "@type": "ListItem", "position": 4, "name": pass.state.split('/')[0].trim(), "item": `https://www.livepasswatch.com/passes?state=${encodeURIComponent(pass.state.split('/')[0].trim())}` }] : []),
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.livepasswatch.info/" },
+          { "@type": "ListItem", "position": 2, "name": "Passes", "item": "https://www.livepasswatch.info/passes" },
+          { "@type": "ListItem", "position": 3, "name": pass.country.split('/')[0].trim(), "item": `https://www.livepasswatch.info/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}` },
+          ...(pass.state ? [{ "@type": "ListItem", "position": 4, "name": pass.state.split('/')[0].trim(), "item": `https://www.livepasswatch.info/passes?state=${encodeURIComponent(pass.state.split('/')[0].trim())}` }] : []),
           { "@type": "ListItem", "position": pass.state ? 5 : 4, "name": pass.name, "item": canonicalUrl }
         ]
       },

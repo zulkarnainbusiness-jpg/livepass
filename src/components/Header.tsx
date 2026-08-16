@@ -70,7 +70,9 @@ export const Header: React.FC = () => {
   };
 
   const handleSelectPass = (pass: typeof passesData[0]) => {
-    navigate(`/passes/${pass.country.toLowerCase().replace(/\s+/g, '-')}/${pass.state.toLowerCase().replace(/[\s\/]+/g, '-')}/${pass.slug}`);
+    const countrySlug = pass.country.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
+    const stateSlug = pass.state.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
+    navigate(`/passes/${countrySlug}/${stateSlug}/${pass.slug}`);
     setIsSearchOpen(false);
     setSearchQuery('');
   };
@@ -89,7 +91,7 @@ export const Header: React.FC = () => {
             </svg>
           </div>
           <div className="brand-text-block">
-            <span className="brand-title">PASS TRACKER</span>
+            <span className="brand-title">LIVEPASSWATCH</span>
             <span className="brand-tagline">Know Before You Go.</span>
           </div>
         </NavLink>

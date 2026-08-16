@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.livepasswatch.com/sitemap.xml
+# Disallow internal build/temp assets
+Disallow: /api/
+Disallow: /_/
+Disallow: /dev/
+
+Sitemap: https://www.livepasswatch.info/sitemap.xml

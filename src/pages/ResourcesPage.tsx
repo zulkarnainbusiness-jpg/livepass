@@ -86,7 +86,7 @@ export const ResourcesPage: React.FC = () => {
       <SEOHelper
         title="Mountain Pass Travel Resources & Safety Guides"
         description="Comprehensive mountain travel resources: winter driving guides, state chain laws, emergency contacts, pre-trip checklists, and pass FAQs."
-        canonicalUrl="https://www.livepasswatch.com/resources"
+        canonicalUrl="https://www.livepasswatch.info/resources"
         jsonLd={jsonLdFaq}
       />
 

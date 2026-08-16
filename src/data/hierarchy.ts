@@ -54,7 +54,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 elevationFt: 3022,
                 elevationM: 921,
                 status: 'OPEN',
-                image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80'
+                image: '/snoqualmie-pass.jpg'
               },
               {
                 id: 'stevens-pass',
@@ -74,7 +74,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 elevationFt: 4102,
                 elevationM: 1250,
                 status: 'CLOSED',
-                image: '/blewett-pass.webp'
+                image: '/blewett-pass.jpg'
               },
               {
                 id: 'chinook-pass',

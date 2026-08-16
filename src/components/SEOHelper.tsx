@@ -7,77 +7,90 @@ interface SEOHelperProps {
   jsonLd?: object;
   ogImage?: string;
   twitterCard?: string;
+  noIndex?: boolean;
 }
+
+const DEFAULT_DOMAIN = 'https://www.livepasswatch.info';
 
 export const SEOHelper: React.FC<SEOHelperProps> = ({
   title,
   description,
   canonicalUrl,
   jsonLd,
-  ogImage,
-  twitterCard = 'summary_large_image'
+  ogImage = '/hero-bg.png',
+  twitterCard = 'summary_large_image',
+  noIndex = false
 }) => {
   useEffect(() => {
-    // Update Title
-    document.title = title ? `${title} | LIVEPASSWATCH` : 'LIVEPASSWATCH | Real-Time Mountain Pass Status';
+    // 1. Update Document Title
+    const formattedTitle = title
+      ? title.includes('LIVEPASSWATCH')
+        ? title
+        : `${title} | LIVEPASSWATCH`
+      : 'LIVEPASSWATCH | Real-Time Mountain Pass Status, Road Conditions & Alerts';
+    document.title = formattedTitle;
 
-    // Update Meta Description
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement('meta');
-      metaDesc.setAttribute('name', 'description');
-      document.head.appendChild(metaDesc);
-    }
-    metaDesc.setAttribute('content', description);
-
-    // Update Open Graph
-    const setMeta = (property: string, content: string, isName = false) => {
-      const attr = isName ? 'name' : 'property';
-      let el = document.querySelector(`meta[${attr}="${property}"]`);
+    // Helper to safely set/create meta tags
+    const setMeta = (attrName: 'name' | 'property', attrValue: string, content: string) => {
+      let el = document.querySelector(`meta[${attrName}="${attrValue}"]`);
       if (!el) {
         el = document.createElement('meta');
-        el.setAttribute(attr, property);
+        el.setAttribute(attrName, attrValue);
         document.head.appendChild(el);
       }
       el.setAttribute('content', content);
     };
 
-    setMeta('og:title', title);
-    setMeta('og:description', description);
-    setMeta('og:type', 'website');
-    if (ogImage) setMeta('og:image', ogImage);
+    // 2. Meta Description
+    setMeta('name', 'description', description);
 
-    // Twitter Card
-    setMeta('twitter:card', twitterCard, true);
-    setMeta('twitter:title', title, true);
-    setMeta('twitter:description', description, true);
-    if (ogImage) setMeta('twitter:image', ogImage, true);
+    // 3. Robots Tag (index / noindex)
+    setMeta('name', 'robots', noIndex ? 'noindex, nofollow' : 'index, follow');
 
-    // Update Canonical URL
+    // 4. Open Graph Metadata
+    const absoluteOgImage = ogImage.startsWith('http')
+      ? ogImage
+      : `${DEFAULT_DOMAIN}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`;
+
+    const absoluteCanonical = canonicalUrl || `${DEFAULT_DOMAIN}${window.location.pathname}`;
+
+    setMeta('property', 'og:title', formattedTitle);
+    setMeta('property', 'og:description', description);
+    setMeta('property', 'og:type', 'website');
+    setMeta('property', 'og:url', absoluteCanonical);
+    setMeta('property', 'og:image', absoluteOgImage);
+    setMeta('property', 'og:site_name', 'LivePassWatch');
+
+    // 5. Twitter Card Metadata
+    setMeta('name', 'twitter:card', twitterCard);
+    setMeta('name', 'twitter:title', formattedTitle);
+    setMeta('name', 'twitter:description', description);
+    setMeta('name', 'twitter:image', absoluteOgImage);
+
+    // 6. Canonical Link Tag
     let linkCanonical = document.querySelector('link[rel="canonical"]');
-    if (canonicalUrl) {
-      if (!linkCanonical) {
-        linkCanonical = document.createElement('link');
-        linkCanonical.setAttribute('rel', 'canonical');
-        document.head.appendChild(linkCanonical);
-      }
-      linkCanonical.setAttribute('href', canonicalUrl);
+    if (!linkCanonical) {
+      linkCanonical = document.createElement('link');
+      linkCanonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(linkCanonical);
     }
+    linkCanonical.setAttribute('href', absoluteCanonical);
 
-    // Update JSON-LD Script
-    const existingScript = document.getElementById('jsonld-structured-data');
+    // 7. Structured Data (JSON-LD)
+    const scriptId = 'jsonld-structured-data';
+    const existingScript = document.getElementById(scriptId);
     if (existingScript) {
       existingScript.remove();
     }
 
     if (jsonLd) {
       const script = document.createElement('script');
-      script.id = 'jsonld-structured-data';
+      script.id = scriptId;
       script.type = 'application/ld+json';
       script.innerHTML = JSON.stringify(jsonLd);
       document.head.appendChild(script);
     }
-  }, [title, description, canonicalUrl, jsonLd, ogImage, twitterCard]);
+  }, [title, description, canonicalUrl, jsonLd, ogImage, twitterCard, noIndex]);
 
   return null;
 };

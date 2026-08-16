@@ -79,7 +79,7 @@ export const HierarchicalPage: React.FC = () => {
       <SEOHelper
         title="Hierarchical Mountain Pass Navigation"
         description="Browse mountain passes across the globe hierarchically: Continent, Country, State/Province, and Pass."
-        canonicalUrl="https://www.livepasswatch.com/hierarchical"
+        canonicalUrl="https://www.livepasswatch.info/hierarchical"
       />
 
       <div className="app-container">

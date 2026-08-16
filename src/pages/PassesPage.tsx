@@ -103,7 +103,9 @@ export const PassesPage: React.FC = () => {
   };
 
   const handlePassClick = (pass: MountainPass) => {
-    navigate(`/passes/${pass.country.toLowerCase().replace(/\s+/g, '-')}/${pass.state.toLowerCase().replace(/[\s\/]+/g, '-')}/${pass.slug}`);
+    const countrySlug = pass.country.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
+    const stateSlug = pass.state.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
+    navigate(`/passes/${countrySlug}/${stateSlug}/${pass.slug}`);
   };
 
   return (
@@ -111,7 +113,7 @@ export const PassesPage: React.FC = () => {
       <SEOHelper
         title="Mountain Passes Directory & Status"
         description="Comprehensive global directory of mountain passes with real-time status, snow conditions, elevations, and road camera feeds."
-        canonicalUrl="https://www.livepasswatch.com/passes"
+        canonicalUrl="https://www.livepasswatch.info/passes"
       />
 
       <div className="app-container">

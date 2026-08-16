@@ -32,22 +32,39 @@ export const HomePage: React.FC = () => {
 
   const jsonLdWebsite = {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "LIVEPASSWATCH",
-    "url": "https://www.livepasswatch.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.livepasswatch.com/passes?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.livepasswatch.info/#website",
+        "name": "LIVEPASSWATCH",
+        "url": "https://www.livepasswatch.info/",
+        "description": "Global real-time mountain pass tracking, alerts, road conditions, and live cameras.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.livepasswatch.info/passes?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.livepasswatch.info/#organization",
+        "name": "LivePassWatch",
+        "url": "https://www.livepasswatch.info/",
+        "logo": "https://www.livepasswatch.info/mountain-logo.svg",
+        "sameAs": []
+      }
+    ]
   };
 
   return (
     <div className="home-page-container">
       <SEOHelper
-        title="Real-time Mountain Pass Status & Alerts"
-        description="Check real-time mountain pass conditions, closures, road cameras, snow depth, and weather advisories globally before you travel."
-        canonicalUrl="https://www.livepasswatch.com/"
+        title="LivePassWatch — Live Mountain Pass Status & Road Conditions"
+        description="Check real-time mountain pass status, live webcams, snow depth, closures, and weather advisories worldwide before you travel."
+        canonicalUrl="https://www.livepasswatch.info/"
         jsonLd={jsonLdWebsite}
       />
 
