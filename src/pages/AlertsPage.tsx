@@ -14,6 +14,7 @@ import {
   Check
 } from 'lucide-react';
 import { alertsData, getAlertSummaryCounts } from '../data/alerts';
+import { getPassUrl } from '../data/passes';
 import { StatusBadge } from '../components/StatusBadge';
 import { TrustBar } from '../components/TrustBar';
 import { SEOHelper } from '../components/SEOHelper';
@@ -96,9 +97,7 @@ export const AlertsPage: React.FC = () => {
   };
 
   const handleAlertClick = (alert: typeof alertsData[0]) => {
-    const countrySlug = alert.country.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
-    const stateSlug = alert.state.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
-    navigate(`/passes/${countrySlug}/${stateSlug}/${alert.slug}`);
+    navigate(getPassUrl(alert));
   };
 
   return (

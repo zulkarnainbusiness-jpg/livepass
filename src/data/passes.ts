@@ -3091,3 +3091,22 @@ export function getPassStats() {
     }
   };
 }
+
+export function cleanSlug(str: string): string {
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[\s\/]+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+export function getPassUrl(pass: { country: string; state?: string; slug: string }): string {
+  const countrySlug = cleanSlug(pass.country);
+  const stateSlug = pass.state ? cleanSlug(pass.state) : '';
+  return stateSlug ? `/passes/${countrySlug}/${stateSlug}/${pass.slug}` : `/passes/${countrySlug}/${pass.slug}`;
+}
+
+

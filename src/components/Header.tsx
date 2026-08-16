@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { Search, Sun, Moon, Menu, X, Bell, ChevronRight } from 'lucide-react';
-import { passesData } from '../data/passes';
+import { passesData, getPassUrl } from '../data/passes';
 import './Header.css';
 
 export const Header: React.FC = () => {
@@ -70,9 +70,7 @@ export const Header: React.FC = () => {
   };
 
   const handleSelectPass = (pass: typeof passesData[0]) => {
-    const countrySlug = pass.country.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
-    const stateSlug = pass.state.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
-    navigate(`/passes/${countrySlug}/${stateSlug}/${pass.slug}`);
+    navigate(getPassUrl(pass));
     setIsSearchOpen(false);
     setSearchQuery('');
   };

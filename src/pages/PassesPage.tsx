@@ -11,7 +11,7 @@ import {
   Layers,
   Compass
 } from 'lucide-react';
-import { passesData } from '../data/passes';
+import { passesData, getPassUrl } from '../data/passes';
 import { MountainPass } from '../types';
 import { StatusBadge } from '../components/StatusBadge';
 import { PassCard } from '../components/PassCard';
@@ -103,9 +103,7 @@ export const PassesPage: React.FC = () => {
   };
 
   const handlePassClick = (pass: MountainPass) => {
-    const countrySlug = pass.country.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
-    const stateSlug = pass.state.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, 'and').replace(/[\s\/]+/g, '-');
-    navigate(`/passes/${countrySlug}/${stateSlug}/${pass.slug}`);
+    navigate(getPassUrl(pass));
   };
 
   return (

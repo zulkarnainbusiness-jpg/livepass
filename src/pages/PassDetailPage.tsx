@@ -38,7 +38,7 @@ import {
   Bike,
   Gauge
 } from 'lucide-react';
-import { passesData, getPassBySlug } from '../data/passes';
+import { passesData, getPassBySlug, getPassUrl } from '../data/passes';
 import { MountainPass } from '../types';
 import { StatusBadge } from '../components/StatusBadge';
 import { TrustBar } from '../components/TrustBar';
@@ -1007,7 +1007,7 @@ export const PassDetailPage: React.FC = () => {
                     <div 
                       key={near.id} 
                       className="sidebar-pass-item"
-                      onClick={() => navigate(`/passes/${near.country.toLowerCase().split('/')[0].trim().replace(/\s+/g, '-')}/${near.state.toLowerCase().split('/')[0].trim().replace(/[\s\/]+/g, '-')}/${near.slug}`)}
+                      onClick={() => navigate(getPassUrl(near))}
                     >
                       <div className="s-pass-top">
                         <span className="s-pass-name">{near.name}</span>

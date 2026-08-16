@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import L from 'leaflet';
 import { MountainPass } from '../types';
+import { getPassUrl } from '../data/passes';
 import { Locate, ZoomIn, ZoomOut } from 'lucide-react';
 import './MapComponent.css';
 
@@ -157,7 +158,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
 
       // Attach click handler for button inside popup
       popupContent.querySelector(`#btn-view-pass-${pass.id}`)?.addEventListener('click', () => {
-        navigate(`/passes/${pass.country.toLowerCase().replace(/\s+/g, '-')}/${pass.state.toLowerCase().replace(/[\s\/]+/g, '-')}/${pass.slug}`);
+        navigate(getPassUrl(pass));
       });
 
       marker.bindPopup(popupContent, { maxWidth: 280, className: 'custom-leaflet-popup' });
