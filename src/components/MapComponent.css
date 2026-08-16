@@ -1,0 +1,229 @@
+.interactive-map-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  background-color: #EBF2FA;
+}
+
+.leaflet-map-canvas {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Floating Controls */
+.map-floating-controls {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.map-control-btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-light);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.map-control-btn:last-child {
+  border-bottom: none;
+}
+
+.map-control-btn:hover {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+/* Floating Legend */
+.map-floating-legend {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: var(--shadow-md);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.open-dot {
+  background-color: #10B981;
+}
+
+.caution-dot {
+  background-color: #F59E0B;
+}
+
+.closed-dot {
+  background-color: #EF4444;
+}
+
+.unknown-dot {
+  background-color: #94A3B8;
+}
+
+/* Custom Marker Cluster Badges Matching Screenshot 2 */
+.custom-cluster-wrapper {
+  background: transparent;
+  border: none;
+}
+
+.map-cluster-badge {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 13.5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border: 2.5px solid #FFFFFF;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.map-cluster-badge:hover {
+  transform: scale(1.15);
+}
+
+.cluster-badge-open {
+  background-color: #10B981;
+}
+
+.cluster-badge-caution {
+  background-color: #F59E0B;
+}
+
+.cluster-badge-closed {
+  background-color: #EF4444;
+}
+
+/* Individual Pass Pin */
+.custom-pass-pin-wrapper {
+  background: transparent;
+  border: none;
+}
+
+.map-pass-pin {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.map-pass-pin:hover {
+  transform: scale(1.25);
+}
+
+.pin-inner-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+/* Leaflet Popup Card */
+.custom-leaflet-popup .leaflet-popup-content-wrapper {
+  border-radius: var(--radius-md);
+  padding: 0;
+  overflow: hidden;
+  box-shadow: var(--shadow-modal);
+  border: 1px solid var(--border-color);
+}
+
+.custom-leaflet-popup .leaflet-popup-content {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.map-popup-card {
+  padding: 14px 16px;
+}
+
+.popup-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.popup-title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.popup-meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 12px;
+}
+
+.popup-update {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.popup-btn {
+  width: 100%;
+  background-color: var(--primary);
+  color: #FFFFFF;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  transition: background-color 0.15s ease;
+}
+
+.popup-btn:hover {
+  background-color: var(--primary-hover);
+}

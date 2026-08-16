@@ -1,0 +1,252 @@
+import { PassAlert } from '../types';
+
+export const alertsData: PassAlert[] = [
+  // ─── UNITED STATES (WASHINGTON / CALIFORNIA / COLORADO) ─────────────────────
+  {
+    id: 'alert-snoqualmie-pass',
+    passId: 'snoqualmie-pass',
+    passName: 'Snoqualmie Pass (I-90)',
+    slug: 'snoqualmie-pass',
+    country: 'United States',
+    state: 'Washington',
+    highway: 'I-90',
+    type: 'All Clear',
+    severity: 'info',
+    title: 'I-90 Open in Both Directions — Wet Pavement & Normal Traffic Flow',
+    description: 'I-90 Snoqualmie Pass is open to all vehicles with bare and wet pavement. Slush patches in higher summit lanes with continuous plow and sand truck coverage. Traction tires advised for commercial vehicles.',
+    status: 'OPEN',
+    timestamp: 'WSDOT I-90 Mountain Pass Report',
+    source: 'Washington State Department of Transportation (WSDOT)'
+  },
+  {
+    id: 'alert-stevens-pass',
+    passId: 'stevens-pass',
+    passName: 'Stevens Pass (US-2)',
+    slug: 'stevens-pass',
+    country: 'United States',
+    state: 'Washington',
+    highway: 'US 2',
+    type: 'All Clear',
+    severity: 'info',
+    title: 'US-2 Open — Normal Travel Conditions Over Cascade Crest',
+    description: 'US-2 Stevens Pass is open to all traffic in both directions. Normal highway conditions across the summit with no active traction restrictions in effect. Regular highway maintenance active.',
+    status: 'OPEN',
+    timestamp: 'WSDOT North Central Region',
+    source: 'WSDOT North Central Region'
+  },
+  {
+    id: 'alert-donner-pass',
+    passId: 'donner-pass',
+    passName: 'Donner Pass (I-80)',
+    slug: 'donner-pass',
+    country: 'United States',
+    state: 'California',
+    highway: 'I-80',
+    type: 'All Clear',
+    severity: 'info',
+    title: 'I-80 Open Over Donner Summit — No Chain Controls Active',
+    description: 'Interstate 80 is open to all vehicular traffic across Donner Summit with no chain restrictions. Pavement is clear and dry to damp across all lanes. Caltrans crews conducting routine patrols.',
+    status: 'OPEN',
+    timestamp: 'Caltrans QuickMap Live',
+    source: 'Caltrans District 3'
+  },
+  {
+    id: 'alert-berthoud-pass',
+    passId: 'berthoud-pass',
+    passName: 'Berthoud Pass (US-40)',
+    slug: 'berthoud-pass',
+    country: 'United States',
+    state: 'Colorado',
+    highway: 'US-40',
+    type: 'All Clear',
+    severity: 'info',
+    title: 'US-40 Open Over Continental Divide — Clear Pavement',
+    description: 'US Highway 40 over Berthoud Pass is open in both directions to all passenger and commercial vehicles. Mountain wind gusts possible across the 11,307 ft summit. Check COTRIP for live conditions.',
+    status: 'OPEN',
+    timestamp: 'CDOT COTRIP System',
+    source: 'Colorado Department of Transportation (CDOT)'
+  },
+  {
+    id: 'alert-blewett-pass',
+    passId: 'blewett-pass',
+    passName: 'Blewett Pass (US-97)',
+    slug: 'blewett-pass',
+    country: 'United States',
+    state: 'Washington',
+    highway: 'US-97',
+    type: 'Closure',
+    severity: 'critical',
+    title: 'US-97 Closed in Both Directions — Active Wildfire Suppression',
+    description: 'Blewett Pass (US-97) is closed between MP 150 and MP 178 due to active wildfire activity and emergency response operations. No estimated reopening time. Detour via I-90 Snoqualmie Pass and US-2 Stevens Pass.',
+    status: 'CLOSED',
+    timestamp: 'WSDOT Emergency Bulletin',
+    source: 'WSDOT / Washington State Patrol'
+  },
+  {
+    id: 'alert-white-pass',
+    passId: 'white-pass',
+    passName: 'White Pass (US-12)',
+    slug: 'white-pass',
+    country: 'United States',
+    state: 'Washington',
+    highway: 'US 12',
+    type: 'All Clear',
+    severity: 'info',
+    title: 'US-12 Open — Normal Mountain Travel Conditions',
+    description: 'US-12 White Pass is open to all vehicular traffic with no active restrictions. Road surface is bare and damp. WSDOT South Central Region maintenance active.',
+    status: 'OPEN',
+    timestamp: 'WSDOT South Central Region',
+    source: 'WSDOT South Central Region'
+  },
+  {
+    id: 'alert-chinook-pass',
+    passId: 'chinook-pass',
+    passName: 'Chinook Pass (SR-410)',
+    slug: 'chinook-pass',
+    country: 'United States',
+    state: 'Washington',
+    highway: 'SR 410',
+    type: 'All Clear',
+    severity: 'info',
+    title: 'SR-410 Open for Seasonal Daylight Travel',
+    description: 'SR-410 Chinook Pass is open to all vehicles for seasonal travel. Clear road conditions across the summit arch. Commercial vehicles prohibited through Mount Rainier National Park corridor.',
+    status: 'OPEN',
+    timestamp: 'WSDOT / Mount Rainier National Park',
+    source: 'WSDOT / Mount Rainier National Park'
+  },
+
+  // ─── INDIA / HIMALAYAS ──────────────────────────────────────────────────────
+  {
+    id: 'alert-zoji-la',
+    passId: 'zoji-la',
+    passName: 'Zoji La Pass (NH-1)',
+    slug: 'zoji-la',
+    country: 'India',
+    state: 'Jammu & Kashmir',
+    highway: 'NH-1 (Srinagar–Leh Highway)',
+    type: 'Warning',
+    severity: 'warning',
+    title: 'Regulated BRO Convoy Movement — Daily Clearance Mandatory',
+    description: 'Zoji La Pass operates under strict time-bound one-way convoys managed by the Border Roads Organisation (BRO). Single-lane sections with loose gravel and landslide risk near Captain Morh. High-clearance vehicles strongly recommended. Verify daily status via BRO Helpline 1033.',
+    status: 'CAUTION',
+    timestamp: 'BRO Helpline 1033 / Daily Advisory',
+    source: 'Border Roads Organisation (BRO), 14 BR Task Force'
+  },
+  {
+    id: 'alert-khardung-la',
+    passId: 'khardung-la',
+    passName: 'Khardung La Pass',
+    slug: 'khardung-la',
+    country: 'India',
+    state: 'Ladakh',
+    highway: 'Leh-Nubra Road',
+    type: 'Advisory',
+    severity: 'advisory',
+    title: 'Open for Leh-Nubra Traffic — Early Morning Black Ice & ILP Required',
+    description: 'Khardung La (17,582 ft) is open for permitted vehicular traffic. Early morning black ice caution between North Pullu and summit. Valid Inner Line Permit (ILP) required past South Pullu checkpoint. High altitude precautions advised.',
+    status: 'OPEN',
+    timestamp: 'Project HIMANK (BRO) Daily Bulletin',
+    source: 'Project HIMANK (BRO) / Ladakh Administration'
+  },
+  {
+    id: 'alert-rohtang-pass',
+    passId: 'rohtang-pass',
+    passName: 'Rohtang Pass (NH-03)',
+    slug: 'rohtang-pass',
+    country: 'India',
+    state: 'Himachal Pradesh',
+    highway: 'Leh-Manali Highway (NH-03)',
+    type: 'Advisory',
+    severity: 'advisory',
+    title: 'Open for Tourism — Mandatory Online NGT Permit Quota',
+    description: 'Rohtang Pass (13,058 ft) is open to tourists with valid National Green Tribunal (NGT) online permits. Daily vehicle caps enforced at Gulaba checkpoint. Atal Tunnel serves as the all-weather bypass for through-traffic to Lahaul & Leh.',
+    status: 'OPEN',
+    timestamp: 'Kullu District Administration Portal',
+    source: 'Himachal Pradesh Tourism / Kullu District Administration'
+  },
+
+  // ─── EUROPE (SWITZERLAND / ITALY) ───────────────────────────────────────────
+  {
+    id: 'alert-furka-pass',
+    passId: 'furka-pass',
+    passName: 'Furka Pass (Route 19)',
+    slug: 'furka-pass',
+    country: 'Switzerland',
+    state: 'Valais / Uri',
+    highway: 'Hauptstrasse 19',
+    type: 'All Clear',
+    severity: 'info',
+    title: 'Route 19 Open — Clear Alpine Driving Across All 27 Switchbacks',
+    description: 'Furka Pass is open to all tourist, motorcycle, and bicycle traffic. Clear road surface across all 27 switchbacks with excellent visibility. Caution advised for large motorhomes on narrow stretches.',
+    status: 'OPEN',
+    timestamp: 'Touring Club Schweiz (TCS) Live',
+    source: 'Touring Club Schweiz (TCS) / AlpenPässe.de'
+  },
+  {
+    id: 'alert-stelvio-pass',
+    passId: 'stelvio-pass',
+    passName: 'Stelvio Pass (SS38)',
+    slug: 'stelvio-pass',
+    country: 'Italy',
+    state: 'South Tyrol / Lombardy',
+    highway: 'Strada Statale 38 (SS38)',
+    type: 'All Clear',
+    severity: 'info',
+    title: 'SS38 Open in Full — All 48 Switchbacks Clear and Passable',
+    description: 'Passo dello Stelvio (2,757 m / 9,045 ft) is fully open from both Prato allo Stelvio and Bormio sides. Clear weather and dry asphalt. Expect heavy sports car, motorcycle, and bicycle traffic during peak weekend hours.',
+    status: 'OPEN',
+    timestamp: 'ANAS / Südtiroler Straßendienst',
+    source: 'ANAS / Provincia Autonoma di Bolzano'
+  },
+
+  // ─── SOUTH AMERICA (ARGENTINA / CHILE) ──────────────────────────────────────
+  {
+    id: 'alert-paso-libertadores',
+    passId: 'paso-los-libertadores',
+    passName: 'Paso Los Libertadores (RN 7 / Ruta 60)',
+    slug: 'paso-los-libertadores',
+    country: 'Argentina-Chile',
+    state: 'Valparaíso / Mendoza',
+    highway: 'Ruta 60-CH / RN 7',
+    type: 'Advisory',
+    severity: 'advisory',
+    title: 'International Border Open 24 Hours — Mandatory Snow Chains',
+    description: 'Paso Internacional Los Libertadores is open 24 hours for all passenger vehicles and international cargo freight. Mandatory snow chains must be carried in all vehicles. Unified customs active at Los Libertadores (Chile) and Horcones (Argentina).',
+    status: 'OPEN',
+    timestamp: 'Unidad de Pasos Fronterizos Chile',
+    source: 'Unidad de Pasos Fronterizos Chile / Vialidad Nacional Argentina'
+  },
+
+  // ─── AFRICA (SOUTH AFRICA / LESOTHO) ────────────────────────────────────────
+  {
+    id: 'alert-sani-pass',
+    passId: 'sani-pass',
+    passName: 'Sani Pass (P318)',
+    slug: 'sani-pass',
+    country: 'South Africa / Lesotho',
+    state: 'KwaZulu-Natal / Mokhotlong',
+    highway: 'Sani Pass Road (P318 / A14)',
+    type: 'Warning',
+    severity: 'warning',
+    title: 'Strictly 4x4 Only — International Border Clearance 06:00–18:00',
+    description: 'Sani Pass is open for strictly 4x4 vehicles with low-range transfer case and high ground clearance. 2WD vehicles prohibited past South African border post. Valid passport required for entry into Lesotho at summit border control (open 06:00–18:00 daily).',
+    status: 'OPEN',
+    timestamp: 'Border Management Authority Bulletin',
+    source: 'Border Management Authority (BMA South Africa) / Lesotho Border Police'
+  }
+];
+
+export function getAlertSummaryCounts() {
+  const closures = alertsData.filter(a => a.type === 'Closure').length;
+  const warnings = alertsData.filter(a => a.type === 'Warning').length;
+  const advisories = alertsData.filter(a => a.type === 'Advisory').length;
+  const allClear = alertsData.filter(a => a.type === 'All Clear').length;
+
+  return {
+    closures,
+    warnings,
+    advisories,
+    allClear,
+    total: alertsData.length
+  };
+}

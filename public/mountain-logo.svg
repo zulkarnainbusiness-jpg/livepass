@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 70" fill="none">
+  <!-- Outer Mountain Peak (White/Dark stroke) -->
+  <path d="M12 56L42 12L70 56H12Z" stroke="#3B82F6" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+  <!-- Secondary Mountain Peak -->
+  <path d="M42 56L68 20L88 56H42Z" stroke="#60A5FA" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+  <!-- Snowy Summit Accent -->
+  <path d="M35 24L42 12L49 24L42 20Z" fill="#3B82F6"/>
+  <!-- Base Road / Contour Accent -->
+  <path d="M22 56C30 52 40 48 50 49C60 50 70 55 80 56" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+</svg>

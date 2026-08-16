@@ -1,0 +1,44 @@
+.map-page-container {
+  padding-bottom: 48px;
+}
+
+.map-page-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 28px;
+  align-items: start;
+}
+
+.map-canvas-container {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.map-filter-sidebar {
+  padding: 22px 20px;
+}
+
+.map-filter-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.passes-found-badge {
+  background-color: var(--bg-surface-subtle);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .map-page-layout {
+    grid-template-columns: 1fr;
+  }
+}

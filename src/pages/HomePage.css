@@ -1,0 +1,375 @@
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section */
+.home-hero-section {
+  position: relative;
+  background-image: url('/hero-bg.png');
+  background-size: cover;
+  background-position: center 40%;
+  padding: 64px 0 52px;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+.hero-background-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(5, 14, 28, 0.84) 0%, rgba(5, 14, 28, 0.94) 100%);
+}
+
+.hero-content-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-main-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.hero-sub-title {
+  font-size: 16px;
+  color: #CBD5E1;
+  max-width: 600px;
+  margin-bottom: 32px;
+  font-weight: 400;
+}
+
+/* Hero Search Bar */
+.hero-search-form {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 6px 8px 6px 16px;
+  width: 100%;
+  max-width: 680px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+}
+
+.hero-search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.hero-search-icon {
+  color: #94A3B8;
+  flex-shrink: 0;
+}
+
+.hero-search-input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #0F172A;
+  width: 100%;
+}
+
+.hero-search-input::placeholder {
+  color: #94A3B8;
+}
+
+.hero-search-btn {
+  background-color: #1D64F2;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: var(--radius-md);
+  transition: background-color 0.15s ease;
+}
+
+.hero-search-btn:hover {
+  background-color: #1550C7;
+}
+
+/* 4 Hero Stats Cards */
+.hero-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 780px;
+}
+
+.hero-stat-card {
+  background: rgba(19, 30, 50, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.hero-stat-card:hover {
+  transform: translateY(-3px);
+  background: rgba(26, 41, 68, 0.95);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.stat-icon-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-open {
+  color: #10B981;
+}
+
+.icon-caution {
+  color: #F59E0B;
+}
+
+.icon-closed {
+  color: #EF4444;
+}
+
+.icon-monitored {
+  color: #38BDF8;
+}
+
+.stat-info-col {
+  text-align: left;
+}
+
+.stat-number {
+  font-size: 22px;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.1;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #94A3B8;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Main Content Area */
+.main-content-wrapper {
+  padding-top: 36px;
+  padding-bottom: 48px;
+}
+
+/* Popular Passes Section */
+.home-popular-section {
+  margin-bottom: 32px;
+}
+
+.section-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.section-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.popular-carousel-wrapper {
+  position: relative;
+}
+
+.popular-passes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.15s ease;
+}
+
+.carousel-nav-btn:hover {
+  background-color: var(--primary);
+  color: #FFFFFF;
+}
+
+.btn-prev {
+  left: -20px;
+}
+
+.btn-next {
+  right: -20px;
+}
+
+/* Alerts Banner Card */
+.home-alerts-banner-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.alerts-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.banner-bell-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.banner-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.banner-desc {
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+.banner-action-btn {
+  padding: 10px 24px;
+}
+
+/* Explorer Grid */
+.home-explorer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.explorer-card {
+  padding: 24px 28px;
+  cursor: pointer;
+}
+
+.explorer-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.explorer-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.explorer-card p {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.explorer-link {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .popular-passes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-hero-section {
+    padding: 44px 0 36px;
+  }
+  .hero-main-title {
+    font-size: 26px;
+  }
+  .hero-sub-title {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .hero-search-form {
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px;
+  }
+  .hero-search-btn {
+    width: 100%;
+  }
+  .popular-passes-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-alerts-banner-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .banner-action-btn {
+    width: 100%;
+  }
+  .home-explorer-grid {
+    grid-template-columns: 1fr;
+  }
+}
