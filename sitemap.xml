@@ -1,114 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Static & Functional Pages -->
   <url>
-    <loc>https://www.livepasswatch.com/</loc>
-    <changefreq>hourly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/passes</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/map</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/alerts</loc>
+    <loc>https://www.livepasswatch.info/</loc>
     <changefreq>always</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
+    <lastmod>2026-08-16</lastmod>
   </url>
   <url>
-    <loc>https://www.livepasswatch.com/hierarchical</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/resources</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/passes/united-states/washington/snoqualmie-pass</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/passes/united-states/washington/stevens-pass</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/passes/united-states/washington/blewett-pass</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/passes/united-states/washington/white-pass</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/passes/united-states/washington/chinook-pass</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/passes/united-states/california/donner-pass</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/passes/united-states/colorado/berthoud-pass</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/passes/india/jammu-and-kashmir/zoji-la</loc>
+    <loc>https://www.livepasswatch.info/passes</loc>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
     <lastmod>2026-08-16</lastmod>
   </url>
   <url>
-    <loc>https://www.livepasswatch.com/passes/india/ladakh/khardung-la</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/passes/india/himachal-pradesh/rohtang-pass</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/passes/switzerland/valais-uri/furka-pass</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.livepasswatch.com/passes/italy/south-tyrol/stelvio-pass</loc>
+    <loc>https://www.livepasswatch.info/map</loc>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+    <lastmod>2026-08-16</lastmod>
   </url>
   <url>
-    <loc>https://www.livepasswatch.com/passes/italy/stelvio-pass</loc>
+    <loc>https://www.livepasswatch.info/alerts</loc>
+    <changefreq>always</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/hierarchical</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/resources</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/privacy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/terms</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+
+  <!-- United States Mountain Passes -->
+  <url>
+    <loc>https://www.livepasswatch.info/passes/united-states/washington/snoqualmie-pass</loc>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
+    <lastmod>2026-08-16</lastmod>
   </url>
   <url>
-    <loc>https://www.livepasswatch.com/passes/new-zealand/canterbury-west-coast/arthurs-pass</loc>
+    <loc>https://www.livepasswatch.info/passes/united-states/washington/stevens-pass</loc>
     <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    <lastmod>2026-08-16</lastmod>
   </url>
   <url>
-    <loc>https://www.livepasswatch.com/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores</loc>
+    <loc>https://www.livepasswatch.info/passes/united-states/washington/blewett-pass</loc>
     <changefreq>hourly</changefreq>
     <priority>0.8</priority>
+    <lastmod>2026-08-16</lastmod>
   </url>
   <url>
-    <loc>https://www.livepasswatch.com/passes/south-africa/kwazulu-natal/sani-pass</loc>
+    <loc>https://www.livepasswatch.info/passes/united-states/washington/white-pass</loc>
     <changefreq>hourly</changefreq>
     <priority>0.8</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/united-states/washington/chinook-pass</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/united-states/california/donner-pass</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/united-states/colorado/berthoud-pass</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+
+  <!-- India / Himalaya Passes -->
+  <url>
+    <loc>https://www.livepasswatch.info/passes/india/jammu-and-kashmir/zoji-la</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/india/ladakh/khardung-la</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/india/himachal-pradesh/rohtang-pass</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+
+  <!-- European Alps Passes -->
+  <url>
+    <loc>https://www.livepasswatch.info/passes/switzerland/valais-uri/furka-pass</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/italy/south-tyrol-lombardy/stelvio-pass</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+
+  <!-- South America / Andes Passes -->
+  <url>
+    <loc>https://www.livepasswatch.info/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+
+  <!-- Africa / Drakensberg Passes -->
+  <url>
+    <loc>https://www.livepasswatch.info/passes/south-africa-lesotho/kwazulu-natal-mokhotlong/sani-pass</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-08-16</lastmod>
   </url>
 </urlset>
