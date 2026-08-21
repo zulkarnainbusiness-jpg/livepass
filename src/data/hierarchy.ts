@@ -125,6 +125,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 elevationM: 1372,
                 status: 'OPEN',
                 image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80'
+              },
+              {
+                id: 'loup-loup-pass',
+                slug: 'loup-loup-pass',
+                name: 'Loup Loup Pass',
+                highway: 'SR 20',
+                elevationFt: 4020,
+                elevationM: 1225,
+                status: 'UNKNOWN',
+                image: '/loup-loup-pass-washington.webp'
               }
             ]
 

@@ -4093,6 +4093,208 @@ export const passesData: MountainPass[] = [
       }
     ],
     isPopular: true
+  },
+  {
+    id: 'loup-loup-pass',
+    slug: 'loup-loup-pass',
+    name: 'Loup Loup Pass',
+    country: 'United States',
+    countryCode: 'USA',
+    continent: 'North America',
+    state: 'Washington',
+    highway: 'SR 20',
+    elevationFt: 4020,
+    elevationM: 1225,
+    coordinates: { lat: 48.3886, lng: -119.8872 },
+    status: 'UNKNOWN',
+    statusDetail: 'Live status report temporarily unavailable',
+    lastUpdated: 'Current live data unavailable.',
+    description: 'Loup Loup Pass is a scenic mountain pass in the Okanogan Highlands of Washington State. Situated on State Route 20 (SR 20) at an elevation of 4,020 feet (1,225 m), it connects the Methow Valley at Twisp with the Okanogan River valley at Okanogan.',
+    image: '/loup-loup-pass-washington.webp',
+    weather: {
+      tempF: 32,
+      tempC: 0,
+      condition: 'N/A',
+      icon: 'cloud'
+    },
+    snowDepth: {
+      depthCm: 0,
+      depthIn: 0,
+      condition: 'N/A'
+    },
+    wind: {
+      speedKmh: 0,
+      speedMph: 0,
+      direction: 'N/A',
+      description: 'Calm'
+    },
+    roadCondition: 'Current road conditions unavailable. Please check the official WSDOT travel map.',
+    chainRequirement: 'No restrictions reported. Traction tires may be advised in winter.',
+    cameras: [
+      {
+        id: 'loup-loup-cam-1',
+        title: 'Loup Loup Pass Summit (SR 20 MP 214.5)',
+        image: 'https://images.wsdot.wa.gov/nc/020vc21450.jpg',
+        milepost: 'MP 214.5',
+        direction: 'Eastbound / Westbound',
+        location: 'SR 20 Loup Loup Pass Summit',
+        source: 'WSDOT',
+        updateIntervalMs: 120000,
+        officialUrl: 'https://wsdot.wa.gov/travel/real-time-maps/mountain-passes/loup-loup'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'sherman-pass',
+        slug: 'sherman-pass',
+        name: 'Sherman Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'SR 20',
+        status: 'OPEN',
+        elevationFt: 5577,
+        lastUpdated: '10 min ago',
+        distanceKm: 68
+      },
+      {
+        id: 'north-cascades-pass',
+        slug: 'north-cascades-pass',
+        name: 'North Cascades Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'SR 20',
+        status: 'OPEN',
+        elevationFt: 5477,
+        lastUpdated: '12 min ago',
+        distanceKm: 60
+      },
+      {
+        id: 'blewett-pass',
+        slug: 'blewett-pass',
+        name: 'Blewett Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'US-97',
+        status: 'CLOSED',
+        elevationFt: 4102,
+        lastUpdated: '15 min ago',
+        distanceKm: 148
+      },
+      {
+        id: 'stevens-pass',
+        slug: 'stevens-pass',
+        name: 'Stevens Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'US 2',
+        status: 'OPEN',
+        elevationFt: 4061,
+        lastUpdated: '5 min ago',
+        distanceKm: 180
+      }
+    ],
+    overview: {
+      openedYear: 1936,
+      lengthMiles: 30,
+      lengthKm: 48,
+      annualSnowfallIn: 120,
+      annualSnowfallM: 3.0,
+      summary: 'Loup Loup Pass (elevation 4,020 ft / 1,225 m) carries State Route 20 across the Okanogan Highlands in north-central Washington. Serving as a crucial link between Okanogan and Twisp, the pass is home to the Loup Loup Ski Bowl and remains open year-round under the care of WSDOT maintenance crews.'
+    },
+    seasonalClosureInfo: {
+      typicalClosure: 'Open Year-Round (Subject to winter storms)',
+      typicalReopening: 'Year-Round Operation',
+      description: 'Unlike the seasonal section of SR 20 over the North Cascades Highway (Rainy/Washington passes) which closes for winter, Loup Loup Pass is maintained by WSDOT for year-round travel. Short-term closures occur only for active snow removal, avalanche control, or major traffic incidents during severe winter blizzards.'
+    },
+    forecast: [
+      { day: 'Today', condition: 'Unavailable', tempHighF: 32, tempLowF: 25, icon: 'cloud' }
+    ],
+    dataSources: [
+      { name: 'Washington State Department of Transportation (WSDOT)', type: 'SR 20 Loup Loup Pass Conditions & Cameras', url: 'https://wsdot.wa.gov/travel/real-time-maps/mountain-passes/loup-loup' },
+      { name: 'National Weather Service (NWS Spokane)', type: 'Okanogan Highlands Weather Forecast', url: 'https://www.weather.gov/otx/' }
+    ],
+    customSeo: {
+      title: 'Loup Loup Pass Opening Date, Road Conditions & Webcams — LivePassWatch',
+      description: 'Loup Loup Pass opening date, current road conditions, open/closed status, webcams, weather, snow conditions and travel alerts on SR 20 in Washington.',
+      h1: 'Loup Loup Pass Road Conditions, Open/Closed Status & Webcams'
+    },
+    quickFacts: {
+      state: 'Washington, United States',
+      mountainRange: 'Okanogan Highlands',
+      elevationSummary: '4,020 ft / 1,225 m above sea level',
+      connects: 'Twisp (Methow Valley) with Okanogan (Okanogan Valley)',
+      nearestTown: 'Twisp (12 mi west) • Okanogan (18 mi east)',
+      roadType: 'State Route 20 (SR 20) — Two-Lane Scenic Highway',
+      bestTime: 'Year-round (Summer hiking/scenic, Winter skiing/snowboarding)',
+      highlight: 'A scenic year-round passage connecting the Methow Valley to the Okanogan Valley, serving the Loup Loup Ski Bowl.'
+    },
+    routeDetails: {
+      distanceKm: 48,
+      distanceMiles: 30,
+      duration: '40 - 50 minutes (Twisp to Okanogan via SR 20)',
+      origin: 'Twisp, WA (Elevation: 1,637 ft)',
+      destination: 'Okanogan, WA (Elevation: 840 ft)',
+      waypoints: [
+        'Twisp (Methow Valley start)',
+        'Okanogan National Forest Boundary',
+        'Loup Loup Ski Bowl Access Road',
+        'Loup Loup Pass Summit (MP 214.5, 4,020 ft)',
+        'Loup Loup Campground',
+        'Okanogan River Valley gateway',
+        'Okanogan, WA'
+      ]
+    },
+    faqs: [
+      {
+        question: 'Is Loup Loup Pass open right now?',
+        answer: 'Please check the live status badge at the top of this page. Loup Loup Pass on SR 20 is maintained as a year-round highway by WSDOT. However, temporary closures can occur during heavy winter storms or active maintenance operations.'
+      },
+      {
+        question: 'Is Loup Loup Pass open today?',
+        answer: 'Yes, Loup Loup Pass is a year-round state highway and is open today unless closed due to a temporary incident or severe blizzard. Check the current status badge above for real-time traffic restrictions.'
+      },
+      {
+        question: 'Is Loup Loup Pass closed today?',
+        answer: 'Typically no, as Loup Loup Pass is maintained for year-round travel by WSDOT. If a temporary closure is active due to a winter storm, accident, or maintenance, the live status badge at the top of this page will display "CLOSED" with WSDOT details.'
+      },
+      {
+        question: 'Is Loup Loup Pass open in winter?',
+        answer: 'Yes! Unlike the western portion of SR 20 (the North Cascades Highway), Loup Loup Pass remains open throughout the winter, providing access to the Loup Loup Ski Bowl. Traction tires or chain requirements are frequently posted during winter storms.'
+      },
+      {
+        question: 'When does Loup Loup Pass close for winter?',
+        answer: 'Loup Loup Pass does not close for winter. It remains open year-round, unlike its neighbor the North Cascades Highway (SR 20) which undergoes seasonal closure. The pass is only closed temporarily during severe winter storms.'
+      },
+      {
+        question: 'When is the Loup Loup Pass opening date?',
+        answer: 'Loup Loup Pass does not have an opening date because it stays open year-round. If you are thinking of the seasonal North Cascades Highway (SR 20), its opening date varies annually from late April to early May.'
+      },
+      {
+        question: 'Does Loup Loup Pass have a webcam?',
+        answer: 'Yes! WSDOT operates an official live traffic camera at the Loup Loup Pass summit on SR 20 near Milepost 214.5. You can view the live camera snapshot above, which refreshes every 2 minutes.'
+      },
+      {
+        question: 'What are the Loup Loup Pass snow conditions?',
+        answer: 'Snow conditions vary depending on the season. During the winter, the pass receives significant snowfall, creating compact snow and ice on the roadway. Check the live weather and snow depth sections above for current conditions.'
+      },
+      {
+        question: 'What is the Loup Loup Pass elevation?',
+        answer: 'The summit elevation of Loup Loup Pass is 4,020 feet (1,225 meters) above sea level.'
+      },
+      {
+        question: 'Where is Loup Loup Pass?',
+        answer: 'Loup Loup Pass is located in north-central Washington State in the Okanogan Highlands, carrying State Route 20 between Twisp and Okanogan.'
+      },
+      {
+        question: 'What highway is Loup Loup Pass on?',
+        answer: 'Loup Loup Pass is located on State Route 20 (SR 20), also known as the North Cascades Highway in other sections, but locally referred to as the Loup Loup Pass Highway.'
+      },
+      {
+        question: 'Does Loup Loup Pass require chains?',
+        answer: 'Chain and traction requirements are posted dynamically by WSDOT during winter storms. Passenger vehicles may require traction tires or chains, and commercial trucks are frequently required to chain up when ascending the pass.'
+      }
+    ],
+    isPopular: true
   }
 ];
 

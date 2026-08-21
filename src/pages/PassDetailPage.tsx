@@ -56,7 +56,53 @@ export const PassDetailPage: React.FC = () => {
   const pathSegments = location.pathname.split('?')[0].split('/').filter(Boolean);
   const lastPathSegment = pathSegments.length > 0 ? pathSegments[pathSegments.length - 1] : undefined;
   const targetSlug = slug || (lastPathSegment && lastPathSegment !== 'passes' ? lastPathSegment : '');
-  const pass = getPassBySlug(targetSlug);
+  const basePass = getPassBySlug(targetSlug);
+
+  // State for the pass data (so it can be dynamically updated with real-time API values)
+  const [pass, setPass] = useState<MountainPass | null>(basePass || null);
+  const [liveDataError, setLiveDataError] = useState(false);
+
+  // Sync pass state and fetch live data when route changes
+  useEffect(() => {
+    const activePass = getPassBySlug(targetSlug);
+    setPass(activePass || null);
+    setLiveDataError(false);
+
+    if (activePass && activePass.id === 'loup-loup-pass') {
+      fetch('/api/passes/loup-loup')
+        .then(res => {
+          if (!res.ok) throw new Error('API request failed');
+          return res.json();
+        })
+        .then(liveData => {
+          if (liveData && liveData.status) {
+            setPass(prev => {
+              if (!prev || prev.id !== 'loup-loup-pass') return prev;
+              return {
+                ...prev,
+                status: liveData.status,
+                statusDetail: liveData.roadCondition || prev.statusDetail,
+                roadCondition: liveData.roadCondition || prev.roadCondition,
+                lastUpdated: liveData.lastUpdated || prev.lastUpdated,
+                weather: liveData.weather ? {
+                  ...prev.weather,
+                  tempF: liveData.weather.tempF ?? prev.weather?.tempF,
+                  tempC: liveData.weather.tempC ?? prev.weather?.tempC,
+                  condition: liveData.weather.condition ?? prev.weather?.condition,
+                } : prev.weather,
+                chainRequirement: (liveData.restrictions && liveData.restrictions.length > 0)
+                  ? liveData.restrictions.join(', ')
+                  : prev.chainRequirement
+              };
+            });
+          }
+        })
+        .catch(err => {
+          console.error('Error loading live Loup Loup status:', err);
+          setLiveDataError(true);
+        });
+    }
+  }, [targetSlug]);
 
   // UI States
   const [isFavorite, setIsFavorite] = useState(false);
@@ -222,6 +268,9 @@ export const PassDetailPage: React.FC = () => {
     ? pass.dataSources[2].name
     : (pass.slug === 'stelvio-pass' ? 'MeteoTrentino & Servizio Meteorologico Aeronautica Militare' : 'Official Meteorological Service');
 
+  const displayedStatus = (liveDataError && pass.id === 'loup-loup-pass') ? 'UNKNOWN' : pass.status;
+  const displayedStatusDetail = (liveDataError && pass.id === 'loup-loup-pass') ? 'Live Loup Loup Pass data temporarily unavailable.' : pass.statusDetail;
+
   return (
     <div className="pass-detail-page-container">
       <SEOHelper
@@ -343,20 +392,51 @@ export const PassDetailPage: React.FC = () => {
               </div>
 
               <div className="status-weather-cards-grid">
+                {liveDataError && pass.id === 'loup-loup-pass' && (
+                  <div className="live-data-error-banner lp-card" style={{
+                    backgroundColor: 'rgba(239, 68, 68, 0.08)',
+                    borderLeft: '4px solid #EF4444',
+                    padding: '16px',
+                    marginBottom: '16px',
+                    borderRadius: '4px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '8px',
+                    gridColumn: '1 / -1'
+                  }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 'bold', color: '#EF4444' }}>
+                      <ShieldAlert size={18} />
+                      <span>Live Loup Loup Pass data temporarily unavailable.</span>
+                    </div>
+                    <p style={{ margin: 0, fontSize: '14px', color: '#9CA3AF' }}>
+                      We are currently experiencing issues retrieving real-time data from WSDOT.
+                      {pass.lastUpdated && ` Last verified update: ${pass.lastUpdated}.`}
+                    </p>
+                    <a href="https://wsdot.wa.gov/travel/real-time-map/mountain-passes/loup-loup" target="_blank" rel="noopener noreferrer" style={{
+                      color: '#3B82F6',
+                      textDecoration: 'underline',
+                      fontSize: '14px',
+                      width: 'fit-content'
+                    }}>
+                      Check official WSDOT status
+                    </a>
+                  </div>
+                )}
+
                 {/* Status Hero Card */}
-                <div className={`status-hero-card lp-card status-card-${pass.status}`}>
+                <div className={`status-hero-card lp-card status-card-${displayedStatus}`}>
                   <div className="status-icon-large">
-                    {pass.status === 'OPEN' && <CheckCircle2 size={44} className="icon-green" />}
-                    {pass.status === 'CAUTION' && <AlertTriangle size={44} className="icon-orange" />}
-                    {pass.status === 'CLOSED' && <XCircle size={44} className="icon-red" />}
-                    {pass.status === 'MONITORED' && <CheckCircle2 size={44} className="icon-blue" />}
-                    {pass.status === 'UNKNOWN' && <AlertTriangle size={44} className="icon-orange" />}
+                    {displayedStatus === 'OPEN' && <CheckCircle2 size={44} className="icon-green" />}
+                    {displayedStatus === 'CAUTION' && <AlertTriangle size={44} className="icon-orange" />}
+                    {displayedStatus === 'CLOSED' && <XCircle size={44} className="icon-red" />}
+                    {displayedStatus === 'MONITORED' && <CheckCircle2 size={44} className="icon-blue" />}
+                    {displayedStatus === 'UNKNOWN' && <AlertTriangle size={44} className="icon-orange" />}
                   </div>
                   <div className="status-hero-info">
                     <div className="status-badge-hero-pill">
-                      <span className="live-pulsing-dot" /> {pass.status === 'OPEN' ? '🟢 CURRENTLY OPEN' : pass.status === 'CAUTION' ? '⚠️ CAUTION ADVISED' : pass.status === 'CLOSED' ? '🔴 CURRENTLY CLOSED' : '⚪ STATUS UNKNOWN'}
+                      <span className="live-pulsing-dot" /> {displayedStatus === 'OPEN' ? '🟢 CURRENTLY OPEN' : displayedStatus === 'CAUTION' ? '⚠️ CAUTION ADVISED' : displayedStatus === 'CLOSED' ? '🔴 CURRENTLY CLOSED' : '⚪ STATUS UNKNOWN'}
                     </div>
-                    <div className="status-hero-detail">{pass.statusDetail}</div>
+                    <div className="status-hero-detail">{displayedStatusDetail}</div>
                     <div className="status-hero-source">
                       <strong>Source:</strong> {officialSourceDisplay}
                     </div>

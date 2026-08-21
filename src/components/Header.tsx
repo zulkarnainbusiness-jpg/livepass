@@ -23,7 +23,7 @@ export const Header: React.FC = () => {
       localStorage.setItem('lp_show_seo', 'false');
     }
 
-    const isSeoVisible = localStorage.getItem('lp_show_seo') === 'true' || (import.meta as any).env?.DEV;
+    const isSeoVisible = localStorage.getItem('lp_show_seo') === 'true';
     setShowSeoAgent(isSeoVisible);
   }, [location.search]);
 
