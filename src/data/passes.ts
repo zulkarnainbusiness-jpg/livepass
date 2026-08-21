@@ -1483,6 +1483,329 @@ export const passesData: MountainPass[] = [
     isPopular: true
   },
   {
+    id: 'north-cascades-pass',
+    slug: 'north-cascades-pass',
+    name: 'North Cascades Pass',
+    country: 'United States',
+    countryCode: 'USA',
+    continent: 'North America',
+    state: 'Washington',
+    highway: 'SR 20 (North Cascades Highway)',
+    elevationFt: 5477,
+    elevationM: 1669,
+    coordinates: { lat: 48.5241, lng: -120.6547 },
+    status: 'OPEN',
+    statusDetail: 'SR 20 North Cascades Highway open to all traffic — Seasonal daylight travel across Washington Pass (5,477 ft). Road clear. No traction requirements.',
+    lastUpdated: '8 minutes ago',
+    description: 'North Cascades Pass (traversed by the North Cascades Highway / SR 20) crosses the Cascade Range in northern Washington State, reaching its peak elevation of 5,477 feet (1,669 m) at Washington Pass. Renowned for dramatic alpine peaks, deep glacial valleys, and proximity to North Cascades National Park, SR 20 connects the Skagit Valley on the west (Sedro-Woolley / Marblemount) with the Methow Valley on the east (Winthrop / Twisp). Because of extreme winter snowfall and avalanche hazards on the high avalanche chutes above Washington Pass, SR 20 closes annually between late autumn and late spring, with WSDOT handling annual clearing operations.',
+    image: '/north-cascades-pass.jpg',
+    weather: {
+      tempF: 58,
+      tempC: 14,
+      condition: 'Partly Cloudy',
+      icon: 'cloud-sun'
+    },
+    snowDepth: {
+      depthCm: 0,
+      depthIn: 0,
+      condition: 'Bare & Dry Pavement'
+    },
+    wind: {
+      speedKmh: 14,
+      speedMph: 9,
+      direction: 'NW',
+      description: 'Light Mountain Breeze'
+    },
+    roadCondition: 'Pavement bare and dry throughout the SR 20 corridor across Washington Pass and Rainy Pass. No traction requirements, chain restrictions, or lane closures in effect. Standard seasonal operations apply — high-elevation weather can change rapidly.',
+    chainRequirement: 'No traction requirements currently in effect for passenger or commercial vehicles. During shoulder-season or early-season snow events, WSDOT may post traction tire or chain requirements for high-altitude passes.',
+    cameras: [
+      {
+        id: 'nc-cam-1',
+        title: 'Washington Pass Webcam — SR 20 Summit (MP 163)',
+        image: 'https://images.wsdot.wa.gov/sc/020VC16300.jpg',
+        milepost: 'MP 163',
+        direction: 'Eastbound toward Winthrop & Liberty Bell',
+        location: 'SR 20 Washington Pass Summit (5,477 ft) — North Cascades',
+        source: 'WSDOT',
+        updateIntervalMs: 120000,
+        officialUrl: 'https://wsdot.wa.gov/travel/roads-bridges/mountain-passes/north-cascades-highway'
+      },
+      {
+        id: 'nc-cam-2',
+        title: 'Rainy Pass Webcam — SR 20 Corridor (MP 157)',
+        image: 'https://images.wsdot.wa.gov/sc/020VC15700.jpg',
+        milepost: 'MP 157',
+        direction: 'Westbound toward Marblemount',
+        location: 'SR 20 Rainy Pass Area (4,875 ft) — Pacific Crest Trail Crossing',
+        source: 'WSDOT',
+        updateIntervalMs: 120000,
+        officialUrl: 'https://wsdot.wa.gov/travel/roads-bridges/mountain-passes/north-cascades-highway'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'stevens-pass',
+        slug: 'stevens-pass',
+        name: 'Stevens Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'US-2',
+        status: 'OPEN',
+        elevationFt: 4061,
+        lastUpdated: '10 min ago',
+        distanceKm: 145
+      },
+      {
+        id: 'snoqualmie-pass',
+        slug: 'snoqualmie-pass',
+        name: 'Snoqualmie Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'I-90',
+        status: 'OPEN',
+        elevationFt: 3022,
+        lastUpdated: '5 min ago',
+        distanceKm: 210
+      },
+      {
+        id: 'blewett-pass',
+        slug: 'blewett-pass',
+        name: 'Blewett Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'US-97',
+        status: 'OPEN',
+        elevationFt: 4102,
+        lastUpdated: '15 min ago',
+        distanceKm: 180
+      },
+      {
+        id: 'chinook-pass',
+        slug: 'chinook-pass',
+        name: 'Chinook Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'SR 410',
+        status: 'OPEN',
+        elevationFt: 5430,
+        lastUpdated: '12 min ago',
+        distanceKm: 250
+      },
+      {
+        id: 'cayuse-pass',
+        slug: 'cayuse-pass',
+        name: 'Cayuse Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'SR 123',
+        status: 'OPEN',
+        elevationFt: 4694,
+        lastUpdated: '12 min ago',
+        distanceKm: 260
+      }
+    ],
+    overview: {
+      openedYear: 1972,
+      lengthMiles: 75,
+      lengthKm: 120,
+      annualSnowfallIn: 480,
+      annualSnowfallM: 12.2,
+      summary: 'The North Cascades Highway (SR 20) is one of America’s premier mountain scenic byways and the northernmost highway crossing of the Cascade Range in Washington State. Opened in 1972 after decades of construction, the highway traverses rugged alpine peaks, dramatic granite towers like Liberty Bell Mountain, and vast pristine wilderness bordering North Cascades National Park. Reaching its highest elevation at Washington Pass (5,477 ft / 1,669 m), the road is subject to extreme winter snowfall and over 30 active avalanche paths. As a result, WSDOT closes the pass each winter between November and May, deploying heavy plow equipment each spring for clearance.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'Mid-to-late November',
+      typicalReopening: 'Early-to-mid May',
+      description: 'The North Cascades Highway (SR 20) shuts down annually for the winter season when heavy snow accumulation and high avalanche hazard make high-altitude plowing unsafe. The winter closure gate is typically set between Milepost 134 (Ross Dam trailhead) on the west side and Milepost 171 (Silver Star gate) on the east side. WSDOT spring clearing operations typically begin in late March or April, with snow depths at Washington Pass often exceeding 20 feet.'
+    },
+    forecast: [
+      { day: 'Today', condition: 'Partly Cloudy', tempHighF: 60, tempLowF: 42, icon: 'cloud-sun' },
+      { day: 'Tomorrow', condition: 'Sunny & Clear', tempHighF: 64, tempLowF: 44, icon: 'sun' },
+      { day: 'Day 3', condition: 'Scattered High Clouds', tempHighF: 61, tempLowF: 41, icon: 'cloud' },
+      { day: 'Day 4', condition: 'Mostly Sunny', tempHighF: 65, tempLowF: 45, icon: 'sun' },
+      { day: 'Day 5', condition: 'Mild Mountain Breeze', tempHighF: 67, tempLowF: 47, icon: 'wind' }
+    ],
+    openingDateInfo: {
+      year: 2026,
+      statusText: 'Currently Open — Seasonal summer operations in effect',
+      expectedOpeningWindow: 'Early to Mid-May (typical target)',
+      closingWindow: 'Mid-to-late November (first major winter storm)',
+      clearanceAgency: 'Washington State Department of Transportation (WSDOT Area 2 & Avalanche Team)',
+      notes: 'WSDOT determines opening and closing dates dynamically based on snowpack, avalanche risk, rockslide hazards, and road damage assessments. The median reopening date since 1972 is May 12. In 2026, WSDOT conducted extensive spring clearing and rockslide mitigation near Washington Pass before opening the corridor for normal travel.'
+    },
+    dataSources: [
+      { name: 'Washington State Department of Transportation (WSDOT)', type: 'SR 20 North Cascades Highway Status & Mountain Passes', url: 'https://wsdot.wa.gov/travel/roads-bridges/mountain-passes/north-cascades-highway' },
+      { name: 'WSDOT Traffic Webcams', type: 'Live SR 20 Washington Pass & Rainy Pass Cameras', url: 'https://images.wsdot.wa.gov' },
+      { name: 'National Park Service (NPS)', type: 'North Cascades National Park Road & Trail Alerts', url: 'https://www.nps.gov/noca/index.htm' },
+      { name: 'NOAA / National Weather Service (NWS Seattle)', type: 'High-Elevation Mountain Pass Weather & Forecast', url: 'https://www.weather.gov/sew/' }
+    ],
+    quickFacts: {
+      state: 'Washington, United States',
+      mountainRange: 'North Cascades Range (Northern Washington Cascades)',
+      elevationSummary: '5,477 ft / 1,669 m at Washington Pass Summit (Rainy Pass: 4,875 ft)',
+      connects: 'Sedro-Woolley & Marblemount (Skagit Valley) with Winthrop & Twisp (Methow Valley)',
+      nearestTown: 'Winthrop (30 mi east via SR 20) • Marblemount (45 mi west via SR 20)',
+      roadType: 'Washington State Route 20 (SR 20) — Two-lane scenic mountain highway',
+      bestTime: 'May through October (closed during winter months November to May)',
+      highlight: 'Washington Pass Overlook with iconic view of Liberty Bell Mountain (7,720 ft) and Early Winters Spires.'
+    },
+    routeDetails: {
+      distanceKm: 120,
+      distanceMiles: 75,
+      duration: '1 hr 30 min (Marblemount to Winthrop)',
+      origin: 'Marblemount, WA (SR 20 West Gate — Skagit County)',
+      destination: 'Winthrop, WA (Methow Valley — Okanogan County)',
+      waypoints: [
+        'Marblemount, WA — Western entrance, last major fuel and services before pass',
+        'Newhalem / Diablo Lake — Seattle City Light hydro facilities, scenic overlook',
+        'Ross Lake Overlook — High-elevation view of Ross Lake and Picket Range',
+        'Rainy Pass (4,875 ft) — Pacific Crest Trail (PCT) crossing, Lake Ann trailhead',
+        'Washington Pass Summit (5,477 ft) — High point of SR 20, Liberty Bell Mountain overlook',
+        'Winthrop, WA — Historic western town, eastern end of North Cascades Highway corridor'
+      ]
+    },
+    distancesTable: [
+      { location: 'Winthrop, WA', distance: '30 mi / 48 km', route: 'SR 20 East', notes: 'Eastern gateway town — food, fuel, western-themed downtown' },
+      { location: 'Marblemount, WA', distance: '45 mi / 72 km', route: 'SR 20 West', notes: 'Western gateway town — last services on west side' },
+      { location: 'Sedro-Woolley, WA', distance: '90 mi / 145 km', route: 'SR 20 West', notes: 'Major Skagit Valley town connecting to I-5' },
+      { location: 'Seattle, WA', distance: '165 mi / 265 km', route: 'I-5 North to SR 20 East', notes: 'Approx. 3 hr 15 min drive via Burlington' },
+      { location: 'Bellingham, WA', distance: '115 mi / 185 km', route: 'I-5 South to SR 20 East', notes: 'Approx. 2 hr 15 min drive via Skagit Valley' },
+      { location: 'Twisp, WA', distance: '39 mi / 63 km', route: 'SR 20 East', notes: 'Methow Valley commercial hub' }
+    ],
+    narrativeSections: [
+      {
+        title: 'Where Is North Cascades Pass / North Cascades Highway?',
+        content: 'The North Cascades Pass corridor is officially known as the North Cascades Highway (Washington State Route 20 / SR 20). Traversing the rugged northern Cascades of Washington State, it connects Skagit County in the west (Sedro-Woolley and Marblemount) with Okanogan County in the east (Winthrop and Twisp). The road reaches its highest point at Washington Pass (5,477 ft / 1,669 m), with nearby Rainy Pass standing at 4,875 ft. GPS coordinates for Washington Pass summit: 48.5241° N, 120.6547° W.'
+      },
+      {
+        title: 'North Cascades Pass Elevation & Washington Pass High Point',
+        content: 'While travelers often search for "North Cascades Pass elevation", the official highest geographic pass on SR 20 is Washington Pass, which reaches an elevation of 5,477 feet (1,669 meters) above sea level according to National Park Service and WSDOT records. Nearby Rainy Pass reaches 4,875 feet (1,486 m). Sitting under the towering granite walls of Liberty Bell Mountain (7,720 ft) and the Early Winters Spires, Washington Pass is the highest paved mountain pass on SR 20 and one of the highest in the Pacific Northwest.'
+      },
+      {
+        title: 'State Route 20 (SR 20) Highway Overview',
+        content: 'Washington State Route 20 (SR 20) is the longest highway in Washington, spanning over 430 miles from Discovery Bay on the Olympic Peninsula to the Idaho state line. The 75-mile stretch through the North Cascades — designated as the North Cascades Highway — opened to vehicle traffic in September 1972. It is recognized nationally as a National Scenic Byway, passing through old-growth forests, turquoise glacial reservoir lakes (Diablo Lake and Ross Lake), and dramatic alpine mountain pass terrain.'
+      },
+      {
+        title: 'How to Get to North Cascades Pass',
+        content: 'From the West (Seattle / Bellingham / I-5): Take I-5 to Exit 232 (Burlington / Sedro-Woolley). Head east on SR 20 through Sedro-Woolley, Concrete, and Marblemount. The highway begins its steep mountain climb after Marblemount, passing Diablo Lake, Rainy Pass, and ascending to Washington Pass summit. From the East (Winthrop / Spokane / Central WA): Take SR 20 west from Winthrop into the Methow Valley. The road climbs past Silver Star Mountain before ascending to Washington Pass. Always verify current road open/closed status before departure.'
+      },
+      {
+        title: 'North Cascades Pass Opening & Closing Dates — Historical WSDOT Record',
+        content: 'Because SR 20 crosses over 30 severe avalanche paths near Washington Pass, WSDOT closes the highway every winter for crew and motorist safety. The median reopening date over 50+ years of WSDOT record-keeping is May 12. The earliest recorded opening was March 10, 2005, while the latest was June 14, 1974. Recent seasonal opening and closing dates:\n\n• 2025: Opened May 9 | Closed November 12\n• 2024: Opened May 17 | Closed November 20\n• 2023: Opened May 24 | Closed November 17\n• 2022: Opened May 10 | Closed November 8\n• 2021: Opened May 5 | Closed November 10\n• 2020: Opened May 12 | Closed November 13\n• 2019: Opened May 18 | Closed November 29\n\nDuring spring clearing, WSDOT snowplow crews use snowblowers and excavators to clear snow drifts that often exceed 20 to 30 feet at Washington Pass.'
+      },
+      {
+        title: 'North Cascades Pass Chain Requirements & Winter Driving',
+        content: 'During the open season (May through November), chain restrictions are rarely posted on SR 20. However, high-elevation weather in the North Cascades can deteriorate rapidly in spring and autumn. When WSDOT posts traction or chain requirements during shoulder-season snow storms, all-season or winter tires (marked with M+S or 3-Peak Mountain Snowflake) are mandatory for passenger cars, and commercial vehicles must carry chains. During the winter closure period (typically mid-November to May), the highway is gated and closed to all motor vehicles between Marblemount and Mazama.'
+      }
+    ],
+    customSeo: {
+      title: 'North Cascades Pass Road Conditions, Open/Closed Status & Webcams | SR 20',
+      description: 'Check live North Cascades Pass / Highway (SR 20) road conditions, open/closed status, WSDOT webcams, weather, snow depth, opening dates, elevation, and map for Washington Pass.',
+      h1: 'North Cascades Pass Road Conditions, Open/Closed Status & Live Webcams'
+    },
+    searchKeywords: [
+      'north cascades pass opening date',
+      'north cascades pass is open',
+      'north cascades pass road conditions',
+      'north cascades pass road status',
+      'north cascades pass pass status report',
+      'when does north cascades pass open',
+      'north cascades pass closed',
+      'north cascades pass is closed',
+      'north cascades pass is it open today',
+      'is north cascades pass closed today',
+      'north cascades pass webcam',
+      'north cascades pass live webcam',
+      'north cascades pass cameras',
+      'north cascades pass summit camera',
+      'is north cascades pass open right now',
+      'north cascades pass map',
+      'north cascades pass weather today',
+      'north cascades pass snow',
+      'north cascades pass snow depth',
+      'north cascades pass snow conditions',
+      'north cascades pass elevation',
+      'north cascades pass open',
+      'north cascades pass when will open',
+      'north cascades pass passes open',
+      'north cascades pass closing date',
+      'north cascades pass weather',
+      'north cascades pass directions',
+      'north cascades pass forecast',
+      'north cascades pass chain requirements',
+      'north cascades pass traction tires',
+      'north cascades pass highway',
+      'north cascades highway road conditions',
+      'sr 20 road conditions',
+      'washington pass webcam',
+      'wsdot north cascades highway'
+    ],
+    aliases: ['SR 20 North Cascades Highway', 'Washington Pass', 'Rainy Pass SR 20', 'North Cascades Highway Pass', 'Highway 20 Winter Closure'],
+    faqs: [
+      {
+        question: 'Is North Cascades Pass open right now?',
+        answer: 'North Cascades Pass (SR 20 / Washington Pass) is currently OPEN. The live status card at the top of this page displays real-time data from WSDOT. The highway is open seasonally from spring through late autumn. Because weather in the North Cascades can change quickly, check live road status before traveling.'
+      },
+      {
+        question: 'Is North Cascades Pass open today?',
+        answer: 'Yes, North Cascades Pass (SR 20) is open for normal travel today. Current travel restrictions, weather updates, and live summit webcams are available in the status cards above.'
+      },
+      {
+        question: 'What are the current North Cascades Pass road conditions?',
+        answer: 'Current road conditions show bare and dry pavement across Washington Pass and Rainy Pass on SR 20, with no chain restrictions or lane closures. Refer to the Road Conditions section above for live WSDOT updates.'
+      },
+      {
+        question: 'When does North Cascades Pass open?',
+        answer: 'North Cascades Pass typically reopens in early-to-mid May. WSDOT plowing crews begin clearing operations in late March or April. The median opening date since 1972 is May 12, though exact opening depends on snowpack depth and avalanche clearing.'
+      },
+      {
+        question: 'What is the North Cascades Pass opening date?',
+        answer: 'Historical opening dates for the North Cascades Highway (SR 20) have ranged from March 10 (2005) to June 14 (1974). Recent opening dates: 2025 opened May 9, 2024 opened May 17, 2023 opened May 24, 2022 opened May 10.'
+      },
+      {
+        question: 'When does North Cascades Pass close for winter?',
+        answer: 'North Cascades Pass typically closes for winter in mid-to-late November following the first major heavy mountain snowfall. Recent closing dates: 2025 closed Nov 12, 2024 closed Nov 20, 2023 closed Nov 17.'
+      },
+      {
+        question: 'Is there a North Cascades Pass webcam?',
+        answer: 'Yes! WSDOT operates live traffic cameras on SR 20 at Washington Pass Summit (MP 163) and Rainy Pass (MP 157). You can view live camera feeds directly in the Live Webcams section on this page.'
+      },
+      {
+        question: 'Where can I see the North Cascades Pass live webcam?',
+        answer: 'You can view the live WSDOT Washington Pass camera on this page in the Live Webcams section above. The feed refreshes every 2 minutes with current pavement, visibility, and weather images.'
+      },
+      {
+        question: 'What is the elevation of North Cascades Pass?',
+        answer: 'The official summit high point of the North Cascades Highway (SR 20) is Washington Pass at an elevation of 5,477 feet (1,669 meters) above sea level. Nearby Rainy Pass reaches 4,875 feet (1,486 m).'
+      },
+      {
+        question: 'Where is North Cascades Pass?',
+        answer: 'North Cascades Pass (SR 20) is located in northern Washington State, connecting Skagit County (Marblemount/Sedro-Woolley) in the west with Okanogan County (Winthrop/Twisp) in the east, passing through the North Cascades mountain range.'
+      },
+      {
+        question: 'What highway is North Cascades Pass on?',
+        answer: 'North Cascades Pass is on Washington State Route 20 (SR 20), also known as the North Cascades Highway and designated as a National Scenic Byway.'
+      },
+      {
+        question: 'What are the snow conditions at North Cascades Pass?',
+        answer: 'During summer months, pavement across Washington Pass is clear and bare. During winter closure (November to May), snow depths at Washington Pass summit frequently exceed 20 to 30 feet due to heavy Cascade snowfall.'
+      },
+      {
+        question: 'Does North Cascades Pass require chains?',
+        answer: 'No chain requirements are currently in effect on SR 20. During spring and autumn shoulder season snowstorms, WSDOT may post traction tire or chain requirements for mountain passes.'
+      },
+      {
+        question: 'What is the weather at North Cascades Pass today?',
+        answer: 'Current high-elevation weather at Washington Pass summit (5,477 ft) is displayed in the Weather section above, including temperature, wind speed, conditions, and a 5-day forecast.'
+      },
+      {
+        question: 'Is North Cascades Pass closed today?',
+        answer: 'No, North Cascades Pass (SR 20) is currently OPEN for normal travel. If winter closure or emergency restrictions occur, the Live Status card above will update immediately with official WSDOT alerts.'
+      }
+    ],
+    isPopular: true
+  },
+  {
     id: 'zoji-la',
     slug: 'zoji-la',
     name: 'Zoji La Pass (NH-1)',

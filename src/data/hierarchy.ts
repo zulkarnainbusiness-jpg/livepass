@@ -97,6 +97,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 image: '/cayuse-pass.jpg'
               },
               {
+                id: 'north-cascades-pass',
+                slug: 'north-cascades-pass',
+                name: 'North Cascades Pass',
+                highway: 'SR 20',
+                elevationFt: 5477,
+                elevationM: 1669,
+                status: 'OPEN',
+                image: '/north-cascades-pass.jpg'
+              },
+              {
                 id: 'white-pass',
                 slug: 'white-pass',
                 name: 'White Pass',
