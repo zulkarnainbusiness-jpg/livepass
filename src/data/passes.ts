@@ -1806,6 +1806,331 @@ export const passesData: MountainPass[] = [
     isPopular: true
   },
   {
+    id: 'sherman-pass',
+    slug: 'sherman-pass',
+    name: 'Sherman Pass',
+    country: 'United States',
+    countryCode: 'USA',
+    continent: 'North America',
+    state: 'Washington',
+    highway: 'SR 20 (Sherman Pass Highway)',
+    elevationFt: 5577,
+    elevationM: 1700,
+    coordinates: { lat: 48.6042, lng: -118.4772 },
+    status: 'OPEN',
+    statusDetail: 'SR 20 Sherman Pass open to all traffic — Year-round corridor across Kettle River Range (5,577 ft). Road clear. No traction requirements.',
+    lastUpdated: '5 minutes ago',
+    description: 'Sherman Pass is a high mountain pass on Washington State Route 20 (SR 20) crossing the Kettle River Range in northeastern Washington State. At an elevation of 5,577 feet (1,700 m), it is officially the highest mountain pass in the state of Washington maintained by WSDOT year-round. Located between Republic in Ferry County and Kettle Falls in Stevens County, Sherman Pass serves as a critical east-west transportation link across Colville National Forest. Unlike the seasonal winter closure on SR 20 in the North Cascades 150 miles to the west, WSDOT maintains Sherman Pass 365 days a year with active snowplowing, sanding, and avalanche monitoring.',
+    image: '/sherman-pass.jpg',
+    weather: {
+      tempF: 56,
+      tempC: 13,
+      condition: 'Partly Cloudy',
+      icon: 'cloud-sun'
+    },
+    snowDepth: {
+      depthCm: 0,
+      depthIn: 0,
+      condition: 'Bare & Dry Pavement'
+    },
+    wind: {
+      speedKmh: 12,
+      speedMph: 8,
+      direction: 'SW',
+      description: 'Light Breeze'
+    },
+    roadCondition: 'Pavement bare and dry throughout the SR 20 corridor across Sherman Pass summit (MP 319.5). No traction requirements, chain restrictions, or lane closures in effect. WSDOT maintains active year-round patrols across the summit.',
+    chainRequirement: 'No current traction requirements for passenger or commercial vehicles. During severe winter storms, WSDOT posts mandatory traction tire or chain requirements for all vehicles crossing the 5,577-foot summit.',
+    cameras: [
+      {
+        id: 'sherman-cam-1',
+        title: 'Sherman Pass Summit Webcam — SR 20 (MP 319.5)',
+        image: 'https://images.wsdot.wa.gov/sc/020VC31950.jpg',
+        milepost: 'MP 319.5',
+        direction: 'Eastbound toward Kettle Falls',
+        location: 'SR 20 Sherman Pass Summit (5,577 ft) — Kettle River Range',
+        source: 'WSDOT',
+        updateIntervalMs: 120000,
+        officialUrl: 'https://wsdot.wa.gov/travel/roads-bridges/mountain-passes/sherman-pass'
+      },
+      {
+        id: 'sherman-cam-2',
+        title: 'Sherman Pass West Approach — SR 20 (MP 315)',
+        image: 'https://images.wsdot.wa.gov/sc/020VC31500.jpg',
+        milepost: 'MP 315',
+        direction: 'Westbound toward Republic',
+        location: 'SR 20 Sherman Pass West Slope — Colville National Forest',
+        source: 'WSDOT',
+        updateIntervalMs: 120000,
+        officialUrl: 'https://wsdot.wa.gov/travel/roads-bridges/mountain-passes/sherman-pass'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'north-cascades-pass',
+        slug: 'north-cascades-pass',
+        name: 'North Cascades Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'SR 20',
+        status: 'OPEN',
+        elevationFt: 5477,
+        lastUpdated: '8 min ago',
+        distanceKm: 240
+      },
+      {
+        id: 'blewett-pass',
+        slug: 'blewett-pass',
+        name: 'Blewett Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'US-97',
+        status: 'OPEN',
+        elevationFt: 4102,
+        lastUpdated: '15 min ago',
+        distanceKm: 280
+      },
+      {
+        id: 'stevens-pass',
+        slug: 'stevens-pass',
+        name: 'Stevens Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'US-2',
+        status: 'OPEN',
+        elevationFt: 4061,
+        lastUpdated: '10 min ago',
+        distanceKm: 310
+      },
+      {
+        id: 'snoqualmie-pass',
+        slug: 'snoqualmie-pass',
+        name: 'Snoqualmie Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'I-90',
+        status: 'OPEN',
+        elevationFt: 3022,
+        lastUpdated: '5 min ago',
+        distanceKm: 360
+      }
+    ],
+    overview: {
+      openedYear: 1936,
+      lengthMiles: 40,
+      lengthKm: 64,
+      annualSnowfallIn: 250,
+      annualSnowfallM: 6.3,
+      summary: 'Sherman Pass (elevation 5,577 ft / 1,700 m) is a major mountain pass on State Route 20 (SR 20) crossing the Kettle River Range in northeastern Washington State. It is the highest maintained highway pass in Washington state open to year-round vehicular traffic. Connecting Republic in Ferry County to Kettle Falls and Colville in Stevens County, the pass winds through Colville National Forest and the historic 1988 White Mountain Fire burn area. Named after Civil War General William Tecumseh Sherman, who traveled the trail in 1883, the pass features the Sherman Pass Scenic Byway, the Sherman Overlook, and access to the Kettle Crest National Recreation Trail.'
+    },
+    isSeasonal: false,
+    seasonalClosureInfo: {
+      typicalClosure: 'Year-Round Pass (Open 365 Days)',
+      typicalReopening: 'Open Year-Round (Subject to temporary winter storm delays)',
+      description: 'Unlike the seasonal winter closure on SR 20 in the North Cascades, Sherman Pass is maintained year-round by WSDOT crews. While the pass remains open throughout the winter, heavy snowfall, ice, or high winds across the 5,577-foot summit can cause temporary delays, mandatory chain requirements, or brief closures for snow clearing and avalanche mitigation.'
+    },
+    forecast: [
+      { day: 'Today', condition: 'Partly Cloudy', tempHighF: 58, tempLowF: 39, icon: 'cloud-sun' },
+      { day: 'Tomorrow', condition: 'Sunny & Clear', tempHighF: 62, tempLowF: 41, icon: 'sun' },
+      { day: 'Day 3', condition: 'Mostly Sunny', tempHighF: 60, tempLowF: 40, icon: 'sun' },
+      { day: 'Day 4', condition: 'Scattered Clouds', tempHighF: 63, tempLowF: 42, icon: 'cloud' },
+      { day: 'Day 5', condition: 'Mild Mountain Breeze', tempHighF: 65, tempLowF: 44, icon: 'wind' }
+    ],
+    openingDateInfo: {
+      year: 2026,
+      statusText: 'Year-Round Pass — Open 365 days a year (weather permitting)',
+      expectedOpeningWindow: 'Open Year-Round',
+      closingWindow: 'Open Year-Round (Temporary storm closures only)',
+      clearanceAgency: 'Washington State Department of Transportation (WSDOT Eastern Region)',
+      notes: 'Sherman Pass (SR 20) is operated as an all-season mountain pass. WSDOT keeps winter plows, graders, and sanders stationed near the summit. Temporary closures lasting several hours to a day may occur during extreme winter blizzards or downed tree clearances.'
+    },
+    dataSources: [
+      { name: 'Washington State Department of Transportation (WSDOT)', type: 'SR 20 Sherman Pass Road Conditions & Mountain Passes', url: 'https://wsdot.wa.gov/travel/roads-bridges/mountain-passes/sherman-pass' },
+      { name: 'WSDOT Traffic Cameras', type: 'Live SR 20 Sherman Pass Summit Cameras', url: 'https://images.wsdot.wa.gov' },
+      { name: 'U.S. Forest Service (USFS)', type: 'Colville National Forest & Sherman Pass Trailhead Alerts', url: 'https://www.fs.usda.gov/colville' },
+      { name: 'NOAA / National Weather Service (NWS Spokane)', type: 'High-Elevation Mountain Pass Weather & Forecast', url: 'https://www.weather.gov/otx/' }
+    ],
+    quickFacts: {
+      state: 'Washington, United States',
+      mountainRange: 'Kettle River Range (Colville National Forest / Okanogan-Wenatchee Region)',
+      elevationSummary: '5,577 ft / 1,700 m above sea level — Highest year-round pass in Washington State',
+      connects: 'Republic & Ferry County (west) with Kettle Falls & Stevens County (east) on SR 20',
+      nearestTown: 'Republic (20 mi west via SR 20) • Kettle Falls (26 mi east via SR 20) • Colville (35 mi east)',
+      roadType: 'Washington State Route 20 (SR 20) — Two-lane paved scenic mountain highway (year-round)',
+      bestTime: 'Year-Round (Summer for hiking & scenic views; Winter for snow sports with traction tires)',
+      highlight: 'Highest paved mountain pass kept open year-round in Washington; access to Kettle Crest National Recreation Trail.'
+    },
+    routeDetails: {
+      distanceKm: 64,
+      distanceMiles: 40,
+      duration: '45 – 60 min (Republic to Kettle Falls via SR 20)',
+      origin: 'Republic, WA — Ferry County Seat (Elevation: 2,569 ft)',
+      destination: 'Kettle Falls, WA — Stevens County (Elevation: 1,631 ft)',
+      waypoints: [
+        'Republic, WA (US-21 & SR 20 Junction) — Western gateway, fuel and lodging',
+        'Wauconda Pass / Omak Highway Junction — Access west toward Okanogan Valley',
+        'Sherman Pass Summit (5,577 ft) — High point, WSDOT weather station and webcam',
+        'Sherman Overlook & Kettle Crest Trailhead — Scenic view of White Mountain Fire area',
+        'Sherman Creek Pass / Inchelium Road Junction — Descent into Columbia River Valley',
+        'Kettle Falls, WA — Eastern gateway, US-395 junction near Lake Roosevelt'
+      ]
+    },
+    distancesTable: [
+      { location: 'Republic, WA', distance: '20 mi / 32 km', route: 'SR 20 West', notes: 'Nearest town to the west — fuel, dining, museum' },
+      { location: 'Kettle Falls, WA', distance: '26 mi / 42 km', route: 'SR 20 East', notes: 'Nearest town to the east — US-395 junction' },
+      { location: 'Colville, WA', distance: '35 mi / 56 km', route: 'SR 20 East to US-395 South', notes: 'Major regional commercial hub' },
+      { location: 'Spokane, WA', distance: '105 mi / 169 km', route: 'US-395 South then I-90', notes: 'Approx. 2 hr drive from pass summit' },
+      { location: 'Omak / Okanogan, WA', distance: '65 mi / 105 km', route: 'SR 20 West', notes: 'Access via Wauconda Pass' },
+      { location: 'Grand Coulee, WA', distance: '70 mi / 112 km', route: 'SR 21 South', notes: 'Access via Republic & SR 21' }
+    ],
+    narrativeSections: [
+      {
+        title: 'Where Is Sherman Pass & SR 20?',
+        content: 'Sherman Pass is located on Washington State Route 20 (SR 20) in northeastern Washington State, spanning the high crest of the Kettle River Range within Colville National Forest. The pass forms the boundary line between Ferry County on the west (nearest town Republic, 20 miles) and Stevens County on the east (nearest town Kettle Falls, 26 miles). Traversing lush lodgepole pine and Douglas fir forest, the pass summit sits at GPS coordinates 48.6042° N, 118.4772° W.'
+      },
+      {
+        title: 'Sherman Pass Elevation — Washington\'s Highest Year-Round Pass',
+        content: 'Reaching a summit elevation of 5,577 feet (1,700 meters) above sea level, Sherman Pass holds the official distinction of being the highest paved mountain pass in the state of Washington maintained by WSDOT for year-round vehicular travel. While nearby Chinook Pass (5,430 ft) and Washington Pass (5,477 ft) reach similar altitudes, both are forced to close every winter due to extreme avalanche hazards. Sherman Pass, by contrast, is kept open 365 days a year through active WSDOT winter plowing and sanding operations.'
+      },
+      {
+        title: 'State Route 20 (SR 20) Sherman Pass Highway Overview',
+        content: 'Washington State Route 20 (SR 20) carries the Sherman Pass Scenic Byway across the Kettle River Range. The highway climbs at sustained 6% gradients from both sides, ascending through scenic mountain terrain marked by the regenerating forest of the historic 1988 White Mountain Fire. At the summit, travelers can access the Kettle Crest National Recreation Trail, picnic facilities, and the Sherman Pass Overlook offering panoramic vistas across the Okanogan Highlands and Columbia River Basin.'
+      },
+      {
+        title: 'How to Get to Sherman Pass',
+        content: 'From the West (Republic / Omak / Okanogan): Follow SR 20 east out of Republic into Colville National Forest. The road climbs steadily for 20 miles to the 5,577-foot summit. From the East (Spokane / Colville / Kettle Falls): Take US-395 north to Kettle Falls, then turn west onto SR 20. Climb west through Sherman Creek Canyon for 26 miles to reach the pass summit. From the South (Grand Coulee Dam): Take SR 21 north to Republic, then turn east onto SR 20. Always check live road status and traction advisories before departing in winter.'
+      },
+      {
+        title: 'Sherman Pass Winter Operations & Seasonal Status',
+        content: 'Unlike the seasonal winter closure on SR 20 in the North Cascades 150 miles to the west, WSDOT operates Sherman Pass as a year-round highway pass. WSDOT Eastern Region maintenance crews keep plows and sanders stationed along the SR 20 corridor throughout winter. While the pass remains open 365 days a year under normal conditions, severe winter blizzards, heavy snow drifts, freezing rain, or avalanche clearing operations can cause temporary travel advisories, chain requirements, or short-duration closures lasting several hours.'
+      },
+      {
+        title: 'Sherman Pass Chain Requirements & Traction Guidelines',
+        content: 'During winter months (November through April), weather conditions at the 5,577-foot summit change rapidly. WSDOT frequently posts traction tire advisories or mandatory chain requirements during mountain snow storms. When traction tire requirements are active, passenger cars must have approved all-season or winter tires (M+S or 3-Peak Mountain Snowflake), and commercial vehicles must carry chains. When "Chains Required" is posted, all vehicles without AWD/4WD must install tire chains to cross the pass.'
+      }
+    ],
+    customSeo: {
+      title: 'Sherman Pass Road Conditions, Opening Date & Live Webcam | SR 20',
+      description: 'Check Sherman Pass road conditions, current open/closed status, opening dates, live webcams, weather, snow and travel alerts before driving.',
+      h1: 'Sherman Pass Road Conditions, Open/Closed Status & Live Webcams'
+    },
+    searchKeywords: [
+      'sherman pass',
+      'sherman pass road conditions',
+      'sherman pass opening date',
+      'sherman pass is open',
+      'when does sherman pass open',
+      'sherman pass closed',
+      'sherman pass is closed',
+      'sherman pass is it open today',
+      'is sherman pass closed today',
+      'is sherman pass open right now',
+      'sherman pass open',
+      'sherman pass when will open',
+      'sherman pass passes open',
+      'is sherman pass open',
+      'is sherman pass open in winter',
+      'sherman pass closures today',
+      'when does sherman pass close for winter',
+      'sherman pass closing date',
+      'sherman pass road status',
+      'sherman pass pass status report',
+      'sherman pass chain requirements',
+      'sherman pass traction tires',
+      'sherman pass milepost',
+      'how to get to sherman pass',
+      'sherman pass webcam',
+      'sherman pass live webcam',
+      'sherman pass cameras',
+      'sherman pass summit camera',
+      'sherman pass weather today',
+      'sherman pass weather',
+      'sherman pass snow',
+      'sherman pass snow depth',
+      'sherman pass snow conditions',
+      'sherman pass forecast',
+      'sherman pass map',
+      'sherman pass elevation',
+      'sherman pass directions',
+      'sherman pass highway',
+      'sherman pass location',
+      'sr 20 sherman pass',
+      'wsdot sherman pass'
+    ],
+    aliases: ['SR 20 Sherman Pass', 'Sherman Pass SR 20', 'Sherman Pass Summit', 'Kettle River Range Pass', 'Sherman Pass Highway'],
+    faqs: [
+      {
+        question: 'Is Sherman Pass open right now?',
+        answer: 'Sherman Pass (SR 20) is currently OPEN. The live status card at the top of this page displays real-time data from WSDOT. Sherman Pass is maintained year-round by WSDOT plows. Always verify live road conditions and traction advisories before departing during winter weather.'
+      },
+      {
+        question: 'Is Sherman Pass open today?',
+        answer: 'Yes, Sherman Pass is open today. WSDOT maintains Sherman Pass 365 days a year. Check the live status card above for today\'s verified road condition, temperature, and any active travel advisories.'
+      },
+      {
+        question: 'What are the current Sherman Pass road conditions?',
+        answer: 'Current road conditions show bare and dry pavement across the 5,577-foot summit on SR 20 with no chain restrictions in effect. Check the Road Conditions section above for live WSDOT updates.'
+      },
+      {
+        question: 'What is the Sherman Pass road status?',
+        answer: 'The current Sherman Pass road status is OPEN with no active travel restrictions. Refer to the status card above for updated WSDOT travel reports.'
+      },
+      {
+        question: 'When does Sherman Pass open?',
+        answer: 'Sherman Pass is a year-round pass and remains open 365 days a year under normal operations. Unlike the North Cascades Highway segment of SR 20, WSDOT plows Sherman Pass throughout the winter.'
+      },
+      {
+        question: 'What is the Sherman Pass opening date?',
+        answer: 'Sherman Pass does not have a seasonal spring opening date because it is kept open year-round by WSDOT maintenance crews. If temporary closures occur during major winter storms, the pass typically reopens within hours after snow plowing.'
+      },
+      {
+        question: 'When does Sherman Pass close for winter?',
+        answer: 'Sherman Pass does NOT close for the entire winter season. It is maintained year-round by WSDOT. Temporary short-duration closures may occur during extreme blizzards or avalanche clearing.'
+      },
+      {
+        question: 'Is Sherman Pass closed today?',
+        answer: 'No, Sherman Pass is OPEN today for normal vehicular travel. If a temporary storm closure occurs, the status card at the top of this page will update immediately.'
+      },
+      {
+        question: 'Does Sherman Pass have a live webcam?',
+        answer: 'Yes! WSDOT operates live traffic cameras on SR 20 at the Sherman Pass Summit (MP 319.5) and West Slope approach (MP 315). You can view live camera feeds in the Live Webcam section on this page.'
+      },
+      {
+        question: 'Where can I see the Sherman Pass webcam?',
+        answer: 'You can view the live WSDOT Sherman Pass camera on this page under the "Sherman Pass Webcam" section. The camera image updates every 2 minutes with real-time pavement and weather conditions.'
+      },
+      {
+        question: 'What are the Sherman Pass snow conditions?',
+        answer: 'During summer months, road surface across Sherman Pass is bare and dry. During winter months, WSDOT plows and sands the highway regularly; snow and slush can accumulate during active winter storms.'
+      },
+      {
+        question: 'What is the Sherman Pass snow depth?',
+        answer: 'Current snow depth on the road surface is bare and dry. High-elevation snow accumulation in the surrounding Kettle River Range peak area ranges from 0 inches in summer to over 100 inches during peak winter.'
+      },
+      {
+        question: 'What is the Sherman Pass elevation?',
+        answer: 'Sherman Pass reaches a summit elevation of 5,577 feet (1,700 meters) above sea level. It is officially the highest mountain pass in Washington State maintained by WSDOT year-round.'
+      },
+      {
+        question: 'Where is Sherman Pass?',
+        answer: 'Sherman Pass is located on SR 20 in northeastern Washington State, spanning the Kettle River Range in Colville National Forest between Republic (Ferry County) and Kettle Falls (Stevens County).'
+      },
+      {
+        question: 'What highway is Sherman Pass on?',
+        answer: 'Sherman Pass is on Washington State Route 20 (SR 20), designated as the Sherman Pass Scenic Byway.'
+      },
+      {
+        question: 'Does Sherman Pass require chains?',
+        answer: 'No chain requirements are currently in effect on Sherman Pass. During winter snowstorms, WSDOT may post mandatory traction tire or chain requirements for all vehicles crossing the 5,577-foot summit.'
+      },
+      {
+        question: 'What are the Sherman Pass traction requirements?',
+        answer: 'Traction tire requirements are currently clear. When winter storms hit, WSDOT posts advisories requiring approved winter/all-season tires (M+S or 3-Peak symbol) or tire chains for non-AWD vehicles.'
+      }
+    ],
+    isPopular: true
+  },
+  {
     id: 'zoji-la',
     slug: 'zoji-la',
     name: 'Zoji La Pass (NH-1)',
