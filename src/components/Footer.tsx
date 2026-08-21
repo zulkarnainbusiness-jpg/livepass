@@ -11,11 +11,28 @@ export const Footer: React.FC = () => {
           <div className="footer-brand-col">
             <Link to="/" className="footer-brand-logo">
               <div className="brand-logo-icon">
-                <svg viewBox="0 0 100 70" fill="none" className="mountain-svg">
-                  <path d="M12 56L42 12L70 56H12Z" stroke="#3B82F6" strokeWidth="6" strokeLinejoin="round" strokeLinecap="round" />
-                  <path d="M42 56L68 20L88 56H42Z" stroke="#60A5FA" strokeWidth="6" strokeLinejoin="round" strokeLinecap="round" />
-                  <path d="M35 24L42 12L49 24L42 20Z" fill="#3B82F6" />
-                  <path d="M22 56C30 52 40 48 50 49C60 50 70 55 80 56" stroke="#2563EB" strokeWidth="4" strokeLinecap="round" />
+                <svg viewBox="0 0 100 100" fill="none" className="mountain-svg">
+                  <defs>
+                    <linearGradient id="ftrPeakLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#38BDF8" />
+                      <stop offset="100%" stopColor="#1D4ED8" />
+                    </linearGradient>
+                    <linearGradient id="ftrPeakRight" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#60A5FA" />
+                      <stop offset="100%" stopColor="#2563EB" />
+                    </linearGradient>
+                    <linearGradient id="ftrRoad" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="#38BDF8" />
+                      <stop offset="50%" stopColor="#60A5FA" />
+                      <stop offset="100%" stopColor="#93C5FD" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M12 76 L44 18 L68 76 Z" fill="url(#ftrPeakLeft)" />
+                  <path d="M44 18 L52 33 L44 38 L36 33 Z" fill="#F0F9FF" opacity="0.95" />
+                  <path d="M42 76 L68 28 L88 76 Z" fill="url(#ftrPeakRight)" opacity="0.9" />
+                  <path d="M68 28 L74 39 L68 43 L62 39 Z" fill="#E0F2FE" opacity="0.9" />
+                  <path d="M8 78 Q 42 60 92 78" stroke="url(#ftrRoad)" strokeWidth="5" strokeLinecap="round" />
+                  <path d="M44 70 Q 60 63 76 72" stroke="#FFFFFF" strokeWidth="2" strokeDasharray="3 3" strokeLinecap="round" opacity="0.8" />
                 </svg>
               </div>
               <div className="brand-text-block">
