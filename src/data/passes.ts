@@ -528,10 +528,35 @@ export const passesData: MountainPass[] = [
       { name: 'Sierra Avalanche Center', type: 'Backcountry Avalanche Forecasts', url: 'https://www.sierraavalanchecenter.org' }
     ],
     customSeo: {
-      title: 'Donner Pass Road Conditions, Weather & Live Camera | I-80',
-      description: 'Check Donner Pass road conditions, weather, open status, snow, traffic and live cameras before traveling through California\'s Sierra Nevada on Interstate 80.'
+      title: 'Donner Pass Road Conditions, Donner Summit Elevation & Live Camera | I-80',
+      description: 'Where is Donner Pass? Check Donner Summit elevation (7,056 ft), how long Donner Pass is, live I-80 road conditions, Caltrans webcams, and weather in California.',
+      h1: 'Donner Pass – Road Conditions, Donner Summit Elevation & Live Camera'
     },
+    searchKeywords: [
+      'where is donner pass',
+      'how long is donner pass',
+      'donner summit elevation',
+      'donner pass road conditions',
+      'i-80 donner pass webcam',
+      'donner pass live camera',
+      'donner summit road conditions',
+      'donner pass elevation',
+      'donner summit camera'
+    ],
+    aliases: ['Donner Summit', 'Donner Pass Road', 'I-80 Donner Summit', 'Donner Lake Pass'],
     faqs: [
+      {
+        question: 'Where is Donner Pass?',
+        answer: 'Donner Pass is located in the northern Sierra Nevada of California along Interstate 80 (I-80), straddling Nevada County and Placer County. It is situated roughly 9 miles (14 km) west of Truckee, 15 miles northwest of Lake Tahoe, 40 miles west of Reno, Nevada, and 90 miles northeast of Sacramento, California.'
+      },
+      {
+        question: 'How long is Donner Pass?',
+        answer: 'The mountain pass crossing over Donner Pass spans approximately 40 miles (64 km) along Interstate 80 between Cisco Grove / Nyack on the western slope and Truckee / Donner Lake on the eastern slope. In typical driving conditions, crossing the pass takes about 40 to 50 minutes at highway speeds, though severe winter snowstorms and chain control checkpoints can extend travel time.'
+      },
+      {
+        question: 'What is the Donner Summit elevation?',
+        answer: 'The official highway summit elevation of Donner Pass on Interstate 80 is 7,056 feet (2,151 meters) above sea level. The historic Donner Pass road crest sits at 7,088 feet (2,160 meters), and the nearby Donner Peak rises to 8,056 feet (2,455 meters).'
+      },
       {
         question: 'Is Donner Pass open today?',
         answer: 'Yes, Donner Pass on Interstate 80 is currently OPEN to all vehicular traffic with no active road closures or chain controls. Caltrans maintains 24/7 highway operations across the summit.'
@@ -547,14 +572,6 @@ export const passesData: MountainPass[] = [
       {
         question: 'Are chains required at Donner Pass?',
         answer: 'Currently, no chain requirements are in effect (R-0). When winter storms hit, Caltrans institutes chain control levels: R-1 (chains on towing vehicles/trucks), R-2 (chains on all vehicles except 4WD/AWD with snow tires on all 4 wheels), or R-3 (chains mandatory on all vehicles no exceptions).'
-      },
-      {
-        question: 'Where is Donner Pass located?',
-        answer: 'Donner Pass is located in the northern Sierra Nevada of California on Interstate 80, approximately 9 miles west of Truckee, 40 miles west of Reno, Nevada, and 90 miles northeast of Sacramento, California.'
-      },
-      {
-        question: 'What is the elevation of Donner Pass?',
-        answer: 'Donner Pass sits at an official summit elevation of 7,056 feet (2,151 meters) above sea level. The nearby Donner Summit along Interstate 80 reaches approximately 7,239 feet.'
       },
       {
         question: 'What highway goes over Donner Pass?',
@@ -697,10 +714,11 @@ export const passesData: MountainPass[] = [
     cameras: [
       {
         id: 'blewett-cam-1',
-        title: 'Blewett Pass Summit',
+        title: 'Blewett Pass Camera & Summit Live View (US 97 MP 163.8)',
         image: 'https://images.wsdot.wa.gov/sc/097VC16380.jpg',
         milepost: 'MP 163.8',
         direction: 'Northbound',
+        location: 'US-97 Blewett Pass Summit',
         source: 'WSDOT',
         updateIntervalMs: 120000
       }
@@ -717,6 +735,18 @@ export const passesData: MountainPass[] = [
         elevationFt: 3022,
         lastUpdated: '5 min ago',
         distanceKm: 62
+      },
+      {
+        id: 'stevens-pass',
+        slug: 'stevens-pass',
+        name: 'Stevens Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'US 2',
+        status: 'OPEN',
+        elevationFt: 4061,
+        lastUpdated: '10 min ago',
+        distanceKm: 85
       }
     ],
     overview: {
@@ -725,9 +755,49 @@ export const passesData: MountainPass[] = [
       lengthKm: 56,
       annualSnowfallIn: 220,
       annualSnowfallM: 5.6,
-      summary: 'A vital connection between Ellensburg and Wenatchee across the Wenatchee National Forest.'
+      summary: 'Blewett Pass (elevation 4,102 ft / 1,250 m) carries US Route 97 across the Wenatchee Mountains in Washington State. It provides a scenic and vital north-south link connecting Ellensburg and Interstate 90 in Kittitas County with Peshastin, Leavenworth, and Wenatchee in Chelan County through the Okanogan-Wenatchee National Forest.'
     },
-    faqs: [],
+    customSeo: {
+      title: 'Blewett Pass Camera, Road Conditions & Weather | US-97 WSDOT',
+      description: 'Check Blewett Pass camera live feeds, real-time US-97 road conditions, weather, elevation (4,102 ft), and travel alerts between Ellensburg and Wenatchee, WA.',
+      h1: 'Blewett Pass – Live Camera, Road Conditions & Weather'
+    },
+    searchKeywords: [
+      'blewett pass camera',
+      'blewett pass webcam',
+      'blewett pass road conditions',
+      'us 97 blewett pass weather',
+      'blewett pass summit camera',
+      'blewett pass elevation',
+      'wsdot blewett pass camera'
+    ],
+    aliases: ['Blewett Summit', 'US 97 Blewett Pass', 'Swauk Pass'],
+    faqs: [
+      {
+        question: 'Is there a Blewett Pass camera?',
+        answer: 'Yes! WSDOT operates an official live traffic camera at the Blewett Pass summit on US Route 97 near Milepost 163.8. The camera snapshot refreshes approximately every 2 minutes and can be viewed directly on this page.'
+      },
+      {
+        question: 'Where can I see the Blewett Pass camera?',
+        answer: 'You can view the live Blewett Pass summit camera snapshot directly in the Live Camera section on this page or via WSDOT Mountain Passes traveler reports.'
+      },
+      {
+        question: 'What are the current Blewett Pass road conditions?',
+        answer: 'Current road conditions on US-97 over Blewett Pass indicate active closure or travel advisories due to regional fire or weather management. Always check the live status badge above and WSDOT notices before driving.'
+      },
+      {
+        question: 'What is the Blewett Pass elevation?',
+        answer: 'Blewett Pass reaches a summit elevation of 4,102 feet (1,250 meters) above sea level in the Wenatchee Mountains.'
+      },
+      {
+        question: 'Where is Blewett Pass located?',
+        answer: 'Blewett Pass is located on US Route 97 in central Washington State, traversing the Wenatchee Mountains between Ellensburg (Kittitas County) to the south and Leavenworth / Wenatchee (Chelan County) to the north.'
+      },
+      {
+        question: 'Is Blewett Pass open year-round?',
+        answer: 'Yes, US Route 97 over Blewett Pass is maintained by WSDOT as a year-round state highway, although winter traction tire requirements or temporary weather/wildfire closures may occur.'
+      }
+    ],
     isPopular: false
   },
   {
@@ -769,7 +839,7 @@ export const passesData: MountainPass[] = [
     cameras: [
       {
         id: 'white-cam-summit',
-        title: 'White Pass Summit (US 12 MP 150.9)',
+        title: 'White Pass Road Conditions Camera Live (US 12 MP 150.9)',
         image: 'https://images.wsdot.wa.gov/sc/012vc15095.jpg',
         milepost: 'MP 150.9',
         direction: 'Eastbound / Westbound',
@@ -857,10 +927,25 @@ export const passesData: MountainPass[] = [
       { name: 'White Pass Ski Area', type: 'Alpine Snow & Lift Reports', url: 'https://skiwhitepass.com' }
     ],
     customSeo: {
-      title: 'White Pass Washington Road Conditions, Weather & Live Camera | US 12',
-      description: 'Check current White Pass road conditions, weather, forecast, snow conditions and live cameras on US 12 in Washington before you travel.'
+      title: 'White Pass Road Conditions Camera Live, Weather & Status | US 12',
+      description: 'Check live White Pass road conditions camera live feeds, weather, snow report, elevation (4,500 ft), and real-time US 12 highway alerts.',
+      h1: 'White Pass – Road Conditions, Camera Live & Weather'
     },
+    searchKeywords: [
+      'white pass road conditions camera live',
+      'white pass road conditions',
+      'white pass camera live',
+      'white pass webcam',
+      'white pass live camera',
+      'us 12 white pass road conditions',
+      'white pass summit camera'
+    ],
+    aliases: ['US 12 White Pass', 'White Pass Summit', 'White Pass Ski Area'],
     faqs: [
+      {
+        question: 'Where can I see the White Pass road conditions and camera live?',
+        answer: 'You can check real-time White Pass road conditions and view the official WSDOT live summit camera directly on this page. The camera feed at US 12 MP 150.9 updates automatically every 2 minutes with current pavement and snow visibility.'
+      },
       {
         question: 'Is White Pass open today?',
         answer: 'Yes, White Pass on US 12 is currently OPEN to all vehicular traffic with no active road closures or chain restrictions. WSDOT operates continuous maintenance along the US 12 corridor to ensure safe year-round travel.'
@@ -951,10 +1036,11 @@ export const passesData: MountainPass[] = [
     cameras: [
       {
         id: 'chinook-cam-1',
-        title: 'Chinook Pass Summit (SR 410 MP 69)',
+        title: 'Chinook Pass Webcam & Summit Live Camera (SR 410 MP 69)',
         image: 'https://images.wsdot.wa.gov/sc/410VC06900.jpg',
         milepost: 'MP 69',
         direction: 'Northbound',
+        location: 'SR 410 Chinook Pass Summit',
         source: 'WSDOT',
         updateIntervalMs: 120000
       }
@@ -1037,10 +1123,29 @@ export const passesData: MountainPass[] = [
       { name: 'NOAA / NWS', type: 'High-Elevation Weather & Forecast', url: 'https://www.weather.gov' }
     ],
     customSeo: {
-      title: 'Chinook Pass Road Conditions, Weather & Live Camera | SR 410',
-      description: 'Check Chinook Pass road conditions, current status, weather, forecast and live camera information for SR 410 in Washington. Get the latest travel updates before you go.'
+      title: 'Chinook Pass Webcam, Road Conditions & Weather | SR 410 WSDOT',
+      description: 'View live Chinook Pass webcam feeds, current road conditions, snow depth, seasonal opening status, and weather on SR 410 in Washington.',
+      h1: 'Chinook Pass – Webcam, Road Conditions & Seasonal Status'
     },
+    searchKeywords: [
+      'chinook pass webcam',
+      'chinook pass live webcam',
+      'chinook pass camera',
+      'chinook pass road conditions',
+      'sr 410 webcam',
+      'wsdot chinook pass webcam',
+      'chinook pass summit webcam'
+    ],
+    aliases: ['SR 410 Chinook Pass', 'Mather Memorial Parkway', 'Chinook Scenic Byway'],
     faqs: [
+      {
+        question: 'Where can I find the Chinook Pass webcam?',
+        answer: 'You can view the official WSDOT live Chinook Pass webcam directly on this page under the Live Camera card. The camera is located at SR 410 Milepost 69 at the summit and refreshes with latest highway images every 2 minutes.'
+      },
+      {
+        question: 'Does Chinook Pass have a live webcam or camera?',
+        answer: 'Yes! WSDOT operates a live summit traffic webcam at SR 410 MP 69 near the pedestrian overpass. You can see real-time visibility, weather, and pavement conditions directly on this page.'
+      },
       {
         question: 'Is Chinook Pass open today?',
         answer: 'Chinook Pass is currently OPEN for normal daylight vehicular travel on SR 410 with no active restrictions. Because Chinook Pass is a high-elevation seasonal highway crossing Mount Rainier National Park, weather and road conditions can change rapidly. Always check the live status card at the top of this page or official WSDOT travel alerts before departing.'
@@ -1062,10 +1167,6 @@ export const passesData: MountainPass[] = [
         answer: 'Washington State Route 410 (SR 410) crosses Chinook Pass. The highway is federally and state recognized as the Mather Memorial Parkway through Mount Rainier National Park and forms an integral part of the scenic Chinook Scenic Byway.'
       },
       {
-        question: 'Does Chinook Pass have a live camera?',
-        answer: 'Yes! WSDOT maintains a live summit traffic camera located near Milepost 69 at Chinook Pass. The camera snapshot refreshes approximately every 2 minutes and can be viewed directly in the Live Camera section of this page with a manual "Refresh Now" option.'
-      },
-      {
         question: 'When does Chinook Pass usually close for winter?',
         answer: 'Chinook Pass typically closes for winter between late October and mid-November. The exact date is not calendar-fixed; it is determined dynamically by WSDOT and the National Park Service when winter storms make high-altitude maintenance unsafe.'
       },
@@ -1080,6 +1181,303 @@ export const passesData: MountainPass[] = [
       {
         question: 'Can you drive through Chinook Pass in winter?',
         answer: 'No. SR 410 over Chinook Pass is completely closed and gated to motor vehicles throughout the winter. Year-round alternative Cascade crossings include Interstate 90 (Snoqualmie Pass), US 2 (Stevens Pass), and US 12 (White Pass).'
+      }
+    ],
+    isPopular: true
+  },
+  {
+    id: 'cayuse-pass',
+    slug: 'cayuse-pass',
+    name: 'Cayuse Pass',
+    country: 'United States',
+    countryCode: 'USA',
+    continent: 'North America',
+    state: 'Washington',
+    highway: 'SR 123',
+    elevationFt: 4694,
+    elevationM: 1431,
+    coordinates: { lat: 46.8741, lng: -121.5494 },
+    status: 'OPEN',
+    statusDetail: 'SR 123 open to all vehicles — Seasonal summer operations in effect. Road clear. No traction requirements. Commercial vehicles prohibited within Mount Rainier National Park.',
+    lastUpdated: '12 minutes ago',
+    description: 'Cayuse Pass is a high-elevation mountain pass on SR 123 within Mount Rainier National Park in Washington State. Situated at 4,694 feet (1,431 m), it marks the junction of SR 123 and SR 410 (Mather Memorial Parkway) at the edge of the park. The pass is a seasonal highway that typically closes in mid-to-late November due to heavy snowfall and avalanche danger, and reopens around Memorial Day weekend in late May. WSDOT and the National Park Service jointly manage road status and seasonal clearing operations.',
+    image: '/cayuse-pass.jpg',
+    weather: {
+      tempF: 62,
+      tempC: 17,
+      condition: 'Partly Cloudy',
+      icon: 'cloud-sun'
+    },
+    snowDepth: {
+      depthCm: 0,
+      depthIn: 0,
+      condition: 'Bare & Dry Pavement'
+    },
+    wind: {
+      speedKmh: 16,
+      speedMph: 10,
+      direction: 'W',
+      description: 'Light Breeze'
+    },
+    roadCondition: 'Pavement bare and dry throughout the SR 123 corridor. No current traction requirements, chain restrictions, or lane closures in effect. Standard seasonal operations apply — road may close without prior notice during severe mountain weather or avalanche events.',
+    chainRequirement: 'No traction requirements currently in effect for passenger or commercial vehicles. During winter operations (when open), WSDOT may require traction tires or chains. Commercial vehicles are prohibited on SR 123 and SR 410 within Mount Rainier National Park year-round.',
+    cameras: [
+      {
+        id: 'cayuse-cam-1',
+        title: 'Cayuse Pass Webcam — SR 123 Summit (MP 45)',
+        image: 'https://images.wsdot.wa.gov/sc/123VC04500.jpg',
+        milepost: 'MP 45',
+        direction: 'Northbound toward SR 410 Junction',
+        location: 'SR 123 Cayuse Pass Summit — Mount Rainier National Park',
+        source: 'WSDOT',
+        updateIntervalMs: 120000,
+        officialUrl: 'https://wsdot.wa.gov/travel/roads-bridges/mountain-passes/cayuse-pass'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'chinook-pass',
+        slug: 'chinook-pass',
+        name: 'Chinook Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'SR 410',
+        status: 'OPEN',
+        elevationFt: 5430,
+        lastUpdated: '12 min ago',
+        distanceKm: 10
+      },
+      {
+        id: 'snoqualmie-pass',
+        slug: 'snoqualmie-pass',
+        name: 'Snoqualmie Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'I-90',
+        status: 'OPEN',
+        elevationFt: 3022,
+        lastUpdated: '5 min ago',
+        distanceKm: 85
+      },
+      {
+        id: 'white-pass',
+        slug: 'white-pass',
+        name: 'White Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'US-12',
+        status: 'OPEN',
+        elevationFt: 4500,
+        lastUpdated: '18 min ago',
+        distanceKm: 56
+      },
+      {
+        id: 'blewett-pass',
+        slug: 'blewett-pass',
+        name: 'Blewett Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'US-97',
+        status: 'OPEN',
+        elevationFt: 4102,
+        lastUpdated: '22 min ago',
+        distanceKm: 130
+      }
+    ],
+    overview: {
+      openedYear: 1932,
+      lengthMiles: 16,
+      lengthKm: 26,
+      annualSnowfallIn: 320,
+      annualSnowfallM: 8.1,
+      summary: 'Cayuse Pass (elevation 4,694 ft / 1,431 m) carries SR 123 through the southern reach of Mount Rainier National Park, connecting the town of Packwood (US-12) to the south with the Chinook Pass / SR 410 junction to the north. The pass road winds through old-growth Douglas fir and western red cedar forest before emerging into subalpine terrain at the summit. Because of its high elevation and proximity to the moisture-laden Cascades, Cayuse Pass accumulates heavy snowpack each winter — making it a strictly seasonal highway. WSDOT maintenance crews typically begin spring plowing in April and target the Memorial Day weekend for reopening, following avalanche hazard clearance with the National Park Service.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'Mid-to-late November',
+      typicalReopening: 'Late May (Memorial Day weekend target)',
+      description: 'Cayuse Pass (SR 123) closes annually when winter snowfall and avalanche danger make high-altitude maintenance unsafe. WSDOT and the National Park Service jointly coordinate spring snow clearing operations. The exact opening and closing dates vary significantly each year based on snowpack depth, weather patterns, and highway safety assessments. Always verify current status with WSDOT before planning shoulder-season travel to Mount Rainier.'
+    },
+    forecast: [
+      { day: 'Today', condition: 'Partly Cloudy', tempHighF: 64, tempLowF: 46, icon: 'cloud-sun' },
+      { day: 'Tomorrow', condition: 'Sunny & Clear', tempHighF: 68, tempLowF: 48, icon: 'sun' },
+      { day: 'Day 3', condition: 'Scattered Afternoon Showers', tempHighF: 59, tempLowF: 44, icon: 'cloud-rain' },
+      { day: 'Day 4', condition: 'Mostly Cloudy', tempHighF: 57, tempLowF: 42, icon: 'cloud' },
+      { day: 'Day 5', condition: 'Sunny & Mild', tempHighF: 65, tempLowF: 46, icon: 'sun' }
+    ],
+    openingDateInfo: {
+      year: 2026,
+      statusText: 'Currently Open — Seasonal summer operations in effect',
+      expectedOpeningWindow: 'Late May — Memorial Day weekend (target)',
+      closingWindow: 'Mid-to-late November (first major snowfall)',
+      clearanceAgency: 'Washington State DOT (WSDOT) & National Park Service — Mount Rainier (MORA)',
+      notes: 'Opening and closing dates are not calendar-fixed. WSDOT and NPS determine exact dates dynamically based on snowpack depth, avalanche hazard, road damage assessments, and crew safety conditions. The median opening date since records began in 1973 is May 7, though the 2007 season saw a record-late opening of September 29 following severe winter road damage. Always verify current status at wsdot.wa.gov before traveling.'
+    },
+    dataSources: [
+      { name: 'Washington State Department of Transportation (WSDOT)', type: 'SR 123 Cayuse Pass Road Conditions & Status', url: 'https://wsdot.wa.gov/travel/roads-bridges/mountain-passes/cayuse-pass' },
+      { name: 'National Park Service — Mount Rainier (NPS MORA)', type: 'Road Status & Park Regulations', url: 'https://www.nps.gov/mora/planyourvisit/roads.htm' },
+      { name: 'WSDOT Traffic Cameras', type: 'Live SR 123 Webcam Feed', url: 'https://wsdot.wa.gov/travel/real-time/mountainpasses/cayuse' },
+      { name: 'NOAA / National Weather Service (NWS Seattle)', type: 'High-Elevation Mountain Pass Weather & Forecast', url: 'https://www.weather.gov/sew/' }
+    ],
+    quickFacts: {
+      state: 'Washington, United States',
+      mountainRange: 'Cascade Range — Mount Rainier Subregion (Southern Cascades)',
+      elevationSummary: '4,694 ft / 1,431 m above sea level (NPS official figure)',
+      connects: 'Packwood & US-12 (south) with Chinook Pass & SR 410 (north) through Mount Rainier National Park',
+      nearestTown: 'Packwood (22 mi south via SR 123) • Enumclaw (55 mi north via SR 410)',
+      roadType: 'Washington State Route 123 (SR 123) — Two-lane paved mountain highway (seasonal)',
+      bestTime: 'Late May through October (seasonal road — closed November through May)',
+      highlight: 'Junction of SR 123 and SR 410 at the eastern boundary of Mount Rainier National Park — gateway to Ohanapecosh and Stevens Canyon.'
+    },
+    routeDetails: {
+      distanceKm: 42,
+      distanceMiles: 26,
+      duration: '35 – 55 min (Packwood to Chinook Pass via SR 123)',
+      origin: 'Packwood, WA — US-12 & SR 123 Junction (Elevation: 1,063 ft)',
+      destination: 'Cayuse Pass Summit — SR 123 & SR 410 Junction (Elevation: 4,694 ft)',
+      waypoints: [
+        'Packwood, WA (US-12 & SR 123 Junction) — Southern gateway, last services before pass',
+        'Ohanapecosh Visitor Center (NPS) — Mount Rainier National Park entrance, campground',
+        'Stevens Canyon Road Junction — Access to Paradise, Longmire & west side of Mount Rainier',
+        'Cayuse Pass Summit (4,694 ft) — SR 123 & SR 410 Junction, National Park boundary',
+        'Tipsoo Lake (5,080 ft) — Scenic subalpine lake 2 mi north on SR 410',
+        'Chinook Pass Summit (5,430 ft) — Pacific Crest Trail crossing, 3 mi north on SR 410'
+      ]
+    },
+    distancesTable: [
+      { location: 'Packwood, WA', distance: '22 mi / 35 km', route: 'SR 123 North', notes: 'Last major services before pass — fuel, food, lodging' },
+      { location: 'Enumclaw, WA', distance: '55 mi / 89 km', route: 'SR 410 West then SR 123 South', notes: 'Northern approach via Chinook Pass' },
+      { location: 'Seattle, WA', distance: '80 mi / 129 km', route: 'US-12 East then SR 123 North', notes: 'Approx. 2 hr via Tacoma/US-12' },
+      { location: 'Yakima, WA', distance: '68 mi / 110 km', route: 'US-12 West then SR 123 North', notes: 'Eastern Cascades approach' },
+      { location: 'Crystal Mountain Resort', distance: '6 mi / 10 km', route: 'SR 410 East', notes: 'Via Chinook Pass junction on SR 410' },
+      { location: 'Chinook Pass Summit', distance: '3 mi / 5 km', route: 'SR 410 North (from junction)', notes: 'PCT crossing, 5,430 ft — often closes before Cayuse Pass' },
+      { location: 'Paradise (Mount Rainier)', distance: '21 mi / 34 km', route: 'SR 123 South then Stevens Canyon Rd', notes: 'Access via Stevens Canyon Road (seasonal)' }
+    ],
+    narrativeSections: [
+      {
+        title: 'Where Is Cayuse Pass?',
+        content: 'Cayuse Pass is located in the southern Cascade Range of Washington State, entirely within Mount Rainier National Park. It sits at the junction of State Route 123 (SR 123) and State Route 410 (SR 410 — Mather Memorial Parkway), approximately 22 miles north of Packwood and 55 miles southeast of Enumclaw. The pass forms the eastern gateway to the park\'s less-visited southern and eastern corridors, including the Ohanapecosh area and Stevens Canyon. GPS coordinates: 46.8741° N, 121.5494° W.'
+      },
+      {
+        title: 'Cayuse Pass Elevation',
+        content: 'Cayuse Pass stands at an official summit elevation of 4,694 feet (1,431 meters) above sea level according to the National Park Service (NPS). Some published sources cite a slightly different figure of 4,675 feet — minor variation due to differing reference benchmarks. The NPS figure of 4,694 ft is considered authoritative. At nearly a mile high, the pass receives heavy Cascade snowpack each winter, making it a seasonal highway. By comparison, nearby Chinook Pass (just 3 miles north on SR 410) reaches 5,430 feet — one of the highest paved passes in Washington.'
+      },
+      {
+        title: 'Cayuse Pass SR 123 Highway Information',
+        content: 'Cayuse Pass is traversed by Washington State Route 123 (SR 123). This two-lane paved mountain highway runs approximately 16 miles through Mount Rainier National Park, connecting the US-12 junction near Packwood in the south to the SR 410 junction at Cayuse Pass in the north. SR 123 is also known as a segment of the Chinook Scenic Byway. Commercial vehicles, including semi-trucks and large buses, are prohibited on SR 123 within the National Park year-round per NPS regulations. The milepost numbering on SR 123 near the summit is approximately MP 45.'
+      },
+      {
+        title: 'How to Get to Cayuse Pass',
+        content: 'From the south (Packwood / US-12): Take SR 123 north approximately 22 miles from its US-12 junction. SR 123 climbs steadily through old-growth forest before reaching the Ohanapecosh area and then ascending to the summit. From the north (Enumclaw / Seattle area): Take SR 410 south and west from Enumclaw approximately 55 miles over Chinook Pass. Cayuse Pass is 3 miles west of Chinook Pass at the SR 123 / SR 410 junction. From Yakima: Travel US-12 west to SR 123 north, approximately 68 miles total. Always check current road status before departing — SR 123 may close without prior notice during severe mountain weather.'
+      },
+      {
+        title: 'Cayuse Pass Opening & Closing Dates — Historical Record',
+        content: 'Cayuse Pass (SR 123) has been tracked by WSDOT since 1973. The median opening date over that period is May 7. The earliest recorded opening was March 18, 1981, and the latest was September 29, 2007 — after a winter that caused severe road damage requiring extensive reconstruction. Recent seasonal history:\n\n• 2025: Opened May 23 | Closed October 24 (second-earliest closure since 1973)\n• 2024: Opened May 24 | Closed October 31\n• 2023: Opened May 26 | Closed November 6\n• 2022: Opened May 20 | Closed November 15\n• 2021: Opened May 28 | Closed November 9\n• 2020: Opened June 5 | Closed November 4\n• 2019: Opened May 24 | Closed November 14\n\nClosing dates are triggered when accumulating snowfall and forecast conditions make high-altitude maintenance unsafe. WSDOT always provides advance notice when possible. The pass closes in both directions — no through traffic or overriding closures.'
+      },
+      {
+        title: 'Cayuse Pass Chain Requirements & Winter Driving',
+        content: 'During the open season (typically late May through mid-November), no chain or traction requirements are normally in effect on SR 123. However, sudden mountain storms can change conditions rapidly — especially in spring and fall. When Cayuse Pass does carry traction or chain requirements, WSDOT posts alerts on the official Mountain Passes page and broadcasts via WSDOT social media. Traction tires (all-season or winter-rated with the M+S or 3-Peak Mountain Snowflake symbol) are strongly recommended during shoulder season travel (May and October–November). AWD and 4WD provide added capability but do not replace traction tires on snow or ice. Commercial vehicles are prohibited within the National Park regardless of season. During winter, SR 123 is completely closed and gated — no vehicle access.'
+      }
+    ],
+    customSeo: {
+      title: 'Cayuse Pass Road Conditions, Open/Closed Status & Webcam | SR 123',
+      description: 'Check live Cayuse Pass road conditions, current open/closed status, WSDOT webcam, weather, snow, opening dates, elevation, directions and more for SR 123 in Washington.',
+      h1: 'Cayuse Pass Road Conditions, Open/Closed Status & Live Webcam'
+    },
+    searchKeywords: [
+      'cayuse pass road conditions',
+      'cayuse pass road status',
+      'cayuse pass pass status report',
+      'cayuse pass is open',
+      'cayuse pass open',
+      'is cayuse pass open right now',
+      'is cayuse pass open today',
+      'when does cayuse pass open',
+      'when will cayuse pass open',
+      'cayuse pass opening date',
+      'cayuse pass closing date',
+      'cayuse pass closed',
+      'cayuse pass is closed',
+      'cayuse pass webcam',
+      'cayuse pass live webcam',
+      'cayuse pass cameras',
+      'cayuse pass weather today',
+      'cayuse pass snow',
+      'cayuse pass snow depth',
+      'cayuse pass snow conditions',
+      'cayuse pass forecast',
+      'cayuse pass map',
+      'cayuse pass elevation',
+      'how high is cayuse pass',
+      'cayuse pass directions',
+      'where is cayuse pass',
+      'how to get to cayuse pass',
+      'what highway is cayuse pass',
+      'cayuse pass chain requirements',
+      'cayuse pass traction tires',
+      'cayuse pass highway',
+      'cayuse pass milepost',
+      'sr 123 cayuse pass',
+      'sr 123 road conditions',
+      'wsdot cayuse pass'
+    ],
+    aliases: ['SR 123 Cayuse Pass', 'SR 123 / SR 410 Junction', 'Cayuse Pass Junction', 'Mather Memorial Parkway Southern Approach'],
+    faqs: [
+      {
+        question: 'Is Cayuse Pass open right now?',
+        answer: 'Cayuse Pass (SR 123) is currently OPEN. The live status at the top of this page reflects the latest available WSDOT report. Cayuse Pass is a seasonal highway — it is typically open from late May through mid-to-late November each year. Because mountain conditions can change rapidly, always verify current status on this page or at wsdot.wa.gov before departing.'
+      },
+      {
+        question: 'Is Cayuse Pass open today?',
+        answer: 'The current Cayuse Pass open/closed status is shown in the Live Status card at the top of this page, updated from official WSDOT data. During the open season (late May through November), the pass is generally accessible to all passenger vehicles with no restrictions. Check the status card above for today\'s verified condition and any active advisories.'
+      },
+      {
+        question: 'What are the current Cayuse Pass road conditions?',
+        answer: 'Current Cayuse Pass road conditions are shown in the Road Conditions section above, sourced from WSDOT. During summer months, SR 123 typically has bare and dry pavement with no restrictions. During spring and fall shoulder seasons, conditions can include wet pavement, early-season snow, or ice at the 4,694-foot summit. Check the Road Conditions section above for the latest official report.'
+      },
+      {
+        question: 'When does Cayuse Pass open?',
+        answer: 'Cayuse Pass typically reopens in late May, targeting the Memorial Day weekend. WSDOT and the National Park Service begin snow-clearing operations in April and open the pass once the road is safe and avalanche hazards are cleared. The median opening date since WSDOT began tracking in 1973 is May 7, though the exact date varies significantly each year based on snowpack and weather.'
+      },
+      {
+        question: 'When does Cayuse Pass close for winter?',
+        answer: 'Cayuse Pass typically closes for winter in mid-to-late November, when accumulating snowfall makes high-altitude maintenance unsafe. In 2025, the pass closed on October 24 — the second-earliest closure on record. In 2024, it closed October 31. The exact date is not fixed on the calendar and depends on actual snowfall and weather forecasts. WSDOT provides advance notice when possible.'
+      },
+      {
+        question: 'What is the Cayuse Pass opening date?',
+        answer: 'The 2026 Cayuse Pass opening date has not yet been announced (passes often close late autumn and the next opening date is determined the following spring). Historical opening dates have ranged from March 18 (1981, earliest ever) to September 29 (2007, latest ever). Recent years: 2025 opened May 23, 2024 opened May 24, 2023 opened May 26. Check the Live Status card at the top of this page for the current season status.'
+      },
+      {
+        question: 'Is there a Cayuse Pass webcam?',
+        answer: 'Yes. WSDOT operates a traffic camera on SR 123 at Cayuse Pass. The live camera image is shown in the Live Webcam section on this page and refreshes approximately every 2 minutes. If the camera is temporarily unavailable, a fallback message is displayed with a link to the official WSDOT camera source.'
+      },
+      {
+        question: 'Where can I see the Cayuse Pass live webcam?',
+        answer: 'The live Cayuse Pass webcam is displayed directly on this page in the "Live Webcams" section — scroll down past the status card. The camera is operated by WSDOT at SR 123 near the pass summit and is one of the primary tools travelers use to check actual road and weather conditions before driving. You can also view it at the official WSDOT Traveler Information page.'
+      },
+      {
+        question: 'What highway is Cayuse Pass on?',
+        answer: 'Cayuse Pass is on Washington State Route 123 (SR 123). At the summit, SR 123 meets SR 410 (Mather Memorial Parkway). SR 123 runs north–south through Mount Rainier National Park, connecting US-12 near Packwood in the south to SR 410 at the pass summit. The junction is also the southern terminus of the Chinook Scenic Byway.'
+      },
+      {
+        question: 'Where is Cayuse Pass?',
+        answer: 'Cayuse Pass is located in Washington State within Mount Rainier National Park, at the junction of SR 123 and SR 410. It sits approximately 22 miles north of Packwood and 55 miles southeast of Enumclaw. The GPS coordinates are approximately 46.8741° N, 121.5494° W. It is near the eastern boundary of the national park, close to the Ohanapecosh area and Stevens Canyon entrance.'
+      },
+      {
+        question: 'How high is Cayuse Pass?',
+        answer: 'Cayuse Pass reaches an elevation of 4,694 feet (1,431 meters) above sea level, according to the National Park Service. Some sources cite a slightly different figure of 4,675 feet — a minor difference due to varying reference benchmarks. At nearly a mile high, the pass receives significant Cascade snowpack each winter and is subject to rapid weather changes year-round.'
+      },
+      {
+        question: 'What is the elevation of Cayuse Pass?',
+        answer: 'The official elevation of Cayuse Pass is 4,694 feet (1,431 meters), per the National Park Service. This makes it a high-elevation seasonal pass — lower than nearby Chinook Pass (5,430 ft) but higher than White Pass (4,500 ft) and significantly higher than Snoqualmie Pass (3,022 ft). The high elevation is why the pass accumulates heavy snow and requires an annual closure each winter.'
+      },
+      {
+        question: 'Does Cayuse Pass require chains?',
+        answer: 'No chain requirements are currently in effect on Cayuse Pass. During normal summer operations, SR 123 has no traction or chain restrictions. In shoulder seasons (May and October–November), conditions can deteriorate rapidly with early or late-season snow. WSDOT may post chain requirements or traction tire requirements during adverse weather — always check the Road Conditions section above before traveling. Note: commercial vehicles are prohibited on SR 123 within Mount Rainier National Park year-round, regardless of chain status.'
+      },
+      {
+        question: 'What is the weather at Cayuse Pass today?',
+        answer: 'Current weather conditions at Cayuse Pass are shown in the Weather section above. At 4,694 feet elevation, Cayuse Pass experiences cooler temperatures than lower elevations — typically 10–20°F colder than Seattle. Summer conditions are usually mild with afternoon cloud development. Spring and fall can bring rapid weather changes, snow at summit level, and strong winds. Always check the live weather card above before your trip.'
       }
     ],
     isPopular: true

@@ -9,6 +9,7 @@ import { AlertsPage } from './pages/AlertsPage';
 import { HierarchicalPage } from './pages/HierarchicalPage';
 import { PassDetailPage } from './pages/PassDetailPage';
 import { ResourcesPage } from './pages/ResourcesPage';
+import { SeoResearchPage } from './pages/SeoResearchPage';
 import { AboutPage, PrivacyPage, TermsPage, NotFoundPage } from './pages/StaticPages';
 import './styles/index.css';
 
@@ -39,6 +40,7 @@ export const App: React.FC = () => {
           <Route path="/passes/:country/:slug" element={<PassDetailPage />} />
           <Route path="/passes/:slug" element={<PassDetailPage />} />
           
+          <Route path="/seo-research" element={<SeoResearchPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />

@@ -217,6 +217,8 @@ export interface MountainPass {
     description: string;
     h1?: string;
   };
+  searchKeywords?: string[];
+  aliases?: string[];
 }
 
 export interface PassAlert {

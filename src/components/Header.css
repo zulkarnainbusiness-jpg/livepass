@@ -100,6 +100,15 @@
   border-radius: 3px 3px 0 0;
 }
 
+.nav-link.seo-agent-link {
+  color: #60A5FA;
+  font-weight: 600;
+}
+
+.nav-link.seo-agent-link:hover {
+  color: #93C5FD;
+}
+
 /* Header Right Actions */
 .header-actions {
   display: flex;

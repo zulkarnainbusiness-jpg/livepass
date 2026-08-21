@@ -87,6 +87,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 image: '/chinook-pass.jpg'
               },
               {
+                id: 'cayuse-pass',
+                slug: 'cayuse-pass',
+                name: 'Cayuse Pass',
+                highway: 'SR 123',
+                elevationFt: 4694,
+                elevationM: 1431,
+                status: 'OPEN',
+                image: '/cayuse-pass.jpg'
+              },
+              {
                 id: 'white-pass',
                 slug: 'white-pass',
                 name: 'White Pass',
@@ -97,6 +107,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80'
               }
             ]
+
           },
           {
             id: 'colorado',
