@@ -1,12 +1,13 @@
 import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { passesData } from '../data/passes';
+import { usePasses } from '../context/PassesContext';
 import { MapComponent } from '../components/MapComponent';
 import { TrustBar } from '../components/TrustBar';
 import { SEOHelper } from '../components/SEOHelper';
 import './MapPage.css';
 
 export const MapPage: React.FC = () => {
+  const { passes } = usePasses();
   const navigate = useNavigate();
 
   // Filter state
@@ -17,29 +18,29 @@ export const MapPage: React.FC = () => {
 
   // Country & State options
   const countries = useMemo(() => {
-    const set = new Set(passesData.map(p => p.country));
+    const set = new Set(passes.map(p => p.country));
     return ['All Countries', ...Array.from(set)];
-  }, []);
+  }, [passes]);
 
   const states = useMemo(() => {
-    let list = passesData;
+    let list = passes;
     if (selectedCountry !== 'All Countries') {
-      list = passesData.filter(p => p.country === selectedCountry);
+      list = passes.filter(p => p.country === selectedCountry);
     }
     const set = new Set(list.map(p => p.state));
     return ['All States/Provinces', ...Array.from(set)];
-  }, [selectedCountry]);
+  }, [selectedCountry, passes]);
 
   // Filtered Passes
   const filteredPasses = useMemo(() => {
-    return passesData.filter(pass => {
+    return passes.filter(pass => {
       if (selectedCountry !== 'All Countries' && pass.country !== selectedCountry) return false;
       if (selectedState !== 'All States/Provinces' && pass.state !== selectedState) return false;
       if (selectedStatus !== 'All Status' && pass.status.toUpperCase() !== selectedStatus.toUpperCase()) return false;
       if (pass.elevationFt > maxElevation) return false;
       return true;
     });
-  }, [selectedCountry, selectedState, selectedStatus, maxElevation]);
+  }, [selectedCountry, selectedState, selectedStatus, maxElevation, passes]);
 
   const handleClearAll = () => {
     setSelectedCountry('All Countries');

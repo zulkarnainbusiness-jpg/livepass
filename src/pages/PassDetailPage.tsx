@@ -38,7 +38,8 @@ import {
   Bike,
   Gauge
 } from 'lucide-react';
-import { passesData, getPassBySlug, getPassUrl } from '../data/passes';
+import { getPassUrl } from '../data/passes';
+import { usePasses } from '../context/PassesContext';
 import { MountainPass } from '../types';
 import { StatusBadge } from '../components/StatusBadge';
 import { TrustBar } from '../components/TrustBar';
@@ -48,6 +49,7 @@ import { SEOHelper } from '../components/SEOHelper';
 import './PassDetailPage.css';
 
 export const PassDetailPage: React.FC = () => {
+  const { passes } = usePasses();
   const { slug } = useParams<{ slug?: string; country?: string; state?: string }>();
   const navigate = useNavigate();
   const location = useLocation();
@@ -56,53 +58,74 @@ export const PassDetailPage: React.FC = () => {
   const pathSegments = location.pathname.split('?')[0].split('/').filter(Boolean);
   const lastPathSegment = pathSegments.length > 0 ? pathSegments[pathSegments.length - 1] : undefined;
   const targetSlug = slug || (lastPathSegment && lastPathSegment !== 'passes' ? lastPathSegment : '');
-  const basePass = getPassBySlug(targetSlug);
+  
+  const basePass = passes.find(p => p.slug.toLowerCase() === targetSlug.toLowerCase() || p.id.toLowerCase() === targetSlug.toLowerCase()) || null;
 
   // State for the pass data (so it can be dynamically updated with real-time API values)
-  const [pass, setPass] = useState<MountainPass | null>(basePass || null);
+  const [pass, setPass] = useState<MountainPass | null>(basePass);
   const [liveDataError, setLiveDataError] = useState(false);
+  const [history, setHistory] = useState<any[]>([]);
+  const [verificationMeta, setVerificationMeta] = useState<any | null>(null);
+
+  // Helper to format dynamic relative time
+  const formatTime = (timeStr: string) => {
+    if (!timeStr) return 'N/A';
+    const date = new Date(timeStr);
+    return date.toLocaleString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
+    });
+  };
 
   // Sync pass state and fetch live data when route changes
   useEffect(() => {
-    const activePass = getPassBySlug(targetSlug);
-    setPass(activePass || null);
+    const activePass = passes.find(p => p.slug.toLowerCase() === targetSlug.toLowerCase() || p.id.toLowerCase() === targetSlug.toLowerCase()) || null;
+    setPass(activePass);
     setLiveDataError(false);
+    setHistory([]);
+    setVerificationMeta(null);
 
-    if (activePass && activePass.id === 'loup-loup-pass') {
-      fetch('/api/passes/loup-loup')
+    if (activePass) {
+      // Fetch dynamic verification details and history from our general endpoint
+      fetch(`/api/passes/${activePass.id}`)
         .then(res => {
-          if (!res.ok) throw new Error('API request failed');
+          if (!res.ok) throw new Error('Not found in dynamic database');
           return res.json();
         })
-        .then(liveData => {
-          if (liveData && liveData.status) {
+        .then(data => {
+          if (data.success) {
+            setHistory(data.history || []);
+            setVerificationMeta(data.pass);
+            
+            // Sync status and other fields from the database pass
             setPass(prev => {
-              if (!prev || prev.id !== 'loup-loup-pass') return prev;
+              if (!prev || prev.id !== activePass.id) return prev;
               return {
                 ...prev,
-                status: liveData.status,
-                statusDetail: liveData.roadCondition || prev.statusDetail,
-                roadCondition: liveData.roadCondition || prev.roadCondition,
-                lastUpdated: liveData.lastUpdated || prev.lastUpdated,
-                weather: liveData.weather ? {
-                  ...prev.weather,
-                  tempF: liveData.weather.tempF ?? prev.weather?.tempF,
-                  tempC: liveData.weather.tempC ?? prev.weather?.tempC,
-                  condition: liveData.weather.condition ?? prev.weather?.condition,
-                } : prev.weather,
-                chainRequirement: (liveData.restrictions && liveData.restrictions.length > 0)
-                  ? liveData.restrictions.join(', ')
-                  : prev.chainRequirement
+                status: data.pass.status,
+                statusDetail: data.pass.status_reason || prev.statusDetail,
+                roadCondition: data.pass.status_reason || prev.roadCondition,
+                chainRequirement: data.pass.restrictions && data.pass.restrictions !== 'None'
+                  ? data.pass.restrictions
+                  : prev.chainRequirement,
+                lastUpdated: 'Just now',
+                officialSource: data.pass.official_source_url || prev.officialSource
               };
             });
           }
         })
         .catch(err => {
-          console.error('Error loading live Loup Loup status:', err);
-          setLiveDataError(true);
+          console.log(`Dynamic DB data not loaded for ${activePass.id}:`, err);
+          if (activePass.id === 'status-pass' || activePass.id === 'loup-loup-pass') {
+            setLiveDataError(true);
+          }
         });
     }
-  }, [targetSlug]);
+  }, [targetSlug, passes]);
 
   // UI States
   const [isFavorite, setIsFavorite] = useState(false);
@@ -118,13 +141,19 @@ export const PassDetailPage: React.FC = () => {
     return <NotFoundPage />;
   }
 
-  // Check localStorage for favorite state
+  // Check localStorage for favorite state & setup auto-refresh
   useEffect(() => {
     const favorites = JSON.parse(localStorage.getItem('lp_favorites') || '[]');
     setIsFavorite(favorites.includes(pass.id));
     setCameraError(false);
     setCameraTimestamp(Date.now().toString());
     setCurrentCameraIndex(0);
+
+    // Auto-refresh camera snapshots every 60-120 seconds intelligently
+    const camTimer = setInterval(() => {
+      setCameraTimestamp(Date.now().toString());
+    }, 60000);
+    return () => clearInterval(camTimer);
   }, [pass.id]);
 
   const toggleFavorite = () => {
@@ -188,10 +217,16 @@ export const PassDetailPage: React.FC = () => {
 
   const canonicalCountry = cleanSlug(pass.country);
   const canonicalState = cleanSlug(pass.state);
-  const canonicalUrl = `https://www.livepasswatch.info/passes/${canonicalCountry}/${canonicalState}/${pass.slug}`;
+  const canonicalUrl = pass.slug === 'trollstigen-pass'
+    ? `https://www.livepasswatch.info/passes/${canonicalCountry}/${pass.slug}`
+    : (pass.state 
+        ? `https://www.livepasswatch.info/passes/${canonicalCountry}/${canonicalState}/${pass.slug}` 
+        : `https://www.livepasswatch.info/passes/${canonicalCountry}/${pass.slug}`);
   const passFullImage = pass.image.startsWith('http') ? pass.image : `https://www.livepasswatch.info${pass.image.startsWith('/') ? '' : '/'}${pass.image}`;
 
-  const imageAltText = pass.slug === 'zoji-la-pass' || pass.slug === 'zoji-la'
+  const imageAltText = pass.slug === 'trollstigen-pass'
+    ? 'Trollstigen Pass mountain road with winding hairpin bends in Norway'
+    : pass.slug === 'zoji-la-pass' || pass.slug === 'zoji-la'
     ? 'Zoji La Pass in Jammu and Kashmir'
     : pass.slug === 'stelvio-pass'
     ? 'Stelvio Pass in Italy'
@@ -201,6 +236,8 @@ export const PassDetailPage: React.FC = () => {
     ? 'Rohtang Pass in Himachal Pradesh'
     : pass.slug === 'khardung-la'
     ? 'Khardung La Pass in Ladakh'
+    : pass.slug === 'nathu-la'
+    ? 'Nathu La Pass mountain road in Sikkim, India'
     : `${pass.name} on ${pass.highway} in ${pass.state}`;
 
   const jsonLdGraph = {
@@ -208,13 +245,20 @@ export const PassDetailPage: React.FC = () => {
     "@graph": [
       {
         "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.livepasswatch.info/" },
-          { "@type": "ListItem", "position": 2, "name": "Passes", "item": "https://www.livepasswatch.info/passes" },
-          { "@type": "ListItem", "position": 3, "name": pass.country.split('/')[0].trim(), "item": `https://www.livepasswatch.info/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}` },
-          ...(pass.state ? [{ "@type": "ListItem", "position": 4, "name": pass.state.split('/')[0].trim(), "item": `https://www.livepasswatch.info/passes?state=${encodeURIComponent(pass.state.split('/')[0].trim())}` }] : []),
-          { "@type": "ListItem", "position": pass.state ? 5 : 4, "name": pass.name, "item": canonicalUrl }
-        ]
+        "itemListElement": pass.slug === 'trollstigen-pass'
+          ? [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.livepasswatch.info/" },
+              { "@type": "ListItem", "position": 2, "name": "Norway", "item": `https://www.livepasswatch.info/passes?country=Norway` },
+              { "@type": "ListItem", "position": 3, "name": "Mountain Passes", "item": `https://www.livepasswatch.info/passes` },
+              { "@type": "ListItem", "position": 4, "name": pass.name, "item": canonicalUrl }
+            ]
+          : [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.livepasswatch.info/" },
+              { "@type": "ListItem", "position": 2, "name": "Passes", "item": "https://www.livepasswatch.info/passes" },
+              { "@type": "ListItem", "position": 3, "name": pass.country.split('/')[0].trim(), "item": `https://www.livepasswatch.info/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}` },
+              ...(pass.state ? [{ "@type": "ListItem", "position": 4, "name": pass.state.split('/')[0].trim(), "item": `https://www.livepasswatch.info/passes?state=${encodeURIComponent(pass.state.split('/')[0].trim())}` }] : []),
+              { "@type": "ListItem", "position": pass.state ? 5 : 4, "name": pass.name, "item": canonicalUrl }
+            ]
       },
       {
         "@type": "WebPage",
@@ -262,14 +306,16 @@ export const PassDetailPage: React.FC = () => {
 
   const officialSourceDisplay = pass.dataSources && pass.dataSources.length > 0
     ? pass.dataSources[0].name
-    : (pass.slug === 'stelvio-pass' ? 'ANAS SpA & Servizio Strade Provincia Autonoma di Bolzano' : 'Official Department of Transportation');
+    : (pass.slug === 'trollstigen-pass' ? 'Norwegian Public Roads Administration (Statens vegvesen)' : (pass.slug === 'stelvio-pass' ? 'ANAS SpA & Servizio Strade Provincia Autonoma di Bolzano' : 'Official Department of Transportation'));
 
   const weatherSourceDisplay = pass.dataSources && pass.dataSources.length > 2
     ? pass.dataSources[2].name
-    : (pass.slug === 'stelvio-pass' ? 'MeteoTrentino & Servizio Meteorologico Aeronautica Militare' : 'Official Meteorological Service');
+    : (pass.slug === 'trollstigen-pass' ? 'Norwegian Meteorological Institute (Yr.no)' : (pass.slug === 'stelvio-pass' ? 'MeteoTrentino & Servizio Meteorologico Aeronautica Militare' : 'Official Meteorological Service'));
 
-  const displayedStatus = (liveDataError && pass.id === 'loup-loup-pass') ? 'UNKNOWN' : pass.status;
-  const displayedStatusDetail = (liveDataError && pass.id === 'loup-loup-pass') ? 'Live Loup Loup Pass data temporarily unavailable.' : pass.statusDetail;
+  const displayedStatus = liveDataError ? 'NEEDS_VERIFICATION' : pass.status;
+  const displayedStatusDetail = liveDataError 
+    ? `Live status verification failed. Official status could not be reverified.` 
+    : pass.statusDetail;
 
   return (
     <div className="pass-detail-page-container">
@@ -296,13 +342,23 @@ export const PassDetailPage: React.FC = () => {
         <nav className="detail-breadcrumbs" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <ChevronRight size={14} className="crumb-sep" />
-          <Link to="/passes">Passes</Link>
-          <ChevronRight size={14} className="crumb-sep" />
-          <Link to={`/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}`}>{pass.country.split('/')[0].trim()}</Link>
-          {pass.state && (
+          {pass.slug === 'trollstigen-pass' ? (
             <>
+              <Link to={`/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}`}>{pass.country.split('/')[0].trim()}</Link>
               <ChevronRight size={14} className="crumb-sep" />
-              <Link to={`/passes?state=${encodeURIComponent(pass.state.split('/')[0].trim())}`}>{pass.state.split('/')[0].trim()}</Link>
+              <Link to="/passes">Mountain Passes</Link>
+            </>
+          ) : (
+            <>
+              <Link to="/passes">Passes</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to={`/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}`}>{pass.country.split('/')[0].trim()}</Link>
+              {pass.state && (
+                <>
+                  <ChevronRight size={14} className="crumb-sep" />
+                  <Link to={`/passes?state=${encodeURIComponent(pass.state.split('/')[0].trim())}`}>{pass.state.split('/')[0].trim()}</Link>
+                </>
+              )}
             </>
           )}
           <ChevronRight size={14} className="crumb-sep" />
@@ -364,35 +420,125 @@ export const PassDetailPage: React.FC = () => {
         {/* Quick Navigation Jump Bar */}
         <nav className="detail-quick-nav-bar lp-card" aria-label="Page Sections">
           <a href="#status" className="quick-nav-link">Live Status</a>
-          <a href="#weather" className="quick-nav-link">Weather &amp; Temp</a>
+          {verificationMeta && <a href="#verification" className="quick-nav-link">Verification</a>}
+          {(pass.cameras && pass.cameras.length > 0 || pass.id === 'khyber-pass') && <a href="#cameras" className="quick-nav-link">Live Webcams</a>}
           <a href="#road-conditions" className="quick-nav-link">Road Conditions</a>
-          {pass.openingDateInfo && <a href="#opening-dates" className="quick-nav-link">Opening Dates {pass.openingDateInfo.year}</a>}
+          {pass.openingDateInfo && <a href="#opening-dates" className="quick-nav-link">Opening Dates</a>}
+          {pass.seasonalClosureInfo && <a href="#winter-closure" className="quick-nav-link">Winter Closure</a>}
+          <a href="#weather" className="quick-nav-link">Weather &amp; Temp</a>
           {pass.trafficSchedule && <a href="#traffic-schedule" className="quick-nav-link">Traffic &amp; Convoys</a>}
           {pass.cyclingInfo && <a href="#cycling" className="quick-nav-link">Cycling Guide</a>}
           {pass.drivingInfo && <a href="#driving" className="quick-nav-link">Driving &amp; Safety</a>}
-          {pass.cameras && pass.cameras.length > 0 && <a href="#cameras" className="quick-nav-link">Live Webcams</a>}
           <a href="#quick-facts" className="quick-nav-link">Quick Facts</a>
           <a href="#route-map" className="quick-nav-link">Map &amp; Route</a>
           {pass.distancesTable && pass.distancesTable.length > 0 && <a href="#distances" className="quick-nav-link">Distances</a>}
           <a href="#about" className="quick-nav-link">About {pass.name.split('(')[0].trim()}</a>
           <a href="#faqs" className="quick-nav-link">FAQs</a>
           <a href="#related-passes" className="quick-nav-link">Related Passes</a>
+          <a href="#data-sources" className="quick-nav-link">Data Sources</a>
         </nav>
+
+        {/* AdSense Top Banner Placement */}
+        <div className="adsense-placeholder top-ad-banner" style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#F9FAFB',
+          border: '1px dashed #E5E7EB',
+          borderRadius: '6px',
+          height: '90px',
+          margin: '0 0 24px 0',
+          fontSize: '12px',
+          color: '#9CA3AF'
+        }}>
+          <span>Advertisement Place-holder (AdSense Compliant)</span>
+        </div>
 
         {/* 2-Column Main Layout: Left Content Column + Right Sidebar */}
         <div className="pass-detail-body-grid">
           {/* Main Left Column */}
           <main className="pass-main-content-col">
+
+            {pass.slug === 'trollstigen-pass' && (
+              <div className="trollstigen-restrictions-callout lp-card" style={{
+                borderLeft: '4px solid #F59E0B',
+                padding: '20px',
+                marginBottom: '24px',
+                backgroundColor: 'rgba(245, 158, 11, 0.05)',
+                borderRadius: '6px'
+              }}>
+                <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#92400E' }}>
+                  <ShieldAlert size={20} color="#F59E0B" />
+                  <span>Important Vehicle Length &amp; Safety Notice (Fv63)</span>
+                </h3>
+                <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#4B5563' }}>
+                  <strong>Maximum Vehicle Length: 13.1 meters (43 ft)</strong>. Vehicles exceeding 13.1 meters are strictly prohibited from navigating the Trollstigen switchbacks due to tight turning radiuses across the 11 hairpin bends.
+                </p>
+                <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+                  <li><strong>Seasonal Winter Closure:</strong> Fv63 over Trollstigen is closed every winter (typically late October to late May/early June) due to heavy snowdrifts and avalanche hazard.</li>
+                  <li><strong>Rockfall Monitoring:</strong> Statens vegvesen actively inspects the rock face above the hairpins. Always follow official road signs and electronic message displays.</li>
+                  <li><strong>Toll-Free Route:</strong> Trollstigen is a public county road (Fv63) with no toll charges.</li>
+                </ul>
+              </div>
+            )}
+
+            {pass.id === 'status-pass' && (
+              <div className="status-pass-editorial-callout lp-card" style={{
+                borderLeft: '4px solid #3B82F6',
+                padding: '20px',
+                marginBottom: '24px',
+                backgroundColor: 'rgba(59, 130, 246, 0.04)',
+                borderRadius: '6px'
+              }}>
+                <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#1E3A8A' }}>
+                  <Info size={20} color="#3B82F6" />
+                  <span>Important Name &amp; Spelling Note</span>
+                </h3>
+                <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+                  While travelers frequently search for road conditions and webcams under the name <strong>Status Pass</strong>, 
+                  this mountain pass is officially designated and spelled as <strong>Satus Pass</strong> by the Washington State 
+                  Department of Transportation (WSDOT). Our real-time data is synchronized directly with WSDOT's official 
+                  Satus Pass feeds to ensure you receive the most accurate and up-to-date travel information available.
+                </p>
+              </div>
+            )}
+
+            {pass.id === 'khyber-pass' && (
+              <div className="khyber-pass-security-callout lp-card" style={{
+                borderLeft: '4px solid #EF4444',
+                padding: '20px',
+                marginBottom: '24px',
+                backgroundColor: 'rgba(239, 68, 68, 0.04)',
+                borderRadius: '6px'
+              }}>
+                <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#7F1D1D' }}>
+                  <ShieldAlert size={20} color="#EF4444" />
+                  <span>Strategic Border Corridor Access Advisory</span>
+                </h3>
+                <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#4B5563' }}>
+                  The Khyber Pass is a strategically sensitive international mountain corridor connecting Pakistan and Afghanistan. 
+                  Due to active border controls and security procedures at the Torkham border crossing, access is strictly regulated:
+                </p>
+                <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+                  <li><strong>Security Permits:</strong> Foreign travelers typically require a Non-Objection Certificate (NOC) and armed security escort from Pakistani authorities.</li>
+                  <li><strong>Active Checkpoints:</strong> Travelers must stop and clear multiple civil and military checkpoints, including the main gateway at Jamrud.</li>
+                  <li><strong>Border Closures:</strong> The Torkham border post can experience sudden, temporary closures due to bilateral border controls or administrative orders.</li>
+                  <li><strong>Local Rules:</strong> Photography is strictly prohibited near military posts, check posts, and the border terminal area. Always follow instructions from border authorities.</li>
+                </ul>
+              </div>
+            )}
             
             {/* Section 1: Top-of-Page Live Status Hero */}
             <section id="status" className="detail-section-block">
               <div className="section-title-wrap">
-                <h2 className="section-title-heading">{pass.name.split('(')[0].trim().toUpperCase()} CURRENT STATUS</h2>
+                <h2 className="section-title-heading">
+                  {pass.slug === 'trollstigen-pass' ? 'Is Trollstigen Pass Open Right Now?' : `${pass.name.split('(')[0].trim().toUpperCase()} CURRENT STATUS`}
+                </h2>
                 <span className="section-timestamp"><Clock size={14} /> Last updated: {pass.lastUpdated}</span>
               </div>
 
               <div className="status-weather-cards-grid">
-                {liveDataError && pass.id === 'loup-loup-pass' && (
+                {liveDataError && (
                   <div className="live-data-error-banner lp-card" style={{
                     backgroundColor: 'rgba(239, 68, 68, 0.08)',
                     borderLeft: '4px solid #EF4444',
@@ -406,35 +552,42 @@ export const PassDetailPage: React.FC = () => {
                   }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 'bold', color: '#EF4444' }}>
                       <ShieldAlert size={18} />
-                      <span>Live Loup Loup Pass data temporarily unavailable.</span>
+                      <span>Live status verification failed for {pass.name}.</span>
                     </div>
                     <p style={{ margin: 0, fontSize: '14px', color: '#9CA3AF' }}>
-                      We are currently experiencing issues retrieving real-time data from WSDOT.
-                      {pass.lastUpdated && ` Last verified update: ${pass.lastUpdated}.`}
+                      We were unable to verify current conditions from the official authority web servers.
                     </p>
-                    <a href="https://wsdot.wa.gov/travel/real-time-map/mountain-passes/loup-loup" target="_blank" rel="noopener noreferrer" style={{
+                    <a href={pass.officialSource || pass.official_source_url || '#'} target="_blank" rel="noopener noreferrer" style={{
                       color: '#3B82F6',
                       textDecoration: 'underline',
                       fontSize: '14px',
                       width: 'fit-content'
                     }}>
-                      Check official WSDOT status
+                      Check official travel source portal directly
                     </a>
                   </div>
                 )}
-
                 {/* Status Hero Card */}
                 <div className={`status-hero-card lp-card status-card-${displayedStatus}`}>
                   <div className="status-icon-large">
                     {displayedStatus === 'OPEN' && <CheckCircle2 size={44} className="icon-green" />}
-                    {displayedStatus === 'CAUTION' && <AlertTriangle size={44} className="icon-orange" />}
-                    {displayedStatus === 'CLOSED' && <XCircle size={44} className="icon-red" />}
+                    {(displayedStatus === 'CAUTION' || displayedStatus === 'RESTRICTED') && <AlertTriangle size={44} className="icon-orange" />}
+                    {(displayedStatus === 'CLOSED' || displayedStatus === 'TEMPORARILY_CLOSED' || displayedStatus === 'SEASONAL_CLOSURE') && <XCircle size={44} className="icon-red" />}
                     {displayedStatus === 'MONITORED' && <CheckCircle2 size={44} className="icon-blue" />}
-                    {displayedStatus === 'UNKNOWN' && <AlertTriangle size={44} className="icon-orange" />}
+                    {(displayedStatus === 'UNKNOWN' || displayedStatus === 'NEEDS_VERIFICATION') && <AlertTriangle size={44} style={{ color: '#9CA3AF' }} />}
                   </div>
                   <div className="status-hero-info">
                     <div className="status-badge-hero-pill">
-                      <span className="live-pulsing-dot" /> {displayedStatus === 'OPEN' ? '🟢 CURRENTLY OPEN' : displayedStatus === 'CAUTION' ? '⚠️ CAUTION ADVISED' : displayedStatus === 'CLOSED' ? '🔴 CURRENTLY CLOSED' : '⚪ STATUS UNKNOWN'}
+                      <span className="live-pulsing-dot" /> {
+                        displayedStatus === 'OPEN' ? '🟢 CURRENTLY OPEN' : 
+                        displayedStatus === 'CAUTION' ? '⚠️ CAUTION ADVISED' : 
+                        displayedStatus === 'RESTRICTED' ? '⚠️ RESTRICTIONS ACTIVE' : 
+                        displayedStatus === 'CLOSED' ? '🔴 CURRENTLY CLOSED' : 
+                        displayedStatus === 'TEMPORARILY_CLOSED' ? '🔴 TEMPORARILY CLOSED' : 
+                        displayedStatus === 'SEASONAL_CLOSURE' ? '🔴 SEASONAL CLOSURE' : 
+                        displayedStatus === 'NEEDS_VERIFICATION' ? '⚠️ NEEDS VERIFICATION' : 
+                        '⚪ STATUS UNKNOWN'
+                      }
                     </div>
                     <div className="status-hero-detail">{displayedStatusDetail}</div>
                     <div className="status-hero-source">
@@ -442,7 +595,6 @@ export const PassDetailPage: React.FC = () => {
                     </div>
                   </div>
                 </div>
-
                 {/* Snow Depth / Surface Metric */}
                 <div className="weather-metric-card lp-card">
                   <div className="metric-icon-box icon-snow">
@@ -469,9 +621,111 @@ export const PassDetailPage: React.FC = () => {
               </div>
             </section>
 
+            {/* Section 1b: Verification & Status History */}
+            {verificationMeta && (
+              <section id="verification" className="detail-section-block" style={{ marginTop: '24px' }}>
+                <div className="section-title-wrap">
+                  <h2 className="section-title-heading">OFFICIAL SOURCE STATUS VERIFICATION</h2>
+                  <span className="section-timestamp"><CheckCircle2 size={14} color="#10B981" /> Verified source data</span>
+                </div>
+
+                <div className="lp-card" style={{ padding: '24px', backgroundColor: 'var(--bg-surface)', borderRadius: '8px', border: '1px solid var(--border-color)', marginBottom: '24px' }}>
+                  <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', fontWeight: 600 }}>Verification Details</h3>
+                  
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '20px' }}>
+                    <div>
+                      <div style={{ fontSize: '12px', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '4px' }}>Verification Status</div>
+                      <StatusBadge status={verificationMeta.verification_status} size="sm" />
+                    </div>
+                    <div>
+                      <div style={{ fontSize: '12px', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '4px' }}>Confidence Level</div>
+                      <span style={{ fontWeight: 'bold', color: verificationMeta.confidence === 'HIGH' ? '#10B981' : verificationMeta.confidence === 'MEDIUM' ? '#F59E0B' : '#EF4444' }}>
+                        {verificationMeta.confidence}
+                      </span>
+                    </div>
+                    <div>
+                      <div style={{ fontSize: '12px', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '4px' }}>Last Verified Check</div>
+                      <div style={{ fontSize: '14px', fontWeight: 500 }}>{formatTime(verificationMeta.last_checked_at)}</div>
+                    </div>
+                    <div>
+                      <div style={{ fontSize: '12px', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '4px' }}>Last Status Change</div>
+                      <div style={{ fontSize: '14px', fontWeight: 500 }}>{formatTime(verificationMeta.last_status_change_at)}</div>
+                    </div>
+                  </div>
+
+                  <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '16px' }}>
+                    <div style={{ fontSize: '12px', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '4px' }}>Extracted Official Announcement</div>
+                    <p style={{ margin: 0, fontSize: '14px', fontStyle: 'italic', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+                      "{verificationMeta.source_evidence || 'No text extracted.'}"
+                    </p>
+                    {verificationMeta.source_published_at && (
+                      <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '8px' }}>
+                        Source Announcement Date: {formatTime(verificationMeta.source_published_at)}
+                      </div>
+                    )}
+                  </div>
+
+                  <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '16px', marginTop: '16px' }}>
+                    <div style={{ fontSize: '12px', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '4px' }}>Official Authority Source</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <span style={{ fontWeight: 'bold' }}>{verificationMeta.official_authority}</span>
+                      <a href={verificationMeta.official_source_url} target="_blank" rel="noopener noreferrer" style={{ color: '#3B82F6', textDecoration: 'underline', fontSize: '14px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                        Visit Official Web Portal <ExternalLink size={12} />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="lp-card" style={{ padding: '24px', backgroundColor: 'var(--bg-surface)', borderRadius: '8px', border: '1px solid var(--border-color)', marginBottom: '24px' }}>
+                  <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', fontWeight: 600 }}>How we verify pass status</h3>
+                  <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                    LivePassWatch checks official road, transport, police, government, and highway authorities where available. 
+                    We employ rules-based validation of official statements to ensure status reliability, rather than relying on AI-generated assumptions. 
+                    AI models are only used to summarize verified details into clean travel notifications.
+                  </p>
+                </div>
+
+                <div className="lp-card" style={{ padding: '24px', backgroundColor: 'var(--bg-surface)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+                  <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', fontWeight: 600 }}>Status Update History</h3>
+                  {history.length > 0 ? (
+                    <div style={{ overflowX: 'auto' }}>
+                      <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', textAlign: 'left' }}>
+                        <thead>
+                          <tr style={{ borderBottom: '2px solid var(--border-color)', paddingBottom: '8px' }}>
+                            <th style={{ padding: '10px 8px', fontWeight: 600 }}>Date / Time</th>
+                            <th style={{ padding: '10px 8px', fontWeight: 600 }}>Status</th>
+                            <th style={{ padding: '10px 8px', fontWeight: 600 }}>Reason / Restriction Details</th>
+                            <th style={{ padding: '10px 8px', fontWeight: 600 }}>Official Source</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {history.map((h: any) => (
+                            <tr key={h.id} style={{ borderBottom: '1px solid var(--border-color)' }}>
+                              <td style={{ padding: '12px 8px', whiteSpace: 'nowrap' }}>{formatTime(h.timestamp)}</td>
+                              <td style={{ padding: '12px 8px' }}><StatusBadge status={h.status} size="sm" /></td>
+                              <td style={{ padding: '12px 8px', color: 'var(--text-secondary)', lineHeight: '1.4' }}>{h.reason}</td>
+                              <td style={{ padding: '12px 8px', whiteSpace: 'nowrap' }}>
+                                <a href={h.source_url || verificationMeta.official_source_url} target="_blank" rel="noopener noreferrer" style={{ color: '#3B82F6', textDecoration: 'underline', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                                  {h.source} <ExternalLink size={12} />
+                                </a>
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  ) : (
+                    <p style={{ margin: 0, color: 'var(--text-muted)' }}>No recent status transitions logged in the database for this pass.</p>
+                  )}
+                </div>
+              </section>
+            )}
+
             {/* Section 2: Weather & Temperature Section */}
             <section id="weather" className="detail-section-block">
-              <h2 className="section-title-heading">{pass.name.split('(')[0].trim()} Weather</h2>
+              <h2 className="section-title-heading">
+                {pass.slug === 'trollstigen-pass' ? 'Trollstigen Pass Weather Today' : `${pass.name.split('(')[0].trim()} Weather`}
+              </h2>
               <div className="weather-detail-container lp-card">
                 <div className="weather-current-banner">
                   <div className="current-weather-left">
@@ -511,7 +765,9 @@ export const PassDetailPage: React.FC = () => {
 
             {/* Section 3: Road Conditions */}
             <section id="road-conditions" className="detail-section-block">
-              <h2 className="section-title-heading">{pass.name.split('(')[0].trim()} Road Conditions</h2>
+              <h2 className="section-title-heading">
+                {pass.slug === 'trollstigen-pass' ? 'Trollstigen Pass Road Conditions' : `${pass.name.split('(')[0].trim()} Road Conditions`}
+              </h2>
               <div className="road-conditions-container lp-card">
                 <div className="road-card-row">
                   <span className="road-key">Current Surface Condition:</span>
@@ -524,9 +780,11 @@ export const PassDetailPage: React.FC = () => {
                 <div className="road-card-row">
                   <span className="road-key">Switchback Hazards &amp; Gradients:</span>
                   <span className="road-val">
-                    {pass.slug === 'stelvio-pass' 
-                      ? '48 stone-walled switchbacks on the South Tyrol ramp (avg 7.4%, max 12%), 39 switchbacks on the Bormio ramp, narrow avalanche galleries, and high-altitude weather exposure.'
-                      : 'Steep alpine gradients, winding switchbacks, and localized high-altitude road surface variations.'}
+                    {pass.slug === 'trollstigen-pass'
+                      ? '11 sharp hairpin bends with sustained 10% gradient, narrow roadway, Stigfossen waterfall spray on asphalt, and 13.1m max vehicle length.'
+                      : (pass.slug === 'stelvio-pass' 
+                        ? '48 stone-walled switchbacks on the South Tyrol ramp (avg 7.4%, max 12%), 39 switchbacks on the Bormio ramp, narrow avalanche galleries, and high-altitude weather exposure.'
+                        : 'Steep alpine gradients, winding switchbacks, and localized high-altitude road surface variations.')}
                   </span>
                 </div>
                 <div className="road-card-row">
@@ -539,7 +797,9 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 4: Opening Dates (Provisional vs Confirmed) */}
             {pass.openingDateInfo && (
               <section id="opening-dates" className="detail-section-block">
-                <h2 className="section-title-heading">{pass.name.split('(')[0].trim()} Opening Dates {pass.openingDateInfo.year}</h2>
+                <h2 className="section-title-heading">
+                  {pass.slug === 'trollstigen-pass' ? 'When Does Trollstigen Pass Open?' : `${pass.name.split('(')[0].trim()} Opening Dates ${pass.openingDateInfo.year}`}
+                </h2>
                 <div className="opening-dates-container lp-card">
                   <div className="opening-banner-pill">
                     <Calendar size={15} /> {pass.openingDateInfo.statusText}
@@ -565,6 +825,23 @@ export const PassDetailPage: React.FC = () => {
                   <div className="opening-notes-box">
                     <strong>Notice on Provisional Dates:</strong> {pass.openingDateInfo.notes}
                   </div>
+                </div>
+              </section>
+            )}
+
+            {/* Section 4b: Winter Closure Information */}
+            {pass.seasonalClosureInfo && (
+              <section id="winter-closure" className="detail-section-block">
+                <h2 className="section-title-heading">
+                  {pass.slug === 'trollstigen-pass' ? 'When Does Trollstigen Pass Close for Winter?' : 'Seasonal Winter Closure Information'}
+                </h2>
+                <div className="opening-dates-container lp-card">
+                  <div className="opening-banner-pill" style={{ backgroundColor: 'rgba(239, 68, 68, 0.08)', color: '#EF4444' }}>
+                    <Snowflake size={15} /> {pass.seasonalClosureInfo.typicalClosure}
+                  </div>
+                  <p style={{ margin: '16px 0 0 0', fontSize: '14px', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                    {pass.seasonalClosureInfo.description}
+                  </p>
                 </div>
               </section>
             )}
@@ -690,9 +967,11 @@ export const PassDetailPage: React.FC = () => {
             )}
 
             {/* Section 7: Live Webcams Showcase */}
-            {pass.cameras && pass.cameras.length > 0 && (
+            {pass.cameras && pass.cameras.length > 0 ? (
               <section id="cameras" className="detail-section-block">
-                <h2 className="section-title-heading">{pass.name.split('(')[0].trim()} Live Webcams</h2>
+                <h2 className="section-title-heading">
+                  {pass.slug === 'trollstigen-pass' ? 'Trollstigen Pass Live Webcams' : `${pass.name.split('(')[0].trim()} Live Webcams`}
+                </h2>
                 <div className="camera-showcase-container lp-card">
                   <div className="camera-card-header">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -710,10 +989,25 @@ export const PassDetailPage: React.FC = () => {
 
                   <div className="camera-viewport-wrap">
                     {cameraError ? (
-                      <div className="camera-error-view">
-                        <Camera size={36} opacity={0.4} />
-                        <p>Camera feed temporarily updating</p>
-                        <span>Official snapshot will refresh automatically</span>
+                      <div className="camera-error-view" style={{ padding: '36px 16px', textAlign: 'center' }}>
+                        <Camera size={44} opacity={0.4} style={{ marginBottom: '12px' }} />
+                        <h4 style={{ margin: '0 0 8px 0', fontSize: '16px', color: 'var(--text-dark)' }}>
+                          {pass.slug === 'trollstigen-pass' ? 'Trollstigen webcam temporarily unavailable' : 'Camera snapshot temporarily updating'}
+                        </h4>
+                        <p style={{ margin: '0 0 16px 0', fontSize: '13.5px', color: 'var(--text-muted)' }}>
+                          {pass.slug === 'trollstigen-pass'
+                            ? 'The official Statens vegvesen camera feed is currently refreshing.'
+                            : 'Official snapshot will refresh automatically.'}
+                        </p>
+                        <a 
+                          href={currentCam.officialUrl || (pass.slug === 'trollstigen-pass' ? 'https://www.vegvesen.no/trafikkinformasjon/reiseinformasjon/webkamera/' : '#')} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="btn btn-outline-primary"
+                          style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                        >
+                          Check Official Road Information &amp; Cameras <ExternalLink size={13} />
+                        </a>
                       </div>
                     ) : (
                       <>
@@ -725,10 +1019,10 @@ export const PassDetailPage: React.FC = () => {
                           loading="lazy"
                         />
                         <div className="camera-live-pill">
-                          <span className="live-pulsing-dot" /> LIVE CAMERA
+                          <span className="live-pulsing-dot" /> LIVE CAMERA IMAGE
                         </div>
                         <div className="camera-timestamp-overlay">
-                          {currentCam.location} • Refreshes ~2 min
+                          {currentCam.direction || currentCam.location} • Refreshes ~60s
                         </div>
                       </>
                     )}
@@ -740,11 +1034,11 @@ export const PassDetailPage: React.FC = () => {
                       <span className="cam-meta-source">{currentCam.source || 'Official Highway Camera'}</span>
                     </div>
                     <div className="cam-meta-sub">
-                      <span>{pass.highway} • {currentCam.location}</span>
+                      <span>{pass.highway} • {currentCam.location || currentCam.milepost}</span>
                     </div>
                     <div className="cam-footer-action">
                       <a 
-                        href={currentCam.officialUrl || 'https://traffico.provincia.bz.it'} 
+                        href={currentCam.officialUrl || (pass.slug === 'trollstigen-pass' ? 'https://www.vegvesen.no/trafikkinformasjon/reiseinformasjon/webkamera/' : 'https://traffico.provincia.bz.it')} 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="cam-official-link"
@@ -766,7 +1060,7 @@ export const PassDetailPage: React.FC = () => {
                           <img src={cam.image} alt={cam.title} className="cam-thumb-img" loading="lazy" />
                           <div className="cam-thumb-caption">
                             <span className="cam-thumb-name">{cam.title}</span>
-                            <span className="cam-thumb-loc">{cam.milepost || cam.location}</span>
+                            <span className="cam-thumb-loc">{cam.milepost || cam.direction || cam.location}</span>
                           </div>
                         </div>
                       ))}
@@ -774,7 +1068,29 @@ export const PassDetailPage: React.FC = () => {
                   )}
                 </div>
               </section>
-            )}
+            ) : pass.id === 'khyber-pass' ? (
+              <section id="cameras" className="detail-section-block">
+                <h2 className="section-title-heading">Khyber Pass Webcam &amp; Cameras</h2>
+                <div className="camera-showcase-container lp-card" style={{ padding: '24px', textAlign: 'center' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
+                    <Camera size={48} color="#9CA3AF" />
+                    <h3 style={{ fontSize: '18px', margin: 0, fontWeight: '600', color: 'var(--text-dark)' }}>Live Khyber Pass Camera Availability</h3>
+                    <p style={{ margin: '4px 0 16px 0', maxWidth: '500px', fontSize: '14.5px', color: 'var(--text-muted)', lineHeight: '1.6' }}>
+                      An independently verified public live webcam for this location is not currently available. Because the Khyber Pass is a strategically sensitive international border corridor, real-time public video streams are restricted.
+                    </p>
+                    <a 
+                      href="https://nha.gov.pk/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="btn btn-outline-primary"
+                      style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                    >
+                      Check National Highway Authority for Traffic Updates <ExternalLink size={14} />
+                    </a>
+                  </div>
+                </div>
+              </section>
+            ) : null}
 
             {/* Section 8: Quick Facts */}
             <section id="quick-facts" className="detail-section-block">
@@ -841,7 +1157,9 @@ export const PassDetailPage: React.FC = () => {
                     <div className="fact-icon-box"><Layers size={20} /></div>
                     <div className="fact-meta">
                       <span className="fact-label">Total Switchbacks</span>
-                      <strong className="fact-value">87 Hairpins (48 NE + 39 SW)</strong>
+                      <strong className="fact-value">
+                        {pass.slug === 'trollstigen-pass' ? '11 Hairpin Turns (10% Incline)' : (pass.slug === 'stelvio-pass' ? '87 Hairpins (48 NE + 39 SW)' : 'Multi-tier switchbacks')}
+                      </strong>
                     </div>
                   </div>
                 </div>
@@ -850,16 +1168,29 @@ export const PassDetailPage: React.FC = () => {
 
             {/* Section 9: Location & Interactive Map */}
             <section id="route-map" className="detail-section-block">
-              <h2 className="section-title-heading">{pass.name.split('(')[0].trim()} Map</h2>
+              <h2 className="section-title-heading">
+                {pass.slug === 'trollstigen-pass' ? 'Trollstigen Pass Map' : `${pass.name.split('(')[0].trim()} Map`}
+              </h2>
               <div className="map-and-route-container lp-card">
                 <div className="map-frame-header">
                   <div>
                     <h3 className="map-frame-title">{pass.name} Corridor ({pass.highway})</h3>
                     <span className="map-frame-sub">GPS Coordinates: {pass.coordinates.lat.toFixed(4)}&deg; N, {pass.coordinates.lng.toFixed(4)}&deg; E • Summit Elevation: {pass.elevationFt.toLocaleString()} ft ({pass.elevationM.toLocaleString()} m)</span>
                   </div>
-                  <button onClick={() => navigate('/map')} className="btn btn-outline-primary">
-                    View on Fullscreen Map <ExternalLink size={14} />
-                  </button>
+                  <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                    <a 
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${pass.coordinates.lat},${pass.coordinates.lng}`} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="btn btn-outline-primary"
+                      style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                    >
+                      <Navigation size={14} /> Get Directions <ExternalLink size={12} />
+                    </a>
+                    <button onClick={() => navigate('/map')} className="btn btn-outline-primary">
+                      Fullscreen Map <ExternalLink size={14} />
+                    </button>
+                  </div>
                 </div>
 
                 <div className="map-embed-wrapper">
@@ -922,10 +1253,12 @@ export const PassDetailPage: React.FC = () => {
 
             {/* Section 10: Where Is Pass Located & Geography/History */}
             <section id="about" className="detail-section-block">
-              <h2 className="section-title-heading">Where Is {pass.name.split('(')[0].trim()} Located?</h2>
+              <h2 className="section-title-heading">
+                {pass.slug === 'trollstigen-pass' ? 'About Trollstigen Pass' : `Where Is ${pass.name.split('(')[0].trim()} Located?`}
+              </h2>
               <div className="about-narrative-container lp-card">
                 <p className="narrative-p">
-                  <strong>{pass.name}</strong> is situated in the <strong>{pass.quickFacts?.mountainRange || 'Himalayan Range'}</strong> of <strong>{pass.state}, {pass.country}</strong>, at an official summit elevation of <strong>{pass.elevationFt.toLocaleString()} feet ({pass.elevationM.toLocaleString()} meters)</strong> above sea level. Traversed by <strong>{pass.highway}</strong>, it {pass.quickFacts?.connects ? `connects ${pass.quickFacts.connects}` : pass.description}.
+                  <strong>{pass.name}</strong> is situated in the <strong>{pass.quickFacts?.mountainRange || 'Scandinavian Mountains'}</strong> of <strong>{pass.state}, {pass.country}</strong>, at an official summit elevation of <strong>{pass.elevationFt.toLocaleString()} feet ({pass.elevationM.toLocaleString()} meters)</strong> above sea level. Traversed by <strong>{pass.highway}</strong>, it {pass.quickFacts?.connects ? `connects ${pass.quickFacts.connects}` : pass.description}.
                 </p>
 
                 {pass.narrativeSections ? (
@@ -944,9 +1277,57 @@ export const PassDetailPage: React.FC = () => {
               </div>
             </section>
 
+            {/* Section 10.5: Editorial Guidance & Travel Tips */}
+            <section id="travel-guidance" className="detail-section-block">
+              <h2 className="section-title-heading">
+                {pass.slug === 'trollstigen-pass' ? 'Trollstigen Pass Travel Information' : 'Mountain Pass Travel Guidance & Winter Tips'}
+              </h2>
+              <div className="travel-guidance-container lp-card" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <p className="narrative-p" style={{ marginBottom: '8px' }}>
+                  Mountain passes present unique driving environments. Understanding how weather, elevation, and highway regulations intersect is essential for a safe crossing.
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
+                  <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
+                    <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
+                      <Clock size={16} /> How Pass Closures Work
+                    </h4>
+                    <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
+                      Highways departments close mountain passes when safety hazards like avalanches, heavy snow accumulation, or rockfalls become unmanageable. A <strong>Road Closure</strong> means no public vehicles are allowed. A <strong>Travel Advisory</strong> means the pass remains open, but chains, winter tires, or extreme caution are required.
+                    </p>
+                  </div>
+                  <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
+                    <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
+                      <Mountain size={16} /> Elevation &amp; Conditions
+                    </h4>
+                    <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
+                      Elevation changes weather rapidly. On {pass.name}, the summit elevation of {pass.elevationFt.toLocaleString()} ft can experience sub-freezing temperatures, heavy snow, and dense fog even while the valleys below remain warm and clear. Always check elevation forecasts rather than valley towns.
+                    </p>
+                  </div>
+                  <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
+                    <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
+                      <Camera size={16} /> Reading Webcams
+                    </h4>
+                    <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
+                      Live traffic webcams are essential tools to verify actual surface conditions before departure. Look at the road tracks to identify if the pavement is dry, wet, or has compact snow/ice. Pay attention to camera timestamps.
+                    </p>
+                  </div>
+                  <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
+                    <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
+                      <ShieldAlert size={16} /> Winter Restrictions
+                    </h4>
+                    <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
+                      <strong>Traction Tires Advised</strong> means winter or all-season tires are recommended. <strong>Chains Required</strong> is a legally binding order; failing to carry or install chains when posted carries significant fines and can lead to dangerous spinouts.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* Section 11: FAQs */}
             <section id="faqs" className="detail-section-block">
-              <h2 className="section-title-heading">Frequently Asked Questions about {pass.name.split('(')[0].trim()}</h2>
+              <h2 className="section-title-heading">
+                {pass.slug === 'trollstigen-pass' ? 'Trollstigen Pass Frequently Asked Questions' : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
+              </h2>
               <div className="faqs-accordion-container lp-card">
                 {pass.faqs && pass.faqs.length > 0 ? (
                   pass.faqs.map((faq, idx) => (
@@ -974,8 +1355,38 @@ export const PassDetailPage: React.FC = () => {
             <section id="related-passes" className="detail-section-block">
               <h2 className="section-title-heading">Explore Related Mountain Passes</h2>
               <div className="internal-links-cards-grid">
-                {/* India / Himalaya passes always first for Indian passes */}
-                {(pass.country === 'India' || pass.continent === 'Asia') ? (
+                {/* Norway / Scandinavia passes always first for Trollstigen */}
+                {pass.country === 'Norway' ? (
+                  <>
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais-uri/furka-pass')}>
+                      <div className="link-card-badge">Swiss Alps</div>
+                      <h3 className="link-card-title">Furka Pass (7,969 ft)</h3>
+                      <p className="link-card-desc">Experience Switzerland's iconic James Bond Goldfinger route, Rhone Glacier ice grotto, and Hotel Belvédère.</p>
+                      <span className="link-card-action">View Furka Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/italy/south-tyrol-lombardy/stelvio-pass')}>
+                      <div className="link-card-badge">Italian Alps</div>
+                      <h3 className="link-card-title">Stelvio Pass (9,045 ft)</h3>
+                      <p className="link-card-desc">The crown jewel of the Eastern Alps with 87 hairpins and high-altitude road conditions on SS38.</p>
+                      <span className="link-card-action">View Stelvio Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?country=Norway')}>
+                      <div className="link-card-badge">Norway</div>
+                      <h3 className="link-card-title">All Norwegian Mountain Passes</h3>
+                      <p className="link-card-desc">Browse real-time road conditions, webcams, and winter closure alerts for all National Tourist Routes in Norway.</p>
+                      <span className="link-card-action">View Norway Passes &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?continent=Europe')}>
+                      <div className="link-card-badge">Europe</div>
+                      <h3 className="link-card-title">European Mountain Passes</h3>
+                      <p className="link-card-desc">Monitor live alpine highway statuses across Norway, Switzerland, Italy, France, and Austria.</p>
+                      <span className="link-card-action">Explore Europe Passes &rarr;</span>
+                    </div>
+                  </>
+                ) : (pass.country === 'India' || pass.continent === 'Asia') ? (
                   <>
                     <div className="internal-link-card lp-card" onClick={() => navigate('/passes/india/ladakh/khardung-la')}>
                       <div className="link-card-badge">Ladakh, India</div>
@@ -1002,6 +1413,13 @@ export const PassDetailPage: React.FC = () => {
                   </>
                 ) : (
                   <>
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/norway/trollstigen-pass')}>
+                      <div className="link-card-badge">Norway</div>
+                      <h3 className="link-card-title">Trollstigen Pass (2,815 ft)</h3>
+                      <p className="link-card-desc">Check live road status, 11 hairpin turns, Statens vegvesen webcams, and seasonal opening dates on Fv63.</p>
+                      <span className="link-card-action">View Trollstigen &rarr;</span>
+                    </div>
+
                     <div className="internal-link-card lp-card" onClick={() => navigate('/passes?country=Italy')}>
                       <div className="link-card-badge">Italy</div>
                       <h3 className="link-card-title">Italian Mountain Passes</h3>
@@ -1012,7 +1430,7 @@ export const PassDetailPage: React.FC = () => {
                     <div className="internal-link-card lp-card" onClick={() => navigate('/passes?continent=Europe')}>
                       <div className="link-card-badge">European Alps</div>
                       <h3 className="link-card-title">Mountain Passes in Europe</h3>
-                      <p className="link-card-desc">Discover high alpine corridors across Switzerland, Italy, France, and Austria with real-time pass statuses.</p>
+                      <p className="link-card-desc">Discover high alpine corridors across Norway, Switzerland, Italy, France, and Austria with real-time pass statuses.</p>
                       <span className="link-card-action">Explore Europe Passes &rarr;</span>
                     </div>
 
@@ -1022,27 +1440,13 @@ export const PassDetailPage: React.FC = () => {
                       <p className="link-card-desc">Experience the iconic James Bond Goldfinger route, Rhone Glacier ice grotto, and Hotel Belvédère in Switzerland.</p>
                       <span className="link-card-action">View Furka Pass &rarr;</span>
                     </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/india/himachal-pradesh/rohtang-pass')}>
-                      <div className="link-card-badge">Himalayas</div>
-                      <h3 className="link-card-title">Rohtang Pass (13,058 ft)</h3>
-                      <p className="link-card-desc">Check live road status, NGT permits, and mountain cameras in the Pir Panjal Range of Himachal Pradesh.</p>
-                      <span className="link-card-action">View Rohtang Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/new-zealand/canterbury-west-coast/arthurs-pass')}>
-                      <div className="link-card-badge">Southern Alps</div>
-                      <h3 className="link-card-title">Arthur's Pass (3,018 ft)</h3>
-                      <p className="link-card-desc">Monitor live road status, Otira Viaduct CCTV, and alpine weather across New Zealand's Great Alpine Highway.</p>
-                      <span className="link-card-action">View Arthur's Pass &rarr;</span>
-                    </div>
                   </>
                 )}
 
                 <div className="internal-link-card lp-card" onClick={() => navigate('/map')}>
                   <div className="link-card-badge">Interactive Map</div>
                   <h3 className="link-card-title">Live Mountain Pass Map</h3>
-                  <p className="link-card-desc">Explore global mountain passes with live status pins, webcams, and satellite terrain — including all Himalayan and Indian passes.</p>
+                  <p className="link-card-desc">Explore global mountain passes with live status pins, webcams, and satellite terrain — including Scandinavian and Alpine passes.</p>
                   <span className="link-card-action">Open Map &rarr;</span>
                 </div>
               </div>
@@ -1050,11 +1454,11 @@ export const PassDetailPage: React.FC = () => {
 
             {/* Section 13: Authoritative Data Sources Attribution */}
             {pass.dataSources && pass.dataSources.length > 0 && (
-              <section className="detail-section-block">
+              <section id="data-sources" className="detail-section-block">
                 <div className="data-sources-banner lp-card">
-                  <h4 className="sources-title">Authoritative Data Sources &amp; Attribution</h4>
+                  <h2 className="sources-title" style={{ fontSize: '18px', fontWeight: 600, margin: '0 0 8px 0' }}>Data Sources</h2>
                   <p className="sources-sub">
-                    LivePassWatch verifies all pass statuses, road restrictions, and weather warnings directly with official governmental and highway transport authorities:
+                    LivePassWatch independently verifies pass statuses, road restrictions, and weather warnings directly from official governmental and highway transport authorities:
                   </p>
                   <div className="sources-pills-list">
                     {pass.dataSources.map((ds, i) => (
@@ -1069,6 +1473,9 @@ export const PassDetailPage: React.FC = () => {
                         <span>{ds.type}: <strong>{ds.name}</strong></span>
                       </a>
                     ))}
+                  </div>
+                  <div style={{ marginTop: '16px', paddingTop: '12px', borderTop: '1px solid var(--border-color)', fontSize: '12.5px', color: 'var(--text-muted)', lineHeight: '1.5' }}>
+                    <strong>Editorial Note:</strong> Last reviewed: {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })} • Live data updated: {pass.lastUpdated}. Road and weather conditions in high-altitude mountain environments can change rapidly. Always confirm local conditions with the official road authority before departure. LivePassWatch is an independent mountain pass information service.
                   </div>
                 </div>
               </section>
@@ -1115,7 +1522,7 @@ export const PassDetailPage: React.FC = () => {
                 <Link to="/map" className="sidebar-map-link">Full Map &rarr;</Link>
               </div>
               <MapComponent
-                passes={passesData}
+                passes={passes}
                 selectedPass={pass}
                 height="300px"
                 zoomLevel={5}
@@ -1129,7 +1536,32 @@ export const PassDetailPage: React.FC = () => {
               <h3 className="sidebar-card-title">{pass.name.split('(')[0].trim()} Travel Checklist</h3>
               <ul className="sidebar-check-list">
                 <li><Check size={14} className="check-green" /> Check live road opening status before departing</li>
-                {pass.slug.includes('zoji') ? (
+                {pass.slug === 'trollstigen-pass' ? (
+                  <>
+                    <li><Check size={14} className="check-green" /> Verify vehicle length is within 13.1m (43 ft) limit</li>
+                    <li><Check size={14} className="check-green" /> Downshift to 1st/2nd gear for engine braking on 10% grade</li>
+                    <li><Check size={14} className="check-green" /> Yield to oncoming tour buses and uphill traffic at hairpins</li>
+                    <li><Check size={14} className="check-green" /> Use designated passing turnouts (Møteplass) to let traffic pass</li>
+                    <li><Check size={14} className="check-green" /> Keep low-beam headlights illuminated at all times</li>
+                    <li><Check size={14} className="check-green" /> Check summit webcam for mist, fog, and spray on Stigfossen bridge</li>
+                  </>
+                ) : pass.id === 'khyber-pass' ? (
+                  <>
+                    <li><Check size={14} className="check-green" /> Obtain necessary civil/military security permits (NOC)</li>
+                    <li><Check size={14} className="check-green" /> Carry official identification documents (CNIC/Passport) at all times</li>
+                    <li><Check size={14} className="check-green" /> Prepare for security checkpoint inspections, starting at Jamrud</li>
+                    <li><Check size={14} className="check-green" /> Strictly refrain from photographing military checkpoints or border areas</li>
+                    <li><Check size={14} className="check-green" /> Confirm the operational status of the Torkham border post before setting out</li>
+                  </>
+                ) : pass.id === 'status-pass' ? (
+                  <>
+                    <li><Check size={14} className="check-green" /> Carry appropriate winter traction tires or chains in your vehicle</li>
+                    <li><Check size={14} className="check-green" /> Review the latest live summit webcam snapshot at MP 27.1</li>
+                    <li><Check size={14} className="check-green" /> Check weather at pass elevation (3,107 ft) instead of valley floor</li>
+                    <li><Check size={14} className="check-green" /> Maintain safe speed on curves descending towards Goldendale</li>
+                    <li><Check size={14} className="check-green" /> Keep headlights on to remain visible in sudden rain/fog</li>
+                  </>
+                ) : pass.slug.includes('zoji') ? (
                   <>
                     <li><Check size={14} className="check-green" /> Confirm daily convoy cut-off times at Sonamarg / Minamarg</li>
                     <li><Check size={14} className="check-green" /> High ground clearance / 4x4 recommended for mud stretches</li>
@@ -1151,6 +1583,22 @@ export const PassDetailPage: React.FC = () => {
               <Link to="/resources" className="btn btn-outline-primary btn-block">
                 View Mountain Travel Tips
               </Link>
+            </div>
+
+            {/* AdSense Sidebar Banner Placement */}
+            <div className="adsense-placeholder sidebar-ad-banner" style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              backgroundColor: '#F9FAFB',
+              border: '1px dashed #E5E7EB',
+              borderRadius: '6px',
+              height: '250px',
+              marginTop: '16px',
+              fontSize: '12px',
+              color: '#9CA3AF'
+            }}>
+              <span>Advertisement Place-holder (AdSense Compliant)</span>
             </div>
           </aside>
         </div>

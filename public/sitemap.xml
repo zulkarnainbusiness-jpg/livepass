@@ -109,8 +109,20 @@
     <loc>https://www.livepasswatch.info/passes/india/himachal-pradesh/rohtang-pass</loc>
     <lastmod>2026-08-16</lastmod>
   </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/india/sikkim/nathu-la</loc>
+    <lastmod>2026-08-23</lastmod>
+  </url>
 
-  <!-- European Alps Passes -->
+  <!-- European Mountain Passes -->
+  <url>
+    <loc>https://www.livepasswatch.info/passes/norway/trollstigen-pass</loc>
+    <lastmod>2026-08-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/norway/more-og-romsdal/trollstigen-pass</loc>
+    <lastmod>2026-08-24</lastmod>
+  </url>
   <url>
     <loc>https://www.livepasswatch.info/passes/switzerland/valais-uri/furka-pass</loc>
     <lastmod>2026-08-16</lastmod>

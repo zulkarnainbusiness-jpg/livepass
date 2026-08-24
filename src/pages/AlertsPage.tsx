@@ -13,8 +13,8 @@ import {
   Zap,
   Check
 } from 'lucide-react';
-import { alertsData, getAlertSummaryCounts } from '../data/alerts';
 import { getPassUrl } from '../data/passes';
+import { usePasses } from '../context/PassesContext';
 import { StatusBadge } from '../components/StatusBadge';
 import { TrustBar } from '../components/TrustBar';
 import { SEOHelper } from '../components/SEOHelper';
@@ -22,8 +22,68 @@ import { apiService } from '../services/apiService';
 import './AlertsPage.css';
 
 export const AlertsPage: React.FC = () => {
+  const { passes } = usePasses();
   const navigate = useNavigate();
-  const summaryCounts = getAlertSummaryCounts();
+
+  const alertsData = useMemo(() => {
+    return passes.map(pass => {
+      let type: 'Closure' | 'Warning' | 'Advisory' | 'All Clear' = 'All Clear';
+      let severity: 'critical' | 'warning' | 'advisory' | 'info' = 'info';
+      let title = '';
+      let description = pass.statusDetail || pass.description || `Road conditions on ${pass.name}.`;
+
+      if (pass.status === 'CLOSED' || pass.status === 'SEASONAL_CLOSURE' || pass.status === 'TEMPORARILY_CLOSED') {
+        type = 'Closure';
+        severity = 'critical';
+        title = `${pass.name} is Closed — ${pass.statusDetail || 'Status officially verified'}`;
+      } else if (pass.status === 'RESTRICTED' || pass.status === 'CAUTION') {
+        type = 'Warning';
+        severity = 'warning';
+        title = `Restrictions Active on ${pass.name} — ${pass.statusDetail || 'Use caution'}`;
+      } else if (pass.status === 'NEEDS_VERIFICATION' || pass.status === 'UNKNOWN') {
+        type = 'Advisory';
+        severity = 'advisory';
+        title = `Status Unverified for ${pass.name} — Checks Pending`;
+        description = `Dynamic verification checks failed to connect to the official servers. Status could not be independently verified.`;
+      } else {
+        type = 'All Clear';
+        severity = 'info';
+        title = `${pass.name} Open — Clear Travel Conditions`;
+      }
+
+      return {
+        id: `alert-${pass.id}`,
+        passId: pass.id,
+        passName: pass.name,
+        slug: pass.slug,
+        country: pass.country,
+        state: pass.state,
+        highway: pass.highway,
+        type,
+        severity,
+        title,
+        description,
+        status: pass.status,
+        timestamp: pass.lastUpdated || 'Recently checked',
+        source: pass.officialSource || pass.official_source_url || 'Official Transport Department'
+      };
+    });
+  }, [passes]);
+
+  const summaryCounts = useMemo(() => {
+    const closures = alertsData.filter(a => a.type === 'Closure').length;
+    const warnings = alertsData.filter(a => a.type === 'Warning').length;
+    const advisories = alertsData.filter(a => a.type === 'Advisory').length;
+    const allClear = alertsData.filter(a => a.type === 'All Clear').length;
+
+    return {
+      closures,
+      warnings,
+      advisories,
+      allClear,
+      total: alertsData.length
+    };
+  }, [alertsData]);
 
   // Filters State
   const [selectedCountry, setSelectedCountry] = useState('All Countries');

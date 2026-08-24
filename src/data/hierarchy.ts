@@ -135,6 +135,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 elevationM: 1225,
                 status: 'UNKNOWN',
                 image: '/loup-loup-pass-washington.webp'
+              },
+              {
+                id: 'status-pass',
+                slug: 'status-pass',
+                name: 'Status Pass',
+                highway: 'US 97',
+                elevationFt: 3107,
+                elevationM: 947,
+                status: 'UNKNOWN',
+                image: '/status-pass.jpg'
               }
             ]
 
@@ -294,6 +304,30 @@ export const hierarchyData: HierarchyContinent[] = [
           }
         ]
       },
+      {
+        id: 'norway',
+        name: 'Norway',
+        code: 'NOR',
+        flagEmoji: '🇳🇴',
+        states: [
+          {
+            id: 'more-og-romsdal',
+            name: 'Møre og Romsdal',
+            passes: [
+              {
+                id: 'trollstigen-pass',
+                slug: 'trollstigen-pass',
+                name: 'Trollstigen Pass',
+                highway: 'Fv63',
+                elevationFt: 2815,
+                elevationM: 858,
+                status: 'CLOSED',
+                image: '/trollstigen-pass-road-status-webcam.webp'
+              }
+            ]
+          }
+        ]
+      },
       { id: 'france', name: 'France', code: 'FRA', flagEmoji: '🇫🇷', states: [] },
       { id: 'austria', name: 'Austria', code: 'AUT', flagEmoji: '🇦🇹', states: [] }
     ]
@@ -356,11 +390,51 @@ export const hierarchyData: HierarchyContinent[] = [
                 image: '/rohtang-pass-himachal-pradesh.jpg'
               }
             ]
+          },
+          {
+            id: 'sikkim',
+            name: 'Sikkim',
+            passes: [
+              {
+                id: 'nathu-la',
+                slug: 'nathu-la',
+                name: 'Nathu La Pass',
+                highway: 'NH-310',
+                elevationFt: 14140,
+                elevationM: 4310,
+                status: 'UNKNOWN',
+                image: '/nathu-la-pass-sikkim.jpg'
+              }
+            ]
           }
         ]
       },
       { id: 'nepal', name: 'Nepal', code: 'NPL', flagEmoji: '🇳🇵', states: [] },
-      { id: 'japan', name: 'Japan', code: 'JPN', flagEmoji: '🇯🇵', states: [] }
+      { id: 'japan', name: 'Japan', code: 'JPN', flagEmoji: '🇯🇵', states: [] },
+      {
+        id: 'pakistan',
+        name: 'Pakistan',
+        code: 'PAK',
+        flagEmoji: '🇵🇰',
+        states: [
+          {
+            id: 'khyber-pakhtunkhwa',
+            name: 'Khyber Pakhtunkhwa',
+            passes: [
+              {
+                id: 'khyber-pass',
+                slug: 'khyber-pass',
+                name: 'Khyber Pass',
+                highway: 'N-5 Highway',
+                elevationFt: 3510,
+                elevationM: 1070,
+                status: 'UNKNOWN',
+                image: '/khyber-pass-khyber-pakhtunkhwa-pakistan.webp'
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   {

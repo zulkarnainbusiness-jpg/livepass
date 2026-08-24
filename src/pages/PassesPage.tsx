@@ -11,7 +11,8 @@ import {
   Layers,
   Compass
 } from 'lucide-react';
-import { passesData, getPassUrl } from '../data/passes';
+import { getPassUrl } from '../data/passes';
+import { usePasses } from '../context/PassesContext';
 import { MountainPass } from '../types';
 import { StatusBadge } from '../components/StatusBadge';
 import { PassCard } from '../components/PassCard';
@@ -20,6 +21,7 @@ import { SEOHelper } from '../components/SEOHelper';
 import './PassesPage.css';
 
 export const PassesPage: React.FC = () => {
+  const { passes } = usePasses();
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
 
@@ -50,22 +52,22 @@ export const PassesPage: React.FC = () => {
 
   // Dynamic filter options
   const countries = useMemo(() => {
-    const set = new Set(passesData.map(p => p.country));
+    const set = new Set(passes.map(p => p.country));
     return ['All Countries', ...Array.from(set)];
-  }, []);
+  }, [passes]);
 
   const states = useMemo(() => {
-    let list = passesData;
+    let list = passes;
     if (selectedCountry !== 'All Countries') {
-      list = passesData.filter(p => p.country === selectedCountry);
+      list = passes.filter(p => p.country === selectedCountry);
     }
     const set = new Set(list.map(p => p.state));
     return ['All States/Provinces', ...Array.from(set)];
-  }, [selectedCountry]);
+  }, [selectedCountry, passes]);
 
   // Filter and sort passes
   const filteredPasses = useMemo(() => {
-    return passesData.filter(pass => {
+    return passes.filter(pass => {
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
         const matchesName = pass.name.toLowerCase().includes(q);

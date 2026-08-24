@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { Search, Sun, Moon, Menu, X, Bell, ChevronRight } from 'lucide-react';
-import { passesData, getPassUrl } from '../data/passes';
+import { getPassUrl } from '../data/passes';
+import { usePasses } from '../context/PassesContext';
+import { MountainPass } from '../types';
 import './Header.css';
 
 export const Header: React.FC = () => {
+  const { passes } = usePasses();
   const [isDark, setIsDark] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -66,7 +69,7 @@ export const Header: React.FC = () => {
   }, [location.pathname]);
 
   const searchResults = searchQuery.trim()
-    ? passesData.filter(
+    ? passes.filter(
         p =>
           p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
           p.state.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -83,7 +86,7 @@ export const Header: React.FC = () => {
     }
   };
 
-  const handleSelectPass = (pass: typeof passesData[0]) => {
+  const handleSelectPass = (pass: MountainPass) => {
     navigate(getPassUrl(pass));
     setIsSearchOpen(false);
     setSearchQuery('');

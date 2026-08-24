@@ -11,6 +11,8 @@ import { PassDetailPage } from './pages/PassDetailPage';
 import { ResourcesPage } from './pages/ResourcesPage';
 import { SeoResearchPage } from './pages/SeoResearchPage';
 import { AboutPage, PrivacyPage, TermsPage, NotFoundPage } from './pages/StaticPages';
+import { PassesProvider } from './context/PassesContext';
+import { AdminDashboard } from './pages/AdminDashboard';
 import './styles/index.css';
 
 // Scroll to top on navigation
@@ -24,32 +26,35 @@ const ScrollToTop: React.FC = () => {
 
 export const App: React.FC = () => {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Header />
-      <div className="main-content">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/passes" element={<PassesPage />} />
-          <Route path="/map" element={<MapPage />} />
-          <Route path="/alerts" element={<AlertsPage />} />
-          <Route path="/hierarchical" element={<HierarchicalPage />} />
-          
-          {/* Programmatic SEO Friendly Pass URLs */}
-          <Route path="/passes/:country/:state/:slug" element={<PassDetailPage />} />
-          <Route path="/passes/:country/:slug" element={<PassDetailPage />} />
-          <Route path="/passes/:slug" element={<PassDetailPage />} />
-          
-          <Route path="/seo-research" element={<SeoResearchPage />} />
-          <Route path="/resources" element={<ResourcesPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
-          <Route path="/terms" element={<TermsPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </div>
-      <Footer />
-    </BrowserRouter>
+    <PassesProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Header />
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/passes" element={<PassesPage />} />
+            <Route path="/map" element={<MapPage />} />
+            <Route path="/alerts" element={<AlertsPage />} />
+            <Route path="/hierarchical" element={<HierarchicalPage />} />
+            
+            {/* Programmatic SEO Friendly Pass URLs */}
+            <Route path="/passes/:country/:state/:slug" element={<PassDetailPage />} />
+            <Route path="/passes/:country/:slug" element={<PassDetailPage />} />
+            <Route path="/passes/:slug" element={<PassDetailPage />} />
+            
+            <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/seo-research" element={<SeoResearchPage />} />
+            <Route path="/resources" element={<ResourcesPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/terms" element={<TermsPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
+    </PassesProvider>
   );
 };
 

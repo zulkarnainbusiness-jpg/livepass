@@ -2,6 +2,365 @@ import { MountainPass } from '../types';
 
 export const passesData: MountainPass[] = [
   {
+    id: 'trollstigen-pass',
+    slug: 'trollstigen-pass',
+    name: 'Trollstigen Pass',
+    country: 'Norway',
+    countryCode: 'NOR',
+    continent: 'Europe',
+    state: 'Møre og Romsdal',
+    highway: 'Fv63 (Norwegian Scenic Route Geiranger-Trollstigen)',
+    elevationFt: 2815,
+    elevationM: 858,
+    coordinates: { lat: 62.4589, lng: 7.6715 },
+    status: 'SEASONAL_CLOSURE',
+    statusDetail: 'Seasonal winter closure in effect across Trollstigen hairpin curves (Fv63) between Isterdalen and the summit plateau. Reopening scheduled for late spring following official snow clearance and rockfall safety assessments by Statens vegvesen.',
+    lastUpdated: '5 minutes ago',
+    description: 'Trollstigen ("The Troll Ladder") is a world-renowned mountain pass on County Road 63 (Fv63) in Rauma Municipality, Møre og Romsdal, Norway. Carved into vertical fjord peaks, the route features 11 dizzying hairpin bends with a steep 10% gradient, crossing the roaring 320-meter Stigfossen waterfall to reach the architectural Trollstigen Plateau Visitor Centre.',
+    image: '/trollstigen-pass-road-status-webcam.webp',
+    weather: {
+      tempF: 46,
+      tempC: 8,
+      condition: 'Partly Cloudy & Alpine Mist',
+      icon: 'cloud-sun'
+    },
+    snowDepth: {
+      depthCm: 45,
+      depthIn: 18,
+      condition: 'Alpine Snowpack in Shaded Gullies & Higher Ridges'
+    },
+    wind: {
+      speedKmh: 22,
+      speedMph: 14,
+      direction: 'WNW',
+      description: 'Moderate Fjord Breeze'
+    },
+    roadCondition: 'Fv63 mountain pass closed for the winter season. During open summer operations: narrow paved roadway with tight switchbacks, wet pavement near Stigfossen waterfall spray, and strict 13.1-meter (43 ft) maximum vehicle length restriction.',
+    chainRequirement: 'Winter closure active. In shoulder seasons (May/October), winter-rated tires or studded tires are legally required when snow or freezing conditions occur. Vehicles exceeding 13.1 meters are strictly prohibited.',
+    cameras: [
+      {
+        id: 'trollstigen-cam-andalsnes',
+        title: 'Trollstigen — Åndalsnes Direction',
+        image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+        milepost: 'Fv63 Hairpin Ascent (Northbound)',
+        direction: 'Looking Down toward Isterdalen & Åndalsnes',
+        location: 'Trollstigen Stigfossen Viewpoint',
+        source: 'Norwegian Public Roads Administration (Statens vegvesen)',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.vegvesen.no/trafikkinformasjon/reiseinformasjon/webkamera/'
+      },
+      {
+        id: 'trollstigen-cam-valldal',
+        title: 'Trollstigen — Valldal Direction',
+        image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
+        milepost: 'Fv63 Plateau Crest (Southbound)',
+        direction: 'Looking South toward Valldal & Geiranger',
+        location: 'Trollstigen Plateau Visitor Centre (858 m)',
+        source: 'Norwegian Public Roads Administration (Statens vegvesen)',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.vegvesen.no/trafikkinformasjon/reiseinformasjon/webkamera/'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'furka-pass',
+        slug: 'furka-pass',
+        name: 'Furka Pass',
+        country: 'Switzerland',
+        state: 'Valais',
+        highway: 'Hauptstrasse 19',
+        status: 'OPEN',
+        elevationFt: 7969,
+        lastUpdated: '15 min ago',
+        distanceKm: 1540
+      },
+      {
+        id: 'stelvio-pass',
+        slug: 'stelvio-pass',
+        name: 'Stelvio Pass',
+        country: 'Italy',
+        state: 'South Tyrol',
+        highway: 'SS38',
+        status: 'OPEN',
+        elevationFt: 9045,
+        lastUpdated: '20 min ago',
+        distanceKm: 1680
+      },
+      {
+        id: 'snoqualmie-pass',
+        slug: 'snoqualmie-pass',
+        name: 'Snoqualmie Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'I-90',
+        status: 'OPEN',
+        elevationFt: 3022,
+        lastUpdated: '5 min ago',
+        distanceKm: 7200
+      },
+      {
+        id: 'arthurs-pass',
+        slug: 'arthurs-pass',
+        name: 'Arthur\'s Pass',
+        country: 'New Zealand',
+        state: 'Canterbury',
+        highway: 'SH 73',
+        status: 'OPEN',
+        elevationFt: 3018,
+        lastUpdated: '25 min ago',
+        distanceKm: 17800
+      }
+    ],
+    overview: {
+      openedYear: 1936,
+      lengthMiles: 34,
+      lengthKm: 55,
+      annualSnowfallIn: 380,
+      annualSnowfallM: 9.6,
+      summary: 'Trollstigen Pass is an engineering masterpiece and one of Norway\'s premier National Tourist Routes (Nasjonale turistveger). Connecting Åndalsnes in Rauma with Valldal in Fjord municipality, the mountain highway ascends through 11 tight hairpin turns framed by towering granite peaks—Kongen (The King, 1,614 m), Dronninga (The Queen, 1,544 m), and Bispen (The Bishop, 1,462 m). Due to heavy Arctic/Atlantic winter snowpack and rockfall hazards, the pass undergoes a strict seasonal winter closure each year from late autumn until late spring, when Statens vegvesen rotary snow blowers clear the road.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'Late October / November (First Heavy Alpine Snowfall)',
+      typicalReopening: 'Late May to Mid-June (Subject to Snow Clearance & Rockfall Mitigation)',
+      description: 'County Road 63 (Fv63) across Trollstigen is subject to an annual seasonal winter closure. Heavy snow blowers operate for weeks in May, cutting through snowdrifts up to 10 meters (33 ft) deep. Official reopening dates are determined dynamically by Statens vegvesen and Møre og Romsdal fylkeskommune based on snow clearance, weather stability, and geological slope inspections.'
+    },
+    openingDateInfo: {
+      year: 2026,
+      statusText: 'Seasonal Winter Closure — Targeted Reopening: Late May / June',
+      expectedOpeningWindow: 'Late May to Early June (Subject to Weather & Rockfall Clearance)',
+      closingWindow: 'Late October to Mid-November',
+      clearanceAgency: 'Statens vegvesen (Norwegian Public Roads Administration) & Møre og Romsdal Fylkeskommune',
+      notes: 'Trollstigen does not open on a fixed calendar date. Statens vegvesen and regional geologists perform rockfall mitigation, safety fence maintenance, and rotary snow clearing before authorising public vehicle access.'
+    },
+    forecast: [
+      { day: 'Today', condition: 'Partly Sunny & Cool', tempHighF: 52, tempLowF: 38, icon: 'cloud-sun' },
+      { day: 'Tonight', condition: 'Clear Alpine Sky', tempHighF: 40, tempLowF: 34, icon: 'moon' },
+      { day: 'Tomorrow', condition: 'Mostly Sunny', tempHighF: 55, tempLowF: 41, icon: 'sun' },
+      { day: 'Day 3', condition: 'Scattered Fjord Showers', tempHighF: 49, tempLowF: 37, icon: 'cloud-rain' },
+      { day: 'Day 4', condition: 'Passing Clouds', tempHighF: 51, tempLowF: 39, icon: 'cloud' },
+      { day: 'Day 5', condition: 'Mild Mountain Breeze', tempHighF: 54, tempLowF: 42, icon: 'wind' }
+    ],
+    dataSources: [
+      { name: 'Norwegian Public Roads Administration (Statens vegvesen)', type: 'Official Road Status & Winter Closure Notices', url: 'https://www.vegvesen.no/trafikkinformasjon/reiseinformasjon/' },
+      { name: 'Vegtrafikksentralen Midt (VTS)', type: 'Regional Traffic Management & Fv63 Travel Alerts', url: 'https://www.vegvesen.no/' },
+      { name: 'Norwegian Meteorological Institute (Yr.no / MET Norway)', type: 'Trollstigen Plateau Summit Weather & Forecast', url: 'https://www.yr.no/' },
+      { name: 'Norwegian Scenic Routes (Nasjonale turistveger)', type: 'Geiranger-Trollstigen Architectural & Scenic Route Info', url: 'https://www.nasjonaleturistveger.no/en/routes/geiranger-trollstigen/' }
+    ],
+    quickFacts: {
+      state: 'Møre og Romsdal, Norway',
+      mountainRange: 'Romsdalsalpene (Scandinavian Mountains)',
+      elevationSummary: '2,815 ft (858 m) summit pass • 2,296 ft (700 m) Plateau Viewpoint',
+      connects: 'Åndalsnes (Romsdalen) with Valldal (Norddalsfjorden) & Geiranger',
+      nearestTown: 'Åndalsnes (15 km north) • Valldal (38 km south)',
+      roadType: 'Fylkesvei 63 (Fv63) — Toll-Free Norwegian Scenic Route',
+      bestTime: 'Mid-June to September (Full pass open, waterfalls flowing, extended daylight)',
+      highlight: '11 iconic hairpin bends, 10% incline, Stigfossen waterfall bridge (320 m), and world-renowned plateau viewing platforms.'
+    },
+    routeDetails: {
+      distanceKm: 55,
+      distanceMiles: 34,
+      duration: '1 hr 15 min (Åndalsnes to Valldal in normal summer conditions)',
+      origin: 'Åndalsnes, Norway (Elevation: 16 m / 52 ft)',
+      destination: 'Valldal, Norway (Elevation: 5 m / 16 ft)',
+      waypoints: [
+        'Åndalsnes / Romsdalen — Fjord railway terminus and basecamp',
+        'Isterdalen Valley (Fv63) — Lush alpine valley approach beneath Trollveggen',
+        'Trollstigfoten (Hairpin 1) — Ascent begins with sustained 10% mountain incline',
+        'Stigfossen Stone Bridge (Hairpins 5–6) — Crossing the thunderous 320m waterfall',
+        'Upper Hairpins 7–11 — Tight switchback sequence carved into sheer granite cliffs',
+        'Trollstigen Plateau (858 m / 2,815 ft) — Visitor Centre, glass walkway viewpoints & cafe',
+        'Alnesreset Pass Summit (858 m) — High point of the Fv63 mountain crossing',
+        'Gudbrandsjuvet (Fv63) — Magnificent canyon and river gorge viewpoint',
+        'Valldal / Norddalsfjorden — The Strawberry Valley gateway to Geirangerfjord'
+      ]
+    },
+    drivingInfo: {
+      summary: 'Driving Trollstigen is one of the world\'s most exhilarating mountain journeys, featuring 11 tight switchbacks, narrow single-lane sections with passing turnouts (Møteplass), and a constant 10% (1:10) gradient.',
+      characteristics: [
+        '11 narrow hairpin switchbacks requiring careful vehicle positioning and wide cornering arcs',
+        'Steep, sustained 10% incline (1:10) requiring low gears for both ascent and descent',
+        'Stigfossen stone bridge crossing directly over a roaring 320-meter glacial waterfall',
+        'Vehicle length restriction: Maximum permitted vehicle length is 13.1 meters (43 feet)',
+        'Toll-free public road: No toll fees apply on the Fv63 Trollstigen mountain pass'
+      ],
+      switchbacksCount: '11 numbered hairpin bends',
+      safetyAndEtiquette: [
+        'Engine Braking: Downshift to 1st or 2nd gear on descents to prevent dangerous brake overheating and brake fade',
+        'Uphill Priority: Uphill traffic has the right of way; use marked passing turnouts (Møteplass) to yield safely',
+        'Tour Buses & Motorhomes: Large vehicles require both lanes on hairpins; stop before the curve to let oncoming buses navigate',
+        'Stay in Designated Turnouts: Never stop or park on narrow road sections or in switchback apexes to take photographs',
+        'Headlights Required: Norwegian law mandates daytime running lights (low-beam headlights) at all times'
+      ],
+      motorcycleTips: [
+        'Watch for wet asphalt, spray, and damp stone surfaces when crossing the Stigfossen waterfall bridge',
+        'Maintain smooth throttle and clutch control on 10% hairpin climbs to avoid rear-wheel slip on loose grit',
+        'Tour buses and slow campervans often stop abruptly at scenic points; maintain generous following distance'
+      ]
+    },
+    cyclingInfo: {
+      summary: 'Cycling Trollstigen is a bucket-list European alpine challenge with dramatic vertical elevation gain, 11 hairpin bends, and breathtaking views of Stigfossen waterfall.',
+      approaches: [
+        {
+          name: 'Classic North Climb (from Åndalsnes / Isterdalen)',
+          origin: 'Isterdalen Valley Floor',
+          distanceKm: 10.5,
+          distanceMiles: 6.5,
+          elevationGainM: 810,
+          elevationGainFt: 2657,
+          avgGradient: '7.8%',
+          maxGradient: '10.5%',
+          hairpins: 11,
+          description: 'The legendary northern ascent from the base of Isterdalen up the 11 hairpin turns, passing directly across the spray of Stigfossen waterfall to reach the summit plateau visitor centre.'
+        },
+        {
+          name: 'South Approach (from Valldal)',
+          origin: 'Valldal (Norddalsfjord)',
+          distanceKm: 34,
+          distanceMiles: 21.1,
+          elevationGainM: 850,
+          elevationGainFt: 2788,
+          avgGradient: '2.5%',
+          maxGradient: '6.0%',
+          hairpins: 2,
+          description: 'A gentle, scenic climb along the Valldøla river valley passing through strawberry farms, Gudbrandsjuvet gorge, and high alpine moorland to Alnesreset.'
+        }
+      ],
+      bestSeason: 'Late June to Early September (snow-free pavement, warmest daylight hours)',
+      safetyTips: [
+        'Equip high-visibility front and rear bike lights for shadowed canyon corners and mountain mist',
+        'Pack windproof and waterproof layers; temperatures at the 858m summit can be 10°C (18°F) cooler than the valley',
+        'Ensure brake pads are fresh and checked before attempting the steep 10% descent into Isterdalen',
+        'Yield to wide tour buses on hairpin curves and ride single file'
+      ],
+      bikeDayInfo: 'Every summer, hundreds of international cyclists tackle the Trollstigen climb as part of the Styrkeprøven and scenic Western Norway cycling tours.'
+    },
+    distancesTable: [
+      { location: 'Åndalsnes (Town & Train Station)', distance: '15 km (9.3 mi)', route: 'Fv63 North', notes: 'Gateway city, Rauma Railway terminus, mountaineering center' },
+      { location: 'Valldal (Norddalsfjorden)', distance: '38 km (23.6 mi)', route: 'Fv63 South', notes: 'Strawberry capital, ferry links, Gudbrandsjuvet canyon' },
+      { location: 'Geiranger (Geirangerfjord)', distance: '68 km (42.2 mi)', route: 'Fv63 via Ørnevegen', notes: 'UNESCO World Heritage fjord, Eagle Road hairpin descent' },
+      { location: 'Ålesund (Coastal Art Nouveau City)', distance: '120 km (74.5 mi)', route: 'E136 / Fv63', notes: 'Regional airport (AES), coastal port, express ferries' },
+      { location: 'Molde ("City of Roses")', distance: '70 km (43.5 mi)', route: 'E39 / E136 + Ferry', notes: 'Fjord crossing via Åfarnes–Sølsnes ferry, Molde Panorama' },
+      { location: 'Oslo (Capital City)', distance: '450 km (280 mi)', route: 'E6 & E136 via Dombås', notes: '5.5–6 hours driving time through Gudbrandsdalen valley' }
+    ],
+    narrativeSections: [
+      {
+        title: 'Engineering Triumph & Royal History',
+        content: 'Constructed over eight challenging years through harsh Nordic weather and rugged vertical cliffs, Trollstigen was officially opened on July 31, 1936, by King Haakon VII. The original road replaced an ancient bridle path (Kløvstien) that had served local farmers and horse traders since the Middle Ages. The modern roadway preserves historic natural stone retaining walls and the graceful natural stone arch bridge over Stigfossen waterfall.'
+      },
+      {
+        title: 'Norwegian Scenic Route & Award-Winning Architecture',
+        content: 'Trollstigen forms an integral part of the 106-kilometer Norwegian Scenic Route Geiranger-Trollstigen. At the summit crest (858 meters), the Trollstigen Plateau features world-renowned modern architecture designed by Reiulf Ramstad Arkitekter. Made of weather-resistant Corten steel and structural glass, cantilevered walkways hover hundreds of meters above the Isterdalen valley, offering jaw-dropping panoramic views of the hairpin curves below.'
+      },
+      {
+        title: 'Geological Landscape & Surrounding Peaks',
+        content: 'Trollstigen cuts through the heart of the Romsdalsalpene mountain range. The road is towered over by monumental peaks named after a royal chess set: Kongen (The King, 1,614 m), Dronninga (The Queen, 1,544 m), and Bispen (The Bishop, 1,462 m). Just down the valley stands Trollveggen (The Troll Wall), Europe\'s tallest vertical rock face rising over 1,000 meters (3,300 ft) from base to summit.'
+      }
+    ],
+    customSeo: {
+      title: 'Trollstigen Pass Opening Date, Road Status, Webcams & Conditions | LivePassWatch',
+      description: 'Check Trollstigen Pass opening date, live road status, webcams, weather, snow and road conditions before travelling on Fv63 in Norway.',
+      h1: 'Trollstigen Pass Opening Date, Road Status, Webcams & Conditions'
+    },
+    searchKeywords: [
+      'trollstigen pass opening date',
+      'trollstigen pass is open',
+      'trollstigen pass road conditions',
+      'trollstigen pass road status',
+      'trollstigen pass pass status',
+      'when does trollstigen pass open',
+      'trollstigen pass closed',
+      'trollstigen pass is closed',
+      'trollstigen pass is it open today',
+      'is trollstigen pass closed today',
+      'trollstigen pass webcam',
+      'trollstigen pass live webcam',
+      'trollstigen pass cameras',
+      'trollstigen pass summit camera',
+      'when does trollstigen pass close for winter',
+      'trollstigen pass map',
+      'is trollstigen pass open right now',
+      'trollstigen pass weather today',
+      'trollstigen pass snow',
+      'trollstigen pass snow depth',
+      'trollstigen pass snow conditions',
+      'trollstigen pass elevation',
+      'trollstigen pass open',
+      'trollstigen pass when will open',
+      'trollstigen pass passes open',
+      'trollstigen pass closures today',
+      'is trollstigen pass open',
+      'is trollstigen pass open in winter',
+      'trollstigen pass weather',
+      'trollstigen pass directions',
+      'trollstigen pass closing date',
+      'trollstigen pass forecast',
+      'trollstigen pass chain requirements',
+      'trollstigen pass traction tires',
+      'trollstigen pass highway'
+    ],
+    aliases: ['Trollstigen', 'Troll\'s Ladder', 'Fv63 Trollstigen', 'Trollstigen Road', 'Trollstigvegen', 'Geiranger-Trollstigen'],
+    faqs: [
+      {
+        question: 'Is Trollstigen Pass open right now?',
+        answer: 'Trollstigen Pass on County Road 63 (Fv63) is currently under its seasonal winter closure. The road closes each autumn due to heavy snow and ice accumulation and reopens in late spring (typically late May to mid-June) once Statens vegvesen completes snow removal and rockfall safety inspections. Check our live status badge above for real-time updates.'
+      },
+      {
+        question: 'Is Trollstigen Pass open today?',
+        answer: 'Check the real-time status card at the top of this page. During the winter and early spring months, Trollstigen remains CLOSED to all vehicular and pedestrian traffic. During the summer operating season (June to October), it is generally open 24/7 unless temporarily halted for rockfall mitigation or severe weather.'
+      },
+      {
+        question: 'When does Trollstigen Pass open?',
+        answer: 'Trollstigen typically opens between late May and mid-June each year. The exact opening date varies depending on winter snow depth, springtime melt rates, temperature stability, and the completion of rockfall mitigation work by Statens vegvesen and Møre og Romsdal fylkeskommune.'
+      },
+      {
+        question: 'When will Trollstigen Pass open for the 2026 season?',
+        answer: 'The targeted reopening window for Trollstigen in 2026 is late May to early June. Official dates are announced by the Norwegian Public Roads Administration (Statens vegvesen) following final safety clearances.'
+      },
+      {
+        question: 'When does Trollstigen Pass close for winter?',
+        answer: 'Trollstigen closes for the winter season in late October or November, triggered by the first heavy alpine snowfall, icy road conditions, or elevated avalanche hazard. The closure remains in place continuously throughout the Nordic winter.'
+      },
+      {
+        question: 'Where can I see the Trollstigen Pass webcam?',
+        answer: 'You can view live camera snapshots directly in the Live Webcams section on this page. We provide feeds for both the Åndalsnes hairpin ascent direction and the Valldal summit plateau direction, sourced directly from the Norwegian Public Roads Administration (Statens vegvesen).'
+      },
+      {
+        question: 'What are the Trollstigen Pass road conditions?',
+        answer: 'Current road conditions reflect seasonal winter closure. When open during the summer, Trollstigen is a fully paved two-lane mountain highway featuring 11 tight hairpin bends, a 10% gradient, narrow single-lane bridges, and wet road surfaces near Stigfossen waterfall spray.'
+      },
+      {
+        question: 'Is Trollstigen Pass open in winter?',
+        answer: 'No, Trollstigen is never open in winter. The combination of extreme snowdrifts (up to 10 meters / 33 feet), steep avalanches, and icy switchbacks makes winter maintenance unsafe and impossible for normal traffic.'
+      },
+      {
+        question: 'What is the Trollstigen Pass elevation?',
+        answer: 'The highest point of the Trollstigen mountain road crossing at Alnesreset sits at an elevation of 2,815 feet (858 meters) above sea level. The Trollstigen Plateau Visitor Centre and panoramic viewing platforms are situated at approximately 2,296 feet (700 meters).'
+      },
+      {
+        question: 'Does Trollstigen Pass have snow?',
+        answer: 'Yes. Trollstigen receives heavy snowfall throughout the winter and spring months, with snow walls often standing 5 to 10 meters high when the pass first reopens in May/June. High-altitude snow patches and glacial fields remain visible from the summit throughout the entire summer.'
+      },
+      {
+        question: 'Do I need winter tires or chains for Trollstigen Pass?',
+        answer: 'During the peak summer months (July and August), standard summer tires are sufficient on dry or wet pavement. However, if travelling during the shoulder seasons (May/June or late September/October), Norwegian law requires vehicles to have tires suitable for winter conditions (minimum 3mm tread depth or rated winter tires) if snow or ice occurs.'
+      },
+      {
+        question: 'What highway goes over Trollstigen?',
+        answer: 'Trollstigen is located on County Road 63 (Fylkesvei 63 or Fv63), which forms part of the world-famous Norwegian Scenic Route Geiranger-Trollstigen connecting Åndalsnes to the Geirangerfjord.'
+      },
+      {
+        question: 'Are buses, motorhomes, and caravans allowed on Trollstigen?',
+        answer: 'Vehicles with a maximum length of up to 13.1 meters (43 feet) are permitted on Trollstigen. Vehicles exceeding 13.1 meters are strictly prohibited due to the sharp turning radius required on the 11 hairpin bends. Driving with large caravans or towing trailers requires high driving confidence and frequent use of passing turnouts.'
+      },
+      {
+        question: 'Is Trollstigen a toll road?',
+        answer: 'No, Trollstigen on County Road 63 is a public, toll-free highway. There are no toll booths, congestion charges, or entry fees to drive the pass or access the architectural viewing platforms at the Trollstigen Plateau.'
+      }
+    ],
+    isPopular: true
+  },
+  {
     id: 'snoqualmie-pass',
     slug: 'snoqualmie-pass',
     name: 'Snoqualmie Pass',
@@ -2852,6 +3211,261 @@ export const passesData: MountainPass[] = [
     isPopular: true
   },
   {
+    id: 'nathu-la',
+    slug: 'nathu-la',
+    name: 'Nathu La Pass',
+    country: 'India',
+    countryCode: 'IND',
+    continent: 'Asia',
+    state: 'Sikkim',
+    highway: 'NH-310 (Gangtok–Nathu La Road)',
+    elevationFt: 14140,
+    elevationM: 4310,
+    coordinates: { lat: 27.3890, lng: 88.8280 },
+    status: 'UNKNOWN',
+    statusDetail: 'Status currently unavailable — awaiting official verification. Nathu La is a restricted military zone managed by the Indian Army. Access requires prior permits from the Sikkim government. Check with local authorities before travel.',
+    lastUpdated: '23 Aug 2026, 06:42 IST',
+    description: 'Nathu La Pass (elevation 4,310 m / 14,140 ft) is a high-altitude Himalayan mountain pass on the border between Sikkim, India, and the Tibet Autonomous Region of China. Located approximately 54 km east of Gangtok, the pass sits on the ancient Silk Route and was a key trade corridor between India and Tibet for centuries. Nathu La is a restricted border crossing — access is permitted only on specific days with government-issued permits, making advance planning essential for all visitors.',
+    image: '/nathu-la-pass-sikkim.jpg',
+    weather: {
+      tempF: 39,
+      tempC: 4,
+      condition: 'Partly Cloudy & Alpine Chill',
+      icon: 'cloud-sun'
+    },
+    snowDepth: {
+      depthCm: 0,
+      depthIn: 0,
+      condition: 'Dry — Late August, post-monsoon transition'
+    },
+    wind: {
+      speedKmh: 28,
+      speedMph: 17,
+      direction: 'W',
+      description: 'Brisk High-Altitude Breeze'
+    },
+    roadCondition: 'The road from Gangtok to Nathu La summit follows NH-310 through Tsomgo Lake (12,400 ft) and the army cantonment at Sherathang. The final approach to the summit is paved but narrow with sharp switchbacks. Road surface can be slick in the monsoon season (June–September) and snow-covered in winter (December–March). High-clearance vehicles and experienced drivers recommended. Army checkpoints at multiple points require valid permits.',
+    chainRequirement: 'Snow chains required between December and March. Vehicles must carry chains during active snowfall. Indian Army checkpoints enforce compliance. All vehicles must have valid Inner Line Permits (ILP) and Restricted Area Permits (RAP) issued by the Sikkim government.',
+    cameras: [
+      {
+        id: 'nathu-la-cam-note',
+        title: 'Nathu La — No Public Camera Feed Available',
+        image: '/nathu-la-pass-sikkim.jpg',
+        location: 'Nathu La Summit, Sikkim–Tibet Border',
+        source: 'Reference image — not a live feed',
+        officialUrl: 'https://sikkimtourism.gov.in'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'zoji-la',
+        slug: 'zoji-la',
+        name: 'Zoji La Pass',
+        country: 'India',
+        state: 'Jammu & Kashmir',
+        highway: 'NH-1',
+        status: 'CAUTION',
+        elevationFt: 11575,
+        lastUpdated: '18 min ago',
+        distanceKm: 980
+      },
+      {
+        id: 'khardung-la',
+        slug: 'khardung-la',
+        name: 'Khardung La',
+        country: 'India',
+        state: 'Ladakh',
+        highway: 'Leh-Nubra Road',
+        status: 'OPEN',
+        elevationFt: 17582,
+        lastUpdated: '25 min ago',
+        distanceKm: 1250
+      },
+      {
+        id: 'rohtang-pass',
+        slug: 'rohtang-pass',
+        name: 'Rohtang Pass',
+        country: 'India',
+        state: 'Himachal Pradesh',
+        highway: 'Leh-Manali Highway (NH-03)',
+        status: 'OPEN',
+        elevationFt: 13058,
+        lastUpdated: '35 min ago',
+        distanceKm: 1550
+      }
+    ],
+    overview: {
+      openedYear: 1955,
+      lengthMiles: 34,
+      lengthKm: 54,
+      annualSnowfallIn: 120,
+      annualSnowfallM: 3.0,
+      summary: 'Nathu La (meaning "Listening Ears Pass" in Tibetan) sits at 4,310 m (14,140 ft) on the ancient Silk Route between Sikkim and Tibet. Historically a major trade artery closed in 1962 during the Sino-Indian War, it was partially reopened for bilateral trade in 2006 after 44 years. The Indian Army manages the summit zone; visitor access is strictly regulated to specific days of the week and requires advance permits from the Sikkim government. The pass is renowned for panoramic views of the Himalayan range and the stark boundary markers at the India–China border.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'December through mid-April (heavy snowfall period)',
+      typicalReopening: 'Typically mid-April to early May, subject to snow clearance by Border Roads Organisation',
+      description: 'Nathu La Pass typically closes to civilian visitors between December and mid-April due to heavy snowfall and hazardous road conditions. Reopening depends on BRO snow clearance operations and security clearance from the Indian Army. Even when open, access is restricted to designated days (typically Tuesday, Wednesday, Thursday, Saturday, Sunday for Indian nationals) and weather can force unscheduled closures at any time. The pass remains open year-round for military traffic and authorized border trade.'
+    },
+    openingDateInfo: {
+      year: 2026,
+      statusText: 'Status unconfirmed — contact Sikkim Tourism or local authorities for current season opening dates',
+      expectedOpeningWindow: 'Mid-April to early May (subject to snow clearance)',
+      closingWindow: 'December (subject to early snowfall)',
+      clearanceAgency: 'Border Roads Organisation (BRO) — Project Swastik',
+      notes: 'Nathu La does not have a fixed, published annual opening date. The decision is made by the Indian Army and BRO based on snow clearance conditions, security assessments, and weather forecasts. Indian nationals must pre-register with the District Collector\'s office in Gangtok. Foreign nationals are not permitted at the Nathu La summit.'
+    },
+    trafficSchedule: {
+      title: 'Nathu La Pass Access Schedule',
+      timingDetails: 'Open to Indian civilian visitors on designated days only: typically Tuesday, Wednesday, Thursday, Saturday, and Sunday. Access hours are generally 08:00–15:00 IST (subject to army clearance). Closed on Mondays and Fridays. Closed entirely to foreign nationals.',
+      rules: [
+        'Valid Inner Line Permit (ILP) required — obtainable from Sikkim government offices in Gangtok',
+        'Permits must be arranged at least one day in advance',
+        'Indian nationals only — foreign nationals not permitted at the summit',
+        'Vehicles must clear Sherathang checkpoint before 09:30 IST',
+        'All visitors must descend before 15:00 IST',
+        'Army vehicles and border trade vehicles have right of way at all times',
+        'No photography near military installations or the border fence'
+      ]
+    },
+    quickFacts: {
+      state: 'Sikkim, India',
+      mountainRange: 'Eastern Himalaya / Sikkim Himalaya',
+      elevationSummary: '4,310 m (14,140 ft) above sea level',
+      connects: 'Gangtok (Sikkim, India) — Tibet Autonomous Region (China)',
+      nearestTown: 'Gangtok (54 km west)',
+      roadType: 'Paved mountain road with switchbacks — restricted military zone',
+      bestTime: 'May to November (outside monsoon heaviest rains: July–August)',
+      highlight: 'India–China border crossing on the ancient Silk Route; Tsomgo Lake en route'
+    },
+    routeDetails: {
+      distanceKm: 54,
+      distanceMiles: 34,
+      duration: '2 to 2.5 hours from Gangtok (one way)',
+      origin: 'Gangtok, Sikkim',
+      destination: 'Nathu La Pass Summit (4,310 m)',
+      waypoints: ['Ranka (10 km)', 'Kyongnosla (26 km)', 'Tsomgo Lake / Changu Lake (12,400 ft, 38 km)', 'Sherathang Army Checkpoint (48 km)', 'Nathu La Summit (54 km)']
+    },
+    distancesTable: [
+      { location: 'Gangtok', distance: '54 km', route: 'NH-310', notes: 'State capital — permits obtained here' },
+      { location: 'Tsomgo (Changu) Lake', distance: '38 km from Gangtok', route: 'NH-310', notes: 'Key stop en route; 12,400 ft elevation' },
+      { location: 'Sherathang Checkpoint', distance: '48 km from Gangtok', route: 'NH-310', notes: 'Last army checkpoint before summit' },
+      { location: 'Siliguri (NJP)', distance: '~130 km', route: 'NH-10 → NH-310', notes: 'Nearest major rail junction' },
+      { location: 'Bagdogra Airport', distance: '~124 km', route: 'NH-10 → NH-310', notes: 'Nearest airport' }
+    ],
+    forecast: [
+      { day: 'Today', condition: 'Partly Cloudy & Mild', tempHighF: 48, tempLowF: 34, icon: 'cloud-sun' },
+      { day: 'Tomorrow', condition: 'Overcast — Possible Drizzle', tempHighF: 44, tempLowF: 32, icon: 'cloud-rain' },
+      { day: 'Day 3', condition: 'Clearing — Alpine Sunshine', tempHighF: 51, tempLowF: 35, icon: 'sun' },
+      { day: 'Day 4', condition: 'Clear & Brisk', tempHighF: 50, tempLowF: 33, icon: 'sun' },
+      { day: 'Day 5', condition: 'Partly Cloudy', tempHighF: 46, tempLowF: 30, icon: 'cloud-sun' }
+    ],
+    dataSources: [
+      { name: 'Border Roads Organisation (BRO) — Project Swastik', type: 'Road Maintenance & Snow Clearance Authority', url: 'https://bro.gov.in' },
+      { name: 'Sikkim Tourism Development Corporation', type: 'Visitor Permits & Access Regulations', url: 'https://sikkimtourism.gov.in' },
+      { name: 'India Meteorological Department (IMD Kolkata & Gangtok)', type: 'High Altitude Weather Bulletins', url: 'https://mausam.imd.gov.in' },
+      { name: 'Indian Army — Eastern Command', type: 'Security Clearances & Border Access', url: 'https://indianarmy.nic.in' }
+    ],
+    narrativeSections: [
+      {
+        title: 'About Nathu La',
+        content: 'Nathu La Pass (नाथुला दर्रा) — meaning "Listening Ears Pass" in Tibetan — is one of three open trading border posts between India and China, alongside Shipki La and Lipulekh. Sitting at 4,310 metres (14,140 feet) on the Dongkya Range of the Eastern Himalaya, it marks the border between India\'s Sikkim state and the Tibet Autonomous Region of China. The pass was once a thriving commercial route on the ancient Silk Road, connecting the Indian subcontinent with Central Asia and China.'
+      },
+      {
+        title: 'History: The Silk Route and Closure',
+        content: 'For centuries, Nathu La was one of the most important Himalayan trade routes, used by wool, salt, and spice traders between India and Tibet. The route also carried British Indian trade goods eastward during the colonial era. Following the 1962 Sino-Indian War, the pass was sealed and remained closed for 44 years. It was officially reopened on 6 July 2006 as part of a bilateral trade agreement between India and China, although trade volumes through the pass remain modest compared to its historic significance.'
+      },
+      {
+        title: 'Access Rules & Permit Requirements',
+        content: 'Access to Nathu La is strictly regulated by the Indian Army. Indian nationals must obtain an Inner Line Permit (ILP) from the District Collector\'s office or authorized travel agents in Gangtok, Sikkim. The permit must be arranged at least one day in advance. Visitors are only permitted on designated days (typically Tuesday, Wednesday, Thursday, Saturday, Sunday) between approximately 08:00 and 15:00 IST. Foreign nationals are not permitted to visit the Nathu La summit. Visiting in an organized group with a registered Sikkim tour operator is the most practical approach.'
+      },
+      {
+        title: 'Tsomgo Lake: Key Stop En Route',
+        content: 'On the road to Nathu La, Tsomgo Lake (also called Changu Lake) at 3,780 m (12,400 ft) is a major attraction. The glacial lake is sacred to local Sikkimese and is known for changing colors with the seasons — deep blue in summer, frosted white in winter. It is typically included in all Nathu La day-trip permits from Gangtok. Yak rides are available near the lake in season.'
+      }
+    ],
+    customSeo: {
+      h1: 'Nathu La Pass Opening Date, Road Status, Webcams & Conditions',
+      title: 'Nathu La Pass Opening Date, Road Status & Live Conditions | LivePassWatch',
+      description: 'Check the latest Nathu La Pass opening date, road status, and current conditions in Sikkim. Permits, snow depth, weather forecast, elevation guide & access rules.'
+    },
+    searchKeywords: [
+      'nathu la pass opening date', 'nathu la pass road status', 'is nathu la pass open', 'nathu la pass is open',
+      'nathu la pass road conditions', 'nathu la pass weather today', 'nathu la pass snow', 'nathu la pass elevation',
+      'when does nathu la pass open', 'nathu la pass closed', 'is nathu la pass closed today', 'nathu la pass webcam',
+      'nathu la pass live webcam', 'nathu la pass cameras', 'nathu la pass summit camera', 'nathu la pass snow depth',
+      'nathu la pass snow conditions', 'nathu la pass map', 'when does nathu la pass close for winter',
+      'how high is nathu la pass', 'where is nathu la pass', 'how to get to nathu la pass', 'nathu la pass highway',
+      'what highway is nathu la pass', 'nathu la pass forecast', 'nathu la pass passes open', 'nathu la pass closures today',
+      'is nathu la pass open in winter', 'is nathu la pass open right now', 'nathu la pass weather'
+    ],
+    aliases: ['Nathu La', 'Nathula Pass', 'Nathula', 'Nathu La border crossing', 'India-China border Sikkim'],
+    faqs: [
+      {
+        question: 'Is Nathu La Pass open today?',
+        answer: 'Current Nathu La Pass status is unavailable via a public real-time feed. Nathu La is a restricted military zone — it is open to Indian civilian visitors on designated days (typically Tuesday, Wednesday, Thursday, Saturday, Sunday) between approximately 08:00–15:00 IST, subject to army clearance and weather. We recommend verifying directly with Sikkim Tourism or your Gangtok permit office before travel.'
+      },
+      {
+        question: 'Is Nathu La Pass open right now?',
+        answer: 'No publicly accessible live feed confirms real-time access status for Nathu La. The pass is managed by the Indian Army and access can be suspended without notice due to weather, security exercises, or bilateral India–China diplomatic conditions. Check with the Sikkim Tourism Development Corporation or your permit issuing authority on the day of travel.'
+      },
+      {
+        question: 'When does Nathu La Pass open for the season?',
+        answer: 'Nathu La Pass typically reopens for civilian visitors in mid-April to early May, following snow clearance by the Border Roads Organisation (BRO — Project Swastik). The exact opening date varies each year depending on snowfall accumulation and security conditions. There is no fixed published opening date — contact Sikkim Tourism or local authorities for the current season\'s status.'
+      },
+      {
+        question: 'When does Nathu La Pass close for winter?',
+        answer: 'Nathu La typically closes to civilian visitors in December due to heavy snowfall. In years with early winter snowfall, closures can begin in late November. Military and border trade traffic continues regardless of civilian closure. Snow clearance begins in early spring for the following season\'s reopening.'
+      },
+      {
+        question: 'Is Nathu La Pass closed today?',
+        answer: 'Nathu La Pass is closed every Monday and Friday to civilian visitors as a standing rule. Outside those days, closures can occur due to weather, military exercises, or India–China diplomatic situations. Always verify your permit and access status with Sikkim authorities before departing Gangtok.'
+      },
+      {
+        question: 'Where is Nathu La Pass located?',
+        answer: 'Nathu La Pass is located in the state of Sikkim, northeastern India, approximately 54 kilometres (34 miles) east of the state capital Gangtok. It sits on the Dongkya Range of the Eastern Himalaya at the border between India\'s Sikkim state and Tibet (China), at an elevation of 4,310 metres (14,140 feet).'
+      },
+      {
+        question: 'How high is Nathu La Pass?',
+        answer: 'Nathu La Pass stands at an elevation of 4,310 metres (14,140 feet) above sea level. It is one of the highest motorable passes in the Eastern Himalaya and sits directly on the Sikkim–Tibet border.'
+      },
+      {
+        question: 'What are the current Nathu La Pass road conditions?',
+        answer: 'Road conditions at Nathu La depend heavily on season. From May to November (excluding peak monsoon), the road from Gangtok to the summit is generally passable via paved NH-310 with normal mountain driving caution. In monsoon (July–August) landslides and road slips are common. From December to April the road can be covered in snow and ice, requiring chains. Always confirm conditions with Sikkim Tourism or your permit authority before travel.'
+      },
+      {
+        question: 'How do I get to Nathu La Pass?',
+        answer: 'From Gangtok, take NH-310 eastward toward Tsomgo Lake (38 km / 1.5 hours) and continue to the summit (54 km total / about 2–2.5 hours). The road is paved throughout but narrow with sharp bends in the final section. You must obtain permits in advance from the District Collector\'s office in Gangtok or through a registered Sikkim tour operator. Bagdogra Airport (IXB) and New Jalpaiguri (NJP) railway station are the nearest major transport hubs, approximately 124–130 km from Gangtok.'
+      },
+      {
+        question: 'Does Nathu La Pass have a live webcam?',
+        answer: 'No publicly accessible live webcam exists for Nathu La Pass. The pass is inside a restricted Indian Army zone, and no public camera feed is authorized. The reference image on this page is a representative photograph of the pass road — not a live feed.'
+      },
+      {
+        question: 'What is the weather like at Nathu La Pass?',
+        answer: 'Nathu La has a cold high-altitude climate year-round. Summer (May–June) daytime temperatures range from 5°C to 12°C (41–54°F). Monsoon season (July–August) brings frequent rain, mist, and landslides. Autumn (September–October) is clear and cold. Winter (December–March) brings sub-zero temperatures, heavy snowfall, and hazardous road ice.'
+      },
+      {
+        question: 'Is there snow at Nathu La Pass?',
+        answer: 'Yes, Nathu La receives significant snowfall between December and March, with average accumulations of 1–2 metres (3–6 feet) at the summit. Snow can occur at any time of year given the 4,310 m elevation, though summer and early autumn months are generally snow-free. Snow chains are mandatory for vehicles between December and March.'
+      },
+      {
+        question: 'What road or highway leads to Nathu La Pass?',
+        answer: 'Nathu La Pass is accessed via NH-310, which runs from Gangtok eastward through the Tsomgo Lake area and the Sherathang army checkpoint to the summit. The route is entirely within restricted territory past the Sherathang checkpoint — access requires valid ILP/RAP permits.'
+      },
+      {
+        question: 'Is Nathu La Pass open in winter?',
+        answer: 'Nathu La Pass is typically closed to civilian visitors from December to mid-April due to heavy snowfall. Military and border trade traffic continues throughout winter. The Border Roads Organisation clears the road each spring before civilian access resumes.'
+      },
+      {
+        question: 'Do I need a permit to visit Nathu La Pass?',
+        answer: 'Yes. All Indian nationals require a Restricted Area Permit (RAP) / Inner Line Permit (ILP), obtainable from the District Collector\'s office in Gangtok or through registered Sikkim tour operators. Permits must be arranged at least one day in advance and carry the vehicle registration details. Foreign nationals are not permitted at the Nathu La summit area.'
+      }
+    ],
+    isPopular: true
+  },
+  {
     id: 'furka-pass',
     slug: 'furka-pass',
     name: 'Furka Pass',
@@ -4295,6 +4909,350 @@ export const passesData: MountainPass[] = [
       }
     ],
     isPopular: true
+  },
+  {
+    id: 'status-pass',
+    slug: 'status-pass',
+    name: 'Status Pass',
+    country: 'United States',
+    countryCode: 'USA',
+    continent: 'North America',
+    state: 'Washington',
+    highway: 'US 97',
+    elevationFt: 3107,
+    elevationM: 947,
+    coordinates: { lat: 45.9847, lng: -120.6536 },
+    status: 'UNKNOWN',
+    statusDetail: 'Checking current road status from WSDOT...',
+    lastUpdated: 'Live data loading',
+    description: 'Status Pass (officially Satus Pass) is a mountain pass carrying U.S. Route 97 over the Simcoe Mountains in south-central Washington State. It is situated on the Yakama Indian Reservation, connecting Goldendale and the Columbia River to the south with Toppenish and the Yakima Valley to the north. Maintained by the Washington State Department of Transportation (WSDOT), this critical transport corridor remains open year-round for commercial and passenger travel, although severe winter weather frequently triggers temporary traction requirements, chain laws, or brief safety closures.',
+    image: '/status-pass.jpg',
+    weather: {
+      tempF: 32,
+      tempC: 0,
+      condition: 'Clear',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 0,
+      depthIn: 0,
+      condition: 'Bare & Wet Pavement'
+    },
+    wind: {
+      speedKmh: 10,
+      speedMph: 6,
+      direction: 'NW',
+      description: 'Light Breeze'
+    },
+    roadCondition: 'Pavement bare and wet with occasional slush patches in higher lanes. Carry chains or traction tires during winter storm alerts.',
+    chainRequirement: 'Traction advisory. Carry chains or traction tires.',
+    cameras: [
+      {
+        id: 'status-pass-summit',
+        title: 'Status Pass Summit (US 97 MP 27.1)',
+        image: 'https://images.wsdot.wa.gov/sc/097VC02710.jpg',
+        milepost: 'MP 27.1',
+        direction: 'Northbound',
+        location: 'US 97 Satus Pass Summit',
+        source: 'WSDOT',
+        updateIntervalMs: 120000,
+        officialUrl: 'https://wsdot.wa.gov/travel/operations-services/mountain-passes/satus-pass'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'blewett-pass',
+        slug: 'blewett-pass',
+        name: 'Blewett Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'US-97',
+        status: 'OPEN',
+        elevationFt: 4102,
+        lastUpdated: '10 min ago',
+        distanceKm: 121
+      },
+      {
+        id: 'white-pass',
+        slug: 'white-pass',
+        name: 'White Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'US-12',
+        status: 'OPEN',
+        elevationFt: 4500,
+        lastUpdated: '5 min ago',
+        distanceKm: 132
+      },
+      {
+        id: 'snoqualmie-pass',
+        slug: 'snoqualmie-pass',
+        name: 'Snoqualmie Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'I-90',
+        status: 'OPEN',
+        elevationFt: 3022,
+        lastUpdated: '8 min ago',
+        distanceKm: 168
+      },
+      {
+        id: 'chinook-pass',
+        slug: 'chinook-pass',
+        name: 'Chinook Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'SR 410',
+        status: 'OPEN',
+        elevationFt: 5430,
+        lastUpdated: '12 min ago',
+        distanceKm: 138
+      }
+    ],
+    overview: {
+      openedYear: 1930,
+      lengthMiles: 38,
+      lengthKm: 61,
+      annualSnowfallIn: 50,
+      annualSnowfallM: 1.27,
+      summary: 'Status Pass (known geographically as Satus Pass) carries U.S. Route 97 over the Simcoe Mountains in southern Washington. Located at an elevation of 3,107 feet, the pass is an essential corridor for freight and travelers moving between Yakima and the Columbia River Gorge. Built as a paved highway in 1930 to replace a narrow dirt trail, it crosses through the Yakama Reservation. The road experiences winter weather, requiring active snow clearance, traction advisories, and regular maintenance patrol by WSDOT crews.'
+    },
+    quickFacts: {
+      state: 'Washington',
+      mountainRange: 'Simcoe Mountains',
+      elevationSummary: '3,107 ft (947 m) summit elevation',
+      connects: 'Goldendale (south) with Toppenish & Yakima Valley (north)',
+      nearestTown: 'Goldendale (11 mi), Toppenish (35 mi)',
+      roadType: 'U.S. Route 97 (US 97) - Two-lane Paved Highway',
+      bestTime: 'Year-round (carry chains/traction tires in winter)',
+      highlight: 'Scenic pine forests of the Simcoe Mountains and the Yakama Reservation'
+    },
+    routeDetails: {
+      distanceKm: 61,
+      distanceMiles: 38,
+      duration: '40 - 55 min',
+      origin: 'Goldendale, WA',
+      destination: 'Toppenish, WA',
+      waypoints: ['Goldendale (US 97)', 'Simcoe Mountains Summit', 'Satus Creek Valley', 'Toppenish (Yakima Valley)']
+    },
+    isPopular: true,
+    isSeasonal: false,
+    seasonalClosureInfo: {
+      typicalClosure: 'No scheduled closure',
+      typicalReopening: 'Open year-round',
+      description: 'Unlike nearby Chinook Pass or Cayuse Pass, Status Pass is maintained year-round. It is not subject to annual winter-long closures, though it may shut down temporarily during active blizzards, traffic spinouts, or heavy snow clearing operations.'
+    },
+    forecast: [
+      { day: 'Today', condition: 'Sunny', tempHighF: 52, tempLowF: 34, icon: 'sun' },
+      { day: 'Tomorrow', condition: 'Partly Cloudy', tempHighF: 50, tempLowF: 33, icon: 'cloud' },
+      { day: 'Monday', condition: 'Mostly Sunny', tempHighF: 53, tempLowF: 35, icon: 'sun' },
+      { day: 'Tuesday', condition: 'Rain Showers', tempHighF: 46, tempLowF: 31, icon: 'cloud-rain' },
+      { day: 'Wednesday', condition: 'Snow Flurries', tempHighF: 35, tempLowF: 24, icon: 'cloud-snow' }
+    ],
+    faqs: [
+      {
+        question: 'Is Status Pass open today?',
+        answer: 'Status Pass is a year-round highway and is typically open. However, severe winter weather, accidents, or heavy snow clearing can cause temporary road closures. Check the live status badge at the top of this page for the current status reported by WSDOT.'
+      },
+      {
+        question: 'Is Status Pass open right now?',
+        answer: 'Yes, check the live status card on this page to see if Status Pass is open, caution, or closed right now. We pull live travel data directly from the Washington State Department of Transportation (WSDOT) API.'
+      },
+      {
+        question: 'When does Status Pass open?',
+        answer: 'Status Pass is maintained year-round and does not close for the winter season. If a temporary closure occurs due to a winter storm, accident, or mudslide, WSDOT crews work quickly to clear the highway and reopen it as soon as conditions are safe.'
+      },
+      {
+        question: 'When does Status Pass close for winter?',
+        answer: 'Unlike seasonal mountain highways in Washington State, Status Pass does not close for the winter. It remains open year-round. Temporary closures may occur during active winter blizzards for snow removal and safety control.'
+      },
+      {
+        question: 'What are the current Status Pass road conditions?',
+        answer: 'Current road conditions on US 97 over Status Pass vary by season. During winter storms, pavement can have compact snow, ice, or slush. WSDOT updates road conditions dynamically. Check the Road Conditions section on this page for the latest surface reports.'
+      },
+      {
+        question: 'Is there a Status Pass webcam?',
+        answer: 'Yes. WSDOT operates a live traffic webcam at the summit of Status Pass on US 97 at Milepost 27.1. You can view the live webcam image, check timestamps, and refresh the feed directly in the Live Camera section of this page.'
+      },
+      {
+        question: 'What is the Status Pass elevation?',
+        answer: 'Status Pass is at an elevation of 3,107 feet (947 meters) above sea level. While lower than Stevens or Snoqualmie passes, its high-elevation environment still experiences rapid weather shifts and heavy winter snow.'
+      },
+      {
+        question: 'What highway is Status Pass on?',
+        answer: 'Status Pass is located on U.S. Highway 97 (US 97) in Washington State, serving as a primary route connecting Goldendale to Toppenish.'
+      },
+      {
+        question: 'Where is Status Pass?',
+        answer: 'Status Pass is in south-central Washington, USA. It traverses the Simcoe Mountains within the Yakama Indian Reservation boundary, situated in Klickitat and Yakima counties.'
+      },
+      {
+        question: 'Does Status Pass require chains?',
+        answer: 'During active snowstorms, WSDOT may post chain requirements. In Washington, when "Chains Required" is posted, all vehicles must carry or install chains except four-wheel-drive/all-wheel-drive vehicles under 10,000 lbs with approved winter tires.'
+      },
+      {
+        question: 'Is there snow on Status Pass?',
+        answer: 'Snow can accumulate on Status Pass from late October through April. Check the snow depth card and the live summit camera feed above to see the current snow levels and road surface visibility.'
+      },
+      {
+        question: 'How do I get to Status Pass?',
+        answer: 'Status Pass can be reached via US Highway 97. If traveling north from Goldendale or Oregon (via Biggs Junction), follow US 97 north for approximately 11 miles. If traveling south from Yakima, take US 97 south past Toppenish for about 35 miles.'
+      }
+    ],
+    customSeo: {
+      title: 'Status Pass Road Conditions, Webcam & Weather',
+      description: 'Check Status Pass road conditions, opening status, live webcams, weather, snow and winter travel information before you drive.',
+      h1: 'Status Pass Road Conditions, Opening Status, Webcams & Weather'
+    },
+    dataSources: [
+      { name: 'Washington State Department of Transportation (WSDOT)', type: 'US 97 Mountain Pass Conditions', url: 'https://wsdot.wa.gov/travel/operations-services/mountain-passes/satus-pass' },
+      { name: 'National Weather Service (NWS)', type: 'Point Forecast Satus Pass, WA', url: 'https://forecast.weather.gov/MapClick.php?lat=45.9847&lon=-120.6536' }
+    ]
+  },
+  {
+    id: 'khyber-pass',
+    slug: 'khyber-pass',
+    name: 'Khyber Pass',
+    country: 'Pakistan',
+    countryCode: 'PAK',
+    continent: 'Asia',
+    state: 'Khyber Pakhtunkhwa',
+    highway: 'N-5 National Highway',
+    elevationFt: 3510,
+    elevationM: 1070,
+    coordinates: { lat: 34.0758, lng: 71.2039 },
+    status: 'UNKNOWN',
+    statusDetail: 'Live status data unavailable. Historical mountain corridor, border access controls apply at Torkham.',
+    lastUpdated: 'Data offline',
+    description: 'The Khyber Pass is a historic mountain pass in the Safed Koh range of the Hindu Kush, connecting the Peshawar Valley of Pakistan with the Kabul River valley of Afghanistan. Located in Khyber Pakhtunkhwa, Pakistan, the pass has historically served as a vital trade, military, and migration corridor between South Asia and Central Asia. The modern route follows the N-5 Highway (Peshawar-Torkham Road) leading to the critical Torkham border crossing.',
+    image: '/khyber-pass-khyber-pakhtunkhwa-pakistan.webp',
+    weather: {
+      tempF: 88,
+      tempC: 31,
+      condition: 'Sunny & Dry',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 0,
+      depthIn: 0,
+      condition: 'No Snow (Subtropical Semi-Arid)'
+    },
+    wind: {
+      speedKmh: 12,
+      speedMph: 7,
+      direction: 'W',
+      description: 'Gentle Breeze'
+    },
+    roadCondition: 'Pavement bare and dry. Heavy commercial truck traffic moving toward the Torkham border crossing.',
+    chainRequirement: 'No winter tire or chain requirements apply. Standard commercial vehicle permits required.',
+    cameras: [],
+    nearbyPasses: [
+      {
+        id: 'khardung-la',
+        slug: 'khardung-la',
+        name: 'Khardung La',
+        country: 'India',
+        state: 'Ladakh',
+        highway: 'Leh-Nubra Rd',
+        status: 'OPEN',
+        elevationFt: 17582,
+        lastUpdated: '15 min ago',
+        distanceKm: 380
+      },
+      {
+        id: 'zoji-la',
+        slug: 'zoji-la',
+        name: 'Zoji La',
+        country: 'India',
+        state: 'Jammu & Kashmir',
+        highway: 'NH-1',
+        status: 'CAUTION',
+        elevationFt: 11575,
+        lastUpdated: '20 min ago',
+        distanceKm: 350
+      }
+    ],
+    overview: {
+      openedYear: 'Ancient Route (Paved 1920s)',
+      lengthMiles: 33,
+      lengthKm: 53,
+      annualSnowfallIn: 0,
+      annualSnowfallM: 0,
+      summary: 'The Khyber Pass is one of the most famous mountain passes in world history. Cutting through the Safed Koh mountains, it connects Pakistan and Afghanistan, serving as a gateway between Central Asia and the Indian Subcontinent. The pass has been traversed by merchants, migrations, and invading armies for thousands of years, including Alexander the Great, Genghis Khan, and Babur. Today, the modern paved N-5 National Highway runs through the pass, terminating at the Torkham border post.'
+    },
+    quickFacts: {
+      state: 'Khyber Pakhtunkhwa',
+      mountainRange: 'Safed Koh Range (Spin Ghar)',
+      elevationSummary: '3,510 ft (1,070 m) summit elevation',
+      connects: 'Peshawar (Pakistan) with Kabul (Afghanistan) via Torkham',
+      nearestTown: 'Landi Kotal (5 km), Jamrud (18 km)',
+      roadType: 'N-5 National Highway (Paved Two-lane)',
+      bestTime: 'October to March (cooler winter months)',
+      highlight: 'Historic trade corridor, Khyber Pass Gate (Bab-e-Khyber), and Ali Masjid'
+    },
+    routeDetails: {
+      distanceKm: 53,
+      distanceMiles: 33,
+      duration: '1 hour 15 min',
+      origin: 'Jamrud (near Peshawar), Pakistan',
+      destination: 'Torkham Border Crossing, Pakistan–Afghanistan',
+      waypoints: ['Bab-e-Khyber (Jamrud)', 'Ali Masjid Gorge', 'Landi Kotal Summit', 'Torkham Border Post']
+    },
+    faqs: [
+      {
+        question: 'Where is Khyber Pass?',
+        answer: 'Khyber Pass is located in the Khyber District of the Khyber Pakhtunkhwa province in northwestern Pakistan. It traverses the Safed Koh mountain range, connecting the Peshawar Valley with Afghanistan.'
+      },
+      {
+        question: 'Is Khyber Pass in Pakistan or Afghanistan?',
+        answer: 'The pass itself is geographically and administratively located within Pakistan (Khyber Pakhtunkhwa province). However, it serves as the historical and modern gateway to Afghanistan, terminating at the Torkham border crossing.'
+      },
+      {
+        question: 'Is Khyber Pass open right now?',
+        answer: 'Khyber Pass is a year-round national highway (N-5) and is generally open to traffic. However, because it is an active international border corridor, access can be restricted due to security controls or border procedures at Torkham. Check official Pakistani border authorities for current operational status.'
+      },
+      {
+        question: 'Is Khyber Pass open to tourists?',
+        answer: 'Access for foreign tourists is highly regulated and usually requires a Non-Objection Certificate (NOC) and security escort from Pakistani authorities. Domestic travelers can access the pass, but all visitors must clear security checkpoints at Jamrud.'
+      },
+      {
+        question: 'What is the elevation of Khyber Pass?',
+        answer: 'The summit of the pass is at Landi Kotal, reaching an elevation of 3,510 feet (1,070 meters) above sea level.'
+      },
+      {
+        question: 'Is there a Khyber Pass webcam?',
+        answer: 'No. An independently verified public live traffic webcam is not available for this location due to border security regulations.'
+      },
+      {
+        question: 'What is the weather at Khyber Pass?',
+        answer: 'Weather at Khyber Pass is typically dry and semi-arid. Summers are hot and winters are mild. Because there is no meteorological station directly at the summit, weather reports rely on the nearby Landi Kotal station.'
+      },
+      {
+        question: 'How do you reach Khyber Pass from Peshawar?',
+        answer: 'The pass starts at Jamrud, about 15-18 km west of Peshawar. You can drive along the paved N-5 National Highway towards Landi Kotal. Foreign nationals must confirm permit requirements before departure.'
+      },
+      {
+        question: 'What is Khyber Pass famous for?',
+        answer: 'Khyber Pass is famous as an ancient trade route on the Silk Road and a strategic military corridor invaded by armies throughout history. It is also famous for the Ali Masjid gorge and the Bab-e-Khyber gate.'
+      },
+      {
+        question: 'Is Khyber Pass open in winter?',
+        answer: 'Yes, it is open in winter. Unlike high-altitude alpine passes, Khyber Pass does not experience seasonal winter closures as snowfall is extremely rare.'
+      },
+      {
+        question: 'Is Khyber Pass near Torkham?',
+        answer: 'Yes, the pass extends all the way to Landi Kotal and descends to the Torkham border crossing, which is the main border post between Pakistan and Afghanistan.'
+      }
+    ],
+    customSeo: {
+      title: 'Khyber Pass: Road Status, Weather, Map & Travel Guide',
+      description: 'Explore Khyber Pass in Khyber Pakhtunkhwa, Pakistan, with location, map, elevation, weather, road information and practical travel guidance.',
+      h1: 'Khyber Pass: Road Status, Location, Weather & Travel Information'
+    },
+    dataSources: [
+      { name: 'National Highway Authority (NHA) Pakistan', type: 'N-5 Highway Status', url: 'https://nha.gov.pk/' },
+      { name: 'Pakistan Meteorological Department (PMD)', type: 'Landi Kotal Weather Feed', url: 'https://www.pmd.gov.pk/' }
+    ]
   }
 ];
 
@@ -4353,6 +5311,9 @@ export function cleanSlug(str: string): string {
 
 export function getPassUrl(pass: { country: string; state?: string; slug: string }): string {
   const countrySlug = cleanSlug(pass.country);
+  if (pass.slug === 'trollstigen-pass') {
+    return `/passes/${countrySlug}/trollstigen-pass`;
+  }
   const stateSlug = pass.state ? cleanSlug(pass.state) : '';
   return stateSlug ? `/passes/${countrySlug}/${stateSlug}/${pass.slug}` : `/passes/${countrySlug}/${pass.slug}`;
 }

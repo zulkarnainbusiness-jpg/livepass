@@ -288,16 +288,24 @@ img {
   border: 1px solid var(--status-open-border);
 }
 
-.status-badge.status-CAUTION {
+.status-badge.status-CAUTION,
+.status-badge.status-RESTRICTED {
   background-color: var(--status-caution-bg);
   color: var(--status-caution-text);
   border: 1px solid var(--status-caution-border);
 }
 
-.status-badge.status-CLOSED {
+.status-badge.status-CLOSED,
+.status-badge.status-TEMPORARILY_CLOSED {
   background-color: var(--status-closed-bg);
   color: var(--status-closed-text);
   border: 1px solid var(--status-closed-border);
+}
+
+.status-badge.status-SEASONAL_CLOSURE {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
 .status-badge.status-MONITORED {
@@ -324,7 +332,8 @@ img {
   border: 1px solid var(--status-closed-border);
 }
 
-.status-badge.status-UNKNOWN {
+.status-badge.status-UNKNOWN,
+.status-badge.status-NEEDS_VERIFICATION {
   background-color: var(--bg-surface-subtle);
   color: var(--text-muted);
   border: 1px solid var(--border-color);

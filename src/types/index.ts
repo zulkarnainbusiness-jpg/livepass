@@ -1,4 +1,4 @@
-export type PassStatus = 'OPEN' | 'CAUTION' | 'CLOSED' | 'UNKNOWN' | 'MONITORED';
+export type PassStatus = 'OPEN' | 'CLOSED' | 'RESTRICTED' | 'SEASONAL_CLOSURE' | 'TEMPORARILY_CLOSED' | 'UNKNOWN' | 'NEEDS_VERIFICATION' | 'CAUTION' | 'MONITORED';
 
 export type AlertType = 'Closure' | 'Warning' | 'Advisory' | 'All Clear';
 
@@ -55,6 +55,17 @@ export interface MountainPass {
   lastUpdated: string;
   description: string;
   image: string;
+  officialSource?: string;
+  official_source_url?: string;
+  official_authority?: string;
+  verification_status?: string;
+  confidence?: string;
+  last_checked_at?: string;
+  last_status_change_at?: string;
+  source_published_at?: string;
+  source_evidence?: string;
+  source_url?: string;
+  verification?: any;
   weather: {
     tempF: number;
     tempC: number;

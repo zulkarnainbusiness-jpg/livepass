@@ -66,6 +66,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/passes/united-states/california/donner-pass">Donner Pass (I-80)</Link></li>
               <li><Link to="/passes/india/jammu-and-kashmir/zoji-la">Zoji La Pass (NH-1)</Link></li>
               <li><Link to="/passes/india/ladakh/khardung-la">Khardung La Pass</Link></li>
+              <li><Link to="/passes/india/sikkim/nathu-la">Nathu La Pass (Sikkim)</Link></li>
               <li><Link to="/passes/switzerland/valais-uri/furka-pass">Furka Pass (Alps)</Link></li>
               <li><Link to="/passes/italy/south-tyrol-lombardy/stelvio-pass">Stelvio Pass (SS38)</Link></li>
             </ul>

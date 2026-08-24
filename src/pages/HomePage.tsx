@@ -1,19 +1,27 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Search, CheckCircle2, AlertTriangle, XCircle, Camera, Bell, ArrowRight, ChevronRight, ChevronLeft } from 'lucide-react';
-import { passesData, getPassStats } from '../data/passes';
+import { usePasses } from '../context/PassesContext';
 import { PassCard } from '../components/PassCard';
 import { TrustBar } from '../components/TrustBar';
 import { SEOHelper } from '../components/SEOHelper';
 import './HomePage.css';
 
 export const HomePage: React.FC = () => {
+  const { passes } = usePasses();
   const [heroSearch, setHeroSearch] = useState('');
   const [carouselIndex, setCarouselIndex] = useState(0);
   const navigate = useNavigate();
-  const stats = getPassStats();
 
-  const popularPasses = passesData.filter(p => p.isPopular);
+  const stats = {
+    open: passes.filter(p => p.status === 'OPEN').length,
+    caution: passes.filter(p => p.status === 'CAUTION' || p.status === 'RESTRICTED').length,
+    closed: passes.filter(p => p.status === 'CLOSED' || p.status === 'TEMPORARILY_CLOSED' || p.status === 'SEASONAL_CLOSURE').length,
+    monitored: passes.filter(p => p.status === 'MONITORED' || (p.cameras && p.cameras.length > 0)).length,
+    total: passes.length
+  };
+
+  const popularPasses = passes.filter(p => p.isPopular);
 
   const handleHeroSearch = (e: React.FormEvent) => {
     e.preventDefault();

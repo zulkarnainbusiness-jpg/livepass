@@ -270,8 +270,13 @@
 }
 
 .status-card-OPEN .status-badge-hero-pill { color: #10B981; }
-.status-card-CAUTION .status-badge-hero-pill { color: #F59E0B; }
-.status-card-CLOSED .status-badge-hero-pill { color: #EF4444; }
+.status-card-CAUTION .status-badge-hero-pill,
+.status-card-RESTRICTED .status-badge-hero-pill { color: #F59E0B; }
+.status-card-CLOSED .status-badge-hero-pill,
+.status-card-SEASONAL_CLOSURE .status-badge-hero-pill,
+.status-card-TEMPORARILY_CLOSED .status-badge-hero-pill { color: #EF4444; }
+.status-card-UNKNOWN .status-badge-hero-pill,
+.status-card-NEEDS_VERIFICATION .status-badge-hero-pill { color: #9CA3AF; }
 
 .status-hero-info {
   flex: 1;
