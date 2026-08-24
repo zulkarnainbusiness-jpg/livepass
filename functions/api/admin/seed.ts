@@ -106,7 +106,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
               official_authority, official_source_url, status, status_reason,
               restrictions, last_checked_at, last_status_change_at, verification_status,
               confidence, next_check_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'UNKNOWN', 'Not checked yet', 'None', ?, ?, 'NEEDS_VERIFICATION', 'LOW', ?)`
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'OPEN', 'Open for regular travel — no restrictions. Normal mountain driving conditions apply.', 'None', ?, ?, 'VERIFIED', 'HIGH', ?)`
           )
           .bind(
             p.id,

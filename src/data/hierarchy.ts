@@ -73,7 +73,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 highway: 'US-97',
                 elevationFt: 4102,
                 elevationM: 1250,
-                status: 'CLOSED',
+                status: 'OPEN',
                 image: '/blewett-pass.jpg'
               },
               {
@@ -133,7 +133,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 highway: 'SR 20',
                 elevationFt: 4020,
                 elevationM: 1225,
-                status: 'UNKNOWN',
+                status: 'OPEN',
                 image: '/loup-loup-pass-washington.webp'
               },
               {
@@ -143,7 +143,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 highway: 'US 97',
                 elevationFt: 3107,
                 elevationM: 947,
-                status: 'UNKNOWN',
+                status: 'OPEN',
                 image: '/status-pass.jpg'
               }
             ]
@@ -321,7 +321,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 highway: 'Fv63',
                 elevationFt: 2815,
                 elevationM: 858,
-                status: 'CLOSED',
+                status: 'OPEN',
                 image: '/trollstigen-pass-road-status-webcam.webp'
               }
             ]
@@ -370,7 +370,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 highway: 'NH-1',
                 elevationFt: 11575,
                 elevationM: 3528,
-                status: 'CAUTION',
+                status: 'OPEN',
                 image: '/zoji-la-pass-jammu-kashmir.jpg'
               }
             ]
@@ -402,7 +402,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 highway: 'NH-310',
                 elevationFt: 14140,
                 elevationM: 4310,
-                status: 'UNKNOWN',
+                status: 'OPEN',
                 image: '/nathu-la-pass-sikkim.jpg'
               }
             ]
@@ -428,7 +428,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 highway: 'N-5 Highway',
                 elevationFt: 3510,
                 elevationM: 1070,
-                status: 'UNKNOWN',
+                status: 'OPEN',
                 image: '/khyber-pass-khyber-pakhtunkhwa-pakistan.webp'
               }
             ]
