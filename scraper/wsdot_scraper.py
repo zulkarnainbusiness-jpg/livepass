@@ -94,7 +94,7 @@ def parse_wsdot_date(raw: Optional[str]) -> Optional[str]:
 
 def derive_status(pass_data: dict) -> str:
     """
-    Derive a clean OPEN / CLOSED / RESTRICTED status
+    Derive a clean OPEN / CLOSED / RESTRICTED / CAUTION status
     from WSDOT's RoadCondition and restriction fields.
     """
     condition = (pass_data.get("RoadCondition") or "").lower()
@@ -103,16 +103,32 @@ def derive_status(pass_data: dict) -> str:
     r2 = (pass_data.get("RestrictionTwo", {}) or {}).get("RestrictionText", "") or ""
     restrictions = (r1 + " " + r2).lower()
 
-    if "closed" in condition or "closed" in restrictions:
+    # 1. Closed checks
+    if ("closed" in condition or "closed" in restrictions or "impassable" in condition) and ("is open" not in condition and "open to" not in condition):
         return "CLOSED"
+
+    # 2. Strict traction / chain / lane restriction checks
     if (
-        advisory
-        or "chain" in restrictions
-        or "traction tires" in restrictions
+        "chains required" in restrictions
+        or "tire chains required" in restrictions
+        or "traction tires required" in restrictions
         or "restricted" in condition
+        or "single lane" in condition
     ):
         return "RESTRICTED"
+
+    # 3. Caution checks (snow, ice, slush, traction advisories)
+    if (
+        "snow" in condition
+        or "ice" in condition
+        or "slush" in condition
+        or "traction advisory" in restrictions
+    ):
+        return "CAUTION"
+
+    # 4. Default to OPEN for normal traffic, dry roads, off-season notes, or general travel advisories
     return "OPEN"
+
 
 
 def parse_pass(raw: dict) -> Optional[dict]:
