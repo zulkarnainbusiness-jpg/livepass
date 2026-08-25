@@ -1,14 +1,15 @@
 import { createClient } from '@supabase/supabase-js';
 
 // Supabase configuration
-// Public credentials can be specified in .env or via Vite environment variables
-const SUPABASE_URL = import.meta.env?.VITE_SUPABASE_URL || 'https://oyzqwyggwpqpgaqecchx.supabase.co';
-const SUPABASE_ANON_KEY = import.meta.env?.VITE_SUPABASE_ANON_KEY || '';
+// Public anon credentials (safe for client-side browser usage)
+const DEFAULT_SUPABASE_URL = 'https://oyzqwygwpqgaqecchrx.supabase.co';
 
+const DEFAULT_SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95enF3eWd3cHFnYXFlY2NocngiLCJyb2xlIjoiYW5vbiIsImlhdCI6MTc4NzY1NzQyOSwiZXhwIjoyMTAzMjMzNDI5fQ.gVJhrAjK3BFVIeWZsZQnz_1dzkVwxb6Jm4o3-eorbrM';
 
-export const supabase = SUPABASE_ANON_KEY
-  ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
-  : null;
+const SUPABASE_URL = import.meta.env?.VITE_SUPABASE_URL || DEFAULT_SUPABASE_URL;
+const SUPABASE_ANON_KEY = import.meta.env?.VITE_SUPABASE_ANON_KEY || DEFAULT_SUPABASE_ANON_KEY;
+
+export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 export interface LivePassStatusRecord {
   id?: string;
@@ -33,9 +34,7 @@ export interface LivePassStatusRecord {
 export async function fetchLatestPassStatuses(): Promise<Map<string, LivePassStatusRecord>> {
   const statusMap = new Map<string, LivePassStatusRecord>();
 
-  // If Supabase client is not initialized, attempt direct anonymous REST fetch if key is present
   if (!supabase) {
-    console.info('Supabase client not initialized with VITE_SUPABASE_ANON_KEY. Using local fallback.');
     return statusMap;
   }
 
@@ -45,7 +44,7 @@ export async function fetchLatestPassStatuses(): Promise<Map<string, LivePassSta
       .from('latest_pass_status')
       .select('*');
 
-    // 2. If the view is unavailable, query pass_status directly with latest records
+    // 2. If the view is unavailable or empty, query pass_status table directly ordered by scraped_at
     if (error || !data || data.length === 0) {
       const response = await supabase
         .from('pass_status')
@@ -58,7 +57,7 @@ export async function fetchLatestPassStatuses(): Promise<Map<string, LivePassSta
     }
 
     if (error) {
-      console.warn('Supabase query returned error:', error.message);
+      console.warn('Supabase query warning:', error.message);
       return statusMap;
     }
 
