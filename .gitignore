@@ -39,3 +39,8 @@ Thumbs.db
 # Agent & Temp scratch scripts
 scratch_*.mjs
 scratch_*.js
+
+# Python
+__pycache__/
+*.py[cod]
+
