@@ -36,8 +36,13 @@ WSDOT_API_URL = (
     "MountainPassConditionsREST.svc/GetMountainPassConditionsAsJson"
 )
 
-# Map WSDOT MountainPassName → your site's slug
-# Update this if WSDOT adds or renames passes
+# Map WSDOT MountainPassName → your site's slug.
+#
+# IMPORTANT: WSDOT's MountainPassName field includes the route designator,
+# e.g. "Snoqualmie Pass I-90", "Stevens Pass US 2", "Blewett Pass US 97",
+# "Cayuse Pass SR 123". It is NOT just the bare pass name. Keys below are
+# the *normalized* (route-stripped) form — see normalize_pass_name().
+# Update this if WSDOT adds or renames passes.
 PASS_NAME_TO_SLUG: dict[str, str] = {
     "Snoqualmie Pass":           "snoqualmie-pass",
     "Stevens Pass":              "stevens-pass",
@@ -50,6 +55,24 @@ PASS_NAME_TO_SLUG: dict[str, str] = {
     "North Cascades Highway":    "north-cascades-pass",
     "Washington Pass":           "north-cascades-pass",  # WSDOT sometimes uses this name
 }
+
+# Matches a trailing route designator like " I-90", " US 2", " US 97",
+# " SR 410", " SR 123", " SR20" (with or without a space before the number).
+_ROUTE_SUFFIX_RE = re.compile(
+    r"\s+(?:I-\d+|US\s?\d+|SR\s?\d+)$",
+    flags=re.IGNORECASE,
+)
+
+
+def normalize_pass_name(name: str) -> str:
+    """
+    Strip WSDOT's trailing route designator so names match our
+    mapping regardless of which highway is appended, e.g.:
+      "Snoqualmie Pass I-90" -> "Snoqualmie Pass"
+      "Blewett Pass US 97"   -> "Blewett Pass"
+      "Cayuse Pass SR 123"   -> "Cayuse Pass"
+    """
+    return _ROUTE_SUFFIX_RE.sub("", (name or "").strip()).strip()
 
 
 # ── Helpers ──────────────────────────────────────────────────
@@ -98,10 +121,10 @@ def parse_pass(raw: dict) -> Optional[dict]:
     Returns None if the pass isn't in our slug map.
     """
     name = raw.get("MountainPassName", "")
-    slug = PASS_NAME_TO_SLUG.get(name)
+    slug = PASS_NAME_TO_SLUG.get(normalize_pass_name(name))
 
     if not slug:
-        log.debug("Skipping unknown pass: %s", name)
+        log.info("Skipping unmapped pass: %r (normalized: %r)", name, normalize_pass_name(name))
         return None
 
     r1 = (raw.get("RestrictionOne") or {})
@@ -177,6 +200,7 @@ def run():
 
     # ── 2. Parse & filter ─────────────────────────────────────
     records = []
+    unmatched_names = []
     for raw in raw_passes:
         parsed = parse_pass(raw)
         if parsed:
@@ -187,12 +211,21 @@ def run():
                 parsed["status"],
                 parsed["road_condition"] or "no condition text",
             )
+        else:
+            unmatched_names.append(raw.get("MountainPassName", ""))
 
     log.info("Matched %d/%d passes to site slugs", len(records), len(raw_passes))
 
     if not records:
-        log.warning("No matching passes found — check PASS_NAME_TO_SLUG mapping")
-        _log_scrape(sb, "WSDOT_API", 0, False, "No slug matches")
+        log.warning(
+            "No matching passes found — check PASS_NAME_TO_SLUG mapping. "
+            "Raw WSDOT names seen: %s",
+            unmatched_names,
+        )
+        _log_scrape(
+            sb, "WSDOT_API", 0, False,
+            f"No slug matches. Raw names: {unmatched_names}",
+        )
         sys.exit(1)
 
     # ── 3. Write to Supabase ──────────────────────────────────
