@@ -46,6 +46,8 @@ import { TrustBar } from '../components/TrustBar';
 import { MapComponent } from '../components/MapComponent';
 import { NotFoundPage } from './StaticPages';
 import { SEOHelper } from '../components/SEOHelper';
+import { CameraProvider } from '../components/CameraProvider';
+import { UserCameraModal } from '../components/UserCameraModal';
 import './PassDetailPage.css';
 
 export const PassDetailPage: React.FC = () => {
@@ -66,6 +68,7 @@ export const PassDetailPage: React.FC = () => {
   const [liveDataError, setLiveDataError] = useState(false);
   const [history, setHistory] = useState<any[]>([]);
   const [verificationMeta, setVerificationMeta] = useState<any | null>(null);
+  const [gotthardTunnel, setGotthardTunnel] = useState<any | null>(null);
 
   // Helper to format dynamic relative time
   const formatTime = (timeStr: string) => {
@@ -88,8 +91,126 @@ export const PassDetailPage: React.FC = () => {
     setLiveDataError(false);
     setHistory([]);
     setVerificationMeta(null);
+    setGotthardTunnel(null);
 
     if (activePass) {
+      // Dynamic Gotthard API integrations (Swiss TCS, MeteoSwiss, ASTRA Tunnel)
+      if (activePass.id === 'gotthard-pass' || activePass.slug === 'gotthard-pass') {
+        fetch('/api/passes/gotthard/status')
+          .then(res => res.ok ? res.json() : null)
+          .then(res => {
+            if (res && res.success && res.data) {
+              setPass(prev => {
+                if (!prev || (prev.id !== 'gotthard-pass' && prev.slug !== 'gotthard-pass')) return prev;
+                return {
+                  ...prev,
+                  status: res.data.status,
+                  statusDetail: res.data.statusDetail || prev.statusDetail,
+                  lastUpdated: 'Just now',
+                  officialSource: res.data.sourceUrl || prev.officialSource,
+                  official_source_url: res.data.sourceUrl || prev.official_source_url
+                };
+              });
+            }
+          })
+          .catch(err => console.warn('Live Gotthard status check fallback to baseline:', err));
+
+        fetch('/api/passes/gotthard/weather')
+          .then(res => res.ok ? res.json() : null)
+          .then(res => {
+            if (res && res.success && res.data) {
+              setPass(prev => {
+                if (!prev || (prev.id !== 'gotthard-pass' && prev.slug !== 'gotthard-pass')) return prev;
+                return {
+                  ...prev,
+                  weather: {
+                    tempF: res.data.tempF,
+                    tempC: res.data.tempC,
+                    condition: res.data.condition,
+                    icon: prev.weather?.icon || 'sun'
+                  },
+                  forecast: res.data.forecast || prev.forecast,
+                  snowDepth: {
+                    depthCm: res.data.snowDepthCm,
+                    depthIn: res.data.snowDepthIn,
+                    condition: res.data.snowCondition
+                  },
+                  wind: {
+                    speedKmh: res.data.windSpeedKmh,
+                    speedMph: res.data.windSpeedMph,
+                    direction: res.data.windDirection,
+                    description: res.data.windDescription
+                  }
+                };
+              });
+            }
+          })
+          .catch(err => console.warn('Live Gotthard weather check fallback to baseline:', err));
+
+        fetch('/api/passes/gotthard/tunnel')
+          .then(res => res.ok ? res.json() : null)
+          .then(res => {
+            if (res && res.success && res.data) {
+              setGotthardTunnel(res.data);
+            }
+          })
+          .catch(err => console.warn('Live Gotthard tunnel check fallback to baseline:', err));
+      }
+
+      // Dynamic Bernina API integrations (Tiefbauamt Graubünden, Swiss TCS, MeteoSwiss)
+      if (activePass.id === 'bernina-pass' || activePass.slug === 'bernina-pass') {
+        fetch('/api/passes/bernina/status')
+          .then(res => res.ok ? res.json() : null)
+          .then(res => {
+            if (res && res.success && res.data) {
+              setPass(prev => {
+                if (!prev || (prev.id !== 'bernina-pass' && prev.slug !== 'bernina-pass')) return prev;
+                return {
+                  ...prev,
+                  status: res.data.status,
+                  statusDetail: res.data.statusDetail || prev.statusDetail,
+                  lastUpdated: 'Just now',
+                  officialSource: res.data.sourceUrl || prev.officialSource,
+                  official_source_url: res.data.sourceUrl || prev.official_source_url
+                };
+              });
+            }
+          })
+          .catch(err => console.warn('Live Bernina status check fallback to baseline:', err));
+
+        fetch('/api/passes/bernina/weather')
+          .then(res => res.ok ? res.json() : null)
+          .then(res => {
+            if (res && res.success && res.data) {
+              setPass(prev => {
+                if (!prev || (prev.id !== 'bernina-pass' && prev.slug !== 'bernina-pass')) return prev;
+                return {
+                  ...prev,
+                  weather: {
+                    tempF: res.data.tempF,
+                    tempC: res.data.tempC,
+                    condition: res.data.condition,
+                    icon: prev.weather?.icon || 'sun'
+                  },
+                  forecast: res.data.forecast || prev.forecast,
+                  snowDepth: {
+                    depthCm: res.data.snowDepthCm,
+                    depthIn: res.data.snowDepthIn,
+                    condition: res.data.snowCondition
+                  },
+                  wind: {
+                    speedKmh: res.data.windSpeedKmh,
+                    speedMph: res.data.windSpeedMph,
+                    direction: res.data.windDirection,
+                    description: res.data.windDescription
+                  }
+                };
+              });
+            }
+          })
+          .catch(err => console.warn('Live Bernina weather check fallback to baseline:', err));
+      }
+
       // Fetch dynamic verification details and history from our general endpoint
       fetch(`/api/passes/${activePass.id}`)
         .then(res => {
@@ -135,6 +256,7 @@ export const PassDetailPage: React.FC = () => {
   const [cameraError, setCameraError] = useState(false);
   const [isRefreshingCam, setIsRefreshingCam] = useState(false);
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
+  const [isUserCamModalOpen, setIsUserCamModalOpen] = useState(false);
 
   // If pass is not found in database, return custom 404 Page (Phase 3 & 29 compliance)
   if (!pass) {
@@ -206,25 +328,23 @@ export const PassDetailPage: React.FC = () => {
   };
 
   // Structured Data Schema for Mountain Pass & SEO
-  const cleanSlug = (str: string) => str
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/&/g, 'and')
-    .replace(/[\s\/]+/g, '-')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '');
-
-  const canonicalCountry = cleanSlug(pass.country);
-  const canonicalState = cleanSlug(pass.state);
-  const canonicalUrl = pass.slug === 'trollstigen-pass'
-    ? `https://www.livepasswatch.info/passes/${canonicalCountry}/${pass.slug}`
-    : (pass.state 
-        ? `https://www.livepasswatch.info/passes/${canonicalCountry}/${canonicalState}/${pass.slug}` 
-        : `https://www.livepasswatch.info/passes/${canonicalCountry}/${pass.slug}`);
+  const canonicalPath = getPassUrl(pass);
+  const canonicalUrl = `https://www.livepasswatch.info${canonicalPath}`;
   const passFullImage = pass.image.startsWith('http') ? pass.image : `https://www.livepasswatch.info${pass.image.startsWith('/') ? '' : '/'}${pass.image}`;
 
-  const imageAltText = pass.slug === 'trollstigen-pass'
+  const imageAltText = (pass.slug === 'bernina-pass')
+    ? 'Bernina Pass mountain road in the Swiss Alps'
+    : (pass.slug === 'gotthard-pass')
+    ? 'Gotthard Pass mountain road in the Swiss Alps'
+    : (pass.slug === 'grimsel-pass')
+    ? 'Grimsel Pass mountain road in the Swiss Alps'
+    : (pass.slug === 'great-st-bernard-pass')
+    ? 'Great St Bernard Pass road and Alpine mountain landscape'
+    : (pass.slug === 'col-du-galibier')
+    ? 'Col du Galibier mountain pass road and summit monument in the French Alps'
+    : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+    ? 'Cartoon illustration of Chang La Pass sign and snowy mountain road in Ladakh'
+    : pass.slug === 'trollstigen-pass'
     ? 'Trollstigen Pass mountain road with winding hairpin bends in Norway'
     : pass.slug === 'zoji-la-pass' || pass.slug === 'zoji-la'
     ? 'Zoji La Pass in Jammu and Kashmir'
@@ -245,27 +365,20 @@ export const PassDetailPage: React.FC = () => {
     "@graph": [
       {
         "@type": "BreadcrumbList",
-        "itemListElement": pass.slug === 'trollstigen-pass'
-          ? [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.livepasswatch.info/" },
-              { "@type": "ListItem", "position": 2, "name": "Norway", "item": `https://www.livepasswatch.info/passes?country=Norway` },
-              { "@type": "ListItem", "position": 3, "name": "Mountain Passes", "item": `https://www.livepasswatch.info/passes` },
-              { "@type": "ListItem", "position": 4, "name": pass.name, "item": canonicalUrl }
-            ]
-          : [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.livepasswatch.info/" },
-              { "@type": "ListItem", "position": 2, "name": "Passes", "item": "https://www.livepasswatch.info/passes" },
-              { "@type": "ListItem", "position": 3, "name": pass.country.split('/')[0].trim(), "item": `https://www.livepasswatch.info/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}` },
-              ...(pass.state ? [{ "@type": "ListItem", "position": 4, "name": pass.state.split('/')[0].trim(), "item": `https://www.livepasswatch.info/passes?state=${encodeURIComponent(pass.state.split('/')[0].trim())}` }] : []),
-              { "@type": "ListItem", "position": pass.state ? 5 : 4, "name": pass.name, "item": canonicalUrl }
-            ]
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.livepasswatch.info/" },
+          { "@type": "ListItem", "position": 2, "name": "Passes", "item": "https://www.livepasswatch.info/passes" },
+          { "@type": "ListItem", "position": 3, "name": pass.country.split('/')[0].trim(), "item": `https://www.livepasswatch.info/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}` },
+          ...(pass.state ? [{ "@type": "ListItem", "position": 4, "name": pass.state.split('/')[0].trim(), "item": `https://www.livepasswatch.info/passes?state=${encodeURIComponent(pass.state.split('/')[0].trim())}` }] : []),
+          { "@type": "ListItem", "position": pass.state ? 5 : 4, "name": pass.name, "item": canonicalUrl }
+        ]
       },
       {
         "@type": "WebPage",
         "@id": canonicalUrl,
         "url": canonicalUrl,
-        "name": pass.customSeo?.title || `${pass.name}: Webcam, Weather, Road Conditions & Opening Status`,
-        "description": pass.customSeo?.description || `Check ${pass.name} road conditions, opening status, weather forecast, and live webcam feeds.`,
+        "name": `${pass.name} Road Conditions, Status & Live Webcam | LivePassWatch`,
+        "description": `Real-time ${pass.name} status: current road conditions, snow depth, closures, and live webcam. Updated ${pass.lastUpdated}.`,
         "image": {
           "@type": "ImageObject",
           "url": passFullImage,
@@ -301,8 +414,8 @@ export const PassDetailPage: React.FC = () => {
     ]
   };
 
-  const seoTitle = pass.customSeo?.title || `${pass.name}: Webcam, Weather, Road Conditions & Opening Status`;
-  const seoDesc = pass.customSeo?.description || `Check live ${pass.name} road conditions, opening status, current weather, webcam feeds, and cycling routes for ${pass.highway} in ${pass.country}.`;
+  const seoTitle = `${pass.name} Road Conditions, Status & Live Webcam | LivePassWatch`;
+  const seoDesc = `Real-time ${pass.name} status: current road conditions, snow depth, closures, and live webcam. Updated ${pass.lastUpdated}.`;
 
   const officialSourceDisplay = pass.dataSources && pass.dataSources.length > 0
     ? pass.dataSources[0].name
@@ -342,7 +455,47 @@ export const PassDetailPage: React.FC = () => {
         <nav className="detail-breadcrumbs" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <ChevronRight size={14} className="crumb-sep" />
-          {pass.slug === 'trollstigen-pass' ? (
+          {pass.slug === 'bernina-pass' ? (
+            <>
+              <Link to="/passes">Passes</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to="/passes?country=Switzerland">Switzerland</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to="/passes?country=Switzerland">Graubünden</Link>
+            </>
+          ) : pass.slug === 'gotthard-pass' ? (
+            <>
+              <Link to="/passes">Passes</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to="/passes?country=Switzerland">Switzerland</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to="/passes?country=Switzerland">Uri &amp; Ticino</Link>
+            </>
+          ) : pass.slug === 'great-st-bernard-pass' ? (
+            <>
+              <Link to="/passes">Passes</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to="/passes?country=Switzerland">Switzerland</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to="/passes?state=Valais">Valais</Link>
+            </>
+          ) : pass.slug === 'col-du-galibier' ? (
+            <>
+              <Link to="/passes">Passes</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to="/passes?country=France">France</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to="/passes?state=Hautes-Alpes%20%26%20Savoie">Hautes-Alpes &amp; Savoie</Link>
+            </>
+          ) : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la') ? (
+            <>
+              <Link to="/passes?country=India">India</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to="/passes?state=Ladakh">Ladakh</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to="/passes">Mountain Passes</Link>
+            </>
+          ) : pass.slug === 'trollstigen-pass' ? (
             <>
               <Link to={`/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}`}>{pass.country.split('/')[0].trim()}</Link>
               <ChevronRight size={14} className="crumb-sep" />
@@ -421,7 +574,7 @@ export const PassDetailPage: React.FC = () => {
         <nav className="detail-quick-nav-bar lp-card" aria-label="Page Sections">
           <a href="#status" className="quick-nav-link">Live Status</a>
           {verificationMeta && <a href="#verification" className="quick-nav-link">Verification</a>}
-          {(pass.cameras && pass.cameras.length > 0 || pass.id === 'khyber-pass') && <a href="#cameras" className="quick-nav-link">Live Webcams</a>}
+          {(pass.cameras && pass.cameras.length > 0 || pass.id === 'khyber-pass' || pass.slug === 'chang-la-pass' || pass.slug === 'chang-la') && <a href="#cameras" className="quick-nav-link">Webcam Status</a>}
           <a href="#road-conditions" className="quick-nav-link">Road Conditions</a>
           {pass.openingDateInfo && <a href="#opening-dates" className="quick-nav-link">Opening Dates</a>}
           {pass.seasonalClosureInfo && <a href="#winter-closure" className="quick-nav-link">Winter Closure</a>}
@@ -433,6 +586,7 @@ export const PassDetailPage: React.FC = () => {
           <a href="#route-map" className="quick-nav-link">Map &amp; Route</a>
           {pass.distancesTable && pass.distancesTable.length > 0 && <a href="#distances" className="quick-nav-link">Distances</a>}
           <a href="#about" className="quick-nav-link">About {pass.name.split('(')[0].trim()}</a>
+          <a href="#travel-guidance" className="quick-nav-link">Travel Info</a>
           <a href="#faqs" className="quick-nav-link">FAQs</a>
           <a href="#related-passes" className="quick-nav-link">Related Passes</a>
           <a href="#data-sources" className="quick-nav-link">Data Sources</a>
@@ -458,6 +612,29 @@ export const PassDetailPage: React.FC = () => {
         <div className="pass-detail-body-grid">
           {/* Main Left Column */}
           <main className="pass-main-content-col">
+
+            {pass.slug === 'col-du-galibier' && (
+              <div className="galibier-regulations-callout lp-card" style={{
+                borderLeft: '4px solid #3B82F6',
+                padding: '20px',
+                marginBottom: '24px',
+                backgroundColor: 'rgba(59, 130, 246, 0.04)',
+                borderRadius: '6px'
+              }}>
+                <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#1E3A8A' }}>
+                  <ShieldCheck size={20} color="#3B82F6" />
+                  <span>Important French Alpine Regulations (D902 Tunnel &amp; Loi Montagne II)</span>
+                </h3>
+                <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+                  <strong>Historic Galibier Tunnel (2,556 m / 8,386 ft):</strong> Alternating three-color traffic lights (feux tricolores) regulate single-lane vehicle passage. Height limit: 4.1 m, width limit: 2.4 m, weight limit: 3.5 tonnes. <em>Cyclists, pedestrians, and hazardous goods vehicles are strictly prohibited inside the tunnel and must use the 2,642 m summit crest route.</em>
+                </p>
+                <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+                  <li><strong>Winter Equipment Mandate (Loi Montagne II):</strong> Between November 1 and March 31, all vehicles traveling in Savoie (73) and Hautes-Alpes (05) must either be equipped with 4 winter-certified tires (3PMSF) or carry removable anti-skid devices (snow chains or textile socks).</li>
+                  <li><strong>Seasonal Winter Closure:</strong> D902 closes annually from late October/November until late May/early June. Snow blowers clear up to 8 meters of snowpack in May.</li>
+                  <li><strong>Tour de France Monument:</strong> The monument to Tour founder Henri Desgrange is located at the south portal of the tunnel.</li>
+                </ul>
+              </div>
+            )}
 
             {pass.slug === 'trollstigen-pass' && (
               <div className="trollstigen-restrictions-callout lp-card" style={{
@@ -527,12 +704,125 @@ export const PassDetailPage: React.FC = () => {
                 </ul>
               </div>
             )}
+
+            {(pass.slug === 'chang-la-pass' || pass.slug === 'chang-la') && (
+              <div className="chang-la-elevation-callout lp-card" style={{
+                borderLeft: '4px solid #3B82F6',
+                padding: '20px',
+                marginBottom: '24px',
+                backgroundColor: 'rgba(59, 130, 246, 0.04)',
+                borderRadius: '6px'
+              }}>
+                <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#1E3A8A' }}>
+                  <Mountain size={20} color="#3B82F6" />
+                  <span>Chang La Elevation &amp; Historic Signboard Note</span>
+                </h3>
+                <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+                  <strong>Official Survey Elevation: 17,688 feet (5,360 meters)</strong> above sea level. 
+                  The iconic yellow Border Roads Organisation (BRO Project HIMANK) signboard at the summit historically displays <strong>17,586 ft</strong> and claims Chang La as the <em>"World's 3rd Highest Motorable Pass"</em>. 
+                  While modern satellite GPS surveys confirm its height at 5,360 m (17,688 ft), newer motorable roads over higher Himalayan corridors (such as Umling La at 19,024 ft and Dungri La/Mana Pass at 18,406 ft) mean Chang La is no longer literally the third highest, though it remains one of the world's highest, steepest, and most breathtaking alpine passes.
+                </p>
+              </div>
+            )}
+            
+            {(pass.slug === 'bernina-pass') && (
+              <div className="bernina-editorial-callout lp-card" style={{
+                borderLeft: '4px solid #0EA5E9',
+                padding: '20px',
+                marginBottom: '24px',
+                backgroundColor: 'rgba(14, 165, 233, 0.04)',
+                borderRadius: '6px'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '10px' }}>
+                  <h3 style={{ margin: 0, fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#0369A1' }}>
+                    <ShieldCheck size={20} color="#0EA5E9" />
+                    <span>Bernina Pass: Year-Round Road Operation &amp; Continental Divide Information</span>
+                  </h3>
+                  <span style={{ fontSize: '12px', fontWeight: 600, padding: '3px 8px', borderRadius: '4px', backgroundColor: '#E0F2FE', color: '#0369A1', border: '1px solid #BAE6FD' }}>
+                    Tiefbauamt Graubünden &amp; Swiss TCS Verified
+                  </span>
+                </div>
+                <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+                  <strong>Important Alpine Distinction:</strong> This page monitors the <strong>Bernina Mountain Pass Road (Hauptstrasse 29 / Route 29)</strong> over the 2,328 m (7,638 ft) summit crest. Unlike seasonal Swiss passes (such as Furka, Grimsel, or Susten) that close for 6–7 months, <em>Bernina Pass is maintained OPEN YEAR-ROUND by the Canton of Graubünden road crews with dedicated snowplows</em>. Temporary closures occur only during severe winter blizzards or active avalanche control.
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '12px', marginTop: '12px' }}>
+                  <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: '6px', padding: '12px 14px' }}>
+                    <div style={{ fontSize: '13px', fontWeight: 'bold', color: '#0369A1', marginBottom: '4px' }}>🚗 Hauptstrasse 29 Pass Road (38 km)</div>
+                    <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '13px', color: '#4B5563', lineHeight: '1.5' }}>
+                      <li><strong>Status:</strong> OPEN YEAR-ROUND (Weather Permitting)</li>
+                      <li><strong>Elevation:</strong> 2,328 m (7,638 ft) summit crest</li>
+                      <li><strong>Tolls:</strong> 100% Toll-Free (No Swiss Motorway Vignette required)</li>
+                      <li><strong>Winter Equipment:</strong> Winter tires (3PMSF) / chains mandatory during storms</li>
+                    </ul>
+                  </div>
+                  <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: '6px', padding: '12px 14px' }}>
+                    <div style={{ fontSize: '13px', fontWeight: 'bold', color: '#B91C1C', marginBottom: '4px' }}>🚂 RhB Bernina Railway (UNESCO World Heritage)</div>
+                    <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '13px', color: '#4B5563', lineHeight: '1.5' }}>
+                      <li><strong>Distinct Route:</strong> Parallels Route 29 with Ospizio Bernina station at 2,253 m</li>
+                      <li><strong>Continental Divide:</strong> Lej Nair drains to Black Sea; Lago Bianco to Adriatic Sea</li>
+                      <li><strong>Transit Alternative:</strong> Operates year-round when road has temporary storm delays</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {(pass.slug === 'gotthard-pass') && (
+              <div className="gotthard-tunnel-vs-pass-callout lp-card" style={{
+                borderLeft: '4px solid #10B981',
+                padding: '20px',
+                marginBottom: '24px',
+                backgroundColor: 'rgba(16, 185, 129, 0.04)',
+                borderRadius: '6px'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '10px' }}>
+                  <h3 style={{ margin: 0, fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#065F46' }}>
+                    <ShieldCheck size={20} color="#10B981" />
+                    <span>Gotthard Pass Road vs A2 Gotthard Road Tunnel</span>
+                  </h3>
+                  <span style={{ fontSize: '12px', fontWeight: 600, padding: '3px 8px', borderRadius: '4px', backgroundColor: '#ECFDF5', color: '#047857', border: '1px solid #A7F3D0' }}>
+                    Swiss TCS &amp; ASTRA Verified
+                  </span>
+                </div>
+                <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+                  <strong>Important Distinction:</strong> This page monitors the <strong>Gotthard Mountain Pass Road</strong> (Hauptstrasse 2 / historic Tremola road over the 2,106 m / 6,909 ft summit), which is <em>toll-free, scenic, and open seasonally from late May to late October/November</em>.
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '12px', marginTop: '12px' }}>
+                  <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: '6px', padding: '12px 14px' }}>
+                    <div style={{ fontSize: '13px', fontWeight: 'bold', color: '#047857', marginBottom: '4px' }}>🏔️ Gotthard Mountain Pass (Route 2 / Tremola)</div>
+                    <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '13px', color: '#4B5563', lineHeight: '1.5' }}>
+                      <li><strong>Status:</strong> Currently OPEN (Summer operations)</li>
+                      <li><strong>Elevation:</strong> 2,106 m (6,909 ft) summit crest</li>
+                      <li><strong>Tolls:</strong> 100% Toll-Free (No Swiss Vignette required)</li>
+                      <li><strong>Tremola Route:</strong> 24 historic cobblestone hairpins</li>
+                    </ul>
+                  </div>
+                  <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: '6px', padding: '12px 14px' }}>
+                    <div style={{ fontSize: '13px', fontWeight: 'bold', color: '#1E40AF', marginBottom: '4px' }}>🚇 A2 Gotthard Road Tunnel (16.9 km)</div>
+                    <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '13px', color: '#4B5563', lineHeight: '1.5' }}>
+                      <li><strong>Status:</strong> Open Year-Round (at 1,100 m elevation)</li>
+                      <li><strong>Vignette:</strong> Swiss Motorway Vignette (CHF 40) required</li>
+                      <li><strong>Traffic Delay:</strong> {gotthardTunnel?.trafficDelays?.southboundDelayMin ? `${gotthardTunnel.trafficDelays.southboundDelayMin} min queue at Göschenen` : 'Fluid / Normal metering'}</li>
+                      <li><strong>Bicycles:</strong> Strictly PROHIBITED in tunnel (take pass)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
             
             {/* Section 1: Top-of-Page Live Status Hero */}
             <section id="status" className="detail-section-block">
               <div className="section-title-wrap">
                 <h2 className="section-title-heading">
-                  {pass.slug === 'trollstigen-pass' ? 'Is Trollstigen Pass Open Right Now?' : `${pass.name.split('(')[0].trim().toUpperCase()} CURRENT STATUS`}
+                  {(pass.slug === 'bernina-pass')
+                    ? 'Is Bernina Pass Open Right Now?'
+                    : (pass.slug === 'gotthard-pass')
+                    ? 'Is Gotthard Pass Open Right Now?'
+                    : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la') 
+                    ? 'Is Chang La Open Right Now?' 
+                    : pass.slug === 'trollstigen-pass' 
+                    ? 'Is Trollstigen Pass Open Right Now?' 
+                    : `${pass.name.split('(')[0].trim().toUpperCase()} CURRENT STATUS`}
                 </h2>
                 <span className="section-timestamp"><Clock size={14} /> Last updated: {pass.lastUpdated}</span>
               </div>
@@ -724,7 +1014,15 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 2: Weather & Temperature Section */}
             <section id="weather" className="detail-section-block">
               <h2 className="section-title-heading">
-                {pass.slug === 'trollstigen-pass' ? 'Trollstigen Pass Weather Today' : `${pass.name.split('(')[0].trim()} Weather`}
+                {(pass.slug === 'bernina-pass')
+                  ? 'Bernina Pass Weather Today'
+                  : (pass.slug === 'gotthard-pass')
+                  ? 'Gotthard Pass Weather Today'
+                  : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                  ? 'Chang La Weather Today'
+                  : pass.slug === 'trollstigen-pass' 
+                  ? 'Trollstigen Pass Weather Today' 
+                  : `${pass.name.split('(')[0].trim()} Weather`}
               </h2>
               <div className="weather-detail-container lp-card">
                 <div className="weather-current-banner">
@@ -766,7 +1064,15 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 3: Road Conditions */}
             <section id="road-conditions" className="detail-section-block">
               <h2 className="section-title-heading">
-                {pass.slug === 'trollstigen-pass' ? 'Trollstigen Pass Road Conditions' : `${pass.name.split('(')[0].trim()} Road Conditions`}
+                {(pass.slug === 'bernina-pass')
+                  ? 'Bernina Pass Road Conditions'
+                  : (pass.slug === 'gotthard-pass')
+                  ? 'Gotthard Pass Road Conditions'
+                  : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                  ? 'Chang La Road Conditions'
+                  : pass.slug === 'trollstigen-pass' 
+                  ? 'Trollstigen Pass Road Conditions' 
+                  : `${pass.name.split('(')[0].trim()} Road Conditions`}
               </h2>
               <div className="road-conditions-container lp-card">
                 <div className="road-card-row">
@@ -780,7 +1086,13 @@ export const PassDetailPage: React.FC = () => {
                 <div className="road-card-row">
                   <span className="road-key">Switchback Hazards &amp; Gradients:</span>
                   <span className="road-val">
-                    {pass.slug === 'trollstigen-pass'
+                    {(pass.slug === 'bernina-pass')
+                      ? 'Hauptstrasse 29 features smooth paved tarmac climbing from Pontresina (1,774 m) over the 2,328 m crest down to Poschiavo (1,014 m) and Tirano (441 m). The northern ascent has gentle 4–7% sweeping grades with wide curves; the southern descent features demanding 8–12% gradients through San Carlo with avalanche protection galleries along Lago Bianco.'
+                      : (pass.slug === 'gotthard-pass')
+                      ? 'The southern ramp offers two distinct routes: the modern paved Route 2 bypass with broad sweeping curves and protective galleries, or the historic Tremola monument with 24 cobblestone hairpin turns climbing 300m at up to 12% grade.'
+                      : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                      ? 'High-altitude ascent with steep gradients, unpaved gravel stretches, glacial meltwater rivulets on Zingral-summit-Tsultak stretch, loose scree, and icy switchbacks at 17,688 ft.'
+                      : pass.slug === 'trollstigen-pass'
                       ? '11 sharp hairpin bends with sustained 10% gradient, narrow roadway, Stigfossen waterfall spray on asphalt, and 13.1m max vehicle length.'
                       : (pass.slug === 'stelvio-pass' 
                         ? '48 stone-walled switchbacks on the South Tyrol ramp (avg 7.4%, max 12%), 39 switchbacks on the Bormio ramp, narrow avalanche galleries, and high-altitude weather exposure.'
@@ -798,7 +1110,15 @@ export const PassDetailPage: React.FC = () => {
             {pass.openingDateInfo && (
               <section id="opening-dates" className="detail-section-block">
                 <h2 className="section-title-heading">
-                  {pass.slug === 'trollstigen-pass' ? 'When Does Trollstigen Pass Open?' : `${pass.name.split('(')[0].trim()} Opening Dates ${pass.openingDateInfo.year}`}
+                  {(pass.slug === 'bernina-pass')
+                    ? 'Bernina Pass Opening Date'
+                    : (pass.slug === 'gotthard-pass')
+                    ? 'Gotthard Pass Opening Date'
+                    : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                    ? 'Chang La Opening Date'
+                    : pass.slug === 'trollstigen-pass' 
+                    ? 'When Does Trollstigen Pass Open?' 
+                    : `${pass.name.split('(')[0].trim()} Opening Dates ${pass.openingDateInfo.year}`}
                 </h2>
                 <div className="opening-dates-container lp-card">
                   <div className="opening-banner-pill">
@@ -823,24 +1143,34 @@ export const PassDetailPage: React.FC = () => {
                   </div>
 
                   <div className="opening-notes-box">
-                    <strong>Notice on Provisional Dates:</strong> {pass.openingDateInfo.notes}
+                    <strong>Notice on Pass Schedule &amp; Winter Maintenance:</strong> {pass.openingDateInfo.notes}
                   </div>
                 </div>
               </section>
             )}
 
             {/* Section 4b: Winter Closure Information */}
-            {pass.seasonalClosureInfo && (
+            {(pass.seasonalClosureInfo || pass.slug === 'bernina-pass') && (
               <section id="winter-closure" className="detail-section-block">
                 <h2 className="section-title-heading">
-                  {pass.slug === 'trollstigen-pass' ? 'When Does Trollstigen Pass Close for Winter?' : 'Seasonal Winter Closure Information'}
+                  {(pass.slug === 'bernina-pass')
+                    ? 'When Does Bernina Pass Close for Winter?'
+                    : (pass.slug === 'gotthard-pass')
+                    ? 'When Does Gotthard Pass Close for Winter?'
+                    : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                    ? 'When Does Chang La Close for Winter?'
+                    : pass.slug === 'trollstigen-pass' 
+                    ? 'When Does Trollstigen Pass Close for Winter?' 
+                    : 'Seasonal Winter Closure Information'}
                 </h2>
                 <div className="opening-dates-container lp-card">
-                  <div className="opening-banner-pill" style={{ backgroundColor: 'rgba(239, 68, 68, 0.08)', color: '#EF4444' }}>
-                    <Snowflake size={15} /> {pass.seasonalClosureInfo.typicalClosure}
+                  <div className="opening-banner-pill" style={{ backgroundColor: pass.slug === 'bernina-pass' ? 'rgba(16, 185, 129, 0.08)' : 'rgba(239, 68, 68, 0.08)', color: pass.slug === 'bernina-pass' ? '#047857' : '#EF4444' }}>
+                    <Snowflake size={15} /> {pass.slug === 'bernina-pass' ? 'Maintained Open Year-Round (No Scheduled Winter Closure)' : pass.seasonalClosureInfo?.typicalClosure}
                   </div>
                   <p style={{ margin: '16px 0 0 0', fontSize: '14px', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
-                    {pass.seasonalClosureInfo.description}
+                    {pass.slug === 'bernina-pass'
+                      ? 'Unlike higher Swiss Alpine passes such as Furka, Grimsel, or Susten which close for 6–7 months from November to May, Bernina Pass (Route 29) is a vital year-round transportation corridor maintained by the Canton of Graubünden. Heavy rotary snowplows and salt spreaders operate continuously throughout the winter to keep the road clear. Temporary closures lasting several hours occur only during active severe blizzards or scheduled avalanche blasting. Winter equipment (winter tires 3PMSF and carrying snow chains) is mandatory between November and April.'
+                      : pass.seasonalClosureInfo?.description}
                   </p>
                 </div>
               </section>
@@ -967,106 +1297,94 @@ export const PassDetailPage: React.FC = () => {
             )}
 
             {/* Section 7: Live Webcams Showcase */}
-            {pass.cameras && pass.cameras.length > 0 ? (
+            {(pass.slug === 'chang-la-pass' || pass.slug === 'chang-la') ? (
               <section id="cameras" className="detail-section-block">
-                <h2 className="section-title-heading">
-                  {pass.slug === 'trollstigen-pass' ? 'Trollstigen Pass Live Webcams' : `${pass.name.split('(')[0].trim()} Live Webcams`}
-                </h2>
-                <div className="camera-showcase-container lp-card">
-                  <div className="camera-card-header">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <Camera size={18} className="camera-icon-badge" />
-                      <h3 className="camera-card-title">{currentCam.title}</h3>
+                <h2 className="section-title-heading">Chang La Webcam &amp; Camera Status</h2>
+                <div className="camera-showcase-container lp-card" style={{ padding: '28px 24px', textAlign: 'center' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '14px', maxWidth: '640px', margin: '0 auto' }}>
+                    <div style={{ width: '56px', height: '56px', borderRadius: '50%', backgroundColor: 'rgba(59, 130, 246, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#2563EB' }}>
+                      <Camera size={30} />
                     </div>
-                    <button 
-                      className={`btn-refresh-cam ${isRefreshingCam ? 'spinning' : ''}`}
-                      onClick={handleRefreshCurrentCam}
-                      title="Refresh camera snapshot"
-                    >
-                      Refresh Snapshot
-                    </button>
-                  </div>
-
-                  <div className="camera-viewport-wrap">
-                    {cameraError ? (
-                      <div className="camera-error-view" style={{ padding: '36px 16px', textAlign: 'center' }}>
-                        <Camera size={44} opacity={0.4} style={{ marginBottom: '12px' }} />
-                        <h4 style={{ margin: '0 0 8px 0', fontSize: '16px', color: 'var(--text-dark)' }}>
-                          {pass.slug === 'trollstigen-pass' ? 'Trollstigen webcam temporarily unavailable' : 'Camera snapshot temporarily updating'}
-                        </h4>
-                        <p style={{ margin: '0 0 16px 0', fontSize: '13.5px', color: 'var(--text-muted)' }}>
-                          {pass.slug === 'trollstigen-pass'
-                            ? 'The official Statens vegvesen camera feed is currently refreshing.'
-                            : 'Official snapshot will refresh automatically.'}
-                        </p>
-                        <a 
-                          href={currentCam.officialUrl || (pass.slug === 'trollstigen-pass' ? 'https://www.vegvesen.no/trafikkinformasjon/reiseinformasjon/webkamera/' : '#')} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="btn btn-outline-primary"
-                          style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
-                        >
-                          Check Official Road Information &amp; Cameras <ExternalLink size={13} />
-                        </a>
-                      </div>
-                    ) : (
-                      <>
-                        <img
-                          src={`${currentCam.image}?t=${cameraTimestamp}`}
-                          alt={`${currentCam.title} on ${pass.highway} in ${pass.state}`}
-                          className="camera-live-feed-img"
-                          onError={() => setCameraError(true)}
-                          loading="lazy"
-                        />
-                        <div className="camera-live-pill">
-                          <span className="live-pulsing-dot" /> LIVE CAMERA IMAGE
-                        </div>
-                        <div className="camera-timestamp-overlay">
-                          {currentCam.direction || currentCam.location} • Refreshes ~60s
-                        </div>
-                      </>
-                    )}
-                  </div>
-
-                  <div className="camera-card-details">
-                    <div className="cam-meta-row">
-                      <span className="cam-meta-title">{currentCam.title}</span>
-                      <span className="cam-meta-source">{currentCam.source || 'Official Highway Camera'}</span>
+                    <h3 style={{ fontSize: '18px', margin: 0, fontWeight: '700', color: 'var(--text-primary)' }}>
+                      No verified public live Chang La camera feed is currently available.
+                    </h3>
+                    <p style={{ margin: 0, fontSize: '14px', color: 'var(--text-secondary)', lineHeight: '1.65' }}>
+                      The Border Roads Organisation (BRO Project HIMANK) and the Administration of Union Territory of Ladakh manage snow clearance and high-altitude security across Chang La, but do not operate open public-facing live webcam video streams.
+                    </p>
+                    <div style={{ backgroundColor: 'var(--bg-surface-subtle)', border: '1px solid var(--border-color)', borderRadius: '6px', padding: '12px 16px', fontSize: '13px', color: 'var(--text-muted)', lineHeight: '1.5', textAlign: 'left', width: '100%' }}>
+                      <strong>LivePassWatch Anti-Fabrication Guarantee:</strong> We never display simulated feeds, generic stock videos, or outdated snapshots as "live webcams." Chang La road status should be verified through official Ladakh administration channels.
                     </div>
-                    <div className="cam-meta-sub">
-                      <span>{pass.highway} • {currentCam.location || currentCam.milepost}</span>
-                    </div>
-                    <div className="cam-footer-action">
+                    <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', marginTop: '6px' }}>
                       <a 
-                        href={currentCam.officialUrl || (pass.slug === 'trollstigen-pass' ? 'https://www.vegvesen.no/trafikkinformasjon/reiseinformasjon/webkamera/' : 'https://traffico.provincia.bz.it')} 
+                        href="https://ladakh.gov.in" 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className="cam-official-link"
+                        className="btn btn-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                       >
-                        View Official Camera Source <ExternalLink size={13} />
+                        Check Official Ladakh Road Information <ExternalLink size={14} />
+                      </a>
+                      <a 
+                        href="https://leh.nic.in" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="btn btn-outline-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        District Administration Leh Portal <ExternalLink size={14} />
                       </a>
                     </div>
                   </div>
-
-                  {/* Multi-Camera Switcher Grid */}
-                  {pass.cameras.length > 1 && (
-                    <div className="camera-multi-grid">
-                      {pass.cameras.map((cam, idx) => (
-                        <div 
-                          key={idx} 
-                          className={`cam-thumb-card ${currentCameraIndex === idx ? 'active' : ''}`}
-                          onClick={() => { setCurrentCameraIndex(idx); setCameraError(false); }}
-                        >
-                          <img src={cam.image} alt={cam.title} className="cam-thumb-img" loading="lazy" />
-                          <div className="cam-thumb-caption">
-                            <span className="cam-thumb-name">{cam.title}</span>
-                            <span className="cam-thumb-loc">{cam.milepost || cam.direction || cam.location}</span>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
                 </div>
+              </section>
+            ) : pass.cameras && pass.cameras.length > 0 ? (
+              <section id="cameras" className="detail-section-block">
+                <h2 className="section-title-heading">
+                  {pass.slug === 'bernina-pass'
+                    ? 'Bernina Pass Live Webcam'
+                    : pass.slug === 'gotthard-pass'
+                    ? 'Gotthard Pass Live Webcams & Cameras'
+                    : pass.slug === 'col-du-galibier' 
+                    ? 'Col du Galibier Live Webcams & Cameras' 
+                    : pass.slug === 'trollstigen-pass' 
+                    ? 'Trollstigen Pass Live Webcams' 
+                    : `${pass.name.split('(')[0].trim()} Live Webcams`}
+                </h2>
+                
+                <CameraProvider
+                  camera={{
+                    id: currentCam.id,
+                    title: currentCam.title,
+                    type: 'image',
+                    image: currentCam.image,
+                    location: currentCam.location || currentCam.milepost,
+                    source: currentCam.source || officialSourceDisplay,
+                    officialUrl: currentCam.officialUrl || pass.officialSource,
+                    updateIntervalMs: 60000
+                  }}
+                  passName={pass.name}
+                  highway={pass.highway}
+                  onOpenUserCamera={() => setIsUserCamModalOpen(true)}
+                />
+
+                {/* Multi-Camera Switcher Grid */}
+                {pass.cameras.length > 1 && (
+                  <div className="camera-multi-grid">
+                    {pass.cameras.map((cam, idx) => (
+                      <div 
+                        key={idx} 
+                        className={`cam-thumb-card ${currentCameraIndex === idx ? 'active' : ''}`}
+                        onClick={() => { setCurrentCameraIndex(idx); setCameraError(false); }}
+                      >
+                        <img src={cam.image} alt={cam.title} className="cam-thumb-img" loading="lazy" />
+                        <div className="cam-thumb-caption">
+                          <span className="cam-thumb-name">{cam.title}</span>
+                          <span className="cam-thumb-loc">{cam.milepost || cam.direction || cam.location}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </section>
             ) : pass.id === 'khyber-pass' ? (
               <section id="cameras" className="detail-section-block">
@@ -1158,7 +1476,7 @@ export const PassDetailPage: React.FC = () => {
                     <div className="fact-meta">
                       <span className="fact-label">Total Switchbacks</span>
                       <strong className="fact-value">
-                        {pass.slug === 'trollstigen-pass' ? '11 Hairpin Turns (10% Incline)' : (pass.slug === 'stelvio-pass' ? '87 Hairpins (48 NE + 39 SW)' : 'Multi-tier switchbacks')}
+                        {pass.slug === 'bernina-pass' ? '10–12% Gradients & Wide Sweeping Switchbacks' : (pass.slug === 'gotthard-pass' ? '24 Historic Tremola Cobblestone Hairpins' : (pass.slug === 'trollstigen-pass' ? '11 Hairpin Turns (10% Incline)' : (pass.slug === 'stelvio-pass' ? '87 Hairpins (48 NE + 39 SW)' : 'Multi-tier switchbacks')))}
                       </strong>
                     </div>
                   </div>
@@ -1169,7 +1487,15 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 9: Location & Interactive Map */}
             <section id="route-map" className="detail-section-block">
               <h2 className="section-title-heading">
-                {pass.slug === 'trollstigen-pass' ? 'Trollstigen Pass Map' : `${pass.name.split('(')[0].trim()} Map`}
+                {(pass.slug === 'bernina-pass')
+                  ? 'Bernina Pass Map & Location'
+                  : (pass.slug === 'gotthard-pass')
+                  ? 'Gotthard Pass Map & Location'
+                  : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                  ? 'Chang La Map'
+                  : pass.slug === 'trollstigen-pass' 
+                  ? 'Trollstigen Pass Map' 
+                  : `${pass.name.split('(')[0].trim()} Map`}
               </h2>
               <div className="map-and-route-container lp-card">
                 <div className="map-frame-header">
@@ -1254,11 +1580,19 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 10: Where Is Pass Located & Geography/History */}
             <section id="about" className="detail-section-block">
               <h2 className="section-title-heading">
-                {pass.slug === 'trollstigen-pass' ? 'About Trollstigen Pass' : `Where Is ${pass.name.split('(')[0].trim()} Located?`}
+                {(pass.slug === 'bernina-pass')
+                  ? 'About Bernina Pass & Upper Engadin / Valposchiavo'
+                  : (pass.slug === 'gotthard-pass')
+                  ? 'About Gotthard Pass & Val Tremola'
+                  : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                  ? 'About Chang La Pass'
+                  : pass.slug === 'trollstigen-pass' 
+                  ? 'About Trollstigen Pass' 
+                  : `Where Is ${pass.name.split('(')[0].trim()} Located?`}
               </h2>
               <div className="about-narrative-container lp-card">
                 <p className="narrative-p">
-                  <strong>{pass.name}</strong> is situated in the <strong>{pass.quickFacts?.mountainRange || 'Scandinavian Mountains'}</strong> of <strong>{pass.state}, {pass.country}</strong>, at an official summit elevation of <strong>{pass.elevationFt.toLocaleString()} feet ({pass.elevationM.toLocaleString()} meters)</strong> above sea level. Traversed by <strong>{pass.highway}</strong>, it {pass.quickFacts?.connects ? `connects ${pass.quickFacts.connects}` : pass.description}.
+                  <strong>{pass.name}</strong> is situated in the <strong>{pass.quickFacts?.mountainRange || 'Saint-Gotthard Massif / Swiss Alps'}</strong> of <strong>{pass.state}, {pass.country}</strong>, at an official summit elevation of <strong>{pass.elevationFt.toLocaleString()} feet ({pass.elevationM.toLocaleString()} meters)</strong> above sea level. Traversed by <strong>{pass.highway}</strong>, it {pass.quickFacts?.connects ? `connects ${pass.quickFacts.connects}` : pass.description}.
                 </p>
 
                 {pass.narrativeSections ? (
@@ -1280,7 +1614,15 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 10.5: Editorial Guidance & Travel Tips */}
             <section id="travel-guidance" className="detail-section-block">
               <h2 className="section-title-heading">
-                {pass.slug === 'trollstigen-pass' ? 'Trollstigen Pass Travel Information' : 'Mountain Pass Travel Guidance & Winter Tips'}
+                {(pass.slug === 'bernina-pass')
+                  ? 'How to Get to Bernina Pass & Directions'
+                  : (pass.slug === 'gotthard-pass')
+                  ? 'How to Get to Gotthard Pass & Travel Guidance'
+                  : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                  ? 'Chang La Travel Information'
+                  : pass.slug === 'trollstigen-pass' 
+                  ? 'Trollstigen Pass Travel Information' 
+                  : 'Mountain Pass Travel Guidance & Winter Tips'}
               </h2>
               <div className="travel-guidance-container lp-card" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <p className="narrative-p" style={{ marginBottom: '8px' }}>
@@ -1289,34 +1631,58 @@ export const PassDetailPage: React.FC = () => {
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
-                      <Clock size={16} /> How Pass Closures Work
+                      <Clock size={16} /> Route &amp; Travel Season
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      Highways departments close mountain passes when safety hazards like avalanches, heavy snow accumulation, or rockfalls become unmanageable. A <strong>Road Closure</strong> means no public vehicles are allowed. A <strong>Travel Advisory</strong> means the pass remains open, but chains, winter tires, or extreme caution are required.
+                      {(pass.slug === 'bernina-pass')
+                        ? 'Bernina Pass (Route 29) links the Upper Engadin (Pontresina & St. Moritz) with Val Poschiavo and Tirano (Italy). It is maintained open year-round by Tiefbauamt Graubünden with rotary snowplows. Summer offers pristine dry asphalt; winter delivers spectacular snow-walled corridors requiring winter-rated tires (3PMSF).'
+                        : (pass.slug === 'gotthard-pass')
+                        ? 'Gotthard Pass road is open from late May to late October/November. It is a fantastic scenic bypass when the A2 Gotthard Road Tunnel experiences holiday traffic delays at Göschenen or Airolo.'
+                        : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                        ? 'The 75 km route from Leh to Chang La summit (and onwards to Pangong Lake) is best traveled between May and October. Winter travel is possible but requires 4x4, anti-skid chains, and extreme caution.'
+                        : 'Highways departments close mountain passes when safety hazards like avalanches, heavy snow accumulation, or rockfalls become unmanageable.'}
                     </p>
                   </div>
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
-                      <Mountain size={16} /> Elevation &amp; Conditions
+                      <Mountain size={16} /> High-Altitude Safety &amp; Weather
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      Elevation changes weather rapidly. On {pass.name}, the summit elevation of {pass.elevationFt.toLocaleString()} ft can experience sub-freezing temperatures, heavy snow, and dense fog even while the valleys below remain warm and clear. Always check elevation forecasts rather than valley towns.
+                      {(pass.slug === 'bernina-pass')
+                        ? 'At 2,328 m (7,638 ft) summit elevation, expect ambient temperatures 10–14°C colder than in Tirano or Lake Como. Weather can shift rapidly across the Lago Bianco plateau; check real-time MeteoSwiss Passo del Bernina reports before starting the ascent.'
+                        : (pass.slug === 'gotthard-pass')
+                        ? 'At 2,106 m (6,909 ft) summit elevation, expect temperatures 10–15°C colder than the valley floor in Lucerne or Lugano. High-altitude mountain winds and sudden cloud cover can reduce visibility across Lago della Piazza.'
+                        : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                        ? 'At 17,688 ft, atmospheric oxygen is roughly 50% of sea level. Limit your summit stop to 15–20 minutes. Visit the Indian Army medical room at Chang La Baba for emergency oxygen and free hot herbal tea if experiencing dizziness.'
+                        : `On ${pass.name}, the summit elevation of ${pass.elevationFt.toLocaleString()} ft can experience sub-freezing temperatures, heavy snow, and dense fog even while the valleys below remain warm.`}
                     </p>
                   </div>
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
-                      <Camera size={16} /> Reading Webcams
+                      <ShieldCheck size={16} /> Vignette &amp; Toll Regulations
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      Live traffic webcams are essential tools to verify actual surface conditions before departure. Look at the road tracks to identify if the pavement is dry, wet, or has compact snow/ice. Pay attention to camera timestamps.
+                      {(pass.slug === 'bernina-pass')
+                        ? 'Swiss Hauptstrasse 29 (Route 29) is a 100% toll-free public cantonal highway; no Swiss motorway vignette is needed. If continuing south past Campocologno into Tirano (Italy), ensure valid passports and EU vehicle insurance green cards are on board.'
+                        : (pass.slug === 'gotthard-pass')
+                        ? 'The Gotthard Pass road (Hauptstrasse 2) and Tremola are 100% toll-free; no Swiss motorway vignette is required. However, entering the A2 motorway to access the Gotthard Tunnel requires the standard CHF 40 Swiss motorway vignette.'
+                        : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                        ? 'Indian and foreign tourists require an Inner Line Permit (ILP) or Protected Area Permit (PAP) to travel past Zingral toward Pangong Lake. Permits can be obtained online via lahdclehpermit.in or through registered Leh travel operators.'
+                        : 'Live traffic webcams and official road bulletins are essential tools to verify actual surface conditions before departure.'}
                     </p>
                   </div>
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
-                      <ShieldAlert size={16} /> Winter Restrictions
+                      <Car size={16} /> Alternatives &amp; Winter Guidelines
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      <strong>Traction Tires Advised</strong> means winter or all-season tires are recommended. <strong>Chains Required</strong> is a legally binding order; failing to carry or install chains when posted carries significant fines and can lead to dangerous spinouts.
+                      {(pass.slug === 'bernina-pass')
+                        ? 'Winter tires (3PMSF) or carrying snow chains is legally mandatory from November to April. During winter blizzards or temporary storm closures, alternatives include the year-round UNESCO Rhaetian Railway (Bernina Line), the Vereina Car Shuttle Train (Autoverlad Vereina), or Maloja Pass (Route 3).'
+                        : (pass.slug === 'gotthard-pass')
+                        ? 'Commercial trucks over 18 tons and caravans are prohibited on the historic Tremola cobblestone road and must use the modern H2 paved bypass. Always yield right-of-way to Swiss PostBuses sounding their 3-tone horn.'
+                        : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                        ? 'Ensure your vehicle has good ground clearance. Refuel to a full tank at Karu before starting the ascent; there are no reliable commercial petrol pumps between Karu and Tangtse.'
+                        : 'Chains Required is a legally binding order; failing to carry or install chains when posted carries significant fines and can lead to dangerous spinouts.'}
                     </p>
                   </div>
                 </div>
@@ -1326,7 +1692,15 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 11: FAQs */}
             <section id="faqs" className="detail-section-block">
               <h2 className="section-title-heading">
-                {pass.slug === 'trollstigen-pass' ? 'Trollstigen Pass Frequently Asked Questions' : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
+                {(pass.slug === 'bernina-pass')
+                  ? 'Frequently Asked Questions about Bernina Pass'
+                  : (pass.slug === 'gotthard-pass')
+                  ? 'Frequently Asked Questions about Gotthard Pass'
+                  : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                  ? 'Chang La Pass Frequently Asked Questions'
+                  : pass.slug === 'trollstigen-pass' 
+                  ? 'Trollstigen Pass Frequently Asked Questions' 
+                  : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
                 {pass.faqs && pass.faqs.length > 0 ? (
@@ -1355,8 +1729,133 @@ export const PassDetailPage: React.FC = () => {
             <section id="related-passes" className="detail-section-block">
               <h2 className="section-title-heading">Explore Related Mountain Passes</h2>
               <div className="internal-links-cards-grid">
-                {/* Norway / Scandinavia passes always first for Trollstigen */}
-                {pass.country === 'Norway' ? (
+                {/* Bernina Pass Related Passes */}
+                {pass.slug === 'bernina-pass' ? (
+                  <>
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/uri-ticino/gotthard-pass')}>
+                      <div className="link-card-badge">Swiss Alps</div>
+                      <h3 className="link-card-title">Gotthard Pass (6,909 ft)</h3>
+                      <p className="link-card-desc">Historic Tremola cobblestone route, Route 2 highway, and A2 Gotthard Tunnel live traffic delays.</p>
+                      <span className="link-card-action">View Gotthard Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/bern-valais/grimsel-pass')}>
+                      <div className="link-card-badge">Swiss Alps</div>
+                      <h3 className="link-card-title">Grimsel Pass (7,100 ft)</h3>
+                      <p className="link-card-desc">Glacial granite landscape, Lake Totensee, and high-altitude Route 6 corridor in the Bernese Alps.</p>
+                      <span className="link-card-action">View Grimsel Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais/great-st-bernard-pass')}>
+                      <div className="link-card-badge">Swiss Alps</div>
+                      <h3 className="link-card-title">Great St Bernard Pass (8,100 ft)</h3>
+                      <p className="link-card-desc">Historic Swiss-Italian Alpine pass, 11th-century Hospice, St. Bernard dogs, and Route 21 status.</p>
+                      <span className="link-card-action">View Great St Bernard Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais-uri/furka-pass')}>
+                      <div className="link-card-badge">Swiss Alps</div>
+                      <h3 className="link-card-title">Furka Pass (7,969 ft)</h3>
+                      <p className="link-card-desc">Iconic James Bond Goldfinger route, Rhone Glacier ice grotto, and Hotel Belvédère.</p>
+                      <span className="link-card-action">View Furka Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/italy/south-tyrol-lombardy/stelvio-pass')}>
+                      <div className="link-card-badge">Italian Alps</div>
+                      <h3 className="link-card-title">Stelvio Pass (9,045 ft)</h3>
+                      <p className="link-card-desc">The crown jewel of the Eastern Alps with 87 hairpins and high-altitude road conditions on SS38.</p>
+                      <span className="link-card-action">View Stelvio Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?country=Switzerland')}>
+                      <div className="link-card-badge">Switzerland</div>
+                      <h3 className="link-card-title">All Swiss Mountain Passes</h3>
+                      <p className="link-card-desc">Browse real-time road conditions, webcams, and winter closure alerts for all Swiss Alpine corridors.</p>
+                      <span className="link-card-action">View Switzerland Passes &rarr;</span>
+                    </div>
+                  </>
+                ) : (pass.country === 'Switzerland' || pass.slug === 'great-st-bernard-pass' || pass.slug === 'furka-pass') ? (
+                  <>
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais/great-st-bernard-pass')}>
+                      <div className="link-card-badge">Swiss Alps</div>
+                      <h3 className="link-card-title">Great St Bernard Pass (8,100 ft)</h3>
+                      <p className="link-card-desc">Historic Swiss-Italian Alpine pass, 11th-century Hospice, St. Bernard rescue dogs, and Route 21 / SS27 live status.</p>
+                      <span className="link-card-action">View Great St Bernard Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais-uri/furka-pass')}>
+                      <div className="link-card-badge">Swiss Alps</div>
+                      <h3 className="link-card-title">Furka Pass (7,969 ft)</h3>
+                      <p className="link-card-desc">Experience Switzerland's iconic James Bond Goldfinger route, Rhone Glacier ice grotto, and live Swiss pass status.</p>
+                      <span className="link-card-action">View Furka Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/france/hautes-alpes-savoie/col-du-galibier')}>
+                      <div className="link-card-badge">French Alps</div>
+                      <h3 className="link-card-title">Col du Galibier (8,668 ft)</h3>
+                      <p className="link-card-desc">Giant of the French Alps on the Route des Grandes Alpes connecting Savoie and Hautes-Alpes.</p>
+                      <span className="link-card-action">View Col du Galibier &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/italy/south-tyrol-lombardy/stelvio-pass')}>
+                      <div className="link-card-badge">Italian Alps</div>
+                      <h3 className="link-card-title">Stelvio Pass (9,045 ft)</h3>
+                      <p className="link-card-desc">The crown jewel of the Eastern Alps with 87 hairpins and high-altitude road conditions on SS38.</p>
+                      <span className="link-card-action">View Stelvio Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?country=Switzerland')}>
+                      <div className="link-card-badge">Switzerland</div>
+                      <h3 className="link-card-title">All Swiss Mountain Passes</h3>
+                      <p className="link-card-desc">Browse real-time road conditions, webcams, and winter closure alerts for all Swiss Alpine corridors.</p>
+                      <span className="link-card-action">View Switzerland Passes &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?continent=Europe')}>
+                      <div className="link-card-badge">Europe</div>
+                      <h3 className="link-card-title">European Mountain Passes</h3>
+                      <p className="link-card-desc">Monitor live alpine highway statuses across Switzerland, Italy, France, Norway, and Austria.</p>
+                      <span className="link-card-action">Explore Europe Passes &rarr;</span>
+                    </div>
+                  </>
+                ) : (pass.country === 'France' || pass.slug === 'col-du-galibier') ? (
+                  <>
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais/great-st-bernard-pass')}>
+                      <div className="link-card-badge">Swiss Alps</div>
+                      <h3 className="link-card-title">Great St Bernard Pass (8,100 ft)</h3>
+                      <p className="link-card-desc">Historic Swiss-Italian Alpine pass, 11th-century Hospice, St. Bernard rescue dogs, and Route 21 / SS27 live status.</p>
+                      <span className="link-card-action">View Great St Bernard Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais-uri/furka-pass')}>
+                      <div className="link-card-badge">Swiss Alps</div>
+                      <h3 className="link-card-title">Furka Pass (7,969 ft)</h3>
+                      <p className="link-card-desc">Experience Switzerland's iconic James Bond Goldfinger route, Rhone Glacier ice grotto, and live Swiss pass status.</p>
+                      <span className="link-card-action">View Furka Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/italy/south-tyrol-lombardy/stelvio-pass')}>
+                      <div className="link-card-badge">Italian Alps</div>
+                      <h3 className="link-card-title">Stelvio Pass (9,045 ft)</h3>
+                      <p className="link-card-desc">The crown jewel of the Eastern Alps with 87 hairpins and high-altitude road conditions on SS38.</p>
+                      <span className="link-card-action">View Stelvio Pass &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?country=France')}>
+                      <div className="link-card-badge">France</div>
+                      <h3 className="link-card-title">All French Mountain Passes</h3>
+                      <p className="link-card-desc">Browse real-time road conditions, webcams, and winter closure alerts for French Alpine corridors.</p>
+                      <span className="link-card-action">View France Passes &rarr;</span>
+                    </div>
+
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?continent=Europe')}>
+                      <div className="link-card-badge">Europe</div>
+                      <h3 className="link-card-title">European Mountain Passes</h3>
+                      <p className="link-card-desc">Monitor live alpine highway statuses across France, Switzerland, Italy, Norway, and Austria.</p>
+                      <span className="link-card-action">Explore Europe Passes &rarr;</span>
+                    </div>
+                  </>
+                ) : pass.country === 'Norway' ? (
                   <>
                     <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais-uri/furka-pass')}>
                       <div className="link-card-badge">Swiss Alps</div>
@@ -1413,7 +1912,7 @@ export const PassDetailPage: React.FC = () => {
                   </>
                 ) : (
                   <>
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/norway/trollstigen-pass')}>
+                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/norway/more-og-romsdal/trollstigen-pass')}>
                       <div className="link-card-badge">Norway</div>
                       <h3 className="link-card-title">Trollstigen Pass (2,815 ft)</h3>
                       <p className="link-card-desc">Check live road status, 11 hairpin turns, Statens vegvesen webcams, and seasonal opening dates on Fv63.</p>
@@ -1536,7 +2035,26 @@ export const PassDetailPage: React.FC = () => {
               <h3 className="sidebar-card-title">{pass.name.split('(')[0].trim()} Travel Checklist</h3>
               <ul className="sidebar-check-list">
                 <li><Check size={14} className="check-green" /> Check live road opening status before departing</li>
-                {pass.slug === 'trollstigen-pass' ? (
+                {pass.slug === 'col-du-galibier' ? (
+                  <>
+                    <li><Check size={14} className="check-green" /> Check D902 live status and Galibier Tunnel traffic signal reports</li>
+                    <li><Check size={14} className="check-green" /> Comply with Loi Montagne II winter tire/chain mandates (Nov 1 – Mar 31)</li>
+                    <li><Check size={14} className="check-green" /> Use 1st/2nd gear engine braking on steep 35 km descent into Valloire</li>
+                    <li><Check size={14} className="check-green" /> Verify vehicle height &le; 4.1 m and weight &le; 3.5 tonnes for Galibier Tunnel</li>
+                    <li><Check size={14} className="check-green" /> Cyclists: use 2,642 m summit road (tunnel is strictly motor vehicles only)</li>
+                    <li><Check size={14} className="check-green" /> Pack windproof thermal layers &amp; polarized sunglasses for 2,642 m altitude</li>
+                  </>
+                ) : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la') ? (
+                  <>
+                    <li><Check size={14} className="check-green" /> Obtain approved Ladakh Inner Line Permit (ILP/PAP)</li>
+                    <li><Check size={14} className="check-green" /> Limit summit dwell time to 15–20 minutes to prevent AMS</li>
+                    <li><Check size={14} className="check-green" /> Visit Chang La Baba Army post for hot black tea &amp; oxygen if dizzy</li>
+                    <li><Check size={14} className="check-green" /> Use 1st/2nd gear engine braking on steep Zingral switchbacks</li>
+                    <li><Check size={14} className="check-green" /> Carry anti-skid tire chains during late autumn and winter</li>
+                    <li><Check size={14} className="check-green" /> Refuel full tank at Karu before ascending towards Pangong</li>
+                    <li><Check size={14} className="check-green" /> Pack windproof thermal layers &amp; polarized UV sunglasses</li>
+                  </>
+                ) : pass.slug === 'trollstigen-pass' ? (
                   <>
                     <li><Check size={14} className="check-green" /> Verify vehicle length is within 13.1m (43 ft) limit</li>
                     <li><Check size={14} className="check-green" /> Downshift to 1st/2nd gear for engine braking on 10% grade</li>
@@ -1623,6 +2141,13 @@ export const PassDetailPage: React.FC = () => {
 
         {/* Trust Bar */}
         <TrustBar />
+
+        {/* User Camera Modal */}
+        <UserCameraModal
+          isOpen={isUserCamModalOpen}
+          onClose={() => setIsUserCamModalOpen(false)}
+          passName={pass.name}
+        />
       </div>
     </div>
   );

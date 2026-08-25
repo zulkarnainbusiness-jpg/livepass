@@ -171,6 +171,7 @@ export const SeoResearchPage: React.FC = () => {
         title="AI SEO Keyword Research & Ranking Opportunity Agent"
         description="Comprehensive keyword research, real-time intent clustering, SERP competitor analysis, and ranking opportunity scoring for mountain passes."
         canonicalUrl="https://www.livepasswatch.info/seo-research"
+        noIndex={true}
       />
 
       <div className="app-container">
@@ -213,9 +214,11 @@ export const SeoResearchPage: React.FC = () => {
                 className="seo-select"
               >
                 <option value="United States">United States</option>
+                <option value="France">France</option>
                 <option value="India">India</option>
                 <option value="Switzerland">Switzerland</option>
                 <option value="Italy">Italy</option>
+                <option value="Norway">Norway</option>
                 <option value="New Zealand">New Zealand</option>
                 <option value="Global">Global / Worldwide</option>
               </select>

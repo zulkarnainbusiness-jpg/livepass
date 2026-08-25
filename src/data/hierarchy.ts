@@ -267,6 +267,16 @@ export const hierarchyData: HierarchyContinent[] = [
             name: 'Valais',
             passes: [
               {
+                id: 'great-st-bernard-pass',
+                slug: 'great-st-bernard-pass',
+                name: 'Great St Bernard Pass',
+                highway: 'Route 21 (CH) / SS27 (IT)',
+                elevationFt: 8100,
+                elevationM: 2469,
+                status: 'OPEN',
+                image: '/great-st-bernard-pass-switzerland-italy-road-conditions.png'
+              },
+              {
                 id: 'furka-pass',
                 slug: 'furka-pass',
                 name: 'Furka Pass',
@@ -275,6 +285,58 @@ export const hierarchyData: HierarchyContinent[] = [
                 elevationM: 2429,
                 status: 'OPEN',
                 image: '/furka-pass-switzerland-road-conditions.webp'
+              },
+              {
+                id: 'grimsel-pass',
+                slug: 'grimsel-pass',
+                name: 'Grimsel Pass',
+                highway: 'Hauptstrasse 6',
+                elevationFt: 7100,
+                elevationM: 2164,
+                status: 'OPEN',
+                image: '/grimsel-pass-switzerland-road-conditions.png'
+              },
+              {
+                id: 'gotthard-pass',
+                slug: 'gotthard-pass',
+                name: 'Gotthard Pass',
+                highway: 'Hauptstrasse 2 / Tremola',
+                elevationFt: 6909,
+                elevationM: 2106,
+                status: 'OPEN',
+                image: '/gotthard-pass-switzerland-road-conditions.png'
+              }
+            ]
+          },
+          {
+            id: 'graubunden',
+            name: 'Graubünden',
+            passes: [
+              {
+                id: 'bernina-pass',
+                slug: 'bernina-pass',
+                name: 'Bernina Pass',
+                highway: 'Hauptstrasse 29 (Route 29)',
+                elevationFt: 7638,
+                elevationM: 2328,
+                status: 'OPEN',
+                image: '/bernina-pass-switzerland-road-conditions.webp'
+              }
+            ]
+          },
+          {
+            id: 'uri-ticino',
+            name: 'Uri / Ticino',
+            passes: [
+              {
+                id: 'gotthard-pass',
+                slug: 'gotthard-pass',
+                name: 'Gotthard Pass',
+                highway: 'Hauptstrasse 2 / Tremola',
+                elevationFt: 6909,
+                elevationM: 2106,
+                status: 'OPEN',
+                image: '/gotthard-pass-switzerland-road-conditions.png'
               }
             ]
           }
@@ -328,7 +390,30 @@ export const hierarchyData: HierarchyContinent[] = [
           }
         ]
       },
-      { id: 'france', name: 'France', code: 'FRA', flagEmoji: '🇫🇷', states: [] },
+      {
+        id: 'france',
+        name: 'France',
+        code: 'FRA',
+        flagEmoji: '🇫🇷',
+        states: [
+          {
+            id: 'hautes-alpes-savoie',
+            name: 'Hautes-Alpes & Savoie',
+            passes: [
+              {
+                id: 'col-du-galibier',
+                slug: 'col-du-galibier',
+                name: 'Col du Galibier',
+                highway: 'D902 (Route des Grandes Alpes)',
+                elevationFt: 8668,
+                elevationM: 2642,
+                status: 'OPEN',
+                image: '/col-du-galibier.png'
+              }
+            ]
+          }
+        ]
+      },
       { id: 'austria', name: 'Austria', code: 'AUT', flagEmoji: '🇦🇹', states: [] }
     ]
   },
@@ -356,6 +441,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 elevationM: 5359,
                 status: 'OPEN',
                 image: '/khardung-la-ladakh.jpg'
+              },
+              {
+                id: 'chang-la-pass',
+                slug: 'chang-la-pass',
+                name: 'Chang La Pass',
+                highway: 'Leh-Pangong Lake Rd',
+                elevationFt: 17688,
+                elevationM: 5360,
+                status: 'OPEN',
+                image: '/chang-la-pass-road-status-webcam.webp'
               }
             ]
           },

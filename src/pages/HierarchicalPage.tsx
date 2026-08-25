@@ -13,6 +13,7 @@ import {
   Snowflake
 } from 'lucide-react';
 import { hierarchyData, HierarchyContinent, HierarchyCountry, HierarchyState } from '../data/hierarchy';
+import { passesData, getPassUrl } from '../data/passes';
 import { StatusBadge } from '../components/StatusBadge';
 import { TrustBar } from '../components/TrustBar';
 import { SEOHelper } from '../components/SEOHelper';
@@ -59,7 +60,12 @@ export const HierarchicalPage: React.FC = () => {
   };
 
   const handlePassClick = (passSlug: string) => {
-    navigate(`/passes/${selectedCountry.id}/${selectedState.id}/${passSlug}`);
+    const target = passesData.find(p => p.slug === passSlug || p.id === passSlug);
+    if (target) {
+      navigate(getPassUrl(target));
+    } else {
+      navigate(`/passes/${selectedCountry.id}/${selectedState.id}/${passSlug}`);
+    }
   };
 
   const getContinentIcon = (iconName: string) => {
@@ -80,6 +86,7 @@ export const HierarchicalPage: React.FC = () => {
         title="Hierarchical Mountain Pass Navigation"
         description="Browse mountain passes across the globe hierarchically: Continent, Country, State/Province, and Pass."
         canonicalUrl="https://www.livepasswatch.info/hierarchical"
+        noIndex={true}
       />
 
       <div className="app-container">

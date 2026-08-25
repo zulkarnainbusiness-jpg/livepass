@@ -233,9 +233,6 @@ export const Header: React.FC = () => {
             <NavLink to="/alerts" className="mobile-nav-link">
               Alerts
             </NavLink>
-            <NavLink to="/hierarchical" className="mobile-nav-link">
-              Hierarchical Browse
-            </NavLink>
             <NavLink to="/resources" className="mobile-nav-link">
               Resources
             </NavLink>

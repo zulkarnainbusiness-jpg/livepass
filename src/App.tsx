@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation, useParams, Navigate } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
@@ -13,6 +13,7 @@ import { SeoResearchPage } from './pages/SeoResearchPage';
 import { AboutPage, PrivacyPage, TermsPage, NotFoundPage } from './pages/StaticPages';
 import { PassesProvider } from './context/PassesContext';
 import { AdminDashboard } from './pages/AdminDashboard';
+import { passesData, getPassUrl } from './data/passes';
 import './styles/index.css';
 
 // Scroll to top on navigation
@@ -22,6 +23,23 @@ const ScrollToTop: React.FC = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return null;
+};
+
+// Client-side 301/permanent redirect for non-canonical pass URLs
+const LegacyPassRedirect: React.FC = () => {
+  const { slug } = useParams<{ slug: string }>();
+  if (!slug) return <NotFoundPage />;
+
+  const targetPass = passesData.find(
+    p => p.slug === slug || p.id === slug || p.slug === `${slug}-pass` || p.id === `${slug}-pass`
+  );
+
+  if (targetPass) {
+    const canonicalUrl = getPassUrl(targetPass);
+    return <Navigate to={canonicalUrl} replace />;
+  }
+
+  return <NotFoundPage />;
 };
 
 export const App: React.FC = () => {
@@ -38,10 +56,12 @@ export const App: React.FC = () => {
             <Route path="/alerts" element={<AlertsPage />} />
             <Route path="/hierarchical" element={<HierarchicalPage />} />
             
-            {/* Programmatic SEO Friendly Pass URLs */}
+            {/* Canonical 3-tier Pass URL */}
             <Route path="/passes/:country/:state/:slug" element={<PassDetailPage />} />
-            <Route path="/passes/:country/:slug" element={<PassDetailPage />} />
-            <Route path="/passes/:slug" element={<PassDetailPage />} />
+            
+            {/* Legacy 1-tier and 2-tier Pass URL Redirects */}
+            <Route path="/passes/:country/:slug" element={<LegacyPassRedirect />} />
+            <Route path="/passes/:slug" element={<LegacyPassRedirect />} />
             
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/seo-research" element={<SeoResearchPage />} />
@@ -59,3 +79,4 @@ export const App: React.FC = () => {
 };
 
 export default App;
+

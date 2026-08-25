@@ -149,6 +149,22 @@ export const alertsData: PassAlert[] = [
     source: 'Project HIMANK (BRO) / Ladakh Administration'
   },
   {
+    id: 'alert-chang-la',
+    passId: 'chang-la-pass',
+    passName: 'Chang La Pass',
+    slug: 'chang-la-pass',
+    country: 'India',
+    state: 'Ladakh',
+    highway: 'Leh-Pangong Lake Road',
+    type: 'Advisory',
+    severity: 'advisory',
+    title: 'Open for Leh-Pangong Route — High Altitude Snow Clearance Standby Active',
+    description: 'Chang La Pass (17,688 ft) is open for traffic toward Tangtse, Durbuk, and Pangong Lake. Rough unpaved stretches and glacial meltwater between Zingral and summit. Valid Inner Line Permit (ILP) mandatory. Acclimatization and 15–20 min summit limit advised.',
+    status: 'OPEN',
+    timestamp: 'BRO Project HIMANK / Ladakh Police Bulletin',
+    source: 'Border Roads Organisation (BRO Project HIMANK) & Ladakh UT Administration'
+  },
+  {
     id: 'alert-rohtang-pass',
     passId: 'rohtang-pass',
     passName: 'Rohtang Pass (NH-03)',
@@ -165,7 +181,23 @@ export const alertsData: PassAlert[] = [
     source: 'Himachal Pradesh Tourism / Kullu District Administration'
   },
 
-  // ─── EUROPE (SWITZERLAND / ITALY) ───────────────────────────────────────────
+  // ─── EUROPE (SWITZERLAND / ITALY / FRANCE) ───────────────────────────────────
+  {
+    id: 'alert-great-st-bernard-pass',
+    passId: 'great-st-bernard-pass',
+    passName: 'Great St Bernard Pass (Route 21 / SS27)',
+    slug: 'great-st-bernard-pass',
+    country: 'Switzerland',
+    state: 'Valais',
+    highway: 'Route 21 (CH) / SS27 (IT)',
+    type: 'All Clear',
+    severity: 'info',
+    title: 'Route 21 & SS27 Open Over 2,469 m Summit — Dry Pavement & Normal Summer Flow',
+    description: 'Great St Bernard Pass is open across the Swiss-Italian border to all passenger cars, motorcycles, and cyclists. Pavement is dry with clear visibility. Covered avalanche gallery on the Swiss ascent in normal service. High-altitude mountain precautions apply near the Hospice summit lake.',
+    status: 'OPEN',
+    timestamp: 'SISEX SA / Etat du Valais Mobility',
+    source: 'SISEX SA / Le Tunnel du Grand-Saint-Bernard / Canton du Valais'
+  },
   {
     id: 'alert-furka-pass',
     passId: 'furka-pass',
@@ -197,6 +229,38 @@ export const alertsData: PassAlert[] = [
     status: 'OPEN',
     timestamp: 'ANAS / Südtiroler Straßendienst',
     source: 'ANAS / Provincia Autonoma di Bolzano'
+  },
+  {
+    id: 'alert-col-du-galibier',
+    passId: 'col-du-galibier',
+    passName: 'Col du Galibier (D902)',
+    slug: 'col-du-galibier',
+    country: 'France',
+    state: 'Hautes-Alpes & Savoie',
+    highway: 'D902 (Route des Grandes Alpes)',
+    type: 'All Clear',
+    severity: 'info',
+    title: 'D902 Fully Open Over 2,642 m Summit & Alternating Galibier Tunnel',
+    description: 'Col du Galibier is open to all passenger vehicles and cyclists. Normal dry summer conditions across north (Savoie) and south (Hautes-Alpes) ramps. Single-lane historic tunnel (2,556 m) operating under alternating signals for vehicles up to 3.5 tonnes. Cyclists must take the summit crest.',
+    status: 'OPEN',
+    timestamp: 'Inforoute 05 / Inforoute 73',
+    source: 'Département des Hautes-Alpes & Savoie / Bison Futé'
+  },
+  {
+    id: 'alert-bernina-pass',
+    passId: 'bernina-pass',
+    passName: 'Bernina Pass (Route 29)',
+    slug: 'bernina-pass',
+    country: 'Switzerland',
+    state: 'Graubünden',
+    highway: 'Hauptstrasse 29 (Route 29)',
+    type: 'All Clear',
+    severity: 'info',
+    title: 'Route 29 Fully Open — Dry Pavement & Normal Traffic Flow Over 2,328m Summit',
+    description: 'Bernina Pass (Hauptstrasse 29) is fully open in both directions between Pontresina (Engadin) and Poschiavo/Tirano. Road is dry and clear with normal alpine driving conditions. Paved roadway, avalanche galleries clear, no chain restrictions in effect.',
+    status: 'OPEN',
+    timestamp: 'Tiefbauamt Graubünden Strassenbericht',
+    source: 'Tiefbauamt des Kantons Graubünden & Swiss TCS'
   },
 
   // ─── SOUTH AMERICA (ARGENTINA / CHILE) ──────────────────────────────────────

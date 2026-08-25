@@ -52,8 +52,8 @@ export const Footer: React.FC = () => {
               <li><Link to="/passes">Passes Directory</Link></li>
               <li><Link to="/map">Interactive Map</Link></li>
               <li><Link to="/alerts">Pass Alerts & Closures</Link></li>
-              <li><Link to="/hierarchical">Hierarchical Navigator</Link></li>
               <li><Link to="/resources">Resources & Chain Laws</Link></li>
+              <li><Link to="/about">About LivePassWatch</Link></li>
             </ul>
           </div>
 
@@ -64,10 +64,12 @@ export const Footer: React.FC = () => {
               <li><Link to="/passes/united-states/washington/snoqualmie-pass">Snoqualmie Pass (I-90)</Link></li>
               <li><Link to="/passes/united-states/washington/stevens-pass">Stevens Pass (US-2)</Link></li>
               <li><Link to="/passes/united-states/california/donner-pass">Donner Pass (I-80)</Link></li>
-              <li><Link to="/passes/india/jammu-and-kashmir/zoji-la">Zoji La Pass (NH-1)</Link></li>
-              <li><Link to="/passes/india/ladakh/khardung-la">Khardung La Pass</Link></li>
-              <li><Link to="/passes/india/sikkim/nathu-la">Nathu La Pass (Sikkim)</Link></li>
-              <li><Link to="/passes/switzerland/valais-uri/furka-pass">Furka Pass (Alps)</Link></li>
+              <li><Link to="/passes/switzerland/graubunden/bernina-pass">Bernina Pass (Graubünden)</Link></li>
+              <li><Link to="/passes/switzerland/uri-ticino/gotthard-pass">Gotthard Pass (Uri/Ticino)</Link></li>
+              <li><Link to="/passes/switzerland/valais/great-st-bernard-pass">Great St Bernard Pass</Link></li>
+              <li><Link to="/passes/france/hautes-alpes-savoie/col-du-galibier">Col du Galibier (Alps)</Link></li>
+              <li><Link to="/passes/norway/more-og-romsdal/trollstigen-pass">Trollstigen Pass (Norway)</Link></li>
+              <li><Link to="/passes/india/ladakh/chang-la-pass">Chang La Pass (Ladakh)</Link></li>
               <li><Link to="/passes/italy/south-tyrol-lombardy/stelvio-pass">Stelvio Pass (SS38)</Link></li>
             </ul>
           </div>

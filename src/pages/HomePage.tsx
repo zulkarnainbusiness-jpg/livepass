@@ -70,8 +70,8 @@ export const HomePage: React.FC = () => {
   return (
     <div className="home-page-container">
       <SEOHelper
-        title="LivePassWatch — Live Mountain Pass Status & Road Conditions"
-        description="Check real-time mountain pass status, live webcams, snow depth, closures, and weather advisories worldwide before you travel."
+        title="LIVEPASSWATCH | Real-Time Mountain Pass Status, Road Conditions & Alerts"
+        description="Check real-time mountain pass status, live webcams, snow depth, road conditions, and closures worldwide. Know before you go with LivePassWatch."
         canonicalUrl="https://www.livepasswatch.info/"
         jsonLd={jsonLdWebsite}
       />
@@ -193,7 +193,7 @@ export const HomePage: React.FC = () => {
           </button>
         </section>
 
-        {/* Quick Navigation Cards: Map & Hierarchical Explorer */}
+        {/* Quick Navigation Cards */}
         <section className="home-explorer-grid">
           <div className="explorer-card lp-card lp-card-hover" onClick={() => navigate('/map')}>
             <div className="explorer-card-content">
@@ -204,12 +204,12 @@ export const HomePage: React.FC = () => {
             </div>
           </div>
 
-          <div className="explorer-card lp-card lp-card-hover" onClick={() => navigate('/hierarchical')}>
+          <div className="explorer-card lp-card lp-card-hover" onClick={() => navigate('/resources')}>
             <div className="explorer-card-content">
-              <span className="explorer-tag">Structured Browser</span>
-              <h3>Hierarchical Dropdown Navigation</h3>
-              <p>Drill down seamlessly from Continent to Country, State/Province, and individual Pass.</p>
-              <span className="explorer-link">Browse Hierarchy →</span>
+              <span className="explorer-tag">Driver Resources</span>
+              <h3>Chain Laws &amp; Winter Driving Safety</h3>
+              <p>State-by-state tire chain laws, seasonal traction requirements, and mountain safety guides.</p>
+              <span className="explorer-link">View Resources →</span>
             </div>
           </div>
         </section>

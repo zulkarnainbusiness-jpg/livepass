@@ -24,10 +24,10 @@ export const SEOHelper: React.FC<SEOHelperProps> = ({
   useEffect(() => {
     // 1. Update Document Title
     const formattedTitle = title
-      ? title.includes('LIVEPASSWATCH')
+      ? title.toLowerCase().includes('livepasswatch')
         ? title
-        : `${title} | LIVEPASSWATCH`
-      : 'LIVEPASSWATCH | Real-Time Mountain Pass Status, Road Conditions & Alerts';
+        : `${title} | LivePassWatch`
+      : 'LivePassWatch | Real-Time Mountain Pass Status, Road Conditions & Alerts';
     document.title = formattedTitle;
 
     // Helper to safely set/create meta tags
@@ -52,7 +52,10 @@ export const SEOHelper: React.FC<SEOHelperProps> = ({
       ? ogImage
       : `${DEFAULT_DOMAIN}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`;
 
-    const absoluteCanonical = canonicalUrl || `${DEFAULT_DOMAIN}${window.location.pathname}`;
+    const rawCanonical = canonicalUrl || window.location.pathname;
+    const absoluteCanonical = rawCanonical.startsWith('http')
+      ? rawCanonical
+      : `${DEFAULT_DOMAIN}${rawCanonical.startsWith('/') ? '' : '/'}${rawCanonical}`;
 
     setMeta('property', 'og:title', formattedTitle);
     setMeta('property', 'og:description', description);

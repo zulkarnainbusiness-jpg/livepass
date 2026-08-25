@@ -2816,15 +2816,15 @@ export const passesData: MountainPass[] = [
     ],
     nearbyPasses: [
       {
-        id: 'chang-la',
-        slug: 'chang-la',
+        id: 'chang-la-pass',
+        slug: 'chang-la-pass',
         name: 'Chang La Pass',
         country: 'India',
         state: 'Ladakh',
-        highway: 'Leh-Pangong Highway',
+        highway: 'Leh-Pangong Lake Road',
         status: 'OPEN',
         elevationFt: 17688,
-        lastUpdated: '25 min ago',
+        lastUpdated: '10 min ago',
         distanceKm: 75
       },
       {
@@ -2933,6 +2933,280 @@ export const passesData: MountainPass[] = [
       {
         question: 'Do I need a permit for Khardung La and Nubra Valley?',
         answer: 'Yes. All travelers require an Inner Line Permit (ILP) for Indian citizens or a Protected Area Permit (PAP) for foreign nationals, obtainable online via the official Leh administration portal (lahdcleh.gov.in) and verified at the South Pullu and North Pullu military checkpoints.'
+      }
+    ],
+    isPopular: true
+  },
+
+  {
+    id: 'chang-la-pass',
+    slug: 'chang-la-pass',
+    name: 'Chang La Pass',
+    country: 'India',
+    countryCode: 'IND',
+    continent: 'Asia',
+    state: 'Ladakh',
+    highway: 'Leh-Pangong Lake Road',
+    elevationFt: 17688,
+    elevationM: 5360,
+    coordinates: { lat: 34.0485, lng: 77.9304 },
+    status: 'OPEN',
+    statusDetail: 'Open for civilian and tourist vehicular traffic toward Pangong Lake. Maintained by Border Roads Organisation (Project HIMANK) with high-altitude snow clearance teams on active standby. Valid Inner Line Permit (ILP) required past Zingral checkpoint.',
+    lastUpdated: '10 minutes ago',
+    description: 'Chang La Pass (elevation 5,360 m / 17,688 ft) is a world-famous high-altitude Himalayan mountain pass situated in the Ladakh Range of Jammu & Kashmir / Ladakh, India. Located approximately 75 km (47 miles) east of Leh, Chang La serves as the primary strategic and tourist highway connecting the Indus River Valley with the high plateau of Tangtse, Durbuk, and the iconic Pangong Tso (Pangong Lake). Maintained year-round by the Border Roads Organisation (BRO) under Project HIMANK, the pass features the Chang La Baba Temple and an Indian Army emergency medical aid post providing free hot tea and medical oxygen for acute mountain sickness (AMS) relief.',
+    image: '/chang-la-pass-road-status-webcam.webp',
+    weather: {
+      tempF: 18,
+      tempC: -8,
+      condition: 'Sub-Zero Alpine Sun & Thin Air',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 18,
+      depthIn: 7,
+      condition: 'Glacial snow patches & hardpacked ice at summit bends'
+    },
+    wind: {
+      speedKmh: 32,
+      speedMph: 20,
+      direction: 'NW',
+      description: 'Chilly high-altitude alpine gusts'
+    },
+    roadCondition: 'Paved two-lane asphalt from Kharu through Sakti up to Zingral. From Zingral through Chang La summit to Tsultak (approx. 20 km), the road features steep gradients, unpaved gravel stretches, glacial meltwater rivulets, and icy switchbacks. 4x4 / high-clearance vehicles and acclimatized drivers recommended.',
+    chainRequirement: 'Anti-skid tire chains advised during and immediately following high-altitude snowfall. Mandatory check-in at Zingral and Tangtse checkpoints.',
+    cameras: [],
+    nearbyPasses: [
+      {
+        id: 'khardung-la',
+        slug: 'khardung-la',
+        name: 'Khardung La Pass',
+        country: 'India',
+        state: 'Ladakh',
+        highway: 'Leh-Nubra Road',
+        status: 'OPEN',
+        elevationFt: 17582,
+        lastUpdated: '12 min ago',
+        distanceKm: 75
+      },
+      {
+        id: 'zoji-la',
+        slug: 'zoji-la',
+        name: 'Zoji La Pass',
+        country: 'India',
+        state: 'Jammu & Kashmir',
+        highway: 'NH-1',
+        status: 'OPEN',
+        elevationFt: 11575,
+        lastUpdated: '18 min ago',
+        distanceKm: 240
+      },
+      {
+        id: 'rohtang-pass',
+        slug: 'rohtang-pass',
+        name: 'Rohtang Pass',
+        country: 'India',
+        state: 'Himachal Pradesh',
+        highway: 'Leh-Manali Highway',
+        status: 'OPEN',
+        elevationFt: 13058,
+        lastUpdated: '35 min ago',
+        distanceKm: 480
+      }
+    ],
+    overview: {
+      openedYear: 1962,
+      lengthMiles: 38,
+      lengthKm: 61,
+      annualSnowfallIn: 320,
+      annualSnowfallM: 8.1,
+      summary: 'Constructed and maintained by the Border Roads Organisation (Project HIMANK), Chang La Pass (5,360 m / 17,688 ft) cuts across the rugged Ladakh Range east of Leh. It is the indispensable overland lifeline linking the Indus Valley with the remote border regions of Tangtse, Chushul, and Pangong Tso. The historic yellow BRO signboard at the summit marks 17,586 ft and commemorates Chang La as the traditional third-highest motorable pass in the world. Due to extreme altitude and approximately 50% oxygen levels compared to sea level, travelers are advised to limit summit stops to 15–20 minutes. An Indian Army medical aid post at the top offers hot herbal tea and emergency oxygen cylinders.'
+    },
+    isSeasonal: false,
+    seasonalClosureInfo: {
+      typicalClosure: 'Open Year-Round (Subject to Heavy Himalayan Snowstorms)',
+      typicalReopening: 'Maintained 24/7 by Border Roads Organisation (Project HIMANK)',
+      description: 'Unlike seasonal Himalayan passes that shut down completely in winter, Chang La is kept open nearly year-round by BRO Project HIMANK rotary snowplows to maintain vital strategic and civilian connectivity to Tangtse and Pangong. Temporary winter closures lasting from a few hours to 2–3 days occur during active blizzards and heavy snow accumulation between December and March.'
+    },
+    forecast: [
+      { day: 'Today', condition: 'Sunny & Sub-Zero', tempHighF: 22, tempLowF: 8, icon: 'sun' },
+      { day: 'Tonight', condition: 'Freezing Himalayan Night', tempHighF: 10, tempLowF: 1, icon: 'moon' },
+      { day: 'Tomorrow', condition: 'Clear Sky & High UV', tempHighF: 24, tempLowF: 9, icon: 'sun' },
+      { day: 'Day 3', condition: 'Passing High Alpine Clouds', tempHighF: 20, tempLowF: 7, icon: 'cloud-sun' },
+      { day: 'Day 4', condition: 'Breezy Mountain Flurries', tempHighF: 18, tempLowF: 5, icon: 'cloud-snow' },
+      { day: 'Day 5', condition: 'Crisp & Sunny', tempHighF: 23, tempLowF: 8, icon: 'sun' }
+    ],
+    dataSources: [
+      { name: 'Border Roads Organisation (BRO Project HIMANK)', type: 'High Mountain Road Maintenance & Snow Clearing', url: 'https://bro.gov.in' },
+      { name: 'Administration of Union Territory of Ladakh', type: 'Official UT Government & Infrastructure', url: 'https://ladakh.gov.in' },
+      { name: 'District Administration Leh & District Police', type: 'Inner Line Permits (ILP) & Traffic Advisories', url: 'https://leh.nic.in' },
+      { name: 'Ladakh Tourism Department', type: 'Official Travel Guidelines & Protected Area Access', url: 'https://ladakhtourism.gov.in' },
+      { name: 'India Meteorological Department (IMD Leh)', type: 'High Altitude Weather Bulletins & Warnings', url: 'https://mausam.imd.gov.in' }
+    ],
+    openingDateInfo: {
+      year: 2026,
+      statusText: 'Maintained Year-Round with Weather-Dependent Clearances',
+      expectedOpeningWindow: 'Open Year-Round (Peak Tourism: May to October)',
+      closingWindow: 'No scheduled seasonal closure (Short blizzard shutdowns)',
+      clearanceAgency: 'Border Roads Organisation (BRO Project HIMANK)',
+      notes: 'Chang La does not have a single fixed annual opening date because BRO Project HIMANK keeps the corridor open throughout the winter months. Heavy snowfall and blizzards between December and March may cause temporary shutdowns lasting 12 to 72 hours until high-altitude snow cutters clear the hairpin switchbacks.'
+    },
+    quickFacts: {
+      state: 'Ladakh',
+      mountainRange: 'Ladakh Range (Trans-Himalayas)',
+      elevationSummary: '17,688 ft (5,360 m) verified survey altitude',
+      connects: 'Leh & Indus Valley with Tangtse, Durbuk, & Pangong Lake',
+      nearestTown: 'Sakti (25 km west), Tangtse (35 km east), Leh (75 km)',
+      roadType: 'Leh-Pangong Road (Maintained by BRO Project HIMANK)',
+      bestTime: 'May to October (Comfortable driving conditions)',
+      highlight: 'Strategic gateway to Pangong Tso featuring Chang La Baba Temple & Army Medical Aid'
+    },
+    routeDetails: {
+      distanceKm: 75,
+      distanceMiles: 47,
+      duration: '2.5 to 3 hours (Leh to Summit)',
+      origin: 'Leh (11,500 ft / 3,500 m)',
+      destination: 'Pangong Lake / Spangmik (14,270 ft / 4,350 m)',
+      waypoints: [
+        'Leh City (0 km)',
+        'Kharu Junction / Manali Highway (35 km)',
+        'Sakti Village & Chemrey Monastery (45 km)',
+        'Zingral Army Checkpoint (60 km)',
+        'Chang La Summit 17,688 ft (75 km)',
+        'Tsultak Alpine Ponds (85 km)',
+        'Durbuk Valley Junction (100 km)',
+        'Tangtse Town (115 km)',
+        'Lukung & Pangong Tso (140 km)'
+      ]
+    },
+    distancesTable: [
+      { location: 'Leh City', distance: '75 km (47 mi)', route: 'Leh-Manali Hwy to Kharu, then Leh-Pangong Rd', notes: '2.5–3 hours scenic alpine drive' },
+      { location: 'Kharu Junction', distance: '40 km (25 mi)', route: 'Leh-Pangong Road', notes: 'Intersection of Manali-Leh and Pangong routes' },
+      { location: 'Sakti Village', distance: '25 km (15.5 mi)', route: 'Leh-Pangong Road', notes: 'Last major village on western ascent with Chemrey Gompa nearby' },
+      { location: 'Zingral Checkpoint', distance: '15 km (9 mi)', route: 'Leh-Pangong Road', notes: 'Mandatory ILP permit verification; start of steep switchbacks' },
+      { location: 'Tsultak Ponds', distance: '10 km (6 mi)', route: 'Leh-Pangong Road (Eastern descent)', notes: 'Alpine wetlands and yak grazing pastures' },
+      { location: 'Durbuk', distance: '25 km (15.5 mi)', route: 'Leh-Pangong Road', notes: 'Junction connecting toward Shyok Valley and Nubra' },
+      { location: 'Tangtse', distance: '40 km (25 mi)', route: 'Leh-Pangong Road', notes: 'Main civilian settlement with guest houses, fuel, and medical facilities' },
+      { location: 'Pangong Lake (Spangmik)', distance: '65 km (40 mi)', route: 'Tangtse-Lukung-Spangmik Road', notes: 'World-renowned high-altitude endorheic lake at 14,270 ft' },
+      { location: 'Khardung La Pass', distance: '114 km (71 mi)', route: 'Via Leh and South Pullu', notes: 'Alternate high mountain pass connecting Leh to Nubra Valley' }
+    ],
+    narrativeSections: [
+      {
+        title: 'Strategic Importance & Geographic Setting',
+        content: 'Chang La Pass is positioned across the rugged Ladakh Range in northern India, acting as the solitary direct motorable link between the Indus River Valley and the vast Changthang plateau bordering China. Maintained by the Border Roads Organisation (Project HIMANK), the pass is critical for national defence logistics and civilian mobility, ensuring essential supplies reach isolated Himalayan communities in Durbuk, Tangtse, Chushul, and around Pangong Lake.'
+      },
+      {
+        title: 'Road Surface, Gradients & Switchback Characteristics',
+        content: 'The journey from Leh begins smoothly along the paved Indus Valley corridor up to Kharu (35 km) and Sakti (45 km). Past Sakti, the road ascends through arid canyon switchbacks to the Zingral military checkpoint. From Zingral to the Chang La summit (approx. 15 km), tarmac gives way to rough gravel, loose stones, glacial runoff rills, and steep 8–10% gradients. The eastern descent towards Tsultak features similarly tight switchbacks before flattening out into the picturesque Durbuk valley.'
+      },
+      {
+        title: 'Chang La Baba Temple & High-Altitude Medical Post',
+        content: 'At the summit stands the revered Chang La Baba Temple, dedicated to a sadhu believed to protect travelers crossing the treacherous pass. By long-standing tradition, drivers and motorcyclists stop to pay homage and tie colourful Tibetan prayer flags. Adjacent to the temple, the Indian Army operates an emergency medical assistance room equipped with oxygen concentrators, pulse oximeters, and stretchers, alongside a community tea stall serving complimentary hot black tea to help travelers combat the biting chill and low air pressure.'
+      }
+    ],
+    customSeo: {
+      h1: 'Chang La Pass Opening Date, Road Status, Webcams & Conditions',
+      title: 'Chang La Pass Opening Date, Road Status, Webcams & Conditions | LivePassWatch',
+      description: 'Check Chang La Pass opening date, live road status, webcams, weather, snow and road conditions before travelling from Leh toward Pangong Lake.'
+    },
+    searchKeywords: [
+      'Chang La opening date',
+      'Chang La is open',
+      'Chang La road conditions',
+      'Chang La road status',
+      'Chang La pass status report',
+      'when does Chang La open',
+      'Chang La closed',
+      'Chang La is closed',
+      'Chang La is it open today',
+      'is Chang La closed today',
+      'Chang La webcam',
+      'Chang La live webcam',
+      'Chang La cameras',
+      'Chang La summit camera',
+      'when does Chang La close for winter',
+      'Chang La map',
+      'is Chang La open right now',
+      'Chang La weather today',
+      'Chang La snow',
+      'Chang La snow depth',
+      'Chang La snow conditions',
+      'Chang La elevation',
+      'Chang La open',
+      'Chang La when will open',
+      'Chang La passes open',
+      'Chang La closures today',
+      'is Chang La open',
+      'is Chang La open in winter',
+      'Chang La weather',
+      'Chang La directions',
+      'Chang La closing date',
+      'Chang La forecast'
+    ],
+    aliases: ['chang-la', 'chang-la-pass', 'changla-pass', 'changla'],
+    faqs: [
+      {
+        question: 'Is Chang La open right now?',
+        answer: 'Yes, Chang La Pass is currently OPEN for vehicular traffic between Leh and Pangong Lake. The Border Roads Organisation (Project HIMANK) maintains the pass year-round, with high-altitude snow clearing teams on standby.'
+      },
+      {
+        question: 'Is Chang La open today?',
+        answer: 'Yes, Chang La is open today for civilian and tourist vehicles holding valid Ladakh Inner Line Permits (ILP). During active snowstorms or black ice conditions, movement may be temporarily regulated by Ladakh Police and the BRO.'
+      },
+      {
+        question: 'Is Chang La closed today?',
+        answer: 'No, Chang La is not closed today. The road between Leh and Pangong Lake via Chang La is open. In the event of sudden severe Himalayan blizzards or avalanche clearances, short-term closures of a few hours may occur until snowplows clear the summit.'
+      },
+      {
+        question: 'When does Chang La open?',
+        answer: 'Chang La is maintained as a year-round pass by BRO Project HIMANK. Unlike passes that shut down completely for 6 months, Chang La remains open throughout the year, with temporary short-term closures during winter blizzards.'
+      },
+      {
+        question: 'What is the Chang La opening date?',
+        answer: 'There is no single annual opening date for Chang La because the Border Roads Organisation strives to keep it operational continuously. The peak tourist season runs from May through October when road conditions are easiest.'
+      },
+      {
+        question: 'When does Chang La close for winter?',
+        answer: 'Chang La does not have a scheduled seasonal closing date. It remains open through the winter months for local and strategic transport. However, severe winter storms between December and March can lead to intermittent shutdowns lasting 12 to 72 hours.'
+      },
+      {
+        question: 'Is Chang La open in winter?',
+        answer: 'Yes, Chang La is open in winter, but conditions are extremely challenging with sub-zero temperatures (down to -25°C), heavy snowfall, and black ice. A 4x4 vehicle equipped with anti-skid tire chains and high ground clearance is essential.'
+      },
+      {
+        question: 'Where can I see the Chang La webcam?',
+        answer: 'There is currently no verified public live webcam feed operating at Chang La Pass. LivePassWatch does not publish fake or unverified feeds. You can verify real-time status via our live status indicator and official Ladakh administration bulletins.'
+      },
+      {
+        question: 'Is there a Chang La live webcam?',
+        answer: 'No public live webcam stream is currently provided by the Border Roads Organisation or the Ladakh UT Administration for Chang La Pass. We provide independently verified real-time road conditions, weather data, and official transport advisories.'
+      },
+      {
+        question: 'What are the Chang La road conditions?',
+        answer: 'Road conditions from Leh to Sakti and Zingral are paved and smooth. The 15 km stretch from Zingral through the summit to Tsultak consists of unpaved gravel, glacial meltwater streams, loose rocks, and steep switchbacks. 4WD / high-clearance vehicles are recommended.'
+      },
+      {
+        question: 'What is the Chang La road status?',
+        answer: 'The current road status is OPEN. BRO Project HIMANK actively maintains the corridor between Leh and Pangong Tso. Check the live status dashboard at the top of this page for up-to-the-minute updates.'
+      },
+      {
+        question: 'What is the Chang La elevation?',
+        answer: 'The verified survey elevation of Chang La Pass is 17,688 feet (5,360 meters) above sea level. The historic yellow BRO road sign at the summit marks 17,586 ft and calls it the world\'s 3rd highest motorable pass.'
+      },
+      {
+        question: 'Does Chang La have snow?',
+        answer: 'Yes, Chang La has snow throughout most of the year. Glacial snowdrifts and patches remain near the summit even during peak summer (July–August), while winter brings heavy snowpack and sub-zero temperatures.'
+      },
+      {
+        question: 'What is the Chang La weather today?',
+        answer: 'Current weather at Chang La summit is crisp and sub-zero, with typical daytime temperatures around 18°F to 24°F (-8°C to -4°C), strong alpine winds, high UV radiation, and thin atmospheric air with approximately 50% oxygen of sea level.'
+      },
+      {
+        question: 'Where is Chang La Pass?',
+        answer: 'Chang La Pass is located in the Ladakh Range in the Union Territory of Ladakh, India. It is situated approximately 75 km east of Leh on the primary road leading to Tangtse, Durbuk, and Pangong Lake.'
+      },
+      {
+        question: 'How do I reach Chang La from Leh?',
+        answer: 'To reach Chang La from Leh, take the Manali-Leh Highway (NH-3) southeast to Kharu (35 km), turn left onto the Leh-Pangong Road through Sakti (45 km), and ascend past the Zingral army checkpoint to the summit at 75 km. The drive takes approximately 2.5 to 3 hours.'
       }
     ],
     isPopular: true
@@ -5253,6 +5527,1693 @@ export const passesData: MountainPass[] = [
       { name: 'National Highway Authority (NHA) Pakistan', type: 'N-5 Highway Status', url: 'https://nha.gov.pk/' },
       { name: 'Pakistan Meteorological Department (PMD)', type: 'Landi Kotal Weather Feed', url: 'https://www.pmd.gov.pk/' }
     ]
+  },
+  {
+    id: 'col-du-galibier',
+    slug: 'col-du-galibier',
+    name: 'Col du Galibier',
+    country: 'France',
+    countryCode: 'FRA',
+    continent: 'Europe',
+    state: 'Hautes-Alpes & Savoie',
+    highway: 'D902 (Route des Grandes Alpes)',
+    elevationFt: 8668,
+    elevationM: 2642,
+    coordinates: { lat: 45.0642, lng: 6.4078 },
+    status: 'OPEN',
+    statusDetail: 'Open to all vehicles. Normal alpine summer conditions on D902. Alternating traffic lights active at Galibier Tunnel.',
+    lastUpdated: '5 minutes ago',
+    description: 'Col du Galibier (2,642 m / 8,668 ft) is a world-renowned mountain pass in the French Alps connecting Saint-Michel-de-Maurienne and Valloire in Savoie with Briançon and La Grave via Col du Lautaret in Hautes-Alpes. Traversed by the departmental road D902 along the scenic Route des Grandes Alpes, it is celebrated globally as one of the most legendary, grueling Hors Catégorie climbs in Tour de France history.',
+    image: '/col-du-galibier.png',
+    weather: {
+      tempF: 50,
+      tempC: 10,
+      condition: 'Clear Alpine Sky',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 15,
+      depthIn: 6,
+      condition: 'Snowpack in High Shaded Gullies; Paved Roadway Bare and Dry'
+    },
+    wind: {
+      speedKmh: 18,
+      speedMph: 11,
+      direction: 'NNW',
+      description: 'Moderate Mountain Breeze'
+    },
+    roadCondition: 'D902 is clear and dry with excellent alpine visibility. Switchbacks are open across both Savoie (north) and Hautes-Alpes (south) ramps. The single-lane Galibier Tunnel (2,556 m / 8,386 ft) operates with alternating three-color traffic lights (feux tricolores) for vehicles up to 3.5 tonnes and 4.1 m height. Cyclists, pedestrians, and oversize vehicles must use the 2,642 m summit crest route.',
+    chainRequirement: 'No restriction during summer operations. Under French Mountain Law (Loi Montagne II), winter-certified tires (3PMSF) or removable anti-skid chains/socks in the vehicle are legally mandatory between November 1 and March 31 across all mountain roads in Savoie and Hautes-Alpes.',
+    cameras: [
+      {
+        id: 'galibier-cam-summit',
+        title: 'Col du Galibier — Summit Crest (2,642 m)',
+        image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
+        milepost: 'D902 Summit Monument (Boundary 73/05)',
+        direction: '360° Panorama toward Barre des Écrins & Meije',
+        location: 'Col du Galibier Summit Pass Crest (2,642 m)',
+        source: 'Inforoute 05 / Département des Hautes-Alpes & Savoie',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.inforoute05.fr/'
+      },
+      {
+        id: 'galibier-cam-lautaret',
+        title: 'Col du Lautaret — Galibier South Junction (2,058 m)',
+        image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+        milepost: 'D902 / D1091 Intersection',
+        direction: 'Looking North toward Galibier South Ascent Ramp',
+        location: 'Col du Lautaret Alpine Refuge (2,058 m)',
+        source: 'Inforoute 05 (Département des Hautes-Alpes)',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.inforoute05.fr/'
+      },
+      {
+        id: 'galibier-cam-valloire',
+        title: 'Valloire / Plan Lachat — Galibier North Approach (1,982 m)',
+        image: 'https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80',
+        milepost: 'D902 Plan Lachat Bridge',
+        direction: 'Looking South toward Granges du Galibier Hairpins',
+        location: 'Plan Lachat Valley (1,982 m)',
+        source: 'Office de Tourisme de Valloire & Inforoute 73',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.savoie-route.fr/'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'furka-pass',
+        slug: 'furka-pass',
+        name: 'Furka Pass',
+        country: 'Switzerland',
+        state: 'Valais',
+        highway: 'Hauptstrasse 19',
+        status: 'OPEN',
+        elevationFt: 7969,
+        lastUpdated: '10 min ago',
+        distanceKm: 280
+      },
+      {
+        id: 'stelvio-pass',
+        slug: 'stelvio-pass',
+        name: 'Stelvio Pass',
+        country: 'Italy',
+        state: 'South Tyrol',
+        highway: 'SS38',
+        status: 'OPEN',
+        elevationFt: 9045,
+        lastUpdated: '15 min ago',
+        distanceKm: 395
+      },
+      {
+        id: 'trollstigen-pass',
+        slug: 'trollstigen-pass',
+        name: 'Trollstigen Pass',
+        country: 'Norway',
+        state: 'Møre og Romsdal',
+        highway: 'Fv63',
+        status: 'OPEN',
+        elevationFt: 2815,
+        lastUpdated: '5 min ago',
+        distanceKm: 1840
+      },
+      {
+        id: 'snoqualmie-pass',
+        slug: 'snoqualmie-pass',
+        name: 'Snoqualmie Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'I-90',
+        status: 'OPEN',
+        elevationFt: 3022,
+        lastUpdated: '5 min ago',
+        distanceKm: 8100
+      }
+    ],
+    overview: {
+      openedYear: 1891,
+      lengthMiles: 21.6,
+      lengthKm: 34.8,
+      annualSnowfallIn: 320,
+      annualSnowfallM: 8.1,
+      summary: 'Col du Galibier is the eighth highest paved road in the Alps and one of France\'s most celebrated mountain passages. First surveyed as a carriage road in the late 19th century with the historic tunnel completed in 1891, the pass links the Arvan-Villards and Cerces massifs between Saint-Michel-de-Maurienne and Briançon. With its high elevation, tight switchbacks, and dramatic alpine landscape, it remains a bucket-list journey for motorists and cyclists from around the world.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'Late October to Early November (First Heavy Alpine Snowfall)',
+      typicalReopening: 'Late May to Early June (Subject to Rotary Snow Clearance)',
+      description: 'Departmental road D902 across Col du Galibier is subject to an annual winter closure. Heavy snow blowers operate for weeks each spring, carving through snow walls up to 8 meters (26 ft) deep. The official reopening date is determined dynamically by the Departmental Councils of Savoie (73) and Hautes-Alpes (05) following safety inspections, road resurfacing, and rockfall barrier maintenance.'
+    },
+    openingDateInfo: {
+      year: 2026,
+      statusText: 'Open for Summer Season — Targeted Reopening: Late May / Early June',
+      expectedOpeningWindow: 'Late May to Early June (Weather & Snowpack Dependent)',
+      closingWindow: 'Late October to Early November',
+      clearanceAgency: 'Conseil Départemental de la Savoie (Inforoute 73) & Conseil Départemental des Hautes-Alpes (Inforoute 05)',
+      notes: 'Col du Galibier does not open on a fixed calendar date. High-altitude snowpack, late spring blizzards, and avalanche hazards determine when rotary plows can safely clear D902. Departmental road orders (arrêtés) confirm opening.'
+    },
+    forecast: [
+      { day: 'Today', condition: 'Sunny & Crisp Alpine Sky', tempHighF: 54, tempLowF: 39, icon: 'sun' },
+      { day: 'Tonight', condition: 'Clear Starlit Night', tempHighF: 41, tempLowF: 32, icon: 'moon' },
+      { day: 'Tomorrow', condition: 'Mostly Sunny & Mild', tempHighF: 57, tempLowF: 42, icon: 'cloud-sun' },
+      { day: 'Day 3', condition: 'Scattered Mountain Showers', tempHighF: 50, tempLowF: 37, icon: 'cloud-rain' },
+      { day: 'Day 4', condition: 'Passing Clouds & High Breeze', tempHighF: 52, tempLowF: 38, icon: 'cloud' },
+      { day: 'Day 5', condition: 'Sunny with Excellent Visibility', tempHighF: 56, tempLowF: 40, icon: 'sun' }
+    ],
+    dataSources: [
+      { name: 'Inforoute 05 (Département des Hautes-Alpes)', type: 'Official Road Status & Winter Closure Bulletins', url: 'https://www.inforoute05.fr/' },
+      { name: 'Savoie-Route / Inforoute 73 (Département de la Savoie)', type: 'Official Maurienne & Valloire Corridor Reports', url: 'https://www.savoie-route.fr/' },
+      { name: 'Bison Futé (Ministère de la Transition écologique)', type: 'National French Highway Traffic & Mountain Road Updates', url: 'https://www.bison-fute.gouv.fr/' },
+      { name: 'Météo-France (Alpine Meteorological Service)', type: 'High-Altitude Summit Weather Forecast & Avalanche Bulletins', url: 'https://meteofrance.com/' }
+    ],
+    quickFacts: {
+      state: 'Hautes-Alpes & Savoie (Auvergne-Rhône-Alpes / PACA)',
+      mountainRange: 'Dauphiné Alps / Massif des Cerces (French Alps)',
+      elevationSummary: 'Summit Pass Crest: 2,642 m (8,668 ft) | Historic Tunnel: 2,556 m (8,386 ft)',
+      connects: 'Saint-Michel-de-Maurienne & Valloire with Briançon & Col du Lautaret',
+      nearestTown: 'Valloire (17 km North), Le Monêtier-les-Bains (23 km South), Briançon (36 km South)',
+      roadType: 'Route Départementale 902 (D902)',
+      bestTime: 'Mid-June through Late September',
+      highlight: 'Legendary Tour de France Hors Catégorie Climb & Henri Desgrange Monument'
+    },
+    routeDetails: {
+      distanceKm: 34.8,
+      distanceMiles: 21.6,
+      duration: '1h 15m driving | 2h 30m cycling',
+      origin: 'Saint-Michel-de-Maurienne (712 m)',
+      destination: 'Col du Lautaret (2,058 m) / Briançon',
+      waypoints: [
+        'Saint-Michel-de-Maurienne (712 m)',
+        'Col du Télégraphe (1,566 m)',
+        'Valloire (1,430 m)',
+        'Plan Lachat (1,982 m)',
+        'Granges du Galibier (2,250 m)',
+        'Tunnel du Galibier (2,556 m)',
+        'Col du Galibier Summit (2,642 m)',
+        'Col du Lautaret Junction (2,058 m)'
+      ]
+    },
+    cyclingInfo: {
+      summary: 'Col du Galibier is cycling royalty. Ranked as a Hors Catégorie (HC) climb, it has featured in the Tour de France over 60 times since its debut in 1911. The ascent tests riders with double-digit gradients, thin alpine air above 2,000 meters, and fierce high-altitude winds.',
+      approaches: [
+        {
+          name: 'North Approach (via Col du Télégraphe & Valloire)',
+          origin: 'Saint-Michel-de-Maurienne',
+          distanceKm: 34.8,
+          distanceMiles: 21.6,
+          elevationGainM: 2120,
+          elevationGainFt: 6955,
+          avgGradient: '6.1%',
+          maxGradient: '10.5%',
+          hairpins: 24,
+          description: 'The classic Tour de France route. Begins with the 12 km ascent of Col du Télégraphe (avg 7.3%), followed by a brief 5 km descent into Valloire, before the grueling 18 km final climb through Plan Lachat and the steep upper switchbacks to the 2,642 m summit.'
+        },
+        {
+          name: 'South Approach (from Col du Lautaret / Briançon)',
+          origin: 'Col du Lautaret Junction',
+          distanceKm: 8.5,
+          distanceMiles: 5.3,
+          elevationGainM: 585,
+          elevationGainFt: 1919,
+          avgGradient: '6.9%',
+          maxGradient: '12.0%',
+          hairpins: 14,
+          description: 'Ascends from the D1091/D902 junction at Col du Lautaret (2,058 m). Shorter but consistently steep with sweeping alpine views of the Meije glacier, culminating in an intense 10-12% final kilometer up to the crest.'
+        }
+      ],
+      bestSeason: 'Late June through September (warmest weather and dry asphalt)',
+      safetyTips: [
+        'Pack a high-quality windproof jacket, full-finger gloves, and thermal layers for the rapid 35 km descent.',
+        'Equip functional front and rear lights for shaded mountain sections and low-visibility weather.',
+        'Use the summit road over the crest at 2,642 m — cycling through the narrow Galibier Tunnel is prohibited.',
+        'Stay well hydrated and maintain steady fueling to counter the effects of high altitude above 2,000 m.'
+      ],
+      bikeDayInfo: 'During the summer "Cols Réservés" program organized by Hautes-Alpes and Savoie Tourism, D902 over Col du Galibier is temporarily closed to motorized vehicles on select mornings, reserving the ascent exclusively for cyclists.'
+    },
+    drivingInfo: {
+      summary: 'Driving Col du Galibier on D902 is one of Europe\'s premier road trips. The highway is fully paved but narrow in sections with tight switchbacks and sharp drop-offs without continuous crash barriers.',
+      characteristics: [
+        'Paved two-lane mountain highway (D902) narrowing near the summit crest.',
+        'Historic Galibier Tunnel (370 m long, 2,556 m altitude) controlled by alternating traffic lights (feux tricolores). Maximum vehicle height 4.1 m, width 2.4 m, weight 3.5 tonnes.',
+        'Summit loop road (2,642 m) features tight hairpin curves with gradients reaching 10-12%.',
+        'Multiple scenic viewpoints and parking areas at Plan Lachat, the Monument Desgrange, and the summit pass crest.'
+      ],
+      switchbacksCount: '38 Total Hairpin Curves (24 North Side + 14 South Side)',
+      safetyAndEtiquette: [
+        'Downshift into 1st or 2nd gear on descents to utilize engine braking and avoid brake fade.',
+        'Yield right of way to ascending vehicles on narrow stretches where passing is constrained.',
+        'Observe the alternating signal lights at the Galibier Tunnel; do not enter on red.',
+        'Keep headlights on at all times in tunnels and during sudden mountain cloud cover.',
+        'Be alert for cyclists, hikers, and grazing alpine cattle along unfenced pasture stretches.'
+      ],
+      motorcycleTips: [
+        'Watch for gravel and loose scree in the inside apex of upper hairpins.',
+        'Beware of strong crosswinds whistling through the pass notch above 2,500 meters.',
+        'Ensure warm thermal base layers under your riding gear even on warm summer valley days.'
+      ]
+    },
+    distancesTable: [
+      { location: 'Valloire (Savoie)', distance: '17 km (10.5 mi)', route: 'D902 North', notes: 'Nearest major alpine ski and resort village on north side' },
+      { location: 'Col du Lautaret', distance: '8.5 km (5.3 mi)', route: 'D902 South', notes: 'Connecting point to D1091 toward Grenoble and Briançon' },
+      { location: 'Saint-Michel-de-Maurienne', distance: '34.8 km (21.6 mi)', route: 'D902 North via Télégraphe', notes: 'A43 Autoroute access & railway hub in Maurienne valley' },
+      { location: 'Briançon (Hautes-Alpes)', distance: '36 km (22.4 mi)', route: 'D902 South + D1091', notes: 'UNESCO Vauban fortifications & main southern gateway' },
+      { location: 'Le Monêtier-les-Bains / Serre Chevalier', distance: '23 km (14.3 mi)', route: 'D902 South + D1091', notes: 'Thermal spa village and ski resort valley' },
+      { location: 'Grenoble', distance: '95 km (59 mi)', route: 'D902 South + D1091 West', notes: 'Regional capital and major airport access' }
+    ],
+    narrativeSections: [
+      {
+        title: 'Geographic Crossroads of the Northern & Southern French Alps',
+        content: 'Col du Galibier is a profound geographic and climatic divide in France. To the north lies the department of Savoie, the Maurienne valley, and the humid, verdant climate of the Northern Alps. To the south lies Hautes-Alpes, the Romanche and Guisane valleys, and the sun-drenched Mediterranean-influenced climate of Provence-Alpes-Côte d\'Azur. Standing at the summit orientation table (table d\'orientation), travelers enjoy an awe-inspiring panorama spanning the Barre des Écrins (4,102 m), the glaciated peaks of La Meije (3,984 m), and the distant summit of Mont Blanc.'
+      },
+      {
+        title: 'Engineering the Galibier Highway & Historic Tunnel (1891)',
+        content: 'Before the construction of the carriage road, only a rugged mule track crossed the Galibier. Between 1879 and 1891, French military and civilian engineers constructed the D902 route and excavated the 370-meter-long summit tunnel at 2,556 meters to spare horse-drawn wagons the brutal final 86-meter climb over the rocky summit crest. Closed for major structural renovation in 1976 and reopened in 2002 with modern alternating traffic signals and ventilation, the tunnel continues to provide safe vehicle passage while preserving the scenic upper crest road for adventurous motorists and cyclists.'
+      },
+      {
+        title: 'Tour de France Legend & The Henri Desgrange Monument',
+        content: 'No mountain pass is more deeply intertwined with cycling history than the Galibier. First crossed on July 10, 1911 during Stage 5 of the Tour de France (Chamonix to Grenoble), only three riders completed the ascent without walking: Émile Georget, Paul Duboc, and Gustave Garrigou. Tour founder Henri Desgrange wrote passionately in L\'Auto: "O Col de Galibier! You are the judge... before this giant, one can only take off one\'s hat and bow!" Today, a stone monument honoring Desgrange stands at the south portal of the tunnel, and the first rider over the highest summit of each Tour de France receives the prestigious Souvenir Henri Desgrange prize.'
+      }
+    ],
+    customSeo: {
+      title: 'Col du Galibier Opening Date, Road Conditions & Live Status | LivePassWatch',
+      description: 'Check Col du Galibier opening date, road conditions, open/closed status, webcams, snow conditions and weather before traveling.',
+      h1: 'Col du Galibier Opening Date, Road Status, Webcams & Conditions'
+    },
+    faqs: [
+      {
+        question: 'Is Col du Galibier open today?',
+        answer: 'Col du Galibier is currently open for the summer season with normal alpine road conditions on D902. Check the live status indicator at the top of this page for real-time verification and official road condition updates.'
+      },
+      {
+        question: 'When does Col du Galibier open for the season?',
+        answer: 'Col du Galibier typically opens between late May and early June, depending on high-altitude snowpack depth and the progress of rotary snow clearing by the Departmental Councils of Savoie and Hautes-Alpes.'
+      },
+      {
+        question: 'When does Col du Galibier close for winter?',
+        answer: 'Col du Galibier closes annually for the winter season in late October or early November following the first major alpine blizzards. It remains closed under seasonal closure decrees until the following late spring.'
+      },
+      {
+        question: 'What highway goes over Col du Galibier?',
+        answer: 'Col du Galibier is traversed by Route Départementale 902 (D902), which forms a core high-altitude segment of the famous Route des Grandes Alpes tourist route.'
+      }
+    ]
+  }
+,
+  {
+    id: 'great-st-bernard-pass',
+    slug: 'great-st-bernard-pass',
+    name: 'Great St Bernard Pass',
+    country: 'Switzerland',
+    countryCode: 'CHE',
+    continent: 'Europe',
+    state: 'Valais',
+    highway: 'Route 21 (CH) / SS27 (IT)',
+    elevationFt: 8100,
+    elevationM: 2469,
+    coordinates: { lat: 45.8692, lng: 7.1706 },
+    status: 'OPEN',
+    statusDetail: 'Open for regular travel across the Swiss-Italian summit — road dry, no restrictions. High-altitude mountain driving precautions apply.',
+    lastUpdated: '10 minutes ago',
+    description: 'Great St Bernard Pass (French: Col du Grand-Saint-Bernard, Italian: Colle del Gran San Bernardo, German: Grosser St. Bernhard) is a legendary high-altitude Alpine mountain pass standing at 2,469 meters (8,100 ft) on the border between the Canton of Valais, Switzerland, and the Aosta Valley, Italy. Connecting Martigny to Aosta via Swiss Route 21 and Italian Strada Statale 27 (SS27), the pass is world-renowned for the historic Great St Bernard Hospice founded in 1049 by Saint Bernard of Menthon, the iconic St. Bernard rescue dogs, and Napoleon Bonaparte’s historic crossing in May 1800. The scenic open-air pass road is accessible seasonally from late spring to mid-autumn, while the nearby Great St Bernard Tunnel (1,918 m) provides year-round vehicular transit.',
+    image: '/great-st-bernard-pass-switzerland-italy-road-conditions.png',
+    officialSource: 'https://letunnel.com/en/meteo/situazione-aggiornata/',
+    official_source_url: 'https://letunnel.com/en/meteo/situazione-aggiornata/',
+    official_authority: 'Etat du Valais / SISEX SA / Letunnel.com',
+    verification_status: 'VERIFIED',
+    confidence: 'HIGH',
+    last_checked_at: new Date().toISOString(),
+    weather: {
+      tempF: 50,
+      tempC: 10,
+      condition: 'Sunny & Clear Alpine Ridge',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 15,
+      depthIn: 6,
+      condition: 'High-altitude snowpack in shaded gullies, roadway completely dry and clear'
+    },
+    wind: {
+      speedKmh: 14,
+      speedMph: 9,
+      direction: 'SSE',
+      description: 'Gentle Alpine Ridge Breeze'
+    },
+    roadCondition: 'Route 21 (Swiss side) and SS27 (Italian side) are open and dry over the 2,469 m summit. Pavement is in good condition with protective avalanche galleries on the northern ascent. Narrow roadway with 9–11% gradients and tight switchbacks near the Hospice; maximum vehicle height, weight, and trailer restrictions apply over the summit road.',
+    chainRequirement: 'Summer season: No chain restrictions active. From October 15th to April 15th, winter tires (3PMSF rated) or snow chains on board are legally mandatory across all Aosta Valley and Valais mountain routes.',
+    cameras: [
+      {
+        id: 'gsb-cam-north-portal',
+        title: 'Great St Bernard — North Portal / Bourg-Saint-Bernard (CH)',
+        image: 'https://webcam.letunnel.com/webcam/camera2.jpg',
+        milepost: 'Route 21, Swiss Access Portal (1,918 m)',
+        direction: 'Northbound toward Bourg-Saint-Pierre & Martigny',
+        location: 'Bourg-Saint-Bernard, Canton du Valais, Switzerland',
+        source: 'SISEX SA / Le Tunnel du Grand-Saint-Bernard',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://letunnel.com/en/meteo/situazione-aggiornata/'
+      },
+      {
+        id: 'gsb-cam-south-portal',
+        title: 'Great St Bernard — South Portal / Saint-Rhémy-en-Bosses (IT)',
+        image: 'https://webcam.letunnel.com/webcam/image02.jpg',
+        milepost: 'SS27, Italian Access Portal (1,875 m)',
+        direction: 'Southbound toward Aosta Valley',
+        location: 'Saint-Rhémy-en-Bosses, Valle d\'Aosta, Italy',
+        source: 'SISEX SA / SITRASB S.p.A.',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://letunnel.com/en/meteo/situazione-aggiornata/'
+      },
+      {
+        id: 'gsb-cam-summit-hospice',
+        title: 'Great St Bernard Summit & Hospice Overlook (2,469 m)',
+        image: 'https://webcam.letunnel.com/webcam/image01.jpg',
+        milepost: 'Route 21 / SS27 Pass Crest & Alpine Lake',
+        direction: 'Summit Crest looking toward Swiss-Italian Border',
+        location: 'Hospice du Grand-Saint-Bernard (2,469 m)',
+        source: 'Hospice du Grand-Saint-Bernard / SISEX SA',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://letunnel.com/en/meteo/situazione-aggiornata/'
+      },
+      {
+        id: 'gsb-cam-avalanche-gallery',
+        title: 'Great St Bernard — Access Approach & Avalanche Gallery',
+        image: 'https://webcam.letunnel.com/webcam/webcam/moulin1.jpg',
+        milepost: 'Covered Avalanche Gallery Approach Road',
+        direction: 'Ascent Corridor View',
+        location: 'Grand-Saint-Bernard Gallery Sector',
+        source: 'Tunnel du Grand-Saint-Bernard Operator',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://letunnel.com/en/meteo/situazione-aggiornata/'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'furka-pass',
+        slug: 'furka-pass',
+        name: 'Furka Pass',
+        country: 'Switzerland',
+        state: 'Valais',
+        highway: 'Hauptstrasse 19',
+        status: 'OPEN',
+        elevationFt: 7969,
+        lastUpdated: '15 min ago',
+        distanceKm: 142
+      },
+      {
+        id: 'col-du-galibier',
+        slug: 'col-du-galibier',
+        name: 'Col du Galibier',
+        country: 'France',
+        state: 'Hautes-Alpes & Savoie',
+        highway: 'D902',
+        status: 'OPEN',
+        elevationFt: 8668,
+        lastUpdated: '10 min ago',
+        distanceKm: 165
+      },
+      {
+        id: 'stelvio-pass',
+        slug: 'stelvio-pass',
+        name: 'Stelvio Pass',
+        country: 'Italy',
+        state: 'South Tyrol',
+        highway: 'SS38',
+        status: 'OPEN',
+        elevationFt: 9045,
+        lastUpdated: '20 min ago',
+        distanceKm: 285
+      },
+      {
+        id: 'trollstigen-pass',
+        slug: 'trollstigen-pass',
+        name: 'Trollstigen Pass',
+        country: 'Norway',
+        state: 'Møre og Romsdal',
+        highway: 'Fv63',
+        status: 'OPEN',
+        elevationFt: 2815,
+        lastUpdated: '5 min ago',
+        distanceKm: 1720
+      }
+    ],
+    overview: {
+      openedYear: 'Ancient Bronze/Roman Era • Hospice founded 1049 AD',
+      lengthMiles: 46.6,
+      lengthKm: 75,
+      annualSnowfallIn: 450,
+      annualSnowfallM: 11.4,
+      summary: 'Great St Bernard Pass connects Martigny in the Swiss Rhone Valley to Aosta in northern Italy across the Pennine Alps. The pass has been crossed since the Bronze Age, fortified by the Romans as Summus Poeninus, celebrated for Napoleon Bonaparte’s 40,000-troop crossing in May 1800, and is home to the 11th-century Hospice of Saint Bernard where the world-famous rescue dog breed was developed.'
+    },
+    seasonalClosureInfo: {
+      typicalClosure: 'Mid-October (first major Alpine blizzards)',
+      typicalReopening: 'Late May / Early June (approx. June 1–5)',
+      description: 'The high-altitude open-air mountain pass road closes annually throughout winter and spring due to massive snowpack exceeding 10 to 15 meters on the 2,469 m summit crest. The Great St Bernard Tunnel located lower at 1,918 m remains open 24 hours a day, 365 days a year as the all-weather crossing.'
+    },
+    openingDateInfo: {
+      year: 2026,
+      statusText: 'Confirmed Open for 2026 Summer Season',
+      expectedOpeningWindow: 'Late May to early June (Officially opened June 2, 2026)',
+      closingWindow: 'Expected mid-October 2026 (subject to weather)',
+      clearanceAgency: 'Service de la mobilité du Canton du Valais & ANAS Valle d\'Aosta',
+      notes: 'Snow clearance operations using heavy rotary snow blowers (fraises à neige) commence annually in late April across the Swiss and Italian approaches. The road is opened to public traffic as soon as safety railings, avalanche clearing, and rockfall mitigation are certified by cantonal engineers.'
+    },
+    quickFacts: {
+      state: 'Valais (CH) & Valle d\'Aosta (IT)',
+      mountainRange: 'Pennine & Graian Alps (Mont Blanc Massif)',
+      elevationSummary: '2,469 m (8,100 ft) Pass Summit • 1,918 m (6,293 ft) Tunnel Portal',
+      connects: 'Martigny (Switzerland) to Aosta (Italy)',
+      nearestTown: 'Bourg-Saint-Pierre (CH) / Saint-Rhémy-en-Bosses (IT)',
+      roadType: 'Paved two-lane Alpine mountain pass (Route 21 / SS27)',
+      bestTime: 'July through September (optimal weather & dry asphalt)',
+      highlight: '11th-century Hospice, Saint Bernard Dogs, High Alpine Lake, Roman ruins'
+    },
+    routeDetails: {
+      distanceKm: 75,
+      distanceMiles: 46.6,
+      duration: '1h 35m drive over summit (or 50m via tunnel)',
+      origin: 'Martigny, Canton du Valais, Switzerland',
+      destination: 'Aosta, Valle d\'Aosta, Italy',
+      waypoints: [
+        'Martigny, Switzerland (471 m)',
+        'Sembrancher (714 m)',
+        'Orsières (887 m)',
+        'Bourg-Saint-Pierre (1,632 m)',
+        'Bourg-Saint-Bernard (1,918 m - Tunnel Entrance & Gallery Start)',
+        'Great St Bernard Pass Summit & Hospice (2,469 m)',
+        'Saint-Rhémy-en-Bosses (1,519 m)',
+        'Saint-Oyen (1,373 m)',
+        'Gignod (988 m)',
+        'Aosta, Italy (583 m)'
+      ]
+    },
+    borderInfo: {
+      isBorderCrossing: true,
+      countries: ['Switzerland (Schengen Area)', 'Italy (EU / Schengen Area)'],
+      southAfricaHours: 'Open 24/7 during summer open season',
+      lesothoHours: 'Swiss & Italian customs posts located near summit',
+      clearanceDeadline: 'Passports / National ID required for cross-border transit',
+      documentRequirements: [
+        'Valid Passport or EU National ID card (Schengen border)',
+        'Valid Driving Licence and Vehicle Registration Document',
+        'Proof of Vehicle Third-Party Liability Insurance (Green Card / International Motor Insurance Certificate)',
+        'Swiss Motorway Vignette is required only if traveling on the Swiss A9 Autoroute; local Cantonal Route 21 over the pass is toll-free'
+      ],
+      vehicleRequirements: [
+        'Maximum vehicle length over summit road: 12 meters',
+        'Heavy commercial trucks (>3.5t) and long semi-trailers prohibited from summit road (must use Tunnel)',
+        'Caravans and long motorhomes strongly advised to use Great St Bernard Tunnel due to narrow switchbacks',
+        'Headlights mandatory at all times on Swiss and Italian roads'
+      ],
+      tollInfo: 'The scenic mountain pass summit road (Route 21 / SS27) is 100% FREE OF TOLLS. The lower Great St Bernard Tunnel is a privatized toll facility.'
+    },
+    accommodationInfo: {
+      summary: 'Stay at the iconic Hospice du Grand-Saint-Bernard or in charming mountain villages in Valais and Aosta Valley.',
+      lodges: [
+        {
+          name: 'Hospice du Grand-Saint-Bernard',
+          location: 'Pass Summit (2,469 m), Swiss-Italian Border',
+          type: 'Historic Monastery & Mountain Refuge',
+          description: 'Offering traditional hospitality to pilgrims and travelers for nearly 1,000 years. Simple rooms, hearty communal meals, museum, and treasury visits.',
+          website: 'https://gsbernard.net/'
+        },
+        {
+          name: 'Auberge de l\'Hospice',
+          location: 'Pass Summit (2,469 m), Opposite the Hospice',
+          type: 'Alpine Hotel & Restaurant',
+          description: 'Comfortable hotel rooms with breathtaking views over the high-altitude lake and surrounding snow-capped peaks. Serving traditional Valaisanne and Italian specialties.',
+          website: 'https://www.auberge-hospice.ch/'
+        },
+        {
+          name: 'Hôtel du Crêt',
+          location: 'Bourg-Saint-Pierre (1,632 m), Switzerland',
+          type: 'Valley Hotel',
+          description: 'Charming traditional chalet hotel located on the northern approach road before the mountain ascent.',
+          website: 'https://hotelducret.ch/'
+        },
+        {
+          name: 'Hotel Des Alpes',
+          location: 'Saint-Rhémy-en-Bosses (1,519 m), Italy',
+          type: 'Mountain Inn',
+          description: 'Warm Italian Alpine hospitality at the foot of the southern pass ascent in Valle d\'Aosta, famous for Jambon de Bosses ham.',
+          website: 'https://www.hoteldesalpes.it/'
+        }
+      ]
+    },
+    cyclingInfo: {
+      summary: 'A monumental Alpine cycling climb featured repeatedly in the Giro d\'Italia and Tour de France. Rated Hors Catégorie (HC).',
+      approaches: [
+        {
+          name: 'Northern Swiss Approach from Martigny',
+          origin: 'Martigny, Valais, Switzerland',
+          distanceKm: 44.5,
+          distanceMiles: 27.6,
+          elevationGainM: 1998,
+          elevationGainFt: 6555,
+          avgGradient: '4.5% (last 6 km avg 8.8%)',
+          maxGradient: '11.5%',
+          hairpins: 18,
+          description: 'Long gradual ascent through Val d\'Entremont, becoming steep and dramatic after the tunnel bifurcation at Bourg-Saint-Bernard. The final 6 km to the 2,469 m summit is pure high-altitude Alpine majesty.'
+        },
+        {
+          name: 'Southern Italian Approach from Aosta',
+          origin: 'Aosta, Valle d\'Aosta, Italy',
+          distanceKm: 34.0,
+          distanceMiles: 21.1,
+          elevationGainM: 1886,
+          elevationGainFt: 6187,
+          avgGradient: '5.5% (last 10 km avg 7.2%)',
+          maxGradient: '10.5%',
+          hairpins: 24,
+          description: 'Spectacular climb through the Great St Bernard Valley, passing through Saint-Rhémy-en-Bosses before ascending a dramatic staircase of switchbacks to the summit lake.'
+        }
+      ],
+      bestSeason: 'July to September',
+      safetyTips: [
+        'Carry warm windproof and waterproof layers — summit temperatures can drop to near freezing even in midsummer',
+        'Fit front white and rear flashing red lights for visibility in tunnels and avalanche galleries',
+        'Descend with care: watch for gravel on hairpin corners and changing wind gusts at ridge lines',
+        'Hydration: fill water bottles at fountain points in Bourg-Saint-Pierre or Saint-Rhémy'
+      ]
+    },
+    drivingInfo: {
+      summary: 'Driving the Great St Bernard Pass summit road is a scenic masterpiece with smooth pavement, engineered switchbacks, and dramatic Alpine vistas. The summit road diverges from the lower tunnel route at 1,918 m on both sides, climbing into high-alpine terrain.',
+      characteristics: [
+        'Paved two-lane asphalt throughout both Swiss and Italian ascents',
+        'Covered protective avalanche gallery between Bourg-Saint-Bernard and the summit road turn-off',
+        'Tight switchbacks and stone guardrails along the final 6 km alpine crest',
+        'Maximum vehicle length limit of 12 meters over the summit road'
+      ],
+      switchbacksCount: '42 hairpins across both Swiss and Italian ramps',
+      safetyAndEtiquette: [
+        'Use low gear (engine braking) on the descent to prevent brake fade and overheating',
+        'Uphill vehicles generally have priority on narrow sections; use passing bays courteously',
+        'Watch for cyclists, classic cars, and wandering Alpine marmots near the Hospice lake',
+        'Never stop in avalanche galleries or on blind hairpin apexes'
+      ],
+      motorcycleTips: [
+        'Superb twisty tarmac with great grip in dry summer months',
+        'Fuel up in Martigny or Aosta before ascending; limited high-altitude petrol availability',
+        'Ride smoothly across painted cattle grids and wet spots near snow runoff streams'
+      ]
+    },
+    distancesTable: [
+      { location: 'Martigny (Switzerland)', distance: '45 km (28 mi)', route: 'Route 21', notes: 'Swiss valley departure point (A9 Autobahn junction)' },
+      { location: 'Bourg-Saint-Pierre', distance: '15 km (9.3 mi)', route: 'Route 21', notes: 'Last Swiss village before summit ascent' },
+      { location: 'Great St Bernard Tunnel Portal', distance: '6.5 km (4.0 mi)', route: 'Route 21 / Tunnel access', notes: 'Year-round all-weather bypass bifurcation' },
+      { location: 'Saint-Rhémy-en-Bosses (Italy)', distance: '14 km (8.7 mi)', route: 'SS27', notes: 'First Italian village on southern descent' },
+      { location: 'Aosta (Italy)', distance: '34 km (21 mi)', route: 'SS27', notes: 'Italian regional capital (A5 Autostrada junction)' },
+      { location: 'Geneva (Switzerland)', distance: '175 km (109 mi)', route: 'A1 / A9 / Route 21', notes: 'Approx. 2h 15m driving time' },
+      { location: 'Turin / Torino (Italy)', distance: '150 km (93 mi)', route: 'A5 / SS27', notes: 'Approx. 2h 00m driving time' },
+      { location: 'Milan / Milano (Italy)', distance: '220 km (137 mi)', route: 'A4 / A5 / SS27', notes: 'Approx. 2h 45m driving time' }
+    ],
+    faqs: [
+      {
+        question: 'Is Great St Bernard Pass open today?',
+        answer: 'Great St Bernard Pass is currently OPEN for the 2026 summer season with normal road conditions on Swiss Route 21 and Italian SS27. Check the live status card at the top of this page for up-to-the-minute verification from the official road authorities.'
+      },
+      {
+        question: 'Is Great St Bernard Pass open right now?',
+        answer: 'Yes, Great St Bernard Pass is currently open right now during daytime and nighttime hours for regular passenger cars, motorcycles, and cyclists. The road is clear and dry.'
+      },
+      {
+        question: 'When does Great St Bernard Pass open for the season?',
+        answer: 'Great St Bernard Pass typically opens between late May and early June (usually around June 1–5). The exact opening date depends on winter snowpack depth and snow clearing operations by Valais and Aosta road crews. For the 2026 season, the pass officially opened on June 2, 2026.'
+      },
+      {
+        question: 'What is the Great St Bernard Pass opening date?',
+        answer: 'The annual opening date occurs in late spring, generally between May 28 and June 6. Official opening announcements are published by the Canton of Valais Mobility Department and the Great St Bernard Tunnel operator (SISEX SA).'
+      },
+      {
+        question: 'When does Great St Bernard Pass close for winter?',
+        answer: 'Great St Bernard Pass typically closes for winter in mid-October (between October 10 and October 25) when the first major Alpine blizzards make the 2,469 m summit impassable. It remains closed through late May.'
+      },
+      {
+        question: 'What are the current Great St Bernard Pass road conditions?',
+        answer: 'Current road conditions on both Route 21 and SS27 are normal and dry over the summit. High-altitude mountain precautions apply: beware of sudden weather changes, steep 9–11% gradients, and narrow switchbacks near the summit lake.'
+      },
+      {
+        question: 'Is there a Great St Bernard Pass webcam?',
+        answer: 'Yes! LivePassWatch provides 4 live camera feeds for Great St Bernard Pass: the Summit & Hospice Overlook (2,469 m), the North Portal at Bourg-Saint-Bernard (CH), the South Portal at Saint-Rhémy-en-Bosses (IT), and the covered avalanche gallery approach.'
+      },
+      {
+        question: 'What is the elevation of Great St Bernard Pass?',
+        answer: 'The summit of Great St Bernard Pass is at an elevation of 2,469 meters (8,100 feet) above sea level. It is the third-highest paved mountain pass in Switzerland and the tenth-highest paved road in the Alps.'
+      },
+      {
+        question: 'What is the difference between Great St Bernard Pass and the Great St Bernard Tunnel?',
+        answer: 'The Great St Bernard Pass is the scenic, open-air mountain road (Route 21 / SS27) reaching 2,469 m, open only in summer and free of tolls. The Great St Bernard Tunnel is a 5.8 km toll tunnel located lower at 1,918 m that operates 24/7/365 as an all-weather crossing.'
+      },
+      {
+        question: 'Can you drive across Great St Bernard Pass in winter?',
+        answer: 'No, you cannot drive over the 2,469 m mountain pass summit in winter because it is buried under meters of snow. However, you CAN cross between Switzerland and Italy year-round using the Great St Bernard Tunnel (Tunnel du Grand-Saint-Bernard), which remains open 24/7.'
+      },
+      {
+        question: 'Do I need snow chains or winter tires on Great St Bernard Pass?',
+        answer: 'During the summer season (June to September), standard summer tires are sufficient on dry asphalt. From October 15th to April 15th, winter tires (3PMSF rated) or chains on board are legally mandatory across all roads in the Aosta Valley and surrounding Alpine routes.'
+      },
+      {
+        question: 'How to get to Great St Bernard Pass?',
+        answer: 'From Switzerland: Take the A9 Autobahn to Martigny, then follow Route 21 south through Sembrancher, Orsières, and Bourg-Saint-Pierre to the summit. From Italy: Take the A5 Autostrada to Aosta, then follow SS27 north through Gignod and Saint-Rhémy-en-Bosses to the pass summit.'
+      }
+    ],
+    customSeo: {
+      title: 'Great St Bernard Pass Opening Date, Road Status & Webcams',
+      description: 'Check Great St Bernard Pass opening status, live road conditions, summit webcams, weather, and snow depth before traveling across the Swiss-Italian pass.',
+      h1: 'Great St Bernard Pass Opening Date, Road Status, Webcams & Conditions'
+    }
+  },
+  {
+    id: 'grimsel-pass',
+    slug: 'grimsel-pass',
+    name: 'Grimsel Pass',
+    country: 'Switzerland',
+    countryCode: 'CHE',
+    continent: 'Europe',
+    state: 'Bern / Valais',
+    highway: 'Hauptstrasse 6 (Route 6)',
+    elevationFt: 7100,
+    elevationM: 2164,
+    coordinates: { lat: 46.5614, lng: 8.3375 },
+    status: 'OPEN',
+    statusDetail: 'Pass road open to all vehicular and bicycle traffic between Innertkirchen (BE) and Gletsch (VS). Pavement dry with normal high-alpine mountain road conditions.',
+    lastUpdated: 'Just now',
+    description: 'Grimsel Pass (elevation 2,164 m / 7,100 ft) is a celebrated high-altitude Alpine highway pass in Switzerland carrying Hauptstrasse 6 across the Bernese Alps, connecting the Haslital valley in the Canton of Bern (Innertkirchen) with the Upper Rhône Valley (Obergoms) in the Canton of Valais (Gletsch). Renowned for its wild granite landscape, turquoise hydroelectric reservoirs (Lake Grimselsee and Räterichsbodensee), the historic Grimsel Hospiz, and Totensee lake at the summit, the pass forms an essential segment of the famous Swiss "Big 3" Alpine pass loop alongside Furka and Susten passes.',
+    image: '/grimsel-pass-switzerland-road-conditions.png',
+    officialSource: 'https://www.tcs.ch/de/tools/verkehrsinfo-verkehrslage/grimsel-pass.php',
+    official_source_url: 'https://www.tcs.ch/de/tools/verkehrsinfo-verkehrslage/grimsel-pass.php',
+    official_authority: 'Swiss Touring Club (TCS) / Tiefbauamt des Kantons Bern & Dienststelle für Mobilität Wallis',
+    verification_status: 'VERIFIED',
+    confidence: 'HIGH',
+    last_checked_at: new Date().toISOString(),
+    weather: {
+      tempF: 54,
+      tempC: 12,
+      condition: 'Mostly Sunny & Alpine Crisp',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 0,
+      depthIn: 0,
+      condition: 'Bare and dry pavement across pass summit corridor'
+    },
+    wind: {
+      speedKmh: 5,
+      speedMph: 3.1,
+      direction: 'SSE',
+      description: 'Gentle Alpine Valley Breeze'
+    },
+    roadCondition: 'Hauptstrasse 6 is open and clear in both directions between Innertkirchen and Gletsch (32.5 km). Maximum gradient 11%. Pavement in good condition with broad switchbacks and passing bays. Roadway is bare and dry with clear mountain visibility past Grimsel Hospiz, Räterichsbodensee, and Totensee.',
+    chainRequirement: 'Summer season: No chain restrictions active. Road is subject to a winter closure from late October/November through late May/early June. During late autumn/spring weather transitions, winter tires (3PMSF rated) or snow chains are required when wintry road conditions develop.',
+    cameras: [
+      {
+        id: 'grimsel-cam-hospiz',
+        title: 'Grimsel Hospiz & Grimselsee Panoramacam (1,980 m)',
+        image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+        milepost: 'Route 6 Km 18.5 from Innertkirchen',
+        direction: 'Panoramic view toward Grimselsee & Grimsel Pass',
+        location: 'Grimsel Hospiz & Grimsel Dam Reservoir (Bernese Alps)',
+        source: 'Grimselstrom / Kraftwerke Oberhasli AG (KWO) & Roundshot',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://grimselwelt.roundshot.com/'
+      },
+      {
+        id: 'grimsel-cam-summit-totensee',
+        title: 'Grimsel Pass Summit & Totensee Overlook (2,164 m)',
+        image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
+        milepost: 'Route 6 Summit Crest (Bern/Valais Border)',
+        direction: 'Southbound toward Gletsch & Valais Alps',
+        location: 'Hotel Grimsel Passhöhe & Totensee Summit Crest',
+        source: 'Hotel Grimsel Passhöhe / Bergfex Live View',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://hotel-grimselpass.ch/'
+      },
+      {
+        id: 'grimsel-cam-raterichsboden',
+        title: 'Räterichsbodensee Dam & North Ascent Corridor',
+        image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80',
+        milepost: 'Route 6 Northern Mountain Grade (1,767 m)',
+        direction: 'Northbound toward Handegg & Innertkirchen',
+        location: 'Räterichsboden Dam, Bernese Oberland',
+        source: 'Grimselwelt / KWO Hydro System',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.grimselwelt.ch/'
+      },
+      {
+        id: 'grimsel-cam-gletsch',
+        title: 'Gletsch Valley Approach & Furka/Grimsel Junction',
+        image: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1200&q=80',
+        milepost: 'Route 6 & Route 19 Pass Intersection',
+        direction: 'Looking toward Grimsel Valais Switchbacks',
+        location: 'Gletsch / Obergoms, Canton of Valais (1,759 m)',
+        source: 'Matterhorn Gotthard Bahn / Goms Tourismus',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.goms.ch/'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'furka-pass',
+        slug: 'furka-pass',
+        name: 'Furka Pass',
+        country: 'Switzerland',
+        state: 'Valais / Uri',
+        highway: 'Hauptstrasse 19',
+        status: 'OPEN',
+        elevationFt: 7969,
+        lastUpdated: '10 min ago',
+        distanceKm: 10
+      },
+      {
+        id: 'susten-pass',
+        slug: 'susten-pass',
+        name: 'Susten Pass',
+        country: 'Switzerland',
+        state: 'Bern / Uri',
+        highway: 'Route 11',
+        status: 'OPEN',
+        elevationFt: 7297,
+        lastUpdated: '15 min ago',
+        distanceKm: 38
+      },
+      {
+        id: 'nufenen-pass',
+        slug: 'nufenen-pass',
+        name: 'Nufenen Pass',
+        country: 'Switzerland',
+        state: 'Valais / Ticino',
+        highway: 'Passo della Novena',
+        status: 'OPEN',
+        elevationFt: 8120,
+        lastUpdated: '20 min ago',
+        distanceKm: 32
+      },
+      {
+        id: 'gotthard-pass',
+        slug: 'gotthard-pass',
+        name: 'Gotthard Pass',
+        country: 'Switzerland',
+        state: 'Uri / Ticino',
+        highway: 'Route 2 / Tremola',
+        status: 'OPEN',
+        elevationFt: 6909,
+        lastUpdated: '15 min ago',
+        distanceKm: 52
+      },
+      {
+        id: 'great-st-bernard-pass',
+        slug: 'great-st-bernard-pass',
+        name: 'Great St Bernard Pass',
+        country: 'Switzerland',
+        state: 'Valais',
+        highway: 'Route 21 (CH) / SS27 (IT)',
+        status: 'OPEN',
+        elevationFt: 8100,
+        lastUpdated: '15 min ago',
+        distanceKm: 155
+      }
+    ],
+    overview: {
+      openedYear: 1894,
+      lengthMiles: 20.2,
+      lengthKm: 32.5,
+      annualSnowfallIn: 450,
+      annualSnowfallM: 11.4,
+      summary: 'Grimsel Pass (2,164 m / 7,100 ft) is a world-class high Alpine mountain road traversing the watershed divide between the North Sea (Aare / Rhine river basins) and the Mediterranean Sea (Rhône river basin). Constructed as a modern road between 1891 and 1894, the pass replaced ancient packhorse trails used by medieval traders transporting Hasli cheese and cattle south to Italy in exchange for wine, corn, and silk. Today, Grimsel is renowned for its monumental hydroelectric dams engineered by Kraftwerke Oberhasli (KWO), stark granite mountain scenery, deep glacier valleys, and direct connectivity to Furka and Susten passes, making it an essential destination for drivers, motorcyclists, and cyclists from across the globe.'
+    },
+    seasonalClosureInfo: {
+      typicalClosure: 'Late October / November (depending on early snowfall & ice)',
+      typicalReopening: 'Late May / Early June (following spring snow clearance)',
+      description: 'Grimsel Pass is subject to a strict winter closure due to heavy snowfall, severe avalanche hazards, and freezing conditions across its high-altitude granite slopes. The pass road between Handegg/Innertkirchen (Canton of Bern) and Oberwald/Gletsch (Canton of Valais) is closed to all motorized traffic and cyclists throughout winter. Cantonal road departments work in close partnership with Kraftwerke Oberhasli AG, which maintains partial winter access to power plants via cable cars and subterranean tunnels, but the public summit highway remains completely closed until spring plowing is completed.'
+    },
+    openingDateInfo: {
+      year: 2026,
+      statusText: 'Pass is OPEN for the 2026 Summer/Autumn Season (Officially opened late May 2026)',
+      expectedOpeningWindow: 'Late May to Early June annually',
+      closingWindow: 'Late October to Early November annually',
+      clearanceAgency: 'Tiefbauamt des Kantons Bern (Oberhasli division) & Service des ponts et chaussées du Valais',
+      notes: 'Spring snow clearing operations typically commence in mid-April. Heavy rotary snowplows (Schneefräsen) cut through hard-packed snowdrifts up to 8 to 12 meters deep along the dam crests and upper switchbacks. Opening date announcements are published officially by Swiss TCS and the Bernese and Valais cantonal road offices once road safety barriers, rockfall mesh, and avalanche hazard assessments are finalized.'
+    },
+    quickFacts: {
+      state: 'Bern & Valais, Switzerland',
+      mountainRange: 'Bernese Alps / Urner Alps (Central Swiss Alps)',
+      elevationSummary: '2,164 m (7,100 ft) at pass crest / Totensee',
+      connects: 'Innertkirchen (Haslital, BE) to Gletsch (Obergoms, VS)',
+      nearestTown: 'Innertkirchen (North, 625 m) & Oberwald / Gletsch (South, 1,759 m)',
+      roadType: 'Hauptstrasse 6 (Two-lane paved Swiss cantonal highway)',
+      bestTime: 'July through September for warm weather, dry asphalt & clear mountain views',
+      highlight: 'Grimsel Hospiz dam complex, Totensee lake, Gelmerbahn funicular, and Rhone/Aare divide'
+    },
+    routeDetails: {
+      distanceKm: 32.5,
+      distanceMiles: 20.2,
+      duration: '45 to 60 minutes (driving)',
+      origin: 'Innertkirchen, Canton of Bern (Elevation: 625 m)',
+      destination: 'Gletsch, Canton of Valais (Elevation: 1,759 m)',
+      waypoints: [
+        'Innertkirchen (625 m)',
+        'Guttannen (1,057 m)',
+        'Handegg / Gelmerbahn valley station (1,401 m)',
+        'Räterichsbodensee dam (1,767 m)',
+        'Grimsel Hospiz & Grimselsee reservoir (1,980 m)',
+        'Grimsel Pass Summit & Totensee (2,164 m)',
+        'Gletsch valley junction (1,759 m)'
+      ]
+    },
+    cyclingInfo: {
+      summary: 'Grimsel Pass is one of Europe\'s most revered cycling ascents. The northern climb from Innertkirchen is a sustained 26 km climb gaining 1,539 vertical meters with an average gradient of 5.9% (maximum 11%). The southern ascent from Gletsch is a shorter, intense 6 km blast ascending 405 meters at 6.8% with tight, panoramic hairpin switchbacks overlooking the Rhône Glacier valley.',
+      approaches: [
+        {
+          name: 'North Approach (Innertkirchen Ascent)',
+          origin: 'Innertkirchen, Bernese Oberland',
+          distanceKm: 26.0,
+          distanceMiles: 16.2,
+          elevationGainM: 1539,
+          elevationGainFt: 5049,
+          avgGradient: '5.9%',
+          maxGradient: '11.0%',
+          hairpins: 12,
+          description: 'Long, gradual valley climb starting through green meadows and pine forests from Innertkirchen past Guttannen and Handegg, steepening over granite rock slabs and dam reservoirs up to Grimsel Hospiz and the 2,164 m summit crest.'
+        },
+        {
+          name: 'South Approach (Gletsch Ascent)',
+          origin: 'Gletsch / Obergoms, Canton of Valais',
+          distanceKm: 6.0,
+          distanceMiles: 3.7,
+          elevationGainM: 405,
+          elevationGainFt: 1329,
+          avgGradient: '6.8%',
+          maxGradient: '9.5%',
+          hairpins: 6,
+          description: 'Short, steep Alpine staircase of switchbacks climbing out of the Gletsch valley floor directly up the rocky south wall to Totensee lake on the pass crest. Spectacular views back toward the Furka Pass road.'
+        }
+      ],
+      bestSeason: 'Late June through September (dry pavement, warm sunshine, and open summit facilities)',
+      safetyTips: [
+        'Illuminated bicycle front and rear lights are legally required in Switzerland when cycling through tunnels and avalanche galleries.',
+        'Carry a windproof jacket or thermal vest; high-speed descents from 2,164 m can cause rapid windchill even on sunny summer days.',
+        'Watch for high-traffic weekends with sports cars, postal buses, and motorcycles on narrow switchbacks.',
+        'Ensure brake pads and tire pressures are thoroughly checked before embarking on the 26 km descent.'
+      ]
+    },
+    drivingInfo: {
+      summary: 'Driving Grimsel Pass on Route 6 is a thrilling, scenic Alpine experience on well-maintained Swiss asphalt. The road features wide two-lane asphalt sections, well-graded switchbacks, protective avalanche galleries, and multiple designated scenic turnouts near the hydroelectric reservoirs.',
+      characteristics: [
+        'Total corridor length: 32.5 km between Innertkirchen (BE) and Gletsch (VS)',
+        'Maximum road gradient: 11% (comfortable for modern passenger cars, motorbikes, and RVs)',
+        'Pavement: High-quality asphalt with stone kerbing and modern crash barriers',
+        'Tolls: 100% Toll-free. Swiss motorway vignette is NOT required on Hauptstrasse 6 cantonal road',
+        'Services: Summit restaurant, hotel accommodations, gift shops, and slow EV charging station at pass crest'
+      ],
+      switchbacksCount: '18 major engineered hairpin curves across the corridor',
+      safetyAndEtiquette: [
+        'PostBus Right-of-Way: Yellow Swiss PostBuses have strict legal priority on narrow mountain curves. When you hear the iconic 3-tone PostBus horn ("Tu-Ta-To"), slow down or yield at the nearest passing bay.',
+        'Uphill Priority: On narrow mountain sections where two vehicles cannot pass simultaneously, the uphill-traveling vehicle has priority over downhill traffic.',
+        'Engine Braking: Downshift to a lower gear (2nd or 3rd) on prolonged descents to avoid brake overheating and fade.',
+        'Daytime Running Lights: Headlights or daytime running lights are legally mandatory 24/7 on all Swiss roads.',
+        'Speed Limits: 80 km/h (50 mph) on open rural roads outside towns; 50 km/h (31 mph) within municipal limits.'
+      ],
+      motorcycleTips: [
+        'Granite rock dust can reduce traction after fresh mountain rain — ride with caution near quarry and dam construction zones.',
+        'Combine Grimsel with Furka (Route 19) and Susten (Route 11) for the legendary 120 km Swiss "Big 3" Pass Loop.',
+        'Fill up your fuel tank in Meiringen/Innertkirchen or Oberwald/Ulrichen before starting the mountain climb.'
+      ]
+    },
+    distancesTable: [
+      { location: 'Innertkirchen (North Base)', distance: '26 km / 16 mi', route: 'Hauptstrasse 6 (North)', notes: 'Direct valley base in Bernese Oberland' },
+      { location: 'Meiringen', distance: '32 km / 20 mi', route: 'Route 6 & Route 11', notes: 'Gateway to Aare Gorge and Reichenbach Falls' },
+      { location: 'Interlaken', distance: '58 km / 36 mi', route: 'A8 / Route 6', notes: 'Bernese Oberland tourism hub' },
+      { location: 'Gletsch (South Base)', distance: '6 km / 3.7 mi', route: 'Hauptstrasse 6 (South)', notes: 'Historic hotel settlement at Furka/Grimsel junction' },
+      { location: 'Oberwald (Obergoms)', distance: '12 km / 7.5 mi', route: 'Route 6 & Route 19', notes: 'Furka car shuttle train terminal' },
+      { location: 'Brig (Valais)', distance: '52 km / 32 mi', route: 'Route 19 West', notes: 'Simplon Pass gateway and rail hub' },
+      { location: 'Lucerne', distance: '85 km / 53 mi', route: 'A8 / Brünig Pass / Route 6', notes: 'Central Switzerland' },
+      { location: 'Zurich', distance: '135 km / 84 mi', route: 'A4 / A8 / Route 6', notes: 'Approx. 2 hours driving' }
+    ],
+    dataSources: [
+      {
+        name: 'Swiss TCS (Touring Club Suisse)',
+        type: 'Official Swiss Road Authority & Pass Portal',
+        url: 'https://www.tcs.ch/de/tools/verkehrsinfo-verkehrslage/grimsel-pass.php'
+      },
+      {
+        name: 'Canton of Bern (Tiefbauamt) & Canton of Valais (Dienststelle für Mobilität)',
+        type: 'Cantonal Highway Operators',
+        url: 'https://www.bve.be.ch/'
+      },
+      {
+        name: 'MeteoSwiss (Federal Office of Meteorology and Climatology)',
+        type: 'Official Swiss Federal Weather Service',
+        url: 'https://www.meteoswiss.admin.ch/'
+      },
+      {
+        name: 'Grimselstrom / Kraftwerke Oberhasli AG (KWO) & Roundshot',
+        type: 'Official Dam & Summit Webcam Operators',
+        url: 'https://grimselwelt.roundshot.com/'
+      }
+    ],
+    faqs: [
+      {
+        question: 'Is Grimsel Pass open today?',
+        answer: 'Yes, Grimsel Pass is currently OPEN for all vehicular, motorcycle, and bicycle traffic. The Swiss TCS and cantonal road authorities confirm normal high-alpine driving conditions between Innertkirchen (Canton of Bern) and Gletsch (Canton of Valais) with bare and dry pavement across the 2,164 m summit.'
+      },
+      {
+        question: 'Is Grimsel Pass open right now?',
+        answer: 'Yes, Grimsel Pass is open right now with unrestricted access across Hauptstrasse 6. Road conditions are monitored continuously by Swiss TCS and local highway maintenance crews.'
+      },
+      {
+        question: 'When does Grimsel Pass open?',
+        answer: 'Grimsel Pass typically opens for the summer driving season between late May and early June, once cantonal snowplows have cleared winter snowdrifts and repaired any avalanche barriers. For 2026, the pass opened in late May and remains fully operational.'
+      },
+      {
+        question: 'What is the Grimsel Pass opening date?',
+        answer: 'The annual opening date of Grimsel Pass depends entirely on snow depth and spring temperatures. Historical openings occur between May 20th and June 10th. For the 2026 season, Grimsel Pass was officially cleared and reopened in late May 2026.'
+      },
+      {
+        question: 'When does Grimsel Pass close for winter?',
+        answer: 'Grimsel Pass closes for winter typically in late October or early November following the first heavy Alpine snowfall. The road remains closed throughout the winter until late May or early June. The exact closure date is announced annually by the Swiss TCS and cantonal authorities depending on immediate weather forecasts.'
+      },
+      {
+        question: 'What are the current Grimsel Pass road conditions?',
+        answer: 'Current road conditions on Grimsel Pass are bare and dry with clear visibility. The 32.5 km mountain highway between Innertkirchen and Gletsch is fully paved with a maximum gradient of 11%. No tire chain restrictions or vehicle size bans are currently in effect.'
+      },
+      {
+        question: 'Is there a Grimsel Pass webcam?',
+        answer: 'Yes, multiple verified webcams monitor Grimsel Pass, including the high-resolution Roundshot panoramic camera at Grimsel Hospiz overlooking Lake Grimselsee (1,980 m) and the Hotel Grimsel Passhöhe webcam overlooking Totensee at the 2,164 m summit crest.'
+      },
+      {
+        question: 'What is the Grimsel Pass elevation?',
+        answer: 'The summit of Grimsel Pass sits at an official elevation of 2,164 meters (7,100 feet) above sea level, as officially documented by the Swiss Touring Club (TCS) and Swisstopo. The pass marks the continental watershed between the Rhine (North Sea) and Rhône (Mediterranean) river basins.'
+      },
+      {
+        question: 'Is Grimsel Pass open in winter?',
+        answer: 'No, Grimsel Pass is NOT open in winter. The high-altitude pass road between Handegg and Gletsch is buried under meters of snow and closed to all traffic from November to May. During winter, travelers between Bernese Oberland and Valais use the Lötschberg car train.'
+      },
+      {
+        question: 'How do I travel between Bernese Oberland and Valais when Grimsel Pass is closed?',
+        answer: 'When Grimsel Pass is closed for winter, the fastest vehicular route between the Bernese Oberland and Canton of Valais is the Lötschberg car train (BLS Autoverlad) operating between Kandersteg and Goppenstein (15-minute train ride through the Lötschberg Tunnel). Alternatively, the Furka car train (MGB Autoverlad) operates between Realp and Oberwald.'
+      }
+    ],
+    isPopular: true,
+    customSeo: {
+      title: 'Grimsel Pass Opening Date, Road Status & Live Webcams',
+      description: 'Check live Grimsel Pass opening status, road conditions, live webcams, weather, and snow depth on Route 6 between Innertkirchen and Gletsch, Switzerland.',
+      h1: 'Grimsel Pass Opening Date, Road Status, Webcams & Conditions'
+    }
+  },
+  {
+    id: 'gotthard-pass',
+    slug: 'gotthard-pass',
+    name: 'Gotthard Pass (Passo del San Gottardo / Gotthardpass)',
+    country: 'Switzerland',
+    countryCode: 'CHE',
+    continent: 'Europe',
+    state: 'Uri / Ticino',
+    highway: 'Hauptstrasse 2 (Route 2) / Tremola',
+    elevationFt: 6909,
+    elevationM: 2106,
+    coordinates: { lat: 46.5586, lng: 8.5614 },
+    status: 'OPEN',
+    statusDetail: 'Gotthard Pass road (Hauptstrasse 2) and historic Tremola cobblestone route are OPEN to all vehicular and bicycle traffic between Hospental/Andermatt (UR) and Airolo (TI). Normal summer high-alpine driving conditions apply.',
+    lastUpdated: 'Just now',
+    description: 'Gotthard Pass (Passo del San Gottardo / Gotthardpass, elevation 2,106 m / 6,909 ft) is Switzerland\'s most historic and strategically vital Alpine mountain pass. Connecting the German-speaking Canton of Uri (Andermatt / Hospental) in the north with the Italian-speaking Canton of Ticino (Airolo / Valle Leventina) in the south across the Saint-Gotthard Massif, the pass features two distinct roadways: the modern paved Hauptstrasse 2 bypass with wide sweeping bends and protective galleries, and the world-famous historic Tremola road—a designated Swiss historical monument featuring 24 granite cobblestone hairpin switchbacks ascending the southern ramp into Airolo.',
+    image: '/gotthard-pass-switzerland-road-conditions.png',
+    officialSource: 'https://www.tcs.ch/de/tools/verkehrsinfo-verkehrslage/gotthard-pass.php',
+    official_source_url: 'https://www.tcs.ch/de/tools/verkehrsinfo-verkehrslage/gotthard-pass.php',
+    official_authority: 'Swiss Touring Club (TCS) / Tiefbauamt des Kantons Uri & Dipartimento del territorio Cantone Ticino',
+    verification_status: 'VERIFIED',
+    confidence: 'HIGH',
+    last_checked_at: new Date().toISOString(),
+    weather: {
+      tempF: 55,
+      tempC: 13,
+      condition: 'Sunny & Alpine Breeze',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 0,
+      depthIn: 0,
+      condition: 'Bare and dry asphalt on H2 bypass and dry cobblestone on Tremola ramp'
+    },
+    wind: {
+      speedKmh: 12,
+      speedMph: 7.5,
+      direction: 'NNE',
+      description: 'Moderate Alpine Ridge Breeze'
+    },
+    roadCondition: 'Hauptstrasse 2 and the historic Tremola route are open and clear between Hospental and Airolo (26.8 km). Maximum gradient 12%. Pavement in good condition. Motorists may choose between the modern asphalt bypass road or the historic granite cobblestone Tremola. Commercial trucks over 18t and caravans are prohibited on the Tremola and must use the modern H2 pass road.',
+    chainRequirement: 'Summer season: No chain restrictions active. Road is subject to a winter closure from late October/November through late May/early June. During late autumn/spring weather transitions, winter tires (3PMSF rated) or snow chains are required when wintry road conditions develop.',
+    cameras: [
+      {
+        id: 'gotthard-cam-hospiz',
+        title: 'Gotthard Hospiz — Pass Road & Lago della Piazza (2,091 m)',
+        image: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1200&q=80',
+        location: 'Gotthard Passhöhe / Albergo San Gottardo Summit Crest',
+        milepost: 'Hauptstrasse 2 — Summit Ridge (Uri/Ticino Cantonal Border)',
+        direction: 'Panoramic View toward Pass Summit & Lago della Piazza',
+        source: 'TCS Verkehrsinfo & Gotthard Live Traffic Systems',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.gotthard-traffic.ch/'
+      },
+      {
+        id: 'gotthard-cam-galleria-banchi',
+        title: 'Galleria dei Banchi — Pass Road (1,850 m)',
+        image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
+        location: 'Galleria dei Banchi Avalanche Gallery, South Ramp',
+        milepost: 'Hauptstrasse 2 / Route 2 — Km 14 from Airolo',
+        direction: 'Northbound toward Gotthard Summit Passhöhe',
+        source: 'Dipartimento del territorio Cantone Ticino & TCS',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.tcs.ch/de/tools/verkehrsinfo-verkehrslage/gotthard-pass.php'
+      },
+      {
+        id: 'gotthard-cam-tremola',
+        title: 'Historic Tremola Cobblestone Switchbacks (Passo del San Gottardo)',
+        image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+        location: 'Val Tremola Historical Monument, Southern Ascent',
+        milepost: 'Historic Tremola Cobblestone Highway (24 Hairpin Curves)',
+        direction: 'Looking uphill toward Gotthard Pass summit crest',
+        source: 'Fondazione Pro San Gottardo & Roundshot',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://passosangottardo.ch/'
+      },
+      {
+        id: 'gotthard-cam-airolo-south',
+        title: 'Airolo South Ramp & Gotthard Tunnel South Portal (1,150 m)',
+        image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80',
+        location: 'Airolo, Valle Leventina, Canton of Ticino',
+        milepost: 'A2 Motorway & H2 Mountain Pass Junction',
+        direction: 'South Approach corridor toward Bellinzona & Lugano',
+        source: 'Swiss Federal Roads Office (ASTRA) & Gotthard Live Traffic',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.gotthard-traffic.ch/'
+      },
+      {
+        id: 'gotthard-cam-goschenen-north',
+        title: 'Göschenen / Wassen North Ramp & Tunnel Entrance (1,110 m)',
+        image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80',
+        location: 'Göschenen / Schöllenen Gorge Portal, Canton of Uri',
+        milepost: 'A2 Motorway Km 98 & H2 Mountain Ascent Junction',
+        direction: 'Looking South toward Gotthard Massif Entrance',
+        source: 'ASTRA & Uri Cantonal Police Traffic Division',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.tcs.ch/de/tools/verkehrsinfo-verkehrslage/aktuelle-lage-gotthard.php'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'oberalp-pass',
+        slug: 'oberalp-pass',
+        name: 'Oberalp Pass',
+        country: 'Switzerland',
+        state: 'Uri / Graubünden',
+        highway: 'Hauptstrasse 19',
+        status: 'OPEN',
+        elevationFt: 6706,
+        lastUpdated: '10 min ago',
+        distanceKm: 12
+      },
+      {
+        id: 'furka-pass',
+        slug: 'furka-pass',
+        name: 'Furka Pass',
+        country: 'Switzerland',
+        state: 'Uri / Valais',
+        highway: 'Hauptstrasse 19',
+        status: 'OPEN',
+        elevationFt: 7969,
+        lastUpdated: '10 min ago',
+        distanceKm: 20
+      },
+      {
+        id: 'susten-pass',
+        slug: 'susten-pass',
+        name: 'Susten Pass',
+        country: 'Switzerland',
+        state: 'Uri / Bern',
+        highway: 'Route 11',
+        status: 'OPEN',
+        elevationFt: 7297,
+        lastUpdated: '15 min ago',
+        distanceKm: 32
+      },
+      {
+        id: 'nufenen-pass',
+        slug: 'nufenen-pass',
+        name: 'Nufenen Pass',
+        country: 'Switzerland',
+        state: 'Ticino / Valais',
+        highway: 'Passo della Novena',
+        status: 'OPEN',
+        elevationFt: 8120,
+        lastUpdated: '15 min ago',
+        distanceKm: 28
+      },
+      {
+        id: 'grimsel-pass',
+        slug: 'grimsel-pass',
+        name: 'Grimsel Pass',
+        country: 'Switzerland',
+        state: 'Bern / Valais',
+        highway: 'Hauptstrasse 6',
+        status: 'OPEN',
+        elevationFt: 7100,
+        lastUpdated: '15 min ago',
+        distanceKm: 42
+      },
+      {
+        id: 'lukmanier-pass',
+        slug: 'lukmanier-pass',
+        name: 'Lukmanier Pass (Passo del Lucomagno)',
+        country: 'Switzerland',
+        state: 'Graubünden / Ticino',
+        highway: 'Route 416',
+        status: 'OPEN',
+        elevationFt: 6286,
+        lastUpdated: '20 min ago',
+        distanceKm: 45
+      },
+      {
+        id: 'san-bernardino-pass',
+        slug: 'san-bernardino-pass',
+        name: 'San Bernardino Pass',
+        country: 'Switzerland',
+        state: 'Graubünden / Ticino',
+        highway: 'Hauptstrasse 13 (H13 / A13)',
+        status: 'OPEN',
+        elevationFt: 6775,
+        lastUpdated: '20 min ago',
+        distanceKm: 68
+      }
+    ],
+    overview: {
+      openedYear: 1830,
+      lengthMiles: 16.7,
+      lengthKm: 26.8,
+      annualSnowfallIn: 480,
+      annualSnowfallM: 12.2,
+      summary: 'Gotthard Pass (elevation 2,106 m / 6,909 ft) is the historic geographic, cultural, and watershed heart of Switzerland. For centuries known as the "King of Mountain Passes," the Gotthard traverses the granite massif separating the Rhine and Reuss river basins (flowing north into the North Sea) from the Ticino and Po river basins (flowing south into the Mediterranean Sea). Constructed as a modern paved carriageway between 1827 and 1830 by engineer Francesco Meschini, the southern descent through the Val Tremola became legendary for its masterfully engineered granite cobblestone switchbacks. Today, the Gotthard pass road offers travelers an incomparable scenic journey past crystal alpine lakes, historic military fortresses, and high alpine panoramas, serving as the premier open-air alternative to the enclosed A2 Gotthard road tunnel.'
+    },
+    seasonalClosureInfo: {
+      typicalClosure: 'Late October / Early November (depending on early snowfall & ice)',
+      typicalReopening: 'Late May / Early June (following spring snow clearance)',
+      description: 'Gotthard Pass is subject to a strict winter closure due to heavy snowfall, severe avalanche hazards, and freezing conditions across the high-altitude Uri and Ticino ramps. The pass road between Hospental (Canton of Uri) and Airolo (Canton of Ticino) is closed to all motorized traffic and cyclists throughout winter. While the underlying A2 Gotthard Road Tunnel remains open year-round at 1,100 m elevation, the 2,106 m mountain pass road remains closed until cantonal rotary snowplows clear meters of hard-packed snow in late spring.'
+    },
+    openingDateInfo: {
+      year: 2026,
+      statusText: 'Pass is OPEN for the 2026 Summer/Autumn Season (Officially opened late May 2026)',
+      expectedOpeningWindow: 'Late May to Early June annually',
+      closingWindow: 'Late October to Early November annually',
+      clearanceAgency: 'Tiefbauamt des Kantons Uri (Uri maintenance depot) & Dipartimento del territorio Cantone Ticino (Airolo road district)',
+      notes: 'Spring snow clearing operations typically commence in mid-April. Heavy rotary snowplows (Schneefräsen) cut through hard-packed snowdrifts up to 8 to 12 meters deep along the Tremola switchbacks and summit crest. Opening date announcements are published officially by Swiss TCS and cantonal road authorities once rockfall barriers, avalanche nets, and cobblestone roadway inspections are certified safe.'
+    },
+    quickFacts: {
+      state: 'Uri & Ticino, Switzerland',
+      mountainRange: 'Saint-Gotthard Massif / Lepontine & Glarus Alps (Central Switzerland)',
+      elevationSummary: '2,106 m (6,909 ft) at pass crest / Lago della Piazza',
+      connects: 'Andermatt / Hospental (Urserental, UR) to Airolo (Valle Leventina, TI)',
+      nearestTown: 'Andermatt (North, 1,444 m) & Airolo (South, 1,175 m)',
+      roadType: 'Hauptstrasse 2 (Paved modern bypass) & Historic Tremola (Granite cobblestones)',
+      bestTime: 'June through October for dry roads, cycling, motorcycle touring, and summit museum visits',
+      highlight: 'Historic Tremola cobblestone hairpins, Gotthard Hospice (Albergo San Gottardo), Sasso San Gottardo fortress, and Schöllenen Gorge'
+    },
+    routeDetails: {
+      distanceKm: 26.8,
+      distanceMiles: 16.7,
+      duration: '35 to 50 minutes (driving)',
+      origin: 'Andermatt / Hospental, Canton of Uri (Elevation: 1,444 m)',
+      destination: 'Airolo, Canton of Ticino (Elevation: 1,175 m)',
+      waypoints: [
+        'Andermatt / Schöllenen Gorge (1,444 m)',
+        'Hospental (1,452 m)',
+        'Gamssteg & Mätteli (1,770 m)',
+        'Brüggloch avalanche gallery (1,920 m)',
+        'Gotthard Pass Summit & Albergo San Gottardo (2,106 m)',
+        'Lago di Lucendro & Lago della Piazza (2,091 m)',
+        'Val Tremola historic cobblestone descent (24 hairpins, 1,700–1,950 m)',
+        'Galleria dei Banchi (1,850 m)',
+        'Airolo valley junction (1,175 m)'
+      ]
+    },
+    cyclingInfo: {
+      summary: 'Gotthard Pass is one of Europe\'s most iconic and revered cycling challenges, made famous by the legendary cobblestones of the Val Tremola. Cyclists worldwide travel to ride the 24 historic granite hairpins climbing 300 vertical meters up from Airolo to the 2,106 m summit. The northern ascent from Andermatt/Hospental is a steady, smooth asphalt climb through wide alpine meadows, while the southern climb presents an authentic retro-cycling adventure.',
+      approaches: [
+        {
+          name: 'South Approach via Val Tremola (Airolo Ascent)',
+          origin: 'Airolo, Canton of Ticino',
+          distanceKm: 12.8,
+          distanceMiles: 8.0,
+          elevationGainM: 932,
+          elevationGainFt: 3057,
+          avgGradient: '7.3%',
+          maxGradient: '12.0%',
+          hairpins: 24,
+          description: 'The world-famous cobblestone climb. Starts out of Airolo through green pastures on smooth asphalt before turning onto the historic Tremola monument road. Features 24 tight granite-paved switchbacks climbing steeply beneath sheer rock faces to the summit crest.'
+        },
+        {
+          name: 'North Approach (Andermatt / Hospental Ascent)',
+          origin: 'Andermatt / Hospental, Canton of Uri',
+          distanceKm: 12.0,
+          distanceMiles: 7.5,
+          elevationGainM: 654,
+          elevationGainFt: 2145,
+          avgGradient: '5.5%',
+          maxGradient: '9.0%',
+          hairpins: 8,
+          description: 'Gradual, scenic northern ascent on smooth, broad asphalt. Begins in the Urseren valley at Hospental, climbing steadily past wild alpine streams, avalanche protective galleries, and panoramic grassy mountain slopes to Lago della Piazza.'
+        }
+      ],
+      bestSeason: 'Late June through September (dry pavement, warm alpine temperatures, and open summit facilities)',
+      safetyTips: [
+        'Ride carefully on the Tremola cobblestones when wet; damp granite paving stones can become extremely slick for narrow road bike tires.',
+        'Front and rear bicycle lights are legally mandatory in Switzerland when cycling through tunnels and avalanche galleries on Hauptstrasse 2.',
+        'Carry a warm windproof jacket; rapid temperature drops of 10–15°C occur between valley floors and the 2,106 m summit.',
+        'Ensure brake pads are inspected before descending; the sustained descent on cobblestones requires controlled, steady braking.'
+      ]
+    },
+    drivingInfo: {
+      summary: 'Driving Gotthard Pass on Route 2 / Tremola is a breathtaking Swiss Alpine motoring experience. Drivers have the choice of two routes on the southern ramp: the modern paved Hauptstrasse 2 bypass with broad sweeping turns, or the historic granite cobblestone Tremola road with 24 iconic switchbacks.',
+      switchbacksCount: '24 Hairpin Turns (Tremola Cobblestones) / 8 Hairpins (North Approach)',
+      characteristics: [
+        'Two distinct routes on South Ramp: Modern asphalt bypass road with protective galleries vs historic granite cobblestone Tremola.',
+        'Maximum gradient of 12% with wide, well-maintained corners on the modern road and tight historic hairpins on Tremola.',
+        'Toll-free public Swiss cantonal highway (Swiss Highway Vignette NOT required on the pass road or Tremola).',
+        'Commercial trucks over 18 tons and caravans are strictly prohibited from the Tremola; must use modern H2 bypass.',
+        'Designated scenic pull-outs at Gotthard Hospiz, Lago della Piazza, and Tremola viewing platform.'
+      ],
+      safetyAndEtiquette: [
+        'Use 1st and 2nd low gears for engine braking on long descents down to Airolo or Hospental to prevent brake overheating.',
+        'Swiss PostBuses (PostAuto) always have right-of-way on mountain roads; listen for their signature 3-tone horn on blind corners.',
+        'Keep low-beam headlights illuminated at all times (mandatory by Swiss federal road law).',
+        'Yield to uphill traffic on narrow sections and use designated passing turnouts.'
+      ],
+      motorcycleTips: [
+        'The Tremola is universally celebrated as a top bucket-list motorcycle route in the Alps. Ride at moderate speeds to comfortably absorb cobblestone vibrations.',
+        'Check tire pressure and avoid aggressive leaning angles on cobblestones, particularly near the mountain streams.',
+        'Combine Gotthard with Furka and Susten passes for the classic Swiss "Andermatt Loop" day tour.'
+      ]
+    },
+    distancesTable: [
+      { location: 'Andermatt (UR)', distance: '12 km (7.5 mi)', route: 'Hauptstrasse 2 North', notes: 'Urserental valley hub & Matterhorn Gotthard Bahn terminal' },
+      { location: 'Airolo (TI)', distance: '14 km (8.7 mi)', route: 'Tremola / H2 South', notes: 'Valle Leventina base & Gotthard Tunnel south portal' },
+      { location: 'Lucerne (LU)', distance: '85 km (53 mi)', route: 'A2 North / H2', notes: 'Major Lake Lucerne tourist gateway via Schöllenen Gorge' },
+      { location: 'Zurich (ZH)', distance: '128 km (80 mi)', route: 'A4 / A2 North to H2', notes: 'Approx. 1h 45m drive via Altdorf & Göschenen' },
+      { location: 'Bellinzona (TI)', distance: '68 km (42 mi)', route: 'A2 South / H2', notes: 'Canton Ticino capital & UNESCO medieval castles' },
+      { location: 'Lugano (TI)', distance: '98 km (61 mi)', route: 'A2 South / H2', notes: 'Lake Lugano resort center & Italian border' },
+      { location: 'Milan, Italy', distance: '172 km (107 mi)', route: 'A2 South / Autostrada A9', notes: 'Approx. 2h 15m international Alpine transit route' }
+    ],
+    faqs: [
+      {
+        question: 'Is Gotthard Pass open right now?',
+        answer: 'Yes! Gotthard Pass is currently OPEN for summer and autumn travel. Both the modern paved Hauptstrasse 2 bypass and the historic granite cobblestone Tremola road are open to vehicular and bicycle traffic between Hospental (Uri) and Airolo (Ticino). Status is verified live against Swiss Touring Club (TCS) and cantonal road authorities.'
+      },
+      {
+        question: 'Is Gotthard Pass open today?',
+        answer: 'Yes, Gotthard Pass is open today with normal summer alpine road conditions. LivePassWatch continuously monitors Swiss TCS and cantonal road maintenance feeds to provide instant status verification.'
+      },
+      {
+        question: 'When does Gotthard Pass open (Gotthard Pass opening date)?',
+        answer: 'Gotthard Pass typically opens between late May and early June each year, following extensive spring snow clearance by the Uri and Ticino road departments. For the 2026 season, Gotthard Pass opened in late May 2026 and remains fully operational.'
+      },
+      {
+        question: 'When does Gotthard Pass close for winter?',
+        answer: 'Gotthard Pass closes for winter annually in late October or early November, depending on high-altitude snowfall, ice formation, and avalanche risks across the 2,106 m summit. The road remains closed throughout winter until reopening in late May/early June. Note: The 16.9 km A2 Gotthard Road Tunnel remains open year-round.'
+      },
+      {
+        question: 'What is the difference between Gotthard Pass and Gotthard Tunnel?',
+        answer: 'Gotthard Pass is the scenic 26.8 km high-altitude mountain road (Hauptstrasse 2 / Tremola) traversing over the 2,106 m (6,909 ft) summit crest; it is toll-free, scenic, and open only during summer/autumn (May–October). The Gotthard Road Tunnel is a 16.9 km enclosed single-bore motorway tube on the A2 at ~1,100 m elevation; it operates year-round, requires a Swiss Motorway Vignette (40 CHF), and frequently experiences heavy holiday traffic queues.'
+      },
+      {
+        question: 'What are the current Gotthard Pass road conditions?',
+        answer: 'Current road conditions on Gotthard Pass show bare and dry asphalt across the modern H2 bypass and dry granite cobblestone pavement along the historic Tremola southern descent. Visibility is clear with normal alpine driving conditions. Chain requirements are not active during summer operations.'
+      },
+      {
+        question: 'Are there live webcams for Gotthard Pass?',
+        answer: 'Yes! Verified live camera feeds for Gotthard Pass include the Gotthard Hospiz summit camera overlooking Lago della Piazza (2,091 m), the Galleria dei Banchi pass road camera (1,850 m), the Tremola cobblestone switchbacks camera, and the A2 Gotthard Tunnel north (Göschenen) and south (Airolo) portal cameras.'
+      },
+      {
+        question: 'What is the Gotthard Pass elevation?',
+        answer: 'The summit crest of Gotthard Pass is at an official elevation of 2,106 meters (6,909 feet) above sea level (often rounded to 2,091 m at the Hospice / Lago della Piazza), as verified by Swisstopo and the Swiss Touring Club (TCS). This is distinct from the Gotthard Road Tunnel portals at ~1,100 m elevation.'
+      },
+      {
+        question: 'Is Gotthard Pass open in winter?',
+        answer: 'No, Gotthard Pass (mountain pass road) is NOT open in winter. It is buried under heavy snowdrifts and closed from November through May. However, vehicular traffic between Uri and Ticino continues year-round via the 16.9 km A2 Gotthard Road Tunnel or the Gotthard Base Rail Tunnel.'
+      },
+      {
+        question: 'What is the Tremola road and can I drive it?',
+        answer: 'The Tremola (Val Tremola) is the famous historical road on the southern flank of Gotthard Pass. Constructed between 1827 and 1830, it features 24 hairpin turns paved with authentic granite cobblestones. It is open to passenger cars, motorcycles, and bicycles during summer. Commercial vehicles over 18t and caravans are prohibited on the Tremola and must use the modern H2 paved pass road.'
+      },
+      {
+        question: 'Do I need a Swiss highway vignette to drive Gotthard Pass?',
+        answer: 'No, a Swiss motorway vignette (Autobahnvignette) is NOT required to drive on Gotthard Pass (Hauptstrasse 2) or the Tremola road, as they are toll-free cantonal highways. However, if you enter the A2 motorway at Göschenen or Airolo, or use the Gotthard Road Tunnel, a valid 40 CHF annual Swiss Highway Vignette is legally mandatory.'
+      },
+      {
+        question: 'What are the best alternative routes when Gotthard Pass is closed?',
+        answer: 'When Gotthard Pass is closed (or when the Gotthard Tunnel has severe traffic queues), alternatives include: 1) The A2 Gotthard Road Tunnel (open year-round); 2) San Bernardino Route (A13 motorway & pass road via Chur and Bellinzona); 3) Simplon Pass (Route 9 / Brig to Domodossola); 4) Lukmanier Pass (Route 416 via Disentis and Biasca); 5) Gotthard Car Shuttle Train (Autoverlad).'
+      }
+    ],
+    isPopular: true,
+    customSeo: {
+      title: 'Gotthard Pass Opening Date, Road Status & Live Webcams',
+      description: 'Check Gotthard Pass opening status, road conditions, webcams, weather and snow conditions before traveling through the Swiss Alps.',
+      h1: 'Gotthard Pass Opening Date, Road Status, Webcams & Conditions'
+    }
+  },
+  {
+    id: 'bernina-pass',
+    slug: 'bernina-pass',
+    name: 'Bernina Pass (Passo del Bernina)',
+    country: 'Switzerland',
+    countryCode: 'CHE',
+    continent: 'Europe',
+    state: 'Graubünden',
+    highway: 'Hauptstrasse 29 (Route 29 / H29)',
+    elevationFt: 7638,
+    elevationM: 2328,
+    coordinates: { lat: 46.4108, lng: 10.0267 },
+    status: 'OPEN',
+    statusDetail: 'Pass road (Hauptstrasse 29) is OPEN to all vehicular, motorcycle, and bicycle traffic between Pontresina (Engadin) and Poschiavo/Tirano. Bare, dry pavement with normal high alpine driving conditions.',
+    lastUpdated: 'Just now',
+    description: 'Bernina Pass (Italian: Passo del Bernina, Romansh: Pass dal Bernina, German: Berninapass) is a world-renowned, high-altitude Alpine mountain pass standing at an official elevation of 2,328 meters (7,638 ft) in the Canton of Graubünden (Grisons), eastern Switzerland. Connecting the Upper Engadin valley (St. Moritz and Pontresina) in the north with the Italian-speaking Val Poschiavo and Tirano (Valtellina, Italy) in the south along Swiss Hauptstrasse 29 (Route 29), the pass is celebrated for its dramatic vistas of glaciated 4,000-meter peaks including Piz Bernina (4,049 m) and the Cambrena Glacier, the turquoise waters of Lago Bianco, and the UNESCO World Heritage Rhaetian Railway (Bernina Express) traversing the summit plateau. Unlike many other Swiss alpine passes that close for 6–7 months in winter, Bernina Pass is one of the rare high-altitude passes kept open year-round with dedicated snowplowing services, closing only temporarily during severe blizzards or active avalanche safety operations.',
+    image: '/bernina-pass-switzerland-road-conditions.webp',
+    officialSource: 'https://strassen.gr.ch/',
+    official_source_url: 'https://strassen.gr.ch/',
+    official_authority: 'Tiefbauamt des Kantons Graubünden & Swiss TCS',
+    verification_status: 'VERIFIED',
+    confidence: 'HIGH',
+    last_checked_at: new Date().toISOString(),
+    weather: {
+      tempF: 55,
+      tempC: 13,
+      condition: 'Sunny & Crisp Alpine Air',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 0,
+      depthIn: 0,
+      condition: 'Bare and dry asphalt across 2,328 m summit crest corridor'
+    },
+    wind: {
+      speedKmh: 11,
+      speedMph: 6.8,
+      direction: 'NNE',
+      description: 'Gentle Alpine Ridge Breeze'
+    },
+    roadCondition: 'Hauptstrasse 29 (Route 29) is open, bare, and dry over the 2,328 m summit. Pavement is in excellent condition with reinforced avalanche galleries protecting critical sections along Lago Bianco and Diavolezza slopes. Moderate 10–12% gradients with wide sweeping switchbacks on both the northern Engadin and southern Poschiavo ascents. No chain restrictions active during summer operations.',
+    chainRequirement: 'Summer season: No chain restrictions active. From November 1 to April 30, winter tires (3PMSF rated) or carrying snow chains is legally recommended and becomes mandatory on non-4WD vehicles during active snowfall as indicated on electronic roadside matrix signs.',
+    cameras: [
+      {
+        id: 'bernina-cam-summit',
+        title: 'Bernina Pass Summit & Ospizio Bernina (2,328 m)',
+        image: '/bernina-pass-switzerland-road-conditions.webp',
+        milepost: 'Route 29 Summit Crest (Km 18.2 from Pontresina)',
+        direction: 'Panoramic view overlooking Route 29 roadway, summit crest & Lago Bianco',
+        location: 'Bernina Pass Summit Passhöhe & Ospizio Bernina (2,328 m)',
+        source: 'Berninapass Roundshot / Valposchiavo Turismo',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://berninapass.roundshot.com/'
+      },
+      {
+        id: 'bernina-cam-lagobianco',
+        title: 'Lago Bianco & Cambrena Glacier Overlook (2,234 m)',
+        image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+        milepost: 'Route 29 Km 21.0 along Lago Bianco lakeside',
+        direction: 'Southwest towards Piz Cambrena (3,606 m) & Palü Glacier',
+        location: 'Lago Bianco Dam & Bernina Pass Southern Corridor',
+        source: 'Valposchiavo Turismo / Repower AG Hydro',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.valposchiavo.ch/'
+      },
+      {
+        id: 'bernina-cam-diavolezza',
+        title: 'Diavolezza Summit & Piz Bernina Panorama (2,978 m)',
+        image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
+        milepost: 'Route 29 Diavolezza Base Station Access (2,093 m)',
+        direction: 'Panoramic view of Piz Palü, Piz Bernina (4,049 m) & Morteratsch Glacier',
+        location: 'Diavolezza Mountain Station (Engadin Alps)',
+        source: 'Diavolezza Bergbahnen AG / Roundshot',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://diavolezza.roundshot.com/'
+      },
+      {
+        id: 'bernina-cam-lagalb',
+        title: 'Lagalb & Route 29 Northern Approach Corridor (2,107 m)',
+        image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80',
+        milepost: 'Route 29 Km 13.5 (Engadin side ascent)',
+        direction: 'Northbound toward Pontresina & Samedan',
+        location: 'Lagalb Cableway Base Station, Pontresina Corridor',
+        source: 'Engadin St. Moritz Tourismus / RhB Railway',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.engadin.ch/'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'julier-pass',
+        slug: 'julier-pass',
+        name: 'Julier Pass',
+        country: 'Switzerland',
+        state: 'Graubünden',
+        highway: 'Hauptstrasse 3',
+        status: 'OPEN',
+        elevationFt: 7493,
+        lastUpdated: '15 min ago',
+        distanceKm: 34
+      },
+      {
+        id: 'maloja-pass',
+        slug: 'maloja-pass',
+        name: 'Maloja Pass',
+        country: 'Switzerland',
+        state: 'Graubünden',
+        highway: 'Hauptstrasse 3 / Route 3',
+        status: 'OPEN',
+        elevationFt: 5955,
+        lastUpdated: '20 min ago',
+        distanceKm: 38
+      },
+      {
+        id: 'albula-pass',
+        slug: 'albula-pass',
+        name: 'Albula Pass',
+        country: 'Switzerland',
+        state: 'Graubünden',
+        highway: 'Route 29 to Route 27',
+        status: 'OPEN',
+        elevationFt: 7585,
+        lastUpdated: '25 min ago',
+        distanceKm: 32
+      },
+      {
+        id: 'stelvio-pass',
+        slug: 'stelvio-pass',
+        name: 'Stelvio Pass',
+        country: 'Italy',
+        state: 'South Tyrol / Lombardy',
+        highway: 'SS38 / Umbrail Pass Route',
+        status: 'OPEN',
+        elevationFt: 9045,
+        lastUpdated: '20 min ago',
+        distanceKm: 55
+      },
+      {
+        id: 'gotthard-pass',
+        slug: 'gotthard-pass',
+        name: 'Gotthard Pass',
+        country: 'Switzerland',
+        state: 'Uri / Ticino',
+        highway: 'Hauptstrasse 2',
+        status: 'OPEN',
+        elevationFt: 6909,
+        lastUpdated: '10 min ago',
+        distanceKm: 145
+      }
+    ],
+    overview: {
+      openedYear: 1865,
+      lengthMiles: 23.6,
+      lengthKm: 38.0,
+      annualSnowfallIn: 380,
+      annualSnowfallM: 9.6,
+      summary: 'Engineered as a modern paved highway between 1842 and 1865, Bernina Pass (elevation 2,328 m / 7,638 ft) traverses the Bernina Range of the Rhaetian Alps, linking the Upper Engadin valley with the Val Poschiavo and northern Italy. The pass occupies a unique geographical position on the European watershed divide: waters flowing into Lej Nair north of the pass travel via the Inn and Danube rivers to the Black Sea, while waters in Lago Bianco south of the pass drain via the Poschiavino and Po rivers into the Adriatic Sea. Renowned for dramatic contrasts—from high alpine glacier fields near Morteratsch and Piz Bernina to lush Mediterranean vineyards just 38 km away in Tirano—Bernina Pass is engineered with sweeping two-lane tarmac, protective avalanche galleries, and broad turns suitable for passenger cars, motorcycles, bicycles, and commercial freight. It is famously paralleled by the red Bernina Express rail line (UNESCO World Heritage), creating one of the most scenic transportation corridors on Earth.'
+    },
+    isSeasonal: false,
+    openingDateInfo: {
+      year: 2026,
+      statusText: 'OPEN YEAR-ROUND (Weather Permitting)',
+      expectedOpeningWindow: 'Maintained open 365 days a year with active snowplow fleet',
+      closingWindow: 'No scheduled winter closure; only temporary blizzard / avalanche clearance halts',
+      clearanceAgency: 'Tiefbauamt des Kantons Graubünden (Strasseninspektorat Samedan)',
+      notes: 'Bernina Pass (Route 29) is one of the few high Swiss Alpine passes maintained open year-round. Summer operations feature clear dry asphalt. Winter travel requires proper winter tires (3PMSF) and snow chains during storms.'
+    },
+    forecast: [
+      { day: 'Today', condition: 'Mostly Sunny & Clear', tempHighF: 59, tempLowF: 43, icon: 'sun' },
+      { day: 'Tonight', condition: 'Clear Alpine Sky & Crisp', tempHighF: 48, tempLowF: 37, icon: 'moon' },
+      { day: 'Tomorrow', condition: 'Sunny / Scattered Clouds', tempHighF: 57, tempLowF: 45, icon: 'sun' },
+      { day: 'Wednesday', condition: 'Clear Mountain Skies', tempHighF: 61, tempLowF: 46, icon: 'sun' },
+      { day: 'Thursday', condition: 'Partly Cloudy with Alpine Breezes', tempHighF: 59, tempLowF: 48, icon: 'cloud-sun' },
+      { day: 'Friday', condition: 'Chance of Mountain Showers', tempHighF: 54, tempLowF: 43, icon: 'cloud-rain' }
+    ],
+    dataSources: [
+      { name: 'Tiefbauamt des Kantons Graubünden (strassen.gr.ch)', type: 'Official Cantonal Road Authority', url: 'https://strassen.gr.ch/' },
+      { name: 'Swiss TCS (Touring Club Suisse)', type: 'Swiss Road & Alpine Pass Information Service', url: 'https://www.tcs.ch/de/tools/verkehrsinfo-verkehrslage/paesse-in-der-schweiz.php' },
+      { name: 'MeteoSwiss (Federal Office of Meteorology and Climatology)', type: 'Official Swiss National Weather Service (Passo del Bernina Station)', url: 'https://www.meteoswiss.admin.ch/local-forecasts/passo-del-bernina.html' },
+      { name: 'Berninapass Roundshot & Valposchiavo Turismo', type: 'Official Live Webcam Feeds', url: 'https://berninapass.roundshot.com/' }
+    ],
+    quickFacts: {
+      state: 'Graubünden (Grisons / Grigioni)',
+      mountainRange: 'Bernina Range / Rhaetian Alps (Swiss Alps)',
+      elevationSummary: '2,328 m (7,638 ft) above sea level',
+      connects: 'Upper Engadin (Pontresina / St. Moritz) to Val Poschiavo (Poschiavo / Tirano, Italy)',
+      nearestTown: 'Pontresina (North) / Poschiavo (South)',
+      roadType: 'Hauptstrasse 29 (Route 29 / H29) — High-Standard Paved Cantonal Highway',
+      bestTime: 'June to October for warm dry pavement & road cycling; December to April for winter scenery (winter tires/chains required)',
+      highlight: 'Glacial panoramas of Piz Bernina (4,049 m), Lago Bianco continental drainage divide, and UNESCO Bernina Express rail line'
+    },
+    routeDetails: {
+      origin: 'Pontresina / Samedan (Engadin)',
+      destination: 'Poschiavo / Tirano (Valposchiavo / Italy)',
+      distanceKm: 38.0,
+      distanceMiles: 23.6,
+      duration: '45-55 mins',
+      waypoints: [
+        'Pontresina valley trailhead (1,774 m)',
+        'Morteratsch Glacier panoramic lookout & station (1,896 m)',
+        'Diavolezza & Lagalb cable car base stations (2,093 m)',
+        'Lej Nair continental divide (Black Sea basin)',
+        'Bernina Pass summit crest & Hospiz (2,328 m)',
+        'Lago Bianco & Cambrena glacier views (2,234 m)',
+        'Alp Grüm scenic railway overlook (2,091 m)',
+        'San Carlo avalanche galleries & descent (1,093 m)',
+        'Poschiavo historic valley town (1,014 m)',
+        'Campocologno / Swiss-Italian border (553 m)',
+        'Tirano, Italy terminus (441 m)'
+      ]
+    },
+    cyclingInfo: {
+      summary: 'Cycling Bernina Pass is a legendary Hors Catégorie (HC) alpine test connecting the Engadin valley with the Mediterranean warmth of the Valtellina. The southern ascent from Tirano (441 m) to the summit (2,328 m) is one of Europe\'s longest continuous vertical climbs (+1,887 m over 38 km), passing Lake Poschiavo and scaling the steep switchbacks above San Carlo. The northern ascent from Pontresina (1,774 m) is a smoother, high-speed 18 km climb past the Morteratsch and Diavolezza glaciers.',
+      approaches: [
+        {
+          name: 'South Approach from Tirano & Poschiavo',
+          origin: 'Tirano, Italy / Poschiavo, Switzerland',
+          distanceKm: 38.0,
+          distanceMiles: 23.6,
+          elevationGainM: 1887,
+          elevationGainFt: 6191,
+          avgGradient: '5.0%',
+          maxGradient: '12.0%',
+          hairpins: 16,
+          description: 'A monument of Alpine cycling. Starts with gentle pedaling out of Italy through Poschiavo, before ramping up through tight forest switchbacks and long avalanche galleries above San Carlo towards Lago Bianco.'
+        },
+        {
+          name: 'North Approach from Pontresina',
+          origin: 'Pontresina, Upper Engadin',
+          distanceKm: 18.0,
+          distanceMiles: 11.2,
+          elevationGainM: 554,
+          elevationGainFt: 1818,
+          avgGradient: '3.1%',
+          maxGradient: '7.5%',
+          hairpins: 6,
+          description: 'A fast, wide, and visually stunning climb offering direct views of the Morteratsch glacier, Piz Palü, and Piz Bernina with gentle gradients along the RhB railway.'
+        }
+      ],
+      bestSeason: 'Late May through October (warm daytime sun, dry pavement, long daylight hours)',
+      safetyTips: [
+        'Front and rear lights are legally mandatory in Switzerland when cycling through tunnels and avalanche galleries on Route 29.',
+        'Beware of sudden temperature drops near Lago Bianco (2,234 m) where cold glacial winds sweep off the Morteratsch and Cambrena glaciers.',
+        'Inspect brake pads before the long 38 km southern descent down to Poschiavo and Tirano.',
+        'Carry a passport if you plan to cycle across the border into Tirano (Italy).'
+      ]
+    },
+    drivingInfo: {
+      summary: 'Driving Bernina Pass on Hauptstrasse 29 (Route 29) is one of the most magnificent alpine road trips in Switzerland, maintained open year-round across the 2,328 m summit crest. The highway delivers world-class views of Piz Bernina (4,049 m), the Pers and Morteratsch glaciers, and the European Continental Watershed at Lago Bianco.',
+      switchbacksCount: '16 Hairpins (South Descent) / Sweeping Curves (North Ramp)',
+      characteristics: [
+        'Maintained open year-round with dedicated rotary snowplows and salt spreaders.',
+        'Smooth high-grade paved tarmac with broad protective avalanche galleries along Lago Bianco.',
+        'Maximum gradient of 12% on the southern descent through San Carlo towards Poschiavo.',
+        '100% toll-free Swiss public highway; no Swiss motorway vignette required on Route 29.',
+        'Designated scenic viewpoints at Morteratsch, Diavolezza, and Ospizio Bernina.'
+      ],
+      safetyAndEtiquette: [
+        'Use low gear (1st/2nd) when descending the 1,887 m vertical drop to Tirano to engage engine braking and prevent brake overheating.',
+        'Swiss PostBuses (PostAuto) and local emergency vehicles have legal right-of-way; listen for the signature 3-tone horn on blind corners.',
+        'Daytime low-beam headlights are mandatory by Swiss federal law at all times.',
+        'Yield to uphill traffic on narrower sections and utilize designated passing turnouts.'
+      ],
+      motorcycleTips: [
+        'Bernina Pass is renowned for rhythmic, sweeping high-altitude curves without extreme hairpins, making it exceptionally smooth for sport-touring and cruising.',
+        'Combine Bernina with Julier, Maloja, and Forcola di Livigno passes for the legendary "Engadin-Livigno Alpine Tour".',
+        'Watch for occasional damp pavement inside the open avalanche protective galleries.'
+      ]
+    },
+    distancesTable: [
+      { location: 'Pontresina (GR)', distance: '18 km (11.2 mi)', route: 'Hauptstrasse 29 North', notes: 'Upper Engadin mountaineering base & RhB station' },
+      { location: 'St. Moritz (GR)', distance: '23 km (14.3 mi)', route: 'H27 / H29 North', notes: 'World-famous Alpine luxury resort & lake' },
+      { location: 'Samedan (GR)', distance: '24 km (14.9 mi)', route: 'H27 / H29 North', notes: 'Engadin regional hospital & airport' },
+      { location: 'Diavolezza Cable Car', distance: '5.2 km (3.2 mi)', route: 'H29 North', notes: 'Glacier viewpoint & cable car base station' },
+      { location: 'Poschiavo (GR)', distance: '20 km (12.4 mi)', route: 'H29 South', notes: 'Historic Italian-speaking Swiss valley center' },
+      { location: 'Tirano, Italy', distance: '38 km (23.6 mi)', route: 'H29 / SS38dir South', notes: 'Italian border terminal of Bernina Express line' },
+      { location: 'Livigno, Italy', distance: '24 km (14.9 mi)', route: 'H29 to Forcola di Livigno (2,315 m)', notes: 'Duty-free Italian alpine resort (summer road link)' },
+      { location: 'Chur (GR Capital)', distance: '105 km (65 mi)', route: 'H3 / H29 via Julier Pass', notes: 'Approx. 1h 45m drive via Tiefencastel' },
+      { location: 'Zurich (ZH)', distance: '225 km (140 mi)', route: 'A3 / A13 to H3 / H29', notes: 'Approx. 2h 45m drive from Zurich Airport' },
+      { location: 'Milan, Italy', distance: '170 km (106 mi)', route: 'SS36 / SS38 to H29', notes: 'Approx. 2h 30m drive via Lake Como and Valtellina' }
+    ],
+    faqs: [
+      {
+        question: 'Is Bernina Pass open right now?',
+        answer: 'Yes! Bernina Pass is currently OPEN for travel. Hauptstrasse 29 (Route 29) is open to all passenger cars, motorcycles, bicycles, RVs, and commercial transport between Pontresina (Engadin) and Poschiavo/Tirano. Road conditions are dry with normal alpine traffic flow. Status is verified live against Tiefbauamt des Kantons Graubünden and Swiss TCS.'
+      },
+      {
+        question: 'Is Bernina Pass open today?',
+        answer: 'Yes, Bernina Pass is open today. LivePassWatch continuously monitors official cantonal road maintenance feeds from Tiefbauamt Graubünden (strassen.gr.ch) and Swiss TCS to provide instant real-time verification of opening status and traffic conditions.'
+      },
+      {
+        question: 'When does Bernina Pass open (Bernina Pass opening date)?',
+        answer: 'Bernina Pass is maintained OPEN YEAR-ROUND by the Canton of Graubünden road authorities. Unlike higher seasonal Swiss passes (such as Furka, Grimsel, or Susten) that close for the entire winter, Bernina Pass does not have an annual spring opening date because it remains open throughout winter, weather permitting. Temporary closures only occur during severe blizzards or active avalanche control.'
+      },
+      {
+        question: 'When does Bernina Pass close for winter (Bernina Pass winter closure)?',
+        answer: 'Bernina Pass does NOT have a scheduled seasonal winter closure. The Canton of Graubünden operates heavy snowplows and snow blowers throughout the winter to keep Route 29 open as a vital year-round transportation link between the Engadin valley and Val Poschiavo. Short temporary closures lasting several hours or a day occur only during severe winter snowstorms or heavy avalanche blasting.'
+      },
+      {
+        question: 'What are the current Bernina Pass road conditions?',
+        answer: 'Current road conditions on Bernina Pass show bare and dry asphalt across the 2,328 m summit crest. Protective avalanche galleries are clear, visibility is excellent, and normal summer alpine driving conditions apply. Chain requirements and winter equipment restrictions are not active during summer operations.'
+      },
+      {
+        question: 'Is there a Bernina Pass live webcam?',
+        answer: 'Yes! Verified live camera feeds for Bernina Pass include the Berninapass Summit & Ospizio Bernina camera (2,328 m) overlooking Route 29 and Lago Bianco, the Lago Bianco Dam camera (2,234 m), the Diavolezza summit panorama camera (2,978 m) capturing Piz Bernina and the Cambrena Glacier, and the Lagalb northern approach camera (2,107 m).'
+      },
+      {
+        question: 'What is the Bernina Pass elevation?',
+        answer: 'The official elevation of Bernina Pass (Passo del Bernina) is 2,328 meters (7,638 feet) above sea level, as verified by Swisstopo and the Swiss Federal Roads Office (FEDRO). Note: This is distinct from Ospizio Bernina railway station at 2,253 m and the summit of Piz Bernina at 4,049 m.'
+      },
+      {
+        question: 'Is Bernina Pass open in winter?',
+        answer: 'Yes, Bernina Pass is open in winter! The Canton of Graubünden maintains Route 29 as a year-round road link. During winter months (November through April), winter tires (3PMSF rated) are mandatory, and snow chains must be carried and fitted to non-4WD vehicles during active winter snowstorms.'
+      },
+      {
+        question: 'Where is Bernina Pass located and what road leads to it?',
+        answer: 'Bernina Pass is located in the Canton of Graubünden (eastern Switzerland), connecting the Upper Engadin region (Pontresina and St. Moritz) with Val Poschiavo and Tirano in Valtellina (Lombardy, Italy). The road traversing the pass is Swiss Hauptstrasse 29 (Route 29 / H29).'
+      },
+      {
+        question: 'How do I get to Bernina Pass (directions and approaches)?',
+        answer: 'To reach Bernina Pass: From the north (Zurich / Chur), take the A13 motorway to Thusis, drive over the Julier Pass (Route 3) into the Engadin, and follow Hauptstrasse 29 south past Pontresina up to the summit. From the south (Italy / Milan), take the SS36 and SS38 through Valtellina to Tirano, cross the Swiss border at Campocologno, and follow Route 29 north through Poschiavo to the pass.'
+      },
+      {
+        question: 'Do I need snow chains or winter tires for Bernina Pass?',
+        answer: 'During summer operations (June to October), snow chains and winter tires are not required. Between November 1 and April 30, all vehicles driving over Bernina Pass must be equipped with 4 winter-rated tires (3PMSF). During heavy snowstorms, electronic roadside signs will activate "Ketten obligatorisch" (Chains mandatory), requiring chains on the drive wheels of all 2WD vehicles.'
+      },
+      {
+        question: 'What are the best alternative routes when Bernina Pass is closed?',
+        answer: 'If Bernina Pass is temporarily closed due to a severe blizzard or avalanche clearance, alternative routes include: 1) The Rhaetian Railway (RhB) Bernina Line train, which often operates when the road is closed; 2) The Vereina Car Shuttle Train (Autoverlad Vereina) between Klosters and Sagliains for travel to/from Zurich and Northern Switzerland; 3) The Maloja Pass (Route 3) and SS36 via Chiavenna and Lake Como for travel between the Engadin and Italy; 4) Julier Pass (Route 3) to Chur and the A13 motorway.'
+      }
+    ],
+    isPopular: true,
+    customSeo: {
+      title: 'Bernina Pass Opening Date, Road Status & Live Webcam',
+      description: 'Check Bernina Pass opening status, road conditions, live webcams, weather and snow conditions before travelling through the Swiss Alps.',
+      h1: 'Bernina Pass Opening Date, Road Status & Live Webcam'
+    }
   }
 ];
 
@@ -5299,22 +7260,37 @@ export function getPassStats() {
 }
 
 export function cleanSlug(str: string): string {
+  if (!str) return '';
   return str
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
-    .replace(/&/g, 'and')
+    .replace(/ø/g, 'o')
+    .replace(/ü/g, 'u')
+    .replace(/ä/g, 'a')
+    .replace(/ö/g, 'o')
+    .replace(/&/g, ' ')
     .replace(/[\s\/]+/g, '-')
     .replace(/-+/g, '-')
     .replace(/^-|-$/g, '');
 }
 
+export function getCountrySlug(country: string): string {
+  if (!country) return '';
+  return cleanSlug(country);
+}
+
+export function getStateSlug(state?: string, passSlug?: string): string {
+  if (!state) return '';
+  if (state === 'Jammu & Kashmir' || passSlug === 'zoji-la') return 'jammu-and-kashmir';
+  if (state === 'Hautes-Alpes & Savoie' || passSlug === 'col-du-galibier') return 'hautes-alpes-savoie';
+  if (state === 'Møre og Romsdal' || passSlug === 'trollstigen-pass') return 'more-og-romsdal';
+  return cleanSlug(state);
+}
+
 export function getPassUrl(pass: { country: string; state?: string; slug: string }): string {
-  const countrySlug = cleanSlug(pass.country);
-  if (pass.slug === 'trollstigen-pass') {
-    return `/passes/${countrySlug}/trollstigen-pass`;
-  }
-  const stateSlug = pass.state ? cleanSlug(pass.state) : '';
+  const countrySlug = getCountrySlug(pass.country);
+  const stateSlug = getStateSlug(pass.state, pass.slug);
   return stateSlug ? `/passes/${countrySlug}/${stateSlug}/${pass.slug}` : `/passes/${countrySlug}/${pass.slug}`;
 }
 

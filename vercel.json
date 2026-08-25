@@ -1,4 +1,306 @@
 {
+  "redirects": [
+    {
+      "source": "/passes/trollstigen-pass",
+      "destination": "/passes/norway/more-og-romsdal/trollstigen-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/norway/trollstigen-pass",
+      "destination": "/passes/norway/more-og-romsdal/trollstigen-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/snoqualmie-pass",
+      "destination": "/passes/united-states/washington/snoqualmie-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/snoqualmie-pass",
+      "destination": "/passes/united-states/washington/snoqualmie-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/stevens-pass",
+      "destination": "/passes/united-states/washington/stevens-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/stevens-pass",
+      "destination": "/passes/united-states/washington/stevens-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/donner-pass",
+      "destination": "/passes/united-states/california/donner-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/donner-pass",
+      "destination": "/passes/united-states/california/donner-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/berthoud-pass",
+      "destination": "/passes/united-states/colorado/berthoud-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/berthoud-pass",
+      "destination": "/passes/united-states/colorado/berthoud-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/blewett-pass",
+      "destination": "/passes/united-states/washington/blewett-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/blewett-pass",
+      "destination": "/passes/united-states/washington/blewett-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/white-pass",
+      "destination": "/passes/united-states/washington/white-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/white-pass",
+      "destination": "/passes/united-states/washington/white-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/chinook-pass",
+      "destination": "/passes/united-states/washington/chinook-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/chinook-pass",
+      "destination": "/passes/united-states/washington/chinook-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/cayuse-pass",
+      "destination": "/passes/united-states/washington/cayuse-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/cayuse-pass",
+      "destination": "/passes/united-states/washington/cayuse-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/north-cascades-pass",
+      "destination": "/passes/united-states/washington/north-cascades-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/north-cascades-pass",
+      "destination": "/passes/united-states/washington/north-cascades-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/sherman-pass",
+      "destination": "/passes/united-states/washington/sherman-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/sherman-pass",
+      "destination": "/passes/united-states/washington/sherman-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/zoji-la",
+      "destination": "/passes/india/jammu-and-kashmir/zoji-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/india/zoji-la",
+      "destination": "/passes/india/jammu-and-kashmir/zoji-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/khardung-la",
+      "destination": "/passes/india/ladakh/khardung-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/india/khardung-la",
+      "destination": "/passes/india/ladakh/khardung-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/chang-la-pass",
+      "destination": "/passes/india/ladakh/chang-la-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/india/chang-la-pass",
+      "destination": "/passes/india/ladakh/chang-la-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/chang-la",
+      "destination": "/passes/india/ladakh/chang-la-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/rohtang-pass",
+      "destination": "/passes/india/himachal-pradesh/rohtang-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/india/rohtang-pass",
+      "destination": "/passes/india/himachal-pradesh/rohtang-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nathu-la",
+      "destination": "/passes/india/sikkim/nathu-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/india/nathu-la",
+      "destination": "/passes/india/sikkim/nathu-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/furka-pass",
+      "destination": "/passes/switzerland/valais-uri/furka-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/switzerland/furka-pass",
+      "destination": "/passes/switzerland/valais-uri/furka-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/stelvio-pass",
+      "destination": "/passes/italy/south-tyrol-lombardy/stelvio-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/italy/stelvio-pass",
+      "destination": "/passes/italy/south-tyrol-lombardy/stelvio-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/paso-los-libertadores",
+      "destination": "/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores",
+      "permanent": true
+    },
+    {
+      "source": "/passes/argentina-chile/paso-los-libertadores",
+      "destination": "/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores",
+      "permanent": true
+    },
+    {
+      "source": "/passes/arthurs-pass",
+      "destination": "/passes/new-zealand/canterbury-west-coast/arthurs-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/new-zealand/arthurs-pass",
+      "destination": "/passes/new-zealand/canterbury-west-coast/arthurs-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/sani-pass",
+      "destination": "/passes/south-africa-lesotho/kwazulu-natal-mokhotlong/sani-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/south-africa-lesotho/sani-pass",
+      "destination": "/passes/south-africa-lesotho/kwazulu-natal-mokhotlong/sani-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/loup-loup-pass",
+      "destination": "/passes/united-states/washington/loup-loup-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/loup-loup-pass",
+      "destination": "/passes/united-states/washington/loup-loup-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/status-pass",
+      "destination": "/passes/united-states/washington/status-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/status-pass",
+      "destination": "/passes/united-states/washington/status-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/khyber-pass",
+      "destination": "/passes/pakistan/khyber-pakhtunkhwa/khyber-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/pakistan/khyber-pass",
+      "destination": "/passes/pakistan/khyber-pakhtunkhwa/khyber-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/col-du-galibier",
+      "destination": "/passes/france/hautes-alpes-savoie/col-du-galibier",
+      "permanent": true
+    },
+    {
+      "source": "/passes/france/col-du-galibier",
+      "destination": "/passes/france/hautes-alpes-savoie/col-du-galibier",
+      "permanent": true
+    },
+    {
+      "source": "/passes/france/hautes-alpes-and-savoie/col-du-galibier",
+      "destination": "/passes/france/hautes-alpes-savoie/col-du-galibier",
+      "permanent": true
+    },
+    {
+      "source": "/passes/great-st-bernard-pass",
+      "destination": "/passes/switzerland/valais/great-st-bernard-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/switzerland/great-st-bernard-pass",
+      "destination": "/passes/switzerland/valais/great-st-bernard-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/grimsel-pass",
+      "destination": "/passes/switzerland/bern-valais/grimsel-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/switzerland/grimsel-pass",
+      "destination": "/passes/switzerland/bern-valais/grimsel-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/gotthard-pass",
+      "destination": "/passes/switzerland/uri-ticino/gotthard-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/switzerland/gotthard-pass",
+      "destination": "/passes/switzerland/uri-ticino/gotthard-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/bernina-pass",
+      "destination": "/passes/switzerland/graubunden/bernina-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/switzerland/bernina-pass",
+      "destination": "/passes/switzerland/graubunden/bernina-pass",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

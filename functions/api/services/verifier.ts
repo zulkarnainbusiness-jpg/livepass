@@ -143,29 +143,78 @@ function parseHtmlStatus(htmlText: string, passName: string): {
     return '...' + text.substring(start, end).trim() + '...';
   };
 
-  // 1. Seasonal closures
-  if (text.includes('closed for the season') || text.includes('seasonal closure') || text.includes('winter closure') || text.includes('closed for winter')) {
+  // 1. Seasonal closures (English + French + Italian + German)
+  if (
+    text.includes('closed for the season') ||
+    text.includes('seasonal closure') ||
+    text.includes('winter closure') ||
+    text.includes('closed for winter') ||
+    text.includes('fermeture hivernale') ||
+    text.includes('fermé pour la saison') ||
+    text.includes('fermeture pour l\'hiver') ||
+    text.includes('chiusura invernale') ||
+    text.includes('passo chiuso per la stagione') ||
+    text.includes('wintersperre')
+  ) {
     status = 'SEASONAL_CLOSURE';
-    evidence = extractContext('closed for');
+    evidence = extractContext('fermeture') || extractContext('closed for') || extractContext('chiusura') || extractContext('wintersperre');
     confidence = 'HIGH';
   }
-  // 2. Road closed
-  else if (text.includes('road closed') || text.includes('pass closed') || text.includes('traffic suspended') || text.includes('closed due to')) {
+  // 2. Road closed (English + French + Italian + German)
+  else if (
+    text.includes('road closed') ||
+    text.includes('pass closed') ||
+    text.includes('traffic suspended') ||
+    text.includes('closed due to') ||
+    text.includes('col fermé') ||
+    text.includes('route fermée') ||
+    text.includes('circulation interdite') ||
+    text.includes('strada chiusa') ||
+    text.includes('passo chiuso') ||
+    text.includes('gesperrt')
+  ) {
     status = 'CLOSED';
-    evidence = extractContext('closed');
+    evidence = extractContext('fermé') || extractContext('closed') || extractContext('chiusa') || extractContext('gesperrt');
     confidence = 'HIGH';
   }
-  // 3. Restrictions
-  else if (text.includes('chains required') || text.includes('traction tires advised') || text.includes('traction tires required') || text.includes('one-way traffic') || text.includes('restricted')) {
+  // 3. Restrictions (English + French + Italian + German)
+  else if (
+    text.includes('chains required') ||
+    text.includes('traction tires advised') ||
+    text.includes('traction tires required') ||
+    text.includes('one-way traffic') ||
+    text.includes('restricted') ||
+    text.includes('équipements obligatoires') ||
+    text.includes('loi montagne') ||
+    text.includes('circulation alternée') ||
+    text.includes('catene obbligatorie') ||
+    text.includes('pneumatici invernali obbligatori') ||
+    text.includes('schneeketten erforderlich')
+  ) {
     status = 'RESTRICTED';
-    evidence = extractContext('required');
-    restrictions = 'Traction/vehicle restrictions active';
+    evidence = extractContext('obligatoire') || extractContext('required') || extractContext('obbligatorie') || extractContext('erforderlich');
+    restrictions = 'Traction/winter vehicle equipment required';
     confidence = 'HIGH';
   }
-  // 4. Road open
-  else if (text.includes('road open') || text.includes('pass open') || text.includes('open to traffic') || text.includes('reopened')) {
+  // 4. Road open (English + French + Italian + German)
+  else if (
+    text.includes('road open') ||
+    text.includes('pass open') ||
+    text.includes('open to traffic') ||
+    text.includes('reopened') ||
+    text.includes('col ouvert') ||
+    text.includes('route ouverte') ||
+    text.includes('ouvert à la circulation') ||
+    text.includes('strada aperta') ||
+    text.includes('passo aperto') ||
+    text.includes('transitabile') ||
+    text.includes('offen') ||
+    text.includes('befahrbar') ||
+    text.includes('normal roads') ||
+    text.includes('dry road')
+  ) {
     status = 'OPEN';
-    evidence = extractContext('open');
+    evidence = extractContext('ouvert') || extractContext('open') || extractContext('aperto') || extractContext('transitabile') || extractContext('offen') || extractContext('dry road');
     confidence = 'HIGH';
   }
 

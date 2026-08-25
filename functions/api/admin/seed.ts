@@ -64,6 +64,16 @@ const TEST_PASSES: SeedPass[] = [
     lng: -120.6536,
     official_authority: 'WSDOT',
     official_source_url: 'https://wsdot.wa.gov/travel/real-time/mountainpasses'
+  },
+  {
+    id: 'grimsel-pass',
+    name: 'Grimsel Pass',
+    country: 'Switzerland',
+    state: 'Bern / Valais',
+    lat: 46.5614,
+    lng: 8.3375,
+    official_authority: 'Swiss TCS',
+    official_source_url: 'https://www.tcs.ch/de/tools/verkehrsinfo-verkehrslage/grimsel-pass.php'
   }
 ];
 

@@ -14,6 +14,7 @@ import {
   Globe 
 } from 'lucide-react';
 import { StatusBadge } from '../components/StatusBadge';
+import { SEOHelper } from '../components/SEOHelper';
 import { usePasses } from '../context/PassesContext';
 import './AdminDashboard.css';
 
@@ -210,6 +211,12 @@ export const AdminDashboard: React.FC = () => {
 
   return (
     <div className="admin-dashboard-container app-container">
+      <SEOHelper
+        title="Admin Control Dashboard"
+        description="Admin console"
+        canonicalUrl="https://www.livepasswatch.info/admin"
+        noIndex={true}
+      />
       {/* Dashboard Heading Banner */}
       <header className="admin-header-row">
         <div>
