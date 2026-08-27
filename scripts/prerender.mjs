@@ -399,6 +399,18 @@ const staticPages = [
     </main>`
   },
   {
+    path: '/submit-report',
+    title: 'Submit Mountain Pass Road Report | LivePassWatch Community',
+    description: 'Share live mountain pass road conditions, snowpack observations, chain restrictions, and travel delays directly with the LivePassWatch research team.',
+    canonicalUrl: `${DOMAIN}/submit-report`,
+    bodyContent: `<main class="app-container" style="padding: 2rem 1rem; max-width: 850px;">
+      <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">Submit a Mountain Pass Road Report</h1>
+      <p style="line-height: 1.7; color: #334155; margin-bottom: 1.5rem;">
+        Help fellow travelers stay safe across alpine corridors. Share your first-hand observations, road conditions, chain restrictions, delays, or weather conditions directly with our editorial and verification team.
+      </p>
+    </main>`
+  },
+  {
     path: '/about',
     title: 'About LivePassWatch - Meet the Founder, Our Mission & Team',
     description: 'Meet founder Zulkarnain, learn the Himalayan story behind LivePassWatch, and discover our dedicated team tracking live mountain pass conditions.',
@@ -474,6 +486,7 @@ const coreSitemapUrls = [
   'https://www.livepasswatch.info/map',
   'https://www.livepasswatch.info/alerts',
   'https://www.livepasswatch.info/resources',
+  'https://www.livepasswatch.info/submit-report',
   'https://www.livepasswatch.info/about',
   'https://www.livepasswatch.info/privacy',
   'https://www.livepasswatch.info/terms'

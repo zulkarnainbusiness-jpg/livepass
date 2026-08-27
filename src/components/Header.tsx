@@ -145,6 +145,9 @@ export const Header: React.FC = () => {
           <NavLink to="/resources" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             Resources
           </NavLink>
+          <NavLink to="/submit-report" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+            Submit Report
+          </NavLink>
           {showSeoAgent && (
             <NavLink to="/seo-research" className={({ isActive }) => `nav-link seo-agent-link ${isActive ? 'active' : ''}`}>
               ✨ SEO Agent
@@ -235,6 +238,9 @@ export const Header: React.FC = () => {
             </NavLink>
             <NavLink to="/resources" className="mobile-nav-link">
               Resources
+            </NavLink>
+            <NavLink to="/submit-report" className="mobile-nav-link">
+              Submit Report
             </NavLink>
             {showSeoAgent && (
               <NavLink to="/seo-research" className="mobile-nav-link">

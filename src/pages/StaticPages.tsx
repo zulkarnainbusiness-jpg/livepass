@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Mountain, Search, Compass, Bell, Home, User, Users, ShieldCheck, Mail, Sparkles, MapPin, Heart } from 'lucide-react';
+import { Mountain, Search, Compass, Bell, Home, User, Users, ShieldCheck, Mail, Sparkles, MapPin, Heart, Send } from 'lucide-react';
 import { SEOHelper } from '../components/SEOHelper';
 
 export const AboutPage: React.FC = () => {
@@ -156,9 +156,12 @@ export const AboutPage: React.FC = () => {
             <p style={{ margin: '0 0 12px 0', color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.65 }}>
               If you spot outdated info on a pass, or you've got local knowledge that could help other travellers, reach out. This platform works better with more eyes on the road.
             </p>
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', fontSize: '13.5px' }}>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', alignItems: 'center', fontSize: '13.5px' }}>
+              <Link to="/submit-report" className="btn btn-primary" style={{ padding: '8px 16px', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <Send size={14} /> Submit a Road Report
+              </Link>
               <a href="mailto:zulkarnainbusiness@gmail.com" style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '5px' }}>
-                <Mail size={14} /> Send a Road Report (zulkarnainbusiness@gmail.com)
+                <Mail size={14} /> Direct Email (zulkarnainbusiness@gmail.com)
               </a>
             </div>
           </div>

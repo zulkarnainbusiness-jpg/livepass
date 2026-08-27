@@ -52,6 +52,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/passes">Passes Directory</Link></li>
               <li><Link to="/map">Interactive Map</Link></li>
               <li><Link to="/alerts">Pass Alerts & Closures</Link></li>
+              <li><Link to="/submit-report">Submit Road Report</Link></li>
               <li><Link to="/resources">Resources & Chain Laws</Link></li>
               <li><Link to="/about">About LivePassWatch</Link></li>
             </ul>

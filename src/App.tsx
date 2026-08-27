@@ -11,6 +11,7 @@ import { PassDetailPage } from './pages/PassDetailPage';
 import { ResourcesPage } from './pages/ResourcesPage';
 import { SeoResearchPage } from './pages/SeoResearchPage';
 import { AboutPage, PrivacyPage, TermsPage, NotFoundPage } from './pages/StaticPages';
+import { SubmitReportPage } from './pages/SubmitReportPage';
 import { PassesProvider } from './context/PassesContext';
 import { AdminDashboard } from './pages/AdminDashboard';
 import { passesData, getPassUrl } from './data/passes';
@@ -66,6 +67,8 @@ export const App: React.FC = () => {
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/seo-research" element={<SeoResearchPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
+            <Route path="/submit-report" element={<SubmitReportPage />} />
+            <Route path="/report" element={<Navigate to="/submit-report" replace />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
