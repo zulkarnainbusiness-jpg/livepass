@@ -590,6 +590,97 @@ export const passesData: MountainPass[] = [
     isPopular: true
   },
   {
+    id: 'north-cascades-pass',
+    slug: 'north-cascades-pass',
+    name: 'North Cascades Pass',
+    country: 'United States',
+    countryCode: 'USA',
+    continent: 'North America',
+    state: 'Washington',
+    highway: 'SR 20',
+    elevationFt: 5477,
+    elevationM: 1669,
+    coordinates: { lat: 48.5208, lng: -120.6481 },
+    status: 'OPEN',
+    statusDetail: 'North Cascades Highway (SR 20) is OPEN to traffic. The road is clear and dry over the 5,477 ft Washington Pass summit.',
+    lastUpdated: '5 minutes ago',
+    description: 'North Cascades Pass (Washington Pass) is the highest highway crossing in Washington State, situated on the scenic State Route 20 (North Cascades Highway) at an elevation of 5,477 feet (1,669 meters). It connects the Skagit River valley in Western Washington with the Methow Valley in Eastern Washington, traversing spectacular alpine peaks and glacier-carved valleys.',
+    image: '/north-cascades-pass.jpg',
+    weather: {
+      tempF: 68,
+      tempC: 20,
+      condition: 'Sunny / Hazy',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 0,
+      depthIn: 0,
+      condition: 'Dry Pavement'
+    },
+    wind: {
+      speedKmh: 10,
+      speedMph: 6,
+      direction: 'SW',
+      description: 'Gentle Breeze'
+    },
+    roadCondition: 'Pavement bare, dry and clear. Roadway is fully open for the summer/autumn season. No traction restrictions or seasonal alerts active.',
+    chainRequirement: 'No restrictions currently active.',
+    cameras: [
+      {
+        id: 'north-cascades-cam-summit',
+        title: 'Washington Pass Summit (SR 20 MP 162)',
+        image: '/north-cascades-pass.jpg',
+        milepost: 'MP 162',
+        source: 'WSDOT',
+        updateIntervalMs: 120000
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'snoqualmie-pass',
+        slug: 'snoqualmie-pass',
+        name: 'Snoqualmie Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'I-90',
+        status: 'OPEN',
+        elevationFt: 3022,
+        lastUpdated: '5 min ago',
+        distanceKm: 155
+      },
+      {
+        id: 'stevens-pass',
+        slug: 'stevens-pass',
+        name: 'Stevens Pass',
+        country: 'United States',
+        state: 'Washington',
+        highway: 'US 2',
+        status: 'OPEN',
+        elevationFt: 4061,
+        lastUpdated: '10 min ago',
+        distanceKm: 98
+      }
+    ],
+    overview: {
+      openedYear: 1972,
+      lengthMiles: 140,
+      lengthKm: 225,
+      annualSnowfallIn: 450,
+      annualSnowfallM: 11.4,
+      summary: 'State Route 20, the North Cascades Highway, is the northernmost corridor across the Cascade Range in Washington. Opened in 1972, it is widely considered one of the most scenic drives in the United States. Due to extreme avalanche hazard at the Washington Pass summit (5,477 ft), the road closes seasonally every winter, usually from late November or early December until April or May.'
+    },
+    faqs: [
+      {
+        question: 'Is the North Cascades Highway open right now?',
+        answer: 'Yes, the North Cascades Highway (SR 20) is currently OPEN to all traffic. Pavement is clear and dry across the summit.'
+      },
+      {
+        question: 'How often does this pass close in winter?',
+        answer: 'North Cascades Highway closes completely every winter, typically starting in late November or early December and reopening in April or May, depending on snowpack and avalanche risk.'
+      }
+    ]
+  },
+  {
     id: 'stevens-pass',
     slug: 'stevens-pass',
     name: 'Stevens Pass',
@@ -7214,8 +7305,4880 @@ export const passesData: MountainPass[] = [
       description: 'Check Bernina Pass opening status, road conditions, live webcams, weather and snow conditions before travelling through the Swiss Alps.',
       h1: 'Bernina Pass Opening Date, Road Status & Live Webcam'
     }
-  }
+  },
+  {
+    id: 'simplon-pass',
+    slug: 'simplon-pass',
+    name: 'Simplon Pass',
+    country: 'Switzerland',
+    countryCode: 'CHE',
+    continent: 'Europe',
+    state: 'Valais',
+    highway: 'Hauptstrasse 9 (Route 9 / H9)',
+    elevationFt: 6578,
+    elevationM: 2005,
+    coordinates: { lat: 46.2517, lng: 8.0333 },
+    status: 'OPEN',
+    statusDetail: 'Open to all vehicles. Road bare and clear over the 2,005 m summit. No chain restrictions in effect.',
+    lastUpdated: '5 minutes ago',
+    description: 'Simplon Pass (Italian: Passo del Sempione, German: Simplonpass) is a historic high-altitude Alpine crossing at 2,005 metres (6,578 ft) connecting Brig in the Swiss canton of Valais with Domodossola in the Piedmont region of Italy via Swiss Main Road 9 (Route 9 / H9). Unlike most high Swiss Alpine passes, the Simplon is maintained for year-round vehicular traffic. Originally engineered by Napoleon Bonaparte between 1800 and 1805 for military transit, it remains one of the most strategically important and scenically spectacular road crossings in the Alps, flanked by the deep Saltina Gorge, the 9-metre stone Simplon Eagle war memorial, and the high-altitude lakes of Rotelsee and Hopschusee.',
+    image: '/simplon-pass-switzerland-valais.jpg',
+    officialSource: 'https://www.alpen-paesse.ch/en/alpenpaesse/simplonpass/',
+    official_source_url: 'https://www.alpen-paesse.ch/en/alpenpaesse/simplonpass/',
+    official_authority: 'Kanton Wallis (Valais) Cantonal Road Authority & TCS (Touring Club Switzerland)',
+    verification_status: 'VERIFIED',
+    confidence: 'HIGH',
+    weather: {
+      tempF: 57,
+      tempC: 14,
+      condition: 'Partly Cloudy & Mild',
+      icon: 'cloud-sun'
+    },
+    snowDepth: {
+      depthCm: 0,
+      depthIn: 0,
+      condition: 'Bare & Dry Asphalt'
+    },
+    wind: {
+      speedKmh: 12,
+      speedMph: 7,
+      direction: 'SW',
+      description: 'Light Alpine Breeze'
+    },
+    roadCondition: 'Route 9 is open, bare, and dry across the 2,005 m summit plateau. No traction advisories or chain-mandatory orders in effect. Protective avalanche galleries covering key risk sections are intact and operational.',
+    chainRequirement: 'No restrictions currently active. Winter tires (3PMSF) are strongly recommended from November through April. Chains become mandatory only when indicated by official blue round road signs during or after heavy snowfall.',
+    cameras: [
+      {
+        id: 'simplon-cam-summit',
+        title: 'Simplon Pass Summit – Hospiz Area (2,005 m)',
+        image: '/simplon-pass-switzerland-valais.jpg',
+        milepost: 'Route 9 Summit',
+        direction: 'Panoramic — overlooking Route 9 and Hospice area',
+        location: 'Simplon Pass Summit, Valais, Switzerland',
+        source: 'Brig Simplon Tourismus / Simplon-Hospiz',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.brig-simplon.ch/webcam'
+      },
+      {
+        id: 'simplon-cam-brig',
+        title: 'Simplon Pass – Brig Approach (Northern Side)',
+        image: '/simplon-pass-switzerland-valais.jpg',
+        milepost: 'Route 9, Northern Ascent',
+        direction: 'Southbound toward Simplon summit from Brig',
+        location: 'Route 9, Brig Approach, Valais',
+        source: 'TCS (Touring Club Switzerland)',
+        updateIntervalMs: 60000,
+        officialUrl: 'https://www.tcs.ch/de/tools/routenplaner-verkehr/webcams.html'
+      }
+    ],
+    nearbyPasses: [
+      {
+        id: 'great-st-bernard-pass',
+        slug: 'great-st-bernard-pass',
+        name: 'Great St Bernard Pass',
+        country: 'Switzerland',
+        state: 'Valais',
+        highway: 'Route 21',
+        status: 'OPEN',
+        elevationFt: 8100,
+        lastUpdated: '15 min ago',
+        distanceKm: 78
+      },
+      {
+        id: 'furka-pass',
+        slug: 'furka-pass',
+        name: 'Furka Pass',
+        country: 'Switzerland',
+        state: 'Valais',
+        highway: 'Route 19',
+        status: 'OPEN',
+        elevationFt: 7976,
+        lastUpdated: '15 min ago',
+        distanceKm: 95
+      },
+      {
+        id: 'gotthard-pass',
+        slug: 'gotthard-pass',
+        name: 'Gotthard Pass',
+        country: 'Switzerland',
+        state: 'Uri & Ticino',
+        highway: 'Route 2 (H2)',
+        status: 'OPEN',
+        elevationFt: 6909,
+        lastUpdated: '20 min ago',
+        distanceKm: 105
+      }
+    ],
+    overview: {
+      openedYear: 1805,
+      lengthMiles: 25,
+      lengthKm: 40,
+      annualSnowfallIn: 157,
+      annualSnowfallM: 4.0,
+      summary: 'Simplon Pass (Passo del Sempione) is a historic year-round Alpine crossing at 2,005 m (6,578 ft) in the Swiss canton of Valais, connecting Brig, Switzerland with Domodossola, Italy via Main Road 9 (Route 9). Commissioned by Napoleon Bonaparte between 1800 and 1805 for military and commercial transit, the pass became a vital European trade route. Today it remains one of the few high-altitude Swiss passes kept fully open throughout the year thanks to avalanche protection galleries built between 1957 and the 1980s. The route is flanked by the dramatic Saltina Gorge, the Simplon Eagle monument, and the high-altitude lakes of Rotelsee and Hopschusee.'
+    },
+    forecast: [
+      { day: 'Today', condition: 'Partly Cloudy', tempHighF: 59, tempLowF: 46, icon: 'cloud-sun' },
+      { day: 'Tomorrow', condition: 'Mostly Sunny', tempHighF: 62, tempLowF: 45, icon: 'sun' },
+      { day: 'Day 3', condition: 'Scattered Showers', tempHighF: 55, tempLowF: 43, icon: 'cloud-rain' },
+      { day: 'Day 4', condition: 'Partly Cloudy', tempHighF: 58, tempLowF: 44, icon: 'cloud-sun' },
+      { day: 'Day 5', condition: 'Sunny & Clear', tempHighF: 63, tempLowF: 47, icon: 'sun' }
+    ],
+    dataSources: [
+      { name: 'Alpen-paesse.ch (Swiss Alpine Passes)', type: 'Official Swiss Alpine Pass Status & Conditions', url: 'https://www.alpen-paesse.ch/en/alpenpaesse/simplonpass/' },
+      { name: 'TCS (Touring Club Switzerland)', type: 'Live Road Status & Traffic Map', url: 'https://www.tcs.ch' },
+      { name: 'MeteoSwiss (Federal Office of Meteorology)', type: 'Official Swiss Mountain Weather Forecasts', url: 'https://www.meteoswiss.admin.ch' },
+      { name: 'Brig Simplon Tourismus', type: 'Local Pass Information & Webcams', url: 'https://www.brig-simplon.ch' }
+    ],
+    quickFacts: {
+      state: 'Valais, Switzerland / Piedmont, Italy',
+      mountainRange: 'Pennine Alps (Lepontine Alps transition)',
+      elevationSummary: '2,005 m / 6,578 ft above sea level',
+      connects: 'Brig, Switzerland (678 m) with Domodossola, Italy (272 m)',
+      nearestTown: 'Brig (20 km north) · Domodossola (25 km south)',
+      roadType: 'Main Road 9 (Hauptstrasse 9 / H9) — National Road',
+      bestTime: 'Year-round (Summer for cycling & touring; Winter with winter tires)',
+      highlight: 'One of the rare high Alpine passes maintained for year-round traffic. Historic Napoleonic road with dramatic views of the Saltina Gorge, Simplon Eagle statue, and alpine lakes at 2,000 m.'
+    },
+    routeDetails: {
+      distanceKm: 40,
+      distanceMiles: 25,
+      duration: '45 – 60 minutes (Brig to Domodossola via Route 9)',
+      origin: 'Brig, Valais, Switzerland (Elevation: 678 m / 2,224 ft)',
+      destination: 'Domodossola, Piedmont, Italy (Elevation: 272 m / 892 ft)',
+      waypoints: [
+        'Brig (678 m) — Northern gateway city, A9 motorway junction',
+        'Schalberg Viaduct — First major structure on the ascent',
+        'Gabi (1,226 m) — Mid-ascent alpine village',
+        'Simplon Village (1,476 m) — Last village before the summit',
+        'Simplon Pass Summit (2,005 m) — Crest with Hospiz hotel & Simplon Eagle statue',
+        'Rotelsee (2,028 m) — High-altitude lake just above summit',
+        'Simplon Kulm — South side descent begins',
+        'Gondo (855 m) — Gorge village & Swiss-Italian border area',
+        'Domodossola, Italy (272 m) — Southern terminus, Piedmont rail hub'
+      ]
+    },
+    cyclingInfo: {
+      summary: 'Simplon Pass is one of the great classic Alpine cycling climbs, particularly celebrated for the northern ascent from Brig. The road is paved throughout with moderate gradients, making it accessible to well-trained recreational cyclists. It featured in the Giro d\'Italia and remains a prestigious sportive destination.',
+      approaches: [
+        {
+          name: 'Northern Ascent: Brig → Simplon Pass',
+          origin: 'Brig, Valais, Switzerland',
+          distanceKm: 22,
+          distanceMiles: 13.7,
+          elevationGainM: 1327,
+          elevationGainFt: 4353,
+          avgGradient: '6.0%',
+          maxGradient: '9%',
+          hairpins: 8,
+          description: 'The classic Simplon climb from Brig offers a sustained alpine ascent through forest, alpine meadows, and the Saltina Gorge. Traffic is typically light above Simplon Village. The gradient is consistent and rewards steady pacing.'
+        },
+        {
+          name: 'Southern Ascent: Domodossola → Simplon Pass',
+          origin: 'Domodossola, Piedmont, Italy',
+          distanceKm: 28,
+          distanceMiles: 17.4,
+          elevationGainM: 1733,
+          elevationGainFt: 5685,
+          avgGradient: '6.2%',
+          maxGradient: '10%',
+          hairpins: 12,
+          description: 'The Italian approach is longer and starts in the warm Ossola Valley before climbing through the Gondo Gorge. This side is more dramatic, with vertical canyon walls and cascading waterfalls near Gondo.'
+        }
+      ],
+      bestSeason: 'June through October. The pass is typically clear of snow by late May/early June. Summer (July–August) offers the most reliable conditions.',
+      safetyTips: [
+        'Check for occasional heavy vehicle (lorry/HGV) traffic through the Gondo Gorge on the Italian side',
+        'Carry full rain gear — afternoon thunderstorms are frequent in the Alps in summer',
+        'Fill water at the Simplon Pass Hospiz or Simplon Village before the descent',
+        'Lights are required when cycling through the short avalanche galleries',
+        'The descent to Domodossola is steep — check brake pads before departing'
+      ]
+    },
+    drivingInfo: {
+      summary: 'Route 9 over Simplon Pass is a well-maintained two-lane highway with a good quality asphalt surface. The gradients are moderate (maximum ~8–9%) and the road is wide enough for two-way traffic except in the narrowest gorge sections near Gondo.',
+      characteristics: [
+        'Well-maintained paved road (Hauptstrasse 9) with clearly marked lanes',
+        'Maximum gradient of approximately 8–9% on both ascent and descent',
+        'Avalanche protection galleries cover the most exposed sections',
+        'Width is adequate for standard vehicles, campervans, and coaches',
+        'Heavy freight vehicles (HGVs) are permitted but regulate timing in peak season',
+        'Road narrows significantly through the Gondo Gorge on the Italian approach'
+      ],
+      switchbacksCount: 'Approximately 8 hairpins on the northern side; 12 on the southern side',
+      safetyAndEtiquette: [
+        'Yield to uphill traffic in narrow gorge sections',
+        'Use designated passing places in the Gondo Gorge',
+        'Keep headlights on in all avalanche galleries and tunnel sections',
+        'Respect the 80 km/h speed limit on the open pass road',
+        'Do not stop in gallery tunnels — use only official viewpoint laybys'
+      ],
+      motorcycleTips: [
+        'The Simplon is an outstanding motorcycle route with sweeping views and consistent tarmac',
+        'The northern descent to Brig has satisfying mid-speed bends through forest',
+        'Avoid riding in wet conditions through the Gondo Gorge — rock debris can be present after rainfall',
+        'Fuel up in Brig or Domodossola — there are no petrol stations on the pass itself'
+      ]
+    },
+    distancesTable: [
+      { location: 'Brig, Switzerland', distance: '20 km / 12.4 mi', route: 'Route 9 northbound', notes: 'Northern gateway; A9 motorway junction; Rhône Valley' },
+      { location: 'Domodossola, Italy', distance: '25 km / 15.5 mi', route: 'Route 9 southbound (SS33)', notes: 'Southern terminus; Piedmont rail hub; Lago Maggiore region' },
+      { location: 'Sion, Switzerland', distance: '75 km / 47 mi', route: 'Route 9 / A9 motorway', notes: 'Valais cantonal capital via Rhône Valley' },
+      { location: 'Lausanne, Switzerland', distance: '145 km / 90 mi', route: 'A9 motorway via Rhône Valley', notes: 'Via Lake Geneva motorway' },
+      { location: 'Geneva, Switzerland', distance: '200 km / 124 mi', route: 'A9 / A1 via Lausanne', notes: 'International city; Geneva Airport hub' },
+      { location: 'Milan, Italy', distance: '145 km / 90 mi', route: 'SS33 → A8 motorway via Gravellona', notes: 'Major Italian city via Ossola Valley and A8' },
+      { location: 'Verbania / Lago Maggiore', distance: '60 km / 37 mi', route: 'SS33 → Lago Maggiore western shore', notes: 'Lake resort; ferry connections across Lago Maggiore' }
+    ],
+    accommodationInfo: {
+      summary: 'Accommodation directly on the Simplon Pass is limited to the iconic Simplon Pass Hospiz (Simplon Kulm Hotel), operating on the summit since the Napoleonic era. More comprehensive accommodation is available in Brig on the Swiss side and in Domodossola on the Italian side.',
+      lodges: [
+        {
+          name: 'Hotel Simplon Kulm (Simplon-Hospiz)',
+          location: 'Simplon Pass Summit, 2,005 m, Valais',
+          type: 'Historic Pass Hospice & Hotel',
+          description: 'The legendary summit hospice, operating in various forms since the early 19th century. Offers simple but characterful accommodation directly at the pass crest, making it unique for Alpine pass lodging.',
+          website: 'https://www.simplon-kulm.ch'
+        },
+        {
+          name: 'Hotel Victoria (Brig)',
+          location: 'Brig, Valais, Switzerland (20 km north)',
+          type: 'Town Hotel',
+          description: 'Comfortable four-star hotel in Brig town centre, within walking distance of Brig railway station and the Simplon Tunnel terminal.',
+          website: 'https://www.hotelvictoriabrig.ch'
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: 'Is Simplon Pass open right now?',
+        answer: 'Yes, Simplon Pass (Route 9 / H9) is currently OPEN to all vehicles. The pass is maintained year-round by the Canton of Valais road authority and does not have a scheduled seasonal closure. Always verify the latest status on alpen-paesse.ch or TCS before departing, as short-term closures can occur during severe winter storms.'
+      },
+      {
+        question: 'Is Simplon Pass open today?',
+        answer: 'Simplon Pass is open today. Unlike most high Swiss Alpine passes (such as the Furka or Grimsel), the Simplon does not close for winter. It remains open 365 days a year, subject only to temporary closures during exceptional snowfall, avalanche clearing, or emergency road works. Check the official TCS or alpen-paesse.ch status for live updates.'
+      },
+      {
+        question: 'What are the current road conditions on Simplon Pass?',
+        answer: 'Current conditions: road is bare and clear on the summit plateau. No chain-mandatory signs are active. Weather is partly cloudy with temperatures around 14°C (57°F) at the 2,005 m summit. For verified live conditions, consult the official alpen-paesse.ch status page or TCS Switzerland traffic feed.'
+      },
+      {
+        question: 'Does Simplon Pass close in winter?',
+        answer: 'No. Simplon Pass does not have a scheduled winter closure. It is one of the very few high-altitude passes in Switzerland (over 2,000 m) that remains open year-round. This is made possible by modern avalanche protection galleries built between 1957 and the 1980s. However, temporary closures can occur during extreme winter weather events.'
+      },
+      {
+        question: 'When does Simplon Pass close?',
+        answer: 'Simplon Pass does not close on a seasonal schedule. It operates year-round. Temporary closures are possible during severe blizzards, avalanche hazard operations, or emergency road maintenance. These closures are typically short (hours, not days). The BLS Lötschberg Car Shuttle Train and the A9 Motorway to Italy via the San Bernardino Tunnel are the primary alternatives during any closure.'
+      },
+      {
+        question: 'Does Simplon Pass require snow chains?',
+        answer: 'Switzerland does not mandate chains by calendar date. On Simplon Pass, chains become legally mandatory only when official blue road signs (circle with white chain symbol) are displayed — typically during or immediately after heavy snowfall. Winter tires (3PMSF rated) are strongly recommended from November through April. Always carry chains in your vehicle from late October onward as a precaution.'
+      },
+      {
+        question: 'What is the elevation of Simplon Pass?',
+        answer: 'Simplon Pass summit elevation is 2,005 metres (6,578 feet) above sea level. The exact summit is located at coordinates 46°15\'N, 8°02\'E on the Swiss-Italian drainage divide between the Rhône and Po river systems, in the Pennine Alps.'
+      },
+      {
+        question: 'Where is Simplon Pass located?',
+        answer: 'Simplon Pass (Passo del Sempione) is located in the Swiss Alps, in the Canton of Valais (Wallis), Switzerland. It sits on the border between the Pennine Alps and the Lepontine Alps, connecting the Swiss city of Brig in the Rhône Valley with Domodossola in the Italian Piedmont region.'
+      },
+      {
+        question: 'What highway goes through Simplon Pass?',
+        answer: 'Simplon Pass is crossed by Swiss Main Road 9 (Hauptstrasse 9, abbreviated H9 or Route 9). On the Swiss side it connects Brig with the pass summit; on the Italian side it continues as SS33 (Strada Statale 33 del Sempione) to Domodossola. It is a national secondary road, not a motorway — the A9 motorway through the region uses the Simplon Tunnel instead.'
+      },
+      {
+        question: 'Is there a webcam for Simplon Pass?',
+        answer: 'Yes. Live webcam feeds for Simplon Pass are available through Brig Simplon Tourismus (brig-simplon.ch/webcam) and through the Simplon-Hospiz website. The TCS (Touring Club Switzerland) also maintains traffic cameras at multiple Swiss pass locations. These cameras refresh regularly and show live summit conditions.'
+      },
+      {
+        question: 'What is the weather at Simplon Pass today?',
+        answer: 'At the Simplon Pass summit (2,005 m), current conditions are partly cloudy with temperatures around 14°C (57°F). Weather in the high Alps changes rapidly. For precise, up-to-date forecasts, consult the official MeteoSwiss forecast (meteoswiss.admin.ch) specifically filtered for the Simplon Pass elevation zone.'
+      },
+      {
+        question: 'How much snow is currently at Simplon Pass?',
+        answer: 'In late August, there is no snow on the Simplon Pass road — the route is fully clear. The pass sits at 2,005 m and typically accumulates snow between November and April. During peak winter, snowpack on the surrounding terrain can reach 1–3 metres, though the road itself is maintained clear. For real-time snowpack data, consult MeteoSwiss or the SLF (WSL Institute for Snow and Avalanche Research).'
+      },
+      {
+        question: 'How long is the drive over Simplon Pass?',
+        answer: 'The drive from Brig (Switzerland) to Domodossola (Italy) via Simplon Pass is approximately 40 km (25 miles) and takes around 45–60 minutes in normal conditions. Allow extra time for sightseeing stops at the Simplon Eagle, Rotelsee lake, and the Hospiz area at the summit.'
+      },
+      {
+        question: 'Is Simplon Pass suitable for campervans and motorhomes?',
+        answer: 'Yes, Simplon Pass is suitable for most campervans and motorhomes. Route 9 is a well-maintained national road with adequate width. Very large motorhomes (over 3.5 m wide) and long combinations should take extra care through the narrow Gondo Gorge on the Italian side. There are no height or weight restrictions specifically barring campervans on this route.'
+      },
+      {
+        question: 'What is the alternative to Simplon Pass if it closes?',
+        answer: 'If Simplon Pass is temporarily closed, the primary alternatives are: 1) BLS Lötschberg Car Shuttle Train (Autoverlad) — load your vehicle onto a train at Kandersteg and exit at Goppenstein; 2) The A2 motorway via the Gotthard Tunnel (further east but a faster motorway option); 3) The Mont Blanc Tunnel (further west, connecting France and Italy). The nearby Simplon Railway Tunnel itself is passenger/freight rail only and does not carry road vehicles.'
+      },
+      {
+        question: 'What is the Simplon Eagle at the pass?',
+        answer: 'The Simplon Eagle (German: Simplonaar) is a 9-metre-high stone eagle statue located at the Simplon Pass summit at 2,005 m. Carved from white limestone and erected in 1906, it commemorates the Swiss Army\'s "Stellung am Simplon" — the strategic military watch maintained over the pass during the First World War to guard Swiss neutrality. It is a landmark visible from the main road and a popular photo stop.'
+      },
+      {
+        question: 'Is cycling over Simplon Pass recommended?',
+        answer: 'Simplon Pass is a classic and highly recommended Alpine cycling climb. The northern ascent from Brig is 22 km with an elevation gain of 1,327 m (average gradient 6%). The southern ascent from Domodossola is 28 km with a gain of 1,733 m. Both routes are fully paved with manageable gradients. Cyclists should be aware of HGV traffic through the Gondo Gorge and carry lights for the avalanche galleries.'
+      },
+      {
+        question: 'What is the history of Simplon Pass?',
+        answer: 'Simplon Pass has been used as an Alpine crossing since at least pre-Roman times. The modern road was engineered under Napoleon Bonaparte\'s orders between 1800 and 1805 to provide a strategic military and commercial route from France into northern Italy. The pass\'s importance declined after the Simplon Railway Tunnel (the world\'s longest rail tunnel when it opened in 1906) was constructed beneath it. From 1957 onward, major avalanche protection galleries were built to ensure year-round vehicular access, making it one of the most reliable high-pass crossings in Europe.'
+      },
+      {
+        question: 'Can trucks and HGVs use Simplon Pass?',
+        answer: 'Yes, heavy goods vehicles (HGVs) and lorries are permitted on Simplon Pass (Route 9). The road is wide enough for two-way HGV traffic in most sections, though the Gondo Gorge requires careful navigation. However, Switzerland\'s 40-tonne truck ban on transit routes pushes most freight through the Gotthard and San Bernardino tunnels. The Simplon Tunnel railway is the preferred freight route for rail operators. Camion/lorry drivers should check current advisories from the Swiss Federal Roads Office (ASTRA).'
+      },
+      {
+        question: 'Is there a toll on Simplon Pass?',
+        answer: 'There is no toll to drive over Simplon Pass on Route 9. However, if you are travelling in Switzerland using the motorway network (A-roads), you are legally required to display a valid Swiss Motorway Vignette (annual sticker, approximately CHF 40). Route 9 itself is not a motorway, so the Vignette is not required just for crossing the pass, but you will likely need it for approach motorway sections to/from Brig.'
+      }
+    ],
+    isPopular: true,
+    customSeo: {
+      title: 'Simplon Pass Road Conditions Today: Open Status, Weather & Live Webcam',
+      description: 'Check Simplon Pass road conditions today — open or closed status, current weather, snow, chain requirements, and live webcam. Year-round pass connecting Brig, Switzerland with Domodossola, Italy.',
+      h1: 'Simplon Pass Road Conditions, Status & Live Webcam'
+    },
+    searchKeywords: [
+      'Simplon Pass road conditions',
+      'Simplon Pass open',
+      'Simplon Pass closed',
+      'Simplon Pass status',
+      'is Simplon Pass open today',
+      'is Simplon Pass open right now',
+      'Simplon Pass webcam',
+      'Simplon Pass live webcam',
+      'Simplon Pass weather today',
+      'Simplon Pass snow',
+      'Simplon Pass snow depth',
+      'Simplon Pass opening date',
+      'when does Simplon Pass close',
+      'Simplon Pass elevation',
+      'Simplon Pass map',
+      'Passo del Sempione road conditions',
+      'Simplonpass Strassenzustand',
+      'Simplon Pass chains required'
+    ],
+    aliases: ['Passo del Sempione', 'Simplonpass', 'Col du Simplon']
+  },
+  {
+    id: 'santiam-pass',
+    slug: 'santiam-pass',
+    name: 'Santiam Pass',
+    country: 'United States',
+    countryCode: 'USA',
+    continent: 'North America',
+    state: 'Oregon',
+    highway: 'US-20',
+    elevationFt: 4817,
+    elevationM: 1468,
+    coordinates: { lat: 44.3883, lng: -121.8450 },
+    status: 'OPEN',
+    statusDetail: 'to all vehicles. Road bare and wet.',
+    lastUpdated: '4 minutes ago',
+    description: 'Santiam Pass is a mountain pass in the Cascade Range in Oregon. It is located on U.S. Route 20, connecting the Willamette Valley to the west with Sisters and the high desert of Central Oregon to the east.',
+    image: '/santiam-pass-oregon.jpg',
+    officialSource: 'https://tripcheck.com',
+    weather: {
+      tempF: 34,
+      tempC: 1,
+      condition: 'Light Flurries',
+      icon: 'cloud-snow'
+    },
+    snowDepth: {
+      depthCm: 15,
+      depthIn: 6,
+      condition: 'Packed'
+    },
+    wind: {
+      speedKmh: 10,
+      speedMph: 6,
+      direction: 'NW',
+      description: 'Light Breeze'
+    },
+    roadCondition: 'Bare and wet. Carry traction tires or chains.',
+    chainRequirement: 'No restrictions for passenger vehicles. Carry chains or traction tires.',
+    cameras: [
+      {
+        id: 'santiam-summit',
+        title: 'Santiam Pass Summit',
+        image: '/santiam-pass-oregon.jpg',
+        milepost: 'MP 80',
+        source: 'ODOT TripCheck',
+        updateIntervalMs: 120000
+      }
+    ],
+    nearbyPasses: [],
+    overview: {
+      openedYear: 1939,
+      lengthMiles: 20,
+      lengthKm: 32,
+      annualSnowfallIn: 300,
+      annualSnowfallM: 7.6,
+      summary: 'Santiam Pass is a year-round mountain pass on US Highway 20 across the Oregon Cascade Range.'
+    },
+    forecast: [
+      { day: 'Today', condition: 'Light Flurries', tempHighF: 36, tempLowF: 28, icon: 'cloud-snow' }
+    ],
+    dataSources: [
+      { name: 'Oregon Department of Transportation (ODOT)', type: 'TripCheck', url: 'https://tripcheck.com' }
+    ],
+    faqs: [
+      {
+        question: 'Is Santiam Pass open today?',
+        answer: 'Yes, Santiam Pass is open today. The pass is maintained year-round by the Oregon Department of Transportation (ODOT) using snowplows and de-icers to ensure continuous access across the Cascade Range. However, winter storms can bring sudden traction requirements or short temporary closures for accident clearance.'
+      },
+      {
+        question: 'Is Santiam Pass open right now?',
+        answer: 'Yes, Santiam Pass is open right now with no general closures in place. Check the live status panel and active ODOT webcams on this page to confirm current road conditions and any active chain restrictions before departing.'
+      },
+      {
+        question: 'What are the current road conditions on Santiam Pass?',
+        answer: 'The current road conditions on Santiam Pass are bare and wet with light flurries. Carrying chains or traction tires is highly recommended as conditions can deteriorate rapidly during winter weather cycles.'
+      },
+      {
+        question: 'What is the Santiam Pass opening date?',
+        answer: 'Santiam Pass does not have a seasonal opening date because it remains open year-round. Unlike McKenzie Pass (OR 242) which closes annually for winter, U.S. Route 20 over Santiam Pass is a primary commercial corridor and is kept clear of snow by ODOT crews all winter.'
+      },
+      {
+        question: 'Is Santiam Pass closed today?',
+        answer: 'No, Santiam Pass is not closed today. It is currently open to traffic. If severe winter blizzards or traffic incidents occur, short-term closures may be implemented by ODOT. You can verify live closure status on TripCheck.com.'
+      },
+      {
+        question: 'When does Santiam Pass close for winter?',
+        answer: 'Santiam Pass does not close for the winter. It is maintained as a year-round highway. While nearby scenic route McKenzie Pass (OR 242) closes from November to June, U.S. 20 over Santiam Pass is plowed continuously and remains open.'
+      },
+      {
+        question: 'Where can I see a Santiam Pass live webcam?',
+        answer: 'You can view the official live ODOT TripCheck webcam feeds directly on this page or by visiting TripCheck.com to check the summit camera views showing current snow depth and road visibility.'
+      },
+      {
+        question: 'What is the Santiam Pass elevation?',
+        answer: 'Santiam Pass is located at an elevation of 4,817 feet (1,468 meters) above sea level in the Oregon Cascades.'
+      },
+      {
+        question: 'What highway goes through Santiam Pass?',
+        answer: 'Santiam Pass is traversed by U.S. Route 20 (US 20), which connects the Willamette Valley with Central Oregon.'
+      },
+      {
+        question: 'Are there chain requirements on Santiam Pass?',
+        answer: 'Currently, there are no mandatory chain requirements for passenger vehicles, but drivers are advised to carry chains or traction tires. ODOT enforces traction requirements dynamically during heavy snowstorms.'
+      },
+      {
+        question: 'Is Santiam Pass open in winter?',
+        answer: 'Yes, Santiam Pass is open in winter. Road crews plow and sand the pass 24/7 during snowstorms, but drivers should be prepared for winter conditions and carry snow chains.'
+      },
+      {
+        question: 'How do I check the Santiam Pass forecast?',
+        answer: 'You can check the weather forecast for the pass summit on this page or by visiting the National Weather Service (NWS) forecast page for the Oregon Cascades.'
+      },
+      {
+        question: 'Where is Santiam Pass located?',
+        answer: 'Santiam Pass is located in the Cascade Range in Oregon, along the boundary between Linn and Jefferson counties.'
+      },
+      {
+        question: 'Is Santiam Pass closed right now?',
+        answer: 'No, Santiam Pass is currently open. If emergency conditions require a temporary closure, it will be posted instantly on TripCheck and updated in our status monitor.'
+      },
+      {
+        question: 'How much snow is at Santiam Pass?',
+        answer: 'The current snow depth at the summit is 6 inches. Snow depth varies throughout the winter, and Hoodoo Ski Area (located at the summit) tracks seasonal snowpack averages.'
+      },
+      {
+        question: 'What is the Santiam Pass closing date?',
+        answer: 'There is no closing date for Santiam Pass. The highway remains open all winter, unlike seasonally closed routes in the Cascades.'
+      },
+      {
+        question: 'Does Santiam Pass require traction tires?',
+        answer: 'When winter storms hit, ODOT signs will show "Traction Tires Required" or "Chains Required" for all vehicles. Check current conditions before travel.'
+      },
+      {
+        question: 'How high is Santiam Pass?',
+        answer: 'The summit elevation of Santiam Pass is 4,817 feet (1,468 meters) above sea level.'
+      },
+      {
+        question: 'What is the closest town to Santiam Pass?',
+        answer: 'The closest town to the east is Sisters, Oregon (about 22 miles), and to the west is Sweet Home, Oregon (about 47 miles).'
+      },
+      {
+        question: 'How do I get to Santiam Pass?',
+        answer: 'You can reach Santiam Pass by driving U.S. Route 20 east from Albany/Sweet Home, or west from Bend/Sisters.'
+      }
+    ],
+    customSeo: {
+      title: 'Santiam Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch',
+      description: 'Check real-time Santiam Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.',
+      h1: 'Santiam Pass opening date Road Status, Webcams & Conditions'
+    },
+    searchKeywords: [
+      'Santiam Pass road conditions',
+      'Santiam Pass open',
+      'Santiam Pass closed',
+      'Santiam Pass status',
+      'is Santiam Pass open today',
+      'is Santiam Pass open right now',
+      'Santiam Pass webcam',
+      'Santiam Pass live webcam',
+      'Santiam Pass weather today',
+      'Santiam Pass snow',
+      'Santiam Pass snow depth',
+      'Santiam Pass opening date',
+      'when does Santiam Pass close',
+      'Santiam Pass elevation',
+      'Santiam Pass map',
+      'is Santiam Pass closed today'
+    ],
+    aliases: ['Santiam Pass Summit', 'US 20 Santiam Pass']
+  },
+  {
+    "id": "mckenzie-pass",
+    "slug": "mckenzie-pass",
+    "name": "McKenzie Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Oregon",
+    "highway": "OR-242",
+    "elevationFt": 5325,
+    "elevationM": 1623,
+    "coordinates": {
+      "lat": 44.2608,
+      "lng": -121.8
+    },
+    "status": "CLOSED",
+    "statusDetail": "Closed for the winter season.",
+    "lastUpdated": "4 minutes ago",
+    "description": "McKenzie Pass is a scenic mountain pass in the Cascade Range in Oregon. It is located on Oregon Route 242, connecting Sisters with the Willamette Valley.",
+    "image": "/mckenzie-pass-oregon.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 28,
+      "tempC": -2,
+      "condition": "Snowing",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 150,
+      "depthIn": 60,
+      "condition": "Deep Snow"
+    },
+    "wind": {
+      "speedKmh": 15,
+      "speedMph": 9,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Impassable. Road closed for winter.",
+    "chainRequirement": "Pass closed to all traffic.",
+    "cameras": [
+      {
+        "id": "mckenzie-summit",
+        "title": "McKenzie Pass Gates",
+        "image": "/mckenzie-pass-oregon.jpg",
+        "milepost": "MP 62",
+        "source": "ODOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 37,
+      "lengthKm": 60,
+      "annualSnowfallIn": 400,
+      "annualSnowfallM": 10.1,
+      "summary": "McKenzie Pass OR 242 closes seasonally."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Snow Showers",
+        "tempHighF": 30,
+        "tempLowF": 20,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Oregon Department of Transportation",
+        "type": "TripCheck"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is McKenzie Pass open today?",
+        "answer": "McKenzie Pass (OR 242) is seasonally closed for the winter and is not open today. The highway typically closes in early/mid-November and reopens around the third Monday of June."
+      },
+      {
+        "question": "Is McKenzie Pass open right now?",
+        "answer": "McKenzie Pass is currently closed. Gates are locked at both the east and west approaches, and winter travel is forbidden for all vehicles, bikes, and pedestrians."
+      },
+      {
+        "question": "What are the current road conditions on McKenzie Pass?",
+        "answer": "McKenzie Pass road conditions are currently snow-covered and impassable. The road is not maintained or plowed during the winter closure."
+      },
+      {
+        "question": "What is the McKenzie Pass opening date?",
+        "answer": "The typical opening date for McKenzie Pass is the third Monday in June (often around June 15-20), depending on snowpack levels and clearance times."
+      },
+      {
+        "question": "Is McKenzie Pass closed today?",
+        "answer": "Yes, McKenzie Pass is closed today due to seasonal winter conditions."
+      },
+      {
+        "question": "When does McKenzie Pass close for winter?",
+        "answer": "McKenzie Pass usually closes for the winter season in early or mid-November, following the first major snow storm."
+      },
+      {
+        "question": "Where is the McKenzie Pass webcam?",
+        "answer": "You can view ODOT cameras near McKenzie Pass on TripCheck, though there are no live webcams at the summit itself during the winter closure."
+      },
+      {
+        "question": "What is the elevation of McKenzie Pass?",
+        "answer": "McKenzie Pass has an elevation of 5,325 feet (1,623 meters) at the summit."
+      },
+      {
+        "question": "What highway goes through McKenzie Pass?",
+        "answer": "Oregon Route 242 (OR 242) goes over McKenzie Pass."
+      },
+      {
+        "question": "Are tire chains required on McKenzie Pass?",
+        "answer": "When the pass is open in the summer/fall, chains are not required. In winter, the pass is completely closed."
+      },
+      {
+        "question": "Is McKenzie Pass open in winter?",
+        "answer": "No, McKenzie Pass is closed in winter to all vehicle traffic."
+      },
+      {
+        "question": "How do I check McKenzie Pass forecast?",
+        "answer": "You can check the National Weather Service forecast for Sisters or Eugene for mountain area conditions."
+      },
+      {
+        "question": "Where is McKenzie Pass located?",
+        "answer": "McKenzie Pass is located in the Cascade Range in Oregon, connecting Sisters with Eugene."
+      },
+      {
+        "question": "Is McKenzie Pass closed right now?",
+        "answer": "Yes, McKenzie Pass is currently closed."
+      },
+      {
+        "question": "How much snow is at McKenzie Pass?",
+        "answer": "Snowpack at McKenzie Pass often reaches depths of 10 feet or more during peak winter."
+      },
+      {
+        "question": "What is the McKenzie Pass closing date?",
+        "answer": "The closing date varies each year but typically falls in mid-November."
+      },
+      {
+        "question": "Does McKenzie Pass require traction tires?",
+        "answer": "The pass is closed, so no traction tires or vehicles are permitted."
+      },
+      {
+        "question": "How high is McKenzie Pass?",
+        "answer": "McKenzie Pass is 5,325 feet high."
+      },
+      {
+        "question": "What is the closest town to McKenzie Pass?",
+        "answer": "Sisters, Oregon is the closest town to the east (about 15 miles)."
+      },
+      {
+        "question": "How do I get to McKenzie Pass?",
+        "answer": "Drive OR 242 west from Sisters, or east from Belknap Springs in the summer when the pass is open."
+      }
+    ],
+    "customSeo": {
+      "title": "McKenzie Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time McKenzie Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "McKenzie Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "McKenzie Pass road conditions",
+      "McKenzie Pass open",
+      "McKenzie Pass closed",
+      "McKenzie Pass status",
+      "McKenzie Pass opening date"
+    ]
+  },
+  {
+    "id": "willamette-pass",
+    "slug": "willamette-pass",
+    "name": "Willamette Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Oregon",
+    "highway": "OR-58",
+    "elevationFt": 5128,
+    "elevationM": 1563,
+    "coordinates": {
+      "lat": 43.6015,
+      "lng": -122.0392
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Willamette Pass is a mountain pass in the Cascade Range in Oregon. It is located on Oregon Route 58, connecting Eugene with Central Oregon.",
+    "image": "/willamette-pass-oregon.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Carry chains.",
+    "cameras": [
+      {
+        "id": "willamette-summit",
+        "title": "Willamette Pass Summit",
+        "image": "/willamette-pass-oregon.jpg",
+        "milepost": "MP 62",
+        "source": "ODOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1940,
+      "lengthMiles": 30,
+      "lengthKm": 48,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Willamette Pass is open year-round."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Oregon Department of Transportation",
+        "type": "TripCheck"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Willamette Pass open today?",
+        "answer": "Yes, Willamette Pass (OR 58) is open today. The pass is maintained year-round by ODOT."
+      },
+      {
+        "question": "Is Willamette Pass open right now?",
+        "answer": "Yes, Willamette Pass is open right now with no general closures in place."
+      },
+      {
+        "question": "What are the current road conditions on Willamette Pass?",
+        "answer": "Conditions are bare and wet with light flurries. Check live TripCheck webcams for real-time views."
+      },
+      {
+        "question": "What is the Willamette Pass opening date?",
+        "answer": "Willamette Pass does not close seasonally, so it has no seasonal opening date. It is open year-round."
+      },
+      {
+        "question": "Is Willamette Pass closed today?",
+        "answer": "No, Willamette Pass is not closed today."
+      },
+      {
+        "question": "When does Willamette Pass close for winter?",
+        "answer": "Willamette Pass does not close for winter. It remains open year-round with continuous plowing."
+      },
+      {
+        "question": "Where is the Willamette Pass webcam?",
+        "answer": "Live ODOT TripCheck webcams are available near the summit and Willamette Pass Ski Resort."
+      },
+      {
+        "question": "What is the elevation of Willamette Pass?",
+        "answer": "Willamette Pass has an elevation of 5,128 feet (1,563 meters) at the summit."
+      },
+      {
+        "question": "What highway goes through Willamette Pass?",
+        "answer": "Oregon Route 58 (OR 58), also known as the Willamette Pass Highway."
+      },
+      {
+        "question": "Are tire chains required on Willamette Pass?",
+        "answer": "Currently, chains are not required, but drivers are advised to carry them or have traction tires."
+      },
+      {
+        "question": "Is Willamette Pass open in winter?",
+        "answer": "Yes, Willamette Pass is open in winter, though snow storms can trigger chain requirements."
+      },
+      {
+        "question": "How do I check Willamette Pass forecast?",
+        "answer": "Check the NWS forecast specifically for Crescent Lake or Oakridge, Oregon."
+      },
+      {
+        "question": "Where is Willamette Pass located?",
+        "answer": "Willamette Pass is located in the Cascade Range in Oregon, connecting Oakridge with Klamath County."
+      },
+      {
+        "question": "Is Willamette Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Willamette Pass?",
+        "answer": "Willamette Pass receives significant snow. Check Willamette Pass Ski Resort reports for current snowpack."
+      },
+      {
+        "question": "What is the Willamette Pass closing date?",
+        "answer": "There is no closing date; the pass is open year-round."
+      },
+      {
+        "question": "Does Willamette Pass require traction tires?",
+        "answer": "During snowstorms, ODOT signs will require traction tires or chains for all vehicles."
+      },
+      {
+        "question": "How high is Willamette Pass?",
+        "answer": "Willamette Pass is 5,128 feet high."
+      },
+      {
+        "question": "What is the closest town to Willamette Pass?",
+        "answer": "Oakridge is about 25 miles to the west, and Crescent Lake is about 15 miles to the east."
+      },
+      {
+        "question": "How do I get to Willamette Pass?",
+        "answer": "Drive OR 58 east from Eugene/Oakridge or west from Hwy 97."
+      }
+    ],
+    "customSeo": {
+      "title": "Willamette Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Willamette Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Willamette Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Willamette Pass road conditions",
+      "Willamette Pass open",
+      "Willamette Pass closed",
+      "Willamette Pass status",
+      "Willamette Pass opening date"
+    ]
+  },
+  {
+    "id": "siskiyou-summit",
+    "slug": "siskiyou-summit",
+    "name": "Siskiyou Summit",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Oregon",
+    "highway": "I-5",
+    "elevationFt": 4310,
+    "elevationM": 1314,
+    "coordinates": {
+      "lat": 42.0628,
+      "lng": -122.6033
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Siskiyou Summit is a mountain pass on Interstate 5 at the California-Oregon border, in the Siskiyou Mountains.",
+    "image": "/siskiyou-summit-oregon.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Carry chains.",
+    "cameras": [
+      {
+        "id": "siskiyou-summit-cam",
+        "title": "Siskiyou Summit",
+        "image": "/siskiyou-summit-oregon.jpg",
+        "milepost": "MP 0.5",
+        "source": "ODOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1960,
+      "lengthMiles": 15,
+      "lengthKm": 24,
+      "annualSnowfallIn": 100,
+      "annualSnowfallM": 2.5,
+      "summary": "Siskiyou Summit is open year-round."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Oregon Department of Transportation",
+        "type": "TripCheck"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Siskiyou Summit open today?",
+        "answer": "Yes, Siskiyou Summit (Interstate 5) is open today. It is a major interstate route and is plowed continuously."
+      },
+      {
+        "question": "Is Siskiyou Summit open right now?",
+        "answer": "Yes, Siskiyou Summit is currently open."
+      },
+      {
+        "question": "What are the current road conditions on Siskiyou Summit?",
+        "answer": "Road conditions are bare and wet. Heavy snow can occur during winter storms."
+      },
+      {
+        "question": "What is the Siskiyou Summit opening date?",
+        "answer": "Siskiyou Summit is open year-round and does not have a seasonal opening date."
+      },
+      {
+        "question": "Is Siskiyou Summit closed today?",
+        "answer": "No, Siskiyou Summit is open today."
+      },
+      {
+        "question": "When does Siskiyou Summit close for winter?",
+        "answer": "Siskiyou Summit does not close for winter. It remains open year-round except for temporary emergency storm closures."
+      },
+      {
+        "question": "Where is the Siskiyou Summit webcam?",
+        "answer": "Live cameras are available on TripCheck at the Siskiyou Summit boundary and MP 0.5."
+      },
+      {
+        "question": "What is the elevation of Siskiyou Summit?",
+        "answer": "Siskiyou Summit has an elevation of 4,310 feet (1,314 meters), making it the highest point on Interstate 5."
+      },
+      {
+        "question": "What highway goes through Siskiyou Summit?",
+        "answer": "Interstate 5 (I-5) passes through Siskiyou Summit."
+      },
+      {
+        "question": "Are tire chains required on Siskiyou Summit?",
+        "answer": "Chains are not required currently, but carrying them is mandatory for all vehicles during winter months."
+      },
+      {
+        "question": "Is Siskiyou Summit open in winter?",
+        "answer": "Yes, Siskiyou Summit is open in winter, backed by ODOT's winter response crews."
+      },
+      {
+        "question": "How do I check Siskiyou Summit forecast?",
+        "answer": "Check the NWS Medford forecast for the Siskiyou Mountains."
+      },
+      {
+        "question": "Where is Siskiyou Summit located?",
+        "answer": "Siskiyou Summit is located on I-5 at the Oregon-California border, south of Ashland."
+      },
+      {
+        "question": "Is Siskiyou Summit closed right now?",
+        "answer": "No, Siskiyou Summit is currently open."
+      },
+      {
+        "question": "How much snow is at Siskiyou Summit?",
+        "answer": "Snow depth varies. During winter storms, several inches to feet of snow can fall rapidly."
+      },
+      {
+        "question": "What is the Siskiyou Summit closing date?",
+        "answer": "The summit remains open year-round."
+      },
+      {
+        "question": "Does Siskiyou Summit require traction tires?",
+        "answer": "During active winter weather, ODOT will display chain and traction tire requirements on roadside signs."
+      },
+      {
+        "question": "How high is Siskiyou Summit?",
+        "answer": "Siskiyou Summit is 4,310 feet high."
+      },
+      {
+        "question": "What is the closest town to Siskiyou Summit?",
+        "answer": "Ashland, Oregon is the closest major town to the north (about 15 miles)."
+      },
+      {
+        "question": "How do I get to Siskiyou Summit?",
+        "answer": "Drive I-5 south from Ashland, Oregon, or north from Yreka, California."
+      }
+    ],
+    "customSeo": {
+      "title": "Siskiyou Summit opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Siskiyou Summit opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Siskiyou Summit opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Siskiyou Summit road conditions",
+      "Siskiyou Summit open",
+      "Siskiyou Summit closed",
+      "Siskiyou Summit status",
+      "Siskiyou Summit opening date"
+    ]
+  },
+  {
+    "id": "government-camp",
+    "slug": "government-camp",
+    "name": "Government Camp",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Oregon",
+    "highway": "US-26",
+    "elevationFt": 3960,
+    "elevationM": 1207,
+    "coordinates": {
+      "lat": 45.3039,
+      "lng": -121.7561
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Government Camp is a mountain pass and unincorporated community in the Cascade Range in Oregon, on the south slope of Mount Hood.",
+    "image": "/government-camp-oregon.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Carry chains.",
+    "cameras": [
+      {
+        "id": "government-camp-cam",
+        "title": "Government Camp",
+        "image": "/government-camp-oregon.jpg",
+        "milepost": "MP 55",
+        "source": "ODOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1915,
+      "lengthMiles": 25,
+      "lengthKm": 40,
+      "annualSnowfallIn": 240,
+      "annualSnowfallM": 6.1,
+      "summary": "Government Camp is open year-round."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Oregon Department of Transportation",
+        "type": "TripCheck"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Government Camp open today?",
+        "answer": "Yes, US 26 through Government Camp is open today. This is a primary route to Mount Hood ski areas."
+      },
+      {
+        "question": "Is Government Camp open right now?",
+        "answer": "Yes, Government Camp is open right now."
+      },
+      {
+        "question": "What are the current road conditions on Government Camp?",
+        "answer": "Conditions are bare and wet with light flurries. Carrying chains is recommended."
+      },
+      {
+        "question": "What is the Government Camp opening date?",
+        "answer": "Government Camp is open year-round and does not have a seasonal opening date."
+      },
+      {
+        "question": "Is Government Camp closed today?",
+        "answer": "No, Government Camp is currently open."
+      },
+      {
+        "question": "When does Government Camp close for winter?",
+        "answer": "Government Camp does not close for winter. It remains open year-round to support skiing and local residents."
+      },
+      {
+        "question": "Where is the Government Camp webcam?",
+        "answer": "Live webcams are available on TripCheck for US 26 at Government Camp and Barlow Pass."
+      },
+      {
+        "question": "What is the elevation of Government Camp?",
+        "answer": "Government Camp has an elevation of 3,960 feet (1,207 meters)."
+      },
+      {
+        "question": "What highway goes through Government Camp?",
+        "answer": "U.S. Route 26 (US 26) passes directly through Government Camp."
+      },
+      {
+        "question": "Are tire chains required on Government Camp?",
+        "answer": "Chains are not required currently, but carrying them is mandatory during the winter season."
+      },
+      {
+        "question": "Is Government Camp open in winter?",
+        "answer": "Yes, it is open in winter and is heavily traveled by winter sports enthusiasts."
+      },
+      {
+        "question": "How do I check Government Camp forecast?",
+        "answer": "Check NWS Portland for Mount Hood area weather forecasts."
+      },
+      {
+        "question": "Where is Government Camp located?",
+        "answer": "Government Camp is located in the Cascade Range in Oregon, on the south slope of Mount Hood."
+      },
+      {
+        "question": "Is Government Camp closed right now?",
+        "answer": "No, the highway is currently open."
+      },
+      {
+        "question": "How much snow is at Government Camp?",
+        "answer": "Government Camp receives over 200 inches of snow annually. Check Mount Hood ski resort reports for active snowpack."
+      },
+      {
+        "question": "What is the Government Camp closing date?",
+        "answer": "Government Camp is open year-round."
+      },
+      {
+        "question": "Does Government Camp require traction tires?",
+        "answer": "During snow storms, ODOT requires traction tires or chains on US 26."
+      },
+      {
+        "question": "How high is Government Camp?",
+        "answer": "Government Camp is 3,960 feet high."
+      },
+      {
+        "question": "What is the closest town to Government Camp?",
+        "answer": "Sandy, Oregon is about 30 miles to the west."
+      },
+      {
+        "question": "How do I get to Government Camp?",
+        "answer": "Drive US 26 east from Portland/Sandy, or west from Madras."
+      }
+    ],
+    "customSeo": {
+      "title": "Government Camp opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Government Camp opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Government Camp opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Government Camp road conditions",
+      "Government Camp open",
+      "Government Camp closed",
+      "Government Camp status",
+      "Government Camp opening date"
+    ]
+  },
+  {
+    "id": "deadman-pass",
+    "slug": "deadman-pass",
+    "name": "Deadman Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Oregon",
+    "highway": "I-84",
+    "elevationFt": 3622,
+    "elevationM": 1104,
+    "coordinates": {
+      "lat": 45.6264,
+      "lng": -118.5772
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Deadman Pass (Cabbage Hill) is a mountain pass in the Blue Mountains in eastern Oregon, located on Interstate 84.",
+    "image": "/deadman-pass-oregon.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Carry chains.",
+    "cameras": [
+      {
+        "id": "deadman-pass-cam",
+        "title": "Deadman Pass",
+        "image": "/deadman-pass-oregon.jpg",
+        "milepost": "MP 228",
+        "source": "ODOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1960,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 120,
+      "annualSnowfallM": 3,
+      "summary": "Deadman Pass is open year-round."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Oregon Department of Transportation",
+        "type": "TripCheck"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Deadman Pass open today?",
+        "answer": "Yes, Deadman Pass (Interstate 84) on Cabbage Hill is open today. This is a critical freight route."
+      },
+      {
+        "question": "Is Deadman Pass open right now?",
+        "answer": "Yes, Deadman Pass is currently open."
+      },
+      {
+        "question": "What are the current road conditions on Deadman Pass?",
+        "answer": "Conditions are bare and wet. Winter storms can cause severe ice, fog, and snow on Cabbage Hill."
+      },
+      {
+        "question": "What is the Deadman Pass opening date?",
+        "answer": "Deadman Pass is open year-round and does not close seasonally."
+      },
+      {
+        "question": "Is Deadman Pass closed today?",
+        "answer": "No, Deadman Pass is open today."
+      },
+      {
+        "question": "When does Deadman Pass close for winter?",
+        "answer": "Deadman Pass does not close for winter. It remains open year-round, though temporary closures can occur for crash cleanups."
+      },
+      {
+        "question": "Where is the Deadman Pass webcam?",
+        "answer": "Live cameras are available on TripCheck for I-84 at Deadman Pass and Cabbage Hill."
+      },
+      {
+        "question": "What is the elevation of Deadman Pass?",
+        "answer": "Deadman Pass has an elevation of 3,622 feet (1,104 meters)."
+      },
+      {
+        "question": "What highway goes through Deadman Pass?",
+        "answer": "Interstate 84 (I-84) goes through Deadman Pass."
+      },
+      {
+        "question": "Are tire chains required on Deadman Pass?",
+        "answer": "Chains are not required currently, but carrying them is advised for all passenger cars and mandatory for commercial trucks in winter."
+      },
+      {
+        "question": "Is Deadman Pass open in winter?",
+        "answer": "Yes, it is open in winter and heavily plowed by ODOT crews."
+      },
+      {
+        "question": "How do I check Deadman Pass forecast?",
+        "answer": "Check NWS Pendleton for Blue Mountain weather forecasts."
+      },
+      {
+        "question": "Where is Deadman Pass located?",
+        "answer": "Deadman Pass is located in the Blue Mountains of eastern Oregon, east of Pendleton."
+      },
+      {
+        "question": "Is Deadman Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Deadman Pass?",
+        "answer": "Deadman Pass receives moderate to heavy winter snowfall, combined with strong winds and drifting snow."
+      },
+      {
+        "question": "What is the Deadman Pass closing date?",
+        "answer": "Deadman Pass is open year-round."
+      },
+      {
+        "question": "Does Deadman Pass require traction tires?",
+        "answer": "During winter weather events, ODOT requires traction tires or chains on I-84 over Cabbage Hill."
+      },
+      {
+        "question": "How high is Deadman Pass?",
+        "answer": "Deadman Pass is 3,622 feet high."
+      },
+      {
+        "question": "What is the closest town to Deadman Pass?",
+        "answer": "Pendleton, Oregon is about 20 miles to the west."
+      },
+      {
+        "question": "How do I get to Deadman Pass?",
+        "answer": "Drive I-84 east from Pendleton, or west from La Grande."
+      }
+    ],
+    "customSeo": {
+      "title": "Deadman Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Deadman Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Deadman Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Deadman Pass road conditions",
+      "Deadman Pass open",
+      "Deadman Pass closed",
+      "Deadman Pass status",
+      "Deadman Pass opening date"
+    ]
+  },
+  {
+    "id": "blue-mountain-summit",
+    "slug": "blue-mountain-summit",
+    "name": "Blue Mountain Summit",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Oregon",
+    "highway": "US-26",
+    "elevationFt": 5098,
+    "elevationM": 1554,
+    "coordinates": {
+      "lat": 44.4981,
+      "lng": -118.4239
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Blue Mountain Summit is a mountain pass in the Blue Mountains in eastern Oregon, located on U.S. Route 26.",
+    "image": "/blue-mountain-summit-oregon.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Carry chains.",
+    "cameras": [
+      {
+        "id": "blue-mountain-summit-cam",
+        "title": "Blue Mountain Summit",
+        "image": "/blue-mountain-summit-oregon.jpg",
+        "milepost": "MP 198",
+        "source": "ODOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1935,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 180,
+      "annualSnowfallM": 4.6,
+      "summary": "Blue Mountain Summit is open year-round."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Oregon Department of Transportation",
+        "type": "TripCheck"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Blue Mountain Summit open today?",
+        "answer": "Yes, Blue Mountain Summit (US 26) is open today. It is maintained year-round by ODOT."
+      },
+      {
+        "question": "Is Blue Mountain Summit open right now?",
+        "answer": "Yes, Blue Mountain Summit is currently open."
+      },
+      {
+        "question": "What are the current road conditions on Blue Mountain Summit?",
+        "answer": "Conditions are bare and wet. Winter weather can bring snow and ice packs quickly."
+      },
+      {
+        "question": "What is the Blue Mountain Summit opening date?",
+        "answer": "Blue Mountain Summit is open year-round and does not close seasonally."
+      },
+      {
+        "question": "Is Blue Mountain Summit open today?",
+        "answer": "No, Blue Mountain Summit is open today."
+      },
+      {
+        "question": "When does Blue Mountain Summit close for winter?",
+        "answer": "Blue Mountain Summit does not close for winter. It remains open year-round."
+      },
+      {
+        "question": "Where is the Blue Mountain Summit webcam?",
+        "answer": "ODOT TripCheck webcams are available near the summit on US 26."
+      },
+      {
+        "question": "What is the elevation of Blue Mountain Summit?",
+        "answer": "Blue Mountain Summit has an elevation of 5,098 feet (1,554 meters)."
+      },
+      {
+        "question": "What highway goes through Blue Mountain Summit?",
+        "answer": "U.S. Route 26 (US 26) goes through Blue Mountain Summit."
+      },
+      {
+        "question": "Are tire chains required on Blue Mountain Summit?",
+        "answer": "Currently, chains are not required, but drivers are advised to carry them in winter."
+      },
+      {
+        "question": "Is Blue Mountain Summit open in winter?",
+        "answer": "Yes, it is open in winter, though winter driving precautions are recommended."
+      },
+      {
+        "question": "How do I check Blue Mountain Summit forecast?",
+        "answer": "Check NWS Pendleton or NWS Boise for Blue Mountain forecasts."
+      },
+      {
+        "question": "Where is Blue Mountain Summit located?",
+        "answer": "Blue Mountain Summit is located in eastern Oregon on US 26, between John Day and Unity."
+      },
+      {
+        "question": "Is Blue Mountain Summit closed right now?",
+        "answer": "No, the summit is currently open."
+      },
+      {
+        "question": "How much snow is at Blue Mountain Summit?",
+        "answer": "The summit receives substantial winter snowpack. Check ODOT road reports for winter weather updates."
+      },
+      {
+        "question": "What is the Blue Mountain Summit closing date?",
+        "answer": "The summit is open year-round."
+      },
+      {
+        "question": "Does Blue Mountain Summit require traction tires?",
+        "answer": "During snowstorms, ODOT requires traction tires or chains for all vehicles."
+      },
+      {
+        "question": "How high is Blue Mountain Summit?",
+        "answer": "Blue Mountain Summit is 5,098 feet high."
+      },
+      {
+        "question": "What is the closest town to Blue Mountain Summit?",
+        "answer": "Prairie City, Oregon is about 15 miles to the west, and Unity is about 20 miles to the east."
+      },
+      {
+        "question": "How do I get to Blue Mountain Summit?",
+        "answer": "Drive US 26 east from Prairie City, or west from Unity."
+      }
+    ],
+    "customSeo": {
+      "title": "Blue Mountain Summit opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Blue Mountain Summit opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Blue Mountain Summit opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Blue Mountain Summit road conditions",
+      "Blue Mountain Summit open",
+      "Blue Mountain Summit closed",
+      "Blue Mountain Summit status",
+      "Blue Mountain Summit opening date"
+    ]
+  },
+
+  {
+    "id": "loveland-pass",
+    "slug": "loveland-pass",
+    "name": "Loveland Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "US-6",
+    "elevationFt": 11990,
+    "elevationM": 3655,
+    "coordinates": {
+      "lat": 39.6803,
+      "lng": -105.879
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Loveland Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by US-6.",
+    "image": "/loveland-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Traction law may apply.",
+    "cameras": [
+      {
+        "id": "loveland-pass-cam",
+        "title": "Loveland Pass Summit",
+        "image": "/loveland-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Loveland Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Loveland Pass open today?",
+        "answer": "Loveland Pass is currently open to all vehicles. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Loveland Pass open right now?",
+        "answer": "Yes, Loveland Pass is currently open. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Loveland Pass?",
+        "answer": "Current road conditions on Loveland Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Loveland Pass opening date?",
+        "answer": "Loveland Pass does not close seasonally and remains open year-round."
+      },
+      {
+        "question": "Is Loveland Pass closed today?",
+        "answer": "No, Loveland Pass is open today."
+      },
+      {
+        "question": "When does Loveland Pass close for winter?",
+        "answer": "Loveland Pass remains open year-round with no winter closure."
+      },
+      {
+        "question": "Where is the Loveland Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Loveland Pass summit."
+      },
+      {
+        "question": "What is the elevation of Loveland Pass?",
+        "answer": "Loveland Pass summit is located at an elevation of 11,990 feet (3655 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Loveland Pass?",
+        "answer": "Loveland Pass is traversed by US-6."
+      },
+      {
+        "question": "Are tire chains required on Loveland Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Loveland Pass open in winter?",
+        "answer": "Yes, Loveland Pass is kept open all winter, though winter weather driving restrictions apply."
+      },
+      {
+        "question": "How do I check Loveland Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Loveland Pass located?",
+        "answer": "Loveland Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Loveland Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Loveland Pass?",
+        "answer": "Loveland Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Loveland Pass closing date?",
+        "answer": "Loveland Pass remains open year-round."
+      },
+      {
+        "question": "Does Loveland Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Loveland Pass?",
+        "answer": "Loveland Pass is 11,990 feet high."
+      },
+      {
+        "question": "What is the closest town to Loveland Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Loveland Pass?",
+        "answer": "Drive US-6 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Loveland Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Loveland Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Loveland Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Loveland Pass road conditions",
+      "Loveland Pass open",
+      "Loveland Pass closed",
+      "Loveland Pass status",
+      "Loveland Pass opening date"
+    ]
+  },
+  {
+    "id": "vail-pass",
+    "slug": "vail-pass",
+    "name": "Vail Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "I-70",
+    "elevationFt": 10662,
+    "elevationM": 3250,
+    "coordinates": {
+      "lat": 39.5308,
+      "lng": -106.2184
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Vail Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by I-70.",
+    "image": "/vail-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Traction law may apply.",
+    "cameras": [
+      {
+        "id": "vail-pass-cam",
+        "title": "Vail Pass Summit",
+        "image": "/vail-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Vail Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Vail Pass open today?",
+        "answer": "Vail Pass is currently open to all vehicles. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Vail Pass open right now?",
+        "answer": "Yes, Vail Pass is currently open. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Vail Pass?",
+        "answer": "Current road conditions on Vail Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Vail Pass opening date?",
+        "answer": "Vail Pass does not close seasonally and remains open year-round."
+      },
+      {
+        "question": "Is Vail Pass closed today?",
+        "answer": "No, Vail Pass is open today."
+      },
+      {
+        "question": "When does Vail Pass close for winter?",
+        "answer": "Vail Pass remains open year-round with no winter closure."
+      },
+      {
+        "question": "Where is the Vail Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Vail Pass summit."
+      },
+      {
+        "question": "What is the elevation of Vail Pass?",
+        "answer": "Vail Pass summit is located at an elevation of 10,662 feet (3250 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Vail Pass?",
+        "answer": "Vail Pass is traversed by I-70."
+      },
+      {
+        "question": "Are tire chains required on Vail Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Vail Pass open in winter?",
+        "answer": "Yes, Vail Pass is kept open all winter, though winter weather driving restrictions apply."
+      },
+      {
+        "question": "How do I check Vail Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Vail Pass located?",
+        "answer": "Vail Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Vail Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Vail Pass?",
+        "answer": "Vail Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Vail Pass closing date?",
+        "answer": "Vail Pass remains open year-round."
+      },
+      {
+        "question": "Does Vail Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Vail Pass?",
+        "answer": "Vail Pass is 10,662 feet high."
+      },
+      {
+        "question": "What is the closest town to Vail Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Vail Pass?",
+        "answer": "Drive I-70 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Vail Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Vail Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Vail Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Vail Pass road conditions",
+      "Vail Pass open",
+      "Vail Pass closed",
+      "Vail Pass status",
+      "Vail Pass opening date"
+    ]
+  },
+  {
+    "id": "berthoud-pass",
+    "slug": "berthoud-pass",
+    "name": "Berthoud Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "US-40",
+    "elevationFt": 11307,
+    "elevationM": 3446,
+    "coordinates": {
+      "lat": 39.7997,
+      "lng": -105.7778
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Berthoud Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by US-40.",
+    "image": "/berthoud-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Traction law may apply.",
+    "cameras": [
+      {
+        "id": "berthoud-pass-cam",
+        "title": "Berthoud Pass Summit",
+        "image": "/berthoud-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Berthoud Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Berthoud Pass open today?",
+        "answer": "Berthoud Pass is currently open to all vehicles. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Berthoud Pass open right now?",
+        "answer": "Yes, Berthoud Pass is currently open. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Berthoud Pass?",
+        "answer": "Current road conditions on Berthoud Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Berthoud Pass opening date?",
+        "answer": "Berthoud Pass does not close seasonally and remains open year-round."
+      },
+      {
+        "question": "Is Berthoud Pass closed today?",
+        "answer": "No, Berthoud Pass is open today."
+      },
+      {
+        "question": "When does Berthoud Pass close for winter?",
+        "answer": "Berthoud Pass remains open year-round with no winter closure."
+      },
+      {
+        "question": "Where is the Berthoud Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Berthoud Pass summit."
+      },
+      {
+        "question": "What is the elevation of Berthoud Pass?",
+        "answer": "Berthoud Pass summit is located at an elevation of 11,307 feet (3446 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Berthoud Pass?",
+        "answer": "Berthoud Pass is traversed by US-40."
+      },
+      {
+        "question": "Are tire chains required on Berthoud Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Berthoud Pass open in winter?",
+        "answer": "Yes, Berthoud Pass is kept open all winter, though winter weather driving restrictions apply."
+      },
+      {
+        "question": "How do I check Berthoud Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Berthoud Pass located?",
+        "answer": "Berthoud Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Berthoud Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Berthoud Pass?",
+        "answer": "Berthoud Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Berthoud Pass closing date?",
+        "answer": "Berthoud Pass remains open year-round."
+      },
+      {
+        "question": "Does Berthoud Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Berthoud Pass?",
+        "answer": "Berthoud Pass is 11,307 feet high."
+      },
+      {
+        "question": "What is the closest town to Berthoud Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Berthoud Pass?",
+        "answer": "Drive US-40 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Berthoud Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Berthoud Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Berthoud Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Berthoud Pass road conditions",
+      "Berthoud Pass open",
+      "Berthoud Pass closed",
+      "Berthoud Pass status",
+      "Berthoud Pass opening date"
+    ]
+  },
+  {
+    "id": "independence-pass",
+    "slug": "independence-pass",
+    "name": "Independence Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "CO-82",
+    "elevationFt": 12095,
+    "elevationM": 3687,
+    "coordinates": {
+      "lat": 39.1086,
+      "lng": -106.5642
+    },
+    "status": "CLOSED",
+    "statusDetail": "Closed for the winter season.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Independence Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by CO-82.",
+    "image": "/independence-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Snowing",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 150,
+      "depthIn": 60,
+      "condition": "Deep Snow"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Impassable. Closed for winter.",
+    "chainRequirement": "Pass closed.",
+    "cameras": [
+      {
+        "id": "independence-pass-cam",
+        "title": "Independence Pass Summit",
+        "image": "/independence-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Independence Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Independence Pass open today?",
+        "answer": "Independence Pass is currently closed for the winter season. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Independence Pass open right now?",
+        "answer": "Yes, Independence Pass is currently closed for winter. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Independence Pass?",
+        "answer": "Current road conditions on Independence Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Independence Pass opening date?",
+        "answer": "Independence Pass typically reopens in late May (around Memorial Day weekend), depending on spring snow clearing progress."
+      },
+      {
+        "question": "Is Independence Pass closed today?",
+        "answer": "Yes, Independence Pass is seasonally closed for the winter."
+      },
+      {
+        "question": "When does Independence Pass close for winter?",
+        "answer": "Independence Pass closes for the winter season in early or mid-November after the first major alpine snowstorm."
+      },
+      {
+        "question": "Where is the Independence Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Independence Pass summit."
+      },
+      {
+        "question": "What is the elevation of Independence Pass?",
+        "answer": "Independence Pass summit is located at an elevation of 12,095 feet (3687 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Independence Pass?",
+        "answer": "Independence Pass is traversed by CO-82."
+      },
+      {
+        "question": "Are tire chains required on Independence Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Independence Pass open in winter?",
+        "answer": "No, Independence Pass is closed entirely during winter."
+      },
+      {
+        "question": "How do I check Independence Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Independence Pass located?",
+        "answer": "Independence Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Independence Pass closed right now?",
+        "answer": "Yes, the gates are locked for the winter."
+      },
+      {
+        "question": "How much snow is at Independence Pass?",
+        "answer": "Independence Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Independence Pass closing date?",
+        "answer": "The closing date varies each year but typically falls in mid-November."
+      },
+      {
+        "question": "Does Independence Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Independence Pass?",
+        "answer": "Independence Pass is 12,095 feet high."
+      },
+      {
+        "question": "What is the closest town to Independence Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Independence Pass?",
+        "answer": "Drive CO-82 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Independence Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Independence Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Independence Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Independence Pass road conditions",
+      "Independence Pass open",
+      "Independence Pass closed",
+      "Independence Pass status",
+      "Independence Pass opening date"
+    ]
+  },
+  {
+    "id": "monarch-pass",
+    "slug": "monarch-pass",
+    "name": "Monarch Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "US-50",
+    "elevationFt": 11312,
+    "elevationM": 3448,
+    "coordinates": {
+      "lat": 38.4961,
+      "lng": -106.3256
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Monarch Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by US-50.",
+    "image": "/monarch-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Traction law may apply.",
+    "cameras": [
+      {
+        "id": "monarch-pass-cam",
+        "title": "Monarch Pass Summit",
+        "image": "/monarch-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Monarch Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Monarch Pass open today?",
+        "answer": "Monarch Pass is currently open to all vehicles. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Monarch Pass open right now?",
+        "answer": "Yes, Monarch Pass is currently open. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Monarch Pass?",
+        "answer": "Current road conditions on Monarch Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Monarch Pass opening date?",
+        "answer": "Monarch Pass does not close seasonally and remains open year-round."
+      },
+      {
+        "question": "Is Monarch Pass closed today?",
+        "answer": "No, Monarch Pass is open today."
+      },
+      {
+        "question": "When does Monarch Pass close for winter?",
+        "answer": "Monarch Pass remains open year-round with no winter closure."
+      },
+      {
+        "question": "Where is the Monarch Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Monarch Pass summit."
+      },
+      {
+        "question": "What is the elevation of Monarch Pass?",
+        "answer": "Monarch Pass summit is located at an elevation of 11,312 feet (3448 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Monarch Pass?",
+        "answer": "Monarch Pass is traversed by US-50."
+      },
+      {
+        "question": "Are tire chains required on Monarch Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Monarch Pass open in winter?",
+        "answer": "Yes, Monarch Pass is kept open all winter, though winter weather driving restrictions apply."
+      },
+      {
+        "question": "How do I check Monarch Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Monarch Pass located?",
+        "answer": "Monarch Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Monarch Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Monarch Pass?",
+        "answer": "Monarch Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Monarch Pass closing date?",
+        "answer": "Monarch Pass remains open year-round."
+      },
+      {
+        "question": "Does Monarch Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Monarch Pass?",
+        "answer": "Monarch Pass is 11,312 feet high."
+      },
+      {
+        "question": "What is the closest town to Monarch Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Monarch Pass?",
+        "answer": "Drive US-50 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Monarch Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Monarch Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Monarch Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Monarch Pass road conditions",
+      "Monarch Pass open",
+      "Monarch Pass closed",
+      "Monarch Pass status",
+      "Monarch Pass opening date"
+    ]
+  },
+  {
+    "id": "wolf-creek-pass",
+    "slug": "wolf-creek-pass",
+    "name": "Wolf Creek Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "US-160",
+    "elevationFt": 10857,
+    "elevationM": 3309,
+    "coordinates": {
+      "lat": 37.4811,
+      "lng": -106.8014
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Wolf Creek Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by US-160.",
+    "image": "/wolf-creek-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Traction law may apply.",
+    "cameras": [
+      {
+        "id": "wolf-creek-pass-cam",
+        "title": "Wolf Creek Pass Summit",
+        "image": "/wolf-creek-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Wolf Creek Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Wolf Creek Pass open today?",
+        "answer": "Wolf Creek Pass is currently open to all vehicles. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Wolf Creek Pass open right now?",
+        "answer": "Yes, Wolf Creek Pass is currently open. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Wolf Creek Pass?",
+        "answer": "Current road conditions on Wolf Creek Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Wolf Creek Pass opening date?",
+        "answer": "Wolf Creek Pass does not close seasonally and remains open year-round."
+      },
+      {
+        "question": "Is Wolf Creek Pass closed today?",
+        "answer": "No, Wolf Creek Pass is open today."
+      },
+      {
+        "question": "When does Wolf Creek Pass close for winter?",
+        "answer": "Wolf Creek Pass remains open year-round with no winter closure."
+      },
+      {
+        "question": "Where is the Wolf Creek Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Wolf Creek Pass summit."
+      },
+      {
+        "question": "What is the elevation of Wolf Creek Pass?",
+        "answer": "Wolf Creek Pass summit is located at an elevation of 10,857 feet (3309 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Wolf Creek Pass?",
+        "answer": "Wolf Creek Pass is traversed by US-160."
+      },
+      {
+        "question": "Are tire chains required on Wolf Creek Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Wolf Creek Pass open in winter?",
+        "answer": "Yes, Wolf Creek Pass is kept open all winter, though winter weather driving restrictions apply."
+      },
+      {
+        "question": "How do I check Wolf Creek Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Wolf Creek Pass located?",
+        "answer": "Wolf Creek Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Wolf Creek Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Wolf Creek Pass?",
+        "answer": "Wolf Creek Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Wolf Creek Pass closing date?",
+        "answer": "Wolf Creek Pass remains open year-round."
+      },
+      {
+        "question": "Does Wolf Creek Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Wolf Creek Pass?",
+        "answer": "Wolf Creek Pass is 10,857 feet high."
+      },
+      {
+        "question": "What is the closest town to Wolf Creek Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Wolf Creek Pass?",
+        "answer": "Drive US-160 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Wolf Creek Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Wolf Creek Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Wolf Creek Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Wolf Creek Pass road conditions",
+      "Wolf Creek Pass open",
+      "Wolf Creek Pass closed",
+      "Wolf Creek Pass status",
+      "Wolf Creek Pass opening date"
+    ]
+  },
+  {
+    "id": "cottonwood-pass",
+    "slug": "cottonwood-pass",
+    "name": "Cottonwood Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "CR-306",
+    "elevationFt": 12126,
+    "elevationM": 3696,
+    "coordinates": {
+      "lat": 38.8283,
+      "lng": -106.4092
+    },
+    "status": "CLOSED",
+    "statusDetail": "Closed for the winter season.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Cottonwood Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by CR-306.",
+    "image": "/cottonwood-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Snowing",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 150,
+      "depthIn": 60,
+      "condition": "Deep Snow"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Impassable. Closed for winter.",
+    "chainRequirement": "Pass closed.",
+    "cameras": [
+      {
+        "id": "cottonwood-pass-cam",
+        "title": "Cottonwood Pass Summit",
+        "image": "/cottonwood-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Cottonwood Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Cottonwood Pass open today?",
+        "answer": "Cottonwood Pass is currently closed for the winter season. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Cottonwood Pass open right now?",
+        "answer": "Yes, Cottonwood Pass is currently closed for winter. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Cottonwood Pass?",
+        "answer": "Current road conditions on Cottonwood Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Cottonwood Pass opening date?",
+        "answer": "Cottonwood Pass typically reopens in late May (around Memorial Day weekend), depending on spring snow clearing progress."
+      },
+      {
+        "question": "Is Cottonwood Pass closed today?",
+        "answer": "Yes, Cottonwood Pass is seasonally closed for the winter."
+      },
+      {
+        "question": "When does Cottonwood Pass close for winter?",
+        "answer": "Cottonwood Pass closes for the winter season in early or mid-November after the first major alpine snowstorm."
+      },
+      {
+        "question": "Where is the Cottonwood Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Cottonwood Pass summit."
+      },
+      {
+        "question": "What is the elevation of Cottonwood Pass?",
+        "answer": "Cottonwood Pass summit is located at an elevation of 12,126 feet (3696 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Cottonwood Pass?",
+        "answer": "Cottonwood Pass is traversed by CR-306."
+      },
+      {
+        "question": "Are tire chains required on Cottonwood Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Cottonwood Pass open in winter?",
+        "answer": "No, Cottonwood Pass is closed entirely during winter."
+      },
+      {
+        "question": "How do I check Cottonwood Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Cottonwood Pass located?",
+        "answer": "Cottonwood Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Cottonwood Pass closed right now?",
+        "answer": "Yes, the gates are locked for the winter."
+      },
+      {
+        "question": "How much snow is at Cottonwood Pass?",
+        "answer": "Cottonwood Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Cottonwood Pass closing date?",
+        "answer": "The closing date varies each year but typically falls in mid-November."
+      },
+      {
+        "question": "Does Cottonwood Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Cottonwood Pass?",
+        "answer": "Cottonwood Pass is 12,126 feet high."
+      },
+      {
+        "question": "What is the closest town to Cottonwood Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Cottonwood Pass?",
+        "answer": "Drive CR-306 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Cottonwood Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Cottonwood Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Cottonwood Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Cottonwood Pass road conditions",
+      "Cottonwood Pass open",
+      "Cottonwood Pass closed",
+      "Cottonwood Pass status",
+      "Cottonwood Pass opening date"
+    ]
+  },
+  {
+    "id": "rabbit-ears-pass",
+    "slug": "rabbit-ears-pass",
+    "name": "Rabbit Ears Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "US-40",
+    "elevationFt": 9426,
+    "elevationM": 2873,
+    "coordinates": {
+      "lat": 40.3847,
+      "lng": -106.6095
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Rabbit Ears Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by US-40.",
+    "image": "/rabbit-ears-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Traction law may apply.",
+    "cameras": [
+      {
+        "id": "rabbit-ears-pass-cam",
+        "title": "Rabbit Ears Pass Summit",
+        "image": "/rabbit-ears-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Rabbit Ears Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Rabbit Ears Pass open today?",
+        "answer": "Rabbit Ears Pass is currently open to all vehicles. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Rabbit Ears Pass open right now?",
+        "answer": "Yes, Rabbit Ears Pass is currently open. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Rabbit Ears Pass?",
+        "answer": "Current road conditions on Rabbit Ears Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Rabbit Ears Pass opening date?",
+        "answer": "Rabbit Ears Pass does not close seasonally and remains open year-round."
+      },
+      {
+        "question": "Is Rabbit Ears Pass closed today?",
+        "answer": "No, Rabbit Ears Pass is open today."
+      },
+      {
+        "question": "When does Rabbit Ears Pass close for winter?",
+        "answer": "Rabbit Ears Pass remains open year-round with no winter closure."
+      },
+      {
+        "question": "Where is the Rabbit Ears Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Rabbit Ears Pass summit."
+      },
+      {
+        "question": "What is the elevation of Rabbit Ears Pass?",
+        "answer": "Rabbit Ears Pass summit is located at an elevation of 9,426 feet (2873 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Rabbit Ears Pass?",
+        "answer": "Rabbit Ears Pass is traversed by US-40."
+      },
+      {
+        "question": "Are tire chains required on Rabbit Ears Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Rabbit Ears Pass open in winter?",
+        "answer": "Yes, Rabbit Ears Pass is kept open all winter, though winter weather driving restrictions apply."
+      },
+      {
+        "question": "How do I check Rabbit Ears Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Rabbit Ears Pass located?",
+        "answer": "Rabbit Ears Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Rabbit Ears Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Rabbit Ears Pass?",
+        "answer": "Rabbit Ears Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Rabbit Ears Pass closing date?",
+        "answer": "Rabbit Ears Pass remains open year-round."
+      },
+      {
+        "question": "Does Rabbit Ears Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Rabbit Ears Pass?",
+        "answer": "Rabbit Ears Pass is 9,426 feet high."
+      },
+      {
+        "question": "What is the closest town to Rabbit Ears Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Rabbit Ears Pass?",
+        "answer": "Drive US-40 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Rabbit Ears Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Rabbit Ears Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Rabbit Ears Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Rabbit Ears Pass road conditions",
+      "Rabbit Ears Pass open",
+      "Rabbit Ears Pass closed",
+      "Rabbit Ears Pass status",
+      "Rabbit Ears Pass opening date"
+    ]
+  },
+  {
+    "id": "kenosha-pass",
+    "slug": "kenosha-pass",
+    "name": "Kenosha Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "US-285",
+    "elevationFt": 10000,
+    "elevationM": 3048,
+    "coordinates": {
+      "lat": 39.4128,
+      "lng": -105.7578
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Kenosha Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by US-285.",
+    "image": "/kenosha-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Traction law may apply.",
+    "cameras": [
+      {
+        "id": "kenosha-pass-cam",
+        "title": "Kenosha Pass Summit",
+        "image": "/kenosha-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Kenosha Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Kenosha Pass open today?",
+        "answer": "Kenosha Pass is currently open to all vehicles. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Kenosha Pass open right now?",
+        "answer": "Yes, Kenosha Pass is currently open. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Kenosha Pass?",
+        "answer": "Current road conditions on Kenosha Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Kenosha Pass opening date?",
+        "answer": "Kenosha Pass does not close seasonally and remains open year-round."
+      },
+      {
+        "question": "Is Kenosha Pass closed today?",
+        "answer": "No, Kenosha Pass is open today."
+      },
+      {
+        "question": "When does Kenosha Pass close for winter?",
+        "answer": "Kenosha Pass remains open year-round with no winter closure."
+      },
+      {
+        "question": "Where is the Kenosha Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Kenosha Pass summit."
+      },
+      {
+        "question": "What is the elevation of Kenosha Pass?",
+        "answer": "Kenosha Pass summit is located at an elevation of 10,000 feet (3048 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Kenosha Pass?",
+        "answer": "Kenosha Pass is traversed by US-285."
+      },
+      {
+        "question": "Are tire chains required on Kenosha Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Kenosha Pass open in winter?",
+        "answer": "Yes, Kenosha Pass is kept open all winter, though winter weather driving restrictions apply."
+      },
+      {
+        "question": "How do I check Kenosha Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Kenosha Pass located?",
+        "answer": "Kenosha Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Kenosha Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Kenosha Pass?",
+        "answer": "Kenosha Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Kenosha Pass closing date?",
+        "answer": "Kenosha Pass remains open year-round."
+      },
+      {
+        "question": "Does Kenosha Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Kenosha Pass?",
+        "answer": "Kenosha Pass is 10,000 feet high."
+      },
+      {
+        "question": "What is the closest town to Kenosha Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Kenosha Pass?",
+        "answer": "Drive US-285 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Kenosha Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Kenosha Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Kenosha Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Kenosha Pass road conditions",
+      "Kenosha Pass open",
+      "Kenosha Pass closed",
+      "Kenosha Pass status",
+      "Kenosha Pass opening date"
+    ]
+  },
+  {
+    "id": "fremont-pass",
+    "slug": "fremont-pass",
+    "name": "Fremont Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "CO-91",
+    "elevationFt": 11318,
+    "elevationM": 3450,
+    "coordinates": {
+      "lat": 39.3697,
+      "lng": -106.1884
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Fremont Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by CO-91.",
+    "image": "/fremont-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Traction law may apply.",
+    "cameras": [
+      {
+        "id": "fremont-pass-cam",
+        "title": "Fremont Pass Summit",
+        "image": "/fremont-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Fremont Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Fremont Pass open today?",
+        "answer": "Fremont Pass is currently open to all vehicles. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Fremont Pass open right now?",
+        "answer": "Yes, Fremont Pass is currently open. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Fremont Pass?",
+        "answer": "Current road conditions on Fremont Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Fremont Pass opening date?",
+        "answer": "Fremont Pass does not close seasonally and remains open year-round."
+      },
+      {
+        "question": "Is Fremont Pass closed today?",
+        "answer": "No, Fremont Pass is open today."
+      },
+      {
+        "question": "When does Fremont Pass close for winter?",
+        "answer": "Fremont Pass remains open year-round with no winter closure."
+      },
+      {
+        "question": "Where is the Fremont Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Fremont Pass summit."
+      },
+      {
+        "question": "What is the elevation of Fremont Pass?",
+        "answer": "Fremont Pass summit is located at an elevation of 11,318 feet (3450 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Fremont Pass?",
+        "answer": "Fremont Pass is traversed by CO-91."
+      },
+      {
+        "question": "Are tire chains required on Fremont Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Fremont Pass open in winter?",
+        "answer": "Yes, Fremont Pass is kept open all winter, though winter weather driving restrictions apply."
+      },
+      {
+        "question": "How do I check Fremont Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Fremont Pass located?",
+        "answer": "Fremont Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Fremont Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Fremont Pass?",
+        "answer": "Fremont Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Fremont Pass closing date?",
+        "answer": "Fremont Pass remains open year-round."
+      },
+      {
+        "question": "Does Fremont Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Fremont Pass?",
+        "answer": "Fremont Pass is 11,318 feet high."
+      },
+      {
+        "question": "What is the closest town to Fremont Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Fremont Pass?",
+        "answer": "Drive CO-91 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Fremont Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Fremont Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Fremont Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Fremont Pass road conditions",
+      "Fremont Pass open",
+      "Fremont Pass closed",
+      "Fremont Pass status",
+      "Fremont Pass opening date"
+    ]
+  },
+  {
+    "id": "hoosier-pass",
+    "slug": "hoosier-pass",
+    "name": "Hoosier Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "CO-9",
+    "elevationFt": 11541,
+    "elevationM": 3518,
+    "coordinates": {
+      "lat": 39.3617,
+      "lng": -106.0628
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Hoosier Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by CO-9.",
+    "image": "/hoosier-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Traction law may apply.",
+    "cameras": [
+      {
+        "id": "hoosier-pass-cam",
+        "title": "Hoosier Pass Summit",
+        "image": "/hoosier-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Hoosier Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Hoosier Pass open today?",
+        "answer": "Hoosier Pass is currently open to all vehicles. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Hoosier Pass open right now?",
+        "answer": "Yes, Hoosier Pass is currently open. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Hoosier Pass?",
+        "answer": "Current road conditions on Hoosier Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Hoosier Pass opening date?",
+        "answer": "Hoosier Pass does not close seasonally and remains open year-round."
+      },
+      {
+        "question": "Is Hoosier Pass closed today?",
+        "answer": "No, Hoosier Pass is open today."
+      },
+      {
+        "question": "When does Hoosier Pass close for winter?",
+        "answer": "Hoosier Pass remains open year-round with no winter closure."
+      },
+      {
+        "question": "Where is the Hoosier Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Hoosier Pass summit."
+      },
+      {
+        "question": "What is the elevation of Hoosier Pass?",
+        "answer": "Hoosier Pass summit is located at an elevation of 11,541 feet (3518 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Hoosier Pass?",
+        "answer": "Hoosier Pass is traversed by CO-9."
+      },
+      {
+        "question": "Are tire chains required on Hoosier Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Hoosier Pass open in winter?",
+        "answer": "Yes, Hoosier Pass is kept open all winter, though winter weather driving restrictions apply."
+      },
+      {
+        "question": "How do I check Hoosier Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Hoosier Pass located?",
+        "answer": "Hoosier Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Hoosier Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Hoosier Pass?",
+        "answer": "Hoosier Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Hoosier Pass closing date?",
+        "answer": "Hoosier Pass remains open year-round."
+      },
+      {
+        "question": "Does Hoosier Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Hoosier Pass?",
+        "answer": "Hoosier Pass is 11,541 feet high."
+      },
+      {
+        "question": "What is the closest town to Hoosier Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Hoosier Pass?",
+        "answer": "Drive CO-9 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Hoosier Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Hoosier Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Hoosier Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Hoosier Pass road conditions",
+      "Hoosier Pass open",
+      "Hoosier Pass closed",
+      "Hoosier Pass status",
+      "Hoosier Pass opening date"
+    ]
+  },
+  {
+    "id": "guanella-pass",
+    "slug": "guanella-pass",
+    "name": "Guanella Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "Guanella Pass Road",
+    "elevationFt": 11670,
+    "elevationM": 3557,
+    "coordinates": {
+      "lat": 39.595,
+      "lng": -105.7111
+    },
+    "status": "CLOSED",
+    "statusDetail": "Closed for the winter season.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Guanella Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by Guanella Pass Road.",
+    "image": "/guanella-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Snowing",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 150,
+      "depthIn": 60,
+      "condition": "Deep Snow"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Impassable. Closed for winter.",
+    "chainRequirement": "Pass closed.",
+    "cameras": [
+      {
+        "id": "guanella-pass-cam",
+        "title": "Guanella Pass Summit",
+        "image": "/guanella-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Guanella Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Guanella Pass open today?",
+        "answer": "Guanella Pass is currently closed for the winter season. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Guanella Pass open right now?",
+        "answer": "Yes, Guanella Pass is currently closed for winter. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Guanella Pass?",
+        "answer": "Current road conditions on Guanella Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Guanella Pass opening date?",
+        "answer": "Guanella Pass typically reopens in late May (around Memorial Day weekend), depending on spring snow clearing progress."
+      },
+      {
+        "question": "Is Guanella Pass closed today?",
+        "answer": "Yes, Guanella Pass is seasonally closed for the winter."
+      },
+      {
+        "question": "When does Guanella Pass close for winter?",
+        "answer": "Guanella Pass closes for the winter season in early or mid-November after the first major alpine snowstorm."
+      },
+      {
+        "question": "Where is the Guanella Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Guanella Pass summit."
+      },
+      {
+        "question": "What is the elevation of Guanella Pass?",
+        "answer": "Guanella Pass summit is located at an elevation of 11,670 feet (3557 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Guanella Pass?",
+        "answer": "Guanella Pass is traversed by Guanella Pass Road."
+      },
+      {
+        "question": "Are tire chains required on Guanella Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Guanella Pass open in winter?",
+        "answer": "No, Guanella Pass is closed entirely during winter."
+      },
+      {
+        "question": "How do I check Guanella Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Guanella Pass located?",
+        "answer": "Guanella Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Guanella Pass closed right now?",
+        "answer": "Yes, the gates are locked for the winter."
+      },
+      {
+        "question": "How much snow is at Guanella Pass?",
+        "answer": "Guanella Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Guanella Pass closing date?",
+        "answer": "The closing date varies each year but typically falls in mid-November."
+      },
+      {
+        "question": "Does Guanella Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Guanella Pass?",
+        "answer": "Guanella Pass is 11,670 feet high."
+      },
+      {
+        "question": "What is the closest town to Guanella Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Guanella Pass?",
+        "answer": "Drive Guanella Pass Road across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Guanella Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Guanella Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Guanella Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Guanella Pass road conditions",
+      "Guanella Pass open",
+      "Guanella Pass closed",
+      "Guanella Pass status",
+      "Guanella Pass opening date"
+    ]
+  },
+  {
+    "id": "red-mountain-pass",
+    "slug": "red-mountain-pass",
+    "name": "Red Mountain Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "US-550",
+    "elevationFt": 11018,
+    "elevationM": 3358,
+    "coordinates": {
+      "lat": 37.8986,
+      "lng": -107.7125
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Red Mountain Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by US-550.",
+    "image": "/red-mountain-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Traction law may apply.",
+    "cameras": [
+      {
+        "id": "red-mountain-pass-cam",
+        "title": "Red Mountain Pass Summit",
+        "image": "/red-mountain-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Red Mountain Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Red Mountain Pass open today?",
+        "answer": "Red Mountain Pass is currently open to all vehicles. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Red Mountain Pass open right now?",
+        "answer": "Yes, Red Mountain Pass is currently open. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Red Mountain Pass?",
+        "answer": "Current road conditions on Red Mountain Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Red Mountain Pass opening date?",
+        "answer": "Red Mountain Pass does not close seasonally and remains open year-round."
+      },
+      {
+        "question": "Is Red Mountain Pass closed today?",
+        "answer": "No, Red Mountain Pass is open today."
+      },
+      {
+        "question": "When does Red Mountain Pass close for winter?",
+        "answer": "Red Mountain Pass remains open year-round with no winter closure."
+      },
+      {
+        "question": "Where is the Red Mountain Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Red Mountain Pass summit."
+      },
+      {
+        "question": "What is the elevation of Red Mountain Pass?",
+        "answer": "Red Mountain Pass summit is located at an elevation of 11,018 feet (3358 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Red Mountain Pass?",
+        "answer": "Red Mountain Pass is traversed by US-550."
+      },
+      {
+        "question": "Are tire chains required on Red Mountain Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Red Mountain Pass open in winter?",
+        "answer": "Yes, Red Mountain Pass is kept open all winter, though winter weather driving restrictions apply."
+      },
+      {
+        "question": "How do I check Red Mountain Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Red Mountain Pass located?",
+        "answer": "Red Mountain Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Red Mountain Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Red Mountain Pass?",
+        "answer": "Red Mountain Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Red Mountain Pass closing date?",
+        "answer": "Red Mountain Pass remains open year-round."
+      },
+      {
+        "question": "Does Red Mountain Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Red Mountain Pass?",
+        "answer": "Red Mountain Pass is 11,018 feet high."
+      },
+      {
+        "question": "What is the closest town to Red Mountain Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Red Mountain Pass?",
+        "answer": "Drive US-550 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Red Mountain Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Red Mountain Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Red Mountain Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Red Mountain Pass road conditions",
+      "Red Mountain Pass open",
+      "Red Mountain Pass closed",
+      "Red Mountain Pass status",
+      "Red Mountain Pass opening date"
+    ]
+  },
+  {
+    "id": "molas-pass",
+    "slug": "molas-pass",
+    "name": "Molas Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "US-550",
+    "elevationFt": 10910,
+    "elevationM": 3325,
+    "coordinates": {
+      "lat": 37.7372,
+      "lng": -107.6978
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Molas Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by US-550.",
+    "image": "/molas-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Traction law may apply.",
+    "cameras": [
+      {
+        "id": "molas-pass-cam",
+        "title": "Molas Pass Summit",
+        "image": "/molas-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Molas Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Molas Pass open today?",
+        "answer": "Molas Pass is currently open to all vehicles. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Molas Pass open right now?",
+        "answer": "Yes, Molas Pass is currently open. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Molas Pass?",
+        "answer": "Current road conditions on Molas Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Molas Pass opening date?",
+        "answer": "Molas Pass does not close seasonally and remains open year-round."
+      },
+      {
+        "question": "Is Molas Pass closed today?",
+        "answer": "No, Molas Pass is open today."
+      },
+      {
+        "question": "When does Molas Pass close for winter?",
+        "answer": "Molas Pass remains open year-round with no winter closure."
+      },
+      {
+        "question": "Where is the Molas Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Molas Pass summit."
+      },
+      {
+        "question": "What is the elevation of Molas Pass?",
+        "answer": "Molas Pass summit is located at an elevation of 10,910 feet (3325 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Molas Pass?",
+        "answer": "Molas Pass is traversed by US-550."
+      },
+      {
+        "question": "Are tire chains required on Molas Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Molas Pass open in winter?",
+        "answer": "Yes, Molas Pass is kept open all winter, though winter weather driving restrictions apply."
+      },
+      {
+        "question": "How do I check Molas Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Molas Pass located?",
+        "answer": "Molas Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Molas Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Molas Pass?",
+        "answer": "Molas Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Molas Pass closing date?",
+        "answer": "Molas Pass remains open year-round."
+      },
+      {
+        "question": "Does Molas Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Molas Pass?",
+        "answer": "Molas Pass is 10,910 feet high."
+      },
+      {
+        "question": "What is the closest town to Molas Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Molas Pass?",
+        "answer": "Drive US-550 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Molas Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Molas Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Molas Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Molas Pass road conditions",
+      "Molas Pass open",
+      "Molas Pass closed",
+      "Molas Pass status",
+      "Molas Pass opening date"
+    ]
+  },
+  {
+    "id": "coal-bank-pass",
+    "slug": "coal-bank-pass",
+    "name": "Coal Bank Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "US-550",
+    "elevationFt": 10640,
+    "elevationM": 3243,
+    "coordinates": {
+      "lat": 37.6983,
+      "lng": -107.7778
+    },
+    "status": "OPEN",
+    "statusDetail": "to all vehicles. Road bare and wet.",
+    "lastUpdated": "4 minutes ago",
+    "description": "Coal Bank Pass is a high mountain pass in the Rocky Mountains of Colorado, traversed by US-550.",
+    "image": "/coal-bank-pass-colorado.jpg",
+    "officialSource": "https://tripcheck.com",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Light Flurries",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Packed"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "NW",
+      "description": "Breeze"
+    },
+    "roadCondition": "Bare and wet.",
+    "chainRequirement": "No restrictions. Traction law may apply.",
+    "cameras": [
+      {
+        "id": "coal-bank-pass-cam",
+        "title": "Coal Bank Pass Summit",
+        "image": "/coal-bank-pass-colorado.jpg",
+        "milepost": "Summit",
+        "source": "CDOT",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": 1930,
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 300,
+      "annualSnowfallM": 7.6,
+      "summary": "Coal Bank Pass is a high Rocky mountain pass."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Light Flurries",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "cloud-snow"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado Department of Transportation (CDOT)",
+        "type": "TripInfo"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Coal Bank Pass open today?",
+        "answer": "Coal Bank Pass is currently open to all vehicles. Year-round passes are cleared of snow by CDOT plow crews, but are subject to temporary closures during winter storms."
+      },
+      {
+        "question": "Is Coal Bank Pass open right now?",
+        "answer": "Yes, Coal Bank Pass is currently open. You can verify current road status, chain restrictions, and active weather advisories on the live metrics panel."
+      },
+      {
+        "question": "What are the current road conditions on Coal Bank Pass?",
+        "answer": "Current road conditions on Coal Bank Pass are bare and wet with light winter flurries. Check live CDOT webcams before travel."
+      },
+      {
+        "question": "What is the Coal Bank Pass opening date?",
+        "answer": "Coal Bank Pass does not close seasonally and remains open year-round."
+      },
+      {
+        "question": "Is Coal Bank Pass closed today?",
+        "answer": "No, Coal Bank Pass is open today."
+      },
+      {
+        "question": "When does Coal Bank Pass close for winter?",
+        "answer": "Coal Bank Pass remains open year-round with no winter closure."
+      },
+      {
+        "question": "Where is the Coal Bank Pass webcam?",
+        "answer": "Live CDOT webcams showing current road conditions and snowpack are available near the Coal Bank Pass summit."
+      },
+      {
+        "question": "What is the elevation of Coal Bank Pass?",
+        "answer": "Coal Bank Pass summit is located at an elevation of 10,640 feet (3243 meters) above sea level."
+      },
+      {
+        "question": "What highway goes through Coal Bank Pass?",
+        "answer": "Coal Bank Pass is traversed by US-550."
+      },
+      {
+        "question": "Are tire chains required on Coal Bank Pass?",
+        "answer": "Passenger vehicles must carry chains or have mud/snow (M+S) or all-wheel drive when Colorado Code 15 (Passenger Vehicle Traction Law) is active."
+      },
+      {
+        "question": "Is Coal Bank Pass open in winter?",
+        "answer": "Yes, Coal Bank Pass is kept open all winter, though winter weather driving restrictions apply."
+      },
+      {
+        "question": "How do I check Coal Bank Pass forecast?",
+        "answer": "Check the National Weather Service (NWS) forecast specifically for the mountain pass summit area."
+      },
+      {
+        "question": "Where is Coal Bank Pass located?",
+        "answer": "Coal Bank Pass is located in the Rocky Mountains of Colorado, along the Continental Divide."
+      },
+      {
+        "question": "Is Coal Bank Pass closed right now?",
+        "answer": "No, the pass is currently open."
+      },
+      {
+        "question": "How much snow is at Coal Bank Pass?",
+        "answer": "Coal Bank Pass receives substantial winter snowfall. Current snowpack depth is 6 inches."
+      },
+      {
+        "question": "What is the Coal Bank Pass closing date?",
+        "answer": "Coal Bank Pass remains open year-round."
+      },
+      {
+        "question": "Does Coal Bank Pass require traction tires?",
+        "answer": "Yes, CDOT often activates the Traction Law during snow events, requiring traction tires (min 3/16\" tread) or chains."
+      },
+      {
+        "question": "How high is Coal Bank Pass?",
+        "answer": "Coal Bank Pass is 10,640 feet high."
+      },
+      {
+        "question": "What is the closest town to Coal Bank Pass?",
+        "answer": "The closest towns include major hubs like Silverthorne, Leadville, Aspen, or Salida depending on the route."
+      },
+      {
+        "question": "How do I get to Coal Bank Pass?",
+        "answer": "Drive US-550 across the high Colorado Rocky Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Coal Bank Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
+      "description": "Check real-time Coal Bank Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "h1": "Coal Bank Pass opening date Road Status, Webcams & Conditions"
+    },
+    "searchKeywords": [
+      "Coal Bank Pass road conditions",
+      "Coal Bank Pass open",
+      "Coal Bank Pass closed",
+      "Coal Bank Pass status",
+      "Coal Bank Pass opening date"
+    ]
+  },
+
+  // ─── DOLPO / KARNALI REGION — NEPAL ───────────────────────────────────────
+
+  {
+    id: 'nyalu-lagna-pass',
+    slug: 'nyalu-lagna-pass',
+    name: 'Nyalu Lagna Pass',
+    country: 'Nepal',
+    countryCode: 'NPL',
+    continent: 'Asia',
+    state: 'Karnali Province',
+    highway: 'Karnali Highway / Trekking Trail',
+    elevationFt: 16076,
+    elevationM: 4900,
+    coordinates: { lat: 29.2100, lng: 82.5800 },
+    status: 'OPEN',
+    statusDetail: 'Open for trekking — acclimatization strongly recommended above 4,500 m.',
+    lastUpdated: '2 hours ago',
+    description: 'Nyalu Lagna Pass (4,900 m / 16,076 ft) is a dramatic high-altitude crossing in the Karnali Province of western Nepal, serving as a critical gateway between the Humla district lowlands and the remote upper Karnali valleys. The pass lies within a restricted trekking zone and offers sweeping panoramas of the Api Nampa Conservation Area and the Saipal Himal. Mule caravans and yak herders have used this ancient salt-trade route for centuries.',
+    image: '/dolpo-karnali-nepal-passes.jpg',
+    officialSource: 'Nepal Department of Roads / TAAN',
+    official_source_url: 'https://tourism.gov.np/',
+    weather: {
+      tempF: 28,
+      tempC: -2,
+      condition: 'Clear & Sunny with High Himalayan UV',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 30,
+      depthIn: 12,
+      condition: 'Patchy snow on north-facing slopes; trail exposed'
+    },
+    wind: {
+      speedKmh: 35,
+      speedMph: 22,
+      direction: 'NW',
+      description: 'Moderate to Strong Himalayan Gusts'
+    },
+    roadCondition: 'Unmotorised trekking trail only. Rocky exposed ridge with loose scree sections near the summit. Snow patches possible October–May.',
+    chainRequirement: 'Not applicable — foot traffic and pack animals only. Crampons and trekking poles recommended for winter crossings.',
+    cameras: [],
+    nearbyPasses: [
+      { id: 'numa-la', slug: 'numa-la', name: 'Numa La', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo Trek Trail', status: 'OPEN', elevationFt: 17060, lastUpdated: '3 hrs ago', distanceKm: 45 },
+      { id: 'baga-la', slug: 'baga-la', name: 'Baga La', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo Trek Trail', status: 'OPEN', elevationFt: 17717, lastUpdated: '3 hrs ago', distanceKm: 60 }
+    ],
+    overview: {
+      openedYear: 'Ancient salt-trade route',
+      lengthMiles: 'N/A — trekking pass',
+      lengthKm: 'N/A — trekking pass',
+      annualSnowfallIn: 60,
+      annualSnowfallM: 1.5,
+      summary: 'Nyalu Lagna is one of the lower major crossings in the Karnali region, yet still a formidable pass requiring acclimatisation. It connects Humla district communities with the upper Karnali river valleys, historically used for trade with Tibet. The pass is best attempted October–November or March–May. Permits from the Nepal government\'s restricted area regulation are required.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'December – February (deep snow, severe cold)',
+      typicalReopening: 'Mid-March (weather dependent)',
+      description: 'The pass becomes extremely hazardous in winter due to heavy snowfall, high avalanche risk, and temperatures that plummet below −20°C. Experienced Himalayan guides and acclimatisation are mandatory.'
+    },
+    faqs: [
+      { question: 'Is Nyalu Lagna Pass open today?', answer: 'Nyalu Lagna Pass (4,900 m) is currently open for trekking in the post-monsoon and pre-monsoon seasons. Always check with local tea-house owners and guides for fresh conditions before crossing.' },
+      { question: 'What is the elevation of Nyalu Lagna Pass?', answer: 'Nyalu Lagna Pass sits at 4,900 metres (16,076 feet) above sea level in the Karnali Province of western Nepal.' },
+      { question: 'When does Nyalu Lagna Pass close for winter?', answer: 'The pass typically becomes impassable from December through February due to heavy snowfall and extreme cold. The safe trekking window is October–November and March–May.' },
+      { question: 'Is a permit required to cross Nyalu Lagna Pass?', answer: 'Yes. Nyalu Lagna Pass lies within a restricted trekking zone in western Nepal. Trekkers must obtain a Restricted Area Permit and a TIMS card through a licensed Nepali trekking agency.' },
+      { question: 'How do I reach Nyalu Lagna Pass?', answer: 'Most trekkers fly from Kathmandu to Nepalgunj, then take a domestic flight to Simikot (Humla). From Simikot the standard trekking route leads through the Karnali valley toward Nyalu Lagna.' },
+      { question: 'How difficult is Nyalu Lagna Pass?', answer: 'The pass is rated strenuous. The altitude (4,900 m), technical rocky terrain, and unpredictable Himalayan weather demand excellent physical fitness and proper acclimatisation. A licensed guide is strongly advised.' },
+      { question: 'What is the best season to cross Nyalu Lagna Pass?', answer: 'October to November (post-monsoon) offers the clearest skies and most stable trail conditions. March to May (pre-monsoon) is also viable. Avoid the monsoon (June–September) and winter (December–February).' },
+      { question: 'Is Nyalu Lagna Pass open in winter?', answer: 'No. The pass is generally closed for safe trekking between December and February. Snowdrifts can exceed 1.5 metres and temperatures fall well below −20°C at the summit.' },
+      { question: 'What equipment do I need for Nyalu Lagna Pass?', answer: 'Essential gear includes a 4-season sleeping bag, insulated down jacket, trekking poles, crampons (for winter edge seasons), high-altitude sun protection, and adequate food and water purification.' }
+    ],
+    isPopular: false,
+    dataSources: [{ name: 'Nepal Department of Tourism', type: 'Official Government', url: 'https://tourism.gov.np/' }],
+    searchKeywords: ['Nyalu Lagna Pass trek', 'Nyalu Lagna elevation', 'Karnali region Nepal passes', 'Humla trekking permits']
+  },
+
+  {
+    id: 'numa-la',
+    slug: 'numa-la',
+    name: 'Numa La',
+    country: 'Nepal',
+    countryCode: 'NPL',
+    continent: 'Asia',
+    state: 'Karnali Province',
+    highway: 'Dolpo High Route Trekking Trail',
+    elevationFt: 17060,
+    elevationM: 5200,
+    coordinates: { lat: 29.1600, lng: 83.0200 },
+    status: 'OPEN',
+    statusDetail: 'Open for experienced high-altitude trekkers — extreme altitude, technical terrain.',
+    lastUpdated: '3 hours ago',
+    description: 'Numa La (5,200 m / 17,060 ft) is one of the signature high passes of the Dolpo High Route in Nepal\'s Karnali Province, connecting the Phoksundo Lake basin with the Tarap Valley. It is a genuinely challenging high-altitude crossing with a steep ascent over glaciated moraine and exposed ridgeline. The pass is a centrepiece of the legendary Dolpo High Circuit and rewards trekkers with some of the most remote and otherworldly Himalayan scenery on earth.',
+    image: '/dolpo-karnali-nepal-passes.jpg',
+    officialSource: 'Nepal Department of Tourism / ACAP',
+    official_source_url: 'https://tourism.gov.np/',
+    weather: {
+      tempF: 14,
+      tempC: -10,
+      condition: 'Clear & Extremely Cold at Summit',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 80,
+      depthIn: 31,
+      condition: 'Significant snow on summit ridge and north-facing descent'
+    },
+    wind: {
+      speedKmh: 55,
+      speedMph: 34,
+      direction: 'W',
+      description: 'Strong Himalayan Jet-stream Gusts'
+    },
+    roadCondition: 'Non-motorised trekking pass. Steep rocky ascent with glaciated moraine near the summit. Snow and ice possible year-round above 5,000 m.',
+    chainRequirement: 'Crampons and ice axe required for winter or shoulder-season crossings. Not applicable for wheeled vehicles.',
+    cameras: [],
+    nearbyPasses: [
+      { id: 'baga-la', slug: 'baga-la', name: 'Baga La', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo High Route', status: 'OPEN', elevationFt: 17717, lastUpdated: '3 hrs ago', distanceKm: 28 },
+      { id: 'nyalu-lagna-pass', slug: 'nyalu-lagna-pass', name: 'Nyalu Lagna Pass', country: 'Nepal', state: 'Karnali Province', highway: 'Karnali Trail', status: 'OPEN', elevationFt: 16076, lastUpdated: '2 hrs ago', distanceKm: 45 }
+    ],
+    overview: {
+      openedYear: 'Ancient trans-Himalayan trade route',
+      lengthMiles: 'N/A — trekking pass',
+      lengthKm: 'N/A — trekking pass',
+      annualSnowfallIn: 80,
+      annualSnowfallM: 2.0,
+      summary: 'Numa La is the key crossing between the Phoksundo Lake basin (Dolpo) and the Tarap Valley on the world-famous Dolpo High Circuit. The pass requires full acclimatisation (recommended base camps at 4,400 m the night before crossing). The descent into Tarap is long and steep — trekkers should start the crossing before dawn to ensure arrival before afternoon cloud build-up.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'November – April (impassable snow and ice)',
+      typicalReopening: 'Late May (weather and snowpack dependent)',
+      description: 'Numa La is one of the most serious passes in Nepal. Outside the September–October window it requires specialised mountaineering gear and local guide knowledge to cross safely.'
+    },
+    faqs: [
+      { question: 'Is Numa La open today?', answer: 'Numa La (5,200 m) is currently open for experienced high-altitude trekkers during the post-monsoon window (September–October). Conditions can change rapidly; check with local Dolpo guides.' },
+      { question: 'What is the elevation of Numa La?', answer: 'Numa La stands at 5,200 metres (17,060 feet) above sea level, making it one of the highest trekking passes in Nepal\'s Karnali region.' },
+      { question: 'How hard is Numa La?', answer: 'Numa La is rated very strenuous. The technical demands include glaciated moraine, steep snow slopes, and extreme altitude. Previous high-altitude experience above 5,000 m is strongly recommended.' },
+      { question: 'What is the best season for Numa La?', answer: 'The safest crossing window is late September to mid-October (post-monsoon). The pre-monsoon period (May–June) is feasible but carries more unpredictable weather.' },
+      { question: 'Is a permit needed for Numa La?', answer: 'Yes. Dolpo is a restricted trekking area. Trekkers need a Restricted Area Permit (RAP) for Lower Dolpo or Upper Dolpo depending on the route, plus a TIMS card — all obtained through a licensed Nepali agency.' },
+      { question: 'How long does it take to cross Numa La?', answer: 'From the Phoksundo side base camp the crossing typically takes 6–8 hours to descend into Tarap Valley. An early 4:00–5:00 AM start is essential.' },
+      { question: 'Is Numa La closed in winter?', answer: 'Yes. Numa La is impassable November through April due to deep snow, ice, and dangerous avalanche risk above 5,000 m. Only attempt during the approved trekking seasons.' }
+    ],
+    isPopular: true,
+    dataSources: [{ name: 'Nepal Department of Tourism', type: 'Official Government', url: 'https://tourism.gov.np/' }],
+    searchKeywords: ['Numa La Dolpo trek', 'Numa La elevation 5200m', 'Dolpo high route Nepal', 'Numa La crossing difficulty']
+  },
+
+  {
+    id: 'baga-la',
+    slug: 'baga-la',
+    name: 'Baga La',
+    country: 'Nepal',
+    countryCode: 'NPL',
+    continent: 'Asia',
+    state: 'Karnali Province',
+    highway: 'Dolpo High Route Trekking Trail',
+    elevationFt: 17717,
+    elevationM: 5400,
+    coordinates: { lat: 29.1000, lng: 83.1300 },
+    status: 'OPEN',
+    statusDetail: 'Open — serious mountaineering pass requiring crampons and ice axe.',
+    lastUpdated: '3 hours ago',
+    description: 'Baga La (5,400 m / 17,717 ft) is the highest and most technically demanding pass on the classic Dolpo High Route, straddling the boundary between Dolpo and Mustang districts. The summit ridge offers jaw-dropping views of the Dhaulagiri massif, Kanjiroba Himal, and the vast Tibetan plateau beyond. The pass is among the most isolated crossings in all of Nepal and requires full mountaineering capability.',
+    image: '/dolpo-karnali-nepal-passes.jpg',
+    officialSource: 'Nepal Department of Tourism',
+    weather: {
+      tempF: 5,
+      tempC: -15,
+      condition: 'Clear & Dangerously Cold at Summit',
+      icon: 'cloud-snow'
+    },
+    snowDepth: {
+      depthCm: 120,
+      depthIn: 47,
+      condition: 'Deep snow and ice on summit plateau'
+    },
+    wind: {
+      speedKmh: 65,
+      speedMph: 40,
+      direction: 'NW',
+      description: 'Severe Summit Gusts — risk of hypothermia'
+    },
+    roadCondition: 'Extreme high-altitude trekking pass. Glaciated approaches, avalanche-exposed couloirs, and crevassed snowfields near the summit. Technical mountaineering route.',
+    chainRequirement: 'Crampons, ice axe, and rope are mandatory for safe passage. No motor vehicles possible.',
+    cameras: [],
+    nearbyPasses: [
+      { id: 'numa-la', slug: 'numa-la', name: 'Numa La', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo High Route', status: 'OPEN', elevationFt: 17060, lastUpdated: '3 hrs ago', distanceKm: 28 },
+      { id: 'jeng-la', slug: 'jeng-la', name: 'Jeng La', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo Trek', status: 'OPEN', elevationFt: 16732, lastUpdated: '3 hrs ago', distanceKm: 55 }
+    ],
+    overview: {
+      openedYear: 'Ancient Himalayan trade route',
+      lengthMiles: 'N/A — mountaineering pass',
+      lengthKm: 'N/A — mountaineering pass',
+      annualSnowfallIn: 100,
+      annualSnowfallM: 2.5,
+      summary: 'Baga La is the crown of the Dolpo High Route and one of the most demanding trekking passes in Nepal. The crossing demands prior high-altitude acclimatisation (multiple nights above 4,500 m), basic mountaineering skills, crampons, and a competent local guide. The summit commands unparalleled views across the Tibetan plateau, making it a bucket-list achievement for serious trekkers.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'November – May (severe snow and ice)',
+      typicalReopening: 'June (weather and snowpack dependent)',
+      description: 'Baga La is a year-round snow pass. The only feasible trekking window is late September to mid-October. Even in this window, expert guidance and mountaineering equipment are essential.'
+    },
+    faqs: [
+      { question: 'Is Baga La open today?', answer: 'Baga La (5,400 m) is currently open for experienced mountaineering trekkers during the post-monsoon season. This is one of Nepal\'s most technical trekking passes — a professional Dolpo guide is mandatory.' },
+      { question: 'What is the elevation of Baga La?', answer: 'Baga La is 5,400 metres (17,717 feet) above sea level — one of the highest crossings in the Dolpo/Karnali region of Nepal.' },
+      { question: 'Is Baga La technical?', answer: 'Yes. Baga La requires crampons, ice axe, and basic glacier travel skills. The approaches involve glaciated terrain and exposed ridge sections that are dangerous without proper equipment and guidance.' },
+      { question: 'When is Baga La crossable?', answer: 'The practical window is late September to mid-October. Outside this period, extreme snow depth, ice, and avalanche risk make the pass life-threatening.' },
+      { question: 'Do I need a permit to cross Baga La?', answer: 'Yes — Upper or Lower Dolpo Restricted Area Permit, a TIMS card, and an Annapurna Conservation Area Permit (if crossing toward Mustang). All must be arranged via a licensed Nepali agency.' }
+    ],
+    isPopular: true,
+    dataSources: [{ name: 'Nepal Department of Tourism', type: 'Official Government', url: 'https://tourism.gov.np/' }],
+    searchKeywords: ['Baga La Dolpo Nepal', 'Baga La elevation 5400m', 'hardest trekking pass Nepal', 'Dolpo high circuit passes']
+  },
+
+  {
+    id: 'jeng-la',
+    slug: 'jeng-la',
+    name: 'Jeng La',
+    country: 'Nepal',
+    countryCode: 'NPL',
+    continent: 'Asia',
+    state: 'Karnali Province',
+    highway: 'Dolpo–Phoksundo Trekking Trail',
+    elevationFt: 16732,
+    elevationM: 5100,
+    coordinates: { lat: 29.2500, lng: 83.1800 },
+    status: 'OPEN',
+    statusDetail: 'Open for guided trekking — steep north face, acclimatisation required.',
+    lastUpdated: '4 hours ago',
+    description: 'Jeng La (5,100 m / 16,732 ft) is a high mountain pass in the Dolpo district of Nepal\'s Karnali Province, forming an alternative approach route to the Phoksundo Lake area. The pass crosses the eastern flanks of the Kanjiroba Himal and offers dramatic views across the Dolpo plateau. It is less frequented than Numa La but equally beautiful and rewarding.',
+    image: '/dolpo-karnali-nepal-passes.jpg',
+    officialSource: 'Nepal Tourism Board',
+    weather: {
+      tempF: 18,
+      tempC: -8,
+      condition: 'Partly Cloudy with High-Altitude Wind Chill',
+      icon: 'cloud-sun'
+    },
+    snowDepth: {
+      depthCm: 60,
+      depthIn: 24,
+      condition: 'Continuous snow cover on north-facing slopes above 4,800 m'
+    },
+    wind: {
+      speedKmh: 45,
+      speedMph: 28,
+      direction: 'NW',
+      description: 'Strong Cross-Pass Winds'
+    },
+    roadCondition: 'Unmotorised high-altitude trekking trail. Loose scree on south face, compacted snow and ice on north face. Requires sure-footedness.',
+    chainRequirement: 'Crampons strongly recommended for north-face descent. No wheeled vehicles possible.',
+    cameras: [],
+    nearbyPasses: [
+      { id: 'numa-la', slug: 'numa-la', name: 'Numa La', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo High Route', status: 'OPEN', elevationFt: 17060, lastUpdated: '3 hrs ago', distanceKm: 55 },
+      { id: 'kagmara-la', slug: 'kagmara-la', name: 'Kagmara La', country: 'Nepal', state: 'Karnali Province', highway: 'Kagmara Trek', status: 'OPEN', elevationFt: 16896, lastUpdated: '4 hrs ago', distanceKm: 35 }
+    ],
+    overview: {
+      openedYear: 'Historical Dolpo trade and grazing route',
+      lengthMiles: 'N/A — trekking pass',
+      lengthKm: 'N/A — trekking pass',
+      annualSnowfallIn: 70,
+      annualSnowfallM: 1.8,
+      summary: 'Jeng La connects the Phoksundo River valley with the upper Dolpo plateau. It is a strenuous but achievable pass for acclimatised trekkers with a guide. The crossing typically takes 5–7 hours from a high-camp at 4,600 m and rewards with expansive views across the Kanjiroba Himal and distant Tibetan plateau.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'December – March',
+      typicalReopening: 'April (pre-monsoon), September (post-monsoon)',
+      description: 'Jeng La is accessible in the pre-monsoon (April–May) and post-monsoon (September–October) windows. Deep snow and high avalanche risk close it during winter.'
+    },
+    faqs: [
+      { question: 'Is Jeng La open today?', answer: 'Jeng La (5,100 m) is currently open for guided trekking during the post-monsoon season. Conditions at altitude change rapidly; consult local tea house owners and Dolpo guides.' },
+      { question: 'What is the elevation of Jeng La?', answer: 'Jeng La sits at 5,100 metres (16,732 feet) above sea level in Nepal\'s Karnali Province.' },
+      { question: 'How difficult is Jeng La?', answer: 'Jeng La is rated difficult. The 5,100 m summit demands excellent acclimatisation, physical fitness, and a reliable local guide. The north-face descent involves snow and ice.' },
+      { question: 'What is the season for Jeng La trek?', answer: 'Best seasons are October–November (post-monsoon) and April–May (pre-monsoon). Avoid the monsoon and winter months.' }
+    ],
+    isPopular: false,
+    dataSources: [{ name: 'Nepal Tourism Board', type: 'Official Government', url: 'https://www.welcomenepal.com/' }],
+    searchKeywords: ['Jeng La Nepal', 'Jeng La elevation', 'Dolpo trekking passes', 'Kanjiroba Himal trek']
+  },
+
+  {
+    id: 'saldang-la',
+    slug: 'saldang-la',
+    name: 'Saldang La',
+    country: 'Nepal',
+    countryCode: 'NPL',
+    continent: 'Asia',
+    state: 'Karnali Province',
+    highway: 'Upper Dolpo / Saldang Village Trail',
+    elevationFt: 14764,
+    elevationM: 4500,
+    coordinates: { lat: 29.3200, lng: 83.4500 },
+    status: 'OPEN',
+    statusDetail: 'Open — lower-elevation crossing, accessible for acclimatised trekkers.',
+    lastUpdated: '2 hours ago',
+    description: 'Saldang La (4,500 m / 14,764 ft) is one of the more accessible passes in the Upper Dolpo circuit of Nepal, connecting the windswept Namdo and Saldang villages with the main Dolpo trading routes. Saldang is a fascinating village with deep Bön Buddhist traditions, and the pass above it provides views of the Kanjiroba massif and the vast plateau landscape that characterises this Trans-Himalayan region.',
+    image: '/dolpo-karnali-nepal-passes.jpg',
+    officialSource: 'Nepal Tourism Board',
+    weather: {
+      tempF: 32,
+      tempC: 0,
+      condition: 'Partly Cloudy & Windy',
+      icon: 'cloud-sun'
+    },
+    snowDepth: {
+      depthCm: 20,
+      depthIn: 8,
+      condition: 'Light snow on upper approaches; trail generally clear'
+    },
+    wind: {
+      speedKmh: 30,
+      speedMph: 19,
+      direction: 'W',
+      description: 'Moderate Plateau Winds'
+    },
+    roadCondition: 'Rocky unpaved trekking trail. Generally well-defined path used by yak caravans. Some loose scree near the summit.',
+    chainRequirement: 'Not applicable for vehicles. Trekking poles recommended.',
+    cameras: [],
+    nearbyPasses: [
+      { id: 'kagmara-la', slug: 'kagmara-la', name: 'Kagmara La', country: 'Nepal', state: 'Karnali Province', highway: 'Kagmara Trek', status: 'OPEN', elevationFt: 16896, lastUpdated: '3 hrs ago', distanceKm: 50 },
+      { id: 'jeng-la', slug: 'jeng-la', name: 'Jeng La', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo Trek', status: 'OPEN', elevationFt: 16732, lastUpdated: '4 hrs ago', distanceKm: 65 }
+    ],
+    overview: {
+      openedYear: 'Ancient Bön trade route',
+      lengthMiles: 'N/A — trekking pass',
+      lengthKm: 'N/A — trekking pass',
+      annualSnowfallIn: 40,
+      annualSnowfallM: 1.0,
+      summary: 'Saldang La serves as the overland link between the culturally rich Saldang village and the broader Upper Dolpo trekking circuit. At 4,500 m, it is one of the less technical Dolpo passes but still demands proper acclimatisation. The Saldang area preserves Tibetan Bön Buddhist culture largely unchanged for centuries, making the crossing culturally as well as scenically rewarding.'
+    },
+    isSeasonal: false,
+    faqs: [
+      { question: 'Is Saldang La open today?', answer: 'Saldang La (4,500 m) is currently open. It is one of the more accessible passes in the Upper Dolpo region, though the area still requires a Restricted Area Permit.' },
+      { question: 'What is the elevation of Saldang La?', answer: 'Saldang La is at 4,500 metres (14,764 feet) above sea level in the Dolpo district of Karnali Province, Nepal.' },
+      { question: 'Do I need a permit for Saldang La?', answer: 'Yes — Upper Dolpo requires a Restricted Area Permit (USD $500 for 10 days) plus a TIMS card. All permits must be arranged via a licensed Nepali agency.' },
+      { question: 'What is Saldang village famous for?', answer: 'Saldang is one of the largest and culturally richest villages in Upper Dolpo, known for its ancient Bön Buddhist monastery and traditional Tibetan-style architecture unchanged for centuries.' }
+    ],
+    isPopular: false,
+    dataSources: [{ name: 'Nepal Tourism Board', type: 'Official Government', url: 'https://www.welcomenepal.com/' }],
+    searchKeywords: ['Saldang La Nepal', 'Upper Dolpo trek', 'Saldang village permit', 'Karnali Province passes']
+  },
+
+  {
+    id: 'kagmara-la',
+    slug: 'kagmara-la',
+    name: 'Kagmara La',
+    country: 'Nepal',
+    countryCode: 'NPL',
+    continent: 'Asia',
+    state: 'Karnali Province',
+    highway: 'Kagmara Pass Trekking Route',
+    elevationFt: 16896,
+    elevationM: 5115,
+    coordinates: { lat: 29.0500, lng: 82.8200 },
+    status: 'OPEN',
+    statusDetail: 'Open for experienced trekkers — steep glaciated approach, guide mandatory.',
+    lastUpdated: '3 hours ago',
+    description: 'Kagmara La (5,115 m / 16,896 ft) is the principal high pass of the Kagmara circuit in Nepal\'s Karnali Province, linking the Phoksundo Lake sector with the Kagmara Valley and ultimately the Juphal airstrip. It is regarded as one of the finest wilderness trekking circuits in Nepal — entirely off the standard tourist circuit — crossing a stunning glaciated valley with close-up views of the Kanjiroba massif.',
+    image: '/dolpo-karnali-nepal-passes.jpg',
+    officialSource: 'Nepal Tourism Board / DNPWC',
+    weather: {
+      tempF: 16,
+      tempC: -9,
+      condition: 'Clear & Severely Cold with High Wind-Chill',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 90,
+      depthIn: 35,
+      condition: 'Deep snow on glaciated sections above 4,900 m'
+    },
+    wind: {
+      speedKmh: 50,
+      speedMph: 31,
+      direction: 'W',
+      description: 'Strong to Severe Himalayan Pass Winds'
+    },
+    roadCondition: 'High-altitude trekking pass over glaciated terrain. The north face descent involves snow and ice slopes. No motor access possible.',
+    chainRequirement: 'Crampons and ice axe mandatory for the glaciated summit section. Rope useful for group travel on snow slopes.',
+    cameras: [],
+    nearbyPasses: [
+      { id: 'jeng-la', slug: 'jeng-la', name: 'Jeng La', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo Trek', status: 'OPEN', elevationFt: 16732, lastUpdated: '4 hrs ago', distanceKm: 35 },
+      { id: 'french-pass', slug: 'french-pass', name: 'French Pass', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo Trek', status: 'OPEN', elevationFt: 16404, lastUpdated: '3 hrs ago', distanceKm: 45 }
+    ],
+    overview: {
+      openedYear: 'Historical Dolpo hunting and herding route',
+      lengthMiles: 'N/A — trekking pass',
+      lengthKm: 'N/A — trekking pass',
+      annualSnowfallIn: 85,
+      annualSnowfallM: 2.2,
+      summary: 'Kagmara La is the gateway of the Kagmara circuit, one of the most spectacular and under-visited trekking routes in Nepal. The pass connects the Phoksundo watershed with the Kagmara valley. Views from the summit encompass the glaciers and rock towers of Kanjiroba (6,883 m) and a 360° Himalayan panorama. The circuit typically takes 14–18 days from Juphal.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'November – May',
+      typicalReopening: 'June (pre-monsoon) or October (post-monsoon)',
+      description: 'Kagmara La is best crossed October–early November. The winter snowpack makes the pass extremely dangerous from November to May.'
+    },
+    faqs: [
+      { question: 'Is Kagmara La open today?', answer: 'Kagmara La (5,115 m) is currently open for experienced guided trekkers. The glaciated terrain makes this a technical crossing — do not attempt without an experienced Dolpo or Karnali guide.' },
+      { question: 'What is the elevation of Kagmara La?', answer: 'Kagmara La sits at 5,115 metres (16,896 feet) above sea level in Nepal\'s Karnali Province.' },
+      { question: 'What is the Kagmara circuit trek?', answer: 'The Kagmara circuit is a remote 14–18 day trekking loop starting and ending at Juphal (near Dolpo), crossing Kagmara La (5,115 m) and encircling the Kanjiroba massif through pristine wilderness.' },
+      { question: 'Is Kagmara La dangerous?', answer: 'Yes — the glaciated north face involves real avalanche risk, crevasses, and ice slopes. Crampons, ice axe, and an experienced guide are essential. Kagmara La is not suitable for recreational hikers without mountaineering experience.' }
+    ],
+    isPopular: false,
+    dataSources: [{ name: 'Nepal Tourism Board', type: 'Official Government', url: 'https://www.welcomenepal.com/' }],
+    searchKeywords: ['Kagmara La Nepal', 'Kagmara circuit trek', 'Kanjiroba Himal Nepal', 'Kagmara pass elevation']
+  },
+
+  {
+    id: 'nangdalo-pass',
+    slug: 'nangdalo-pass',
+    name: 'Nangdalo Pass',
+    country: 'Nepal',
+    countryCode: 'NPL',
+    continent: 'Asia',
+    state: 'Karnali Province',
+    highway: 'Dolpo Lower Circuit Trekking Trail',
+    elevationFt: 14108,
+    elevationM: 4300,
+    coordinates: { lat: 29.0200, lng: 82.9200 },
+    status: 'OPEN',
+    statusDetail: 'Open — moderately technical at altitude, best with an experienced guide.',
+    lastUpdated: '2 hours ago',
+    description: 'Nangdalo Pass (4,300 m / 14,108 ft) is a key crossing on the Lower Dolpo circuit in Nepal\'s Karnali Province. The pass connects the Kagmara valley with the southern Dolpo plateau. Though lower than the other Dolpo high passes, Nangdalo is still a serious undertaking at altitude and requires proper acclimatisation. The surrounding landscape of glacially carved valleys, dense Himalayan pine forests at lower altitudes, and barren high-altitude plateaus is exceptional.',
+    image: '/dolpo-karnali-nepal-passes.jpg',
+    officialSource: 'Nepal Tourism Board',
+    weather: {
+      tempF: 36,
+      tempC: 2,
+      condition: 'Partly Cloudy with Mountain Mist',
+      icon: 'cloud-sun'
+    },
+    snowDepth: {
+      depthCm: 15,
+      depthIn: 6,
+      condition: 'Light snow patches on upper section, trail clear below 4,100 m'
+    },
+    wind: {
+      speedKmh: 25,
+      speedMph: 16,
+      direction: 'SW',
+      description: 'Light to Moderate Valley Wind'
+    },
+    roadCondition: 'Unmotorised trekking trail. Steep switchbacks on both ascent and descent. Rocky terrain, well-defined trail.',
+    chainRequirement: 'Not applicable. Trekking poles strongly recommended.',
+    cameras: [],
+    nearbyPasses: [
+      { id: 'kagmara-la', slug: 'kagmara-la', name: 'Kagmara La', country: 'Nepal', state: 'Karnali Province', highway: 'Kagmara Trek', status: 'OPEN', elevationFt: 16896, lastUpdated: '3 hrs ago', distanceKm: 30 },
+      { id: 'french-pass', slug: 'french-pass', name: 'French Pass', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo Trek', status: 'OPEN', elevationFt: 16404, lastUpdated: '3 hrs ago', distanceKm: 25 }
+    ],
+    overview: {
+      openedYear: 'Traditional Lower Dolpo herding route',
+      lengthMiles: 'N/A — trekking pass',
+      lengthKm: 'N/A — trekking pass',
+      annualSnowfallIn: 35,
+      annualSnowfallM: 0.9,
+      summary: 'Nangdalo Pass sits at the lower end of the Dolpo pass spectrum (4,300 m) but still requires a gradual acclimatisation schedule. It serves as a connector pass on the Lower Dolpo circuit, typically combined with Kagmara La or French Pass. The approach through rhododendron and birch forests gives way to sweeping plateau views near the summit.'
+    },
+    isSeasonal: false,
+    faqs: [
+      { question: 'Is Nangdalo Pass open today?', answer: 'Nangdalo Pass (4,300 m) is currently open for guided trekking. At this lower elevation it is accessible for most of the year, though November–February can bring snow closures.' },
+      { question: 'What is the elevation of Nangdalo Pass?', answer: 'Nangdalo Pass is at 4,300 metres (14,108 feet) in the Dolpo district of Karnali Province, Nepal.' },
+      { question: 'Is Nangdalo Pass suitable for beginners?', answer: 'With proper acclimatisation and an experienced guide, Nangdalo Pass is accessible for fit, well-prepared trekkers without technical mountaineering skills. At 4,300 m, altitude sickness remains a serious risk.' }
+    ],
+    isPopular: false,
+    dataSources: [{ name: 'Nepal Tourism Board', type: 'Official Government', url: 'https://www.welcomenepal.com/' }],
+    searchKeywords: ['Nangdalo Pass Nepal', 'Lower Dolpo circuit trek', 'Karnali Province trekking', 'Dolpo pass altitude']
+  },
+
+  {
+    id: 'french-pass',
+    slug: 'french-pass',
+    name: 'French Pass',
+    country: 'Nepal',
+    countryCode: 'NPL',
+    continent: 'Asia',
+    state: 'Karnali Province',
+    highway: 'Dolpo Circuit / French Pass Trekking Route',
+    elevationFt: 16404,
+    elevationM: 5000,
+    coordinates: { lat: 28.9800, lng: 83.0000 },
+    status: 'OPEN',
+    statusDetail: 'Open — named by early French expedition teams; requires experienced guide.',
+    lastUpdated: '3 hours ago',
+    description: 'French Pass (5,000 m / 16,404 ft) is a high mountain crossing in Nepal\'s Dolpo district, named by a pioneering French mountaineering expedition that first documented the route. The pass provides an alternative link between the Kagmara valley and the Phoksundo basin. Spectacular scenery encompasses the Kanjiroba glaciers, Dhaulagiri\'s northern flanks, and the remote Trans-Himalayan plateau. It remains one of the least-visited high passes in Nepal.',
+    image: '/dolpo-karnali-nepal-passes.jpg',
+    officialSource: 'Nepal Tourism Board',
+    weather: {
+      tempF: 20,
+      tempC: -7,
+      condition: 'Clear & Very Cold with Gusty Cross-Winds',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 70,
+      depthIn: 28,
+      condition: 'Substantial snow on summit and upper north-facing slope'
+    },
+    wind: {
+      speedKmh: 55,
+      speedMph: 34,
+      direction: 'NW',
+      description: 'Strong to Severe High-Altitude Gusts'
+    },
+    roadCondition: 'Technical high-altitude trekking pass. Rocky exposed ridge with glaciated north-face descent. No motor access.',
+    chainRequirement: 'Crampons and ice axe required for glaciated sections.',
+    cameras: [],
+    nearbyPasses: [
+      { id: 'kagmara-la', slug: 'kagmara-la', name: 'Kagmara La', country: 'Nepal', state: 'Karnali Province', highway: 'Kagmara Trek', status: 'OPEN', elevationFt: 16896, lastUpdated: '3 hrs ago', distanceKm: 45 },
+      { id: 'nangdalo-pass', slug: 'nangdalo-pass', name: 'Nangdalo Pass', country: 'Nepal', state: 'Karnali Province', highway: 'Lower Dolpo Trail', status: 'OPEN', elevationFt: 14108, lastUpdated: '2 hrs ago', distanceKm: 25 }
+    ],
+    overview: {
+      openedYear: 'First documented by French mountaineering teams, c. 1950s',
+      lengthMiles: 'N/A — trekking pass',
+      lengthKm: 'N/A — trekking pass',
+      annualSnowfallIn: 75,
+      annualSnowfallM: 1.9,
+      summary: 'French Pass gained its name from early French Himalayan expeditions exploring the Dolpo–Kanjiroba region. At 5,000 m, it is a serious high-altitude crossing with panoramic views rivalling those of the more famous Dolpo High Route passes. The pass connects the Kagmara valley with the Phoksundo watershed and is typically combined with Kagmara La on the extended circuit.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'December – April',
+      typicalReopening: 'May (pre-monsoon) or October (post-monsoon)',
+      description: 'French Pass is accessible during the pre-monsoon (May–June) and post-monsoon (September–October) windows. Winter crossings are extremely hazardous.'
+    },
+    faqs: [
+      { question: 'Is French Pass Nepal open today?', answer: 'French Pass (5,000 m), in Nepal\'s Dolpo district, is currently open for guided high-altitude trekkers during the post-monsoon season. This pass requires mountaineering experience and an expert local guide.' },
+      { question: 'What is the elevation of French Pass in Nepal?', answer: 'French Pass, Dolpo, Nepal is at 5,000 metres (16,404 feet) above sea level.' },
+      { question: 'Why is it called French Pass in Nepal?', answer: 'The pass was named by early French mountaineering and exploration teams who first documented the route in the 1950s while exploring the Kanjiroba massif and Dolpo plateau.' },
+      { question: 'How do I get to French Pass Dolpo?', answer: 'Most trekkers fly from Kathmandu → Nepalgunj → Juphal (Dolpo). From Juphal the trail follows the Phoksundo Lake route before branching toward the Kagmara valley and French Pass.' }
+    ],
+    isPopular: false,
+    dataSources: [{ name: 'Nepal Tourism Board', type: 'Official Government', url: 'https://www.welcomenepal.com/' }],
+    searchKeywords: ['French Pass Dolpo Nepal', 'French Pass Nepal elevation', 'Kagmara circuit French Pass', 'Nepal named passes French']
+  },
+
+  {
+    id: 'chharka-la',
+    slug: 'chharka-la',
+    name: 'Chharka La',
+    country: 'Nepal',
+    countryCode: 'NPL',
+    continent: 'Asia',
+    state: 'Karnali Province',
+    highway: 'Chharka Bhot – Tarap Valley Trail',
+    elevationFt: 17388,
+    elevationM: 5300,
+    coordinates: { lat: 29.0000, lng: 83.3500 },
+    status: 'OPEN',
+    statusDetail: 'Open — extreme altitude pass linking Chharka Bhot with upper Tarap valley.',
+    lastUpdated: '4 hours ago',
+    description: 'Chharka La (5,300 m / 17,388 ft) is a high and isolated pass connecting the wind-scoured Chharka Bhot village area with the Tarap Valley in Nepal\'s Dolpo district. The crossing sits in the heart of the Trans-Himalayan arid plateau — a landscape unlike anything in the standard Nepal trekking circuit. Chharka Bhot is one of the highest inhabited settlements in Nepal, and the pass above it offers an extraordinary window into this ancient Himalayan borderland.',
+    image: '/dolpo-karnali-nepal-passes.jpg',
+    officialSource: 'Nepal Tourism Board',
+    weather: {
+      tempF: 10,
+      tempC: -12,
+      condition: 'Clear & Extremely Cold — High UV and Wind Chill',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 100,
+      depthIn: 39,
+      condition: 'Deep snow on both approaches; summit plateau windswept but icy'
+    },
+    wind: {
+      speedKmh: 70,
+      speedMph: 43,
+      direction: 'NW',
+      description: 'Severe Trans-Himalayan Gusts — extreme wind chill risk'
+    },
+    roadCondition: 'Extreme high-altitude trekking pass over Trans-Himalayan plateau. Exposed windswept terrain. Ice and snow on approaches. No motor access.',
+    chainRequirement: 'Crampons and ice axe essential. Down suit and face protection required for wind chill at the summit.',
+    cameras: [],
+    nearbyPasses: [
+      { id: 'lang-la', slug: 'lang-la', name: 'Lang La', country: 'Nepal', state: 'Karnali Province', highway: 'Upper Dolpo Trail', status: 'OPEN', elevationFt: 17060, lastUpdated: '4 hrs ago', distanceKm: 40 },
+      { id: 'baga-la', slug: 'baga-la', name: 'Baga La', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo High Route', status: 'OPEN', elevationFt: 17717, lastUpdated: '3 hrs ago', distanceKm: 70 }
+    ],
+    overview: {
+      openedYear: 'Ancient borderland trading route to Tibet',
+      lengthMiles: 'N/A — trekking pass',
+      lengthKm: 'N/A — trekking pass',
+      annualSnowfallIn: 90,
+      annualSnowfallM: 2.3,
+      summary: 'Chharka La is one of the most remote and rarely visited passes in Nepal. The crossing begins from Chharka Bhot — an isolated Tibetan-culture village at over 4,200 m — and ascends through barren glaciated terrain to the 5,300 m summit. The descent into Tarap is long. Full expedition-level planning is required for this crossing.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'November – May',
+      typicalReopening: 'June (pre-monsoon) or September (post-monsoon)',
+      description: 'Chharka La is only safely crossable during a narrow window in October. Outside this period, extreme snowfall, high winds, and sub-zero temperatures make the pass genuinely life-threatening.'
+    },
+    faqs: [
+      { question: 'Is Chharka La open today?', answer: 'Chharka La (5,300 m) is currently open for guided trekkers in the post-monsoon season. This is one of Nepal\'s most extreme and remote pass crossings — expert local guide and full acclimatisation mandatory.' },
+      { question: 'What is the elevation of Chharka La?', answer: 'Chharka La is at 5,300 metres (17,388 feet) in Nepal\'s Dolpo district, Karnali Province.' },
+      { question: 'Where is Chharka Bhot?', answer: 'Chharka Bhot is a remote Tibetan-culture village in Upper Dolpo, Nepal, at approximately 4,200 m altitude — one of the highest inhabited settlements in Nepal. It is accessible only by trekking trail and small aircraft.' },
+      { question: 'Do I need a special permit for Chharka La?', answer: 'Yes — Upper Dolpo Restricted Area Permit (USD $500/10 days) plus TIMS card. All obtained via a licensed Nepali agency.' }
+    ],
+    isPopular: false,
+    dataSources: [{ name: 'Nepal Tourism Board', type: 'Official Government', url: 'https://www.welcomenepal.com/' }],
+    searchKeywords: ['Chharka La Nepal', 'Chharka Bhot trek', 'Upper Dolpo extreme passes', 'Trans-Himalayan Nepal passes']
+  },
+
+  {
+    id: 'lang-la',
+    slug: 'lang-la',
+    name: 'Lang La',
+    country: 'Nepal',
+    countryCode: 'NPL',
+    continent: 'Asia',
+    state: 'Karnali Province',
+    highway: 'Upper Dolpo / Tarap to Chharka Trail',
+    elevationFt: 17060,
+    elevationM: 5200,
+    coordinates: { lat: 29.0800, lng: 83.3000 },
+    status: 'OPEN',
+    statusDetail: 'Open for experienced trekkers — Tarap Valley to Chharka high route.',
+    lastUpdated: '4 hours ago',
+    description: 'Lang La (5,200 m / 17,060 ft) is a high Himalayan crossing in Nepal\'s Dolpo district, sitting on the classic Upper Dolpo route between the Tarap Valley and Chharka Bhot. The pass traverses a stark and beautiful Trans-Himalayan landscape of moraine, dry plateaus, and distant glaciated peaks. It is frequently combined with the Chharka La crossing as part of the extended Upper Dolpo High Circuit.',
+    image: '/dolpo-karnali-nepal-passes.jpg',
+    officialSource: 'Nepal Tourism Board',
+    weather: {
+      tempF: 14,
+      tempC: -10,
+      condition: 'Clear & Very Cold',
+      icon: 'sun'
+    },
+    snowDepth: {
+      depthCm: 85,
+      depthIn: 33,
+      condition: 'Continuous snow above 4,900 m; windswept summit exposed'
+    },
+    wind: {
+      speedKmh: 60,
+      speedMph: 37,
+      direction: 'W',
+      description: 'Strong to Severe Westerly Pass Winds'
+    },
+    roadCondition: 'High-altitude trekking pass. Exposed rocky terrain with snow and ice above 5,000 m. No motor vehicles.',
+    chainRequirement: 'Crampons and ice axe recommended for summit approach.',
+    cameras: [],
+    nearbyPasses: [
+      { id: 'chharka-la', slug: 'chharka-la', name: 'Chharka La', country: 'Nepal', state: 'Karnali Province', highway: 'Upper Dolpo Trail', status: 'OPEN', elevationFt: 17388, lastUpdated: '4 hrs ago', distanceKm: 40 },
+      { id: 'tarap-pass', slug: 'tarap-pass', name: 'Tarap Pass', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo Trek', status: 'OPEN', elevationFt: 15748, lastUpdated: '3 hrs ago', distanceKm: 30 }
+    ],
+    overview: {
+      openedYear: 'Traditional Upper Dolpo trans-plateau route',
+      lengthMiles: 'N/A — trekking pass',
+      lengthKm: 'N/A — trekking pass',
+      annualSnowfallIn: 82,
+      annualSnowfallM: 2.1,
+      summary: 'Lang La links Tarap Valley with Chharka Bhot on the Upper Dolpo High Circuit. The pass at 5,200 m offers a panoramic window across the Trans-Himalayan landscape toward Tibet. Crossing typically takes 5–7 hours from a high camp at 4,700 m. An early start is essential to avoid afternoon cloud and wind build-up.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'November – May',
+      typicalReopening: 'June or September (weather dependent)',
+      description: 'Lang La is accessible during the post-monsoon season (September–October) and briefly in pre-monsoon (late May–June). Winter crossings are extremely dangerous.'
+    },
+    faqs: [
+      { question: 'Is Lang La open today?', answer: 'Lang La (5,200 m) is currently open for guided trekkers. This is a remote high-altitude crossing requiring acclimatisation and an experienced Dolpo guide.' },
+      { question: 'What is the elevation of Lang La?', answer: 'Lang La is at 5,200 metres (17,060 feet) in Nepal\'s Upper Dolpo, Karnali Province.' },
+      { question: 'What is the Lang La route?', answer: 'Lang La connects the Tarap Valley with Chharka Bhot on the Upper Dolpo High Circuit. It is typically combined with Chharka La for the full trans-plateau traverse.' }
+    ],
+    isPopular: false,
+    dataSources: [{ name: 'Nepal Tourism Board', type: 'Official Government', url: 'https://www.welcomenepal.com/' }],
+    searchKeywords: ['Lang La Nepal Dolpo', 'Lang La elevation 5200m', 'Upper Dolpo high circuit', 'Tarap to Chharka trek']
+  },
+
+  {
+    id: 'tarap-pass',
+    slug: 'tarap-pass',
+    name: 'Tarap Pass',
+    country: 'Nepal',
+    countryCode: 'NPL',
+    continent: 'Asia',
+    state: 'Karnali Province',
+    highway: 'Tarap Valley Trekking Route',
+    elevationFt: 15748,
+    elevationM: 4800,
+    coordinates: { lat: 29.1800, lng: 83.2000 },
+    status: 'OPEN',
+    statusDetail: 'Open — gateway to the scenic Tarap Valley gorge, Lower Dolpo circuit.',
+    lastUpdated: '2 hours ago',
+    description: 'Tarap Pass (4,800 m / 15,748 ft) marks the entry into the magnificent Tarap Valley gorge — one of the most dramatic river gorges in Nepal — and serves as a key waypoint on the Lower Dolpo circuit. The Tarap River cuts a spectacular canyon between soaring cliff walls, and the valley is home to ancient Bön Buddhist monasteries. The pass itself offers panoramic views across the southern Dolpo highlands.',
+    image: '/dolpo-karnali-nepal-passes.jpg',
+    officialSource: 'Nepal Tourism Board',
+    weather: {
+      tempF: 28,
+      tempC: -2,
+      condition: 'Partly Cloudy & Cold',
+      icon: 'cloud-sun'
+    },
+    snowDepth: {
+      depthCm: 35,
+      depthIn: 14,
+      condition: 'Snow on upper section; lower trail clear'
+    },
+    wind: {
+      speedKmh: 30,
+      speedMph: 19,
+      direction: 'S',
+      description: 'Moderate Valley Wind'
+    },
+    roadCondition: 'Rocky trekking trail with some narrow canyon traverses near Tarap Valley gorge. Non-motorised only.',
+    chainRequirement: 'Not applicable. Good trekking boots required for rocky terrain.',
+    cameras: [],
+    nearbyPasses: [
+      { id: 'numa-la', slug: 'numa-la', name: 'Numa La', country: 'Nepal', state: 'Karnali Province', highway: 'Dolpo High Route', status: 'OPEN', elevationFt: 17060, lastUpdated: '3 hrs ago', distanceKm: 35 },
+      { id: 'lang-la', slug: 'lang-la', name: 'Lang La', country: 'Nepal', state: 'Karnali Province', highway: 'Upper Dolpo Trail', status: 'OPEN', elevationFt: 17060, lastUpdated: '4 hrs ago', distanceKm: 30 }
+    ],
+    overview: {
+      openedYear: 'Ancient Bön trading and pilgrimage route',
+      lengthMiles: 'N/A — trekking pass',
+      lengthKm: 'N/A — trekking pass',
+      annualSnowfallIn: 45,
+      annualSnowfallM: 1.1,
+      summary: 'Tarap Pass is a gateway to the extraordinary Tarap Valley, famous for its dramatic gorge, rare flora, and ancient Bön monasteries. At 4,800 m it is a serious altitude crossing but more accessible than the upper Dolpo passes. The valley was featured in David Snellgrove\'s landmark book "Himalayan Pilgrimage" and remains a place of deep cultural and religious significance.'
+    },
+    isSeasonal: true,
+    seasonalClosureInfo: {
+      typicalClosure: 'December – February',
+      typicalReopening: 'March–April',
+      description: 'Tarap Pass can accumulate significant snow from December to February. Spring and autumn are the most reliable crossing seasons.'
+    },
+    faqs: [
+      { question: 'Is Tarap Pass open today?', answer: 'Tarap Pass (4,800 m) is currently open for guided trekking. The pass is a standard part of the Lower Dolpo circuit and accessible for acclimatised, fit trekkers.' },
+      { question: 'What is the elevation of Tarap Pass?', answer: 'Tarap Pass is at 4,800 metres (15,748 feet) in the Dolpo district, Karnali Province, Nepal.' },
+      { question: 'What is special about Tarap Valley?', answer: 'Tarap Valley is one of Nepal\'s most dramatic gorges, with soaring canyon walls, rare Himalayan flora, ancient Bön Buddhist monasteries, and a fascinating traditional culture largely unchanged for centuries.' },
+      { question: 'What is the Tarap Pass trekking route?', answer: 'Tarap Pass is reached from Dunai (Dolpo district headquarters) via the Tarap River gorge on the Lower Dolpo circuit. It is commonly crossed on the way to Phoksundo Lake or the Dolpo High Route.' }
+    ],
+    isPopular: true,
+    dataSources: [{ name: 'Nepal Tourism Board', type: 'Official Government', url: 'https://www.welcomenepal.com/' }],
+    searchKeywords: ['Tarap Pass Nepal', 'Tarap Valley trek', 'Lower Dolpo circuit', 'Tarap Pass elevation 4800m']
+  },
+
+  {
+    id: 'kaireko-la',
+    slug: 'kaireko-la',
+    name: 'Kaireko La',
+    country: 'Nepal',
+    countryCode: 'NPL',
+    continent: 'Asia',
+    state: 'Karnali Province',
+    highway: 'Karnali Province / Dolpo Trekking Trail',
+    elevationFt: 15256,
+    elevationM: 4650,
+    coordinates: { lat: 29.3800, lng: 82.7200 },
+    status: 'OPEN',
+    statusDetail: 'Open — cross-district pass connecting Humla with southern Karnali valleys.',
+    lastUpdated: '2 hours ago',
+    description: 'Kaireko La (4,650 m / 15,256 ft) is a cross-district high pass in Nepal\'s Karnali Province, linking the Humla district with the southern Karnali river valleys. The pass provides an important community link for villages on both sides of the ridge and sits within a landscape of remote alpine meadows, mani walls, and prayer flag-draped summits. It is less-visited by foreign trekkers but forms an integral part of local Karnali mountain community life.',
+    image: '/dolpo-karnali-nepal-passes.jpg',
+    officialSource: 'Nepal Tourism Board',
+    weather: {
+      tempF: 30,
+      tempC: -1,
+      condition: 'Partly Cloudy & Breezy',
+      icon: 'cloud-sun'
+    },
+    snowDepth: {
+      depthCm: 25,
+      depthIn: 10,
+      condition: 'Moderate snow on summit ridge; lower trail clear'
+    },
+    wind: {
+      speedKmh: 28,
+      speedMph: 17,
+      direction: 'NE',
+      description: 'Light to Moderate Karnali Valley Wind'
+    },
+    roadCondition: 'Unpaved community trekking trail. Rocky terrain with some steep switchbacks on both sides. Non-motorised only.',
+    chainRequirement: 'Not applicable for vehicles. Trekking poles recommended.',
+    cameras: [],
+    nearbyPasses: [
+      { id: 'nyalu-lagna-pass', slug: 'nyalu-lagna-pass', name: 'Nyalu Lagna Pass', country: 'Nepal', state: 'Karnali Province', highway: 'Karnali Trail', status: 'OPEN', elevationFt: 16076, lastUpdated: '2 hrs ago', distanceKm: 40 },
+      { id: 'saldang-la', slug: 'saldang-la', name: 'Saldang La', country: 'Nepal', state: 'Karnali Province', highway: 'Upper Dolpo Trail', status: 'OPEN', elevationFt: 14764, lastUpdated: '2 hrs ago', distanceKm: 55 }
+    ],
+    overview: {
+      openedYear: 'Traditional Karnali community route',
+      lengthMiles: 'N/A — trekking pass',
+      lengthKm: 'N/A — trekking pass',
+      annualSnowfallIn: 38,
+      annualSnowfallM: 1.0,
+      summary: 'Kaireko La connects Humla district with the southern Karnali valleys and is used by local communities as a seasonal trade and grazing route. For trekkers it offers a rewarding off-the-beaten-path experience with authentic interactions with Karnali mountain communities. The summit ridge affords sweeping views toward the Saipal Himal and distant Tibetan plateau.'
+    },
+    isSeasonal: false,
+    faqs: [
+      { question: 'Is Kaireko La open today?', answer: 'Kaireko La (4,650 m) is currently open for guided trekking. The pass is a community route and accessible for acclimatised trekkers in most seasons except mid-winter.' },
+      { question: 'What is the elevation of Kaireko La?', answer: 'Kaireko La is at 4,650 metres (15,256 feet) in Nepal\'s Karnali Province, connecting Humla district with the southern Karnali valleys.' },
+      { question: 'Is Kaireko La a busy trekking pass?', answer: 'No — Kaireko La is an off-the-beaten-path community crossing, rarely seen on commercial trekking itineraries. This makes it ideal for trekkers seeking authentic and uncrowded Himalayan experiences.' },
+      { question: 'How do I reach Kaireko La?', answer: 'The pass is most commonly reached from Simikot (Humla), accessible by small aircraft from Nepalgunj. A licensed local guide and Restricted Area Permit are required.' }
+    ],
+    isPopular: false,
+    dataSources: [{ name: 'Nepal Tourism Board', type: 'Official Government', url: 'https://www.welcomenepal.com/' }],
+    searchKeywords: ['Kaireko La Nepal', 'Humla trekking pass', 'Karnali Province mountain pass', 'off-the-beaten-path Nepal trek']
+  },
 ];
+
 
 // Helper functions
 export function getPassBySlug(slug: string): MountainPass | undefined {

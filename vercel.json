@@ -21,6 +21,16 @@
       "permanent": true
     },
     {
+      "source": "/passes/north-cascades-pass",
+      "destination": "/passes/united-states/washington/north-cascades-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/north-cascades-pass",
+      "destination": "/passes/united-states/washington/north-cascades-pass",
+      "permanent": true
+    },
+    {
       "source": "/passes/stevens-pass",
       "destination": "/passes/united-states/washington/stevens-pass",
       "permanent": true
@@ -88,16 +98,6 @@
     {
       "source": "/passes/united-states/cayuse-pass",
       "destination": "/passes/united-states/washington/cayuse-pass",
-      "permanent": true
-    },
-    {
-      "source": "/passes/north-cascades-pass",
-      "destination": "/passes/united-states/washington/north-cascades-pass",
-      "permanent": true
-    },
-    {
-      "source": "/passes/united-states/north-cascades-pass",
-      "destination": "/passes/united-states/washington/north-cascades-pass",
       "permanent": true
     },
     {
@@ -298,6 +298,346 @@
     {
       "source": "/passes/switzerland/bernina-pass",
       "destination": "/passes/switzerland/graubunden/bernina-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/simplon-pass",
+      "destination": "/passes/switzerland/valais/simplon-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/switzerland/simplon-pass",
+      "destination": "/passes/switzerland/valais/simplon-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/santiam-pass",
+      "destination": "/passes/united-states/oregon/santiam-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/santiam-pass",
+      "destination": "/passes/united-states/oregon/santiam-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/mckenzie-pass",
+      "destination": "/passes/united-states/oregon/mckenzie-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/mckenzie-pass",
+      "destination": "/passes/united-states/oregon/mckenzie-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/willamette-pass",
+      "destination": "/passes/united-states/oregon/willamette-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/willamette-pass",
+      "destination": "/passes/united-states/oregon/willamette-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/siskiyou-summit",
+      "destination": "/passes/united-states/oregon/siskiyou-summit",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/siskiyou-summit",
+      "destination": "/passes/united-states/oregon/siskiyou-summit",
+      "permanent": true
+    },
+    {
+      "source": "/passes/government-camp",
+      "destination": "/passes/united-states/oregon/government-camp",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/government-camp",
+      "destination": "/passes/united-states/oregon/government-camp",
+      "permanent": true
+    },
+    {
+      "source": "/passes/deadman-pass",
+      "destination": "/passes/united-states/oregon/deadman-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/deadman-pass",
+      "destination": "/passes/united-states/oregon/deadman-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/blue-mountain-summit",
+      "destination": "/passes/united-states/oregon/blue-mountain-summit",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/blue-mountain-summit",
+      "destination": "/passes/united-states/oregon/blue-mountain-summit",
+      "permanent": true
+    },
+    {
+      "source": "/passes/loveland-pass",
+      "destination": "/passes/united-states/colorado/loveland-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/loveland-pass",
+      "destination": "/passes/united-states/colorado/loveland-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/vail-pass",
+      "destination": "/passes/united-states/colorado/vail-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/vail-pass",
+      "destination": "/passes/united-states/colorado/vail-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/independence-pass",
+      "destination": "/passes/united-states/colorado/independence-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/independence-pass",
+      "destination": "/passes/united-states/colorado/independence-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/monarch-pass",
+      "destination": "/passes/united-states/colorado/monarch-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/monarch-pass",
+      "destination": "/passes/united-states/colorado/monarch-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/wolf-creek-pass",
+      "destination": "/passes/united-states/colorado/wolf-creek-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/wolf-creek-pass",
+      "destination": "/passes/united-states/colorado/wolf-creek-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/cottonwood-pass",
+      "destination": "/passes/united-states/colorado/cottonwood-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/cottonwood-pass",
+      "destination": "/passes/united-states/colorado/cottonwood-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/rabbit-ears-pass",
+      "destination": "/passes/united-states/colorado/rabbit-ears-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/rabbit-ears-pass",
+      "destination": "/passes/united-states/colorado/rabbit-ears-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/kenosha-pass",
+      "destination": "/passes/united-states/colorado/kenosha-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/kenosha-pass",
+      "destination": "/passes/united-states/colorado/kenosha-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/fremont-pass",
+      "destination": "/passes/united-states/colorado/fremont-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/fremont-pass",
+      "destination": "/passes/united-states/colorado/fremont-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/hoosier-pass",
+      "destination": "/passes/united-states/colorado/hoosier-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/hoosier-pass",
+      "destination": "/passes/united-states/colorado/hoosier-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/guanella-pass",
+      "destination": "/passes/united-states/colorado/guanella-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/guanella-pass",
+      "destination": "/passes/united-states/colorado/guanella-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/red-mountain-pass",
+      "destination": "/passes/united-states/colorado/red-mountain-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/red-mountain-pass",
+      "destination": "/passes/united-states/colorado/red-mountain-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/molas-pass",
+      "destination": "/passes/united-states/colorado/molas-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/molas-pass",
+      "destination": "/passes/united-states/colorado/molas-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/coal-bank-pass",
+      "destination": "/passes/united-states/colorado/coal-bank-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/united-states/coal-bank-pass",
+      "destination": "/passes/united-states/colorado/coal-bank-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nyalu-lagna-pass",
+      "destination": "/passes/nepal/karnali-province/nyalu-lagna-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/nyalu-lagna-pass",
+      "destination": "/passes/nepal/karnali-province/nyalu-lagna-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/numa-la",
+      "destination": "/passes/nepal/karnali-province/numa-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/numa-la",
+      "destination": "/passes/nepal/karnali-province/numa-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/baga-la",
+      "destination": "/passes/nepal/karnali-province/baga-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/baga-la",
+      "destination": "/passes/nepal/karnali-province/baga-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/jeng-la",
+      "destination": "/passes/nepal/karnali-province/jeng-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/jeng-la",
+      "destination": "/passes/nepal/karnali-province/jeng-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/saldang-la",
+      "destination": "/passes/nepal/karnali-province/saldang-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/saldang-la",
+      "destination": "/passes/nepal/karnali-province/saldang-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/kagmara-la",
+      "destination": "/passes/nepal/karnali-province/kagmara-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/kagmara-la",
+      "destination": "/passes/nepal/karnali-province/kagmara-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nangdalo-pass",
+      "destination": "/passes/nepal/karnali-province/nangdalo-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/nangdalo-pass",
+      "destination": "/passes/nepal/karnali-province/nangdalo-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/french-pass",
+      "destination": "/passes/nepal/karnali-province/french-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/french-pass",
+      "destination": "/passes/nepal/karnali-province/french-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/chharka-la",
+      "destination": "/passes/nepal/karnali-province/chharka-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/chharka-la",
+      "destination": "/passes/nepal/karnali-province/chharka-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/lang-la",
+      "destination": "/passes/nepal/karnali-province/lang-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/lang-la",
+      "destination": "/passes/nepal/karnali-province/lang-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/tarap-pass",
+      "destination": "/passes/nepal/karnali-province/tarap-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/tarap-pass",
+      "destination": "/passes/nepal/karnali-province/tarap-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/kaireko-la",
+      "destination": "/passes/nepal/karnali-province/kaireko-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/kaireko-la",
+      "destination": "/passes/nepal/karnali-province/kaireko-la",
       "permanent": true
     }
   ],

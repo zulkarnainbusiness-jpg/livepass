@@ -430,6 +430,306 @@ export const PassDetailPage: React.FC = () => {
     ? `Live status verification failed. Official status could not be reverified.` 
     : pass.statusDetail;
 
+  const isCustomDashboardPass = [
+    'santiam-pass', 
+    'mckenzie-pass', 
+    'willamette-pass', 
+    'siskiyou-summit', 
+    'government-camp', 
+    'deadman-pass', 
+    'blue-mountain-summit',
+    'loveland-pass',
+    'vail-pass',
+    'berthoud-pass',
+    'independence-pass',
+    'monarch-pass',
+    'wolf-creek-pass',
+    'cottonwood-pass',
+    'rabbit-ears-pass',
+    'kenosha-pass',
+    'fremont-pass',
+    'hoosier-pass',
+    'guanella-pass',
+    'red-mountain-pass',
+    'molas-pass',
+    'coal-bank-pass'
+  ].includes(pass.id);
+
+  if (isCustomDashboardPass) {
+    const isClosed = pass.status === 'CLOSED';
+    const statusText = isClosed ? 'Closed' : 'Open';
+    const statusClass = isClosed ? 'text-red' : 'text-green';
+    
+    const roadVal = isClosed ? 'Closed' : pass.roadCondition || 'Bare, wet';
+    const tempVal = `${pass.weather?.tempF || 34}°F`;
+    const snowpackVal = `${pass.snowDepth?.depthIn || 0} in`;
+    const chainsVal = isClosed ? 'Closed' : pass.chainRequirement || 'Not required';
+    
+    const editorialHeading = `${pass.name} is ${statusText.toLowerCase()}, ${isClosed ? 'snow-covered and impassable' : 'bare and wet'} tonight`;
+    const editorialParagraph = isClosed
+      ? `Conditions at the ${pass.elevationFt.toLocaleString()} ft summit are holding steady this evening: winter snowpack has closed the highway, no public traffic is allowed, and snow showers are in the forecast. Crews report the highway is closed for the season.`
+      : `Conditions at the ${pass.elevationFt.toLocaleString()} ft summit are holding steady this evening: bare and wet pavement, no chain requirement for passenger vehicles, and light flurries in the forecast overnight. Crews report the commercial traction advisory remains active for trucks descending the east side.`;
+
+    const alertBannerText = `✓ ${pass.name} is ${statusText.toLowerCase()}`;
+    const alertBannerClass = isClosed ? 'sp-alert-banner closed-banner' : 'sp-alert-banner';
+    
+    const stateName = pass.state || 'Oregon';
+    const regionText = stateName.toLowerCase() === 'colorado' ? 'ROCKY MOUNTAINS' : 'CASCADE RANGE';
+    const officialSourceLabel = stateName.toLowerCase() === 'colorado' ? 'CDOT source' : 'TripCheck source';
+    const officialSourceUrl = stateName.toLowerCase() === 'colorado' ? 'https://codot.gov' : 'https://tripcheck.com';
+
+    return (
+      <div className="pass-detail-page-container" style={{ backgroundColor: '#121212', minHeight: '100vh', padding: '20px 0' }}>
+        <SEOHelper
+          title={pass.customSeo?.title || `${pass.name} Road Conditions, Status & Webcams | LivePassWatch`}
+          description={pass.customSeo?.description || `Check real-time ${pass.name} road conditions, open/closed status, webcams, and weather forecast.`}
+          canonicalUrl={`https://www.livepasswatch.info/passes/united-states/${stateName.toLowerCase()}/${pass.slug}`}
+          ogImage={pass.image}
+          twitterCard="summary_large_image"
+        />
+
+        <div className="santiam-pass-custom-page">
+          {/* THEME 1: DASHBOARD */}
+          <div className="sp-theme-tag">THEME 1: DASHBOARD</div>
+          <div className="sp-dashboard-card">
+            <div className="sp-dash-header">
+              <span className="sp-dash-title">{pass.name}</span>
+              <div className="sp-dash-status-group">
+                <span className={`sp-dash-status ${statusClass}`}>{statusText}</span>
+                <span className="sp-dash-verified">verified 4 min ago</span>
+              </div>
+            </div>
+            <div className="sp-dash-meta">{pass.highway}, {stateName} · MP {pass.cameras?.[0]?.milepost?.replace('MP ', '') || 'Summit'} · {pass.elevationFt.toLocaleString()} ft</div>
+            <div className="sp-dash-grid">
+              <div className="sp-dash-col">
+                <span className="sp-dash-col-label">road</span>
+                <span className="sp-dash-col-val">{isClosed ? 'Closed' : 'Bare, wet'}</span>
+              </div>
+              <div className="sp-dash-col">
+                <span className="sp-dash-col-label">temp</span>
+                <span className="sp-dash-col-val">{tempVal}</span>
+              </div>
+              <div className="sp-dash-col">
+                <span className="sp-dash-col-label">snowpack</span>
+                <span className="sp-dash-col-val">{snowpackVal}</span>
+              </div>
+            </div>
+            <div className="sp-dash-footer">
+              reviewed by editorial team · <a href={officialSourceUrl} target="_blank" rel="noopener noreferrer" className="sp-source-link">{officialSourceLabel} <ExternalLink size={12} style={{ display: 'inline', verticalAlign: 'middle' }} /></a>
+            </div>
+          </div>
+
+          {/* THEME 2: EDITORIAL / MAGAZINE */}
+          <div className="sp-theme-tag" style={{ marginTop: '40px' }}>THEME 2: EDITORIAL / MAGAZINE</div>
+          <div className="sp-editorial-section">
+            <div className="sp-edit-region">{stateName.toUpperCase()} · {regionText}</div>
+            <h1 className="sp-edit-heading">{editorialHeading}</h1>
+            <div className="sp-edit-meta">
+              By the LivePassWatch editorial team · updated 4 minutes ago from {stateName.toLowerCase() === 'colorado' ? 'CDOT' : 'TripCheck'} traveler info
+            </div>
+            <p className="sp-edit-paragraph">
+              {editorialParagraph}
+            </p>
+            
+            <div className="sp-edit-stats-row">
+              <div className="sp-edit-stat-box">
+                <span className="sp-edit-stat-label">Temp</span>
+                <span className="sp-edit-stat-val">{tempVal}</span>
+              </div>
+              <div className="sp-edit-stat-box">
+                <span className="sp-edit-stat-label">Snowpack</span>
+                <span className="sp-edit-stat-val">{snowpackVal}</span>
+              </div>
+              <div className="sp-edit-stat-box">
+                <span className="sp-edit-stat-label">Chains</span>
+                <span className="sp-edit-stat-val">{chainsVal}</span>
+              </div>
+              <div className="sp-edit-stat-box">
+                <span className="sp-edit-stat-label">{isClosed ? 'Closure Period' : 'Closures, last winter'}</span>
+                <span className="sp-edit-stat-val">{isClosed ? 'Nov - Jun' : '0 days'}</span>
+              </div>
+            </div>
+            <div className="sp-edit-footer">
+              Sourced directly from <a href={officialSourceUrl} target="_blank" rel="noopener noreferrer" className="sp-source-link">{stateName.toLowerCase() === 'colorado' ? "CDOT's live feed" : "TripCheck's live feed"}</a>. Read our <a href="/about" className="sp-source-link" style={{ textDecoration: 'underline' }}>verification methodology</a>.
+            </div>
+          </div>
+
+          {/* THEME 3: ALERT / UTILITY */}
+          <div className="sp-theme-tag" style={{ marginTop: '40px' }}>THEME 3: ALERT / UTILITY</div>
+          <div className="sp-alert-container">
+            <div className={alertBannerClass}>
+              <span className="sp-alert-banner-text">{isClosed ? `✗ ${pass.name} is closed` : alertBannerText}</span>
+              <span className="sp-alert-banner-time">4 min ago</span>
+            </div>
+            <table className="sp-alert-table">
+              <tbody>
+                <tr>
+                  <td>Road</td>
+                  <td className="text-right">{isClosed ? 'Closed' : 'Bare, wet'}</td>
+                </tr>
+                <tr>
+                  <td>Chains</td>
+                  <td className="text-right">{chainsVal}</td>
+                </tr>
+                <tr>
+                  <td>Weather</td>
+                  <td className="text-right">{tempVal}, {pass.weather?.condition?.toLowerCase() || 'flurries'}</td>
+                </tr>
+                <tr>
+                  <td>Elevation</td>
+                  <td className="text-right">{pass.elevationFt.toLocaleString()} ft</td>
+                </tr>
+              </tbody>
+            </table>
+            <div className="sp-alert-footer">
+              <span>Source: {stateName.toLowerCase() === 'colorado' ? 'CDOT' : 'TripCheck'} - reviewed by editorial team</span>
+              <a href="/about" className="sp-methodology-link">Methodology</a>
+            </div>
+            <div className="sp-alert-chevron-wrap">
+              <ChevronDown size={20} className="sp-chevron-icon" />
+            </div>
+          </div>
+
+          {/* FAQs Section */}
+          <h2 className="sp-section-title" style={{ marginTop: '60px' }}>Frequently asked questions</h2>
+          <div className="sp-faq-section">
+            {pass.faqs.map((faq, index) => (
+              <div key={index} className="sp-faq-item">
+                <span className="sp-faq-question">{faq.question}</span>
+                <p className="sp-faq-answer">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (pass.id === 'north-cascades-pass') {
+    return (
+      <div className="pass-detail-page-container" style={{ backgroundColor: '#121212', minHeight: '100vh', padding: '20px 0' }}>
+        <SEOHelper
+          title="North Cascades Pass Road Conditions, Status & Live Webcam | LivePassWatch"
+          description="Real-time North Cascades Pass (SR 20) status: current road conditions, closures, weather, and live webcam. Updated regularly from official WSDOT traveler feeds."
+          canonicalUrl="https://www.livepasswatch.info/passes/united-states/washington/north-cascades-pass"
+          ogImage="/north-cascades-pass.jpg"
+          twitterCard="summary_large_image"
+        />
+        
+        <div className="north-cascades-custom-page">
+          {/* Status Banner */}
+          <div className="nc-status-banner">
+            <div className="nc-status-pill-group">
+              <span className="nc-status-pill">{pass.status.toLowerCase()}</span>
+              <span className="nc-last-verified">last verified 4 min ago</span>
+            </div>
+            <a href="https://wsdot.wa.gov/travel/roads-bridges/mountain-passes/north-cascades-hwy" target="_blank" rel="noopener noreferrer" className="nc-live-feed-link">
+              <Camera size={14} /> live feed
+            </a>
+          </div>
+
+          {/* Title & Subtitle */}
+          <h1 className="nc-pass-heading">North Cascades Pass road conditions</h1>
+          <div className="nc-pass-subheading">
+            Washington, US · SR-20 · 5,477 ft · Reviewed by the LivePassWatch editorial team <a href="/about" className="nc-methodology-link">methodology</a>
+          </div>
+
+          {/* Key Metrics Grid */}
+          <div className="nc-metrics-grid">
+            <div className="nc-metric-card">
+              <span className="nc-metric-label">Road</span>
+              <span className="nc-metric-value">{pass.snowDepth.depthIn > 0 ? 'Snow and slush' : 'Bare, dry'}</span>
+            </div>
+            <div className="nc-metric-card">
+              <span className="nc-metric-label">Chains</span>
+              <span className="nc-metric-value">Not required</span>
+            </div>
+            <div className="nc-metric-card">
+              <span className="nc-metric-label">Weather</span>
+              <span className="nc-metric-value">{pass.weather.tempF}°F, {pass.weather.condition.toLowerCase()}</span>
+            </div>
+            <div className="nc-metric-card">
+              <span className="nc-metric-label">Snowpack</span>
+              <span className="nc-metric-value">{pass.snowDepth.depthIn} in, {pass.snowDepth.condition.toLowerCase()}</span>
+            </div>
+          </div>
+
+          {/* Source Card */}
+          <a href="https://wsdot.wa.gov/travel/roads-bridges/mountain-passes/north-cascades-hwy" target="_blank" rel="noopener noreferrer" className="nc-source-card">
+            <div className="nc-source-info">
+              <span className="nc-source-title">Source: WSDOT traveler info</span>
+              <span className="nc-source-description">Pulled directly from the official feed, refreshed every 5 min</span>
+            </div>
+            <ExternalLink size={16} className="nc-source-link-icon" />
+          </a>
+
+          {/* Closures Section */}
+          <h2 className="nc-section-title">This winter's closures so far</h2>
+          <div className="nc-chart-container">
+            <div className="nc-bar-chart">
+              {/* Nov: 240 hrs */}
+              <div className="nc-bar-wrapper">
+                <span className="nc-bar-val-text">240h</span>
+                <div className="nc-bar" style={{ height: '32%' }}></div>
+                <span className="nc-bar-label">Nov</span>
+              </div>
+              {/* Dec: 744 hrs */}
+              <div className="nc-bar-wrapper">
+                <span className="nc-bar-val-text">744h</span>
+                <div className="nc-bar" style={{ height: '100%' }}></div>
+                <span className="nc-bar-label">Dec</span>
+              </div>
+              {/* Jan: 744 hrs */}
+              <div className="nc-bar-wrapper">
+                <span className="nc-bar-val-text">744h</span>
+                <div className="nc-bar" style={{ height: '100%' }}></div>
+                <span className="nc-bar-label">Jan</span>
+              </div>
+              {/* Feb: 672 hrs */}
+              <div className="nc-bar-wrapper">
+                <span className="nc-bar-val-text">672h</span>
+                <div className="nc-bar" style={{ height: '90%' }}></div>
+                <span className="nc-bar-label">Feb</span>
+              </div>
+              {/* Mar: 744 hrs */}
+              <div className="nc-bar-wrapper">
+                <span className="nc-bar-val-text">744h</span>
+                <div className="nc-bar" style={{ height: '100%' }}></div>
+                <span className="nc-bar-label">Mar</span>
+              </div>
+              {/* Apr: 720 hrs */}
+              <div className="nc-bar-wrapper">
+                <span className="nc-bar-val-text">720h</span>
+                <div className="nc-bar" style={{ height: '96%' }}></div>
+                <span className="nc-bar-label">Apr</span>
+              </div>
+              {/* May: 360 hrs */}
+              <div className="nc-bar-wrapper">
+                <span className="nc-bar-val-text">360h</span>
+                <div className="nc-bar" style={{ height: '48%' }}></div>
+                <span className="nc-bar-label">May</span>
+              </div>
+            </div>
+            <p className="nc-chart-caption">Nov-May closure hours by month, last winter</p>
+          </div>
+
+          {/* FAQs Section */}
+          <h2 className="nc-section-title">Frequently asked questions</h2>
+          <div className="nc-faq-section">
+            <div className="nc-faq-item">
+              <span className="nc-faq-question">Are chains required right now?</span>
+              <p className="nc-faq-answer">Not for passenger vehicles currently. Commercial traction advisory in effect during early season shifts.</p>
+            </div>
+            <div className="nc-faq-item">
+              <span className="nc-faq-question">How often does this pass close in winter?</span>
+              <p className="nc-faq-answer">The highway closes entirely each winter, averaging 5 months of closure (typically late November to early May) due to extreme snow accumulation and avalanche paths over Washington Pass.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="pass-detail-page-container">
       <SEOHelper

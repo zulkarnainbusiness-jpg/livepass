@@ -154,14 +154,154 @@ export const hierarchyData: HierarchyContinent[] = [
             name: 'Colorado',
             passes: [
               {
+                id: 'loveland-pass',
+                slug: 'loveland-pass',
+                name: 'Loveland Pass',
+                highway: 'US 6',
+                elevationFt: 11990,
+                elevationM: 3655,
+                status: 'OPEN',
+                image: '/loveland-pass-colorado.jpg'
+              },
+              {
+                id: 'vail-pass',
+                slug: 'vail-pass',
+                name: 'Vail Pass',
+                highway: 'I-70',
+                elevationFt: 10662,
+                elevationM: 3250,
+                status: 'OPEN',
+                image: '/vail-pass-colorado.jpg'
+              },
+              {
                 id: 'berthoud-pass',
                 slug: 'berthoud-pass',
                 name: 'Berthoud Pass',
-                highway: 'US-40',
+                highway: 'US 40',
                 elevationFt: 11307,
                 elevationM: 3446,
                 status: 'OPEN',
                 image: '/berthoud-pass-colorado.jpg'
+              },
+              {
+                id: 'independence-pass',
+                slug: 'independence-pass',
+                name: 'Independence Pass',
+                highway: 'CO 82',
+                elevationFt: 12095,
+                elevationM: 3687,
+                status: 'CLOSED',
+                image: '/independence-pass-colorado.jpg'
+              },
+              {
+                id: 'monarch-pass',
+                slug: 'monarch-pass',
+                name: 'Monarch Pass',
+                highway: 'US 50',
+                elevationFt: 11312,
+                elevationM: 3448,
+                status: 'OPEN',
+                image: '/monarch-pass-colorado.jpg'
+              },
+              {
+                id: 'wolf-creek-pass',
+                slug: 'wolf-creek-pass',
+                name: 'Wolf Creek Pass',
+                highway: 'US 160',
+                elevationFt: 10857,
+                elevationM: 3309,
+                status: 'OPEN',
+                image: '/wolf-creek-pass-colorado.jpg'
+              },
+              {
+                id: 'cottonwood-pass',
+                slug: 'cottonwood-pass',
+                name: 'Cottonwood Pass',
+                highway: 'CR 306',
+                elevationFt: 12126,
+                elevationM: 3696,
+                status: 'CLOSED',
+                image: '/cottonwood-pass-colorado.jpg'
+              },
+              {
+                id: 'rabbit-ears-pass',
+                slug: 'rabbit-ears-pass',
+                name: 'Rabbit Ears Pass',
+                highway: 'US 40',
+                elevationFt: 9426,
+                elevationM: 2873,
+                status: 'OPEN',
+                image: '/rabbit-ears-pass-colorado.jpg'
+              },
+              {
+                id: 'kenosha-pass',
+                slug: 'kenosha-pass',
+                name: 'Kenosha Pass',
+                highway: 'US 285',
+                elevationFt: 10000,
+                elevationM: 3048,
+                status: 'OPEN',
+                image: '/kenosha-pass-colorado.jpg'
+              },
+              {
+                id: 'fremont-pass',
+                slug: 'fremont-pass',
+                name: 'Fremont Pass',
+                highway: 'CO 91',
+                elevationFt: 11318,
+                elevationM: 3450,
+                status: 'OPEN',
+                image: '/fremont-pass-colorado.jpg'
+              },
+              {
+                id: 'hoosier-pass',
+                slug: 'hoosier-pass',
+                name: 'Hoosier Pass',
+                highway: 'CO 9',
+                elevationFt: 11541,
+                elevationM: 3518,
+                status: 'OPEN',
+                image: '/hoosier-pass-colorado.jpg'
+              },
+              {
+                id: 'guanella-pass',
+                slug: 'guanella-pass',
+                name: 'Guanella Pass',
+                highway: 'Guanella Pass Road',
+                elevationFt: 11670,
+                elevationM: 3557,
+                status: 'CLOSED',
+                image: '/guanella-pass-colorado.jpg'
+              },
+              {
+                id: 'red-mountain-pass',
+                slug: 'red-mountain-pass',
+                name: 'Red Mountain Pass',
+                highway: 'US 550',
+                elevationFt: 11018,
+                elevationM: 3358,
+                status: 'OPEN',
+                image: '/red-mountain-pass-colorado.jpg'
+              },
+              {
+                id: 'molas-pass',
+                slug: 'molas-pass',
+                name: 'Molas Pass',
+                highway: 'US 550',
+                elevationFt: 10910,
+                elevationM: 3325,
+                status: 'OPEN',
+                image: '/molas-pass-colorado.jpg'
+              },
+              {
+                id: 'coal-bank-pass',
+                slug: 'coal-bank-pass',
+                name: 'Coal Bank Pass',
+                highway: 'US 550',
+                elevationFt: 10640,
+                elevationM: 3243,
+                status: 'OPEN',
+                image: '/coal-bank-pass-colorado.jpg'
               }
             ]
           },
@@ -189,7 +329,78 @@ export const hierarchyData: HierarchyContinent[] = [
           {
             id: 'oregon',
             name: 'Oregon',
-            passes: []
+            passes: [
+              {
+                id: 'santiam-pass',
+                slug: 'santiam-pass',
+                name: 'Santiam Pass',
+                highway: 'US 20',
+                elevationFt: 4817,
+                elevationM: 1468,
+                status: 'OPEN',
+                image: '/santiam-pass-oregon.jpg'
+              },
+              {
+                id: 'mckenzie-pass',
+                slug: 'mckenzie-pass',
+                name: 'McKenzie Pass',
+                highway: 'OR 242',
+                elevationFt: 5325,
+                elevationM: 1623,
+                status: 'CLOSED',
+                image: '/mckenzie-pass-oregon.jpg'
+              },
+              {
+                id: 'willamette-pass',
+                slug: 'willamette-pass',
+                name: 'Willamette Pass',
+                highway: 'OR 58',
+                elevationFt: 5128,
+                elevationM: 1563,
+                status: 'OPEN',
+                image: '/willamette-pass-oregon.jpg'
+              },
+              {
+                id: 'siskiyou-summit',
+                slug: 'siskiyou-summit',
+                name: 'Siskiyou Summit',
+                highway: 'I-5',
+                elevationFt: 4310,
+                elevationM: 1314,
+                status: 'OPEN',
+                image: '/siskiyou-summit-oregon.jpg'
+              },
+              {
+                id: 'government-camp',
+                slug: 'government-camp',
+                name: 'Government Camp',
+                highway: 'US 26',
+                elevationFt: 3960,
+                elevationM: 1207,
+                status: 'OPEN',
+                image: '/government-camp-oregon.jpg'
+              },
+              {
+                id: 'deadman-pass',
+                slug: 'deadman-pass',
+                name: 'Deadman Pass',
+                highway: 'I-84',
+                elevationFt: 3622,
+                elevationM: 1104,
+                status: 'OPEN',
+                image: '/deadman-pass-oregon.jpg'
+              },
+              {
+                id: 'blue-mountain-summit',
+                slug: 'blue-mountain-summit',
+                name: 'Blue Mountain Summit',
+                highway: 'US 26',
+                elevationFt: 5098,
+                elevationM: 1554,
+                status: 'OPEN',
+                image: '/blue-mountain-summit-oregon.jpg'
+              }
+            ]
           },
           {
             id: 'idaho',
@@ -266,6 +477,16 @@ export const hierarchyData: HierarchyContinent[] = [
             id: 'valais',
             name: 'Valais',
             passes: [
+              {
+                id: 'simplon-pass',
+                slug: 'simplon-pass',
+                name: 'Simplon Pass',
+                highway: 'Hauptstrasse 9 (Route 9 / H9)',
+                elevationFt: 6578,
+                elevationM: 2005,
+                status: 'OPEN',
+                image: '/simplon-pass-switzerland-valais.jpg'
+              },
               {
                 id: 'great-st-bernard-pass',
                 slug: 'great-st-bernard-pass',
@@ -504,7 +725,140 @@ export const hierarchyData: HierarchyContinent[] = [
           }
         ]
       },
-      { id: 'nepal', name: 'Nepal', code: 'NPL', flagEmoji: '🇳🇵', states: [] },
+      {
+        id: 'nepal',
+        name: 'Nepal',
+        code: 'NPL',
+        flagEmoji: '🇳🇵',
+        states: [
+          {
+            id: 'karnali-province',
+            name: 'Karnali Province (Dolpo)',
+            passes: [
+              {
+                id: 'nyalu-lagna-pass',
+                slug: 'nyalu-lagna-pass',
+                name: 'Nyalu Lagna Pass',
+                highway: 'Karnali Trekking Trail',
+                elevationFt: 16076,
+                elevationM: 4900,
+                status: 'OPEN',
+                image: '/dolpo-karnali-nepal-passes.jpg'
+              },
+              {
+                id: 'numa-la',
+                slug: 'numa-la',
+                name: 'Numa La',
+                highway: 'Dolpo High Route',
+                elevationFt: 17060,
+                elevationM: 5200,
+                status: 'OPEN',
+                image: '/dolpo-karnali-nepal-passes.jpg'
+              },
+              {
+                id: 'baga-la',
+                slug: 'baga-la',
+                name: 'Baga La',
+                highway: 'Dolpo High Route',
+                elevationFt: 17717,
+                elevationM: 5400,
+                status: 'OPEN',
+                image: '/dolpo-karnali-nepal-passes.jpg'
+              },
+              {
+                id: 'jeng-la',
+                slug: 'jeng-la',
+                name: 'Jeng La',
+                highway: 'Dolpo–Phoksundo Trail',
+                elevationFt: 16732,
+                elevationM: 5100,
+                status: 'OPEN',
+                image: '/dolpo-karnali-nepal-passes.jpg'
+              },
+              {
+                id: 'saldang-la',
+                slug: 'saldang-la',
+                name: 'Saldang La',
+                highway: 'Upper Dolpo Trail',
+                elevationFt: 14764,
+                elevationM: 4500,
+                status: 'OPEN',
+                image: '/dolpo-karnali-nepal-passes.jpg'
+              },
+              {
+                id: 'kagmara-la',
+                slug: 'kagmara-la',
+                name: 'Kagmara La',
+                highway: 'Kagmara Circuit Trail',
+                elevationFt: 16896,
+                elevationM: 5115,
+                status: 'OPEN',
+                image: '/dolpo-karnali-nepal-passes.jpg'
+              },
+              {
+                id: 'nangdalo-pass',
+                slug: 'nangdalo-pass',
+                name: 'Nangdalo Pass',
+                highway: 'Lower Dolpo Circuit',
+                elevationFt: 14108,
+                elevationM: 4300,
+                status: 'OPEN',
+                image: '/dolpo-karnali-nepal-passes.jpg'
+              },
+              {
+                id: 'french-pass',
+                slug: 'french-pass',
+                name: 'French Pass',
+                highway: 'Dolpo Circuit Trail',
+                elevationFt: 16404,
+                elevationM: 5000,
+                status: 'OPEN',
+                image: '/dolpo-karnali-nepal-passes.jpg'
+              },
+              {
+                id: 'chharka-la',
+                slug: 'chharka-la',
+                name: 'Chharka La',
+                highway: 'Chharka Bhot Trail',
+                elevationFt: 17388,
+                elevationM: 5300,
+                status: 'OPEN',
+                image: '/dolpo-karnali-nepal-passes.jpg'
+              },
+              {
+                id: 'lang-la',
+                slug: 'lang-la',
+                name: 'Lang La',
+                highway: 'Upper Dolpo Trail',
+                elevationFt: 17060,
+                elevationM: 5200,
+                status: 'OPEN',
+                image: '/dolpo-karnali-nepal-passes.jpg'
+              },
+              {
+                id: 'tarap-pass',
+                slug: 'tarap-pass',
+                name: 'Tarap Pass',
+                highway: 'Tarap Valley Route',
+                elevationFt: 15748,
+                elevationM: 4800,
+                status: 'OPEN',
+                image: '/dolpo-karnali-nepal-passes.jpg'
+              },
+              {
+                id: 'kaireko-la',
+                slug: 'kaireko-la',
+                name: 'Kaireko La',
+                highway: 'Karnali Trekking Trail',
+                elevationFt: 15256,
+                elevationM: 4650,
+                status: 'OPEN',
+                image: '/dolpo-karnali-nepal-passes.jpg'
+              }
+            ]
+          }
+        ]
+      },
       { id: 'japan', name: 'Japan', code: 'JPN', flagEmoji: '🇯🇵', states: [] },
       {
         id: 'pakistan',
