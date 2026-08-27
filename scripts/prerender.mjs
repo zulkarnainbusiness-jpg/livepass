@@ -400,12 +400,36 @@ const staticPages = [
   },
   {
     path: '/about',
-    title: 'About LivePassWatch - Real-Time Mountain Pass Tracking',
-    description: 'Learn about LivePassWatch mission to provide real-time road conditions, weather data, and live webcam monitoring for mountain passes worldwide.',
+    title: 'About LivePassWatch - Meet the Founder, Our Mission & Team',
+    description: 'Meet founder Zulkarnain, learn the Himalayan story behind LivePassWatch, and discover our dedicated team tracking live mountain pass conditions.',
     canonicalUrl: `${DOMAIN}/about`,
-    bodyContent: `<main class="app-container" style="padding: 2rem 1rem; max-width: 800px;">
+    bodyContent: `<main class="app-container" style="padding: 2rem 1rem; max-width: 850px;">
       <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">About LIVEPASSWATCH</h1>
-      <p style="line-height: 1.7; color: #334155;">LIVEPASSWATCH is the premier real-time mountain pass tracking platform. Our mission: Know Before You Go.</p>
+      <p style="line-height: 1.75; color: #334155; margin-bottom: 1.5rem;">
+        <strong>LIVEPASSWATCH (<a href="https://www.livepasswatch.info">www.livepasswatch.info</a>)</strong> is a real-time mountain pass tracking platform. Our mission is simple: <em>Know Before You Go</em>. We empower travelers, commercial freight operators, motorcyclists, and mountain commuters with verified, live road conditions across critical mountain passes globally.
+      </p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem;">Meet the Founder</h2>
+      <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+        Hi, I'm Zulkarnain. I was born and raised in the Himalayas, and I've spent years travelling across high mountain passes — for work, for family visits, and honestly just because I love the mountains.
+      </p>
+      <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+        That experience is also where the frustration came from. More times than I can count, I'd set out for a pass with no real idea whether it was even open — no clear updates, no reliable source, just word of mouth from other drivers or a WhatsApp forward that turned out to be three days old. I've been stuck at closed passes, turned back halfway, and seen other travellers do the same. It's not just inconvenient — on some of these roads, it can genuinely be dangerous.
+      </p>
+      <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+        That's the problem LivePassWatch is built to solve. I wanted a place where anyone heading into the mountains — a tourist, a biker, a truck driver, a local commuting between towns — could check a pass before leaving and actually trust what they saw.
+      </p>
+      <p style="font-style: italic; font-weight: 600; color: #0f172a; margin-top: 1rem; margin-bottom: 2rem;">
+        — Zulkarnain (zulkarnainbusiness@gmail.com)
+      </p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem;">The Team Behind LivePassWatch</h2>
+      <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
+        We're a small team: five of us right now, three web developers and two dedicated researchers who spend their time tracking conditions, cross-checking reports, and keeping the information on the site current. We're not a big company — just people who care about getting this right, because we've felt what it's like when the information isn't there.
+      </p>
+      <p style="line-height: 1.75; color: #334155;">
+        If you spot outdated info on a pass, or you've got local knowledge that could help other travellers, reach out at <a href="mailto:zulkarnainbusiness@gmail.com">zulkarnainbusiness@gmail.com</a>. This site works better with more eyes on the road.
+      </p>
     </main>`
   },
   {
