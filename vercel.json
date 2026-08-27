@@ -639,6 +639,106 @@
       "source": "/passes/nepal/kaireko-la",
       "destination": "/passes/nepal/karnali-province/kaireko-la",
       "permanent": true
+    },
+    {
+      "source": "/passes/selele-pass",
+      "destination": "/passes/nepal/koshi-province/selele-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/selele-pass",
+      "destination": "/passes/nepal/koshi-province/selele-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/mirgin-la",
+      "destination": "/passes/nepal/koshi-province/mirgin-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/mirgin-la",
+      "destination": "/passes/nepal/koshi-province/mirgin-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/lumba-sumba-pass",
+      "destination": "/passes/nepal/koshi-province/lumba-sumba-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/lumba-sumba-pass",
+      "destination": "/passes/nepal/koshi-province/lumba-sumba-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/tipta-la",
+      "destination": "/passes/nepal/koshi-province/tipta-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/tipta-la",
+      "destination": "/passes/nepal/koshi-province/tipta-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/olangchungola-pass",
+      "destination": "/passes/nepal/koshi-province/olangchungola-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/olangchungola-pass",
+      "destination": "/passes/nepal/koshi-province/olangchungola-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/chhabi-pass",
+      "destination": "/passes/nepal/koshi-province/chhabi-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/chhabi-pass",
+      "destination": "/passes/nepal/koshi-province/chhabi-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/khangla-pass",
+      "destination": "/passes/nepal/koshi-province/khangla-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/khangla-pass",
+      "destination": "/passes/nepal/koshi-province/khangla-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/jhingsang-la",
+      "destination": "/passes/nepal/koshi-province/jhingsang-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/jhingsang-la",
+      "destination": "/passes/nepal/koshi-province/jhingsang-la",
+      "permanent": true
+    },
+    {
+      "source": "/passes/gorkhe-pass",
+      "destination": "/passes/nepal/koshi-province/gorkhe-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/gorkhe-pass",
+      "destination": "/passes/nepal/koshi-province/gorkhe-pass",
+      "permanent": true
+    },
+    {
+      "source": "/passes/ilam-danda",
+      "destination": "/passes/nepal/koshi-province/ilam-danda",
+      "permanent": true
+    },
+    {
+      "source": "/passes/nepal/ilam-danda",
+      "destination": "/passes/nepal/koshi-province/ilam-danda",
+      "permanent": true
     }
   ],
   "rewrites": [

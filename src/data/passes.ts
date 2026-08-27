@@ -12177,8 +12177,3930 @@ export const passesData: MountainPass[] = [
     dataSources: [{ name: 'Nepal Tourism Board', type: 'Official Government', url: 'https://www.welcomenepal.com/' }],
     searchKeywords: ['Kaireko La Nepal', 'Humla trekking pass', 'Karnali Province mountain pass', 'off-the-beaten-path Nepal trek']
   },
-];
 
+  // ─── KANCHENJUNGA / EASTERN NEPAL (KOSHI PROVINCE) ──────────────────────────
+
+  {
+    "id": "selele-pass",
+    "slug": "selele-pass",
+    "name": "Selele Pass (Sele La)",
+    "country": "Nepal",
+    "countryCode": "NPL",
+    "continent": "Asia",
+    "state": "Koshi Province",
+    "highway": "Kanchenjunga Circuit Trail (Ghunsa–Cheram Traverse)",
+    "elevationFt": 14074,
+    "elevationM": 4290,
+    "coordinates": {
+      "lat": 27.6015,
+      "lng": 87.9422
+    },
+    "status": "OPEN",
+    "statusDetail": "Open for high-altitude trekking — clear alpine trail between Ghunsa and Cheram across the Kanchenjunga ridge.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Selele Pass (Sele La) is a magnificent high-mountain pass situated at an altitude of 4,290 m (14,074 ft) in the Taplejung District of Koshi Province, Eastern Nepal. Positioned within the protected Kanchenjunga Conservation Area (KCA), it serves as the crucial pedestrian link connecting the northern Kanchenjunga valley (Ghunsa and Pangpema North Base Camp) with the southern valley (Cheram / Tseram and Oktang South Base Camp). The pass presents breathtaking panoramic views of Mount Jannu (Kumbhakarna, 7,710 m), Makalu (8,485 m), and the south ridges of Mount Kanchenjunga (8,586 m).",
+    "image": "/selele-pass.jpg",
+    "weather": {
+      "tempF": 37,
+      "tempC": 3,
+      "condition": "Partly Sunny & Crisp Alpine Breeze",
+      "icon": "cloud-sun"
+    },
+    "snowDepth": {
+      "depthCm": 25,
+      "depthIn": 10,
+      "condition": "Patches of hard-packed snow and scree along upper ridge"
+    },
+    "wind": {
+      "speedKmh": 20,
+      "speedMph": 12,
+      "direction": "NW",
+      "description": "Moderate Himalayan Mountain Wind"
+    },
+    "roadCondition": "Wilderness high-altitude trekking trail. Rocky switchbacks ascending from Ghunsa through rhododendron and birch forests into high alpine moraine. Crampons or microspikes recommended in early spring / late autumn when morning ice forms.",
+    "chainRequirement": "Pedestrian alpine route: Sturdy trekking boots, trekking poles, and thermal layers mandatory. Microspikes advised for icy shaded sections near the summit saddle.",
+    "cameras": [
+      {
+        "id": "selele-cam-ghunsa",
+        "title": "Selele Pass — Ghunsa Valley Approach",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Elevation 4,100 m",
+        "direction": "Looking North Toward Ghunsa & Jannu Peak",
+        "location": "Selele High Ridge Viewpoint",
+        "source": "Kanchenjunga Conservation Area Management Council (KCAMC)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.welcomenepal.com/"
+      },
+      {
+        "id": "selele-cam-cheram",
+        "title": "Selele Pass — Cheram Descent",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Elevation 4,290 m Summit",
+        "direction": "Looking South Toward Yalung Glacier & Cheram",
+        "location": "Selele Pass Summit Cairn",
+        "source": "Department of Tourism Nepal",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.welcomenepal.com/"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "mirgin-la",
+        "slug": "mirgin-la",
+        "name": "Mirgin La Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Kanchenjunga High Ridge Route",
+        "status": "OPEN",
+        "elevationFt": 15300,
+        "lastUpdated": "15 min ago",
+        "distanceKm": 4
+      },
+      {
+        "id": "lumba-sumba-pass",
+        "slug": "lumba-sumba-pass",
+        "name": "Lumba Sumba Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Great Himalaya Trail",
+        "status": "OPEN",
+        "elevationFt": 16925,
+        "lastUpdated": "25 min ago",
+        "distanceKm": 28
+      },
+      {
+        "id": "tipta-la",
+        "slug": "tipta-la",
+        "name": "Tipta La Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Tamor Trade Corridor",
+        "status": "OPEN",
+        "elevationFt": 16791,
+        "lastUpdated": "30 min ago",
+        "distanceKm": 32
+      },
+      {
+        "id": "khangla-pass",
+        "slug": "khangla-pass",
+        "name": "Khangla Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Singalila Ridge Trail",
+        "status": "OPEN",
+        "elevationFt": 17257,
+        "lastUpdated": "20 min ago",
+        "distanceKm": 18
+      }
+    ],
+    "overview": {
+      "openedYear": "Ancient Sherpa and Rai pastoral trading route",
+      "lengthMiles": 12,
+      "lengthKm": 19,
+      "annualSnowfallIn": 180,
+      "annualSnowfallM": 4.5,
+      "summary": "Selele Pass is an iconic segment of the classic Kanchenjunga Circuit Trek in Eastern Nepal. Ascending steeply from the Sherpa village of Ghunsa (3,595 m), the trail winds through mossy juniper forests before emerging onto exposed alpine tundra and rocky scree at Selele High Camp (4,200 m). Crossing Sele La offers immediate rewards with dramatic sightlines of Jannu (Kumbhakarna), Kabru, and the rugged frontier ridges bordering Sikkim and Tibet."
+    },
+    "isSeasonal": true,
+    "seasonalClosureInfo": {
+      "typicalClosure": "Late December to Early March (Heavy winter snowpack)",
+      "typicalReopening": "Mid-March to Mid-December (Open for spring and autumn trekking)",
+      "description": "During peak winter (January–February), deep snowdrifts and sub-zero blizzard conditions render the high ridge traverse perilous without technical alpine gear. The pass reopens reliably in March as spring melt begins and remains prime through November."
+    },
+    "openingDateInfo": {
+      "year": 2026,
+      "statusText": "Spring & Autumn Trekking Window Open — Excellent trail conditions",
+      "expectedOpeningWindow": "Mid-March to Mid-December",
+      "closingWindow": "Late December to Early March",
+      "clearanceAgency": "Kanchenjunga Conservation Area Management Council (KCAMC) & TAAN",
+      "notes": "Local lodge operators at Selele High Camp and Ghunsa provide live updates on ridge snow depth and ice conditions."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Sunny & Crisp Alpine Air",
+        "tempHighF": 41,
+        "tempLowF": 27,
+        "icon": "sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Clear Starlit Himalayan Sky",
+        "tempHighF": 29,
+        "tempLowF": 21,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Mostly Sunny",
+        "tempHighF": 43,
+        "tempLowF": 28,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Scattered High Clouds",
+        "tempHighF": 40,
+        "tempLowF": 26,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Partly Cloudy & Cool",
+        "tempHighF": 39,
+        "tempLowF": 25,
+        "icon": "cloud"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Bright & Calm Ridge Breeze",
+        "tempHighF": 42,
+        "tempLowF": 27,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Nepal Department of Tourism",
+        "type": "Official Trekking Guidelines & Status",
+        "url": "https://www.welcomenepal.com/"
+      },
+      {
+        "name": "Trekking Agencies Association of Nepal (TAAN)",
+        "type": "Trail Alerts & Safety Notices",
+        "url": "https://www.taan.org.np/"
+      },
+      {
+        "name": "Department of Hydrology and Meteorology (DHM Nepal)",
+        "type": "Eastern Nepal Mountain Forecasts",
+        "url": "https://www.dhm.gov.np/"
+      },
+      {
+        "name": "Kanchenjunga Conservation Area Project (KCAP)",
+        "type": "Conservation & Community Lodge Status",
+        "url": "https://dnpwc.gov.np/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Koshi Province (Taplejung District), Nepal",
+      "mountainRange": "Kanchenjunga Himal / Eastern Himalayas",
+      "elevationSummary": "14,074 ft (4,290 m) Pass Crest • 13,780 ft (4,200 m) Selele High Camp",
+      "connects": "Ghunsa (North Base Camp Valley) with Cheram (South Base Camp Valley)",
+      "nearestTown": "Ghunsa (6 km northwest) • Cheram / Tseram (8 km southeast) • Taplejung (Bazaar hub)",
+      "roadType": "High-Altitude Wilderness Alpine Trekking Trail",
+      "bestTime": "October–November (Pristine clarity) & March–May (Rhododendron blooms)",
+      "highlight": "Dramatic close-up views of Kumbhakarna (Jannu, 7,710 m), Makalu (8,485 m), and Yalung Glacier valley."
+    },
+    "routeDetails": {
+      "distanceKm": 19,
+      "distanceMiles": 12,
+      "duration": "7–8 hours (Ghunsa to Cheram via Selele Pass)",
+      "origin": "Ghunsa Village, Taplejung (3,595 m / 11,795 ft)",
+      "destination": "Cheram / Tseram, Taplejung (3,870 m / 12,696 ft)",
+      "waypoints": [
+        "Ghunsa Village (3,595 m) — Tibetan-Sherpa cultural village & acclimatization base",
+        "Larch & Juniper Forest Ascent — Steep switchbacks climbing above the river gorge",
+        "Selele High Camp (4,200 m) — Basic seasonal stone tea house & rest point",
+        "Selele Pass Summit (4,290 m) — Prayer flag cairn with panoramic vista of Jannu",
+        "Sinion La Saddle (4,440 m) — Continuous ridge crossing over eastern contours",
+        "Mirgin La Crest (4,663 m) — Highest point of the cross-ridge traverse",
+        "Sinlapche La (4,645 m) — Final col before descending into the Simbuwa Khola basin",
+        "Cheram / Tseram (3,870 m) — Riverside meadow lodge settlement in South Kanchenjunga"
+      ]
+    },
+    "drivingInfo": {
+      "summary": "Selele Pass is an exclusive pedestrian and pack-animal trekking route located within the vehicle-free Kanchenjunga Conservation Area. No motorized vehicles operate on this high-altitude Himalayan trail.",
+      "characteristics": [
+        "Steep alpine ascent over 700 vertical meters from Ghunsa to Selele High Camp",
+        "Rocky moraine trail with exposed sections requiring sure-footedness",
+        "Series of high interconnected ridge saddles (Sele La, Sinion La, Mirgin La, Sinlapche La)",
+        "Dramatic temperature fluctuations between sunny ridge climbs and cold shaded gullies",
+        "Restricted Area Permit and licensed guide required by Nepal government regulations"
+      ],
+      "switchbacksCount": "Extensive natural switchbacks through forest and alpine scree",
+      "safetyAndEtiquette": [
+        "Acclimatization: Spend at least 2 nights at Ghunsa (3,595 m) before attempting the Selele Pass crossing",
+        "Early Departure: Start before 6:00 AM from Ghunsa or Selele Camp to cross before afternoon cloud and wind build up",
+        "Hydration & Fuel: Carry at least 2 liters of water and high-energy snacks; no water sources exist along the barren ridge crest",
+        "Stay on Marked Trail: Never deviate onto loose scree chutes descending toward the northern precipices",
+        "Prayer Flag Respect: Walk clockwise around all sacred stone cairns and chortens"
+      ],
+      "motorcycleTips": [
+        "Motorcycles and motor vehicles are not permitted on this protected national conservation trail",
+        "Trailhead vehicle access terminates at Taplejung / Sekathum; beyond this point all travel is on foot"
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "Trekking and wilderness hiking trail; not suitable for standard cycling due to steep rock steps, boulders, and exposed cliffside singletrack.",
+      "approaches": [
+        {
+          "name": "Northern Approach from Ghunsa",
+          "origin": "Ghunsa Village (3,595 m)",
+          "distanceKm": 7.5,
+          "distanceMiles": 4.7,
+          "elevationGainM": 695,
+          "elevationGainFt": 2280,
+          "avgGradient": "12%",
+          "maxGradient": "24%",
+          "hairpins": 18,
+          "description": "Sustained steep climb through birch and rhododendron forests climbing to the open alpine bowl of Selele Camp and the pass summit."
+        },
+        {
+          "name": "Southern Approach from Cheram",
+          "origin": "Cheram / Tseram (3,870 m)",
+          "distanceKm": 11.5,
+          "distanceMiles": 7.1,
+          "elevationGainM": 793,
+          "elevationGainFt": 2601,
+          "avgGradient": "9%",
+          "maxGradient": "20%",
+          "hairpins": 14,
+          "description": "Long scenic ascent from the Simbuwa Khola gorge crossing Sinlapche La, Mirgin La, and Sinion La before reaching Selele Pass."
+        }
+      ],
+      "bestSeason": "October to November & April to May",
+      "safetyTips": [
+        "Carry emergency satellite communication devices (Garmin InReach / satellite phone)",
+        "Check daily weather briefings from KCAP posts before starting the high traverse",
+        "Pack high-grade thermal windproof outer shells"
+      ],
+      "bikeDayInfo": "Extreme hike-a-bike expeditions have traversed parts of eastern Nepal, but standard alpine trekking is the established mode of travel."
+    },
+    "distancesTable": [
+      {
+        "location": "Ghunsa Village",
+        "distance": "6 km (3.7 mi)",
+        "route": "Kanchenjunga North Trail",
+        "notes": "Major Sherpa hub, lodges, bakery, acclimatization center"
+      },
+      {
+        "location": "Cheram (Tseram)",
+        "distance": "8 km (5.0 mi)",
+        "route": "High Pass Ridge Route",
+        "notes": "Gateway to Yalung Glacier and Oktang South Base Camp"
+      },
+      {
+        "location": "Pangpema (North Base Camp)",
+        "distance": "28 km (17.4 mi)",
+        "route": "Via Ghunsa & Kambachen",
+        "notes": "Panoramic viewpoint directly facing Kanchenjunga North Wall"
+      },
+      {
+        "location": "Taplejung Bazaar (Suketar)",
+        "distance": "58 km (36 mi)",
+        "route": "Via Sekathum & Mitlung",
+        "notes": "Regional airport, road head, and district administrative center"
+      },
+      {
+        "location": "Kathmandu (Capital City)",
+        "distance": "340 km (211 mi)",
+        "route": "Flight to Bhadrapur/Suketar + Jeep",
+        "notes": "International airport and Nepal trekking hub"
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "The Essential Bridge of the Kanchenjunga Circuit",
+        "content": "Selele Pass represents the geographical linchpin of the grand Kanchenjunga Circuit. In eastern Nepal, the massive bulk of Mount Kanchenjunga (8,586 m) and its subsidiary giants—Yalung Kang, Kangbachen, and Jannu—create two distinct glacier valleys: the Ghunsa / Kanchenjunga Glacier in the north and the Simbuwa / Yalung Glacier in the south. Without the Selele ridge crossing, trekkers would be forced to backtrack for days down the river valleys to switch between the north and south base camps. Crossing Selele Pass delivers an exhilarating direct alpine link between both sacred mountain flanks."
+      },
+      {
+        "title": "Flora, Fauna & the Kanchenjunga Conservation Area",
+        "content": "Ascending toward Selele Pass immerses travelers in one of the most biodiverse high-altitude ecosystems on Earth. The lower slopes are blanketed in dense forests of silver fir, Himalayan birch, and over 20 species of blooming rhododendron in spring. Above the tree line, the alpine meadows provide critical habitat for rare and endangered wildlife, including the elusive snow leopard, red panda, Himalayan blue sheep (bharal), musk deer, and the vibrant Himalayan monal (danphe), Nepal's national bird."
+      },
+      {
+        "title": "Cultural Heritage of the Walung and Sherpa People",
+        "content": "The trails leading to Selele Pass are steeped in Buddhist spirituality and ancient trans-Himalayan commerce. The surrounding settlements of Ghunsa, Phale, and Olangchung Gola are inhabited by Tibetan-origin Sherpas and Walung peoples whose ancestors migrated across high Himalayan passes centuries ago. Chortens, mani walls carved with Tibetan mantras, and fluttering lungta prayer flags adorn the summit ridge of Selele Pass, placed by local yak herders and mountain guides to invoke protection from the mountain spirits."
+      }
+    ],
+    "customSeo": {
+      "title": "Selele Pass (Sele La) Nepal: Road Status, Weather, Elevation & Trekking Guide | LivePassWatch",
+      "description": "Check Selele Pass (Sele La, 4,290 m) in Kanchenjunga Nepal: live trail status, weather conditions, elevation, route maps, seasonal closures & 20 FAQs.",
+      "h1": "Selele Pass (Sele La) Road Conditions, Weather & Pass Status"
+    },
+    "searchKeywords": [
+      "selele pass",
+      "sele la pass nepal",
+      "selele pass kanchenjunga",
+      "selele pass elevation",
+      "selele pass trail status",
+      "is selele pass open",
+      "selele pass weather",
+      "selele pass road conditions",
+      "selele pass trekking guide",
+      "ghunsa to cheram sele la",
+      "kanchenjunga circuit selele pass",
+      "selele high camp nepal",
+      "sele la taplejung nepal",
+      "selele pass map",
+      "selele pass permits",
+      "selele pass snow conditions",
+      "selele pass difficulty",
+      "kanchenjunga high passes",
+      "mirgin la and sele la",
+      "selele pass open today",
+      "selele pass winter closure",
+      "selele pass mountain views",
+      "selele pass jannu kumbhakarna",
+      "koshi province mountain passes"
+    ],
+    "aliases": [
+      "Sele La",
+      "Selele La",
+      "Sele La Pass",
+      "Selele High Pass",
+      "Ghunsa Selele Pass"
+    ],
+    "faqs": [
+      {
+        "question": "Is Selele Pass open right now?",
+        "answer": "Yes, Selele Pass (4,290 m / 14,074 ft) is currently open for high-altitude trekking. Spring and autumn are the prime operating seasons with clear trail conditions between Ghunsa and Cheram."
+      },
+      {
+        "question": "Is Selele Pass open today?",
+        "answer": "Selele Pass is open today for guided trekking parties. Acclimatized trekkers with appropriate mountain gear can cross safely. Always verify morning weather at Ghunsa or Selele High Camp before departing."
+      },
+      {
+        "question": "What is the elevation of Selele Pass?",
+        "answer": "Selele Pass summit is at an elevation of 4,290 meters (14,074 feet) above sea level. The broader ridge traverse reaches up to 4,663 meters (15,300 feet) at nearby Mirgin La."
+      },
+      {
+        "question": "Where is Selele Pass located?",
+        "answer": "Selele Pass is located in Taplejung District, Koshi Province, in the Kanchenjunga Conservation Area of Eastern Nepal, linking the northern Ghunsa valley with the southern Cheram valley."
+      },
+      {
+        "question": "How difficult is the Selele Pass trek?",
+        "answer": "Selele Pass is rated strenuous. It involves an 800+ meter vertical ascent from Ghunsa, high-altitude exposure above 4,200 meters, and a full day (7–8 hours) of sustained walking across rocky moraine and exposed ridge crests."
+      },
+      {
+        "question": "When is the best time to cross Selele Pass?",
+        "answer": "The best months are October to November (crystal clear skies, dry trails, spectacular mountain panoramas) and April to May (vibrant rhododendron blooms, warmer temperatures, and longer daylight hours)."
+      },
+      {
+        "question": "Does Selele Pass close in winter?",
+        "answer": "Yes. Selele Pass typically experiences heavy seasonal snow accumulation from late December through February, making the crossing hazardous without specialized alpine mountaineering experience."
+      },
+      {
+        "question": "What permits are required to visit Selele Pass?",
+        "answer": "Two permits are required: the Kanchenjunga Conservation Area Entry Permit (KCAP) and the Kanchenjunga Restricted Area Permit (RAP), obtainable through registered Nepal trekking agencies."
+      },
+      {
+        "question": "Is a guide mandatory for Selele Pass?",
+        "answer": "Yes. Under Nepal Government immigration and tourism regulations, solo independent trekking is prohibited in the Kanchenjunga Restricted Area; trekkers must be accompanied by a licensed government guide in a group of at least two persons."
+      },
+      {
+        "question": "Are there tea houses or lodges on Selele Pass?",
+        "answer": "There is a basic seasonal stone tea house at Selele High Camp (4,200 m) offering warm food, tea, and dormitory beds. Full lodges with private rooms are located at Ghunsa and Cheram."
+      },
+      {
+        "question": "What mountain peaks can you see from Selele Pass?",
+        "answer": "Trekkers enjoy magnificent vistas of Mount Jannu (Kumbhakarna, 7,710 m), Makalu (8,485 m), Kabru (7,412 m), Rathong (6,682 m), and the south walls of Mount Kanchenjunga (8,586 m)."
+      },
+      {
+        "question": "How long does it take to cross from Ghunsa to Cheram via Selele Pass?",
+        "answer": "The full crossing between Ghunsa and Cheram takes approximately 7 to 8 hours. Many trekkers opt to sleep at Selele High Camp to break the journey into two relaxed 4-hour days."
+      },
+      {
+        "question": "Is altitude sickness a risk on Selele Pass?",
+        "answer": "Yes. High Altitude Cerebral Edema (HACE) and Acute Mountain Sickness (AMS) are real risks above 4,000 m. Trekkers should acclimatize for 2 nights at Ghunsa (3,595 m) before crossing."
+      },
+      {
+        "question": "Do I need crampons or microspikes for Selele Pass?",
+        "answer": "Microspikes or light crampons are strongly recommended during early spring (March–April) and late autumn (late November–December) to navigate icy shaded gullies and morning frost."
+      },
+      {
+        "question": "What gear should I pack for Selele Pass?",
+        "answer": "Essential gear includes sturdy waterproof trekking boots, windproof and down insulated jackets, thermal base layers, UV-protection sunglasses, trekking poles, a 4-season sleeping bag, and water purification tablets."
+      },
+      {
+        "question": "Is there mobile phone network or internet on Selele Pass?",
+        "answer": "Mobile network (Ncell / Nepal Telecom) is generally unavailable at the pass summit. Limited connectivity exists at Ghunsa and Taplejung. Satellite communication devices are recommended."
+      },
+      {
+        "question": "How do you get to the Selele Pass trailhead from Kathmandu?",
+        "answer": "Fly from Kathmandu to Bhadrapur, take a scenic drive via Ilam to Taplejung / Sekathum, and trek for 4–5 days through Mitlung, Chirwa, and Amjilosa to reach Ghunsa."
+      },
+      {
+        "question": "What are the emergency evacuation procedures on Selele Pass?",
+        "answer": "Emergency medical evacuation is conducted via helicopter rescue coordinated through your licensed trekking agency and travel insurance provider with high-altitude coverage up to 6,000 meters."
+      },
+      {
+        "question": "What wildlife lives near Selele Pass?",
+        "answer": "The Kanchenjunga Conservation Area around Selele Pass is home to snow leopards, Himalayan blue sheep, red pandas, musk deer, Himalayan black bears, and alpine monal pheasants."
+      },
+      {
+        "question": "What makes Selele Pass unique on the Kanchenjunga Circuit?",
+        "answer": "Selele Pass is the crucial high-altitude pedestrian link uniting the North Base Camp (Pangpema) and South Base Camp (Oktang) routes, giving trekkers a complete 360-degree circumnavigation of the world's third highest peak."
+      }
+    ]
+  },
+
+  {
+    "id": "mirgin-la",
+    "slug": "mirgin-la",
+    "name": "Mirgin La Pass",
+    "country": "Nepal",
+    "countryCode": "NPL",
+    "continent": "Asia",
+    "state": "Koshi Province",
+    "highway": "Kanchenjunga High Ridge Route (Sele La–Tseram)",
+    "elevationFt": 15300,
+    "elevationM": 4663,
+    "coordinates": {
+      "lat": 27.588,
+      "lng": 87.961
+    },
+    "status": "OPEN",
+    "statusDetail": "Open for high-altitude trekking — clear ridge paths with spectacular views of Mt. Jannu and Kabru peaks.",
+    "lastUpdated": "15 minutes ago",
+    "description": "Mirgin La (4,663 m / 15,300 ft) is a celebrated high-altitude Himalayan mountain pass in Eastern Nepal's Taplejung District, Koshi Province. It is the pinnacle of the multi-pass ridge traverse (encompassing Sele La, Sinion La, Mirgin La, and Sinlapche La) connecting Ghunsa in the north to Cheram/Tseram in the south. The pass offers one of the most awe-inspiring vantage points in the entire Himalayas, directly gazing at the sheer northwest face of Mt. Jannu (Kumbhakarna, 7,710 m), Kabru (7,412 m), Rathong (6,682 m), and the distant pyramids of Makalu and Everest on crystalline mornings.",
+    "image": "/mirgin-la.jpg",
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Clear Skies & Crisp Alpine Wind",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 30,
+      "depthIn": 12,
+      "condition": "Packed snow patches on shaded northern ridges"
+    },
+    "wind": {
+      "speedKmh": 24,
+      "speedMph": 15,
+      "direction": "WNW",
+      "description": "Brisk High-Altitude Himalayan Breeze"
+    },
+    "roadCondition": "Remote high-altitude alpine trail. Craggy ridge traverse over loose scree, stone steps, and exposed mountain shelves. Excellent visibility in morning hours; afternoon cloud buildup common.",
+    "chainRequirement": "Strictly foot trail: High-traction mountain boots, trekking poles, warm gloves, windproof shell, and UV-blocking glacier glasses mandatory.",
+    "cameras": [
+      {
+        "id": "mirgin-cam-summit",
+        "title": "Mirgin La — High Ridge Viewpoint",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Elevation 4,663 m Summit Crest",
+        "direction": "Looking East toward Jannu & Kanchenjunga Massif",
+        "location": "Mirgin La Ridge Cairn",
+        "source": "Kanchenjunga Conservation Area Project",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.welcomenepal.com/"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "selele-pass",
+        "slug": "selele-pass",
+        "name": "Selele Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Kanchenjunga Circuit Trail",
+        "status": "OPEN",
+        "elevationFt": 14074,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 4
+      },
+      {
+        "id": "khangla-pass",
+        "slug": "khangla-pass",
+        "name": "Khangla Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Singalila Ridge Trail",
+        "status": "OPEN",
+        "elevationFt": 17257,
+        "lastUpdated": "20 min ago",
+        "distanceKm": 14
+      },
+      {
+        "id": "lumba-sumba-pass",
+        "slug": "lumba-sumba-pass",
+        "name": "Lumba Sumba Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Great Himalaya Trail",
+        "status": "OPEN",
+        "elevationFt": 16925,
+        "lastUpdated": "25 min ago",
+        "distanceKm": 32
+      }
+    ],
+    "overview": {
+      "openedYear": "Historic trans-valley yak and mountaineering route",
+      "lengthMiles": 14,
+      "lengthKm": 22,
+      "annualSnowfallIn": 220,
+      "annualSnowfallM": 5.6,
+      "summary": "Mirgin La is renowned among global trekkers as the supreme panoramic viewpoint on the Kanchenjunga Circuit. Situated at 4,663 m (15,300 ft), this pass perches high above the treeline along the razor-sharp granite spine separating the Ghunsa and Simbuwa river basins. It forms part of the quadruple pass traverse alongside Sele La (4,290 m), Sinion La (4,440 m), and Sinlapche La (4,645 m)."
+    },
+    "isSeasonal": true,
+    "seasonalClosureInfo": {
+      "typicalClosure": "Late November / December to Late March",
+      "typicalReopening": "April to November",
+      "description": "Severe winter storms and deep snow accumulation close the high ridge from December through March. Spring opening begins in April with melting snowfields."
+    },
+    "openingDateInfo": {
+      "year": 2026,
+      "statusText": "Open for Season — Excellent High-Pass Visibility",
+      "expectedOpeningWindow": "April to Mid-December",
+      "closingWindow": "Late December to March",
+      "clearanceAgency": "KCAMC & Trekking Agencies Association of Nepal (TAAN)",
+      "notes": "Early morning crossings strongly advised to avoid midday fog and high ridge wind gusts."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Clear Alpine Sunshine",
+        "tempHighF": 39,
+        "tempLowF": 23,
+        "icon": "sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Freezing Starlit Sky",
+        "tempHighF": 26,
+        "tempLowF": 18,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Sunny & Moderate Wind",
+        "tempHighF": 41,
+        "tempLowF": 25,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Passing Cirrus Clouds",
+        "tempHighF": 38,
+        "tempLowF": 22,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Partly Cloudy & Chilly",
+        "tempHighF": 36,
+        "tempLowF": 21,
+        "icon": "cloud"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Bright & Crisp Mountain Air",
+        "tempHighF": 40,
+        "tempLowF": 24,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Nepal Department of Tourism",
+        "type": "Official Wilderness Guidelines",
+        "url": "https://www.welcomenepal.com/"
+      },
+      {
+        "name": "TAAN (Trekking Agencies Association of Nepal)",
+        "type": "Pass Conditions & Guide Registry",
+        "url": "https://www.taan.org.np/"
+      },
+      {
+        "name": "DHM Nepal (Hydrology & Meteorology)",
+        "type": "Eastern Mountain Forecast",
+        "url": "https://www.dhm.gov.np/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Koshi Province (Taplejung), Nepal",
+      "mountainRange": "Kanchenjunga Himal (Singalila Ridge)",
+      "elevationSummary": "15,300 ft (4,663 m) Summit Crest",
+      "connects": "Ghunsa / Selele Camp with Cheram / Yalung South Valley",
+      "nearestTown": "Ghunsa (10 km northwest) • Cheram (6 km southeast) • Taplejung (62 km)",
+      "roadType": "High-Altitude Alpine Scree & Ridge Trekking Trail",
+      "bestTime": "October–November & April–May",
+      "highlight": "Unsurpassed panoramic sightlines of Jannu (Kumbhakarna), Kabru, Rathong, and the Makalu-Everest horizon."
+    },
+    "routeDetails": {
+      "distanceKm": 22,
+      "distanceMiles": 14,
+      "duration": "8–9 hours (Ghunsa to Cheram traverse via Mirgin La)",
+      "origin": "Selele High Camp (4,200 m) or Ghunsa (3,595 m)",
+      "destination": "Cheram / Tseram (3,870 m)",
+      "waypoints": [
+        "Selele High Camp (4,200 m) — Dawn start along the alpine trail",
+        "Selele Pass Cairn (4,290 m) — First ridge crossing",
+        "Sinion La Pass (4,440 m) — Sweeping panorama of the eastern valleys",
+        "Mirgin La Pass Summit (4,663 m) — Apex of the ridge with Jannu North Face panorama",
+        "Sinlapche La Pass (4,645 m) — Final pass overlooking Yalung Glacier valley",
+        "Steep Descents over Scree — Traversing rhododendron scrub and alpine boulder fields",
+        "Cheram / Tseram (3,870 m) — Comfortable lodges on the banks of Simbuwa Khola"
+      ]
+    },
+    "drivingInfo": {
+      "summary": "Strictly a non-motorized high Himalayan pedestrian wilderness route within the Kanchenjunga Conservation Area. No vehicle roads exist.",
+      "characteristics": [
+        "Sustained high-altitude traverse exceeding 4,400 meters for over 4 hours",
+        "Exposed ridgeline footpaths with loose gravel and stone steps",
+        "Spectacular 360-degree mountain visibility across three countries (Nepal, India, Tibet)",
+        "Subject to rapid mountain weather changes and thermal wind drops"
+      ],
+      "switchbacksCount": "High alpine traversing foot trail",
+      "safetyAndEtiquette": [
+        "Cross before noon to avoid afternoon convective cloud cover and freezing fog",
+        "Dress in windproof multi-layer alpine clothing with thermal gloves and balaclava",
+        "Do not run on scree descents into Cheram to prevent knee injury and rockfall",
+        "Carry high-calorie trail food as there are no settlements between Selele and Cheram"
+      ],
+      "motorcycleTips": [
+        "Motorized vehicles strictly prohibited on Kanchenjunga Conservation Area trails."
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "High alpine mountaineering and trekking terrain not suitable for cycling.",
+      "approaches": [
+        {
+          "name": "Northern Ridge Approach",
+          "origin": "Selele Camp (4,200 m)",
+          "distanceKm": 6.5,
+          "distanceMiles": 4,
+          "elevationGainM": 463,
+          "elevationGainFt": 1519,
+          "avgGradient": "8%",
+          "maxGradient": "18%",
+          "hairpins": 8,
+          "description": "Ridge traverse crossing Sele La and Sinion La to the rocky pinnacle of Mirgin La."
+        }
+      ],
+      "bestSeason": "Autumn (Oct–Nov) and Spring (Apr–May)",
+      "safetyTips": [
+        "Check morning ridge wind speeds",
+        "Acclimatize thoroughly at Ghunsa prior to crossing"
+      ],
+      "bikeDayInfo": "Pedestrian alpine trail only."
+    },
+    "distancesTable": [
+      {
+        "location": "Ghunsa Village",
+        "distance": "10 km (6.2 mi)",
+        "route": "Kanchenjunga North Path",
+        "notes": "Major acclimatization base and Sherpa trading hub"
+      },
+      {
+        "location": "Cheram (Tseram)",
+        "distance": "6 km (3.7 mi)",
+        "route": "South Descent Trail",
+        "notes": "Lodge hub for Yalung Glacier and Oktang South Base Camp"
+      },
+      {
+        "location": "Oktang South Base Camp",
+        "distance": "16 km (9.9 mi)",
+        "route": "Via Cheram & Ramche",
+        "notes": "Direct viewpoint of Kanchenjunga South Face"
+      },
+      {
+        "location": "Taplejung Bazaar",
+        "distance": "62 km (38.5 mi)",
+        "route": "Via Yamphudin & Mamankhe",
+        "notes": "District headquarters and airfield"
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "The Great Himalayan Grandstand",
+        "content": "Standing upon the prayer-flag draped summit of Mirgin La at 4,663 meters is widely considered one of the ultimate visual rewards in mountaineering. The pass delivers an unobstructed amphitheater view of the formidable Kumbhakarna (Jannu, 7,710 m), whose vertical granite wall rises like a fortress above the glaciers. To the east, the Kabru range (7,412 m) and Rathong (6,682 m) gleam in icy splendour, while to the far west on crisp mornings, the distant summit pyramids of Makalu and Mount Everest pierce the azure horizon."
+      },
+      {
+        "title": "The Four-Pass High Ridge Odyssey",
+        "content": "Unlike isolated mountain passes that descend immediately after reaching the crest, Mirgin La is part of a high-altitude contouring ridge system. Trekkers cross four distinct passes in a single day: Sele La (4,290 m), Sinion La (4,440 m), Mirgin La (4,663 m), and Sinlapche La (4,645 m). This sustained exposure above 4,200 meters provides continuous panoramic scenery for hours as the trail hugs sheer granite cliffs high above deep forested gorges."
+      },
+      {
+        "title": "Spiritual Significance and Mountain Lore",
+        "content": "For the Kirat, Limbu, and Sherpa communities of eastern Nepal, the high passes around Kanchenjunga are sacred thresholds where the earthly realm meets the dwelling of the mountain deities. Mirgin La is traditionally blessed with lungta prayer flags inscribed with Tibetan Buddhist prayers that are believed to be carried across the world by the Himalayan winds, bringing peace and protection to all sentient beings."
+      }
+    ],
+    "customSeo": {
+      "title": "Mirgin La Pass Nepal: Road Status, Weather, Elevation & Trekking Guide | LivePassWatch",
+      "description": "Check Mirgin La Pass (4,663 m / 15,300 ft) in Kanchenjunga Nepal: live trail status, mountain weather, elevation, route details & 20 comprehensive FAQs.",
+      "h1": "Mirgin La Pass Road Conditions, Weather & Pass Status"
+    },
+    "searchKeywords": [
+      "mirgin la pass",
+      "mirgin la nepal",
+      "mirgin la elevation",
+      "mirgin la trail status",
+      "is mirgin la open",
+      "mirgin la weather",
+      "mirgin la kanchenjunga",
+      "mirgin la pass trekking",
+      "mirgin la to cheram",
+      "sinion la mirgin la sinlapche la",
+      "mirgin la mountain views jannu",
+      "kanchenjunga high pass mirgin la",
+      "mirgin la permits nepal",
+      "taplejung mirgin la pass",
+      "mirgin la road conditions"
+    ],
+    "aliases": [
+      "Mirgin La",
+      "Mirgin Pass",
+      "Mirgin Bhanjyang"
+    ],
+    "faqs": [
+      {
+        "question": "Is Mirgin La open right now?",
+        "answer": "Yes, Mirgin La (4,663 m / 15,300 ft) is currently open for high-altitude trekking across the Kanchenjunga ridge."
+      },
+      {
+        "question": "What is the elevation of Mirgin La?",
+        "answer": "Mirgin La is situated at 4,663 meters (15,300 feet) above sea level, making it the highest point on the Ghunsa to Cheram traverse."
+      },
+      {
+        "question": "Where is Mirgin La located?",
+        "answer": "Mirgin La is located in Taplejung District, Koshi Province, in the Kanchenjunga Conservation Area of Eastern Nepal."
+      },
+      {
+        "question": "What mountain peaks are visible from Mirgin La?",
+        "answer": "Mirgin La offers spectacular views of Jannu (Kumbhakarna, 7,710 m), Kabru, Rathong, Kanchenjunga South, and distant views of Makalu and Mount Everest."
+      },
+      {
+        "question": "How difficult is the Mirgin La pass crossing?",
+        "answer": "It is rated strenuous due to high elevation (4,663 m), sustained ridgeline exposure for 4+ hours, rocky scree trails, and a 8–9 hour trekking day."
+      },
+      {
+        "question": "What are the four passes crossed on this route?",
+        "answer": "The quadruple pass traverse includes Sele La (4,290 m), Sinion La (4,440 m), Mirgin La (4,663 m), and Sinlapche La (4,645 m)."
+      },
+      {
+        "question": "When is the best season to cross Mirgin La?",
+        "answer": "The best seasons are autumn (October to November) for crystal clear mountain vistas and spring (April to May) for warmer weather and blooming flora."
+      },
+      {
+        "question": "Does Mirgin La close during winter?",
+        "answer": "Yes, from late December to March, heavy snow accumulation and freezing blizzards make the high ridge impassable for standard trekking."
+      },
+      {
+        "question": "Is a guide mandatory for Mirgin La?",
+        "answer": "Yes, the Nepal Department of Immigration requires all foreign trekkers in the Kanchenjunga Restricted Area to be accompanied by a licensed government trekking guide."
+      },
+      {
+        "question": "What permits do I need for Mirgin La?",
+        "answer": "You need the Kanchenjunga Restricted Area Permit (RAP) and the Kanchenjunga Conservation Area Project Entry Permit (KCAP)."
+      },
+      {
+        "question": "Are there lodges directly on Mirgin La summit?",
+        "answer": "No, there are no lodges on the barren summit. The nearest accommodations are at Selele High Camp (4,200 m) on the north side and Cheram (3,870 m) on the south side."
+      },
+      {
+        "question": "How long does it take to hike across Mirgin La?",
+        "answer": "From Selele High Camp to Cheram takes approximately 5 to 6 hours. From Ghunsa all the way to Cheram takes about 8 to 9 hours."
+      },
+      {
+        "question": "What gear is recommended for Mirgin La?",
+        "answer": "Sturdy mountain trekking boots, thermal base layers, windproof outer shells, UV-rated glacier glasses, trekking poles, warm gloves, and a 4-season sleeping bag."
+      },
+      {
+        "question": "Is altitude sickness common on Mirgin La?",
+        "answer": "Because the pass reaches 4,663 meters, proper prior acclimatization at Ghunsa (3,595 m) and Kambachen (4,050 m) is essential to avoid AMS."
+      },
+      {
+        "question": "Is there water available along the Mirgin La ridge?",
+        "answer": "No reliable water sources exist on the rocky ridge crest between Selele Camp and Cheram; carry at least 2 liters of drinking water."
+      },
+      {
+        "question": "Are microspikes or crampons needed on Mirgin La?",
+        "answer": "Microspikes are advisable in early spring (March–April) and late autumn (late November) when snow and morning black ice linger in shaded gullies."
+      },
+      {
+        "question": "What is the mobile phone reception on Mirgin La?",
+        "answer": "There is no reliable cellular coverage on Mirgin La. Satellite tracking communicators (such as Garmin InReach) are recommended."
+      },
+      {
+        "question": "How is emergency evacuation handled on Mirgin La?",
+        "answer": "Helicopter evacuation can be dispatched from Kathmandu or Bhadrapur, landing at Cheram or Ghunsa depending on weather conditions."
+      },
+      {
+        "question": "Can I cross Mirgin La independently without an agency?",
+        "answer": "No, solo trekking without an agency and licensed guide is strictly illegal in the Kanchenjunga Restricted Area."
+      },
+      {
+        "question": "What makes Mirgin La special on the Kanchenjunga Circuit?",
+        "answer": "Mirgin La offers the most dramatic front-row panoramic perspective of Mount Jannu's sheer 3,000-meter north face found anywhere on Earth."
+      }
+    ]
+  },
+
+  {
+    "id": "lumba-sumba-pass",
+    "slug": "lumba-sumba-pass",
+    "name": "Lumba Sumba Pass (Lumba Sumba La)",
+    "country": "Nepal",
+    "countryCode": "NPL",
+    "continent": "Asia",
+    "state": "Koshi Province",
+    "highway": "Great Himalaya Trail (GHT) Eastern High Route",
+    "elevationFt": 16925,
+    "elevationM": 5159,
+    "coordinates": {
+      "lat": 27.7125,
+      "lng": 87.6742
+    },
+    "status": "OPEN",
+    "statusDetail": "Open for GHT wilderness expeditions — high alpine pass clear with light patchy ridge snow.",
+    "lastUpdated": "25 minutes ago",
+    "description": "Lumba Sumba Pass (5,159 m / 16,925 ft) is one of the crown jewels of the Great Himalaya Trail (GHT), bridging the remote eastern regions of Taplejung and Sankhuwasabha across Koshi Province in Nepal. The pass links the Kanchenjunga Conservation Area to Makalu Barun National Park, joining the Tibetan-heritage trading settlement of Olangchung Gola in the Tamor basin with the isolated Sherpa / Lhomi village of Thudam and Chyamtang in the Arun Valley. Trekkers encounter pristine glacial tarns, high alpine meadows, blue sheep habitats, and panoramic vistas stretching from Kanchenjunga to Makalu.",
+    "image": "/lumba-sumba-pass.jpg",
+    "weather": {
+      "tempF": 30,
+      "tempC": -1,
+      "condition": "Crisp & Sunny High Alpine Air",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 35,
+      "depthIn": 14,
+      "condition": "Snowfields near summit tarns and northern pass approach"
+    },
+    "wind": {
+      "speedKmh": 28,
+      "speedMph": 17,
+      "direction": "NW",
+      "description": "Strong High-Altitude Himalayan Wind"
+    },
+    "roadCondition": "Remote wilderness expedition trail. Glacial moraine, rocky talus slopes, and high alpine ridges. Wilderness camping route with no permanent settlements between Olangchung Gola and Thudam.",
+    "chainRequirement": "Wilderness foot expedition: Alpine trekking boots, thermal cold-weather gear, microspikes, navigation GPS, and 4-season expedition tents required.",
+    "cameras": [
+      {
+        "id": "lumba-cam-pass",
+        "title": "Lumba Sumba Pass Summit (5,159 m)",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Elevation 5,159 m Crest",
+        "direction": "Looking West toward Makalu & Chamlang",
+        "location": "Lumba Sumba High Pass Cairn",
+        "source": "Great Himalaya Trail / Nepal Tourism Board",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.welcomenepal.com/"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "tipta-la",
+        "slug": "tipta-la",
+        "name": "Tipta La Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Tamor Trade Corridor",
+        "status": "OPEN",
+        "elevationFt": 16791,
+        "lastUpdated": "30 min ago",
+        "distanceKm": 18
+      },
+      {
+        "id": "olangchungola-pass",
+        "slug": "olangchungola-pass",
+        "name": "Olangchungola Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Upper Tamor Trail",
+        "status": "OPEN",
+        "elevationFt": 15748,
+        "lastUpdated": "35 min ago",
+        "distanceKm": 14
+      },
+      {
+        "id": "selele-pass",
+        "slug": "selele-pass",
+        "name": "Selele Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Kanchenjunga Circuit Trail",
+        "status": "OPEN",
+        "elevationFt": 14074,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 28
+      }
+    ],
+    "overview": {
+      "openedYear": "Ancient trans-Himalayan trade link between Tamor and Arun valleys",
+      "lengthMiles": 28,
+      "lengthKm": 45,
+      "annualSnowfallIn": 260,
+      "annualSnowfallM": 6.6,
+      "summary": "Lumba Sumba Pass is the ultimate wilderness trek connecting the two greatest mountain giants of Eastern Nepal: Mount Kanchenjunga (8,586 m) and Mount Makalu (8,485 m). Crossing from Olangchung Gola into Thudam, the route traverses completely uninhabited high-altitude valleys framed by unnamed glacial peaks, crystal clear alpine lakes, and rhododendron wilderness."
+    },
+    "isSeasonal": true,
+    "seasonalClosureInfo": {
+      "typicalClosure": "Late November to April (Heavy winter snow and sub-zero isolation)",
+      "typicalReopening": "May to Mid-November",
+      "description": "Due to extreme remoteness and high elevation (5,159 m), Lumba Sumba Pass is inaccessible during winter months. The prime trekking seasons are post-monsoon (October–November) and pre-monsoon (May)."
+    },
+    "openingDateInfo": {
+      "year": 2026,
+      "statusText": "Open for Wilderness Expeditions — Great Himalaya Trail route clear",
+      "expectedOpeningWindow": "May to Mid-November",
+      "closingWindow": "Late November to April",
+      "clearanceAgency": "Nepal Department of National Parks and Wildlife Conservation & TAAN",
+      "notes": "Self-sufficient expedition logistics with camping equipment and experienced local high-altitude guides required."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Sunny & Crisp Mountain Wind",
+        "tempHighF": 35,
+        "tempLowF": 19,
+        "icon": "sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Severe Freeze & Clear Sky",
+        "tempHighF": 22,
+        "tempLowF": 14,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Mostly Sunny",
+        "tempHighF": 37,
+        "tempLowF": 20,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Scattered High Clouds",
+        "tempHighF": 34,
+        "tempLowF": 18,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Partly Cloudy & Windy",
+        "tempHighF": 32,
+        "tempLowF": 17,
+        "icon": "cloud"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Clear Alpine Vista",
+        "tempHighF": 36,
+        "tempLowF": 19,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Nepal Department of Tourism",
+        "type": "Great Himalaya Trail Regulations",
+        "url": "https://www.welcomenepal.com/"
+      },
+      {
+        "name": "Makalu Barun National Park",
+        "type": "Conservation Area Entry Guidelines",
+        "url": "https://dnpwc.gov.np/"
+      },
+      {
+        "name": "Kanchenjunga Conservation Area Project",
+        "type": "Trail Alerts & Community Status",
+        "url": "https://dnpwc.gov.np/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Koshi Province (Taplejung & Sankhuwasabha border), Nepal",
+      "mountainRange": "Kanchenjunga–Makalu Trans-Himalayan Divide",
+      "elevationSummary": "16,925 ft (5,159 m) Pass Summit • High Camps at 4,450 m & 4,700 m",
+      "connects": "Olangchung Gola (Tamor Basin) with Thudam & Chyamtang (Arun Basin)",
+      "nearestTown": "Olangchung Gola (14 km east) • Thudam (12 km west) • Num / Tumlingtar",
+      "roadType": "Great Himalaya Trail (GHT) High Alpine Wilderness Route",
+      "bestTime": "October to November & May",
+      "highlight": "Crossing between Kanchenjunga and Makalu Barun across totally wild alpine tarns with dual views of both 8,000m giants."
+    },
+    "routeDetails": {
+      "distanceKm": 45,
+      "distanceMiles": 28,
+      "duration": "3–4 days of high-altitude wilderness trekking (Olangchung Gola to Thudam)",
+      "origin": "Olangchung Gola Village (3,200 m / 10,500 ft)",
+      "destination": "Thudam Village (3,556 m / 11,666 ft)",
+      "waypoints": [
+        "Olangchung Gola (3,200 m) — Historic Walung stone village and Diki Chhyoling Gompa",
+        "Upper Dingsamba Khola Valley — Ascending through wild rhododendron and birch forests",
+        "Lumba Sumba High Camp East (Sanlung, 4,450 m) — Wilderness camping meadow",
+        "Lumba Sumba Pass Summit (5,159 m) — Sacred cairn with panoramic views of Makalu and Kanchenjunga",
+        "Glacial Lakes & North Crest — High alpine tarns nestled beneath rocky amphitheaters",
+        "Lumba Sumba High Camp West (Yak Kharka, 4,500 m) — Remote yak pasture campsite",
+        "Thudam Village (3,556 m) — Traditional wooden-roofed Sherpa/Lhomi settlement in Arun Valley"
+      ]
+    },
+    "drivingInfo": {
+      "summary": "Strictly an untouched high-altitude Himalayan wilderness trail. Absolutely no motorable road access.",
+      "characteristics": [
+        "Extreme elevation reaching 5,159 m (16,925 ft)",
+        "Full self-sufficient camping expedition required for 3+ days",
+        "Crossing between two major river basins: Tamor River and Arun River",
+        "Unrivalled natural solitude and pristine Himalayan wilderness"
+      ],
+      "switchbacksCount": "Natural alpine moraine and scree trails",
+      "safetyAndEtiquette": [
+        "Carry comprehensive wilderness medical kits including Diamox and emergency oxygen",
+        "Camp only in established low-impact meadows and pack out all non-biodegradable waste",
+        "Hire local Walung or Sherpa guides familiar with high snow navigation"
+      ],
+      "motorcycleTips": [
+        "Motor vehicles cannot access this protected wilderness corridor."
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "High wilderness mountaineering and expedition terrain not feasible for bicycles.",
+      "approaches": [
+        {
+          "name": "East Approach from Olangchung Gola",
+          "origin": "Olangchung Gola (3,200 m)",
+          "distanceKm": 22,
+          "distanceMiles": 13.7,
+          "elevationGainM": 1959,
+          "elevationGainFt": 6427,
+          "avgGradient": "9%",
+          "maxGradient": "22%",
+          "hairpins": 12,
+          "description": "Ascends through the untamed Tamor tributary gorges to the eastern high camp and pass crest."
+        }
+      ],
+      "bestSeason": "Autumn (October–November) and Spring (May)",
+      "safetyTips": [
+        "Satellite communication mandatory",
+        "Comprehensive cold weather expedition gear required"
+      ],
+      "bikeDayInfo": "Wilderness foot trekking only."
+    },
+    "distancesTable": [
+      {
+        "location": "Olangchung Gola",
+        "distance": "14 km (8.7 mi)",
+        "route": "East Approach Trail",
+        "notes": "Historic Walung village, 450-yr gompa, homestays"
+      },
+      {
+        "location": "Thudam Village",
+        "distance": "12 km (7.5 mi)",
+        "route": "West Descent Trail",
+        "notes": "Isolated Lhomi / Sherpa mountain village"
+      },
+      {
+        "location": "Chyamtang (Arun Valley)",
+        "distance": "32 km (19.8 mi)",
+        "route": "Via Thudam",
+        "notes": "Gateway to Makalu Barun National Park"
+      },
+      {
+        "location": "Taplejung Bazaar",
+        "distance": "75 km (46.6 mi)",
+        "route": "Via Lelep & Mitlung",
+        "notes": "District administrative center and airport"
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "The Great Himalaya Trail Frontier Pass",
+        "content": "Lumba Sumba Pass is celebrated worldwide as the paramount high-altitude bridge of the Great Himalaya Trail (GHT). Located on the boundary between Taplejung and Sankhuwasabha districts, the pass joins two of Nepal's most spectacular protected zones: the Kanchenjunga Conservation Area and the Makalu Barun National Park. Trekkers crossing this 5,159-meter pass experience the rawest, least-commercialized mountain wilderness in the entire Himalayan range."
+      },
+      {
+        "title": "Ancient Trade Between the Tamor and Arun Basins",
+        "content": "For centuries before mountaineering maps were drafted, Lumba Sumba Pass was utilized by hardy Walung and Lhomi yak traders. Caravans transported Tibetan salt, yak butter, dried meat, and hand-woven wool rugs from the high borderlands to exchange for cardamom, rice, and iron goods produced in the fertile subtropical valleys of the Arun and Tamor rivers."
+      },
+      {
+        "title": "Wildlife Sanctuary of the Snow Leopard and Blue Sheep",
+        "content": "The uninhabited alpine valleys flanking Lumba Sumba Pass form an undisturbed sanctuary for endangered Himalayan wildlife. The rugged cliffs and glacial scree provide ideal territory for herds of Himalayan blue sheep (bharal), musk deer, Himalayan tahr, and their apex predator, the elusive snow leopard. Golden eagles and Himalayan griffons soar effortlessly across the thermal drafts above the pass."
+      }
+    ],
+    "customSeo": {
+      "title": "Lumba Sumba Pass (5,159 m) Nepal: Road Status, Weather, Elevation & GHT Guide | LivePassWatch",
+      "description": "Check Lumba Sumba Pass (5,159 m / 16,925 ft) in Koshi Province Nepal: live trail status, weather, elevation, GHT route details, camping info & 20 FAQs.",
+      "h1": "Lumba Sumba Pass Road Conditions, Weather & Pass Status"
+    },
+    "searchKeywords": [
+      "lumba sumba pass",
+      "lumba sumba la nepal",
+      "lumba sumba pass elevation",
+      "lumba sumba pass trail status",
+      "is lumba sumba pass open",
+      "lumba sumba weather",
+      "lumba sumba great himalaya trail",
+      "olangchung gola to thudam",
+      "lumba sumba trek nepal",
+      "kanchenjunga to makalu pass",
+      "lumba sumba pass map",
+      "lumba sumba permits",
+      "lumba sumba camping trek"
+    ],
+    "aliases": [
+      "Lumba Sumba La",
+      "Lumba Sumba Bhanjyang",
+      "Lumbasumba Pass"
+    ],
+    "faqs": [
+      {
+        "question": "Is Lumba Sumba Pass open right now?",
+        "answer": "Yes, Lumba Sumba Pass (5,159 m / 16,925 ft) is currently open for self-sufficient wilderness trekking expeditions."
+      },
+      {
+        "question": "What is the elevation of Lumba Sumba Pass?",
+        "answer": "Lumba Sumba Pass summit sits at an elevation of 5,159 meters (16,925 feet) above sea level."
+      },
+      {
+        "question": "Where is Lumba Sumba Pass located?",
+        "answer": "Lumba Sumba Pass is located on the boundary between Taplejung and Sankhuwasabha districts in Koshi Province, Eastern Nepal."
+      },
+      {
+        "question": "What regions does Lumba Sumba Pass connect?",
+        "answer": "It connects the Kanchenjunga region (Olangchung Gola in the Tamor basin) with the Makalu Barun region (Thudam and Chyamtang in the Arun basin)."
+      },
+      {
+        "question": "How difficult is the Lumba Sumba Pass trek?",
+        "answer": "It is rated strenuous to challenging due to extreme altitude (5,159 m), multi-day wilderness camping, lack of lodges, and rough terrain."
+      },
+      {
+        "question": "Are there tea houses or lodges on Lumba Sumba Pass?",
+        "answer": "No. Between Olangchung Gola and Thudam, there are no permanent lodges; full camping equipment, food, and cooking fuel must be carried."
+      },
+      {
+        "question": "When is the best time to trek Lumba Sumba Pass?",
+        "answer": "The best windows are October to November (stable weather, clear skies) and May (spring melt and blooming alpine flora)."
+      },
+      {
+        "question": "Does Lumba Sumba Pass close during winter?",
+        "answer": "Yes. From late November through April, severe freezing temperatures and heavy snow accumulation render the pass inaccessible."
+      },
+      {
+        "question": "What permits are required for Lumba Sumba Pass?",
+        "answer": "Trekkers require the Kanchenjunga Conservation Area Permit (KCAP), Makalu Barun National Park Permit, and the Kanchenjunga Restricted Area Permit (RAP)."
+      },
+      {
+        "question": "Is a guide required for Lumba Sumba Pass?",
+        "answer": "Yes. Nepal government regulations require foreign trekkers to be accompanied by a licensed trekking guide through an authorized agency."
+      },
+      {
+        "question": "What mountain peaks can you see from Lumba Sumba Pass?",
+        "answer": "The summit affords panoramic views of Mount Kanchenjunga (8,586 m), Mount Makalu (8,485 m), Jannu, Chamlang, and the Tibetan border peaks."
+      },
+      {
+        "question": "How long does the full Lumba Sumba trek take?",
+        "answer": "The full traverse from Taplejung/Suketar to Tumlingtar via Lumba Sumba Pass typically takes 16 to 20 days."
+      },
+      {
+        "question": "What gear is essential for Lumba Sumba Pass?",
+        "answer": "4-season expedition tent, -20°C sleeping bag, thermal base layers, waterproof windproof shell, GPS navigation device, microspikes, and water filtration."
+      },
+      {
+        "question": "Is altitude sickness a major concern on Lumba Sumba?",
+        "answer": "Yes. Ascending to nearly 5,200 meters in a remote area demands gradual acclimatization and rest days at Olangchung Gola (3,200 m)."
+      },
+      {
+        "question": "What is the nearest emergency rescue facility?",
+        "answer": "Emergency medical evacuation requires satellite-coordinated helicopter rescue to Kathmandu from open campsites near the pass."
+      },
+      {
+        "question": "Is there mobile phone network on Lumba Sumba Pass?",
+        "answer": "No cellular network exists along the pass. Satellite communicators (e.g. Garmin InReach or Iridium phones) are essential."
+      },
+      {
+        "question": "What wildlife lives around Lumba Sumba Pass?",
+        "answer": "Snow leopards, Himalayan blue sheep (bharal), red pandas, musk deer, Himalayan tahr, and golden eagles inhabit the area."
+      },
+      {
+        "question": "How do you get to the Lumba Sumba trailhead?",
+        "answer": "Fly from Kathmandu to Bhadrapur, drive via Ilam to Taplejung/Sekathum, and trek through Lelep to Olangchung Gola."
+      },
+      {
+        "question": "Why is Lumba Sumba important on the Great Himalaya Trail?",
+        "answer": "It is the essential high-pass link uniting the easternmost Kanchenjunga section with the central Makalu-Everest section of the GHT."
+      },
+      {
+        "question": "What cultural communities will I meet on the Lumba Sumba trek?",
+        "answer": "You will encounter the Walung people of Olangchung Gola and the rare Lhomi / Sherpa communities of Thudam and Chyamtang."
+      }
+    ]
+  },
+
+  {
+    "id": "tipta-la",
+    "slug": "tipta-la",
+    "name": "Tipta La Pass (Tiptala Bhanjyang)",
+    "country": "Nepal",
+    "countryCode": "NPL",
+    "continent": "Asia",
+    "state": "Koshi Province",
+    "highway": "North-South Tamor Corridor Trade Route (Nepal–China Border)",
+    "elevationFt": 16791,
+    "elevationM": 5118,
+    "coordinates": {
+      "lat": 27.814,
+      "lng": 87.791
+    },
+    "status": "OPEN",
+    "statusDetail": "Open for bilateral border trade and local transit — North-South Tamor road development underway.",
+    "lastUpdated": "30 minutes ago",
+    "description": "Tipta La (Tiptala Pass / Tiptala Bhanjyang, 5,118 m / 16,791 ft) is a strategic trans-Himalayan mountain pass on the international border between Taplejung District (Koshi Province, Nepal) and Dinggye County (Tibet Autonomous Region, China). Historically one of eastern Nepal's most vital yak caravan salt-and-grain trade routes originating from Olangchung Gola, Tipta La is now the focus of the North-South Tamor Corridor road linking eastern Nepal directly with China's national highway grid.",
+    "image": "/tipta-la.jpg",
+    "weather": {
+      "tempF": 28,
+      "tempC": -2,
+      "condition": "Clear & Freezing Plateau Breeze",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 20,
+      "depthIn": 8,
+      "condition": "Wind-blown dry snow and gravel on high border saddle"
+    },
+    "wind": {
+      "speedKmh": 32,
+      "speedMph": 20,
+      "direction": "NNW",
+      "description": "Brisk Tibetan Plateau Wind"
+    },
+    "roadCondition": "Unpaved dirt track and historic caravan route. The North-South Tamor Highway road construction has reached upper stretches near Olangchung Gola and the border. Rugged 4WD high-clearance access on connected segments; foot and yak transit across the summit saddle.",
+    "chainRequirement": "High-clearance 4WD vehicles on lower road sections; sturdy insulated mountain boots and thermal wind protection across the pass.",
+    "cameras": [
+      {
+        "id": "tipta-cam-border",
+        "title": "Tipta La Pass — Nepal-China Border Pillar",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Elevation 5,118 m Border Marker",
+        "direction": "Looking North toward Tibetan Plateau & Dinggye",
+        "location": "Tipta La Border Crossing",
+        "source": "Department of Roads Nepal / Border Management",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.welcomenepal.com/"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "olangchungola-pass",
+        "slug": "olangchungola-pass",
+        "name": "Olangchungola Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Upper Tamor Trail",
+        "status": "OPEN",
+        "elevationFt": 15748,
+        "lastUpdated": "35 min ago",
+        "distanceKm": 18
+      },
+      {
+        "id": "lumba-sumba-pass",
+        "slug": "lumba-sumba-pass",
+        "name": "Lumba Sumba Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Great Himalaya Trail",
+        "status": "OPEN",
+        "elevationFt": 16925,
+        "lastUpdated": "25 min ago",
+        "distanceKm": 18
+      },
+      {
+        "id": "chhabi-pass",
+        "slug": "chhabi-pass",
+        "name": "Chhabi Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Kanchenjunga North Glacier Route",
+        "status": "OPEN",
+        "elevationFt": 18143,
+        "lastUpdated": "40 min ago",
+        "distanceKm": 26
+      }
+    ],
+    "overview": {
+      "openedYear": "Centuries-old Himalayan salt and wool trade route",
+      "lengthMiles": 22,
+      "lengthKm": 35,
+      "annualSnowfallIn": 190,
+      "annualSnowfallM": 4.8,
+      "summary": "Tipta La is a historic high Himalayan gateway between Nepal and China. Situated north of the famed Walung village of Olangchung Gola, this 5,118 m pass provides the shortest overland trade connection between the Koshi river basin and the Tibetan plateau. It is currently being modernized into an international trading corridor with road connectivity under the Tamor Corridor Highway initiative."
+    },
+    "isSeasonal": true,
+    "seasonalClosureInfo": {
+      "typicalClosure": "December to March (Sub-zero winter blizzards and high-altitude snowdrifts)",
+      "typicalReopening": "April to November (Open for border trade fairs and seasonal commerce)",
+      "description": "The pass is subject to harsh Tibetan plateau winters with temperatures plunging below -25°C. Border trade and transit operate vigorously throughout spring, summer, and autumn."
+    },
+    "openingDateInfo": {
+      "year": 2026,
+      "statusText": "Open for Border Transit & Seasonal Trade — Road development progressing",
+      "expectedOpeningWindow": "April to Late November",
+      "closingWindow": "December to March",
+      "clearanceAgency": "Nepal Department of Roads, Ministry of Home Affairs & Chinese Border Authorities",
+      "notes": "Local residents and authorized traders cross for bilateral border trade markets."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Sunny & Crisp Plateau Breeze",
+        "tempHighF": 34,
+        "tempLowF": 16,
+        "icon": "sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Sub-Zero Starlit Sky",
+        "tempHighF": 20,
+        "tempLowF": 11,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Clear Alpine Sunshine",
+        "tempHighF": 36,
+        "tempLowF": 18,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Mostly Sunny & Windy",
+        "tempHighF": 33,
+        "tempLowF": 15,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Passing High Cirrus",
+        "tempHighF": 31,
+        "tempLowF": 14,
+        "icon": "cloud"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Calm & Clear",
+        "tempHighF": 35,
+        "tempLowF": 17,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Nepal Department of Roads",
+        "type": "North-South Tamor Corridor Status",
+        "url": "https://dor.gov.np/"
+      },
+      {
+        "name": "Ministry of Foreign Affairs Nepal",
+        "type": "Border Trade Point Updates",
+        "url": "https://mofa.gov.np/"
+      },
+      {
+        "name": "Nepal Tourism Board",
+        "type": "Taplejung Frontier Travel Guidelines",
+        "url": "https://www.welcomenepal.com/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Koshi Province (Taplejung District), Nepal / Tibet (China) Border",
+      "mountainRange": "Northern Great Himalayas / Tibetan Plateau Frontier",
+      "elevationSummary": "16,791 ft (5,118 m) Border Pass Summit",
+      "connects": "Taplejung & Olangchung Gola (Nepal) with Dinggye County / Riwu (Tibet, China)",
+      "nearestTown": "Olangchung Gola (18 km south) • Riwu (Tibet, 25 km north) • Taplejung (80 km)",
+      "roadType": "Historic Trans-Himalayan Trade Pass / Developing 4WD Motor Track",
+      "bestTime": "May to October",
+      "highlight": "Strategic international border pass with direct road alignment connecting eastern Nepal to the Tibetan plateau highway network."
+    },
+    "routeDetails": {
+      "distanceKm": 35,
+      "distanceMiles": 22,
+      "duration": "1 day trek / 4WD track from Olangchung Gola to Tipta La",
+      "origin": "Olangchung Gola Village (3,200 m)",
+      "destination": "Tipta La Border Marker (5,118 m)",
+      "waypoints": [
+        "Olangchung Gola (3,200 m) — Historic trading settlement and heritage monastery",
+        "Upper Tamor River Valley — Following the scenic riverbed and birch forests",
+        "Mauwatar / Langchhung — Pasture camp and seasonal herder settlements",
+        "High Alpine Ascent — Winding dirt track and moraine curves above tree line",
+        "Tipta La Pass Summit (5,118 m) — Nepal-China international border pillar"
+      ]
+    },
+    "drivingInfo": {
+      "summary": "The Tamor Corridor Highway is actively being constructed toward Tipta La. High-clearance four-wheel-drive vehicles can access substantial sections during dry seasons, while the summit crossing remains an unpaved border track.",
+      "characteristics": [
+        "High-altitude unpaved mountain track with rough gravel and river crossings",
+        "High elevation (5,118 m) with rapid temperature drops and high winds",
+        "Active road expansion connecting Nepal's national road grid to Tibet",
+        "Restricted border zone requiring appropriate documentation and permits"
+      ],
+      "switchbacksCount": "Gradual valley floor ascent followed by high ridge switchbacks",
+      "safetyAndEtiquette": [
+        "Respect international border protocols and carry valid travel documentation and permits",
+        "Ensure 4WD vehicles are equipped with high-altitude engine tuning and spare fuel",
+        "Watch for heavy construction machinery and loose rock along newly carved sections"
+      ],
+      "motorcycleTips": [
+        "Adventure dual-sport motorcycles can navigate dry-season tracks up to the upper valley camps with caution."
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "Rugged gravel track suitable for high-altitude bikepacking expeditions with fat-tire or gravel-suspension bikes.",
+      "approaches": [
+        {
+          "name": "South Approach from Olangchung Gola",
+          "origin": "Olangchung Gola (3,200 m)",
+          "distanceKm": 24,
+          "distanceMiles": 14.9,
+          "elevationGainM": 1918,
+          "elevationGainFt": 6292,
+          "avgGradient": "8%",
+          "maxGradient": "16%",
+          "hairpins": 10,
+          "description": "Steady ascent following the upper Tamor River valley toward the Tibetan border crest."
+        }
+      ],
+      "bestSeason": "May to October",
+      "safetyTips": [
+        "Prepare for high winds on upper plateau",
+        "Pack thermal windproof gear"
+      ],
+      "bikeDayInfo": "Challenging high-altitude gravel climb along the ancient trade corridor."
+    },
+    "distancesTable": [
+      {
+        "location": "Olangchung Gola",
+        "distance": "18 km (11.2 mi)",
+        "route": "Upper Tamor Track",
+        "notes": "Heritage stone village and monastery"
+      },
+      {
+        "location": "Riwu Town (Tibet, China)",
+        "distance": "25 km (15.5 mi)",
+        "route": "China Border Highway",
+        "notes": "Commercial town in Dinggye County, Tibet"
+      },
+      {
+        "location": "Taplejung Bazaar",
+        "distance": "80 km (49.7 mi)",
+        "route": "Tamor Corridor Road",
+        "notes": "District capital and airport"
+      },
+      {
+        "location": "Bhadrapur (Terai Airport)",
+        "distance": "290 km (180 mi)",
+        "route": "Mechi & Tamor Highways",
+        "notes": "Direct connection to southern plains"
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "The Ancient Salt and Wool Highway of Eastern Nepal",
+        "content": "Tipta La has served for centuries as one of the most vital arteries of trans-Himalayan commerce. The indigenous Walung traders of Olangchung Gola relied on Tipta La to drive massive caravans of yaks loaded with raw salt, sheep wool, turquoise, and yak butter from the Tibetan plateau into the valleys of Nepal, returning with grain, paper, spices, and brass utensils."
+      },
+      {
+        "title": "The North-South Tamor Economic Corridor",
+        "content": "In modern Nepal, Tipta La is recognized as a cornerstone of strategic connectivity. The Nepal Department of Roads is constructing the North-South Tamor Highway, designed to provide a fast, reliable overland link between the Indian border at Jogbani / Biratnagar, across eastern Nepal via Taplejung, and directly to China through Tipta La. This transforms the ancient mule track into a dynamic international commercial transit route."
+      },
+      {
+        "title": "High-Altitude Landscape and Wildlife",
+        "content": "Perched on the rim of the Tibetan plateau at 5,118 meters, Tipta La features a stark, dramatic landscape of wind-scoured gravel plains, frozen glacial meltstreams, and towering peaks. The surrounding slopes are home to Tibetan wild asses (kiang), snow leopards, blue sheep, and migratory birds that cross the Himalayan divide each spring and autumn."
+      }
+    ],
+    "customSeo": {
+      "title": "Tipta La Pass (Tiptala, 5,118 m) Nepal: Road Status, Border Trade & Weather | LivePassWatch",
+      "description": "Check Tipta La Pass (5,118 m / 16,791 ft) on Nepal-China border: live road status, Tamor Corridor highway progress, weather, elevation & 20 FAQs.",
+      "h1": "Tipta La Pass Road Conditions, Weather & Pass Status"
+    },
+    "searchKeywords": [
+      "tipta la pass",
+      "tiptala pass nepal",
+      "tiptala bhanjyang taplejung",
+      "tipta la nepal china border",
+      "tamor corridor tipta la",
+      "tipta la elevation",
+      "tipta la road status",
+      "is tipta la open",
+      "tipta la weather",
+      "olangchung gola to tipta la",
+      "tiptala pass road conditions",
+      "taplejung border pass china",
+      "tiptala pass trade route"
+    ],
+    "aliases": [
+      "Tiptala Pass",
+      "Tiptala Bhanjyang",
+      "Tipta Pass",
+      "Tiptala La"
+    ],
+    "faqs": [
+      {
+        "question": "Is Tipta La Pass open right now?",
+        "answer": "Yes, Tipta La Pass (5,118 m / 16,791 ft) is currently open for bilateral border trade and local transit."
+      },
+      {
+        "question": "What is the elevation of Tipta La Pass?",
+        "answer": "Tipta La is situated at an elevation of 5,118 meters (16,791 feet) above sea level."
+      },
+      {
+        "question": "Where is Tipta La Pass located?",
+        "answer": "Tipta La is located on the international border between Taplejung District (Koshi Province, Nepal) and Dinggye County (Tibet Autonomous Region, China)."
+      },
+      {
+        "question": "Is there a motorable road to Tipta La?",
+        "answer": "Yes, the Nepal Government is constructing the Tamor Corridor Highway, and significant stretches from Olangchung Gola to the border are now passable by 4WD vehicles during dry seasons."
+      },
+      {
+        "question": "Can international tourists cross the border into China at Tipta La?",
+        "answer": "Currently, the border crossing at Tipta La is primarily open for bilateral trade and local cross-border transit; international tourist crossing requires special bilateral visas and permits."
+      },
+      {
+        "question": "What is the history of trade across Tipta La?",
+        "answer": "Tipta La was historically the main salt-trade route for the Walung community, facilitating trade of Tibetan rock salt, yak wool, and herbs for Nepali grain and tea."
+      },
+      {
+        "question": "When is the best season to visit Tipta La?",
+        "answer": "The best time is between May and October when temperatures are milder and roads are free of heavy winter snow."
+      },
+      {
+        "question": "Does Tipta La close in winter?",
+        "answer": "Yes, during winter (December to March), sub-zero blizzard conditions and snowdrifts make regular vehicular transit across the summit impractical."
+      },
+      {
+        "question": "What permits are required to visit Tipta La from Nepal?",
+        "answer": "Visitors require the Kanchenjunga Conservation Area Project (KCAP) permit and the Kanchenjunga Restricted Area Permit (RAP)."
+      },
+      {
+        "question": "How far is Tipta La from Olangchung Gola?",
+        "answer": "Tipta La is approximately 18 km (11 miles) north of Olangchung Gola village."
+      },
+      {
+        "question": "How long does it take to travel from Taplejung to Tipta La?",
+        "answer": "By a combination of 4WD vehicle and trekking, it typically takes 2 to 3 days from Taplejung Bazaar."
+      },
+      {
+        "question": "What is the importance of the North-South Tamor Corridor?",
+        "answer": "The Tamor Corridor connects the southern plains of Nepal (Biratnagar/Jogbani) directly to the Tibetan border at Tipta La, creating a critical international transit route."
+      },
+      {
+        "question": "What is the climate like at Tipta La?",
+        "answer": "It features a high alpine / semi-arid Tibetan plateau climate with dry cold winds, intense UV radiation, and freezing nights."
+      },
+      {
+        "question": "Are there accommodations near Tipta La?",
+        "answer": "Basic homestays and lodges are located in Olangchung Gola (3,200 m); above the village, temporary seasonal camps or self-sufficient camping are required."
+      },
+      {
+        "question": "Is altitude sickness a risk at Tipta La?",
+        "answer": "Yes, at over 5,100 meters, altitude sickness (AMS) is a significant risk; acclimatization in Olangchung Gola is strongly recommended."
+      },
+      {
+        "question": "What wildlife is found around Tipta La?",
+        "answer": "The area is inhabited by Tibetan wild ass (kiang), snow leopards, blue sheep (bharal), and alpine lammergeiers."
+      },
+      {
+        "question": "What vehicles can drive on the Tipta La road?",
+        "answer": "High-clearance 4WD SUVs, rugged trucks, and dual-sport motorcycles during dry seasonal conditions."
+      },
+      {
+        "question": "Is there mobile phone network at Tipta La?",
+        "answer": "Chinese mobile networks can occasionally be picked up near the border crest, while Nepali networks terminate lower in the valley."
+      },
+      {
+        "question": "What gear is recommended for Tipta La?",
+        "answer": "Warm windproof down layers, thermal underwear, UV glacier glasses, sun protection, sturdy boots, and emergency medical kits."
+      },
+      {
+        "question": "How does Tipta La contribute to the local economy of Taplejung?",
+        "answer": "It allows local residents to import essential Tibetan household goods, construction materials, and food supplies while exporting Nepali agricultural produce."
+      }
+    ]
+  },
+
+  {
+    "id": "olangchungola-pass",
+    "slug": "olangchungola-pass",
+    "name": "Olangchungola Pass (Walungchun Gola)",
+    "country": "Nepal",
+    "countryCode": "NPL",
+    "continent": "Asia",
+    "state": "Koshi Province",
+    "highway": "Upper Tamor Valley Trail / GHT Border Route",
+    "elevationFt": 15748,
+    "elevationM": 4800,
+    "coordinates": {
+      "lat": 27.698,
+      "lng": 87.785
+    },
+    "status": "OPEN",
+    "statusDetail": "Open for trekking & cultural exploration — 450-year-old Diki Chhyoling Gompa and village homestays open.",
+    "lastUpdated": "35 minutes ago",
+    "description": "Olangchungola Pass (Walungchun Gola, 4,800 m / 15,748 ft) refers to the historic high-pass frontier corridor in the upper Tamor River valley of northern Taplejung, Koshi Province. Centered on the famous 450-year-old stone village of Olangchung Gola (3,200 m) with its revered Diki Chhyoling Gompa, this ancient pass network connected the Walung people with Tibetan salt merchants for centuries. Today, it serves as a premier junction on the Great Himalaya Trail connecting Kanchenjunga with the Lumba Sumba wilderness.",
+    "image": "/olangchungola-pass.jpg",
+    "weather": {
+      "tempF": 44,
+      "tempC": 7,
+      "condition": "Partly Sunny & Mild Mountain Breeze",
+      "icon": "cloud-sun"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Snow-free in village valley; light snow on upper ridges above 4,400 m"
+    },
+    "wind": {
+      "speedKmh": 16,
+      "speedMph": 10,
+      "direction": "NW",
+      "description": "Gentle Valley Breeze"
+    },
+    "roadCondition": "Tamor river valley trail and developing earthen road. Accessible via scenic trekking trail through Lelep and Iladanda; 4WD tractor/jeep service operates seasonally along lower riverbed sectors.",
+    "chainRequirement": "Trekking boots, rain/wind layers, and warm fleeces. 4WD vehicles required on lower rough road approaches.",
+    "cameras": [
+      {
+        "id": "olang-cam-village",
+        "title": "Olangchung Gola — Historic Gompa & Village",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Elevation 3,200 m Village Center",
+        "direction": "Looking North Toward Diki Chhyoling Monastery",
+        "location": "Olangchung Gola Heritage Square",
+        "source": "Kanchenjunga Conservation Area Project",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.welcomenepal.com/"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "tipta-la",
+        "slug": "tipta-la",
+        "name": "Tipta La Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Tamor Trade Corridor",
+        "status": "OPEN",
+        "elevationFt": 16791,
+        "lastUpdated": "30 min ago",
+        "distanceKm": 18
+      },
+      {
+        "id": "lumba-sumba-pass",
+        "slug": "lumba-sumba-pass",
+        "name": "Lumba Sumba Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Great Himalaya Trail",
+        "status": "OPEN",
+        "elevationFt": 16925,
+        "lastUpdated": "25 min ago",
+        "distanceKm": 14
+      },
+      {
+        "id": "selele-pass",
+        "slug": "selele-pass",
+        "name": "Selele Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Kanchenjunga Circuit Trail",
+        "status": "OPEN",
+        "elevationFt": 14074,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 34
+      }
+    ],
+    "overview": {
+      "openedYear": "Over 600 years of Walung settlement and Himalayan trade",
+      "lengthMiles": 20,
+      "lengthKm": 32,
+      "annualSnowfallIn": 120,
+      "annualSnowfallM": 3,
+      "summary": "Olangchung Gola is one of the most culturally fascinating and architecturally unique Himalayan settlements in Eastern Nepal. Dominated by multi-story stone houses with hand-carved wooden balconies, the village has stood for centuries at the crossroads of trans-Himalayan commerce. The sacred Diki Chhyoling Gompa, built in the 16th century, houses golden butter lamps that have burned continuously for over four centuries."
+    },
+    "isSeasonal": false,
+    "seasonalClosureInfo": {
+      "typicalClosure": "Village accessible year-round; high border passes snowy in Jan–Feb",
+      "typicalReopening": "Open all year for cultural visits; March–November ideal",
+      "description": "Olangchung Gola village at 3,200 m remains populated throughout the winter, although the high pass routes toward Tibet and Lumba Sumba receive heavy winter snow."
+    },
+    "openingDateInfo": {
+      "year": 2026,
+      "statusText": "Open Year-Round — Prime Trekking & Cultural Season Active",
+      "expectedOpeningWindow": "All Year (March to November Best)",
+      "closingWindow": "Open All Year",
+      "clearanceAgency": "Phaktanglung Rural Municipality & KCAP",
+      "notes": "Warm homestays and community lodges welcome trekkers and researchers."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Sunny with Afternoon Clouds",
+        "tempHighF": 48,
+        "tempLowF": 32,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Clear Mountain Night",
+        "tempHighF": 35,
+        "tempLowF": 28,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Mostly Sunny & Pleasant",
+        "tempHighF": 50,
+        "tempLowF": 33,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Passing Valley Mist",
+        "tempHighF": 46,
+        "tempLowF": 30,
+        "icon": "cloud"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Bright & Clear",
+        "tempHighF": 49,
+        "tempLowF": 31,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Sunny Alpine Morning",
+        "tempHighF": 51,
+        "tempLowF": 34,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Nepal Tourism Board",
+        "type": "Cultural Heritage Tourism Info",
+        "url": "https://www.welcomenepal.com/"
+      },
+      {
+        "name": "KCAP (Kanchenjunga Conservation Area Project)",
+        "type": "Community Forestry & Tourism Updates",
+        "url": "https://dnpwc.gov.np/"
+      },
+      {
+        "name": "Department of Archaeology Nepal",
+        "type": "Diki Chhyoling Gompa Heritage Records",
+        "url": "http://doa.gov.np/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Koshi Province (Taplejung District), Nepal",
+      "mountainRange": "Kanchenjunga Himal (Upper Tamor Basin)",
+      "elevationSummary": "15,748 ft (4,800 m) Upper Ridge Pass • 10,500 ft (3,200 m) Historic Village",
+      "connects": "Lower Tamor River with Lumba Sumba GHT Route & Tibetan Frontier",
+      "nearestTown": "Lelep (22 km south) • Taplejung Bazaar (55 km south)",
+      "roadType": "Himalayan Heritage Valley Trail & High Ridge Route",
+      "bestTime": "March to May & September to November",
+      "highlight": "450-year-old Diki Chhyoling Gompa, traditional Walung Sherpa stone architecture, and Great Himalaya Trail nexus."
+    },
+    "routeDetails": {
+      "distanceKm": 32,
+      "distanceMiles": 20,
+      "duration": "2 days trek from Sekathum/Lelep to Olangchung Gola",
+      "origin": "Lelep / Sekathum (1,640 m)",
+      "destination": "Olangchung Gola (3,200 m)",
+      "waypoints": [
+        "Sekathum (1,640 m) — Junction of Ghunsa Khola and Tamor River",
+        "Amjilosa Gorge Trail — Climbing through dense subtropical bamboo and rhododendron",
+        "Iladanda (2,050 m) — Scenic terraced river camp",
+        "Jongim (2,600 m) — High riverside meadows and suspension bridge crossings",
+        "Olangchung Gola (3,200 m) — Sacred stone village, monastery, and homestay hub"
+      ]
+    },
+    "drivingInfo": {
+      "summary": "Earthen road construction along the Tamor Corridor is gradually approaching Olangchung Gola. Currently, 4WD vehicles reach below the village during the dry season, with the final approach on foot across wooden suspension bridges.",
+      "characteristics": [
+        "Scenic river valley ascent following the roaring Tamor River",
+        "Rich cultural transitions from Limbu and Rai villages to Tibetan-Walung Buddhist hamlets",
+        "Stone-paved village alleys with wooden mani prayer wheels and chortens"
+      ],
+      "switchbacksCount": "Gradual valley trail with stone steps",
+      "safetyAndEtiquette": [
+        "Remove shoes before entering Diki Chhyoling Gompa and request permission before photographing sacred statues",
+        "Support local community homestays and sample traditional butter tea and tsampa",
+        "Do not drink untreated river water; use boiled or filtered water"
+      ],
+      "motorcycleTips": [
+        "Dual-sport motorcycles can reach lower road-head villages in dry seasons."
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "Gravel bikepacking possible on lower Tamor road sections; upper gorge requires portage.",
+      "approaches": [
+        {
+          "name": "Tamor Valley Route",
+          "origin": "Taplejung Bazaar (1,820 m)",
+          "distanceKm": 55,
+          "distanceMiles": 34.2,
+          "elevationGainM": 1380,
+          "elevationGainFt": 4527,
+          "avgGradient": "4%",
+          "maxGradient": "14%",
+          "hairpins": 15,
+          "description": "Follows the Tamor river valley northward passing through lush subtropical gorges to the high alpine bowl of Walungchung."
+        }
+      ],
+      "bestSeason": "October to May",
+      "safetyTips": [
+        "Check monsoon landslide clearance on lower roads"
+      ],
+      "bikeDayInfo": "Challenging trans-Himalayan valley route."
+    },
+    "distancesTable": [
+      {
+        "location": "Lelep Village",
+        "distance": "22 km (13.7 mi)",
+        "route": "Tamor River Trail",
+        "notes": "KCAP checkpost and rural council center"
+      },
+      {
+        "location": "Tipta La Border Pass",
+        "distance": "18 km (11.2 mi)",
+        "route": "North Border Track",
+        "notes": "Historic pass to Tibet (China)"
+      },
+      {
+        "location": "Thudam (Arun Valley)",
+        "distance": "26 km (16.2 mi)",
+        "route": "Via Lumba Sumba Pass",
+        "notes": "Great Himalaya Trail wilderness link"
+      },
+      {
+        "location": "Taplejung Bazaar",
+        "distance": "55 km (34.2 mi)",
+        "route": "Tamor Corridor",
+        "notes": "District capital, hospital, and airport"
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "The Living Heritage of Walungchung Gola",
+        "content": "Nestled in a wide glacial amphitheater at 3,200 meters, Olangchung Gola (known locally as Walung) is one of Nepal's best-preserved cultural gems. The Walung people have maintained their distinctive language, dress, and Tibetan Buddhist customs for generations. The village features stone-built multi-story dwellings with intricate timber joinery, wood-shingled roofs weighted with river stones, and prayer flags fluttering from every rooftop."
+      },
+      {
+        "title": "Diki Chhyoling Gompa — Sacred 16th-Century Monastery",
+        "content": "The spiritual heart of Olangchung Gola is the Diki Chhyoling Gompa, constructed in the late 16th century. Perched on a gentle knoll overlooking the village, the monastery preserves priceless centuries-old thangkas, hand-illuminated Buddhist scriptures (Kangyur and Tengyur), and an eternal butter lamp that has been kept continuously alight by resident lamas for over 400 years."
+      },
+      {
+        "title": "Nexus of the Great Himalaya Trail",
+        "content": "Olangchung Gola occupies a pivotal crossroads on the Great Himalaya Trail. It is where trekkers emerging from the Kanchenjunga Circuit can turn westward to embark on the high wilderness crossing of Lumba Sumba Pass (5,159 m) into Makalu Barun, or continue northward up the Tamor River to the international border pass at Tipta La."
+      }
+    ],
+    "customSeo": {
+      "title": "Olangchungola Pass (Walungchun Gola, 4,800 m) Nepal: Road Status & Heritage Guide | LivePassWatch",
+      "description": "Check Olangchungola Pass (Walungchun Gola, 4,800 m) in Taplejung Nepal: live trail status, Diki Chhyoling Gompa info, weather, route maps & 20 FAQs.",
+      "h1": "Olangchungola Pass Road Conditions, Weather & Pass Status"
+    },
+    "searchKeywords": [
+      "olangchungola pass",
+      "walungchun gola nepal",
+      "olangchung gola taplejung",
+      "diki chhyoling gompa",
+      "olangchungola elevation",
+      "olangchung gola trail status",
+      "is olangchungola pass open",
+      "olangchung gola weather",
+      "olangchung gola great himalaya trail",
+      "walung people taplejung",
+      "olangchung gola road conditions",
+      "olangchung gola permits nepal",
+      "taplejung to olangchung gola trek"
+    ],
+    "aliases": [
+      "Walungchun Gola",
+      "Olangchung Gola",
+      "Walung Pass",
+      "Olangchungola"
+    ],
+    "faqs": [
+      {
+        "question": "Is Olangchungola Pass open right now?",
+        "answer": "Yes, Olangchungola Pass and the historic village of Olangchung Gola (3,200 m) are open year-round for trekking and cultural exploration."
+      },
+      {
+        "question": "What is the elevation of Olangchungola?",
+        "answer": "The historic village of Olangchung Gola is at 3,200 meters (10,500 feet), while the surrounding upper border passes reach up to 4,800–5,118 meters."
+      },
+      {
+        "question": "Where is Olangchungola located?",
+        "answer": "Olangchungola is located in the upper Tamor River valley of Taplejung District, Koshi Province, in the Kanchenjunga Conservation Area of Eastern Nepal."
+      },
+      {
+        "question": "What is Diki Chhyoling Gompa?",
+        "answer": "Diki Chhyoling Gompa is a revered 450-year-old Tibetan Buddhist monastery in Olangchung Gola famous for an eternal butter lamp that has burned continuously for over four centuries."
+      },
+      {
+        "question": "Who are the Walung people?",
+        "answer": "The Walung are the indigenous Tibetan-heritage inhabitants of the upper Tamor valley, renowned for their ancient trading history, stone architecture, and distinct dialect."
+      },
+      {
+        "question": "How do you get to Olangchungola from Kathmandu?",
+        "answer": "Fly to Bhadrapur or Suketar, drive to Taplejung / Sekathum, and trek for 2 to 3 days along the scenic Tamor River valley."
+      },
+      {
+        "question": "When is the best time to visit Olangchungola?",
+        "answer": "March to May (spring rhododendrons and monastery festivals) and September to November (crisp clear skies and harvest season) are ideal."
+      },
+      {
+        "question": "Are there lodges and homestays in Olangchungola?",
+        "answer": "Yes, community-run homestays and traditional stone lodges offer authentic hospitality, local meals, warm beds, and butter tea."
+      },
+      {
+        "question": "What permits are required to visit Olangchungola?",
+        "answer": "Trekkers require the Kanchenjunga Conservation Area Project (KCAP) Entry Permit and the Kanchenjunga Restricted Area Permit (RAP)."
+      },
+      {
+        "question": "Is a guide mandatory for Olangchungola?",
+        "answer": "Yes, Nepal immigration regulations mandate that all foreign visitors be accompanied by a licensed trekking guide."
+      },
+      {
+        "question": "Is there road access to Olangchungola?",
+        "answer": "The North-South Tamor Corridor road is under construction; seasonal 4WD tracks currently reach lower valley settlements near the village."
+      },
+      {
+        "question": "What role does Olangchungola play on the Great Himalaya Trail?",
+        "answer": "It is the essential trading junction connecting the Kanchenjunga region to the Lumba Sumba Pass wilderness trek into Makalu Barun."
+      },
+      {
+        "question": "Does Olangchungola stay open during winter?",
+        "answer": "Yes, the village is inhabited all winter, though temperatures drop significantly and snow falls occasionally in January and February."
+      },
+      {
+        "question": "What local foods can you try in Olangchungola?",
+        "answer": "Local specialties include traditional tsampa (roasted barley), yak butter tea, dried yak cheese (chhurpi), tongba (fermented millet drink), and buckwheat rotis."
+      },
+      {
+        "question": "Is mobile phone network available in Olangchungola?",
+        "answer": "Nepal Telecom (NTC) / CDMA mobile service is intermittently available in the village center."
+      },
+      {
+        "question": "What wildlife can be seen around Olangchungola?",
+        "answer": "Red pandas, snow leopards, blue sheep, musk deer, and Himalayan monal pheasants live in the surrounding protected forests."
+      },
+      {
+        "question": "What are the main festivals celebrated in Olangchungola?",
+        "answer": "Lhosar (Tibetan New Year) and the annual Futuk sacred masked dance festival at Diki Chhyoling Gompa."
+      },
+      {
+        "question": "How long should I spend in Olangchungola?",
+        "answer": "At least 2 nights are recommended to explore the monastery, experience local homestays, and acclimatize before high pass crossings."
+      },
+      {
+        "question": "Are there medical facilities in Olangchungola?",
+        "answer": "A basic community health post operates in the village; severe medical emergencies require helicopter evacuation."
+      },
+      {
+        "question": "Can I purchase hand-woven rugs in Olangchungola?",
+        "answer": "Yes, Walung women are renowned for weaving exquisite traditional Tibetan-style wool rugs and yak-wool blankets."
+      }
+    ]
+  },
+
+  {
+    "id": "chhabi-pass",
+    "slug": "chhabi-pass",
+    "name": "Chhabi Pass (Chhyabuk La)",
+    "country": "Nepal",
+    "countryCode": "NPL",
+    "continent": "Asia",
+    "state": "Koshi Province",
+    "highway": "Kanchenjunga North Glacier Route (Pangpema Wilderness)",
+    "elevationFt": 18143,
+    "elevationM": 5530,
+    "coordinates": {
+      "lat": 27.782,
+      "lng": 88.081
+    },
+    "status": "OPEN",
+    "statusDetail": "Open for technical mountaineering & glacier expeditions — full alpine mountaineering equipment required.",
+    "lastUpdated": "40 minutes ago",
+    "description": "Chhabi Pass (Chhyabuk La / Chabuk Pass, 5,530 m / 18,143 ft) is an extreme high-altitude alpine pass located in the far northeastern reaches of Taplejung District, Koshi Province, near the northern glacier approaches of Mount Kanchenjunga (8,586 m). Situated beyond the classic Pangpema North Base Camp overlooking the Chhabuk Glacier along the Tibetan borderlands, this pass is reserved for skilled mountaineers and exploratory alpine expeditions seeking remote wilderness traverses in the shadow of Kanchenjunga North Face and the Chang Himal.",
+    "image": "/chhabi-chhyabuk-pass.jpg",
+    "weather": {
+      "tempF": 24,
+      "tempC": -4,
+      "condition": "Clear & Freezing Glacial Wind",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 60,
+      "depthIn": 24,
+      "condition": "Permanent glacial ice, crevasses, and wind-scoured snowdrifts"
+    },
+    "wind": {
+      "speedKmh": 35,
+      "speedMph": 22,
+      "direction": "NW",
+      "description": "Severe Glacial Mountain Gale"
+    },
+    "roadCondition": "Extreme mountaineering and glaciated alpine route. Navigates active glacial moraines, crevassed icefields, and steep loose scree ridges. Roped travel and crampons mandatory.",
+    "chainRequirement": "Strictly technical mountaineering: Crampons, ice axe, climbing harness, climbing helmets, dynamic ropes, and high-altitude insulated boots mandatory.",
+    "cameras": [
+      {
+        "id": "chhabi-cam-glacier",
+        "title": "Chhabuk Glacier — Kanchenjunga North Face",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Elevation 5,530 m Glacial Crest",
+        "direction": "Looking South toward Kanchenjunga North Wall (8,586 m)",
+        "location": "Chhyabuk High Col",
+        "source": "Nepal Mountaineering Association (NMA)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.welcomenepal.com/"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "jhingsang-la",
+        "slug": "jhingsang-la",
+        "name": "Jhingsang La",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Jongsang Glacier Route",
+        "status": "OPEN",
+        "elevationFt": 20157,
+        "lastUpdated": "45 min ago",
+        "distanceKm": 12
+      },
+      {
+        "id": "selele-pass",
+        "slug": "selele-pass",
+        "name": "Selele Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Kanchenjunga Circuit Trail",
+        "status": "OPEN",
+        "elevationFt": 14074,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 28
+      },
+      {
+        "id": "tipta-la",
+        "slug": "tipta-la",
+        "name": "Tipta La Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Tamor Trade Corridor",
+        "status": "OPEN",
+        "elevationFt": 16791,
+        "lastUpdated": "30 min ago",
+        "distanceKm": 26
+      }
+    ],
+    "overview": {
+      "openedYear": "First explored during early Himalayan mapping & Kanchenjunga North expeditions",
+      "lengthMiles": 16,
+      "lengthKm": 26,
+      "annualSnowfallIn": 340,
+      "annualSnowfallM": 8.6,
+      "summary": "Chhabi Pass (Chhyabuk La) is one of the wildest and most dramatic glaciated crossings in the Kanchenjunga massif. Rising to 5,530 meters above the Chhabuk and Kanchenjunga glaciers, it commands a monumental front-row view of the colossal North Face of Kanchenjunga (8,586 m), Yalung Kang (8,505 m), and Chang Himal (6,802 m)."
+    },
+    "isSeasonal": true,
+    "seasonalClosureInfo": {
+      "typicalClosure": "November to April (Extreme winter blizzards, deep crevasses & avalanches)",
+      "typicalReopening": "May & late September to October (Window for alpine mountaineering)",
+      "description": "Due to severe glaciated terrain and extreme high altitude, Chhyabuk La is accessible only during optimal pre-monsoon and post-monsoon climbing windows."
+    },
+    "openingDateInfo": {
+      "year": 2026,
+      "statusText": "Alpine Climbing Window Open — Technical expedition permits required",
+      "expectedOpeningWindow": "May & Late September to October",
+      "closingWindow": "November to April",
+      "clearanceAgency": "Department of Tourism Mountaineering Section & NMA",
+      "notes": "Full mountaineering expedition logistics with licensed Sherpa climbing guides and rescue insurance required."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Clear Glacial Sunshine",
+        "tempHighF": 28,
+        "tempLowF": 12,
+        "icon": "sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Severe Glacial Freeze",
+        "tempHighF": 16,
+        "tempLowF": 8,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Sunny & High Ridge Wind",
+        "tempHighF": 30,
+        "tempLowF": 14,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Passing High Cirrus",
+        "tempHighF": 27,
+        "tempLowF": 11,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Partly Cloudy & Cold",
+        "tempHighF": 25,
+        "tempLowF": 10,
+        "icon": "cloud"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Crisp Alpine Horizon",
+        "tempHighF": 29,
+        "tempLowF": 13,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Nepal Department of Tourism Mountaineering Wing",
+        "type": "Mountaineering Expedition Permits",
+        "url": "https://tourismdepartment.gov.np/"
+      },
+      {
+        "name": "Nepal Mountaineering Association (NMA)",
+        "type": "Climbing Peak & High Pass Guidelines",
+        "url": "https://nepalmountaineering.org/"
+      },
+      {
+        "name": "Himalayan Rescue Association (HRA)",
+        "type": "High Altitude Medical Guidelines",
+        "url": "https://www.himalayanrescue.org/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Koshi Province (Taplejung), Nepal",
+      "mountainRange": "Kanchenjunga Massif / Chang Himal Range",
+      "elevationSummary": "18,143 ft (5,530 m) Glacial Pass Summit",
+      "connects": "Pangpema (North Base Camp) with Chhabuk Glacier & Northern Border Basin",
+      "nearestTown": "Ghunsa (28 km southwest) • Kambachen (18 km southwest) • Taplejung (85 km)",
+      "roadType": "Extreme Glaciated Alpine Mountaineering Route",
+      "bestTime": "April–May & Late September–October",
+      "highlight": "Towering glacial amphitheater directly beneath Kanchenjunga North (8,586 m), Yalung Kang (8,505 m), and Chang Himal."
+    },
+    "routeDetails": {
+      "distanceKm": 26,
+      "distanceMiles": 16,
+      "duration": "2–3 days alpine expedition from Pangpema High Camp",
+      "origin": "Pangpema North Base Camp (5,143 m)",
+      "destination": "Chhabi Pass Crest (5,530 m)",
+      "waypoints": [
+        "Pangpema Base Camp (5,143 m) — Kanchenjunga North Face viewpoint",
+        "Upper Kanchenjunga Lateral Moraine — Scrambling across granite boulders and ice",
+        "Chhabuk Glacier Tongue — Donning crampons and roping up for crevasse navigation",
+        "Chhabi Pass Summit (5,530 m) — Extreme high-altitude ice ridge overlooking the Tibetan border divide"
+      ]
+    },
+    "drivingInfo": {
+      "summary": "Extreme glaciated high-altitude alpine terrain. Completely inaccessible to any motorized vehicles. Travel is solely on foot using alpine mountaineering equipment.",
+      "characteristics": [
+        "Active glaciated terrain requiring rope-team travel",
+        "Elevation exceeding 5,500 meters with extreme thin air and severe cold",
+        "Crevasse risk and loose moraine scree slopes"
+      ],
+      "switchbacksCount": "Glacial climbing line",
+      "safetyAndEtiquette": [
+        "Rope up across all snow-covered glacier sections to prevent crevasse falls",
+        "Carry satellite emergency communication and comprehensive high-altitude medical kits",
+        "Monitor avalanche danger following unseasonal snowfall"
+      ],
+      "motorcycleTips": [
+        "Vehicles cannot operate in glaciated alpine terrain."
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "Glaciated mountaineering terrain completely impassable for bicycles.",
+      "approaches": [
+        {
+          "name": "North Glacier Route",
+          "origin": "Pangpema (5,143 m)",
+          "distanceKm": 12,
+          "distanceMiles": 7.5,
+          "elevationGainM": 387,
+          "elevationGainFt": 1270,
+          "avgGradient": "6%",
+          "maxGradient": "25%",
+          "hairpins": 0,
+          "description": "Glacier traverse on ice and lateral moraine."
+        }
+      ],
+      "bestSeason": "May & October",
+      "safetyTips": [
+        "Full mountaineering kit required"
+      ],
+      "bikeDayInfo": "Technical mountaineering only."
+    },
+    "distancesTable": [
+      {
+        "location": "Pangpema (North Base Camp)",
+        "distance": "8 km (5.0 mi)",
+        "route": "Glacier Route",
+        "notes": "Classic north face viewpoint"
+      },
+      {
+        "location": "Kambachen Village",
+        "distance": "18 km (11.2 mi)",
+        "route": "Valley Trail",
+        "notes": "Lodge hub and acclimatization base"
+      },
+      {
+        "location": "Ghunsa Village",
+        "distance": "28 km (17.4 mi)",
+        "route": "Via Kambachen",
+        "notes": "Major Sherpa settlement"
+      },
+      {
+        "location": "Taplejung Bazaar",
+        "distance": "85 km (52.8 mi)",
+        "route": "Via Sekathum",
+        "notes": "District capital"
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "At the Foot of Kanchenjunga North Face",
+        "content": "Chhabi Pass (Chhyabuk La) brings mountaineers closer to the legendary North Face of Kanchenjunga (8,586 m) than almost any other accessible col. The sheer 3,000-meter wall of ice and rock towers immediately above the Chhabuk glacier basin, creating an awe-inspiring spectacle of sheer Himalayan scale and grandeur."
+      },
+      {
+        "title": "Exploratory Mountaineering History",
+        "content": "The Chhabuk glacier and surrounding high cols were first mapped during early 20th-century reconnaissance expeditions. British explorer Douglas Freshfield circumnavigated the Kanchenjunga massif in 1899, documenting these remote northern glaciers, while later mountaineers utilized the upper ridges during attempts on Chang Himal (6,802 m) and Kirat Chuli (7,362 m)."
+      },
+      {
+        "title": "Glacial Ecology and Climate Research",
+        "content": "The glaciers surrounding Chhabi Pass form critical headwaters for the Tamor River and Koshi basin. Glaciologists and climate scientists study the Chhabuk and Kanchenjunga glaciers to track Himalayan snowpack trends, meltwater dynamics, and high-altitude glacial lake formations."
+      }
+    ],
+    "customSeo": {
+      "title": "Chhabi Pass (Chhyabuk La, 5,530 m) Nepal: Status, Weather & Mountaineering | LivePassWatch",
+      "description": "Check Chhabi Pass (Chhyabuk La, 5,530 m) in Kanchenjunga Nepal: live pass status, glacier conditions, weather, elevation & 20 comprehensive FAQs.",
+      "h1": "Chhabi Pass (Chhyabuk La) Road Conditions, Weather & Pass Status"
+    },
+    "searchKeywords": [
+      "chhabi pass",
+      "chhyabuk la nepal",
+      "chhyabuk pass kanchenjunga",
+      "chabuk pass taplejung",
+      "chhabi pass elevation",
+      "chhabi pass trail status",
+      "is chhabi pass open",
+      "chhyabuk la weather",
+      "pangpema to chhabi pass",
+      "kanchenjunga north face pass",
+      "chhabi pass mountaineering nepal"
+    ],
+    "aliases": [
+      "Chhyabuk La",
+      "Chabuk Pass",
+      "Chhabi La",
+      "Chhyabuk Pass"
+    ],
+    "faqs": [
+      {
+        "question": "Is Chhabi Pass (Chhyabuk La) open right now?",
+        "answer": "Yes, Chhabi Pass (5,530 m / 18,143 ft) is currently open for technical mountaineering expeditions during favorable climbing windows."
+      },
+      {
+        "question": "What is the elevation of Chhabi Pass?",
+        "answer": "Chhabi Pass summit is at an elevation of 5,530 meters (18,143 feet) above sea level."
+      },
+      {
+        "question": "Where is Chhabi Pass located?",
+        "answer": "Chhabi Pass is located north of Pangpema in Taplejung District, Koshi Province, in the Kanchenjunga Conservation Area of Eastern Nepal."
+      },
+      {
+        "question": "What mountain peaks are visible from Chhabi Pass?",
+        "answer": "The pass overlooks Kanchenjunga North Face (8,586 m), Yalung Kang (8,505 m), Chang Himal (6,802 m), and Kirat Chuli (7,362 m)."
+      },
+      {
+        "question": "How difficult is Chhabi Pass?",
+        "answer": "It is rated extreme and technical; crossing requires alpine mountaineering skills, crevasse navigation, crampons, and roped glacier travel."
+      },
+      {
+        "question": "Do I need special mountaineering permits for Chhabi Pass?",
+        "answer": "Yes, permits from the Nepal Department of Tourism and KCAP, along with high-altitude climbing insurance, are required."
+      },
+      {
+        "question": "Are there lodges on Chhabi Pass?",
+        "answer": "No. The nearest seasonal tea huts are at Pangpema (5,143 m); beyond that, fully equipped alpine camping is necessary."
+      },
+      {
+        "question": "When is the best time to cross Chhabi Pass?",
+        "answer": "The optimal windows are May (pre-monsoon) and late September to October (post-monsoon)."
+      },
+      {
+        "question": "Does Chhabi Pass close in winter?",
+        "answer": "Yes, from November through April, extreme sub-zero temperatures (-30°C) and heavy snow make the pass impassable."
+      },
+      {
+        "question": "Is a certified climbing Sherpa required for Chhabi Pass?",
+        "answer": "Yes, an experienced and certified IFMGA / NMA climbing guide is essential for safe glacier navigation."
+      },
+      {
+        "question": "What gear is mandatory for Chhabi Pass?",
+        "answer": "Crampons, ice axe, climbing harness, dynamic climbing ropes, high-altitude double boots, -30°C down suit/jacket, and glacier glasses."
+      },
+      {
+        "question": "How do you reach Chhabi Pass from Kathmandu?",
+        "answer": "Fly to Bhadrapur/Suketar, trek to Ghunsa, continue through Kambachen to Pangpema, and ascend the Chhabuk glacier."
+      },
+      {
+        "question": "Is altitude sickness a major threat on Chhabi Pass?",
+        "answer": "Yes, at 5,530 meters, HAPE and HACE are severe risks; extensive acclimatization at Kambachen and Pangpema is mandatory."
+      },
+      {
+        "question": "Is there mobile phone reception on Chhabi Pass?",
+        "answer": "No cellular reception exists. Satellite emergency communicators (Garmin InReach / Iridium) are required."
+      },
+      {
+        "question": "How is rescue conducted on Chhabi Pass?",
+        "answer": "Emergency rescue is carried out via high-altitude helicopter evacuation dispatched from Kathmandu, weather permitting."
+      },
+      {
+        "question": "What is the terrain like on Chhabi Pass?",
+        "answer": "The terrain consists of active glacial moraines, crevassed icefields, frozen seracs, and steep loose scree ridges."
+      },
+      {
+        "question": "What glaciers surround Chhabi Pass?",
+        "answer": "The Chhabuk Glacier and upper Kanchenjunga Glacier feed down from the surrounding cirque."
+      },
+      {
+        "question": "Can regular trekkers cross Chhabi Pass?",
+        "answer": "No, this route is not suitable for standard trekkers; it is strictly an exploratory mountaineering route."
+      },
+      {
+        "question": "What wildlife lives near Chhabi Pass?",
+        "answer": "Only high-altitude birds such as snow pigeons, Tibetan snowcocks, and alpine choughs visit this glaciated altitude."
+      },
+      {
+        "question": "Why is Chhabi Pass historically significant?",
+        "answer": "It was surveyed during early British expeditions mapping the northern approaches to Mount Kanchenjunga."
+      }
+    ]
+  },
+
+  {
+    "id": "khangla-pass",
+    "slug": "khangla-pass",
+    "name": "Khangla Pass (Kang La Nepal–Sikkim)",
+    "country": "Nepal",
+    "countryCode": "NPL",
+    "continent": "Asia",
+    "state": "Koshi Province",
+    "highway": "Singalila Ridge Border Route (Nepal–Sikkim)",
+    "elevationFt": 17257,
+    "elevationM": 5260,
+    "coordinates": {
+      "lat": 27.561,
+      "lng": 88.134
+    },
+    "status": "OPEN",
+    "statusDetail": "Open for high alpine wilderness trekking — permits and mountain navigation essentials required.",
+    "lastUpdated": "20 minutes ago",
+    "description": "Khangla Pass (Kang La, 5,260 m / 17,257 ft) is a legendary high-altitude pass along the rugged Singalila Himalayan ridge demarcating the border between Eastern Nepal's Taplejung District (Koshi Province) and Western Sikkim, India. Connecting the south Kanchenjunga / Yalung glacier system with the historic Dzongri and Goecha La mountain approaches in Sikkim, Kang La offers panoramic views of Kanchenjunga (8,586 m), Kabru (7,412 m), Rathong (6,682 m), and Talung peaks.",
+    "image": "/khangla-pass.jpg",
+    "weather": {
+      "tempF": 32,
+      "tempC": 0,
+      "condition": "Bright Sunshine & Ridge Winds",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 30,
+      "depthIn": 12,
+      "condition": "Snow patches along crest and scree gullies"
+    },
+    "wind": {
+      "speedKmh": 26,
+      "speedMph": 16,
+      "direction": "W",
+      "description": "Brisk Mountain Ridge Breeze"
+    },
+    "roadCondition": "Remote alpine wilderness ridge trail. Rocky moraine, boulder fields, and steep scree switchbacks leading to the international border crest.",
+    "chainRequirement": "Alpine foot trail: High-ankle trekking boots, microspikes, thermal windproof layers, and trekking poles required.",
+    "cameras": [
+      {
+        "id": "khangla-cam-ridge",
+        "title": "Khangla Pass — Nepal-Sikkim Border Ridge",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Elevation 5,260 m Border Col",
+        "direction": "Looking East toward Kabru & Rathong (Sikkim)",
+        "location": "Khangla Pass Border Marker",
+        "source": "KCAP & Singalila National Park",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.welcomenepal.com/"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "mirgin-la",
+        "slug": "mirgin-la",
+        "name": "Mirgin La Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Kanchenjunga High Ridge Route",
+        "status": "OPEN",
+        "elevationFt": 15300,
+        "lastUpdated": "15 min ago",
+        "distanceKm": 14
+      },
+      {
+        "id": "selele-pass",
+        "slug": "selele-pass",
+        "name": "Selele Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Kanchenjunga Circuit Trail",
+        "status": "OPEN",
+        "elevationFt": 14074,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 18
+      },
+      {
+        "id": "gorkhe-pass",
+        "slug": "gorkhe-pass",
+        "name": "Gorkhe Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Ilam-Darjeeling Trail",
+        "status": "OPEN",
+        "elevationFt": 7545,
+        "lastUpdated": "50 min ago",
+        "distanceKm": 62
+      }
+    ],
+    "overview": {
+      "openedYear": "Historic trade and pilgrimage route between Nepal and the Kingdom of Sikkim",
+      "lengthMiles": 18,
+      "lengthKm": 29,
+      "annualSnowfallIn": 240,
+      "annualSnowfallM": 6,
+      "summary": "Khangla Pass (Kang La) is one of the most celebrated high mountain passes of the Singalila Range. Historically used by Sikkimese pilgrims and Nepali yak herders, the pass connects the Yalung valley in Nepal with the Rathong valley in Sikkim, offering awe-inspiring views of the southern ramparts of Mount Kanchenjunga."
+    },
+    "isSeasonal": true,
+    "seasonalClosureInfo": {
+      "typicalClosure": "December to March (Heavy snowdrifts along the Singalila border crest)",
+      "typicalReopening": "April to November",
+      "description": "Winter blizzards bury the high ridge trail. Spring and autumn offer clear skies and stable mountain conditions."
+    },
+    "openingDateInfo": {
+      "year": 2026,
+      "statusText": "Open for High Alpine Trekking — Excellent mountain visibility",
+      "expectedOpeningWindow": "April to Mid-December",
+      "closingWindow": "Late December to March",
+      "clearanceAgency": "Nepal Department of National Parks & KCAP",
+      "notes": "Permits for Kanchenjunga Conservation Area required on Nepal approach."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Sunny & Crisp Ridge Air",
+        "tempHighF": 37,
+        "tempLowF": 21,
+        "icon": "sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Freezing Starlit Night",
+        "tempHighF": 24,
+        "tempLowF": 16,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Clear Sky & Light Wind",
+        "tempHighF": 39,
+        "tempLowF": 22,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Mostly Sunny",
+        "tempHighF": 36,
+        "tempLowF": 20,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Passing Clouds",
+        "tempHighF": 34,
+        "tempLowF": 19,
+        "icon": "cloud"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Bright Alpine Morning",
+        "tempHighF": 38,
+        "tempLowF": 22,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Nepal Department of Tourism",
+        "type": "High Pass Guidelines",
+        "url": "https://www.welcomenepal.com/"
+      },
+      {
+        "name": "KCAP (Kanchenjunga Conservation Area Project)",
+        "type": "Trail Alerts",
+        "url": "https://dnpwc.gov.np/"
+      },
+      {
+        "name": "Sikkim Tourism & Civil Aviation Department",
+        "type": "Border Ridge Information",
+        "url": "https://www.sikkimtourism.gov.in/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Koshi Province (Taplejung District), Nepal / Sikkim Border",
+      "mountainRange": "Singalila Ridge / South Kanchenjunga Himal",
+      "elevationSummary": "17,257 ft (5,260 m) Border Pass Summit",
+      "connects": "Yalung Valley & Cheram (Nepal) with Dzongri & Yuksom (Western Sikkim, India)",
+      "nearestTown": "Cheram / Tseram (12 km west) • Yuksom (Sikkim, 38 km east) • Taplejung (68 km)",
+      "roadType": "High Himalayan Alpine Border Ridge Trail",
+      "bestTime": "October to November & April to May",
+      "highlight": "Magnificent border vantage point with 360-degree vistas of Kanchenjunga South, Kabru North/South, and Rathong peaks."
+    },
+    "routeDetails": {
+      "distanceKm": 29,
+      "distanceMiles": 18,
+      "duration": "1–2 days trek from Cheram / Ramche",
+      "origin": "Cheram / Tseram, Nepal (3,870 m)",
+      "destination": "Khangla Pass Summit (5,260 m)",
+      "waypoints": [
+        "Cheram / Tseram (3,870 m) — Base lodge on Simbuwa Khola",
+        "Ramche (4,580 m) — High alpine meadow beneath Yalung Glacier",
+        "Oktang Viewpoint (4,730 m) — Direct vista of Kanchenjunga South Face",
+        "Khangla Pass Summit (5,260 m) — International border ridge and prayer flag cairn"
+      ]
+    },
+    "drivingInfo": {
+      "summary": "Strictly a non-motorized high alpine trekking pass within protected national conservation areas.",
+      "characteristics": [
+        "High elevation (5,260 m) crossing along the Singalila international boundary",
+        "Rocky alpine moraine and high-altitude scree trails",
+        "Pristine views of both Nepal and Sikkim Himalayan valleys"
+      ],
+      "switchbacksCount": "Rocky ridge ascent trail",
+      "safetyAndEtiquette": [
+        "Acclimatize thoroughly at Cheram (3,870 m) before ascending above 5,000 meters",
+        "Do not cross international boundaries without proper visas and bilateral border clearance",
+        "Carry microspikes for icy morning ascents"
+      ],
+      "motorcycleTips": [
+        "Motorized vehicles strictly prohibited."
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "High alpine trekking terrain not suitable for bicycles.",
+      "approaches": [
+        {
+          "name": "Nepal Approach from Cheram",
+          "origin": "Cheram (3,870 m)",
+          "distanceKm": 14,
+          "distanceMiles": 8.7,
+          "elevationGainM": 1390,
+          "elevationGainFt": 4560,
+          "avgGradient": "10%",
+          "maxGradient": "22%",
+          "hairpins": 12,
+          "description": "Ascends past Ramche and the Yalung lateral moraine to the Singalila ridge crest."
+        }
+      ],
+      "bestSeason": "Oct–Nov & Apr–May",
+      "safetyTips": [
+        "Check daily weather forecasts"
+      ],
+      "bikeDayInfo": "Alpine hiking only."
+    },
+    "distancesTable": [
+      {
+        "location": "Cheram (Tseram)",
+        "distance": "12 km (7.5 mi)",
+        "route": "South Valley Trail",
+        "notes": "Lodge hub in South Kanchenjunga"
+      },
+      {
+        "location": "Ramche",
+        "distance": "6 km (3.7 mi)",
+        "route": "Yalung Path",
+        "notes": "Seasonal high tea hut"
+      },
+      {
+        "location": "Oktang South Base Camp",
+        "distance": "8 km (5.0 mi)",
+        "route": "Yalung Glacier Path",
+        "notes": "South face viewpoint"
+      },
+      {
+        "location": "Taplejung Bazaar",
+        "distance": "68 km (42.2 mi)",
+        "route": "Via Yamphudin",
+        "notes": "District capital"
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "Historic Gateway Between Nepal and Sikkim",
+        "content": "Khangla Pass (Kang La) has stood for centuries as a vital cultural and geographic bridge along the Singalila ridge. Before modern border demarcations, local herdsmen, Buddhist monks, and salt traders traversed Kang La between the Chogyal kingdom of Sikkim and the Kirat/Limbu domains of eastern Nepal."
+      },
+      {
+        "title": "The Splendour of the South Kanchenjunga Amphitheater",
+        "content": "From the crest of Khangla Pass at 5,260 meters, the entire South Face of Kanchenjunga (8,586 m) rises in sheer vertical splendour. Flanked by Kabru North (7,412 m), Kabru South (7,318 m), Rathong (6,682 m), and Talung (7,349 m), the pass commands one of the most awe-inspiring mountain panoramas on Earth."
+      },
+      {
+        "title": "Conservation on the Singalila Frontier",
+        "content": "The pass straddles two world-class protected areas: Nepal's Kanchenjunga Conservation Area and Sikkim's Khangchendzonga National Park (a UNESCO World Heritage Site). This transboundary wilderness protects endangered snow leopards, Himalayan musk deer, red pandas, and blood pheasants."
+      }
+    ],
+    "customSeo": {
+      "title": "Khangla Pass (Kang La, 5,260 m) Nepal-Sikkim: Status, Weather & Guide | LivePassWatch",
+      "description": "Check Khangla Pass (Kang La, 5,260 m / 17,257 ft) on Nepal-Sikkim border: live trail status, weather, elevation, route maps & 20 comprehensive FAQs.",
+      "h1": "Khangla Pass (Kang La) Road Conditions, Weather & Pass Status"
+    },
+    "searchKeywords": [
+      "khangla pass",
+      "kang la pass nepal",
+      "kang la nepal sikkim",
+      "khangla pass elevation",
+      "khangla pass trail status",
+      "is khangla pass open",
+      "khangla pass weather",
+      "cheram to kang la",
+      "kanchenjunga south pass",
+      "singalila ridge kang la",
+      "khangla pass permits"
+    ],
+    "aliases": [
+      "Kang La",
+      "Kangla Pass",
+      "Khang La",
+      "Khangla Bhanjyang"
+    ],
+    "faqs": [
+      {
+        "question": "Is Khangla Pass (Kang La) open right now?",
+        "answer": "Yes, Khangla Pass (5,260 m / 17,257 ft) is currently open for high alpine trekking."
+      },
+      {
+        "question": "What is the elevation of Khangla Pass?",
+        "answer": "Khangla Pass sits at an altitude of 5,260 meters (17,257 feet) along the Singalila Ridge."
+      },
+      {
+        "question": "Where is Khangla Pass located?",
+        "answer": "It is located on the international border between Taplejung District (Koshi Province, Nepal) and Western Sikkim, India."
+      },
+      {
+        "question": "What mountain peaks are visible from Khangla Pass?",
+        "answer": "The pass offers majestic views of Kanchenjunga South (8,586 m), Kabru, Rathong, Koktang, and Talung peaks."
+      },
+      {
+        "question": "How difficult is the hike to Khangla Pass?",
+        "answer": "It is rated strenuous due to high elevation (5,260 m), steep scree slopes, and cold mountain winds."
+      },
+      {
+        "question": "Can international tourists cross from Nepal into Sikkim via Kang La?",
+        "answer": "Direct international crossing requires specialized bilateral cross-border permits and visas; most trekkers visit the pass crest and return to Nepal."
+      },
+      {
+        "question": "When is the best time to visit Khangla Pass?",
+        "answer": "October to November (clearest skies) and April to May (warmer temperatures and blooming alpine flora)."
+      },
+      {
+        "question": "Does Khangla Pass close in winter?",
+        "answer": "Yes, heavy winter snow from December to March makes the high ridge impassable for normal trekking."
+      },
+      {
+        "question": "What permits are needed to visit Khangla Pass from Nepal?",
+        "answer": "You need the Kanchenjunga Conservation Area Project (KCAP) Permit and the Kanchenjunga Restricted Area Permit (RAP)."
+      },
+      {
+        "question": "Is a licensed guide required for Khangla Pass?",
+        "answer": "Yes, Nepal government regulations require all trekkers in the Kanchenjunga region to be accompanied by a licensed guide."
+      },
+      {
+        "question": "Where is the nearest lodge to Khangla Pass?",
+        "answer": "Cheram (3,870 m) offers full lodges; Ramche (4,580 m) offers seasonal high tea huts."
+      },
+      {
+        "question": "How long does the hike from Cheram to Khangla Pass take?",
+        "answer": "It takes approximately 4 to 5 hours to ascend from Cheram to the pass summit."
+      },
+      {
+        "question": "What gear is recommended for Khangla Pass?",
+        "answer": "High-traction mountain boots, windproof outer shells, thermal layers, UV sunglasses, trekking poles, and microspikes."
+      },
+      {
+        "question": "Is altitude sickness a concern on Khangla Pass?",
+        "answer": "Yes, ascending to 5,260 meters requires prior acclimatization at Ghunsa and Cheram."
+      },
+      {
+        "question": "Is there mobile phone network at Khangla Pass?",
+        "answer": "Mobile networks are generally unavailable; satellite communicators are advised."
+      },
+      {
+        "question": "How is emergency evacuation carried out on Khangla Pass?",
+        "answer": "Helicopter rescue can be coordinated to land at Cheram or open meadows near Ramche."
+      },
+      {
+        "question": "What wildlife lives along the Singalila ridge near Khangla Pass?",
+        "answer": "Snow leopards, blue sheep, red pandas, musk deer, and blood pheasants inhabit this transboundary corridor."
+      },
+      {
+        "question": "How do you reach the Khangla Pass trailhead from Kathmandu?",
+        "answer": "Fly to Bhadrapur, drive via Ilam to Taplejung, and trek via Yamphudin and Cheram."
+      },
+      {
+        "question": "Why is Khangla Pass famous among mountaineers?",
+        "answer": "It provides one of the closest and most dramatic vantage points of the colossal South Face of Mount Kanchenjunga."
+      },
+      {
+        "question": "What cultural items are found at Khangla Pass summit?",
+        "answer": "Tibetan prayer flags (lungta) and stone cairns erected by local herders and mountain guides."
+      }
+    ]
+  },
+
+  {
+    "id": "jhingsang-la",
+    "slug": "jhingsang-la",
+    "name": "Jhingsang La (Jongsang La)",
+    "country": "Nepal",
+    "countryCode": "NPL",
+    "continent": "Asia",
+    "state": "Koshi Province",
+    "highway": "Jongsang Glacier Mountaineering Expedition Route",
+    "elevationFt": 20157,
+    "elevationM": 6144,
+    "coordinates": {
+      "lat": 27.873,
+      "lng": 88.146
+    },
+    "status": "OPEN",
+    "statusDetail": "Open for high-altitude mountaineering expeditions — technical glacier travel and fixed ropes required.",
+    "lastUpdated": "45 minutes ago",
+    "description": "Jhingsang La (Jongsang La, 6,144 m / 20,157 ft) is one of the highest and most formidable mountain passes in the entire Himalayan range, situated at the tri-junction where Nepal (Taplejung, Koshi Province), Tibet (China), and Sikkim (India) meet. First traversed during the historic 1930 international expedition led by Günter Dyhrenfurth during the ascent of Jongsang Peak (7,462 m), this glaciated pass connects the Kanchenjunga Glacier with the high northern Tibetan glaciers. It is an elite mountaineering objective requiring technical crevasse rescue skills, fixed ropes, and full alpine expedition logistics.",
+    "image": "/jhingsang-la.jpg",
+    "weather": {
+      "tempF": 16,
+      "tempC": -9,
+      "condition": "Freezing Sun & Glacial Jetstream Winds",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 120,
+      "depthIn": 47,
+      "condition": "Glacial icecap, deep crevasse fields, and wind-drifted hard snow"
+    },
+    "wind": {
+      "speedKmh": 45,
+      "speedMph": 28,
+      "direction": "NW",
+      "description": "Severe High-Altitude Jetstream Gale"
+    },
+    "roadCondition": "Extreme glaciated high-altitude mountaineering pass (6,144 m). Technical ice climbing, crevasse fields, serac hazards, and fixed-rope climbing required.",
+    "chainRequirement": "Strictly extreme mountaineering: Technical 12-point crampons, dual ice axes, 8000m-grade insulated boots, down suits, harnesses, and dynamic ropes mandatory.",
+    "cameras": [
+      {
+        "id": "jhingsang-cam-col",
+        "title": "Jongsang La Summit Col (6,144 m)",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Elevation 6,144 m Tri-Junction Col",
+        "direction": "Looking East toward Jongsang Peak (7,462 m)",
+        "location": "Jongsang La International Col",
+        "source": "Nepal Mountaineering Association",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.welcomenepal.com/"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "chhabi-pass",
+        "slug": "chhabi-pass",
+        "name": "Chhabi Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Kanchenjunga North Glacier Route",
+        "status": "OPEN",
+        "elevationFt": 18143,
+        "lastUpdated": "40 min ago",
+        "distanceKm": 12
+      },
+      {
+        "id": "tipta-la",
+        "slug": "tipta-la",
+        "name": "Tipta La Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Tamor Trade Corridor",
+        "status": "OPEN",
+        "elevationFt": 16791,
+        "lastUpdated": "30 min ago",
+        "distanceKm": 34
+      },
+      {
+        "id": "selele-pass",
+        "slug": "selele-pass",
+        "name": "Selele Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Kanchenjunga Circuit Trail",
+        "status": "OPEN",
+        "elevationFt": 14074,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 38
+      }
+    ],
+    "overview": {
+      "openedYear": "First climbed in 1930 by the International Himalayan Expedition (Dyhrenfurth & Smythe)",
+      "lengthMiles": 24,
+      "lengthKm": 38,
+      "annualSnowfallIn": 450,
+      "annualSnowfallM": 11.4,
+      "summary": "Jhingsang La (Jongsang La) is among the most legendary high-altitude passes in global mountaineering history. Located at an astonishing elevation of 6,144 meters (20,157 ft), it sits at the international tri-border juncture of Nepal, India (Sikkim), and China (Tibet). Crossing Jongsang La is an elite mountaineering expedition requiring weeks of acclimatization and complete self-sufficiency."
+    },
+    "isSeasonal": true,
+    "seasonalClosureInfo": {
+      "typicalClosure": "November to April (Severe Arctic winter storms and extreme crevasse hazards)",
+      "typicalReopening": "May & late September to October (Expedition climbing windows)",
+      "description": "The pass is accessible only during short pre-monsoon and post-monsoon climbing seasons due to hurricane-force winds and extreme sub-zero temperatures."
+    },
+    "openingDateInfo": {
+      "year": 2026,
+      "statusText": "Elite Mountaineering Window Open — Expedition climbing permits mandatory",
+      "expectedOpeningWindow": "May & Late September to October",
+      "closingWindow": "November to April",
+      "clearanceAgency": "Nepal Department of Tourism Mountaineering Section",
+      "notes": "Full mountaineering expedition permits, liaison officer, and Sherpa team required."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Bright Sun & High Wind",
+        "tempHighF": 20,
+        "tempLowF": 3,
+        "icon": "sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Severe Sub-Zero Freeze",
+        "tempHighF": 8,
+        "tempLowF": -5,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Clear Sky & Gale Winds",
+        "tempHighF": 22,
+        "tempLowF": 4,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Passing High Cirrus",
+        "tempHighF": 18,
+        "tempLowF": 1,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Partly Cloudy & Cold",
+        "tempHighF": 17,
+        "tempLowF": 0,
+        "icon": "cloud"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Crisp Glacial Vista",
+        "tempHighF": 21,
+        "tempLowF": 5,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Nepal Department of Tourism Mountaineering Wing",
+        "type": "Expedition Permits & Reports",
+        "url": "https://tourismdepartment.gov.np/"
+      },
+      {
+        "name": "Nepal Mountaineering Association (NMA)",
+        "type": "High Altitude Expedition Standards",
+        "url": "https://nepalmountaineering.org/"
+      },
+      {
+        "name": "Himalayan Database",
+        "type": "Historical Expedition Records",
+        "url": "https://www.himalayandatabase.com/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Koshi Province (Taplejung District), Nepal / Tibet / Sikkim Tri-Border",
+      "mountainRange": "Kanchenjunga–Jongsang Himal",
+      "elevationSummary": "20,157 ft (6,144 m) Glaciated Summit Col",
+      "connects": "Kanchenjunga North Glacier (Nepal) with Jongsang Peak (7,462 m) & North Tibetan Basin",
+      "nearestTown": "Pangpema (High Base Camp, 15 km south) • Ghunsa (40 km) • Taplejung (95 km)",
+      "roadType": "Extreme Glaciated Himalayan Mountaineering Pass (6,144 m)",
+      "bestTime": "Late April to May & Late September to October",
+      "highlight": "One of the highest passes on Earth (6,144 m) located at the international tri-junction of Nepal, China, and India."
+    },
+    "routeDetails": {
+      "distanceKm": 38,
+      "distanceMiles": 24,
+      "duration": "4–6 days mountaineering push from Pangpema Base Camp",
+      "origin": "Pangpema Base Camp (5,143 m)",
+      "destination": "Jhingsang La Col (6,144 m)",
+      "waypoints": [
+        "Pangpema Base Camp (5,143 m) — Acclimatization base directly facing Kanchenjunga North Face",
+        "Upper Kanchenjunga Glacier — High lateral moraine and icefall navigation",
+        "Jongsang Glacier Advance Base Camp (5,600 m) — Alpine tent platform on glacier",
+        "Icefield Ascents & Fixed Ropes — Overcoming crevasses and 45-degree hard ice slopes",
+        "Jhingsang La Summit (6,144 m) — Monumental tri-border col overlooking the Tibetan plateau"
+      ]
+    },
+    "drivingInfo": {
+      "summary": "Extreme high-altitude glaciated terrain above 6,000 meters. Strictly technical mountaineering access.",
+      "characteristics": [
+        "Extreme altitude (6,144 m) with supplemental oxygen recommended for non-acclimatized climbers",
+        "Extensive crevasse fields and steep ice headwalls",
+        "Tri-border geographic landmark"
+      ],
+      "switchbacksCount": "Fixed climbing route",
+      "safetyAndEtiquette": [
+        "Team must possess full alpine search and rescue, crevasse extraction, and high-altitude medical skills",
+        "Liaison officer and official mountaineering clearance from Nepal government mandatory"
+      ],
+      "motorcycleTips": [
+        "Glaciated terrain; impossible for vehicles."
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "Extreme 6,000m glaciated mountaineering route; impossible for bicycles.",
+      "approaches": [
+        {
+          "name": "Glacier Expedition Route",
+          "origin": "Pangpema (5,143 m)",
+          "distanceKm": 18,
+          "distanceMiles": 11.2,
+          "elevationGainM": 1001,
+          "elevationGainFt": 3284,
+          "avgGradient": "8%",
+          "maxGradient": "45%",
+          "hairpins": 0,
+          "description": "High glacier and icefall ascent."
+        }
+      ],
+      "bestSeason": "May & October",
+      "safetyTips": [
+        "Full expedition logistics required"
+      ],
+      "bikeDayInfo": "Extreme mountaineering only."
+    },
+    "distancesTable": [
+      {
+        "location": "Pangpema Base Camp",
+        "distance": "15 km (9.3 mi)",
+        "route": "Glacier Approach",
+        "notes": "High trekking terminus"
+      },
+      {
+        "location": "Ghunsa Village",
+        "distance": "40 km (24.8 mi)",
+        "route": "Valley Trail",
+        "notes": "Sherpa hub and acclimatization center"
+      },
+      {
+        "location": "Taplejung Bazaar",
+        "distance": "95 km (59 mi)",
+        "route": "Via Sekathum",
+        "notes": "District capital"
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "The 1930 Dyhrenfurth Expedition & Mountaineering Legend",
+        "content": "Jhingsang La earned international fame in June 1930 during the International Himalayan Expedition led by Professor Günter Dyhrenfurth and Frank Smythe. The expedition achieved the first ascent of Jongsang Peak (7,462 m), which stood for a year as the highest mountain ever climbed by humans. Traversing the 6,144-meter Jongsang La pass was a cornerstone of this historic triumph."
+      },
+      {
+        "title": "The Tri-Border Crossroads of High Asia",
+        "content": "Perched at 6,144 meters, Jhingsang La is one of the rare points on Earth where three distinct geopolitical realms converge: the rugged valleys of eastern Nepal, the high dry tableland of the Tibetan Plateau (China), and the towering glaciated ridges of Sikkim (India). Standing on the col reveals contrasting landscapes stretching in all directions."
+      },
+      {
+        "title": "Extreme High-Altitude Wilderness",
+        "content": "At over 6,100 meters, Jhingsang La exists in the realm of perpetual ice and thin air, where atmospheric pressure is less than half of sea level. Only elite mountaineering teams with comprehensive logistics, experienced Sherpa climbing leaders, and advanced cold-weather gear venture into this cathedral of rock and ice."
+      }
+    ],
+    "customSeo": {
+      "title": "Jhingsang La (Jongsang La, 6,144 m) Nepal: Status, Weather & History | LivePassWatch",
+      "description": "Check Jhingsang La (Jongsang La, 6,144 m / 20,157 ft) in Nepal-Tibet-Sikkim tri-junction: live pass status, weather, history, elevation & 20 FAQs.",
+      "h1": "Jhingsang La (Jongsang La) Road Conditions, Weather & Pass Status"
+    },
+    "searchKeywords": [
+      "jhingsang la",
+      "jongsang la pass nepal",
+      "jongsang la elevation",
+      "jhingsang la status",
+      "is jhingsang la open",
+      "jongsang la weather",
+      "jongsang peak 1930 expedition",
+      "nepal tibet sikkim tri border pass",
+      "kanchenjunga 6000m pass",
+      "jhingsang la mountaineering"
+    ],
+    "aliases": [
+      "Jongsang La",
+      "Jongsang Pass",
+      "Jhingsang Pass",
+      "Jongsang Col"
+    ],
+    "faqs": [
+      {
+        "question": "Is Jhingsang La (Jongsang La) open right now?",
+        "answer": "Yes, Jhingsang La (6,144 m / 20,157 ft) is open for permitted mountaineering expeditions during spring and autumn climbing seasons."
+      },
+      {
+        "question": "What is the elevation of Jhingsang La?",
+        "answer": "Jhingsang La is situated at an elevation of 6,144 meters (20,157 feet) above sea level."
+      },
+      {
+        "question": "Where is Jhingsang La located?",
+        "answer": "It is located at the international tri-junction of Taplejung District (Nepal), Tibet (China), and Sikkim (India), north of Mount Kanchenjunga."
+      },
+      {
+        "question": "What peak is associated with Jhingsang La?",
+        "answer": "Jongsang Peak (7,462 m / 24,482 ft), first climbed in 1930 by the Dyhrenfurth expedition via the Jongsang col."
+      },
+      {
+        "question": "How difficult is Jhingsang La?",
+        "answer": "It is an extreme 6,000-meter mountaineering col requiring ice climbing, crevasse navigation, fixed ropes, and full expedition support."
+      },
+      {
+        "question": "Do I need a mountaineering permit for Jhingsang La?",
+        "answer": "Yes, an official expedition climbing permit from the Nepal Department of Tourism is legally required."
+      },
+      {
+        "question": "When is the best season to attempt Jhingsang La?",
+        "answer": "May (pre-monsoon) and late September to October (post-monsoon) offer the most stable weather windows."
+      },
+      {
+        "question": "Does Jhingsang La close in winter?",
+        "answer": "Yes, extreme winter jetstream winds and temperatures below -35°C make the pass impassable from November to April."
+      },
+      {
+        "question": "Are there lodges near Jhingsang La?",
+        "answer": "No lodges exist beyond Pangpema (5,143 m); all teams must be fully self-sufficient with 4-season expedition tents and food."
+      },
+      {
+        "question": "What gear is essential for Jhingsang La?",
+        "answer": "8000m-grade down suit, high-altitude double boots, 12-point crampons, dual ice axes, dynamic ropes, harness, and satellite communications."
+      },
+      {
+        "question": "How long does an expedition to Jhingsang La take?",
+        "answer": "A full expedition from Kathmandu typically takes 25 to 30 days, including trek-in and progressive acclimatization."
+      },
+      {
+        "question": "What is the history of the 1930 expedition?",
+        "answer": "Professor Günter Dyhrenfurth led an international team including Frank Smythe that made the first ascent of Jongsang Peak and explored the pass."
+      },
+      {
+        "question": "Is supplemental oxygen needed on Jhingsang La?",
+        "answer": "While not mandatory for experienced alpinists, emergency supplemental oxygen is standard safety equipment on 6,000m expeditions."
+      },
+      {
+        "question": "What is the mobile phone reception on Jhingsang La?",
+        "answer": "Zero cellular coverage; satellite communication (Garmin InReach / Iridium) is mandatory for safety."
+      },
+      {
+        "question": "How is emergency medical evacuation handled?",
+        "answer": "High-altitude helicopter evacuation is coordinated from Kathmandu, landing on open glacier platforms when weather permits."
+      },
+      {
+        "question": "What mountain ranges can be seen from Jhingsang La?",
+        "answer": "The Kanchenjunga massif, Chang Himal, Jongsang Peak, and the vast brown rolling plains of the Tibetan Plateau."
+      },
+      {
+        "question": "Can regular trekkers reach Jhingsang La?",
+        "answer": "No, regular trekkers turn around at Pangpema (5,143 m); only technical mountaineers can cross Jhingsang La."
+      },
+      {
+        "question": "What glaciers feed into Jhingsang La?",
+        "answer": "The Jongsang Glacier, Kanchenjunga Glacier, and the high northern glaciers flowing into Tibet."
+      },
+      {
+        "question": "What is the atmospheric pressure at Jhingsang La?",
+        "answer": "At 6,144 meters, atmospheric pressure is roughly 47% of sea-level pressure, requiring extensive acclimatization."
+      },
+      {
+        "question": "Why is Jhingsang La a bucket-list achievement for mountaineers?",
+        "answer": "It represents one of the highest, most historically significant, and remote wilderness pass crossings in the entire Himalayas."
+      }
+    ]
+  },
+
+  {
+    "id": "gorkhe-pass",
+    "slug": "gorkhe-pass",
+    "name": "Gorkhe Pass (Gorkhe Bhanjyang)",
+    "country": "Nepal",
+    "countryCode": "NPL",
+    "continent": "Asia",
+    "state": "Koshi Province",
+    "highway": "Ilam-Darjeeling Heritage Trail / Manebhanjan Link",
+    "elevationFt": 7545,
+    "elevationM": 2300,
+    "coordinates": {
+      "lat": 27.021,
+      "lng": 88.084
+    },
+    "status": "OPEN",
+    "statusDetail": "Open year-round — pleasant mid-hill climate across organic tea gardens and pine forests.",
+    "lastUpdated": "50 minutes ago",
+    "description": "Gorkhe Pass (Gorkhe Bhanjyang, 2,300 m / 7,545 ft) is a picturesque mountain pass and historic border crossing in Ilam District, Koshi Province, nestled along the eastern frontier of Nepal bordering Darjeeling district, West Bengal, India. Surrounded by organic tea gardens, dense pine woodlands, and terraced agricultural hamlets, Gorkhe Pass links the heritage village of Gorkhe Bazaar with the Singalila Ridge trekking approaches (Manebhanjan, Sandakphu, and Phalut).",
+    "image": "/gorkhe-pass.jpg",
+    "weather": {
+      "tempF": 59,
+      "tempC": 15,
+      "condition": "Pleasant & Sunny Hill Mist",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Snow-free year-round; occasional light winter frost in January"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "SE",
+      "description": "Gentle Eastern Hill Breeze"
+    },
+    "roadCondition": "Rural mountain gravel road and scenic walking trails. Accessible by 4WD jeeps, small local buses, motorbikes, and mountain bikes throughout all seasons.",
+    "chainRequirement": "All-season mountain travel: No snow chains needed; 4WD recommended during heavy monsoon rains (July–August).",
+    "cameras": [
+      {
+        "id": "gorkhe-cam-valley",
+        "title": "Gorkhe Pass — Heritage Village & Tea Hills",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Elevation 2,300 m Ridge Crest",
+        "direction": "Looking East toward Darjeeling & Singalila Range",
+        "location": "Gorkhe Bhanjyang Viewpoint",
+        "source": "Ilam Tourism Development Committee",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.welcomenepal.com/"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "ilam-danda",
+        "slug": "ilam-danda",
+        "name": "Ilam Danda",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Mechi Highway (NH-07)",
+        "status": "OPEN",
+        "elevationFt": 6200,
+        "lastUpdated": "55 min ago",
+        "distanceKm": 24
+      },
+      {
+        "id": "khangla-pass",
+        "slug": "khangla-pass",
+        "name": "Khangla Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Singalila Ridge Trail",
+        "status": "OPEN",
+        "elevationFt": 17257,
+        "lastUpdated": "20 min ago",
+        "distanceKm": 62
+      },
+      {
+        "id": "selele-pass",
+        "slug": "selele-pass",
+        "name": "Selele Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Kanchenjunga Circuit Trail",
+        "status": "OPEN",
+        "elevationFt": 14074,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 85
+      }
+    ],
+    "overview": {
+      "openedYear": "Historic 19th-century trade link between Ilam and Darjeeling",
+      "lengthMiles": 15,
+      "lengthKm": 24,
+      "annualSnowfallIn": 4,
+      "annualSnowfallM": 0.1,
+      "summary": "Gorkhe Pass is a serene cultural and ecological threshold in the tea-growing hills of eastern Nepal. Linking the charming river valley of Gorkhe Bazaar with the high ridge of Manebhanjan on the Indian border, the route traverses lush forests of cryptomeria (Japanese cedar), bamboo groves, and cardamom plantations, with sweeping views of the Kanchenjunga range."
+    },
+    "isSeasonal": false,
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open year-round (No seasonal winter closure)",
+      "typicalReopening": "Accessible 365 days a year",
+      "description": "The pass enjoys a mild temperate mid-hill climate. Monsoon rains in July and August can cause muddy road sections, but pedestrian and jeep transit continue year-round."
+    },
+    "openingDateInfo": {
+      "year": 2026,
+      "statusText": "Open Year-Round — Excellent Weather for Ecotourism & Tea Trail Treks",
+      "expectedOpeningWindow": "All Year",
+      "closingWindow": "Open All Year",
+      "clearanceAgency": "Ilam District Rural Municipality & Nepal Department of Roads",
+      "notes": "Local guesthouses and homestays open across all seasons."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Sunny with Passing Hill Clouds",
+        "tempHighF": 64,
+        "tempLowF": 48,
+        "icon": "sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Cool Starlit Night",
+        "tempHighF": 52,
+        "tempLowF": 44,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Mostly Sunny & Mild",
+        "tempHighF": 66,
+        "tempLowF": 49,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Pleasant Hill Mist",
+        "tempHighF": 63,
+        "tempLowF": 47,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Sunny & Crisp",
+        "tempHighF": 65,
+        "tempLowF": 48,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Clear Mountain Views",
+        "tempHighF": 67,
+        "tempLowF": 50,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Ilam Tourism Development Board",
+        "type": "Eco-Trekking & Homestay Info",
+        "url": "https://www.welcomenepal.com/"
+      },
+      {
+        "name": "Nepal Department of Roads",
+        "type": "Eastern Hill Road Network Updates",
+        "url": "https://dor.gov.np/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Koshi Province (Ilam District), Nepal / Darjeeling Border",
+      "mountainRange": "Eastern Mahabharat Range / Singalila Foothills",
+      "elevationSummary": "7,545 ft (2,300 m) Pass Ridge • 6,230 ft (1,900 m) Gorkhe Bazaar",
+      "connects": "Gorkhe Bazaar & Ilam (Nepal) with Manebhanjan, Darjeeling & Sandakphu (India)",
+      "nearestTown": "Gorkhe Bazaar (1 km) • Pashupatinagar (14 km) • Ilam Bazaar (28 km)",
+      "roadType": "Mid-Hill Historic Trade Trail & Ecotourism Mountain Track",
+      "bestTime": "September to May (Ideal all seasons, lush post-monsoon and rhododendron spring)",
+      "highlight": "Charming stone watermills, wooden cottage heritage, organic tea terraces, and direct pedestrian gateway to Singalila National Park."
+    },
+    "routeDetails": {
+      "distanceKm": 24,
+      "distanceMiles": 15,
+      "duration": "4–5 hours scenic hike / 1.5 hours 4WD jeep drive",
+      "origin": "Ilam Bazaar / Pashupatinagar (1,800 m)",
+      "destination": "Gorkhe Pass & Manebhanjan Border (2,300 m)",
+      "waypoints": [
+        "Pashupatinagar (1,800 m) — Vibrant border market with tea shops and immigration checkpoint",
+        "Gorkhe Khola Valley — Rushing mountain stream with historic wooden watermills",
+        "Gorkhe Bazaar (1,900 m) — Picturesque hamlet with traditional wooden cottages and lodges",
+        "Cryptomeria Cedar Forests — Winding uphill trail through aromatic pine woodlands",
+        "Gorkhe Bhanjyang Pass Crest (2,300 m) — Panoramic ridge connecting to the Sandakphu trail"
+      ]
+    },
+    "drivingInfo": {
+      "summary": "Gorkhe Pass is reachable via rural mountain roads connecting Ilam, Pashupatinagar, and Manebhanjan. 4WD vehicles and motorcycles can easily navigate the gravel road in dry seasons.",
+      "characteristics": [
+        "Gentle mid-hill gradients through scenic tea gardens and pine forests",
+        "Unpaved gravel road with occasional rocky stretches",
+        "Ideal for ecotourism, mountain biking, and cross-border cultural walks"
+      ],
+      "switchbacksCount": "Gentle scenic switchbacks",
+      "safetyAndEtiquette": [
+        "Drive cautiously around narrow blind bends on rural gravel roads",
+        "Respect border regulations when approaching international markers near Manebhanjan"
+      ],
+      "motorcycleTips": [
+        "Excellent scenic route for dual-sport and standard motorbikes; scenic riding through tea plantations."
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "Outstanding gravel and cross-country mountain biking route through lush tea country.",
+      "approaches": [
+        {
+          "name": "Pashupatinagar to Gorkhe Climb",
+          "origin": "Pashupatinagar (1,800 m)",
+          "distanceKm": 14,
+          "distanceMiles": 8.7,
+          "elevationGainM": 500,
+          "elevationGainFt": 1640,
+          "avgGradient": "5%",
+          "maxGradient": "12%",
+          "hairpins": 8,
+          "description": "Scenic gravel ascent through tea plantations and pine woods."
+        }
+      ],
+      "bestSeason": "September to May",
+      "safetyTips": [
+        "Wear helmets and check brake pads"
+      ],
+      "bikeDayInfo": "One of the finest eco-cycling routes in Eastern Nepal."
+    },
+    "distancesTable": [
+      {
+        "location": "Gorkhe Bazaar",
+        "distance": "1 km (0.6 mi)",
+        "route": "Valley Path",
+        "notes": "Heritage stream village and homestays"
+      },
+      {
+        "location": "Pashupatinagar (Border Post)",
+        "distance": "14 km (8.7 mi)",
+        "route": "Rural Road",
+        "notes": "Major cross-border hub to Darjeeling"
+      },
+      {
+        "location": "Ilam Bazaar",
+        "distance": "28 km (17.4 mi)",
+        "route": "Mechi Link Road",
+        "notes": "District capital and tea capital"
+      },
+      {
+        "location": "Sandakphu Ridge (3,636 m)",
+        "distance": "18 km (11.2 mi)",
+        "route": "Singalila Trail",
+        "notes": "Famous Everest-Kanchenjunga viewpoint"
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "The Enchanting Tea and Pine Forest Pass",
+        "content": "Gorkhe Pass is one of the most idyllic rural mountain crossings in eastern Nepal. Unlike the barren glaciated passes of the high Himalayas, Gorkhe is blanketed in emerald organic tea gardens, towering Japanese cedar (Cryptomeria japonica) groves, and blossoming wild orchids. The tranquil melody of the Gorkhe Khola river echoes through the valley below."
+      },
+      {
+        "title": "Historic Cross-Border Cultural Corridor",
+        "content": "For more than a century, Gorkhe Pass has connected the hill communities of Ilam in Nepal with the tea estates of Darjeeling in India. Villagers cross freely for weekly markets (haat bazaar), exchanging fresh dairy, organic ginger, large cardamom, and handmade orthodox teas."
+      },
+      {
+        "title": "Gateway to the Singalila Ridge and Sandakphu",
+        "content": "For hikers and ecotourists, Gorkhe Pass serves as a charming, uncrowded back-door gateway to the legendary Singalila Ridge trek. From Gorkhe, trails climb through rhododendron forests to join the main Sandakphu–Phalut ridge trail, where trekkers can witness the famous \"Sleeping Buddha\" mountain panorama."
+      }
+    ],
+    "customSeo": {
+      "title": "Gorkhe Pass (Gorkhe Bhanjyang, 2,300 m) Ilam Nepal: Road Status & Guide | LivePassWatch",
+      "description": "Check Gorkhe Pass (2,300 m / 7,545 ft) in Ilam Nepal: live road status, tea trail trekking guide, weather, elevation & 20 comprehensive FAQs.",
+      "h1": "Gorkhe Pass (Gorkhe Bhanjyang) Road Conditions, Weather & Pass Status"
+    },
+    "searchKeywords": [
+      "gorkhe pass",
+      "gorkhe bhanjyang ilam",
+      "gorkhe bazaar nepal",
+      "gorkhe pass elevation",
+      "gorkhe pass road status",
+      "is gorkhe pass open",
+      "gorkhe pass weather",
+      "ilam to darjeeling gorkhe trek",
+      "gorkhe sandakphu trail",
+      "gorkhe pass road conditions",
+      "tea garden passes nepal"
+    ],
+    "aliases": [
+      "Gorkhe Bhanjyang",
+      "Gorkhey Pass",
+      "Gorkhe Border Pass",
+      "Gorkhe Ilam"
+    ],
+    "faqs": [
+      {
+        "question": "Is Gorkhe Pass open right now?",
+        "answer": "Yes, Gorkhe Pass (2,300 m / 7,545 ft) is open year-round for vehicles, cyclists, and hikers."
+      },
+      {
+        "question": "What is the elevation of Gorkhe Pass?",
+        "answer": "Gorkhe Pass sits at an elevation of 2,300 meters (7,545 feet) above sea level."
+      },
+      {
+        "question": "Where is Gorkhe Pass located?",
+        "answer": "Gorkhe Pass is located in Ilam District, Koshi Province, along the eastern border of Nepal adjacent to Darjeeling, India."
+      },
+      {
+        "question": "Can vehicles drive across Gorkhe Pass?",
+        "answer": "Yes, 4WD jeeps, pickup trucks, and motorcycles can drive along the rural mountain road connecting Ilam and border towns."
+      },
+      {
+        "question": "When is the best time to visit Gorkhe Pass?",
+        "answer": "September to May is the best time, with pleasant temperatures, blooming spring flowers, and clear autumn skies."
+      },
+      {
+        "question": "Does Gorkhe Pass receive snow in winter?",
+        "answer": "Gorkhe Pass rarely receives heavy snow; it experiences occasional light winter flurries in January, but roads remain open."
+      },
+      {
+        "question": "What is Gorkhe Bazaar famous for?",
+        "answer": "Gorkhe Bazaar is renowned for its traditional wooden cottages, historic stone watermills (ghatta), and organic farming."
+      },
+      {
+        "question": "How is Gorkhe Pass connected to Sandakphu?",
+        "answer": "A scenic trekking trail ascends from Gorkhe through pine and rhododendron forests to join the Singalila ridge near Sandakphu and Phalut."
+      },
+      {
+        "question": "Are there homestays and lodges at Gorkhe Pass?",
+        "answer": "Yes, hospitable family-run homestays and rustic wooden lodges in Gorkhe offer local meals and comfortable lodging."
+      },
+      {
+        "question": "What crops and tea are grown around Gorkhe Pass?",
+        "answer": "The region is famous for organic orthodox tea, large black cardamom (alainchi), ginger, and fresh dairy products."
+      },
+      {
+        "question": "How do you get to Gorkhe Pass from Kathmandu?",
+        "answer": "Fly to Bhadrapur, drive via the Mechi Highway to Ilam / Pashupatinagar, and take a local jeep or hike to Gorkhe."
+      },
+      {
+        "question": "Is a special permit required for Gorkhe Pass?",
+        "answer": "No restricted area permits are needed; standard Nepal visas apply for domestic and foreign travelers."
+      },
+      {
+        "question": "Is Gorkhe Pass good for mountain biking?",
+        "answer": "Yes, it is one of the premier gravel and mountain biking routes in Eastern Nepal through pine forests and tea estates."
+      },
+      {
+        "question": "What is the climate like at Gorkhe Pass?",
+        "answer": "It has a pleasant temperate hill climate with cool summers (18–24°C) and mild winters (5–15°C)."
+      },
+      {
+        "question": "Is there mobile phone network at Gorkhe Pass?",
+        "answer": "Yes, Nepal Telecom (NTC) and Ncell provide good cellular reception in the area."
+      },
+      {
+        "question": "What wildlife lives around Gorkhe Pass?",
+        "answer": "Red pandas, barking deer, leopards, and over 150 species of birds live in the surrounding Singalila foothills."
+      },
+      {
+        "question": "What local foods can you enjoy in Gorkhe?",
+        "answer": "Fresh organic organic greens (saag), local farm cheese (chhurpi), homemade butter, and fresh Ilam orthodox green tea."
+      },
+      {
+        "question": "Can Indian tourists visit Gorkhe Pass easily?",
+        "answer": "Yes, Indian citizens can cross through authorized border points like Pashupatinagar under bilateral open-border treaties."
+      },
+      {
+        "question": "How long does a trek around Gorkhe take?",
+        "answer": "A relaxed eco-trek around Ilam, Gorkhe, and the Singalila foothills takes 3 to 5 days."
+      },
+      {
+        "question": "Why is Gorkhe Pass a hidden gem in Eastern Nepal?",
+        "answer": "It combines uncrowded tea estate beauty, historic watermills, and direct access to world-class Himalayan viewpoints without extreme altitude."
+      }
+    ]
+  },
+
+  {
+    "id": "ilam-danda",
+    "slug": "ilam-danda",
+    "name": "Ilam Danda (Kanyam Ridge Pass)",
+    "country": "Nepal",
+    "countryCode": "NPL",
+    "continent": "Asia",
+    "state": "Koshi Province",
+    "highway": "Mechi Highway (National Highway NH-07)",
+    "elevationFt": 6200,
+    "elevationM": 1890,
+    "coordinates": {
+      "lat": 26.911,
+      "lng": 87.928
+    },
+    "status": "OPEN",
+    "statusDetail": "Open 24/7 on paved National Highway NH-07 — all vehicles operating smoothly with clear scenic views.",
+    "lastUpdated": "55 minutes ago",
+    "description": "Ilam Danda (Kanyam–Ilam Ridge Pass, 1,890 m / 6,200 ft) is the premier mountain saddle and scenic ridge pass along the paved Mechi Highway (National Highway NH-07) in Ilam District, Koshi Province, Eastern Nepal. Renowned as the tea capital of Nepal, this sweeping mountain corridor traverses emerald tea gardens, cedar-lined ridges, and mist-shrouded viewpoints offering spectacular sunrises over Mount Kanchenjunga (8,586 m) and the eastern Himalayan panorama.",
+    "image": "/ilam-danda.jpg",
+    "weather": {
+      "tempF": 66,
+      "tempC": 19,
+      "condition": "Sunny with Gentle Mountain Breeze",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Snow-free paved highway year-round"
+    },
+    "wind": {
+      "speedKmh": 12,
+      "speedMph": 7,
+      "direction": "SE",
+      "description": "Pleasant Valley Breeze"
+    },
+    "roadCondition": "Paved two-lane national highway (NH-07 Mechi Highway). Smooth asphalt surface with clear road markings, safety barriers, and roadside tea stalls.",
+    "chainRequirement": "Paved highway: No chain or traction device requirements; suitable for all cars, buses, trucks, and motorcycles.",
+    "cameras": [
+      {
+        "id": "ilam-cam-kanyam",
+        "title": "Ilam Danda — Kanyam Tea Estate Viewpoint",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Mechi Highway (NH-07) Km 45",
+        "direction": "Looking North toward Kanchenjunga & Ilam Tea Hills",
+        "location": "Kanyam Danda Scenic Overlook",
+        "source": "Nepal Department of Roads / Ilam Municipality",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.welcomenepal.com/"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "gorkhe-pass",
+        "slug": "gorkhe-pass",
+        "name": "Gorkhe Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Ilam-Darjeeling Trail",
+        "status": "OPEN",
+        "elevationFt": 7545,
+        "lastUpdated": "50 min ago",
+        "distanceKm": 24
+      },
+      {
+        "id": "khangla-pass",
+        "slug": "khangla-pass",
+        "name": "Khangla Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Singalila Ridge Trail",
+        "status": "OPEN",
+        "elevationFt": 17257,
+        "lastUpdated": "20 min ago",
+        "distanceKm": 78
+      },
+      {
+        "id": "selele-pass",
+        "slug": "selele-pass",
+        "name": "Selele Pass",
+        "country": "Nepal",
+        "state": "Koshi Province",
+        "highway": "Kanchenjunga Circuit Trail",
+        "status": "OPEN",
+        "elevationFt": 14074,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 98
+      }
+    ],
+    "overview": {
+      "openedYear": "Historic Mechi Highway built in the 1970s connecting the plains to the hills",
+      "lengthMiles": 50,
+      "lengthKm": 80,
+      "annualSnowfallIn": 0,
+      "annualSnowfallM": 0,
+      "summary": "Ilam Danda along the Mechi Highway is the celebrated gateway to Eastern Nepal's hill country. Climbing from the Terai plains of Jhapa into the rolling tea plantations of Kanyam, Fikkal, and Ilam Bazaar, the highway crowns the ridge at 1,890 meters. It is famous worldwide for producing some of the finest high-grown orthodox teas, attracting thousands of visitors for agro-tourism, tea tasting, horse riding, and sunrise photography."
+    },
+    "isSeasonal": false,
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open 24/7/365 (All-weather paved national highway)",
+      "typicalReopening": "Open continuously throughout all seasons",
+      "description": "The Mechi Highway is an all-weather asphalt roadway maintained year-round by the Nepal Department of Roads."
+    },
+    "openingDateInfo": {
+      "year": 2026,
+      "statusText": "Open 24/7 — Optimal Driving Conditions on Paved National Highway",
+      "expectedOpeningWindow": "All Year",
+      "closingWindow": "Open All Year",
+      "clearanceAgency": "Nepal Department of Roads (Division Road Office Ilam)",
+      "notes": "Roadside hotels, luxury tea resorts, and charging/fuel stations open."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Sunny & Pleasant Tea Garden Air",
+        "tempHighF": 70,
+        "tempLowF": 54,
+        "icon": "sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Mild Clear Night",
+        "tempHighF": 58,
+        "tempLowF": 50,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Sunny & Warm",
+        "tempHighF": 72,
+        "tempLowF": 55,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Scattered Afternoon Mist",
+        "tempHighF": 69,
+        "tempLowF": 53,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Bright & Clear",
+        "tempHighF": 71,
+        "tempLowF": 54,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Splendid Himalayan Sunrise",
+        "tempHighF": 73,
+        "tempLowF": 56,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Nepal Department of Roads",
+        "type": "Mechi Highway (NH-07) Traffic Reports",
+        "url": "https://dor.gov.np/"
+      },
+      {
+        "name": "Nepal Tourism Board",
+        "type": "Ilam & Kanyam Tea Tourism Guide",
+        "url": "https://www.welcomenepal.com/"
+      },
+      {
+        "name": "National Tea and Coffee Development Board Nepal",
+        "type": "Ilam Orthodox Tea Estate Info",
+        "url": "https://teacoffee.gov.np/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Koshi Province (Ilam District), Nepal",
+      "mountainRange": "Eastern Mahabharat Ridge / Ilam Green Hills",
+      "elevationSummary": "6,200 ft (1,890 m) Highway Ridge Crest",
+      "connects": "Jhapa / Charali (Terai Plains) with Ilam Bazaar, Kanyam, Phidim & Taplejung",
+      "nearestTown": "Kanyam (5 km) • Ilam Bazaar (12 km) • Birtamod / Charali (42 km south)",
+      "roadType": "Paved Two-Lane National Highway (NH-07 Mechi Highway)",
+      "bestTime": "October to April (Crystal clear mountain views of Kanchenjunga and Mount Everest)",
+      "highlight": "Endless carpeted rolling tea gardens, horse riding trails, famous tea factories, and panoramic Himalayan sunrise viewpoints."
+    },
+    "routeDetails": {
+      "distanceKm": 80,
+      "distanceMiles": 50,
+      "duration": "2.5–3 hours driving time from Charali to Ilam Bazaar",
+      "origin": "Charali / Birtamod (Terai Plains, 130 m)",
+      "destination": "Ilam Bazaar / Phidim (1,208 m / 1,890 m crest)",
+      "waypoints": [
+        "Charali (130 m) — Junction with East-West Highway (Mahendra Highway)",
+        "Kolbung & Harkate — Ascending into subtropical foothills and cardamom groves",
+        "Kanyam Tea Estate (1,700 m) — Iconic emerald rolling tea gardens and horse riding",
+        "Fikkal (1,500 m) — Commercial hill crossroads connecting to the Indian border (Pashupatinagar)",
+        "Ilam Danda Summit Saddle (1,890 m) — Highest ridge point with panoramic viewpoints",
+        "Ilam Bazaar (1,208 m) — Historic tea capital with century-old tea factory and botanical gardens"
+      ]
+    },
+    "drivingInfo": {
+      "summary": "Driving across Ilam Danda along the Mechi Highway (NH-07) is one of the smoothest and most scenic road journeys in Nepal. The asphalt highway curves gracefully through lush rolling green hills, manicured tea plantations, and pine groves.",
+      "characteristics": [
+        "Well-maintained paved two-lane asphalt highway",
+        "Continuous panoramic views of tea gardens and distant snowcapped Himalayan peaks",
+        "Abundant roadside cafes, tea tasting centers, resorts, and petrol stations"
+      ],
+      "switchbacksCount": "Smooth engineered highway curves",
+      "safetyAndEtiquette": [
+        "Watch for morning fog and hill mist during monsoon and winter seasons",
+        "Drive within the 40–50 km/h hill speed limit and sound horn on blind bends",
+        "Park only in designated parking bays near Kanyam tea gardens"
+      ],
+      "motorcycleTips": [
+        "One of Nepal's best motorcycle touring routes with smooth tarmac, leaning curves, and pleasant mountain temperatures."
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "Premier road cycling and touring climb on smooth asphalt through world-famous tea gardens.",
+      "approaches": [
+        {
+          "name": "South Climb from Charali",
+          "origin": "Charali (130 m)",
+          "distanceKm": 45,
+          "distanceMiles": 28,
+          "elevationGainM": 1760,
+          "elevationGainFt": 5774,
+          "avgGradient": "4.5%",
+          "maxGradient": "8%",
+          "hairpins": 22,
+          "description": "Sustained, smooth road cycling climb from the southern plains to the cool tea hills of Kanyam and Ilam Danda."
+        }
+      ],
+      "bestSeason": "October to April",
+      "safetyTips": [
+        "Wear high-vis jersey for misty corners"
+      ],
+      "bikeDayInfo": "Iconic road cycling classic in Eastern Nepal."
+    },
+    "distancesTable": [
+      {
+        "location": "Kanyam Tea Gardens",
+        "distance": "5 km (3.1 mi)",
+        "route": "NH-07 South",
+        "notes": "Premier tea tourism destination"
+      },
+      {
+        "location": "Ilam Bazaar",
+        "distance": "12 km (7.5 mi)",
+        "route": "NH-07 North",
+        "notes": "District capital, oldest tea factory"
+      },
+      {
+        "location": "Fikkal Bazaar",
+        "distance": "8 km (5.0 mi)",
+        "route": "NH-07 South",
+        "notes": "Border connection to Darjeeling"
+      },
+      {
+        "location": "Bhadrapur Airport (BDP)",
+        "distance": "48 km (29.8 mi)",
+        "route": "NH-07 & Plains Road",
+        "notes": "Daily flights to Kathmandu"
+      },
+      {
+        "location": "Taplejung Bazaar",
+        "distance": "85 km (52.8 mi)",
+        "route": "NH-07 North",
+        "notes": "Gateway to Kanchenjunga"
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "The Tea Capital of Nepal",
+        "content": "Ilam Danda and the surrounding Kanyam slopes represent the beating heart of Nepal's tea industry. The first tea plantation in Nepal was established here in 1863 by Gajraj Singh Thapa, brother-in-law of Prime Minister Jung Bahadur Rana, using tea saplings gifted by the Chinese emperor. Today, Ilam's high-elevation orthodox tea is celebrated across Europe, North America, and Asia for its floral aroma, golden liquor, and delicate muscatel flavor."
+      },
+      {
+        "title": "Breathtaking Panoramas of Kanchenjunga & Everest",
+        "content": "From the crest of Ilam Danda and nearby viewpoints like Shree Antu and Sandakphu, visitors are treated to one of the most expansive Himalayan vistas on the planet. At sunrise, golden light illuminates the snowcapped ramparts of Mount Kanchenjunga (8,586 m), Kumbhakarna, and Mount Everest in a spectacular morning display."
+      },
+      {
+        "title": "Premier Agro-Tourism and Cultural Heartland",
+        "content": "Ilam Danda has evolved into one of Nepal's premier eco-tourism and agricultural travel destinations. Travelers can participate in tea plucking, tour historic processing factories, enjoy horseback rides through manicured estates, and sample organic dairy delicacies like lollipop and chhurpi produced by local cooperatives."
+      }
+    ],
+    "customSeo": {
+      "title": "Ilam Danda (Kanyam Ridge Pass, 1,890 m) Mechi Highway Nepal: Road Status & Guide | LivePassWatch",
+      "description": "Check Ilam Danda (Kanyam Ridge Pass, 1,890 m) on Mechi Highway NH-07 in Nepal: live road status, tea garden tourism, weather & 20 comprehensive FAQs.",
+      "h1": "Ilam Danda (Kanyam Ridge Pass) Road Conditions, Weather & Pass Status"
+    },
+    "searchKeywords": [
+      "ilam danda",
+      "kanyam ridge pass",
+      "mechi highway nh07",
+      "ilam tea gardens pass",
+      "ilam danda elevation",
+      "ilam danda road status",
+      "is ilam danda open",
+      "ilam weather today",
+      "kanyam tea estate road conditions",
+      "charali to ilam highway",
+      "mechi highway road conditions"
+    ],
+    "aliases": [
+      "Kanyam Danda",
+      "Ilam Ridge Pass",
+      "Kanyam Bhanjyang",
+      "Mechi Highway Pass",
+      "Ilam Pass"
+    ],
+    "faqs": [
+      {
+        "question": "Is Ilam Danda (Mechi Highway) open right now?",
+        "answer": "Yes, Ilam Danda along the paved National Highway NH-07 is open 24/7 with smooth driving conditions."
+      },
+      {
+        "question": "What is the elevation of Ilam Danda?",
+        "answer": "Ilam Danda sits at an elevation of 1,890 meters (6,200 feet) above sea level."
+      },
+      {
+        "question": "Where is Ilam Danda located?",
+        "answer": "Ilam Danda is located in Ilam District, Koshi Province, in the tea-growing hill country of Eastern Nepal."
+      },
+      {
+        "question": "What highway passes through Ilam Danda?",
+        "answer": "The Mechi Highway (National Highway NH-07), connecting Charali/Jhapa in the southern plains with Ilam, Phidim, and Taplejung."
+      },
+      {
+        "question": "What is Kanyam famous for?",
+        "answer": "Kanyam is famous for its rolling carpet of green tea gardens, horseback riding, tea factory tours, and scenic photography."
+      },
+      {
+        "question": "When is the best time to visit Ilam Danda?",
+        "answer": "October to April offers clear mountain views and pleasant weather; the tea plucking season runs from March to November."
+      },
+      {
+        "question": "Does it snow on Ilam Danda?",
+        "answer": "Snow is extremely rare on Ilam Danda; it enjoys a mild subtropical-to-temperate climate year-round."
+      },
+      {
+        "question": "How long does it take to drive from Bhadrapur Airport to Ilam Danda?",
+        "answer": "It takes approximately 2 to 2.5 hours by taxi or private car via Charali along the paved Mechi Highway."
+      },
+      {
+        "question": "Are there good hotels and resorts in Ilam and Kanyam?",
+        "answer": "Yes, luxury tea garden resorts, boutique hotels, and authentic local homestays are widely available."
+      },
+      {
+        "question": "Can regular cars and motorcycles drive on this road?",
+        "answer": "Yes, the Mechi Highway is fully paved and easily navigated by all standard two-wheel-drive cars, hatchbacks, buses, and motorcycles."
+      },
+      {
+        "question": "What mountain views can you see from Ilam Danda?",
+        "answer": "On clear mornings, you can view Mount Kanchenjunga (8,586 m), Kumbhakarna (Jannu), and the Singalila mountain range."
+      },
+      {
+        "question": "What are the main agricultural products of Ilam?",
+        "answer": "Famous for the \"6 As\" (Alainchi/cardamom, Aduwa/ginger, Aalu/potato, Aamriso/broom grass, Olan/milk, and Akabare chili), plus orthodox tea."
+      },
+      {
+        "question": "What is the speed limit on the Mechi Highway through Ilam Danda?",
+        "answer": "The recommended hill speed limit is 40–50 km/h for safety around mountain curves."
+      },
+      {
+        "question": "Is mobile phone network and 4G available on Ilam Danda?",
+        "answer": "Yes, full 4G high-speed cellular coverage (NTC and Ncell) is available across the highway."
+      },
+      {
+        "question": "Are EV charging stations and petrol pumps available?",
+        "answer": "Yes, petrol pumps and EV fast-charging stations are located at Charali, Kanyam, Fikkal, and Ilam Bazaar."
+      },
+      {
+        "question": "Can I buy authentic orthodox tea at Ilam Danda?",
+        "answer": "Yes, dozens of certified tea outlets sell factory-fresh white, green, black, and oolong orthodox teas."
+      },
+      {
+        "question": "What are nearby tourist spots around Ilam Danda?",
+        "answer": "Shree Antu (famous sunrise point), Mai Pokhari (Ramsar wetland lake), Fikkal Bazaar, and Sandakphu."
+      },
+      {
+        "question": "Is Ilam Danda good for cycling?",
+        "answer": "Yes, it is a premier road cycling destination in Nepal with smooth asphalt and gentle, scenic climbs."
+      },
+      {
+        "question": "Do I need any special permits to visit Ilam Danda?",
+        "answer": "No special permits are required; standard Nepal tourist visa applies."
+      },
+      {
+        "question": "Why is Ilam Danda a top road trip destination in Eastern Nepal?",
+        "answer": "It offers smooth paved roads, emerald tea landscapes, world-class hospitality, and stunning Himalayan panoramas."
+      }
+    ]
+  },
+];
 
 // Helper functions
 export function getPassBySlug(slug: string): MountainPass | undefined {

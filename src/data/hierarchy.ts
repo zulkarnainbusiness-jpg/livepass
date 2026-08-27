@@ -732,6 +732,112 @@ export const hierarchyData: HierarchyContinent[] = [
         flagEmoji: '🇳🇵',
         states: [
           {
+            id: 'koshi-province',
+            name: 'Koshi Province (Kanchenjunga & Eastern Nepal)',
+            passes: [
+              {
+                id: 'selele-pass',
+                slug: 'selele-pass',
+                name: 'Selele Pass (Sele La)',
+                highway: 'Kanchenjunga Circuit Trail',
+                elevationFt: 14074,
+                elevationM: 4290,
+                status: 'OPEN',
+                image: '/selele-pass.jpg'
+              },
+              {
+                id: 'mirgin-la',
+                slug: 'mirgin-la',
+                name: 'Mirgin La Pass',
+                highway: 'Kanchenjunga High Ridge Route',
+                elevationFt: 15300,
+                elevationM: 4663,
+                status: 'OPEN',
+                image: '/mirgin-la.jpg'
+              },
+              {
+                id: 'lumba-sumba-pass',
+                slug: 'lumba-sumba-pass',
+                name: 'Lumba Sumba Pass (Lumba Sumba La)',
+                highway: 'Great Himalaya Trail (GHT)',
+                elevationFt: 16925,
+                elevationM: 5159,
+                status: 'OPEN',
+                image: '/lumba-sumba-pass.jpg'
+              },
+              {
+                id: 'tipta-la',
+                slug: 'tipta-la',
+                name: 'Tipta La Pass (Tiptala Bhanjyang)',
+                highway: 'Tamor Trade Corridor',
+                elevationFt: 16791,
+                elevationM: 5118,
+                status: 'OPEN',
+                image: '/tipta-la.jpg'
+              },
+              {
+                id: 'olangchungola-pass',
+                slug: 'olangchungola-pass',
+                name: 'Olangchungola Pass (Walungchun Gola)',
+                highway: 'Upper Tamor Valley Trail',
+                elevationFt: 15748,
+                elevationM: 4800,
+                status: 'OPEN',
+                image: '/olangchungola-pass.jpg'
+              },
+              {
+                id: 'chhabi-pass',
+                slug: 'chhabi-pass',
+                name: 'Chhabi Pass (Chhyabuk La)',
+                highway: 'Kanchenjunga North Glacier Route',
+                elevationFt: 18143,
+                elevationM: 5530,
+                status: 'OPEN',
+                image: '/chhabi-chhyabuk-pass.jpg'
+              },
+              {
+                id: 'khangla-pass',
+                slug: 'khangla-pass',
+                name: 'Khangla Pass (Kang La Nepal–Sikkim)',
+                highway: 'Singalila Ridge Trail',
+                elevationFt: 17257,
+                elevationM: 5260,
+                status: 'OPEN',
+                image: '/khangla-pass.jpg'
+              },
+              {
+                id: 'jhingsang-la',
+                slug: 'jhingsang-la',
+                name: 'Jhingsang La (Jongsang La)',
+                highway: 'Jongsang Glacier Route',
+                elevationFt: 20157,
+                elevationM: 6144,
+                status: 'OPEN',
+                image: '/jhingsang-la.jpg'
+              },
+              {
+                id: 'gorkhe-pass',
+                slug: 'gorkhe-pass',
+                name: 'Gorkhe Pass (Gorkhe Bhanjyang)',
+                highway: 'Ilam-Darjeeling Heritage Trail',
+                elevationFt: 7545,
+                elevationM: 2300,
+                status: 'OPEN',
+                image: '/gorkhe-pass.jpg'
+              },
+              {
+                id: 'ilam-danda',
+                slug: 'ilam-danda',
+                name: 'Ilam Danda (Kanyam Ridge Pass)',
+                highway: 'Mechi Highway (NH-07)',
+                elevationFt: 6200,
+                elevationM: 1890,
+                status: 'OPEN',
+                image: '/ilam-danda.jpg'
+              }
+            ]
+          },
+          {
             id: 'karnali-province',
             name: 'Karnali Province (Dolpo)',
             passes: [

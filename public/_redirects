@@ -127,6 +127,26 @@
 /passes/nepal/tarap-pass /passes/nepal/karnali-province/tarap-pass 301
 /passes/kaireko-la /passes/nepal/karnali-province/kaireko-la 301
 /passes/nepal/kaireko-la /passes/nepal/karnali-province/kaireko-la 301
+/passes/selele-pass /passes/nepal/koshi-province/selele-pass 301
+/passes/nepal/selele-pass /passes/nepal/koshi-province/selele-pass 301
+/passes/mirgin-la /passes/nepal/koshi-province/mirgin-la 301
+/passes/nepal/mirgin-la /passes/nepal/koshi-province/mirgin-la 301
+/passes/lumba-sumba-pass /passes/nepal/koshi-province/lumba-sumba-pass 301
+/passes/nepal/lumba-sumba-pass /passes/nepal/koshi-province/lumba-sumba-pass 301
+/passes/tipta-la /passes/nepal/koshi-province/tipta-la 301
+/passes/nepal/tipta-la /passes/nepal/koshi-province/tipta-la 301
+/passes/olangchungola-pass /passes/nepal/koshi-province/olangchungola-pass 301
+/passes/nepal/olangchungola-pass /passes/nepal/koshi-province/olangchungola-pass 301
+/passes/chhabi-pass /passes/nepal/koshi-province/chhabi-pass 301
+/passes/nepal/chhabi-pass /passes/nepal/koshi-province/chhabi-pass 301
+/passes/khangla-pass /passes/nepal/koshi-province/khangla-pass 301
+/passes/nepal/khangla-pass /passes/nepal/koshi-province/khangla-pass 301
+/passes/jhingsang-la /passes/nepal/koshi-province/jhingsang-la 301
+/passes/nepal/jhingsang-la /passes/nepal/koshi-province/jhingsang-la 301
+/passes/gorkhe-pass /passes/nepal/koshi-province/gorkhe-pass 301
+/passes/nepal/gorkhe-pass /passes/nepal/koshi-province/gorkhe-pass 301
+/passes/ilam-danda /passes/nepal/koshi-province/ilam-danda 301
+/passes/nepal/ilam-danda /passes/nepal/koshi-province/ilam-danda 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200
