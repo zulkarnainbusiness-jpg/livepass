@@ -187,6 +187,7 @@ export const PrivacyPage: React.FC = () => {
         title="Privacy Policy"
         description="Privacy policy and data governance for LivePassWatch."
         canonicalUrl="https://www.livepasswatch.info/privacy"
+        noIndex={true}
       />
       <div className="lp-card" style={{ padding: '36px' }}>
         <h1 style={{ fontSize: '28px', marginBottom: '16px' }}>Privacy Policy</h1>
@@ -205,6 +206,7 @@ export const TermsPage: React.FC = () => {
         title="Terms of Service"
         description="Terms of service and safety disclaimers for LivePassWatch."
         canonicalUrl="https://www.livepasswatch.info/terms"
+        noIndex={true}
       />
       <div className="lp-card" style={{ padding: '36px' }}>
         <h1 style={{ fontSize: '28px', marginBottom: '16px' }}>Terms &amp; Safety Disclaimer</h1>

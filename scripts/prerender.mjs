@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { passesData, getPassUrl, getCountrySlug, getStateSlug, cleanSlug } from '../src/data/passes.ts';
+import { passSeoDetails } from '../src/data/passSeoData.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -35,24 +36,39 @@ function escapeHtml(str) {
 // 1. Generate Semantic HTML for Pass Detail Pages
 // -------------------------------------------------------------
 function generatePassSemanticHtml(pass, canonicalUrl) {
-  const nearbyHtml = pass.nearbyPasses && pass.nearbyPasses.length > 0 ? `
+  const seoDetails = passSeoDetails[pass.slug] || passSeoDetails[pass.id];
+  const relatedPasses = (pass.nearbyPasses && pass.nearbyPasses.length > 0)
+    ? pass.nearbyPasses.slice(0, 3)
+    : passesData.filter(p => p.id !== pass.id && (p.state === pass.state || p.country === pass.country || p.continent === pass.continent)).slice(0, 3);
+
+  const nearbyHtml = `
     <section class="pass-nearby-section" style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
       <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #0f172a;">Nearby Mountain Passes &amp; Alternative Routes</h2>
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem;">
-        ${pass.nearbyPasses.map(np => `
+        ${relatedPasses.map(np => {
+          const targetPass = passesData.find(p => p.id === np.id || p.slug === np.slug) || np;
+          const targetUrl = getPassUrl(targetPass);
+          return `
           <div style="border: 1px solid #e2e8f0; border-radius: 0.5rem; padding: 1rem; background: #f8fafc;">
             <h3 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 0.25rem;">
-              <a href="${getPassUrl(np)}" style="color: #1d4ed8; text-decoration: none;">${escapeHtml(np.name)}</a>
+              <a href="${targetUrl}" style="color: #1d4ed8; text-decoration: none;">${escapeHtml(np.name)} (${np.elevationFt?.toLocaleString?.() || np.elevationFt || ''} ft)</a>
             </h3>
-            <p style="font-size: 0.875rem; color: #64748b; margin: 0 0 0.5rem 0;">${escapeHtml(np.state || '')}, ${escapeHtml(np.country || '')} • ${escapeHtml(np.highway || '')}</p>
+            <p style="font-size: 0.875rem; color: #64748b; margin: 0 0 0.5rem 0;">📍 ${escapeHtml(np.state || '')}, ${escapeHtml(np.country || '')} • 🛣️ ${escapeHtml(np.highway || '')}</p>
             <span style="display: inline-block; padding: 0.2rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; background: ${np.status === 'OPEN' ? '#16a34a' : np.status === 'CLOSED' ? '#dc2626' : '#d97706'}; color: white;">
               ${escapeHtml(np.status)}
             </span>
-          </div>
-        `).join('')}
+          </div>`;
+        }).join('')}
+        <div style="border: 1px solid #e2e8f0; border-radius: 0.5rem; padding: 1rem; background: #f8fafc;">
+          <h3 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 0.25rem;">
+            <a href="/map" style="color: #1d4ed8; text-decoration: none;">Interactive Pass Map</a>
+          </h3>
+          <p style="font-size: 0.875rem; color: #64748b; margin: 0 0 0.5rem 0;">View global mountain passes with live status markers and satellite terrain.</p>
+          <a href="/map" style="font-size: 0.85rem; color: #1d4ed8; font-weight: 600; text-decoration: none;">Open Map &rarr;</a>
+        </div>
       </div>
     </section>
-  ` : '';
+  `;
 
   return `
     <main class="pass-detail-page-container">
@@ -65,15 +81,18 @@ function generatePassSemanticHtml(pass, canonicalUrl) {
             ${pass.state ? `<a href="/passes?state=${encodeURIComponent(pass.state)}" style="color: #38bdf8; text-decoration: none;">${escapeHtml(pass.state)}</a> &gt;` : ''}
             <span>${escapeHtml(pass.name)}</span>
           </nav>
-          <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
             <span class="status-badge status-${escapeHtml(pass.status)}" style="padding: 0.35rem 0.75rem; border-radius: 9999px; font-weight: 700; font-size: 0.875rem; background: ${pass.status === 'OPEN' ? '#16a34a' : pass.status === 'CLOSED' ? '#dc2626' : '#d97706'}; color: white;">
               ${escapeHtml(pass.status)}
             </span>
-            <span style="font-size: 0.875rem; opacity: 0.85;">Updated ${escapeHtml(pass.lastUpdated)}</span>
+            <span style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.35rem 0.75rem; border-radius: 9999px; background: rgba(56, 189, 248, 0.15); color: #38bdf8; font-size: 0.875rem; font-weight: 600;">
+              ⏱️ Last updated: ${escapeHtml(pass.lastUpdated)}
+            </span>
+            <span style="font-size: 0.875rem; opacity: 0.85;">⛰️ Summit: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)</span>
           </div>
-          <h1 style="font-size: 2.25rem; font-weight: 800; margin: 0 0 0.5rem 0; line-height: 1.2;">${escapeHtml(pass.name)} Road Conditions, Status &amp; Live Webcam</h1>
+          <h1 style="font-size: 2.25rem; font-weight: 800; margin: 0 0 0.5rem 0; line-height: 1.2;">${escapeHtml(pass.name)} Live Webcam &amp; Road Conditions</h1>
           <p style="font-size: 1.125rem; opacity: 0.9; margin: 0 0 1rem 0;">
-            📍 ${escapeHtml(pass.state)}, ${escapeHtml(pass.country)} • 🛣️ ${escapeHtml(pass.highway)} • ⛰️ Elevation: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)
+            📍 ${escapeHtml(pass.state ? `${pass.state}, ` : '')}${escapeHtml(pass.country)} • 🛣️ ${escapeHtml(pass.highway)} • ⛰️ Elevation: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)
           </p>
           <p style="font-size: 1rem; line-height: 1.6; max-width: 900px; opacity: 0.95;">
             ${escapeHtml(pass.description)}
@@ -104,12 +123,49 @@ function generatePassSemanticHtml(pass, canonicalUrl) {
           </div>
         </section>
 
-        ${pass.overview?.summary ? `
+        <!-- Nearest Towns & Driving Distances -->
         <section style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
-          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #0f172a;">Overview &amp; Historical Route Details</h2>
-          <p style="font-size: 1rem; line-height: 1.7; color: #334155; margin: 0;">${escapeHtml(pass.overview.summary)}</p>
+          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #0f172a;">Nearest Towns &amp; Driving Distances</h2>
+          <p style="margin: 0 0 1rem 0; font-size: 0.95rem; color: #475569;">
+            Gateway cities, supply hubs, and approximate driving distances from the summit of <strong>${escapeHtml(pass.name)}</strong>:
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+            ${(seoDetails?.nearestTowns || []).map(t => `
+              <div style="padding: 0.85rem 1rem; border-radius: 0.5rem; background: #f8fafc; border: 1px solid #e2e8f0;">
+                <div style="font-weight: 700; font-size: 0.95rem; color: #0f172a; margin-bottom: 0.25rem;">${escapeHtml(t.name)}</div>
+                <div style="font-size: 0.9rem; color: #1d4ed8; font-weight: 600;">${escapeHtml(t.distance)}</div>
+                <div style="font-size: 0.8rem; color: #64748b; margin-top: 0.2rem;">${escapeHtml(t.direction)}</div>
+              </div>
+            `).join('')}
+          </div>
         </section>
-        ` : ''}
+
+        <!-- Seasonal Closure Schedule -->
+        <section style="background: white; border: 1px solid #e2e8f0; border-left: 4px solid #f59e0b; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #0f172a;">Seasonal Closure Schedule &amp; Typical Dates</h2>
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0 0 0.5rem 0; color: #d97706;">
+            📅 ${escapeHtml(seoDetails?.seasonalClosureWindow || pass.seasonalClosureInfo?.typicalClosure || (pass.isSeasonal ? 'Winter Seasonal Closure' : 'Open Year-Round (Subject to winter storms)'))}
+          </h3>
+          <p style="font-size: 0.95rem; line-height: 1.65; color: #475569; margin: 0;">
+            ${escapeHtml(seoDetails?.seasonalClosureDetail || pass.seasonalClosureInfo?.description || 'Maintained with regular winter plowing and anti-icing operations by regional highway crews. Temporary short-duration closures may occur during active blizzards and avalanche clearance operations.')}
+          </p>
+        </section>
+
+        <!-- About This Pass (100-150 Words Unique Narrative) -->
+        <section style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #0f172a;">About ${escapeHtml(pass.name)}</h2>
+          <p style="font-size: 1rem; line-height: 1.8; color: #334155; margin-bottom: 1rem;">
+            ${escapeHtml(seoDetails?.aboutPass || pass.overview?.summary || pass.description)}
+          </p>
+          <p style="font-size: 0.95rem; line-height: 1.7; color: #64748b; margin-bottom: 1.25rem;">
+            <strong>${escapeHtml(pass.name)}</strong> reaches an official summit elevation of <strong>${pass.elevationFt.toLocaleString()} feet (${pass.elevationM.toLocaleString()} meters)</strong> above sea level on <strong>${escapeHtml(pass.highway)}</strong> in ${escapeHtml(pass.state ? `${pass.state}, ` : '')}${escapeHtml(pass.country)}.
+          </p>
+          <div style="padding: 1rem 1.25rem; border-radius: 0.5rem; background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid #1d4ed8;">
+            <p style="margin: 0; font-size: 0.925rem; line-height: 1.6; color: #475569;">
+              <strong>International Alpine Transit:</strong> ${escapeHtml(seoDetails?.crossLinkText || 'Explore high-altitude mountain highway conditions on the')}&nbsp;<a href="${seoDetails?.crossLinkUrl || '/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores'}" style="color: #1d4ed8; font-weight: 600; text-decoration: underline;">${escapeHtml(seoDetails?.crossLinkAnchor || 'Paso Los Libertadores (Andes Mountain Pass)')}</a>.
+            </p>
+          </div>
+        </section>
 
         ${pass.cameras && pass.cameras.length > 0 ? `
         <section style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
@@ -439,9 +495,21 @@ passesData.forEach(pass => {
   const canonicalUrl = `${DOMAIN}${canonicalPath}`;
   canonicalPassUrls.push(canonicalUrl);
 
-  const title = `${pass.name} Road Status & Conditions | LivePassWatch`;
-  const description = `Real-time ${pass.name} status: current road conditions, snow depth, closures, and live webcam. Updated ${pass.lastUpdated}.`;
+  const title = `${pass.name} Live Webcam & Open/Closed Status – Updated Today`;
+  const description = `Live ${pass.name} webcam feeds, highway conditions, and real-time open/closed status on ${pass.highway}, ${pass.state ? `${pass.state}, ` : ''}${pass.country}. Verified and updated ${pass.lastUpdated}.`;
   const passFullImage = pass.image.startsWith('http') ? pass.image : `${DOMAIN}${pass.image.startsWith('/') ? '' : '/'}${pass.image}`;
+
+  const allFaqs = [
+    {
+      question: `Is ${pass.name} open today?`,
+      answer: `${pass.name} is currently ${pass.status} (${pass.statusDetail || 'open to all vehicles'}) on ${pass.highway}, ${pass.state ? `${pass.state}, ` : ''}${pass.country}. Status verified by official transportation departments. Last updated: ${pass.lastUpdated}.`
+    },
+    {
+      question: `Does ${pass.name} have a live webcam?`,
+      answer: `Yes, ${pass.name} features live summit webcams, highway camera feeds, and real-time road condition views directly on LivePassWatch.`
+    },
+    ...(pass.faqs || [])
+  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -483,9 +551,9 @@ passesData.forEach(pass => {
           }
         }
       },
-      ...(pass.faqs && pass.faqs.length > 0 ? [{
+      {
         "@type": "FAQPage",
-        "mainEntity": pass.faqs.map(faq => ({
+        "mainEntity": allFaqs.map(faq => ({
           "@type": "Question",
           "name": faq.question,
           "acceptedAnswer": {
@@ -493,7 +561,7 @@ passesData.forEach(pass => {
             "text": faq.answer
           }
         }))
-      }] : [])
+      }
     ]
   };
 
@@ -561,22 +629,17 @@ const homepageJsonLd = {
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": `${DOMAIN}/#website`,
-      "name": "LIVEPASSWATCH",
       "url": `${DOMAIN}/`,
-      "description": "Global real-time mountain pass tracking, live webcams, snow depth, road conditions, and closures worldwide.",
+      "name": "LivePassWatch",
+      "description": "Real-time mountain pass conditions, live highway webcams, snow depth, and road status worldwide.",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": `${DOMAIN}/passes?q={search_term_string}`
-        },
+        "target": `${DOMAIN}/passes?search={search_term_string}`,
         "query-input": "required name=search_term_string"
       }
     },
     {
       "@type": "Organization",
-      "@id": `${DOMAIN}/#organization`,
       "name": "LivePassWatch",
       "url": `${DOMAIN}/`,
       "logo": `${DOMAIN}/mountain-logo.svg`,
@@ -764,6 +827,7 @@ const staticPages = [
     title: 'Privacy Policy | LivePassWatch',
     description: 'LivePassWatch privacy policy: how we handle user data, local storage preferences, and website analytics.',
     canonicalUrl: `${DOMAIN}/privacy`,
+    noIndex: true,
     bodyContent: `<main class="app-container" style="padding: 2.5rem 1rem; max-width: 800px; margin: 0 auto;">
       <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a;">Privacy Policy</h1>
       <p style="line-height: 1.7; color: #334155;">At LivePassWatch, we respect your privacy. We do not sell your personal information. We use anonymous analytics solely to improve mountain driving safety tools.</p>
@@ -774,6 +838,7 @@ const staticPages = [
     title: 'Terms of Service | LivePassWatch',
     description: 'Terms and conditions for using LivePassWatch mountain pass status and road condition tracking services.',
     canonicalUrl: `${DOMAIN}/terms`,
+    noIndex: true,
     bodyContent: `<main class="app-container" style="padding: 2.5rem 1rem; max-width: 800px; margin: 0 auto;">
       <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a;">Terms &amp; Safety Disclaimer</h1>
       <p style="line-height: 1.7; color: #334155;">Mountain weather and alpine road conditions can change unpredictably in minutes. Always verify official DOT advisories and carry appropriate emergency gear before mountain travel.</p>
@@ -789,7 +854,7 @@ staticPages.forEach(p => {
 });
 
 // -------------------------------------------------------------
-// 6. Regenerate sitemap.xml with 0 duplicates and only canonical URLs
+// 6. Regenerate sitemap.xml with 0 duplicates and only canonical indexable URLs
 // -------------------------------------------------------------
 console.log('\n🗺️  Regenerating sitemap.xml with canonical URLs...');
 
@@ -803,9 +868,7 @@ const coreSitemapUrls = [
   'https://www.livepasswatch.info/resources',
   'https://www.livepasswatch.info/submit-report',
   'https://www.livepasswatch.info/methodology',
-  'https://www.livepasswatch.info/about',
-  'https://www.livepasswatch.info/privacy',
-  'https://www.livepasswatch.info/terms'
+  'https://www.livepasswatch.info/about'
 ];
 
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>

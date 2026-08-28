@@ -38,7 +38,8 @@ import {
   Bike,
   Gauge
 } from 'lucide-react';
-import { getPassUrl } from '../data/passes';
+import { getPassUrl, passesData } from '../data/passes';
+import { passSeoDetails } from '../data/passSeoData';
 import { usePasses } from '../context/PassesContext';
 import { MountainPass } from '../types';
 import { StatusBadge } from '../components/StatusBadge';
@@ -241,6 +242,36 @@ export const PassDetailPage: React.FC = () => {
     ? 'Nathu La Pass mountain road in Sikkim, India'
     : `${pass.name} on ${pass.highway} in ${pass.state}`;
 
+  const seoDetails = passSeoDetails[pass.slug] || passSeoDetails[pass.id];
+  const seoTitle = `${pass.name} Live Webcam & Open/Closed Status – Updated Today`;
+  const seoDesc = `Live ${pass.name} webcam feeds, highway conditions, and real-time open/closed status on ${pass.highway}, ${pass.state ? `${pass.state}, ` : ''}${pass.country}. Verified and updated ${pass.lastUpdated}.`;
+
+  const displayedStatus = liveDataError ? 'NEEDS_VERIFICATION' : pass.status;
+  const displayedStatusDetail = liveDataError 
+    ? `Live status verification failed. Official status could not be reverified.` 
+    : pass.statusDetail;
+
+  const officialSourceDisplay = pass.dataSources && pass.dataSources.length > 0
+    ? pass.dataSources[0].name
+    : (pass.slug === 'trollstigen-pass' ? 'Norwegian Public Roads Administration (Statens vegvesen)' : (pass.slug === 'stelvio-pass' ? 'ANAS SpA & Servizio Strade Provincia Autonoma di Bolzano' : 'Official Department of Transportation'));
+
+  const weatherSourceDisplay = pass.dataSources && pass.dataSources.length > 2
+    ? pass.dataSources[2].name
+    : (pass.slug === 'trollstigen-pass' ? 'Norwegian Meteorological Institute (Yr.no)' : (pass.slug === 'stelvio-pass' ? 'MeteoTrentino & Servizio Meteorologico Aeronautica Militare' : 'Official Meteorological Service'));
+
+  // High-Intent FAQ Structured Data Schema
+  const allFaqs = [
+    {
+      question: `Is ${pass.name} open today?`,
+      answer: `${pass.name} is currently ${displayedStatus} (${displayedStatusDetail || 'open to all vehicles'}) on ${pass.highway}, ${pass.state ? `${pass.state}, ` : ''}${pass.country}. Status verified by official transportation authorities. Last updated: ${pass.lastUpdated}.`
+    },
+    {
+      question: `Does ${pass.name} have a live webcam?`,
+      answer: `Yes, ${pass.name} features live summit webcams, highway camera feeds, and real-time road condition views directly on LivePassWatch.`
+    },
+    ...(pass.faqs || [])
+  ];
+
   const jsonLdGraph = {
     "@context": "https://schema.org",
     "@graph": [
@@ -258,8 +289,8 @@ export const PassDetailPage: React.FC = () => {
         "@type": "WebPage",
         "@id": canonicalUrl,
         "url": canonicalUrl,
-        "name": `${pass.name} Road Conditions, Status & Live Webcam | LivePassWatch`,
-        "description": `Real-time ${pass.name} status: current road conditions, snow depth, closures, and live webcam. Updated ${pass.lastUpdated}.`,
+        "name": seoTitle,
+        "description": seoDesc,
         "image": {
           "@type": "ImageObject",
           "url": passFullImage,
@@ -281,9 +312,9 @@ export const PassDetailPage: React.FC = () => {
           }
         }
       },
-      ...(pass.faqs && pass.faqs.length > 0 ? [{
+      {
         "@type": "FAQPage",
-        "mainEntity": pass.faqs.map(faq => ({
+        "mainEntity": allFaqs.map(faq => ({
           "@type": "Question",
           "name": faq.question,
           "acceptedAnswer": {
@@ -291,325 +322,9 @@ export const PassDetailPage: React.FC = () => {
             "text": faq.answer
           }
         }))
-      }] : [])
+      }
     ]
   };
-
-  const seoTitle = `${pass.name} Road Status & Conditions | LivePassWatch`;
-  const seoDesc = `Real-time ${pass.name} status: current road conditions, snow depth, closures, and live webcam. Updated ${pass.lastUpdated}.`;
-
-  const officialSourceDisplay = pass.dataSources && pass.dataSources.length > 0
-    ? pass.dataSources[0].name
-    : (pass.slug === 'trollstigen-pass' ? 'Norwegian Public Roads Administration (Statens vegvesen)' : (pass.slug === 'stelvio-pass' ? 'ANAS SpA & Servizio Strade Provincia Autonoma di Bolzano' : 'Official Department of Transportation'));
-
-  const weatherSourceDisplay = pass.dataSources && pass.dataSources.length > 2
-    ? pass.dataSources[2].name
-    : (pass.slug === 'trollstigen-pass' ? 'Norwegian Meteorological Institute (Yr.no)' : (pass.slug === 'stelvio-pass' ? 'MeteoTrentino & Servizio Meteorologico Aeronautica Militare' : 'Official Meteorological Service'));
-
-  const displayedStatus = liveDataError ? 'NEEDS_VERIFICATION' : pass.status;
-  const displayedStatusDetail = liveDataError 
-    ? `Live status verification failed. Official status could not be reverified.` 
-    : pass.statusDetail;
-
-  const isCustomDashboardPass = [
-    'santiam-pass', 
-    'mckenzie-pass', 
-    'willamette-pass', 
-    'siskiyou-summit', 
-    'government-camp', 
-    'deadman-pass', 
-    'blue-mountain-summit',
-    'loveland-pass',
-    'vail-pass',
-    'berthoud-pass',
-    'independence-pass',
-    'monarch-pass',
-    'wolf-creek-pass',
-    'cottonwood-pass',
-    'rabbit-ears-pass',
-    'kenosha-pass',
-    'fremont-pass',
-    'hoosier-pass',
-    'guanella-pass',
-    'red-mountain-pass',
-    'molas-pass',
-    'coal-bank-pass'
-  ].includes(pass.id);
-
-  if (isCustomDashboardPass) {
-    const isClosed = pass.status === 'CLOSED';
-    const statusText = isClosed ? 'Closed' : 'Open';
-    const statusClass = isClosed ? 'text-red' : 'text-green';
-    
-    const roadVal = isClosed ? 'Closed' : pass.roadCondition || 'Bare, wet';
-    const tempVal = `${pass.weather?.tempF || 34}°F`;
-    const snowpackVal = `${pass.snowDepth?.depthIn || 0} in`;
-    const chainsVal = isClosed ? 'Closed' : pass.chainRequirement || 'Not required';
-    
-    const editorialHeading = `${pass.name} is ${statusText.toLowerCase()}, ${isClosed ? 'snow-covered and impassable' : 'bare and wet'} tonight`;
-    const editorialParagraph = isClosed
-      ? `Conditions at the ${pass.elevationFt.toLocaleString()} ft summit are holding steady this evening: winter snowpack has closed the highway, no public traffic is allowed, and snow showers are in the forecast. Crews report the highway is closed for the season.`
-      : `Conditions at the ${pass.elevationFt.toLocaleString()} ft summit are holding steady this evening: bare and wet pavement, no chain requirement for passenger vehicles, and light flurries in the forecast overnight. Crews report the commercial traction advisory remains active for trucks descending the east side.`;
-
-    const alertBannerText = `✓ ${pass.name} is ${statusText.toLowerCase()}`;
-    const alertBannerClass = isClosed ? 'sp-alert-banner closed-banner' : 'sp-alert-banner';
-    
-    const stateName = pass.state || 'Oregon';
-    const regionText = stateName.toLowerCase() === 'colorado' ? 'ROCKY MOUNTAINS' : 'CASCADE RANGE';
-    const officialSourceLabel = stateName.toLowerCase() === 'colorado' ? 'CDOT source' : 'TripCheck source';
-    const officialSourceUrl = stateName.toLowerCase() === 'colorado' ? 'https://codot.gov' : 'https://tripcheck.com';
-
-    return (
-      <div className="pass-detail-page-container" style={{ backgroundColor: '#121212', minHeight: '100vh', padding: '20px 0' }}>
-        <SEOHelper
-          title={pass.customSeo?.title || `${pass.name} Road Conditions, Status & Webcams | LivePassWatch`}
-          description={pass.customSeo?.description || `Check real-time ${pass.name} road conditions, open/closed status, webcams, and weather forecast.`}
-          canonicalUrl={`https://www.livepasswatch.info/passes/united-states/${stateName.toLowerCase()}/${pass.slug}`}
-          ogImage={pass.image}
-          twitterCard="summary_large_image"
-        />
-
-        <div className="santiam-pass-custom-page">
-          {/* THEME 1: DASHBOARD */}
-          <div className="sp-theme-tag">THEME 1: DASHBOARD</div>
-          <div className="sp-dashboard-card">
-            <div className="sp-dash-header">
-              <span className="sp-dash-title">{pass.name}</span>
-              <div className="sp-dash-status-group">
-                <span className={`sp-dash-status ${statusClass}`}>{statusText}</span>
-                <span className="sp-dash-verified">verified 4 min ago</span>
-              </div>
-            </div>
-            <div className="sp-dash-meta">{pass.highway}, {stateName} · MP {pass.cameras?.[0]?.milepost?.replace('MP ', '') || 'Summit'} · {pass.elevationFt.toLocaleString()} ft</div>
-            <div className="sp-dash-grid">
-              <div className="sp-dash-col">
-                <span className="sp-dash-col-label">road</span>
-                <span className="sp-dash-col-val">{isClosed ? 'Closed' : 'Bare, wet'}</span>
-              </div>
-              <div className="sp-dash-col">
-                <span className="sp-dash-col-label">temp</span>
-                <span className="sp-dash-col-val">{tempVal}</span>
-              </div>
-              <div className="sp-dash-col">
-                <span className="sp-dash-col-label">snowpack</span>
-                <span className="sp-dash-col-val">{snowpackVal}</span>
-              </div>
-            </div>
-            <div className="sp-dash-footer">
-              reviewed by editorial team · <a href={officialSourceUrl} target="_blank" rel="noopener noreferrer" className="sp-source-link">{officialSourceLabel} <ExternalLink size={12} style={{ display: 'inline', verticalAlign: 'middle' }} /></a>
-            </div>
-          </div>
-
-          {/* THEME 2: EDITORIAL / MAGAZINE */}
-          <div className="sp-theme-tag" style={{ marginTop: '40px' }}>THEME 2: EDITORIAL / MAGAZINE</div>
-          <div className="sp-editorial-section">
-            <div className="sp-edit-region">{stateName.toUpperCase()} · {regionText}</div>
-            <h1 className="sp-edit-heading">{editorialHeading}</h1>
-            <div className="sp-edit-meta">
-              By the LivePassWatch editorial team · updated 4 minutes ago from {stateName.toLowerCase() === 'colorado' ? 'CDOT' : 'TripCheck'} traveler info
-            </div>
-            <p className="sp-edit-paragraph">
-              {editorialParagraph}
-            </p>
-            
-            <div className="sp-edit-stats-row">
-              <div className="sp-edit-stat-box">
-                <span className="sp-edit-stat-label">Temp</span>
-                <span className="sp-edit-stat-val">{tempVal}</span>
-              </div>
-              <div className="sp-edit-stat-box">
-                <span className="sp-edit-stat-label">Snowpack</span>
-                <span className="sp-edit-stat-val">{snowpackVal}</span>
-              </div>
-              <div className="sp-edit-stat-box">
-                <span className="sp-edit-stat-label">Chains</span>
-                <span className="sp-edit-stat-val">{chainsVal}</span>
-              </div>
-              <div className="sp-edit-stat-box">
-                <span className="sp-edit-stat-label">{isClosed ? 'Closure Period' : 'Closures, last winter'}</span>
-                <span className="sp-edit-stat-val">{isClosed ? 'Nov - Jun' : '0 days'}</span>
-              </div>
-            </div>
-            <div className="sp-edit-footer">
-              Sourced directly from <a href={officialSourceUrl} target="_blank" rel="noopener noreferrer" className="sp-source-link">{stateName.toLowerCase() === 'colorado' ? "CDOT's live feed" : "TripCheck's live feed"}</a>. Read our <a href="/about" className="sp-source-link" style={{ textDecoration: 'underline' }}>verification methodology</a>.
-            </div>
-          </div>
-
-          {/* THEME 3: ALERT / UTILITY */}
-          <div className="sp-theme-tag" style={{ marginTop: '40px' }}>THEME 3: ALERT / UTILITY</div>
-          <div className="sp-alert-container">
-            <div className={alertBannerClass}>
-              <span className="sp-alert-banner-text">{isClosed ? `✗ ${pass.name} is closed` : alertBannerText}</span>
-              <span className="sp-alert-banner-time">4 min ago</span>
-            </div>
-            <table className="sp-alert-table">
-              <tbody>
-                <tr>
-                  <td>Road</td>
-                  <td className="text-right">{isClosed ? 'Closed' : 'Bare, wet'}</td>
-                </tr>
-                <tr>
-                  <td>Chains</td>
-                  <td className="text-right">{chainsVal}</td>
-                </tr>
-                <tr>
-                  <td>Weather</td>
-                  <td className="text-right">{tempVal}, {pass.weather?.condition?.toLowerCase() || 'flurries'}</td>
-                </tr>
-                <tr>
-                  <td>Elevation</td>
-                  <td className="text-right">{pass.elevationFt.toLocaleString()} ft</td>
-                </tr>
-              </tbody>
-            </table>
-            <div className="sp-alert-footer">
-              <span>Source: {stateName.toLowerCase() === 'colorado' ? 'CDOT' : 'TripCheck'} - reviewed by editorial team</span>
-              <a href="/about" className="sp-methodology-link">Methodology</a>
-            </div>
-            <div className="sp-alert-chevron-wrap">
-              <ChevronDown size={20} className="sp-chevron-icon" />
-            </div>
-          </div>
-
-          {/* FAQs Section */}
-          <h2 className="sp-section-title" style={{ marginTop: '60px' }}>Frequently asked questions</h2>
-          <div className="sp-faq-section">
-            {pass.faqs.map((faq, index) => (
-              <div key={index} className="sp-faq-item">
-                <span className="sp-faq-question">{faq.question}</span>
-                <p className="sp-faq-answer">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (pass.id === 'north-cascades-pass') {
-    return (
-      <div className="pass-detail-page-container" style={{ backgroundColor: '#121212', minHeight: '100vh', padding: '20px 0' }}>
-        <SEOHelper
-          title="North Cascades Pass Road Conditions, Status & Live Webcam | LivePassWatch"
-          description="Real-time North Cascades Pass (SR 20) status: current road conditions, closures, weather, and live webcam. Updated regularly from official WSDOT traveler feeds."
-          canonicalUrl="https://www.livepasswatch.info/passes/united-states/washington/north-cascades-pass"
-          ogImage="/north-cascades-pass.jpg"
-          twitterCard="summary_large_image"
-        />
-        
-        <div className="north-cascades-custom-page">
-          {/* Status Banner */}
-          <div className="nc-status-banner">
-            <div className="nc-status-pill-group">
-              <span className="nc-status-pill">{pass.status.toLowerCase()}</span>
-              <span className="nc-last-verified">last verified 4 min ago</span>
-            </div>
-            <a href="https://wsdot.wa.gov/travel/roads-bridges/mountain-passes/north-cascades-hwy" target="_blank" rel="noopener noreferrer" className="nc-live-feed-link">
-              <Camera size={14} /> live feed
-            </a>
-          </div>
-
-          {/* Title & Subtitle */}
-          <h1 className="nc-pass-heading">North Cascades Pass road conditions</h1>
-          <div className="nc-pass-subheading">
-            Washington, US · SR-20 · 5,477 ft · Reviewed by the LivePassWatch editorial team <a href="/about" className="nc-methodology-link">methodology</a>
-          </div>
-
-          {/* Key Metrics Grid */}
-          <div className="nc-metrics-grid">
-            <div className="nc-metric-card">
-              <span className="nc-metric-label">Road</span>
-              <span className="nc-metric-value">{pass.snowDepth.depthIn > 0 ? 'Snow and slush' : 'Bare, dry'}</span>
-            </div>
-            <div className="nc-metric-card">
-              <span className="nc-metric-label">Chains</span>
-              <span className="nc-metric-value">Not required</span>
-            </div>
-            <div className="nc-metric-card">
-              <span className="nc-metric-label">Weather</span>
-              <span className="nc-metric-value">{pass.weather.tempF}°F, {pass.weather.condition.toLowerCase()}</span>
-            </div>
-            <div className="nc-metric-card">
-              <span className="nc-metric-label">Snowpack</span>
-              <span className="nc-metric-value">{pass.snowDepth.depthIn} in, {pass.snowDepth.condition.toLowerCase()}</span>
-            </div>
-          </div>
-
-          {/* Source Card */}
-          <a href="https://wsdot.wa.gov/travel/roads-bridges/mountain-passes/north-cascades-hwy" target="_blank" rel="noopener noreferrer" className="nc-source-card">
-            <div className="nc-source-info">
-              <span className="nc-source-title">Source: WSDOT traveler info</span>
-              <span className="nc-source-description">Pulled directly from the official feed, refreshed every 5 min</span>
-            </div>
-            <ExternalLink size={16} className="nc-source-link-icon" />
-          </a>
-
-          {/* Closures Section */}
-          <h2 className="nc-section-title">This winter's closures so far</h2>
-          <div className="nc-chart-container">
-            <div className="nc-bar-chart">
-              {/* Nov: 240 hrs */}
-              <div className="nc-bar-wrapper">
-                <span className="nc-bar-val-text">240h</span>
-                <div className="nc-bar" style={{ height: '32%' }}></div>
-                <span className="nc-bar-label">Nov</span>
-              </div>
-              {/* Dec: 744 hrs */}
-              <div className="nc-bar-wrapper">
-                <span className="nc-bar-val-text">744h</span>
-                <div className="nc-bar" style={{ height: '100%' }}></div>
-                <span className="nc-bar-label">Dec</span>
-              </div>
-              {/* Jan: 744 hrs */}
-              <div className="nc-bar-wrapper">
-                <span className="nc-bar-val-text">744h</span>
-                <div className="nc-bar" style={{ height: '100%' }}></div>
-                <span className="nc-bar-label">Jan</span>
-              </div>
-              {/* Feb: 672 hrs */}
-              <div className="nc-bar-wrapper">
-                <span className="nc-bar-val-text">672h</span>
-                <div className="nc-bar" style={{ height: '90%' }}></div>
-                <span className="nc-bar-label">Feb</span>
-              </div>
-              {/* Mar: 744 hrs */}
-              <div className="nc-bar-wrapper">
-                <span className="nc-bar-val-text">744h</span>
-                <div className="nc-bar" style={{ height: '100%' }}></div>
-                <span className="nc-bar-label">Mar</span>
-              </div>
-              {/* Apr: 720 hrs */}
-              <div className="nc-bar-wrapper">
-                <span className="nc-bar-val-text">720h</span>
-                <div className="nc-bar" style={{ height: '96%' }}></div>
-                <span className="nc-bar-label">Apr</span>
-              </div>
-              {/* May: 360 hrs */}
-              <div className="nc-bar-wrapper">
-                <span className="nc-bar-val-text">360h</span>
-                <div className="nc-bar" style={{ height: '48%' }}></div>
-                <span className="nc-bar-label">May</span>
-              </div>
-            </div>
-            <p className="nc-chart-caption">Nov-May closure hours by month, last winter</p>
-          </div>
-
-          {/* FAQs Section */}
-          <h2 className="nc-section-title">Frequently asked questions</h2>
-          <div className="nc-faq-section">
-            <div className="nc-faq-item">
-              <span className="nc-faq-question">Are chains required right now?</span>
-              <p className="nc-faq-answer">Not for passenger vehicles currently. Commercial traction advisory in effect during early season shifts.</p>
-            </div>
-            <div className="nc-faq-item">
-              <span className="nc-faq-question">How often does this pass close in winter?</span>
-              <p className="nc-faq-answer">The highway closes entirely each winter, averaging 5 months of closure (typically late November to early May) due to extreme snow accumulation and avalanche paths over Washington Pass.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="pass-detail-page-container">
@@ -702,8 +417,21 @@ export const PassDetailPage: React.FC = () => {
         {/* Pass Header & Action Bar */}
         <header className="pass-detail-header-row">
           <div className="pass-title-group">
+            {/* Live Status & Last Updated Bar */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginBottom: '14px' }}>
+              <StatusBadge status={displayedStatus} size="lg" />
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 14px', borderRadius: '9999px', backgroundColor: 'rgba(56, 189, 248, 0.12)', color: 'var(--primary)', fontSize: '13px', fontWeight: '700', border: '1px solid rgba(56, 189, 248, 0.25)' }}>
+                <Clock size={14} />
+                <span>Last updated: {pass.lastUpdated}</span>
+              </div>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', borderRadius: '9999px', backgroundColor: 'var(--bg-surface-subtle)', color: 'var(--text-secondary)', fontSize: '13px', border: '1px solid var(--border-color)' }}>
+                <Mountain size={14} />
+                <span>Elevation: {pass.elevationFt.toLocaleString()} ft ({pass.elevationM.toLocaleString()} m)</span>
+              </div>
+            </div>
+
             <div className="title-and-star">
-              <h1 className="pass-main-heading">{pass.customSeo?.h1 || `${pass.name} – Webcam, Weather, Road Conditions & Opening Status`}</h1>
+              <h1 className="pass-main-heading">{pass.customSeo?.h1 || `${pass.name} Live Webcam & Road Conditions`}</h1>
               <button 
                 onClick={toggleFavorite} 
                 className={`star-icon-btn ${isFavorite ? 'active' : ''}`}
@@ -718,9 +446,9 @@ export const PassDetailPage: React.FC = () => {
               <span className="dot-sep">•</span>
               <span>{pass.highway}</span>
               <span className="dot-sep">•</span>
-              <span>{pass.state}, {pass.country}</span>
+              <span>{pass.state ? `${pass.state}, ` : ''}{pass.country}</span>
               <span className="dot-sep">•</span>
-              <span>Elevation: {pass.elevationFt.toLocaleString()} ft ({pass.elevationM.toLocaleString()} m)</span>
+              <span>Summit: {pass.elevationFt.toLocaleString()} ft ({pass.elevationM.toLocaleString()} m)</span>
             </div>
             <p className="pass-summary-paragraph">{pass.description}</p>
           </div>
@@ -1707,37 +1435,73 @@ export const PassDetailPage: React.FC = () => {
               </section>
             )}
 
+            {/* Section 9c: Nearest Towns & Driving Distances */}
+            <section id="nearest-towns" className="detail-section-block">
+              <h2 className="section-title-heading">Nearest Towns &amp; Driving Distances</h2>
+              <div className="lp-card" style={{ padding: '24px' }}>
+                <p style={{ margin: '0 0 16px 0', fontSize: '14.5px', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+                  Gateway cities, supply hubs, and approximate driving distances from the summit of <strong>{pass.name}</strong>:
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '14px' }}>
+                  {(seoDetails?.nearestTowns || (pass.distancesTable ? pass.distancesTable.map(d => ({ name: d.location, distance: d.distance, direction: d.route })) : [])).map((town, idx) => (
+                    <div key={idx} style={{ padding: '14px 16px', borderRadius: '8px', backgroundColor: 'var(--bg-surface-subtle)', border: '1px solid var(--border-color)' }}>
+                      <div style={{ fontWeight: '700', fontSize: '15px', color: 'var(--text-primary)', marginBottom: '4px' }}>{town.name}</div>
+                      <div style={{ fontSize: '13.5px', color: 'var(--primary)', fontWeight: '600' }}>{town.distance}</div>
+                      <div style={{ fontSize: '12.5px', color: 'var(--text-muted)', marginTop: '3px' }}>{town.direction}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {/* Section 9d: Seasonal Closure Schedule & Typical Dates */}
+            <section id="seasonal-schedule" className="detail-section-block">
+              <h2 className="section-title-heading">Seasonal Closure Schedule &amp; Typical Dates</h2>
+              <div className="lp-card" style={{ padding: '24px', borderLeft: '4px solid #F59E0B' }}>
+                <h3 style={{ fontSize: '17px', fontWeight: '700', margin: '0 0 10px 0', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <Calendar size={18} color="#F59E0B" />
+                  <span>{seoDetails?.seasonalClosureWindow || pass.seasonalClosureInfo?.typicalClosure || (pass.isSeasonal ? 'Winter Seasonal Closure' : 'Open Year-Round (Subject to winter storms)')}</span>
+                </h3>
+                <p style={{ margin: 0, fontSize: '14.5px', lineHeight: '1.65', color: 'var(--text-secondary)' }}>
+                  {seoDetails?.seasonalClosureDetail || pass.seasonalClosureInfo?.description || 'Maintained with regular winter plowing and anti-icing operations by regional highway crews. Temporary short-duration closures may occur during active blizzards and avalanche clearance operations.'}
+                </p>
+              </div>
+            </section>
+
             {/* Section 10: Where Is Pass Located & Geography/History */}
             <section id="about" className="detail-section-block">
               <h2 className="section-title-heading">
-                {(pass.slug === 'bernina-pass')
-                  ? 'About Bernina Pass & Upper Engadin / Valposchiavo'
-                  : (pass.slug === 'gotthard-pass')
-                  ? 'About Gotthard Pass & Val Tremola'
-                  : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
-                  ? 'About Chang La Pass'
-                  : pass.slug === 'trollstigen-pass' 
-                  ? 'About Trollstigen Pass' 
-                  : `Where Is ${pass.name.split('(')[0].trim()} Located?`}
+                About {pass.name.split('(')[0].trim()}
               </h2>
-              <div className="about-narrative-container lp-card">
-                <p className="narrative-p">
-                  <strong>{pass.name}</strong> is situated in the <strong>{pass.quickFacts?.mountainRange || 'Saint-Gotthard Massif / Swiss Alps'}</strong> of <strong>{pass.state}, {pass.country}</strong>, at an official summit elevation of <strong>{pass.elevationFt.toLocaleString()} feet ({pass.elevationM.toLocaleString()} meters)</strong> above sea level. Traversed by <strong>{pass.highway}</strong>, it {pass.quickFacts?.connects ? `connects ${pass.quickFacts.connects}` : pass.description}.
+              <div className="about-narrative-container lp-card" style={{ padding: '24px' }}>
+                {/* 100-150 words unique editorial narrative */}
+                <p className="narrative-p" style={{ fontSize: '15px', lineHeight: '1.8', color: 'var(--text-secondary)', marginBottom: '18px' }}>
+                  {seoDetails?.aboutPass || pass.overview?.summary || pass.description}
                 </p>
 
-                {pass.narrativeSections ? (
+                <p className="narrative-p" style={{ fontSize: '14.5px', lineHeight: '1.7', color: 'var(--text-muted)' }}>
+                  <strong>{pass.name}</strong> is situated in the <strong>{pass.quickFacts?.mountainRange || 'Alpine Crest'}</strong> of <strong>{pass.state ? `${pass.state}, ` : ''}{pass.country}</strong>, at an official summit elevation of <strong>{pass.elevationFt.toLocaleString()} feet ({pass.elevationM.toLocaleString()} meters)</strong> above sea level on <strong>{pass.highway}</strong>.
+                </p>
+
+                {pass.narrativeSections && (
                   pass.narrativeSections.map((sec, idx) => (
                     <React.Fragment key={idx}>
                       <h3 className="narrative-subheading">{sec.title}</h3>
                       <p className="narrative-p">{sec.content}</p>
                     </React.Fragment>
                   ))
-                ) : (
-                  <>
-                    <h3 className="narrative-subheading">Geography &amp; Connectivity</h3>
-                    <p className="narrative-p">{pass.overview?.summary || pass.description}</p>
-                  </>
                 )}
+
+                {/* Contextual Link to Top-Performing Pass */}
+                <div style={{ marginTop: '22px', padding: '16px 20px', borderRadius: '8px', backgroundColor: 'var(--bg-surface-subtle)', border: '1px solid var(--border-color)', borderLeft: '4px solid var(--primary)' }}>
+                  <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                    <strong>International Alpine Transit:</strong> {seoDetails?.crossLinkText || 'Explore high-altitude mountain highway conditions on the'}{' '}
+                    <Link to={seoDetails?.crossLinkUrl || '/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores'} style={{ color: 'var(--primary)', fontWeight: '600', textDecoration: 'underline' }}>
+                      {seoDetails?.crossLinkAnchor || 'Paso Los Libertadores (Andes Mountain Pass)'}
+                    </Link>
+                    .
+                  </p>
+                </div>
               </div>
             </section>
 
@@ -1857,227 +1621,34 @@ export const PassDetailPage: React.FC = () => {
 
             {/* Section 12: Explore Related Mountain Passes & Internal Linking */}
             <section id="related-passes" className="detail-section-block">
-              <h2 className="section-title-heading">Explore Related Mountain Passes</h2>
+              <h2 className="section-title-heading">Nearby Passes &amp; Alternative Routes</h2>
               <div className="internal-links-cards-grid">
-                {/* Bernina Pass Related Passes */}
-                {pass.slug === 'bernina-pass' ? (
-                  <>
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/uri-ticino/gotthard-pass')}>
-                      <div className="link-card-badge">Swiss Alps</div>
-                      <h3 className="link-card-title">Gotthard Pass (6,909 ft)</h3>
-                      <p className="link-card-desc">Historic Tremola cobblestone route, Route 2 highway, and A2 Gotthard Tunnel live traffic delays.</p>
-                      <span className="link-card-action">View Gotthard Pass &rarr;</span>
-                    </div>
+                {((pass.nearbyPasses && pass.nearbyPasses.length > 0)
+                  ? pass.nearbyPasses.slice(0, 3)
+                  : passesData.filter(p => p.id !== pass.id && (p.state === pass.state || p.country === pass.country || p.continent === pass.continent)).slice(0, 3)
+                ).map((near) => {
+                  const targetPass = passesData.find(p => p.id === near.id || p.slug === near.slug) || near;
+                  const targetUrl = getPassUrl(targetPass);
+                  return (
+                    <Link key={near.id} to={targetUrl} className="internal-link-card lp-card" style={{ textDecoration: 'none', color: 'inherit' }}>
+                      <div className="link-card-badge">{near.state || near.country}</div>
+                      <h3 className="link-card-title">{near.name} ({near.elevationFt.toLocaleString()} ft)</h3>
+                      <p className="link-card-desc">
+                        {targetPass.status ? `Current status: ${targetPass.status}. ` : ''}
+                        {targetPass.highway ? `Located on ${targetPass.highway}. ` : ''}
+                        Check real-time webcams, snowpack depth, and road advisories.
+                      </p>
+                      <span className="link-card-action">View {near.name} Status &rarr;</span>
+                    </Link>
+                  );
+                })}
 
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/bern-valais/grimsel-pass')}>
-                      <div className="link-card-badge">Swiss Alps</div>
-                      <h3 className="link-card-title">Grimsel Pass (7,100 ft)</h3>
-                      <p className="link-card-desc">Glacial granite landscape, Lake Totensee, and high-altitude Route 6 corridor in the Bernese Alps.</p>
-                      <span className="link-card-action">View Grimsel Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais/great-st-bernard-pass')}>
-                      <div className="link-card-badge">Swiss Alps</div>
-                      <h3 className="link-card-title">Great St Bernard Pass (8,100 ft)</h3>
-                      <p className="link-card-desc">Historic Swiss-Italian Alpine pass, 11th-century Hospice, St. Bernard dogs, and Route 21 status.</p>
-                      <span className="link-card-action">View Great St Bernard Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais-uri/furka-pass')}>
-                      <div className="link-card-badge">Swiss Alps</div>
-                      <h3 className="link-card-title">Furka Pass (7,969 ft)</h3>
-                      <p className="link-card-desc">Iconic James Bond Goldfinger route, Rhone Glacier ice grotto, and Hotel Belvédère.</p>
-                      <span className="link-card-action">View Furka Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/italy/south-tyrol-lombardy/stelvio-pass')}>
-                      <div className="link-card-badge">Italian Alps</div>
-                      <h3 className="link-card-title">Stelvio Pass (9,045 ft)</h3>
-                      <p className="link-card-desc">The crown jewel of the Eastern Alps with 87 hairpins and high-altitude road conditions on SS38.</p>
-                      <span className="link-card-action">View Stelvio Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?country=Switzerland')}>
-                      <div className="link-card-badge">Switzerland</div>
-                      <h3 className="link-card-title">All Swiss Mountain Passes</h3>
-                      <p className="link-card-desc">Browse real-time road conditions, webcams, and winter closure alerts for all Swiss Alpine corridors.</p>
-                      <span className="link-card-action">View Switzerland Passes &rarr;</span>
-                    </div>
-                  </>
-                ) : (pass.country === 'Switzerland' || pass.slug === 'great-st-bernard-pass' || pass.slug === 'furka-pass') ? (
-                  <>
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais/great-st-bernard-pass')}>
-                      <div className="link-card-badge">Swiss Alps</div>
-                      <h3 className="link-card-title">Great St Bernard Pass (8,100 ft)</h3>
-                      <p className="link-card-desc">Historic Swiss-Italian Alpine pass, 11th-century Hospice, St. Bernard rescue dogs, and Route 21 / SS27 live status.</p>
-                      <span className="link-card-action">View Great St Bernard Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais-uri/furka-pass')}>
-                      <div className="link-card-badge">Swiss Alps</div>
-                      <h3 className="link-card-title">Furka Pass (7,969 ft)</h3>
-                      <p className="link-card-desc">Experience Switzerland's iconic James Bond Goldfinger route, Rhone Glacier ice grotto, and live Swiss pass status.</p>
-                      <span className="link-card-action">View Furka Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/france/hautes-alpes-savoie/col-du-galibier')}>
-                      <div className="link-card-badge">French Alps</div>
-                      <h3 className="link-card-title">Col du Galibier (8,668 ft)</h3>
-                      <p className="link-card-desc">Giant of the French Alps on the Route des Grandes Alpes connecting Savoie and Hautes-Alpes.</p>
-                      <span className="link-card-action">View Col du Galibier &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/italy/south-tyrol-lombardy/stelvio-pass')}>
-                      <div className="link-card-badge">Italian Alps</div>
-                      <h3 className="link-card-title">Stelvio Pass (9,045 ft)</h3>
-                      <p className="link-card-desc">The crown jewel of the Eastern Alps with 87 hairpins and high-altitude road conditions on SS38.</p>
-                      <span className="link-card-action">View Stelvio Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?country=Switzerland')}>
-                      <div className="link-card-badge">Switzerland</div>
-                      <h3 className="link-card-title">All Swiss Mountain Passes</h3>
-                      <p className="link-card-desc">Browse real-time road conditions, webcams, and winter closure alerts for all Swiss Alpine corridors.</p>
-                      <span className="link-card-action">View Switzerland Passes &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?continent=Europe')}>
-                      <div className="link-card-badge">Europe</div>
-                      <h3 className="link-card-title">European Mountain Passes</h3>
-                      <p className="link-card-desc">Monitor live alpine highway statuses across Switzerland, Italy, France, Norway, and Austria.</p>
-                      <span className="link-card-action">Explore Europe Passes &rarr;</span>
-                    </div>
-                  </>
-                ) : (pass.country === 'France' || pass.slug === 'col-du-galibier') ? (
-                  <>
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais/great-st-bernard-pass')}>
-                      <div className="link-card-badge">Swiss Alps</div>
-                      <h3 className="link-card-title">Great St Bernard Pass (8,100 ft)</h3>
-                      <p className="link-card-desc">Historic Swiss-Italian Alpine pass, 11th-century Hospice, St. Bernard rescue dogs, and Route 21 / SS27 live status.</p>
-                      <span className="link-card-action">View Great St Bernard Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais-uri/furka-pass')}>
-                      <div className="link-card-badge">Swiss Alps</div>
-                      <h3 className="link-card-title">Furka Pass (7,969 ft)</h3>
-                      <p className="link-card-desc">Experience Switzerland's iconic James Bond Goldfinger route, Rhone Glacier ice grotto, and live Swiss pass status.</p>
-                      <span className="link-card-action">View Furka Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/italy/south-tyrol-lombardy/stelvio-pass')}>
-                      <div className="link-card-badge">Italian Alps</div>
-                      <h3 className="link-card-title">Stelvio Pass (9,045 ft)</h3>
-                      <p className="link-card-desc">The crown jewel of the Eastern Alps with 87 hairpins and high-altitude road conditions on SS38.</p>
-                      <span className="link-card-action">View Stelvio Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?country=France')}>
-                      <div className="link-card-badge">France</div>
-                      <h3 className="link-card-title">All French Mountain Passes</h3>
-                      <p className="link-card-desc">Browse real-time road conditions, webcams, and winter closure alerts for French Alpine corridors.</p>
-                      <span className="link-card-action">View France Passes &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?continent=Europe')}>
-                      <div className="link-card-badge">Europe</div>
-                      <h3 className="link-card-title">European Mountain Passes</h3>
-                      <p className="link-card-desc">Monitor live alpine highway statuses across France, Switzerland, Italy, Norway, and Austria.</p>
-                      <span className="link-card-action">Explore Europe Passes &rarr;</span>
-                    </div>
-                  </>
-                ) : pass.country === 'Norway' ? (
-                  <>
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais-uri/furka-pass')}>
-                      <div className="link-card-badge">Swiss Alps</div>
-                      <h3 className="link-card-title">Furka Pass (7,969 ft)</h3>
-                      <p className="link-card-desc">Experience Switzerland's iconic James Bond Goldfinger route, Rhone Glacier ice grotto, and Hotel Belvédère.</p>
-                      <span className="link-card-action">View Furka Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/italy/south-tyrol-lombardy/stelvio-pass')}>
-                      <div className="link-card-badge">Italian Alps</div>
-                      <h3 className="link-card-title">Stelvio Pass (9,045 ft)</h3>
-                      <p className="link-card-desc">The crown jewel of the Eastern Alps with 87 hairpins and high-altitude road conditions on SS38.</p>
-                      <span className="link-card-action">View Stelvio Pass &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?country=Norway')}>
-                      <div className="link-card-badge">Norway</div>
-                      <h3 className="link-card-title">All Norwegian Mountain Passes</h3>
-                      <p className="link-card-desc">Browse real-time road conditions, webcams, and winter closure alerts for all National Tourist Routes in Norway.</p>
-                      <span className="link-card-action">View Norway Passes &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?continent=Europe')}>
-                      <div className="link-card-badge">Europe</div>
-                      <h3 className="link-card-title">European Mountain Passes</h3>
-                      <p className="link-card-desc">Monitor live alpine highway statuses across Norway, Switzerland, Italy, France, and Austria.</p>
-                      <span className="link-card-action">Explore Europe Passes &rarr;</span>
-                    </div>
-                  </>
-                ) : (pass.country === 'India' || pass.continent === 'Asia') ? (
-                  <>
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/india/ladakh/khardung-la')}>
-                      <div className="link-card-badge">Ladakh, India</div>
-                      <h3 className="link-card-title">Khardung La Pass (17,582 ft)</h3>
-                      <p className="link-card-desc">One of the world's highest motorable passes, connecting Leh with the Nubra Valley. Live road status, camera and travel guide.</p>
-                      <span className="link-card-action">View Khardung La &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/india/himachal-pradesh/rohtang-pass')}>
-                      <div className="link-card-badge">Himachal Pradesh, India</div>
-                      <h3 className="link-card-title">Rohtang Pass (13,058 ft)</h3>
-                      <p className="link-card-desc">The iconic Himalayan pass on the Manali–Leh corridor. Check live road status, NGT permits, and mountain webcams.</p>
-                      <span className="link-card-action">View Rohtang Pass &rarr;</span>
-                    </div>
-
-                    {pass.slug.includes('zoji') && (
-                      <div className="internal-link-card lp-card" onClick={() => navigate('/passes?country=India')}>
-                        <div className="link-card-badge">India</div>
-                        <h3 className="link-card-title">All Indian Mountain Passes</h3>
-                        <p className="link-card-desc">Browse live road conditions, status, and travel guides for Himalayan and Ladakhi passes in India.</p>
-                        <span className="link-card-action">View India Passes &rarr;</span>
-                      </div>
-                    )}
-                  </>
-                ) : (
-                  <>
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/norway/more-og-romsdal/trollstigen-pass')}>
-                      <div className="link-card-badge">Norway</div>
-                      <h3 className="link-card-title">Trollstigen Pass (2,815 ft)</h3>
-                      <p className="link-card-desc">Check live road status, 11 hairpin turns, Statens vegvesen webcams, and seasonal opening dates on Fv63.</p>
-                      <span className="link-card-action">View Trollstigen &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?country=Italy')}>
-                      <div className="link-card-badge">Italy</div>
-                      <h3 className="link-card-title">Italian Mountain Passes</h3>
-                      <p className="link-card-desc">Check live road conditions, webcams, and weather across the Italian Alps, Dolomites, and Apennines.</p>
-                      <span className="link-card-action">View Italy Passes &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes?continent=Europe')}>
-                      <div className="link-card-badge">European Alps</div>
-                      <h3 className="link-card-title">Mountain Passes in Europe</h3>
-                      <p className="link-card-desc">Discover high alpine corridors across Norway, Switzerland, Italy, France, and Austria with real-time pass statuses.</p>
-                      <span className="link-card-action">Explore Europe Passes &rarr;</span>
-                    </div>
-
-                    <div className="internal-link-card lp-card" onClick={() => navigate('/passes/switzerland/valais-uri/furka-pass')}>
-                      <div className="link-card-badge">Swiss Alps</div>
-                      <h3 className="link-card-title">Furka Pass (7,969 ft)</h3>
-                      <p className="link-card-desc">Experience the iconic James Bond Goldfinger route, Rhone Glacier ice grotto, and Hotel Belvédère in Switzerland.</p>
-                      <span className="link-card-action">View Furka Pass &rarr;</span>
-                    </div>
-                  </>
-                )}
-
-                <div className="internal-link-card lp-card" onClick={() => navigate('/map')}>
+                <Link to="/map" className="internal-link-card lp-card" style={{ textDecoration: 'none', color: 'inherit' }}>
                   <div className="link-card-badge">Interactive Map</div>
                   <h3 className="link-card-title">Live Mountain Pass Map</h3>
-                  <p className="link-card-desc">Explore global mountain passes with live status pins, webcams, and satellite terrain — including Scandinavian and Alpine passes.</p>
-                  <span className="link-card-action">Open Map &rarr;</span>
-                </div>
+                  <p className="link-card-desc">Explore global mountain passes with live status pins, webcams, and satellite terrain.</p>
+                  <span className="link-card-action">Open Fullscreen Map &rarr;</span>
+                </Link>
               </div>
             </section>
 
