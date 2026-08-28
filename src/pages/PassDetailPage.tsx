@@ -68,7 +68,6 @@ export const PassDetailPage: React.FC = () => {
   const [liveDataError, setLiveDataError] = useState(false);
   const [history, setHistory] = useState<any[]>([]);
   const [verificationMeta, setVerificationMeta] = useState<any | null>(null);
-  const [gotthardTunnel, setGotthardTunnel] = useState<any | null>(null);
 
   // Helper to format dynamic relative time
   const formatTime = (timeStr: string) => {
@@ -91,126 +90,8 @@ export const PassDetailPage: React.FC = () => {
     setLiveDataError(false);
     setHistory([]);
     setVerificationMeta(null);
-    setGotthardTunnel(null);
 
     if (activePass) {
-      // Dynamic Gotthard API integrations (Swiss TCS, MeteoSwiss, ASTRA Tunnel)
-      if (activePass.id === 'gotthard-pass' || activePass.slug === 'gotthard-pass') {
-        fetch('/api/passes/gotthard/status')
-          .then(res => res.ok ? res.json() : null)
-          .then(res => {
-            if (res && res.success && res.data) {
-              setPass(prev => {
-                if (!prev || (prev.id !== 'gotthard-pass' && prev.slug !== 'gotthard-pass')) return prev;
-                return {
-                  ...prev,
-                  status: res.data.status,
-                  statusDetail: res.data.statusDetail || prev.statusDetail,
-                  lastUpdated: 'Just now',
-                  officialSource: res.data.sourceUrl || prev.officialSource,
-                  official_source_url: res.data.sourceUrl || prev.official_source_url
-                };
-              });
-            }
-          })
-          .catch(err => console.warn('Live Gotthard status check fallback to baseline:', err));
-
-        fetch('/api/passes/gotthard/weather')
-          .then(res => res.ok ? res.json() : null)
-          .then(res => {
-            if (res && res.success && res.data) {
-              setPass(prev => {
-                if (!prev || (prev.id !== 'gotthard-pass' && prev.slug !== 'gotthard-pass')) return prev;
-                return {
-                  ...prev,
-                  weather: {
-                    tempF: res.data.tempF,
-                    tempC: res.data.tempC,
-                    condition: res.data.condition,
-                    icon: prev.weather?.icon || 'sun'
-                  },
-                  forecast: res.data.forecast || prev.forecast,
-                  snowDepth: {
-                    depthCm: res.data.snowDepthCm,
-                    depthIn: res.data.snowDepthIn,
-                    condition: res.data.snowCondition
-                  },
-                  wind: {
-                    speedKmh: res.data.windSpeedKmh,
-                    speedMph: res.data.windSpeedMph,
-                    direction: res.data.windDirection,
-                    description: res.data.windDescription
-                  }
-                };
-              });
-            }
-          })
-          .catch(err => console.warn('Live Gotthard weather check fallback to baseline:', err));
-
-        fetch('/api/passes/gotthard/tunnel')
-          .then(res => res.ok ? res.json() : null)
-          .then(res => {
-            if (res && res.success && res.data) {
-              setGotthardTunnel(res.data);
-            }
-          })
-          .catch(err => console.warn('Live Gotthard tunnel check fallback to baseline:', err));
-      }
-
-      // Dynamic Bernina API integrations (Tiefbauamt Graubünden, Swiss TCS, MeteoSwiss)
-      if (activePass.id === 'bernina-pass' || activePass.slug === 'bernina-pass') {
-        fetch('/api/passes/bernina/status')
-          .then(res => res.ok ? res.json() : null)
-          .then(res => {
-            if (res && res.success && res.data) {
-              setPass(prev => {
-                if (!prev || (prev.id !== 'bernina-pass' && prev.slug !== 'bernina-pass')) return prev;
-                return {
-                  ...prev,
-                  status: res.data.status,
-                  statusDetail: res.data.statusDetail || prev.statusDetail,
-                  lastUpdated: 'Just now',
-                  officialSource: res.data.sourceUrl || prev.officialSource,
-                  official_source_url: res.data.sourceUrl || prev.official_source_url
-                };
-              });
-            }
-          })
-          .catch(err => console.warn('Live Bernina status check fallback to baseline:', err));
-
-        fetch('/api/passes/bernina/weather')
-          .then(res => res.ok ? res.json() : null)
-          .then(res => {
-            if (res && res.success && res.data) {
-              setPass(prev => {
-                if (!prev || (prev.id !== 'bernina-pass' && prev.slug !== 'bernina-pass')) return prev;
-                return {
-                  ...prev,
-                  weather: {
-                    tempF: res.data.tempF,
-                    tempC: res.data.tempC,
-                    condition: res.data.condition,
-                    icon: prev.weather?.icon || 'sun'
-                  },
-                  forecast: res.data.forecast || prev.forecast,
-                  snowDepth: {
-                    depthCm: res.data.snowDepthCm,
-                    depthIn: res.data.snowDepthIn,
-                    condition: res.data.snowCondition
-                  },
-                  wind: {
-                    speedKmh: res.data.windSpeedKmh,
-                    speedMph: res.data.windSpeedMph,
-                    direction: res.data.windDirection,
-                    description: res.data.windDescription
-                  }
-                };
-              });
-            }
-          })
-          .catch(err => console.warn('Live Bernina weather check fallback to baseline:', err));
-      }
-
       // Fetch dynamic verification details and history from our general endpoint
       fetch(`/api/passes/${activePass.id}`)
         .then(res => {
@@ -1067,62 +948,11 @@ export const PassDetailPage: React.FC = () => {
               </div>
             )}
 
-            {(pass.slug === 'gotthard-pass') && (
-              <div className="gotthard-tunnel-vs-pass-callout lp-card" style={{
-                borderLeft: '4px solid #10B981',
-                padding: '20px',
-                marginBottom: '24px',
-                backgroundColor: 'rgba(16, 185, 129, 0.04)',
-                borderRadius: '6px'
-              }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '10px' }}>
-                  <h3 style={{ margin: 0, fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#065F46' }}>
-                    <ShieldCheck size={20} color="#10B981" />
-                    <span>Gotthard Pass Road vs A2 Gotthard Road Tunnel</span>
-                  </h3>
-                  <span style={{ fontSize: '12px', fontWeight: 600, padding: '3px 8px', borderRadius: '4px', backgroundColor: '#ECFDF5', color: '#047857', border: '1px solid #A7F3D0' }}>
-                    Swiss TCS &amp; ASTRA Verified
-                  </span>
-                </div>
-                <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
-                  <strong>Important Distinction:</strong> This page monitors the <strong>Gotthard Mountain Pass Road</strong> (Hauptstrasse 2 / historic Tremola road over the 2,106 m / 6,909 ft summit), which is <em>toll-free, scenic, and open seasonally from late May to late October/November</em>.
-                </p>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '12px', marginTop: '12px' }}>
-                  <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: '6px', padding: '12px 14px' }}>
-                    <div style={{ fontSize: '13px', fontWeight: 'bold', color: '#047857', marginBottom: '4px' }}>🏔️ Gotthard Mountain Pass (Route 2 / Tremola)</div>
-                    <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '13px', color: '#4B5563', lineHeight: '1.5' }}>
-                      <li><strong>Status:</strong> Currently OPEN (Summer operations)</li>
-                      <li><strong>Elevation:</strong> 2,106 m (6,909 ft) summit crest</li>
-                      <li><strong>Tolls:</strong> 100% Toll-Free (No Swiss Vignette required)</li>
-                      <li><strong>Tremola Route:</strong> 24 historic cobblestone hairpins</li>
-                    </ul>
-                  </div>
-                  <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: '6px', padding: '12px 14px' }}>
-                    <div style={{ fontSize: '13px', fontWeight: 'bold', color: '#1E40AF', marginBottom: '4px' }}>🚇 A2 Gotthard Road Tunnel (16.9 km)</div>
-                    <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '13px', color: '#4B5563', lineHeight: '1.5' }}>
-                      <li><strong>Status:</strong> Open Year-Round (at 1,100 m elevation)</li>
-                      <li><strong>Vignette:</strong> Swiss Motorway Vignette (CHF 40) required</li>
-                      <li><strong>Traffic Delay:</strong> {gotthardTunnel?.trafficDelays?.southboundDelayMin ? `${gotthardTunnel.trafficDelays.southboundDelayMin} min queue at Göschenen` : 'Fluid / Normal metering'}</li>
-                      <li><strong>Bicycles:</strong> Strictly PROHIBITED in tunnel (take pass)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            )}
-            
             {/* Section 1: Top-of-Page Live Status Hero */}
             <section id="status" className="detail-section-block">
               <div className="section-title-wrap">
                 <h2 className="section-title-heading">
-                  {(pass.slug === 'bernina-pass')
-                    ? 'Is Bernina Pass Open Right Now?'
-                    : (pass.slug === 'gotthard-pass')
-                    ? 'Is Gotthard Pass Open Right Now?'
-                    : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la') 
-                    ? 'Is Chang La Open Right Now?' 
-                    : pass.slug === 'trollstigen-pass' 
-                    ? 'Is Trollstigen Pass Open Right Now?' 
-                    : `${pass.name.split('(')[0].trim().toUpperCase()} CURRENT STATUS`}
+                  {`${pass.name.split('(')[0].trim().toUpperCase()} CURRENT STATUS`}
                 </h2>
                 <span className="section-timestamp"><Clock size={14} /> Last updated: {pass.lastUpdated}</span>
               </div>
