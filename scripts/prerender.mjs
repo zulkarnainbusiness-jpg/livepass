@@ -623,6 +623,13 @@ passesData.forEach(pass => {
     duplicatePaths.add('/passes/india/ladakh/chang-la');
     duplicatePaths.add('/passes/india/chang-la-pass');
   }
+  if (pass.slug === 'trollstigen-pass') {
+    duplicatePaths.add('/passes/trollstigen');
+    duplicatePaths.add('/passes/trollstigen-pass');
+    duplicatePaths.add('/passes/norway/trollstigen');
+    duplicatePaths.add('/passes/norway/trollstigen-pass');
+    duplicatePaths.add('/passes/norway/more-og-romsdal/trollstigen');
+  }
 
   duplicatePaths.forEach(dupPath => {
     if (dupPath !== canonicalPath) {

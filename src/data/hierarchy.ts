@@ -262,6 +262,30 @@ export const hierarchyData: HierarchyContinent[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "norway",
+        "name": "Norway",
+        "code": "NOR",
+        "flagEmoji": "🇳🇴",
+        "states": [
+          {
+            "id": "more-og-romsdal",
+            "name": "Møre og Romsdal",
+            "passes": [
+              {
+                "id": "trollstigen-pass",
+                "slug": "trollstigen-pass",
+                "name": "Trollstigen (Fv63)",
+                "highway": "Fv63",
+                "elevationFt": 2815,
+                "elevationM": 858,
+                "status": "OPEN",
+                "image": "/trollstigen-pass-road-status-webcam.webp"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

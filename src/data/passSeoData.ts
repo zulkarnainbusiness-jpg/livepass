@@ -371,5 +371,33 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Paso Los Libertadores (Andes Mountain Pass)',
     crossLinkUrl: '/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores',
     crossLinkText: 'Compare extreme Himalayan passes with trans-Andean routes like the'
+  },
+  'trollstigen-pass': {
+    nearestTowns: [
+      { name: 'Åndalsnes (Romsdalsfjorden)', distance: '18 km (11 miles)', direction: 'Nord via Fv63' },
+      { name: 'Valldal (Norddalsfjorden)', distance: '40 km (25 miles)', direction: 'Sør via Fv63' },
+      { name: 'Geiranger (Geirangerfjorden)', distance: '74 km (46 miles)', direction: 'Sør via Ørnevegen' },
+      { name: 'Molde', distance: '60 km (37 miles)', direction: 'Nordvest via E39/Fv64' }
+    ],
+    seasonalClosureWindow: 'Slutten av mai til slutten av oktober (Sesongåpen turistveg)',
+    seasonalClosureDetail: 'Driftes av Statens vegvesen og Møre og Romsdal fylkeskommune. Vinterstengt fra november til mai på grunn av store snømengder og rasfare fra Trolltindene.',
+    aboutPass: 'Trollstigen (Trollstigvegen) er en av Norges mest spektakulære og ikoniske nasjonale turistveger på Fylkesvei 63 i Møre og Romsdal. Veien klatrer opp fjellsiden fra Isterdalen gjennom 11 skarpe hårnålssvinger med 10 % stigning, opp til Stigrøra platået på 858 meter over havet. Underveis krysser veien den buldrende Stigfossen (180 m fallhøyde) på en historisk natursteinsbru. På toppen ligger det prisbelønte besøkssenteret og utsiktsrampene som gir en spektakulær utsikt over de dramatiske fjelltoppene Bispen, Kongen og Dronninga. Veien er sesongåpen om sommeren og underlagt kontinuerlig geologisk skredovervåking.',
+    crossLinkAnchor: 'Paso Los Libertadores (Andes Mountain Pass)',
+    crossLinkUrl: '/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores',
+    crossLinkText: 'Sammenlign Trollstigens 11 hårnålssvinger med de 29 svingene i Los Caracoles på'
+  },
+  'trollstigen': {
+    nearestTowns: [
+      { name: 'Åndalsnes (Romsdalsfjorden)', distance: '18 km (11 miles)', direction: 'Nord via Fv63' },
+      { name: 'Valldal (Norddalsfjorden)', distance: '40 km (25 miles)', direction: 'Sør via Fv63' },
+      { name: 'Geiranger (Geirangerfjorden)', distance: '74 km (46 miles)', direction: 'Sør via Ørnevegen' },
+      { name: 'Molde', distance: '60 km (37 miles)', direction: 'Nordvest via E39/Fv64' }
+    ],
+    seasonalClosureWindow: 'Slutten av mai til slutten av oktober (Sesongåpen turistveg)',
+    seasonalClosureDetail: 'Driftes av Statens vegvesen og Møre og Romsdal fylkeskommune. Vinterstengt fra november til mai på grunn av store snømengder og rasfare fra Trolltindene.',
+    aboutPass: 'Trollstigen (Trollstigvegen) er en av Norges mest spektakulære og ikoniske nasjonale turistveger på Fylkesvei 63 i Møre og Romsdal. Veien klatrer opp fjellsiden fra Isterdalen gjennom 11 skarpe hårnålssvinger med 10 % stigning, opp til Stigrøra platået på 858 meter over havet. Underveis krysser veien den buldrende Stigfossen (180 m fallhøyde) på en historisk natursteinsbru. På toppen ligger det prisbelønte besøkssenteret og utsiktsrampene som gir en spektakulær utsikt over de dramatiske fjelltoppene Bispen, Kongen og Dronninga. Veien er sesongåpen om sommeren og underlagt kontinuerlig geologisk skredovervåking.',
+    crossLinkAnchor: 'Paso Los Libertadores (Andes Mountain Pass)',
+    crossLinkUrl: '/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores',
+    crossLinkText: 'Sammenlign Trollstigens 11 hårnålssvinger med de 29 svingene i Los Caracoles på'
   }
 };

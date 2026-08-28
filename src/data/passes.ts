@@ -4711,6 +4711,278 @@ export const passesData: MountainPass[] = [
     "isPopular": true
   },
   {
+    "id": "trollstigen-pass",
+    "slug": "trollstigen-pass",
+    "name": "Trollstigen Pass",
+    "alternateNames": [
+      "Trollstigen",
+      "Fv63 Trollstigen",
+      "Troll's Ladder",
+      "Trollstigvegen",
+      "Nasjonal turistveg Trollstigen",
+      "Trollstigen Fjellovergang"
+    ],
+    "country": "Norway",
+    "countryCode": "NOR",
+    "continent": "Europe",
+    "state": "Møre og Romsdal",
+    "highway": "Fylkesvei 63 (Fv63) / Nasjonal turistveg Geiranger-Trollstigen",
+    "elevationFt": 2815,
+    "elevationM": 858,
+    "coordinates": {
+      "lat": 62.456,
+      "lng": 7.6698
+    },
+    "status": "OPEN",
+    "statusDetail": "Sesongåpen vei (Fv63). Åpen for allmenn ferdsel. Maks kjøretøylengde 13,1 meter. Statens vegvesen og Møre og Romsdal fylkeskommune overvåker fjellsiden kontinuerlig.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Trollstigen (Trollstigvegen / Fv63) er en verdensberømt fjellovergang i Rauma og Fjord kommune i Møre og Romsdal, Norge. Veien stiger gjennom 11 dramatiske hårnålssvinger med 10 % stigning fra Isterdalen opp til Stigrøra platået på 858 meter over havet, flankert av majestetiske tinder som Bispen (1 462 m), Kongen (1 614 m) og Dronninga (1 544 m). Veien krysser den spektakulære Stigfossen (180 m fallhøyde) på en historisk natursteinsbru. Trollstigen er en del av Nasjonal turistveg Geiranger-Trollstigen og er sesongåpen fra sen vår til sen høst.",
+    "image": "/trollstigen-pass-road-status-webcam.webp",
+    "weather": {
+      "tempF": 46,
+      "tempC": 8,
+      "condition": "Fjord Mist & Cool Mountain Air",
+      "icon": "cloud-sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Bar og tørr asfalt (Bare Pavement)"
+    },
+    "wind": {
+      "speedKmh": 18,
+      "speedMph": 11,
+      "direction": "NW",
+      "description": "Frisk Fjellbris (Moderate Mountain Breeze)"
+    },
+    "roadCondition": "Bar og tørr vegbane over Stigrøra platået og gjennom hårnålssvingene. Kjøretøy over 13,1 meter har kjøreforbud. Statens vegvesen oppfordrer til aktsom kjøring ved Stigfossen bru.",
+    "chainRequirement": "Ingen kjettingpåbud om sommeren. Vinterstengt fjellovergang. Dekkutrustning tilpasset føret påkrevd ved tidlig/sen sesongkjøring.",
+    "cameras": [
+      {
+        "id": "trollstigen-cam-1",
+        "title": "Fv63 Trollstigen (retning Åndalsnes / Stigrøra)",
+        "image": "https://webkamera.atlas.vegvesen.no/public/kamera?id=150201",
+        "milepost": "Fv63 Stigrøra Platå",
+        "direction": "Retning Åndalsnes / Isterdalen",
+        "location": "Stigrøra Utsiktspunkt (858 moh)",
+        "source": "Statens vegvesen Trafikk / vindnå.no",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.vegvesen.no/trafikk"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "furka-pass",
+        "slug": "furka-pass",
+        "name": "Furka Pass",
+        "country": "Switzerland",
+        "state": "Valais / Uri",
+        "highway": "Route 19",
+        "status": "OPEN",
+        "elevationFt": 7969,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 1650
+      },
+      {
+        "id": "stelvio-pass",
+        "slug": "stelvio-pass",
+        "name": "Stelvio Pass",
+        "country": "Italy",
+        "state": "South Tyrol",
+        "highway": "SS38",
+        "status": "OPEN",
+        "elevationFt": 9045,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 1780
+      }
+    ],
+    "overview": {
+      "openedYear": 1936,
+      "lengthMiles": 12.4,
+      "lengthKm": 20,
+      "annualSnowfallIn": 450,
+      "annualSnowfallM": 11.4,
+      "summary": "Åpnet av Kong Haakon VII den 31. juli 1936 etter 8 års anleggsarbeid, er Trollstigen (Fv63) et mesterverk innen norsk veibygging. Veien snirkler seg gjennom 11 skarpe hårnålssvinger opp den stupbratte fjellsiden fra Isterdalen til fjellplatået Stigrøra på 858 meters høyde. Midt i fjellsiden krysser veien den buldrende Stigfossen over en elegant natursteinsbru. På toppen ligger det prisbelønte Trollstigplatået besøkssenter med utkragede glass- og stålramper som gir panoramautsikt over dalen og svingene. Veien er underlagt streng skredovervåking av Møre og Romsdal fylkeskommune og Statens vegvesen."
+    },
+    "narrativeSections": [
+      {
+        "title": "Historie, Arkitektur & 11 Hårnålssvinger (History & Architecture)",
+        "content": "Trollstigen ble offisielt innviet i 1936 og har i nesten et århundre fascinert reisende fra hele verden. Den smale fjellveien er bygget med håndmurt steinrekkverk og har en gjennomsnittlig stigning på 10 %. Hver sving har sitt eget navn, ofte oppkalt etter arbeidsformennene som ledet anleggsarbeidet. Ved toppen av passet tilbyr Reiulf Ramstad Arkitekter-designede utsiktsplattformer en svimlende utsikt ned mot Isterdalen og fossestrykene."
+      },
+      {
+        "title": "Fjellskredsikring, Sikkerhet & Kjøretøybegrensninger",
+        "content": "På grunn av bratte fjellsider og fare for steinsprang fra Bispefonna og Trolltindene, gjennomføres det omfattende fjellrensing og sikringsarbeid. Statens vegvesen og Møre og Romsdal fylkeskommune har innført strenge sikkerhetsprotokoller, inkludert automatisk stenging ved store nedbørsmengder. Kjøretøy over 13,1 meter er forbudt på Trollstigvegen, og sjåfører må bruke lave gir for å spare bremsene i de bratte unnabakkene."
+      }
+    ],
+    "isSeasonal": true,
+    "seasonalClosureInfo": {
+      "typicalClosure": "Slutten av oktober / november (første store vinterfall og ising)",
+      "typicalReopening": "Midten/slutten av mai til tidlig juni (avhengig av snømengder og rasfare)",
+      "description": "Trollstigen er en utpreget sesongvei som holder vinterstengt mellom november og mai på grunn av enorme snømengder, hyppige snøskred og fare for is- og steinsprang. Fresing og brøyting av de opptil 10 meter høye snøskavlene starter vanligvis i april, og åpningsdatoen fastsettes etter grundige geologiske sikkerhetsvurderinger av Statens vegvesen."
+    },
+    "openingDateInfo": {
+      "year": 2026,
+      "statusText": "Sesongåpen / Open for the 2026 summer season",
+      "expectedOpeningWindow": "Midten av mai til tidlig juni (Rekordtidlig åpning registrert i 2026)",
+      "closingWindow": "Slutten av oktober til midten av november 2026",
+      "clearanceAgency": "Statens vegvesen Drift og vedlikehold & Møre og Romsdal fylkeskommune",
+      "notes": "Åpnings- og stengedatoer varierer fra år til år basert på snødybde, temperatur og geoteknisk skredrisiko. Følg Vegvesen Trafikk (tlf 175) for sanntids veimeldinger."
+    },
+    "forecast": [
+      {
+        "day": "I dag (Today)",
+        "condition": "Fjellbris & Lettskyet",
+        "tempHighF": 50,
+        "tempLowF": 37,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "I kveld (Tonight)",
+        "condition": "Klar Fjellhimmel",
+        "tempHighF": 41,
+        "tempLowF": 33,
+        "icon": "moon"
+      },
+      {
+        "day": "I morgen (Tomorrow)",
+        "condition": "Delvis Skyet & Mildt",
+        "tempHighF": 54,
+        "tempLowF": 39,
+        "icon": "sun"
+      },
+      {
+        "day": "Dag 3",
+        "condition": "Fjordbris & Solgløtt",
+        "tempHighF": 52,
+        "tempLowF": 38,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Dag 4",
+        "condition": "Spredte Byger",
+        "tempHighF": 48,
+        "tempLowF": 36,
+        "icon": "cloud-rain"
+      },
+      {
+        "day": "Dag 5",
+        "condition": "Opphold & Frisk Fjelluft",
+        "tempHighF": 51,
+        "tempLowF": 37,
+        "icon": "wind"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Statens vegvesen (Vegvesen Trafikk)",
+        "type": "Offisiell norsk veimyndighet, trafikkmeldinger og webkamera",
+        "url": "https://www.vegvesen.no/trafikk"
+      },
+      {
+        "name": "Møre og Romsdal fylkeskommune",
+        "type": "Vegforvalter for Fv63 Trollstigen og skredsikring",
+        "url": "https://mrfylke.no"
+      },
+      {
+        "name": "Yr.no / Meteorologisk institutt",
+        "type": "Offisielt høyfjellsvær og nedbørsvarsel for Stigrøra",
+        "url": "https://www.yr.no"
+      },
+      {
+        "name": "Nasjonal turistveg Geiranger-Trollstigen",
+        "type": "Nasjonale turistveger, ruteinformasjon og arkitektur",
+        "url": "https://www.nasjonaleturistveger.no"
+      }
+    ],
+    "customSeo": {
+      "h1": "Trollstigen Pass Live Webcam & Road Conditions (Fv63)",
+      "title": "Trollstigen Pass Live Webcam & Open/Closed Status – Updated Today",
+      "description": "Se live Fv63 Trollstigen webkamera, kjøreforhold, åpningstider og sanntids veistatus på Fylkesvei 63 i Møre og Romsdal, Norge. Verifisert og oppdatert i dag."
+    },
+    "searchKeywords": [
+      "Trollstigen Pass opening date",
+      "Trollstigen Pass is open",
+      "Trollstigen Pass road conditions",
+      "Trollstigen Pass road status",
+      "Trollstigen Pass pass status report",
+      "when does Trollstigen Pass open",
+      "Trollstigen Pass closed",
+      "Trollstigen Pass is closed",
+      "Trollstigen Pass is it open today",
+      "is Trollstigen Pass closed today",
+      "Trollstigen Pass webcam",
+      "Trollstigen Pass live webcam",
+      "Trollstigen Pass cameras",
+      "Trollstigen Pass summit camera",
+      "when does Trollstigen Pass close for winter",
+      "Trollstigen Pass map",
+      "is Trollstigen Pass open right now",
+      "Trollstigen Pass weather today",
+      "Trollstigen Pass snow",
+      "Trollstigen Pass snow depth",
+      "Trollstigen Pass snow conditions",
+      "Trollstigen Pass elevation",
+      "Trollstigen Pass open",
+      "Trollstigen Pass when will open",
+      "Trollstigen Pass closures today",
+      "is Trollstigen Pass open in winter",
+      "Trollstigen Pass weather",
+      "Fv63 Trollstigen webkamera",
+      "Trollstigen status"
+    ],
+    "faqs": [
+      {
+        "question": "Er Trollstigen åpen i dag? (Is Trollstigen Pass open today?)",
+        "answer": "Ja, Trollstigen (Fv63) er for øyeblikket ÅPEN for ordinær biltrafikk og turisme. Statens vegvesen overvåker veibanen og fjellsiden kontinuerlig. Sjekk sanntidsstatusen i statuskortet øverst på siden for eventuelle væravhengige endringer."
+      },
+      {
+        "question": "Is Trollstigen Pass open right now?",
+        "answer": "Yes, Trollstigen (Fv63) is currently OPEN for vehicular travel. The live status card above displays verified real-time information from Statens vegvesen (Norwegian Public Roads Administration). Maximum vehicle length is 13.1 meters."
+      },
+      {
+        "question": "Hva er veiforholdene på Trollstigen nå? (What are Trollstigen road conditions?)",
+        "answer": "Veiforholdene på Fv63 Trollstigen er fine med bar og tørr asfalt gjennom de 11 hårnålssvingene og over Stigrøra platået. Kjøretøy over 13,1 meter har ikke adgang på grunn av de trange svingene. Sjåfører bes kjøre forsiktig ved Stigfossen bru."
+      },
+      {
+        "question": "Hva er Trollstigen pass status report og veistatus?",
+        "answer": "Gjeldende Trollstigen road status er ÅPEN. Statens vegvesen melder om normale sommerforhold. Ved kraftig regnvær eller rasfare kan veien stenges på kort varsel for trafikantenes sikkerhet."
+      },
+      {
+        "question": "Når åpner Trollstigen og hva er Trollstigen opening date? (When does Trollstigen Pass open?)",
+        "answer": "Trollstigen åpner vanligvis for sesongen i midten til slutten av mai eller tidlig i juni, etter at Statens vegvesen har frest bort vintersnøen og rensket fjellsidene for løse steiner. I 2026 åpnet veien rekordtidlig i slutten av april."
+      },
+      {
+        "question": "Når stenger Trollstigen for vinteren? (When does Trollstigen close for winter?)",
+        "answer": "Trollstigen stenger normalt for vinteren i slutten av oktober eller begynnelsen av november, når det første store snøfallet og nattemfrosten gjør fjellovergangen ufremkommelig."
+      },
+      {
+        "question": "Er Trollstigen stengt i dag? (Is Trollstigen Pass closed today?)",
+        "answer": "Nei, Trollstigen er IKKE stengt i dag. Veien er åpen for ferdsel. Skulle det inntreffe akutte vær- eller rassituasjoner, oppdateres statusen her umiddelbart basert på offisielle meldinger fra Vegvesen Trafikk."
+      },
+      {
+        "question": "Har Trollstigen live webkamera? (Does Trollstigen have a live webcam?)",
+        "answer": "Ja, Statens vegvesen opererer et offisielt live webkamera på Fv63 ved Stigrøra platået i retning Åndalsnes og Isterdalen. Du kan se det oppdaterte kamerabildet direkte i 'Live Webkamera'-seksjonen på denne siden."
+      },
+      {
+        "question": "Hvor høyt er Trollstigen og hva er Trollstigen elevation? (How high is Trollstigen Pass?)",
+        "answer": "Trollstigen når sitt høyeste punkt på Stigrøra fjellplatå på 858 meter over havet (2 815 fot). De omkringliggende tindene Bispen, Kongen og Dronninga rager opp til 1 614 meter over havet."
+      },
+      {
+        "question": "Hva er Trollstigen vær og snøforhold i dag? (Trollstigen weather today & snow conditions)",
+        "answer": "I sommersesongen er det typisk mildt vestlandsk fjellvær med temperaturer mellom 8 °C og 16 °C. Snøen er smeltet bort fra veibanen, men snøfonner kan ligge i fjellsidene til langt utpå sommeren."
+      },
+      {
+        "question": "Er Trollstigen åpen om vinteren? (Is Trollstigen Pass open in winter?)",
+        "answer": "Nei, Trollstigen er vinterstengt fra november til mai på grunn av ekstreme snømengder, snøskred og ising i fjellveggen."
+      },
+      {
+        "question": "Hvordan finner jeg Trollstigen på kartet? (Where is Trollstigen on the map?)",
+        "answer": "Trollstigen ligger langs Fylkesvei 63 i Møre og Romsdal, omtrent 18 km sør for Åndalsnes og 40 km nord for Valldal og Geiranger. Se det interaktive satellittkartet ovenfor på siden."
+      }
+    ],
+    "isPopular": true
+  },
+  {
     "id": "paso-los-libertadores",
     "slug": "paso-los-libertadores",
     "name": "Paso Los Libertadores",
