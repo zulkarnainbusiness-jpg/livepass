@@ -177,7 +177,7 @@ function writeHtml(relPath, content) {
 }
 
 // -------------------------------------------------------------
-// 1. Prerender all 29 Pass Pages
+// 1. Prerender Mountain Pass Pages
 // -------------------------------------------------------------
 const canonicalPassUrls = [];
 const redirectRules = [];
@@ -270,38 +270,7 @@ passesData.forEach(pass => {
   // 2-tier: /passes/:country/:slug
   duplicatePaths.add(`/passes/${countrySlug}/${pass.slug}`);
   
-  // Specific legacy variants mentioned in prompt:
-  if (pass.slug === 'chang-la-pass') {
-    duplicatePaths.add('/passes/india/chang-la-pass');
-    duplicatePaths.add('/passes/chang-la-pass');
-    duplicatePaths.add('/passes/chang-la');
-  }
-  if (pass.slug === 'col-du-galibier') {
-    duplicatePaths.add('/passes/france/col-du-galibier');
-    duplicatePaths.add('/passes/france/hautes-alpes-and-savoie/col-du-galibier');
-    duplicatePaths.add('/passes/col-du-galibier');
-  }
-  if (pass.slug === 'trollstigen-pass') {
-    duplicatePaths.add('/passes/norway/trollstigen-pass');
-    duplicatePaths.add('/passes/trollstigen-pass');
-    duplicatePaths.add('/passes/norway/more-og-romsdal/trollstigen-pass');
-  }
-  if (pass.slug === 'bernina-pass') {
-    duplicatePaths.add('/passes/bernina-pass');
-    duplicatePaths.add('/passes/switzerland/bernina-pass');
-  }
-  if (pass.slug === 'gotthard-pass') {
-    duplicatePaths.add('/passes/gotthard-pass');
-    duplicatePaths.add('/passes/switzerland/gotthard-pass');
-  }
-  if (pass.slug === 'grimsel-pass') {
-    duplicatePaths.add('/passes/grimsel-pass');
-    duplicatePaths.add('/passes/switzerland/grimsel-pass');
-  }
-  if (pass.slug === 'great-st-bernard-pass') {
-    duplicatePaths.add('/passes/great-st-bernard-pass');
-    duplicatePaths.add('/passes/switzerland/great-st-bernard-pass');
-  }
+  // Specific legacy variants:
   if (pass.slug === 'north-cascades-pass') {
     duplicatePaths.add('/passes/north-cascades-pass');
     duplicatePaths.add('/passes/united-states/north-cascades-pass');

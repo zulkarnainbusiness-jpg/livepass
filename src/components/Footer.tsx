@@ -65,13 +65,13 @@ export const Footer: React.FC = () => {
               <li><Link to="/passes/united-states/washington/snoqualmie-pass">Snoqualmie Pass (I-90)</Link></li>
               <li><Link to="/passes/united-states/washington/stevens-pass">Stevens Pass (US-2)</Link></li>
               <li><Link to="/passes/united-states/california/donner-pass">Donner Pass (I-80)</Link></li>
-              <li><Link to="/passes/switzerland/graubunden/bernina-pass">Bernina Pass (Graubünden)</Link></li>
-              <li><Link to="/passes/switzerland/uri-ticino/gotthard-pass">Gotthard Pass (Uri/Ticino)</Link></li>
-              <li><Link to="/passes/switzerland/valais/great-st-bernard-pass">Great St Bernard Pass</Link></li>
-              <li><Link to="/passes/france/hautes-alpes-savoie/col-du-galibier">Col du Galibier (Alps)</Link></li>
-              <li><Link to="/passes/norway/more-og-romsdal/trollstigen-pass">Trollstigen Pass (Norway)</Link></li>
-              <li><Link to="/passes/india/ladakh/chang-la-pass">Chang La Pass (Ladakh)</Link></li>
+              <li><Link to="/passes/united-states/colorado/berthoud-pass">Berthoud Pass (US-40)</Link></li>
+              <li><Link to="/passes/switzerland/valais-uri/furka-pass">Furka Pass (Alps)</Link></li>
               <li><Link to="/passes/italy/south-tyrol-lombardy/stelvio-pass">Stelvio Pass (SS38)</Link></li>
+              <li><Link to="/passes/india/ladakh/khardung-la">Khardung La (Ladakh)</Link></li>
+              <li><Link to="/passes/india/himachal-pradesh/rohtang-pass">Rohtang Pass (Manali)</Link></li>
+              <li><Link to="/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores">Paso Los Libertadores</Link></li>
+              <li><Link to="/passes/new-zealand/canterbury-west-coast/arthurs-pass">Arthur's Pass (NZ)</Link></li>
             </ul>
           </div>
 
