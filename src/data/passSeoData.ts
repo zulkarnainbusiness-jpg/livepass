@@ -341,5 +341,35 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Paso Los Libertadores (Andes Mountain Pass)',
     crossLinkUrl: '/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores',
     crossLinkText: 'Compare Pacific freight corridors with the'
+  },
+  'chang-la-pass': {
+    nearestTowns: [
+      { name: 'Sakti Village', distance: '25 km (15 miles)', direction: 'West approach' },
+      { name: 'Karu Junction', distance: '45 km (28 miles)', direction: 'West via Sakti' },
+      { name: 'Leh City', distance: '75 km (47 miles)', direction: 'West via Karu' },
+      { name: 'Tangtse', distance: '40 km (25 miles)', direction: 'East toward Pangong' },
+      { name: 'Pangong Tso (Lukung)', distance: '75 km (47 miles)', direction: 'East via Tangtse' }
+    ],
+    seasonalClosureWindow: 'Open Nearly Year-Round (Subject to winter blizzards & BRO snow clearing)',
+    seasonalClosureDetail: 'Maintained by Border Roads Organisation (Project HIMANK). Heavy winter snowfalls and blizzards between December and March can prompt temporary 24 to 72-hour closures while high-capacity snow cutters clear the road.',
+    aboutPass: 'Chang La Pass is the third-highest motorable mountain pass in the world, cresting at an official elevation of 17,590 feet (5,360 m) across the rugged Ladakh Range in northern India. As the sole overland gateway connecting the Indus Valley with the world-famous Pangong Tso (Pangong Lake) and the Changthang plateau, Chang La carries immense tourist, commercial, and strategic defense traffic. Maintained under brutal Arctic conditions by the Border Roads Organisation (BRO Project HIMANK), the summit features the sacred Changla Baba Mandir and an Indian Army first-aid post offering oxygen and hot tea. Extreme altitude requires visitors to limit dwell times to 15–20 minutes to prevent Acute Mountain Sickness.',
+    crossLinkAnchor: 'Paso Los Libertadores (Andes Mountain Pass)',
+    crossLinkUrl: '/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores',
+    crossLinkText: 'Compare extreme Himalayan passes with trans-Andean routes like the'
+  },
+  'chang-la': {
+    nearestTowns: [
+      { name: 'Sakti Village', distance: '25 km (15 miles)', direction: 'West approach' },
+      { name: 'Karu Junction', distance: '45 km (28 miles)', direction: 'West via Sakti' },
+      { name: 'Leh City', distance: '75 km (47 miles)', direction: 'West via Karu' },
+      { name: 'Tangtse', distance: '40 km (25 miles)', direction: 'East toward Pangong' },
+      { name: 'Pangong Tso (Lukung)', distance: '75 km (47 miles)', direction: 'East via Tangtse' }
+    ],
+    seasonalClosureWindow: 'Open Nearly Year-Round (Subject to winter blizzards & BRO snow clearing)',
+    seasonalClosureDetail: 'Maintained by Border Roads Organisation (Project HIMANK). Heavy winter snowfalls and blizzards between December and March can prompt temporary 24 to 72-hour closures while high-capacity snow cutters clear the road.',
+    aboutPass: 'Chang La Pass is the third-highest motorable mountain pass in the world, cresting at an official elevation of 17,590 feet (5,360 m) across the rugged Ladakh Range in northern India. As the sole overland gateway connecting the Indus Valley with the world-famous Pangong Tso (Pangong Lake) and the Changthang plateau, Chang La carries immense tourist, commercial, and strategic defense traffic. Maintained under brutal Arctic conditions by the Border Roads Organisation (BRO Project HIMANK), the summit features the sacred Changla Baba Mandir and an Indian Army first-aid post offering oxygen and hot tea. Extreme altitude requires visitors to limit dwell times to 15–20 minutes to prevent Acute Mountain Sickness.',
+    crossLinkAnchor: 'Paso Los Libertadores (Andes Mountain Pass)',
+    crossLinkUrl: '/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores',
+    crossLinkText: 'Compare extreme Himalayan passes with trans-Andean routes like the'
   }
 };

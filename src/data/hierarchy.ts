@@ -289,6 +289,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 5359,
                 "status": "OPEN",
                 "image": "/khardung-la-ladakh.jpg"
+              },
+              {
+                "id": "chang-la-pass",
+                "slug": "chang-la-pass",
+                "name": "Chang La Pass",
+                "highway": "Leh–Pangong Highway",
+                "elevationFt": 17590,
+                "elevationM": 5360,
+                "status": "OPEN",
+                "image": "/chang-la-pass-road-status-webcam.webp"
               }
             ]
           },

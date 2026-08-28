@@ -175,7 +175,7 @@ function generatePassSemanticHtml(pass, canonicalUrl) {
           </div>
         </section>
 
-        ${pass.cameras && pass.cameras.length > 0 ? `
+        ${(pass.cameras && pass.cameras.length > 0) ? `
         <section style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
           <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #0f172a;">Live Highway Webcams &amp; Traffic Cameras</h2>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem;">
@@ -190,7 +190,19 @@ function generatePassSemanticHtml(pass, canonicalUrl) {
             `).join('')}
           </div>
         </section>
-        ` : ''}
+        ` : `
+        <section style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a;">Webcam &amp; Live Camera Advisory</h2>
+          <div style="padding: 1.25rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.5rem;">
+            <p style="font-size: 1rem; color: #0f172a; margin: 0 0 0.5rem 0; font-weight: 600;">
+              No verified public live camera feed is currently operated on ${escapeHtml(pass.name)}.
+            </p>
+            <p style="font-size: 0.925rem; color: #475569; margin: 0 0 0.75rem 0; line-height: 1.6;">
+              Road conditions are verified and cross-checked directly from official highway transport authorities (including ${escapeHtml(pass.dataSources?.[0]?.name || 'Regional Road Maintenance Authority')}). Check our <a href="/methodology" style="color: #1d4ed8; text-decoration: underline; font-weight: 600;">Multi-Source Verification Methodology</a> to learn how real-time reports are corroborated.
+            </p>
+          </div>
+        </section>
+        `}
 
         ${nearbyHtml}
 
@@ -603,6 +615,13 @@ passesData.forEach(pass => {
   if (pass.slug === 'sherman-pass') {
     duplicatePaths.add('/passes/sherman-pass');
     duplicatePaths.add('/passes/united-states/sherman-pass');
+  }
+  if (pass.slug === 'chang-la-pass') {
+    duplicatePaths.add('/passes/chang-la');
+    duplicatePaths.add('/passes/chang-la-pass');
+    duplicatePaths.add('/passes/india/chang-la');
+    duplicatePaths.add('/passes/india/ladakh/chang-la');
+    duplicatePaths.add('/passes/india/chang-la-pass');
   }
 
   duplicatePaths.forEach(dupPath => {

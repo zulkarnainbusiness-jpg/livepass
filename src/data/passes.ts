@@ -3198,6 +3198,255 @@ export const passesData: MountainPass[] = [
     "isPopular": true
   },
   {
+    "id": "chang-la-pass",
+    "slug": "chang-la-pass",
+    "name": "Chang La Pass",
+    "alternateNames": [
+      "Chang La",
+      "Changla Pass",
+      "Chang La Pass Ladakh",
+      "Changla Baba Pass"
+    ],
+    "country": "India",
+    "countryCode": "IND",
+    "continent": "Asia",
+    "state": "Ladakh",
+    "highway": "Leh–Pangong Highway (via Karu, Sakti, Zingral & Tangtse)",
+    "elevationFt": 17590,
+    "elevationM": 5360,
+    "coordinates": {
+      "lat": 34.0478,
+      "lng": 77.9304
+    },
+    "status": "OPEN",
+    "statusDetail": "Open for 4x4 and high-ground clearance vehicles. Snow clearance operations active by BRO Project HIMANK. Sub-zero temperatures at summit.",
+    "lastUpdated": "15 minutes ago",
+    "description": "Chang La Pass (elevation 5,360 m / 17,590 ft, summit marker 17,688 ft) is the world's third highest motorable mountain pass, located in the Ladakh Union Territory of India. Traversed by the strategic Leh–Pangong Highway across the Ladakh Range, it serves as the essential high-altitude overland gateway connecting Leh, Karu, and the Indus Valley with Durbuk, Tangtse, and the iconic Pangong Tso (Pangong Lake). Maintained year-round by the Border Roads Organisation (BRO Project HIMANK), the pass features the revered Changla Baba Mandir, emergency oxygen facilities, and steep, unpaved gravel switchbacks through Zingral.",
+    "image": "/chang-la-pass-road-status-webcam.webp",
+    "weather": {
+      "tempF": 18,
+      "tempC": -8,
+      "condition": "Sub-Zero High Altitude Winds",
+      "icon": "wind"
+    },
+    "snowDepth": {
+      "depthCm": 45,
+      "depthIn": 18,
+      "condition": "Packed Ice & Hardpack Snow on Summit Shoulders"
+    },
+    "wind": {
+      "speedKmh": 45,
+      "speedMph": 28,
+      "direction": "NW",
+      "description": "Strong Arctic Altitude Gusts"
+    },
+    "roadCondition": "Paved asphalt from Leh up to Zingral military checkpost. The final 10–15 km ascent and descent over Chang La summit consists of loose gravel, hardpack ice, seasonal melting glacial runoff (Pagal Nallah), and unbanked switchbacks. 4x4 or high ground-clearance vehicles with experienced mountain drivers recommended.",
+    "chainRequirement": "Anti-skid tire chains mandatory during active winter snowfall, ice conditions, and early spring melt (November to April). High ground-clearance required.",
+    "cameras": [],
+    "nearbyPasses": [
+      {
+        "id": "khardung-la",
+        "slug": "khardung-la",
+        "name": "Khardung La Pass",
+        "country": "India",
+        "state": "Ladakh",
+        "highway": "Leh-Nubra Road",
+        "status": "OPEN",
+        "elevationFt": 17582,
+        "lastUpdated": "15 min ago",
+        "distanceKm": 115
+      },
+      {
+        "id": "zoji-la",
+        "slug": "zoji-la",
+        "name": "Zoji La Pass",
+        "country": "India",
+        "state": "Jammu & Kashmir",
+        "highway": "NH-1",
+        "status": "OPEN",
+        "elevationFt": 11575,
+        "lastUpdated": "18 min ago",
+        "distanceKm": 185
+      },
+      {
+        "id": "rohtang-pass",
+        "slug": "rohtang-pass",
+        "name": "Rohtang Pass",
+        "country": "India",
+        "state": "Himachal Pradesh",
+        "highway": "Leh-Manali Highway (NH-03)",
+        "status": "OPEN",
+        "elevationFt": 13058,
+        "lastUpdated": "12 min ago",
+        "distanceKm": 490
+      }
+    ],
+    "overview": {
+      "openedYear": 1962,
+      "lengthMiles": 30,
+      "lengthKm": 48,
+      "annualSnowfallIn": 380,
+      "annualSnowfallM": 9.6,
+      "summary": "Chang La Pass (5,360 m / 17,590 ft) traverses the rugged Ladakh Range between the Indus River Valley and the high Tibetan Plateau / Changthang region. Built and maintained by the Border Roads Organisation (BRO) under Project HIMANK with the motto 'The Mountain Tamers', it is the only road link to the world-famous Pangong Tso and the strategic frontier posts of eastern Ladakh. The pass climbs through steep terrain via Sakti and Zingral, reaching an altitude where oxygen levels drop to nearly 50% of sea level. Travelers are strongly advised to restrict summit dwell time to 15–20 minutes to avoid Acute Mountain Sickness (AMS)."
+    },
+    "narrativeSections": [
+      {
+        "title": "Gateway to Pangong Tso & Strategic High-Altitude Route",
+        "content": "Chang La is the primary gateway to the high-altitude Changthang region and the legendary 134-kilometer-long Pangong Tso (Pangong Lake), which spans India and Tibet. Ascending from Karu and Sakti village, the route climbs through the Zingral military checkpoint before cresting at 5,360 meters. The pass is maintained under extreme Arctic conditions by the Border Roads Organisation (Project HIMANK)."
+      },
+      {
+        "title": "Changla Baba Mandir, Tea Post & Altitude Safety",
+        "content": "At the Chang La summit stands the revered Changla Baba Mandir, where passing drivers and Indian Army convoys stop for blessings. Adjacent to the shrine, Indian Army personnel operate a high-altitude medical post equipped with emergency oxygen cylinders and serve complimentary hot black tea to help travelers counter the onset of Acute Mountain Sickness (AMS). Due to the rarefied atmosphere, staying longer than 20 minutes at the summit is strictly discouraged."
+      }
+    ],
+    "isSeasonal": false,
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Nearly Year-Round (Subject to winter blizzards & BRO snow clearing)",
+      "typicalReopening": "Maintained 24/7 by BRO Project HIMANK rotary snow cutters",
+      "description": "Unlike lower seasonal passes, the Border Roads Organisation strives to keep Chang La open year-round for military and civilian transit to the Changthang region. However, severe winter blizzards, sub-zero cold waves (-35°C), and massive snow accumulation can trigger temporary preventive closures lasting 1 to 4 days during winter storm cycles."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Sub-Zero Alpine Sun",
+        "tempHighF": 22,
+        "tempLowF": 8,
+        "icon": "sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Freezing High Himalayan Sky",
+        "tempHighF": 12,
+        "tempLowF": -2,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Partly Cloudy & Icy Gusts",
+        "tempHighF": 25,
+        "tempLowF": 10,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "High Altitude Clouds",
+        "tempHighF": 20,
+        "tempLowF": 6,
+        "icon": "wind"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Crisp Mountain Sun",
+        "tempHighF": 24,
+        "tempLowF": 9,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Chilly Alpine Winds",
+        "tempHighF": 21,
+        "tempLowF": 7,
+        "icon": "wind"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Border Roads Organisation (BRO Project HIMANK)",
+        "type": "Official Himalayan Road & Snow Clearance Authority",
+        "url": "https://bro.gov.in"
+      },
+      {
+        "name": "District Administration Leh (LAHDC Leh)",
+        "type": "Traffic Advisories & Inner Line Permits (ILP)",
+        "url": "https://leh.nic.in"
+      },
+      {
+        "name": "Ladakh Police Traffic Headquarters",
+        "type": "Real-time Highway Bulletins & Convoy Alerts",
+        "url": "https://police.ladakh.gov.in"
+      },
+      {
+        "name": "India Meteorological Department (IMD Leh)",
+        "type": "High Altitude Weather & Blizzard Warnings",
+        "url": "https://mausam.imd.gov.in"
+      }
+    ],
+    "customSeo": {
+      "h1": "Chang La Pass Live Road Status, Opening Date & Conditions",
+      "title": "Chang La Pass Live Road Status, Opening Date & Conditions – Updated Today",
+      "description": "Check real-time Chang La pass status today, opening date, road conditions, Pangong Lake travel advisories, and weather on Leh–Pangong Highway. Verified and updated today."
+    },
+    "searchKeywords": [
+      "Chang La opening date",
+      "Chang La is open",
+      "Chang La road conditions",
+      "Chang La road status",
+      "Chang La pass status report",
+      "when does Chang La open",
+      "Chang La closed",
+      "Chang La is closed",
+      "Chang La is it open today",
+      "is Chang La closed today",
+      "Chang La webcam",
+      "Chang La live webcam",
+      "Chang La cameras",
+      "Chang La summit camera",
+      "when does Chang La close for winter",
+      "Chang La map",
+      "is Chang La open right now",
+      "Chang La pass Ladakh",
+      "Leh to Pangong Lake road status",
+      "Changla Baba Mandir"
+    ],
+    "faqs": [
+      {
+        "question": "Is Chang La open today?",
+        "answer": "Yes, Chang La is currently OPEN for vehicular traffic between Leh and Pangong Tso (Tangtse / Spangmik). BRO Project HIMANK maintains continuous snow-clearing operations across the pass. Always verify daily road condition advisories from Ladakh Police before departure during winter."
+      },
+      {
+        "question": "Is Chang La open right now?",
+        "answer": "Chang La is currently OPEN. 4x4 vehicles and high-ground clearance SUVs with experienced alpine drivers are recommended due to unpaved gravel, ice, and meltwater streams near the summit."
+      },
+      {
+        "question": "What is the current Chang La road status and pass status report?",
+        "answer": "The current Chang La road status is OPEN with caution. The route is paved from Leh up to Zingral; the final 10–15 km over the summit involves rough gravel, icy patches, and hairpin switchbacks. Snow chains are advised during active winter storm cycles."
+      },
+      {
+        "question": "What are the current Chang La road conditions?",
+        "answer": "Road conditions on Chang La feature paved tarmac up to Zingral, followed by a rugged, unpaved gravel ascent with hairpin bends across the 5,360 m summit. Melting glacier streams (Pagal Nallah) may cross the roadway in summer afternoons. A 4WD or high-clearance vehicle is recommended."
+      },
+      {
+        "question": "When does Chang La open and what is the opening date?",
+        "answer": "Chang La does not have a single fixed seasonal opening date because BRO Project HIMANK keeps the pass open almost year-round to maintain vital transport links to Pangong Lake and eastern Ladakh. Temporary closures occur during active heavy blizzards and usually reopen within 24 to 72 hours after snow cutting."
+      },
+      {
+        "question": "When does Chang La close for winter?",
+        "answer": "Chang La is NOT closed for the entire winter. The Border Roads Organisation keeps the corridor open throughout the winter months, only imposing temporary preventive closures during intense snowfall, avalanche risk, or extreme sub-zero blizzards."
+      },
+      {
+        "question": "Is Chang La closed today?",
+        "answer": "No, Chang La is not closed today. The pass is operational under normal alpine conditions. If temporary storm closures occur, LivePassWatch updates the live status card instantly based on official BRO and Ladakh Police bulletins."
+      },
+      {
+        "question": "Does Chang La have a live webcam or summit camera?",
+        "answer": "No verified public live camera feed is currently operated on Chang La Pass due to extreme sub-zero weather conditions (-35°C in winter) and high-altitude security infrastructure. Road conditions are verified through official Border Roads Organisation (BRO) and Ladakh Police traffic advisories."
+      },
+      {
+        "question": "Do I need an Inner Line Permit (ILP) to cross Chang La to Pangong Lake?",
+        "answer": "Yes. Indian tourists require an Inner Line Permit (ILP) and foreign nationals require a Protected Area Permit (PAP) issued by the District Administration Leh (lahdcleh.gov.in) to travel past Karu and cross Chang La to Pangong Lake."
+      },
+      {
+        "question": "How high is Chang La Pass and how long can you stay at the summit?",
+        "answer": "Chang La sits at an elevation of 5,360 meters (17,590 ft, with roadside markers reading 17,688 ft), making it the world's third highest motorable pass. Due to low oxygen levels (approx. 50% of sea level), medical authorities strictly advise limiting summit dwell time to 15–20 minutes to prevent Acute Mountain Sickness (AMS)."
+      },
+      {
+        "question": "How far is Pangong Lake from Leh via Chang La?",
+        "answer": "Pangong Lake (Lukung/Spangmik) is approximately 140–160 km from Leh via Karu, Sakti, Chang La Pass, Durbuk, and Tangtse. The journey takes approximately 4 to 6 hours depending on road and weather conditions."
+      }
+    ],
+    "isPopular": true
+  },
+  {
     "id": "rohtang-pass",
     "slug": "rohtang-pass",
     "name": "Rohtang Pass",
