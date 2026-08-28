@@ -39,6 +39,7 @@ export interface MountainPass {
   id: string;
   slug: string;
   name: string;
+  alternateNames?: string[];
   country: string;
   countryCode: string;
   continent: string;

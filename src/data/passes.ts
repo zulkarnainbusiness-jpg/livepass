@@ -4465,6 +4465,12 @@ export const passesData: MountainPass[] = [
     "id": "paso-los-libertadores",
     "slug": "paso-los-libertadores",
     "name": "Paso Los Libertadores",
+    "alternateNames": [
+      "Paso Cristo Redentor",
+      "Sistema Cristo Redentor",
+      "Túnel Cristo Redentor",
+      "Paso Internacional Cristo Redentor"
+    ],
     "country": "Argentina-Chile",
     "countryCode": "CHL / ARG",
     "continent": "South America",
@@ -4522,6 +4528,16 @@ export const passesData: MountainPass[] = [
       "annualSnowfallM": 8.6,
       "summary": "Paso Internacional Los Libertadores (Sistema Cristo Redentor) at 3,200 m (10,499 ft) is the primary transport and trade link across the Andes between Santiago de Chile and Buenos Aires/Mendoza, Argentina. The road traverses spectacular high-mountain scenery, including the famous 29 hairpin curves of the Chilean Los Caracoles ramp and the historic Cristo Redentor monument (3,832 m). Opened in 1980, the 3,080-meter Cristo Redentor Tunnel avoids the high pass crest and is operated under unified Chilean-Argentine border coordination."
     },
+    "narrativeSections": [
+      {
+        "title": "Paso Cristo Redentor & Túnel Internacional: Alternate Name & Corridor Overview",
+        "content": "Paso Los Libertadores is globally recognized by several official and colloquial designations, most prominently Paso Cristo Redentor, Sistema Integrado Cristo Redentor, and Túnel Internacional Cristo Redentor. The pass derives its iconic secondary name from the monumental bronze statue 'Cristo Redentor de los Andes' (Christ the Redeemer of the Andes), placed at 3,832 meters (12,572 ft) on the Andean boundary in 1904. Today, both Paso Los Libertadores and Paso Cristo Redentor refer interchangeably to this essential international route connecting Chile's Ruta 60-CH and Argentina's Ruta Nacional 7."
+      },
+      {
+        "title": "Túnel Cristo Redentor (3,080 m) & Cuesta Caracoles Engineering",
+        "content": "The modern highway crosses the Andes through the 3.08-kilometer Túnel Internacional Cristo Redentor at an elevation of 3,200 m (10,499 ft). On the Chilean western slope, motorists ascend the famed Cuesta Caracoles with 29 unbanked switchbacks. On the Argentine eastern slope, the route passes the Horcones customs complex, Puente del Inca, and the viewpoint of Mount Aconcagua (6,961 m)."
+      }
+    ],
     "isSeasonal": false,
     "seasonalClosureInfo": {
       "typicalClosure": "Open Year-Round (Subject to Severe Andean Winter Storms)",
@@ -4595,9 +4611,9 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "h1": "Paso Los Libertadores: Estado Actual, Clima y Cámaras en Vivo",
-      "title": "Paso Los Libertadores Status Today | Weather & Live Cameras",
-      "description": "Check Paso Los Libertadores status today, current weather, road conditions and live cameras for the Chile–Argentina Cristo Redentor border crossing."
+      "h1": "Paso Los Libertadores (Paso Cristo Redentor): Estado Actual, Clima y Cámaras en Vivo",
+      "title": "Paso Los Libertadores (Cristo Redentor) Live Webcam & Status – Updated Today",
+      "description": "Live Paso Los Libertadores (Paso Cristo Redentor) webcam feeds, highway conditions, and real-time open/closed status on Ruta 60-CH / RN 7, Chile–Argentina. Verified and updated today."
     },
     "faqs": [
       {

@@ -153,14 +153,22 @@ function generatePassSemanticHtml(pass, canonicalUrl) {
 
         <!-- About This Pass (100-150 Words Unique Narrative) -->
         <section style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
-          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #0f172a;">About ${escapeHtml(pass.name)}</h2>
+          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #0f172a;">
+            ${pass.slug === 'paso-los-libertadores' ? 'About Paso Los Libertadores (Paso Cristo Redentor)' : `About ${escapeHtml(pass.name)}`}
+          </h2>
           <p style="font-size: 1rem; line-height: 1.8; color: #334155; margin-bottom: 1rem;">
             ${escapeHtml(seoDetails?.aboutPass || pass.overview?.summary || pass.description)}
           </p>
           <p style="font-size: 0.95rem; line-height: 1.7; color: #64748b; margin-bottom: 1.25rem;">
             <strong>${escapeHtml(pass.name)}</strong> reaches an official summit elevation of <strong>${pass.elevationFt.toLocaleString()} feet (${pass.elevationM.toLocaleString()} meters)</strong> above sea level on <strong>${escapeHtml(pass.highway)}</strong> in ${escapeHtml(pass.state ? `${pass.state}, ` : '')}${escapeHtml(pass.country)}.
           </p>
-          <div style="padding: 1rem 1.25rem; border-radius: 0.5rem; background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid #1d4ed8;">
+          ${pass.narrativeSections ? pass.narrativeSections.map(sec => `
+            <div style="margin-top: 1rem; margin-bottom: 1rem;">
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 0.35rem;">${escapeHtml(sec.title)}</h3>
+              <p style="font-size: 0.95rem; line-height: 1.7; color: #334155; margin: 0;">${escapeHtml(sec.content)}</p>
+            </div>
+          `).join('') : ''}
+          <div style="padding: 1rem 1.25rem; border-radius: 0.5rem; background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid #1d4ed8; margin-top: 1.25rem;">
             <p style="margin: 0; font-size: 0.925rem; line-height: 1.6; color: #475569;">
               <strong>International Alpine Transit:</strong> ${escapeHtml(seoDetails?.crossLinkText || 'Explore high-altitude mountain highway conditions on the')}&nbsp;<a href="${seoDetails?.crossLinkUrl || '/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores'}" style="color: #1d4ed8; font-weight: 600; text-decoration: underline;">${escapeHtml(seoDetails?.crossLinkAnchor || 'Paso Los Libertadores (Andes Mountain Pass)')}</a>.
             </p>

@@ -1471,7 +1471,9 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 10: Where Is Pass Located & Geography/History */}
             <section id="about" className="detail-section-block">
               <h2 className="section-title-heading">
-                About {pass.name.split('(')[0].trim()}
+                {pass.slug === 'paso-los-libertadores'
+                  ? 'About Paso Los Libertadores (Paso Cristo Redentor)'
+                  : `About ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="about-narrative-container lp-card" style={{ padding: '24px' }}>
                 {/* 100-150 words unique editorial narrative */}
