@@ -499,9 +499,9 @@ fs.writeFileSync(path.resolve(publicDir, 'sitemap.xml'), sitemapXml, 'utf8');
 console.log(`  ✓ Generated sitemap.xml (${coreSitemapUrls.length + canonicalPassUrls.length} total canonical URLs)`);
 
 // -------------------------------------------------------------
-// 4. Update _redirects and vercel.json
+// 4. Update _redirects
 // -------------------------------------------------------------
-console.log('\n🔀 Generating 301 Redirect Mappings (_redirects & vercel.json)...');
+console.log('\n🔀 Generating 301 Redirect Mappings (_redirects)...');
 
 // Deduplicate redirect rules
 const uniqueRedirects = new Map();
@@ -520,22 +520,5 @@ redirectsContent += '\n# SPA Fallback for Dynamic Routes\n/* /index.html 200\n';
 fs.writeFileSync(path.resolve(publicDir, '_redirects'), redirectsContent, 'utf8');
 fs.writeFileSync(path.resolve(distDir, '_redirects'), redirectsContent, 'utf8');
 console.log(`  ✓ Generated _redirects with ${uniqueRedirects.size} 301 redirect rules`);
-
-// Update vercel.json
-const vercelJson = {
-  "redirects": Array.from(uniqueRedirects.entries()).map(([source, destination]) => ({
-    "source": source,
-    "destination": destination,
-    "permanent": true
-  })),
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
-};
-fs.writeFileSync(path.resolve(rootDir, 'vercel.json'), JSON.stringify(vercelJson, null, 2), 'utf8');
-console.log(`  ✓ Updated vercel.json with 301 redirects`);
 
 console.log('\n✨ LivePassWatch SSG Prerendering Complete!\n');
