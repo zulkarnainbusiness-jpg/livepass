@@ -295,7 +295,7 @@ export const PassDetailPage: React.FC = () => {
     ]
   };
 
-  const seoTitle = `${pass.name} Road Conditions, Status & Live Webcam | LivePassWatch`;
+  const seoTitle = `${pass.name} Road Status & Conditions | LivePassWatch`;
   const seoDesc = `Real-time ${pass.name} status: current road conditions, snow depth, closures, and live webcam. Updated ${pass.lastUpdated}.`;
 
   const officialSourceDisplay = pass.dataSources && pass.dataSources.length > 0

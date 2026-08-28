@@ -46,12 +46,12 @@ export const HomePage: React.FC = () => {
         "@id": "https://www.livepasswatch.info/#website",
         "name": "LIVEPASSWATCH",
         "url": "https://www.livepasswatch.info/",
-        "description": "Global real-time mountain pass tracking, alerts, road conditions, and live cameras.",
+        "description": "Global real-time mountain pass tracking, live webcams, snow depth, road conditions, and closures worldwide.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://www.livepasswatch.info/passes?search={search_term_string}"
+            "urlTemplate": "https://www.livepasswatch.info/passes?q={search_term_string}"
           },
           "query-input": "required name=search_term_string"
         }
@@ -70,7 +70,7 @@ export const HomePage: React.FC = () => {
   return (
     <div className="home-page-container">
       <SEOHelper
-        title="LIVEPASSWATCH | Real-Time Mountain Pass Status, Road Conditions & Alerts"
+        title="Live Mountain Pass Status, Road Conditions & Webcams | LivePassWatch"
         description="Check real-time mountain pass status, live webcams, snow depth, road conditions, and closures worldwide. Know before you go with LivePassWatch."
         canonicalUrl="https://www.livepasswatch.info/"
         jsonLd={jsonLdWebsite}
@@ -100,9 +100,9 @@ export const HomePage: React.FC = () => {
             </button>
           </form>
 
-          {/* 4 Stats Cards Floating in Hero */}
+          {/* 4 Stats Cards Floating in Hero - Rendered as crawlable Links */}
           <div className="hero-stats-grid">
-            <div className="hero-stat-card" onClick={() => navigate('/passes?status=OPEN')}>
+            <Link to="/passes?status=OPEN" className="hero-stat-card" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="stat-icon-col icon-open">
                 <CheckCircle2 size={24} />
               </div>
@@ -110,9 +110,9 @@ export const HomePage: React.FC = () => {
                 <div className="stat-number">{stats.open}</div>
                 <div className="stat-label">Open Passes</div>
               </div>
-            </div>
+            </Link>
 
-            <div className="hero-stat-card" onClick={() => navigate('/passes?status=CAUTION')}>
+            <Link to="/passes?status=CAUTION" className="hero-stat-card" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="stat-icon-col icon-caution">
                 <AlertTriangle size={24} />
               </div>
@@ -120,9 +120,9 @@ export const HomePage: React.FC = () => {
                 <div className="stat-number">{stats.caution}</div>
                 <div className="stat-label">Caution</div>
               </div>
-            </div>
+            </Link>
 
-            <div className="hero-stat-card" onClick={() => navigate('/passes?status=CLOSED')}>
+            <Link to="/passes?status=CLOSED" className="hero-stat-card" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="stat-icon-col icon-closed">
                 <XCircle size={24} />
               </div>
@@ -130,9 +130,9 @@ export const HomePage: React.FC = () => {
                 <div className="stat-number">{stats.closed}</div>
                 <div className="stat-label">Closed Passes</div>
               </div>
-            </div>
+            </Link>
 
-            <div className="hero-stat-card" onClick={() => navigate('/map')}>
+            <Link to="/map" className="hero-stat-card" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="stat-icon-col icon-monitored">
                 <Camera size={24} />
               </div>
@@ -140,7 +140,7 @@ export const HomePage: React.FC = () => {
                 <div className="stat-number">{stats.monitored}</div>
                 <div className="stat-label">Monitored 24/7</div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -188,30 +188,30 @@ export const HomePage: React.FC = () => {
               <p className="banner-desc">Receive mobile and email alerts for your favorite passes.</p>
             </div>
           </div>
-          <button onClick={() => navigate('/alerts')} className="btn btn-primary banner-action-btn">
+          <Link to="/alerts" className="btn btn-primary banner-action-btn" style={{ textDecoration: 'none', textAlign: 'center' }}>
             Set Up Alerts
-          </button>
+          </Link>
         </section>
 
         {/* Quick Navigation Cards */}
         <section className="home-explorer-grid">
-          <div className="explorer-card lp-card lp-card-hover" onClick={() => navigate('/map')}>
+          <Link to="/map" className="explorer-card lp-card lp-card-hover" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="explorer-card-content">
               <span className="explorer-tag">Interactive Tool</span>
               <h3>Global Mountain Pass Map</h3>
               <p>Explore real-time pass markers, cluster overlays, and elevation profiles worldwide.</p>
               <span className="explorer-link">Open Live Map →</span>
             </div>
-          </div>
+          </Link>
 
-          <div className="explorer-card lp-card lp-card-hover" onClick={() => navigate('/resources')}>
+          <Link to="/resources" className="explorer-card lp-card lp-card-hover" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="explorer-card-content">
               <span className="explorer-tag">Driver Resources</span>
               <h3>Chain Laws &amp; Winter Driving Safety</h3>
               <p>State-by-state tire chain laws, seasonal traction requirements, and mountain safety guides.</p>
               <span className="explorer-link">View Resources →</span>
             </div>
-          </div>
+          </Link>
         </section>
 
         {/* Trust & Safety Features Bar */}

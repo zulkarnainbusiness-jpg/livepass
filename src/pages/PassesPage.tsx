@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { useSearchParams, useNavigate } from 'react-router-dom';
+import { useSearchParams, useNavigate, Link } from 'react-router-dom';
 import { 
   Search, 
   Filter, 
@@ -280,12 +280,13 @@ export const PassesPage: React.FC = () => {
             ) : (
               <div className="directory-passes-list">
                 {paginatedPasses.map((pass) => (
-                  <div
+                  <Link
                     key={pass.id}
-                    onClick={() => handlePassClick(pass)}
+                    to={getPassUrl(pass)}
                     className="directory-list-item lp-card lp-card-hover"
+                    style={{ textDecoration: 'none', color: 'inherit' }}
                   >
-                    <img src={pass.image} alt={pass.name} className="list-item-img" />
+                    <img src={pass.image} alt={`${pass.name} road status`} className="list-item-img" />
                     <div className="list-item-info">
                       <div className="list-item-title-row">
                         <h3>{pass.name}</h3>
@@ -299,7 +300,7 @@ export const PassesPage: React.FC = () => {
                       <p className="list-item-desc">{pass.description}</p>
                     </div>
                     <ChevronRight size={20} className="list-item-arrow" />
-                  </div>
+                  </Link>
                 ))}
               </div>
             )}

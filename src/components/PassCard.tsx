@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { MountainPass } from '../types';
 import { getPassUrl } from '../data/passes';
 import { StatusBadge } from './StatusBadge';
@@ -10,18 +10,16 @@ interface PassCardProps {
 }
 
 export const PassCard: React.FC<PassCardProps> = ({ pass }) => {
-  const navigate = useNavigate();
-
-  const handleCardClick = () => {
-    navigate(getPassUrl(pass));
-  };
-
   return (
-    <div className="popular-pass-card lp-card lp-card-hover" onClick={handleCardClick}>
+    <Link 
+      to={getPassUrl(pass)} 
+      className="popular-pass-card lp-card lp-card-hover" 
+      style={{ textDecoration: 'none', color: 'inherit' }}
+    >
       <div className="pass-card-image-wrapper">
         <img
           src={pass.image}
-          alt={`${pass.name} mountain pass road`}
+          alt={`${pass.name} road status and live conditions`}
           className="pass-card-img"
           loading="lazy"
         />
@@ -33,6 +31,6 @@ export const PassCard: React.FC<PassCardProps> = ({ pass }) => {
           <StatusBadge status={pass.status} />
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
