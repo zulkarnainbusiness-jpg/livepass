@@ -411,6 +411,18 @@ const staticPages = [
     </main>`
   },
   {
+    path: '/methodology',
+    title: 'Multi-Source Verification Methodology | LivePassWatch',
+    description: 'Explore the 3-Tier Multi-Source Verification Methodology used by LivePassWatch to validate real-time mountain pass status, road closures, and community reports.',
+    canonicalUrl: `${DOMAIN}/methodology`,
+    bodyContent: `<main class="app-container" style="padding: 2rem 1rem; max-width: 950px;">
+      <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">Multi-Source Verification Methodology (MTVM)</h1>
+      <p style="line-height: 1.75; color: #334155; margin-bottom: 1.5rem;">
+        How LivePassWatch ingests, cross-corroborates, and validates live mountain pass road conditions, hazard alerts, snowpack observations, and community-submitted reports through an empirical, 3-tier evidentiary triangulation framework.
+      </p>
+    </main>`
+  },
+  {
     path: '/about',
     title: 'About LivePassWatch - Meet the Founder, Our Mission & Team',
     description: 'Meet founder Zulkarnain, learn the Himalayan story behind LivePassWatch, and discover our dedicated team tracking live mountain pass conditions.',
@@ -487,6 +499,7 @@ const coreSitemapUrls = [
   'https://www.livepasswatch.info/alerts',
   'https://www.livepasswatch.info/resources',
   'https://www.livepasswatch.info/submit-report',
+  'https://www.livepasswatch.info/methodology',
   'https://www.livepasswatch.info/about',
   'https://www.livepasswatch.info/privacy',
   'https://www.livepasswatch.info/terms'

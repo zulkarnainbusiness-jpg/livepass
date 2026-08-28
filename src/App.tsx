@@ -12,6 +12,7 @@ import { ResourcesPage } from './pages/ResourcesPage';
 import { SeoResearchPage } from './pages/SeoResearchPage';
 import { AboutPage, PrivacyPage, TermsPage, NotFoundPage } from './pages/StaticPages';
 import { SubmitReportPage } from './pages/SubmitReportPage';
+import { VerificationMethodologyPage } from './pages/VerificationMethodologyPage';
 import { PassesProvider } from './context/PassesContext';
 import { AdminDashboard } from './pages/AdminDashboard';
 import { passesData, getPassUrl } from './data/passes';
@@ -69,6 +70,8 @@ export const App: React.FC = () => {
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/submit-report" element={<SubmitReportPage />} />
             <Route path="/report" element={<Navigate to="/submit-report" replace />} />
+            <Route path="/methodology" element={<VerificationMethodologyPage />} />
+            <Route path="/verification-methodology" element={<Navigate to="/methodology" replace />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
