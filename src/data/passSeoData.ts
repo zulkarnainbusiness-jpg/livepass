@@ -417,17 +417,17 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
   },
   'great-st-bernard-pass': {
     nearestTowns: [
-      { name: 'Bourg-Saint-Pierre, Valais (CH)', distance: '13 km (8 miles)', direction: 'Nord via Route 21' },
-      { name: 'Saint-Rhémy-en-Bosses, Vallée d\'Aoste (IT)', distance: '14.5 km (9 miles)', direction: 'Sud via SS27' },
-      { name: 'Martigny, Valais (CH)', distance: '44.5 km (28 miles)', direction: 'Nord via Route 21 / A9' },
-      { name: 'Aoste / Aosta, Vallée d\'Aoste (IT)', distance: '34 km (21 miles)', direction: 'Sud-Est via SS27' },
-      { name: 'Chamonix-Mont-Blanc (FR)', distance: '65 km (40 miles)', direction: 'Nord-Ouest via Forclaz' }
+      { name: 'Saint-Rhémy-en-Bosses, Valle d\'Aosta (IT)', distance: '14.5 km (9 miglia)', direction: 'Sud via SS27' },
+      { name: 'Aosta / Aoste, Valle d\'Aosta (IT)', distance: '34 km (21 miglia)', direction: 'Sud-Est via SS27' },
+      { name: 'Bourg-Saint-Pierre, Vallese (CH)', distance: '13 km (8 miglia)', direction: 'Nord via Route 21' },
+      { name: 'Martigny, Vallese (CH)', distance: '44.5 km (28 miglia)', direction: 'Nord via Route 21 / A9' },
+      { name: 'Chamonix-Mont-Blanc (FR)', distance: '65 km (40 miglia)', direction: 'Nord-Ovest via Forclaz' }
     ],
-    seasonalClosureWindow: 'Début juin à mi-octobre (Route du Col) / Tunnel ouvert 24h/24 toute l\'année',
-    seasonalClosureDetail: 'Géré conjointement par l\'État du Valais (Suisse) et l\'ANAS / RAVdA (Italie). La route du col sommital (2 469 m) ferme en hiver en raison d\'un cumul de neige atteignant 10 à 15 mètres et des risques d\'avalanches dans la combe des Morts. Le Tunnel routier du Grand-Saint-Bernard (5,8 km à 1 918 m) assure une liaison transalpine ouverte 365 jours par an avec péage.',
-    aboutPass: 'Le Col du Grand-Saint-Bernard (2 469 m / 8 100 ft) est un col mythique des Alpes pennines reliant le Val d\'Entremont dans le canton du Valais (Suisse) à la Vallée d\'Aoste (Italie) sur la Route 21 / SS27. Fondé en 1049 par Saint Bernard de Menthon, l\'Hospice millénaire abrite les célèbres chiens Saint-Bernard sauveteurs et un lac glaciaire frontalier d\'une beauté saisissante. Traversé par Napoléon en mai 1800 avec 40 000 soldats, le col est un haut lieu du cyclisme et du tourisme alpin.',
-    crossLinkAnchor: 'Col du Galibier (French Alps)',
-    crossLinkUrl: '/passes/france/hautes-alpes-savoie/col-du-galibier',
-    crossLinkText: 'Découvrez également d\'autres cols mythiques des Alpes comme le'
+    seasonalClosureWindow: 'Inizio giugno a metà ottobre (Strada del Colle) / Traforo aperto 24h/24 tutto l\'anno',
+    seasonalClosureDetail: 'Gestito congiuntamente da ANAS / RAVdA (Italia) e dal Cantone Vallese (Svizzera). La strada panoramica del valico sommitale (2.469 m) chiude in inverno a causa di accumuli nevosi di 10-15 metri e del rischio valanghe. Il Traforo stradale del Gran San Bernardo (5,8 km a 1.918 m) garantisce il transito transalpino 365 giorni all\'anno con pedaggio.',
+    aboutPass: 'Il Colle del Gran San Bernardo (2.469 m / 8.100 ft) è uno dei valichi alpini più celebri d\'Europa, situato tra la Valle d\'Aosta (Italia) e il Cantone Vallese (Svizzera) lungo la SS27 / Route 21. Fondato nel 1049 da San Bernardo di Mentone, il millenario Ospizio ospita i leggendari cani San Bernardo da soccorso e si specchia in uno splendido lago glaciale di confine. Storico passaggio della Via Francigena e della traversata di Napoleone nel maggio 1800.',
+    crossLinkAnchor: 'Passo dello Stelvio (Alpi Retiche)',
+    crossLinkUrl: '/passes/italy/south-tyrol-lombardy/stelvio-pass',
+    crossLinkText: 'Scopri e confronta anche altri spettacolari valichi alpini come il'
   }
 };

@@ -139,12 +139,25 @@ export const PassDetailPage: React.FC = () => {
   const [isRefreshingCam, setIsRefreshingCam] = useState(false);
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
   const [isUserCamModalOpen, setIsUserCamModalOpen] = useState(false);
-  const [pageLang, setPageLang] = useState<'fr' | 'en'>('fr');
+  const [pageLang, setPageLang] = useState<'fr' | 'it' | 'en'>(() => {
+    if (targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard')) return 'it';
+    if (targetSlug.toLowerCase().includes('galibier')) return 'fr';
+    return 'en';
+  });
 
   // If pass is not found in database, return custom 404 Page (Phase 3 & 29 compliance)
   if (!pass) {
     return <NotFoundPage />;
   }
+
+  // Sync default language when pass changes
+  useEffect(() => {
+    if (pass.slug === 'great-st-bernard-pass') {
+      setPageLang('it');
+    } else if (pass.slug === 'col-du-galibier') {
+      setPageLang('fr');
+    }
+  }, [pass.slug]);
 
   // Check localStorage for favorite state & setup auto-refresh
   useEffect(() => {
@@ -416,7 +429,7 @@ export const PassDetailPage: React.FC = () => {
         </nav>
 
         {/* Bilingual Language Switcher for Col du Galibier & Great St Bernard Pass */}
-        {(pass.slug === 'col-du-galibier' || pass.slug === 'great-st-bernard-pass') && (
+        {pass.slug === 'col-du-galibier' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
             alignItems: 'center',
@@ -474,6 +487,64 @@ export const PassDetailPage: React.FC = () => {
           </div>
         )}
 
+        {pass.slug === 'great-st-bernard-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(59, 130, 246, 0.06) 100%)',
+            border: '1px solid rgba(16, 185, 129, 0.25)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#065F46' }}>
+              <Globe size={18} color="#10B981" />
+              <span>
+                {pageLang === 'it' 
+                  ? '🇮🇹 Contenuto in italiano ufficiale (Passa alla traduzione in inglese in qualsiasi momento)' 
+                  : '🇬🇧 English Auto-Translation Active (Switch to native Italian anytime)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+              <button
+                type="button"
+                onClick={() => setPageLang('it')}
+                style={{
+                  padding: '6px 14px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'it' ? '#10B981' : 'transparent',
+                  color: pageLang === 'it' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇮🇹 Italiano
+              </button>
+              <button
+                type="button"
+                onClick={() => setPageLang('en')}
+                style={{
+                  padding: '6px 14px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'en' ? '#10B981' : 'transparent',
+                  color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇬🇧 English (Auto-Translated)
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Pass Header & Action Bar */}
         <header className="pass-detail-header-row">
           <div className="pass-title-group">
@@ -482,11 +553,23 @@ export const PassDetailPage: React.FC = () => {
               <StatusBadge status={displayedStatus} size="lg" />
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 14px', borderRadius: '9999px', backgroundColor: 'rgba(56, 189, 248, 0.12)', color: 'var(--primary)', fontSize: '13px', fontWeight: '700', border: '1px solid rgba(56, 189, 248, 0.25)' }}>
                 <Clock size={14} />
-                <span>{(pass.slug === 'col-du-galibier' || pass.slug === 'great-st-bernard-pass') && pageLang === 'fr' ? `Dernière mise à jour : ${pass.lastUpdated}` : `Last updated: ${pass.lastUpdated}`}</span>
+                <span>
+                  {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                    ? `Dernière mise à jour : ${pass.lastUpdated}` 
+                    : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                    ? `Ultimo aggiornamento : ${pass.lastUpdated}`
+                    : `Last updated: ${pass.lastUpdated}`}
+                </span>
               </div>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', borderRadius: '9999px', backgroundColor: 'var(--bg-surface-subtle)', color: 'var(--text-secondary)', fontSize: '13px', border: '1px solid var(--border-color)' }}>
                 <Mountain size={14} />
-                <span>{(pass.slug === 'col-du-galibier' || pass.slug === 'great-st-bernard-pass') && pageLang === 'fr' ? `Altitude : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)` : `Elevation: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)`}</span>
+                <span>
+                  {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                    ? `Altitude : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)` 
+                    : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                    ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                    : `Elevation: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)`}
+                </span>
               </div>
             </div>
 
@@ -497,8 +580,8 @@ export const PassDetailPage: React.FC = () => {
                       ? "Col du Galibier : État de la Route, Webcam Live, Météo & Date d'Ouverture" 
                       : "Col du Galibier Pass: Live Webcam, Road Conditions, Opening Status & Weather")
                   : pass.slug === 'great-st-bernard-pass'
-                  ? (pageLang === 'fr'
-                      ? "Col du Grand-Saint-Bernard : État de la Route, Webcam Live, Météo & Ouverture"
+                  ? (pageLang === 'it'
+                      ? "Colle del Gran San Bernardo : Stato della Strada, Webcam Live, Meteo & Apertura"
                       : "Great St Bernard Pass: Live Webcam, Road Conditions, Opening Status & Weather")
                   : (pass.customSeo?.h1 || `${pass.name} Live Webcam & Road Conditions`)}
               </h1>
@@ -518,7 +601,13 @@ export const PassDetailPage: React.FC = () => {
               <span className="dot-sep">•</span>
               <span>{pass.state ? `${pass.state}, ` : ''}{pass.country}</span>
               <span className="dot-sep">•</span>
-              <span>{(pass.slug === 'col-du-galibier' || pass.slug === 'great-st-bernard-pass') && pageLang === 'fr' ? `Sommet : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)` : `Summit: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)`}</span>
+              <span>
+                {pass.slug === 'col-du-galibier' && pageLang === 'fr'
+                  ? `Sommet : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                  : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                  ? `Sommità : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                  : `Summit: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)`}
+              </span>
             </div>
             <p className="pass-summary-paragraph">
               {pass.slug === 'col-du-galibier'
@@ -526,8 +615,8 @@ export const PassDetailPage: React.FC = () => {
                     ? "Le Col du Galibier (2 642 m / 8 668 ft) est un col routier légendaire des Alpes françaises reliant Saint-Michel-de-Maurienne et Valloire en Savoie au Col du Lautaret et Briançon dans les Hautes-Alpes via la D902. Haut lieu historique du Tour de France et de la Route des Grandes Alpes, il offre un panorama grandiose sur les glaciers des Écrins et la Meije."
                     : "Col du Galibier (2,642 m / 8,668 ft) is a legendary high mountain pass in the French Alps connecting Saint-Michel-de-Maurienne & Valloire in Savoie with Col du Lautaret & Briançon in Hautes-Alpes along Route D902. A historic peak of the Tour de France and the Route des Grandes Alpes, it offers magnificent views of the Écrins glaciers and the Meije.")
                 : pass.slug === 'great-st-bernard-pass'
-                ? (pageLang === 'fr'
-                    ? "Le Col du Grand-Saint-Bernard (2 469 m / 8 100 ft) est un col mythique des Alpes pennines reliant Martigny et le Val d'Entremont en Valais (Suisse) à Saint-Rhémy-en-Bosses et la Vallée d'Aoste (Italie). Célèbre pour son Hospice millénaire fondé en 1049, ses chiens Saint-Bernard sauveteurs et la traversée historique de Napoléon en 1800, la route du col serpente autour d'un lac glaciaire frontalier d'une beauté exceptionnelle."
+                ? (pageLang === 'it'
+                    ? "Il Colle del Gran San Bernardo (2.469 m / 8.100 ft) è un leggendario valico alpino che collega Martigny nel Cantone Vallese (Svizzera) con Saint-Rhémy-en-Bosses e la Valle d'Aosta (Italia) tramite la Route 21 / SS27. Famoso in tutto il mondo per il millenario Ospizio fondato nel 1049 da San Bernardo, i leggendari cani San Bernardo da soccorso e la storica traversata di Napoleone nel maggio 1800, la strada panoramica costeggia uno spettacolare lago glaciale di confine."
                     : "Great St Bernard Pass (2,469 m / 8,100 ft) is a legendary transalpine mountain pass connecting Martigny & Val d'Entremont in Valais (Switzerland) with Saint-Rhémy-en-Bosses & Aosta Valley (Italy) on Route 21 / SS27. Renowned for its millennium-old Hospice founded in 1049, iconic St. Bernard rescue dogs, and Napoleon's 1800 army crossing, the scenic road skirts an alpine border lake of extraordinary beauty.")
                 : pass.description}
             </p>
@@ -535,13 +624,26 @@ export const PassDetailPage: React.FC = () => {
 
           <div className="pass-header-actions">
             <button onClick={handleShare} className="btn btn-secondary action-pill-btn">
-              <Share2 size={16} /> {(pass.slug === 'col-du-galibier' || pass.slug === 'great-st-bernard-pass') && pageLang === 'fr' ? 'Partager' : 'Share'}
+              <Share2 size={16} /> 
+              {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                ? 'Partager' 
+                : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                ? 'Condividi'
+                : 'Share'}
             </button>
             <button onClick={toggleFavorite} className="btn btn-secondary action-pill-btn">
               <Heart size={16} fill={isFavorite ? '#EF4444' : 'none'} color={isFavorite ? '#EF4444' : 'currentColor'} />
               {isFavorite 
-                ? ((pass.slug === 'col-du-galibier' || pass.slug === 'great-st-bernard-pass') && pageLang === 'fr' ? 'Favori' : 'Favorited') 
-                : ((pass.slug === 'col-du-galibier' || pass.slug === 'great-st-bernard-pass') && pageLang === 'fr' ? 'Ajouter aux favoris' : 'Add to Favorites')}
+                ? (pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                    ? 'Favori' 
+                    : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                    ? 'Preferito'
+                    : 'Favorited') 
+                : (pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                    ? 'Ajouter aux favoris' 
+                    : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                    ? 'Aggiungi ai preferiti'
+                    : 'Add to Favorites')}
             </button>
           </div>
         </header>
@@ -660,15 +762,15 @@ export const PassDetailPage: React.FC = () => {
                 <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#065F46' }}>
                   <ShieldCheck size={20} color="#10B981" />
                   <span>
-                    {pageLang === 'fr'
-                      ? 'Réglementations & Conseils de Passage (Grand-Saint-Bernard Suisse 🇨🇭 / Italie 🇮🇹)'
+                    {pageLang === 'it'
+                      ? 'Normative & Consigli di Transito (Gran San Bernardo Svizzera 🇨🇭 / Italia 🇮🇹)'
                       : 'Important Alpine Transit Regulations (Great St Bernard CH 🇨🇭 / IT 🇮🇹)'}
                   </span>
                 </h3>
                 <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
-                  {pageLang === 'fr' ? (
+                  {pageLang === 'it' ? (
                     <>
-                      <strong>Deux options de franchissement :</strong> La <strong>Route du Col de plein air (2 469 m)</strong> est 100% gratuite et ouverte de juin à mi-octobre pour les voitures, motos et cyclistes. Le <strong>Tunnel du Grand-Saint-Bernard (5,8 km à 1 918 m)</strong> est ouvert 24h/24 toute l'année avec péage autoroutier. <em>Attention : le tunnel est strictement interdit aux vélos et piétons.</em>
+                      <strong>Due opzioni di valico :</strong> La <strong>Strada Panoramica del Colle (2.469 m)</strong> è gratuita al 100% e aperta da giugno a metà ottobre per auto, moto e ciclisti. Il <strong>Traforo del Gran San Bernardo (5,8 km a 1.918 m)</strong> è aperto 24h/24 tutto l'anno con pedaggio. <em>Attenzione: biciclette e pedoni sono severamente vietati all'interno del traforo.</em>
                     </>
                   ) : (
                     <>
@@ -677,11 +779,11 @@ export const PassDetailPage: React.FC = () => {
                   )}
                 </p>
                 <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
-                  {pageLang === 'fr' ? (
+                  {pageLang === 'it' ? (
                     <>
-                      <li><strong>Douane &amp; Documents :</strong> Le col marque la frontière internationale entre la Suisse et l'Italie. Présentation obligatoire d'une pièce d'identité valide (passeport ou CNI).</li>
-                      <li><strong>Équipements Hivernaux Obligatoires :</strong> Du 15 octobre au 15 avril, les pneus hiver (3PMSF) ou la présence de chaînes à neige dans le coffre sont obligatoires en Valais et dans la Vallée d'Aoste.</li>
-                      <li><strong>Hospice Millénaire &amp; Chiens Saint-Bernard :</strong> Visite possible de l'Hospice (fondé en 1049), du musée et du chenil d'été des chiens Saint-Bernard de la Fondation Barry au sommet.</li>
+                      <li><strong>Dogana &amp; Documenti :</strong> Il colle segna la frontiera internazionale tra Svizzera e Italia. Documento d'identità / passaporto valido obbligatorio per l'espatrio.</li>
+                      <li><strong>Pneumatici Invernali Obbligatori :</strong> Dal 15 ottobre al 15 aprile vige l'obbligo di pneumatici invernali (3PMSF) o catene da neve a bordo in tutta la Valle d'Aosta e nel Vallese.</li>
+                      <li><strong>Ospizio Millenario &amp; Cani San Bernardo :</strong> Possibilità di visitare l'Ospizio (fondato nel 1049), il museo napoleonico e l'allevamento estivo dei cani San Bernardo della Fondazione Barry alla sommità.</li>
                     </>
                   ) : (
                     <>
@@ -1662,7 +1764,7 @@ export const PassDetailPage: React.FC = () => {
                 {(pass.slug === 'col-du-galibier')
                   ? (pageLang === 'fr' ? 'Conseils Pratiques & Informations Voyage Galibier' : 'Col du Galibier Travel Guidance & Practical Tips')
                   : (pass.slug === 'great-st-bernard-pass')
-                  ? (pageLang === 'fr' ? 'Conseils Pratiques & Informations Voyage Grand-Saint-Bernard' : 'Great St Bernard Pass Travel Guidance & Practical Tips')
+                  ? (pageLang === 'it' ? 'Consigli Pratici & Informazioni di Viaggio Gran San Bernardo' : 'Great St Bernard Pass Travel Guidance & Practical Tips')
                   : (pass.slug === 'bernina-pass')
                   ? 'How to Get to Bernina Pass & Directions'
                   : (pass.slug === 'gotthard-pass')
@@ -1680,15 +1782,20 @@ export const PassDetailPage: React.FC = () => {
                         ? 'Le franchissement du Galibier à 2 642 mètres d\'altitude constitue un parcours exceptionnel. Respecter les consignes de sécurité, la météo et la réglementation est indispensable pour un voyage serein.'
                         : 'Crossing Col du Galibier at 2,642 meters (8,668 ft) is a world-class alpine route. Understanding weather dynamics, tunnel regulations, and high-altitude road rules ensures a safe journey.')
                     : pass.slug === 'great-st-bernard-pass'
-                    ? (pageLang === 'fr'
-                        ? 'Franchir le Grand-Saint-Bernard à 2 469 mètres d\'altitude entre le Valais et la Vallée d\'Aoste offre une expérience alpine inoubliable entre l\'Hospice millénaire et le lac glaciaire.'
+                    ? (pageLang === 'it'
+                        ? 'Attraversare il Colle del Gran San Bernardo a 2.469 metri s.l.m. tra la Valle d\'Aosta e il Vallese è un\'esperienza transalpina straordinaria tra l\'Ospizio millenario e il lago glaciale.'
                         : 'Crossing the Great St Bernard Pass at 2,469 meters (8,100 ft) between Swiss Valais and Italian Aosta Valley offers an unforgettable transalpine journey between the historic Hospice and the glacial lake.')
                     : 'Mountain passes present unique driving environments. Understanding how weather, elevation, and highway regulations intersect is essential for a safe crossing.'}
                 </p>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
-                      <Clock size={16} /> {(pass.slug === 'col-du-galibier' || pass.slug === 'great-st-bernard-pass') && pageLang === 'fr' ? 'Itinéraire & Période d\'Ouverture' : 'Route & Travel Season'}
+                      <Clock size={16} /> 
+                      {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                        ? 'Itinéraire & Période d\'Ouverture' 
+                        : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                        ? 'Itinerario & Stagione di Transito'
+                        : 'Route & Travel Season'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
                       {(pass.slug === 'col-du-galibier')
@@ -1696,8 +1803,8 @@ export const PassDetailPage: React.FC = () => {
                             ? 'La D902 relie Saint-Michel-de-Maurienne et Valloire (Savoie) au Col du Lautaret et Briançon (Hautes-Alpes). La route est généralement ouverte de fin mai / début juin à fin octobre / début novembre. La chaussée asphaltée offre d\'excellentes conditions en été.'
                             : 'Route D902 links Saint-Michel-de-Maurienne & Valloire (Savoie) with Col du Lautaret & Briançon (Hautes-Alpes). Open typically late May to late October/early November. Paved asphalt is in pristine condition for summer travel.')
                         : (pass.slug === 'great-st-bernard-pass')
-                        ? (pageLang === 'fr'
-                            ? 'La Route 21 (CH) / SS27 (IT) relie Martigny (Valais) à Aoste (Italie). La route du col sommital est ouverte de début juin à mi-octobre. Le Tunnel du Grand-Saint-Bernard (1 918 m) reste ouvert 24h/24 toute l\'année avec péage.'
+                        ? (pageLang === 'it'
+                            ? 'La SS27 (Italia) / Route 21 (Svizzera) collega Aosta a Martigny. La strada panoramica del colle sommitale è aperta da inizio giugno a metà ottobre. Il Traforo del Gran San Bernardo (1.918 m) è aperto 24h/24 tutto l\'anno con pedaggio.'
                             : 'Route 21 (CH) / SS27 (IT) connects Martigny (Valais) to Aosta (Italy). The summit pass road is open June to mid-October. The Grand-Saint-Bernard Tunnel (1,918 m) remains open 24/7 year-round (toll road).')
                         : (pass.slug === 'bernina-pass')
                         ? 'Bernina Pass (Route 29) links the Upper Engadin (Pontresina & St. Moritz) with Val Poschiavo and Tirano (Italy). It is maintained open year-round by Tiefbauamt Graubünden with rotary snowplows. Summer offers pristine dry asphalt; winter delivers spectacular snow-walled corridors requiring winter-rated tires (3PMSF).'
@@ -1710,7 +1817,12 @@ export const PassDetailPage: React.FC = () => {
                   </div>
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
-                      <Mountain size={16} /> {(pass.slug === 'col-du-galibier' || pass.slug === 'great-st-bernard-pass') && pageLang === 'fr' ? 'Météo Alti & Sécurité Altitude' : 'High-Altitude Safety & Weather'}
+                      <Mountain size={16} /> 
+                      {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                        ? 'Météo Alti & Sécurité Altitude' 
+                        : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                        ? 'Sicurezza & Meteo di Quota'
+                        : 'High-Altitude Safety & Weather'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
                       {(pass.slug === 'col-du-galibier')
@@ -1718,8 +1830,8 @@ export const PassDetailPage: React.FC = () => {
                             ? 'À 2 642 m, la température est souvent de 10 à 15°C inférieure à celle des vallées de Valloire ou Briançon. Des rafales de vent dépassant 60 km/h et des orages d\'été soudains peuvent survenir. Consultez les bulletins Météo-France et les webcams avant l\'ascension.'
                             : 'At 2,642 m summit altitude, ambient temperature is typically 10–15°C colder than in the Maurienne or Briançon valleys. Gusts over 60 km/h and sudden storms can develop rapidly; check Météo-France bulletins and summit webcams before setting out.')
                         : (pass.slug === 'great-st-bernard-pass')
-                        ? (pageLang === 'fr'
-                            ? 'À 2 469 m d\'altitude, le col subit un climat de haute montagne rigoureux avec un vent souvent vif sur le lac frontière. Consultez les bulletins MeteoSwiss et les webcams HD de l\'Hospice avant d\'entreprendre le voyage.'
+                        ? (pageLang === 'it'
+                            ? 'A 2.469 m s.l.m. il clima alpino è rigido con venti freschi sul lago di confine. Le temperature sono spesso inferiori di 10-15°C rispetto ad Aosta o Martigny. Controlla i bollettini MeteoSwiss / RAVdA e le webcam live prima di partire.'
                             : 'At 2,469 m summit altitude, expect alpine temperatures 10–15°C colder than in Martigny or Aosta. High-altitude winds across the glacial border lake can be brisk; check MeteoSwiss reports and live Hospice webcams before departure.')
                         : (pass.slug === 'bernina-pass')
                         ? 'At 2,328 m (7,638 ft) summit elevation, expect ambient temperatures 10–14°C colder than in Tirano or Lake Como. Weather can shift rapidly across the Lago Bianco plateau; check real-time MeteoSwiss Passo del Bernina reports before starting the ascent.'
@@ -1732,7 +1844,12 @@ export const PassDetailPage: React.FC = () => {
                   </div>
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
-                      <ShieldCheck size={16} /> {(pass.slug === 'col-du-galibier' || pass.slug === 'great-st-bernard-pass') && pageLang === 'fr' ? 'Péage & Réglementation Tunnel' : 'Tolls & Tunnel Regulations'}
+                      <ShieldCheck size={16} /> 
+                      {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                        ? 'Péage & Réglementation Tunnel' 
+                        : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                        ? 'Pedaggio & Regolamento Traforo'
+                        : 'Tolls & Tunnel Regulations'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
                       {(pass.slug === 'col-du-galibier')
@@ -1740,8 +1857,8 @@ export const PassDetailPage: React.FC = () => {
                             ? 'La D902 est une route départementale 100% gratuite (aucun péage ni vignette). Le Tunnel du Galibier (2 556 m) est régulé par feux tricolores alternés (gabarit max : 4,1 m haut, 2,4 m large, 3,5 t). Vélos et piétons sont interdits dans le tunnel et doivent passer par la crête.'
                             : 'Route D902 is a 100% free public departmental highway with no tolls. The historic Galibier Tunnel (2,556 m) features alternating traffic lights with max 4.1 m height, 2.4 m width, and 3.5 t limits. Bicycles and pedestrians are prohibited in the tunnel and must take the 2,642 m crest.')
                         : (pass.slug === 'great-st-bernard-pass')
-                        ? (pageLang === 'fr'
-                            ? 'La route panoramique du col sommital est 100% gratuite en été (pas de péage). Le Tunnel du Grand-Saint-Bernard (5,8 km à 1 918 m) est un tunnel à péage international (~CHF 31 / €31 pour un aller simple en voiture). Vélos et piétons sont interdits dans le tunnel.'
+                        ? (pageLang === 'it'
+                            ? 'La strada panoramica del valico sommitale è gratuita al 100% in estate (nessun pedaggio). Il Traforo del Gran San Bernardo (5,8 km a 1.918 m) è a pedaggio internazionale (~€31 / CHF 31 per una corsa semplice in automobile). Biciclette e pedoni sono vietati nel traforo.'
                             : 'The open-air summit pass road is 100% toll-free in summer. The Grand-Saint-Bernard Tunnel (5.8 km at 1,918 m) is an international toll tunnel (~CHF 31 / €31 for a single passenger car transit). Bicycles and pedestrians are prohibited inside the tunnel.')
                         : (pass.slug === 'bernina-pass')
                         ? 'Swiss Hauptstrasse 29 (Route 29) is a 100% toll-free public cantonal highway; no Swiss motorway vignette is needed. If continuing south past Campocologno into Tirano (Italy), ensure valid passports and EU vehicle insurance green cards are on board.'
@@ -1754,7 +1871,12 @@ export const PassDetailPage: React.FC = () => {
                   </div>
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
-                      <Car size={16} /> {(pass.slug === 'col-du-galibier' || pass.slug === 'great-st-bernard-pass') && pageLang === 'fr' ? 'Équipements Hiver & Alternatives' : 'Winter Laws & Seasonal Detours'}
+                      <Car size={16} /> 
+                      {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                        ? 'Équipements Hiver & Alternatives' 
+                        : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                        ? 'Dotazioni Invernali & Alternative'
+                        : 'Winter Laws & Seasonal Detours'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
                       {(pass.slug === 'col-du-galibier')
@@ -1762,8 +1884,8 @@ export const PassDetailPage: React.FC = () => {
                             ? 'Loi Montagne II obligatoire du 1er nov au 31 mars (4 pneus hiver 3PMSF ou chaînes dans le véhicule). En hiver lors de la fermeture du col, l\'itinéraire de contournement emprunte le Tunnel du Fréjus (A43 vers Italie / Montgenèvre) ou Grenoble via la D1091 / A48.'
                             : 'Loi Montagne II mandates 4 winter tires (3PMSF) or chains in trunk from Nov 1 to Mar 31. When Galibier is closed in winter, vehicle transit between Maurienne and Briançon diverts via the Fréjus Road Tunnel (A43/Montgenèvre) or via Chambéry/Grenoble (A43/D1091).')
                         : (pass.slug === 'great-st-bernard-pass')
-                        ? (pageLang === 'fr'
-                            ? 'Équipements hivernaux (pneus 3PMSF ou chaînes à bord) obligatoires du 15 octobre au 15 avril en Valais et Vallée d\'Aoste. En hiver lors de la fermeture du col sommital, empruntez le Tunnel du Grand-Saint-Bernard ouvert 24h/24 ou le Tunnel du Mont-Blanc.'
+                        ? (pageLang === 'it'
+                            ? 'Dotazioni invernali (pneumatici 3PMSF o catene a bordo) obbligatorie dal 15 ottobre al 15 aprile in Valle d\'Aosta e Vallese. Durante la chiusura invernale della sommità, il transito avviene tramite il Traforo del Gran San Bernardo aperto 24h/24 o il Traforo del Monte Bianco.'
                             : 'Winter tires (3PMSF) or carrying chains is legally required from Oct 15 to Apr 15 in Valais and Aosta Valley. When the summit pass is closed in winter, vehicle transit uses the 24/7 Grand-Saint-Bernard Tunnel or the Mont-Blanc Tunnel.')
                         : (pass.slug === 'bernina-pass')
                         ? 'Winter tires (3PMSF) or carrying snow chains is legally mandatory from November to April. During winter blizzards or temporary storm closures, alternatives include the year-round UNESCO Rhaetian Railway (Bernina Line), the Vereina Car Shuttle Train (Autoverlad Vereina), or Maloja Pass (Route 3).'

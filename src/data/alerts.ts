@@ -251,10 +251,10 @@ export const alertsData: PassAlert[] = [
     "highway": "Route 21 (CH) / SS27 (IT)",
     "type": "All Clear",
     "severity": "info",
-    "title": "Col du Grand-Saint-Bernard Ouvert — Route du Sommet & Tunnel 24h/24",
-    "description": "La route panoramique du Col du Grand-Saint-Bernard (2 469 m) est ouverte pour la saison estivale entre Martigny (Valais) et Aoste (Italie). Chaussée dégagée et sèche. L'Hospice et le chenil des chiens Saint-Bernard sont ouverts aux visiteurs. Le Tunnel transalpin (1 918 m) reste ouvert 24h/24 toute l'année.",
+    "title": "Colle del Gran San Bernardo Aperto — Strada Panoramica & Traforo 24h/24",
+    "description": "La strada panoramica del Colle del Gran San Bernardo (2.469 m) è regolarmente aperta per la stagione estiva tra Aosta (Italia) e Martigny (Svizzera). Carreggiata asciutta e sgombra. L'Ospizio e l'allevamento estivo dei cani San Bernardo sono aperti ai visitatori. Il Traforo transalpino (1.918 m) è aperto 24h/24 tutto l'anno a pedaggio.",
     "status": "OPEN",
-    "timestamp": "État du Valais & RAVdA Bulletin",
-    "source": "État du Valais (SDM) / Inforoute Vallée d'Aoste"
+    "timestamp": "Inforoute RAVdA & Cantone Vallese Bollettino",
+    "source": "Regione Autonoma Valle d'Aosta (Inforoute VdA) / Cantone Vallese (SDM)"
   }
 ];
