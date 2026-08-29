@@ -596,6 +596,7 @@ passesData.forEach(pass => {
   });
 
   writeHtml(`${canonicalPath}/index.html`, html);
+  writeHtml(`${canonicalPath}.html`, html);
   console.log(`  ✓ Prerendered: ${canonicalPath}`);
 
   // Collect Legacy / Duplicate URLs for 301 Redirection
@@ -649,6 +650,7 @@ passesData.forEach(pass => {
 </body>
 </html>`;
       writeHtml(`${dupPath}/index.html`, redirectHtml);
+      writeHtml(`${dupPath}.html`, redirectHtml);
     }
   });
 });
@@ -884,6 +886,9 @@ staticPages.forEach(p => {
   const html = buildHtmlPage(p);
   const outPath = p.path === '/' ? 'index.html' : `${p.path}/index.html`;
   writeHtml(outPath, html);
+  if (p.path !== '/') {
+    writeHtml(`${p.path}.html`, html);
+  }
   console.log(`  ✓ Prerendered: ${p.path}`);
 });
 
