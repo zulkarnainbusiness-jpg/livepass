@@ -23,6 +23,11 @@
 /passes/india/zoji-la /passes/india/jammu-and-kashmir/zoji-la 301
 /passes/khardung-la /passes/india/ladakh/khardung-la 301
 /passes/india/khardung-la /passes/india/ladakh/khardung-la 301
+/passes/chang-la-pass /passes/india/ladakh/chang-la-pass 301
+/passes/india/chang-la-pass /passes/india/ladakh/chang-la-pass 301
+/passes/chang-la /passes/india/ladakh/chang-la-pass 301
+/passes/india/chang-la /passes/india/ladakh/chang-la-pass 301
+/passes/india/ladakh/chang-la /passes/india/ladakh/chang-la-pass 301
 /passes/rohtang-pass /passes/india/himachal-pradesh/rohtang-pass 301
 /passes/india/rohtang-pass /passes/india/himachal-pradesh/rohtang-pass 301
 /passes/nathu-la /passes/india/sikkim/nathu-la 301
@@ -31,6 +36,11 @@
 /passes/switzerland/furka-pass /passes/switzerland/valais-uri/furka-pass 301
 /passes/stelvio-pass /passes/italy/south-tyrol-lombardy/stelvio-pass 301
 /passes/italy/stelvio-pass /passes/italy/south-tyrol-lombardy/stelvio-pass 301
+/passes/trollstigen-pass /passes/norway/more-og-romsdal/trollstigen-pass 301
+/passes/norway/trollstigen-pass /passes/norway/more-og-romsdal/trollstigen-pass 301
+/passes/trollstigen /passes/norway/more-og-romsdal/trollstigen-pass 301
+/passes/norway/trollstigen /passes/norway/more-og-romsdal/trollstigen-pass 301
+/passes/norway/more-og-romsdal/trollstigen /passes/norway/more-og-romsdal/trollstigen-pass 301
 /passes/paso-los-libertadores /passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores 301
 /passes/argentina-chile/paso-los-libertadores /passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores 301
 /passes/arthurs-pass /passes/new-zealand/canterbury-west-coast/arthurs-pass 301
@@ -47,6 +57,8 @@
 /passes/united-states/santiam-pass /passes/united-states/oregon/santiam-pass 301
 /passes/siskiyou-summit /passes/united-states/oregon/siskiyou-summit 301
 /passes/united-states/siskiyou-summit /passes/united-states/oregon/siskiyou-summit 301
+/passes/col-du-galibier /passes/france/hautes-alpes-savoie/col-du-galibier 301
+/passes/france/col-du-galibier /passes/france/hautes-alpes-savoie/col-du-galibier 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

@@ -6753,6 +6753,491 @@ export const passesData: MountainPass[] = [
       "Siskiyou Summit status",
       "Siskiyou Summit opening date"
     ]
+  },
+  {
+    "id": "col-du-galibier",
+    "slug": "col-du-galibier",
+    "name": "Col du Galibier Pass",
+    "alternateNames": [
+      "Col du Galibier",
+      "Galibier Pass",
+      "D902 Col du Galibier",
+      "Tunnel du Galibier",
+      "Col du Galibier (Route des Grandes Alpes)"
+    ],
+    "country": "France",
+    "countryCode": "FRA",
+    "continent": "Europe",
+    "state": "Hautes-Alpes & Savoie",
+    "highway": "D902",
+    "elevationFt": 8668,
+    "elevationM": 2642,
+    "coordinates": {
+      "lat": 45.0642,
+      "lng": 6.4078
+    },
+    "status": "OPEN",
+    "statusDetail": "Ouvert à la circulation / Open to all vehicles — Alternat par feux tricolores au Tunnel du Galibier (2 556 m)",
+    "lastUpdated": "5 minutes ago",
+    "description": "Le Col du Galibier (2 642 m / 8 668 ft) est un col routier légendaire des Alpes françaises reliant Saint-Michel-de-Maurienne et Valloire en Savoie au Col du Lautaret et Briançon dans les Hautes-Alpes via la D902. Haut lieu historique du Tour de France et de la Route des Grandes Alpes, il offre un panorama grandiose sur les glaciers des Écrins et la Meije.",
+    "image": "/col-du-galibier.png",
+    "weather": {
+      "tempF": 48,
+      "tempC": 9,
+      "condition": "Alpine Sun & Moderate Breeze",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Clear & Dry Road Surface"
+    },
+    "wind": {
+      "speedKmh": 18,
+      "speedMph": 11,
+      "direction": "NW",
+      "description": "Fresh Alpine Breeze"
+    },
+    "roadCondition": "Chaussée sèche et parfaitement dégagée sur les versants Savoie (D902) et Hautes-Alpes. Circulation fluide sous feux tricolores alternés au Tunnel historique du Galibier (2 556 m).",
+    "chainRequirement": "Aucun équipement requis actuellement en période estivale. Du 1er novembre au 31 mars, application stricte de la Loi Montagne II (4 pneus hiver 3PMSF ou dispositifs antidérapants amovibles tels que chaînes ou chaussettes à neige dans le coffre).",
+    "cameras": [
+      {
+        "id": "galibier-cam-sommet",
+        "title": "Col du Galibier Sommet (2 642 m) – Panorama Live HD",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "D902 Sommet (2 642 m)",
+        "direction": "Valloire – Lautaret / Briançon",
+        "location": "Sommet du Col du Galibier",
+        "source": "Office de Tourisme de Valloire / Skaping",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.valloire.net/webcams-valloire/"
+      },
+      {
+        "id": "valloire-cam-poingt-ravier",
+        "title": "Valloire – Poingt Ravier Vue Vallée du Galibier",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "D902 Versant Nord",
+        "direction": "Vue Sud vers le Massif du Galibier",
+        "location": "Poingt Ravier, Valloire",
+        "source": "Office de Tourisme de Valloire / Skaping",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.valloire.net/webcams-valloire/"
+      },
+      {
+        "id": "valloire-cam-crey-du-quart",
+        "title": "Valloire – Crey du Quart Sommet (2 530 m)",
+        "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Domaine Galibier-Thabor",
+        "direction": "Panorama 360° Aiguilles d'Arves & Galibier",
+        "location": "Crey du Quart (2 530 m)",
+        "source": "Valloire Galibier-Thabor / Skaping",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.valloire.net/webcams-valloire/"
+      },
+      {
+        "id": "lautaret-cam-south",
+        "title": "Col du Lautaret (2 058 m) – Accès Sud Galibier",
+        "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "D902 / D1091 Jonction",
+        "direction": "Versant Sud Hautes-Alpes",
+        "location": "Col du Lautaret",
+        "source": "Inforoute 05 Hautes-Alpes",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://inforoute.hautes-alpes.fr/"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "furka-pass",
+        "slug": "furka-pass",
+        "name": "Furka Pass",
+        "country": "Switzerland",
+        "state": "Valais / Uri",
+        "highway": "Route 19",
+        "status": "OPEN",
+        "elevationFt": 7969,
+        "lastUpdated": "15 minutes ago",
+        "distanceKm": 240
+      },
+      {
+        "id": "stelvio-pass",
+        "slug": "stelvio-pass",
+        "name": "Stelvio Pass (Passo dello Stelvio)",
+        "country": "Italy",
+        "state": "South Tyrol / Lombardy",
+        "highway": "SS38",
+        "status": "OPEN",
+        "elevationFt": 9045,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 380
+      },
+      {
+        "id": "trollstigen-pass",
+        "slug": "trollstigen-pass",
+        "name": "Trollstigen (Fv63)",
+        "country": "Norway",
+        "state": "Møre og Romsdal",
+        "highway": "Fv63",
+        "status": "OPEN",
+        "elevationFt": 2815,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 1850
+      },
+      {
+        "id": "paso-los-libertadores",
+        "slug": "paso-los-libertadores",
+        "name": "Paso Los Libertadores",
+        "country": "Chile / Argentina",
+        "state": "Valparaíso / Mendoza",
+        "highway": "Ruta 60-CH / RN 7",
+        "status": "OPEN",
+        "elevationFt": 10499,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 11500
+      }
+    ],
+    "overview": {
+      "openedYear": 1891,
+      "lengthMiles": 21.6,
+      "lengthKm": 34.8,
+      "annualSnowfallIn": 380,
+      "annualSnowfallM": 9.6,
+      "summary": "Le Col du Galibier (2 642 m / 8 668 ft) est le cinquième plus haut col routier goudronné des Alpes françaises, reliant Saint-Michel-de-Maurienne et Valloire en Savoie au Col du Lautaret et Briançon dans les Hautes-Alpes sur la route départementale D902. Ouvert en 1891 avec la construction de son tunnel sommital à 2 556 m, le col est célèbre dans le monde entier comme le géant du Tour de France et l'un des passages les plus spectaculaires de la Route des Grandes Alpes."
+    },
+    "narrativeSections": [
+      {
+        "title": "Histoire & Monument Henri Desgrange au Col du Galibier",
+        "content": "Inauguré pour la circulation routière à la fin du XIXe siècle, le Col du Galibier est entré dans la légende sportive dès 1911 lors de son premier passage par le Tour de France. Le coureur Émile Georget déclara alors au sommet : 'Ça vous en bouche un coin !'. À l'entrée sud du tunnel (côté Lautaret), se dresse le monument dédié à Henri Desgrange, créateur et directeur historique de la Grande Boucle. Sur le versant nord au lieu-dit Les Granges, une stèle rend hommage au champion italien Marco Pantani, auteur d'une attaque mythique sous le déluge en 1998."
+      },
+      {
+        "title": "Réglementation du Tunnel du Galibier (2 556 m) & Route de la Crête (2 642 m)",
+        "content": "Le franchissement du col propose deux voies au sommet : le tunnel historique de 370 mètres situé à 2 556 m d'altitude, rénové et sécurisé en 2002, et la route panoramique de la crête qui monte jusqu'au véritable col à 2 642 m. Le tunnel est régulé par des feux tricolores d'alternat automatique avec un temps d'attente moyen de 2 à 4 minutes. Important : Le tunnel est strictement interdit aux cyclistes et aux piétons pour des raisons de sécurité ; les cyclistes doivent obligatoirement franchir le col par la route de la crête."
+      },
+      {
+        "title": "Loi Montagne II & Équipements Hivernaux dans les Alpes françaises",
+        "content": "Dans le cadre de la Loi Montagne II appliquée dans les départements de la Savoie (73) et des Hautes-Alpes (05), tous les véhicules circulant du 1er novembre au 31 mars doivent être pourvus de 4 pneus hiver portant le marquage 3PMSF ou détenir dans leur coffre des dispositifs antidérapants amovibles (chaînes métalliques ou chaussettes à neige homologuées) pour au moins deux roues motrices."
+      }
+    ],
+    "quickFacts": {
+      "state": "Hautes-Alpes (05) & Savoie (73), France",
+      "mountainRange": "Massif des Cerces / Alpes dauphinoises",
+      "elevationSummary": "2 642 m (8 668 ft) Sommet / 2 556 m (8 386 ft) Tunnel",
+      "connects": "Saint-Michel-de-Maurienne & Valloire to Col du Lautaret & Briançon",
+      "nearestTown": "Valloire (18 km) / Briançon (36 km)",
+      "roadType": "Route Départementale D902 (Route des Grandes Alpes)",
+      "bestTime": "Juin à Octobre (Période estivale)",
+      "highlight": "Monument Henri Desgrange, stèle Marco Pantani, vue panoramique sur les Écrins"
+    },
+    "routeDetails": {
+      "distanceKm": 34.8,
+      "distanceMiles": 21.6,
+      "duration": "45–60 min en voiture (2h30–3h30 à vélo)",
+      "origin": "Saint-Michel-de-Maurienne (712 m)",
+      "destination": "Col du Lautaret (2 058 m) / Briançon (1 326 m)",
+      "waypoints": [
+        "Saint-Michel-de-Maurienne (712 m)",
+        "Col du Télégraphe (1 566 m)",
+        "Valloire (1 430 m)",
+        "Les Granges (1 650 m)",
+        "Plan Lachat (1 990 m)",
+        "Tunnel du Galibier (2 556 m)",
+        "Sommet du Col du Galibier (2 642 m)",
+        "Col du Lautaret (2 058 m)"
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "Le Col du Galibier est l'un des cols les plus prestigieux et exigeants du cyclisme mondial. Haut lieu du Tour de France avec plus de 60 passages, il propose des ascensions majeures par ses deux versants.",
+      "approaches": [
+        {
+          "name": "Versant Nord (depuis Saint-Michel-de-Maurienne via Télégraphe)",
+          "origin": "Saint-Michel-de-Maurienne (712 m)",
+          "distanceKm": 34.8,
+          "distanceMiles": 21.6,
+          "elevationGainM": 2120,
+          "elevationGainFt": 6955,
+          "avgGradient": "6.1%",
+          "maxGradient": "10.5%",
+          "hairpins": 18,
+          "description": "L'enchaînement mythique Col du Télégraphe (11,8 km à 7,3%) suivi d'une courte descente de 5 km sur Valloire, puis de l'ascension finale du Galibier (18,1 km à 6,7%). Les 8 derniers kilomètres au-dessus de Plan Lachat oscillent entre 8,5% et 10,5% avec un air raréfié à plus de 2 000 m."
+        },
+        {
+          "name": "Versant Nord direct (depuis Valloire)",
+          "origin": "Valloire (1 430 m)",
+          "distanceKm": 18.1,
+          "distanceMiles": 11.2,
+          "elevationGainM": 1212,
+          "elevationGainFt": 3976,
+          "avgGradient": "6.7%",
+          "maxGradient": "10.5%",
+          "hairpins": 10,
+          "description": "Départ du village de Valloire en pente douce jusqu'au hameau du Bonnenuit et Plan Lachat (1 990 m), où la rampe se cabre brutalement dans les alpages minéraux pour les 8 derniers kilomètres intenses."
+        },
+        {
+          "name": "Versant Sud (depuis le Col du Lautaret)",
+          "origin": "Col du Lautaret (2 058 m)",
+          "distanceKm": 8.6,
+          "distanceMiles": 5.3,
+          "elevationGainM": 585,
+          "elevationGainFt": 1919,
+          "avgGradient": "6.8%",
+          "maxGradient": "12.0%",
+          "hairpins": 8,
+          "description": "Une ascension alpine spectaculaire face aux glaciers de la Meije et du Massif des Écrins. Pente soutenue avec un dernier kilomètre à 10% pour atteindre la table d'orientation à 2 642 m."
+        },
+        {
+          "name": "Versant Sud complet (depuis Briançon)",
+          "origin": "Briançon (1 326 m)",
+          "distanceKm": 36.5,
+          "distanceMiles": 22.7,
+          "elevationGainM": 1440,
+          "elevationGainFt": 4724,
+          "avgGradient": "4.0%",
+          "maxGradient": "12.0%",
+          "hairpins": 12,
+          "description": "Remontée de la vallée de la Guisane et de Serre Chevalier jusqu'au Col du Lautaret (28 km en faux plat montant à 3-5%), puis les 8,6 km finaux du Galibier."
+        }
+      ],
+      "bestSeason": "Fin juin à début octobre (col déneigé et températures plus clémentes)",
+      "safetyTips": [
+        "Interdiction formelle du Tunnel aux cyclistes : vous devez impérativement grimper par la route de la crête sommitale (2 642 m).",
+        "Prévoyez une veste coupe-vent et thermique pour la descente car la température peut chuter de plus de 15°C entre la vallée et le sommet.",
+        "Équipez votre vélo d'un éclairage puissant avant et arrière pour les galeries paravalanches inférieures.",
+        "Vérifiez l'état de vos patins ou plaquettes de freins avant de vous engager dans la descente technique vers Plan Lachat."
+      ]
+    },
+    "drivingInfo": {
+      "summary": "La D902 à travers le Col du Galibier est une route de haute montagne magnifique qui exige attention, respect des gabarits et maîtrise du frein moteur.",
+      "characteristics": [
+        "Route goudronnée de 5 à 6 mètres de large, bien entretenue par les départements 73 et 05.",
+        "Passage au choix au sommet par le Tunnel historique (2 556 m, alternat feux) ou la crête panoramique (2 642 m).",
+        "Gabarit maximal du Tunnel du Galibier : hauteur 4,10 m, largeur 2,40 m, poids 3,5 tonnes.",
+        "Fermeture hivernale totale d'octobre/novembre à fin mai/juin en raison du manteau neigeux et des avalanches."
+      ],
+      "switchbacksCount": "Plus de 35 lacets répartis entre Saint-Michel, le Télégraphe, Plan Lachat et le Lautaret",
+      "safetyAndEtiquette": [
+        "Utilisez le frein moteur (1ère et 2ème vitesses) en descente pour préserver l'efficacité de vos disques et plaquettes.",
+        "Cédez le passage aux véhicules montants et aux autocars dans les virages étroits.",
+        "Laissez un espace de dépassement d'au moins 1,50 mètre vis-à-vis des cyclistes.",
+        "Respectez scrupuleusement les feux tricolores alternés du Tunnel du Galibier (ne franchissez jamais le feu rouge)."
+      ],
+      "motorcycleTips": [
+        "Attention aux résidus d'humidité et de gravillons dans les épingles au-dessus de Plan Lachat.",
+        "Munissez-vous d'équipements chauds et étanches : le vent au sommet est souvent très vif et froid."
+      ]
+    },
+    "distancesTable": [
+      {
+        "location": "Valloire (Centre Station)",
+        "distance": "18 km (11 miles)",
+        "route": "D902 Nord",
+        "notes": "Station village au pied nord du Galibier"
+      },
+      {
+        "location": "Saint-Michel-de-Maurienne",
+        "distance": "35 km (22 miles)",
+        "route": "D902 Nord via Col du Télégraphe",
+        "notes": "Accès autoroute A43 et gare SNCF"
+      },
+      {
+        "location": "Col du Lautaret",
+        "distance": "8.6 km (5.3 miles)",
+        "route": "D902 Sud",
+        "notes": "Jonction avec la route D1091 (Grenoble / Briançon)"
+      },
+      {
+        "location": "Briançon / Serre Chevalier",
+        "distance": "36.5 km (23 miles)",
+        "route": "D902 Sud & D1091",
+        "notes": "Plus haute ville d'Europe et site fortifié Vauban UNESCO"
+      },
+      {
+        "location": "La Grave / Téléphérique de la Meije",
+        "distance": "19.5 km (12 miles)",
+        "route": "D902 Sud & D1091 Ouest",
+        "notes": "Mecque du freeride et alpinisme des Écrins"
+      },
+      {
+        "location": "Grenoble",
+        "distance": "95 km (59 miles)",
+        "route": "D1091 via Bourg d'Oisans",
+        "notes": "Capitale des Alpes françaises"
+      },
+      {
+        "location": "Modane",
+        "distance": "52 km (32 miles)",
+        "route": "D902 Nord & D1006",
+        "notes": "Accès Tunnel du Fréjus vers l'Italie"
+      },
+      {
+        "location": "Chambéry",
+        "distance": "135 km (84 miles)",
+        "route": "A43 & D902",
+        "notes": "Préfecture de la Savoie"
+      }
+    ],
+    "isSeasonal": true,
+    "seasonalClosureInfo": {
+      "typicalClosure": "Fin octobre / début novembre (selon premières chutes de neige alpines)",
+      "typicalReopening": "Fin mai / début juin (déneigement de printemps par les services départementaux)",
+      "description": "Le Col du Galibier est fermé à la circulation pendant tous les mois d'hiver. Des couches de neige pouvant atteindre 5 à 8 mètres s'accumulent au sommet et dans les combes. Les services des routes de Savoie et des Hautes-Alpes mènent un chantier de déneigement spectaculaire à l'aide de fraises rotatives et de chargeuses chaque mois de mai pour permettre une réouverture sécurisée."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Alpine Sun & Moderate Breeze",
+        "tempHighF": 50,
+        "tempLowF": 34,
+        "icon": "sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Crisp Mountain Stars",
+        "tempHighF": 36,
+        "tempLowF": 28,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Bright Alpine Sky",
+        "tempHighF": 52,
+        "tempLowF": 36,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Scattered High Clouds",
+        "tempHighF": 48,
+        "tempLowF": 32,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Passing Afternoon Mist",
+        "tempHighF": 46,
+        "tempLowF": 30,
+        "icon": "wind"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Clear Blue Horizon",
+        "tempHighF": 51,
+        "tempLowF": 35,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Inforoute 05 – Conseil Départemental des Hautes-Alpes",
+        "type": "Official High Alps Road Status & Conditions",
+        "url": "https://inforoute.hautes-alpes.fr/"
+      },
+      {
+        "name": "Savoie Route – Conseil Départemental de la Savoie",
+        "type": "Official Savoie Department Road Status",
+        "url": "https://savoie-route.fr/"
+      },
+      {
+        "name": "Office de Tourisme de Valloire Galibier",
+        "type": "Live Webcams & Local Pass Updates",
+        "url": "https://www.valloire.net/webcams-valloire/"
+      },
+      {
+        "name": "Météo-France – Briançonnais & Massif des Cerces",
+        "type": "Mountain Weather & Avalanche Risk Bulletins",
+        "url": "https://meteofrance.com/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the Col du Galibier Pass opening date? / Quelle est la date d'ouverture du Col du Galibier ?",
+        "answer": "The Col du Galibier Pass opening date typically occurs between late May and early June (around May 25 to June 5) each year, once rotary plows clear the winter snowpack. In 2026, the pass opened for the summer season and is currently OPEN to all traffic. / La date d'ouverture du Col du Galibier se situe généralement entre fin mai et début juin, après les travaux printaniers de déneigement."
+      },
+      {
+        "question": "Is Col du Galibier Pass open today? / Le Col du Galibier est-il ouvert aujourd'hui ?",
+        "answer": "Yes, Col du Galibier Pass is currently OPEN and accessible to cars, motorcycles, and cyclists on the D902 route. Always check live conditions before departing during late autumn or spring transitions. / Oui, le Col du Galibier est actuellement OUVERT à la circulation."
+      },
+      {
+        "question": "What are the current Col du Galibier Pass road conditions? / Quelles sont les conditions de circulation au Col du Galibier ?",
+        "answer": "Road conditions on the D902 are dry and clear across both the Savoie (Valloire) and Hautes-Alpes (Col du Lautaret) approaches. Traffic flows smoothly with alternating signals at the historic Galibier Tunnel. / La chaussée est sèche et dégagée avec un trafic fluide."
+      },
+      {
+        "question": "Where can I view the Col du Galibier Pass live webcam and cameras? / Où voir la webcam en direct du Col du Galibier ?",
+        "answer": "You can view 24/7 high-definition live webcam feeds from Valloire Galibier (valloire.net) and Skaping HD at the summit (2,642 m), Poingt Ravier, and Crey du Quart directly in the Webcam section above. / Les webcams HD en direct sont accessibles en haut de cette page."
+      },
+      {
+        "question": "What is the elevation and altitude of Col du Galibier Pass? / Quelle est l'altitude du Col du Galibier ?",
+        "answer": "Col du Galibier Pass summit elevation is 2,642 meters (8,668 feet) above sea level. The historic Galibier Tunnel is located at an altitude of 2,556 meters (8,386 feet). / L'altitude sommitale du Col du Galibier est de 2 642 mètres (tunnel à 2 556 m)."
+      },
+      {
+        "question": "Is Col du Galibier Pass open in winter? / Le Col du Galibier est-il ouvert en hiver ?",
+        "answer": "No, Col du Galibier Pass is closed in winter due to heavy alpine snowpack exceeding 5 to 8 meters and severe avalanche risks. The D902 road typically remains closed from late October / early November until late May. / Non, le col est fermé tout l'hiver en raison de l'enneigement massif."
+      },
+      {
+        "question": "What is the Col du Galibier Pass closing date? / Quelle est la date de fermeture du Col du Galibier ?",
+        "answer": "The closing date is determined by autumn snowfall, typically occurring in late October or early November. Official closure dates are announced by the Savoie and Hautes-Alpes road departments. / La fermeture intervient fin octobre ou début novembre selon les premières neiges."
+      },
+      {
+        "question": "What are the Col du Galibier Pass chain requirements and Loi Montagne II rules? / Quelles sont les obligations de chaînes et de pneus hiver ?",
+        "answer": "Under French Loi Montagne II, winter equipment (4 certified 3PMSF winter tires or carrying snow chains/textile socks in the vehicle) is legally mandatory in Savoie (73) and Hautes-Alpes (05) from November 1 to March 31. No restrictions apply during peak summer. / Équipements hivernaux obligatoires du 1er novembre au 31 mars (Loi Montagne II)."
+      },
+      {
+        "question": "What is the snow depth on Col du Galibier Pass? / Quelle est la hauteur de neige au Col du Galibier ?",
+        "answer": "During the summer opening, the road surface is completely clear of snow. In peak winter and spring before clearing, snow depths often exceed 400–600 cm (13–20 feet) in the summit gullies. / En été la route est dégagée ; en hiver le manteau dépasse fréquemment 5 mètres."
+      },
+      {
+        "question": "Are bicycles allowed inside the historic Galibier Tunnel? / Les vélos peuvent-ils emprunter le Tunnel du Galibier ?",
+        "answer": "No, cyclists and pedestrians are strictly forbidden inside the historic Galibier Tunnel (2,556 m) for safety reasons. Cyclists must climb the summit crest route to 2,642 m. / Non, les vélos et piétons sont strictement interdits dans le tunnel et doivent passer par la crête à 2 642 m."
+      },
+      {
+        "question": "What are the vehicle restrictions for the Galibier Tunnel? / Quelles sont les limites de gabarit du Tunnel du Galibier ?",
+        "answer": "The Galibier Tunnel is restricted to vehicles with a maximum height of 4.10 meters, width of 2.40 meters, and gross vehicle weight of 3.5 tonnes. Alternating single-lane traffic is managed by 3-color traffic lights. / Hauteur max 4,10 m, largeur max 2,40 m, poids max 3,5 tonnes."
+      },
+      {
+        "question": "How do I get directions to Col du Galibier Pass? / Comment aller au Col du Galibier ?",
+        "answer": "From the north, take highway A43 to Saint-Michel-de-Maurienne, then D902 over Col du Télégraphe to Valloire and the Galibier. From the south, take D1091 from Briançon or Grenoble to Col du Lautaret, then ascend D902 north to the summit. / Accès par Valloire au nord (A43 / D902) ou par le Col du Lautaret au sud (D1091 / D902)."
+      }
+    ],
+    "customSeo": {
+      "h1": "Col du Galibier : État de la Route, Webcam Live, Météo & Date d'Ouverture",
+      "title": "Col du Galibier Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
+      "description": "Consultez l'état d'ouverture en direct du Col du Galibier (D902), webcams live HD de Valloire, météo, hauteur de neige, conditions de circulation, réglementation du tunnel et Loi Montagne."
+    },
+    "searchKeywords": [
+      "Col du Galibier Pass opening date",
+      "Col du Galibier Pass is open",
+      "Col du Galibier Pass road conditions",
+      "Col du Galibier Pass road status",
+      "Col du Galibier Pass pass status report",
+      "when does Col du Galibier Pass open",
+      "Col du Galibier Pass closed",
+      "Col du Galibier Pass is closed",
+      "Col du Galibier Pass is it open today",
+      "is Col du Galibier Pass closed today",
+      "Col du Galibier Pass webcam",
+      "Col du Galibier Pass live webcam",
+      "Col du Galibier Pass cameras",
+      "Col du Galibier Pass snow depth",
+      "Col du Galibier Pass snow conditions",
+      "Col du Galibier Pass elevation",
+      "Col du Galibier Pass open",
+      "Col du Galibier Pass when will open",
+      "Col du Galibier Pass passes open",
+      "Col du Galibier Pass closures today",
+      "is Col du Galibier Pass open",
+      "is Col du Galibier Pass open in winter",
+      "Col du Galibier Pass weather",
+      "Col du Galibier Pass directions",
+      "Col du Galibier Pass closing date",
+      "Col du Galibier Pass",
+      "Col du Galibier Pass forecast",
+      "Col du Galibier Pass chain requirements",
+      "Col du Galibier ouverture",
+      "Col du Galibier webcam en direct",
+      "Col du Galibier état de la route",
+      "Tunnel du Galibier D902",
+      "Loi Montagne II Galibier",
+      "Webcam Valloire Galibier"
+    ]
   }
 ];
 

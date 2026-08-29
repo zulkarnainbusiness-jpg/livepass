@@ -216,6 +216,30 @@ export const hierarchyData: HierarchyContinent[] = [
     "icon": "globe",
     "countries": [
       {
+        "id": "france",
+        "name": "France",
+        "code": "FRA",
+        "flagEmoji": "🇫🇷",
+        "states": [
+          {
+            "id": "hautes-alpes-savoie",
+            "name": "Hautes-Alpes & Savoie",
+            "passes": [
+              {
+                "id": "col-du-galibier",
+                "slug": "col-du-galibier",
+                "name": "Col du Galibier Pass",
+                "highway": "D902",
+                "elevationFt": 8668,
+                "elevationM": 2642,
+                "status": "OPEN",
+                "image": "/col-du-galibier.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "switzerland",
         "name": "Switzerland",
         "code": "CHE",

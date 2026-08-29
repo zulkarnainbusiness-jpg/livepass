@@ -224,5 +224,21 @@ export const alertsData: PassAlert[] = [
     "status": "OPEN",
     "timestamp": "Border Management Authority Bulletin",
     "source": "Border Management Authority (BMA South Africa) / Lesotho Border Police"
+  },
+  {
+    "id": "alert-col-du-galibier",
+    "passId": "col-du-galibier",
+    "passName": "Col du Galibier (D902)",
+    "slug": "col-du-galibier",
+    "country": "France",
+    "state": "Hautes-Alpes & Savoie",
+    "highway": "D902 (Route des Grandes Alpes)",
+    "type": "All Clear",
+    "severity": "info",
+    "title": "Col du Galibier Ouvert — Circulation Fluide & Feux Alternés au Tunnel (2 556 m)",
+    "description": "Le Col du Galibier (2 642 m) et le Tunnel du Galibier (2 556 m) sont entièrement ouverts à la circulation entre Valloire (Savoie) et le Col du Lautaret (Hautes-Alpes). Chaussée sèche, feux tricolores alternés au tunnel. Rappel : tunnel interdit aux vélos et piétons.",
+    "status": "OPEN",
+    "timestamp": "Inforoute 05 & Savoie Route Bulletin",
+    "source": "Inforoute 05 / Conseil Départemental de la Savoie"
   }
 ];

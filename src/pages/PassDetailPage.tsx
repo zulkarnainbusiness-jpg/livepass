@@ -139,6 +139,7 @@ export const PassDetailPage: React.FC = () => {
   const [isRefreshingCam, setIsRefreshingCam] = useState(false);
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
   const [isUserCamModalOpen, setIsUserCamModalOpen] = useState(false);
+  const [pageLang, setPageLang] = useState<'fr' | 'en'>('fr');
 
   // If pass is not found in database, return custom 404 Page (Phase 3 & 29 compliance)
   if (!pass) {
@@ -414,6 +415,65 @@ export const PassDetailPage: React.FC = () => {
           <span className="current-crumb">{pass.name}</span>
         </nav>
 
+        {/* Bilingual Language Switcher for Col du Galibier */}
+        {pass.slug === 'col-du-galibier' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(99, 102, 241, 0.06) 100%)',
+            border: '1px solid rgba(59, 130, 246, 0.25)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#1E3A8A' }}>
+              <Globe size={18} color="#2563EB" />
+              <span>
+                {pageLang === 'fr' 
+                  ? '🇫🇷 Contenu en français officiel (Basculez vers l\'anglais à tout moment)' 
+                  : '🇬🇧 English Auto-Translation Active (Switch to native French anytime)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+              <button
+                type="button"
+                onClick={() => setPageLang('fr')}
+                style={{
+                  padding: '6px 14px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'fr' ? '#2563EB' : 'transparent',
+                  color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇫🇷 Français
+              </button>
+              <button
+                type="button"
+                onClick={() => setPageLang('en')}
+                style={{
+                  padding: '6px 14px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'en' ? '#2563EB' : 'transparent',
+                  color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇬🇧 English (Auto-Translated)
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Pass Header & Action Bar */}
         <header className="pass-detail-header-row">
           <div className="pass-title-group">
@@ -422,16 +482,22 @@ export const PassDetailPage: React.FC = () => {
               <StatusBadge status={displayedStatus} size="lg" />
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 14px', borderRadius: '9999px', backgroundColor: 'rgba(56, 189, 248, 0.12)', color: 'var(--primary)', fontSize: '13px', fontWeight: '700', border: '1px solid rgba(56, 189, 248, 0.25)' }}>
                 <Clock size={14} />
-                <span>Last updated: {pass.lastUpdated}</span>
+                <span>{pass.slug === 'col-du-galibier' && pageLang === 'fr' ? `Dernière mise à jour : ${pass.lastUpdated}` : `Last updated: ${pass.lastUpdated}`}</span>
               </div>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', borderRadius: '9999px', backgroundColor: 'var(--bg-surface-subtle)', color: 'var(--text-secondary)', fontSize: '13px', border: '1px solid var(--border-color)' }}>
                 <Mountain size={14} />
-                <span>Elevation: {pass.elevationFt.toLocaleString()} ft ({pass.elevationM.toLocaleString()} m)</span>
+                <span>{pass.slug === 'col-du-galibier' && pageLang === 'fr' ? `Altitude : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)` : `Elevation: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)`}</span>
               </div>
             </div>
 
             <div className="title-and-star">
-              <h1 className="pass-main-heading">{pass.customSeo?.h1 || `${pass.name} Live Webcam & Road Conditions`}</h1>
+              <h1 className="pass-main-heading">
+                {pass.slug === 'col-du-galibier'
+                  ? (pageLang === 'fr' 
+                      ? "Col du Galibier : État de la Route, Webcam Live, Météo & Date d'Ouverture" 
+                      : "Col du Galibier Pass: Live Webcam, Road Conditions, Opening Status & Weather")
+                  : (pass.customSeo?.h1 || `${pass.name} Live Webcam & Road Conditions`)}
+              </h1>
               <button 
                 onClick={toggleFavorite} 
                 className={`star-icon-btn ${isFavorite ? 'active' : ''}`}
@@ -448,18 +514,26 @@ export const PassDetailPage: React.FC = () => {
               <span className="dot-sep">•</span>
               <span>{pass.state ? `${pass.state}, ` : ''}{pass.country}</span>
               <span className="dot-sep">•</span>
-              <span>Summit: {pass.elevationFt.toLocaleString()} ft ({pass.elevationM.toLocaleString()} m)</span>
+              <span>{pass.slug === 'col-du-galibier' && pageLang === 'fr' ? `Sommet : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)` : `Summit: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)`}</span>
             </div>
-            <p className="pass-summary-paragraph">{pass.description}</p>
+            <p className="pass-summary-paragraph">
+              {pass.slug === 'col-du-galibier'
+                ? (pageLang === 'fr'
+                    ? "Le Col du Galibier (2 642 m / 8 668 ft) est un col routier légendaire des Alpes françaises reliant Saint-Michel-de-Maurienne et Valloire en Savoie au Col du Lautaret et Briançon dans les Hautes-Alpes via la D902. Haut lieu historique du Tour de France et de la Route des Grandes Alpes, il offre un panorama grandiose sur les glaciers des Écrins et la Meije."
+                    : "Col du Galibier (2,642 m / 8,668 ft) is a legendary high mountain pass in the French Alps connecting Saint-Michel-de-Maurienne & Valloire in Savoie with Col du Lautaret & Briançon in Hautes-Alpes along Route D902. A historic peak of the Tour de France and the Route des Grandes Alpes, it offers magnificent views of the Écrins glaciers and the Meije.")
+                : pass.description}
+            </p>
           </div>
 
           <div className="pass-header-actions">
             <button onClick={handleShare} className="btn btn-secondary action-pill-btn">
-              <Share2 size={16} /> Share
+              <Share2 size={16} /> {pass.slug === 'col-du-galibier' && pageLang === 'fr' ? 'Partager' : 'Share'}
             </button>
             <button onClick={toggleFavorite} className="btn btn-secondary action-pill-btn">
               <Heart size={16} fill={isFavorite ? '#EF4444' : 'none'} color={isFavorite ? '#EF4444' : 'currentColor'} />
-              {isFavorite ? 'Favorited' : 'Add to Favorites'}
+              {isFavorite 
+                ? (pass.slug === 'col-du-galibier' && pageLang === 'fr' ? 'Favori' : 'Favorited') 
+                : (pass.slug === 'col-du-galibier' && pageLang === 'fr' ? 'Ajouter aux favoris' : 'Add to Favorites')}
             </button>
           </div>
         </header>
@@ -532,15 +606,37 @@ export const PassDetailPage: React.FC = () => {
               }}>
                 <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#1E3A8A' }}>
                   <ShieldCheck size={20} color="#3B82F6" />
-                  <span>Important French Alpine Regulations (D902 Tunnel &amp; Loi Montagne II)</span>
+                  <span>
+                    {pageLang === 'fr'
+                      ? 'Réglementations Alpins & Loi Montagne II (Tunnel D902 & Savoie / Hautes-Alpes)'
+                      : 'Important French Alpine Regulations (D902 Tunnel & Loi Montagne II)'}
+                  </span>
                 </h3>
                 <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
-                  <strong>Historic Galibier Tunnel (2,556 m / 8,386 ft):</strong> Alternating three-color traffic lights (feux tricolores) regulate single-lane vehicle passage. Height limit: 4.1 m, width limit: 2.4 m, weight limit: 3.5 tonnes. <em>Cyclists, pedestrians, and hazardous goods vehicles are strictly prohibited inside the tunnel and must use the 2,642 m summit crest route.</em>
+                  {pageLang === 'fr' ? (
+                    <>
+                      <strong>Tunnel historique du Galibier (2 556 m) :</strong> Alternat de circulation à voie unique régulé par feux tricolores. Hauteur maximale : 4,10 m, largeur max : 2,40 m, poids maximal : 3,5 tonnes. <em>Les cyclistes et piétons sont strictement interdits dans le tunnel pour des raisons de sécurité et doivent obligatoirement emprunter la route panoramique de la crête sommitale (2 642 m).</em>
+                    </>
+                  ) : (
+                    <>
+                      <strong>Historic Galibier Tunnel (2,556 m / 8,386 ft):</strong> Alternating three-color traffic lights (feux tricolores) regulate single-lane vehicle passage. Height limit: 4.1 m, width limit: 2.4 m, weight limit: 3.5 tonnes. <em>Cyclists, pedestrians, and hazardous goods vehicles are strictly prohibited inside the tunnel and must use the 2,642 m summit crest route.</em>
+                    </>
+                  )}
                 </p>
                 <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
-                  <li><strong>Winter Equipment Mandate (Loi Montagne II):</strong> Between November 1 and March 31, all vehicles traveling in Savoie (73) and Hautes-Alpes (05) must either be equipped with 4 winter-certified tires (3PMSF) or carry removable anti-skid devices (snow chains or textile socks).</li>
-                  <li><strong>Seasonal Winter Closure:</strong> D902 closes annually from late October/November until late May/early June. Snow blowers clear up to 8 meters of snowpack in May.</li>
-                  <li><strong>Tour de France Monument:</strong> The monument to Tour founder Henri Desgrange is located at the south portal of the tunnel.</li>
+                  {pageLang === 'fr' ? (
+                    <>
+                      <li><strong>Loi Montagne II (Équipements Hivernaux Obligatoires) :</strong> Du 1er novembre au 31 mars, tous les véhicules circulant en Savoie (73) et dans les Hautes-Alpes (05) doivent posséder 4 pneus hiver homologués 3PMSF ou détenir des chaînes/chaussettes à neige dans le coffre.</li>
+                      <li><strong>Fermeture Hivernale Saisonnière :</strong> La D902 ferme chaque année de fin octobre/novembre jusqu'à fin mai/début juin en raison de congères dépassant 5 à 8 mètres de neige et du risque d'avalanche.</li>
+                      <li><strong>Monument Henri Desgrange &amp; Marco Pantani :</strong> La stèle au créateur du Tour de France se trouve au portail sud du tunnel, et le monument Marco Pantani au versant nord (Les Granges).</li>
+                    </>
+                  ) : (
+                    <>
+                      <li><strong>Winter Equipment Mandate (Loi Montagne II):</strong> Between November 1 and March 31, all vehicles traveling in Savoie (73) and Hautes-Alpes (05) must either be equipped with 4 winter-certified tires (3PMSF) or carry removable anti-skid devices (snow chains or textile socks).</li>
+                      <li><strong>Seasonal Winter Closure:</strong> D902 closes annually from late October/November until late May/early June. Rotary snowplows clear up to 8 meters of snowpack in May.</li>
+                      <li><strong>Tour de France Monument:</strong> The monument to Tour founder Henri Desgrange is located at the south portal of the tunnel.</li>
+                    </>
+                  )}
                 </ul>
               </div>
             )}
@@ -1510,7 +1606,9 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 10.5: Editorial Guidance & Travel Tips */}
             <section id="travel-guidance" className="detail-section-block">
               <h2 className="section-title-heading">
-                {(pass.slug === 'bernina-pass')
+                {(pass.slug === 'col-du-galibier')
+                  ? (pageLang === 'fr' ? 'Conseils Pratiques & Informations Voyage Galibier' : 'Col du Galibier Travel Guidance & Practical Tips')
+                  : (pass.slug === 'bernina-pass')
                   ? 'How to Get to Bernina Pass & Directions'
                   : (pass.slug === 'gotthard-pass')
                   ? 'How to Get to Gotthard Pass & Travel Guidance'
@@ -1522,15 +1620,23 @@ export const PassDetailPage: React.FC = () => {
               </h2>
               <div className="travel-guidance-container lp-card" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <p className="narrative-p" style={{ marginBottom: '8px' }}>
-                  Mountain passes present unique driving environments. Understanding how weather, elevation, and highway regulations intersect is essential for a safe crossing.
+                  {pass.slug === 'col-du-galibier'
+                    ? (pageLang === 'fr'
+                        ? 'Le franchissement du Galibier à 2 642 mètres d\'altitude constitue un parcours exceptionnel. Respecter les consignes de sécurité, la météo et la réglementation est indispensable pour un voyage serein.'
+                        : 'Crossing Col du Galibier at 2,642 meters (8,668 ft) is a world-class alpine route. Understanding weather dynamics, tunnel regulations, and high-altitude road rules ensures a safe journey.')
+                    : 'Mountain passes present unique driving environments. Understanding how weather, elevation, and highway regulations intersect is essential for a safe crossing.'}
                 </p>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
-                      <Clock size={16} /> Route &amp; Travel Season
+                      <Clock size={16} /> {pageLang === 'fr' && pass.slug === 'col-du-galibier' ? 'Itinéraire & Période d\'Ouverture' : 'Route & Travel Season'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'bernina-pass')
+                      {(pass.slug === 'col-du-galibier')
+                        ? (pageLang === 'fr'
+                            ? 'La D902 relie Saint-Michel-de-Maurienne et Valloire (Savoie) au Col du Lautaret et Briançon (Hautes-Alpes). La route est généralement ouverte de fin mai / début juin à fin octobre / début novembre. La chaussée asphaltée offre d\'excellentes conditions en été.'
+                            : 'Route D902 links Saint-Michel-de-Maurienne & Valloire (Savoie) with Col du Lautaret & Briançon (Hautes-Alpes). Open typically late May to late October/early November. Paved asphalt is in pristine condition for summer travel.')
+                        : (pass.slug === 'bernina-pass')
                         ? 'Bernina Pass (Route 29) links the Upper Engadin (Pontresina & St. Moritz) with Val Poschiavo and Tirano (Italy). It is maintained open year-round by Tiefbauamt Graubünden with rotary snowplows. Summer offers pristine dry asphalt; winter delivers spectacular snow-walled corridors requiring winter-rated tires (3PMSF).'
                         : (pass.slug === 'gotthard-pass')
                         ? 'Gotthard Pass road is open from late May to late October/November. It is a fantastic scenic bypass when the A2 Gotthard Road Tunnel experiences holiday traffic delays at Göschenen or Airolo.'
@@ -1541,10 +1647,14 @@ export const PassDetailPage: React.FC = () => {
                   </div>
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
-                      <Mountain size={16} /> High-Altitude Safety &amp; Weather
+                      <Mountain size={16} /> {pageLang === 'fr' && pass.slug === 'col-du-galibier' ? 'Météo Alti & Sécurité Altitude' : 'High-Altitude Safety & Weather'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'bernina-pass')
+                      {(pass.slug === 'col-du-galibier')
+                        ? (pageLang === 'fr'
+                            ? 'À 2 642 m, la température est souvent de 10 à 15°C inférieure à celle des vallées de Valloire ou Briançon. Des rafales de vent dépassant 60 km/h et des orages d\'été soudains peuvent survenir. Consultez les bulletins Météo-France et les webcams avant l\'ascension.'
+                            : 'At 2,642 m summit altitude, ambient temperature is typically 10–15°C colder than in the Maurienne or Briançon valleys. Gusts over 60 km/h and sudden storms can develop rapidly; check Météo-France bulletins and summit webcams before setting out.')
+                        : (pass.slug === 'bernina-pass')
                         ? 'At 2,328 m (7,638 ft) summit elevation, expect ambient temperatures 10–14°C colder than in Tirano or Lake Como. Weather can shift rapidly across the Lago Bianco plateau; check real-time MeteoSwiss Passo del Bernina reports before starting the ascent.'
                         : (pass.slug === 'gotthard-pass')
                         ? 'At 2,106 m (6,909 ft) summit elevation, expect temperatures 10–15°C colder than the valley floor in Lucerne or Lugano. High-altitude mountain winds and sudden cloud cover can reduce visibility across Lago della Piazza.'
@@ -1555,10 +1665,14 @@ export const PassDetailPage: React.FC = () => {
                   </div>
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
-                      <ShieldCheck size={16} /> Vignette &amp; Toll Regulations
+                      <ShieldCheck size={16} /> {pageLang === 'fr' && pass.slug === 'col-du-galibier' ? 'Péage & Réglementation Tunnel' : 'Tolls & Tunnel Regulations'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'bernina-pass')
+                      {(pass.slug === 'col-du-galibier')
+                        ? (pageLang === 'fr'
+                            ? 'La D902 est une route départementale 100% gratuite (aucun péage ni vignette). Le Tunnel du Galibier (2 556 m) est régulé par feux tricolores alternés (gabarit max : 4,1 m haut, 2,4 m large, 3,5 t). Vélos et piétons sont interdits dans le tunnel et doivent passer par la crête.'
+                            : 'Route D902 is a 100% free public departmental highway with no tolls. The historic Galibier Tunnel (2,556 m) features alternating traffic lights with max 4.1 m height, 2.4 m width, and 3.5 t limits. Bicycles and pedestrians are prohibited in the tunnel and must take the 2,642 m crest.')
+                        : (pass.slug === 'bernina-pass')
                         ? 'Swiss Hauptstrasse 29 (Route 29) is a 100% toll-free public cantonal highway; no Swiss motorway vignette is needed. If continuing south past Campocologno into Tirano (Italy), ensure valid passports and EU vehicle insurance green cards are on board.'
                         : (pass.slug === 'gotthard-pass')
                         ? 'The Gotthard Pass road (Hauptstrasse 2) and Tremola are 100% toll-free; no Swiss motorway vignette is required. However, entering the A2 motorway to access the Gotthard Tunnel requires the standard CHF 40 Swiss motorway vignette.'
@@ -1569,10 +1683,14 @@ export const PassDetailPage: React.FC = () => {
                   </div>
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
-                      <Car size={16} /> Alternatives &amp; Winter Guidelines
+                      <Car size={16} /> {pageLang === 'fr' && pass.slug === 'col-du-galibier' ? 'Loi Montagne II & Déviations Hiver' : 'Winter Laws & Seasonal Detours'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'bernina-pass')
+                      {(pass.slug === 'col-du-galibier')
+                        ? (pageLang === 'fr'
+                            ? 'Loi Montagne II obligatoire du 1er nov au 31 mars (4 pneus hiver 3PMSF ou chaînes dans le véhicule). En hiver lors de la fermeture du col, l\'itinéraire de contournement emprunte le Tunnel du Fréjus (A43 vers Italie / Montgenèvre) ou Grenoble via la D1091 / A48.'
+                            : 'Loi Montagne II mandates 4 winter tires (3PMSF) or chains in trunk from Nov 1 to Mar 31. When Galibier is closed in winter, vehicle transit between Maurienne and Briançon diverts via the Fréjus Road Tunnel (A43/Montgenèvre) or via Chambéry/Grenoble (A43/D1091).')
+                        : (pass.slug === 'bernina-pass')
                         ? 'Winter tires (3PMSF) or carrying snow chains is legally mandatory from November to April. During winter blizzards or temporary storm closures, alternatives include the year-round UNESCO Rhaetian Railway (Bernina Line), the Vereina Car Shuttle Train (Autoverlad Vereina), or Maloja Pass (Route 3).'
                         : (pass.slug === 'gotthard-pass')
                         ? 'Commercial trucks over 18 tons and caravans are prohibited on the historic Tremola cobblestone road and must use the modern H2 paved bypass. Always yield right-of-way to Swiss PostBuses sounding their 3-tone horn.'

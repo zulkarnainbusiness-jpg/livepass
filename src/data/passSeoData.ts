@@ -399,5 +399,20 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Paso Los Libertadores (Andes Mountain Pass)',
     crossLinkUrl: '/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores',
     crossLinkText: 'Sammenlign Trollstigens 11 hårnålssvinger med de 29 svingene i Los Caracoles på'
+  },
+  'col-du-galibier': {
+    nearestTowns: [
+      { name: 'Valloire, Savoie', distance: '18 km (11 miles)', direction: 'Nord via D902' },
+      { name: 'Col du Lautaret, Hautes-Alpes', distance: '8.6 km (5.3 miles)', direction: 'Sud via D902' },
+      { name: 'Saint-Michel-de-Maurienne, Savoie', distance: '35 km (22 miles)', direction: 'Nord via D902 & Col du Télégraphe' },
+      { name: 'Briançon, Hautes-Alpes', distance: '36.5 km (23 miles)', direction: 'Sud-Est via D902 & D1091' },
+      { name: 'La Grave / La Meije, Hautes-Alpes', distance: '19.5 km (12 miles)', direction: 'Sud-Ouest via D902 & D1091' }
+    ],
+    seasonalClosureWindow: 'Fin mai / début juin à fin octobre / début novembre (Fermeture hivernale)',
+    seasonalClosureDetail: 'Géré conjointement par les départements de la Savoie (73) et des Hautes-Alpes (05). Fermeture annuelle en raison d’un enneigement exceptionnel (5 à 8 mètres) et des risques d’avalanches. Travaux de déneigement par fraises rotatives au mois de mai pour réouverture estivale.',
+    aboutPass: 'Le Col du Galibier est l’un des géants mythiques des Alpes françaises, culminant à 2 642 mètres d’altitude sur la Route Départementale D902 entre la Savoie (Maurienne / Valloire) et les Hautes-Alpes (Briançonnais / Col du Lautaret). Rendu légendaire par le Tour de France depuis 1911 et orné du monument Henri Desgrange, il attire chaque été des dizaines de milliers de cyclistes, motards et automobilistes du monde entier. Le franchissement sommital propose à la fois un tunnel historique monotrace régulé par feux tricolores (2 556 m) et une spectaculaire route de crête à 2 642 m offrant un panorama à 360 degrés sur les glaciers des Écrins, le Pic de la Meije et les Aiguilles d’Arves.',
+    crossLinkAnchor: 'Stelvio Pass (Passo dello Stelvio, Italy)',
+    crossLinkUrl: '/passes/italy/south-tyrol-lombardy/stelvio-pass',
+    crossLinkText: 'Compare French Alpine high mountain routes with famous Italian alpine passes like the'
   }
 };
