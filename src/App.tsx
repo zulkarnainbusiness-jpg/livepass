@@ -32,8 +32,14 @@ const LegacyPassRedirect: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   if (!slug) return <NotFoundPage />;
 
+  const clean = slug.toLowerCase().trim();
   const targetPass = passesData.find(
-    p => p.slug === slug || p.id === slug || p.slug === `${slug}-pass` || p.id === `${slug}-pass`
+    p => p.slug.toLowerCase() === clean || 
+         p.id.toLowerCase() === clean || 
+         p.slug.toLowerCase() === `${clean}-pass` || 
+         p.id.toLowerCase() === `${clean}-pass` ||
+         (clean === 'galibier' && p.slug === 'col-du-galibier') ||
+         (clean === 'col-du-galibier' && p.slug === 'col-du-galibier')
   );
 
   if (targetPass) {
@@ -64,6 +70,8 @@ export const App: React.FC = () => {
             {/* Legacy 1-tier and 2-tier Pass URL Redirects */}
             <Route path="/passes/:country/:slug" element={<LegacyPassRedirect />} />
             <Route path="/passes/:slug" element={<LegacyPassRedirect />} />
+            <Route path="/col-du-galibier" element={<Navigate to="/passes/france/hautes-alpes-savoie/col-du-galibier" replace />} />
+            <Route path="/galibier" element={<Navigate to="/passes/france/hautes-alpes-savoie/col-du-galibier" replace />} />
             
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/seo-research" element={<SeoResearchPage />} />
