@@ -270,6 +270,22 @@ export const hierarchyData: HierarchyContinent[] = [
         "flagEmoji": "🇨🇭",
         "states": [
           {
+            "id": "bern-valais",
+            "name": "Bern & Valais",
+            "passes": [
+              {
+                "id": "grimsel-pass",
+                "slug": "grimsel-pass",
+                "name": "Grimsel Pass",
+                "highway": "Hauptstrasse 6",
+                "elevationFt": 7100,
+                "elevationM": 2164,
+                "status": "OPEN",
+                "image": "/grimsel-pass.png"
+              }
+            ]
+          },
+          {
             "id": "valais",
             "name": "Valais",
             "passes": [

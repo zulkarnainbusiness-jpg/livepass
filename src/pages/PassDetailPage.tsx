@@ -139,7 +139,8 @@ export const PassDetailPage: React.FC = () => {
   const [isRefreshingCam, setIsRefreshingCam] = useState(false);
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
   const [isUserCamModalOpen, setIsUserCamModalOpen] = useState(false);
-  const [pageLang, setPageLang] = useState<'fr' | 'it' | 'en'>(() => {
+  const [pageLang, setPageLang] = useState<'de' | 'fr' | 'it' | 'en'>(() => {
+    if (targetSlug.toLowerCase().includes('grimsel')) return 'de';
     if (targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard')) return 'it';
     if (targetSlug.toLowerCase().includes('galibier')) return 'fr';
     return 'en';
@@ -152,7 +153,9 @@ export const PassDetailPage: React.FC = () => {
 
   // Sync default language when pass changes
   useEffect(() => {
-    if (pass.slug === 'great-st-bernard-pass') {
+    if (pass.slug === 'grimsel-pass') {
+      setPageLang('de');
+    } else if (pass.slug === 'great-st-bernard-pass') {
       setPageLang('it');
     } else if (pass.slug === 'col-du-galibier') {
       setPageLang('fr');
@@ -428,7 +431,7 @@ export const PassDetailPage: React.FC = () => {
           <span className="current-crumb">{pass.name}</span>
         </nav>
 
-        {/* Bilingual Language Switcher for Col du Galibier & Great St Bernard Pass */}
+        {/* Bilingual Language Switcher for Col du Galibier, Great St Bernard Pass & Grimsel Pass */}
         {pass.slug === 'col-du-galibier' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
@@ -545,6 +548,64 @@ export const PassDetailPage: React.FC = () => {
           </div>
         )}
 
+        {pass.slug === 'grimsel-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(234, 88, 12, 0.08) 0%, rgba(59, 130, 246, 0.06) 100%)',
+            border: '1px solid rgba(234, 88, 12, 0.25)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#9A3412' }}>
+              <Globe size={18} color="#EA580C" />
+              <span>
+                {pageLang === 'de' 
+                  ? '🇩🇪 Offizielle deutsche Inhalte (Jederzeit zur englischen Übersetzung wechseln)' 
+                  : '🇬🇧 English Auto-Translation Active (Switch to native German anytime)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+              <button
+                type="button"
+                onClick={() => setPageLang('de')}
+                style={{
+                  padding: '6px 14px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'de' ? '#EA580C' : 'transparent',
+                  color: pageLang === 'de' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇩🇪 Deutsch
+              </button>
+              <button
+                type="button"
+                onClick={() => setPageLang('en')}
+                style={{
+                  padding: '6px 14px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'en' ? '#EA580C' : 'transparent',
+                  color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇬🇧 English (Auto-Translated)
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Pass Header & Action Bar */}
         <header className="pass-detail-header-row">
           <div className="pass-title-group">
@@ -554,7 +615,9 @@ export const PassDetailPage: React.FC = () => {
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 14px', borderRadius: '9999px', backgroundColor: 'rgba(56, 189, 248, 0.12)', color: 'var(--primary)', fontSize: '13px', fontWeight: '700', border: '1px solid rgba(56, 189, 248, 0.25)' }}>
                 <Clock size={14} />
                 <span>
-                  {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                  {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                    ? `Letzte Aktualisierung : ${pass.lastUpdated}`
+                    : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
                     ? `Dernière mise à jour : ${pass.lastUpdated}` 
                     : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                     ? `Ultimo aggiornamento : ${pass.lastUpdated}`
@@ -564,7 +627,9 @@ export const PassDetailPage: React.FC = () => {
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', borderRadius: '9999px', backgroundColor: 'var(--bg-surface-subtle)', color: 'var(--text-secondary)', fontSize: '13px', border: '1px solid var(--border-color)' }}>
                 <Mountain size={14} />
                 <span>
-                  {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                  {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                    ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                    : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
                     ? `Altitude : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)` 
                     : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                     ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
@@ -575,7 +640,11 @@ export const PassDetailPage: React.FC = () => {
 
             <div className="title-and-star">
               <h1 className="pass-main-heading">
-                {pass.slug === 'col-du-galibier'
+                {pass.slug === 'grimsel-pass'
+                  ? (pageLang === 'de'
+                      ? "Grimselpass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten"
+                      : "Grimsel Pass: Live Webcam, Road Conditions, Opening Status & Weather")
+                  : pass.slug === 'col-du-galibier'
                   ? (pageLang === 'fr' 
                       ? "Col du Galibier : État de la Route, Webcam Live, Météo & Date d'Ouverture" 
                       : "Col du Galibier Pass: Live Webcam, Road Conditions, Opening Status & Weather")
@@ -602,7 +671,9 @@ export const PassDetailPage: React.FC = () => {
               <span>{pass.state ? `${pass.state}, ` : ''}{pass.country}</span>
               <span className="dot-sep">•</span>
               <span>
-                {pass.slug === 'col-du-galibier' && pageLang === 'fr'
+                {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                  ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                  : pass.slug === 'col-du-galibier' && pageLang === 'fr'
                   ? `Sommet : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                   : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                   ? `Sommità : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
@@ -610,7 +681,11 @@ export const PassDetailPage: React.FC = () => {
               </span>
             </div>
             <p className="pass-summary-paragraph">
-              {pass.slug === 'col-du-galibier'
+              {pass.slug === 'grimsel-pass'
+                ? (pageLang === 'de'
+                    ? "Der Grimselpass (2.164 m ü. M. / 7.100 ft) ist ein weltberühmter Schweizer Hochgebirgspass an der Hauptstrasse 6, der das Haslital im Berner Oberland (Kanton Bern) mit dem Goms im Oberwallis (Kanton Wallis) verbindet. Geprägt von monumentalen Granitfelswänden, türkisfarbenen Stauseen (Grimselsee, Räterichsbodensee, Totensee) und dem historischen Grimsel Hospiz, bildet der Pass zusammen mit Furka und Susten die legendäre «Grossen Drei» Alpenpass-Runde."
+                    : "Grimsel Pass (2,164 m / 7,100 ft) is a world-renowned Swiss high alpine pass on Route 6 connecting Haslital in the Bernese Oberland (Canton of Bern) with Goms in Upper Valais (Canton of Valais). Famous for its massive polished granite cliffs, turquoise hydropower reservoirs (Grimselsee, Räterichsbodensee, Totensee), and the historic Grimsel Hospiz, it forms the iconic Swiss 'Big 3' pass loop alongside Furka and Susten.")
+                : pass.slug === 'col-du-galibier'
                 ? (pageLang === 'fr'
                     ? "Le Col du Galibier (2 642 m / 8 668 ft) est un col routier légendaire des Alpes françaises reliant Saint-Michel-de-Maurienne et Valloire en Savoie au Col du Lautaret et Briançon dans les Hautes-Alpes via la D902. Haut lieu historique du Tour de France et de la Route des Grandes Alpes, il offre un panorama grandiose sur les glaciers des Écrins et la Meije."
                     : "Col du Galibier (2,642 m / 8,668 ft) is a legendary high mountain pass in the French Alps connecting Saint-Michel-de-Maurienne & Valloire in Savoie with Col du Lautaret & Briançon in Hautes-Alpes along Route D902. A historic peak of the Tour de France and the Route des Grandes Alpes, it offers magnificent views of the Écrins glaciers and the Meije.")
@@ -625,7 +700,9 @@ export const PassDetailPage: React.FC = () => {
           <div className="pass-header-actions">
             <button onClick={handleShare} className="btn btn-secondary action-pill-btn">
               <Share2 size={16} /> 
-              {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+              {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                ? 'Teilen'
+                : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
                 ? 'Partager' 
                 : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                 ? 'Condividi'
@@ -634,12 +711,16 @@ export const PassDetailPage: React.FC = () => {
             <button onClick={toggleFavorite} className="btn btn-secondary action-pill-btn">
               <Heart size={16} fill={isFavorite ? '#EF4444' : 'none'} color={isFavorite ? '#EF4444' : 'currentColor'} />
               {isFavorite 
-                ? (pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                ? (pass.slug === 'grimsel-pass' && pageLang === 'de'
+                    ? 'Gemerkt'
+                    : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
                     ? 'Favori' 
                     : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                     ? 'Preferito'
                     : 'Favorited') 
-                : (pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                : (pass.slug === 'grimsel-pass' && pageLang === 'de'
+                    ? 'Pass merken'
+                    : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
                     ? 'Ajouter aux favoris' 
                     : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                     ? 'Aggiungi ai preferiti'
@@ -705,6 +786,51 @@ export const PassDetailPage: React.FC = () => {
         <div className="pass-detail-body-grid">
           {/* Main Left Column */}
           <main className="pass-main-content-col">
+
+            {pass.slug === 'grimsel-pass' && (
+              <div className="grimsel-regulations-callout lp-card" style={{
+                borderLeft: '4px solid #EA580C',
+                padding: '20px',
+                marginBottom: '24px',
+                backgroundColor: 'rgba(234, 88, 12, 0.04)',
+                borderRadius: '6px'
+              }}>
+                <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#9A3412' }}>
+                  <ShieldCheck size={20} color="#EA580C" />
+                  <span>
+                    {pageLang === 'de'
+                      ? 'Wichtige Alpenstrassen-Hinweise & Verkehrsregeln (Grimselpass Bern 🇨🇭 / Wallis 🇨🇭)'
+                      : 'Important Swiss Alpine Transit Regulations (Grimsel Pass Bern / Valais 🇨🇭)'}
+                  </span>
+                </h3>
+                <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+                  {pageLang === 'de' ? (
+                    <>
+                      <strong>Strassencharakter &amp; Verkehrsführung :</strong> Die <strong>Grimsel-Passstrasse (Hauptstrasse 6)</strong> ist 100% mautfrei (keine Autobahnvignette auf der Passstrasse erforderlich) und im Sommer von Anfang Juni bis Ende Oktober für PKW, Motorräder und Radfahrer befahrbar. <em>Achtung: Maximales Gesamtgewicht 18 Tonnen; Wohnwagen und schwere Gespanne sollten über erfahrene Bergfahrer verfügen.</em>
+                    </>
+                  ) : (
+                    <>
+                      <strong>Road Character &amp; Transit Rules:</strong> The <strong>Grimsel Pass Highway (Hauptstrasse 6)</strong> is 100% toll-free (no Swiss motorway vignette required) and open during summer from early June to late October for cars, motorbikes, and cyclists. <em>Note: 18-tonne vehicle weight limit applies across the entire pass corridor.</em>
+                    </>
+                  )}
+                </p>
+                <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+                  {pageLang === 'de' ? (
+                    <>
+                      <li><strong>Postauto-Vortritt &amp; Dreiklanghorn :</strong> Auf schmalen Bergpoststrassen haben gelbe Postautos stets Vortritt. Bei Signalhörern vor unübersichtlichen Kurven rechts halten und nötigenfalls anhalten.</li>
+                      <li><strong>Wintersperre &amp; Autoverlad-Alternativen :</strong> Während der Wintersperre (November bis Ende Mai) besteht kein Durchgangsverkehr. Ganzjährige Alternativen: <strong>Autoverlad Lötschberg (BLS)</strong> zwischen Kandersteg und Goppenstein oder <strong>Autoverlad Furka (MGB)</strong> zwischen Realp und Oberwald.</li>
+                      <li><strong>Baustellenbereich Spitallamm-Staumauer :</strong> Zwischen Handegg und Grimsel Hospiz finden Bauarbeiten am Ersatzneubau der Spitallamm-Talsperre statt. Geschwindigkeitsbegrenzungen (40–60 km/h) und Baustellen-LKW beachten.</li>
+                    </>
+                  ) : (
+                    <>
+                      <li><strong>PostBus Right-of-Way:</strong> Yellow Swiss PostBuses have strict legal priority on narrow mountain sections. Yield when hearing the iconic 3-tone horn before blind curves.</li>
+                      <li><strong>Winter Closure &amp; Car Train Shuttles:</strong> When Grimsel is closed in winter (Nov–May), year-round vehicle transit uses the BLS Lötschberg car shuttle train (Kandersteg–Goppenstein) or MGB Furka car train (Realp–Oberwald).</li>
+                      <li><strong>Spitallamm Dam Construction:</strong> Active construction traffic between Handegg and Grimsel Hospiz for the new Spitallamm dam; observe posted 40–60 km/h speed limits.</li>
+                    </>
+                  )}
+                </ul>
+              </div>
+            )}
 
             {pass.slug === 'col-du-galibier' && (
               <div className="galibier-regulations-callout lp-card" style={{
@@ -1761,7 +1887,9 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 10.5: Editorial Guidance & Travel Tips */}
             <section id="travel-guidance" className="detail-section-block">
               <h2 className="section-title-heading">
-                {(pass.slug === 'col-du-galibier')
+                {(pass.slug === 'grimsel-pass')
+                  ? (pageLang === 'de' ? 'Praktische Reisetipps & Routenführung Grimselpass' : 'Grimsel Pass Travel Guidance & Practical Tips')
+                  : (pass.slug === 'col-du-galibier')
                   ? (pageLang === 'fr' ? 'Conseils Pratiques & Informations Voyage Galibier' : 'Col du Galibier Travel Guidance & Practical Tips')
                   : (pass.slug === 'great-st-bernard-pass')
                   ? (pageLang === 'it' ? 'Consigli Pratici & Informazioni di Viaggio Gran San Bernardo' : 'Great St Bernard Pass Travel Guidance & Practical Tips')
@@ -1777,7 +1905,11 @@ export const PassDetailPage: React.FC = () => {
               </h2>
               <div className="travel-guidance-container lp-card" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <p className="narrative-p" style={{ marginBottom: '8px' }}>
-                  {pass.slug === 'col-du-galibier'
+                  {pass.slug === 'grimsel-pass'
+                    ? (pageLang === 'de'
+                        ? 'Die Fahrt über den Grimselpass auf 2.164 m ü. M. zwischen dem Haslital und dem Goms bietet ein unvergleichliches Alpenpanorama zwischen Granitschluchten und türkisfarbenen Stauseen.'
+                        : 'Crossing Grimsel Pass at 2,164 meters (7,100 ft) between Haslital (Bern) and Goms (Valais) delivers an awe-inspiring alpine journey amidst polished granite canyons and turquoise hydropower reservoirs.')
+                    : pass.slug === 'col-du-galibier'
                     ? (pageLang === 'fr'
                         ? 'Le franchissement du Galibier à 2 642 mètres d\'altitude constitue un parcours exceptionnel. Respecter les consignes de sécurité, la météo et la réglementation est indispensable pour un voyage serein.'
                         : 'Crossing Col du Galibier at 2,642 meters (8,668 ft) is a world-class alpine route. Understanding weather dynamics, tunnel regulations, and high-altitude road rules ensures a safe journey.')
@@ -1791,14 +1923,20 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Clock size={16} /> 
-                      {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                      {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                        ? 'Route & Reisesaison'
+                        : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
                         ? 'Itinéraire & Période d\'Ouverture' 
                         : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                         ? 'Itinerario & Stagione di Transito'
                         : 'Route & Travel Season'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'col-du-galibier')
+                      {(pass.slug === 'grimsel-pass')
+                        ? (pageLang === 'de'
+                            ? 'Die Hauptstrasse 6 verbindet Innertkirchen / Meiringen (Bern) mit Gletsch und Oberwald (Wallis). Die Passstrasse ist in der Regel von Anfang Juni bis Ende Oktober für den regulären Sommerverkehr geöffnet. Der Schweizer Qualitätsasphalt bietet beste Fahrbedingungen.'
+                            : 'Route 6 links Innertkirchen & Meiringen (Bern) with Gletsch & Oberwald (Valais). Open typically from early June to late October. Paved Swiss asphalt is in pristine condition for summer mountain travel.')
+                        : (pass.slug === 'col-du-galibier')
                         ? (pageLang === 'fr'
                             ? 'La D902 relie Saint-Michel-de-Maurienne et Valloire (Savoie) au Col du Lautaret et Briançon (Hautes-Alpes). La route est généralement ouverte de fin mai / début juin à fin octobre / début novembre. La chaussée asphaltée offre d\'excellentes conditions en été.'
                             : 'Route D902 links Saint-Michel-de-Maurienne & Valloire (Savoie) with Col du Lautaret & Briançon (Hautes-Alpes). Open typically late May to late October/early November. Paved asphalt is in pristine condition for summer travel.')
@@ -1818,14 +1956,20 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Mountain size={16} /> 
-                      {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                      {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                        ? 'Wetter & Hochgebirgssicherheit'
+                        : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
                         ? 'Météo Alti & Sécurité Altitude' 
                         : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                         ? 'Sicurezza & Meteo di Quota'
                         : 'High-Altitude Safety & Weather'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'col-du-galibier')
+                      {(pass.slug === 'grimsel-pass')
+                        ? (pageLang === 'de'
+                            ? 'Auf der Passhöhe (2.164 m) herrschen oft 10–14°C kühlere Temperaturen als in Interlaken oder Brig. Rasche Wetterumschwünge mit dichtem Bergnebel über dem Totensee sind häufig; vor der Abfahrt stets MeteoSchweiz-Berichte und Live-Webcams prüfen.'
+                            : 'At 2,164 m summit elevation, temperatures are typically 10–14°C cooler than in Interlaken or Brig. High alpine fog and brisk winds across the Totensee plateau can develop rapidly; check MeteoSwiss reports and live Hospiz webcams.')
+                        : (pass.slug === 'col-du-galibier')
                         ? (pageLang === 'fr'
                             ? 'À 2 642 m, la température est souvent de 10 à 15°C inférieure à celle des vallées de Valloire ou Briançon. Des rafales de vent dépassant 60 km/h et des orages d\'été soudains peuvent survenir. Consultez les bulletins Météo-France et les webcams avant l\'ascension.'
                             : 'At 2,642 m summit altitude, ambient temperature is typically 10–15°C colder than in the Maurienne or Briançon valleys. Gusts over 60 km/h and sudden storms can develop rapidly; check Météo-France bulletins and summit webcams before setting out.')
@@ -1845,14 +1989,20 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <ShieldCheck size={16} /> 
-                      {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                      {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                        ? 'Mautfreiheit & Schweizer Strassenordnung'
+                        : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
                         ? 'Péage & Réglementation Tunnel' 
                         : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                         ? 'Pedaggio & Regolamento Traforo'
                         : 'Tolls & Tunnel Regulations'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'col-du-galibier')
+                      {(pass.slug === 'grimsel-pass')
+                        ? (pageLang === 'de'
+                            ? 'Die Grimsel-Passstrasse (Hauptstrasse 6) ist eine 100% mautfreie Schweizer Kantonsstrasse. Keine Autobahnvignette auf der Passstrasse erforderlich. Die Vignette wird nur bei Benützung der Nationalstrassen (z. B. A8 Spiez-Interlaken oder A9 Wallis) benötigt.'
+                            : 'Grimsel Pass (Hauptstrasse 6) is a 100% toll-free Swiss public cantonal highway. No tolls and no Swiss motorway vignette are needed for the pass road itself; a vignette is only required when entering Swiss motorways (A8/A9).')
+                        : (pass.slug === 'col-du-galibier')
                         ? (pageLang === 'fr'
                             ? 'La D902 est une route départementale 100% gratuite (aucun péage ni vignette). Le Tunnel du Galibier (2 556 m) est régulé par feux tricolores alternés (gabarit max : 4,1 m haut, 2,4 m large, 3,5 t). Vélos et piétons sont interdits dans le tunnel et doivent passer par la crête.'
                             : 'Route D902 is a 100% free public departmental highway with no tolls. The historic Galibier Tunnel (2,556 m) features alternating traffic lights with max 4.1 m height, 2.4 m width, and 3.5 t limits. Bicycles and pedestrians are prohibited in the tunnel and must take the 2,642 m crest.')
@@ -1872,14 +2022,20 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Car size={16} /> 
-                      {pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                      {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                        ? 'Wintersperre & Autoverlad-Alternativen'
+                        : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
                         ? 'Équipements Hiver & Alternatives' 
                         : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                         ? 'Dotazioni Invernali & Alternative'
                         : 'Winter Laws & Seasonal Detours'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'col-du-galibier')
+                      {(pass.slug === 'grimsel-pass')
+                        ? (pageLang === 'de'
+                            ? 'Während der monatelangen Wintersperre (November bis Ende Mai) weichen Autofahrer zwischen dem Berner Oberland und dem Wallis auf den Autoverlad Lötschberg (BLS Kandersteg–Goppenstein, ca. 20 min) oder den Autoverlad Furka (MGB Realp–Oberwald) aus.'
+                            : 'During the winter closure (Nov to late May), drivers traveling between Bernese Oberland and Valais divert via the BLS Lötschberg car shuttle train (Kandersteg–Goppenstein, ~20 min) or the MGB Furka car train (Realp–Oberwald).')
+                        : (pass.slug === 'col-du-galibier')
                         ? (pageLang === 'fr'
                             ? 'Loi Montagne II obligatoire du 1er nov au 31 mars (4 pneus hiver 3PMSF ou chaînes dans le véhicule). En hiver lors de la fermeture du col, l\'itinéraire de contournement emprunte le Tunnel du Fréjus (A43 vers Italie / Montgenèvre) ou Grenoble via la D1091 / A48.'
                             : 'Loi Montagne II mandates 4 winter tires (3PMSF) or chains in trunk from Nov 1 to Mar 31. When Galibier is closed in winter, vehicle transit between Maurienne and Briançon diverts via the Fréjus Road Tunnel (A43/Montgenèvre) or via Chambéry/Grenoble (A43/D1091).')

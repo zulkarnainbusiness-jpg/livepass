@@ -256,5 +256,21 @@ export const alertsData: PassAlert[] = [
     "status": "OPEN",
     "timestamp": "Inforoute RAVdA & Cantone Vallese Bollettino",
     "source": "Regione Autonoma Valle d'Aosta (Inforoute VdA) / Cantone Vallese (SDM)"
+  },
+  {
+    "id": "alert-grimsel-pass",
+    "passId": "grimsel-pass",
+    "passName": "Grimsel Pass (Grimselpass - Route 6)",
+    "slug": "grimsel-pass",
+    "country": "Switzerland",
+    "state": "Bern & Valais",
+    "highway": "Hauptstrasse 6 (Route 6)",
+    "type": "All Clear",
+    "severity": "info",
+    "title": "Grimselpass Offen — Hauptstrasse 6 Sommerbetrieb Aktiv",
+    "description": "Die Grimsel-Passstrasse (Hauptstrasse 6) zwischen Innertkirchen (Berner Oberland) und Gletsch (Oberwallis) ist für den Sommerverkehr vollständig geöffnet. Strassenbelag trocken und regulär befahrbar. Grimsel Hospiz, Totensee und Stauseen sind zugänglich. Baustellenverkehr im Bereich Spitallamm beachten.",
+    "status": "OPEN",
+    "timestamp": "Strassenzustand TBA Bern & SDM Wallis",
+    "source": "Tiefbauamt des Kantons Bern (TBA) / Dienststelle für Mobilität Wallis"
   }
 ];

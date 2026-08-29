@@ -7732,6 +7732,472 @@ export const passesData: MountainPass[] = [
       "Passo del Gran San Bernardo webcam",
       "Col du Grand-Saint-Bernard ouverture"
     ]
+  },
+  {
+    "id": "grimsel-pass",
+    "slug": "grimsel-pass",
+    "name": "Grimsel Pass",
+    "alternateNames": [
+      "Grimselpass",
+      "Grimsel Pass Switzerland",
+      "Col du Grimsel",
+      "Passo del Grimsel",
+      "Passhöhe Grimsel",
+      "Grimsel Hospiz",
+      "Hauptstrasse 6"
+    ],
+    "country": "Switzerland",
+    "countryCode": "CHE",
+    "continent": "Europe",
+    "state": "Bern & Valais",
+    "highway": "Hauptstrasse 6 (Route 6)",
+    "elevationFt": 7100,
+    "elevationM": 2164,
+    "coordinates": {
+      "lat": 46.5614,
+      "lng": 8.3375
+    },
+    "status": "OPEN",
+    "statusDetail": "Grimselpass geöffnet für den Sommerverkehr / Open for summer season — Passstrasse trocken und regulär befahrbar",
+    "lastUpdated": "5 minutes ago",
+    "description": "Der Grimselpass (2.164 m ü. M. / 7.100 ft) ist ein weltberühmter Schweizer Hochgebirgspass an der Hauptstrasse 6, der das Haslital im Berner Oberland (Kanton Bern) mit dem Goms im Oberwallis (Kanton Wallis) verbindet. Geprägt von monumentalen Granitfelswänden, türkisfarbenen Stauseen (Grimselsee, Räterichsbodensee, Totensee) und dem historischen Grimsel Hospiz, bildet der Pass zusammen mit Furka und Susten die legendäre «Grossen Drei» Alpenpass-Runde.",
+    "image": "/grimsel-pass.png",
+    "weather": {
+      "tempF": 55,
+      "tempC": 13,
+      "condition": "Alpine Sunshine & Clear Skies",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Road Surface Clear & Dry"
+    },
+    "wind": {
+      "speedKmh": 14,
+      "speedMph": 9,
+      "direction": "NW",
+      "description": "Moderate High-Altitude Alpine Breeze"
+    },
+    "roadCondition": "Fahrbahn trocken und regulär befahrbar auf der Berner Nordrampe (Innertkirchen–Guttannen–Handegg) sowie auf der Walliser Südrampe (Gletsch–Oberwald). Baustellenverkehr im Bereich der Spitallamm-Staumauer / Grimsel Hospiz beachten.",
+    "chainRequirement": "Keine Kettenpflicht im regulären Sommerbetrieb. Bei Kälteeinbrüchen im Früh- oder Spätsommer wird auf der Passhöhe situativ Winterausrüstung (Winterreifen 3PMSF oder Schneeketten) empfohlen.",
+    "cameras": [
+      {
+        "id": "cam-grimsel-hospiz",
+        "title": "Grimsel Hospiz & Grimselsee (1.980 m)",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Route 6 Grimsel Hospiz (1.980 m)",
+        "direction": "Rundblick Grimselsee, Spitallamm & Grimsel Hospiz",
+        "location": "Grimsel Hospiz (KWO Grimselwelt)",
+        "source": "Grimselwelt / Kraftwerke Oberhasli AG (KWO)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.grimselwelt.ch/de/grimselhotels/grimsel-hospiz"
+      },
+      {
+        "id": "cam-grimsel-summit",
+        "title": "Grimselpass Passhöhe & Totensee (2.164 m)",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Route 6 Passhöhe (2.164 m)",
+        "direction": "Blick Passhöhe, Totensee & Walliser Alpen",
+        "location": "Passhöhe Totensee (Kantonsgrenze BE/VS)",
+        "source": "Tiefbauamt Kanton Bern / Grimselwelt",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.be.ch/strassen"
+      },
+      {
+        "id": "cam-raeterichsboden",
+        "title": "Räterichsbodensee Staumauer (1.767 m)",
+        "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Route 6 Räterichsboden (1.767 m)",
+        "direction": "Blick auf Räterichsbodensee & Nordrampe Handegg",
+        "location": "Räterichsboden Talsperre",
+        "source": "KWO Kraftwerke Oberhasli",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.grimselwelt.ch/"
+      },
+      {
+        "id": "cam-gletsch-junction",
+        "title": "Gletsch & Furka-Grimsel Abzweigung (1.759 m)",
+        "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Route 6 / Route 19 Kreuzung Gletsch",
+        "direction": "Blick auf Gletsch, Rhônequelle & Furkastrasse",
+        "location": "Gletsch (Wallis)",
+        "source": "Kanton Wallis (SDM) / Dampfbahn Furka-Bergstrecke",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.vs.ch/web/mobilite"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "furka-pass",
+        "slug": "furka-pass",
+        "name": "Furka Pass (Furkapass)",
+        "country": "Switzerland",
+        "state": "Valais & Uri",
+        "highway": "Hauptstrasse 19",
+        "status": "OPEN",
+        "elevationFt": 7969,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 16
+      },
+      {
+        "id": "great-st-bernard-pass",
+        "slug": "great-st-bernard-pass",
+        "name": "Great St Bernard Pass",
+        "country": "Switzerland / Italy",
+        "state": "Valais & Aosta Valley",
+        "highway": "Route 21 / SS27",
+        "status": "OPEN",
+        "elevationFt": 8100,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 135
+      },
+      {
+        "id": "stelvio-pass",
+        "slug": "stelvio-pass",
+        "name": "Stelvio Pass (Passo dello Stelvio)",
+        "country": "Italy",
+        "state": "South Tyrol / Lombardy",
+        "highway": "SS38",
+        "status": "OPEN",
+        "elevationFt": 9045,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 240
+      },
+      {
+        "id": "col-du-galibier",
+        "slug": "col-du-galibier",
+        "name": "Col du Galibier",
+        "country": "France",
+        "state": "Hautes-Alpes & Savoie",
+        "highway": "D902",
+        "status": "OPEN",
+        "elevationFt": 8668,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 275
+      }
+    ],
+    "overview": {
+      "openedYear": 1894,
+      "lengthMiles": 23.6,
+      "lengthKm": 38.0,
+      "annualSnowfallIn": 550,
+      "annualSnowfallM": 14.0,
+      "summary": "Der Grimselpass (2.164 m ü. M. / 7.100 ft) ist eine der spektakulärsten Passstrassen der Schweizer Alpen. Er überquert die Wasserscheide zwischen Nordsee (Aare/Rhein) und Mittelmeer (Rhône) und verbindet Innertkirchen und Meiringen im Kanton Bern mit Gletsch und Oberwald im Kanton Wallis auf der Hauptstrasse 6. Die 1894 erbaute Kunststrasse führt vorbei an imposanten Wasserkraftanlagen der KWO, kühnen Staumauern und dem gletschergeschliffenen Totensee auf der Passhöhe. Der Pass ist ein internationaler Hotspot für Automobil- und Motorrad-Touren sowie eine ikonische Königsetappe im europäischen Strassenradsport."
+    },
+    "narrativeSections": [
+      {
+        "title": "Geographie & Geschichte der Grimsel-Passstrasse",
+        "content": "Bereits in der Römerzeit und im Mittelalter diente der Grimselpass als lebenswichtiger Saumweg für den Warenaustausch zwischen dem Berner Oberland und der Lombardei über das Wallis. Käse aus dem Haslital wurde gegen Wein, Reis und Seide aus Italien getauscht. 1894 wurde die moderne Fahrstrasse feierlich eröffnet. Die Passhöhe markiert die europäische Hauptwasserscheide: Das Wasser nördlich des Passes fliesst über die Aare in den Rhein und die Nordsee, während der Totensee und die Südseite über die Rhône ins Mittelmeer entwässern."
+      },
+      {
+        "title": "Wasserkraft, Granitlandschaft & Grimselwelt",
+        "content": "Die Grimsel-Region ist eines der bedeutendsten Wasserkraftzentren der Schweiz. Die Kraftwerke Oberhasli AG (KWO) betreiben hier ein komplexes System aus Speicherseen, unterirdischen Turbinenzentralen und Stollen. Derzeit wird am Grimselsee mit dem Ersatzneubau der Spitallamm-Staumauer eines der grössten Bauprojekte der Schweizer Alpen realisiert. Neben der Energiegewinnung ist die Region mit der Gelmerbahn, der Triftbrücke und spektakulären Granitkletterrouten ein weltweites Mekka für Bergsportler."
+      }
+    ],
+    "quickFacts": {
+      "state": "Bern & Wallis (Schweiz)",
+      "mountainRange": "Berner & Urner Alpen (Schweizer Alpen)",
+      "elevationSummary": "2.164 m (7.100 ft) Passhöhe / 1.980 m Grimsel Hospiz",
+      "connects": "Innertkirchen & Meiringen (Haslital) mit Gletsch & Oberwald (Goms)",
+      "nearestTown": "Gletsch (5,9 km) / Oberwald (16 km) / Innertkirchen (33 km)",
+      "roadType": "Hauptstrasse 6 (Kantonsstrasse)",
+      "bestTime": "Anfang Juni bis Ende Oktober (regulärer Sommerbetrieb)",
+      "highlight": "Grimsel Hospiz, Totensee, KWO-Stauseen, Gelmerbahn, Big 3 Alpenpass-Runde"
+    },
+    "routeDetails": {
+      "distanceKm": 38.0,
+      "distanceMiles": 23.6,
+      "duration": "45–55 min in auto (2h30–3h30 in bici)",
+      "origin": "Innertkirchen (625 m) / Oberwald (1.368 m)",
+      "destination": "Oberwald (1.368 m) / Innertkirchen (625 m)",
+      "waypoints": [
+        "Innertkirchen (625 m)",
+        "Guttannen (1.057 m)",
+        "Handegg / Gelmerbahn (1.401 m)",
+        "Räterichsbodensee (1.767 m)",
+        "Grimsel Hospiz / Grimselsee (1.980 m)",
+        "Passhöhe Totensee (2.164 m)",
+        "Gletsch (1.759 m)",
+        "Oberwald (1.368 m)"
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "Der Grimselpass ist eine der berühmtesten Radsport-Ikonen Europas und Herzstück der legendären Schweizer «Grossen Drei» Alpenpass-Runde (Grimsel, Furka, Susten - 120 km mit 3.750 Hm). Die Nordrampe von Innertkirchen fordert mit 33 km Länge Ausdauer, belohnt aber mit gleichmässigen Steigungen und atemberaubender Kulisse.",
+      "approaches": [
+        {
+          "name": "Nordrampe ab Innertkirchen (Haslital)",
+          "origin": "Innertkirchen (625 m)",
+          "distanceKm": 33.0,
+          "distanceMiles": 20.5,
+          "elevationGainM": 1539,
+          "elevationGainFt": 5049,
+          "avgGradient": "4.7% (8.5% ab Handegg)",
+          "maxGradient": "11.0%",
+          "hairpins": 24,
+          "description": "Langgezogener Klassiker durch das Haslital über Guttannen, Handegg, Räterichsboden und Grimsel Hospiz bis zum Totensee auf der Passhöhe."
+        },
+        {
+          "name": "Südrampe ab Oberwald / Gletsch (Wallis)",
+          "origin": "Oberwald (1.368 m) / Gletsch (1.759 m)",
+          "distanceKm": 16.0,
+          "distanceMiles": 9.9,
+          "elevationGainM": 796,
+          "elevationGainFt": 2611,
+          "avgGradient": "6.5% (8.0% ab Gletsch)",
+          "maxGradient": "10.0%",
+          "hairpins": 12,
+          "description": "Spektakuläre Kehrenstaffelung ab Gletsch mit atemberaubendem Panorama auf den Rhônegletscher und die Serpentinen des Furkapasses."
+        },
+        {
+          "name": "Die «Grossen Drei» Alpenpass-Runde (Grimsel - Furka - Susten)",
+          "origin": "Innertkirchen / Meiringen",
+          "distanceKm": 120.0,
+          "distanceMiles": 74.5,
+          "elevationGainM": 3750,
+          "elevationGainFt": 12303,
+          "avgGradient": "7.5%",
+          "maxGradient": "12.0%",
+          "hairpins": 60,
+          "description": "Eine der anspruchsvollsten und spektakulärsten Eintages-Rennradtouren der Welt über drei Schweizer 2000er-Alpenpässe."
+        }
+      ],
+      "bestSeason": "Ende Juni bis Ende September (beste Strassenbedingungen und angenehme Bergsommer-Temperaturen)",
+      "safetyTips": [
+        "Vorder- und Rücklicht zwingend erforderlich für die Lawinenschutzgalerien auf der Nordrampe.",
+        "Winddichte Weste und Langfingerhandschuhe für die 33 km lange Abfahrt nach Innertkirchen einpacken.",
+        "Bei Abfahrten auf Rollsplitt und Postautos in Kurven achten.",
+        "Ausreichend Trinkwasser mitführen – Wasserstellen gibt es in Guttannen, Handegg und auf der Passhöhe."
+      ]
+    },
+    "drivingInfo": {
+      "summary": "Die Grimsel-Passstrasse (Hauptstrasse 6) ist eine hervorragend ausgebaute Schweizer Hochgebirgsstrasse mit breiter zweispuriger Fahrbahn, erstklassigem Asphaltbelag und modernen Lawinengalerien.",
+      "characteristics": [
+        "Vollständig asphaltierte, 2-spurige Gebirgsstrasse (Hauptstrasse 6) ohne Mautpflicht.",
+        "Maximales zulässiges Fahrzeuggesamtgewicht: 18 Tonnen auf der gesamten Strecke.",
+        "Gleichmässige Steigungen zwischen 6% und 10%, flüssig befahrbar für PKW, Motorräder und Wohnmobile.",
+        "Herrliche Aussichtspunkte an den KWO-Stauseen Räterichsboden, Grimselsee und Totensee."
+      ],
+      "switchbacksCount": "Rund 36 Kehren zwischen Innertkirchen, Grimsel Hospiz, Passhöhe und Gletsch",
+      "safetyAndEtiquette": [
+        "Bei Bergabfahrten konsequent die Motorbremse nutzen, um ein Überhitzen der Bremsen zu verhindern.",
+        "Den gelben Schweizer Postautos bei Ertönen des Dreiklanghorns an engen Stellen stets Vortritt gewähren.",
+        "Geschwindigkeitsbeschränkungen in den Baustellenbereichen der Spitallamm-Staumauer (40–60 km/h) einhalten.",
+        "Beim Überholen von Radfahrern mindestens 1,5 Meter Seitenabstand einhalten."
+      ],
+      "motorcycleTips": [
+        "Ein Paradies für Motorradfahrer mit griffigem Asphalt und flüssigen Kurvenkombinationen.",
+        "Beliebter Motorrad-Treffpunkt auf der Passhöhe beim Hotel Grimsel Passhöhe am Totensee."
+      ]
+    },
+    "distancesTable": [
+      {
+        "location": "Innertkirchen (Bern / Haslital)",
+        "distance": "33 km (20.5 Meilen)",
+        "route": "Hauptstrasse 6 Nord",
+        "notes": "Ausgangspunkt der Nordrampe und Kreuzung zum Sustenpass"
+      },
+      {
+        "location": "Meiringen (Bern)",
+        "distance": "38 km (23.6 Meilen)",
+        "route": "Hauptstrasse 6 Nord",
+        "notes": "Berner Tourismuszentrum, bekannt für die Aareschlucht und Reichenbachfälle"
+      },
+      {
+        "location": "Gletsch (Wallis / Obergoms)",
+        "distance": "5.9 km (3.7 Meilen)",
+        "route": "Hauptstrasse 6 Süd",
+        "notes": "Historische Weggabelung zum Furkapass (Route 19)"
+      },
+      {
+        "location": "Oberwald (Wallis / Goms)",
+        "distance": "16 km (9.9 Meilen)",
+        "route": "Hauptstrasse 19 Südwest",
+        "notes": "Verladestation des Furka-Autoverladetunnels (MGB)"
+      },
+      {
+        "location": "Interlaken (Bern)",
+        "distance": "65 km (40.4 Meilen)",
+        "route": "A8 & Hauptstrasse 6",
+        "notes": "Zentraler Tourismusknotenpunkt im Berner Oberland"
+      },
+      {
+        "location": "Brig (Wallis)",
+        "distance": "55 km (34.2 Meilen)",
+        "route": "Hauptstrasse 19 Südwest",
+        "notes": "Hauptort des Oberwallis am Simplonpass"
+      },
+      {
+        "location": "Andermatt (Uri via Furkapass)",
+        "distance": "38 km (23.6 Meilen)",
+        "route": "Hauptstrasse 19 Ost",
+        "notes": "Zentralschweizer Verkehrskreuz am Gotthardmassiv"
+      },
+      {
+        "location": "Luzern (Zentralschweiz)",
+        "distance": "90 km (56 Meilen)",
+        "route": "A8 über Brünigpass",
+        "notes": "Kulturstadt am Vierwaldstättersee"
+      }
+    ],
+    "isSeasonal": true,
+    "seasonalClosureInfo": {
+      "typicalClosure": "Ende Oktober / Anfang November (mit den ersten starken Schneefällen)",
+      "typicalReopening": "Anfang Juni (nach den Fräsarbeiten des Tiefbauamts Bern und Wallis)",
+      "description": "Die Grimsel-Passstrasse (2.164 m) ist von November bis Ende Mai wegen massiver Schneelagen von bis zu 8 Metern und akuter Lawinengefahr gesperrt. Im Winter erfolgt der Fahrzeugtransit zwischen Berner Oberland und Wallis über den BLS-Autoverlad Lötschberg (Kandersteg–Goppenstein) oder den MGB-Autoverlad Furka (Realp–Oberwald)."
+    },
+    "forecast": [
+      {
+        "day": "Heute",
+        "condition": "Sonnig mit leichten Quellwolken",
+        "tempHighF": 58,
+        "tempLowF": 40,
+        "icon": "sun"
+      },
+      {
+        "day": "Morgen",
+        "condition": "Überwiegend heiter",
+        "tempHighF": 60,
+        "tempLowF": 42,
+        "icon": "sun"
+      },
+      {
+        "day": "Übermorgen",
+        "condition": "Leichte Bewölkung",
+        "tempHighF": 56,
+        "tempLowF": 38,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Tag 4",
+        "condition": "Bergsonne & Weitsicht",
+        "tempHighF": 59,
+        "tempLowF": 41,
+        "icon": "sun"
+      },
+      {
+        "day": "Tag 5",
+        "condition": "Heiter bis wolkig",
+        "tempHighF": 57,
+        "tempLowF": 39,
+        "icon": "cloud-sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Tiefbauamt des Kantons Bern (TBA)",
+        "type": "Offizieller Strassenzustand Kanton Bern",
+        "url": "https://www.be.ch/strassen"
+      },
+      {
+        "name": "Kanton Wallis – Dienststelle für Mobilität (SDM)",
+        "type": "Offizielle Strassenzustände Kanton Wallis",
+        "url": "https://www.vs.ch/web/mobilite"
+      },
+      {
+        "name": "Grimselwelt / Kraftwerke Oberhasli AG (KWO)",
+        "type": "Live Webcams, Staumauern & Grimsel Hospiz",
+        "url": "https://www.grimselwelt.ch/"
+      },
+      {
+        "name": "Touring Club Schweiz (TCS)",
+        "type": "Schweizer Verkehrsinformationen & Pässezustand",
+        "url": "https://www.tcs.ch/de/tools/verkehrslage-baustellen/alpenpaesse.php"
+      },
+      {
+        "name": "MeteoSchweiz – Wetter & Bergprognosen",
+        "type": "Hochgebirgs-Wetterbericht & Schneehöhen",
+        "url": "https://www.meteoswiss.admin.ch/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the Grimsel Pass opening date? / Wann öffnet der Grimselpass?",
+        "answer": "Grimsel Pass typically opens for the summer season in early June (between June 3 and June 11) after heavy rotary snowplow clearing by Canton Bern and Valais road crews. The pass is currently OPEN for the regular summer season. / Der Grimselpass öffnet in der Regel Anfang Juni nach den Schneeräumarbeiten und ist aktuell für den Sommerverkehr geöffnet."
+      },
+      {
+        "question": "Is Grimsel Pass open right now, and is it open today? / Ist der Grimselpass heute geöffnet?",
+        "answer": "Yes, Grimsel Pass (Hauptstrasse 6) is currently OPEN for all traffic. The road surface is dry paved asphalt in pristine condition. Live road status from Tiefbauamt Bern and SDM Valais is updated 24/7 on LivePassWatch. / Ja, der Grimselpass ist aktuell vollständig geöffnet und regulär befahrbar."
+      },
+      {
+        "question": "What are the current Grimsel Pass road conditions and pass status report? / Wie ist der Strassenzustand am Grimselpass?",
+        "answer": "Road conditions across the entire 38 km corridor between Innertkirchen and Gletsch/Oberwald are clear, dry, and in excellent summer driving condition. Drivers should observe posted speed limits near the Spitallamm dam construction zone. / Die Passstrasse ist trocken und in hervorragendem Zustand."
+      },
+      {
+        "question": "Where can I view the Grimsel Pass live webcam, cameras, and summit camera? / Wo finde ich die Grimselpass Live-Webcams?",
+        "answer": "LivePassWatch provides real-time live webcams of Grimsel Pass, including the Grimsel Hospiz & Grimselsee 360° Roundshot camera (1,980 m), the Grimselpass Summit Totensee camera (2,164 m), the Räterichsboden Dam camera (1,767 m), and the Gletsch Furka-Grimsel junction camera (1,759 m)."
+      },
+      {
+        "question": "What is the elevation and altitude of Grimsel Pass? / Wie hoch ist der Grimselpass?",
+        "answer": "The official summit elevation of Grimsel Pass (Passhöhe) is 2,164 meters (7,100 feet) above sea level, located on the border between Canton Bern and Canton Valais beside the alpine Totensee lake. / Die Passhöhe des Grimselpasses liegt auf 2.164 m ü. M. (7.100 ft)."
+      },
+      {
+        "question": "When does Grimsel Pass close for winter, and is it open in winter? / Wann ist die Wintersperre am Grimselpass?",
+        "answer": "Grimsel Pass is closed in winter from late October / early November until late May due to heavy snow accumulation of up to 8 meters and severe avalanche hazards. Winter vehicle transit between Bernese Oberland and Valais operates via the BLS Lötschberg car shuttle train (Kandersteg–Goppenstein) or MGB Furka car train (Realp–Oberwald)."
+      },
+      {
+        "question": "What is the snow depth and snow conditions on Grimsel Pass? / Wie ist die Schneelage am Grimselpass?",
+        "answer": "During the summer season, the road surface is 100% free of snow. In winter, snowpack across the granite crest reaches 6 to 8 meters (20 to 26 feet) before snowplow clearing in May. / Im Sommer ist die Fahrbahn schneefrei; im Winter erreichen die Schneehöhen 6 bis 8 Meter."
+      },
+      {
+        "question": "Is Grimsel Pass a toll road or do I need a Swiss motorway vignette? / Kostet der Grimselpass Maut?",
+        "answer": "No! Grimsel Pass (Hauptstrasse 6) is a 100% toll-free public cantonal highway. No toll charges and no Swiss motorway vignette are required to drive over Grimsel Pass. You only need a vignette if using Swiss national motorways (Autobahnen like A8 or A9). / Die Grimsel-Passstrasse ist 100% mautfrei und ohne Autobahnvignette befahrbar."
+      },
+      {
+        "question": "How do I get driving directions to Grimsel Pass? / Wie lautet die Anfahrtsbeschreibung zum Grimselpass?",
+        "answer": "From Bern/Interlaken, take highway A8 past Meiringen to Innertkirchen, then ascend south on Route 6 via Guttannen and Handegg to the 2,164 m summit. From Valais/Brig, follow Route 19 through Goms to Oberwald and Gletsch, then take Route 6 north over the pass."
+      },
+      {
+        "question": "Can I cycle Grimsel Pass as part of the Swiss Big 3 loop? / Kann man den Grimselpass mit dem Rennrad befahren?",
+        "answer": "Yes! Grimsel Pass is one of the world's greatest road cycling climbs and forms the classic Swiss 'Big 3' pass loop (Grimsel, Furka, Susten - 120 km with 3,750 m elevation gain). The north climb from Innertkirchen covers 33 km with 1,540 m gain at a steady 4.7% grade."
+      }
+    ],
+    "customSeo": {
+      "h1": "Grimselpass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten",
+      "title": "Grimsel Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
+      "description": "Prüfen Sie den aktuellen Strassenzustand und Öffnungsstatus des Grimselpasses (Hauptstrasse 6), Live-Webcams am Grimsel Hospiz und Totensee, Wetter, Schneehöhen und Wintersperre-Infos."
+    },
+    "searchKeywords": [
+      "Grimsel Pass opening date",
+      "Grimsel Pass is open",
+      "Grimsel Pass road conditions",
+      "Grimsel Pass road status",
+      "Grimsel Pass pass status report",
+      "when does Grimsel Pass open",
+      "Grimsel Pass closed",
+      "Grimsel Pass is closed",
+      "Grimsel Pass is it open today",
+      "is Grimsel Pass closed today",
+      "Grimsel Pass webcam",
+      "Grimsel Pass live webcam",
+      "Grimsel Pass cameras",
+      "Grimsel Pass summit camera",
+      "is Grimsel Pass open right now",
+      "Grimsel Pass weather today",
+      "Grimsel Pass snow",
+      "Grimsel Pass snow depth",
+      "Grimsel Pass snow conditions",
+      "Grimsel Pass elevation",
+      "Grimsel Pass open",
+      "Grimsel Pass when will open",
+      "Grimsel Pass passes open",
+      "Grimsel Pass closures today",
+      "is Grimsel Pass open",
+      "is Grimsel Pass open in winter",
+      "Grimsel Pass weather",
+      "Grimsel Pass directions",
+      "Grimsel Pass closing date",
+      "Grimselpass Öffnungszeiten",
+      "Grimselpass offen",
+      "Grimselpass Strassenzustand",
+      "Grimselpass Webcam live",
+      "Grimselpass Wintersperre",
+      "Grimselpass Schneebericht",
+      "Grimselpass Passhöhe Höhe",
+      "Grimselpass Wetter heute",
+      "Grimsel Hospiz Webcam",
+      "Totensee Grimselpass"
+    ]
   }
 ];
 
@@ -7814,6 +8280,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Jammu & Kashmir' || passSlug === 'zoji-la') return 'jammu-and-kashmir';
   if (state === 'Hautes-Alpes & Savoie' || passSlug === 'col-du-galibier') return 'hautes-alpes-savoie';
   if (state === 'Valais & Aosta Valley' || passSlug === 'great-st-bernard-pass') return 'valais-aosta-valley';
+  if (state === 'Bern & Valais' || passSlug === 'grimsel-pass') return 'bern-valais';
   if (state === 'Møre og Romsdal' || passSlug === 'trollstigen-pass') return 'more-og-romsdal';
   return cleanSlug(state);
 }

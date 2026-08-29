@@ -429,5 +429,21 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Passo dello Stelvio (Alpi Retiche)',
     crossLinkUrl: '/passes/italy/south-tyrol-lombardy/stelvio-pass',
     crossLinkText: 'Scopri e confronta anche altri spettacolari valichi alpini come il'
+  },
+  'grimsel-pass': {
+    nearestTowns: [
+      { name: 'Innertkirchen, Bern (Haslital)', distance: '33 km (20.5 Meilen)', direction: 'Nord via Route 6' },
+      { name: 'Meiringen, Bern (Haslital)', distance: '38 km (23.6 Meilen)', direction: 'Nord via Route 6' },
+      { name: 'Gletsch, Wallis (Obergoms)', distance: '5.9 km (3.7 Meilen)', direction: 'Süd via Route 6' },
+      { name: 'Oberwald, Wallis (Goms)', distance: '16 km (9.9 Meilen)', direction: 'Südwest via Route 19' },
+      { name: 'Andermatt, Uri (via Furkapass)', distance: '38 km (23.6 Meilen)', direction: 'Ost via Route 19' },
+      { name: 'Interlaken, Bern', distance: '65 km (40.4 Meilen)', direction: 'Nordwest via A8 / Route 6' }
+    ],
+    seasonalClosureWindow: 'Anfang Juni bis Ende Oktober (Wintersperre von November bis Ende Mai)',
+    seasonalClosureDetail: 'Unterhalten durch das Tiefbauamt des Kantons Bern (TBA) und die Dienststelle für Mobilität des Kantons Wallis (SDM). Die Passstrasse schliesst jährlich im Spätherbst wegen Schneehöhen von bis zu 8 Metern und akuter Lawinengefahr. Im Mai räumen schwere Frässchleudern und Radlader die Schneemassen zur sommerlichen Wiedereröffnung.',
+    aboutPass: 'Der Grimselpass (2.164 m ü. M. / 7.100 ft) ist ein weltberühmter Hochgebirgspass in den Schweizer Alpen auf der Hauptstrasse 6, der das Berner Oberland (Haslital) mit dem Kanton Wallis (Goms) verbindet. Geprägt von glattgeschliffenen Granitfelswänden, dem historischen Grimsel Hospiz und türkisfarbenen Stauseen (Grimselsee, Räterichsbodensee, Totensee) markiert er die Wasserscheide zwischen Nordsee (Aare/Rhein) und Mittelmeer (Rhône). Zusammen mit dem Furka- und Sustenpass bildet er die legendäre «Grossen Drei» Schweizer Alpenpass-Runde.',
+    crossLinkAnchor: 'Furkapass (Furka Pass, Switzerland)',
+    crossLinkUrl: '/passes/switzerland/valais-uri/furka-pass',
+    crossLinkText: 'Kombinieren Sie Ihre Alpenfahrt mit dem benachbarten'
   }
 };
