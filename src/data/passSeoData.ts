@@ -414,5 +414,20 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Stelvio Pass (Passo dello Stelvio, Italy)',
     crossLinkUrl: '/passes/italy/south-tyrol-lombardy/stelvio-pass',
     crossLinkText: 'Compare French Alpine high mountain routes with famous Italian alpine passes like the'
+  },
+  'great-st-bernard-pass': {
+    nearestTowns: [
+      { name: 'Bourg-Saint-Pierre, Valais (CH)', distance: '13 km (8 miles)', direction: 'Nord via Route 21' },
+      { name: 'Saint-Rhémy-en-Bosses, Vallée d\'Aoste (IT)', distance: '14.5 km (9 miles)', direction: 'Sud via SS27' },
+      { name: 'Martigny, Valais (CH)', distance: '44.5 km (28 miles)', direction: 'Nord via Route 21 / A9' },
+      { name: 'Aoste / Aosta, Vallée d\'Aoste (IT)', distance: '34 km (21 miles)', direction: 'Sud-Est via SS27' },
+      { name: 'Chamonix-Mont-Blanc (FR)', distance: '65 km (40 miles)', direction: 'Nord-Ouest via Forclaz' }
+    ],
+    seasonalClosureWindow: 'Début juin à mi-octobre (Route du Col) / Tunnel ouvert 24h/24 toute l\'année',
+    seasonalClosureDetail: 'Géré conjointement par l\'État du Valais (Suisse) et l\'ANAS / RAVdA (Italie). La route du col sommital (2 469 m) ferme en hiver en raison d\'un cumul de neige atteignant 10 à 15 mètres et des risques d\'avalanches dans la combe des Morts. Le Tunnel routier du Grand-Saint-Bernard (5,8 km à 1 918 m) assure une liaison transalpine ouverte 365 jours par an avec péage.',
+    aboutPass: 'Le Col du Grand-Saint-Bernard (2 469 m / 8 100 ft) est un col mythique des Alpes pennines reliant le Val d\'Entremont dans le canton du Valais (Suisse) à la Vallée d\'Aoste (Italie) sur la Route 21 / SS27. Fondé en 1049 par Saint Bernard de Menthon, l\'Hospice millénaire abrite les célèbres chiens Saint-Bernard sauveteurs et un lac glaciaire frontalier d\'une beauté saisissante. Traversé par Napoléon en mai 1800 avec 40 000 soldats, le col est un haut lieu du cyclisme et du tourisme alpin.',
+    crossLinkAnchor: 'Col du Galibier (French Alps)',
+    crossLinkUrl: '/passes/france/hautes-alpes-savoie/col-du-galibier',
+    crossLinkText: 'Découvrez également d\'autres cols mythiques des Alpes comme le'
   }
 };

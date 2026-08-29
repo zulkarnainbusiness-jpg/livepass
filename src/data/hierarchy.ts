@@ -240,6 +240,30 @@ export const hierarchyData: HierarchyContinent[] = [
         ]
       },
       {
+        "id": "switzerland-italy",
+        "name": "Switzerland & Italy",
+        "code": "CHE/ITA",
+        "flagEmoji": "🇨🇭🇮🇹",
+        "states": [
+          {
+            "id": "valais-aosta-valley",
+            "name": "Valais & Aosta Valley",
+            "passes": [
+              {
+                "id": "great-st-bernard-pass",
+                "slug": "great-st-bernard-pass",
+                "name": "Great St Bernard Pass",
+                "highway": "Route 21 / SS27",
+                "elevationFt": 8100,
+                "elevationM": 2469,
+                "status": "OPEN",
+                "image": "/great-st-bernard-pass.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "switzerland",
         "name": "Switzerland",
         "code": "CHE",

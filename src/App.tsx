@@ -39,7 +39,10 @@ const LegacyPassRedirect: React.FC = () => {
          p.slug.toLowerCase() === `${clean}-pass` || 
          p.id.toLowerCase() === `${clean}-pass` ||
          (clean === 'galibier' && p.slug === 'col-du-galibier') ||
-         (clean === 'col-du-galibier' && p.slug === 'col-du-galibier')
+         (clean === 'col-du-galibier' && p.slug === 'col-du-galibier') ||
+         (clean === 'great-st-bernard' && p.slug === 'great-st-bernard-pass') ||
+         (clean === 'grand-saint-bernard' && p.slug === 'great-st-bernard-pass') ||
+         (clean === 'col-du-grand-saint-bernard' && p.slug === 'great-st-bernard-pass')
   );
 
   if (targetPass) {
@@ -72,6 +75,9 @@ export const App: React.FC = () => {
             <Route path="/passes/:slug" element={<LegacyPassRedirect />} />
             <Route path="/col-du-galibier" element={<Navigate to="/passes/france/hautes-alpes-savoie/col-du-galibier" replace />} />
             <Route path="/galibier" element={<Navigate to="/passes/france/hautes-alpes-savoie/col-du-galibier" replace />} />
+            <Route path="/great-st-bernard-pass" element={<Navigate to="/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass" replace />} />
+            <Route path="/col-du-grand-saint-bernard" element={<Navigate to="/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass" replace />} />
+            <Route path="/grand-saint-bernard" element={<Navigate to="/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass" replace />} />
             
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/seo-research" element={<SeoResearchPage />} />

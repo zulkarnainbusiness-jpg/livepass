@@ -7238,6 +7238,498 @@ export const passesData: MountainPass[] = [
       "Loi Montagne II Galibier",
       "Webcam Valloire Galibier"
     ]
+  },
+  {
+    "id": "great-st-bernard-pass",
+    "slug": "great-st-bernard-pass",
+    "name": "Great St Bernard Pass",
+    "alternateNames": [
+      "Col du Grand-Saint-Bernard",
+      "Colle del Gran San Bernardo",
+      "Grand-Saint-Bernard Pass",
+      "Hospice du Grand-Saint-Bernard",
+      "Route 21 / SS27",
+      "Tunnel du Grand-Saint-Bernard"
+    ],
+    "country": "Switzerland / Italy",
+    "countryCode": "CHE/ITA",
+    "continent": "Europe",
+    "state": "Valais & Aosta Valley",
+    "highway": "Route 21 (CH) / SS27 (IT)",
+    "elevationFt": 8100,
+    "elevationM": 2469,
+    "coordinates": {
+      "lat": 45.8692,
+      "lng": 7.1711
+    },
+    "status": "OPEN",
+    "statusDetail": "Col sommital ouvert à la circulation estivale / Open for summer season — Tunnel du Grand-Saint-Bernard ouvert 24h/24 toute l'année",
+    "lastUpdated": "5 minutes ago",
+    "description": "Le Col du Grand-Saint-Bernard (2 469 m / 8 100 ft) est un col mythique des Alpes pennines reliant Martigny et le Val d'Entremont en Valais (Suisse) à Saint-Rhémy-en-Bosses et la Vallée d'Aoste (Italie). Célèbre pour son Hospice millénaire fondé en 1049, ses chiens Saint-Bernard sauveteurs et la traversée historique de Napoléon en 1800, la route du col serpente autour d'un lac glaciaire frontalier d'une beauté exceptionnelle.",
+    "image": "/great-st-bernard-pass.png",
+    "weather": {
+      "tempF": 46,
+      "tempC": 8,
+      "condition": "Alpine Sunshine & Mountain Breeze",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Road Surface Clear & Dry"
+    },
+    "wind": {
+      "speedKmh": 16,
+      "speedMph": 10,
+      "direction": "NW",
+      "description": "Crisp High-Altitude Breeze"
+    },
+    "roadCondition": "Chaussée sèche et parfaitement praticable sur les versants suisse (Route 21) et italien (SS27). Tracé fluide jusqu'à l'Hospice et au lac sommital. Le Tunnel du Grand-Saint-Bernard (5,8 km) est fluide et ouvert 24h/24.",
+    "chainRequirement": "Aucun équipement spécial requis actuellement en saison estivale. Du 15 octobre au 15 avril, les équipements d'hiver (pneus neige 3PMSF ou chaînes à bord) sont obligatoires sur l'ensemble du réseau routier de la Vallée d'Aoste et du Valais.",
+    "cameras": [
+      {
+        "id": "gsb-cam-hospice",
+        "title": "Hospice du Grand-Saint-Bernard (2 469 m) – Live HD",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Route 21 Sommet (2 469 m)",
+        "direction": "Vue Sud-Est vers le Lac et l'Hospice",
+        "location": "Sommet du Col du Grand-Saint-Bernard",
+        "source": "Congrégation des Chanoines du Grand-Saint-Bernard / Roundshot",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://gsbernard.roundshot.com/"
+      },
+      {
+        "id": "gsb-cam-lake-border",
+        "title": "Lac Frontière Suisse-Italie (2 447 m)",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Frontière CH/IT Sommet",
+        "direction": "Panorama Italien vers le Val d'Aoste",
+        "location": "Lac du Grand-Saint-Bernard",
+        "source": "Hospice Grand-Saint-Bernard / Webcam-HD",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://hospice-du-grand-saint-bernard.ch/"
+      },
+      {
+        "id": "gsb-cam-portal-north",
+        "title": "Portail Nord Tunnel – Bourg-Saint-Pierre (1 918 m)",
+        "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "Route 21 Entrée Nord Tunnel",
+        "direction": "Accès Tunnel Suisse (Valais)",
+        "location": "Bourg-Saint-Pierre (CH)",
+        "source": "SISEX SA / letunnel.com",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.letunnel.com/"
+      },
+      {
+        "id": "gsb-cam-portal-south",
+        "title": "Portail Sud Tunnel – Saint-Rhémy-en-Bosses (1 878 m)",
+        "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80",
+        "milepost": "SS27 Entrée Sud Tunnel",
+        "direction": "Accès Tunnel Italie (Vallée d'Aoste)",
+        "location": "Saint-Rhémy-en-Bosses (IT)",
+        "source": "SITRASB SpA / Inforoute Vallée d'Aoste",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://inforoute.regione.vda.it/"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "col-du-galibier",
+        "slug": "col-du-galibier",
+        "name": "Col du Galibier",
+        "country": "France",
+        "state": "Hautes-Alpes & Savoie",
+        "highway": "D902",
+        "status": "OPEN",
+        "elevationFt": 8668,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 160
+      },
+      {
+        "id": "furka-pass",
+        "slug": "furka-pass",
+        "name": "Furka Pass",
+        "country": "Switzerland",
+        "state": "Valais / Uri",
+        "highway": "Route 19",
+        "status": "OPEN",
+        "elevationFt": 7969,
+        "lastUpdated": "15 minutes ago",
+        "distanceKm": 145
+      },
+      {
+        "id": "stelvio-pass",
+        "slug": "stelvio-pass",
+        "name": "Stelvio Pass (Passo dello Stelvio)",
+        "country": "Italy",
+        "state": "South Tyrol / Lombardy",
+        "highway": "SS38",
+        "status": "OPEN",
+        "elevationFt": 9045,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 340
+      },
+      {
+        "id": "trollstigen-pass",
+        "slug": "trollstigen-pass",
+        "name": "Trollstigen (Fv63)",
+        "country": "Norway",
+        "state": "Møre og Romsdal",
+        "highway": "Fv63",
+        "status": "OPEN",
+        "elevationFt": 2815,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 1820
+      }
+    ],
+    "overview": {
+      "openedYear": 1049,
+      "lengthMiles": 28.5,
+      "lengthKm": 45.8,
+      "annualSnowfallIn": 590,
+      "annualSnowfallM": 15.0,
+      "summary": "Le Col du Grand-Saint-Bernard (2 469 m / 8 100 ft) est le troisième plus haut col routier de Suisse, reliant Martigny dans le canton du Valais à la ville d'Aoste en Italie. Utilisé depuis l'époque romaine sous le nom de Mons Jovis (Mont-Joux), le col abrite le célèbre Hospice du Grand-Saint-Bernard fondé vers 1049 par Saint Bernard de Menthon. La route panoramique du col est ouverte en été (juin à octobre), tandis que le Tunnel routier du Grand-Saint-Bernard (5,8 km à 1 918 m) assure une liaison transalpine ininterrompue 365 jours par an."
+    },
+    "narrativeSections": [
+      {
+        "title": "Histoire, Hospice Millénaire & Chiens Saint-Bernard",
+        "content": "Fondé il y a près de mille ans pour secourir les pèlerins cheminant sur la Via Francigena vers Rome, l'Hospice du Grand-Saint-Bernard est tenu sans interruption par les Chanoines réguliers de Saint-Augustin. Dès le XVIIe siècle, les religieux élevèrent les célèbres chiens Saint-Bernard, renommés pour leur sens de l'orientation dans le blizzard et leur capacité à retrouver les voyageurs ensevelis sous les avalanches. Le musée de l'Hospice et le chenil d'été de la Fondation Barry accueillent des milliers de visiteurs chaque été au sommet."
+      },
+      {
+        "title": "Traversée Napoléonienne de Mai 1800",
+        "content": "En mai 1800, le Premier Consul Napoléon Bonaparte franchit le Col du Grand-Saint-Bernard à la tête d'une armée de 40 000 hommes avec de lourdes pièces d'artillerie démontées dans des troncs de mélèzes évidés pour surprendre l'armée autrichienne dans la plaine du Pô. Cette traversée héroïque dans la neige et la glace a inspiré le chef-d'œuvre pictural de Jacques-Louis David, 'Le Premier Consul franchissant les Alpes au col du Grand-Saint-Bernard'."
+      },
+      {
+        "title": "Tunnel Routier vs Route du Col Sommet (2 469 m)",
+        "content": "Inauguré en 1964, le Tunnel du Grand-Saint-Bernard (5 798 mètres) est le premier grand tunnel routier transalpin d'Europe reliant la Suisse et l'Italie. Situé à une altitude de 1 918 m (portail nord) et 1 878 m (portail sud), il est ouvert 24h/24 toute l'année et soumis à péage. En été (de juin à mi-octobre), les automobilistes, motards et cyclistes peuvent bifurquer pour emprunter gratuitement la route panoramique de la crête sommitale à 2 469 m d'altitude."
+      }
+    ],
+    "quickFacts": {
+      "state": "Valais (CH) & Vallée d'Aoste (IT)",
+      "mountainRange": "Alpes pennines / Massif du Grand-Saint-Bernard",
+      "elevationSummary": "2 469 m (8 100 ft) Sommet / 1 918 m (6 293 ft) Tunnel",
+      "connects": "Martigny & Val d'Entremont to Saint-Rhémy & Aosta",
+      "nearestTown": "Bourg-Saint-Pierre (13 km) / Aosta (34 km)",
+      "roadType": "Route Principale 21 (CH) / Strada Statale 27 (IT)",
+      "bestTime": "Mi-juin à début octobre (Route du Col) / Toute l'année (Tunnel)",
+      "highlight": "Hospice millénaire (1049), chiens Saint-Bernard, lac glaciaire frontière, musée Napoléon"
+    },
+    "routeDetails": {
+      "distanceKm": 45.8,
+      "distanceMiles": 28.5,
+      "duration": "1h00–1h15 en voiture (3h30–4h30 à vélo)",
+      "origin": "Martigny, Valais (471 m)",
+      "destination": "Aoste, Vallée d'Aoste (583 m)",
+      "waypoints": [
+        "Martigny (471 m)",
+        "Sembrancher (714 m)",
+        "Orsières (887 m)",
+        "Liddes (1 346 m)",
+        "Bourg-Saint-Pierre (1 632 m)",
+        "Bifurcation Tunnel / Col (1 918 m)",
+        "Sommet du Col & Hospice (2 469 m)",
+        "Saint-Rhémy-en-Bosses (1 519 m)",
+        "Saint-Oyen (1 373 m)",
+        "Aoste (583 m)"
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "Le Col du Grand-Saint-Bernard est un monument mythique du cyclisme alpin, régulièrement emprunté par le Tour de France et le Giro d'Italia. C'est l'un des cols routiers les plus hauts et les plus longs d'Europe avec plus de 45 km d'ascension continue depuis Martigny.",
+      "approaches": [
+        {
+          "name": "Versant Nord Suisse (depuis Martigny)",
+          "origin": "Martigny (471 m)",
+          "distanceKm": 44.5,
+          "distanceMiles": 27.7,
+          "elevationGainM": 1998,
+          "elevationGainFt": 6555,
+          "avgGradient": "4.5% (7.5% sur les 12 derniers km)",
+          "maxGradient": "11.0%",
+          "hairpins": 22,
+          "description": "Une longue montée majestueuse traversant le Val d'Entremont via Sembrancher, Liddes et Bourg-Saint-Pierre. Après la bifurcation du tunnel à 1 918 m, les 6 derniers kilomètres s'élèvent dans un paysage minéral grandiose avec une pente soutenue à 8-10% jusqu'à l'Hospice."
+        },
+        {
+          "name": "Versant Nord direct (depuis Bourg-Saint-Pierre)",
+          "origin": "Bourg-Saint-Pierre (1 632 m)",
+          "distanceKm": 12.8,
+          "distanceMiles": 8.0,
+          "elevationGainM": 837,
+          "elevationGainFt": 2746,
+          "avgGradient": "6.5%",
+          "maxGradient": "11.0%",
+          "hairpins": 14,
+          "description": "Le tronçon final de haute montagne au-dessus de la forêt subalpine. La route quitte la galerie couverte du tunnel pour serpenter dans la combe des Morts jusqu'à la statue de Saint Bernard et l'Hospice."
+        },
+        {
+          "name": "Versant Sud Italien (depuis Aoste)",
+          "origin": "Aoste (583 m)",
+          "distanceKm": 34.0,
+          "distanceMiles": 21.1,
+          "elevationGainM": 1886,
+          "elevationGainFt": 6188,
+          "avgGradient": "5.5% (7.2% au-dessus de Saint-Rhémy)",
+          "maxGradient": "10.0%",
+          "hairpins": 26,
+          "description": "Ascension ensoleillée et spectaculaire remontant la vallée du Grand-Saint-Bernard via Gignod, Etroubles et Saint-Rhémy-en-Bosses. Les 14 derniers kilomètres offrent une succession de lacets parfaits face aux cimes du Val d'Aoste."
+        },
+        {
+          "name": "Versant Sud direct (depuis Saint-Rhémy-en-Bosses)",
+          "origin": "Saint-Rhémy-en-Bosses (1 519 m)",
+          "distanceKm": 14.5,
+          "distanceMiles": 9.0,
+          "elevationGainM": 950,
+          "elevationGainFt": 3117,
+          "avgGradient": "6.6%",
+          "maxGradient": "10.0%",
+          "hairpins": 18,
+          "description": "La section alpine italienne débutant au village traditionnel de Saint-Rhémy. La route s'élève en lacets panoramiques bien découpés pour atteindre la rive sud du lac glaciaire."
+        }
+      ],
+      "bestSeason": "Mi-juin à début octobre (chaussée sèche et col entièrement déneigé)",
+      "safetyTips": [
+        "Prévoyez des gants chauds et une veste coupe-vent thermique : à 2 469 m, le vent est souvent vif et la température peut être de 15°C inférieure à celle de Martigny ou Aoste.",
+        "Le Tunnel routier du Grand-Saint-Bernard est strictement interdit aux cyclistes. Vous devez impérativement passer par la route du col de plein air.",
+        "Équipez votre vélo de feux avant et arrière pour les galeries paravalanches situées entre Liddes et Bourg-Saint-Pierre.",
+        "Respectez la faune et les troupeaux de vaches d'Hérens lors de la traversée des pâturages alpins."
+      ]
+    },
+    "drivingInfo": {
+      "summary": "La traversée du Grand-Saint-Bernard par la route du col (Route 21 / SS27) est l'une des routes alpines les plus splendides d'Europe. Elle offre un tracé large, bien asphalté et doté d'excellents parapets de sécurité.",
+      "characteristics": [
+        "Route asphaltée à 2 voies de 6 mètres de large, entretenue conjointement par l'État du Valais et l'ANAS italienne.",
+        "Deux options d'itinéraire : la route panoramique du col sommital (2 469 m, gratuite, ouverte en été) ou le tunnel transalpin (1 918 m, à péage, ouvert toute l'année 24h/24).",
+        "Pente modérée et régulière oscillant entre 6% et 9%, parfaitement adaptée aux voitures de tourisme, motos et camping-cars.",
+        "Poste de douane situé au col avec contrôles aléatoires (passeport / carte d'identité obligatoire pour franchir la frontière Suisse / Italie)."
+      ],
+      "switchbacksCount": "Plus de 48 lacets répartis entre Martigny, la combe des Morts et Aoste",
+      "safetyAndEtiquette": [
+        "Utilisez le frein moteur dans les descentes prolongées pour éviter la surchauffe des plaquettes de frein.",
+        "Priorité aux cars postaux suisses (PostAuto) et véhicules montants dans les virages serrés.",
+        "Gardez au moins 1,50 m d'écart de sécurité lors du dépassement des cyclistes.",
+        "Pensez à faire le plein à Martigny ou Aoste avant l'ascension (pas de station-service au sommet)."
+      ],
+      "motorcycleTips": [
+        "Revêtement de haute qualité très apprécié des motards ; prudence dans les virages ombragés du versant nord où l'asphalte peut rester humide au petit matin.",
+        "Parking motards dédié aménagé à proximité immédiate de l'Hospice et du musée."
+      ]
+    },
+    "distancesTable": [
+      {
+        "location": "Bourg-Saint-Pierre (Valais)",
+        "distance": "13 km (8 miles)",
+        "route": "Route 21 Nord",
+        "notes": "Dernier village habité du versant suisse"
+      },
+      {
+        "location": "Saint-Rhémy-en-Bosses (Italie)",
+        "distance": "14.5 km (9 miles)",
+        "route": "SS27 Sud",
+        "notes": "Célèbre pour son jambon cru AOP Vallée d'Aoste"
+      },
+      {
+        "location": "Martigny (Valais)",
+        "distance": "44.5 km (28 miles)",
+        "route": "Route 21 / A9",
+        "notes": "Carrefour autoroutier et gare internationale CFF"
+      },
+      {
+        "location": "Aoste (Italie)",
+        "distance": "34 km (21 miles)",
+        "route": "SS27 Sud",
+        "notes": "Capitale régionale de la Vallée d'Aoste et ruines romaines"
+      },
+      {
+        "location": "Sion (Capitale du Valais)",
+        "distance": "70 km (43 miles)",
+        "route": "Route 21 & Autoroute A9",
+        "notes": "Aéroport et châteaux historiques de Tourbillon et Valère"
+      },
+      {
+        "location": "Chamonix-Mont-Blanc (France)",
+        "distance": "65 km (40 miles)",
+        "route": "Col de la Forclaz & Route 21",
+        "notes": "Capitale mondiale de l'alpinisme au pied du Mont-Blanc"
+      },
+      {
+        "location": "Genève (Aéroport International)",
+        "distance": "175 km (108 miles)",
+        "route": "Autoroute A9 & Route 21",
+        "notes": "Connexion aéroportuaire internationale suisse"
+      },
+      {
+        "location": "Turin (Italie)",
+        "distance": "150 km (93 miles)",
+        "route": "SS27 & Autoroute A5",
+        "notes": "Métropole piémontaise et carrefour du nord de l'Italie"
+      }
+    ],
+    "isSeasonal": true,
+    "seasonalClosureInfo": {
+      "typicalClosure": "Mi-octobre (dès les premières fortes chutes de neige alpines)",
+      "typicalReopening": "Début juin (après déneigement intensif par les services de l'État du Valais et de l'ANAS)",
+      "description": "La route du col sommital de plein air (2 469 m) est fermée à toute circulation en hiver de mi-octobre à début juin en raison d'accumulations de neige atteignant 10 à 15 mètres et du risque élevé d'avalanches dans la combe des Morts. Cependant, la traversée reste ouverte 365 jours par an via le Tunnel routier du Grand-Saint-Bernard (1 918 m) équipé de galeries d'accès couvertes et chauffées."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Alpine Sunshine & Fresh Breeze",
+        "tempHighF": 48,
+        "tempLowF": 33,
+        "icon": "sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Clear Alpine Stars",
+        "tempHighF": 35,
+        "tempLowF": 28,
+        "icon": "moon"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Sunny Blue Sky",
+        "tempHighF": 50,
+        "tempLowF": 35,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Scattered Clouds over Peaks",
+        "tempHighF": 47,
+        "tempLowF": 32,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Passing Afternoon Clouds",
+        "tempHighF": 45,
+        "tempLowF": 30,
+        "icon": "wind"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Clear Horizon & Mountain Sun",
+        "tempHighF": 49,
+        "tempLowF": 34,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "État du Valais – Service de la mobilité (SDM)",
+        "type": "Official Swiss Cantonal Road Conditions & Status",
+        "url": "https://www.vs.ch/web/mobilite"
+      },
+      {
+        "name": "Regione Autonoma Valle d'Aosta – Inforoute VdA",
+        "type": "Official Italian Regional Road Status & Alerts",
+        "url": "https://inforoute.regione.vda.it/"
+      },
+      {
+        "name": "Tunnel du Grand-Saint-Bernard (SISEX SA / SITRASB SpA)",
+        "type": "Live Tunnel Traffic, Tolls & Webcams",
+        "url": "https://www.letunnel.com/"
+      },
+      {
+        "name": "Hospice du Grand-Saint-Bernard (Roundshot HD)",
+        "type": "Live Summit Webcams & Meteorological Telemetry",
+        "url": "https://gsbernard.roundshot.com/"
+      },
+      {
+        "name": "MeteoSwiss – Bulletins Alpins Valais & Grand-Saint-Bernard",
+        "type": "High-Altitude Weather & Snow Forecasts",
+        "url": "https://www.meteoswiss.admin.ch/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the Great St Bernard Pass opening date? / Quelle est la date d'ouverture du Col du Grand-Saint-Bernard ?",
+        "answer": "The Great St Bernard Pass summit road typically opens in early June (around June 1 to June 10) each summer after Swiss and Italian road crews complete rotary snow clearing. In 2026, the pass opened for the summer season and is currently OPEN to all traffic. / La date d'ouverture du Col du Grand-Saint-Bernard se situe habituellement début juin après le déneigement printanier."
+      },
+      {
+        "question": "Is Great St Bernard Pass open today? / Le Col du Grand-Saint-Bernard est-il ouvert aujourd'hui ?",
+        "answer": "Yes, Great St Bernard Pass is currently OPEN for the summer season on Route 21 (Switzerland) and SS27 (Italy). The Grand-Saint-Bernard Tunnel is also open 24/7 year-round. / Oui, le Col du Grand-Saint-Bernard est actuellement OUVERT à la circulation."
+      },
+      {
+        "question": "What are the current Great St Bernard Pass road conditions? / Quelles sont les conditions de circulation au Grand-Saint-Bernard ?",
+        "answer": "Road conditions on Route 21 and SS27 are clear and dry with excellent summer driving surfaces across both the Swiss Valais and Italian Aosta Valley approaches. / La chaussée est sèche et dégagée avec un trafic fluide sur les deux versants."
+      },
+      {
+        "question": "Where can I view the Great St Bernard Pass live webcam, cameras, and summit camera? / Où voir la webcam en direct du Grand-Saint-Bernard ?",
+        "answer": "You can view 24/7 high-definition live webcam feeds from the Hospice summit (2,469 m), the border lake, and the North/South tunnel portals directly in the Webcam section above. / Les webcams HD en direct de l'Hospice sommital et du lac sont accessibles en haut de cette page."
+      },
+      {
+        "question": "What is the elevation and altitude of Great St Bernard Pass? / Quelle est l'altitude du Col du Grand-Saint-Bernard ?",
+        "answer": "The summit elevation of Great St Bernard Pass is 2,469 meters (8,100 feet) above sea level. The Grand-Saint-Bernard Tunnel is located lower at 1,918 meters (6,293 feet). / L'altitude sommitale du col est de 2 469 mètres (tunnel à 1 918 m)."
+      },
+      {
+        "question": "When does Great St Bernard Pass close for winter? / Quand ferme le Col du Grand-Saint-Bernard en hiver ?",
+        "answer": "The open-air summit road typically closes for winter in mid-October following the first heavy alpine snowfalls, remaining closed until early June. The Grand-Saint-Bernard Tunnel remains open 24/7 year-round. / La route sommitale ferme généralement à la mi-octobre et rouvre début juin."
+      },
+      {
+        "question": "Is Great St Bernard Pass open in winter? / Le Grand-Saint-Bernard est-il ouvert en hiver ?",
+        "answer": "The summit pass road (2,469 m) is closed in winter due to snow depths exceeding 10 to 15 meters. However, transalpine vehicle travel remains open 365 days a year via the Grand-Saint-Bernard Tunnel (toll road). / La route du col est fermée en hiver, mais le Tunnel du Grand-Saint-Bernard est ouvert toute l'année."
+      },
+      {
+        "question": "What is the snow depth on Great St Bernard Pass? / Quelle est la hauteur de neige au Grand-Saint-Bernard ?",
+        "answer": "During the summer opening, the road surface is completely clear of snow. In winter and early spring before clearing, cumulative snowpack frequently exceeds 10 to 15 meters (30 to 50 feet) around the summit. / En été la route est dégagée ; en hiver le cumul de neige atteint 10 à 15 mètres."
+      },
+      {
+        "question": "Is there a toll for Great St Bernard Pass? / Y a-t-il un péage pour franchir le Grand-Saint-Bernard ?",
+        "answer": "The scenic summit pass road (Route 21 / SS27) is 100% free with no tolls during the summer months. The year-round Grand-Saint-Bernard Tunnel is a toll tunnel operated jointly by Switzerland and Italy (single transit ~CHF 31 / €31 for passenger cars). / La route sommitale de plein air est gratuite en été ; le tunnel est soumis à péage toute l'année."
+      },
+      {
+        "question": "Can I visit the St. Bernard rescue dogs at the Hospice? / Peut-on voir les chiens Saint-Bernard à l'Hospice ?",
+        "answer": "Yes, during the summer months (from late June to early October), the breeding St. Bernard dogs from the Barry Foundation stay at the historic Hospice du Grand-Saint-Bernard and can be visited daily by tourists. / Oui, les chiens Saint-Bernard de la Fondation Barry sont présents tout l'été à l'Hospice."
+      },
+      {
+        "question": "How do I get directions to Great St Bernard Pass? / Comment aller au Col du Grand-Saint-Bernard ?",
+        "answer": "From Switzerland, follow highway A9 to Martigny, then take Route 21 south through Sembrancher, Orsières, and Bourg-Saint-Pierre to the pass. From Italy, take highway A5 to Aosta, then follow SS27 north through Saint-Rhémy-en-Bosses to the summit. / Accès depuis la Suisse par Martigny (Route 21) ou depuis l'Italie par Aoste (SS27)."
+      },
+      {
+        "question": "Are winter tires or snow chains required on Great St Bernard Pass? / Les pneus hiver ou chaînes sont-ils obligatoires ?",
+        "answer": "Between October 15 and April 15, winter tires (3PMSF) or carrying snow chains is legally mandatory in the Aosta Valley and Swiss Valais. During peak summer when the summit pass is open, no special equipment is required under dry weather. / Équipements hivernaux obligatoires du 15 octobre au 15 avril en Valais et Vallée d'Aoste."
+      }
+    ],
+    "customSeo": {
+      "h1": "Col du Grand-Saint-Bernard : État de la Route, Webcam Live, Météo & Ouverture",
+      "title": "Great St Bernard Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
+      "description": "Consultez l'état d'ouverture en direct du Col du Grand-Saint-Bernard (Route 21 / SS27), webcams live HD de l'Hospice, météo, hauteur de neige, conditions de circulation et infos du Tunnel transalpin."
+    },
+    "searchKeywords": [
+      "Great St Bernard Pass opening date",
+      "Great St Bernard Pass is open",
+      "Great St Bernard Pass road conditions",
+      "Great St Bernard Pass road status",
+      "Great St Bernard Pass pass status report",
+      "when does Great St Bernard Pass open",
+      "Great St Bernard Pass closed",
+      "Great St Bernard Pass is closed",
+      "Great St Bernard Pass is it open today",
+      "is Great St Bernard Pass closed today",
+      "Great St Bernard Pass webcam",
+      "Great St Bernard Pass live webcam",
+      "Great St Bernard Pass cameras",
+      "Great St Bernard Pass summit camera",
+      "when does Great St Bernard Pass close for winter",
+      "Great St Bernard Pass map",
+      "is Great St Bernard Pass open right now",
+      "Great St Bernard Pass weather today",
+      "Great St Bernard Pass snow",
+      "Great St Bernard Pass snow depth",
+      "Great St Bernard Pass snow conditions",
+      "Great St Bernard Pass elevation",
+      "Great St Bernard Pass open",
+      "Great St Bernard Pass when will open",
+      "Great St Bernard Pass passes open",
+      "Great St Bernard Pass closures today",
+      "is Great St Bernard Pass open",
+      "Col du Grand-Saint-Bernard ouverture",
+      "Col du Grand-Saint-Bernard webcam",
+      "Col du Grand-Saint-Bernard état de la route",
+      "Tunnel du Grand-Saint-Bernard",
+      "Hospice du Grand-Saint-Bernard",
+      "Colle del Gran San Bernardo webcam"
+    ]
   }
 ];
 
@@ -7311,6 +7803,7 @@ export function cleanSlug(str: string): string {
 
 export function getCountrySlug(country: string): string {
   if (!country) return '';
+  if (country === 'Switzerland / Italy' || country === 'Switzerland & Italy') return 'switzerland-italy';
   return cleanSlug(country);
 }
 
@@ -7318,6 +7811,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (!state) return '';
   if (state === 'Jammu & Kashmir' || passSlug === 'zoji-la') return 'jammu-and-kashmir';
   if (state === 'Hautes-Alpes & Savoie' || passSlug === 'col-du-galibier') return 'hautes-alpes-savoie';
+  if (state === 'Valais & Aosta Valley' || passSlug === 'great-st-bernard-pass') return 'valais-aosta-valley';
   if (state === 'Møre og Romsdal' || passSlug === 'trollstigen-pass') return 'more-og-romsdal';
   return cleanSlug(state);
 }
@@ -7327,3 +7821,4 @@ export function getPassUrl(pass: { country: string; state?: string; slug: string
   const stateSlug = getStateSlug(pass.state, pass.slug);
   return stateSlug ? `/passes/${countrySlug}/${stateSlug}/${pass.slug}` : `/passes/${countrySlug}/${pass.slug}`;
 }
+

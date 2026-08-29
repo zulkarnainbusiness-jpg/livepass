@@ -240,5 +240,21 @@ export const alertsData: PassAlert[] = [
     "status": "OPEN",
     "timestamp": "Inforoute 05 & Savoie Route Bulletin",
     "source": "Inforoute 05 / Conseil Départemental de la Savoie"
+  },
+  {
+    "id": "alert-great-st-bernard-pass",
+    "passId": "great-st-bernard-pass",
+    "passName": "Great St Bernard Pass (Route 21 / SS27)",
+    "slug": "great-st-bernard-pass",
+    "country": "Switzerland / Italy",
+    "state": "Valais & Aosta Valley",
+    "highway": "Route 21 (CH) / SS27 (IT)",
+    "type": "All Clear",
+    "severity": "info",
+    "title": "Col du Grand-Saint-Bernard Ouvert — Route du Sommet & Tunnel 24h/24",
+    "description": "La route panoramique du Col du Grand-Saint-Bernard (2 469 m) est ouverte pour la saison estivale entre Martigny (Valais) et Aoste (Italie). Chaussée dégagée et sèche. L'Hospice et le chenil des chiens Saint-Bernard sont ouverts aux visiteurs. Le Tunnel transalpin (1 918 m) reste ouvert 24h/24 toute l'année.",
+    "status": "OPEN",
+    "timestamp": "État du Valais & RAVdA Bulletin",
+    "source": "État du Valais (SDM) / Inforoute Vallée d'Aoste"
   }
 ];
