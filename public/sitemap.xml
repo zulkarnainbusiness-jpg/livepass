@@ -50,7 +50,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Canonical Mountain Pass Detail Pages (32 passes) -->
+  <!-- Canonical Mountain Pass Detail Pages (33 passes) -->
   <url>
     <loc>https://www.livepasswatch.info/passes/united-states/washington/snoqualmie-pass</loc>
     <lastmod>2026-08-30</lastmod>
@@ -227,6 +227,12 @@
   </url>
   <url>
     <loc>https://www.livepasswatch.info/passes/switzerland/bern-valais/grimsel-pass</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/switzerland/bern-uri/susten-pass</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>

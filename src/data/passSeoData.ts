@@ -462,6 +462,22 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkUrl: '/passes/switzerland/valais-uri/furka-pass',
     crossLinkText: 'Kombinieren Sie Ihre Alpenfahrt mit dem benachbarten'
   },
+  'susten-pass': {
+    nearestTowns: [
+      { name: 'Innertkirchen, Bern (Haslital)', distance: '27.5 km (17.1 Meilen)', direction: 'West via Route 11' },
+      { name: 'Wassen, Uri (Reusstal)', distance: '17.5 km (10.9 Meilen)', direction: 'Ost via Route 11' },
+      { name: 'Meiringen, Bern (Berner Oberland)', distance: '33 km (20.5 Meilen)', direction: 'West via Route 11' },
+      { name: 'Andermatt, Uri (Gotthard-Knoten)', distance: '28 km (17.4 Meilen)', direction: 'Südost via Route 11 & Route 2' },
+      { name: 'Interlaken, Bern', distance: '60 km (37.3 Meilen)', direction: 'West via A8 & Route 11' },
+      { name: 'Luzern, Schweiz', distance: '80 km (49.7 Meilen)', direction: 'Nord via A2 & Route 11' }
+    ],
+    seasonalClosureWindow: 'Mitte Juni bis Ende Oktober / Anfang November (Wintersperre November bis Juni)',
+    seasonalClosureDetail: 'Unterhalten durch das Tiefbauamt des Kantons Bern (TBA) und die Baudirektion des Kantons Uri (Tiefbauamt Uri). Die 2.224 m hohe Passstrasse ist von November bis Mitte Juni wegen extremer Schneehöhen von bis zu 10 Metern und hoher Lawinengefahr gesperrt. Im Mai und Juni räumen schwere Schneefräsen die Passhöhe zur sommerlichen Wiedereröffnung frei.',
+    aboutPass: 'Der Sustenpass (2.224 m ü. M. / 7.297 ft) ist eine der spektakulärsten und modernsten Passstrassen der Schweizer Alpen auf der Hauptstrasse 11, die das Haslital im Kanton Bern mit dem Kanton Uri verbindet. Erbaut zwischen 1938 und 1945 mit 25 kühnen Natursteinbrücken, dem 300 m langen Scheiteltunnel und dem unvergleichlichen Ausblick auf den Steingletscher, bildet der Sustenpass zusammen mit Grimsel und Furka die weltberühmte Schweizer Dreipässe-Runde.',
+    crossLinkAnchor: 'Grimselpass (Grimsel Pass, Bern & Wallis)',
+    crossLinkUrl: '/passes/switzerland/bern-valais/grimsel-pass',
+    crossLinkText: 'Erleben Sie auch die weiteren Pässe der legendären Dreipässe-Runde wie den'
+  },
   'gotthard-pass': {
     nearestTowns: [
       { name: 'Hospental, Uri (Urserental)', distance: '11.2 km (7.0 miles)', direction: 'North via Hauptstrasse 2' },

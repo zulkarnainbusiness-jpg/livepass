@@ -140,7 +140,7 @@ export const PassDetailPage: React.FC = () => {
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
   const [isUserCamModalOpen, setIsUserCamModalOpen] = useState(false);
   const [pageLang, setPageLang] = useState<'de' | 'fr' | 'it' | 'en'>(() => {
-    if (targetSlug.toLowerCase().includes('grimsel')) return 'de';
+    if (targetSlug.toLowerCase().includes('grimsel') || targetSlug.toLowerCase().includes('susten')) return 'de';
     if (targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard')) return 'it';
     if (targetSlug.toLowerCase().includes('galibier') || targetSlug.toLowerCase().includes('iseran')) return 'fr';
     return 'en';
@@ -153,7 +153,7 @@ export const PassDetailPage: React.FC = () => {
 
   // Sync default language when pass changes
   useEffect(() => {
-    if (pass.slug === 'grimsel-pass') {
+    if (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') {
       setPageLang('de');
     } else if (pass.slug === 'bernina-pass') {
       setPageLang('de');
@@ -239,6 +239,8 @@ export const PassDetailPage: React.FC = () => {
     ? 'Gotthard Pass mountain road in the Swiss Alps'
     : (pass.slug === 'grimsel-pass')
     ? 'Grimsel Pass mountain road in the Swiss Alps'
+    : (pass.slug === 'susten-pass')
+    ? 'Susten Pass mountain road, Steingletscher glacier, and Scheiteltunnel in the Swiss Alps'
     : (pass.slug === 'great-st-bernard-pass')
     ? 'Great St Bernard Pass road and Alpine mountain landscape'
     : (pass.slug === 'col-du-galibier')
@@ -560,7 +562,7 @@ export const PassDetailPage: React.FC = () => {
           </div>
         )}
 
-        {pass.slug === 'grimsel-pass' && (
+        {(pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
             alignItems: 'center',
@@ -867,7 +869,7 @@ export const PassDetailPage: React.FC = () => {
                   ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                   : pass.slug === 'bernina-pass' && pageLang === 'it'
                   ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                  : pass.slug === 'grimsel-pass' && pageLang === 'de'
+                  : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                   ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                   : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr'
                   ? `Sommet : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
@@ -887,6 +889,10 @@ export const PassDetailPage: React.FC = () => {
                 ? (pageLang === 'de'
                     ? "Der Grimselpass (2.164 m ü. M. / 7.100 ft) ist ein weltberühmter Schweizer Hochgebirgspass an der Hauptstrasse 6, der das Haslital im Berner Oberland (Kanton Bern) mit dem Goms im Oberwallis (Kanton Wallis) verbindet. Geprägt von monumentalen Granitfelswänden, türkisfarbenen Stauseen (Grimselsee, Räterichsbodensee, Totensee) und dem historischen Grimsel Hospiz, bildet der Pass zusammen mit Furka und Susten die legendäre «Grossen Drei» Alpenpass-Runde."
                     : "Grimsel Pass (2,164 m / 7,100 ft) is a world-renowned Swiss high alpine pass on Route 6 connecting Haslital in the Bernese Oberland (Canton of Bern) with Goms in Upper Valais (Canton of Valais). Famous for its massive polished granite cliffs, turquoise hydropower reservoirs (Grimselsee, Räterichsbodensee, Totensee), and the historic Grimsel Hospiz, it forms the iconic Swiss 'Big 3' pass loop alongside Furka and Susten.")
+                : pass.slug === 'susten-pass'
+                ? (pageLang === 'de'
+                    ? "Der Sustenpass (2.224 m ü. M. / 7.297 ft) ist eine der landschaftlich grossartigsten und fahrtechnisch modernsten Hochgebirgsstrassen der Schweizer Alpen. Auf der Hauptstrasse 11 verbindet er das Haslital im Berner Oberland (Innertkirchen / Meiringen) mit dem Meiental und Reusstal im Kanton Uri (Wassen / Gotthard-Achse). Bekannt für seine kühnen Steinbrücken, den Scheiteltunnel und den grandiosen Blick auf den Steingletscher, bildet der Sustenpass zusammen mit Grimsel und Furka das weltberühmte Schweizer «Dreipässe-Erlebnis»."
+                    : "Susten Pass (2,224 m / 7,297 ft) is one of the most scenic and modern high alpine mountain passes in the Swiss Alps. Carrying Hauptstrasse 11 (Route 11), it connects Haslital in the Bernese Oberland (Innertkirchen / Meiringen) with Meiental and the Reuss Valley in the Canton of Uri (Wassen / Gotthard transit corridor). Renowned for its 25 natural stone bridges, the 300-meter summit tunnel, and breathtaking views of the Steingletscher glacier, Susten Pass forms the legendary Swiss 'Big 3' alpine loop alongside Grimsel and Furka.")
                 : pass.slug === 'col-du-galibier'
                 ? (pageLang === 'fr'
                     ? "Le Col du Galibier (2 642 m / 8 668 ft) est un col routier légendaire des Alpes françaises reliant Saint-Michel-de-Maurienne et Valloire en Savoie au Col du Lautaret et Briançon dans les Hautes-Alpes via la D902. Haut lieu historique du Tour de France et de la Route des Grandes Alpes, il offre un panorama grandiose sur les glaciers des Écrins et la Meije."
@@ -910,7 +916,7 @@ export const PassDetailPage: React.FC = () => {
                 ? 'Teilen'
                 : pass.slug === 'bernina-pass' && pageLang === 'it'
                 ? 'Condividi'
-                : pass.slug === 'grimsel-pass' && pageLang === 'de'
+                : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                 ? 'Teilen'
                 : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                 ? 'Partager' 
@@ -925,7 +931,7 @@ export const PassDetailPage: React.FC = () => {
                     ? 'Gemerkt'
                     : pass.slug === 'bernina-pass' && pageLang === 'it'
                     ? 'Preferito'
-                    : pass.slug === 'grimsel-pass' && pageLang === 'de'
+                    : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                     ? 'Gemerkt'
                     : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                     ? 'Favori' 
@@ -936,7 +942,7 @@ export const PassDetailPage: React.FC = () => {
                     ? 'Pass merken'
                     : pass.slug === 'bernina-pass' && pageLang === 'it'
                     ? 'Aggiungi ai preferiti'
-                    : pass.slug === 'grimsel-pass' && pageLang === 'de'
+                    : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                     ? 'Pass merken'
                     : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                     ? 'Ajouter aux favoris' 
@@ -2141,9 +2147,9 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Clock size={16} /> 
-                      {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                      {(pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Route & Reisesaison'
-                        : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                         ? 'Itinéraire & Période d\'Ouverture' 
                         : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                         ? 'Itinerario & Stagione di Transito'
@@ -2154,6 +2160,10 @@ export const PassDetailPage: React.FC = () => {
                         ? (pageLang === 'de'
                             ? 'Die Hauptstrasse 6 verbindet Innertkirchen / Meiringen (Bern) mit Gletsch und Oberwald (Wallis). Die Passstrasse ist in der Regel von Anfang Juni bis Ende Oktober für den regulären Sommerverkehr geöffnet. Der Schweizer Qualitätsasphalt bietet beste Fahrbedingungen.'
                             : 'Route 6 links Innertkirchen & Meiringen (Bern) with Gletsch & Oberwald (Valais). Open typically from early June to late October. Paved Swiss asphalt is in pristine condition for summer mountain travel.')
+                        : (pass.slug === 'susten-pass')
+                        ? (pageLang === 'de'
+                            ? 'Die Hauptstrasse 11 verbindet Innertkirchen (Bern) mit Wassen (Uri). Die Passstrasse ist in der Regel von Mitte Juni bis Ende Oktober für den Sommerverkehr geöffnet. Ausgezeichneter Asphalt und 25 kühne Steinbrücken bieten perfekten Fahrkomfort.'
+                            : 'Route 11 links Innertkirchen (Bern) with Wassen (Uri). Open typically from mid-June to late October. Paved Swiss roadway with 25 stone bridges offers outstanding driving conditions.')
                         : (pass.slug === 'col-du-galibier')
                         ? (pageLang === 'fr'
                             ? 'La D902 relie Saint-Michel-de-Maurienne et Valloire (Savoie) au Col du Lautaret et Briançon (Hautes-Alpes). La route est généralement ouverte de fin mai / début juin à fin octobre / début novembre. La chaussée asphaltée offre d\'excellentes conditions en été.'
@@ -2178,7 +2188,7 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Mountain size={16} /> 
-                      {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                      {(pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Wetter & Hochgebirgssicherheit'
                         : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                         ? 'Météo Alti & Sécurité Altitude' 
@@ -2191,6 +2201,10 @@ export const PassDetailPage: React.FC = () => {
                         ? (pageLang === 'de'
                             ? 'Auf der Passhöhe (2.164 m) herrschen oft 10–14°C kühlere Temperaturen als in Interlaken oder Brig. Rasche Wetterumschwünge mit dichtem Bergnebel über dem Totensee sind häufig; vor der Abfahrt stets MeteoSchweiz-Berichte und Live-Webcams prüfen.'
                             : 'At 2,164 m summit elevation, temperatures are typically 10–14°C cooler than in Interlaken or Brig. High alpine fog and brisk winds across the Totensee plateau can develop rapidly; check MeteoSwiss reports and live Hospiz webcams.')
+                        : (pass.slug === 'susten-pass')
+                        ? (pageLang === 'de'
+                            ? 'Auf der Passhöhe am Scheiteltunnel (2.224 m) ist es meist 10–14°C kühler als in Meiringen oder Altdorf. Vor der Fahrt über das Steingletscher-Massiv stets die aktuellen MeteoSchweiz-Vorhersagen und Live-Kameras prüfen.'
+                            : 'At 2,224 m summit tunnel elevation, temperatures are typically 10–14°C cooler than in Meiringen or Altdorf. Check real-time MeteoSwiss forecasts and live Steingletscher webcams before setting out.')
                         : (pass.slug === 'col-du-galibier')
                         ? (pageLang === 'fr'
                             ? 'À 2 642 m, la température est souvent de 10 à 15°C inférieure à celle des vallées de Valloire ou Briançon. Des rafales de vent dépassant 60 km/h et des orages d\'été soudains peuvent survenir. Consultez les bulletins Météo-France et les webcams avant l\'ascension.'
@@ -2215,7 +2229,7 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <ShieldCheck size={16} /> 
-                      {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                      {(pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Mautfreiheit & Schweizer Strassenordnung'
                         : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                         ? 'Péage & Réglementation Routière' 
@@ -2228,6 +2242,10 @@ export const PassDetailPage: React.FC = () => {
                         ? (pageLang === 'de'
                             ? 'Die Grimsel-Passstrasse (Hauptstrasse 6) ist eine 100% mautfreie Schweizer Kantonsstrasse. Keine Autobahnvignette auf der Passstrasse erforderlich. Die Vignette wird nur bei Benützung der Nationalstrassen (z. B. A8 Spiez-Interlaken oder A9 Wallis) benötigt.'
                             : 'Grimsel Pass (Hauptstrasse 6) is a 100% toll-free Swiss public cantonal highway. No tolls and no Swiss motorway vignette are needed for the pass road itself; a vignette is only required when entering Swiss motorways (A8/A9).')
+                        : (pass.slug === 'susten-pass')
+                        ? (pageLang === 'de'
+                            ? 'Die Susten-Passstrasse (Hauptstrasse 11) ist eine 100% mautfreie Schweizer Kantonsstrasse. Keine Autobahnvignette für den Pass oder den Scheiteltunnel erforderlich. Eine Vignette wird nur bei Benützung der Autobahnen A8 oder A2 (Gotthard) benötigt.'
+                            : 'Susten Pass (Hauptstrasse 11) is a 100% toll-free Swiss public cantonal highway. No tolls and no motorway vignette required for the pass or summit tunnel; vignette needed only on Swiss motorways (A8/A2).')
                         : (pass.slug === 'col-du-galibier')
                         ? (pageLang === 'fr'
                             ? 'La D902 est une route départementale 100% gratuite (aucun péage ni vignette). Le Tunnel du Galibier (2 556 m) est régulé par feux tricolores alternés (gabarit max : 4,1 m haut, 2,4 m large, 3,5 t). Vélos et piétons sont interdits dans le tunnel et doivent passer par la crête.'

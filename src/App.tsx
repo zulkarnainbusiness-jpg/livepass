@@ -89,6 +89,9 @@ export const App: React.FC = () => {
             <Route path="/grimsel-pass" element={<Navigate to="/passes/switzerland/bern-valais/grimsel-pass" replace />} />
             <Route path="/grimselpass" element={<Navigate to="/passes/switzerland/bern-valais/grimsel-pass" replace />} />
             <Route path="/grimsel" element={<Navigate to="/passes/switzerland/bern-valais/grimsel-pass" replace />} />
+            <Route path="/susten-pass" element={<Navigate to="/passes/switzerland/bern-uri/susten-pass" replace />} />
+            <Route path="/sustenpass" element={<Navigate to="/passes/switzerland/bern-uri/susten-pass" replace />} />
+            <Route path="/susten" element={<Navigate to="/passes/switzerland/bern-uri/susten-pass" replace />} />
             <Route path="/gotthard-pass" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />
             <Route path="/gotthardpass" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />
             <Route path="/gotthard" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />

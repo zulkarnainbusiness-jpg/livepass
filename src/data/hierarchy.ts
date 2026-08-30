@@ -302,6 +302,22 @@ export const hierarchyData: HierarchyContinent[] = [
             ]
           },
           {
+            "id": "bern-uri",
+            "name": "Bern & Uri",
+            "passes": [
+              {
+                "id": "susten-pass",
+                "slug": "susten-pass",
+                "name": "Susten Pass",
+                "highway": "Hauptstrasse 11",
+                "elevationFt": 7297,
+                "elevationM": 2224,
+                "status": "OPEN",
+                "image": "/susten-pass.png"
+              }
+            ]
+          },
+          {
             "id": "valais",
             "name": "Valais",
             "passes": [
