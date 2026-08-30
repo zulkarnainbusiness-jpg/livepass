@@ -10101,6 +10101,472 @@ export const passesData: MountainPass[] = [
       "Passo del Bernina webcam",
       "Passo del Bernina stato strada"
     ]
+  },
+  {
+    "id": "rogers-pass",
+    "slug": "rogers-pass",
+    "name": "Rogers Pass",
+    "alternateNames": [
+      "Rogers Pass BC",
+      "Rogers Pass British Columbia",
+      "Rogers Pass Canada",
+      "Col Rogers",
+      "Trans-Canada Highway Rogers Pass",
+      "Glacier National Park Rogers Pass",
+      "Highway 1 Rogers Pass"
+    ],
+    "country": "Canada",
+    "countryCode": "CAN",
+    "continent": "North America",
+    "state": "British Columbia",
+    "highway": "Trans-Canada Highway (BC-1)",
+    "elevationFt": 4364,
+    "elevationM": 1330,
+    "coordinates": {
+      "lat": 51.3000,
+      "lng": -117.5200
+    },
+    "status": "OPEN",
+    "statusDetail": "Trans-Canada Highway 1 is OPEN through Glacier National Park. Road surface bare & dry. Operation PALFISH mobile avalanche mitigation on standby.",
+    "lastUpdated": "5 minutes ago",
+    "description": "Rogers Pass (1,330 m / 4,364 ft) is a world-renowned mountain pass through the rugged Selkirk Mountains of British Columbia, carrying the Trans-Canada Highway (Highway 1) and Canadian Pacific Railway through the heart of Glacier National Park between Revelstoke and Golden. Famous for having one of the world's largest mobile avalanche control programs operated jointly by Parks Canada and the Canadian Armed Forces (Operation PALFISH with 105mm Howitzers), Rogers Pass receives over 12 to 15 meters (40 to 50 ft) of annual snowfall and is a premier year-round national transportation artery.",
+    "image": "/rogers-pass.png",
+    "weather": {
+      "tempF": 64,
+      "tempC": 18,
+      "condition": "Sunny & Crisp Mountain Air",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Road Surface Bare & Dry"
+    },
+    "wind": {
+      "speedKmh": 11,
+      "speedMph": 7,
+      "direction": "W",
+      "description": "Light Mountain Breeze"
+    },
+    "roadCondition": "Highway 1 is bare and dry with good visibility throughout the 70 km Glacier National Park corridor between Revelstoke and Golden. Speed limit 90 km/h (reduced to 60 km/h in construction zones and wildlife crossings). No vehicle restrictions in effect.",
+    "chainRequirement": "No restrictions currently in effect. Mandatory winter tire regulations (M+S or 3PMSF with minimum 3.5 mm tread depth) are enforced by BC Highway Patrol from October 1 to April 30. Commercial vehicles over 11,794 kg must carry tire chains during winter months.",
+    "cameras": [
+      {
+        "id": "cam-rogers-summit-east",
+        "title": "DriveBC Rogers Pass Summit East (1,330 m / 4,364 ft)",
+        "image": "/rogers-pass.png",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Rogers Pass Discovery Centre / Summit Crest",
+        "milepost": "Trans-Canada Hwy 1 (KM 42.5)",
+        "direction": "Eastbound toward Golden & Mount Macdonald",
+        "source": "DriveBC (BC Ministry of Transportation) / Parks Canada",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca"
+      },
+      {
+        "id": "cam-rogers-summit-west",
+        "title": "DriveBC Rogers Pass Summit West (1,330 m / 4,364 ft)",
+        "image": "/rogers-pass-historical.jpg",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Rogers Pass Summit West Flank",
+        "milepost": "Trans-Canada Hwy 1 (KM 41.8)",
+        "direction": "Westbound toward Tupper Snow Shed & Revelstoke",
+        "source": "DriveBC / Parks Canada",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca"
+      },
+      {
+        "id": "cam-rogers-heather-hill",
+        "title": "DriveBC Glacier NP Heather Hill / East Portal (1,150 m)",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Glacier National Park East Boundary",
+        "milepost": "Trans-Canada Hwy 1 (KM 58.2)",
+        "direction": "Looking West toward Rogers Pass",
+        "source": "DriveBC / Parks Canada",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca"
+      },
+      {
+        "id": "cam-rogers-albert-canyon",
+        "title": "DriveBC Albert Canyon West Approach (720 m)",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Albert Canyon & Illecillewaet River",
+        "milepost": "Trans-Canada Hwy 1 (KM 22.0)",
+        "direction": "Looking East toward Glacier National Park entrance",
+        "source": "DriveBC",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "north-cascades-pass",
+        "slug": "north-cascades-pass",
+        "name": "North Cascades Highway Pass",
+        "country": "United States",
+        "state": "Washington",
+        "highway": "SR 20",
+        "status": "OPEN",
+        "elevationFt": 5477,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 420
+      },
+      {
+        "id": "snoqualmie-pass",
+        "slug": "snoqualmie-pass",
+        "name": "Snoqualmie Pass",
+        "country": "United States",
+        "state": "Washington",
+        "highway": "I-90",
+        "status": "OPEN",
+        "elevationFt": 3022,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 540
+      },
+      {
+        "id": "stevens-pass",
+        "slug": "stevens-pass",
+        "name": "Stevens Pass",
+        "country": "United States",
+        "state": "Washington",
+        "highway": "US 2",
+        "status": "OPEN",
+        "elevationFt": 4061,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 490
+      }
+    ],
+    "overview": {
+      "openedYear": 1962,
+      "lengthMiles": 43.5,
+      "lengthKm": 70.0,
+      "annualSnowfallIn": 550,
+      "annualSnowfallM": 14.0,
+      "summary": "Rogers Pass (1,330 m / 4,364 ft) is one of North America's most vital and dramatic high-mountain transit corridors. Traversing the heart of Glacier National Park in the Selkirk Mountains of British Columbia, it links the interior city of Revelstoke with Golden in the Columbia River valley along the Trans-Canada Highway (Highway 1). The pass is globally celebrated for its heroic railway heritage, massive concrete avalanche snow sheds, stunning glaciated peaks like Mount Sir Donald, and the world's most sophisticated mobile avalanche forecasting and artillery control system operated jointly by Parks Canada and the Canadian Armed Forces."
+    },
+    "narrativeSections": [
+      {
+        "title": "Discovery, Railway Heritage & National Historic Site",
+        "content": "In 1881, Major Albert Bowman Rogers discovered this critical mountain gap while surveying for the Canadian Pacific Railway (CPR), enabling the completion of Canada's first transcontinental railway in 1885. However, the immense Selkirk snowpack and deadly avalanche chutes—most tragically the 1910 disaster that claimed 58 railway workers—forced the CPR to construct the 8 km (5 mi) Connaught Tunnel in 1916 and later the 14.7 km (9.1 mi) Mount Macdonald Tunnel in 1988 under Mount Macdonald, which remains the longest railway tunnel in the Western Hemisphere. The pass was designated a National Historic Site of Canada in 1971."
+      },
+      {
+        "title": "The Trans-Canada Highway & World-Leading Avalanche Control",
+        "content": "The modern road over Rogers Pass opened in 1962 as part of the Trans-Canada Highway (Highway 1), transforming commerce and travel between Western Canada and the Pacific coast. Because over 130 avalanche paths threaten the highway corridor, Parks Canada and the Royal Canadian Artillery (Operation PALFISH) deploy 105mm C3 Howitzers mounted on precision firing platforms alongside a network of massive reinforced concrete snow sheds (including Tupper and Lanark Sheds) to trigger controlled slides before snow can accumulate to catastrophic levels."
+      }
+    ],
+    "quickFacts": {
+      "state": "British Columbia (Canada)",
+      "mountainRange": "Selkirk Mountains (Columbia Mountains)",
+      "elevationSummary": "1,330 m (4,364 ft) Pass Summit",
+      "connects": "Revelstoke (West) with Golden (East) via Trans-Canada Hwy 1",
+      "nearestTown": "Golden (80 km / 50 mi) / Revelstoke (70 km / 43 mi)",
+      "roadType": "Trans-Canada Highway 1 (National Highway System)",
+      "bestTime": "Open Year-Round 365 Days (Active winter maintenance)",
+      "highlight": "Glacier National Park, Avalanche Snow Sheds, Operation PALFISH Artillery, Mount Sir Donald"
+    },
+    "routeDetails": {
+      "distanceKm": 70.0,
+      "distanceMiles": 43.5,
+      "duration": "50–60 min driving time",
+      "origin": "Revelstoke, BC (458 m)",
+      "destination": "Golden, BC (800 m)",
+      "waypoints": [
+        "Revelstoke, BC (458 m)",
+        "Albert Canyon (720 m)",
+        "Glacier National Park West Gate (910 m)",
+        "Illecillewaet Campground (1,050 m)",
+        "Tupper Snow Shed (1,280 m)",
+        "Rogers Pass Summit Discovery Centre (1,330 m)",
+        "Lanark Snow Shed (1,270 m)",
+        "Beaver Valley / Heather Hill (1,150 m)",
+        "Donald / Columbia River (780 m)",
+        "Golden, BC (800 m)"
+      ]
+    },
+    "cyclingInfo": {
+      "summary": "Cycling Rogers Pass along the Trans-Canada Highway 1 is a formidable high-mountain endeavor through Glacier National Park. Cyclists must navigate heavy commercial truck traffic, variable mountain weather, and concrete avalanche snow sheds with narrow shoulders.",
+      "approaches": [
+        {
+          "name": "Westbound Approach from Golden",
+          "origin": "Golden, BC (800 m)",
+          "distanceKm": 80.0,
+          "distanceMiles": 49.7,
+          "elevationGainM": 850,
+          "elevationGainFt": 2788,
+          "avgGradient": "3.5% (steeper 6-8% grades near Beaver River)",
+          "maxGradient": "8.5%",
+          "hairpins": 6,
+          "description": "Gradual ascent following the Kicking Horse and Beaver valleys before climbing into the Selkirk crest."
+        },
+        {
+          "name": "Eastbound Approach from Revelstoke",
+          "origin": "Revelstoke, BC (458 m)",
+          "distanceKm": 70.0,
+          "distanceMiles": 43.5,
+          "elevationGainM": 920,
+          "elevationGainFt": 3018,
+          "avgGradient": "4.0% (sustained 6-8% grades past Illecillewaet)",
+          "maxGradient": "8.0%",
+          "hairpins": 8,
+          "description": "Scenic climb along the Illecillewaet River into the heart of Glacier National Park."
+        }
+      ],
+      "bestSeason": "July through September (driest weather and warmest daytime temperatures)",
+      "safetyTips": [
+        "High-visibility front and rear blinking lights are strictly mandatory when riding through the unlit snow sheds.",
+        "Dress in layers: summit temperatures at 1,330 m can drop rapidly during afternoon alpine storms.",
+        "Carry bear spray and store food securely; grizzly bears frequently forage along the highway verges.",
+        "Take the designated pedestrian/cyclist bypass pathways where available outside the snow sheds."
+      ]
+    },
+    "drivingInfo": {
+      "summary": "The Trans-Canada Highway 1 over Rogers Pass is a high-volume, multi-lane national arterial highway engineered for heavy commercial freight and passenger travel across the Canadian Rockies and Columbia Mountains.",
+      "characteristics": [
+        "Paved multi-lane highway with passing lanes, concrete median barriers, and engineered snow sheds.",
+        "Toll-free national highway; stopping for recreational use in Glacier National Park requires a Parks Canada pass.",
+        "Heavily patrolled by BC Highway Patrol with active commercial vehicle brake checks.",
+        "Modern Rogers Pass Discovery Centre with interpretive exhibits, parking, and washroom facilities at the summit."
+      ],
+      "switchbacksCount": "Gradual sweeping curves and engineered climbing lanes; no sharp switchbacks",
+      "safetyAndEtiquette": [
+        "Obey posted variable speed limits on electronic overhead signs during winter storms.",
+        "Commercial trucks must stop at designated brake-check pullouts before descending east or west slopes.",
+        "Never stop or park inside avalanche snow sheds under any circumstances.",
+        "Watch for wildlife crossing the highway, particularly in early morning and dusk hours."
+      ],
+      "motorcycleTips": [
+        "A premier Canadian motorcycle touring route with breathtaking views of Mount Sir Donald and the Illecillewaet Glacier.",
+        "Watch for longitudinal pavement grooves and wet concrete surfaces inside the snow sheds."
+      ]
+    },
+    "distancesTable": [
+      {
+        "location": "Revelstoke, BC",
+        "distance": "70 km (43.5 miles)",
+        "route": "Trans-Canada Hwy 1 West",
+        "notes": "Ski resort city on the Columbia River & Mount Revelstoke NP"
+      },
+      {
+        "location": "Golden, BC",
+        "distance": "80 km (49.7 miles)",
+        "route": "Trans-Canada Hwy 1 East",
+        "notes": "Gateway to Kicking Horse Mountain Resort & Yoho NP"
+      },
+      {
+        "location": "Field / Yoho National Park",
+        "distance": "135 km (83.8 miles)",
+        "route": "Hwy 1 East",
+        "notes": "Takakkaw Falls, Emerald Lake & Kicking Horse Pass"
+      },
+      {
+        "location": "Lake Louise, Alberta",
+        "distance": "165 km (102.5 miles)",
+        "route": "Hwy 1 East",
+        "notes": "World-famous turquoise glacial lake & Banff National Park"
+      },
+      {
+        "location": "Banff, Alberta",
+        "distance": "220 km (136.7 miles)",
+        "route": "Hwy 1 East",
+        "notes": "Iconic resort town in Banff National Park"
+      },
+      {
+        "location": "Calgary, Alberta",
+        "distance": "345 km (214.3 miles)",
+        "route": "Hwy 1 East",
+        "notes": "Major Western Canadian metropolitan hub & international airport"
+      },
+      {
+        "location": "Kamloops, BC",
+        "distance": "285 km (177.1 miles)",
+        "route": "Hwy 1 West",
+        "notes": "Thompson River junction & Coquihalla connector"
+      },
+      {
+        "location": "Vancouver, BC",
+        "distance": "635 km (394.5 miles)",
+        "route": "Hwy 1 / Coquihalla Hwy 5",
+        "notes": "Pacific Coast metropolis & port"
+      }
+    ],
+    "isSeasonal": false,
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round 365 Days (Intermittent 1-3 hr avalanche control closures during heavy winter storms)",
+      "typicalReopening": "Immediate reopening upon completion of avalanche artillery blasting and rotary plow clearing",
+      "description": "Unlike seasonal alpine passes, Rogers Pass on the Trans-Canada Highway 1 is maintained open 365 days a year. During major winter storms with extreme avalanche hazard, Parks Canada and the Canadian Armed Forces temporarily close the highway for controlled 105mm artillery firing to trigger slides safely. Highway closures typically last between 1 to 4 hours."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Bright Alpine Sun & Clear Sky",
+        "tempHighF": 66,
+        "tempLowF": 46,
+        "icon": "sun"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Mostly Sunny & Warm",
+        "tempHighF": 68,
+        "tempLowF": 48,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Passing Mountain Clouds",
+        "tempHighF": 63,
+        "tempLowF": 44,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Scattered Afternoon Showers",
+        "tempHighF": 60,
+        "tempLowF": 42,
+        "icon": "rain"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Sunny Intervals & Clear Horizon",
+        "tempHighF": 65,
+        "tempLowF": 45,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "DriveBC (BC Ministry of Transportation and Infrastructure)",
+        "type": "Official British Columbia Highway Conditions & Live Webcams",
+        "url": "https://www.drivebc.ca"
+      },
+      {
+        "name": "Parks Canada – Glacier National Park",
+        "type": "National Park Road Status, Avalanche Reports & Visitor Information",
+        "url": "https://parks.canada.ca/pn-np/bc/glacier"
+      },
+      {
+        "name": "Environment and Climate Change Canada (ECCC)",
+        "type": "Official Canadian Mountain Weather & Forecasts",
+        "url": "https://weather.gc.ca"
+      },
+      {
+        "name": "Avalanche Canada",
+        "type": "Public Avalanche Bulletins for the Selkirk Mountains",
+        "url": "https://www.avalanche.ca"
+      },
+      {
+        "name": "LivePassWatch Verification Methodology",
+        "type": "Transparent Real-Time Road Data Verification Protocol",
+        "url": "/methodology"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the Rogers Pass opening date? / When does Rogers Pass open?",
+        "answer": "Rogers Pass on the Trans-Canada Highway 1 does not have a seasonal opening date because it is maintained OPEN year-round (365 days a year) by Parks Canada and DriveBC. Short temporary closures (typically 1 to 4 hours) occur during winter for active avalanche artillery control. / Le col Rogers est ouvert 365 jours par an."
+      },
+      {
+        "question": "Is Rogers Pass open today and is Rogers Pass open right now?",
+        "answer": "Yes, Rogers Pass on Trans-Canada Highway 1 is currently OPEN to all traffic through Glacier National Park between Revelstoke and Golden. The highway surface is bare and dry. Real-time updates from DriveBC are refreshed every 5 minutes on LivePassWatch."
+      },
+      {
+        "question": "What are the current Rogers Pass road conditions and pass status report?",
+        "answer": "Current road conditions on Highway 1 through Rogers Pass are bare, dry, and in good driving condition with normal traffic flow in both directions across the 70 km park corridor."
+      },
+      {
+        "question": "What is the Rogers Pass road status?",
+        "answer": "The official road status from DriveBC and Parks Canada is OPEN with normal summer highway driving conditions."
+      },
+      {
+        "question": "Is Rogers Pass closed today or is Rogers Pass is closed?",
+        "answer": "No, Rogers Pass is NOT closed today; it is open for all travel between Revelstoke and Golden on Trans-Canada Highway 1."
+      },
+      {
+        "question": "Where can I view the Rogers Pass live webcam, cameras, and summit camera?",
+        "answer": "LivePassWatch features live high-definition DriveBC webcams for Rogers Pass, including the Summit East (1,330 m), Summit West, Heather Hill / East Portal (1,150 m), and Albert Canyon approaches directly in the webcam section above."
+      },
+      {
+        "question": "When does Rogers Pass close for winter and is Rogers Pass open in winter?",
+        "answer": "Rogers Pass does NOT close for the winter. It remains open 365 days a year as Canada's primary east-west transportation artery. During severe winter blizzards, Parks Canada and the Canadian Armed Forces execute brief, controlled 1 to 3 hour closures for Howitzer avalanche control (Operation PALFISH)."
+      },
+      {
+        "question": "What is the Rogers Pass elevation and how high is Rogers Pass?",
+        "answer": "The summit elevation of Rogers Pass is 1,330 meters (4,364 feet / 4,375 ft) above sea level, located in the Selkirk Mountains of British Columbia within Glacier National Park."
+      },
+      {
+        "question": "What are the Rogers Pass snow conditions and snow depth?",
+        "answer": "During the summer season, the road pavement is 100% bare and dry. In winter, Rogers Pass receives over 12 to 15 meters (40 to 50 feet) of cumulative snowfall, making it one of the snowiest highway passes in North America."
+      },
+      {
+        "question": "What is the Rogers Pass weather today and forecast?",
+        "answer": "Current summit weather at Rogers Pass features bright alpine sunshine with daytime temperatures around 18°C (64°F) and light westerly winds. Check the 5-day mountain weather forecast above before traveling."
+      },
+      {
+        "question": "What are the Rogers Pass chain requirements and winter tire rules in British Columbia?",
+        "answer": "Under British Columbia law, winter tires (M+S or 3PMSF severe snow rated with minimum 3.5 mm tread depth) are mandatory on Highway 1 through Rogers Pass from October 1 to April 30. Commercial trucks over 11,794 kg must carry tire chains during this period."
+      },
+      {
+        "question": "What highway is Rogers Pass and where is Rogers Pass located?",
+        "answer": "Rogers Pass is located on the Trans-Canada Highway (BC Highway 1) in British Columbia, Canada, situated inside Glacier National Park between the towns of Revelstoke (70 km west) and Golden (80 km east)."
+      },
+      {
+        "question": "How to get to Rogers Pass and what are the driving directions?",
+        "answer": "From the west (Vancouver / Kamloops / Revelstoke), follow Trans-Canada Highway 1 east for 70 km from Revelstoke up to the summit. From the east (Calgary / Banff / Golden), follow Trans-Canada Highway 1 west for 80 km from Golden into Glacier National Park."
+      }
+    ],
+    "customSeo": {
+      "h1": "Rogers Pass : Road Conditions, Live Webcams, Weather & Open/Closed Status",
+      "title": "Rogers Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
+      "description": "Real-time Rogers Pass road status (1,330 m, Trans-Canada Hwy 1), DriveBC live summit webcams, Glacier National Park weather, snow depth, avalanche alerts & opening report."
+    },
+    "searchKeywords": [
+      "Rogers Pass opening date",
+      "Rogers Pass is open",
+      "Rogers Pass road conditions",
+      "Rogers Pass road status",
+      "Rogers Pass pass status report",
+      "when does Rogers Pass open",
+      "Rogers Pass closed",
+      "Rogers Pass is closed",
+      "Rogers Pass is it open today",
+      "is Rogers Pass closed today",
+      "Rogers Pass webcam",
+      "Rogers Pass live webcam",
+      "Rogers Pass cameras",
+      "Rogers Pass summit camera",
+      "when does Rogers Pass close for winter",
+      "Rogers Pass map",
+      "is Rogers Pass open right now",
+      "Rogers Pass weather today",
+      "Rogers Pass snow",
+      "Rogers Pass snow depth",
+      "Rogers Pass snow conditions",
+      "Rogers Pass elevation",
+      "Rogers Pass open",
+      "Rogers Pass when will open",
+      "Rogers Pass passes open",
+      "Rogers Pass closures today",
+      "is Rogers Pass open",
+      "is Rogers Pass open in winter",
+      "Rogers Pass weather",
+      "Rogers Pass directions",
+      "Rogers Pass closing date",
+      "Rogers Pass",
+      "Rogers Pass forecast",
+      "Rogers Pass chain requirements",
+      "Rogers Pass traction tires",
+      "Rogers Pass highway",
+      "Rogers Pass milepost",
+      "how high is Rogers Pass",
+      "what highway is Rogers Pass",
+      "where is Rogers Pass",
+      "how to get to Rogers Pass",
+      "DriveBC Rogers Pass webcam",
+      "DriveBC Highway 1 Rogers Pass",
+      "Glacier National Park road conditions",
+      "Col Rogers Colombie-Britannique"
+    ]
   }
 ];
 
@@ -10186,6 +10652,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Valais & Aosta Valley' || passSlug === 'great-st-bernard-pass') return 'valais-aosta-valley';
   if (state === 'Bern & Valais' || passSlug === 'grimsel-pass') return 'bern-valais';
   if (state === 'Bern & Uri' || passSlug === 'susten-pass') return 'bern-uri';
+  if (state === 'British Columbia' || passSlug === 'rogers-pass') return 'british-columbia';
   if (state === 'Uri & Ticino' || state === 'Uri / Ticino' || passSlug === 'gotthard-pass') return 'uri-ticino';
   if (state === 'Graubünden' || state === 'Grisons' || passSlug === 'bernina-pass') return 'graubunden';
   if (state === 'Møre og Romsdal' || passSlug === 'trollstigen-pass') return 'more-og-romsdal';

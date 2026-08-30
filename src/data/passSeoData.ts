@@ -509,6 +509,22 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Gotthard Pass (Uri & Ticino, Switzerland)',
     crossLinkUrl: '/passes/switzerland/uri-ticino/gotthard-pass',
     crossLinkText: 'Discover other premier Swiss alpine crossings including the'
+  },
+  'rogers-pass': {
+    nearestTowns: [
+      { name: 'Revelstoke, British Columbia', distance: '70 km (43.5 miles)', direction: 'West via Trans-Canada Hwy 1' },
+      { name: 'Golden, British Columbia', distance: '80 km (49.7 miles)', direction: 'East via Trans-Canada Hwy 1' },
+      { name: 'Field, British Columbia (Yoho NP)', distance: '135 km (83.8 miles)', direction: 'East via Hwy 1' },
+      { name: 'Lake Louise, Alberta', distance: '165 km (102.5 miles)', direction: 'East via Hwy 1' },
+      { name: 'Banff, Alberta', distance: '220 km (136.7 miles)', direction: 'East via Hwy 1' },
+      { name: 'Calgary, Alberta', distance: '345 km (214.3 miles)', direction: 'East via Hwy 1' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round 365 Days (Intermittent 1-3 hr avalanche control closures during heavy winter storms)',
+    seasonalClosureDetail: 'Maintained and cleared 365 days a year jointly by Parks Canada and the BC Ministry of Transportation and Infrastructure (DriveBC). Features the world-renowned Operation PALFISH avalanche control program where the Royal Canadian Artillery fires 105mm Howitzers to trigger controlled snow slides, alongside massive reinforced concrete snow sheds protecting Trans-Canada Highway 1.',
+    aboutPass: 'Rogers Pass (1,330 m / 4,364 ft) is a world-famous Canadian mountain pass situated in the heart of Glacier National Park in the Selkirk Mountains of British Columbia. Carrying the Trans-Canada Highway 1 and the Canadian Pacific Railway, it is a National Historic Site of Canada known for its heroic transcontinental railway heritage, dramatic glacier-carved peaks like Mount Sir Donald, massive snow sheds, and receiving up to 15 meters (50 feet) of annual snowfall.',
+    crossLinkAnchor: 'North Cascades Highway Pass (Washington, USA)',
+    crossLinkUrl: '/passes/united-states/washington/north-cascades-pass',
+    crossLinkText: 'Compare Pacific Northwest & Western mountain highway conditions with'
   }
 };
 

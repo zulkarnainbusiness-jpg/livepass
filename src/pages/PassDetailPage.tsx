@@ -241,6 +241,8 @@ export const PassDetailPage: React.FC = () => {
     ? 'Grimsel Pass mountain road in the Swiss Alps'
     : (pass.slug === 'susten-pass')
     ? 'Susten Pass mountain road, Steingletscher glacier, and Scheiteltunnel in the Swiss Alps'
+    : (pass.slug === 'rogers-pass')
+    ? 'Rogers Pass Trans-Canada Highway through Glacier National Park in British Columbia Canada'
     : (pass.slug === 'great-st-bernard-pass')
     ? 'Great St Bernard Pass road and Alpine mountain landscape'
     : (pass.slug === 'col-du-galibier')
@@ -2178,6 +2180,8 @@ export const PassDetailPage: React.FC = () => {
                             : 'Route 21 (CH) / SS27 (IT) connects Martigny (Valais) to Aosta (Italy). The summit pass road is open June to mid-October. The Grand-Saint-Bernard Tunnel (1,918 m) remains open 24/7 year-round (toll road).')
                         : (pass.slug === 'bernina-pass')
                         ? 'Bernina Pass (Route 29) links the Upper Engadin (Pontresina & St. Moritz) with Val Poschiavo and Tirano (Italy). It is maintained open year-round by Tiefbauamt Graubünden with rotary snowplows. Summer offers pristine dry asphalt; winter delivers spectacular snow-walled corridors requiring winter-rated tires (3PMSF).'
+                        : (pass.slug === 'rogers-pass')
+                        ? 'Trans-Canada Highway 1 through Rogers Pass is maintained open 365 days a year across Glacier National Park. During winter storms, Parks Canada and the Canadian Armed Forces execute brief 1-to-3 hour avalanche control closures with 105mm artillery (Operation PALFISH).'
                         : (pass.slug === 'gotthard-pass')
                         ? 'Gotthard Pass road is open from late May to late October/November. It is a fantastic scenic bypass when the A2 Gotthard Road Tunnel experiences holiday traffic delays at Göschenen or Airolo.'
                         : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
@@ -2219,6 +2223,8 @@ export const PassDetailPage: React.FC = () => {
                             : 'At 2,469 m summit altitude, expect alpine temperatures 10–15°C colder than in Martigny or Aosta. High-altitude winds across the glacial border lake can be brisk; check MeteoSwiss reports and live Hospice webcams before departure.')
                         : (pass.slug === 'bernina-pass')
                         ? 'At 2,328 m (7,638 ft) summit elevation, expect ambient temperatures 10–14°C colder than in Tirano or Lake Como. Weather can shift rapidly across the Lago Bianco plateau; check real-time MeteoSwiss Passo del Bernina reports before starting the ascent.'
+                        : (pass.slug === 'rogers-pass')
+                        ? 'At 1,330 m (4,364 ft) summit elevation in Glacier National Park, Selkirk weather can shift within minutes. Rogers Pass receives over 14 m of snow annually; always monitor DriveBC weather stations and Avalanche Canada bulletins.'
                         : (pass.slug === 'gotthard-pass')
                         ? 'At 2,106 m (6,909 ft) summit elevation, expect temperatures 10–15°C colder than the valley floor in Lucerne or Lugano. High-altitude mountain winds and sudden cloud cover can reduce visibility across Lago della Piazza.'
                         : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
@@ -2260,6 +2266,8 @@ export const PassDetailPage: React.FC = () => {
                             : 'The open-air summit pass road is 100% toll-free in summer. The Grand-Saint-Bernard Tunnel (5.8 km at 1,918 m) is an international toll tunnel (~CHF 31 / €31 for a single passenger car transit). Bicycles and pedestrians are prohibited inside the tunnel.')
                         : (pass.slug === 'bernina-pass')
                         ? 'Swiss Hauptstrasse 29 (Route 29) is a 100% toll-free public cantonal highway; no Swiss motorway vignette is needed. If continuing south past Campocologno into Tirano (Italy), ensure valid passports and EU vehicle insurance green cards are on board.'
+                        : (pass.slug === 'rogers-pass')
+                        ? 'Trans-Canada Highway 1 through Rogers Pass is a 100% toll-free national highway for through travel. Motorists stopping for recreational activities in Glacier National Park require a Parks Canada National Park Pass. Mandatory BC winter tires apply Oct 1 to Apr 30.'
                         : (pass.slug === 'gotthard-pass')
                         ? 'The Gotthard Pass road (Hauptstrasse 2) and Tremola are 100% toll-free; no Swiss motorway vignette is required. However, entering the A2 motorway to access the Gotthard Tunnel requires the standard CHF 40 Swiss motorway vignette.'
                         : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')

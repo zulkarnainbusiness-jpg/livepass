@@ -207,6 +207,30 @@ export const hierarchyData: HierarchyContinent[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "canada",
+        "name": "Canada",
+        "code": "CAN",
+        "flagEmoji": "🇨🇦",
+        "states": [
+          {
+            "id": "british-columbia",
+            "name": "British Columbia",
+            "passes": [
+              {
+                "id": "rogers-pass",
+                "slug": "rogers-pass",
+                "name": "Rogers Pass",
+                "highway": "Trans-Canada Hwy (BC-1)",
+                "elevationFt": 4364,
+                "elevationM": 1330,
+                "status": "OPEN",
+                "image": "/rogers-pass.png"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

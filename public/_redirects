@@ -71,6 +71,8 @@
 /passes/switzerland/gotthard-pass /passes/switzerland/uri-ticino/gotthard-pass 301
 /passes/bernina-pass /passes/switzerland/graubunden/bernina-pass 301
 /passes/switzerland/bernina-pass /passes/switzerland/graubunden/bernina-pass 301
+/passes/rogers-pass /passes/canada/british-columbia/rogers-pass 301
+/passes/canada/rogers-pass /passes/canada/british-columbia/rogers-pass 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200
