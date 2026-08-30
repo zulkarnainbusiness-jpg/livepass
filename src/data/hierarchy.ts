@@ -236,6 +236,22 @@ export const hierarchyData: HierarchyContinent[] = [
                 "image": "/col-du-galibier.png"
               }
             ]
+          },
+          {
+            "id": "savoie",
+            "name": "Savoie",
+            "passes": [
+              {
+                "id": "col-de-l-iseran",
+                "slug": "col-de-l-iseran",
+                "name": "Col de l'Iseran Pass",
+                "highway": "D902",
+                "elevationFt": 9088,
+                "elevationM": 2770,
+                "status": "OPEN",
+                "image": "/col-de-l-iseran.png"
+              }
+            ]
           }
         ]
       },
@@ -298,6 +314,38 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 2429,
                 "status": "OPEN",
                 "image": "/furka-pass-switzerland-road-conditions.webp"
+              }
+            ]
+          },
+          {
+            "id": "uri-ticino",
+            "name": "Uri & Ticino",
+            "passes": [
+              {
+                "id": "gotthard-pass",
+                "slug": "gotthard-pass",
+                "name": "Gotthard Pass (Passo del San Gottardo)",
+                "highway": "Hauptstrasse 2 / Tremola",
+                "elevationFt": 6909,
+                "elevationM": 2106,
+                "status": "OPEN",
+                "image": "/gotthard-pass.png"
+              }
+            ]
+          },
+          {
+            "id": "graubunden",
+            "name": "Graubünden",
+            "passes": [
+              {
+                "id": "bernina-pass",
+                "slug": "bernina-pass",
+                "name": "Bernina Pass (Passo del Bernina)",
+                "highway": "Hauptstrasse 29 (H29)",
+                "elevationFt": 7638,
+                "elevationM": 2328,
+                "status": "OPEN",
+                "image": "/bernina-pass.png"
               }
             ]
           }

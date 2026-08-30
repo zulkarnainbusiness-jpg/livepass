@@ -224,6 +224,10 @@ export interface MountainPass {
     title: string;
     content: string;
   }[];
+  historicalSections?: {
+    title: string;
+    content: string;
+  }[];
   customSeo?: {
     title: string;
     description: string;

@@ -142,7 +142,7 @@ export const PassDetailPage: React.FC = () => {
   const [pageLang, setPageLang] = useState<'de' | 'fr' | 'it' | 'en'>(() => {
     if (targetSlug.toLowerCase().includes('grimsel')) return 'de';
     if (targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard')) return 'it';
-    if (targetSlug.toLowerCase().includes('galibier')) return 'fr';
+    if (targetSlug.toLowerCase().includes('galibier') || targetSlug.toLowerCase().includes('iseran')) return 'fr';
     return 'en';
   });
 
@@ -155,9 +155,11 @@ export const PassDetailPage: React.FC = () => {
   useEffect(() => {
     if (pass.slug === 'grimsel-pass') {
       setPageLang('de');
+    } else if (pass.slug === 'bernina-pass') {
+      setPageLang('de');
     } else if (pass.slug === 'great-st-bernard-pass') {
       setPageLang('it');
-    } else if (pass.slug === 'col-du-galibier') {
+    } else if (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') {
       setPageLang('fr');
     }
   }, [pass.slug]);
@@ -241,6 +243,8 @@ export const PassDetailPage: React.FC = () => {
     ? 'Great St Bernard Pass road and Alpine mountain landscape'
     : (pass.slug === 'col-du-galibier')
     ? 'Col du Galibier mountain pass road and summit monument in the French Alps'
+    : (pass.slug === 'col-de-l-iseran')
+    ? 'Col de l\'Iseran mountain pass road, summit sign 2770m, and chapel in the French Alps Savoie'
     : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
     ? 'Cartoon illustration of Chang La Pass sign and snowy mountain road in Ladakh'
     : pass.slug === 'trollstigen-pass'
@@ -400,6 +404,14 @@ export const PassDetailPage: React.FC = () => {
               <ChevronRight size={14} className="crumb-sep" />
               <Link to="/passes?state=Hautes-Alpes%20%26%20Savoie">Hautes-Alpes &amp; Savoie</Link>
             </>
+          ) : pass.slug === 'col-de-l-iseran' ? (
+            <>
+              <Link to="/passes">Passes</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to="/passes?country=France">France</Link>
+              <ChevronRight size={14} className="crumb-sep" />
+              <Link to="/passes?state=Savoie">Savoie</Link>
+            </>
           ) : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la') ? (
             <>
               <Link to="/passes?country=India">India</Link>
@@ -431,8 +443,8 @@ export const PassDetailPage: React.FC = () => {
           <span className="current-crumb">{pass.name}</span>
         </nav>
 
-        {/* Bilingual Language Switcher for Col du Galibier, Great St Bernard Pass & Grimsel Pass */}
-        {pass.slug === 'col-du-galibier' && (
+        {/* Bilingual Language Switcher for Col du Galibier, Col de l'Iseran, Great St Bernard Pass & Grimsel Pass */}
+        {(pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
             alignItems: 'center',
@@ -606,6 +618,158 @@ export const PassDetailPage: React.FC = () => {
           </div>
         )}
 
+        {pass.slug === 'bernina-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(14, 165, 233, 0.08) 0%, rgba(16, 185, 129, 0.06) 100%)',
+            border: '1px solid rgba(14, 165, 233, 0.25)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#0369A1' }}>
+              <Globe size={18} color="#0EA5E9" />
+              <span>
+                {pageLang === 'de'
+                  ? '🇨🇭🇩🇪 Offizielle deutsche Inhalte (Engadin / Tiefbauamt Graubünden)'
+                  : pageLang === 'it'
+                  ? '🇨🇭🇮🇹 Contenuto ufficiale in italiano (Val Poschiavo / Cantone dei Grigioni)'
+                  : '🇬🇧 English Mountain Pass Portal (Switch to German or Italian anytime)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+              <button
+                type="button"
+                onClick={() => setPageLang('en')}
+                style={{
+                  padding: '6px 12px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'en' ? '#0EA5E9' : 'transparent',
+                  color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇬🇧 English
+              </button>
+              <button
+                type="button"
+                onClick={() => setPageLang('de')}
+                style={{
+                  padding: '6px 12px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'de' ? '#0EA5E9' : 'transparent',
+                  color: pageLang === 'de' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇩🇪 Deutsch
+              </button>
+              <button
+                type="button"
+                onClick={() => setPageLang('it')}
+                style={{
+                  padding: '6px 12px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'it' ? '#0EA5E9' : 'transparent',
+                  color: pageLang === 'it' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇮🇹 Italiano
+              </button>
+            </div>
+          </div>
+        )}
+
+        {pass.slug === 'gotthard-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(220, 38, 38, 0.08) 0%, rgba(59, 130, 246, 0.06) 100%)',
+            border: '1px solid rgba(220, 38, 38, 0.25)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#991B1B' }}>
+              <Globe size={18} color="#DC2626" />
+              <span>
+                {pageLang === 'de'
+                  ? '🇨🇭🇩🇪 Offizielle deutsche Inhalte (Uri / Zentralschweiz)'
+                  : pageLang === 'it'
+                  ? '🇨🇭🇮🇹 Contenuto ufficiale in italiano (Ticino / San Gottardo)'
+                  : '🇬🇧 English Mountain Pass Portal (Switch to German or Italian anytime)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+              <button
+                type="button"
+                onClick={() => setPageLang('en')}
+                style={{
+                  padding: '6px 12px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'en' ? '#DC2626' : 'transparent',
+                  color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇬🇧 English
+              </button>
+              <button
+                type="button"
+                onClick={() => setPageLang('de')}
+                style={{
+                  padding: '6px 12px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'de' ? '#DC2626' : 'transparent',
+                  color: pageLang === 'de' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇩🇪 Deutsch
+              </button>
+              <button
+                type="button"
+                onClick={() => setPageLang('it')}
+                style={{
+                  padding: '6px 12px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'it' ? '#DC2626' : 'transparent',
+                  color: pageLang === 'it' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇮🇹 Italiano
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Pass Header & Action Bar */}
         <header className="pass-detail-header-row">
           <div className="pass-title-group">
@@ -615,7 +779,15 @@ export const PassDetailPage: React.FC = () => {
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 14px', borderRadius: '9999px', backgroundColor: 'rgba(56, 189, 248, 0.12)', color: 'var(--primary)', fontSize: '13px', fontWeight: '700', border: '1px solid rgba(56, 189, 248, 0.25)' }}>
                 <Clock size={14} />
                 <span>
-                  {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                  {pass.slug === 'bernina-pass' && pageLang === 'de'
+                    ? `Letzte Aktualisierung : ${pass.lastUpdated}`
+                    : pass.slug === 'bernina-pass' && pageLang === 'it'
+                    ? `Ultimo aggiornamento : ${pass.lastUpdated}`
+                    : pass.slug === 'gotthard-pass' && pageLang === 'de'
+                    ? `Letzte Aktualisierung : ${pass.lastUpdated}`
+                    : pass.slug === 'gotthard-pass' && pageLang === 'it'
+                    ? `Ultimo aggiornamento : ${pass.lastUpdated}`
+                    : pass.slug === 'grimsel-pass' && pageLang === 'de'
                     ? `Letzte Aktualisierung : ${pass.lastUpdated}`
                     : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
                     ? `Dernière mise à jour : ${pass.lastUpdated}` 
@@ -627,7 +799,15 @@ export const PassDetailPage: React.FC = () => {
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', borderRadius: '9999px', backgroundColor: 'var(--bg-surface-subtle)', color: 'var(--text-secondary)', fontSize: '13px', border: '1px solid var(--border-color)' }}>
                 <Mountain size={14} />
                 <span>
-                  {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                  {pass.slug === 'bernina-pass' && pageLang === 'de'
+                    ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                    : pass.slug === 'bernina-pass' && pageLang === 'it'
+                    ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                    : pass.slug === 'gotthard-pass' && pageLang === 'de'
+                    ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                    : pass.slug === 'gotthard-pass' && pageLang === 'it'
+                    ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                    : pass.slug === 'grimsel-pass' && pageLang === 'de'
                     ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                     : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
                     ? `Altitude : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)` 
@@ -640,7 +820,19 @@ export const PassDetailPage: React.FC = () => {
 
             <div className="title-and-star">
               <h1 className="pass-main-heading">
-                {pass.slug === 'grimsel-pass'
+                {pass.slug === 'bernina-pass'
+                  ? (pageLang === 'de'
+                      ? "Berninapass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten"
+                      : pageLang === 'it'
+                      ? "Passo del Bernina : Stato della Strada, Webcam Live, Meteo & Apertura"
+                      : "Bernina Pass: Live Webcam, Road Conditions, Opening Status & Weather")
+                  : pass.slug === 'gotthard-pass'
+                  ? (pageLang === 'de'
+                      ? "Gotthardpass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten"
+                      : pageLang === 'it'
+                      ? "Passo del San Gottardo : Stato della Strada, Webcam Live, Meteo & Apertura"
+                      : "Gotthard Pass: Live Webcam, Road Conditions, Opening Date & Status")
+                  : pass.slug === 'grimsel-pass'
                   ? (pageLang === 'de'
                       ? "Grimselpass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten"
                       : "Grimsel Pass: Live Webcam, Road Conditions, Opening Status & Weather")
@@ -671,9 +863,13 @@ export const PassDetailPage: React.FC = () => {
               <span>{pass.state ? `${pass.state}, ` : ''}{pass.country}</span>
               <span className="dot-sep">•</span>
               <span>
-                {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                {pass.slug === 'bernina-pass' && pageLang === 'de'
                   ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                  : pass.slug === 'col-du-galibier' && pageLang === 'fr'
+                  : pass.slug === 'bernina-pass' && pageLang === 'it'
+                  ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                  : pass.slug === 'grimsel-pass' && pageLang === 'de'
+                  ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                  : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr'
                   ? `Sommet : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                   : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                   ? `Sommità : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
@@ -681,7 +877,13 @@ export const PassDetailPage: React.FC = () => {
               </span>
             </div>
             <p className="pass-summary-paragraph">
-              {pass.slug === 'grimsel-pass'
+              {pass.slug === 'bernina-pass'
+                ? (pageLang === 'de'
+                    ? "Der Berninapass (2.328 m ü. M. / 7.638 ft) verbindet das Engadin (Pontresina / St. Moritz) im Kanton Graubünden mit dem Puschlav (Val Poschiavo) und Tirano in Italien über die Hauptstrasse 29. Als einer der wenigen Schweizer Hochgebirgspässe wird die Bernina-Strasse vom Tiefbauamt Graubünden ganzjährig 365 Tage offen gehalten. Parallel zur Passstrasse verläuft die weltberühmte UNESCO-Welterbestrecke der Rhätischen Bahn (Bernina Express) am Ufer des türkisfarbenen Lago Bianco."
+                    : pageLang === 'it'
+                    ? "Il Passo del Bernina (2.328 m / 7.638 ft) è un celebre valico alpino che collega l'Engadina (Pontresina / St. Moritz) nel Cantone dei Grigioni con la Val Poschiavo e Tirano in Italia tramite la Hauptstrasse 29. A differenza di molti altri passi svizzeri, la strada del Bernina è mantenuta aperta tutto l'anno (365 giorni) dagli spazzaneve del Cantone dei Grigioni. Lungo il lago Bianco si snoda anche la ferrovia retica del Bernina Express, patrimonio mondiale UNESCO."
+                    : "Bernina Pass (2,328 m / 7,638 ft) is a world-renowned alpine mountain pass connecting the Engadin valley (Pontresina / St. Moritz) in the Canton of Graubünden with Val Poschiavo and Tirano (Italy) along Hauptstrasse 29 (Route 29). Maintained open year-round by Tiefbauamt Graubünden rotary snowplows, the scenic pass skirts the turquoise glacial waters of Lago Bianco and parallels the UNESCO World Heritage Bernina Express railway line.")
+                : pass.slug === 'grimsel-pass'
                 ? (pageLang === 'de'
                     ? "Der Grimselpass (2.164 m ü. M. / 7.100 ft) ist ein weltberühmter Schweizer Hochgebirgspass an der Hauptstrasse 6, der das Haslital im Berner Oberland (Kanton Bern) mit dem Goms im Oberwallis (Kanton Wallis) verbindet. Geprägt von monumentalen Granitfelswänden, türkisfarbenen Stauseen (Grimselsee, Räterichsbodensee, Totensee) und dem historischen Grimsel Hospiz, bildet der Pass zusammen mit Furka und Susten die legendäre «Grossen Drei» Alpenpass-Runde."
                     : "Grimsel Pass (2,164 m / 7,100 ft) is a world-renowned Swiss high alpine pass on Route 6 connecting Haslital in the Bernese Oberland (Canton of Bern) with Goms in Upper Valais (Canton of Valais). Famous for its massive polished granite cliffs, turquoise hydropower reservoirs (Grimselsee, Räterichsbodensee, Totensee), and the historic Grimsel Hospiz, it forms the iconic Swiss 'Big 3' pass loop alongside Furka and Susten.")
@@ -689,9 +891,13 @@ export const PassDetailPage: React.FC = () => {
                 ? (pageLang === 'fr'
                     ? "Le Col du Galibier (2 642 m / 8 668 ft) est un col routier légendaire des Alpes françaises reliant Saint-Michel-de-Maurienne et Valloire en Savoie au Col du Lautaret et Briançon dans les Hautes-Alpes via la D902. Haut lieu historique du Tour de France et de la Route des Grandes Alpes, il offre un panorama grandiose sur les glaciers des Écrins et la Meije."
                     : "Col du Galibier (2,642 m / 8,668 ft) is a legendary high mountain pass in the French Alps connecting Saint-Michel-de-Maurienne & Valloire in Savoie with Col du Lautaret & Briançon in Hautes-Alpes along Route D902. A historic peak of the Tour de France and the Route des Grandes Alpes, it offers magnificent views of the Écrins glaciers and the Meije.")
+                : pass.slug === 'col-de-l-iseran'
+                ? (pageLang === 'fr'
+                    ? "Le Col de l'Iseran (2 770 m / 9 088 ft — 2 764 m IGN) est le plus haut col de montagne routier goudronné de toutes les Alpes et d'Europe, situé en Savoie sur la mythique Route des Grandes Alpes (D902). Reliant la Haute-Tarentaise (Val-d'Isère) à la Haute-Maurienne (Bonneval-sur-Arc), il traverse les paysages glaciaires spectaculaires du Parc National de la Vanoise."
+                    : "Col de l'Iseran (2,770 m / 9,088 ft — 2,764 m IGN) is the highest paved mountain pass in the Alps and all of Europe, located in Savoie along the legendary Route des Grandes Alpes (D902). Connecting Haute-Tarentaise (Val-d'Isère) with Haute-Maurienne (Bonneval-sur-Arc), it traverses spectacular glacial landscapes in the heart of Vanoise National Park.")
                 : pass.slug === 'great-st-bernard-pass'
                 ? (pageLang === 'it'
-                    ? "Il Colle del Gran San Bernardo (2.469 m / 8.100 ft) è un leggendario valico alpino che collega Martigny nel Cantone Vallese (Svizzera) con Saint-Rhémy-en-Bosses e la Valle d'Aosta (Italia) tramite la Route 21 / SS27. Famoso in tutto il mondo per il millenario Ospizio fondato nel 1049 da San Bernardo, i leggendari cani San Bernardo da soccorso e la storica traversata di Napoleone nel maggio 1800, la strada panoramica costeggia uno spettacolare lago glaciale di confine."
+                    ? "Il Colle del Gran San Bernardo (2.469 m / 8.100 ft) è un leggendario valico alpino che collega Martigny nel Cantone Vallese (Svizzera) con Saint-Rhémy-en-Bosses e la Valle d'Aosta (Italia) tramite la Route 21 / SS27. Famoso in tout le monde per il millenario Ospizio fondato nel 1049 da San Bernardo, i leggendari cani San Bernardo da soccorso e la storica traversata di Napoleone nel maggio 1800, la strada panoramica costeggia uno spettacolare lago glaciale di confine."
                     : "Great St Bernard Pass (2,469 m / 8,100 ft) is a legendary transalpine mountain pass connecting Martigny & Val d'Entremont in Valais (Switzerland) with Saint-Rhémy-en-Bosses & Aosta Valley (Italy) on Route 21 / SS27. Renowned for its millennium-old Hospice founded in 1049, iconic St. Bernard rescue dogs, and Napoleon's 1800 army crossing, the scenic road skirts an alpine border lake of extraordinary beauty.")
                 : pass.description}
             </p>
@@ -700,9 +906,13 @@ export const PassDetailPage: React.FC = () => {
           <div className="pass-header-actions">
             <button onClick={handleShare} className="btn btn-secondary action-pill-btn">
               <Share2 size={16} /> 
-              {pass.slug === 'grimsel-pass' && pageLang === 'de'
+              {pass.slug === 'bernina-pass' && pageLang === 'de'
                 ? 'Teilen'
-                : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                : pass.slug === 'bernina-pass' && pageLang === 'it'
+                ? 'Condividi'
+                : pass.slug === 'grimsel-pass' && pageLang === 'de'
+                ? 'Teilen'
+                : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                 ? 'Partager' 
                 : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                 ? 'Condividi'
@@ -711,16 +921,24 @@ export const PassDetailPage: React.FC = () => {
             <button onClick={toggleFavorite} className="btn btn-secondary action-pill-btn">
               <Heart size={16} fill={isFavorite ? '#EF4444' : 'none'} color={isFavorite ? '#EF4444' : 'currentColor'} />
               {isFavorite 
-                ? (pass.slug === 'grimsel-pass' && pageLang === 'de'
+                ? (pass.slug === 'bernina-pass' && pageLang === 'de'
                     ? 'Gemerkt'
-                    : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                    : pass.slug === 'bernina-pass' && pageLang === 'it'
+                    ? 'Preferito'
+                    : pass.slug === 'grimsel-pass' && pageLang === 'de'
+                    ? 'Gemerkt'
+                    : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                     ? 'Favori' 
                     : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                     ? 'Preferito'
                     : 'Favorited') 
-                : (pass.slug === 'grimsel-pass' && pageLang === 'de'
+                : (pass.slug === 'bernina-pass' && pageLang === 'de'
                     ? 'Pass merken'
-                    : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                    : pass.slug === 'bernina-pass' && pageLang === 'it'
+                    ? 'Aggiungi ai preferiti'
+                    : pass.slug === 'grimsel-pass' && pageLang === 'de'
+                    ? 'Pass merken'
+                    : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                     ? 'Ajouter aux favoris' 
                     : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                     ? 'Aggiungi ai preferiti'
@@ -1940,6 +2158,10 @@ export const PassDetailPage: React.FC = () => {
                         ? (pageLang === 'fr'
                             ? 'La D902 relie Saint-Michel-de-Maurienne et Valloire (Savoie) au Col du Lautaret et Briançon (Hautes-Alpes). La route est généralement ouverte de fin mai / début juin à fin octobre / début novembre. La chaussée asphaltée offre d\'excellentes conditions en été.'
                             : 'Route D902 links Saint-Michel-de-Maurienne & Valloire (Savoie) with Col du Lautaret & Briançon (Hautes-Alpes). Open typically late May to late October/early November. Paved asphalt is in pristine condition for summer travel.')
+                        : (pass.slug === 'col-de-l-iseran')
+                        ? (pageLang === 'fr'
+                            ? 'La D902 relie Bourg-Saint-Maurice et Val-d\'Isère (Haute-Tarentaise) à Bonneval-sur-Arc et Lanslebourg (Haute-Maurienne). Ouverte de mi-juin à fin octobre. Chaussée goudronnée de haute montagne en parfait état.'
+                            : 'Route D902 links Bourg-Saint-Maurice & Val-d\'Isère (Haute-Tarentaise) with Bonneval-sur-Arc & Lanslebourg (Haute-Maurienne). Open mid-June to late October. Pristine alpine paved roadway.')
                         : (pass.slug === 'great-st-bernard-pass')
                         ? (pageLang === 'it'
                             ? 'La SS27 (Italia) / Route 21 (Svizzera) collega Aosta a Martigny. La strada panoramica del colle sommitale è aperta da inizio giugno a metà ottobre. Il Traforo del Gran San Bernardo (1.918 m) è aperto 24h/24 tutto l\'anno con pedaggio.'
@@ -1958,7 +2180,7 @@ export const PassDetailPage: React.FC = () => {
                       <Mountain size={16} /> 
                       {pass.slug === 'grimsel-pass' && pageLang === 'de'
                         ? 'Wetter & Hochgebirgssicherheit'
-                        : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                         ? 'Météo Alti & Sécurité Altitude' 
                         : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                         ? 'Sicurezza & Meteo di Quota'
@@ -1973,6 +2195,10 @@ export const PassDetailPage: React.FC = () => {
                         ? (pageLang === 'fr'
                             ? 'À 2 642 m, la température est souvent de 10 à 15°C inférieure à celle des vallées de Valloire ou Briançon. Des rafales de vent dépassant 60 km/h et des orages d\'été soudains peuvent survenir. Consultez les bulletins Météo-France et les webcams avant l\'ascension.'
                             : 'At 2,642 m summit altitude, ambient temperature is typically 10–15°C colder than in the Maurienne or Briançon valleys. Gusts over 60 km/h and sudden storms can develop rapidly; check Météo-France bulletins and summit webcams before setting out.')
+                        : (pass.slug === 'col-de-l-iseran')
+                        ? (pageLang === 'fr'
+                            ? 'À 2 770 m au sommet de l\'Iseran, la température est souvent de 12 à 18°C inférieure à celle de Bourg-Saint-Maurice ou Modane. Des vents violents et des orages d\'altitude peuvent se lever rapidement. Consultez les bulletins Météo-France Savoie et les webcams avant de partir.'
+                            : 'At the 2,770 m Iseran summit, temperatures are typically 12–18°C cooler than in Bourg-Saint-Maurice or Modane. High alpine winds and rapid thunderstorm developments can occur; check Météo-France Savoie bulletins and summit webcams before setting out.')
                         : (pass.slug === 'great-st-bernard-pass')
                         ? (pageLang === 'it'
                             ? 'A 2.469 m s.l.m. il clima alpino è rigido con venti freschi sul lago di confine. Le temperature sono spesso inferiori di 10-15°C rispetto ad Aosta o Martigny. Controlla i bollettini MeteoSwiss / RAVdA e le webcam live prima di partire.'
@@ -1991,11 +2217,11 @@ export const PassDetailPage: React.FC = () => {
                       <ShieldCheck size={16} /> 
                       {pass.slug === 'grimsel-pass' && pageLang === 'de'
                         ? 'Mautfreiheit & Schweizer Strassenordnung'
-                        : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
-                        ? 'Péage & Réglementation Tunnel' 
+                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
+                        ? 'Péage & Réglementation Routière' 
                         : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                         ? 'Pedaggio & Regolamento Traforo'
-                        : 'Tolls & Tunnel Regulations'}
+                        : 'Tolls & Road Regulations'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
                       {(pass.slug === 'grimsel-pass')
@@ -2006,6 +2232,10 @@ export const PassDetailPage: React.FC = () => {
                         ? (pageLang === 'fr'
                             ? 'La D902 est une route départementale 100% gratuite (aucun péage ni vignette). Le Tunnel du Galibier (2 556 m) est régulé par feux tricolores alternés (gabarit max : 4,1 m haut, 2,4 m large, 3,5 t). Vélos et piétons sont interdits dans le tunnel et doivent passer par la crête.'
                             : 'Route D902 is a 100% free public departmental highway with no tolls. The historic Galibier Tunnel (2,556 m) features alternating traffic lights with max 4.1 m height, 2.4 m width, and 3.5 t limits. Bicycles and pedestrians are prohibited in the tunnel and must take the 2,642 m crest.')
+                        : (pass.slug === 'col-de-l-iseran')
+                        ? (pageLang === 'fr'
+                            ? 'La D902 franchissant le Col de l\'Iseran est une route départementale 100% gratuite (aucun péage ni vignette). La route est totalement déneigée et praticable en été pour tous gabarits autorisés. Application stricte de la Loi Montagne II du 1er novembre au 31 mars.'
+                            : 'Route D902 over Col de l\'Iseran is a 100% toll-free French public departmental road with no tolls or vignettes required. The route is fully cleared in summer; Loi Montagne II winter equipment applies Nov 1 to Mar 31.')
                         : (pass.slug === 'great-st-bernard-pass')
                         ? (pageLang === 'it'
                             ? 'La strada panoramica del valico sommitale è gratuita al 100% in estate (nessun pedaggio). Il Traforo del Gran San Bernardo (5,8 km a 1.918 m) è a pedaggio internazionale (~€31 / CHF 31 per una corsa semplice in automobile). Biciclette e pedoni sono vietati nel traforo.'

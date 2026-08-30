@@ -42,7 +42,12 @@ const LegacyPassRedirect: React.FC = () => {
          (clean === 'col-du-galibier' && p.slug === 'col-du-galibier') ||
          (clean === 'great-st-bernard' && p.slug === 'great-st-bernard-pass') ||
          (clean === 'grand-saint-bernard' && p.slug === 'great-st-bernard-pass') ||
-         (clean === 'col-du-grand-saint-bernard' && p.slug === 'great-st-bernard-pass')
+         (clean === 'col-du-grand-saint-bernard' && p.slug === 'great-st-bernard-pass') ||
+         (clean === 'gotthard' && p.slug === 'gotthard-pass') ||
+         (clean === 'gotthardpass' && p.slug === 'gotthard-pass') ||
+         (clean === 'passo-del-san-gottardo' && p.slug === 'gotthard-pass') ||
+         (clean === 'san-gottardo' && p.slug === 'gotthard-pass') ||
+         (clean === 'st-gotthard-pass' && p.slug === 'gotthard-pass')
   );
 
   if (targetPass) {
@@ -75,12 +80,20 @@ export const App: React.FC = () => {
             <Route path="/passes/:slug" element={<LegacyPassRedirect />} />
             <Route path="/col-du-galibier" element={<Navigate to="/passes/france/hautes-alpes-savoie/col-du-galibier" replace />} />
             <Route path="/galibier" element={<Navigate to="/passes/france/hautes-alpes-savoie/col-du-galibier" replace />} />
+            <Route path="/col-de-l-iseran" element={<Navigate to="/passes/france/savoie/col-de-l-iseran" replace />} />
+            <Route path="/col-de-liseran" element={<Navigate to="/passes/france/savoie/col-de-l-iseran" replace />} />
+            <Route path="/iseran" element={<Navigate to="/passes/france/savoie/col-de-l-iseran" replace />} />
             <Route path="/great-st-bernard-pass" element={<Navigate to="/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass" replace />} />
             <Route path="/col-du-grand-saint-bernard" element={<Navigate to="/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass" replace />} />
             <Route path="/grand-saint-bernard" element={<Navigate to="/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass" replace />} />
             <Route path="/grimsel-pass" element={<Navigate to="/passes/switzerland/bern-valais/grimsel-pass" replace />} />
             <Route path="/grimselpass" element={<Navigate to="/passes/switzerland/bern-valais/grimsel-pass" replace />} />
             <Route path="/grimsel" element={<Navigate to="/passes/switzerland/bern-valais/grimsel-pass" replace />} />
+            <Route path="/gotthard-pass" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />
+            <Route path="/gotthardpass" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />
+            <Route path="/gotthard" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />
+            <Route path="/passo-del-san-gottardo" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />
+            <Route path="/san-gottardo" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />
             
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/seo-research" element={<SeoResearchPage />} />

@@ -59,10 +59,16 @@
 /passes/united-states/siskiyou-summit /passes/united-states/oregon/siskiyou-summit 301
 /passes/col-du-galibier /passes/france/hautes-alpes-savoie/col-du-galibier 301
 /passes/france/col-du-galibier /passes/france/hautes-alpes-savoie/col-du-galibier 301
+/passes/col-de-l-iseran /passes/france/savoie/col-de-l-iseran 301
+/passes/france/col-de-l-iseran /passes/france/savoie/col-de-l-iseran 301
 /passes/great-st-bernard-pass /passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass 301
 /passes/switzerland-italy/great-st-bernard-pass /passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass 301
 /passes/grimsel-pass /passes/switzerland/bern-valais/grimsel-pass 301
 /passes/switzerland/grimsel-pass /passes/switzerland/bern-valais/grimsel-pass 301
+/passes/gotthard-pass /passes/switzerland/uri-ticino/gotthard-pass 301
+/passes/switzerland/gotthard-pass /passes/switzerland/uri-ticino/gotthard-pass 301
+/passes/bernina-pass /passes/switzerland/graubunden/bernina-pass 301
+/passes/switzerland/bernina-pass /passes/switzerland/graubunden/bernina-pass 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

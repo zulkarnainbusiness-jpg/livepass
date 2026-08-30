@@ -415,6 +415,22 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkUrl: '/passes/italy/south-tyrol-lombardy/stelvio-pass',
     crossLinkText: 'Compare French Alpine high mountain routes with famous Italian alpine passes like the'
   },
+  'col-de-l-iseran': {
+    nearestTowns: [
+      { name: 'Val-d\'Isère, Savoie (Haute-Tarentaise)', distance: '16 km (10 miles)', direction: 'Nord-Ouest via D902' },
+      { name: 'Bonneval-sur-Arc, Savoie (Haute-Maurienne)', distance: '12.9 km (8 miles)', direction: 'Sud via D902' },
+      { name: 'Bourg-Saint-Maurice, Savoie', distance: '48 km (30 miles)', direction: 'Nord-Ouest via D902' },
+      { name: 'Lanslebourg-Mont-Cenis, Savoie', distance: '32.9 km (20 miles)', direction: 'Sud-Ouest via D902 & D1006' },
+      { name: 'Tignes, Savoie', distance: '28 km (17 miles)', direction: 'Nord-Ouest via D902 & D87A' },
+      { name: 'Modane, Savoie (Tunnel du Fréjus)', distance: '56 km (35 miles)', direction: 'Sud-Ouest via D902 & D1006' }
+    ],
+    seasonalClosureWindow: 'Mi-juin à fin octobre / début novembre (Fermeture hivernale annuelle)',
+    seasonalClosureDetail: 'Exploité et entretenu par le Conseil Départemental de la Savoie (Savoie-Route). Le plus haut col des Alpes est fermé de novembre à début juin en raison de congères géantes de 8 à 10 mètres et de risques majeurs d\'avalanches. Travaux massifs de déneigement par fraises rotatives géantes en mai pour réouverture estivale sécurisée.',
+    aboutPass: 'Le Col de l\'Iseran (2 770 m / 9 088 ft — 2 764 m IGN) est le plus haut col routier goudronné de toutes les Alpes et d\'Europe. Situé au cœur du Parc National de la Vanoise sur la Route des Grandes Alpes (D902), il relie la Haute-Tarentaise (Val-d\'Isère) à la Haute-Maurienne (Bonneval-sur-Arc). Inauguré en 1937 par le président Albert Lebrun et sanctifié par la chapelle Notre-Dame de Toute Prudence, l\'Iseran est un mythe absolu du Tour de France où s\'est notamment forgée la victoire finale d\'Egan Bernal en 2019.',
+    crossLinkAnchor: 'Col du Galibier (2 642 m, Savoie & Hautes-Alpes)',
+    crossLinkUrl: '/passes/france/hautes-alpes-savoie/col-du-galibier',
+    crossLinkText: 'Comparez le toit des Alpes avec l’autre géant mythique de la Savoie et du Tour de France :'
+  },
   'great-st-bernard-pass': {
     nearestTowns: [
       { name: 'Saint-Rhémy-en-Bosses, Valle d\'Aosta (IT)', distance: '14.5 km (9 miglia)', direction: 'Sud via SS27' },
@@ -445,5 +461,38 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Furkapass (Furka Pass, Switzerland)',
     crossLinkUrl: '/passes/switzerland/valais-uri/furka-pass',
     crossLinkText: 'Kombinieren Sie Ihre Alpenfahrt mit dem benachbarten'
+  },
+  'gotthard-pass': {
+    nearestTowns: [
+      { name: 'Hospental, Uri (Urserental)', distance: '11.2 km (7.0 miles)', direction: 'North via Hauptstrasse 2' },
+      { name: 'Andermatt, Uri', distance: '14.0 km (8.7 miles)', direction: 'North via Hauptstrasse 2' },
+      { name: 'Airolo, Ticino (Val Bedretto)', distance: '12.8 km (8.0 miles)', direction: 'South via H2 / Tremola' },
+      { name: 'Göschenen, Uri (A2 North Portal)', distance: '19.0 km (11.8 miles)', direction: 'North via Route 2' },
+      { name: 'Bellinzona, Ticino', distance: '68 km (42.2 miles)', direction: 'South via A2 / Route 2' },
+      { name: 'Lucerne (Luzern), Switzerland', distance: '85 km (52.8 miles)', direction: 'North via A2' }
+    ],
+    seasonalClosureWindow: 'Late May to Late October / Early November (Winter Closure November to May)',
+    seasonalClosureDetail: 'Maintained jointly by the Baudirektion Kanton Uri (Tiefbauamt) and Dipartimento del Territorio Repubblica e Cantone Ticino. The high mountain pass road and Tremola close annually during winter due to heavy snow accumulation exceeding 8 meters (26 ft) and avalanche risk. Year-round transalpine traffic is maintained 24/7 via the 16.9 km A2 Gotthard Road Tunnel.',
+    aboutPass: 'Gotthard Pass (2,106 m / 6,909 ft), known as Passo del San Gottardo in Italian and Gotthardpass in German, is the historic heart of Switzerland and the most vital north-south alpine crossroads in Europe. Carrying Hauptstrasse 2 across the Saint-Gotthard Massif between Hospental/Andermatt (Uri) and Airolo (Ticino), it features the world-renowned historic Tremola cobblestone road with 24 hairpin switchbacks. As the continental watershed separating the Rhine (North Sea) and Ticino/Po (Mediterranean) drainage basins, Gotthard Pass offers breathtaking alpine landscapes, the 13th-century Gotthard Hospice, alpine lakes, and an essential toll-free summer alternative to the A2 motorway tunnel.',
+    crossLinkAnchor: 'Furka Pass (Valais / Uri, Switzerland)',
+    crossLinkUrl: '/passes/switzerland/valais-uri/furka-pass',
+    crossLinkText: 'Explore adjacent Central Swiss Alpine passes including the'
+  },
+  'bernina-pass': {
+    nearestTowns: [
+      { name: 'Pontresina, Graubünden (Engadin)', distance: '17.5 km (10.9 miles)', direction: 'Northwest via Route 29' },
+      { name: 'Poschiavo, Graubünden (Val Poschiavo)', distance: '18.2 km (11.3 miles)', direction: 'South via Route 29' },
+      { name: 'St. Moritz, Graubünden', distance: '23.0 km (14.3 miles)', direction: 'Northwest via Route 29 / 27' },
+      { name: 'Samedan, Graubünden (Engadin Airport)', distance: '22.0 km (13.7 miles)', direction: 'Northwest via Route 29 / 27' },
+      { name: 'Tirano, Lombardy (Italy)', distance: '33.5 km (20.8 miles)', direction: 'South via Route 29 / SS38' },
+      { name: 'Livigno, Italy (via Forcola di Livigno)', distance: '21.0 km (13.0 miles)', direction: 'East via Route 29 & Forcola' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round 365 Days (Continuous Cantonal Maintenance)',
+    seasonalClosureDetail: 'Maintained and cleared 365 days a year by the Tiefbauamt des Kantons Graubünden (Strassen Graubünden). Unlike seasonal Swiss high passes, Bernina Pass (2,328 m) remains open during winter using high-capacity rotary snow blowers (Schneefräsen) and constant salting. Brief temporary closures occur only during acute blizzard events or controlled avalanche safety blasting.',
+    aboutPass: 'Bernina Pass (2,328 m / 7,638 ft), known as Passo del Bernina in Italian, Berninapass in German, and Pass dal Bernina in Romansh, is a world-famous alpine mountain pass in the Canton of Graubünden connecting the Upper Engadin valley with Val Poschiavo and Tirano in Italy. Carrying Hauptstrasse 29 along the shores of Lago Bianco, it serves as the continental divide separating the Danube/Black Sea basin from the Po/Adriatic Sea basin. It is celebrated globally for its year-round road accessibility, breathtaking views of Piz Bernina (4,049 m) and the Palü Glacier, and the adjacent UNESCO World Heritage Bernina Railway route.',
+    crossLinkAnchor: 'Gotthard Pass (Uri & Ticino, Switzerland)',
+    crossLinkUrl: '/passes/switzerland/uri-ticino/gotthard-pass',
+    crossLinkText: 'Discover other premier Swiss alpine crossings including the'
   }
 };
+
