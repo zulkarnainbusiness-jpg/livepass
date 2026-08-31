@@ -525,6 +525,23 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'North Cascades Highway Pass (Washington, USA)',
     crossLinkUrl: '/passes/united-states/washington/north-cascades-pass',
     crossLinkText: 'Compare Pacific Northwest & Western mountain highway conditions with'
+  },
+  'simplon-pass': {
+    nearestTowns: [
+      { name: 'Brig-Glis, Valais (Upper Rhone Valley)', distance: '11.5 km (7.1 miles)', direction: 'Northwest via Nationalstrasse A9' },
+      { name: 'Simplon Dorf, Valais (Alpine Village)', distance: '9.0 km (5.6 miles)', direction: 'South via Nationalstrasse A9' },
+      { name: 'Gondo, Valais (Swiss-Italian Border)', distance: '18.5 km (11.5 miles)', direction: 'South via Nationalstrasse A9' },
+      { name: 'Domodossola, Piedmont (Italy)', distance: '38.0 km (23.6 miles)', direction: 'South via A9 / SS33' },
+      { name: 'Visp, Valais (Matterhorn Gateway)', distance: '21.0 km (13.0 miles)', direction: 'West via A9 / Route 9' },
+      { name: 'Milan (Milano), Italy', distance: '160 km (99.4 miles)', direction: 'Southeast via SS33 / A8' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round 365 Days (Winter Maintenance & Avalanche Protection)',
+    seasonalClosureDetail: 'Maintained and kept open 365 days a year by the Federal Roads Office (ASTRA / FEDRO) and the Canton of Valais (Dienststelle für Mobilität). Features over 30 modern reinforced avalanche galleries, snow sheds, and continuous rotary snowplow teams. Short temporary closures occur only during severe alpine blizzards or controlled safety blasting. The BLS car shuttle train (Autoverlad Brig–Iselle) operates as a continuous all-weather backup.',
+    aboutPass: 'Simplon Pass (2,005 m / 6,578 ft), known as Simplonpass in German and Passo del Sempione in Italian, is a historic and strategic transalpine highway crossing connecting the Upper Valais in Switzerland with the Piedmont region of Northern Italy. First transformed into a modern engineered road by Napoleon Bonaparte between 1801 and 1805, the pass carries National Road A9 and European route E62. Renowned as one of the few high alpine passes open year-round, it features the monumental Ganter Bridge (Ganterbrücke), the historic 19th-century Simplon Hospice, the World War II Stone Eagle monument (Steinadler), and dramatic panoramic vistas of the 3,553 m Monte Leone and the Lepontine Alps.',
+    crossLinkAnchor: 'Great St Bernard Pass (Valais & Aosta Valley)',
+    crossLinkUrl: '/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass',
+    crossLinkText: 'Compare Simplon Pass road conditions with other premier Swiss-Italian alpine routes like the'
   }
 };
+
 

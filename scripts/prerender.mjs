@@ -459,7 +459,7 @@ let cleanBaseTemplate = baseTemplate
 function buildHtmlPage({ title, description, canonicalUrl, ogImage, jsonLd, bodyContent, noIndex = false }) {
   const absoluteOgImage = ogImage
     ? (ogImage.startsWith('http') ? ogImage : `${DOMAIN}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`)
-    : `${DOMAIN}/hero-bg.png`;
+    : `${DOMAIN}/hero-bg.webp`;
 
   const headElements = `
     <title>${escapeHtml(title)}</title>
@@ -630,6 +630,19 @@ passesData.forEach(pass => {
     duplicatePaths.add('/passes/norway/trollstigen');
     duplicatePaths.add('/passes/norway/trollstigen-pass');
     duplicatePaths.add('/passes/norway/more-og-romsdal/trollstigen');
+  }
+  if (pass.slug === 'simplon-pass') {
+    duplicatePaths.add('/simplon');
+    duplicatePaths.add('/simplonpass');
+    duplicatePaths.add('/simplon-pass');
+    duplicatePaths.add('/passo-del-sempione');
+    duplicatePaths.add('/col-du-simplon');
+    duplicatePaths.add('/passes/simplon');
+    duplicatePaths.add('/passes/simplonpass');
+    duplicatePaths.add('/passes/simplon-pass');
+    duplicatePaths.add('/passes/switzerland/simplon');
+    duplicatePaths.add('/passes/switzerland/simplonpass');
+    duplicatePaths.add('/passes/switzerland/simplon-pass');
   }
 
   duplicatePaths.forEach(dupPath => {

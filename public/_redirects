@@ -73,6 +73,17 @@
 /passes/switzerland/bernina-pass /passes/switzerland/graubunden/bernina-pass 301
 /passes/rogers-pass /passes/canada/british-columbia/rogers-pass 301
 /passes/canada/rogers-pass /passes/canada/british-columbia/rogers-pass 301
+/passes/simplon-pass /passes/switzerland/valais/simplon-pass 301
+/passes/switzerland/simplon-pass /passes/switzerland/valais/simplon-pass 301
+/simplon /passes/switzerland/valais/simplon-pass 301
+/simplonpass /passes/switzerland/valais/simplon-pass 301
+/simplon-pass /passes/switzerland/valais/simplon-pass 301
+/passo-del-sempione /passes/switzerland/valais/simplon-pass 301
+/col-du-simplon /passes/switzerland/valais/simplon-pass 301
+/passes/simplon /passes/switzerland/valais/simplon-pass 301
+/passes/simplonpass /passes/switzerland/valais/simplon-pass 301
+/passes/switzerland/simplon /passes/switzerland/valais/simplon-pass 301
+/passes/switzerland/simplonpass /passes/switzerland/valais/simplon-pass 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

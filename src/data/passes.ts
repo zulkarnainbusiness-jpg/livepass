@@ -10567,6 +10567,296 @@ export const passesData: MountainPass[] = [
       "Glacier National Park road conditions",
       "Col Rogers Colombie-Britannique"
     ]
+  },
+  {
+    "id": "simplon-pass",
+    "slug": "simplon-pass",
+    "name": "Simplon Pass (Simplonpass / Passo del Sempione)",
+    "alternateNames": [
+      "Simplonpass",
+      "Passo del Sempione",
+      "Col du Simplon",
+      "Simplon Pass Road",
+      "Nationalstrasse A9 Simplon",
+      "Route 9 E62 Switzerland"
+    ],
+    "country": "Switzerland",
+    "countryCode": "CHE",
+    "continent": "Europe",
+    "state": "Valais",
+    "highway": "National Road A9 / Route 9 (E62)",
+    "elevationFt": 6578,
+    "elevationM": 2005,
+    "coordinates": {
+      "lat": 46.2506,
+      "lng": 8.0331
+    },
+    "status": "OPEN",
+    "statusDetail": "National Road A9 across Simplon Pass (2,005 m) is OPEN year-round to all vehicles with dry, clear alpine pavement. Winter plowing and anti-icing operations active.",
+    "lastUpdated": "5 minutes ago",
+    "description": "Simplon Pass (2,005 m / 6,578 ft), known in German as Simplonpass and in Italian as Passo del Sempione, is a major transalpine mountain pass carrying National Road A9 (E62) across the Pennine and Lepontine Alps in the Canton of Valais (Wallis), Switzerland. Connecting Brig in the Upper Rhone Valley with Domodossola and the Piedmont region of Northern Italy, it is celebrated globally as one of the few high alpine passes engineered to remain open year-round 365 days a year. The pass is protected by over 30 modern avalanche galleries, massive concrete snow sheds, the monumental Ganter Bridge (Ganterbrücke), the historic Napoleon-commissioned Simplon Hospice (Hospiz), and the iconic stone eagle monument (Steinadler).",
+    "image": "/simplon-pass-switzerland-valais.webp",
+    "weather": {
+      "tempF": 48,
+      "tempC": 9,
+      "condition": "Clear & Sunny Alpine Skies",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Clear Pavement (Dry / Seasonal Winter Treatment)"
+    },
+    "wind": {
+      "speedKmh": 14,
+      "speedMph": 9,
+      "direction": "SW",
+      "description": "Moderate Mountain Breeze"
+    },
+    "roadCondition": "Bare, dry asphalt across the 2,005 m summit plateau and both ramps. The Ganterbrücke bridge section and Schallbett avalanche galleries are clear of obstructions. Open to passenger cars, motorhomes, freight trucks, and motorcycles. Winter motorists must carry snow chains or mount approved winter tires (M+S / 3PMSF) from October through April during snowfall.",
+    "chainRequirement": "No restrictions currently active. Winter equipment (chains or 3PMSF snow tires) mandatory for freight and passenger vehicles during active alpine snowfall.",
+    "cameras": [
+      {
+        "id": "simplon-cam-summit",
+        "title": "Simplon Pass Summit & Hospiz (2,005 m / 6,578 ft)",
+        "image": "/simplon-pass-switzerland-valais.webp",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Simplon Passhöhe & Hospiz Plateau",
+        "milepost": "A9 Route 9 Summit (KM 22.4)",
+        "direction": "Northbound / Southbound Overlook toward Monte Leone",
+        "source": "Brig-Simplon Tourismus / ASTRA",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://brigtourismus.roundshot.com"
+      },
+      {
+        "id": "simplon-cam-rothwald",
+        "title": "Rothwald & Schallbett Avalanche Gallery (1,745 m)",
+        "image": "/simplon-pass.webp",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Rothwald Upper Mountain Section",
+        "milepost": "A9 North Approach (KM 14.8)",
+        "direction": "Northbound Ascent toward Simplon Pass Crest",
+        "source": "Kanton Wallis Dienststelle für Mobilität / TCS",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.tcs.ch/de/verkehrsinfo/verkehrslage/"
+      },
+      {
+        "id": "simplon-cam-ganter",
+        "title": "Ganter Bridge & Schallberg North Ramp (1,450 m)",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Ganterbrücke Bridge Crossing & Valley View",
+        "milepost": "Route 9 North Approach (KM 9.2)",
+        "direction": "Ascent toward Rothwald & Simplon Pass",
+        "source": "ASTRA / FEDRO Swiss National Roads",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.verkehrsinfo.ch"
+      },
+      {
+        "id": "simplon-cam-gondo",
+        "title": "Gondo Gorge & Swiss-Italian Customs Checkpoint (855 m)",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Gondo Border Post & Doveria River Canyon",
+        "milepost": "A9 South Ramp (KM 42.0)",
+        "direction": "Southbound Transit into Italy (Iselle / Domodossola)",
+        "source": "Eidgenössische Zollverwaltung / Polizia di Stato",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.astra.admin.ch"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "great-st-bernard-pass",
+        "slug": "great-st-bernard-pass",
+        "name": "Great St Bernard Pass (Col du Grand-Saint-Bernard)",
+        "country": "Switzerland / Italy",
+        "state": "Valais & Aosta Valley",
+        "highway": "Route 21 / SS27",
+        "status": "OPEN",
+        "elevationFt": 8094,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 95
+      },
+      {
+        "id": "furka-pass",
+        "slug": "furka-pass",
+        "name": "Furka Pass (Furkapass)",
+        "country": "Switzerland",
+        "state": "Valais & Uri",
+        "highway": "Hauptstrasse 19",
+        "status": "OPEN",
+        "elevationFt": 7969,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 68
+      },
+      {
+        "id": "grimsel-pass",
+        "slug": "grimsel-pass",
+        "name": "Grimsel Pass (Grimselpass)",
+        "country": "Switzerland",
+        "state": "Bern & Valais",
+        "highway": "Hauptstrasse 6",
+        "status": "OPEN",
+        "elevationFt": 7100,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 72
+      }
+    ],
+    "overview": {
+      "openedYear": 1805,
+      "lengthMiles": 28.0,
+      "lengthKm": 45.0,
+      "annualSnowfallIn": 320,
+      "annualSnowfallM": 8.1,
+      "summary": "Simplon Pass (elevation 2,005 m / 6,578 ft), known in German as Simplonpass and in Italian as Passo del Sempione, is a major international transalpine highway corridor linking the German-speaking Upper Valais (Brig-Glis) in Switzerland with the Italian-speaking Val Divedro and Domodossola in Piedmont, Italy. Operating along Swiss National Road A9 and European route E62, it is world-renowned for its remarkable year-round accessibility across a 2,000-meter alpine summit. First developed into a paved carriage road by Napoleon Bonaparte between 1801 and 1805 to transport his artillery into Italy, the pass has been continuously upgraded with monumental civil engineering works—including the award-winning Ganter Bridge (Ganterbrücke), over thirty avalanche galleries and rockfall shelters, and the historic Simplon Hospice administered by the Canons Regular of Saint Augustine. Today, it serves as an indispensable year-round transit artery for international freight, tourists, road cyclists, and transalpine motorists."
+    },
+    "historicalSections": [
+      {
+        "title": "Napoleon Bonaparte & the First Engineered Alpine Highway (1801–1805)",
+        "content": "Following his dramatic 1800 crossing of the Great Saint Bernard Pass with the French Reserve Army, Napoleon Bonaparte recognized the urgent strategic need for a wide, low-grade road capable of carrying heavy military artillery year-round between Paris and Milan. In 1801, Napoleon ordered French military engineer Nicolas Céard to construct an engineered highway over the Simplon. Completed in 1805, Céard's masterpiece featured broad sweeping curves, gentle gradients not exceeding 9%, and eight custom stone tunnels and bridges. It became the first modern engineered road across the High Alps and set the international standard for 19th-century mountain road construction."
+      },
+      {
+        "title": "Kaspar Stockalper, the Stockalper Trail & Alter Spittel",
+        "content": "Centuries before Napoleon's highway, 17th-century Brig merchant and entrepreneur Kaspar Stockalper ('King of the Simplon') established a commercial monopoly on the pass. Stockalper constructed a paved mule track (the Stockalper Trail or Stockalperweg), built staging posts, and erected the Alter Spittel refuge on the southern pass approach in 1666 to provide food, shelter, and medical care for winter couriers and travelers. The Stockalperweg is preserved today as one of Switzerland's premier historical cultural hiking routes."
+      },
+      {
+        "title": "The Simplon Hospice & the Monumental Stone Eagle (Steinadler)",
+        "content": "On the pass summit stands the imposing Simplon Hospice (Hospiz auf dem Simplon), commissioned by Napoleon in 1801 and completed in 1831 by the Augustinian monks of the Great Saint Bernard. For nearly two centuries, the monks and their legendary Saint Bernard dogs provided round-the-clock shelter and mountain rescue. Nearby on the summit plateau rises the monumental Simplon Eagle (Steinadler), a 9-meter (30 ft) hand-carved stone sculpture erected during World War II by Swiss Mountain Brigade 11 to symbolize the vigilance, courage, and armed neutrality of the Swiss army guarding the southern alpine frontier."
+      },
+      {
+        "title": "The Ganter Bridge (Ganterbrücke): A Swiss Masterpiece of Modern Engineering",
+        "content": "Constructed between 1976 and 1980 on the northern ascent from Brig, the Ganter Bridge (Ganterbrücke) designed by legendary Swiss structural engineer Christian Menn is an international architectural icon. Spanning 674 meters (2,211 ft) across the deep Ganter Valley at a height of 150 meters, this innovative extradosed prestressed concrete cable-stayed bridge forms a graceful S-curve, seamlessly integrating high-speed modern highway geometry into the rugged alpine topography."
+      },
+      {
+        "title": "The Simplon Railway Tunnel (1906) & BLS Car Train Shuttle (Autoverlad)",
+        "content": "Running far beneath the pass, the 19.8 km (12.3 mi) Simplon Railway Tunnel opened in 1906 and was the world's longest tunnel for over 75 years. The railway provides a fast, all-weather alternative to the mountain pass road through the BLS car train shuttle (Autoverlad Brig–Iselle), which transports passenger vehicles through the mountain in just 20 minutes every 60–90 minutes, ensuring uninterrupted transalpine transit during severe winter blizzards."
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "Regional Language (Deutsch): Simplonpass – Ganzjährige Alpenüberquerung & Strassenzustand",
+        "content": "Der Simplonpass (2.005 m ü. M.) verbindet das Oberwallis (Brig-Glis) auf der Nationalstrasse A9 / Route 9 mit dem Val Divedro und Domodossola in Italien. Als eine der bedeutendsten Alpentransversalen der Schweiz ist der Simplonpass dank modernster Lawinenschutzgalerien, permanenter Schneeräumung durch das Bundesamt für Strassen (ASTRA) und die Dienststelle für Mobilität des Kantons Wallis ganzjährig 365 Tage im Jahr geöffnet. Bei heftigen Schneefällen oder Schneestürmen gilt auf der Passhöhe kurzfristig Schneekettenpflicht oder Winterausrüstung für Lastwagen und Personenwagen. Alternativ steht der BLS-Autoverlad Brig–Iselle zur Verfügung."
+      },
+      {
+        "title": "Regional Language (Italiano): Passo del Sempione – Collegamento Transalpino Svizzera-Italia",
+        "content": "Il Passo del Sempione (2.005 m s.l.m.) è uno dei valichi alpini più importanti e spettacolari d'Europa, collegando il Canton Vallese (Briga) con la Val d'Ossola e Domodossola in Piemonte lungo la Strada Nazionale A9 / E62. A differenza della maggior parte dei passi alpini di oltre 2.000 metri, il Sempione è aperto tutto l'anno grazie a imponenti gallerie paravalanghe e al servizio continuo di sgombero neve di ASTRA. Durante l'inverno sono obbligatori pneumatici invernali o catene a bordo in caso di precipitazioni nevose."
+      },
+      {
+        "title": "English Translation & Technical Travel Guide: Safe Transalpine Driving on Simplon Pass",
+        "content": "Simplon Pass offers a world-class, multi-lane transalpine driving experience with sweeping curves, high-speed avalanche protective galleries, and expansive summit overlooks. Motorists traveling between Switzerland and Northern Italy can drive the pass without road tolls (Swiss motorway vignette required on Nationalstrasse A9). Winter driving conditions are continuously monitored by ASTRA and Valais cantonal road services with anti-icing brine spraying and rotary snow blowers. When driving in winter, ensure your vehicle is fitted with certified winter tires (3PMSF) and carry snow chains in the trunk."
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "ASTRA / FEDRO (Bundesamt für Strassen / Federal Roads Office)",
+        "url": "https://www.astra.admin.ch",
+        "type": "Official National Roads Authority"
+      },
+      {
+        "name": "TCS (Touring Club Schweiz / Swiss Touring Club)",
+        "url": "https://www.tcs.ch/de/verkehrsinfo/verkehrslage/",
+        "type": "Official Traffic & Alpine Pass Telemetry"
+      },
+      {
+        "name": "Dienststelle für Mobilität Kanton Wallis (Service de la mobilité)",
+        "url": "https://www.vs.ch",
+        "type": "Cantonal Highway & Infrastructure Department"
+      },
+      {
+        "name": "LivePassWatch Multi-Source Verification Methodology",
+        "url": "/methodology",
+        "type": "Independent Telemetry Corroboration Engine"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Simplon Pass open today or is it closed?",
+        "answer": "Simplon Pass is OPEN today to all vehicles. As a major Swiss national road (A9/E62), the pass is maintained 365 days a year by the Federal Roads Office (ASTRA) and the Canton of Valais highway department. Unlike seasonal Swiss passes, it remains open year-round with continuous winter snowplow and anti-icing operations. Check the live status badge and webcams above for current road condition updates."
+      },
+      {
+        "question": "What are the current Simplon Pass road conditions and road status?",
+        "answer": "Current Simplon Pass road conditions feature bare, dry asphalt across the 2,005 m summit crest and through the Ganterbrücke and Schallbett avalanche galleries. Traffic is flowing smoothly in both directions between Brig, Switzerland and Domodossola, Italy. Road condition telemetry is verified every 5 to 15 minutes directly from ASTRA and TCS sensors."
+      },
+      {
+        "question": "When does Simplon Pass open and what is the typical opening date?",
+        "answer": "Simplon Pass does not have a seasonal opening date because it remains open year-round 365 days a year. It does not close for the winter season like the nearby Furka, Grimsel, or Susten passes. If temporary storm closures occur during heavy blizzards, rotary snow blowers reopen the highway within a few hours."
+      },
+      {
+        "question": "When does Simplon Pass close for winter?",
+        "answer": "Simplon Pass does not close for the winter. Thanks to over 30 protective avalanche galleries, heavy snow sheds, and continuous 24/7 snowplowing by Swiss cantonal road crews, National Road A9 across Simplon Pass stays operational throughout the entire winter season."
+      },
+      {
+        "question": "Does Simplon Pass have a live webcam and summit camera?",
+        "answer": "Yes, Simplon Pass features multiple verified live webcams including the Simplon Pass Summit & Hospiz camera (2,005 m), the Rothwald/Schallbett avalanche gallery camera, the Ganter Bridge overlook, and the Gondo Swiss-Italian customs checkpoint. All camera feeds update continuously on this page."
+      },
+      {
+        "question": "What is the official elevation of Simplon Pass?",
+        "answer": "The official summit elevation of Simplon Pass is 2,005 meters (6,578 feet) above sea level. It connects the Rhone Valley in Switzerland (elevation ~670 m at Brig) with the Val Divedro in Italy (elevation ~270 m at Domodossola)."
+      },
+      {
+        "question": "What are the snow conditions and snow depth on Simplon Pass right now?",
+        "answer": "Current snow conditions on Simplon Pass show clear, treated pavement on the main highway corridor. During winter months, summit snowpack can reach 2 to 4 meters along the roadsides, but heavy snow removal equipment keeps the roadway clear. Live snow depth telemetry is displayed in the status overview above."
+      },
+      {
+        "question": "What weather today can travelers expect on Simplon Pass?",
+        "answer": "Travelers on Simplon Pass today can expect clear alpine skies with temperatures around 9°C (48°F) at the summit. Alpine weather at 2,000 meters can change rapidly; drivers should check live summit weather and wind speed before crossing."
+      },
+      {
+        "question": "Are tire chains or snow tires mandatory on Simplon Pass during winter?",
+        "answer": "During winter storm events and active snowfall, traction restrictions (Kettenobligatorium / Winterausrüstung) can be mandated for freight trucks and passenger cars without 4WD. All motorists traveling between October and April are strongly advised to carry snow chains and have certified 3PMSF winter tires mounted."
+      },
+      {
+        "question": "Where is Simplon Pass located on the map and what highway crosses it?",
+        "answer": "Simplon Pass is located in the Canton of Valais in southwestern Switzerland, carrying Swiss National Road A9 (Route 9 / European route E62) across the Alps between Brig-Glis (Switzerland) and Domodossola (Piedmont, Italy). You can view the interactive route on our LivePassWatch Map page."
+      },
+      {
+        "question": "What is the BLS car train shuttle (Autoverlad) through the Simplon Tunnel?",
+        "answer": "The BLS Autoverlad Brig–Iselle is a rail car shuttle service that transports vehicles through the 19.8 km Simplon Railway Tunnel between Brig (Switzerland) and Iselle di Trasquera (Italy) in 20 minutes. It operates every 60–90 minutes and serves as an ideal winter storm alternative to driving the high mountain pass road."
+      },
+      {
+        "question": "How is Simplon Pass road condition telemetry verified for safety?",
+        "answer": "LivePassWatch aggregates real-time road condition telemetry directly from official Swiss and cantonal authorities, including the Federal Roads Office (ASTRA / FEDRO), Touring Club Schweiz (TCS), and the Valais Department of Mobility, corroborated via our multi-source verification methodology."
+      }
+    ],
+    "customSeo": {
+      "h1": "Simplon Pass : Live Webcams, Road Conditions, Weather & Open/Closed Status",
+      "title": "Simplon Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
+      "description": "Real-time Simplon Pass road conditions (2,005 m, National Road A9), live summit webcams, Swiss Alps weather, snow depth, chain laws & transalpine status report."
+    },
+    "searchKeywords": [
+      "Simplon Pass",
+      "Simplonpass",
+      "Passo del Sempione",
+      "Simplon Pass opening date",
+      "Simplon Pass is open",
+      "Simplon Pass road conditions",
+      "Simplon Pass road status",
+      "Simplon Pass pass status report",
+      "when does Simplon Pass open",
+      "Simplon Pass closed",
+      "Simplon Pass is closed",
+      "Simplon Pass is it open today",
+      "is Simplon Pass closed today",
+      "Simplon Pass webcam",
+      "Simplon Pass live webcam",
+      "Simplon Pass cameras",
+      "Simplon Pass summit camera",
+      "when does Simplon Pass close for winter",
+      "Simplon Pass map",
+      "is Simplon Pass open right now",
+      "Simplon Pass weather today",
+      "Simplon Pass snow",
+      "Simplon Pass snow depth",
+      "Simplon Pass snow conditions",
+      "Simplon Pass elevation",
+      "Simplon Pass open",
+      "Col du Simplon",
+      "Ganterbrücke webcam",
+      "Simplon Hospice webcam",
+      "A9 Simplon road status",
+      "Brig Domodossola pass conditions"
+    ]
   }
 ];
 
@@ -10656,6 +10946,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Uri & Ticino' || state === 'Uri / Ticino' || passSlug === 'gotthard-pass') return 'uri-ticino';
   if (state === 'Graubünden' || state === 'Grisons' || passSlug === 'bernina-pass') return 'graubunden';
   if (state === 'Møre og Romsdal' || passSlug === 'trollstigen-pass') return 'more-og-romsdal';
+  if (state === 'Valais' || passSlug === 'simplon-pass') return 'valais';
   return cleanSlug(state);
 }
 

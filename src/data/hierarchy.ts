@@ -354,6 +354,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 2429,
                 "status": "OPEN",
                 "image": "/furka-pass-switzerland-road-conditions.webp"
+              },
+              {
+                "id": "simplon-pass",
+                "slug": "simplon-pass",
+                "name": "Simplon Pass (Simplonpass / Passo del Sempione)",
+                "highway": "National Road A9 / E62",
+                "elevationFt": 6578,
+                "elevationM": 2005,
+                "status": "OPEN",
+                "image": "/simplon-pass-switzerland-valais.webp"
               }
             ]
           },

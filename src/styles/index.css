@@ -561,3 +561,9 @@ img {
     font-size: 13.5px;
   }
 }
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

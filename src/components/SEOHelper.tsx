@@ -17,7 +17,7 @@ export const SEOHelper: React.FC<SEOHelperProps> = ({
   description,
   canonicalUrl,
   jsonLd,
-  ogImage = '/hero-bg.png',
+  ogImage = '/hero-bg.webp',
   twitterCard = 'summary_large_image',
   noIndex = false
 }) => {
