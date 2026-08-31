@@ -557,6 +557,22 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Transfăgărășan & European Mountain Routes',
     crossLinkUrl: '/passes',
     crossLinkText: 'Comparați condițiile din Pasul Prislop cu alte trecători montane spectaculoase din România și Europa pe'
+  },
+  'vrsic-pass': {
+    nearestTowns: [
+      { name: 'Kranjska Gora, Gorenjska', distance: '12.0 km (7.5 miles)', direction: 'North via Road 206' },
+      { name: 'Trenta, Bovec (Dolina Soče)', distance: '13.0 km (8.1 miles)', direction: 'South via Road 206' },
+      { name: 'Bovec, Goriška / Primorska', distance: '34.0 km (21.1 miles)', direction: 'Southwest via Road 206 & 203' },
+      { name: 'Mojstrana / Vrata Valley', distance: '26.0 km (16.2 miles)', direction: 'Northeast via Road 206 & 201' },
+      { name: 'Bled / Lake Bled, Gorenjska', distance: '50.0 km (31.1 miles)', direction: 'East via Road 201 & A2' },
+      { name: 'Tarvisio, Friuli-Venezia Giulia (Italy)', distance: '31.0 km (19.3 miles)', direction: 'Northwest via Road 201 & SS54' }
+    ],
+    seasonalClosureWindow: 'November/December to April/May (Odprto v poletni sezoni / Zaprto pozimi zaradi snega in plazov)',
+    seasonalClosureDetail: 'Prelaz Vršič (1.611 m) je najvišji cestni gorski prelaz v Sloveniji in Vzhodnih Julijskih Alpah. Cesta 206 (Ruska cesta) ima 50 oštevilčenih serpentin (serpentine 1–24 na severni kranjskogorski strani so tlakovane s granitnimi kockami). Prelaz je običajno odprt od pozne pomladi do pozne jeseni (maj–oktober). V zimskem času je prelaz zaprt zaradi obsežnih snežnih padavin in nevarnosti snežnih plazov z Mojstrovke in Prisanka. V primeru ugodnega vremena pozimi DARS/direkcija za ceste prelaz začasno odpre za vozila z verigami.',
+    aboutPass: 'Prelaz Vršič (1.611 m / 5.285 ft), znan tudi kot Ruska cesta (Regionalna cesta 206), povezuje Gorenjsko (Kranjska Gora) s Primorsko in dolino reke Soče (Trenta in Bovec) čez srce Triglavskega narodnega parka v Julijskih Alpah. Cesto so med prvo svetovno vojno leta 1915–1916 zgradili ruski vojni ujetniki za avstro-ogrsko oskrbo soške fronte. Ob cesti na 8. serpentini stoji znamenita Ruska kapelica, zgrajena v spomin na stotine ujetnikov, ki jih je marca 1916 zasul orjaški snežni plaz pod Mojstrovko. Prelaz slovi po dih jemajočih razgledih na Prisojnik (z naravnim oknom in obrazom Ajdovske deklice), Jalovec in Špik, planinskih postojankah (Erjavčeva koča, Tičarjev dom, Poštarski dom) ter 50 legendarnih serpentinah.',
+    crossLinkAnchor: 'Stelvio Pass & Alpine High Passes',
+    crossLinkUrl: '/passes/italy/south-tyrol-lombardy/stelvio-pass',
+    crossLinkText: 'Primerjajte razmere na prelazu Vršič z drugimi legendarnimi alpskimi prelazi, kot je'
   }
 };
 

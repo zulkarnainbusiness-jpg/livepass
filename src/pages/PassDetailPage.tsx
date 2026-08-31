@@ -139,7 +139,8 @@ export const PassDetailPage: React.FC = () => {
   const [isRefreshingCam, setIsRefreshingCam] = useState(false);
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
   const [isUserCamModalOpen, setIsUserCamModalOpen] = useState(false);
-  const [pageLang, setPageLang] = useState<'de' | 'fr' | 'it' | 'ro' | 'en'>(() => {
+  const [pageLang, setPageLang] = useState<'de' | 'fr' | 'it' | 'ro' | 'sl' | 'en'>(() => {
+    if (targetSlug.toLowerCase().includes('vrsic')) return 'sl';
     if (targetSlug.toLowerCase().includes('prislop')) return 'ro';
     if (targetSlug.toLowerCase().includes('grimsel') || targetSlug.toLowerCase().includes('susten')) return 'de';
     if (targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard')) return 'it';
@@ -154,7 +155,9 @@ export const PassDetailPage: React.FC = () => {
 
   // Sync default language when pass changes
   useEffect(() => {
-    if (pass.slug === 'prislop-pass') {
+    if (pass.slug === 'vrsic-pass') {
+      setPageLang('sl');
+    } else if (pass.slug === 'prislop-pass') {
       setPageLang('ro');
     } else if (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') {
       setPageLang('de');
@@ -450,7 +453,90 @@ export const PassDetailPage: React.FC = () => {
           <span className="current-crumb">{pass.name}</span>
         </nav>
 
-        {/* Bilingual Language Switcher for Col du Galibier, Col de l'Iseran, Great St Bernard Pass & Grimsel Pass */}
+        {/* Bilingual Language Switcher for Vršič Pass, Prislop Pass, Col du Galibier, Col de l'Iseran, Great St Bernard Pass & Grimsel Pass */}
+        {pass.slug === 'vrsic-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(16, 185, 129, 0.06) 100%)',
+            border: '1px solid rgba(37, 99, 235, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#1E40AF' }}>
+              <Globe size={18} color="#2563EB" />
+              <span>
+                {pageLang === 'sl' 
+                  ? '🇸🇮 Uradna regionalna vsebina v slovenščini (Kadar koli preklopite na samodejni angleški prevod)' 
+                  : '🇬🇧 English Auto-Translation Active (Switch to native Slovenian anytime)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('sl')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'sl' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'sl' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇸🇮 Slovenščina
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇬🇧 English (Auto-Translated)
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/slovenia/gorenjska-goriska/vrsic-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#1D4ED8',
+                  background: '#EFF6FF',
+                  border: '1px solid #BFDBFE',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Odpri v Google Prevajalniku / Translate with Google"
+              >
+                <Globe size={14} />
+                <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
         {pass.slug === 'prislop-pass' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
@@ -869,7 +955,9 @@ export const PassDetailPage: React.FC = () => {
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 14px', borderRadius: '9999px', backgroundColor: 'rgba(56, 189, 248, 0.12)', color: 'var(--primary)', fontSize: '13px', fontWeight: '700', border: '1px solid rgba(56, 189, 248, 0.25)' }}>
                 <Clock size={14} />
                 <span>
-                  {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                  {pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                    ? `Posodobljeno : ${pass.lastUpdated}`
+                    : pass.slug === 'prislop-pass' && pageLang === 'ro'
                     ? `Actualizat : ${pass.lastUpdated}`
                     : pass.slug === 'bernina-pass' && pageLang === 'de'
                     ? `Letzte Aktualisierung : ${pass.lastUpdated}`
@@ -891,7 +979,9 @@ export const PassDetailPage: React.FC = () => {
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', borderRadius: '9999px', backgroundColor: 'var(--bg-surface-subtle)', color: 'var(--text-secondary)', fontSize: '13px', border: '1px solid var(--border-color)' }}>
                 <Mountain size={14} />
                 <span>
-                  {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                  {pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                    ? `Nadmorska višina : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                    : pass.slug === 'prislop-pass' && pageLang === 'ro'
                     ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                     : pass.slug === 'bernina-pass' && pageLang === 'de'
                     ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
@@ -914,7 +1004,11 @@ export const PassDetailPage: React.FC = () => {
 
             <div className="title-and-star">
               <h1 className="pass-main-heading">
-                {pass.slug === 'prislop-pass'
+                {pass.slug === 'vrsic-pass'
+                  ? (pageLang === 'sl'
+                      ? "Prelaz Vršič (1.611 m) : Stanje Ceste R206, Spletne Kamere v Živo, Vreme & Odprtost"
+                      : "Vršič Pass (1,611 m / 5,285 ft) Road 206: Live Webcams, Road Conditions, Weather & Open/Closed Status")
+                  : pass.slug === 'prislop-pass'
                   ? (pageLang === 'ro'
                       ? "Pasul Prislop (1.416 m) DN18 : Starea Drumului, Webcam Live, Meteo & Ghid Rutier"
                       : "Prislop Pass (1,416 m / 4,646 ft) DN18: Road Conditions, Live Webcam, Weather & Travel Guide")
@@ -961,7 +1055,9 @@ export const PassDetailPage: React.FC = () => {
               <span>{pass.state ? `${pass.state}, ` : ''}{pass.country}</span>
               <span className="dot-sep">•</span>
               <span>
-                {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                {pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                  ? `Nadmorska višina : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                  : pass.slug === 'prislop-pass' && pageLang === 'ro'
                   ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                   : pass.slug === 'bernina-pass' && pageLang === 'de'
                   ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
@@ -977,7 +1073,11 @@ export const PassDetailPage: React.FC = () => {
               </span>
             </div>
             <p className="pass-summary-paragraph">
-              {pass.slug === 'prislop-pass'
+              {pass.slug === 'vrsic-pass'
+                ? (pageLang === 'sl'
+                    ? "Prelaz Vršič (1.611 m / 5.285 ft) je najvišji gorski cestni prelaz v Vzhodnih Julijskih Alpah v Sloveniji, ki povezuje Gorenjsko (Kranjska Gora) s Primorsko in dolino reke Soče (Trenta / Bovec) po Regionalni cesti 206 (Ruska cesta). Znan po svojih 50 znamenitih serpentinah, Ruski kapelici, planinskih kočah (Erjavčeva koča, Tičarjev dom, Poštarski dom) ter nepozabnem pogledu na Ajdovsko deklico v Prisojniku in vrhove Triglavskega narodnega parka."
+                    : "Vršič Pass (1,611 m / 5,285 ft) is the highest paved mountain road pass in the Eastern Julian Alps of Slovenia, connecting Kranjska Gora in Upper Carniola with Trenta and Bovec in the emerald Soča Valley along Road 206 (the Russian Road). Celebrated for its 50 numbered hairpin turns, the historic World War I Russian Chapel, iconic alpine huts, and breathtaking views of Mount Prisank and Triglav National Park.")
+                : pass.slug === 'prislop-pass'
                 ? (pageLang === 'ro'
                     ? "Pasul Prislop (1.416 m / 4.646 ft) este cea mai înaltă trecătoare rutieră din Carpații Orientali din România, situată pe Drumul Național 18 (DN18) la granița istorică dintre județele Maramureș și Suceava (Bucovina). Înconjurată de piscurile maiestuoase ale Munților Rodnei și Munților Maramureșului, trecătoarea oferă o conexiune vitală între Țara Maramureșului (Borșa) și Țara Fagilor (Cârlibaba / Iacobeni / Vatra Dornei). În vârful pasului se află Mănăstirea Prislop (Schitul Sfânta Treime), Hanul Prislop și Monumentul Eroilor, iar în fiecare august platoul găzduiește marele festival folcloric «Hora de la Prislop»."
                     : "Prislop Pass (1,416 m / 4,646 ft) is the highest paved mountain pass in the Eastern Carpathians of Romania, carrying National Road DN18 across the scenic boundary between Maramureș (Borșa) and Bucovina (Cârlibaba / Iacobeni, Suceava County). Flanked by the majestic Rodna and Maramureș mountain ranges, it offers fully modernized asphalt, the wooden Holy Trinity Prislop Monastery at the summit, and hosts the historic annual 'Hora de la Prislop' folklore celebration.")
@@ -1014,7 +1114,9 @@ export const PassDetailPage: React.FC = () => {
           <div className="pass-header-actions">
             <button onClick={handleShare} className="btn btn-secondary action-pill-btn">
               <Share2 size={16} /> 
-              {pass.slug === 'prislop-pass' && pageLang === 'ro'
+              {pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                ? 'Deli povezavo'
+                : pass.slug === 'prislop-pass' && pageLang === 'ro'
                 ? 'Distribuie'
                 : pass.slug === 'bernina-pass' && pageLang === 'de'
                 ? 'Teilen'
@@ -1031,7 +1133,9 @@ export const PassDetailPage: React.FC = () => {
             <button onClick={toggleFavorite} className="btn btn-secondary action-pill-btn">
               <Heart size={16} fill={isFavorite ? '#EF4444' : 'none'} color={isFavorite ? '#EF4444' : 'currentColor'} />
               {isFavorite 
-                ? (pass.slug === 'prislop-pass' && pageLang === 'ro'
+                ? (pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                    ? 'Shranjeno med priljubljene'
+                    : pass.slug === 'prislop-pass' && pageLang === 'ro'
                     ? 'Salvat la favorite'
                     : pass.slug === 'bernina-pass' && pageLang === 'de'
                     ? 'Gemerkt'
@@ -1044,7 +1148,9 @@ export const PassDetailPage: React.FC = () => {
                     : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                     ? 'Preferito'
                     : 'Favorited') 
-                : (pass.slug === 'prislop-pass' && pageLang === 'ro'
+                : (pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                    ? 'Dodaj med priljubljene'
+                    : pass.slug === 'prislop-pass' && pageLang === 'ro'
                     ? 'Adaugă la favorite'
                     : pass.slug === 'bernina-pass' && pageLang === 'de'
                     ? 'Pass merken'
@@ -2237,7 +2343,11 @@ export const PassDetailPage: React.FC = () => {
               </h2>
               <div className="travel-guidance-container lp-card" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <p className="narrative-p" style={{ marginBottom: '8px' }}>
-                  {pass.slug === 'prislop-pass'
+                  {pass.slug === 'vrsic-pass'
+                    ? (pageLang === 'sl'
+                        ? 'Vožnja čez prelaz Vršič na 1.611 metrih nadmorske višine po cesti R206 (Ruska cesta) med Kranjsko Goro in Trento velja za najbolj spektakularno gorsko cesto v Sloveniji s 50 ostrimi serpentinami skozi Triglavski narodni park.'
+                        : 'Driving across Vršič Pass at 1,611 meters (5,285 ft) along Road 206 (the Russian Road) between Kranjska Gora and Trenta is Slovenia\'s premier alpine motoring journey featuring 50 legendary hairpin turns across Triglav National Park.')
+                    : pass.slug === 'prislop-pass'
                     ? (pageLang === 'ro'
                         ? 'Traversarea Pasului Prislop la 1.416 metri altitudine între Maramureș și Bucovina pe DN18 reprezintă una dintre cele mai frumoase călătorii transcarpatice din România, printre păduri de conifere și panorame spre Munții Rodnei.'
                         : 'Crossing Prislop Pass at 1,416 meters (4,646 ft) along DN18 between Maramureș and Bucovina is one of the most scenic trans-Carpathian journeys in Romania, flanked by ancient spruce forests and panoramic views of the Rodna Mountains.')
@@ -2259,7 +2369,9 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Clock size={16} /> 
-                      {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                      {pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                        ? 'Trasa, 50 Serpentin & Sezona'
+                        : pass.slug === 'prislop-pass' && pageLang === 'ro'
                         ? 'Traseu & Sezon de Călătorie'
                         : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Route & Reisesaison'
@@ -2270,7 +2382,11 @@ export const PassDetailPage: React.FC = () => {
                         : 'Route & Travel Season'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'prislop-pass')
+                      {(pass.slug === 'vrsic-pass')
+                        ? (pageLang === 'sl'
+                            ? 'Cesta R206 povezuje Kranjsko Goro z dolino reke Soče (Trenta in Bovec). Na severni strani je 24 serpentin tlakovanih z granitnimi kockami, na trentarski strani pa 26 serpentin z asfaltom. Prelaz je odprt od pomladi do jeseni (maj–november) in zaprt v času zimskih snežnih razmer.'
+                            : 'Road 206 links Kranjska Gora with Trenta and Bovec in the Soča Valley. Features 50 numbered turns (1–24 cobblestone on north flank, 25–50 asphalt on south flank). Open spring to autumn (May–November); closed during severe winter snow conditions.')
+                        : (pass.slug === 'prislop-pass')
                         ? (pageLang === 'ro'
                             ? 'Drumul Național 18 (DN18) leagă orașul Borșa (Maramureș) de Cârlibaba și Iacobeni (Suceava / Bucovina). Pasul este deschis 365 de zile pe an datorită lucrărilor de modernizare și utilajelor de întreținere ale CNAIR. Asfaltul neted și semnalizarea nouă oferă condiții excelente de condus.'
                             : 'National Road DN18 connects Borșa (Maramureș) with Cârlibaba and Iacobeni (Bucovina / Suceava). Prislop Pass is open 365 days a year with active CNAIR maintenance. Pristine newly resurfaced asphalt offers great driving comfort.')
@@ -2308,7 +2424,9 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Mountain size={16} /> 
-                      {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                      {pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                        ? 'Gorsko Vreme & Prisank'
+                        : pass.slug === 'prislop-pass' && pageLang === 'ro'
                         ? 'Meteo Alpin & Siguranță'
                         : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Wetter & Hochgebirgssicherheit'
@@ -2319,7 +2437,11 @@ export const PassDetailPage: React.FC = () => {
                         : 'High-Altitude Safety & Weather'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'prislop-pass')
+                      {(pass.slug === 'vrsic-pass')
+                        ? (pageLang === 'sl'
+                            ? 'Na vrhu prelaza (1.611 m) so temperature 8–12°C nižje kot v Kranjski Gori ali Bovcu. Granitni tlakovci v 24 serpentinah postanejo v dežju zelo spolzki. Priporočamo spremljanje spletnih kamer pri Erjavčevi koči in napovedi ARSO pred vzponom.'
+                            : 'At the 1,611 m summit crest, temperatures are 8–12°C lower than in Kranjska Gora or Bovec. The 24 cobblestone turns become slick during rainfall. Check live Erjavčeva koča webcams and ARSO weather forecasts before driving.')
+                        : (pass.slug === 'prislop-pass')
                         ? (pageLang === 'ro'
                             ? 'La 1.416 m altitudine pe platoul pasului, temperaturile sunt cu 6–10°C mai scăzute decât în văile Vișeului sau Bistriței Aurii. Ceața montană și ploile torențiale pot reduce brusc vizibilitatea; verificați buletinele meteo și camerele live înainte de pornire.'
                             : 'At 1,416 m summit elevation, temperatures are typically 6–10°C cooler than in Borșa or Vatra Dornei. High mountain fog and sudden showers can reduce visibility; verify live webcams and weather reports before departure.')
@@ -2357,7 +2479,9 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <ShieldCheck size={16} /> 
-                      {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                      {pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                        ? 'Cestnine, Vinjeta & Parkiranje'
+                        : pass.slug === 'prislop-pass' && pageLang === 'ro'
                         ? 'Rovinietă & Reglementări Rutiere'
                         : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Mautfreiheit & Schweizer Strassenordnung'
@@ -2368,7 +2492,11 @@ export const PassDetailPage: React.FC = () => {
                         : 'Tolls & Road Regulations'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'prislop-pass')
+                      {(pass.slug === 'vrsic-pass')
+                        ? (pageLang === 'sl'
+                            ? 'Cesta R206 čez prelaz Vršič je brezplačna regionalna cesta (slovenska e-vinjeta za sam prelaz ni potrebna, potrebna pa je na avtocestnem omrežju A2). Na vrhu prelaza velja plačljiv parkirni režim z omejenimi mesti; priporočamo javni avtobusni prevoz v poletni sezoni.'
+                            : 'Road 206 across Vršič Pass is a toll-free regional public road (Slovenian e-vignette not required on the pass road itself, only on motorways). Parking at the summit is paid with limited capacity; summer public shuttle buses are recommended.')
+                        : (pass.slug === 'prislop-pass')
                         ? (pageLang === 'ro'
                             ? 'DN18 prin Pasul Prislop este un drum național public administrat de CNAIR. Nu există taxe speciale de trecere pentru pas, însă este obligatorie Rovinieta națională pentru toate autovehiculele înmatriculate. Viteza recomandată în serpentine este de 50 km/h.'
                             : 'DN18 across Prislop Pass is a public national highway managed by CNAIR. No pass-specific tolls apply, but standard Romanian national road tax (Rovinietă) is mandatory. Recommended speed in mountain serpentines is 50 km/h.')
@@ -2406,7 +2534,9 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Car size={16} /> 
-                      {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                      {pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                        ? 'Zimska Oprema & Obvozni Prelazi'
+                        : pass.slug === 'prislop-pass' && pageLang === 'ro'
                         ? 'Legislație Iarnă & Echipare'
                         : pass.slug === 'grimsel-pass' && pageLang === 'de'
                         ? 'Wintersperre & Autoverlad-Alternativen'
@@ -2417,7 +2547,11 @@ export const PassDetailPage: React.FC = () => {
                         : 'Winter Laws & Seasonal Detours'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'prislop-pass')
+                      {(pass.slug === 'vrsic-pass')
+                        ? (pageLang === 'sl'
+                            ? 'V zimskem obdobju od 15. novembra do 15. marca je v Sloveniji obvezna zimska oprema (zimske pnevmatike ali snežne verige). V času zimske zapore Vršiča je glavna obvozna povezava med Gorenjsko in Posočjem čez prelaz Predel (SS54/R203 skozi Italijo) ali skozi avto-vlak Bohinjska proga (Bohinjska Bistrica–Most na Soči).'
+                            : 'Winter equipment (M+S/3PMSF winter tires or chains in trunk) is mandatory in Slovenia Nov 15 – Mar 15. During winter closure of Vršič Pass, detour via Predil Pass (SS54/Road 203 through Tarvisio, Italy) or the Bohinj car train shuttle (Bohinjska Bistrica–Most na Soči).')
+                        : (pass.slug === 'prislop-pass')
                         ? (pageLang === 'ro'
                             ? 'Conform OUG 195/2002, anvelopele de iarnă (M+S / 3PMSF) sunt strict obligatorii când carosabilul este acoperit de zăpadă sau gheață. Utilajele DRDP Cluj și DRDP Iași intervin cu sărărițe și lame de zăpadă pentru a menține pasul deschis chiar și în timpul viscolelor carpatine.'
                             : 'Romanian traffic law mandates approved winter tires (M+S / 3PMSF) on snow or icy roads. DRDP Cluj & DRDP Iași snowplows operate continuously with anti-skid treatment to keep the pass open throughout winter blizzards.')

@@ -11095,6 +11095,298 @@ export const passesData: MountainPass[] = [
       "Munții Rodnei trecătoare",
       "Eastern Carpathians highest pass"
     ]
+  },
+  {
+    "id": "vrsic-pass",
+    "slug": "vrsic-pass",
+    "name": "Vršič Pass (Prelaz Vršič / Ruska cesta)",
+    "alternateNames": [
+      "Prelaz Vršič",
+      "Vrsic Pass",
+      "Ruska cesta",
+      "Vršič Pass Slovenia",
+      "Cesta 206 Vršič",
+      "Kranjska Gora Trenta Pass",
+      "Passo della Moistrocca",
+      "Werschetzpass"
+    ],
+    "country": "Slovenia",
+    "countryCode": "SVN",
+    "continent": "Europe",
+    "state": "Gorenjska & Goriška",
+    "highway": "Road 206 (Ruska cesta / Regionalna cesta 206)",
+    "elevationFt": 5285,
+    "elevationM": 1611,
+    "coordinates": {
+      "lat": 46.4344,
+      "lng": 13.7436
+    },
+    "status": "OPEN",
+    "statusDetail": "Regionalna cesta R206 čez prelaz Vršič (1.611 m) je ODPRTA za vsa osebna in motorna vozila. Vozišče je suho in normalno prevozno. Pozimi je prelaz zaprt ob snežnih padavinah in nevarnosti snežnih plazov (obvezne verige pri zimskih razmerah). / Road 206 across Vršič Pass (1,611 m) is OPEN with clear pavement.",
+    "lastUpdated": "5 minutes ago",
+    "description": "Prelaz Vršič (1.611 m / 5.285 ft) je najvišji cestni prelaz v Vzhodnih Julijskih Alpah v Sloveniji, ki povezuje Gorenjsko (Kranjska Gora) s Primorsko in dolino reke Soče (Trenta in Bovec) prek osrčja Triglavskega narodnega parka. Znan je po svoji legendarni trasi s 50 oštevilčenimi serpentinami (od katerih je 24 tlakovanih z granitnimi kockami na severni strani) in bogati zgodovini. Cesto so med prvo svetovno vojno leta 1915–1916 zgradili ruski vojni ujetniki za avstro-ogrsko vojsko, v njihov spomin pa ob cesti stoji znamenita lesena Ruska kapelica. Na vrhu prelaza se odpirajo veličastni razgledi na Mojstrovko, Jalovec, Špik ter naravno okno in obraz Ajdovske deklice v severni steni Prisanka.",
+    "image": "/vrsic-pass-slovenia.webp",
+    "weather": {
+      "tempF": 63,
+      "tempC": 17,
+      "condition": "Jasno in Sončno (Clear Alpine Skies)",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Kopno in čisto vozišče (Clear Dry Pavement)"
+    },
+    "wind": {
+      "speedKmh": 12,
+      "speedMph": 8,
+      "direction": "NW",
+      "description": "Zmeren gorski veter (Moderate Alpine Breeze)"
+    },
+    "roadCondition": "Vozišče ceste R206 je suho in v celoti prevozno. Opozorilo za voznike: prvih 24 serpentin na kranjskogorski strani ima vozišče v ovinkih tlakovano z granitnimi kockami (tlakovci), ki so v mokrem ali spolzkem vremenu lahko zelo drseči za motoriste in kolesarje. Na vrhu prelaza je število parkirnih mest omejeno; v poletnih mesecih je na voljo javni avtobusni prevoz med Kranjsko Goro in Bovcem. Pozimi je prelaz zaprt zaradi visokega snega in plazov z Mojstrovke.",
+    "chainRequirement": "Trenutno ni omejitev. V zimskih razmerah je obvezna zimska oprema (zimske pnevmatike z oznako M+S/3PMSF ali snežne verige v prtljažniku).",
+    "cameras": [
+      {
+        "id": "vrsic-cam-summit",
+        "title": "Prelaz Vršič Vrh & Tičarjev dom (1.611 m / 5.285 ft)",
+        "image": "/vrsic-pass-slovenia.webp",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Vršič Pass Summit Plateau & Tičarjev dom",
+        "milepost": "Road 206 Summit Crest (KM 12.0)",
+        "direction": "Pogled na prelaz in vrhove Julijskih Alp",
+        "source": "Promet.si / DARS & Planinska zveza Slovenije",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.promet.si"
+      },
+      {
+        "id": "vrsic-cam-erjavceva",
+        "title": "Erjavčeva koča na Vršiču & Pogled na Prisank (1.525 m)",
+        "image": "/vrsic-pass.webp",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Erjavčeva koča ob cesti R206",
+        "milepost": "Road 206 North Approach (KM 10.5)",
+        "direction": "Pogled proti steni Prisanka in prelazu Vršič",
+        "source": "Erjavčeva koča / Hribi.net",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.erjavcevakoca.com"
+      },
+      {
+        "id": "vrsic-cam-ruska-kapelica",
+        "title": "Ruska kapelica & 8. Serpentine (1.100 m)",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Ruska cesta / Kranjska Gora vzpon",
+        "milepost": "Road 206 Turn 8 (KM 4.8)",
+        "direction": "Vzpon iz Kranjske Gore proti Vršiču",
+        "source": "DARS / Turizem Kranjska Gora",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://kranjska-gora.si"
+      },
+      {
+        "id": "vrsic-cam-trenta",
+        "title": "Trenta & Dolina Soče / Triglavski narodni park (620 m)",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Dolina Soče / Trenta južni dostop",
+        "milepost": "Road 206 South Ramp (KM 24.0)",
+        "direction": "Vzpon iz Trente proti serpentinam 25–50",
+        "source": "TNP Info center Trenta / Soča Valley Tourism",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.soca-valley.com"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "passo-del-predil",
+        "slug": "passo-del-predil",
+        "name": "Predil Pass / Prelaz Predel (Road 203 / SS54)",
+        "country": "Slovenia / Italy",
+        "state": "Goriška & Friuli",
+        "highway": "Road 203 / SS54",
+        "status": "OPEN",
+        "elevationFt": 3793,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 38
+      },
+      {
+        "id": "korensko-sedlo",
+        "slug": "korensko-sedlo",
+        "name": "Wurzenpass / Korensko sedlo (Road 201 / B109)",
+        "country": "Slovenia / Austria",
+        "state": "Gorenjska & Carinthia",
+        "highway": "Road 201 / B109",
+        "status": "OPEN",
+        "elevationFt": 3520,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 18
+      },
+      {
+        "id": "ljubelj-pass",
+        "slug": "ljubelj-pass",
+        "name": "Loibl Pass / Prelaz Ljubelj (Road 101 / B91)",
+        "country": "Slovenia / Austria",
+        "state": "Gorenjska & Carinthia",
+        "highway": "Road 101 / B91",
+        "status": "OPEN",
+        "elevationFt": 4495,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 65
+      }
+    ],
+    "overview": {
+      "openedYear": 1916,
+      "lengthMiles": 15.0,
+      "lengthKm": 24.0,
+      "annualSnowfallIn": 240,
+      "annualSnowfallM": 6.0,
+      "summary": "Prelaz Vršič (1.611 m / 5.285 ft) je najvišji gorski cestni prelaz v Sloveniji in celotnih Vzhodnih Julijskih Alpah. Cesta R206, znana kot Ruska cesta, povezuje Gorenjsko (Kranjska Gora) s Primorsko in dolino reke Soče (Trenta / Bovec). Trasa ima natanko 50 oštevilčenih serpentin (1–24 na kranjskogorski strani s tlakovci in 25–50 na trentarski strani z asfaltom). Cesto so med prvo svetovno vojno leta 1915–1916 zgradili ruski vojni ujetniki za oskrbo avstro-ogrske soške fronte. Na poti stojijo Ruska kapelica, Erjavčeva koča (1.525 m), Tičarjev dom (1.620 m) in Poštarski dom (1.688 m), obkrožajo pa ga mogočni vrhovi Mojstrovke, Prisanka in Jalovca v Triglavskem narodnem parku."
+    },
+    "historicalSections": [
+      {
+        "title": "Gradnja Ruske ceste (1915–1916) in ruski vojni ujetniki",
+        "content": "Po vstopu Kraljevine Italije v prvo svetovno vojno maja 1915 je avstro-ogrska vojska potrebovala hitro in zanesljivo oskrbovalno pot čez Julijske Alpe do soške fronte. Avstrijsko poveljstvo je mobiliziralo več kot 10.000 ruskih vojnih ujetnikov, ki so v nečloveških razmerah in hudem mrazu v pičlih nekaj mesecih zgradili cesto čez prelaz Vršič (takrat imenovan Mojstrovka Pass)."
+      },
+      {
+        "title": "Katastrofalni snežni plaz marca 1916 in Ruska kapelica",
+        "content": "8. marca 1916 je z Mojstrovke pridrvel ogromen snežni plaz, ki je zasul tabor ujetnikov in stražarjev. Umrlo je več kot 300 ruskih ujetnikov in avstrijskih vojakov. Preživeli ujetniki so leta 1916 zgradili leseno pravoslavno kapelico (Ruska kapelica pod Vršičem pri 8. serpentini), ki še danes stoji kot spomenik miru in prijateljstva."
+      },
+      {
+        "title": "Mit o Ajdovski deklici in naravno okno v Prisojniku",
+        "content": "V severni skalni steni Prisojnika (2.547 m) se ob pogledu z Erjavčeve koče in prelaza jasno vidi orjaški obraz Ajdovske deklice, legendarne dobrosrčne vile iz slovenskih ljudskih pripovedk, ki je bila po legendi okamnela, ko je prerokovala smrt bajeslovnega belega kozoroga Zlatoroga."
+      },
+      {
+        "title": "Triglavski narodni park in botanični vrt Juliana",
+        "content": "Prelaz Vršič leži v celoti znotraj Triglavskega narodnega parka, edinega narodnega parka v Sloveniji. Na južni trentarski strani se nahaja Alpski botanični vrt Juliana (ustanovljen leta 1926) ter izvir smaragdne reke Soče, ene najčistejših in najlepših alpskih rek v Evropi."
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "Regionalni jezik (Slovenščina): Prelaz Vršič — Stanje ceste, 50 serpentin in nasveti za vožnjo",
+        "content": "Prelaz Vršič (1.611 m) je priljubljena izletniška točka za motoriste, kolesarje in planince. Zaradi ozke ceste, 50 ostrih serpentin in granitnih tlakovcev na kranjskogorski strani je potrebna velika previdnost. V poletni sezoni je prelaz prometno zelo obremenjen, zato priporočamo uporabo brezplačnih avtobusnih prevozov ali zgodnji jutranji odhod. V zimskih mesecih je prelaz zaprt zaradi nevarnosti snežnih plazov z Mojstrovke in Prisanka."
+      },
+      {
+        "title": "English Translation: Vršič Pass — High Alpine Road Guide, Russian Road & Soča Valley",
+        "content": "Vršič Pass (1,611 m / 5,285 ft) is Slovenia's highest mountain road pass, connecting Kranjska Gora in Upper Carniola with Trenta and Bovec in the emerald Soča Valley along Regional Road 206 (the Russian Road). Featuring 50 numbered hairpin bends (turns 1–24 paved with historic granite cobblestones), the route delivers majestic vistas of the Julian Alps, Mount Prisank, and the Russian Chapel memorial. The pass is open from spring to autumn and closes during heavy winter snowstorms."
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Promet.si / DARS (Družba za avtoceste v Republiki Sloveniji)",
+        "url": "https://www.promet.si",
+        "type": "Official Slovenian Traffic Information Center"
+      },
+      {
+        "name": "AMZS (Avto-moto zveza Slovenije)",
+        "url": "https://www.amzs.si",
+        "type": "Official Slovenian Automobile Club"
+      },
+      {
+        "name": "TNP (Triglavski narodni park / Info center Trenta)",
+        "url": "https://www.tnp.si",
+        "type": "Triglav National Park Authority"
+      },
+      {
+        "name": "LivePassWatch Multi-Source Verification Methodology",
+        "url": "/methodology",
+        "type": "Independent Telemetry Corroboration Engine"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Vršič Pass open today or is it closed?",
+        "answer": "Vršič Pass (Road 206) is OPEN today to all vehicles with dry pavement and normal traffic conditions. The pass is open daily during the spring, summer, and autumn seasons (typically May through October/November). During the winter season, the pass closes periodically or for several months due to heavy snow and avalanche danger from Mount Mojstrovka and Mount Prisank. Check the live status badge and webcams above for verified real-time updates."
+      },
+      {
+        "question": "What are the current Vršič Pass road conditions and road status?",
+        "answer": "Current Vršič Pass road conditions feature dry asphalt across the 1,611 m summit crest and clear visibility. Drivers should note that serpentines 1 to 24 on the northern Kranjska Gora side are paved with granite cobblestones which can be slippery when wet. Traffic telemetry is updated continuously from Promet.si and DARS traffic sensors."
+      },
+      {
+        "question": "When does Vršič Pass open and what is the typical opening date?",
+        "answer": "Vršič Pass typically opens in late April or May each year once DARS road crews complete snow clearing and avalanche mitigation. In mild winters with low snowfall, the pass may open even earlier or remain partially accessible for vehicles with snow chains."
+      },
+      {
+        "question": "When does Vršič Pass close for winter?",
+        "answer": "Vršič Pass generally closes for the winter season in November or December following the first major alpine blizzards. Heavy snowfall and steep avalanche paths from Mojstrovka make winter transit hazardous, resulting in full seasonal closure until spring snow clearance."
+      },
+      {
+        "question": "Does Vršič Pass have a live webcam and summit camera?",
+        "answer": "Yes, Vršič Pass features multiple live webcams including the Vršič Summit & Tičarjev dom camera (1,611 m), the Erjavčeva koča webcam (1,525 m) overlooking Mount Prisank, the Russian Chapel camera at Turn 8, and the Trenta Soča Valley camera. All feeds refresh continuously on this page."
+      },
+      {
+        "question": "What is the official elevation of Vršič Pass?",
+        "answer": "The official elevation of Vršič Pass is 1,611 meters (5,285 feet) above sea level. It is the highest paved mountain pass in the Republic of Slovenia and the Eastern Julian Alps."
+      },
+      {
+        "question": "What are the current snow depth and snow conditions on Vršič Pass?",
+        "answer": "Currently, Vršič Pass has 0 cm of snow on the road surface with bare, clear pavement. In the winter peak between January and March, summit snowpack can exceed 2 to 4 meters, prompting seasonal winter road closure."
+      },
+      {
+        "question": "What weather today can travelers expect on Vršič Pass?",
+        "answer": "Travelers on Vršič Pass today can expect clear alpine skies and comfortable mountain temperatures around 17°C (63°F). Mountain weather can change quickly in the Julian Alps, so carrying warm layers and wind protection is always recommended."
+      },
+      {
+        "question": "Where is Vršič Pass located on the map and which highway crosses it?",
+        "answer": "Vršič Pass is located in northwestern Slovenia within Triglav National Park, carrying Regional Road 206 (known as Ruska cesta / Russian Road) between Kranjska Gora in Upper Carniola (Gorenjska) and Trenta / Bovec in the Soča Valley (Primorska)."
+      },
+      {
+        "question": "What is the history of the Russian Road (Ruska cesta) and Russian Chapel?",
+        "answer": "The road over Vršič Pass was constructed during World War I (1915–1916) by over 10,000 Russian prisoners of war to supply the Austro-Hungarian army on the Isonzo (Soča) Front. In March 1916, a massive avalanche killed over 300 Russian prisoners and Austrian guards. The surviving POWs built the wooden Orthodox Russian Chapel (Ruska kapelica) near turn 8, which remains a revered memorial and cultural landmark today."
+      },
+      {
+        "question": "Are tire chains or snow tires mandatory on Vršič Pass in winter?",
+        "answer": "Under Slovenian road law, winter equipment (winter tires with M+S / 3PMSF marking and minimum 3 mm tread, or standard tires with snow chains in the trunk) is mandatory from November 15 to March 15 and whenever winter road conditions prevail. When the pass is open during borderline winter weather, tire chains are strictly mandatory for all vehicles."
+      },
+      {
+        "question": "How is Vršič Pass road condition data verified for safety?",
+        "answer": "LivePassWatch verifies Vršič Pass road condition data directly from official Slovenian transport authorities including Promet.si, DARS (Motorway Company of the Republic of Slovenia), AMZS (Automobile and Motorcycle Association of Slovenia), and Triglav National Park rangers, in accordance with our multi-source verification methodology."
+      }
+    ],
+    "officialSource": "https://www.promet.si",
+    "official_authority": "Promet.si / DARS (Družba za avtoceste v Republiki Sloveniji) & AMZS",
+    "customSeo": {
+      "title": "Prelaz Vršič (1.611 m) Stanje Ceste R206, Spletne Kamere v Živo, Vreme & Odprtost — LivePassWatch",
+      "description": "Stanje ceste v živo čez prelaz Vršič (1.611 m, Cesta 206), spletne kamere pri Erjavčevi koči in Tičarjevem domu, vreme, sneg, 50 serpentin in prevoznost v realnem času.",
+      "h1": "Prelaz Vršič (1.611 m) : Stanje Ceste R206, Spletne Kamere v Živo, Vreme & Odprtost"
+    },
+    "searchKeywords": [
+      "Vršič Pass",
+      "Vrsic Pass",
+      "Prelaz Vršič",
+      "Vršič Pass opening date",
+      "Vršič Pass is open",
+      "Vršič Pass road conditions",
+      "Vršič Pass road status",
+      "Vršič Pass pass status report",
+      "when does Vršič Pass open",
+      "Vršič Pass closed",
+      "Vršič Pass is closed",
+      "Vršič Pass is it open today",
+      "is Vršič Pass closed today",
+      "Vršič Pass webcam",
+      "Vršič Pass live webcam",
+      "Vršič Pass cameras",
+      "Vršič Pass summit camera",
+      "when does Vršič Pass close for winter",
+      "Vršič Pass map",
+      "is Vršič Pass open right now",
+      "Vršič Pass weather today",
+      "Vršič Pass snow",
+      "Vršič Pass snow depth",
+      "Vršič Pass snow conditions",
+      "Vršič Pass elevation",
+      "Vršič Pass open",
+      "Vršič Pass when will open",
+      "Vršič Pass passes open",
+      "Vršič Pass closures today",
+      "is Vršič Pass open",
+      "Ruska cesta",
+      "Russian Chapel Vrsic",
+      "Erjavčeva koča webcam",
+      "Tičarjev dom Vršič",
+      "Kranjska Gora Trenta road 206",
+      "Promet si Vršič",
+      "Julian Alps highest pass"
+    ]
   }
 ];
 
@@ -11186,6 +11478,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Møre og Romsdal' || passSlug === 'trollstigen-pass') return 'more-og-romsdal';
   if (state === 'Valais' || passSlug === 'simplon-pass') return 'valais';
   if (state === 'Maramureș & Suceava' || passSlug === 'prislop-pass') return 'maramures-suceava';
+  if (state === 'Gorenjska & Goriška' || state === 'Upper Carniola & Gorizia' || passSlug === 'vrsic-pass') return 'gorenjska-goriska';
   return cleanSlug(state);
 }
 

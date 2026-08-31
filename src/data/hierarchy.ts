@@ -472,6 +472,30 @@ export const hierarchyData: HierarchyContinent[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "slovenia",
+        "name": "Slovenia",
+        "code": "SVN",
+        "flagEmoji": "🇸🇮",
+        "states": [
+          {
+            "id": "gorenjska-goriska",
+            "name": "Gorenjska & Goriška",
+            "passes": [
+              {
+                "id": "vrsic-pass",
+                "slug": "vrsic-pass",
+                "name": "Vršič Pass (Prelaz Vršič)",
+                "highway": "Road 206",
+                "elevationFt": 5285,
+                "elevationM": 1611,
+                "status": "OPEN",
+                "image": "/vrsic-pass-slovenia.webp"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
