@@ -10857,6 +10857,244 @@ export const passesData: MountainPass[] = [
       "A9 Simplon road status",
       "Brig Domodossola pass conditions"
     ]
+  },
+  {
+    "id": "prislop-pass",
+    "slug": "prislop-pass",
+    "name": "Prislop Pass (Pasul Prislop)",
+    "alternateNames": [
+      "Pasul Prislop",
+      "Prislop Pass Romania",
+      "DN18 Pasul Prislop",
+      "Pasul Prislop Maramureș Suceava",
+      "Prislop Pass Maramures",
+      "Pasul Prislop Bucovina",
+      "Drumul Național 18"
+    ],
+    "country": "Romania",
+    "countryCode": "ROU",
+    "continent": "Europe",
+    "state": "Maramureș & Suceava",
+    "highway": "DN18 (Drumul Național 18)",
+    "elevationFt": 4646,
+    "elevationM": 1416,
+    "coordinates": {
+      "lat": 47.6083,
+      "lng": 24.8569
+    },
+    "status": "OPEN",
+    "statusDetail": "Drumul Național DN18 prin Pasul Prislop (1.416 m) este DESCHIS tuturor categoriilor de autovehicule. Carosabil uscat și curat în sezonul cald. În timpul iernii, DRDP Cluj și DRDP Iași mențin circulația deschisă cu utilaje de deszăpezire și material antiderapant (anvelope de iarnă obligatorii pe carosabil acoperit cu zăpadă sau polei).",
+    "lastUpdated": "5 minutes ago",
+    "description": "Pasul Prislop (1.416 m / 4.646 ft) este cea mai înaltă trecătoare rutieră din Carpații Orientali din România, situată pe Drumul Național 18 (DN18) la granița istorică dintre județele Maramureș și Suceava (Bucovina). Înconjurată de piscurile maiestuoase ale Munților Rodnei (Vârful Pietrosu Rodnei 2.303 m și Vârful Ineu 2.279 m) și ale Munților Maramureșului, trecătoarea oferă o conexiune vitală între Țara Maramureșului (Borșa / Vișeu) și Țara Fagilor (Cârlibaba / Iacobeni / Vatra Dornei). În vârful pasului se află Mănăstirea Prislop (Schitul Sfânta Treime), Hanul Prislop și Monumentul Eroilor căzuți în Primul Război Mondial. În fiecare lună august, pe platoul pasului se desfășoară celebrul festival interjudețean «Hora de la Prislop», simbol al unității tradițiilor folclorice din Maramureș, Bucovina și Transilvania.",
+    "image": "/prislop-pass-romania.webp",
+    "weather": {
+      "tempF": 64,
+      "tempC": 18,
+      "condition": "Cer Senin Carpatin (Clear Mountain Skies)",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Carosabil uscat și curat (Dry & clear paved roadway)"
+    },
+    "wind": {
+      "speedKmh": 11,
+      "speedMph": 7,
+      "direction": "NE",
+      "description": "Briză montană moderată (Moderate Mountain Breeze)"
+    },
+    "roadCondition": "Asfalt modernizat recent în condiții excelente pe întregul traseu DN18 între Borșa și Cârlibaba / Iacobeni. Traseul este complet reabilitat, cu două benzi de circulație, parapeți de protecție noi, marcaje rutiere reflectorizante și semnalizare modernă. Serpentinele largi permit urcarea facilă pentru autoturisme, motociclete, rulote și camioane. În sezonul rece, carosabilul poate deveni alunecos la peste 1.200 m altitudine; anvelopele de iarnă (M+S / 3PMSF) sunt obligatorii prin lege la prezența zăpezii sau poleiului.",
+    "chainRequirement": "Nu există restricții active în prezent. În perioada de iarnă, echiparea vehiculelor cu anvelope de iarnă este obligatorie pe carosabil umed/înghețat; camioanele grele trebuie să fie dotate cu lanțuri antiderapante.",
+    "cameras": [
+      {
+        "id": "prislop-cam-summit",
+        "title": "Pasul Prislop Summit & Mănăstirea Prislop (1.416 m / 4.646 ft)",
+        "image": "/prislop-pass-romania.webp",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Platoul Pasul Prislop & Schitul Sfânta Treime",
+        "milepost": "DN18 Borșa - Iacobeni (KM 156.2)",
+        "direction": "Vedere panoramică spre Munții Rodnei și Bucovina",
+        "source": "CNAIR / DRDP Cluj & DRDP Iași",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.cnadnr.ro/ro/starea-drumurilor-si-trafic"
+      },
+      {
+        "id": "prislop-cam-borsa",
+        "title": "DN18 Borșa Urcare Spre Pasul Prislop (980 m)",
+        "image": "/prislop-pass.webp",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Complex Turistic Borșa / Urcare Prislop Flancul Vestic",
+        "milepost": "DN18 Pasul Prislop Vest (KM 148.5)",
+        "direction": "Urcare spre Platoul Prislop și Munții Maramureșului",
+        "source": "Poliția Română Infotrafic / Primăria Borșa",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.politiaromana.ro/ro/info-trafic"
+      },
+      {
+        "id": "prislop-cam-carlibaba",
+        "title": "DN18 Cârlibaba Flancul Estic Bucovina (1.050 m)",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Valea Bistriței Aurii / Cârlibaba",
+        "milepost": "DN18 Flancul Estic Suceava (KM 165.0)",
+        "direction": "Urcare dinspre Iacobeni & Vatra Dornei spre Prislop",
+        "source": "DRDP Iași / InfoTrafic Suceava",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.drdpiasi.ro"
+      },
+      {
+        "id": "prislop-cam-rodnei",
+        "title": "Parcul Național Munții Rodnei & Vârful Pietrosu (2.303 m)",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Creasta Munților Rodnei & Rezervația Biosferei",
+        "milepost": "Parcul Național Munții Rodnei Overlook",
+        "direction": "Vedere spre Vârful Pietrosu Rodnei și Vârful Ineu",
+        "source": "RNP Romsilva Parcul Național Munții Rodnei",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.parcrodna.ro"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "pasul-mestanecanis",
+        "slug": "pasul-mestecanic",
+        "name": "Pasul Mestecăniș (DN17 / E58)",
+        "country": "Romania",
+        "state": "Suceava (Bucovina)",
+        "highway": "DN17 / E58",
+        "status": "OPEN",
+        "elevationFt": 3606,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 48
+      },
+      {
+        "id": "pasul-tihuta",
+        "slug": "pasul-tihuta",
+        "name": "Pasul Tihuța / Pasul Bârgău (DN17 / E58)",
+        "country": "Romania",
+        "state": "Bistrița-Năsăud & Suceava",
+        "highway": "DN17 / E58",
+        "status": "OPEN",
+        "elevationFt": 3940,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 76
+      },
+      {
+        "id": "pasul-gutai",
+        "slug": "pasul-gutai",
+        "name": "Pasul Gutâi (DN18)",
+        "country": "Romania",
+        "state": "Maramureș",
+        "highway": "DN18",
+        "status": "OPEN",
+        "elevationFt": 3238,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 88
+      }
+    ],
+    "overview": {
+      "openedYear": "Deschis Tot Anul (Modernizat 2021)",
+      "lengthMiles": 31.0,
+      "lengthKm": 50.0,
+      "annualSnowfallIn": 180,
+      "annualSnowfallM": 4.5,
+      "summary": "Pasul Prislop (1.416 m / 4.646 ft) este cea mai înaltă trecătoare montană rutieră din Carpații Orientali din România, purtând Drumul Național 18 (DN18) peste granița istorică dintre județul Maramureș (Borșa) și județul Suceava (Bucovina / Cârlibaba și Iacobeni). Flancat de piscurile semețe ale Munților Rodnei (Vârful Pietrosu 2.303 m) și Munților Maramureșului, drumul a fost complet reabilitat și modernizat cu asfalt de calitate superioară, două benzi late de circulație și parapeți noi. Pe platoul somital se află Mănăstirea Prislop (Schitul Sfânta Treime), Hanul Prislop și Monumentul Eroilor, iar în fiecare lună august are loc festivalul folcloric «Hora de la Prislop»."
+    },
+    "historicalSections": [
+      {
+        "title": "Trecătoarea Istorică dintre Maramureș și Bucovina / Moldova",
+        "content": "Pasul Prislop a servit încă din evul mediu drept coridor strategic de schimb comercial și transhumanță între voievozii Maramureșului și domnitorii Moldovei. Negustorii de lemn, sare și vite foloseau această trecătoare naturală prin inima Carpaților."
+      },
+      {
+        "title": "Luptele din Primul Război Mondial & Monumentul Eroilor",
+        "content": "În timpul Primului Război Mondial, Pasul Prislop a reprezentat un punct strategic aprig disputat pe frontul de est între trupele austro-ungare și cele rusești. Pe culmea pasului a fost ridicată o capelă militară și un monument în memoria ostașilor căzuți."
+      },
+      {
+        "title": "Mănăstirea Schitul Prislop (Sfânta Treime)",
+        "content": "Construită în arhitectură tradițională maramureșeană din lemn cu turn zvelt și acoperiș din draniță, Mănăstirea Schitul Prislop (hramul Schimbarea la Față și Sfânta Treime) veghează platoul somital, oferind un popas duhovnicesc și panorame spectaculoase călătorilor."
+      },
+      {
+        "title": "Sărbătoarea Tradițională «Hora de la Prislop»",
+        "content": "Din anul 1968, în fiecare lună august, platoul pasului găzduiește celebrul festival folcloric interjudețean «Hora de la Prislop», reunind comunități din Maramureș, Bucovina și Bistrița-Năsăud într-o impresionantă paradă a portului popular, cântecelor și dansurilor carpatine."
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "Limba Regională (Română): Pasul Prislop – Ghid Rutier DN18 & Informații Deschidere",
+        "content": "Pasul Prislop (1.416 m altitudine) conectează Maramureșul Istoric de Bucovina pe traseul modernizat al Drumului Național 18 (DN18). Drumul este deschis circulației în toate anotimpurile 365 de zile pe an. CNAIR, prin DRDP Cluj și DRDP Iași, asigură permanent deszăpezirea și tratarea carosabilului cu material antiderapant. Pe timp de iarnă sau polei, anvelopele de iarnă sunt obligatorii prin lege."
+      },
+      {
+        "title": "English Translation: Prislop Pass – Eastern Carpathians Transalpine Corridor",
+        "content": "Prislop Pass (1,416 m / 4,646 ft) connects the historic region of Maramureș (Borșa) with Bukovina (Cârlibaba / Iacobeni, Suceava County) along National Road DN18. The route remains open year-round with active snowplow maintenance by CNAIR. Motorists can enjoy smooth modern asphalt, breathtaking alpine vistas of the Rodna Mountains National Park, and explore the wooden Prislop Monastery at the summit plateau."
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "CNAIR (Compania Națională de Administrare a Infrastructurii Rutiere)",
+        "url": "https://www.cnadnr.ro/ro/starea-drumurilor-si-trafic",
+        "type": "Official Romanian National Roads Authority"
+      },
+      {
+        "name": "Poliția Română — Centrul Infotrafic",
+        "url": "https://www.politiaromana.ro/ro/info-trafic",
+        "type": "Official National Traffic Police Bulletins"
+      },
+      {
+        "name": "DRDP Cluj & DRDP Iași (Direcțiile Regionale de Drumuri și Poduri)",
+        "url": "https://www.drdpiasi.ro",
+        "type": "Regional Highway Maintenance Directorate"
+      },
+      {
+        "name": "LivePassWatch Multi-Source Verification Methodology",
+        "url": "/methodology",
+        "type": "Independent Telemetry Corroboration Engine"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Este Pasul Prislop deschis circulației astăzi? / Is Prislop Pass open today?",
+        "answer": "Da, Drumul Național DN18 prin Pasul Prislop (1.416 m) este deschis circulației rutiere pe tot parcursul anului. CNAIR și direcțiile regionale de drumuri DRDP Cluj și DRDP Iași mențin șoseaua deschisă chiar și în timpul sezonului de iarnă prin intervenții continue cu utilaje de deszăpezire. / Yes, Prislop Pass (1,416 m / 4,646 ft) along National Road DN18 is open year-round with active maintenance by CNAIR."
+      },
+      {
+        "question": "Care este starea carosabilului pe DN18 prin Pasul Prislop? / What is the road condition on DN18?",
+        "answer": "Carosabilul de pe DN18 prin Pasul Prislop este în stare excelentă, fiind complet modernizat și reasfaltat recent. Drumul dispune de două benzi largi, marcaje clare și parapeți de siguranță noi pe tot tronsonul Borșa – Cârlibaba – Iacobeni. / The pavement on DN18 across Prislop Pass is in pristine condition following comprehensive modernization, featuring smooth asphalt, clear road markings, and modern safety guardrails."
+      },
+      {
+        "question": "Ce altitudine are Pasul Prislop? / What is the elevation of Prislop Pass?",
+        "answer": "Pasul Prislop se află la o altitudine de 1.416 metri (4.646 picioare) deasupra nivelului mării. Este cea mai înaltă trecătoare montană rutieră din întregul lanț al Carpaților Orientali din România. / Prislop Pass stands at an elevation of 1,416 meters (4,646 feet), making it the highest paved mountain pass in the Eastern Carpathians of Romania."
+      },
+      {
+        "question": "Ce obiective turistice pot fi vizitate în Pasul Prislop? / What attractions are at Prislop Pass?",
+        "answer": "În pasul somital puteți vizita Mănăstirea Schitul Prislop (Biserica din lemn Sfânta Treime), Monumentul Eroilor din Primul Război Mondial, Hanul Prislop, precum și traseele turistice spre Parcul Național Munții Rodnei (Vârful Ineu, Lacul Lala) și Cascada Cailor din apropiere. / At the summit, visitors can explore the wooden Prislop Monastery (Holy Trinity Hermitage), the World War I Memorial, Hanul Prislop mountain lodge, and trailheads leading into Rodna National Park."
+      },
+      {
+        "question": "Sunt obligatorii anvelopele de iarnă pe Pasul Prislop? / Are winter tires required on Prislop Pass?",
+        "answer": "Conform legislației rutiere din România (OUG 195/2002 republicată), anvelopele de iarnă (marcate M+S / 3PMSF) sunt obligatorii pentru toate autovehiculele atunci când carosabilul este acoperit cu zăpadă, gheață sau polei. La altitudinea de 1.416 m, condițiile de iarnă pot apărea între octombrie și aprilie. / Under Romanian road law, winter tires (M+S / 3PMSF) are mandatory whenever driving on roads covered in snow, ice, or frost."
+      }
+    ],
+    "officialSource": "https://www.cnadnr.ro/ro/starea-drumurilor-si-trafic",
+    "official_authority": "CNAIR (Compania Națională de Administrare a Infrastructurii Rutiere) / DRDP Cluj & DRDP Iași",
+    "customSeo": {
+      "title": "Pasul Prislop (1.416 m) Starea Drumului DN18, Webcam Live, Meteo & Deschidere — LivePassWatch",
+      "description": "Starea în timp real a drumului DN18 prin Pasul Prislop (1.416 m), camere webcam live, prognoza meteo, condiții de iarnă și informații turistice Maramureș - Bucovina.",
+      "h1": "Pasul Prislop (1.416 m) DN18 : Starea Drumului, Webcam Live, Meteo & Ghid Rutier"
+    },
+    "searchKeywords": [
+      "Pasul Prislop",
+      "Prislop Pass",
+      "Pasul Prislop starea drumului",
+      "Prislop Pass road conditions",
+      "DN18 Pasul Prislop",
+      "Webcam Pasul Prislop",
+      "Mănăstirea Prislop Maramureș",
+      "Hora de la Prislop",
+      "Borșa Cârlibaba drum",
+      "CNAIR Pasul Prislop",
+      "Munții Rodnei trecătoare",
+      "Eastern Carpathians highest pass"
+    ]
   }
 ];
 
@@ -10947,6 +11185,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Graubünden' || state === 'Grisons' || passSlug === 'bernina-pass') return 'graubunden';
   if (state === 'Møre og Romsdal' || passSlug === 'trollstigen-pass') return 'more-og-romsdal';
   if (state === 'Valais' || passSlug === 'simplon-pass') return 'valais';
+  if (state === 'Maramureș & Suceava' || passSlug === 'prislop-pass') return 'maramures-suceava';
   return cleanSlug(state);
 }
 
@@ -10955,5 +11194,6 @@ export function getPassUrl(pass: { country: string; state?: string; slug: string
   const stateSlug = getStateSlug(pass.state, pass.slug);
   return stateSlug ? `/passes/${countrySlug}/${stateSlug}/${pass.slug}` : `/passes/${countrySlug}/${pass.slug}`;
 }
+
 
 

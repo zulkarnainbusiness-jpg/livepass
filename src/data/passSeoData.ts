@@ -541,7 +541,24 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Great St Bernard Pass (Valais & Aosta Valley)',
     crossLinkUrl: '/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass',
     crossLinkText: 'Compare Simplon Pass road conditions with other premier Swiss-Italian alpine routes like the'
+  },
+  'prislop-pass': {
+    nearestTowns: [
+      { name: 'Borșa & Complex Turistic Borșa, Maramureș', distance: '16.0 km (9.9 miles)', direction: 'West via DN18' },
+      { name: 'Cârlibaba, Suceava (Bucovina)', distance: '18.0 km (11.2 miles)', direction: 'East via DN18' },
+      { name: 'Iacobeni, Suceava (Joncțiune DN17 / E58)', distance: '36.0 km (22.4 miles)', direction: 'Southeast via DN18' },
+      { name: 'Vișeu de Sus, Maramureș (Mocănița)', distance: '49.0 km (30.4 miles)', direction: 'West via DN18' },
+      { name: 'Vatra Dornei, Suceava (Stațiune Balneară)', distance: '52.0 km (32.3 miles)', direction: 'Southeast via DN18 & DN17' },
+      { name: 'Sighetu Marmației, Maramureș', distance: '108 km (67.1 miles)', direction: 'Northwest via DN18' }
+    ],
+    seasonalClosureWindow: 'Deschis Tot Timpul Anului / Open Year-Round 365 Days (Întreținere și deszăpezire CNAIR / DRDP Cluj & Iași)',
+    seasonalClosureDetail: 'Menținut deschis 365 de zile pe an de către Compania Națională de Administrare a Infrastructurii Rutiere (CNAIR) prin DRDP Cluj (Secția Drumuri Naționale Baia Mare) și DRDP Iași (Secția Drumuri Naționale Câmpulung Moldovenesc). Șoseaua DN18 a fost integral reabilitată și modernizată cu asfalt neted, marcaje reflectorizante și parapeți de siguranță. Pe timp de iarnă, utilajele cu lamă și sărărițele intervin continuu; anvelopele de iarnă (M+S / 3PMSF) sunt strict obligatorii pe carosabil acoperit cu zăpadă sau polei.',
+    aboutPass: 'Pasul Prislop (1.416 m / 4.646 ft) este cel mai înalt pas rutier din Carpații Orientali din România, situat pe Drumul Național 18 (DN18) la granița istorică dintre județul Maramureș și județul Suceava (Bucovina). Înconjurat de crestele maiestuoase ale Munților Rodnei (Vârful Pietrosu 2.303 m și Vârful Ineu 2.279 m) și ale Munților Maramureșului, pasul constituie principala punte de legătură între Țara Maramureșului și Țara Fagilor. În punctul somital se află Mănăstirea Prislop (Schitul Sfânta Treime cu biserica din lemn în stil maramureșean), Hanul Prislop și Monumentul Eroilor din Primul Război Mondial. În fiecare august, platoul somital găzduiește festivalul folcloric «Hora de la Prislop», o grandioasă celebrare a tradițiilor din Maramureș, Bucovina și Transilvania.',
+    crossLinkAnchor: 'Transfăgărășan & European Mountain Routes',
+    crossLinkUrl: '/passes',
+    crossLinkText: 'Comparați condițiile din Pasul Prislop cu alte trecători montane spectaculoase din România și Europa pe'
   }
 };
+
 
 

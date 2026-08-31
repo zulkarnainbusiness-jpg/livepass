@@ -448,6 +448,30 @@ export const hierarchyData: HierarchyContinent[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "romania",
+        "name": "Romania",
+        "code": "ROU",
+        "flagEmoji": "🇷🇴",
+        "states": [
+          {
+            "id": "maramures-suceava",
+            "name": "Maramureș & Suceava",
+            "passes": [
+              {
+                "id": "prislop-pass",
+                "slug": "prislop-pass",
+                "name": "Prislop Pass (Pasul Prislop)",
+                "highway": "DN18",
+                "elevationFt": 4646,
+                "elevationM": 1416,
+                "status": "OPEN",
+                "image": "/prislop-pass-romania.webp"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

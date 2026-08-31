@@ -84,6 +84,8 @@
 /passes/simplonpass /passes/switzerland/valais/simplon-pass 301
 /passes/switzerland/simplon /passes/switzerland/valais/simplon-pass 301
 /passes/switzerland/simplonpass /passes/switzerland/valais/simplon-pass 301
+/passes/prislop-pass /passes/romania/maramures-suceava/prislop-pass 301
+/passes/romania/prislop-pass /passes/romania/maramures-suceava/prislop-pass 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

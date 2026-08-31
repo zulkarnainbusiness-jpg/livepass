@@ -139,7 +139,8 @@ export const PassDetailPage: React.FC = () => {
   const [isRefreshingCam, setIsRefreshingCam] = useState(false);
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
   const [isUserCamModalOpen, setIsUserCamModalOpen] = useState(false);
-  const [pageLang, setPageLang] = useState<'de' | 'fr' | 'it' | 'en'>(() => {
+  const [pageLang, setPageLang] = useState<'de' | 'fr' | 'it' | 'ro' | 'en'>(() => {
+    if (targetSlug.toLowerCase().includes('prislop')) return 'ro';
     if (targetSlug.toLowerCase().includes('grimsel') || targetSlug.toLowerCase().includes('susten')) return 'de';
     if (targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard')) return 'it';
     if (targetSlug.toLowerCase().includes('galibier') || targetSlug.toLowerCase().includes('iseran')) return 'fr';
@@ -153,7 +154,9 @@ export const PassDetailPage: React.FC = () => {
 
   // Sync default language when pass changes
   useEffect(() => {
-    if (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') {
+    if (pass.slug === 'prislop-pass') {
+      setPageLang('ro');
+    } else if (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') {
       setPageLang('de');
     } else if (pass.slug === 'bernina-pass') {
       setPageLang('de');
@@ -448,6 +451,89 @@ export const PassDetailPage: React.FC = () => {
         </nav>
 
         {/* Bilingual Language Switcher for Col du Galibier, Col de l'Iseran, Great St Bernard Pass & Grimsel Pass */}
+        {pass.slug === 'prislop-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(234, 179, 8, 0.08) 0%, rgba(59, 130, 246, 0.06) 100%)',
+            border: '1px solid rgba(234, 179, 8, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#854D0E' }}>
+              <Globe size={18} color="#CA8A04" />
+              <span>
+                {pageLang === 'ro' 
+                  ? '🇷🇴 Conținut oficial în limba română (Comutați oricând pe traducerea automată în engleză)' 
+                  : '🇬🇧 English Auto-Translation Active (Switch to native Romanian anytime)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('ro')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'ro' ? '#D97706' : 'transparent',
+                    color: pageLang === 'ro' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇷🇴 Română
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#D97706' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇬🇧 English (Auto-Translated)
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/romania/maramures-suceava/prislop-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#1D4ED8',
+                  background: '#EFF6FF',
+                  border: '1px solid #BFDBFE',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Deschide în Google Translate / Translate with Google"
+              >
+                <Globe size={14} />
+                <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
         {(pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
@@ -783,7 +869,9 @@ export const PassDetailPage: React.FC = () => {
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 14px', borderRadius: '9999px', backgroundColor: 'rgba(56, 189, 248, 0.12)', color: 'var(--primary)', fontSize: '13px', fontWeight: '700', border: '1px solid rgba(56, 189, 248, 0.25)' }}>
                 <Clock size={14} />
                 <span>
-                  {pass.slug === 'bernina-pass' && pageLang === 'de'
+                  {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                    ? `Actualizat : ${pass.lastUpdated}`
+                    : pass.slug === 'bernina-pass' && pageLang === 'de'
                     ? `Letzte Aktualisierung : ${pass.lastUpdated}`
                     : pass.slug === 'bernina-pass' && pageLang === 'it'
                     ? `Ultimo aggiornamento : ${pass.lastUpdated}`
@@ -803,7 +891,9 @@ export const PassDetailPage: React.FC = () => {
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', borderRadius: '9999px', backgroundColor: 'var(--bg-surface-subtle)', color: 'var(--text-secondary)', fontSize: '13px', border: '1px solid var(--border-color)' }}>
                 <Mountain size={14} />
                 <span>
-                  {pass.slug === 'bernina-pass' && pageLang === 'de'
+                  {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                    ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                    : pass.slug === 'bernina-pass' && pageLang === 'de'
                     ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                     : pass.slug === 'bernina-pass' && pageLang === 'it'
                     ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
@@ -824,7 +914,11 @@ export const PassDetailPage: React.FC = () => {
 
             <div className="title-and-star">
               <h1 className="pass-main-heading">
-                {pass.slug === 'bernina-pass'
+                {pass.slug === 'prislop-pass'
+                  ? (pageLang === 'ro'
+                      ? "Pasul Prislop (1.416 m) DN18 : Starea Drumului, Webcam Live, Meteo & Ghid Rutier"
+                      : "Prislop Pass (1,416 m / 4,646 ft) DN18: Road Conditions, Live Webcam, Weather & Travel Guide")
+                  : pass.slug === 'bernina-pass'
                   ? (pageLang === 'de'
                       ? "Berninapass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten"
                       : pageLang === 'it'
@@ -867,7 +961,9 @@ export const PassDetailPage: React.FC = () => {
               <span>{pass.state ? `${pass.state}, ` : ''}{pass.country}</span>
               <span className="dot-sep">•</span>
               <span>
-                {pass.slug === 'bernina-pass' && pageLang === 'de'
+                {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                  ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                  : pass.slug === 'bernina-pass' && pageLang === 'de'
                   ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                   : pass.slug === 'bernina-pass' && pageLang === 'it'
                   ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
@@ -881,7 +977,11 @@ export const PassDetailPage: React.FC = () => {
               </span>
             </div>
             <p className="pass-summary-paragraph">
-              {pass.slug === 'bernina-pass'
+              {pass.slug === 'prislop-pass'
+                ? (pageLang === 'ro'
+                    ? "Pasul Prislop (1.416 m / 4.646 ft) este cea mai înaltă trecătoare rutieră din Carpații Orientali din România, situată pe Drumul Național 18 (DN18) la granița istorică dintre județele Maramureș și Suceava (Bucovina). Înconjurată de piscurile maiestuoase ale Munților Rodnei și Munților Maramureșului, trecătoarea oferă o conexiune vitală între Țara Maramureșului (Borșa) și Țara Fagilor (Cârlibaba / Iacobeni / Vatra Dornei). În vârful pasului se află Mănăstirea Prislop (Schitul Sfânta Treime), Hanul Prislop și Monumentul Eroilor, iar în fiecare august platoul găzduiește marele festival folcloric «Hora de la Prislop»."
+                    : "Prislop Pass (1,416 m / 4,646 ft) is the highest paved mountain pass in the Eastern Carpathians of Romania, carrying National Road DN18 across the scenic boundary between Maramureș (Borșa) and Bucovina (Cârlibaba / Iacobeni, Suceava County). Flanked by the majestic Rodna and Maramureș mountain ranges, it offers fully modernized asphalt, the wooden Holy Trinity Prislop Monastery at the summit, and hosts the historic annual 'Hora de la Prislop' folklore celebration.")
+                : pass.slug === 'bernina-pass'
                 ? (pageLang === 'de'
                     ? "Der Berninapass (2.328 m ü. M. / 7.638 ft) verbindet das Engadin (Pontresina / St. Moritz) im Kanton Graubünden mit dem Puschlav (Val Poschiavo) und Tirano in Italien über die Hauptstrasse 29. Als einer der wenigen Schweizer Hochgebirgspässe wird die Bernina-Strasse vom Tiefbauamt Graubünden ganzjährig 365 Tage offen gehalten. Parallel zur Passstrasse verläuft die weltberühmte UNESCO-Welterbestrecke der Rhätischen Bahn (Bernina Express) am Ufer des türkisfarbenen Lago Bianco."
                     : pageLang === 'it'
@@ -914,7 +1014,9 @@ export const PassDetailPage: React.FC = () => {
           <div className="pass-header-actions">
             <button onClick={handleShare} className="btn btn-secondary action-pill-btn">
               <Share2 size={16} /> 
-              {pass.slug === 'bernina-pass' && pageLang === 'de'
+              {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                ? 'Distribuie'
+                : pass.slug === 'bernina-pass' && pageLang === 'de'
                 ? 'Teilen'
                 : pass.slug === 'bernina-pass' && pageLang === 'it'
                 ? 'Condividi'
@@ -929,7 +1031,9 @@ export const PassDetailPage: React.FC = () => {
             <button onClick={toggleFavorite} className="btn btn-secondary action-pill-btn">
               <Heart size={16} fill={isFavorite ? '#EF4444' : 'none'} color={isFavorite ? '#EF4444' : 'currentColor'} />
               {isFavorite 
-                ? (pass.slug === 'bernina-pass' && pageLang === 'de'
+                ? (pass.slug === 'prislop-pass' && pageLang === 'ro'
+                    ? 'Salvat la favorite'
+                    : pass.slug === 'bernina-pass' && pageLang === 'de'
                     ? 'Gemerkt'
                     : pass.slug === 'bernina-pass' && pageLang === 'it'
                     ? 'Preferito'
@@ -940,7 +1044,9 @@ export const PassDetailPage: React.FC = () => {
                     : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                     ? 'Preferito'
                     : 'Favorited') 
-                : (pass.slug === 'bernina-pass' && pageLang === 'de'
+                : (pass.slug === 'prislop-pass' && pageLang === 'ro'
+                    ? 'Adaugă la favorite'
+                    : pass.slug === 'bernina-pass' && pageLang === 'de'
                     ? 'Pass merken'
                     : pass.slug === 'bernina-pass' && pageLang === 'it'
                     ? 'Aggiungi ai preferiti'
@@ -2131,7 +2237,11 @@ export const PassDetailPage: React.FC = () => {
               </h2>
               <div className="travel-guidance-container lp-card" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <p className="narrative-p" style={{ marginBottom: '8px' }}>
-                  {pass.slug === 'grimsel-pass'
+                  {pass.slug === 'prislop-pass'
+                    ? (pageLang === 'ro'
+                        ? 'Traversarea Pasului Prislop la 1.416 metri altitudine între Maramureș și Bucovina pe DN18 reprezintă una dintre cele mai frumoase călătorii transcarpatice din România, printre păduri de conifere și panorame spre Munții Rodnei.'
+                        : 'Crossing Prislop Pass at 1,416 meters (4,646 ft) along DN18 between Maramureș and Bucovina is one of the most scenic trans-Carpathian journeys in Romania, flanked by ancient spruce forests and panoramic views of the Rodna Mountains.')
+                    : pass.slug === 'grimsel-pass'
                     ? (pageLang === 'de'
                         ? 'Die Fahrt über den Grimselpass auf 2.164 m ü. M. zwischen dem Haslital und dem Goms bietet ein unvergleichliches Alpenpanorama zwischen Granitschluchten und türkisfarbenen Stauseen.'
                         : 'Crossing Grimsel Pass at 2,164 meters (7,100 ft) between Haslital (Bern) and Goms (Valais) delivers an awe-inspiring alpine journey amidst polished granite canyons and turquoise hydropower reservoirs.')
@@ -2149,7 +2259,9 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Clock size={16} /> 
-                      {(pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
+                      {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                        ? 'Traseu & Sezon de Călătorie'
+                        : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Route & Reisesaison'
                         : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                         ? 'Itinéraire & Période d\'Ouverture' 
@@ -2158,7 +2270,11 @@ export const PassDetailPage: React.FC = () => {
                         : 'Route & Travel Season'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'grimsel-pass')
+                      {(pass.slug === 'prislop-pass')
+                        ? (pageLang === 'ro'
+                            ? 'Drumul Național 18 (DN18) leagă orașul Borșa (Maramureș) de Cârlibaba și Iacobeni (Suceava / Bucovina). Pasul este deschis 365 de zile pe an datorită lucrărilor de modernizare și utilajelor de întreținere ale CNAIR. Asfaltul neted și semnalizarea nouă oferă condiții excelente de condus.'
+                            : 'National Road DN18 connects Borșa (Maramureș) with Cârlibaba and Iacobeni (Bucovina / Suceava). Prislop Pass is open 365 days a year with active CNAIR maintenance. Pristine newly resurfaced asphalt offers great driving comfort.')
+                        : (pass.slug === 'grimsel-pass')
                         ? (pageLang === 'de'
                             ? 'Die Hauptstrasse 6 verbindet Innertkirchen / Meiringen (Bern) mit Gletsch und Oberwald (Wallis). Die Passstrasse ist in der Regel von Anfang Juni bis Ende Oktober für den regulären Sommerverkehr geöffnet. Der Schweizer Qualitätsasphalt bietet beste Fahrbedingungen.'
                             : 'Route 6 links Innertkirchen & Meiringen (Bern) with Gletsch & Oberwald (Valais). Open typically from early June to late October. Paved Swiss asphalt is in pristine condition for summer mountain travel.')
@@ -2192,7 +2308,9 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Mountain size={16} /> 
-                      {(pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
+                      {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                        ? 'Meteo Alpin & Siguranță'
+                        : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Wetter & Hochgebirgssicherheit'
                         : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                         ? 'Météo Alti & Sécurité Altitude' 
@@ -2201,7 +2319,11 @@ export const PassDetailPage: React.FC = () => {
                         : 'High-Altitude Safety & Weather'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'grimsel-pass')
+                      {(pass.slug === 'prislop-pass')
+                        ? (pageLang === 'ro'
+                            ? 'La 1.416 m altitudine pe platoul pasului, temperaturile sunt cu 6–10°C mai scăzute decât în văile Vișeului sau Bistriței Aurii. Ceața montană și ploile torențiale pot reduce brusc vizibilitatea; verificați buletinele meteo și camerele live înainte de pornire.'
+                            : 'At 1,416 m summit elevation, temperatures are typically 6–10°C cooler than in Borșa or Vatra Dornei. High mountain fog and sudden showers can reduce visibility; verify live webcams and weather reports before departure.')
+                        : (pass.slug === 'grimsel-pass')
                         ? (pageLang === 'de'
                             ? 'Auf der Passhöhe (2.164 m) herrschen oft 10–14°C kühlere Temperaturen als in Interlaken oder Brig. Rasche Wetterumschwünge mit dichtem Bergnebel über dem Totensee sind häufig; vor der Abfahrt stets MeteoSchweiz-Berichte und Live-Webcams prüfen.'
                             : 'At 2,164 m summit elevation, temperatures are typically 10–14°C cooler than in Interlaken or Brig. High alpine fog and brisk winds across the Totensee plateau can develop rapidly; check MeteoSwiss reports and live Hospiz webcams.')
@@ -2235,7 +2357,9 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <ShieldCheck size={16} /> 
-                      {(pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
+                      {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                        ? 'Rovinietă & Reglementări Rutiere'
+                        : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Mautfreiheit & Schweizer Strassenordnung'
                         : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
                         ? 'Péage & Réglementation Routière' 
@@ -2244,7 +2368,11 @@ export const PassDetailPage: React.FC = () => {
                         : 'Tolls & Road Regulations'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'grimsel-pass')
+                      {(pass.slug === 'prislop-pass')
+                        ? (pageLang === 'ro'
+                            ? 'DN18 prin Pasul Prislop este un drum național public administrat de CNAIR. Nu există taxe speciale de trecere pentru pas, însă este obligatorie Rovinieta națională pentru toate autovehiculele înmatriculate. Viteza recomandată în serpentine este de 50 km/h.'
+                            : 'DN18 across Prislop Pass is a public national highway managed by CNAIR. No pass-specific tolls apply, but standard Romanian national road tax (Rovinietă) is mandatory. Recommended speed in mountain serpentines is 50 km/h.')
+                        : (pass.slug === 'grimsel-pass')
                         ? (pageLang === 'de'
                             ? 'Die Grimsel-Passstrasse (Hauptstrasse 6) ist eine 100% mautfreie Schweizer Kantonsstrasse. Keine Autobahnvignette auf der Passstrasse erforderlich. Die Vignette wird nur bei Benützung der Nationalstrassen (z. B. A8 Spiez-Interlaken oder A9 Wallis) benötigt.'
                             : 'Grimsel Pass (Hauptstrasse 6) is a 100% toll-free Swiss public cantonal highway. No tolls and no Swiss motorway vignette are needed for the pass road itself; a vignette is only required when entering Swiss motorways (A8/A9).')
@@ -2278,7 +2406,9 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Car size={16} /> 
-                      {pass.slug === 'grimsel-pass' && pageLang === 'de'
+                      {pass.slug === 'prislop-pass' && pageLang === 'ro'
+                        ? 'Legislație Iarnă & Echipare'
+                        : pass.slug === 'grimsel-pass' && pageLang === 'de'
                         ? 'Wintersperre & Autoverlad-Alternativen'
                         : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
                         ? 'Équipements Hiver & Alternatives' 
@@ -2287,7 +2417,11 @@ export const PassDetailPage: React.FC = () => {
                         : 'Winter Laws & Seasonal Detours'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'grimsel-pass')
+                      {(pass.slug === 'prislop-pass')
+                        ? (pageLang === 'ro'
+                            ? 'Conform OUG 195/2002, anvelopele de iarnă (M+S / 3PMSF) sunt strict obligatorii când carosabilul este acoperit de zăpadă sau gheață. Utilajele DRDP Cluj și DRDP Iași intervin cu sărărițe și lame de zăpadă pentru a menține pasul deschis chiar și în timpul viscolelor carpatine.'
+                            : 'Romanian traffic law mandates approved winter tires (M+S / 3PMSF) on snow or icy roads. DRDP Cluj & DRDP Iași snowplows operate continuously with anti-skid treatment to keep the pass open throughout winter blizzards.')
+                        : (pass.slug === 'grimsel-pass')
                         ? (pageLang === 'de'
                             ? 'Während der monatelangen Wintersperre (November bis Ende Mai) weichen Autofahrer zwischen dem Berner Oberland und dem Wallis auf den Autoverlad Lötschberg (BLS Kandersteg–Goppenstein, ca. 20 min) oder den Autoverlad Furka (MGB Realp–Oberwald) aus.'
                             : 'During the winter closure (Nov to late May), drivers traveling between Bernese Oberland and Valais divert via the BLS Lötschberg car shuttle train (Kandersteg–Goppenstein, ~20 min) or the MGB Furka car train (Realp–Oberwald).')

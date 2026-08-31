@@ -86,7 +86,10 @@ const LegacyPassRedirect: React.FC = () => {
          (clean === 'simplon' && p.slug === 'simplon-pass') ||
          (clean === 'simplonpass' && p.slug === 'simplon-pass') ||
          (clean === 'passo-del-sempione' && p.slug === 'simplon-pass') ||
-         (clean === 'col-du-simplon' && p.slug === 'simplon-pass')
+         (clean === 'col-du-simplon' && p.slug === 'simplon-pass') ||
+         (clean === 'prislop' && p.slug === 'prislop-pass') ||
+         (clean === 'pasul-prislop' && p.slug === 'prislop-pass') ||
+         (clean === 'pasulprislop' && p.slug === 'prislop-pass')
   );
 
   if (targetPass) {
@@ -145,6 +148,10 @@ export const App: React.FC = () => {
               <Route path="/simplon" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
               <Route path="/passo-del-sempione" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
               <Route path="/col-du-simplon" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
+              <Route path="/prislop-pass" element={<Navigate to="/passes/romania/maramures-suceava/prislop-pass" replace />} />
+              <Route path="/pasul-prislop" element={<Navigate to="/passes/romania/maramures-suceava/prislop-pass" replace />} />
+              <Route path="/pasulprislop" element={<Navigate to="/passes/romania/maramures-suceava/prislop-pass" replace />} />
+              <Route path="/prislop" element={<Navigate to="/passes/romania/maramures-suceava/prislop-pass" replace />} />
               
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />
