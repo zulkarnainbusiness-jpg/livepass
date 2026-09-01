@@ -94,7 +94,15 @@ const LegacyPassRedirect: React.FC = () => {
          (clean === 'vrsic-pass' && p.slug === 'vrsic-pass') ||
          (clean === 'prelaz-vrsic' && p.slug === 'vrsic-pass') ||
          (clean === 'prelazvrsic' && p.slug === 'vrsic-pass') ||
-         (clean === 'ruska-cesta' && p.slug === 'vrsic-pass')
+         (clean === 'ruska-cesta' && p.slug === 'vrsic-pass') ||
+         (clean === 'bonette' && p.slug === 'col-de-la-bonette') ||
+         (clean === 'col-de-la-bonette' && p.slug === 'col-de-la-bonette') ||
+         (clean === 'coldelabonette' && p.slug === 'col-de-la-bonette') ||
+         (clean === 'cime-de-la-bonette' && p.slug === 'col-de-la-bonette') ||
+         (clean === 'cimedelabonette' && p.slug === 'col-de-la-bonette') ||
+         (clean === 'cime-bonette' && p.slug === 'col-de-la-bonette') ||
+         (clean === 'col-de-bonette' && p.slug === 'col-de-la-bonette') ||
+         (clean === 'la-bonette' && p.slug === 'col-de-la-bonette')
   );
 
   if (targetPass) {
@@ -131,6 +139,11 @@ export const App: React.FC = () => {
               <Route path="/col-de-l-iseran" element={<Navigate to="/passes/france/savoie/col-de-l-iseran" replace />} />
               <Route path="/col-de-liseran" element={<Navigate to="/passes/france/savoie/col-de-l-iseran" replace />} />
               <Route path="/iseran" element={<Navigate to="/passes/france/savoie/col-de-l-iseran" replace />} />
+              <Route path="/col-de-la-bonette" element={<Navigate to="/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette" replace />} />
+              <Route path="/cime-de-la-bonette" element={<Navigate to="/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette" replace />} />
+              <Route path="/cime-bonette" element={<Navigate to="/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette" replace />} />
+              <Route path="/bonette" element={<Navigate to="/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette" replace />} />
+              <Route path="/la-bonette" element={<Navigate to="/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette" replace />} />
               <Route path="/great-st-bernard-pass" element={<Navigate to="/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass" replace />} />
               <Route path="/col-du-grand-saint-bernard" element={<Navigate to="/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass" replace />} />
               <Route path="/grand-saint-bernard" element={<Navigate to="/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass" replace />} />
@@ -151,7 +164,7 @@ export const App: React.FC = () => {
               <Route path="/simplon-pass" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
               <Route path="/simplonpass" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
               <Route path="/simplon" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
-              <Route path="/passo-del-sempione" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
+              <Route path="/passo-del-simplon" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
               <Route path="/col-du-simplon" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
               <Route path="/prislop-pass" element={<Navigate to="/passes/romania/maramures-suceava/prislop-pass" replace />} />
               <Route path="/pasul-prislop" element={<Navigate to="/passes/romania/maramures-suceava/prislop-pass" replace />} />

@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation, Link } from 'react-router-dom';
-import { 
-  CheckCircle2, 
-  AlertTriangle, 
-  XCircle, 
-  Snowflake, 
-  Wind, 
-  Share2, 
-  Star, 
-  Heart, 
-  ChevronRight, 
-  ChevronLeft, 
-  ChevronDown, 
-  ChevronUp, 
-  ExternalLink, 
+import {
+  CheckCircle2,
+  AlertTriangle,
+  XCircle,
+  Snowflake,
+  Wind,
+  Share2,
+  Star,
+  Heart,
+  ChevronRight,
+  ChevronLeft,
+  ChevronDown,
+  ChevronUp,
+  ExternalLink,
   HelpCircle,
   Camera,
   MapPin,
@@ -61,7 +61,7 @@ export const PassDetailPage: React.FC = () => {
   const pathSegments = location.pathname.split('?')[0].split('/').filter(Boolean);
   const lastPathSegment = pathSegments.length > 0 ? pathSegments[pathSegments.length - 1] : undefined;
   const targetSlug = slug || (lastPathSegment && lastPathSegment !== 'passes' ? lastPathSegment : '');
-  
+
   const basePass = passes.find(p => p.slug.toLowerCase() === targetSlug.toLowerCase() || p.id.toLowerCase() === targetSlug.toLowerCase()) || null;
 
   // State for the pass data (so it can be dynamically updated with real-time API values)
@@ -103,7 +103,7 @@ export const PassDetailPage: React.FC = () => {
           if (data.success) {
             setHistory(data.history || []);
             setVerificationMeta(data.pass);
-            
+
             // Sync status and other fields from the database pass
             setPass(prev => {
               if (!prev || prev.id !== activePass.id) return prev;
@@ -144,7 +144,7 @@ export const PassDetailPage: React.FC = () => {
     if (targetSlug.toLowerCase().includes('prislop')) return 'ro';
     if (targetSlug.toLowerCase().includes('grimsel') || targetSlug.toLowerCase().includes('susten')) return 'de';
     if (targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard')) return 'it';
-    if (targetSlug.toLowerCase().includes('galibier') || targetSlug.toLowerCase().includes('iseran')) return 'fr';
+    if (targetSlug.toLowerCase().includes('galibier') || targetSlug.toLowerCase().includes('iseran') || targetSlug.toLowerCase().includes('bonette')) return 'fr';
     return 'en';
   });
 
@@ -165,7 +165,7 @@ export const PassDetailPage: React.FC = () => {
       setPageLang('de');
     } else if (pass.slug === 'great-st-bernard-pass') {
       setPageLang('it');
-    } else if (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') {
+    } else if (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') {
       setPageLang('fr');
     }
   }, [pass.slug]);
@@ -242,44 +242,44 @@ export const PassDetailPage: React.FC = () => {
   const imageAltText = (pass.slug === 'bernina-pass')
     ? 'Bernina Pass mountain road in the Swiss Alps'
     : (pass.slug === 'gotthard-pass')
-    ? 'Gotthard Pass mountain road in the Swiss Alps'
-    : (pass.slug === 'grimsel-pass')
-    ? 'Grimsel Pass mountain road in the Swiss Alps'
-    : (pass.slug === 'susten-pass')
-    ? 'Susten Pass mountain road, Steingletscher glacier, and Scheiteltunnel in the Swiss Alps'
-    : (pass.slug === 'rogers-pass')
-    ? 'Rogers Pass Trans-Canada Highway through Glacier National Park in British Columbia Canada'
-    : (pass.slug === 'great-st-bernard-pass')
-    ? 'Great St Bernard Pass road and Alpine mountain landscape'
-    : (pass.slug === 'col-du-galibier')
-    ? 'Col du Galibier mountain pass road and summit monument in the French Alps'
-    : (pass.slug === 'col-de-l-iseran')
-    ? 'Col de l\'Iseran mountain pass road, summit sign 2770m, and chapel in the French Alps Savoie'
-    : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
-    ? 'Cartoon illustration of Chang La Pass sign and snowy mountain road in Ladakh'
-    : pass.slug === 'trollstigen-pass'
-    ? 'Trollstigen Pass mountain road with winding hairpin bends in Norway'
-    : pass.slug === 'zoji-la-pass' || pass.slug === 'zoji-la'
-    ? 'Zoji La Pass in Jammu and Kashmir'
-    : pass.slug === 'stelvio-pass'
-    ? 'Stelvio Pass in Italy'
-    : pass.slug === 'sani-pass'
-    ? 'Sani Pass mountain road between South Africa and Lesotho'
-    : pass.slug === 'rohtang-pass'
-    ? 'Rohtang Pass in Himachal Pradesh'
-    : pass.slug === 'khardung-la'
-    ? 'Khardung La Pass in Ladakh'
-    : pass.slug === 'nathu-la'
-    ? 'Nathu La Pass mountain road in Sikkim, India'
-    : `${pass.name} on ${pass.highway} in ${pass.state}`;
+      ? 'Gotthard Pass mountain road in the Swiss Alps'
+      : (pass.slug === 'grimsel-pass')
+        ? 'Grimsel Pass mountain road in the Swiss Alps'
+        : (pass.slug === 'susten-pass')
+          ? 'Susten Pass mountain road, Steingletscher glacier, and Scheiteltunnel in the Swiss Alps'
+          : (pass.slug === 'rogers-pass')
+            ? 'Rogers Pass Trans-Canada Highway through Glacier National Park in British Columbia Canada'
+            : (pass.slug === 'great-st-bernard-pass')
+              ? 'Great St Bernard Pass road and Alpine mountain landscape'
+              : (pass.slug === 'col-du-galibier')
+                ? 'Col du Galibier mountain pass road and summit monument in the French Alps'
+                : (pass.slug === 'col-de-l-iseran')
+                  ? 'Col de l\'Iseran mountain pass road, summit sign 2770m, and chapel in the French Alps Savoie'
+                  : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                    ? 'Cartoon illustration of Chang La Pass sign and snowy mountain road in Ladakh'
+                    : pass.slug === 'trollstigen-pass'
+                      ? 'Trollstigen Pass mountain road with winding hairpin bends in Norway'
+                      : pass.slug === 'zoji-la-pass' || pass.slug === 'zoji-la'
+                        ? 'Zoji La Pass in Jammu and Kashmir'
+                        : pass.slug === 'stelvio-pass'
+                          ? 'Stelvio Pass in Italy'
+                          : pass.slug === 'sani-pass'
+                            ? 'Sani Pass mountain road between South Africa and Lesotho'
+                            : pass.slug === 'rohtang-pass'
+                              ? 'Rohtang Pass in Himachal Pradesh'
+                              : pass.slug === 'khardung-la'
+                                ? 'Khardung La Pass in Ladakh'
+                                : pass.slug === 'nathu-la'
+                                  ? 'Nathu La Pass mountain road in Sikkim, India'
+                                  : `${pass.name} on ${pass.highway} in ${pass.state}`;
 
   const seoDetails = passSeoDetails[pass.slug] || passSeoDetails[pass.id];
   const seoTitle = `${pass.name} Live Webcam & Open/Closed Status – Updated Today`;
   const seoDesc = `Live ${pass.name} webcam feeds, highway conditions, and real-time open/closed status on ${pass.highway}, ${pass.state ? `${pass.state}, ` : ''}${pass.country}. Verified and updated ${pass.lastUpdated}.`;
 
   const displayedStatus = liveDataError ? 'NEEDS_VERIFICATION' : pass.status;
-  const displayedStatusDetail = liveDataError 
-    ? `Live status verification failed. Official status could not be reverified.` 
+  const displayedStatusDetail = liveDataError
+    ? `Live status verification failed. Official status could not be reverified.`
     : pass.statusDetail;
 
   const officialSourceDisplay = pass.dataSources && pass.dataSources.length > 0
@@ -470,8 +470,8 @@ export const PassDetailPage: React.FC = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#1E40AF' }}>
               <Globe size={18} color="#2563EB" />
               <span>
-                {pageLang === 'sl' 
-                  ? '🇸🇮 Uradna regionalna vsebina v slovenščini (Kadar koli preklopite na samodejni angleški prevod)' 
+                {pageLang === 'sl'
+                  ? '🇸🇮 Uradna regionalna vsebina v slovenščini (Kadar koli preklopite na samodejni angleški prevod)'
                   : '🇬🇧 English Auto-Translation Active (Switch to native Slovenian anytime)'}
               </span>
             </div>
@@ -553,8 +553,8 @@ export const PassDetailPage: React.FC = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#854D0E' }}>
               <Globe size={18} color="#CA8A04" />
               <span>
-                {pageLang === 'ro' 
-                  ? '🇷🇴 Conținut oficial în limba română (Comutați oricând pe traducerea automată în engleză)' 
+                {pageLang === 'ro'
+                  ? '🇷🇴 Conținut oficial în limba română (Comutați oricând pe traducerea automată în engleză)'
                   : '🇬🇧 English Auto-Translation Active (Switch to native Romanian anytime)'}
               </span>
             </div>
@@ -620,7 +620,7 @@ export const PassDetailPage: React.FC = () => {
           </div>
         )}
 
-        {(pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && (
+        {(pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
             alignItems: 'center',
@@ -636,44 +636,69 @@ export const PassDetailPage: React.FC = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#1E3A8A' }}>
               <Globe size={18} color="#2563EB" />
               <span>
-                {pageLang === 'fr' 
-                  ? '🇫🇷 Contenu en français officiel (Basculez vers l\'anglais à tout moment)' 
+                {pageLang === 'fr'
+                  ? '🇫🇷 Contenu en français officiel (Basculez vers l\'anglais à tout moment)'
                   : '🇬🇧 English Auto-Translation Active (Switch to native French anytime)'}
               </span>
             </div>
-            <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
-              <button
-                type="button"
-                onClick={() => setPageLang('fr')}
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇫🇷 Français
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇬🇧 English (Auto-Translated)
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : (pass.slug === 'col-de-la-bonette' ? 'https://www.livepasswatch.info/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette' : 'https://www.livepasswatch.info/passes/france/hautes-alpes-savoie/col-du-galibier'))}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
-                  padding: '6px 14px',
-                  fontSize: '13px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
                   fontWeight: '600',
-                  cursor: 'pointer',
-                  border: 'none',
-                  backgroundColor: pageLang === 'fr' ? '#2563EB' : 'transparent',
-                  color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                  color: '#1D4ED8',
+                  background: '#EFF6FF',
+                  border: '1px solid #BFDBFE',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
                   transition: 'all 0.2s ease'
                 }}
+                title="Ouvrir dans Google Traduction / Translate with Google"
               >
-                🇫🇷 Français
-              </button>
-              <button
-                type="button"
-                onClick={() => setPageLang('en')}
-                style={{
-                  padding: '6px 14px',
-                  fontSize: '13px',
-                  fontWeight: '600',
-                  cursor: 'pointer',
-                  border: 'none',
-                  backgroundColor: pageLang === 'en' ? '#2563EB' : 'transparent',
-                  color: pageLang === 'en' ? '#FFFFFF' : '#475569',
-                  transition: 'all 0.2s ease'
-                }}
-              >
-                🇬🇧 English (Auto-Translated)
-              </button>
+                <Globe size={14} />
+                <span>Google Translate ↗</span>
+              </a>
             </div>
           </div>
         )}
@@ -694,8 +719,8 @@ export const PassDetailPage: React.FC = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#065F46' }}>
               <Globe size={18} color="#10B981" />
               <span>
-                {pageLang === 'it' 
-                  ? '🇮🇹 Contenuto in italiano ufficiale (Passa alla traduzione in inglese in qualsiasi momento)' 
+                {pageLang === 'it'
+                  ? '🇮🇹 Contenuto in italiano ufficiale (Passa alla traduzione in inglese in qualsiasi momento)'
                   : '🇬🇧 English Auto-Translation Active (Switch to native Italian anytime)'}
               </span>
             </div>
@@ -752,8 +777,8 @@ export const PassDetailPage: React.FC = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#9A3412' }}>
               <Globe size={18} color="#EA580C" />
               <span>
-                {pageLang === 'de' 
-                  ? '🇩🇪 Offizielle deutsche Inhalte (Jederzeit zur englischen Übersetzung wechseln)' 
+                {pageLang === 'de'
+                  ? '🇩🇪 Offizielle deutsche Inhalte (Jederzeit zur englischen Übersetzung wechseln)'
                   : '🇬🇧 English Auto-Translation Active (Switch to native German anytime)'}
               </span>
             </div>
@@ -813,8 +838,8 @@ export const PassDetailPage: React.FC = () => {
                 {pageLang === 'de'
                   ? '🇨🇭🇩🇪 Offizielle deutsche Inhalte (Engadin / Tiefbauamt Graubünden)'
                   : pageLang === 'it'
-                  ? '🇨🇭🇮🇹 Contenuto ufficiale in italiano (Val Poschiavo / Cantone dei Grigioni)'
-                  : '🇬🇧 English Mountain Pass Portal (Switch to German or Italian anytime)'}
+                    ? '🇨🇭🇮🇹 Contenuto ufficiale in italiano (Val Poschiavo / Cantone dei Grigioni)'
+                    : '🇬🇧 English Mountain Pass Portal (Switch to German or Italian anytime)'}
               </span>
             </div>
             <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
@@ -889,8 +914,8 @@ export const PassDetailPage: React.FC = () => {
                 {pageLang === 'de'
                   ? '🇨🇭🇩🇪 Offizielle deutsche Inhalte (Uri / Zentralschweiz)'
                   : pageLang === 'it'
-                  ? '🇨🇭🇮🇹 Contenuto ufficiale in italiano (Ticino / San Gottardo)'
-                  : '🇬🇧 English Mountain Pass Portal (Switch to German or Italian anytime)'}
+                    ? '🇨🇭🇮🇹 Contenuto ufficiale in italiano (Ticino / San Gottardo)'
+                    : '🇬🇧 English Mountain Pass Portal (Switch to German or Italian anytime)'}
               </span>
             </div>
             <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
@@ -958,22 +983,22 @@ export const PassDetailPage: React.FC = () => {
                   {pass.slug === 'vrsic-pass' && pageLang === 'sl'
                     ? `Posodobljeno : ${pass.lastUpdated}`
                     : pass.slug === 'prislop-pass' && pageLang === 'ro'
-                    ? `Actualizat : ${pass.lastUpdated}`
-                    : pass.slug === 'bernina-pass' && pageLang === 'de'
-                    ? `Letzte Aktualisierung : ${pass.lastUpdated}`
-                    : pass.slug === 'bernina-pass' && pageLang === 'it'
-                    ? `Ultimo aggiornamento : ${pass.lastUpdated}`
-                    : pass.slug === 'gotthard-pass' && pageLang === 'de'
-                    ? `Letzte Aktualisierung : ${pass.lastUpdated}`
-                    : pass.slug === 'gotthard-pass' && pageLang === 'it'
-                    ? `Ultimo aggiornamento : ${pass.lastUpdated}`
-                    : pass.slug === 'grimsel-pass' && pageLang === 'de'
-                    ? `Letzte Aktualisierung : ${pass.lastUpdated}`
-                    : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
-                    ? `Dernière mise à jour : ${pass.lastUpdated}` 
-                    : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
-                    ? `Ultimo aggiornamento : ${pass.lastUpdated}`
-                    : `Last updated: ${pass.lastUpdated}`}
+                      ? `Actualizat : ${pass.lastUpdated}`
+                      : pass.slug === 'bernina-pass' && pageLang === 'de'
+                        ? `Letzte Aktualisierung : ${pass.lastUpdated}`
+                        : pass.slug === 'bernina-pass' && pageLang === 'it'
+                          ? `Ultimo aggiornamento : ${pass.lastUpdated}`
+                          : pass.slug === 'gotthard-pass' && pageLang === 'de'
+                            ? `Letzte Aktualisierung : ${pass.lastUpdated}`
+                            : pass.slug === 'gotthard-pass' && pageLang === 'it'
+                              ? `Ultimo aggiornamento : ${pass.lastUpdated}`
+                              : pass.slug === 'grimsel-pass' && pageLang === 'de'
+                                ? `Letzte Aktualisierung : ${pass.lastUpdated}`
+                                : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr'
+                                  ? `Dernière mise à jour : ${pass.lastUpdated}`
+                                  : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                                    ? `Ultimo aggiornamento : ${pass.lastUpdated}`
+                                    : `Last updated: ${pass.lastUpdated}`}
                 </span>
               </div>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', borderRadius: '9999px', backgroundColor: 'var(--bg-surface-subtle)', color: 'var(--text-secondary)', fontSize: '13px', border: '1px solid var(--border-color)' }}>
@@ -982,64 +1007,72 @@ export const PassDetailPage: React.FC = () => {
                   {pass.slug === 'vrsic-pass' && pageLang === 'sl'
                     ? `Nadmorska višina : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                     : pass.slug === 'prislop-pass' && pageLang === 'ro'
-                    ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                    : pass.slug === 'bernina-pass' && pageLang === 'de'
-                    ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                    : pass.slug === 'bernina-pass' && pageLang === 'it'
-                    ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                    : pass.slug === 'gotthard-pass' && pageLang === 'de'
-                    ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                    : pass.slug === 'gotthard-pass' && pageLang === 'it'
-                    ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                    : pass.slug === 'grimsel-pass' && pageLang === 'de'
-                    ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                    : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
-                    ? `Altitude : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)` 
-                    : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
-                    ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                    : `Elevation: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)`}
+                      ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                      : pass.slug === 'bernina-pass' && pageLang === 'de'
+                        ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                        : pass.slug === 'bernina-pass' && pageLang === 'it'
+                          ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                          : pass.slug === 'gotthard-pass' && pageLang === 'de'
+                            ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                            : pass.slug === 'gotthard-pass' && pageLang === 'it'
+                              ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                              : pass.slug === 'grimsel-pass' && pageLang === 'de'
+                                ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                                : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr'
+                                  ? `Altitude : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                                  : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                                    ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                                    : `Elevation: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)`}
                 </span>
               </div>
             </div>
 
             <div className="title-and-star">
               <h1 className="pass-main-heading">
-                {pass.slug === 'vrsic-pass'
-                  ? (pageLang === 'sl'
+                {pass.slug === 'col-de-la-bonette'
+                  ? (pageLang === 'fr'
+                    ? "Col de la Bonette (2 802 m) : État de la Route D64, Webcam Live, Météo & Date d'Ouverture"
+                    : "Col de la Bonette & Cime (2,802 m / 9,193 ft) Road D64: Live Webcams, Road Conditions, Weather & Open/Closed Status")
+                  : pass.slug === 'vrsic-pass'
+                    ? (pageLang === 'sl'
                       ? "Prelaz Vršič (1.611 m) : Stanje Ceste R206, Spletne Kamere v Živo, Vreme & Odprtost"
                       : "Vršič Pass (1,611 m / 5,285 ft) Road 206: Live Webcams, Road Conditions, Weather & Open/Closed Status")
-                  : pass.slug === 'prislop-pass'
-                  ? (pageLang === 'ro'
-                      ? "Pasul Prislop (1.416 m) DN18 : Starea Drumului, Webcam Live, Meteo & Ghid Rutier"
-                      : "Prislop Pass (1,416 m / 4,646 ft) DN18: Road Conditions, Live Webcam, Weather & Travel Guide")
-                  : pass.slug === 'bernina-pass'
-                  ? (pageLang === 'de'
-                      ? "Berninapass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten"
-                      : pageLang === 'it'
-                      ? "Passo del Bernina : Stato della Strada, Webcam Live, Meteo & Apertura"
-                      : "Bernina Pass: Live Webcam, Road Conditions, Opening Status & Weather")
-                  : pass.slug === 'gotthard-pass'
-                  ? (pageLang === 'de'
-                      ? "Gotthardpass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten"
-                      : pageLang === 'it'
-                      ? "Passo del San Gottardo : Stato della Strada, Webcam Live, Meteo & Apertura"
-                      : "Gotthard Pass: Live Webcam, Road Conditions, Opening Date & Status")
-                  : pass.slug === 'grimsel-pass'
-                  ? (pageLang === 'de'
-                      ? "Grimselpass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten"
-                      : "Grimsel Pass: Live Webcam, Road Conditions, Opening Status & Weather")
-                  : pass.slug === 'col-du-galibier'
-                  ? (pageLang === 'fr' 
-                      ? "Col du Galibier : État de la Route, Webcam Live, Météo & Date d'Ouverture" 
-                      : "Col du Galibier Pass: Live Webcam, Road Conditions, Opening Status & Weather")
-                  : pass.slug === 'great-st-bernard-pass'
-                  ? (pageLang === 'it'
-                      ? "Colle del Gran San Bernardo : Stato della Strada, Webcam Live, Meteo & Apertura"
-                      : "Great St Bernard Pass: Live Webcam, Road Conditions, Opening Status & Weather")
-                  : (pass.customSeo?.h1 || `${pass.name} Live Webcam & Road Conditions`)}
+                    : pass.slug === 'prislop-pass'
+                      ? (pageLang === 'ro'
+                        ? "Pasul Prislop (1.416 m) DN18 : Starea Drumului, Webcam Live, Meteo & Ghid Rutier"
+                        : "Prislop Pass (1,416 m / 4,646 ft) DN18: Road Conditions, Live Webcam, Weather & Travel Guide")
+                      : pass.slug === 'bernina-pass'
+                        ? (pageLang === 'de'
+                          ? "Berninapass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten"
+                          : pageLang === 'it'
+                            ? "Passo del Bernina : Stato della Strada, Webcam Live, Meteo & Apertura"
+                            : "Bernina Pass: Live Webcam, Road Conditions, Opening Status & Weather")
+                        : pass.slug === 'gotthard-pass'
+                          ? (pageLang === 'de'
+                            ? "Gotthardpass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten"
+                            : pageLang === 'it'
+                              ? "Passo del San Gottardo : Stato della Strada, Webcam Live, Meteo & Apertura"
+                              : "Gotthard Pass: Live Webcam, Road Conditions, Opening Date & Status")
+                          : pass.slug === 'grimsel-pass'
+                            ? (pageLang === 'de'
+                              ? "Grimselpass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten"
+                              : "Grimsel Pass: Live Webcam, Road Conditions, Opening Status & Weather")
+                            : pass.slug === 'col-du-galibier'
+                              ? (pageLang === 'fr'
+                                ? "Col du Galibier : État de la Route, Webcam Live, Météo & Date d'Ouverture"
+                                : "Col du Galibier Pass: Live Webcam, Road Conditions, Opening Status & Weather")
+                              : pass.slug === 'col-de-l-iseran'
+                                ? (pageLang === 'fr'
+                                  ? "Col de l'Iseran : État de la Route, Webcam Live, Météo & Date d'Ouverture"
+                                  : "Col de l'Iseran Pass: Live Webcam, Road Conditions, Opening Status & Weather")
+                                : pass.slug === 'great-st-bernard-pass'
+                                  ? (pageLang === 'it'
+                                    ? "Colle del Gran San Bernardo : Stato della Strada, Webcam Live, Meteo & Apertura"
+                                    : "Great St Bernard Pass: Live Webcam, Road Conditions, Opening Status & Weather")
+                                  : (pass.customSeo?.h1 || `${pass.name} Live Webcam & Road Conditions`)}
               </h1>
-              <button 
-                onClick={toggleFavorite} 
+              <button
+                onClick={toggleFavorite}
                 className={`star-icon-btn ${isFavorite ? 'active' : ''}`}
                 title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
                 aria-label="Favorite toggle"
@@ -1058,121 +1091,125 @@ export const PassDetailPage: React.FC = () => {
                 {pass.slug === 'vrsic-pass' && pageLang === 'sl'
                   ? `Nadmorska višina : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                   : pass.slug === 'prislop-pass' && pageLang === 'ro'
-                  ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                  : pass.slug === 'bernina-pass' && pageLang === 'de'
-                  ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                  : pass.slug === 'bernina-pass' && pageLang === 'it'
-                  ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                  : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
-                  ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                  : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr'
-                  ? `Sommet : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                  : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
-                  ? `Sommità : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                  : `Summit: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)`}
+                    ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                    : pass.slug === 'bernina-pass' && pageLang === 'de'
+                      ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                      : pass.slug === 'bernina-pass' && pageLang === 'it'
+                        ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                        : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
+                          ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                          : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr'
+                            ? `Sommet : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                            : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                              ? `Sommità : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
+                              : `Summit: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)`}
               </span>
             </div>
             <p className="pass-summary-paragraph">
-              {pass.slug === 'vrsic-pass'
-                ? (pageLang === 'sl'
+              {pass.slug === 'col-de-la-bonette'
+                ? (pageLang === 'fr'
+                  ? "Le Col de la Bonette (2 715 m) et la boucle de la Cime de la Bonette (2 802 m / 9 193 ft) constituent la plus haute route asphaltée de France et la plus haute boucle routière d'Europe sur la Route départementale D64 (Route des Grandes Alpes), reliant Jausiers dans la Vallée de l'Ubaye (Alpes-de-Haute-Provence) à Saint-Étienne-de-Tinée (Alpes-Maritimes) à travers le Parc National du Mercantour. Célèbre pour ses panoramas à 360 degrés vers la Méditerranée, les ruines militaires du Camp des Fourches et les casemates Maginot du Restefond."
+                  : "Col de la Bonette (2,715 m) and the scenic summit loop of Cime de la Bonette (2,802 m / 9,193 ft) form the highest paved through-road in France and Europe along Route D64 (Route des Grandes Alpes), linking Jausiers in the Ubaye Valley (Alpes-de-Haute-Provence) with Saint-Étienne-de-Tinée (Alpes-Maritimes) in Mercantour National Park. Celebrated for 360-degree vistas extending to the Mediterranean, the ghost military village of Camp des Fourches, and the Maginot Line Restefond casemates.")
+                : pass.slug === 'vrsic-pass'
+                  ? (pageLang === 'sl'
                     ? "Prelaz Vršič (1.611 m / 5.285 ft) je najvišji gorski cestni prelaz v Vzhodnih Julijskih Alpah v Sloveniji, ki povezuje Gorenjsko (Kranjska Gora) s Primorsko in dolino reke Soče (Trenta / Bovec) po Regionalni cesti 206 (Ruska cesta). Znan po svojih 50 znamenitih serpentinah, Ruski kapelici, planinskih kočah (Erjavčeva koča, Tičarjev dom, Poštarski dom) ter nepozabnem pogledu na Ajdovsko deklico v Prisojniku in vrhove Triglavskega narodnega parka."
                     : "Vršič Pass (1,611 m / 5,285 ft) is the highest paved mountain road pass in the Eastern Julian Alps of Slovenia, connecting Kranjska Gora in Upper Carniola with Trenta and Bovec in the emerald Soča Valley along Road 206 (the Russian Road). Celebrated for its 50 numbered hairpin turns, the historic World War I Russian Chapel, iconic alpine huts, and breathtaking views of Mount Prisank and Triglav National Park.")
-                : pass.slug === 'prislop-pass'
-                ? (pageLang === 'ro'
-                    ? "Pasul Prislop (1.416 m / 4.646 ft) este cea mai înaltă trecătoare rutieră din Carpații Orientali din România, situată pe Drumul Național 18 (DN18) la granița istorică dintre județele Maramureș și Suceava (Bucovina). Înconjurată de piscurile maiestuoase ale Munților Rodnei și Munților Maramureșului, trecătoarea oferă o conexiune vitală între Țara Maramureșului (Borșa) și Țara Fagilor (Cârlibaba / Iacobeni / Vatra Dornei). În vârful pasului se află Mănăstirea Prislop (Schitul Sfânta Treime), Hanul Prislop și Monumentul Eroilor, iar în fiecare august platoul găzduiește marele festival folcloric «Hora de la Prislop»."
-                    : "Prislop Pass (1,416 m / 4,646 ft) is the highest paved mountain pass in the Eastern Carpathians of Romania, carrying National Road DN18 across the scenic boundary between Maramureș (Borșa) and Bucovina (Cârlibaba / Iacobeni, Suceava County). Flanked by the majestic Rodna and Maramureș mountain ranges, it offers fully modernized asphalt, the wooden Holy Trinity Prislop Monastery at the summit, and hosts the historic annual 'Hora de la Prislop' folklore celebration.")
-                : pass.slug === 'bernina-pass'
-                ? (pageLang === 'de'
-                    ? "Der Berninapass (2.328 m ü. M. / 7.638 ft) verbindet das Engadin (Pontresina / St. Moritz) im Kanton Graubünden mit dem Puschlav (Val Poschiavo) und Tirano in Italien über die Hauptstrasse 29. Als einer der wenigen Schweizer Hochgebirgspässe wird die Bernina-Strasse vom Tiefbauamt Graubünden ganzjährig 365 Tage offen gehalten. Parallel zur Passstrasse verläuft die weltberühmte UNESCO-Welterbestrecke der Rhätischen Bahn (Bernina Express) am Ufer des türkisfarbenen Lago Bianco."
-                    : pageLang === 'it'
-                    ? "Il Passo del Bernina (2.328 m / 7.638 ft) è un celebre valico alpino che collega l'Engadina (Pontresina / St. Moritz) nel Cantone dei Grigioni con la Val Poschiavo e Tirano in Italia tramite la Hauptstrasse 29. A differenza di molti altri passi svizzeri, la strada del Bernina è mantenuta aperta tutto l'anno (365 giorni) dagli spazzaneve del Cantone dei Grigioni. Lungo il lago Bianco si snoda anche la ferrovia retica del Bernina Express, patrimonio mondiale UNESCO."
-                    : "Bernina Pass (2,328 m / 7,638 ft) is a world-renowned alpine mountain pass connecting the Engadin valley (Pontresina / St. Moritz) in the Canton of Graubünden with Val Poschiavo and Tirano (Italy) along Hauptstrasse 29 (Route 29). Maintained open year-round by Tiefbauamt Graubünden rotary snowplows, the scenic pass skirts the turquoise glacial waters of Lago Bianco and parallels the UNESCO World Heritage Bernina Express railway line.")
-                : pass.slug === 'grimsel-pass'
-                ? (pageLang === 'de'
-                    ? "Der Grimselpass (2.164 m ü. M. / 7.100 ft) ist ein weltberühmter Schweizer Hochgebirgspass an der Hauptstrasse 6, der das Haslital im Berner Oberland (Kanton Bern) mit dem Goms im Oberwallis (Kanton Wallis) verbindet. Geprägt von monumentalen Granitfelswänden, türkisfarbenen Stauseen (Grimselsee, Räterichsbodensee, Totensee) und dem historischen Grimsel Hospiz, bildet der Pass zusammen mit Furka und Susten die legendäre «Grossen Drei» Alpenpass-Runde."
-                    : "Grimsel Pass (2,164 m / 7,100 ft) is a world-renowned Swiss high alpine pass on Route 6 connecting Haslital in the Bernese Oberland (Canton of Bern) with Goms in Upper Valais (Canton of Valais). Famous for its massive polished granite cliffs, turquoise hydropower reservoirs (Grimselsee, Räterichsbodensee, Totensee), and the historic Grimsel Hospiz, it forms the iconic Swiss 'Big 3' pass loop alongside Furka and Susten.")
-                : pass.slug === 'susten-pass'
-                ? (pageLang === 'de'
-                    ? "Der Sustenpass (2.224 m ü. M. / 7.297 ft) ist eine der landschaftlich grossartigsten und fahrtechnisch modernsten Hochgebirgsstrassen der Schweizer Alpen. Auf der Hauptstrasse 11 verbindet er das Haslital im Berner Oberland (Innertkirchen / Meiringen) mit dem Meiental und Reusstal im Kanton Uri (Wassen / Gotthard-Achse). Bekannt für seine kühnen Steinbrücken, den Scheiteltunnel und den grandiosen Blick auf den Steingletscher, bildet der Sustenpass zusammen mit Grimsel und Furka das weltberühmte Schweizer «Dreipässe-Erlebnis»."
-                    : "Susten Pass (2,224 m / 7,297 ft) is one of the most scenic and modern high alpine mountain passes in the Swiss Alps. Carrying Hauptstrasse 11 (Route 11), it connects Haslital in the Bernese Oberland (Innertkirchen / Meiringen) with Meiental and the Reuss Valley in the Canton of Uri (Wassen / Gotthard transit corridor). Renowned for its 25 natural stone bridges, the 300-meter summit tunnel, and breathtaking views of the Steingletscher glacier, Susten Pass forms the legendary Swiss 'Big 3' alpine loop alongside Grimsel and Furka.")
-                : pass.slug === 'col-du-galibier'
-                ? (pageLang === 'fr'
-                    ? "Le Col du Galibier (2 642 m / 8 668 ft) est un col routier légendaire des Alpes françaises reliant Saint-Michel-de-Maurienne et Valloire en Savoie au Col du Lautaret et Briançon dans les Hautes-Alpes via la D902. Haut lieu historique du Tour de France et de la Route des Grandes Alpes, il offre un panorama grandiose sur les glaciers des Écrins et la Meije."
-                    : "Col du Galibier (2,642 m / 8,668 ft) is a legendary high mountain pass in the French Alps connecting Saint-Michel-de-Maurienne & Valloire in Savoie with Col du Lautaret & Briançon in Hautes-Alpes along Route D902. A historic peak of the Tour de France and the Route des Grandes Alpes, it offers magnificent views of the Écrins glaciers and the Meije.")
-                : pass.slug === 'col-de-l-iseran'
-                ? (pageLang === 'fr'
-                    ? "Le Col de l'Iseran (2 770 m / 9 088 ft — 2 764 m IGN) est le plus haut col de montagne routier goudronné de toutes les Alpes et d'Europe, situé en Savoie sur la mythique Route des Grandes Alpes (D902). Reliant la Haute-Tarentaise (Val-d'Isère) à la Haute-Maurienne (Bonneval-sur-Arc), il traverse les paysages glaciaires spectaculaires du Parc National de la Vanoise."
-                    : "Col de l'Iseran (2,770 m / 9,088 ft — 2,764 m IGN) is the highest paved mountain pass in the Alps and all of Europe, located in Savoie along the legendary Route des Grandes Alpes (D902). Connecting Haute-Tarentaise (Val-d'Isère) with Haute-Maurienne (Bonneval-sur-Arc), it traverses spectacular glacial landscapes in the heart of Vanoise National Park.")
-                : pass.slug === 'great-st-bernard-pass'
-                ? (pageLang === 'it'
-                    ? "Il Colle del Gran San Bernardo (2.469 m / 8.100 ft) è un leggendario valico alpino che collega Martigny nel Cantone Vallese (Svizzera) con Saint-Rhémy-en-Bosses e la Valle d'Aosta (Italia) tramite la Route 21 / SS27. Famoso in tout le monde per il millenario Ospizio fondato nel 1049 da San Bernardo, i leggendari cani San Bernardo da soccorso e la storica traversata di Napoleone nel maggio 1800, la strada panoramica costeggia uno spettacolare lago glaciale di confine."
-                    : "Great St Bernard Pass (2,469 m / 8,100 ft) is a legendary transalpine mountain pass connecting Martigny & Val d'Entremont in Valais (Switzerland) with Saint-Rhémy-en-Bosses & Aosta Valley (Italy) on Route 21 / SS27. Renowned for its millennium-old Hospice founded in 1049, iconic St. Bernard rescue dogs, and Napoleon's 1800 army crossing, the scenic road skirts an alpine border lake of extraordinary beauty.")
-                : pass.description}
+                  : pass.slug === 'prislop-pass'
+                    ? (pageLang === 'ro'
+                      ? "Pasul Prislop (1.416 m / 4.646 ft) este cea mai înaltă trecătoare rutieră din Carpații Orientali din România, situată pe Drumul Național 18 (DN18) la granița istorică dintre județele Maramureș și Suceava (Bucovina). Înconjurată de piscurile maiestuoase ale Munților Rodnei și Munților Maramureșului, trecătoarea oferă o conexiune vitală între Țara Maramureșului (Borșa) și Țara Fagilor (Cârlibaba / Iacobeni / Vatra Dornei). În vârful pasului se află Mănăstirea Prislop (Schitul Sfânta Treime), Hanul Prislop și Monumentul Eroilor, iar în fiecare august platoul găzduiește marele festival folcloric «Hora de la Prislop»."
+                      : "Prislop Pass (1,416 m / 4,646 ft) is the highest paved mountain pass in the Eastern Carpathians of Romania, carrying National Road DN18 across the scenic boundary between Maramureș (Borșa) and Bucovina (Cârlibaba / Iacobeni, Suceava County). Flanked by the majestic Rodna and Maramureș mountain ranges, it offers fully modernized asphalt, the wooden Holy Trinity Prislop Monastery at the summit, and hosts the historic annual 'Hora de la Prislop' folklore celebration.")
+                    : pass.slug === 'bernina-pass'
+                      ? (pageLang === 'de'
+                        ? "Der Berninapass (2.328 m ü. M. / 7.638 ft) verbindet das Engadin (Pontresina / St. Moritz) im Kanton Graubünden mit dem Puschlav (Val Poschiavo) und Tirano in Italien über die Hauptstrasse 29. Als einer der wenigen Schweizer Hochgebirgspässe wird die Bernina-Strasse vom Tiefbauamt Graubünden ganzjährig 365 Tage offen gehalten. Parallel zur Passstrasse verläuft die weltberühmte UNESCO-Welterbestrecke der Rhätischen Bahn (Bernina Express) am Ufer des türkisfarbenen Lago Bianco."
+                        : pageLang === 'it'
+                          ? "Il Passo del Bernina (2.328 m / 7.638 ft) è un celebre valico alpino che collega l'Engadina (Pontresina / St. Moritz) nel Cantone dei Grigioni con la Val Poschiavo e Tirano in Italia tramite la Hauptstrasse 29. A differenza di molti altri passi svizzeri, la strada del Bernina è mantenuta aperta tutto l'anno (365 giorni) dagli spazzaneve del Cantone dei Grigioni. Lungo il lago Bianco si snoda anche la ferrovia retica del Bernina Express, patrimonio mondiale UNESCO."
+                          : "Bernina Pass (2,328 m / 7,638 ft) is a world-renowned alpine mountain pass connecting the Engadin valley (Pontresina / St. Moritz) in the Canton of Graubünden with Val Poschiavo and Tirano (Italy) along Hauptstrasse 29 (Route 29). Maintained open year-round by Tiefbauamt Graubünden rotary snowplows, the scenic pass skirts the turquoise glacial waters of Lago Bianco and parallels the UNESCO World Heritage Bernina Express railway line.")
+                      : pass.slug === 'grimsel-pass'
+                        ? (pageLang === 'de'
+                          ? "Der Grimselpass (2.164 m ü. M. / 7.100 ft) ist ein weltberühmter Schweizer Hochgebirgspass an der Hauptstrasse 6, der das Haslital im Berner Oberland (Kanton Bern) mit dem Goms im Oberwallis (Kanton Wallis) verbindet. Geprägt von monumentalen Granitfelswänden, türkisfarbenen Stauseen (Grimselsee, Räterichsbodensee, Totensee) und dem historischen Grimsel Hospiz, bildet der Pass zusammen mit Furka und Susten die legendäre «Grossen Drei» Alpenpass-Runde."
+                          : "Grimsel Pass (2,164 m / 7,100 ft) is a world-renowned Swiss high alpine pass on Route 6 connecting Haslital in the Bernese Oberland (Canton of Bern) with Goms in Upper Valais (Canton of Valais). Famous for its massive polished granite cliffs, turquoise hydropower reservoirs (Grimselsee, Räterichsbodensee, Totensee), and the historic Grimsel Hospiz, it forms the iconic Swiss 'Big 3' pass loop alongside Furka and Susten.")
+                        : pass.slug === 'susten-pass'
+                          ? (pageLang === 'de'
+                            ? "Der Sustenpass (2.224 m ü. M. / 7.297 ft) ist eine der landschaftlich grossartigsten und fahrtechnisch modernsten Hochgebirgsstrassen der Schweizer Alpen. Auf der Hauptstrasse 11 verbindet er das Haslital im Berner Oberland (Innertkirchen / Meiringen) mit dem Meiental und Reusstal im Kanton Uri (Wassen / Gotthard-Achse). Bekannt für seine kühnen Steinbrücken, den Scheiteltunnel und den grandiosen Blick auf den Steingletscher, bildet der Sustenpass zusammen mit Grimsel und Furka das weltberühmte Schweizer «Dreipässe-Erlebnis»."
+                            : "Susten Pass (2,224 m / 7,297 ft) is one of the most scenic and modern high alpine mountain passes in the Swiss Alps. Carrying Hauptstrasse 11 (Route 11), it connects Haslital in the Bernese Oberland (Innertkirchen / Meiringen) with Meiental and the Reuss Valley in the Canton of Uri (Wassen / Gotthard transit corridor). Renowned for its 25 natural stone bridges, the 300-meter summit tunnel, and breathtaking views of the Steingletscher glacier, Susten Pass forms the legendary Swiss 'Big 3' alpine loop alongside Grimsel and Furka.")
+                          : pass.slug === 'col-du-galibier'
+                            ? (pageLang === 'fr'
+                              ? "Le Col du Galibier (2 642 m / 8 668 ft) est un col routier légendaire des Alpes françaises reliant Saint-Michel-de-Maurienne et Valloire en Savoie au Col du Lautaret et Briançon dans les Hautes-Alpes via la D902. Haut lieu historique du Tour de France et de la Route des Grandes Alpes, il offre un panorama grandiose sur les glaciers des Écrins et la Meije."
+                              : "Col du Galibier (2,642 m / 8,668 ft) is a legendary high mountain pass in the French Alps connecting Saint-Michel-de-Maurienne & Valloire in Savoie with Col du Lautaret & Briançon in Hautes-Alpes along Route D902. A historic peak of the Tour de France and the Route des Grandes Alpes, it offers magnificent views of the Écrins glaciers and the Meije.")
+                            : pass.slug === 'col-de-l-iseran'
+                              ? (pageLang === 'fr'
+                                ? "Le Col de l'Iseran (2 770 m / 9 088 ft — 2 764 m IGN) est le plus haut col de montagne routier goudronné de toutes les Alpes et d'Europe, situé en Savoie sur la mythique Route des Grandes Alpes (D902). Reliant la Haute-Tarentaise (Val-d'Isère) à la Haute-Maurienne (Bonneval-sur-Arc), il traverse les paysages glaciaires spectaculaires du Parc National de la Vanoise."
+                                : "Col de l'Iseran (2,770 m / 9,088 ft — 2,764 m IGN) is the highest paved mountain pass in the Alps and all of Europe, located in Savoie along the legendary Route des Grandes Alpes (D902). Connecting Haute-Tarentaise (Val-d'Isère) with Haute-Maurienne (Bonneval-sur-Arc), it traverses spectacular glacial landscapes in the heart of Vanoise National Park.")
+                              : pass.slug === 'great-st-bernard-pass'
+                                ? (pageLang === 'it'
+                                  ? "Il Colle del Gran San Bernardo (2.469 m / 8.100 ft) è un leggendario valico alpino che collega Martigny nel Cantone Vallese (Svizzera) con Saint-Rhémy-en-Bosses e la Valle d'Aosta (Italia) tramite la Route 21 / SS27. Famoso in tout le monde per il millenario Ospizio fondato nel 1049 da San Bernardo, i leggendari cani San Bernardo da soccorso e la storica traversata di Napoleone nel maggio 1800, la strada panoramica costeggia uno spettacolare lago glaciale di confine."
+                                  : "Great St Bernard Pass (2,469 m / 8,100 ft) is a legendary transalpine mountain pass connecting Martigny & Val d'Entremont in Valais (Switzerland) with Saint-Rhémy-en-Bosses & Aosta Valley (Italy) on Route 21 / SS27. Renowned for its millennium-old Hospice founded in 1049, iconic St. Bernard rescue dogs, and Napoleon's 1800 army crossing, the scenic road skirts an alpine border lake of extraordinary beauty.")
+                                : pass.description}
             </p>
           </div>
 
           <div className="pass-header-actions">
             <button onClick={handleShare} className="btn btn-secondary action-pill-btn">
-              <Share2 size={16} /> 
+              <Share2 size={16} />
               {pass.slug === 'vrsic-pass' && pageLang === 'sl'
                 ? 'Deli povezavo'
                 : pass.slug === 'prislop-pass' && pageLang === 'ro'
-                ? 'Distribuie'
-                : pass.slug === 'bernina-pass' && pageLang === 'de'
-                ? 'Teilen'
-                : pass.slug === 'bernina-pass' && pageLang === 'it'
-                ? 'Condividi'
-                : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
-                ? 'Teilen'
-                : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
-                ? 'Partager' 
-                : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
-                ? 'Condividi'
-                : 'Share'}
+                  ? 'Distribuie'
+                  : pass.slug === 'bernina-pass' && pageLang === 'de'
+                    ? 'Teilen'
+                    : pass.slug === 'bernina-pass' && pageLang === 'it'
+                      ? 'Condividi'
+                      : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
+                        ? 'Teilen'
+                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr'
+                          ? 'Partager'
+                          : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                            ? 'Condividi'
+                            : 'Share'}
             </button>
             <button onClick={toggleFavorite} className="btn btn-secondary action-pill-btn">
               <Heart size={16} fill={isFavorite ? '#EF4444' : 'none'} color={isFavorite ? '#EF4444' : 'currentColor'} />
-              {isFavorite 
+              {isFavorite
                 ? (pass.slug === 'vrsic-pass' && pageLang === 'sl'
-                    ? 'Shranjeno med priljubljene'
-                    : pass.slug === 'prislop-pass' && pageLang === 'ro'
+                  ? 'Shranjeno med priljubljene'
+                  : pass.slug === 'prislop-pass' && pageLang === 'ro'
                     ? 'Salvat la favorite'
                     : pass.slug === 'bernina-pass' && pageLang === 'de'
-                    ? 'Gemerkt'
-                    : pass.slug === 'bernina-pass' && pageLang === 'it'
-                    ? 'Preferito'
-                    : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
-                    ? 'Gemerkt'
-                    : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
-                    ? 'Favori' 
-                    : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
-                    ? 'Preferito'
-                    : 'Favorited') 
+                      ? 'Gemerkt'
+                      : pass.slug === 'bernina-pass' && pageLang === 'it'
+                        ? 'Preferito'
+                        : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
+                          ? 'Gemerkt'
+                          : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr'
+                            ? 'Favori'
+                            : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                              ? 'Preferito'
+                              : 'Favorited')
                 : (pass.slug === 'vrsic-pass' && pageLang === 'sl'
-                    ? 'Dodaj med priljubljene'
-                    : pass.slug === 'prislop-pass' && pageLang === 'ro'
+                  ? 'Dodaj med priljubljene'
+                  : pass.slug === 'prislop-pass' && pageLang === 'ro'
                     ? 'Adaugă la favorite'
                     : pass.slug === 'bernina-pass' && pageLang === 'de'
-                    ? 'Pass merken'
-                    : pass.slug === 'bernina-pass' && pageLang === 'it'
-                    ? 'Aggiungi ai preferiti'
-                    : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
-                    ? 'Pass merken'
-                    : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
-                    ? 'Ajouter aux favoris' 
-                    : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
-                    ? 'Aggiungi ai preferiti'
-                    : 'Add to Favorites')}
+                      ? 'Pass merken'
+                      : pass.slug === 'bernina-pass' && pageLang === 'it'
+                        ? 'Aggiungi ai preferiti'
+                        : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
+                          ? 'Pass merken'
+                          : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr'
+                            ? 'Ajouter aux favoris'
+                            : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                              ? 'Aggiungi ai preferiti'
+                              : 'Add to Favorites')}
             </button>
           </div>
         </header>
 
         {/* Featured Hero Photo */}
         <div className="pass-hero-image-wrap lp-card">
-          <img 
-            src={pass.image} 
-            alt={imageAltText} 
-            className="pass-hero-img" 
+          <img
+            src={pass.image}
+            alt={imageAltText}
+            className="pass-hero-img"
             width={1200}
             height={675}
             loading="eager"
@@ -1396,9 +1433,9 @@ export const PassDetailPage: React.FC = () => {
                   <span>Important Name &amp; Spelling Note</span>
                 </h3>
                 <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
-                  While travelers frequently search for road conditions and webcams under the name <strong>Status Pass</strong>, 
-                  this mountain pass is officially designated and spelled as <strong>Satus Pass</strong> by the Washington State 
-                  Department of Transportation (WSDOT). Our real-time data is synchronized directly with WSDOT's official 
+                  While travelers frequently search for road conditions and webcams under the name <strong>Status Pass</strong>,
+                  this mountain pass is officially designated and spelled as <strong>Satus Pass</strong> by the Washington State
+                  Department of Transportation (WSDOT). Our real-time data is synchronized directly with WSDOT's official
                   Satus Pass feeds to ensure you receive the most accurate and up-to-date travel information available.
                 </p>
               </div>
@@ -1417,7 +1454,7 @@ export const PassDetailPage: React.FC = () => {
                   <span>Strategic Border Corridor Access Advisory</span>
                 </h3>
                 <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#4B5563' }}>
-                  The Khyber Pass is a strategically sensitive international mountain corridor connecting Pakistan and Afghanistan. 
+                  The Khyber Pass is a strategically sensitive international mountain corridor connecting Pakistan and Afghanistan.
                   Due to active border controls and security procedures at the Torkham border crossing, access is strictly regulated:
                 </p>
                 <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
@@ -1442,13 +1479,13 @@ export const PassDetailPage: React.FC = () => {
                   <span>Chang La Elevation &amp; Historic Signboard Note</span>
                 </h3>
                 <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
-                  <strong>Official Survey Elevation: 17,688 feet (5,360 meters)</strong> above sea level. 
-                  The iconic yellow Border Roads Organisation (BRO Project HIMANK) signboard at the summit historically displays <strong>17,586 ft</strong> and claims Chang La as the <em>"World's 3rd Highest Motorable Pass"</em>. 
+                  <strong>Official Survey Elevation: 17,688 feet (5,360 meters)</strong> above sea level.
+                  The iconic yellow Border Roads Organisation (BRO Project HIMANK) signboard at the summit historically displays <strong>17,586 ft</strong> and claims Chang La as the <em>"World's 3rd Highest Motorable Pass"</em>.
                   While modern satellite GPS surveys confirm its height at 5,360 m (17,688 ft), newer motorable roads over higher Himalayan corridors (such as Umling La at 19,024 ft and Dungri La/Mana Pass at 18,406 ft) mean Chang La is no longer literally the third highest, though it remains one of the world's highest, steepest, and most breathtaking alpine passes.
                 </p>
               </div>
             )}
-            
+
             {(pass.slug === 'bernina-pass') && (
               <div className="bernina-editorial-callout lp-card" style={{
                 borderLeft: '4px solid #0EA5E9',
@@ -1495,9 +1532,21 @@ export const PassDetailPage: React.FC = () => {
             <section id="status" className="detail-section-block">
               <div className="section-title-wrap">
                 <h2 className="section-title-heading">
-                  {`${pass.name.split('(')[0].trim().toUpperCase()} CURRENT STATUS`}
+                  {pageLang === 'fr'
+                    ? `ÉTAT EN DIRECT DU ${pass.name.split('(')[0].trim().toUpperCase()}`
+                    : pageLang === 'sl'
+                    ? `TRENUTNO STANJE PRELAZA ${pass.name.split('(')[0].trim().toUpperCase()}`
+                    : pageLang === 'ro'
+                    ? `STAREA ÎN TIMP REAL: ${pass.name.split('(')[0].trim().toUpperCase()}`
+                    : pageLang === 'de'
+                    ? `AKTUELLER STATUS ${pass.name.split('(')[0].trim().toUpperCase()}`
+                    : pageLang === 'it'
+                    ? `STATO IN TEMPO REALE ${pass.name.split('(')[0].trim().toUpperCase()}`
+                    : `${pass.name.split('(')[0].trim().toUpperCase()} CURRENT STATUS`}
                 </h2>
-                <span className="section-timestamp"><Clock size={14} /> Last updated: {pass.lastUpdated}</span>
+                <span className="section-timestamp">
+                  <Clock size={14} /> {pageLang === 'fr' ? 'Dernière mise à jour : il y a 5 min' : pageLang === 'sl' ? 'Zadnja posodobitev : pred 5 min' : pageLang === 'ro' ? 'Ultima actualizare : acum 5 min' : `Last updated: ${pass.lastUpdated}`}
+                </span>
               </div>
 
               <div className="status-weather-cards-grid">
@@ -1542,14 +1591,14 @@ export const PassDetailPage: React.FC = () => {
                   <div className="status-hero-info">
                     <div className="status-badge-hero-pill">
                       <span className="live-pulsing-dot" /> {
-                        displayedStatus === 'OPEN' ? '🟢 CURRENTLY OPEN' : 
-                        displayedStatus === 'CAUTION' ? '⚠️ CAUTION ADVISED' : 
-                        displayedStatus === 'RESTRICTED' ? '⚠️ RESTRICTIONS ACTIVE' : 
-                        displayedStatus === 'CLOSED' ? '🔴 CURRENTLY CLOSED' : 
-                        displayedStatus === 'TEMPORARILY_CLOSED' ? '🔴 TEMPORARILY CLOSED' : 
-                        displayedStatus === 'SEASONAL_CLOSURE' ? '🔴 SEASONAL CLOSURE' : 
-                        displayedStatus === 'NEEDS_VERIFICATION' ? '⚠️ NEEDS VERIFICATION' : 
-                        '⚪ STATUS UNKNOWN'
+                        displayedStatus === 'OPEN' ? (pageLang === 'fr' ? '🟢 ACTUELLEMENT OUVERT' : pageLang === 'sl' ? '🟢 TRENUTNO ODPRTO' : pageLang === 'ro' ? '🟢 DESCHIS CIRCULAȚIEI' : '🟢 CURRENTLY OPEN') :
+                          displayedStatus === 'CAUTION' ? (pageLang === 'fr' ? '⚠️ PRUDENCE RECOMMANDÉE' : pageLang === 'sl' ? '⚠️ PREVIDNOST' : '⚠️ CAUTION ADVISED') :
+                            displayedStatus === 'RESTRICTED' ? (pageLang === 'fr' ? '⚠️ RESTRICTIONS ACTIVES' : '⚠️ RESTRICTIONS ACTIVE') :
+                              displayedStatus === 'CLOSED' ? (pageLang === 'fr' ? '🔴 ACTUELLEMENT FERMÉ' : pageLang === 'sl' ? '🔴 ZAPRTO' : pageLang === 'ro' ? '🔴 ÎNCHIS' : '🔴 CURRENTLY CLOSED') :
+                                displayedStatus === 'TEMPORARILY_CLOSED' ? (pageLang === 'fr' ? '🔴 TEMPORAIREMENT FERMÉ' : '🔴 TEMPORARILY CLOSED') :
+                                  displayedStatus === 'SEASONAL_CLOSURE' ? (pageLang === 'fr' ? '🔴 FERMETURE HIVERNALE' : '🔴 SEASONAL CLOSURE') :
+                                    displayedStatus === 'NEEDS_VERIFICATION' ? '⚠️ NEEDS VERIFICATION' :
+                                      '⚪ STATUS UNKNOWN'
                       }
                     </div>
                     <div className="status-hero-detail">{displayedStatusDetail}</div>
@@ -1594,7 +1643,7 @@ export const PassDetailPage: React.FC = () => {
 
                 <div className="lp-card" style={{ padding: '24px', backgroundColor: 'var(--bg-surface)', borderRadius: '8px', border: '1px solid var(--border-color)', marginBottom: '24px' }}>
                   <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', fontWeight: 600 }}>Verification Details</h3>
-                  
+
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '20px' }}>
                     <div>
                       <div style={{ fontSize: '12px', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '4px' }}>Verification Status</div>
@@ -1642,8 +1691,8 @@ export const PassDetailPage: React.FC = () => {
                 <div className="lp-card" style={{ padding: '24px', backgroundColor: 'var(--bg-surface)', borderRadius: '8px', border: '1px solid var(--border-color)', marginBottom: '24px' }}>
                   <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', fontWeight: 600 }}>How we verify pass status</h3>
                   <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
-                    LivePassWatch checks official road, transport, police, government, and highway authorities where available. 
-                    We employ rules-based validation of official statements to ensure status reliability, rather than relying on AI-generated assumptions. 
+                    LivePassWatch checks official road, transport, police, government, and highway authorities where available.
+                    We employ rules-based validation of official statements to ensure status reliability, rather than relying on AI-generated assumptions.
                     AI models are only used to summarize verified details into clean travel notifications.
                   </p>
                 </div>
@@ -1690,12 +1739,12 @@ export const PassDetailPage: React.FC = () => {
                 {(pass.slug === 'bernina-pass')
                   ? 'Bernina Pass Weather Today'
                   : (pass.slug === 'gotthard-pass')
-                  ? 'Gotthard Pass Weather Today'
-                  : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
-                  ? 'Chang La Weather Today'
-                  : pass.slug === 'trollstigen-pass' 
-                  ? 'Trollstigen Pass Weather Today' 
-                  : `${pass.name.split('(')[0].trim()} Weather`}
+                    ? 'Gotthard Pass Weather Today'
+                    : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                      ? 'Chang La Weather Today'
+                      : pass.slug === 'trollstigen-pass'
+                        ? 'Trollstigen Pass Weather Today'
+                        : `${pass.name.split('(')[0].trim()} Weather`}
               </h2>
               <div className="weather-detail-container lp-card">
                 <div className="weather-current-banner">
@@ -1740,12 +1789,12 @@ export const PassDetailPage: React.FC = () => {
                 {(pass.slug === 'bernina-pass')
                   ? 'Bernina Pass Road Conditions'
                   : (pass.slug === 'gotthard-pass')
-                  ? 'Gotthard Pass Road Conditions'
-                  : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
-                  ? 'Chang La Road Conditions'
-                  : pass.slug === 'trollstigen-pass' 
-                  ? 'Trollstigen Pass Road Conditions' 
-                  : `${pass.name.split('(')[0].trim()} Road Conditions`}
+                    ? 'Gotthard Pass Road Conditions'
+                    : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                      ? 'Chang La Road Conditions'
+                      : pass.slug === 'trollstigen-pass'
+                        ? 'Trollstigen Pass Road Conditions'
+                        : `${pass.name.split('(')[0].trim()} Road Conditions`}
               </h2>
               <div className="road-conditions-container lp-card">
                 <div className="road-card-row">
@@ -1762,14 +1811,14 @@ export const PassDetailPage: React.FC = () => {
                     {(pass.slug === 'bernina-pass')
                       ? 'Hauptstrasse 29 features smooth paved tarmac climbing from Pontresina (1,774 m) over the 2,328 m crest down to Poschiavo (1,014 m) and Tirano (441 m). The northern ascent has gentle 4–7% sweeping grades with wide curves; the southern descent features demanding 8–12% gradients through San Carlo with avalanche protection galleries along Lago Bianco.'
                       : (pass.slug === 'gotthard-pass')
-                      ? 'The southern ramp offers two distinct routes: the modern paved Route 2 bypass with broad sweeping curves and protective galleries, or the historic Tremola monument with 24 cobblestone hairpin turns climbing 300m at up to 12% grade.'
-                      : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
-                      ? 'High-altitude ascent with steep gradients, unpaved gravel stretches, glacial meltwater rivulets on Zingral-summit-Tsultak stretch, loose scree, and icy switchbacks at 17,688 ft.'
-                      : pass.slug === 'trollstigen-pass'
-                      ? '11 sharp hairpin bends with sustained 10% gradient, narrow roadway, Stigfossen waterfall spray on asphalt, and 13.1m max vehicle length.'
-                      : (pass.slug === 'stelvio-pass' 
-                        ? '48 stone-walled switchbacks on the South Tyrol ramp (avg 7.4%, max 12%), 39 switchbacks on the Bormio ramp, narrow avalanche galleries, and high-altitude weather exposure.'
-                        : 'Steep alpine gradients, winding switchbacks, and localized high-altitude road surface variations.')}
+                        ? 'The southern ramp offers two distinct routes: the modern paved Route 2 bypass with broad sweeping curves and protective galleries, or the historic Tremola monument with 24 cobblestone hairpin turns climbing 300m at up to 12% grade.'
+                        : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                          ? 'High-altitude ascent with steep gradients, unpaved gravel stretches, glacial meltwater rivulets on Zingral-summit-Tsultak stretch, loose scree, and icy switchbacks at 17,688 ft.'
+                          : pass.slug === 'trollstigen-pass'
+                            ? '11 sharp hairpin bends with sustained 10% gradient, narrow roadway, Stigfossen waterfall spray on asphalt, and 13.1m max vehicle length.'
+                            : (pass.slug === 'stelvio-pass'
+                              ? '48 stone-walled switchbacks on the South Tyrol ramp (avg 7.4%, max 12%), 39 switchbacks on the Bormio ramp, narrow avalanche galleries, and high-altitude weather exposure.'
+                              : 'Steep alpine gradients, winding switchbacks, and localized high-altitude road surface variations.')}
                   </span>
                 </div>
                 <div className="road-card-row">
@@ -1786,12 +1835,12 @@ export const PassDetailPage: React.FC = () => {
                   {(pass.slug === 'bernina-pass')
                     ? 'Bernina Pass Opening Date'
                     : (pass.slug === 'gotthard-pass')
-                    ? 'Gotthard Pass Opening Date'
-                    : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
-                    ? 'Chang La Opening Date'
-                    : pass.slug === 'trollstigen-pass' 
-                    ? 'When Does Trollstigen Pass Open?' 
-                    : `${pass.name.split('(')[0].trim()} Opening Dates ${pass.openingDateInfo.year}`}
+                      ? 'Gotthard Pass Opening Date'
+                      : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                        ? 'Chang La Opening Date'
+                        : pass.slug === 'trollstigen-pass'
+                          ? 'When Does Trollstigen Pass Open?'
+                          : `${pass.name.split('(')[0].trim()} Opening Dates ${pass.openingDateInfo.year}`}
                 </h2>
                 <div className="opening-dates-container lp-card">
                   <div className="opening-banner-pill">
@@ -1829,12 +1878,12 @@ export const PassDetailPage: React.FC = () => {
                   {(pass.slug === 'bernina-pass')
                     ? 'When Does Bernina Pass Close for Winter?'
                     : (pass.slug === 'gotthard-pass')
-                    ? 'When Does Gotthard Pass Close for Winter?'
-                    : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
-                    ? 'When Does Chang La Close for Winter?'
-                    : pass.slug === 'trollstigen-pass' 
-                    ? 'When Does Trollstigen Pass Close for Winter?' 
-                    : 'Seasonal Winter Closure Information'}
+                      ? 'When Does Gotthard Pass Close for Winter?'
+                      : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                        ? 'When Does Chang La Close for Winter?'
+                        : pass.slug === 'trollstigen-pass'
+                          ? 'When Does Trollstigen Pass Close for Winter?'
+                          : 'Seasonal Winter Closure Information'}
                 </h2>
                 <div className="opening-dates-container lp-card">
                   <div className="opening-banner-pill" style={{ backgroundColor: pass.slug === 'bernina-pass' ? 'rgba(16, 185, 129, 0.08)' : 'rgba(239, 68, 68, 0.08)', color: pass.slug === 'bernina-pass' ? '#047857' : '#EF4444' }}>
@@ -1988,19 +2037,19 @@ export const PassDetailPage: React.FC = () => {
                       <strong>LivePassWatch Anti-Fabrication Guarantee:</strong> We never display simulated feeds, generic stock videos, or outdated snapshots as "live webcams." Chang La road status should be verified through official Ladakh administration channels.
                     </div>
                     <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', marginTop: '6px' }}>
-                      <a 
-                        href="https://ladakh.gov.in" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                      <a
+                        href="https://ladakh.gov.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="btn btn-primary"
                         style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                       >
                         Check Official Ladakh Road Information <ExternalLink size={14} />
                       </a>
-                      <a 
-                        href="https://leh.nic.in" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                      <a
+                        href="https://leh.nic.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="btn btn-outline-primary"
                         style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                       >
@@ -2016,14 +2065,14 @@ export const PassDetailPage: React.FC = () => {
                   {pass.slug === 'bernina-pass'
                     ? 'Bernina Pass Live Webcam'
                     : pass.slug === 'gotthard-pass'
-                    ? 'Gotthard Pass Live Webcams & Cameras'
-                    : pass.slug === 'col-du-galibier' 
-                    ? 'Col du Galibier Live Webcams & Cameras' 
-                    : pass.slug === 'trollstigen-pass' 
-                    ? 'Trollstigen Pass Live Webcams' 
-                    : `${pass.name.split('(')[0].trim()} Live Webcams`}
+                      ? 'Gotthard Pass Live Webcams & Cameras'
+                      : pass.slug === 'col-du-galibier'
+                        ? 'Col du Galibier Live Webcams & Cameras'
+                        : pass.slug === 'trollstigen-pass'
+                          ? 'Trollstigen Pass Live Webcams'
+                          : `${pass.name.split('(')[0].trim()} Live Webcams`}
                 </h2>
-                
+
                 <CameraProvider
                   camera={{
                     id: currentCam.id,
@@ -2044,8 +2093,8 @@ export const PassDetailPage: React.FC = () => {
                 {pass.cameras.length > 1 && (
                   <div className="camera-multi-grid">
                     {pass.cameras.map((cam, idx) => (
-                      <div 
-                        key={idx} 
+                      <div
+                        key={idx}
                         className={`cam-thumb-card ${currentCameraIndex === idx ? 'active' : ''}`}
                         onClick={() => { setCurrentCameraIndex(idx); setCameraError(false); }}
                       >
@@ -2069,10 +2118,10 @@ export const PassDetailPage: React.FC = () => {
                     <p style={{ margin: '4px 0 16px 0', maxWidth: '500px', fontSize: '14.5px', color: 'var(--text-muted)', lineHeight: '1.6' }}>
                       An independently verified public live webcam for this location is not currently available. Because the Khyber Pass is a strategically sensitive international border corridor, real-time public video streams are restricted.
                     </p>
-                    <a 
-                      href="https://nha.gov.pk/" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href="https://nha.gov.pk/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="btn btn-outline-primary"
                       style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                     >
@@ -2099,15 +2148,15 @@ export const PassDetailPage: React.FC = () => {
                   <div className="fact-item-card">
                     <div className="fact-icon-box"><Compass size={20} /></div>
                     <div className="fact-meta">
-                      <span className="fact-label">Mountain Range</span>
-                      <strong className="fact-value">{pass.quickFacts?.mountainRange || 'Ortler Alps / Rhaetian Alps'}</strong>
+                      <span className="fact-label">{pageLang === 'fr' ? 'Massif Montagneux' : pageLang === 'sl' ? 'Gorska Veriga' : pageLang === 'ro' ? 'Lanț Muntos' : 'Mountain Range'}</span>
+                      <strong className="fact-value">{pass.quickFacts?.mountainRange || `${pass.country} Alpine Crest`}</strong>
                     </div>
                   </div>
 
                   <div className="fact-item-card">
                     <div className="fact-icon-box"><Flag size={20} /></div>
                     <div className="fact-meta">
-                      <span className="fact-label">Country &amp; Region</span>
+                      <span className="fact-label">{pageLang === 'fr' ? 'Pays & Région' : pageLang === 'sl' ? 'Država & Regija' : pageLang === 'ro' ? 'Țară & Regiune' : 'Country & Region'}</span>
                       <strong className="fact-value">{pass.state}, {pass.country}</strong>
                     </div>
                   </div>
@@ -2115,31 +2164,31 @@ export const PassDetailPage: React.FC = () => {
                   <div className="fact-item-card">
                     <div className="fact-icon-box"><Navigation size={20} /></div>
                     <div className="fact-meta">
-                      <span className="fact-label">Connects</span>
-                      <strong className="fact-value">{pass.quickFacts?.connects || 'Prato allo Stelvio (Val Venosta) with Bormio (Valtellina)'}</strong>
+                      <span className="fact-label">{pageLang === 'fr' ? 'Relie' : pageLang === 'sl' ? 'Povezuje' : pageLang === 'ro' ? 'Conectează' : 'Connects'}</span>
+                      <strong className="fact-value">{pass.quickFacts?.connects || `Regional Alpine corridor across ${pass.highway}`}</strong>
                     </div>
                   </div>
 
                   <div className="fact-item-card">
                     <div className="fact-icon-box"><Car size={20} /></div>
                     <div className="fact-meta">
-                      <span className="fact-label">Nearest Towns</span>
-                      <strong className="fact-value">{pass.quickFacts?.nearestTown || 'Bormio (21 km), Trafoi (14 km), Prato (24 km)'}</strong>
+                      <span className="fact-label">{pageLang === 'fr' ? 'Villes les Plus Proches' : pageLang === 'sl' ? 'Bližnja Mesta' : pageLang === 'ro' ? 'Orașe Apropiate' : 'Nearest Towns'}</span>
+                      <strong className="fact-value">{pass.quickFacts?.nearestTown || `${pass.state} gateway communities`}</strong>
                     </div>
                   </div>
 
                   <div className="fact-item-card">
                     <div className="fact-icon-box"><Ruler size={20} /></div>
                     <div className="fact-meta">
-                      <span className="fact-label">Road &amp; Classification</span>
-                      <strong className="fact-value">{pass.quickFacts?.roadType || 'Strada Statale 38 (SS38)'}</strong>
+                      <span className="fact-label">{pageLang === 'fr' ? 'Route & Classification' : pageLang === 'sl' ? 'Cesta & Kategorija' : pageLang === 'ro' ? 'Drum & Clasificare' : 'Road & Classification'}</span>
+                      <strong className="fact-value">{pass.quickFacts?.roadType || pass.highway}</strong>
                     </div>
                   </div>
 
                   <div className="fact-item-card">
                     <div className="fact-icon-box"><Calendar size={20} /></div>
                     <div className="fact-meta">
-                      <span className="fact-label">Best Time to Visit</span>
+                      <span className="fact-label">{pageLang === 'fr' ? 'Meilleure Période' : pageLang === 'sl' ? 'Najboljši Čas za Obisk' : pageLang === 'ro' ? 'Perioadă Recomandată' : 'Best Time to Visit'}</span>
                       <strong className="fact-value">{pass.quickFacts?.bestTime || 'Late June to Mid-September'}</strong>
                     </div>
                   </div>
@@ -2147,9 +2196,9 @@ export const PassDetailPage: React.FC = () => {
                   <div className="fact-item-card">
                     <div className="fact-icon-box"><Layers size={20} /></div>
                     <div className="fact-meta">
-                      <span className="fact-label">Total Switchbacks</span>
+                      <span className="fact-label">{pageLang === 'fr' ? 'Lacets & Tracé' : pageLang === 'sl' ? 'Serpentine & Trasa' : pageLang === 'ro' ? 'Serpentine & Traseu' : 'Total Switchbacks'}</span>
                       <strong className="fact-value">
-                        {pass.slug === 'bernina-pass' ? '10–12% Gradients & Wide Sweeping Switchbacks' : (pass.slug === 'gotthard-pass' ? '24 Historic Tremola Cobblestone Hairpins' : (pass.slug === 'trollstigen-pass' ? '11 Hairpin Turns (10% Incline)' : (pass.slug === 'stelvio-pass' ? '87 Hairpins (48 NE + 39 SW)' : 'Multi-tier switchbacks')))}
+                        {pass.slug === 'col-de-la-bonette' ? (pageLang === 'fr' ? '32 lacets panoramiques & boucle de 2 km à 2 802 m' : '32 scenic hairpins & 2 km summit loop at 2,802 m') : (pass.slug === 'vrsic-pass' ? (pageLang === 'sl' ? '50 oštevilčenih serpentin (1–24 tlakovci, 25–50 asfalt)' : '50 numbered switchbacks (1–24 cobblestone, 25–50 asphalt)') : (pass.slug === 'prislop-pass' ? (pageLang === 'ro' ? 'Serpentine line asfaltate modern pe DN18' : 'Pristine paved trans-Carpathian switchbacks on DN18') : (pass.slug === 'bernina-pass' ? '10–12% Gradients & Wide Sweeping Switchbacks' : (pass.slug === 'gotthard-pass' ? '24 Historic Tremola Cobblestone Hairpins' : (pass.slug === 'trollstigen-pass' ? '11 Hairpin Turns (10% Incline)' : (pass.slug === 'stelvio-pass' ? '87 Hairpins (48 NE + 39 SW)' : (pass.quickFacts?.highlight || 'Multi-tier scenic alpine hairpins')))))))}
                       </strong>
                     </div>
                   </div>
@@ -2163,12 +2212,12 @@ export const PassDetailPage: React.FC = () => {
                 {(pass.slug === 'bernina-pass')
                   ? 'Bernina Pass Map & Location'
                   : (pass.slug === 'gotthard-pass')
-                  ? 'Gotthard Pass Map & Location'
-                  : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
-                  ? 'Chang La Map'
-                  : pass.slug === 'trollstigen-pass' 
-                  ? 'Trollstigen Pass Map' 
-                  : `${pass.name.split('(')[0].trim()} Map`}
+                    ? 'Gotthard Pass Map & Location'
+                    : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                      ? 'Chang La Map'
+                      : pass.slug === 'trollstigen-pass'
+                        ? 'Trollstigen Pass Map'
+                        : `${pass.name.split('(')[0].trim()} Map`}
               </h2>
               <div className="map-and-route-container lp-card">
                 <div className="map-frame-header">
@@ -2177,10 +2226,10 @@ export const PassDetailPage: React.FC = () => {
                     <span className="map-frame-sub">GPS Coordinates: {pass.coordinates.lat.toFixed(4)}&deg; N, {pass.coordinates.lng.toFixed(4)}&deg; E • Summit Elevation: {pass.elevationFt.toLocaleString()} ft ({pass.elevationM.toLocaleString()} m)</span>
                   </div>
                   <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                    <a 
-                      href={`https://www.google.com/maps/dir/?api=1&destination=${pass.coordinates.lat},${pass.coordinates.lng}`} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${pass.coordinates.lat},${pass.coordinates.lng}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="btn btn-outline-primary"
                       style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                     >
@@ -2325,10 +2374,14 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 10.5: Editorial Guidance & Travel Tips */}
             <section id="travel-guidance" className="detail-section-block">
               <h2 className="section-title-heading">
-                {(pass.slug === 'grimsel-pass')
+                {(pass.slug === 'col-de-la-bonette')
+                  ? (pageLang === 'fr' ? 'Conseils Pratiques & Informations Voyage Col de la Bonette' : 'Col de la Bonette Travel Guidance & Practical Tips')
+                  : (pass.slug === 'grimsel-pass')
                   ? (pageLang === 'de' ? 'Praktische Reisetipps & Routenführung Grimselpass' : 'Grimsel Pass Travel Guidance & Practical Tips')
                   : (pass.slug === 'col-du-galibier')
                   ? (pageLang === 'fr' ? 'Conseils Pratiques & Informations Voyage Galibier' : 'Col du Galibier Travel Guidance & Practical Tips')
+                  : (pass.slug === 'col-de-l-iseran')
+                  ? (pageLang === 'fr' ? 'Conseils Pratiques & Informations Voyage Iseran' : 'Col de l\'Iseran Travel Guidance & Practical Tips')
                   : (pass.slug === 'great-st-bernard-pass')
                   ? (pageLang === 'it' ? 'Consigli Pratici & Informazioni di Viaggio Gran San Bernardo' : 'Great St Bernard Pass Travel Guidance & Practical Tips')
                   : (pass.slug === 'bernina-pass')
@@ -2343,7 +2396,11 @@ export const PassDetailPage: React.FC = () => {
               </h2>
               <div className="travel-guidance-container lp-card" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <p className="narrative-p" style={{ marginBottom: '8px' }}>
-                  {pass.slug === 'vrsic-pass'
+                  {pass.slug === 'col-de-la-bonette'
+                    ? (pageLang === 'fr'
+                        ? 'Franchir le Col de la Bonette et la boucle sommitale de la Cime à 2 802 mètres d\'altitude au cœur du Parc National du Mercantour constitue la plus haute aventure routière et cycliste de France entre l\'Ubaye et la Tinée.'
+                        : 'Crossing Col de la Bonette and the Cime summit loop at 2,802 meters (9,193 ft) in Mercantour National Park is France\'s premier high-altitude motoring journey connecting the Ubaye and Tinée valleys.')
+                    : pass.slug === 'vrsic-pass'
                     ? (pageLang === 'sl'
                         ? 'Vožnja čez prelaz Vršič na 1.611 metrih nadmorske višine po cesti R206 (Ruska cesta) med Kranjsko Goro in Trento velja za najbolj spektakularno gorsko cesto v Sloveniji s 50 ostrimi serpentinami skozi Triglavski narodni park.'
                         : 'Driving across Vršič Pass at 1,611 meters (5,285 ft) along Road 206 (the Russian Road) between Kranjska Gora and Trenta is Slovenia\'s premier alpine motoring journey featuring 50 legendary hairpin turns across Triglav National Park.')
@@ -2375,14 +2432,18 @@ export const PassDetailPage: React.FC = () => {
                         ? 'Traseu & Sezon de Călătorie'
                         : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Route & Reisesaison'
-                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
+                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr' 
                         ? 'Itinéraire & Période d\'Ouverture' 
                         : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                         ? 'Itinerario & Stagione di Transito'
                         : 'Route & Travel Season'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'vrsic-pass')
+                      {(pass.slug === 'col-de-la-bonette')
+                        ? (pageLang === 'fr'
+                            ? 'La Route D64 relie Jausiers (Ubaye) à Saint-Étienne-de-Tinée (Tinée / Nice). Ouverte de fin mai / début juin à fin octobre / début novembre. La boucle sommitale à sens unique autour de la Cime atteint 2 802 m avec un asphalte d\'excellente qualité.'
+                            : 'Route D64 links Jausiers (Ubaye) with Saint-Étienne-de-Tinée (Tinée / Nice). Open late May/June to late October/November. The 2 km one-way summit loop around Cime reaches 2,802 m with smooth high-altitude asphalt.')
+                        : (pass.slug === 'vrsic-pass')
                         ? (pageLang === 'sl'
                             ? 'Cesta R206 povezuje Kranjsko Goro z dolino reke Soče (Trenta in Bovec). Na severni strani je 24 serpentin tlakovanih z granitnimi kockami, na trentarski strani pa 26 serpentin z asfaltom. Prelaz je odprt od pomladi do jeseni (maj–november) in zaprt v času zimskih snežnih razmer.'
                             : 'Road 206 links Kranjska Gora with Trenta and Bovec in the Soča Valley. Features 50 numbered turns (1–24 cobblestone on north flank, 25–50 asphalt on south flank). Open spring to autumn (May–November); closed during severe winter snow conditions.')
@@ -2408,7 +2469,7 @@ export const PassDetailPage: React.FC = () => {
                             : 'Route D902 links Bourg-Saint-Maurice & Val-d\'Isère (Haute-Tarentaise) with Bonneval-sur-Arc & Lanslebourg (Haute-Maurienne). Open mid-June to late October. Pristine alpine paved roadway.')
                         : (pass.slug === 'great-st-bernard-pass')
                         ? (pageLang === 'it'
-                            ? 'La SS27 (Italia) / Route 21 (Svizzera) collega Aosta a Martigny. La strada panoramica del colle sommitale è aperta da inizio giugno a metà ottobre. Il Traforo del Gran San Bernardo (1.918 m) è aperto 24h/24 tutto l\'anno con pedaggio.'
+                            ? 'La SS27 (Italia) / Route 21 (Svizzera) collega Aosta a Martigny. La strada panoramica del colle sommitale è aperta da inizio giugno a metà octobre. Il Traforo del Gran San Bernardo (1.918 m) è aperto 24h/24 tutto l\'anno con pedaggio.'
                             : 'Route 21 (CH) / SS27 (IT) connects Martigny (Valais) to Aosta (Italy). The summit pass road is open June to mid-October. The Grand-Saint-Bernard Tunnel (1,918 m) remains open 24/7 year-round (toll road).')
                         : (pass.slug === 'bernina-pass')
                         ? 'Bernina Pass (Route 29) links the Upper Engadin (Pontresina & St. Moritz) with Val Poschiavo and Tirano (Italy). It is maintained open year-round by Tiefbauamt Graubünden with rotary snowplows. Summer offers pristine dry asphalt; winter delivers spectacular snow-walled corridors requiring winter-rated tires (3PMSF).'
@@ -2430,14 +2491,18 @@ export const PassDetailPage: React.FC = () => {
                         ? 'Meteo Alpin & Siguranță'
                         : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Wetter & Hochgebirgssicherheit'
-                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
+                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr' 
                         ? 'Météo Alti & Sécurité Altitude' 
                         : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                         ? 'Sicurezza & Meteo di Quota'
                         : 'High-Altitude Safety & Weather'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'vrsic-pass')
+                      {(pass.slug === 'col-de-la-bonette')
+                        ? (pageLang === 'fr'
+                            ? 'À 2 802 m au sommet de la Cime, la température est de 12 à 18°C plus fraîche que sur la Côte d\'Azur ou à Nice. Des vents violents et des orages d\'été peuvent survenir rapidement. Consultez les webcams de la Cime et du Camp des Fourches avant le départ.'
+                            : 'At 2,802 m summit altitude, temperatures are 12–18°C colder than in Nice or the French Riviera. Rapid storm developments and high winds can occur; check live Cime and Camp des Fourches webcams before departure.')
+                        : (pass.slug === 'vrsic-pass')
                         ? (pageLang === 'sl'
                             ? 'Na vrhu prelaza (1.611 m) so temperature 8–12°C nižje kot v Kranjski Gori ali Bovcu. Granitni tlakovci v 24 serpentinah postanejo v dežju zelo spolzki. Priporočamo spremljanje spletnih kamer pri Erjavčevi koči in napovedi ARSO pred vzponom.'
                             : 'At the 1,611 m summit crest, temperatures are 8–12°C lower than in Kranjska Gora or Bovec. The 24 cobblestone turns become slick during rainfall. Check live Erjavčeva koča webcams and ARSO weather forecasts before driving.')
@@ -2485,14 +2550,18 @@ export const PassDetailPage: React.FC = () => {
                         ? 'Rovinietă & Reglementări Rutiere'
                         : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Mautfreiheit & Schweizer Strassenordnung'
-                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran') && pageLang === 'fr' 
+                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr' 
                         ? 'Péage & Réglementation Routière' 
                         : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                         ? 'Pedaggio & Regolamento Traforo'
                         : 'Tolls & Road Regulations'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'vrsic-pass')
+                      {(pass.slug === 'col-de-la-bonette')
+                        ? (pageLang === 'fr'
+                            ? 'La D64 est une route départementale 100% gratuite (aucun péage ni vignette). Les véhicules de plus de 3,5 tonnes et caravanes sont strictement interdits. Le stationnement au sommet est réglementé et le bivouac est encadré par la charte du Parc National du Mercantour.'
+                            : 'Route D64 is a 100% toll-free public departmental road. Commercial vehicles over 3.5 tonnes and caravans are strictly prohibited. Summit parking is regulated, and overnight stays are governed by Mercantour National Park rules.')
+                        : (pass.slug === 'vrsic-pass')
                         ? (pageLang === 'sl'
                             ? 'Cesta R206 čez prelaz Vršič je brezplačna regionalna cesta (slovenska e-vinjeta za sam prelaz ni potrebna, potrebna pa je na avtocestnem omrežju A2). Na vrhu prelaza velja plačljiv parkirni režim z omejenimi mesti; priporočamo javni avtobusni prevoz v poletni sezoni.'
                             : 'Road 206 across Vršič Pass is a toll-free regional public road (Slovenian e-vignette not required on the pass road itself, only on motorways). Parking at the summit is paid with limited capacity; summer public shuttle buses are recommended.')
@@ -2518,7 +2587,7 @@ export const PassDetailPage: React.FC = () => {
                             : 'Route D902 over Col de l\'Iseran is a 100% toll-free French public departmental road with no tolls or vignettes required. The route is fully cleared in summer; Loi Montagne II winter equipment applies Nov 1 to Mar 31.')
                         : (pass.slug === 'great-st-bernard-pass')
                         ? (pageLang === 'it'
-                            ? 'La strada panoramica del valico sommitale è gratuita al 100% in estate (nessun pedaggio). Il Traforo del Gran San Bernardo (5,8 km a 1.918 m) è a pedaggio internazionale (~€31 / CHF 31 per una corsa semplice in automobile). Biciclette e pedoni sono vietati nel traforo.'
+                            ? 'La strada panoramica del valico sommitale è gratuita al 100% in estate (nessun pedaggio). Il Traforo del Gran San Bernardo (5,8 km a 1.918 m) è a pedaggio internazionale (~€31 / CHF 31 per una corsa semplice in automobile). Biciclette e pedoni sont vietati nel traforo.'
                             : 'The open-air summit pass road is 100% toll-free in summer. The Grand-Saint-Bernard Tunnel (5.8 km at 1,918 m) is an international toll tunnel (~CHF 31 / €31 for a single passenger car transit). Bicycles and pedestrians are prohibited inside the tunnel.')
                         : (pass.slug === 'bernina-pass')
                         ? 'Swiss Hauptstrasse 29 (Route 29) is a 100% toll-free public cantonal highway; no Swiss motorway vignette is needed. If continuing south past Campocologno into Tirano (Italy), ensure valid passports and EU vehicle insurance green cards are on board.'
@@ -2540,14 +2609,18 @@ export const PassDetailPage: React.FC = () => {
                         ? 'Legislație Iarnă & Echipare'
                         : pass.slug === 'grimsel-pass' && pageLang === 'de'
                         ? 'Wintersperre & Autoverlad-Alternativen'
-                        : pass.slug === 'col-du-galibier' && pageLang === 'fr' 
+                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr' 
                         ? 'Équipements Hiver & Alternatives' 
                         : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
                         ? 'Dotazioni Invernali & Alternative'
                         : 'Winter Laws & Seasonal Detours'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'vrsic-pass')
+                      {(pass.slug === 'col-de-la-bonette')
+                        ? (pageLang === 'fr'
+                            ? 'Pendant la fermeture hivernale (novembre à mai), la liaison entre l\'Ubaye et la Côte d\'Azur s\'effectue par Digne-les-Bains et la N202 / A51. La Loi Montagne II impose 4 pneus hiver (3PMSF) ou des chaînes dans le coffre du 1er nov au 31 mars.'
+                            : 'During winter closure (Nov to May), travel between Ubaye and Nice/Côte d\'Azur detours via Digne-les-Bains and N202. Loi Montagne II requires 4 winter tires (3PMSF) or chains in trunk from Nov 1 to Mar 31.')
+                        : (pass.slug === 'vrsic-pass')
                         ? (pageLang === 'sl'
                             ? 'V zimskem obdobju od 15. novembra do 15. marca je v Sloveniji obvezna zimska oprema (zimske pnevmatike ali snežne verige). V času zimske zapore Vršiča je glavna obvozna povezava med Gorenjsko in Posočjem čez prelaz Predel (SS54/R203 skozi Italijo) ali skozi avto-vlak Bohinjska proga (Bohinjska Bistrica–Most na Soči).'
                             : 'Winter equipment (M+S/3PMSF winter tires or chains in trunk) is mandatory in Slovenia Nov 15 – Mar 15. During winter closure of Vršič Pass, detour via Predil Pass (SS54/Road 203 through Tarvisio, Italy) or the Bohinj car train shuttle (Bohinjska Bistrica–Most na Soči).')
@@ -2563,6 +2636,10 @@ export const PassDetailPage: React.FC = () => {
                         ? (pageLang === 'fr'
                             ? 'Loi Montagne II obligatoire du 1er nov au 31 mars (4 pneus hiver 3PMSF ou chaînes dans le véhicule). En hiver lors de la fermeture du col, l\'itinéraire de contournement emprunte le Tunnel du Fréjus (A43 vers Italie / Montgenèvre) ou Grenoble via la D1091 / A48.'
                             : 'Loi Montagne II mandates 4 winter tires (3PMSF) or chains in trunk from Nov 1 to Mar 31. When Galibier is closed in winter, vehicle transit between Maurienne and Briançon diverts via the Fréjus Road Tunnel (A43/Montgenèvre) or via Chambéry/Grenoble (A43/D1091).')
+                        : (pass.slug === 'col-de-l-iseran')
+                        ? (pageLang === 'fr'
+                            ? 'La D902 franchissant l\'Iseran est fermée de novembre à mi-juin. Le contournement s\'effectue par la Maurienne et la Tarentaise via Albertville (N90 / A43).'
+                            : 'Route D902 over Col de l\'Iseran is closed Nov to mid-June. Detour between Tarentaise and Maurienne via Albertville (N90/A43).')
                         : (pass.slug === 'great-st-bernard-pass')
                         ? (pageLang === 'it'
                             ? 'Dotazioni invernali (pneumatici 3PMSF o catene a bordo) obbligatorie dal 15 ottobre al 15 aprile in Valle d\'Aosta e Vallese. Durante la chiusura invernale della sommità, il transito avviene tramite il Traforo del Gran San Bernardo aperto 24h/24 o il Traforo del Monte Bianco.'
@@ -2586,18 +2663,18 @@ export const PassDetailPage: React.FC = () => {
                 {(pass.slug === 'bernina-pass')
                   ? 'Frequently Asked Questions about Bernina Pass'
                   : (pass.slug === 'gotthard-pass')
-                  ? 'Frequently Asked Questions about Gotthard Pass'
-                  : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
-                  ? 'Chang La Pass Frequently Asked Questions'
-                  : pass.slug === 'trollstigen-pass' 
-                  ? 'Trollstigen Pass Frequently Asked Questions' 
-                  : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
+                    ? 'Frequently Asked Questions about Gotthard Pass'
+                    : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
+                      ? 'Chang La Pass Frequently Asked Questions'
+                      : pass.slug === 'trollstigen-pass'
+                        ? 'Trollstigen Pass Frequently Asked Questions'
+                        : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
                 {pass.faqs && pass.faqs.length > 0 ? (
                   pass.faqs.map((faq, idx) => (
                     <div key={idx} className="faq-accordion-item">
-                      <button 
+                      <button
                         className={`faq-question-btn ${activeFaqIndex === idx ? 'open' : ''}`}
                         onClick={() => setActiveFaqIndex(activeFaqIndex === idx ? null : idx)}
                         aria-expanded={activeFaqIndex === idx}
@@ -2688,8 +2765,8 @@ export const PassDetailPage: React.FC = () => {
               <div className="sidebar-passes-list">
                 {pass.nearbyPasses && pass.nearbyPasses.length > 0 ? (
                   pass.nearbyPasses.map((near) => (
-                    <div 
-                      key={near.id} 
+                    <div
+                      key={near.id}
                       className="sidebar-pass-item"
                       onClick={() => navigate(getPassUrl(near))}
                     >

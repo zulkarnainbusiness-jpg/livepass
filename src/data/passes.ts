@@ -11387,6 +11387,296 @@ export const passesData: MountainPass[] = [
       "Promet si Vršič",
       "Julian Alps highest pass"
     ]
+  },
+  {
+    "id": "col-de-la-bonette",
+    "slug": "col-de-la-bonette",
+    "name": "Col de la Bonette (Cime de la Bonette — 2 802 m)",
+    "alternateNames": [
+      "Cime de la Bonette",
+      "Col de la Bonette-Restefond",
+      "Route de la Bonette",
+      "Route D64 Bonette",
+      "Bonette Pass",
+      "Col de la Bonette France",
+      "Route des Grandes Alpes Bonette"
+    ],
+    "country": "France",
+    "countryCode": "FRA",
+    "continent": "Europe",
+    "state": "Alpes-Maritimes & Alpes-de-Haute-Provence",
+    "highway": "Route D64 (Route des Grandes Alpes)",
+    "elevationFt": 9193,
+    "elevationM": 2802,
+    "coordinates": {
+      "lat": 44.3217,
+      "lng": 6.8067
+    },
+    "status": "OPEN",
+    "statusDetail": "La Route départementale D64 reliant Jausiers (Vallée de l'Ubaye) à Saint-Étienne-de-Tinée par le Col de la Bonette (2 715 m) et la boucle panoramique de la Cime de la Bonette (2 802 m) est OUVERTE à la circulation. Chaussée sèche et dégagée dans les deux sens. Fermeture hivernale saisonnière de novembre à fin mai/juin.",
+    "lastUpdated": "5 minutes ago",
+    "description": "Le Col de la Bonette (2 715 m) et sa célèbre boucle sommitale de la Cime de la Bonette (2 802 m / 9 193 ft) constituent la plus haute route asphaltée de France et la plus haute boucle routière d'Europe, reliant la Vallée de l'Ubaye (Alpes-de-Haute-Provence) à la Vallée de la Tinée (Alpes-Maritimes) à travers les paysages grandioses du Parc National du Mercantour. Haut lieu de la Route des Grandes Alpes et du Tour de France, le parcours traverse le Camp des Fourches et les casemates Maginot du Restefond.",
+    "image": "/col-de-la-bonette-france.webp",
+    "weather": {
+      "tempF": 57,
+      "tempC": 14,
+      "condition": "Sunny & Clear Alpine Skies (Ciel Dégagé Alpin)",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthIn": 0,
+      "depthCm": 0,
+      "condition": "Dry & Fully Cleared (Chaussée Sèche)"
+    },
+    "wind": {
+      "speedKmh": 15,
+      "speedMph": 9,
+      "direction": "NW",
+      "description": "Light High-Altitude Mountain Breeze"
+    },
+    "roadCondition": "Dry & Smooth Paved High-Altitude Asphalt (Chaussée Sèche et Asphalte de Qualité)",
+    "official_authority": "Inforoute 06 (Alpes-Maritimes) & Inforoute 04 (Alpes-de-Haute-Provence)",
+    "nearbyPasses": [
+      {
+        "id": "col-de-vars",
+        "slug": "col-de-vars",
+        "name": "Col de Vars (D902)",
+        "country": "France",
+        "state": "Hautes-Alpes & Alpes-de-Haute-Provence",
+        "highway": "D902",
+        "status": "OPEN",
+        "elevationFt": 6916,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 35
+      },
+      {
+        "id": "col-de-la-cayolle",
+        "slug": "col-de-la-cayolle",
+        "name": "Col de la Cayolle (D2202 / D902)",
+        "country": "France",
+        "state": "Alpes-Maritimes & Alpes-de-Haute-Provence",
+        "highway": "D2202",
+        "status": "OPEN",
+        "elevationFt": 7631,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 42
+      },
+      {
+        "id": "col-d-allos",
+        "slug": "col-d-allos",
+        "name": "Col d'Allos (D908)",
+        "country": "France",
+        "state": "Alpes-de-Haute-Provence",
+        "highway": "D908",
+        "status": "OPEN",
+        "elevationFt": 7372,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 48
+      },
+      {
+        "id": "col-de-l-iseran",
+        "slug": "col-de-l-iseran",
+        "name": "Col de l'Iseran (D902)",
+        "country": "France",
+        "state": "Savoie",
+        "highway": "D902",
+        "status": "OPEN",
+        "elevationFt": 9088,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 115
+      }
+    ],
+    "cameras": [
+      {
+        "id": "bonette-cam-cime",
+        "title": "Cime de la Bonette Summit & Table d'Orientation (2 802 m / 9 193 ft)",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Sommet Cime de la Bonette",
+        "milepost": "D64 Summit Loop KM 24.5",
+        "direction": "Panoramic 360° View (Mont Pelat, Tinée, Mercantour)",
+        "source": "Inforoute 06 / Parc National du Mercantour",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.inforoute06.fr"
+      },
+      {
+        "id": "bonette-cam-fourches",
+        "title": "Camp des Fourches & Versant Sud Tinée (2 291 m)",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Village Militaire du Camp des Fourches",
+        "milepost": "D64 South Ramp KM 34.0",
+        "direction": "South towards Saint-Étienne-de-Tinée / Mercantour",
+        "source": "Parc National du Mercantour",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.mercantour-parcnational.fr"
+      },
+      {
+        "id": "bonette-cam-restefond",
+        "title": "Casemates Maginot du Restefond & Col de Restefond (2 680 m)",
+        "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Secteur Fortifié du Dauphiné / Restefond",
+        "milepost": "D64 North Flank KM 19.5",
+        "direction": "Northwest toward Col de Restefond & Jausiers",
+        "source": "Inforoute 04 / Ubaye Tourisme",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.ubaye.com"
+      },
+      {
+        "id": "bonette-cam-jausiers",
+        "title": "Jausiers & Vallée de l'Ubaye Versant Nord (1 220 m)",
+        "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Jausiers Carrefour D64 / D900",
+        "milepost": "D64 Kilometer Zero (Jausiers Base)",
+        "direction": "North towards Barcelonnette & D900 Junction",
+        "source": "Mairie de Jausiers / Ubaye Vallée",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.jausiers.com"
+      }
+    ],
+    "overview": {
+      "openedYear": 1961,
+      "lengthMiles": 31.0,
+      "lengthKm": 50.0,
+      "annualSnowfallIn": 380,
+      "annualSnowfallM": 9.6,
+      "summary": "Le Col de la Bonette culmine à 2 715 m, mais c'est sa boucle sommitale contournant la Cime de la Bonette à 2 802 mètres qui en fait la plus haute route asphaltée de France et la plus haute boucle traversante d'Europe. Située au cœur du Parc National du Mercantour sur la Route départementale D64 (Route des Grandes Alpes), elle relie Jausiers dans la Vallée de l'Ubaye à Saint-Étienne-de-Tinée. Construite sous Napoléon III et aménagée dans sa configuration moderne en 1960–1961, elle est bordée par le village militaire historique du Camp des Fourches (1896–1910) et les casemates d'altitude de la Ligne Maginot."
+    },
+    "historicalSections": [
+      {
+        "title": "Le Défi de la Plus Haute Route d'Europe et la Boucle de la Cime (2 802 m)",
+        "content": "Le col géographique de la Bonette culmine à 2 715 mètres d'altitude, franchi par le sentier muletier historique reliant Nice et la Provence au Piémont. En 1860, sous Napoléon III, le tracé d'une route stratégique reliant la Tinée à l'Ubaye est décrété d'intérêt impérial. Dans les années 1950–1960, pour faire de la Bonette la plus haute route traversante d'Europe et offrir un belvédère exceptionnel aux automobilistes, le Conseil Général des Alpes-Maritimes et les Ponts et Chaussées ont percé une boucle asphaltée de 2 kilomètres contournant la pyramide sommitale de la Cime de la Bonette jusqu'à 2 802 mètres d'altitude."
+      },
+      {
+        "title": "Le Camp des Fourches : Le Village Militaire Fantôme des Chasseurs Alpins",
+        "content": "À 2 291 mètres d'altitude sur le versant sud de la Bonette se dressent les ruines spectrales et fascinantes du Camp des Fourches. Érigé entre 1896 et 1910 pour loger jusqu'à 600 soldats du 157e Régiment d'Infanterie et des bataillons de Chasseurs Alpins (BCA), ce cantonnement d'altitude comprenait une vingtaine de casernements en pierre de taille, une boulangerie, une infirmerie et un téléphérique militaire. Les soldats y vivaient en autonomie complète face à la frontière italienne dans des conditions hivernales extrêmes."
+      },
+      {
+        "title": "Le Secteur Fortifié Maginot du Restefond et les Combats de Juin 1940",
+        "content": "Le massif de la Bonette-Restefond abrite l'un des ensembles fortifiés les plus hauts de la Ligne Maginot alpine. Perché à 2 680 mètres, l'Ouvrage du Restefond et ses avant-postes ont bloqué héroïquement les offensives des troupes italiennes lors de la Bataille des Alpes en juin 1940. Les casemates blindées, postes d'observation et blocs d'artillerie en béton armé sont encore parfaitement visibles le long de la route D64."
+      },
+      {
+        "title": "Le Parc National du Mercantour et la Biodiversité Alpine",
+        "content": "Traversant le Parc National du Mercantour, la route de la Bonette pénètre dans un écosystème de haute montagne d'une richesse exceptionnelle. Au-dessus de la limite des forêts de mélèzes, les pierriers et pelouses alpines abritent de nombreuses colonies de marmottes des Alpes, des hardes de chamois et de bouquetins, ainsi que le rare tétras-lyre et le gypaète barbu. Des panneaux d'interprétation guident les visiteurs au sommet de la Cime."
+      },
+      {
+        "title": "La Légende du Tour de France et les Géants de la Route des Grandes Alpes",
+        "content": "Le Col et la Cime de la Bonette représentent le toit historique du Tour de France, franchi pour la première fois en 1962 (avec Federico Bahamontes en tête), puis en 1964, 1993, 2008 (John-Lee Augustyn) et 2024 (Richard Carapaz). Les cyclistes et motards du monde entier parcourent ses 50 km pour défier ses pentes exigeantes atteignant 10 à 15% dans le dernier kilomètre de la Cime."
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "Langue Régionale (Français) : Col de la Bonette — Guide de Traversée & État de la Route",
+        "content": "Bienvenue sur le guide officiel LivePassWatch du Col de la Bonette (2 715 m) et de la Cime de la Bonette (2 802 m). La Route départementale D64 est ouverte de la fin du printemps à l'automne. Du côté nord au départ de Jausiers, l'ascension s'étend sur 24 km pour 1 589 m de dénivelé avec des pourcentages moyens de 6,6% et un asphalte impeccable. Du côté sud au départ de Saint-Étienne-de-Tinée, la montée fait 26 km pour 1 652 m de dénivelé en passant par le Camp des Fourches. Au sommet, la boucle à sens unique autour de la Cime offre une aire de stationnement et un sentier piéton de 10 minutes vers la table d'orientation à 2 860 m."
+      },
+      {
+        "title": "English Translation: Col de la Bonette — High Alpine Motoring & Cycling Guide",
+        "content": "Welcome to the LivePassWatch high-altitude portal for Col de la Bonette (2,715 m / 8,907 ft) and Cime de la Bonette (2,802 m / 9,193 ft). Road D64 carries the celebrated Route des Grandes Alpes between Jausiers (Ubaye Valley) and Saint-Étienne-de-Tinée (Tinée Valley) across Mercantour National Park. The summit loop reaches 2,802 m, establishing it as the highest paved through-road in France and Europe. Open seasonally from late May/June to October/November, the pass features pristine asphalt, historic military ruins at Camp des Fourches, and unforgettable panoramic vistas."
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Inforoute 06 (Conseil Départemental des Alpes-Maritimes)",
+        "type": "Official DOT Highway Bulletin",
+        "url": "https://www.inforoute06.fr"
+      },
+      {
+        "name": "Inforoute 04 (Conseil Départemental des Alpes-de-Haute-Provence)",
+        "type": "Official DOT Highway Bulletin",
+        "url": "https://www.inforoute04.fr"
+      },
+      {
+        "name": "Parc National du Mercantour",
+        "type": "National Park Authority",
+        "url": "https://www.mercantour-parcnational.fr"
+      },
+      {
+        "name": "LivePassWatch Multi-Source Verification Methodology",
+        "type": "Independent Verification Engine",
+        "url": "/methodology"
+      }
+    ],
+    "quickFacts": {
+      "state": "Alpes-Maritimes & Alpes-de-Haute-Provence",
+      "mountainRange": "Mercantour Massif / Maritime Alps (Alpes Maritimes)",
+      "elevationSummary": "2,715 m Col / 2,802 m Cime Loop (Highest Paved Road in France)",
+      "connects": "Jausiers (Ubaye Valley) with Saint-Étienne-de-Tinée (Tinée Valley / Nice)",
+      "nearestTown": "Jausiers (8 km), Barcelonnette (16 km), Saint-Étienne-de-Tinée (15 km), Nice (90 km)",
+      "roadType": "Route Départementale D64 (Route des Grandes Alpes / Route de la Bonette)",
+      "bestTime": "Late June to Early October (Fin juin à début octobre)",
+      "highlight": "Highest paved through-road loop in France and Europe at 2,802 meters"
+    },
+    "faqs": [
+      {
+        "question": "Le Col de la Bonette est-il ouvert aujourd'hui ? / Is Col de la Bonette open today?",
+        "answer": "Oui, le Col de la Bonette (2 715 m) et la boucle sommitale de la Cime de la Bonette (2 802 m) sur la route D64 sont actuellement OUVERTS à la circulation pour la saison estivale. La chaussée est sèche et totalement dégagée. Consultez l'état en direct et les webcams 24h/24 sur LivePassWatch. / Yes, Col de la Bonette (2,715 m) and the Cime de la Bonette loop road (2,802 m) along Route D64 are currently OPEN for the summer motoring season."
+      },
+      {
+        "question": "Quand ouvre et ferme le Col de la Bonette pour l'hiver ? / When does Col de la Bonette open and close for winter?",
+        "answer": "Le Col de la Bonette ouvre généralement entre fin mai et mi-juin après les opérations de déneigement par Inforoute 04 et Inforoute 06. Il ferme pour l'hiver entre fin octobre et début novembre dès les premières chutes de neige alpines. / Col de la Bonette typically opens between late May and mid-June and closes for winter between late October and early November."
+      },
+      {
+        "question": "Quelle est l'altitude du Col et de la Cime de la Bonette ? / What is the elevation of Col and Cime de la Bonette?",
+        "answer": "Le col géographique culmine à 2 715 mètres (8 907 ft). La route sommitale panoramique contournant la Cime atteint 2 802 mètres (9 193 ft), ce qui en fait la plus haute route asphaltée de France et la 2e plus haute des Alpes. / The geographical Col crest is 2,715 m (8,907 ft). The paved scenic loop road reaches 2,802 m (9,193 ft), making it the highest paved road in France."
+      },
+      {
+        "question": "Où voir les webcams en direct du Col de la Bonette ? / Where can I view live webcams for Col de la Bonette?",
+        "answer": "LivePassWatch diffuse en temps réel les webcams du sommet de la Cime (2 802 m), du village militaire du Camp des Fourches (2 291 m), des casemates du Restefond (2 680 m) et de la montée de Jausiers (1 220 m). / LivePassWatch displays real-time camera views covering the Cime summit (2,802 m), Camp des Fourches (2,291 m), Restefond (2,680 m), and Jausiers base."
+      },
+      {
+        "question": "Quel est l'état de la route D64 au Col de la Bonette ? / What are the road conditions on Route D64?",
+        "answer": "La route D64 est entièrement goudronnée avec un enrobé de haute qualité. La pente moyenne est de 6,5% à 7,5% avec un passage à 10–15% sur la boucle sommitale de la Cime (2 802 m). Les véhicules de plus de 3,5 tonnes et caravanes y sont interdits. / Route D64 is fully paved with high-quality smooth asphalt with a 10–15% ramp around the 2 km Cime summit loop."
+      },
+      {
+        "question": "Qu'est-ce que le Camp des Fourches sur la route de la Bonette ? / What is Camp des Fourches?",
+        "answer": "Le Camp des Fourches est un village militaire d'altitude préservé situé à 2 291 m sur le versant sud de la D64. Construit entre 1896 et 1910 pour 600 Chasseurs Alpins surveillant la frontière italienne, ses baraquements en pierre constituent un site historique remarquable. / Camp des Fourches is an authentic abandoned military garrison situated at 2,291 m constructed between 1896 and 1910 for 600 Chasseurs Alpins alpine troops."
+      }
+    ],
+    "customSeo": {
+      "title": "Col de la Bonette (2 802 m) État de la Route D64, Webcam Live, Météo & Ouverture – LivePassWatch",
+      "description": "État en direct de la route D64 du Col de la Bonette (2 802 m Cime), webcams live, météo du Mercantour, Camp des Fourches, conditions d'ouverture et enneigement.",
+      "h1": "Col de la Bonette (2 802 m) : État de la Route D64, Webcam Live, Météo & Date d'Ouverture"
+    },
+    "searchKeywords": [
+      "Col de la Bonette",
+      "Cime de la Bonette",
+      "Col de la Bonette opening date",
+      "Col de la Bonette is open",
+      "Col de la Bonette road conditions",
+      "Col de la Bonette road status",
+      "Col de la Bonette pass status report",
+      "when does Col de la Bonette open",
+      "Col de la Bonette closed",
+      "Col de la Bonette is closed",
+      "Col de la Bonette is it open today",
+      "is Col de la Bonette closed today",
+      "Col de la Bonette webcam",
+      "Col de la Bonette live webcam",
+      "Col de la Bonette cameras",
+      "Col de la Bonette summit camera",
+      "when does Col de la Bonette close for winter",
+      "Col de la Bonette map",
+      "is Col de la Bonette open right now",
+      "Col de la Bonette weather today",
+      "Col de la Bonette snow",
+      "Col de la Bonette snow depth",
+      "Col de la Bonette snow conditions",
+      "Col de la Bonette elevation",
+      "Col de la Bonette open",
+      "Col de la Bonette when will open",
+      "Col de la Bonette passes open",
+      "Col de la Bonette closures today",
+      "is Col de la Bonette open",
+      "Route D64 Bonette",
+      "Camp des Fourches Bonette",
+      "Route des Grandes Alpes Bonette",
+      "Jausiers Saint Etienne de Tinee D64",
+      "Inforoute 06 Bonette",
+      "Inforoute 04 Bonette",
+      "Mercantour highest road"
+    ]
   }
 ];
 
@@ -11469,6 +11759,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Jammu & Kashmir' || passSlug === 'zoji-la') return 'jammu-and-kashmir';
   if (state === 'Hautes-Alpes & Savoie' || passSlug === 'col-du-galibier') return 'hautes-alpes-savoie';
   if (state === 'Savoie' || passSlug === 'col-de-l-iseran') return 'savoie';
+  if (state === 'Alpes-Maritimes & Alpes-de-Haute-Provence' || passSlug === 'col-de-la-bonette') return 'alpes-maritimes-alpes-de-haute-provence';
   if (state === 'Valais & Aosta Valley' || passSlug === 'great-st-bernard-pass') return 'valais-aosta-valley';
   if (state === 'Bern & Valais' || passSlug === 'grimsel-pass') return 'bern-valais';
   if (state === 'Bern & Uri' || passSlug === 'susten-pass') return 'bern-uri';

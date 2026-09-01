@@ -496,6 +496,62 @@ export const hierarchyData: HierarchyContinent[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "france",
+        "name": "France",
+        "code": "FRA",
+        "flagEmoji": "🇫🇷",
+        "states": [
+          {
+            "id": "alpes-maritimes-alpes-de-haute-provence",
+            "name": "Alpes-Maritimes & Alpes-de-Haute-Provence",
+            "passes": [
+              {
+                "id": "col-de-la-bonette",
+                "slug": "col-de-la-bonette",
+                "name": "Col de la Bonette (Cime de la Bonette)",
+                "highway": "Route D64",
+                "elevationFt": 9193,
+                "elevationM": 2802,
+                "status": "OPEN",
+                "image": "/col-de-la-bonette-france.webp"
+              }
+            ]
+          },
+          {
+            "id": "hautes-alpes-savoie",
+            "name": "Hautes-Alpes & Savoie",
+            "passes": [
+              {
+                "id": "col-du-galibier",
+                "slug": "col-du-galibier",
+                "name": "Col du Galibier",
+                "highway": "Route D902",
+                "elevationFt": 8668,
+                "elevationM": 2642,
+                "status": "OPEN",
+                "image": "/col-du-galibier.png"
+              }
+            ]
+          },
+          {
+            "id": "savoie",
+            "name": "Savoie",
+            "passes": [
+              {
+                "id": "col-de-l-iseran",
+                "slug": "col-de-l-iseran",
+                "name": "Col de l'Iseran",
+                "highway": "Route D902",
+                "elevationFt": 9088,
+                "elevationM": 2770,
+                "status": "OPEN",
+                "image": "/col-de-l-iseran.png"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

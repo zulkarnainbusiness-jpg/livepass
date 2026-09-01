@@ -573,6 +573,22 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Stelvio Pass & Alpine High Passes',
     crossLinkUrl: '/passes/italy/south-tyrol-lombardy/stelvio-pass',
     crossLinkText: 'Primerjajte razmere na prelazu Vršič z drugimi legendarnimi alpskimi prelazi, kot je'
+  },
+  'col-de-la-bonette': {
+    nearestTowns: [
+      { name: 'Jausiers, Alpes-de-Haute-Provence (Vallée de l\'Ubaye)', distance: '24.0 km (14.9 miles)', direction: 'North via Route D64' },
+      { name: 'Barcelonnette, Vallée de l\'Ubaye', distance: '32.0 km (19.9 miles)', direction: 'Northwest via D64 & D900' },
+      { name: 'Saint-Étienne-de-Tinée, Alpes-Maritimes', distance: '26.0 km (16.2 miles)', direction: 'South via Route D64' },
+      { name: 'Auron (Station de Ski), Alpes-Maritimes', distance: '33.0 km (20.5 miles)', direction: 'South via D64 & M2205' },
+      { name: 'Isola 2000, Mercantour', distance: '58.0 km (36.0 miles)', direction: 'Southeast via D64 & M97' },
+      { name: 'Nice / Côte d\'Azur, Alpes-Maritimes', distance: '112 km (69.6 miles)', direction: 'South via D64, M2205 & RM6202' }
+    ],
+    seasonalClosureWindow: 'November to May/June (Fermeture hivernale saisonnière / Ouvert en été)',
+    seasonalClosureDetail: 'Le Col de la Bonette (2 715 m) et la boucle panoramique de la Cime de la Bonette (2 802 m) sont fermés pendant la saison hivernale en raison d\'un enneigement exceptionnel et du risque d\'avalanches sur la Route D64 (Route des Grandes Alpes). Les services routiers départementaux (Inforoute 04 et Inforoute 06) assurent le déneigement printanier au moyen de fraises rotatives géantes pour une réouverture habituelle entre fin mai et mi-juin. La fermeture intervient aux premières neiges d\'automne (fin octobre ou début novembre).',
+    aboutPass: 'Le Col de la Bonette (2 715 m) et sa célèbre boucle sommitale de la Cime de la Bonette culminant à 2 802 m d\'altitude constituent la plus haute route asphaltée de France et la plus haute route traversante d\'Europe reliant la Vallée de l\'Ubaye (Jausiers, Alpes-de-Haute-Provence) à la Vallée de la Tinée (Saint-Étienne-de-Tinée, Alpes-Maritimes) au cœur du Parc National du Mercantour. Haut lieu de la Route des Grandes Alpes et légende du Tour de France, la Bonette est jalonnée de vestiges militaires impressionnants, notamment le Camp des Fourches (village militaire d\'altitude construit entre 1896 et 1910) et les casemates Maginot du Restefond. Au sommet de la Cime (2 802 m), une table d\'orientation en pierre offre un panorama à 360 degrés sur les Alpes du Sud, le Mont Pelat, le Viso et jusqu\'à la Mer Méditerranée par temps clair.',
+    crossLinkAnchor: 'Col de l\'Iseran (Savoie - 2 770 m)',
+    crossLinkUrl: '/passes/france/savoie/col-de-l-iseran',
+    crossLinkText: 'Comparez l\'altitude et l\'état de la route du Col de la Bonette avec le plus haut col routier des Alpes,'
   }
 };
 
