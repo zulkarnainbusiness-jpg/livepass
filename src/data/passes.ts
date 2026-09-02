@@ -8729,9 +8729,9 @@ export const passesData: MountainPass[] = [
       "lng": 8.4489
     },
     "status": "OPEN",
-    "statusDetail": "Sustenpass für den Sommerverkehr geöffnet / Open for summer season — Passstrasse trocken und regulär befahrbar",
+    "statusDetail": "Susten Pass open for summer season — road surface dry, clear, and fully accessible to all vehicles",
     "lastUpdated": "5 minutes ago",
-    "description": "Der Sustenpass (2.224 m ü. M. / 7.297 ft) ist eine der landschaftlich grossartigsten und fahrtechnisch modernsten Hochgebirgsstrassen der Schweizer Alpen. Auf der Hauptstrasse 11 verbindet er das Haslital im Berner Oberland (Innertkirchen / Meiringen) mit dem Meiental und Reusstal im Kanton Uri (Wassen / Gotthard-Achse). Bekannt für seine kühnen Steinbrücken, den Scheiteltunnel und den grandiosen Blick auf den Steingletscher, bildet der Sustenpass zusammen mit Grimsel und Furka das weltberühmte Schweizer «Dreipässe-Erlebnis».",
+    "description": "Susten Pass (elevation 2,224 m / 7,297 ft) is one of the most magnificent and masterfully engineered high-alpine mountain passes in the Swiss Alps. Located on Hauptstrasse 11 (Route 11), it connects the Haslital in the Bernese Oberland (Innertkirchen / Meiringen, Canton of Bern) with the Meiental and Reuss Valley in the Canton of Uri (Wassen / Gotthard route). Renowned for its sweeping curves, 25 monumental natural stone bridges, the 300-meter summit tunnel, and breathtaking panoramic vistas of the Steingletscher glacier, Susten Pass forms the legendary Swiss 'Big 3' Alpine Pass Loop alongside the Grimsel and Furka passes.",
     "image": "/susten-pass.png",
     "weather": {
       "tempF": 53,
@@ -8750,15 +8750,15 @@ export const passesData: MountainPass[] = [
       "direction": "NW",
       "description": "Gentle Mountain Breeze"
     },
-    "roadCondition": "Fahrbahn trocken, eisfrei und in hervorragendem Zustand auf der Berner Westrampe (Innertkirchen–Gadmen–Steingletscher) sowie auf der Urner Ostrasse (Wassen–Meiental–Sustentunnel). Regulärer Gegenverkehr, keine Einschränkungen.",
-    "chainRequirement": "Keine Kettenpflicht oder Einschränkungen im regulären Sommerbetrieb. Bei plötzlichen Kälteeinbrüchen im Hochgebirge wird Winterausrüstung (Winterreifen 3PMSF oder Schneeketten im Kofferraum) empfohlen.",
+    "roadCondition": "Road surface is clear, dry, and in pristine alpine driving condition along the entire 45.9 km corridor on both the Bernese west ramp (Innertkirchen–Gadmen–Steingletscher) and the Uri east ramp (Wassen–Meiental–Susten Tunnel). Regular two-way traffic with no restrictions.",
+    "chainRequirement": "No chain requirements or vehicle restrictions during regular summer operation. Winter equipment (3PMSF tires or snow chains) is advised during sudden high-altitude cold fronts.",
     "cameras": [
       {
         "id": "cam-susten-hasliberg",
-        "title": "Hasliberg Alpen Tower 360° Panorama (2.250 m)",
+        "title": "Hasliberg Alpen Tower 360° Panorama (2,250 m)",
         "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-        "milepost": "Hasliberg Alpen Tower (2.250 m)",
-        "direction": "360° Rundblick Berner & Urner Alpen / Susten-Massiv",
+        "milepost": "Hasliberg Alpen Tower (2,250 m)",
+        "direction": "360° Panoramic View of Bernese & Uri Alps / Susten Massif",
         "location": "Alpen Tower, Meiringen-Hasliberg",
         "source": "Bergbahnen Meiringen-Hasliberg / Webcam Galore",
         "updateIntervalMs": 60000,
@@ -8766,32 +8766,32 @@ export const passesData: MountainPass[] = [
       },
       {
         "id": "cam-susten-steingletscher",
-        "title": "Sustenpass Steingletscher & Scheiteltunnel (2.224 m)",
+        "title": "Sustenpass Steingletscher & Summit Tunnel (2,224 m)",
         "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
-        "milepost": "Route 11 Scheiteltunnel (2.224 m)",
-        "direction": "Blick auf Steingletscher, Steinsee & Susten-Scheiteltunnel",
-        "location": "Passhöhe Steingletscher (Kantonsgrenze BE/UR)",
+        "milepost": "Route 11 Summit Tunnel (2,224 m)",
+        "direction": "View of Steingletscher Glacier, Steinsee Lake & Susten Crest Tunnel",
+        "location": "Pass Summit Steingletscher (Canton Border Bern / Uri)",
         "source": "Tiefbauamt Kanton Bern / Alpin Center Sustenpass",
         "updateIntervalMs": 60000,
         "officialUrl": "https://www.sustenpass.ch/"
       },
       {
         "id": "cam-susten-gadmen",
-        "title": "Gadmen & Triftbahn – Grimselwelt (1.750 m)",
+        "title": "Gadmen & Triftbahn – Grimselwelt (1,750 m)",
         "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
-        "milepost": "Route 11 Gadmertal",
-        "direction": "Blick Triftgletscher & Gadmertal Westrampe",
-        "location": "Gadmen / Triftbahn",
-        "source": "Grimselwelt / KWO",
+        "milepost": "Route 11 Gadmen Valley",
+        "direction": "View of Trift Glacier & Gadmen Valley West Ramp",
+        "location": "Gadmen / Trift Cable Car",
+        "source": "Grimselwelt / Kraftwerke Oberhasli AG (KWO)",
         "updateIntervalMs": 60000,
         "officialUrl": "https://www.grimselwelt.ch/"
       },
       {
         "id": "cam-susten-wassen",
-        "title": "Wassen & Meiental – Gotthardrampe (1.400 m)",
+        "title": "Wassen & Meiental – Gotthard Approach (1,400 m)",
         "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80",
-        "milepost": "Route 11 / A2 Wassen",
-        "direction": "Blick Meiental Ostrampe & Wassen",
+        "milepost": "Route 11 / A2 Wassen Junction",
+        "direction": "View of Meiental East Ramp & Wassen Village",
         "location": "Meiental / Wassen (Uri)",
         "source": "Baudirektion Kanton Uri / TCS",
         "updateIntervalMs": 60000,
@@ -8854,64 +8854,64 @@ export const passesData: MountainPass[] = [
       "lengthKm": 45.9,
       "annualSnowfallIn": 580,
       "annualSnowfallM": 14.7,
-      "summary": "Der Sustenpass (2.224 m ü. M. / 7.297 ft) gilt als Meisterwerk der Schweizer Strassenbaukunst. Erbaut zwischen 1938 und 1945 als erste moderne Alpenstrasse, die primär für den Tourismus und die Landesverteidigung konzipiert wurde, verbindet er Innertkirchen im Berner Haslital mit Wassen im Urner Reusstal auf der Hauptstrasse 11. Die 45,9 km lange Route bietet weite, geschwungene Kurven, kühne Steinbogenbrücken, den 300 Meter langen Scheiteltunnel und unvergessliche Aussichten auf den imposanten Steingletscher und die Sustenhörner. Zusammen mit Grimsel und Furka bildet er das legendäre Schweizer «Dreipässe-Erlebnis»."
+      "summary": "Opened in 1945, Susten Pass (elevation 2,224 m / 7,297 ft) is celebrated as a masterpiece of Swiss civil engineering. Built between 1938 and 1945 as the first modern alpine highway purpose-built for tourism and national defense, it links Innertkirchen in the Bernese Haslital with Wassen in Uri's Reuss Valley along Hauptstrasse 11. The 45.9 km route features gentle gradients rarely exceeding 9%, sweeping curves, 25 monumental stone-arch bridges, and a 300-meter crest tunnel offering unforgettable views of the glaciated Sustenhorn peaks. Together with Grimsel and Furka, it anchors Switzerland's premier 120 km 'Big 3' Alpine Pass Circuit."
     },
     "narrativeSections": [
       {
-        "title": "Architektur & Geschichte der Susten-Passstrasse",
-        "content": "Bereits im Mittelalter überquerten Händler und Söldner den Sustenpass auf Saumpfaden. In den Kriegsjahren 1938 bis 1945 errichteten Schweizer Ingenieure und Mineure unter Leitung des Berner Oberingenieurs Paul Güdel die modernste Gebirgsstrasse Europas. Mit sanften Steigungen (selten über 9%), grosszügigen Kurvenradien, 25 kunstvoll gemauerten Natursteinbrücken und dem 300 Meter langen Scheiteltunnel auf 2.224 m wurde der Sustenpass zum weltweiten Vorbild für harmonisch in die Hochgebirgslandschaft integrierte Passstrassen."
+        "title": "Civil Engineering & History of Sustenstrasse",
+        "content": "Originally traversed by pack-mule traders and mercenaries during the Middle Ages, the modern Susten Pass road was constructed between 1938 and 1945 under the leadership of Chief Engineer Paul Güdel. Engineered with broad lanes, generous turn radii, and 25 hand-hewn natural stone bridges that harmoniously blend with the granite landscape, Susten Pass set the global standard for modern high-alpine road design. The 300-meter summit tunnel at 2,224 meters provides effortless transit across the cantonal boundary between Bern and Uri."
       },
       {
-        "title": "Der Steingletscher, das Meiental & die Dreipässe-Runde",
-        "content": "Auf der Berner Westrampe passiert die Strasse das Hotel Steingletscher und eröffnet einen atemberaubenden Blick auf den zerklüfteten Steingletscher und den smaragdgrünen Steinsee. Nach Durchquerung des Scheiteltunnels führt die Urner Ostrasse spektakulär durch das wilde Meiental hinunter nach Wassen mit Anschluss an die Gotthard-Achse (A2). Zusammen mit dem Grimselpass und dem Furkapass formt der Sustenpass die weltberühmte 120 km lange Dreipässe-Rundfahrt."
+        "title": "Steingletscher Glacier, Meiental Valley & the 'Big 3' Pass Loop",
+        "content": "Ascending the Bernese west ramp, travelers pass the historic Hotel Steingletscher, which affords breathtaking views of the crevassed Steingletscher glacier and the emerald-green Steinsee tarn. Exiting the eastern portal of the summit tunnel, the road winds dramatically through the pristine wilderness of the Meiental down to Wassen, connecting directly to the Gotthard transit axis (A2 Motorway). Combined with the Grimsel and Furka passes, Susten Pass forms the world-famous 120 km 'Big 3' Swiss Alpine loop with over 3,750 meters of cumulative climbing."
       }
     ],
     "quickFacts": {
-      "state": "Bern & Uri (Schweiz)",
-      "mountainRange": "Urner & Berner Alpen (Schweizer Alpen)",
-      "elevationSummary": "2.224 m (7.297 ft) Scheiteltunnel / 2.260 m Passkamm",
-      "connects": "Innertkirchen & Meiringen (Haslital) mit Wassen & Andermatt (Uri)",
+      "state": "Bern & Uri, Switzerland",
+      "mountainRange": "Uri Alps & Bernese Alps (Swiss Alps)",
+      "elevationSummary": "2,224 m (7,297 ft) Summit Tunnel / 2,260 m Pass Ridge",
+      "connects": "Innertkirchen & Meiringen (Haslital, Bern) to Wassen & Andermatt (Uri)",
       "nearestTown": "Innertkirchen (27 km) / Wassen (18 km) / Meiringen (33 km)",
-      "roadType": "Hauptstrasse 11 (Kantonsstrasse Bern / Uri)",
-      "bestTime": "Mitte Juni bis Ende Oktober (regulärer Sommerbetrieb)",
-      "highlight": "Steingletscher, Susten-Scheiteltunnel, kühne Steinbrücken, Dreipässe-Runde"
+      "roadType": "Swiss Hauptstrasse 11 (Toll-free Cantonal Alpine Highway)",
+      "bestTime": "Mid-June through Late October (Seasonal Summer Opening)",
+      "highlight": "Steingletscher Glacier, Susten Summit Tunnel, Natural Stone Bridges, Big 3 Loop"
     },
     "routeDetails": {
       "distanceKm": 45.9,
       "distanceMiles": 28.5,
-      "duration": "45–55 min mit dem Auto (2h45–3h45 mit dem Rennrad)",
+      "duration": "45–55 min by car (2h45–3h45 by road bicycle)",
       "origin": "Innertkirchen (625 m) / Wassen (916 m)",
       "destination": "Wassen (916 m) / Innertkirchen (625 m)",
       "waypoints": [
         "Innertkirchen (625 m)",
         "Nessental (930 m)",
-        "Gadmen (1.205 m)",
-        "Fuhren / Triftbahn (1.150 m)",
-        "Steingletscher / Hotel Steingletscher (1.865 m)",
-        "Scheiteltunnel Sustenpass (2.224 m)",
-        "Sustenbrüggli (1.907 m)",
-        "Meiental / Gufer (1.450 m)",
-        "Färnigen (1.455 m)",
+        "Gadmen (1,205 m)",
+        "Fuhren / Trift Cable Car (1,150 m)",
+        "Steingletscher / Hotel Steingletscher (1,865 m)",
+        "Susten Pass Summit Tunnel (2,224 m)",
+        "Sustenbrüggli (1,907 m)",
+        "Meiental / Gufer (1,450 m)",
+        "Färnigen (1,455 m)",
         "Wassen (916 m)"
       ]
     },
     "cyclingInfo": {
-      "summary": "Der Sustenpass gilt unter Rennradfahrern als absoluter Traum-Alpenpass. Die erstklassig trassierte Strasse, gleichmässige Steigungsprozente von 6–9% und der gletschergesäumte Scheiteltunnel machen jede Befahrung zu einem Fest für Radsportler.",
+      "summary": "Susten Pass is renowned among road cyclists as one of Europe's finest high-mountain climbs. Its impeccably engineered roadway, steady 6–9% gradients, sweeping hairpins, and the glacier-framed crest tunnel make every ascent an unforgettable cycling milestone.",
       "approaches": [
         {
-          "name": "Westrampe ab Innertkirchen (Haslital)",
+          "name": "West Ramp from Innertkirchen (Haslital)",
           "origin": "Innertkirchen (625 m)",
           "distanceKm": 27.5,
           "distanceMiles": 17.1,
           "elevationGainM": 1599,
           "elevationGainFt": 5246,
-          "avgGradient": "5.8% (8.5% ab Steingletscher)",
+          "avgGradient": "5.8% (8.5% above Steingletscher)",
           "maxGradient": "10.0%",
           "hairpins": 18,
-          "description": "Lange, wunderschöne Auffahrt durch das Gadmertal. Bis Gadmen sanft ansteigend, danach kühn in weiten Schleifen über den Steingletscher bis zum Scheiteltunnel."
+          "description": "A classic long-distance ascent through the Gadmen Valley. Gentle slopes lead past Gadmen, transitioning into bold switchbacks rising above Steingletscher to the summit tunnel."
         },
         {
-          "name": "Ostrasse ab Wassen (Meiental)",
+          "name": "East Ramp from Wassen (Meiental)",
           "origin": "Wassen (916 m)",
           "distanceKm": 17.5,
           "distanceMiles": 10.9,
@@ -8920,10 +8920,10 @@ export const passesData: MountainPass[] = [
           "avgGradient": "7.5%",
           "maxGradient": "10.0%",
           "hairpins": 14,
-          "description": "Kompaktere und steilere Auffahrt durch das tief eingeschnittene Meiental mit stetigen 7–9% Steigung vorbei am Sustenbrüggli zum Ostportal."
+          "description": "A steeper, more compact climb through the rugged Meiental gorge with steady 7–9% gradients passing Sustenbrüggli up to the east tunnel portal."
         },
         {
-          "name": "Die «Grossen Drei» Alpenpass-Runde (Susten - Grimsel - Furka)",
+          "name": "The 'Big 3' Swiss Alpine Loop (Susten - Grimsel - Furka)",
           "origin": "Innertkirchen / Meiringen / Andermatt",
           "distanceKm": 120.0,
           "distanceMiles": 74.5,
@@ -8932,125 +8932,125 @@ export const passesData: MountainPass[] = [
           "avgGradient": "7.2%",
           "maxGradient": "11.0%",
           "hairpins": 60,
-          "description": "Die weltberühmte 120 km Königstour der Schweizer Alpen über Sustenpass, Grimselpass und Furkapass."
+          "description": "The world-famous 120 km queen stage of the Swiss Alps traversing Susten Pass, Grimsel Pass, and Furka Pass in a single monumental loop."
         }
       ],
-      "bestSeason": "Mitte Juni bis Anfang Oktober (beste Bedingungen und angenehme Sommer-Temperaturen)",
+      "bestSeason": "Mid-June through early October (optimal tarmac conditions and pleasant summer temperatures)",
       "safetyTips": [
-        "Vorder- und Rücklicht am Fahrrad für den 300 m langen Scheiteltunnel und die Galerien obligatorisch.",
-        "Winddichte Jacke und Handschuhe für die lange Abfahrt nach Innertkirchen oder Wassen einpacken.",
-        "Auf Postautos und Motorräder in den Kurven achten – Vortrittsregeln beachten.",
-        "Wasserbrunnen stehen in Gadmen, beim Hotel Steingletscher und in Färnigen zur Verfügung."
+        "Front and rear bicycle lights are legally mandatory for the 300 m summit tunnel and avalanche galleries.",
+        "Pack a windproof jacket and thermal gloves for the long 27 km descent to Innertkirchen or Wassen.",
+        "Yield to yellow Swiss PostBuses sounding their three-tone horn on narrow hairpin curves.",
+        "Fresh alpine water fountains are accessible in Gadmen, at Hotel Steingletscher, and in Färnigen."
       ]
     },
     "drivingInfo": {
-      "summary": "Die Susten-Passstrasse (Hauptstrasse 11) ist eine hochmoderne, zweispurige Schweizer Gebirgsstrasse mit perfektem Asphalt, breiter Trasse und grossartigen Rastmöglichkeiten.",
+      "summary": "The Susten Pass road (Hauptstrasse 11) is a state-of-the-art two-lane Swiss mountain highway featuring immaculate asphalt, wide lanes, and generous scenic stopping bays.",
       "characteristics": [
-        "Vollständig asphaltierte, 2-spurige Gebirgsstrasse (Hauptstrasse 11) ohne Mautgebühr.",
-        "300 m langer Scheiteltunnel auf 2.224 m ü. M. mit ampelfreiem 2-Spur-Verkehr.",
-        "Gleichmässige Steigungen zwischen 6% und 9%, ideal für PKW, Wohnmobile und Motorräder.",
-        "Grosse Parkplätze beim Hotel Steingletscher und an beiden Portalen des Scheiteltunnels."
+        "Fully paved, wide 2-lane cantonal highway (Hauptstrasse 11) with zero toll charges.",
+        "300-meter illuminated crest tunnel at 2,224 m elevation with uninhibited two-way traffic.",
+        "Smooth, predictable gradients between 6% and 9%, ideal for passenger cars, motorhomes, and motorbikes.",
+        "Spacious parking facilities at Hotel Steingletscher and at both portals of the summit tunnel."
       ],
-      "switchbacksCount": "32 Kehren zwischen Innertkirchen, Steingletscher, Scheiteltunnel und Wassen",
+      "switchbacksCount": "32 engineered switchbacks between Innertkirchen, Steingletscher, Summit Tunnel, and Wassen",
       "safetyAndEtiquette": [
-        "Bei langen Bergabfahrten die Motorbremse (niedrige Gänge) nutzen, um Bremsenüberhitzung zu vermeiden.",
-        "Den gelben Schweizer Postautos bei Ertönen des Dreiklanghorns an unübersichtlichen Stellen stets Vortritt gewähren.",
-        "Beim Überholen von Radfahrern mindestens 1,5 Meter Seitenabstand einhalten.",
-        "Nur auf ausgewiesenen Parkflächen halten und Aussichtspunkte rücksichtsvoll nutzen."
+        "Use engine braking (lower gears) on steep downhill descents to prevent brake fading and overheating.",
+        "Always give way to yellow Swiss PostBuses upon hearing their distinctive three-tone horn on tight turns.",
+        "Maintain at least 1.5 meters of lateral clearance when overtaking cyclists.",
+        "Only stop in designated parking areas and pullouts to preserve traffic flow and road safety."
       ],
       "motorcycleTips": [
-        "Einer der beliebtesten Motorradpässe Europas mit weiten, rhythmischen Kurven und makellosem Asphalt.",
-        "Beliebter Biker-Treffpunkt am Scheiteltunnel-Parkplatz und beim Alpin Center Steingletscher."
+        "Ranked among Europe's top motorcycle touring routes thanks to wide, rhythmic turns and flawless pavement.",
+        "Popular biker gathering point at the summit tunnel parking terrace and the Steingletscher alpine center."
       ]
     },
     "distancesTable": [
       {
         "location": "Innertkirchen (Bern / Haslital)",
-        "distance": "27.5 km (17.1 Meilen)",
+        "distance": "27.5 km (17.1 miles)",
         "route": "Hauptstrasse 11 West",
-        "notes": "Talort der Westrampe & Anschluss an den Grimselpass"
+        "notes": "West valley gateway & junction to Grimsel Pass (H6)"
       },
       {
-        "location": "Wassen (Uri / Reusstal)",
-        "distance": "17.5 km (10.9 Meilen)",
-        "route": "Hauptstrasse 11 Ost",
-        "notes": "Talort der Ostrampe & Anschluss an Autobahn A2 (Gotthard)"
+        "location": "Wassen (Uri / Reuss Valley)",
+        "distance": "17.5 km (10.9 miles)",
+        "route": "Hauptstrasse 11 East",
+        "notes": "East valley gateway & connection to A2 Gotthard Motorway"
       },
       {
         "location": "Meiringen (Berner Oberland)",
-        "distance": "33 km (20.5 Meilen)",
+        "distance": "33 km (20.5 miles)",
         "route": "Hauptstrasse 11 & Route 6",
-        "notes": "Reichenbachfall, Aareschlucht & Zentralbahn"
+        "notes": "Reichenbach Falls, Aare Gorge & Zentralbahn hub"
       },
       {
-        "location": "Andermatt (Uri / Urserntal)",
-        "distance": "28 km (17.4 Meilen)",
+        "location": "Andermatt (Uri / Urseren Valley)",
+        "distance": "28 km (17.4 miles)",
         "route": "Hauptstrasse 11 & Route 2",
-        "notes": "Knotenpunkt Gotthard, Oberalp und Furka"
+        "notes": "Central alpine crossroads for Gotthard, Oberalp & Furka"
       },
       {
         "location": "Interlaken (Bern)",
-        "distance": "60 km (37.3 Meilen)",
+        "distance": "60 km (37.3 miles)",
         "route": "A8 & Hauptstrasse 11",
-        "notes": "Zentrum der Jungfrau-Region"
+        "notes": "Capital of the Jungfrau Region"
       },
       {
-        "location": "Luzern (Vierwaldstättersee)",
-        "distance": "80 km (49.7 Meilen)",
+        "location": "Lucerne (Luzern)",
+        "distance": "80 km (49.7 miles)",
         "route": "A2 & Hauptstrasse 11",
-        "notes": "Zentralschweizer Kultur- und Wirtschaftszentrum"
+        "notes": "Central Switzerland cultural & transport hub"
       },
       {
-        "location": "Zürich (Flughafen)",
-        "distance": "130 km (80.8 Meilen)",
+        "location": "Zurich (Flughafen / City)",
+        "distance": "130 km (80.8 miles)",
         "route": "A4 / A2 & Hauptstrasse 11",
-        "notes": "Grösste Schweizer Metropole"
+        "notes": "Switzerland's largest international gateway"
       },
       {
-        "location": "Bern (Bundeshauptstadt)",
-        "distance": "115 km (71.5 Meilen)",
+        "location": "Bern (Federal Capital)",
+        "distance": "115 km (71.5 miles)",
         "route": "A6 / A8 & Hauptstrasse 11",
-        "notes": "UNESCO-Weltkulturerbe Altstadt"
+        "notes": "Swiss capital & UNESCO World Heritage Old Town"
       }
     ],
     "isSeasonal": true,
     "seasonalClosureInfo": {
-      "typicalClosure": "Ende Oktober / Anfang November (je nach erstem starkem Schneefall)",
-      "typicalReopening": "Mitte bis Ende Juni (nach Fräsarbeiten des TBA Bern und Tiefbauamt Uri)",
-      "description": "Der Sustenpass ist im Winter von November bis Mitte Juni wegen extremer Schneemengen (bis zu 10 Meter) und hoher Lawinengefahr gesperrt. Im Mai und Juni räumen Hochleistungs-Schneefräsen beider Kantone wochenlang den Strassenkorridor frei, um eine sichere sommerliche Wiedereröffnung zu gewährleisten."
+      "typicalClosure": "Late October / Early November (depending on first severe snowfall)",
+      "typicalReopening": "Mid-to-Late June (following extensive rotary snow blower clearance)",
+      "description": "Susten Pass is closed during winter from November to mid-June due to extreme alpine snow accumulation of up to 10 meters (33 ft) and severe avalanche hazards. In May and June, high-capacity rotary snow blowers (Schneefräsen) operated by the Tiefbauamt Bern and Baudirektion Uri work for weeks clearing tons of snow to ensure a safe summer reopening."
     },
     "forecast": [
       {
-        "day": "Heute",
-        "condition": "Sonnig & heiter",
+        "day": "Today",
+        "condition": "Sunny & Clear",
         "tempHighF": 55,
         "tempLowF": 39,
         "icon": "sun"
       },
       {
-        "day": "Morgen",
-        "condition": "Überwiegend sonnig",
+        "day": "Tomorrow",
+        "condition": "Mostly Sunny",
         "tempHighF": 57,
         "tempLowF": 41,
         "icon": "sun"
       },
       {
-        "day": "Übermorgen",
-        "condition": "Leichte Quellbewölkung",
+        "day": "Day 3",
+        "condition": "Scattered Alpine Clouds",
         "tempHighF": 53,
         "tempLowF": 37,
         "icon": "cloud-sun"
       },
       {
-        "day": "Tag 4",
-        "condition": "Bergwetter klar & sichtstark",
+        "day": "Day 4",
+        "condition": "Clear High-Altitude Vistas",
         "tempHighF": 56,
         "tempLowF": 40,
         "icon": "sun"
       },
       {
-        "day": "Tag 5",
-        "condition": "Heiter bis wolkig",
+        "day": "Day 5",
+        "condition": "Partly Cloudy",
         "tempHighF": 54,
         "tempLowF": 38,
         "icon": "cloud-sun"
@@ -9059,97 +9059,93 @@ export const passesData: MountainPass[] = [
     "dataSources": [
       {
         "name": "Tiefbauamt des Kantons Bern (TBA)",
-        "type": "Offizieller Strassenzustand Kanton Bern",
+        "type": "Official Road Authority – Canton of Bern",
         "url": "https://www.be.ch/strassen"
       },
       {
         "name": "Baudirektion Kanton Uri – Tiefbauamt",
-        "type": "Offizielle Strassenzustände Kanton Uri",
+        "type": "Official Road Authority – Canton of Uri",
         "url": "https://www.ur.ch/"
       },
       {
         "name": "Touring Club Schweiz (TCS)",
-        "type": "Schweizer Pässezustand & Verkehrsinformationen",
+        "type": "Swiss Alpine Pass Status & Traffic Portal",
         "url": "https://www.tcs.ch/de/tools/verkehrslage-baustellen/alpenpaesse.php"
       },
       {
-        "name": "AlpenPässe.de / Alpen-Pässe.ch",
-        "type": "Zentrales Schweizer Passportal & Öffnungszeiten",
+        "name": "Alpen-Pässe.ch (Cantonal Transport Portal)",
+        "type": "Official Swiss Pass Portal & Real-Time Openings",
         "url": "https://www.alpen-paesse.ch/"
       },
       {
-        "name": "MeteoSchweiz – Wetter & Schneehöhen",
-        "type": "Hochgebirgs-Wetterbericht & Bergprognosen",
+        "name": "MeteoSwiss – Federal Office of Meteorology",
+        "type": "Alpine Mountain Weather & Snow Data",
         "url": "https://www.meteoswiss.admin.ch/"
       },
       {
         "name": "LivePassWatch Verification Methodology",
-        "type": "Transparenter Verifizierungs- und Datenstandard",
+        "type": "Transparent Real-Time Verification Standards",
         "url": "/methodology"
       }
     ],
     "faqs": [
       {
-        "question": "What is the Susten Pass opening date? / Wann öffnet der Sustenpass?",
-        "answer": "Susten Pass typically opens for the summer season in mid-to-late June (around June 12 to June 22) after rotary snow clearing by Canton Bern and Canton Uri road departments. In 2026, the pass opened for the summer season and is currently OPEN to all traffic. / Der Sustenpass öffnet in der Regel Mitte bis Ende Juni nach den Schneeräumarbeiten und ist aktuell für den regulären Sommerverkehr geöffnet."
+        "question": "What is the Susten Pass opening date? When does Susten Pass open?",
+        "answer": "Susten Pass typically opens for the summer season in mid-to-late June (around June 12 to June 22) after rotary snow clearing by Canton Bern and Canton Uri road departments. In 2026, the pass opened for the summer season and is currently OPEN to all traffic."
       },
       {
-        "question": "Is Susten Pass open today and is Susten Pass open right now? / Ist der Sustenpass heute geöffnet?",
-        "answer": "Yes, Susten Pass (Hauptstrasse 11) is currently OPEN and accessible to cars, motorcycles, and bicycles between Innertkirchen (Bern) and Wassen (Uri). / Ja, der Sustenpass ist aktuell vollständig geöffnet und regulär befahrbar."
+        "question": "Is Susten Pass open today and is Susten Pass open right now?",
+        "answer": "Yes, Susten Pass (Hauptstrasse 11) is currently OPEN and accessible to cars, motorcycles, and bicycles between Innertkirchen (Bern) and Wassen (Uri)."
       },
       {
-        "question": "What are the current Susten Pass road conditions and pass status report? / Wie ist der Strassenzustand am Sustenpass?",
-        "answer": "Road conditions across the entire 45.9 km corridor between Innertkirchen and Wassen are clear, dry, and in excellent summer driving condition with no traffic restrictions. / Die Passstrasse ist trocken, eisfrei und in hervorragendem Zustand auf beiden Rampen."
+        "question": "What are the current Susten Pass road conditions and pass status report?",
+        "answer": "Road conditions across the entire 45.9 km corridor between Innertkirchen and Wassen are clear, dry, and in excellent summer driving condition with no traffic restrictions."
       },
       {
-        "question": "What is the Susten Pass road status? / Welcher Strassenstatus gilt für den Sustenpass?",
-        "answer": "The official road status from Tiefbauamt Bern and Baudirektion Uri is OPEN with normal summer driving conditions across the Scheiteltunnel. / Der offizielle Status lautet OFFEN mit regulärem Sommerbetrieb."
+        "question": "What is the official Susten Pass road status?",
+        "answer": "The official road status from Tiefbauamt Bern and Baudirektion Uri is OPEN with normal summer driving conditions across the Scheiteltunnel."
       },
       {
-        "question": "When does Susten Pass open? / Wann geht der Sustenpass auf?",
-        "answer": "Susten Pass opens every year in early-to-mid June once snowplow crews clear the high-altitude pass road. It remains open through the summer and autumn. / Der Pass öffnet alljährlich im Juni, sobald die Schneeräumung beendet ist."
+        "question": "Is Susten Pass closed today?",
+        "answer": "No, Susten Pass is NOT closed today; it is open for through transit between the Bernese Oberland and Central Switzerland."
       },
       {
-        "question": "Is Susten Pass closed today? / Ist der Sustenpass heute gesperrt?",
-        "answer": "No, Susten Pass is NOT closed today; it is open for through traffic between Bernese Oberland and Central Switzerland. / Nein, der Sustenpass ist heute nicht gesperrt, sondern regulär befahrbar."
-      },
-      {
-        "question": "Where can I view the Susten Pass live webcam, cameras, and summit camera? / Wo finde ich die Sustenpass Live-Webcams?",
+        "question": "Where can I view the Susten Pass live webcam, cameras, and summit camera?",
         "answer": "LivePassWatch provides real-time live webcam feeds of Susten Pass, including the Hasliberg Alpen Tower 360° Panorama (2,250 m), the Sustenpass Steingletscher & Scheiteltunnel camera (2,224 m), the Gadmen Triftbahn camera (1,750 m), and the Wassen / Meiental camera."
       },
       {
-        "question": "When does Susten Pass close for winter, and is Susten Pass open in winter? / Wann schliesst der Sustenpass für den Winter?",
-        "answer": "Susten Pass closes for winter in late October or early November due to massive snow accumulation of up to 10 meters and avalanche hazards. It is NOT open in winter. / Der Sustenpass schliesst Ende Oktober oder Anfang November und bleibt über die Wintermonate gesperrt."
+        "question": "When does Susten Pass close for winter, and is Susten Pass open in winter?",
+        "answer": "Susten Pass closes for winter in late October or early November due to massive snow accumulation of up to 10 meters and avalanche hazards. It is NOT open in winter."
       },
       {
-        "question": "What is the Susten Pass elevation and how high is Susten Pass? / Wie hoch ist der Sustenpass?",
-        "answer": "The summit elevation of Susten Pass (Scheiteltunnel) is 2,224 meters (7,297 feet) above sea level, with the natural mountain crest reaching 2,260 meters (7,415 feet). / Die Passhöhe am Susten-Scheiteltunnel liegt auf 2.224 m ü. M. (7.297 ft)."
+        "question": "What is the Susten Pass elevation and how high is Susten Pass?",
+        "answer": "The summit elevation of Susten Pass (Scheiteltunnel) is 2,224 meters (7,297 feet) above sea level, with the natural mountain crest reaching 2,260 meters (7,415 feet)."
       },
       {
-        "question": "What are the Susten Pass snow conditions and snow depth? / Wie ist die Schneelage am Sustenpass?",
-        "answer": "During the summer opening, the road surface is 100% free of snow. In winter, cumulative snowpack on the Steingletscher crest reaches 8 to 10 meters (26 to 33 feet). / Im Sommer ist die Fahrbahn schneefrei; im Winter erreichen die Schneehöhen 8 bis 10 Meter."
+        "question": "What are the Susten Pass snow conditions and snow depth?",
+        "answer": "During the summer opening, the road surface is 100% free of snow. In winter, cumulative snowpack on the Steingletscher crest reaches 8 to 10 meters (26 to 33 feet)."
       },
       {
-        "question": "What is the Susten Pass weather today and forecast? / Wie ist das Wetter heute am Sustenpass?",
-        "answer": "Current summit weather features alpine sunshine, daytime temperatures around 12°C (53°F), and light winds. Check the 5-day mountain weather forecast above. / Die Wetterlage bietet Sonnenschein mit rund 12°C auf der Passhöhe."
+        "question": "What is the Susten Pass weather today and forecast?",
+        "answer": "Current summit weather features alpine sunshine, daytime temperatures around 12°C (53°F), and light mountain winds. A 5-day mountain weather forecast is available on this page."
       },
       {
-        "question": "What are the Susten Pass chain requirements and traction tires rules? / Brauche ich Schneeketten am Sustenpass?",
-        "answer": "No chains or special traction equipment are required during normal summer operation on dry roads. Winter tires (3PMSF) or chains are recommended during sudden late-season cold snaps. / Im regulären Sommerbetrieb besteht keine Kettenpflicht."
+        "question": "What are the Susten Pass chain requirements and traction tires rules?",
+        "answer": "No chains or special traction equipment are required during normal summer operation on dry roads. Winter tires (3PMSF) or chains are recommended during sudden late-season cold snaps."
       },
       {
-        "question": "What highway is Susten Pass and where is Susten Pass located? / Welche Strasse führt über den Sustenpass?",
-        "answer": "Susten Pass is carried by Swiss Hauptstrasse 11 (Route 11). It connects Innertkirchen in the Bernese Oberland (Canton Bern) with Wassen in the Reuss Valley (Canton Uri). / Der Pass verläuft auf der Hauptstrasse 11 zwischen Innertkirchen (Bern) und Wassen (Uri)."
+        "question": "What highway is Susten Pass on and where is Susten Pass located?",
+        "answer": "Susten Pass is carried by Swiss Hauptstrasse 11 (Route 11). It connects Innertkirchen in the Bernese Oberland (Canton Bern) with Wassen in the Reuss Valley (Canton Uri)."
       },
       {
-        "question": "How to get to Susten Pass and what are the directions? / Wie komme ich zum Sustenpass?",
-        "answer": "From the west (Bern/Interlaken), follow A8 to Meiringen and Innertkirchen, then take Hauptstrasse 11 east over Sustenpass. From the east (Zurich/Lucerne/Gotthard), follow A2 to exit Wassen, then take Hauptstrasse 11 west up the Meiental. / Anreise aus Westen über Interlaken/Meiringen (A8 / H11) oder aus Osten über die Gotthard-Autobahn A2 via Wassen."
+        "question": "How to get to Susten Pass and what are the driving directions?",
+        "answer": "From the west (Bern/Interlaken), follow A8 to Meiringen and Innertkirchen, then take Hauptstrasse 11 east over Sustenpass. From the east (Zurich/Lucerne/Gotthard), follow A2 to exit Wassen, then take Hauptstrasse 11 west up the Meiental."
       }
     ],
     "customSeo": {
-      "h1": "Sustenpass : Strassenzustand, Live-Webcams, Wetter & Öffnungszeiten",
-      "title": "Susten Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
-      "description": "Aktueller Live-Status des Sustenpasses (2.224 m, Hauptstrasse 11), HD Live-Webcams Hasliberg & Steingletscher, Wetter, Schneehöhe, Wintersperre & Öffnungsdaten."
+      "h1": "Susten Pass Road Status, Live Webcams, Weather & Conditions 2026",
+      "title": "Susten Pass Road Status & Live Webcams 2026 — Switzerland H11 | LivePassWatch",
+      "description": "Live Susten Pass (2,224m) road status, real-time webcams, opening dates, weather & conditions on Hauptstrasse 11 (Bern-Uri, Switzerland). Verified official DOT."
     },
     "searchKeywords": [
       "Susten Pass opening date",

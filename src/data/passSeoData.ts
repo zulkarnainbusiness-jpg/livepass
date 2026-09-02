@@ -464,19 +464,19 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
   },
   'susten-pass': {
     nearestTowns: [
-      { name: 'Innertkirchen, Bern (Haslital)', distance: '27.5 km (17.1 Meilen)', direction: 'West via Route 11' },
-      { name: 'Wassen, Uri (Reusstal)', distance: '17.5 km (10.9 Meilen)', direction: 'Ost via Route 11' },
-      { name: 'Meiringen, Bern (Berner Oberland)', distance: '33 km (20.5 Meilen)', direction: 'West via Route 11' },
-      { name: 'Andermatt, Uri (Gotthard-Knoten)', distance: '28 km (17.4 Meilen)', direction: 'Südost via Route 11 & Route 2' },
-      { name: 'Interlaken, Bern', distance: '60 km (37.3 Meilen)', direction: 'West via A8 & Route 11' },
-      { name: 'Luzern, Schweiz', distance: '80 km (49.7 Meilen)', direction: 'Nord via A2 & Route 11' }
+      { name: 'Innertkirchen, Bern (Haslital)', distance: '27.5 km (17.1 miles)', direction: 'West via Hauptstrasse 11' },
+      { name: 'Wassen, Uri (Reuss Valley)', distance: '17.5 km (10.9 miles)', direction: 'East via Hauptstrasse 11' },
+      { name: 'Meiringen, Bern (Berner Oberland)', distance: '33 km (20.5 miles)', direction: 'West via Route 11 / 6' },
+      { name: 'Andermatt, Uri (Gotthard Hub)', distance: '28 km (17.4 miles)', direction: 'Southeast via Route 11 & Route 2' },
+      { name: 'Interlaken, Bern', distance: '60 km (37.3 miles)', direction: 'West via A8 & Route 11' },
+      { name: 'Lucerne (Luzern), Switzerland', distance: '80 km (49.7 miles)', direction: 'North via A2 & Route 11' }
     ],
-    seasonalClosureWindow: 'Mitte Juni bis Ende Oktober / Anfang November (Wintersperre November bis Juni)',
-    seasonalClosureDetail: 'Unterhalten durch das Tiefbauamt des Kantons Bern (TBA) und die Baudirektion des Kantons Uri (Tiefbauamt Uri). Die 2.224 m hohe Passstrasse ist von November bis Mitte Juni wegen extremer Schneehöhen von bis zu 10 Metern und hoher Lawinengefahr gesperrt. Im Mai und Juni räumen schwere Schneefräsen die Passhöhe zur sommerlichen Wiedereröffnung frei.',
-    aboutPass: 'Der Sustenpass (2.224 m ü. M. / 7.297 ft) ist eine der spektakulärsten und modernsten Passstrassen der Schweizer Alpen auf der Hauptstrasse 11, die das Haslital im Kanton Bern mit dem Kanton Uri verbindet. Erbaut zwischen 1938 und 1945 mit 25 kühnen Natursteinbrücken, dem 300 m langen Scheiteltunnel und dem unvergleichlichen Ausblick auf den Steingletscher, bildet der Sustenpass zusammen mit Grimsel und Furka die weltberühmte Schweizer Dreipässe-Runde.',
-    crossLinkAnchor: 'Grimselpass (Grimsel Pass, Bern & Wallis)',
+    seasonalClosureWindow: 'Mid-June through Late October / Early November (Winter Closure November to June)',
+    seasonalClosureDetail: 'Maintained jointly by the Tiefbauamt des Kantons Bern (TBA) and Baudirektion Kanton Uri. The 2,224 m high mountain pass is closed during winter from November to mid-June due to intense alpine snow accumulation exceeding 10 meters (33 ft) and severe avalanche hazards. High-capacity rotary snow blowers clear the pass corridor in May and June for the summer season.',
+    aboutPass: 'Susten Pass (2,224 m / 7,297 ft), known as Sustenpass in German and Col du Susten in French, is a world-renowned mountain pass in the Swiss Alps carrying Hauptstrasse 11 across the Uri Alps between the Haslital in Canton Bern and the Meiental in Canton Uri. Constructed between 1938 and 1945 as Europe\'s first purpose-built alpine scenic highway, it features 25 monumental hand-hewn stone bridges, a 300-meter crest tunnel, and panoramic vistas of the Steingletscher glacier. Susten Pass anchors Switzerland\'s iconic 120 km "Big 3" Alpine Pass circuit together with the Grimsel and Furka passes.',
+    crossLinkAnchor: 'Grimsel Pass (Bern & Valais, Switzerland)',
     crossLinkUrl: '/passes/switzerland/bern-valais/grimsel-pass',
-    crossLinkText: 'Erleben Sie auch die weiteren Pässe der legendären Dreipässe-Runde wie den'
+    crossLinkText: 'Discover adjacent world-class Swiss Alpine passes including the'
   },
   'gotthard-pass': {
     nearestTowns: [
