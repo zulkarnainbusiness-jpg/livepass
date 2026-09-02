@@ -143,7 +143,7 @@ export const PassDetailPage: React.FC = () => {
     if (targetSlug.toLowerCase().includes('vrsic')) return 'sl';
     if (targetSlug.toLowerCase().includes('prislop')) return 'ro';
     if (targetSlug.toLowerCase().includes('grimsel') || targetSlug.toLowerCase().includes('susten')) return 'de';
-    if (targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard')) return 'it';
+    if (targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard') || targetSlug.toLowerCase().includes('agnel') || targetSlug.toLowerCase().includes('angel')) return 'it';
     if (targetSlug.toLowerCase().includes('galibier') || targetSlug.toLowerCase().includes('iseran') || targetSlug.toLowerCase().includes('bonette')) return 'fr';
     return 'en';
   });
@@ -163,7 +163,7 @@ export const PassDetailPage: React.FC = () => {
       setPageLang('de');
     } else if (pass.slug === 'bernina-pass') {
       setPageLang('de');
-    } else if (pass.slug === 'great-st-bernard-pass') {
+    } else if (pass.slug === 'great-st-bernard-pass' || pass.slug === 'col-agnel') {
       setPageLang('it');
     } else if (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') {
       setPageLang('fr');
@@ -249,10 +249,12 @@ export const PassDetailPage: React.FC = () => {
           ? 'Susten Pass mountain road, Steingletscher glacier, and Scheiteltunnel in the Swiss Alps'
           : (pass.slug === 'rogers-pass')
             ? 'Rogers Pass Trans-Canada Highway through Glacier National Park in British Columbia Canada'
-            : (pass.slug === 'great-st-bernard-pass')
-              ? 'Great St Bernard Pass road and Alpine mountain landscape'
-              : (pass.slug === 'col-du-galibier')
-                ? 'Col du Galibier mountain pass road and summit monument in the French Alps'
+            : (pass.slug === 'col-agnel')
+              ? 'Col Agnel / Colle dell\'Agnello mountain pass road, summit border marker 2744m, and Monviso vista in Italy and France'
+              : (pass.slug === 'great-st-bernard-pass')
+                ? 'Great St Bernard Pass road and Alpine mountain landscape'
+                : (pass.slug === 'col-du-galibier')
+                  ? 'Col du Galibier mountain pass road and summit monument in the French Alps'
                 : (pass.slug === 'col-de-l-iseran')
                   ? 'Col de l\'Iseran mountain pass road, summit sign 2770m, and chapel in the French Alps Savoie'
                   : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la')
@@ -761,6 +763,107 @@ export const PassDetailPage: React.FC = () => {
           </div>
         )}
 
+        {pass.slug === 'col-agnel' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(59, 130, 246, 0.06) 100%)',
+            border: '1px solid rgba(16, 185, 129, 0.25)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#065F46' }}>
+              <Globe size={18} color="#10B981" />
+              <span>
+                {pageLang === 'it'
+                  ? '🇮🇹 Contenuto in italiano ufficiale (Valico Colle dell\'Agnello SP251)'
+                  : pageLang === 'fr'
+                    ? '🇫🇷 Contenu en français officiel (Versant Col Agnel Route D205 Queyras)'
+                    : '🇬🇧 English Auto-Translation Active (Switch to Italian or French anytime)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('it')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'it' ? '#10B981' : 'transparent',
+                    color: pageLang === 'it' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇮🇹 Italiano
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇫🇷 Français
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#0F172A' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇬🇧 English (Auto-Translated)
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/italy-france/piedmont-hautes-alpes/col-agnel')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#065F46',
+                  background: '#ECFDF5',
+                  border: '1px solid #A7F3D0',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Ouvrir dans Google Traduction / Translate with Google"
+              >
+                <Globe size={14} />
+                <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
         {(pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
@@ -994,9 +1097,9 @@ export const PassDetailPage: React.FC = () => {
                               ? `Ultimo aggiornamento : ${pass.lastUpdated}`
                               : pass.slug === 'grimsel-pass' && pageLang === 'de'
                                 ? `Letzte Aktualisierung : ${pass.lastUpdated}`
-                                : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr'
+                                : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette' || (pass.slug === 'col-agnel' && pageLang === 'fr'))
                                   ? `Dernière mise à jour : ${pass.lastUpdated}`
-                                  : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                                  : (pass.slug === 'great-st-bernard-pass' || (pass.slug === 'col-agnel' && pageLang === 'it'))
                                     ? `Ultimo aggiornamento : ${pass.lastUpdated}`
                                     : `Last updated: ${pass.lastUpdated}`}
                 </span>
@@ -1018,9 +1121,9 @@ export const PassDetailPage: React.FC = () => {
                               ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                               : pass.slug === 'grimsel-pass' && pageLang === 'de'
                                 ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                                : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr'
+                                : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette' || (pass.slug === 'col-agnel' && pageLang === 'fr'))
                                   ? `Altitude : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                                  : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                                  : (pass.slug === 'great-st-bernard-pass' || (pass.slug === 'col-agnel' && pageLang === 'it'))
                                     ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                                     : `Elevation: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)`}
                 </span>
@@ -1029,7 +1132,13 @@ export const PassDetailPage: React.FC = () => {
 
             <div className="title-and-star">
               <h1 className="pass-main-heading">
-                {pass.slug === 'col-de-la-bonette'
+                {pass.slug === 'col-agnel'
+                  ? (pageLang === 'it'
+                    ? "Colle dell'Agnello (2 744 m) SP251 : Stato Strada, Webcam Live, Meteo Monviso & Apertura"
+                    : pageLang === 'fr'
+                      ? "Col Agnel (2 744 m) Route D205 Queyras : État de la Route, Webcam Live, Météo & Date d'Ouverture"
+                      : "Col Agnel / Colle dell'Agnello (2,744 m / 9,003 ft) SP251/D205: Live Webcams, Road Conditions, Weather & Open Status")
+                  : pass.slug === 'col-de-la-bonette'
                   ? (pageLang === 'fr'
                     ? "Col de la Bonette (2 802 m) : État de la Route D64, Webcam Live, Météo & Date d'Ouverture"
                     : "Col de la Bonette & Cime (2,802 m / 9,193 ft) Road D64: Live Webcams, Road Conditions, Weather & Open/Closed Status")
@@ -1098,15 +1207,21 @@ export const PassDetailPage: React.FC = () => {
                         ? `Altitudine : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                         : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                           ? `Passhöhe : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                          : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr'
+                          : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette' || (pass.slug === 'col-agnel' && pageLang === 'fr'))
                             ? `Sommet : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
-                            : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                            : (pass.slug === 'great-st-bernard-pass' || (pass.slug === 'col-agnel' && pageLang === 'it'))
                               ? `Sommità : ${pass.elevationM.toLocaleString()} m (${pass.elevationFt.toLocaleString()} ft)`
                               : `Summit: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)`}
               </span>
             </div>
             <p className="pass-summary-paragraph">
-              {pass.slug === 'col-de-la-bonette'
+              {pass.slug === 'col-agnel'
+                ? (pageLang === 'it'
+                  ? "Il Colle dell'Agnello (Col Agnel, 2 744 m / 9 003 ft) è il 3° valico stradale asfaltato più alto delle Alpi e il più alto valico transfrontaliero internazionale d'Europa lungo la SP251 e la D205, che unisce la Valle Varaita (Pontechianale, Cuneo, Piemonte) con il Queyras (Hautes-Alpes, Francia). Circondato dal maestoso gruppo del Monviso (3 841 m) e dal Pain de Sucre (3 208 m), è una leggendaria Cima Coppi del Giro d'Italia e vetta regina del ciclismo alpino."
+                  : pageLang === 'fr'
+                    ? "Le Col Agnel (Colle dell'Agnello, 2 744 m / 9 003 ft) est le 3e plus haut col routier des Alpes et le plus haut col frontière international d'Europe sur la Route D205 et la SP251, reliant le Parc Naturel Régional du Queyras (Molines-en-Queyras, Hautes-Alpes) au Piémont italien (Pontechianale, Val Varaita). Dominé par le Pain de Sucre et le Mont Viso, il est une légende du Tour de France et du Giro d'Italia."
+                    : "Col Agnel / Colle dell'Agnello (2,744 m / 9,003 ft) is the 3rd highest paved mountain road pass in the Alps and the highest international border pass in Europe along SP251 / Route D205, linking Pontechianale in Piedmont's Valle Varaita with Molines-en-Queyras in the French Queyras. Dominated by Mount Monviso and Pain de Sucre, it is a renowned Cima Coppi in the Giro d'Italia and a global cycling icon.")
+                : pass.slug === 'col-de-la-bonette'
                 ? (pageLang === 'fr'
                   ? "Le Col de la Bonette (2 715 m) et la boucle de la Cime de la Bonette (2 802 m / 9 193 ft) constituent la plus haute route asphaltée de France et la plus haute boucle routière d'Europe sur la Route départementale D64 (Route des Grandes Alpes), reliant Jausiers dans la Vallée de l'Ubaye (Alpes-de-Haute-Provence) à Saint-Étienne-de-Tinée (Alpes-Maritimes) à travers le Parc National du Mercantour. Célèbre pour ses panoramas à 360 degrés vers la Méditerranée, les ruines militaires du Camp des Fourches et les casemates Maginot du Restefond."
                   : "Col de la Bonette (2,715 m) and the scenic summit loop of Cime de la Bonette (2,802 m / 9,193 ft) form the highest paved through-road in France and Europe along Route D64 (Route des Grandes Alpes), linking Jausiers in the Ubaye Valley (Alpes-de-Haute-Provence) with Saint-Étienne-de-Tinée (Alpes-Maritimes) in Mercantour National Park. Celebrated for 360-degree vistas extending to the Mediterranean, the ghost military village of Camp des Fourches, and the Maginot Line Restefond casemates.")
@@ -1161,9 +1276,9 @@ export const PassDetailPage: React.FC = () => {
                       ? 'Condividi'
                       : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Teilen'
-                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr'
+                        : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette' || (pass.slug === 'col-agnel' && pageLang === 'fr'))
                           ? 'Partager'
-                          : pass.slug === 'great-st-bernard-pass' && pageLang === 'it'
+                          : (pass.slug === 'great-st-bernard-pass' || (pass.slug === 'col-agnel' && pageLang === 'it'))
                             ? 'Condividi'
                             : 'Share'}
             </button>
@@ -2198,7 +2313,7 @@ export const PassDetailPage: React.FC = () => {
                     <div className="fact-meta">
                       <span className="fact-label">{pageLang === 'fr' ? 'Lacets & Tracé' : pageLang === 'sl' ? 'Serpentine & Trasa' : pageLang === 'ro' ? 'Serpentine & Traseu' : 'Total Switchbacks'}</span>
                       <strong className="fact-value">
-                        {pass.slug === 'col-de-la-bonette' ? (pageLang === 'fr' ? '32 lacets panoramiques & boucle de 2 km à 2 802 m' : '32 scenic hairpins & 2 km summit loop at 2,802 m') : (pass.slug === 'vrsic-pass' ? (pageLang === 'sl' ? '50 oštevilčenih serpentin (1–24 tlakovci, 25–50 asfalt)' : '50 numbered switchbacks (1–24 cobblestone, 25–50 asphalt)') : (pass.slug === 'prislop-pass' ? (pageLang === 'ro' ? 'Serpentine line asfaltate modern pe DN18' : 'Pristine paved trans-Carpathian switchbacks on DN18') : (pass.slug === 'bernina-pass' ? '10–12% Gradients & Wide Sweeping Switchbacks' : (pass.slug === 'gotthard-pass' ? '24 Historic Tremola Cobblestone Hairpins' : (pass.slug === 'trollstigen-pass' ? '11 Hairpin Turns (10% Incline)' : (pass.slug === 'stelvio-pass' ? '87 Hairpins (48 NE + 39 SW)' : (pass.quickFacts?.highlight || 'Multi-tier scenic alpine hairpins')))))))}
+                        {pass.slug === 'col-agnel' ? (pageLang === 'it' ? 'Pendenze fino al 15% (Chianale) & Cima Coppi a 2 744 m' : pageLang === 'fr' ? 'Pentes jusqu\'à 15% & Stele Cima Coppi à 2 744 m' : 'Steep 10–15% ramps (Chianale) & Cima Coppi at 2,744 m') : (pass.slug === 'col-de-la-bonette' ? (pageLang === 'fr' ? '32 lacets panoramiques & boucle de 2 km à 2 802 m' : '32 scenic hairpins & 2 km summit loop at 2,802 m') : (pass.slug === 'vrsic-pass' ? (pageLang === 'sl' ? '50 oštevilčenih serpentin (1–24 tlakovci, 25–50 asfalt)' : '50 numbered switchbacks (1–24 cobblestone, 25–50 asphalt)') : (pass.slug === 'prislop-pass' ? (pageLang === 'ro' ? 'Serpentine line asfaltate modern pe DN18' : 'Pristine paved trans-Carpathian switchbacks on DN18') : (pass.slug === 'bernina-pass' ? '10–12% Gradients & Wide Sweeping Switchbacks' : (pass.slug === 'gotthard-pass' ? '24 Historic Tremola Cobblestone Hairpins' : (pass.slug === 'trollstigen-pass' ? '11 Hairpin Turns (10% Incline)' : (pass.slug === 'stelvio-pass' ? '87 Hairpins (48 NE + 39 SW)' : (pass.quickFacts?.highlight || 'Multi-tier scenic alpine hairpins'))))))))}
                       </strong>
                     </div>
                   </div>
@@ -2374,7 +2489,13 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 10.5: Editorial Guidance & Travel Tips */}
             <section id="travel-guidance" className="detail-section-block">
               <h2 className="section-title-heading">
-                {(pass.slug === 'col-de-la-bonette')
+                {(pass.slug === 'col-agnel')
+                  ? (pageLang === 'it'
+                    ? 'Consigli Pratici & Informazioni di Viaggio Colle dell\'Agnello'
+                    : pageLang === 'fr'
+                      ? 'Conseils Pratiques & Informations Voyage Col Agnel'
+                      : 'Col Agnel / Colle dell\'Agnello Travel Guidance & Practical Tips')
+                  : (pass.slug === 'col-de-la-bonette')
                   ? (pageLang === 'fr' ? 'Conseils Pratiques & Informations Voyage Col de la Bonette' : 'Col de la Bonette Travel Guidance & Practical Tips')
                   : (pass.slug === 'grimsel-pass')
                   ? (pageLang === 'de' ? 'Praktische Reisetipps & Routenführung Grimselpass' : 'Grimsel Pass Travel Guidance & Practical Tips')
@@ -2396,7 +2517,13 @@ export const PassDetailPage: React.FC = () => {
               </h2>
               <div className="travel-guidance-container lp-card" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <p className="narrative-p" style={{ marginBottom: '8px' }}>
-                  {pass.slug === 'col-de-la-bonette'
+                  {pass.slug === 'col-agnel'
+                    ? (pageLang === 'it'
+                        ? 'Valicare il Colle dell\'Agnello a 2 744 metri d\'altitudine tra la Valle Varaita (Piemonte) e il Queyras (Hautes-Alpes) è una delle più emozionanti e impegnative avventure alpine d\'Europa, al cospetto del Monte Viso e delle pareti del Pain de Sucre.'
+                        : pageLang === 'fr'
+                          ? 'Franchir le Col Agnel à 2 744 mètres d\'altitude entre le Queyras (Hautes-Alpes) et le Piémont italien (Pontechianale) représente l\'un des plus grands défis alpins d\'Europe avec le panorama sur le Mont Viso et le Pain de Sucre.'
+                          : 'Crossing Col Agnel / Colle dell\'Agnello at 2,744 meters (9,003 ft) between Piedmont\'s Valle Varaita and the French Queyras is one of Europe\'s most exhilarating high-altitude motoring and cycling journeys in the shadow of Mount Monviso.')
+                    : pass.slug === 'col-de-la-bonette'
                     ? (pageLang === 'fr'
                         ? 'Franchir le Col de la Bonette et la boucle sommitale de la Cime à 2 802 mètres d\'altitude au cœur du Parc National du Mercantour constitue la plus haute aventure routière et cycliste de France entre l\'Ubaye et la Tinée.'
                         : 'Crossing Col de la Bonette and the Cime summit loop at 2,802 meters (9,193 ft) in Mercantour National Park is France\'s premier high-altitude motoring journey connecting the Ubaye and Tinée valleys.')
@@ -2426,7 +2553,11 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Clock size={16} /> 
-                      {pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                      {pass.slug === 'col-agnel' && pageLang === 'it'
+                        ? 'Tracciato SP251/D205 & Stagione'
+                        : pass.slug === 'col-agnel' && pageLang === 'fr'
+                        ? 'Itinéraire D205/SP251 & Saison'
+                        : pass.slug === 'vrsic-pass' && pageLang === 'sl'
                         ? 'Trasa, 50 Serpentin & Sezona'
                         : pass.slug === 'prislop-pass' && pageLang === 'ro'
                         ? 'Traseu & Sezon de Călătorie'
@@ -2439,7 +2570,13 @@ export const PassDetailPage: React.FC = () => {
                         : 'Route & Travel Season'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'col-de-la-bonette')
+                      {(pass.slug === 'col-agnel')
+                        ? (pageLang === 'it'
+                            ? 'La SP251 (Italia) e la D205 (Francia) collegano Pontechianale (Cuneo) a Molines-en-Queyras (Hautes-Alpes). Il valico è aperto stagionalmente da inizio giugno a fine ottobre/novembre. Asfalto regolare ma pendenze severe sul lato italiano (10-15% dopo Chianale).'
+                            : pageLang === 'fr'
+                              ? 'La Route D205 (France) et la SP251 (Italie) relient Molines-en-Queyras (Hautes-Alpes) à Pontechianale (Piémont). Ouvert de début juin à fin octobre. Pentes soutenues de 8-9% côté français et jusqu\'à 15% côté italien.'
+                              : 'Route SP251 (Italy) and Route D205 (France) connect Pontechianale (Piedmont) with Molines-en-Queyras (Hautes-Alpes). Open early June to late October/November with demanding 10–15% gradients above Chianale.')
+                        : (pass.slug === 'col-de-la-bonette')
                         ? (pageLang === 'fr'
                             ? 'La Route D64 relie Jausiers (Ubaye) à Saint-Étienne-de-Tinée (Tinée / Nice). Ouverte de fin mai / début juin à fin octobre / début novembre. La boucle sommitale à sens unique autour de la Cime atteint 2 802 m avec un asphalte d\'excellente qualité.'
                             : 'Route D64 links Jausiers (Ubaye) with Saint-Étienne-de-Tinée (Tinée / Nice). Open late May/June to late October/November. The 2 km one-way summit loop around Cime reaches 2,802 m with smooth high-altitude asphalt.')
@@ -2485,7 +2622,11 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Mountain size={16} /> 
-                      {pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                      {pass.slug === 'col-agnel' && pageLang === 'it'
+                        ? 'Meteo Monviso & Alta Quota'
+                        : pass.slug === 'col-agnel' && pageLang === 'fr'
+                        ? 'Météo Queyras & Haute Altitude'
+                        : pass.slug === 'vrsic-pass' && pageLang === 'sl'
                         ? 'Gorsko Vreme & Prisank'
                         : pass.slug === 'prislop-pass' && pageLang === 'ro'
                         ? 'Meteo Alpin & Siguranță'
@@ -2498,7 +2639,13 @@ export const PassDetailPage: React.FC = () => {
                         : 'High-Altitude Safety & Weather'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'col-de-la-bonette')
+                      {(pass.slug === 'col-agnel')
+                        ? (pageLang === 'it'
+                            ? 'A 2 744 m s.l.m., la temperatura al valico è di 12-16°C inferiore rispetto alla pianura piemontese (Cuneo/Saluzzo). Venti freddi d\'alta quota e improvvise nebbie possono sopraggiungere rapidamente; controlla sempre i bollettini ARPA Piemonte e le webcam live prima di salire.'
+                            : pageLang === 'fr'
+                              ? 'À 2 744 m au sommet, la température est de 12 à 15°C plus fraîche qu\'à Guillestre ou Briançon. Des rafales de vent et des orages d\'été peuvent éclater l\'après-midi; vérifiez les webcams du Refuge Agnel et de Saint-Véran avant de partir.'
+                              : 'At 2,744 m summit crest, ambient temperatures are 12–16°C cooler than in Cuneo or Briançon. Strong alpine winds and sudden cloud cover can occur; verify ARPA Piemonte & Météo-France live forecasts.')
+                        : (pass.slug === 'col-de-la-bonette')
                         ? (pageLang === 'fr'
                             ? 'À 2 802 m au sommet de la Cime, la température est de 12 à 18°C plus fraîche que sur la Côte d\'Azur ou à Nice. Des vents violents et des orages d\'été peuvent survenir rapidement. Consultez les webcams de la Cime et du Camp des Fourches avant le départ.'
                             : 'At 2,802 m summit altitude, temperatures are 12–18°C colder than in Nice or the French Riviera. Rapid storm developments and high winds can occur; check live Cime and Camp des Fourches webcams before departure.')
@@ -2544,7 +2691,11 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <ShieldCheck size={16} /> 
-                      {pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                      {pass.slug === 'col-agnel' && pageLang === 'it'
+                        ? 'Pedaggio Gratuito & Regolamento SP251'
+                        : pass.slug === 'col-agnel' && pageLang === 'fr'
+                        ? 'Péage Gratuit & Véhicules D205'
+                        : pass.slug === 'vrsic-pass' && pageLang === 'sl'
                         ? 'Cestnine, Vinjeta & Parkiranje'
                         : pass.slug === 'prislop-pass' && pageLang === 'ro'
                         ? 'Rovinietă & Reglementări Rutiere'
@@ -2557,7 +2708,13 @@ export const PassDetailPage: React.FC = () => {
                         : 'Tolls & Road Regulations'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'col-de-la-bonette')
+                      {(pass.slug === 'col-agnel')
+                        ? (pageLang === 'it'
+                            ? 'La SP251 e la D205 sono strade pubbliche gratuite al 100% (nessun pedaggio o vignetta). Il transito è vietato ad autoarticolati, pullman turistici pesanti e sconsigliato a caravan e camper lunghi per via dei tornanti stretti sul versante di Chianale.'
+                            : pageLang === 'fr'
+                              ? 'La Route D205 et la SP251 sont entièrement gratuites (aucun péage ni vignette). Interdit aux poids lourds et autocars de grand gabarit en raison des épingles très étroites.'
+                              : 'Route SP251 & D205 are 100% toll-free public highways. Heavy articulated trucks and oversized commercial buses are prohibited; large caravans are strongly discouraged due to narrow switchbacks.')
+                        : (pass.slug === 'col-de-la-bonette')
                         ? (pageLang === 'fr'
                             ? 'La D64 est une route départementale 100% gratuite (aucun péage ni vignette). Les véhicules de plus de 3,5 tonnes et caravanes sont strictement interdits. Le stationnement au sommet est réglementé et le bivouac est encadré par la charte du Parc National du Mercantour.'
                             : 'Route D64 is a 100% toll-free public departmental road. Commercial vehicles over 3.5 tonnes and caravans are strictly prohibited. Summit parking is regulated, and overnight stays are governed by Mercantour National Park rules.')
@@ -2603,7 +2760,11 @@ export const PassDetailPage: React.FC = () => {
                   <div className="guidance-card" style={{ padding: '16px', backgroundColor: 'var(--bg-light)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <h4 style={{ margin: '0 0 8px 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-dark)' }}>
                       <Car size={16} /> 
-                      {pass.slug === 'vrsic-pass' && pageLang === 'sl'
+                      {pass.slug === 'col-agnel' && pageLang === 'it'
+                        ? 'Chiusura Invernale & Deviazioni'
+                        : pass.slug === 'col-agnel' && pageLang === 'fr'
+                        ? 'Fermeture Hivernale & Détours'
+                        : pass.slug === 'vrsic-pass' && pageLang === 'sl'
                         ? 'Zimska Oprema & Obvozni Prelazi'
                         : pass.slug === 'prislop-pass' && pageLang === 'ro'
                         ? 'Legislație Iarnă & Echipare'
@@ -2616,7 +2777,13 @@ export const PassDetailPage: React.FC = () => {
                         : 'Winter Laws & Seasonal Detours'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'col-de-la-bonette')
+                      {(pass.slug === 'col-agnel')
+                        ? (pageLang === 'it'
+                            ? 'Durante la chiusura invernale (novembre–maggio), il collegamento stradale tra Piemonte e Hautes-Alpes avviene a nord attraverso il Colle del Monginevro (SS24 / RN94 aperto tutto l\'anno) o il Traforo del Frejus (A43).'
+                            : pageLang === 'fr'
+                              ? 'Durant la fermeture hivernale (novembre à mai), la liaison entre le Queyras/Briançon et le Piémont passe par le Col de Montgenèvre (RN94 ouvert toute l\'année) ou le Tunnel du Fréjus.'
+                              : 'During winter closure (November to May), vehicle travel between Piedmont and Hautes-Alpes detours via Montgenèvre Pass (RN94 / SS24, open year-round) or the Fréjus Road Tunnel (A43).')
+                        : (pass.slug === 'col-de-la-bonette')
                         ? (pageLang === 'fr'
                             ? 'Pendant la fermeture hivernale (novembre à mai), la liaison entre l\'Ubaye et la Côte d\'Azur s\'effectue par Digne-les-Bains et la N202 / A51. La Loi Montagne II impose 4 pneus hiver (3PMSF) ou des chaînes dans le coffre du 1er nov au 31 mars.'
                             : 'During winter closure (Nov to May), travel between Ubaye and Nice/Côte d\'Azur detours via Digne-les-Bains and N202. Loi Montagne II requires 4 winter tires (3PMSF) or chains in trunk from Nov 1 to Mar 31.')

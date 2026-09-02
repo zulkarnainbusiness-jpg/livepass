@@ -102,7 +102,19 @@ const LegacyPassRedirect: React.FC = () => {
          (clean === 'cimedelabonette' && p.slug === 'col-de-la-bonette') ||
          (clean === 'cime-bonette' && p.slug === 'col-de-la-bonette') ||
          (clean === 'col-de-bonette' && p.slug === 'col-de-la-bonette') ||
-         (clean === 'la-bonette' && p.slug === 'col-de-la-bonette')
+         (clean === 'la-bonette' && p.slug === 'col-de-la-bonette') ||
+         (clean === 'col-agnel' && p.slug === 'col-agnel') ||
+         (clean === 'col-agnel-pass' && p.slug === 'col-agnel') ||
+         (clean === 'colagnel' && p.slug === 'col-agnel') ||
+         (clean === 'colle-dell-agnello' && p.slug === 'col-agnel') ||
+         (clean === 'colledellagnello' && p.slug === 'col-agnel') ||
+         (clean === 'colle-dellagnello' && p.slug === 'col-agnel') ||
+         (clean === 'passo-dell-agnello' && p.slug === 'col-agnel') ||
+         (clean === 'col-angel' && p.slug === 'col-agnel') ||
+         (clean === 'col-angel-pass' && p.slug === 'col-agnel') ||
+         (clean === 'colangel' && p.slug === 'col-agnel') ||
+         (clean === 'agnello' && p.slug === 'col-agnel') ||
+         (clean === 'agnel' && p.slug === 'col-agnel')
   );
 
   if (targetPass) {
@@ -134,6 +146,12 @@ export const App: React.FC = () => {
               {/* Legacy 1-tier and 2-tier Pass URL Redirects */}
               <Route path="/passes/:country/:slug" element={<LegacyPassRedirect />} />
               <Route path="/passes/:slug" element={<LegacyPassRedirect />} />
+              <Route path="/col-agnel" element={<Navigate to="/passes/italy-france/piedmont-hautes-alpes/col-agnel" replace />} />
+              <Route path="/col-agnel-pass" element={<Navigate to="/passes/italy-france/piedmont-hautes-alpes/col-agnel" replace />} />
+              <Route path="/colle-dell-agnello" element={<Navigate to="/passes/italy-france/piedmont-hautes-alpes/col-agnel" replace />} />
+              <Route path="/passo-dell-agnello" element={<Navigate to="/passes/italy-france/piedmont-hautes-alpes/col-agnel" replace />} />
+              <Route path="/col-angel" element={<Navigate to="/passes/italy-france/piedmont-hautes-alpes/col-agnel" replace />} />
+              <Route path="/col-angel-pass" element={<Navigate to="/passes/italy-france/piedmont-hautes-alpes/col-agnel" replace />} />
               <Route path="/col-du-galibier" element={<Navigate to="/passes/france/hautes-alpes-savoie/col-du-galibier" replace />} />
               <Route path="/galibier" element={<Navigate to="/passes/france/hautes-alpes-savoie/col-du-galibier" replace />} />
               <Route path="/col-de-l-iseran" element={<Navigate to="/passes/france/savoie/col-de-l-iseran" replace />} />

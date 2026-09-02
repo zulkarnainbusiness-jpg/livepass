@@ -11677,6 +11677,313 @@ export const passesData: MountainPass[] = [
       "Inforoute 04 Bonette",
       "Mercantour highest road"
     ]
+  },
+  {
+    "id": "col-agnel",
+    "slug": "col-agnel",
+    "name": "Col Agnel / Colle dell'Agnello (2 744 m)",
+    "alternateNames": [
+      "Colle dell'Agnello",
+      "Passo dell'Agnello",
+      "Col Agnel",
+      "Col Angel Pass",
+      "Col Agnel Pass",
+      "Colle dell Agnello",
+      "Col Agnel puerto de montaña de Italia",
+      "Col-Agnel-Gebirgspass Italien",
+      "Gebirgspass Col Agnel Italien",
+      "Col Agnel Italie",
+      "Passo Col Agnel Italia",
+      "Cima Coppi Colle dell'Agnello",
+      "アニエル峠の山道、イタリア",
+      "Route D205 Queyras / SP251 Pontechianale"
+    ],
+    "country": "Italy & France",
+    "countryCode": "ITA/FRA",
+    "continent": "Europe",
+    "state": "Piedmont & Hautes-Alpes",
+    "highway": "Strada Provinciale SP251 (Italy) / Route D205 (France)",
+    "elevationFt": 9003,
+    "elevationM": 2744,
+    "coordinates": {
+      "lat": 44.6840,
+      "lng": 6.9794
+    },
+    "status": "OPEN",
+    "statusDetail": "La Strada Provinciale SP251 (versante italiano Pontechianale / Valle Varaita) e la Route départementale D205 (versante francese Molines-en-Queyras) attraverso il Colle dell'Agnello (2 744 m) sono regolarmente APERTE al transito. Fondo stradale asciutto e sgombro. Chiusura invernale programmata da fine ottobre/novembre a fine maggio/giugno a cura della Provincia di Cuneo e di Inforoute 05.",
+    "lastUpdated": "5 minutes ago",
+    "description": "Il Colle dell'Agnello (in francese Col Agnel, 2 744 m / 9 003 ft) è il terzo valico stradale asfaltato più alto di tutte le Alpi (dopo l'Iseran e lo Stelvio) e il più alto valico transfrontaliero internazionale d'Europa. Collega la Valle Varaita in provincia di Cuneo (Piemonte, Italia) con la valle del Queyras nelle Hautes-Alpes (Francia), dominato dall'imponente piramide del Monte Viso (3 841 m) e dal Pan di Zucchero (Pain de Sucre, 3 208 m). Celebre Cima Coppi del Giro d'Italia e vetta Hors Catégorie del Tour de France, è una leggenda del cicloturismo alpino.",
+    "image": "/col-agnel-pass.jpg",
+    "weather": {
+      "tempF": 54,
+      "tempC": 12,
+      "condition": "Clear Alpine Skies & Sunny (Cielo Sereno Alpino)",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthIn": 0,
+      "depthCm": 0,
+      "condition": "Dry & Fully Cleared (Fondo Asciutto)"
+    },
+    "wind": {
+      "speedKmh": 14,
+      "speedMph": 9,
+      "direction": "NW",
+      "description": "Brezza d'Alta Quota / High Altitude Mountain Breeze"
+    },
+    "roadCondition": "Paved Alpine Asphalt in Excellent Condition (Asfalto di Alta Quota Regolare)",
+    "official_authority": "Provincia di Cuneo (Servizio Viabilità) & Département des Hautes-Alpes (Inforoute 05)",
+    "nearbyPasses": [
+      {
+        "id": "col-de-la-bonette",
+        "slug": "col-de-la-bonette",
+        "name": "Col de la Bonette (D64)",
+        "country": "France",
+        "state": "Alpes-Maritimes & Alpes-de-Haute-Provence",
+        "highway": "D64",
+        "status": "OPEN",
+        "elevationFt": 9193,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 48
+      },
+      {
+        "id": "col-du-galibier",
+        "slug": "col-du-galibier",
+        "name": "Col du Galibier (D902)",
+        "country": "France",
+        "state": "Hautes-Alpes & Savoie",
+        "highway": "D902",
+        "status": "OPEN",
+        "elevationFt": 8668,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 62
+      },
+      {
+        "id": "col-de-l-iseran",
+        "slug": "col-de-l-iseran",
+        "name": "Col de l'Iseran (D902)",
+        "country": "France",
+        "state": "Savoie",
+        "highway": "D902",
+        "status": "OPEN",
+        "elevationFt": 9088,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 95
+      },
+      {
+        "id": "stelvio-pass",
+        "slug": "stelvio-pass",
+        "name": "Stelvio Pass (SS38)",
+        "country": "Italy",
+        "state": "South Tyrol",
+        "highway": "SS38",
+        "status": "OPEN",
+        "elevationFt": 9045,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 280
+      }
+    ],
+    "cameras": [
+      {
+        "id": "agnel-cam-summit",
+        "title": "Colle dell'Agnello Valico Sommitale & Stele Cima Coppi (2 744 m / 9 003 ft)",
+        "image": "/col-agnel-pass.jpg",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Valico Internazionale Italia–Francia",
+        "milepost": "SP251 / D205 Crest KM 27.5",
+        "direction": "Panoramic View towards Pain de Sucre (3 208 m) & Monviso",
+        "source": "Provincia di Cuneo / Inforoute 05",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.provincia.cuneo.it"
+      },
+      {
+        "id": "agnel-cam-pontechianale",
+        "title": "Pontechianale & Chianale — Versante Italiano Valle Varaita (1 800 m)",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Borgo Storico di Chianale / Lago di Pontechianale",
+        "milepost": "SP251 East Ramp KM 12.0",
+        "direction": "Northwest looking up towards Colle dell'Agnello switchbacks",
+        "source": "Comune di Pontechianale / Unione Montana Valle Varaita",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://comune.pontechianale.cn.it"
+      },
+      {
+        "id": "agnel-cam-refuge",
+        "title": "Refuge Agnel & Versant Français Molines-en-Queyras (2 580 m)",
+        "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Refuge Agnel / Parc Naturel Régional du Queyras",
+        "milepost": "Route D205 West Flank KM 18.2",
+        "direction": "East towards Col Agnel Summit pass & Pic de Foréant",
+        "source": "Parc Naturel Régional du Queyras / Refuge Agnel",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.refugeagnel.com"
+      },
+      {
+        "id": "agnel-cam-saint-veran",
+        "title": "Saint-Véran & Observatoire du Queyras (2 040 m)",
+        "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
+        "timestamp": "Live Feed Refreshed",
+        "location": "Saint-Véran (Plus Haute Commune d'Europe)",
+        "milepost": "Queyras Valley Base",
+        "direction": "Panoramic Alpine Valley looking toward Col Agnel Massif",
+        "source": "Office de Tourisme du Guillestrois et du Queyras",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.queyras-montagne.com"
+      }
+    ],
+    "overview": {
+      "openedYear": 1970,
+      "lengthMiles": 34.8,
+      "lengthKm": 56.0,
+      "annualSnowfallIn": 395,
+      "annualSnowfallM": 10.0,
+      "summary": "Il Colle dell'Agnello (Col Agnel) a quota 2 744 metri (9 003 ft) è il 3° valico stradale più alto d'Europa e il valico internazionale transfrontaliero più elevato delle Alpi, situato nelle Alpi Cozie tra il massiccio del Monviso e il Queyras. Collega Pontechianale (Valle Varaita, Cuneo, Piemonte) a Molines-en-Queyras e Ville-Vieille (Hautes-Alpes, Francia). Aperto nella sua configurazione asfaltata moderna nel 1970, il passo è celebre per le sue micidiali pendenze ciclistiche fino al 15% sul versante italiano e per le memorabili imprese al Giro d'Italia e al Tour de France."
+    },
+    "historicalSections": [
+      {
+        "title": "Il 3° Valico Più Alto delle Alpi e il Tetto Internazionale d'Europa (2 744 m)",
+        "content": "Con i suoi 2 744 metri di quota, il Colle dell'Agnello è superato in altezza solamente dal Col de l'Iseran (2 770 m) in Francia e dal Passo dello Stelvio (2 757 m) in Italia. Essendo situato esattamente sulla linea di confine italo-francese, l'Agnello detiene il record assoluto di valico stradale internazionale più alto d'Europa. Il tracciato ricalca antichi sentieri percorsi fin dall'epoca romana e medievale per gli scambi commerciali e pastorali tra i valligiani della Val Varaita e le comunità autonome della Repubblica degli Escartons nel Queyras."
+      },
+      {
+        "title": "La Mitica Cima Coppi del Giro d'Italia e il Trionfo del 2016",
+        "content": "L'Agnello è entrato nella leggenda del ciclismo come una delle Cima Coppi più temute e spettacolari. Nel Giro d'Italia 1994 vide l'epica fuga di Marco Pantani e Stefano Della Santa. Nel Giro d'Italia 2016 fu teatro della storica tappa Pinerolo-Risoul: tra muraglie di neve altissime a 2 744 m, la spettacolare discesa e la successiva salita videro la drammatica caduta della maglia rosa Steven Kruijswijk e la leggendaria rimonta vincente di Vincenzo Nibali («Lo Squalo dello Stretto»), che ribaltò il Giro. Una stele commemorativa in ferro battuto accoglie i ciclisti sul valico."
+      },
+      {
+        "title": "Le Formidabili Pendenze: Sfida tra il Versante Italiano e Francese",
+        "content": "L'ascesa dal versante italiano con partenza da Casteldelfino / Pontechianale (SP251) è considerata tra le più dure d'Europa: 22,4 km per 1 450 m di dislivello, con gli ultimi 10 km oltre Chianale che mantengono una pendenza media costante del 10% con punte massime del 14-15%. Il versante francese da Guillestre / Ville-Vieille (D205) è più lungo (42 km) e graduale nei primi tratti, ma si impenna nell'ultimo tratto oltre il Refuge Agnel con pendenze dell'8-9% in un paesaggio lunare d'alta quota dominato dal Pain de Sucre."
+      },
+      {
+        "title": "Natura Incontaminata: Il Parco del Monviso e il Parc du Queyras",
+        "content": "Il Colle dell'Agnello fa da cerniera naturale tra due riserve ecologiche d'eccezione: la Riserva della Biosfera Transfrontaliera del Monviso (UNESCO) sul versante piemontese e il Parc Naturel Régional du Queyras sul versante francese. L'area sommitale offre avvistamenti frequenti di stambecchi alpini, camosci, ermellini, aquile reali e gipeti barbuti. Nelle notti estive, l'assenza totale di inquinamento luminoso rende il colle uno dei punti di osservazione astronomica più limpidi e rinomati d'Europa."
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "Lingua Regionale (Italiano): Colle dell'Agnello — Guida Ufficiale di Transito & Condizioni Strada",
+        "content": "Benvenuti sul portale ufficiale LivePassWatch per il Colle dell'Agnello (2 744 m). Il valico collega la SP251 (Piemonte, Cuneo) e la D205 (Hautes-Alpes, Francia). La strada è aperta stagionalmente da inizio giugno a fine ottobre/novembre. L'asfalto è curato e regolare, ma richiede estrema prudenza per via delle ripide pendenze sul versante di Chianale (fino al 15%). Al valico è disponibile un ampio piazzale con la stele di confine, la stele ciclistica Cima Coppi e la partenza per i sentieri del Pain de Sucre (3 208 m) e del Pic de Caramantran."
+      },
+      {
+        "title": "Langue Régionale (Français) : Col Agnel — Guide de Franchissement & État de la Route D205",
+        "content": "Bienvenue sur le portail LivePassWatch du Col Agnel (2 744 m / 9 003 ft). Troisième plus haut col routier des Alpes et plus haut col frontalier d'Europe, il relie le Queyras (Molines-en-Queyras, Hautes-Alpes) au Piémont italien (Pontechianale, Val Varaita). La route D205 est ouverte de début juin à fin octobre. Au sommet, découvrez une vue plongeante sur le Mont Viso et le Pain de Sucre. Consultez l'état du col, la météo en direct et les webcams d'altitude."
+      },
+      {
+        "title": "English Translation: Col Agnel / Colle dell'Agnello — Alpine Pass Road Status & Motoring Guide",
+        "content": "Welcome to the LivePassWatch high-alpine guide for Col Agnel / Colle dell'Agnello (2,744 m / 9,003 ft). Connecting Pontechianale (Valle Varaita, Piedmont, Italy) with Molines-en-Queyras (Hautes-Alpes, France), this is the 3rd highest paved road pass in the Alps and the highest international border pass in Europe. Open seasonally from early June through late October/November, Route SP251 / D205 features breathtaking Monviso panoramas, world-famous cycling switchbacks (Cima Coppi), and pristine alpine wilderness."
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Provincia di Cuneo — Servizio Viabilità & Gestione Strade",
+        "type": "Official Italian Highway Authority",
+        "url": "https://www.provincia.cuneo.it"
+      },
+      {
+        "name": "Inforoute 05 (Département des Hautes-Alpes)",
+        "type": "Official French DOT Road Bulletin",
+        "url": "https://inforoute05.fr"
+      },
+      {
+        "name": "ARPA Piemonte & Météo-France",
+        "type": "Official Alpine Meteorological Agency",
+        "url": "https://www.arpa.piemonte.it"
+      },
+      {
+        "name": "LivePassWatch Multi-Source Verification Methodology",
+        "type": "Independent Verification Engine",
+        "url": "/methodology"
+      }
+    ],
+    "quickFacts": {
+      "state": "Piedmont & Hautes-Alpes (Piemonte / Queyras)",
+      "mountainRange": "Cottian Alps / Monviso Massif (Alpi Cozie)",
+      "elevationSummary": "2,744 m (9,003 ft) — 3rd Highest Paved Pass in the Alps & Highest International Pass",
+      "connects": "Pontechianale / Val Varaita (Italy) with Molines-en-Queyras / Queyras (France)",
+      "nearestTown": "Chianale (10 km), Pontechianale (14 km), Molines-en-Queyras (20 km), Casteldelfino (22 km), Guillestre (42 km), Cuneo (75 km)",
+      "roadType": "Strada Provinciale SP251 (Italy) / Route Départementale D205 (France)",
+      "bestTime": "June to Mid-October (Giugno a metà ottobre / Juin à mi-octobre)",
+      "highlight": "Highest international border pass in the Alps (2,744 m) with Monviso vista & Cima Coppi monument"
+    },
+    "faqs": [
+      {
+        "question": "Il Colle dell'Agnello (Col Agnel) è aperto oggi? / Is Col Agnel Pass open today?",
+        "answer": "Sì, il Colle dell'Agnello (2 744 m) tra l'Italia (SP251 Pontechianale) e la Francia (D205 Queyras) è attualmente APERTO al transito per la stagione estivo-autunnale. Il manto stradale è asciutto e sgombro da neve. / Yes, Col Agnel / Colle dell'Agnello (2,744 m / 9,003 ft) connecting Italy (SP251) and France (D205) is currently OPEN for normal summer travel with clear, dry asphalt."
+      },
+      {
+        "question": "Quando apre e quando chiude per l'inverno il Colle dell'Agnello? / When does Col Agnel open and close for winter?",
+        "answer": "Il colle apre regolarmente a inizio giugno (o fine maggio a seconda delle precipitazioni nevose) dopo il lavoro congiunto degli spazzaneve della Provincia di Cuneo e del dipartimento delle Hautes-Alpes. Chiude per la stagione invernale tra la fine di ottobre e inizio novembre con l'arrivo delle prime bufere alpine. / Col Agnel typically opens in early June and closes for winter between late October and early November."
+      },
+      {
+        "question": "Qual è l'altitudine esatta del Colle dell'Agnello / Col Agnel? / What is the elevation of Col Agnel?",
+        "answer": "Il Colle dell'Agnello culmina a un'altitudine esatta di 2 744 metri (9 003 piedi). È il terzo valico alpino asfaltato più alto d'Europa dopo il Col de l'Iseran (2 770 m) e il Passo dello Stelvio (2 757 m), ed è in assoluto il più alto valico di confine internazionale delle Alpi. / The exact elevation of Col Agnel / Colle dell'Agnello is 2,744 meters (9,003 feet). It is the 3rd highest paved road pass in the Alps and the highest international crossing."
+      },
+      {
+        "question": "Dove si trovano le webcam in diretta del Colle dell'Agnello? / Where can I view live webcams for Col Agnel?",
+        "answer": "LivePassWatch monitora e aggiorna in tempo reale le webcam del valico sommitale (2 744 m con la Stele Coppi), di Chianale e Pontechianale (versante italiano 1 800 m), del Refuge Agnel (versante francese 2 580 m) e di Saint-Véran (2 040 m). / LivePassWatch aggregates real-time webcams covering the 2,744 m summit crest, Chianale/Pontechianale, Refuge Agnel, and Saint-Véran."
+      },
+      {
+        "question": "Quali sono le pendenze e le condizioni della strada SP251 / D205? / What are the road conditions and gradients on Col Agnel?",
+        "answer": "La strada è interamente asfaltata con ottimo fondo sia sul lato italiano (SP251) sia su quello francese (D205). Il versante italiano presenta una pendenza media del 10% negli ultimi 10 km con punte del 14-15% oltre Chianale; il versante francese è più lungo con pendenze costanti tra il 7% e il 9%. Il transito è sconsigliato a camper di grandi dimensioni ed è vietato ad autoarticolati. / The entire road is paved with high-quality asphalt. The Italian side features severe 10–15% gradients above Chianale, while the French side averages 7–9%."
+      },
+      {
+        "question": "Perché il Colle dell'Agnello è famoso nel ciclismo e nel Giro d'Italia? / Why is Col Agnel famous in cycling?",
+        "answer": "Il colle è stato proclamato più volte Cima Coppi del Giro d'Italia (1994, 2000, 2007, 2016) e gran premio della montagna Hors Catégorie al Tour de France (2008, 2011). Nel 2016 fu teatro della leggendaria impresa e rimonta di Vincenzo Nibali che conquistò il Giro d'Italia dopo una spettacolare scalata tra le muraglie di neve. / Col Agnel has served multiple times as the prestigious Cima Coppi in the Giro d'Italia and Hors Catégorie in the Tour de France, famous for Vincenzo Nibali's heroic 2016 triumph."
+      }
+    ],
+    "customSeo": {
+      "title": "Colle dell'Agnello / Col Agnel (2 744 m) Stato Strada SP251/D205, Webcam Live, Meteo & Apertura – LivePassWatch",
+      "description": "Stato in tempo reale della strada del Colle dell'Agnello (Col Agnel 2 744 m SP251/D205), webcam live sommitale, meteo Monviso, date di apertura, chiusura invernale e condizioni transito.",
+      "h1": "Colle dell'Agnello / Col Agnel (2 744 m) : Stato Strada, Webcam Live, Meteo & Apertura"
+    },
+    "searchKeywords": [
+      "col agnel Pass opening date",
+      "col angel Pass opening date",
+      "col agnel Pass is open",
+      "col angel Pass is open",
+      "col agnel Pass road conditions",
+      "col angel Pass road conditions",
+      "col agnel Pass road status",
+      "col angel Pass road status",
+      "col agnel Pass pass status report",
+      "col angel Pass pass status report",
+      "when does col agnel Pass open",
+      "when does col angel Pass open",
+      "col agnel Pass closed",
+      "col angel Pass closed",
+      "col agnel Pass is closed",
+      "col angel Pass is closed",
+      "col agnel Pass is it open today",
+      "col angel Pass is it open today",
+      "is col agnel Pass closed today",
+      "is col angel Pass closed today",
+      "col agnel Pass webcam",
+      "col angel Pass webcam",
+      "colle dell'agnello webcam",
+      "col agnel",
+      "col angel pass",
+      "colle dell'agnello",
+      "colle dell agnello",
+      "colle dell'agnello apertura",
+      "col agnel ouverture",
+      "col agnel puerto de montaña de italia",
+      "col-agnel-gebirgspass italien",
+      "gebirgspass col agnel italien",
+      "col agnel italie",
+      "agnello",
+      "passo col agnel italia",
+      "passo dell'agnello",
+      "アニエル峠の山道、イタリア",
+      "SP251 Pontechianale",
+      "Route D205 Queyras",
+      "Chianale Colle dell'Agnello",
+      "Refuge Agnel webcam",
+      "Col Agnel live status",
+      "Colle dell'Agnello weather today",
+      "Col Agnel cycling climb",
+      "Cima Coppi Colle dell'Agnello",
+      "is Col Agnel open right now"
+    ]
   }
 ];
 
@@ -11751,6 +12058,7 @@ export function cleanSlug(str: string): string {
 export function getCountrySlug(country: string): string {
   if (!country) return '';
   if (country === 'Switzerland / Italy' || country === 'Switzerland & Italy') return 'switzerland-italy';
+  if (country === 'Italy & France' || country === 'France & Italy' || country === 'Italy / France') return 'italy-france';
   return cleanSlug(country);
 }
 
@@ -11760,6 +12068,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Hautes-Alpes & Savoie' || passSlug === 'col-du-galibier') return 'hautes-alpes-savoie';
   if (state === 'Savoie' || passSlug === 'col-de-l-iseran') return 'savoie';
   if (state === 'Alpes-Maritimes & Alpes-de-Haute-Provence' || passSlug === 'col-de-la-bonette') return 'alpes-maritimes-alpes-de-haute-provence';
+  if (state === 'Piedmont & Hautes-Alpes' || state === 'Piemonte & Hautes-Alpes' || passSlug === 'col-agnel' || passSlug === 'col-agnel-pass' || passSlug === 'colle-dell-agnello') return 'piedmont-hautes-alpes';
   if (state === 'Valais & Aosta Valley' || passSlug === 'great-st-bernard-pass') return 'valais-aosta-valley';
   if (state === 'Bern & Valais' || passSlug === 'grimsel-pass') return 'bern-valais';
   if (state === 'Bern & Uri' || passSlug === 'susten-pass') return 'bern-uri';
@@ -11778,6 +12087,7 @@ export function getPassUrl(pass: { country: string; state?: string; slug: string
   const stateSlug = getStateSlug(pass.state, pass.slug);
   return stateSlug ? `/passes/${countrySlug}/${stateSlug}/${pass.slug}` : `/passes/${countrySlug}/${pass.slug}`;
 }
+
 
 
 

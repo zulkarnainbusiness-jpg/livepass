@@ -90,6 +90,8 @@
 /passes/slovenia/vrsic-pass /passes/slovenia/gorenjska-goriska/vrsic-pass 301
 /passes/col-de-la-bonette /passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette 301
 /passes/france/col-de-la-bonette /passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette 301
+/passes/col-agnel /passes/italy-france/piedmont-hautes-alpes/col-agnel 301
+/passes/italy-france/col-agnel /passes/italy-france/piedmont-hautes-alpes/col-agnel 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

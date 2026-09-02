@@ -589,8 +589,26 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Col de l\'Iseran (Savoie - 2 770 m)',
     crossLinkUrl: '/passes/france/savoie/col-de-l-iseran',
     crossLinkText: 'Comparez l\'altitude et l\'état de la route du Col de la Bonette avec le plus haut col routier des Alpes,'
+  },
+  'col-agnel': {
+    nearestTowns: [
+      { name: 'Chianale, Valle Varaita (Borgo Storico)', distance: '10.0 km (6.2 miles)', direction: 'East via SP251' },
+      { name: 'Pontechianale, Cuneo (Piemonte)', distance: '14.0 km (8.7 miles)', direction: 'East via SP251' },
+      { name: 'Molines-en-Queyras, Hautes-Alpes (France)', distance: '20.0 km (12.4 miles)', direction: 'West via Route D205' },
+      { name: 'Saint-Véran, Queyras', distance: '22.0 km (13.7 miles)', direction: 'West/Southwest via D205 & D5' },
+      { name: 'Casteldelfino, Valle Varaita', distance: '22.5 km (14.0 miles)', direction: 'East via SP251 & SP105' },
+      { name: 'Guillestre / Mont-Dauphin, Hautes-Alpes', distance: '42.0 km (26.1 miles)', direction: 'West via D205 & D902' },
+      { name: 'Cuneo / Saluzzo, Piemonte (Italia)', distance: '75.0 km (46.6 miles)', direction: 'East via SP251 & SP8' }
+    ],
+    seasonalClosureWindow: 'November to May/June (Chiusura invernale per neve e slavine / Fermeture hivernale)',
+    seasonalClosureDetail: 'Il Colle dell\'Agnello (2 744 m) è soggetto a chiusura invernale totale dovuta all\'altitudine estrema, alle abbondanti nevicate e al pericolo slavine lungo i versanti rocciosi della SP251 e della D205. La riapertura estiva viene coordinata congiuntamente dal Servizio Viabilità della Provincia di Cuneo e dal dipartimento delle Hautes-Alpes (Inforoute 05) con l\'ausilio di potenti frese turbine da neve, solitamente tra fine maggio e la prima settimana di giugno. La chiusura per la stagione fredda scatta con le prime nevicate autunnali (fine ottobre o inizio novembre).',
+    aboutPass: 'Il Colle dell\'Agnello (in francese Col Agnel, 2 744 m / 9 003 ft) è il valico stradale asfaltato internazionale più alto delle Alpi e d\'Europa, nonché il 3° colle più elevato in assoluto alle spalle del Col de l\'Iseran (2 770 m) e del Passo dello Stelvio (2 757 m). Situato nelle Alpi Cozie lungo la linea di confine tra Italia e Francia, congiunge la Valle Varaita (Piemonte, provincia di Cuneo) con la valle del Queyras (Hautes-Alpes). Il panorama sommitale è dominato dalla grandiosa mole del Monviso (3 841 m), dal Pain de Sucre (3 208 m) e dal Pic de Caramantran. Rinomata Cima Coppi del Giro d\'Italia e teatro dell\'indimenticabile trionfo di Vincenzo Nibali nel 2016, è una delle mete d\'elezione per cicloturisti e motociclisti di tutto il mondo.',
+    crossLinkAnchor: 'Col de la Bonette (2 802 m) & Stelvio Pass (2 757 m)',
+    crossLinkUrl: '/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette',
+    crossLinkText: 'Confronta le condizioni e l\'altitudine del Colle dell\'Agnello con i giganti alpini su'
   }
 };
+
 
 
 

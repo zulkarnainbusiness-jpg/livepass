@@ -280,6 +280,30 @@ export const hierarchyData: HierarchyContinent[] = [
         ]
       },
       {
+        "id": "italy-france",
+        "name": "Italy & France",
+        "code": "ITA/FRA",
+        "flagEmoji": "🇮🇹🇫🇷",
+        "states": [
+          {
+            "id": "piedmont-hautes-alpes",
+            "name": "Piedmont & Hautes-Alpes",
+            "passes": [
+              {
+                "id": "col-agnel",
+                "slug": "col-agnel",
+                "name": "Col Agnel / Colle dell'Agnello (2 744 m)",
+                "highway": "SP251 / Route D205",
+                "elevationFt": 9003,
+                "elevationM": 2744,
+                "status": "OPEN",
+                "image": "/col-agnel-pass.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "switzerland-italy",
         "name": "Switzerland & Italy",
         "code": "CHE/ITA",
