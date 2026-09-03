@@ -94,6 +94,135 @@ const sustenHindiFaqs = [
   }
 ];
 
+const baralachaHindiFaqs = [
+  {
+    question: "क्या बारालाचा ला पास आज खुला है? (Is Baralacha La Pass open today?)",
+    answer: "हाँ, बारालाचा ला पास (4,890 मी / 16,040 फीट) मनाली-लेह राजमार्ग (NH-3) पर सभी वाहनों के लिए खुला है। बीआरओ (Project Deepak) द्वारा सड़क की निरंतर सफाई की जा रही है। यात्रा शुरू करने से पहले लाहौल-स्पिति पुलिस कंट्रोल रूम अपडेट अवश्य जांचें।"
+  },
+  {
+    question: "बारालाचा ला पास कब खुलेगा? 2026 खुलने की तारीख (Baralacha La Pass opening date 2026)",
+    answer: "बारालाचा ला दर्रा सर्दियों की 10–15 मीटर बर्फ हटाने के बाद मई के मध्य या जून की शुरुआत में खुलता है। 2026 सीजन के लिए यह हाईवे पूरी तरह चालू कर दिया गया है।"
+  },
+  {
+    question: "बारालाचा ला पास की सड़क की स्थिति कैसी है? (Baralacha La Pass road conditions)",
+    answer: "एनएच-3 पर बारालाचा ला की सड़क पक्की और डबल-लेन है। जिगझिगबार (Zingzingbar) और सूरज ताल के पास बर्फ पिघलने का पानी और सुबह के समय ब्लैक आइस (बर्फ की परत) हो सकती है। सुबह सावधानी से वाहन चलाएं।"
+  },
+  {
+    question: "क्या बारालाचा ला पास आज बंद है? (Is Baralacha La Pass closed today?)",
+    answer: "सर्दियों (नवंबर से मई) के अलावा सामान्य दिनों में दर्रा खुला रहता है। यदि अचानक तेज बर्फबारी या हिमस्खलन होता है, तो बीआरओ ट्रैफिक को अस्थाई रूप से रोक देता है।"
+  },
+  {
+    question: "बारालाचा ला पास की लाइव रिपोर्ट और वेबकैम कैसे देखें? (Baralacha La Pass webcam & status report)",
+    answer: "LivePassWatch पर बारालाचा ला पास का लाइव रोड स्टेटस, तापमान, मौसम पूर्वानुमान और कैमरों के आधिकारिक लिंक्स (कीलोंग, अटल टनल, सरचू) उपलब्ध हैं।"
+  },
+  {
+    question: "बारालाचा ला दर्रे की ऊंचाई कितनी है? (Baralacha La Pass height & elevation)",
+    answer: "बारालाचा ला दर्रे की ऊंचाई समुद्र तल से 4,890 मीटर (16,040 फीट) है। यह जांस्कर पर्वतमाला में स्थित है और मनाली-लेह हाईवे का दूसरा सबसे ऊंचा दर्रा है।"
+  },
+  {
+    question: "बारालाचा ला पास के पास कौन सी प्रसिद्ध झील है?",
+    answer: "बारालाचा ला के ठीक नीचे पवित्र 'सूरज ताल' (Sun Lake) स्थित है, जो भारत की तीसरी सबसे ऊंची झील है और भागा नदी का उद्गम स्थल है।"
+  },
+  {
+    question: "क्या बारालाचा ला जाने के लिए परमिट की जरूरत है?",
+    answer: "भारतीय नागरिकों को अटल टनल होकर बारालाचा ला जाने के लिए रोहतांग परमिट की आवश्यकता नहीं है। विदेशी नागरिकों को दारचा चेकपोस्ट पर अपना पासपोर्ट पंजीकृत कराना होता है।"
+  },
+  {
+    question: "मनाली से बारालाचा ला की दूरी और समय कितना है?",
+    answer: "मनाली से अटल टनल होकर बारालाचा ला की दूरी 140 किलोमीटर है, जिसे तय करने में 4 से 5 घंटे का समय लगता है।"
+  },
+  {
+    question: "बारालाचा ला पर ऊंचाई की बीमारी (AMS) से कैसे बचें?",
+    answer: "16,040 फीट की ऊंचाई पर ऑक्सीजन का स्तर कम रहता है। यात्रियों को दर्रा पार करने से पहले कीलोंग (3,080 मी) या जिस्पा (3,200 मी) में 1 रात रुककर अनुकूलन करने की सलाह दी जाती है।"
+  }
+];
+
+const katschbergGermanFaqs = [
+  {
+    question: "Ist der Katschbergpass heute geöffnet? (Is Katschberg Pass open today?)",
+    answer: "Ja, der Katschbergpass (B99 Katschberg Straße, 1.641 m) ist ganzjährig geöffnet. Im Winter gilt vom 1. November bis 15. April die gesetzliche Winterreifenpflicht (M+S/3PMSF). Bei Neuschnee kann vorübergehend Schneekettenpflicht verhängt werden."
+  },
+  {
+    question: "Wie sind die aktuellen Straßenzustände am Katschbergpass? (Katschberg Pass road conditions)",
+    answer: "Die B99 ist eine bestens ausgebaute asphaltierte Bundesstraße. Die Straßenmeistereien Kärnten und Salzburg halten den Pass auch im tiefen Winter mit Schneepflügen befahrbar. Maximale Steigungen betragen 15%."
+  },
+  {
+    question: "Wann ist der Katschbergpass im Winter gesperrt? (When does Katschberg Pass close for winter?)",
+    answer: "Der Katschbergpass hat KEINE reguläre Wintersperre. Die B99 bleibt 365 Tage im Jahr geöffnet. Kurzzeitige Sperren gibt es nur bei extremen Schneestürmen oder Lawinengefahr."
+  },
+  {
+    question: "Gibt es am Katschbergpass eine Live-Webcam? (Katschberg Pass live webcam)",
+    answer: "Ja! Auf LivePassWatch finden Sie Live-Webcams der Katschberghöhe (1.641 m), St. Michael im Lungau, Rennweg sowie vom Aineck-Gipfel (2.220 m), bereitgestellt von Feratel, ÖAMTC und ASFINAG."
+  },
+  {
+    question: "Ist der Katschbergpass mautfrei? (Is Katschberg Pass toll-free?)",
+    answer: "JA! Die B99 Katschberg Straße über die Passhöhe ist zu 100% mautfrei. Über die B99 lässt sich die kostenpflichtige A10-Katschbergtunnel-Maut komplett einsparen."
+  },
+  {
+    question: "Wie hoch ist der Katschbergpass? (Katschberg Pass elevation & height)",
+    answer: "Die Passhöhe des Katschbergpasses liegt auf 1.641 Metern über dem Meeresspiegel (5.384 ft) an der Landesgrenze zwischen Kärnten und Salzburg."
+  },
+  {
+    question: "Gilt am Katschberg Schneekettenpflicht? (Snow chains on Katschberg Pass)",
+    answer: "Vom 1. November bis 15. April gilt witterungsbedingte Winterreifenpflicht. Bei starkem Schneefall wird an den Anstiegstafeln in Rennweg und St. Michael Schneekettenpflicht aktiviert."
+  },
+  {
+    question: "Wie steil ist die Katschberg Straße (B99)? (How steep is Katschberg Pass road?)",
+    answer: "Die B99 Katschberg Straße weist auf der Kärntner und Salzburger Seite maximale Steigungen von 15% auf. Sie ist für PKW, Motorräder, Wohnmobile und Busse gut befahrbar."
+  },
+  {
+    question: "Welche Orte verbindet der Katschbergpass? (Which towns does Katschberg Pass connect?)",
+    answer: "Der Pass verbindet Rennweg am Katschberg im Kärntner Liesertal mit St. Michael im Lungau im Land Salzburg."
+  },
+  {
+    question: "Wie ist die Schneehöhe und das Wetter am Katschberg? (Katschberg snow depth & weather)",
+    answer: "Echtzeit-Wetterdaten, Temperaturen und Schneehöhen am Katschberg werden auf LivePassWatch alle 15 Minuten basierend auf GeoSphere Austria (ZAMG) aktualisiert."
+  }
+];
+
+const grossglocknerGermanFaqs = [
+  {
+    question: "Ist die Großglockner Hochalpenstraße heute geöffnet? (Is Grossglockner High Alpine Road open today?)",
+    answer: "Ja! Die Großglockner Hochalpenstraße (B107) ist in der Sommersaison (Anfang Mai bis Anfang November) täglich von 06:00 bis 20:00 Uhr geöffnet (letzte Einfahrt 19:15 Uhr). Aktuelle Tages-Sperren oder Wetterwarnungen finden Sie auf LivePassWatch."
+  },
+  {
+    question: "Wann öffnet die Großglockner Hochalpenstraße? Öffnungsdatum 2026 (Grossglockner opening date 2026)",
+    answer: "Die Großglockner Hochalpenstraße öffnet jedes Jahr Anfang Mai nach Abschluss der mehrwöchigen Schneeräumung mit den historischen Wallack-Rotationsschneepflügen. Für die Saison 2026 ist die Straße geöffnet."
+  },
+  {
+    question: "Wie sind die aktuellen Straßenzustände am Großglockner? (Grossglockner road conditions)",
+    answer: "Die 48 km lange Panoramastraße ist durchgehend zweispurig asphaltiert und in erstklassigem Zustand. Am Hochtor (2.504 m) kann es im Frühjahr und Herbst morgens zu Reifbildung kommen."
+  },
+  {
+    question: "Wann schließt die Großglockner Hochalpenstraße für den Winter? (When does Grossglockner close for winter?)",
+    answer: "Die Großglockner Hochalpenstraße geht Anfang November (oder bei plötzlichen schweren Wintereinbrüchen Ende Oktober) in die Wintersperre, die bis Anfang Mai dauert."
+  },
+  {
+    question: "Wie viel kostet die Maut auf der Großglockner Hochalpenstraße? (Grossglockner toll price)",
+    answer: "Die Tageskarte für PKW kostet € 43,00, für Motorräder € 33,00 (Stand 2026). Ab 18:00 Uhr gilt ein ermäßigter Abendtarif."
+  },
+  {
+    question: "Gibt es am Großglockner eine Live-Webcam? (Grossglockner live webcam)",
+    answer: "Ja! Auf LivePassWatch finden Sie Live-Webcams von der Kaiser-Franz-Josefs-Höhe (2.369 m), der Edelweißspitze (2.571 m), dem Hochtor-Pass (2.504 m) und der Mautstelle Ferleiten."
+  },
+  {
+    question: "Wie hoch ist die Großglockner Hochalpenstraße? (Grossglockner elevation)",
+    answer: "Die Straße erreicht an der Edelweißspitze 2.571 m und am Hochtor-Pass-Tunnel 2.504 m über dem Meeresspiegel. Der Gipfel des Großglockners ragt 3.798 m auf."
+  },
+  {
+    question: "Gibt es Nachtsperren am Großglockner? (Night closure on Grossglockner)",
+    answer: "JA. Zum Schutz der alpinen Tierwelt im Nationalpark Hohe Tauern gilt im Sommer eine nächtliche Sperre von 21:30 bis 05:00 Uhr (Mai/Sept/Okt 20:30 bis 06:00 Uhr)."
+  },
+  {
+    question: "Wie viele Kehren hat die Großglockner Hochalpenstraße? (How many hairpins on Grossglockner?)",
+    answer: "Die 48 km lange Hochgebirgsstraße hat insgesamt 36 durchnummerierte Kehren und Steigungen von durchschnittlich 9% bis maximal 12%."
+  },
+  {
+    question: "Wie ist das aktuelle Wetter am Großglockner? (Grossglockner weather today)",
+    answer: "Wetterwerte, Temperaturen und Schneehöhen am Großglockner werden auf LivePassWatch alle 15 Minuten basierend auf GeoSphere Austria (ZAMG) und GROHAG aktualisiert."
+  }
+];
+
 export const PassDetailPage: React.FC = () => {
   const { passes } = usePasses();
   const { slug } = useParams<{ slug?: string; country?: string; state?: string }>();
@@ -188,6 +317,7 @@ export const PassDetailPage: React.FC = () => {
     if (targetSlug.toLowerCase().includes('grimsel')) return 'de';
     if (targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard') || targetSlug.toLowerCase().includes('agnel') || targetSlug.toLowerCase().includes('angel')) return 'it';
     if (targetSlug.toLowerCase().includes('galibier') || targetSlug.toLowerCase().includes('iseran') || targetSlug.toLowerCase().includes('bonette')) return 'fr';
+    if (targetSlug.toLowerCase().includes('katschberg') || targetSlug.toLowerCase().includes('grossglockner')) return 'de';
     return 'en';
   });
 
@@ -198,11 +328,13 @@ export const PassDetailPage: React.FC = () => {
 
   // Sync default language when pass changes
   useEffect(() => {
-    if (pass.slug === 'vrsic-pass') {
+    if (pass.slug === 'vrsic-pass' || pass.slug === 'mangart-saddle') {
       setPageLang('sl');
+    } else if (pass.slug === 'baralacha-la') {
+      setPageLang('hi');
     } else if (pass.slug === 'prislop-pass') {
       setPageLang('ro');
-    } else if (pass.slug === 'grimsel-pass') {
+    } else if (pass.slug === 'grimsel-pass' || pass.slug === 'katschberg-pass' || pass.slug === 'grossglockner-high-alpine-road') {
       setPageLang('de');
     } else if (pass.slug === 'susten-pass') {
       setPageLang('en');
@@ -318,11 +450,17 @@ export const PassDetailPage: React.FC = () => {
                                 ? 'Khardung La Pass in Ladakh'
                                 : pass.slug === 'nathu-la'
                                   ? 'Nathu La Pass mountain road in Sikkim, India'
-                                  : `${pass.name} on ${pass.highway} in ${pass.state}`;
+                                  : pass.slug === 'mangart-saddle'
+                                    ? 'Mangartsko sedlo (Mangart Saddle) — the highest paved road in Slovenia at 2,072 m, with dramatic cliff-edge hairpin bends through the Julian Alps in Triglav National Park'
+                                    : pass.slug === 'baralacha-la'
+                                      ? 'Baralacha La Pass (बारालाचा ला, 4,890 m / 16,040 ft) in Himachal Pradesh India on Leh-Manali Highway NH-3 with Suraj Tal lake and snow peaks'
+                                      : pass.slug === 'grossglockner-high-alpine-road'
+                                        ? 'Grossglockner High Alpine Road (Großglockner Hochalpenstraße, 2,504 m) in Austria scenic hairpin curves beneath Grossglockner peak and Pasterze glacier'
+                                        : `${pass.name} on ${pass.highway} in ${pass.state}`;
 
   const seoDetails = passSeoDetails[pass.slug] || passSeoDetails[pass.id];
-  const seoTitle = `${pass.name} Live Webcam & Open/Closed Status – Updated Today`;
-  const seoDesc = `Live ${pass.name} webcam feeds, highway conditions, and real-time open/closed status on ${pass.highway}, ${pass.state ? `${pass.state}, ` : ''}${pass.country}. Verified and updated ${pass.lastUpdated}.`;
+  const seoTitle = pass.customSeo?.title || `${pass.name} Live Webcam & Open/Closed Status – Updated Today`;
+  const seoDesc = pass.customSeo?.description || `Live ${pass.name} webcam feeds, highway conditions, and real-time open/closed status on ${pass.highway}, ${pass.state ? `${pass.state}, ` : ''}${pass.country}. Verified and updated ${pass.lastUpdated}.`;
 
   const displayedStatus = liveDataError ? 'NEEDS_VERIFICATION' : pass.status;
   const displayedStatusDetail = liveDataError
@@ -500,8 +638,263 @@ export const PassDetailPage: React.FC = () => {
           <span className="current-crumb">{pass.name}</span>
         </nav>
 
-        {/* Bilingual Language Switcher for Vršič Pass, Prislop Pass, Col du Galibier, Col de l'Iseran, Great St Bernard Pass & Grimsel Pass */}
-        {pass.slug === 'vrsic-pass' && (
+        {/* Bilingual Language Switcher for Grossglockner High Alpine Road */}
+        {pass.slug === 'grossglockner-high-alpine-road' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(37, 99, 235, 0.06) 100%)',
+            border: '1px solid rgba(16, 185, 129, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#065F46' }}>
+              <Globe size={18} color="#059669" />
+              <span>
+                {pageLang === 'de'
+                  ? '🇦🇹 Offizielle regionale Inhalte (Deutsch) — Großglockner Hochalpenstraße (Jederzeit zur englischen Übersetzung wechseln)'
+                  : '🇬🇧 English Auto-Translation Active (Switch to native German anytime)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('de')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'de' ? '#059669' : 'transparent',
+                    color: pageLang === 'de' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇦🇹 Deutsch
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#059669' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇬🇧 English
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#047857',
+                  background: '#ECFDF5',
+                  border: '1px solid #A7F3D0',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Google Translate"
+              >
+                <Globe size={14} />
+                <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* Bilingual Language Switcher for Katschberg Pass */}
+        {pass.slug === 'katschberg-pass' && (
+
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(37, 99, 235, 0.06) 100%)',
+            border: '1px solid rgba(16, 185, 129, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#065F46' }}>
+              <Globe size={18} color="#059669" />
+              <span>
+                {pageLang === 'de'
+                  ? '🇦🇹 Offizielle regionale Inhalte (Deutsch) — Katschbergpass (Jederzeit zur englischen Übersetzung wechseln)'
+                  : '🇬🇧 English Auto-Translation Active (Switch to native German anytime)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('de')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'de' ? '#059669' : 'transparent',
+                    color: pageLang === 'de' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇦🇹 Deutsch
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#059669' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇬🇧 English
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/austria/carinthia-salzburg/katschberg-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#047857',
+                  background: '#ECFDF5',
+                  border: '1px solid #A7F3D0',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Google Translate"
+              >
+                <Globe size={14} />
+                <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* Bilingual Language Switcher for Baralacha La Pass */}
+        {pass.slug === 'baralacha-la' && (
+
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(245, 158, 11, 0.06) 100%)',
+            border: '1px solid rgba(239, 68, 68, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#991B1B' }}>
+              <Globe size={18} color="#DC2626" />
+              <span>
+                {pageLang === 'hi'
+                  ? '🇮🇳 आधिकारिक क्षेत्रीय सामग्री (हिंदी) — बारालाचा ला दर्रा (किसी भी समय अंग्रेजी अनुवाद पर स्विच करें)'
+                  : '🇬🇧 English Auto-Translation Active (Switch to native Hindi anytime)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('hi')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'hi' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'hi' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇮🇳 हिंदी (Hindi)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇬🇧 English
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/india/himachal-pradesh/baralacha-la')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#B91C1C',
+                  background: '#FEF2F2',
+                  border: '1px solid #FCA5A5',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Odpri v Google Prevajalniku / Translate with Google"
+              >
+                <Globe size={14} />
+                <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* Bilingual Language Switcher for Vršič Pass, Mangart Saddle, Prislop Pass, Col du Galibier, Col de l'Iseran, Great St Bernard Pass & Grimsel Pass */}
+        {(pass.slug === 'vrsic-pass' || pass.slug === 'mangart-saddle') && (
+
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
             alignItems: 'center',
@@ -518,7 +911,11 @@ export const PassDetailPage: React.FC = () => {
               <Globe size={18} color="#2563EB" />
               <span>
                 {pageLang === 'sl'
-                  ? '🇸🇮 Uradna regionalna vsebina v slovenščini (Kadar koli preklopite na samodejni angleški prevod)'
+                  ? (pass.slug === 'mangart-saddle'
+                    ? '🇸🇮 Uradna vsebina v slovenščini — Mangartsko sedlo (Kadar koli preklopite na angleški ali italijanski prevod)'
+                    : '🇸🇮 Uradna regionalna vsebina v slovenščini (Kadar koli preklopite na samodejni angleški prevod)')
+                  : pageLang === 'it' && pass.slug === 'mangart-saddle'
+                  ? '🇮🇹 Contenuto in italiano — Passo del Mangart (Selezionare per slovenese o inglese)'
                   : '🇬🇧 English Auto-Translation Active (Switch to native Slovenian anytime)'}
               </span>
             </div>
@@ -556,9 +953,27 @@ export const PassDetailPage: React.FC = () => {
                 >
                   🇬🇧 English (Auto-Translated)
                 </button>
+                {pass.slug === 'mangart-saddle' && (
+                  <button
+                    type="button"
+                    onClick={() => setPageLang('it')}
+                    style={{
+                      padding: '6px 14px',
+                      fontSize: '13px',
+                      fontWeight: '600',
+                      cursor: 'pointer',
+                      border: 'none',
+                      backgroundColor: pageLang === 'it' ? '#2563EB' : 'transparent',
+                      color: pageLang === 'it' ? '#FFFFFF' : '#475569',
+                      transition: 'all 0.2s ease'
+                    }}
+                  >
+                    🇮🇹 Italiano
+                  </button>
+                )}
               </div>
               <a
-                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/slovenia/gorenjska-goriska/vrsic-pass')}`}
+                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/slovenia/gorika-bovec/mangart-saddle')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -2412,7 +2827,9 @@ export const PassDetailPage: React.FC = () => {
                         ? 'Col du Galibier Live Webcams & Cameras'
                         : pass.slug === 'trollstigen-pass'
                           ? 'Trollstigen Pass Live Webcams'
-                          : `${pass.name.split('(')[0].trim()} Live Webcams`}
+                          : pass.slug === 'grossglockner-high-alpine-road'
+                            ? (pageLang === 'de' ? 'Großglockner Hochalpenstraße Live-Webcams (Kaiser-Franz-Josefs-Höhe & Edelweißspitze)' : 'Grossglockner High Alpine Road Live Webcams (Edelweißspitze & Glacier)')
+                            : `${pass.name.split('(')[0].trim()} Live Webcams`}
                 </h2>
 
                 <CameraProvider
@@ -2424,7 +2841,7 @@ export const PassDetailPage: React.FC = () => {
                     location: currentCam.location || currentCam.milepost,
                     source: currentCam.source || officialSourceDisplay,
                     officialUrl: currentCam.officialUrl || pass.officialSource,
-                    updateIntervalMs: 60000
+                    updateIntervalMs: currentCam.updateIntervalMs || 60000
                   }}
                   passName={pass.name}
                   highway={pass.highway}
@@ -2705,7 +3122,9 @@ export const PassDetailPage: React.FC = () => {
                 </p>
 
                 <p className="narrative-p" style={{ fontSize: '14.5px', lineHeight: '1.7', color: 'var(--text-muted)' }}>
-                  {pass.slug === 'susten-pass' && pageLang === 'hi'
+                  {pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de'
+                    ? <>Die <strong>Großglockner Hochalpenstraße</strong> liegt in den <strong>Hohen Tauern (Glocknergruppe)</strong> an der Grenze der österreichischen Bundesländer <strong>Salzburg und Kärnten</strong>. Mit einer Scheitelhöhe von <strong>2.504 m ü. A. am Hochtor-Tunnel</strong> (und 2.571 m an der Edelweißspitze) ist sie Österreichs berühmteste Panoramastraße auf der <strong>Großglockner Straße (B107)</strong>.</>
+                    : pass.slug === 'susten-pass' && pageLang === 'hi'
                     ? <><strong>सुस्टेन पास</strong> स्विस आल्प्स के <strong>उरी/बर्न आल्प्स</strong> में स्थित है, जिसकी आधिकारिक शिखर सुरंग ऊंचाई <strong>2,224 मीटर (7,297 फीट)</strong> है और यह <strong>हौप्तस्ट्रासे 11 (रूट 11)</strong> पर चलता है।</>
                     : <><strong>{pass.name}</strong> is situated in the <strong>{pass.quickFacts?.mountainRange || 'Alpine Crest'}</strong> of <strong>{pass.state ? `${pass.state}, ` : ''}{pass.country}</strong>, at an official summit elevation of <strong>{pass.elevationFt.toLocaleString()} feet ({pass.elevationM.toLocaleString()} meters)</strong> above sea level on <strong>{pass.highway}</strong>.</>}
                 </p>
@@ -2714,12 +3133,18 @@ export const PassDetailPage: React.FC = () => {
                   pass.narrativeSections.map((sec, idx) => (
                     <React.Fragment key={idx}>
                       <h3 className="narrative-subheading">
-                        {pass.slug === 'susten-pass' && pageLang === 'hi'
+                        {pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de'
+                          ? (idx === 0 ? 'Meisterwerk der Alpen-Ingenieurkunst — Franz Wallack & Baugeschichte' : 'Kaiser-Franz-Josefs-Höhe, Pasterzengletscher & Edelweißspitze')
+                          : pass.slug === 'susten-pass' && pageLang === 'hi'
                           ? (idx === 0 ? 'सुस्टेन पास का सिविल इंजीनियरिंग और इतिहास' : 'स्टाइनग्लेशियर हिमनद, मीयनताल घाटी और "बिग 3" आल्प्स लूप')
                           : sec.title}
                       </h3>
                       <p className="narrative-p">
-                        {pass.slug === 'susten-pass' && pageLang === 'hi'
+                        {pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de'
+                          ? (idx === 0
+                              ? 'Die Großglockner Hochalpenstraße (2.504 m am Hochtor) ist Österreichs populärstes Straßendenkmal und ein Monument europäischer Ingenieurgeschichte. Nach den kühnen Plänen des Kärntner Bauingenieurs Franz Wallack zwischen 1930 und 1935 erbaut, überwindet die 48 km lange Panoramastraße 36 nummerierte Kehren im Nationalpark Hohe Tauern. Die Route führt von der Mautstelle Ferleiten (1.145 m) in Salzburg über den Scheitelpunkt am Hochtor-Tunnel hinab in die historische Bergsteigergemeinde Heiligenblut (1.288 m) in Kärnten.'
+                              : 'Von der Haupttrasse zweigt die berühmte Stichstraße zur Kaiser-Franz-Josefs-Höhe (2.369 m) ab, benannt nach dem Besuch von Kaiser Franz Joseph I. im Jahr 1856. Von der Aussichtsterrasse und dem Wilhelm-Swarovski-Beobachtungsturm bietet sich ein unvergleichlicher Panoramablick auf den Großglockner (3.798 m, höchster Berg Österreichs) und die Pasterze, den ehemals mächtigsten Gletscher der Ostalpen. An der Edelweißspitze (2.571 m) eröffnet sich ein 360-Grad-Rundblick über mehr als 30 Dreitausender.')
+                          : pass.slug === 'susten-pass' && pageLang === 'hi'
                           ? (idx === 0
                               ? 'मध्यकाल में खच्चर व्यापारियों द्वारा उपयोग किए जाने वाले कच्चे रास्तों के स्थान पर, 1938 से 1945 के बीच मुख्य अभियंता पॉल गुदेल के नेतृत्व में आधुनिक सुस्टेन पास का निर्माण हुआ। चौड़ी लेन, सुगम मोड़ और ग्रेनाइट चट्टानों के साथ खूबसूरती से मेल खाते 25 पत्थर के पुलों के साथ यह दर्रा आधुनिक अल्पाइन सड़क निर्माण का वैश्विक मानक बना। 2,224 मीटर पर स्थित 300 मीटर लंबी शिखर सुरंग बर्न और उरी कैंटन के बीच सुगम आवागमन प्रदान करती है।'
                               : 'बर्न की पश्चिमी चढ़ाई पर सड़क ऐतिहासिक होटल स्टाइनग्लेशियर से होकर गुजरती है, जहां से स्टाइनग्लेशियर हिमनद और पन्ना-हरे रंग की स्टाइनसी झील का अद्भुत नज़ारा दिखता है। शिखर सुरंग के पूर्वी छोर से निकलकर सड़क मीयनताल के जंगली और खूबसूरत नज़ारों से होते हुए वासेन तक उतरती है, जो गोथार्ड मोटरवे (A2) से सीधा संपर्क बनाती है। ग्रिमसेल और फुर्का दर्रों के साथ मिलकर सुस्टेन पास 120 किमी का विश्व-प्रसिद्ध "बिग 3" स्विस अल्पाइन लूप बनाता है।')
@@ -2734,7 +3159,9 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 10.5: Travel Guidance & Winter Tips */}
             <section id="travel-guidance" className="detail-section-block">
               <h2 className="section-title-heading">
-                {(pass.slug === 'grimsel-pass')
+                {(pass.slug === 'grossglockner-high-alpine-road')
+                  ? (pageLang === 'de' ? 'Praktische Reisetipps & Streckenführung Großglockner' : 'Grossglockner High Alpine Road Travel Guidance & Practical Tips')
+                  : (pass.slug === 'grimsel-pass')
                   ? (pageLang === 'de' ? 'Praktische Reisetipps & Routenführung Grimselpass' : 'Grimsel Pass Travel Guidance & Practical Tips')
                   : (pass.slug === 'susten-pass')
                   ? (pageLang === 'hi'
@@ -2760,7 +3187,11 @@ export const PassDetailPage: React.FC = () => {
               </h2>
               <div className="travel-guidance-container lp-card" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <p className="narrative-p" style={{ marginBottom: '8px' }}>
-                  {pass.slug === 'susten-pass'
+                  {pass.slug === 'grossglockner-high-alpine-road'
+                    ? (pageLang === 'de'
+                        ? 'Die Fahrt über die 48 km lange Großglockner Hochalpenstraße zwischen Ferleiten (Salzburg) und Heiligenblut (Kärnten) über 36 Kehren bis auf 2.504 m am Hochtor und 2.571 m an der Edelweißspitze ist eine der faszinierendsten Gebirgsstrecken Europas.'
+                        : 'Driving the 48 km Grossglockner High Alpine Road between Ferleiten (Salzburg) and Heiligenblut (Carinthia) across 36 numbered switchbacks reaching 2,504 m at Hochtor Tunnel and 2,571 m at Edelweißspitze is one of the world\'s most breathtaking mountain journeys.')
+                    : pass.slug === 'susten-pass'
                     ? (pageLang === 'hi'
                         ? 'सुस्टेन पास (ऊंचाई 2,224 मी) पर हौप्तस्ट्रासे 11 द्वारा बर्न के इन्नर्टकिर्चन से उरी के वासेन तक का सफर स्विस आल्प्स की सबसे खूबसूरत और तकनीकी रूप से उत्कृष्ट यात्राओं में से एक है।'
                         : pageLang === 'de'
@@ -2812,7 +3243,7 @@ export const PassDetailPage: React.FC = () => {
                         ? 'Trasa, 50 Serpentin & Sezona'
                         : pass.slug === 'prislop-pass' && pageLang === 'ro'
                         ? 'Traseu & Sezon de Călătorie'
-                        : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
+                        : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass' || pass.slug === 'grossglockner-high-alpine-road') && pageLang === 'de'
                         ? 'Route & Reisesaison'
                         : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr' 
                         ? 'Itinéraire & Période d\'Ouverture' 
@@ -2821,7 +3252,11 @@ export const PassDetailPage: React.FC = () => {
                         : 'Route & Travel Season'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'susten-pass')
+                      {(pass.slug === 'grossglockner-high-alpine-road')
+                        ? (pageLang === 'de'
+                            ? 'Die B107 Großglockner Hochalpenstraße verbindet Ferleiten (Salzburg) mit Heiligenblut (Kärnten). Geöffnet von Anfang Mai bis Anfang November (06:00 bis 20:00 Uhr im Hochsommer). Erstklassig ausgebauter Hochgebirgsasphalt, 36 durchnummerierte Kehren und maximale Steigungen von 12%.'
+                            : 'Route B107 links Ferleiten (Salzburg) with Heiligenblut (Carinthia). Open seasonally from early May to early November (06:00–20:00 summer hours). High-grade paved alpine asphalt, 36 engineered hairpin turns, and average 9% (max 12%) inclines.')
+                        : (pass.slug === 'susten-pass')
                         ? (pageLang === 'hi'
                             ? 'हौप्तस्ट्रासे 11 इन्नर्टकिर्चन (बर्न) को वासेन (उरी) से जोड़ती है। यह दर्रा आमतौर पर जून के मध्य से अक्टूबर के अंत तक खुला रहता है। स्विस डामर सड़क और 25 प्राकृतिक पत्थर के पुल उत्कृष्ट ड्राइविंग अनुभव प्रदान करते हैं।'
                             : pageLang === 'de'
@@ -2883,7 +3318,7 @@ export const PassDetailPage: React.FC = () => {
                         ? 'Gorsko Vreme & Prisank'
                         : pass.slug === 'prislop-pass' && pageLang === 'ro'
                         ? 'Meteo Alpin & Siguranță'
-                        : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
+                        : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass' || pass.slug === 'grossglockner-high-alpine-road') && pageLang === 'de'
                         ? 'Wetter & Hochgebirgssicherheit'
                         : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr' 
                         ? 'Météo Alti & Sécurité Altitude' 
@@ -2892,7 +3327,11 @@ export const PassDetailPage: React.FC = () => {
                         : 'High-Altitude Safety & Weather'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'susten-pass')
+                      {(pass.slug === 'grossglockner-high-alpine-road')
+                        ? (pageLang === 'de'
+                            ? 'Am Hochtor (2.504 m) und der Edelweißspitze (2.571 m) ist es in der Regel 12–16°C kühler als im Tal in Zell am See oder Lienz. Plötzliche Schneeschauer, dichter Nebel und stürmische Föhnwinde können auch im Hochsommer binnen Minuten auftreten. Prüfen Sie vor der Auffahrt stets die aktuellen Live-Webcams und Wetterberichte auf LivePassWatch.'
+                            : 'At Hochtor summit (2,504 m / 8,215 ft) and Edelweißspitze (2,571 m), temperatures are typically 12–16°C colder than in Zell am See or Lienz. Sudden mountain squalls, freezing fog, and gale-force gusts can develop rapidly even during midsummer. Check live Panomax webcams and GeoSphere Austria mountain forecasts before setting out.')
+                        : (pass.slug === 'susten-pass')
                         ? (pageLang === 'hi'
                             ? '2,224 मीटर की ऊंचाई पर शिखर सुरंग पर तापमान मीरिंगन या आल्टडॉर्फ की तुलना में 10–14°C कम रहता है। यात्रा शुरू करने से पहले वास्तविक समय के मेटियोस्विस पूर्वानुमान और लाइव स्टाइनग्लेशियर वेबकैम की जांच करें।'
                             : pageLang === 'de'
@@ -2954,6 +3393,8 @@ export const PassDetailPage: React.FC = () => {
                         ? 'Cestnine, Vinjeta & Parkiranje'
                         : pass.slug === 'prislop-pass' && pageLang === 'ro'
                         ? 'Rovinietă & Reglementări Rutiere'
+                        : pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de'
+                        ? 'Mauttarife & Verkehrsordnung (GROHAG)'
                         : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
                         ? 'Mautfreiheit & Schweizer Strassenordnung'
                         : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr' 
@@ -2963,7 +3404,11 @@ export const PassDetailPage: React.FC = () => {
                         : 'Tolls & Road Regulations'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'susten-pass')
+                      {(pass.slug === 'grossglockner-high-alpine-road')
+                        ? (pageLang === 'de'
+                            ? 'Die B107 Großglockner Hochalpenstraße ist eine mautpflichtige Panoramastraße der GROHAG: Tageskarte PKW € 43,00, Motorrad € 33,00 (Stand 2026). Nach 18:00 Uhr gilt ein ermäßigter Abendtarif. Es gilt ein Nachtfahrverbot (21:30–05:00 Uhr im Hochsommer) zum Schutz der Wildtiere im Nationalpark Hohe Tauern. Keine Autobahnvignette auf der B107 erforderlich.'
+                            : 'Grossglockner High Alpine Road is a toll highway operated by GROHAG: Day ticket is €43.00 for cars and €33.00 for motorcycles (2026 rates). A reduced evening ticket applies after 18:00. Strict night closures are enforced (21:30 to 05:00 in June–Aug, 20:30 to 06:00 in May/Sept/Oct) for wildlife conservation in Hohe Tauern National Park. No Austrian motorway vignette required on the B107.')
+                        : (pass.slug === 'susten-pass')
                         ? (pageLang === 'hi'
                             ? 'सुस्टेन पास सड़क (हौप्तस्ट्रासे 11) 100% टोल-मुक्त स्विस कैंटोनल राजमार्ग है। दर्रे या शिखर सुरंग के लिए किसी मोटरवे विगनेट की आवश्यकता नहीं है; विगनेट केवल स्विस मोटरवे (A8/A2) पर आवश्यक है।'
                             : pageLang === 'de'
@@ -3025,7 +3470,7 @@ export const PassDetailPage: React.FC = () => {
                         ? 'Zimska Oprema & Obvozni Prelazi'
                         : pass.slug === 'prislop-pass' && pageLang === 'ro'
                         ? 'Legislație Iarnă & Echipare'
-                        : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass') && pageLang === 'de'
+                        : (pass.slug === 'grimsel-pass' || pass.slug === 'susten-pass' || pass.slug === 'grossglockner-high-alpine-road') && pageLang === 'de'
                         ? 'Wintersperre & Ausweichrouten'
                         : (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') && pageLang === 'fr' 
                         ? 'Équipements Hiver & Alternatives' 
@@ -3034,7 +3479,11 @@ export const PassDetailPage: React.FC = () => {
                         : 'Winter Laws & Seasonal Detours'}
                     </h4>
                     <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.5', color: 'var(--text-muted)' }}>
-                      {(pass.slug === 'susten-pass')
+                      {(pass.slug === 'grossglockner-high-alpine-road')
+                        ? (pageLang === 'de'
+                            ? 'Wegen extremer Schneemengen von bis zu 12 Metern gilt auf der Hochalpenstraße eine vollständige Wintersperre von Anfang November bis Anfang Mai. Während des Winters weichen Autofahrer zwischen Salzburg und Kärnten/Osttirol auf den ganzjährig geöffneten Felbertauerntunnel (B108, mautpflichtig) im Westen oder die Tauernautobahn (A10 Tauerntunnel) bzw. den Katschbergpass (B99) im Osten aus.'
+                            : 'Due to severe snow depths exceeding 10 to 12 meters, a complete winter closure is active from early November to early May. During the winter closure, drivers traveling between Salzburg and Carinthia / East Tyrol divert via the year-round Felbertauern Road Tunnel (B108, toll) to the west, or the Tauern Autobahn (A10 Tauerntunnel) / Katschberg Pass (B99) to the east.')
+                        : (pass.slug === 'susten-pass')
                         ? (pageLang === 'hi'
                             ? 'सर्दियों में बंदी (नवंबर से मध्य जून) के दौरान बर्न और उरी के बीच यात्रा के लिए मोटरवे A8/A2 (ल्यूसर्न होकर) या गोथार्ड रोड टनल का उपयोग किया जाता है।'
                             : pageLang === 'de'
@@ -3090,7 +3539,13 @@ export const PassDetailPage: React.FC = () => {
             {/* Section 11: FAQs */}
             <section id="faqs" className="detail-section-block">
               <h2 className="section-title-heading">
-                {pass.slug === 'susten-pass' && pageLang === 'hi'
+                {pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de'
+                  ? 'Häufig gestellte Fragen zur Großglockner Hochalpenstraße (FAQs)'
+                  : pass.slug === 'katschberg-pass' && pageLang === 'de'
+                  ? 'Häufig gestellte Fragen zum Katschbergpass (FAQs)'
+                  : pass.slug === 'baralacha-la' && pageLang === 'hi'
+                  ? 'बारालाचा ला पास के बारे में अक्सर पूछे जाने वाले प्रश्न (FAQs)'
+                  : pass.slug === 'susten-pass' && pageLang === 'hi'
                   ? 'सुस्टेन पास के बारे में अक्सर पूछे जाने वाले प्रश्न (FAQs)'
                   : pass.slug === 'susten-pass' && pageLang === 'de'
                     ? 'Häufig gestellte Fragen zum Sustenpass (FAQs)'
@@ -3105,8 +3560,11 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
-                  ((pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
+                {((pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                  ((pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
+
+
+
                     <div key={idx} className="faq-accordion-item">
                       <button
                         className={`faq-question-btn ${activeFaqIndex === idx ? 'open' : ''}`}

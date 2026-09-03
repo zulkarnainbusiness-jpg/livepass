@@ -90,7 +90,7 @@ function generatePassSemanticHtml(pass, canonicalUrl) {
             </span>
             <span style="font-size: 0.875rem; opacity: 0.85;">⛰️ Summit: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)</span>
           </div>
-          <h1 style="font-size: 2.25rem; font-weight: 800; margin: 0 0 0.5rem 0; line-height: 1.2;">${escapeHtml(pass.name)} Live Webcam &amp; Road Conditions</h1>
+          <h1 style="font-size: 2.25rem; font-weight: 800; margin: 0 0 0.5rem 0; line-height: 1.2;">${escapeHtml(pass.customSeo?.h1 || `${pass.name} Live Webcam & Road Conditions`)}</h1>
           <p style="font-size: 1.125rem; opacity: 0.9; margin: 0 0 1rem 0;">
             📍 ${escapeHtml(pass.state ? `${pass.state}, ` : '')}${escapeHtml(pass.country)} • 🛣️ ${escapeHtml(pass.highway)} • ⛰️ Elevation: ${pass.elevationFt.toLocaleString()} ft (${pass.elevationM.toLocaleString()} m)
           </p>
@@ -515,8 +515,8 @@ passesData.forEach(pass => {
   const canonicalUrl = `${DOMAIN}${canonicalPath}`;
   canonicalPassUrls.push(canonicalUrl);
 
-  const title = `${pass.name} Live Webcam & Open/Closed Status – Updated Today`;
-  const description = `Live ${pass.name} webcam feeds, highway conditions, and real-time open/closed status on ${pass.highway}, ${pass.state ? `${pass.state}, ` : ''}${pass.country}. Verified and updated ${pass.lastUpdated}.`;
+  const title = pass.customSeo?.title || `${pass.name} Live Webcam & Open/Closed Status – Updated Today`;
+  const description = pass.customSeo?.description || `Live ${pass.name} webcam feeds, highway conditions, and real-time open/closed status on ${pass.highway}, ${pass.state ? `${pass.state}, ` : ''}${pass.country}. Verified and updated ${pass.lastUpdated}.`;
   const passFullImage = pass.image.startsWith('http') ? pass.image : `${DOMAIN}${pass.image.startsWith('/') ? '' : '/'}${pass.image}`;
 
   const allFaqs = [

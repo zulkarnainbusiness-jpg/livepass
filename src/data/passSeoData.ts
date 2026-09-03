@@ -606,8 +606,76 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Col de la Bonette (2 802 m) & Stelvio Pass (2 757 m)',
     crossLinkUrl: '/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette',
     crossLinkText: 'Confronta le condizioni e l\'altitudine del Colle dell\'Agnello con i giganti alpini su'
+  },
+  'mangart-saddle': {
+    nearestTowns: [
+      { name: 'Bovec, Goriška (Soča Valley gateway)', distance: '26 km (16.2 miles)', direction: 'North via Road 203 → Predil Pass road' },
+      { name: 'Log pod Mangartom (nearest village)', distance: '9 km (5.6 miles)', direction: 'South via Predil Pass road 203' },
+      { name: 'Cave del Predil / Raibl (Italy)', distance: '7 km (4.3 miles)', direction: 'West via Predil Pass into Italy (SS54)' },
+      { name: 'Tarvisio, Friuli-Venezia Giulia (Italy)', distance: '24 km (14.9 miles)', direction: 'West via Predil Pass / SS54 into Italy' },
+      { name: 'Kranjska Gora, Gorenjska (Julian Alps resort)', distance: '37 km (23.0 miles)', direction: 'East via Roads 203 & 201' },
+      { name: 'Kobarid (Caporetto), Goriška', distance: '44 km (27.3 miles)', direction: 'South via Road 203 along Soča Valley' }
+    ],
+    seasonalClosureWindow: 'Mid-June to Late October (Zimska zapora od novembra do junija / Winter closure November to June). ⚠️ 2026 additional partial closure: 9th km to saddle closed due to active rockfall.',
+    seasonalClosureDetail: 'Cesta na Mangart (Mangart Road) closes seasonally in late October or early November due to heavy alpine snowfall exceeding 3–4 metres on the narrow cliff road and acute avalanche hazards on the steep limestone faces. Managed jointly by the Triglav National Park (TNP) authority and DARS / Direkcija RS za infrastrukturo, the road typically reopens in mid-June after manual snow clearance. In 2026, a rockfall on the upper section (above the 9th km car park) has caused an additional partial closure — the final stretch to Mangartsko sedlo (2,072 m) is closed to all vehicles, cyclists, and pedestrians; visitors must hike approximately 40 minutes from the 9th km car park to reach the saddle on foot. Real-time status and parking availability are monitored on promet.si, which also manages the automated 90-vehicle capacity barrier at Mangartska planina.',
+    aboutPass: 'Mangartsko sedlo (Mangart Saddle, 2,072 m / 6,798 ft) is the end point of the highest paved road in Slovenia — the dramatic Cesta na Mangart (Mangart Road) — climbing through the heart of Triglav National Park (Triglavski narodni park) in the Julian Alps on the Slovenian-Italian border. Branching off the Predil Pass road near Log pod Mangartom in the Goriška/Posočje region, the 12 km asphalt road negotiates five dark unlit tunnels, sheer cliff-edge hairpin bends, and up to 17% gradients before reaching the saddle at 2,072 m. Access is controlled by a €10 eco-toll per vehicle and an automated digital barrier capping simultaneous vehicles at 90 — systems that preserve the pristine alpine environment of the national park. The saddle sits on the Slovenian-Italian border, framing panoramic views of Mangart peak (2,679 m — 3rd highest in Slovenia), the Soča (Isonzo) Valley, and the Friuli plains of northern Italy. Together with Vršič Pass (1,611 m) and Predil Pass (1,156 m), Mangartsko sedlo forms the legendary "Posočje Alpine Triangle" circuit.',
+    crossLinkAnchor: 'Vršič Pass (Prelaz Vršič, Slovenia)',
+    crossLinkUrl: '/passes/slovenia/gorenjska-goriska/vrsic-pass',
+    crossLinkText: 'Combine your Mangart Saddle visit with the legendary nearby Slovenian alpine pass,'
+  },
+  'baralacha-la': {
+    nearestTowns: [
+      { name: 'Jispa, Lahaul & Spiti (Himachal Pradesh)', distance: '54 km (33.5 miles)', direction: 'South via Leh-Manali Highway (NH-3)' },
+      { name: 'Keylong, Lahaul & Spiti District HQ', distance: '73 km (45.3 miles)', direction: 'South via NH-3 via Sissu & Atal Tunnel' },
+      { name: 'Darcha, Lahaul (Checkpost junction)', distance: '44 km (27.3 miles)', direction: 'South via NH-3 towards Padum road' },
+      { name: 'Sarchu (Himachal-Ladakh Border)', distance: '32 km (19.8 miles)', direction: 'North via NH-3 towards Lachulung La' },
+      { name: 'Manali, Kullu District', distance: '140 km (87.0 miles)', direction: 'South via NH-3 through Atal Tunnel & Solang' },
+      { name: 'Leh, Union Territory of Ladakh', distance: '330 km (205.0 miles)', direction: 'North via NH-3 across Tanglang La' }
+    ],
+    seasonalClosureWindow: 'Early November to Mid-May / Early June (सर्दियों में बर्फबारी के कारण बंद / Winter closure November to June)',
+    seasonalClosureDetail: 'Baralacha La Pass (4,890 m / 16,040 ft) experiences severe high-altitude Himalayan winter conditions with snow accumulation exceeding 10 to 15 metres across Zingzingbar, Suraj Tal, and Bharatpur City. Temperatures drop to -25°C. Managed by the Border Roads Organisation (BRO) under Project Deepak (Himachal side) and Project Himank (Ladakh side), heavy rotary snow blowers and bulldozers clear the pass starting in March/April. The official opening typically takes place between mid-May and early June. Real-time updates and convoy movement schedules are issued daily by HP Police, Lahaul & Spiti Police control room, and BRO traffic advisories.',
+    aboutPass: 'Baralacha La Pass (बारालाचा ला, 4,890 m / 16,040 ft) is a world-renowned high mountain pass in the Zanskar range connecting the Lahaul Valley of Himachal Pradesh with Ladakh along the strategic Leh-Manali Highway (NH-3). The name "Baralacha" means "pass where roads from different directions meet", marking the historical junction where ancient trade trails from Zanskar, Spiti, Lahaul, and Ladakh converged. Nestled right below the summit lies Suraj Tal (Sun Lake), a holy glacial lake and the third highest lake in India, which serves as the source of the Bhaga River. Baralacha La is an essential transit checkpoint for road trips, motorcycle expeditions, and army logistics crossing the Himalayas. Due to extreme altitude, travelers are advised to acclimatize properly at Keylong or Jispa before ascending.',
+    crossLinkAnchor: 'Rohtang Pass (13,058 ft) & Zoji La Pass (11,575 ft)',
+    crossLinkUrl: '/passes/india/himachal-pradesh/rohtang-pass',
+    crossLinkText: 'Compare real-time status and Himalayan road conditions with nearby'
+  },
+  'katschberg-pass': {
+    nearestTowns: [
+      { name: 'St. Michael im Lungau (Salzburg)', distance: '6.0 km (3.7 miles)', direction: 'North via Katschberg Straße B99' },
+      { name: 'Rennweg am Katschberg (Kärnten)', distance: '10.5 km (6.5 miles)', direction: 'South via B99 through Liesertal' },
+      { name: 'Tamsweg (Bezirkshauptstadt Lungau)', distance: '22.0 km (13.7 miles)', direction: 'Northeast via B96 from St. Michael' },
+      { name: 'Spittal an der Drau (Kärnten)', distance: '42.0 km (26.1 miles)', direction: 'South via B99 & A10 Tauern Autobahn' },
+      { name: 'Gmünd in Kärnten (Künstlerstadt)', distance: '24.0 km (14.9 miles)', direction: 'South via B99' },
+      { name: 'Salzburg Stadt (Landeshauptstadt)', distance: '115.0 km (71.5 miles)', direction: 'North via A10 Tauern Autobahn' }
+    ],
+    seasonalClosureWindow: 'Ganzjährig geöffnet / Open Year-Round (Winterreifenpflicht 1. Nov – 15. Apr)',
+    seasonalClosureDetail: 'Der Katschbergpass (1.641 m / 5.384 ft) auf der B99 Katschberg Straße ist im Gegensatz zu vielen hochalpinen Alpenpässen das gesamte Jahr über für den Verkehr geöffnet. Als wichtige regionale Verbindung und kostenfreie Ausweichroute zum kostenpflichtigen A10 Katschberg-Autobahntunnel sorgen die Straßenmeistereien Kärnten und Salzburg mit ständiger Schneeräumung für freie Fahrbahnen. In Österreich gilt vom 1. November bis 15. April die gesetzliche witterungsbedingte Winterreifenpflicht (M+S/3PMSF). Bei extremen Wintereinbrüchen kann kurzzeitig Schneekettenpflicht ("Schneeketten vorgeschrieben") oder ein LKW-Fahrverbot verhängt werden. Aktuelle Verkehrsmeldungen liefert der ÖAMTC-Verkehrsservice.',
+    aboutPass: 'Der Katschbergpass (Katschberg, 1.641 m s.l.m.) ist ein traditionsreicher Alpenpass an der Grenze zwischen den österreichischen Bundesländern Kärnten (Bezirk Spittal an der Drau) und Salzburg (Bezirk Tamsweg / Lungau). Er trennt die Hohe Tauern im Westen von den Nockbergen (Gurktaler Alpen) im Osten. Die 16,5 km lange B99 Katschberg Straße überwindet von Rennweg im Liesertal bis St. Michael im Lungau Steigungen von bis zu 15% und ist eine beliebte Panoramastraße sowie eine mautfreie Umfahrung des Katschbergtunnels der Tauern Autobahn (A10). Auf der Passhöhe liegt der bekannte Ferien- und Skiorort Katschberghöhe mit direktem Zugang zum Skigebiet Katschberg-Aineck.',
+    crossLinkAnchor: 'Großglockner Hochalpenstraße (2.504 m) & Timmelsjoch (2.474 m)',
+    crossLinkUrl: '/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road',
+    crossLinkText: 'Vergleichen Sie die Straßenbedingungen des Katschbergpasses mit weiteren österreichischen Alpenpässen auf'
+  },
+  'grossglockner-high-alpine-road': {
+    nearestTowns: [
+      { name: 'Fusch an der Großglocknerstraße (Salzburg)', distance: '14.0 km (8.7 miles)', direction: 'North via B107 towards Zell am See' },
+      { name: 'Heiligenblut am Großglockner (Kärnten)', distance: '15.0 km (9.3 miles)', direction: 'South via B107 towards Mölltal' },
+      { name: 'Zell am See (Salzburg)', distance: '27.0 km (16.8 miles)', direction: 'North via B107 & B311' },
+      { name: 'Lienz (Osttirol)', distance: '48.0 km (29.8 miles)', direction: 'South via B107 through Iselsberg' },
+      { name: 'Mittersill (Pinzgau, Salzburg)', distance: '45.0 km (28.0 miles)', direction: 'Northwest via B168' },
+      { name: 'Spittal an der Drau (Kärnten)', distance: '85.0 km (52.8 miles)', direction: 'Southeast via B107 & A10' }
+    ],
+    seasonalClosureWindow: 'Anfang Mai bis Anfang November (Wintersperre von November bis Mai)',
+    seasonalClosureDetail: 'Die Großglockner Hochalpenstraße (Hochtor Pass, 2.504 m) ist von Anfang Mai bis Anfang November geöffnet. In den Wintermonaten (November bis Mai) ist die Hochgebirgsstraße wegen extremer Schneemengen von 8 bis 12 Metern, meterhohen Schneewehen und akuter Lawinengefahr auf der gesamten 48 km langen Strecke voll gesperrt. Die jährliche Schneeräumung im April ist ein weltberühmtes Spektakel, bei dem die historischen Wallack-Rotationsschneepflüge ("System Wallack") durch gigantische Schneewände fräsen. Während der Sommersaison gelten nächtliche Schließzeiten zum Schutz der alpinen Tierwelt im Nationalpark Hohe Tauern.',
+    aboutPass: 'Die Großglockner Hochalpenstraße (Großglockner High Alpine Road, 2.504 m s.l.m. am Hochtor-Tunnel) ist die berühmteste Panoramastraße Österreichs und ein Meisterwerk der Alpen-Ingenieurkunst. Sie führt durch den Nationalpark Hohe Tauern und verbindet Fusch im Salzburger Pinzgau mit dem Wallfahrtsort Heiligenblut in Kärnten. Auf 48 Kilometern überwindet die B107 insgesamt 36 nummerierte Kehren und führt bis auf 2.571 m an der Edelweißspitze hinauf. Ein Abstecher führt zur Kaiser-Franz-Josefs-Höhe (2.369 m) mit direktem Blick auf den Großglockner (3.798 m, Höchster Berg Österreichs) und die Pasterze, den längsten Gletscher der Ostalpen. Betrieben von der GROHAG, zieht die Panoramastraße jährlich über 1 Million Besucher aus aller Welt an.',
+    crossLinkAnchor: 'Katschbergpass (1.641 m) & Stelvio Pass (2.757 m)',
+    crossLinkUrl: '/passes/austria/carinthia-salzburg/katschberg-pass',
+    crossLinkText: 'Vergleichen Sie die Öffnungszeiten und Mautpreise der Großglockner Hochalpenstraße mit'
   }
 };
+
+
+
+
 
 
 

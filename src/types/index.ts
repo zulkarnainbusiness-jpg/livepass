@@ -15,6 +15,8 @@ export interface CameraFeed {
   source?: string;
   updateIntervalMs?: number;
   officialUrl?: string;
+  streamUrl?: string;
+  type?: 'image' | 'webrtc' | 'hls' | 'mjpeg' | 'iframe';
 }
 
 export interface NearbyPassRef {

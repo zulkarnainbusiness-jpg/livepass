@@ -193,7 +193,30 @@ export const App: React.FC = () => {
               <Route path="/prelaz-vrsic" element={<Navigate to="/passes/slovenia/gorenjska-goriska/vrsic-pass" replace />} />
               <Route path="/prelazvrsic" element={<Navigate to="/passes/slovenia/gorenjska-goriska/vrsic-pass" replace />} />
               <Route path="/ruska-cesta" element={<Navigate to="/passes/slovenia/gorenjska-goriska/vrsic-pass" replace />} />
-              
+              <Route path="/mangart-saddle" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
+              <Route path="/mangart-pass" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
+              <Route path="/mangart" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
+              <Route path="/mangartsko-sedlo" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
+              <Route path="/mangartskosedlo" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
+              <Route path="/passo-del-mangart" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
+              <Route path="/passomangart" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
+              <Route path="/cesta-na-mangart" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
+              <Route path="/baralacha-la" element={<Navigate to="/passes/india/himachal-pradesh/baralacha-la" replace />} />
+              <Route path="/baralacha-pass" element={<Navigate to="/passes/india/himachal-pradesh/baralacha-la" replace />} />
+              <Route path="/baralacha" element={<Navigate to="/passes/india/himachal-pradesh/baralacha-la" replace />} />
+              <Route path="/baralachalapass" element={<Navigate to="/passes/india/himachal-pradesh/baralacha-la" replace />} />
+              <Route path="/bara-lacha-la" element={<Navigate to="/passes/india/himachal-pradesh/baralacha-la" replace />} />
+              <Route path="/katschberg-pass" element={<Navigate to="/passes/austria/carinthia-salzburg/katschberg-pass" replace />} />
+              <Route path="/katschbergpass" element={<Navigate to="/passes/austria/carinthia-salzburg/katschberg-pass" replace />} />
+              <Route path="/katschberg" element={<Navigate to="/passes/austria/carinthia-salzburg/katschberg-pass" replace />} />
+              <Route path="/katschberg-strasse" element={<Navigate to="/passes/austria/carinthia-salzburg/katschberg-pass" replace />} />
+              <Route path="/passo-katschberg" element={<Navigate to="/passes/austria/carinthia-salzburg/katschberg-pass" replace />} />
+              <Route path="/grossglockner-high-alpine-road" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
+              <Route path="/grossglockner" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
+              <Route path="/grossglockner-pass" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
+              <Route path="/hochtor-pass" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
+              <Route path="/grossglockner-hochalpenstrasse" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
+
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />
               <Route path="/resources" element={<ResourcesPage />} />

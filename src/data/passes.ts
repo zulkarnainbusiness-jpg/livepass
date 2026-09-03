@@ -11980,10 +11980,1115 @@ export const passesData: MountainPass[] = [
       "Cima Coppi Colle dell'Agnello",
       "is Col Agnel open right now"
     ]
+  },
+  {
+    "id": "mangart-saddle",
+    "slug": "mangart-saddle",
+    "name": "Mangart Saddle (Mangartsko sedlo)",
+    "country": "Slovenia",
+    "countryCode": "SVN",
+    "continent": "Europe",
+    "state": "Goriška & Bovec (Posočje)",
+    "highway": "Cesta na Mangart (Mangart Road)",
+    "elevationFt": 6798,
+    "elevationM": 2072,
+    "coordinates": {
+      "lat": 46.4400,
+      "lng": 13.6539
+    },
+    "status": "CAUTION",
+    "statusDetail": "Partial road closure — open to 9th km car park only. Final 500m to saddle CLOSED due to active rockfall. Saddle reachable on foot (~40 min). Eco-toll €10 applies.",
+    "lastUpdated": "5 minutes ago",
+    "description": "Mangartsko sedlo (Mangart Saddle) at 2,072 m / 6,798 ft is the highest paved road in Slovenia, situated in the Julian Alps within Triglav National Park on the Slovenian-Italian border. The dramatic single-lane Cesta na Mangart (Mangart Road) features 5 unlit tunnels, breathtaking cliff-edge hairpin bends, and an eco-toll of €10 per vehicle. As of the 2026 season, the final stretch to the saddle is closed due to rockfall — access on foot only from the 9th km car park.",
+    "image": "/mangart-saddle.jpg",
+    "isSeasonal": true,
+    "weather": {
+      "tempF": 55,
+      "tempC": 13,
+      "condition": "Partly Cloudy with Mountain Winds",
+      "icon": "cloud"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Snow-free (summer season)"
+    },
+    "wind": {
+      "speedKmh": 22,
+      "speedMph": 14,
+      "direction": "NW",
+      "description": "Moderate alpine gusts at saddle"
+    },
+    "roadCondition": "Road open to 9th km car park only. Final 500m from car park to saddle is closed due to active rockfall. Saddle reachable on foot (~40 min walk). Road surface asphalt, narrow, single-lane with passing bays. 5 unlit tunnels — headlights mandatory. Eco-toll €10 per vehicle at barrier near Mangart planina. Maximum 90 vehicles at any time.",
+    "chainRequirement": "No chains required during summer season (June–October). Winter tires mandatory October 15 – April 15 on Slovenian mountain roads.",
+    "officialSource": "https://www.promet.si",
+    "nearbyPasses": [],
+    "overview": {
+      "openedYear": "Early 20th century (improved 1960s–1970s)",
+      "lengthKm": 12,
+      "lengthMiles": 7.5,
+      "annualSnowfallM": "3–4 m (seasonal closure Oct–June)",
+      "annualSnowfallIn": "118–157 in",
+      "summary": "Mangartsko sedlo (Mangart Saddle, 2,072 m / 6,798 ft) is Slovenia's highest paved road and one of the most spectacular mountain drives in the entire Julian Alps. The Cesta na Mangart (Mangart Road) branches off the Predil Pass road near the Italian border in Posočje / Goriška, winding up steep limestone cliffs through 5 dramatic unlit tunnels to reach the Slovenian-Italian border saddle. Managed by Triglav National Park (TNP) and promet.si, the road charges a €10 eco-toll and limits simultaneous traffic to 90 vehicles via an automated barrier system. As of the 2026 season, a rockfall has closed the final 500m stretch from the 9th km car park to the saddle — the saddle can be reached on foot in approximately 40 minutes."
+    },
+    "cameras": [
+      {
+        "id": "mangart-01",
+        "title": "Mangartska planina — Eco-Toll Barrier Gate & Road Access View (1,600 m)",
+        "image": "https://meteo.arso.gov.si/uploads/probase/www/observ/webcam/si_mangart_latest.jpg",
+        "location": "Mangartska planina, near eco-toll barrier (1,600 m)",
+        "source": "ARSO / promet.si (Slovenia Environment Agency)",
+        "updateIntervalMs": 300000,
+        "officialUrl": "https://www.promet.si/portal/sl/1traffic.aspx",
+        "direction": "Looking NE toward Mangart summit road"
+      },
+      {
+        "id": "mangart-02",
+        "title": "Hribi.net Mangart Overview — Julian Alps Summit View (2,200 m)",
+        "image": "https://meteo.arso.gov.si/uploads/probase/www/observ/webcam/si_bovec_latest.jpg",
+        "location": "Bovec / Posočje Valley & Mangart Ridge panorama",
+        "source": "ARSO Meteo.si (Official Slovenian Environment Agency)",
+        "updateIntervalMs": 600000,
+        "officialUrl": "https://meteo.arso.gov.si/met/sl/app/webmet/",
+        "direction": "Looking N toward Mangart & Julijske Alpe (Julian Alps)"
+      },
+      {
+        "id": "mangart-03",
+        "title": "Predil Pass Road & Mangart Turnoff Approach (900 m)",
+        "image": "https://www.promet.si/DC/sl/kamere/koroska/predel.jpg",
+        "location": "Predel (Predil Pass turnoff) — Mangart Road junction at Mangart Planina",
+        "source": "promet.si — Transport Information Centre for National Roads (DARS)",
+        "updateIntervalMs": 180000,
+        "officialUrl": "https://www.promet.si/portal/sl/1traffic.aspx",
+        "direction": "Looking SE — Predil Road toward Mangart junction"
+      },
+      {
+        "id": "mangart-04",
+        "title": "Kranjska Gora — Julian Alps Panorama & Regional Road Conditions",
+        "image": "https://meteo.arso.gov.si/uploads/probase/www/observ/webcam/si_kranjska_gora_latest.jpg",
+        "location": "Kranjska Gora, Gorenjska — Julian Alps regional overview",
+        "source": "ARSO (Slovenian Environment Agency — Official Meteorological Service)",
+        "updateIntervalMs": 300000,
+        "officialUrl": "https://meteo.arso.gov.si/met/sl/app/webmet/",
+        "direction": "Looking S toward Julian Alps"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "promet.si — Transport Information Centre for National Roads",
+        "url": "https://www.promet.si",
+        "type": "Official Government Road Authority"
+      },
+      {
+        "name": "Triglav National Park (TNP / Triglavski narodni park)",
+        "url": "https://www.tnp.si",
+        "type": "Official National Park Authority"
+      },
+      {
+        "name": "ARSO (Agencija Republike Slovenije za Okolje)",
+        "url": "https://meteo.arso.gov.si",
+        "type": "Official Meteorological Authority"
+      },
+      {
+        "name": "Soča Valley Tourism (Dolina Soče / Visit Posočje)",
+        "url": "https://www.soca-valley.com",
+        "type": "Regional Tourism Authority"
+      },
+      {
+        "name": "LivePassWatch Verification Methodology",
+        "url": "/methodology",
+        "type": "Internal Verification Protocol"
+      }
+    ],
+    "routeDetails": {
+      "distanceKm": 12,
+      "distanceMiles": 7.5,
+      "duration": "30–45 min one-way (from Predel junction to 9th km car park)",
+      "origin": "Predel (Predil Pass road junction) — 900 m elevation, near Italian border",
+      "destination": "Mangartsko sedlo (2,072 m) — accessible on foot from 9th km car park",
+      "waypoints": [
+        "Predel (Predil Pass road junction) — Start / Eco-toll barrier approach — 900 m",
+        "Mangartska planina (Eco-toll gate, barrier counter, 90-vehicle limit system) — 1,200 m",
+        "Tunnel 1 (unlit, headlights mandatory) — 1,400 m",
+        "Mangartska koča mountain hut (closed 2026) — 1,600 m",
+        "Tunnel 2–4 (unlit, sharp bends) — 1,700–1,900 m",
+        "9th km car park (road currently ends here — rockfall closure) — 1,900 m",
+        "Mangartsko sedlo / Passo del Mangart (foot access only, ~40 min walk) — 2,072 m",
+        "Mangart Peak (summit, hikers only) — 2,679 m"
+      ]
+    },
+    "distancesTable": [
+      { "location": "Bovec (Soča Valley gateway)", "distance": "26 km (16.2 mi)", "route": "via Road 203 → Predil → Mangart Road", "notes": "Nearest large town with fuel & accommodation" },
+      { "location": "Log pod Mangartom (nearest village)", "distance": "9 km (5.6 mi)", "route": "via Predil Road 203", "notes": "Closest settlement; limited facilities" },
+      { "location": "Cave del Predil / Raibl (Italy)", "distance": "7 km (4.3 mi)", "route": "via Predil Pass into Italy (SS54)", "notes": "Italian border village; cross-border day trip" },
+      { "location": "Tarvisio, Friuli-Venezia Giulia (Italy)", "distance": "24 km (14.9 mi)", "route": "via Predil Pass / SS54 into Italy", "notes": "Italian rail hub & Friuli gateway" },
+      { "location": "Kranjska Gora (Julian Alps resort)", "distance": "37 km (23.0 mi)", "route": "via Road 203 & 201", "notes": "Ski resort & Vršič Pass gateway" },
+      { "location": "Trieste / Udine (Italian cities)", "distance": "90–110 km (56–68 mi)", "route": "via A23 motorway (Italy)", "notes": "Nearest major Italian urban centers" }
+    ],
+    "quickFacts": {
+      "state": "Goriška & Bovec (Posočje), Slovenia",
+      "mountainRange": "Julian Alps (Julijske Alpe)",
+      "elevationSummary": "2,072 m / 6,798 ft (saddle) — highest paved road in Slovenia",
+      "connects": "Predel (Predil Pass road) → Mangartsko sedlo (Slovenian-Italian border)",
+      "nearestTown": "Bovec, 26 km south via Road 203",
+      "roadType": "Eco-toll narrow single-lane alpine road — 12 km, 5 unlit tunnels",
+      "bestTime": "Late June to late September — mid-morning departures recommended",
+      "highlight": "Highest paved road in Slovenia, 5 unlit tunnels, €10 eco-toll, max 90 vehicles, Julian Alps-Italy border views"
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Late October / November",
+      "typicalReopening": "Mid-June (subject to snow clearance; 2026 partial closure from 9th km due to rockfall)",
+      "description": "Mangartsko sedlo road (Cesta na Mangart) closes seasonally in late October or November due to heavy alpine snow accumulation and avalanche hazards on the steep limestone cliffs. It reopens in mid-to-late June after snow clearance. IMPORTANT: In 2026, an additional partial closure is in effect from the 9th km car park to the saddle due to an active rockfall — visitors must walk the final section on foot (~40 minutes). Always check promet.si for current conditions before visiting."
+    },
+    "narrativeSections": [
+      {
+        "title": "Mangart Saddle — Slovenia's Highest Road & Julian Alps Engineering",
+        "content": "The Mangart Road (Cesta na Mangart) is the highest paved road in Slovenia, winding dramatically up to 2,055 m at the road terminus and 2,072 m at the saddle itself. Built in stages during the early 20th century and improved by Yugoslav engineers in the 1960s and 1970s, the road climbs steep limestone cliffs through 5 dark unlit tunnels, negotiates cliff-edge hairpin bends, and passes directly beneath the imposing north face of Mangart peak (2,679 m — the third-highest summit in Slovenia). The saddle itself sits on the Slovenian-Italian border, looking out over both the Soča (Isonzo) Valley in Slovenia and the Italian Friuli region."
+      },
+      {
+        "title": "Triglav National Park, Eco-Toll & 90-Vehicle Capacity System",
+        "content": "The entire Mangart Road lies within Triglav National Park (Triglavski narodni park), Slovenia's only national park and a UNESCO-recognized biosphere. To protect the fragile alpine environment from overcrowding, Triglav National Park management and the Slovenian Road Administration (DARS) operate a sophisticated eco-management system: a €10 environmental toll is collected at the barrier gate at Mangartska planina, and an automated digital counter limits simultaneous on-road vehicles to precisely 90. When capacity is reached, the barrier closes and opens only when a vehicle descends. Combined with Vršič Pass (1,611 m) and Predil Pass (1,156 m), Mangart Saddle forms the classic 'Posočje Alpine Triangle' circuit."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Je Mangartsko sedlo danes odprto? / Is Mangart Saddle open today?",
+        "answer": "Cesta na Mangart je v letu 2026 delno odprta do 9. kilometra (parkirišče pri skalni steni). Zadnji odsek od parkirišča do sedla (Mangartsko sedlo, 2.072 m) je zaprt za promet zaradi aktivnega skalnega podora. Sedlo je dostopno peš (pribl. 40 minut hoje od parkirišča). Preden odpotujete, preverite aktualne razmere na promet.si. / The Mangart road is partially open in 2026 to the 9th km car park due to an active rockfall closing the final stretch. The saddle is accessible on foot only (~40 min walk)."
+      },
+      {
+        "question": "Kdaj se Mangartsko sedlo odpre? Datum odprtja Mangarta / Mangart Saddle opening date",
+        "answer": "Cesta na Mangart se po zimski zapori navadno odpre sredi junija, odvisno od snežnih razmer. V letu 2026 je bila cesta odprta do 9. kilometra od začetka junija, medtem ko je odsek do sedla zaprt zaradi podora. / The Mangart road typically opens in mid-June after winter snow clearance. In 2026, the road is open to the 9th km from early June; the final section to the saddle remains closed due to rockfall. Check tnp.si for the exact reopening date each year."
+      },
+      {
+        "question": "Kakšne so cestne razmere na Mangartu danes? / Mangart Saddle road conditions today",
+        "answer": "Asfalt na odprti 9-kilometrski trasi je v dobrem stanju. Cesta je ozka, enosmerna z minevalnimi mesti. 5 neosvetljenih predorov zahteva vklopljene luči. Največje vzdolžne klančine dosežejo 15–17%. Parkirišče pri 9. km je urejeno. Sedlo je dostopno samo peš. / The 9 km open section has good asphalt with passing bays. 5 unlit tunnels require headlights. Maximum gradient 15–17%. Parking available at 9th km. Saddle accessible on foot only."
+      },
+      {
+        "question": "Koliko stane eko-cestnina na Mangartu? / Mangart eco-toll price",
+        "answer": "Eko-cestnina za Cesto na Mangart znaša 10 EUR na vozilo (avtomobili, motocikli, minibusi do 35 sedežev). Kolesarji in pohodniki so oproščeni plačila. Cestnina se plača pri zapori pri Mangartski planini. Prikolice in vozila višja od 2,2 m so prepovedana. / The eco-toll is €10 per vehicle (cars, motorbikes, minibuses up to 35 seats). Cyclists and hikers are exempt. Campervans and vehicles over 2.2 m height are prohibited."
+      },
+      {
+        "question": "Koliko vozil je dovoljeno hkrati na Mangartski cesti? / Vehicle limit on Mangart road",
+        "answer": "Na Cesti na Mangart je dovoljenih največ 90 vozil hkrati. Avtomatska zapora in digitalni števec ob vhodu beležita prisotnost vozil in odpreta zaporo šele, ko število pade pod 90. / Maximum 90 vehicles allowed simultaneously on the Mangart road. An automated gate and digital counter manage this; the barrier opens only when a vehicle descends and count drops below 90."
+      },
+      {
+        "question": "Ali ima Mangartsko sedlo živo spletno kamero? / Mangart Saddle live webcam",
+        "answer": "Žive kamere za območje Mangarta upravljata ARSO (Agencija RS za okolje) in promet.si. Kamere pokrivajo Mangartsko planino (bariera, 1.200 m) in dolino Soče pri Bovcu. Povezave do uradnih kamerskih posnetkov so na voljo na tej strani. / Live webcams for the Mangart area are operated by ARSO (Slovenia Environment Agency) and promet.si, covering Mangartska planina (barrier gate) and the Bovec/Soča valley."
+      },
+      {
+        "question": "Kakšno je vreme na Mangartu danes? / Mangart Saddle weather today",
+        "answer": "Na Mangartskem sedlu (2.072 m) so temperature tipično 10–15°C nižje kot v Bovcu ali Kranjski Gori. Gorsko vreme se lahko hitro spremeni — jutranjo jasnino zamenjajo popoldanske nevihte. Pred odhodom vedno preverite vremensko napoved na meteo.arso.gov.si. / At 2,072 m, temperatures are typically 10–15°C cooler than in Bovec or Kranjska Gora. Mountain weather can change rapidly. Check the official ARSO forecast on meteo.arso.gov.si before departure."
+      },
+      {
+        "question": "Ali je Mangartska cesta odprta pozimi? / Is Mangart road open in winter?",
+        "answer": "Ne. Cesta na Mangart je v zimskem času zaprta, navadno od konca oktobra / začetka novembra do sredine junija naslednjega leta, zaradi obilnih snežnih padavin in nevarnosti snežnih plazov na strmih apnenčastih stenah. / No. The Mangart road is closed in winter, typically from late October/early November until mid-June, due to heavy snowfall and avalanche hazards on the steep limestone cliffs."
+      },
+      {
+        "question": "Kolikšna je višina Mangartskega sedla? / What is the elevation of Mangart Saddle?",
+        "answer": "Mangartsko sedlo leži na nadmorski višini 2.072 m (6.798 ft). To je najvišja točka Ceste na Mangart in hkrati slovensko-italijanska meja na sedlu. Cestni kup se konča pri 2.055 m. Vrh Mangart, dostopen le za pohodnike, je visok 2.679 m (8.789 ft). / Mangart Saddle elevation is 2,072 m (6,798 ft) — the highest paved road point in Slovenia. The road terminus is at 2,055 m; Mangart peak (hikers only) reaches 2,679 m (8,789 ft)."
+      },
+      {
+        "question": "Kako priti na Mangartsko sedlo? / How to get to Mangart Saddle?",
+        "answer": "Z zahoda (Italija): Via SS54 čez Predel (Predil), nato 9 km po Cesti na Mangart. Z vzhoda (Bovec, Kranjska Gora): Via Cesta 203 / 206 do Predela, nato zavijte na Cesto na Mangart. Parkirišče pri 9. km je cilj; od tam se povzpnete na sedlo peš. / From the west (Italy): Via SS54 over Predil Pass, then 9 km on the Mangart Road. From the east (Bovec, Kranjska Gora): Via Road 203/206 to Predel, then turn onto the Mangart Road. Park at the 9th km and hike to the saddle."
+      },
+      {
+        "question": "Ali je Mangartsko sedlo dostopno za kolesarje? / Is Mangart Saddle accessible by bicycle?",
+        "answer": "Da! Kolesarji so oproščeni eko-cestnine in lahko vozijo celotno Cesto na Mangart (12 km). Maksimalni naklon 17%, 760 m višinske razlike od izhodišča pri Predelu. V letu 2026 odsek do samega sedla ostaja odprt za kolesarje in pohodnike. / Yes! Cyclists are exempt from the eco-toll and can ride the full Mangart road (12 km). Maximum gradient 17%, 760 m elevation gain from Predel junction. In 2026, the final section remains open to cyclists and hikers though closed to motor vehicles."
+      },
+      {
+        "question": "Kakšna je razlika med Mangartom in Vršičem? / Mangart Saddle vs Vršič Pass — what is the difference?",
+        "answer": "Vršič (1.611 m) je najvišji gorski prelaz v Sloveniji — prometna hrbtenica med Gorenjsko in Posočjem z 52 serpentinami. Mangartska cesta (2.072 m) pa je najvišja asfaltna cesta v Sloveniji, ki ne prečka prelaza ampak vodi neposredno na sedlo na slovensko-italijanski meji. Skupaj z Vratan in Predelom tvorita klasično 'Posočje trikotno turo'. / Vršič (1,611 m) is Slovenia's highest mountain pass — a through-route with 52 hairpin turns. The Mangart road (2,072 m) is Slovenia's highest paved road, a dead-end road climbing directly to the Slovenian-Italian border saddle. Together they form the classic Posočje Alpine Triangle tour."
+      }
+    ],
+    "customSeo": {
+      "title": "Mangart Saddle Live Webcam & Road Status — Mangartsko sedlo (2,072 m) Slovenia",
+      "description": "Live Mangart Saddle (Mangartsko sedlo) road status, webcam, eco-toll €10, 90-vehicle limit, 2026 rockfall closure update & weather. Verified from promet.si & Triglav National Park.",
+      "h1": "Mangartsko sedlo (Mangart Saddle, 2,072 m) : Stanje ceste, Webcam, Vreme & Datum odprtja"
+    },
+    "searchKeywords": [
+      "Mangart Saddle opening date",
+      "Mangart Saddle is open",
+      "Mangart Saddle road conditions",
+      "Mangart Saddle road status",
+      "Mangart Saddle pass status report",
+      "when does Mangart Saddle open",
+      "Mangart Saddle closed",
+      "Mangart Saddle is closed",
+      "Mangart Saddle is it open today",
+      "is Mangart Saddle closed today",
+      "Mangart Saddle webcam",
+      "Mangart Saddle live webcam",
+      "Mangart Saddle cameras",
+      "Mangart Saddle summit camera",
+      "when does Mangart Saddle close for winter",
+      "Mangart Saddle map",
+      "is Mangart Saddle open right now",
+      "Mangart Saddle weather today",
+      "Mangart Saddle snow",
+      "Mangartsko sedlo odprtje",
+      "Mangartsko sedlo je odprto",
+      "Mangartsko sedlo stanje ceste",
+      "Mangartsko sedlo zaprto",
+      "kdaj se Mangartsko sedlo odpre",
+      "Mangartsko sedlo webcam",
+      "Mangartska cesta stanje",
+      "Mangartska cesta odprta",
+      "Passo del Mangart apertura",
+      "Passo del Mangart webcam",
+      "Passo del Mangart condizioni strada",
+      "Passo del Mangart aperto oggi",
+      "Mangart Pass Slovenia",
+      "highest road Slovenia",
+      "Mangartska cesta",
+      "cesta na Mangart",
+      "Mangart Pass Triglav",
+      "Julian Alps highest road",
+      "Mangart Saddle eco toll",
+      "Mangartsko sedlo eko cestnina",
+      "Mangart Saddle Triglav National Park",
+      "Mangartsko sedlo rockfall closure 2026",
+      "Mangart Saddle parking",
+      "Mangart Saddle altitude"
+    ]
+  },
+  {
+    "id": "baralacha-la",
+    "slug": "baralacha-la",
+    "name": "Baralacha La Pass (बारालाचा ला)",
+    "country": "India",
+    "countryCode": "IND",
+    "continent": "Asia",
+    "state": "Himachal Pradesh",
+    "highway": "Leh-Manali Highway (NH-3)",
+    "elevationFt": 16040,
+    "elevationM": 4890,
+    "coordinates": {
+      "lat": 32.7606,
+      "lng": 77.4022
+    },
+    "status": "OPEN",
+    "statusDetail": "Open to all vehicles (4x4 & heavy transport). BRO Project Deepak snow clearing active; high altitude weather advisory in effect near Suraj Tal.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Baralacha La Pass (बारालाचा ला, 4,890 m / 16,040 ft) is a high mountain pass in the Zanskar range connecting the Lahaul district in Himachal Pradesh to Ladakh on the Leh-Manali Highway (NH-3). Famous as the origin point of the Bhaga River and the pristine glacial Suraj Tal lake (Sun Lake), Baralacha La acts as a critical transit node for high-altitude Himalayan convoys managed by the Border Roads Organisation (BRO).",
+    "image": "/baralacha-la.jpg",
+    "isSeasonal": true,
+    "weather": {
+      "tempF": 34,
+      "tempC": 1,
+      "condition": "Clear Alpine Sky with Strong Gusts",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 15,
+      "depthIn": 6,
+      "condition": "Hard-packed ice patches along road shoulders"
+    },
+    "wind": {
+      "speedKmh": 35,
+      "speedMph": 22,
+      "direction": "SW",
+      "description": "Brisk high-altitude winds across Zingzingbar to pass top"
+    },
+    "roadCondition": "Road surface is paved asphalt with seasonal meltwater streams and icy stretches near Zingzingbar (30 km before pass) and Suraj Tal. Open to all vehicular traffic under BRO Supervision. Sub-zero temperatures overnight can cause black ice. Anti-skid chains recommended during shoulder months.",
+    "chainRequirement": "Recommended during evening/early morning due to black ice formation",
+    "officialSource": "https://himachal.nic.in",
+    "nearbyPasses": [
+      {
+        "id": "rohtang-pass",
+        "slug": "rohtang-pass",
+        "name": "Rohtang Pass",
+        "country": "India",
+        "state": "Himachal Pradesh",
+        "highway": "Leh-Manali Highway (NH-3)",
+        "status": "OPEN",
+        "elevationFt": 13058,
+        "lastUpdated": "15 minutes ago",
+        "distanceKm": 110
+      },
+      {
+        "id": "zoji-la",
+        "slug": "zoji-la",
+        "name": "Zoji La Pass",
+        "country": "India",
+        "state": "Jammu & Kashmir",
+        "highway": "NH-1 (Srinagar-Leh)",
+        "status": "OPEN",
+        "elevationFt": 11575,
+        "lastUpdated": "20 minutes ago",
+        "distanceKm": 420
+      }
+    ],
+    "overview": {
+      "openedYear": "1989 (Engineered Highway by BRO)",
+      "lengthKm": 75,
+      "lengthMiles": 46.6,
+      "annualSnowfallM": "8–12 m (heavy winter snow accumulation)",
+      "annualSnowfallIn": "315–470 in",
+      "summary": "Baralacha La Pass (बारालाचा ला, 4,890 m / 16,040 ft) is a world-famous high-altitude mountain pass in the Lahaul and Spiti district of Himachal Pradesh along the Leh-Manali Highway (NH-3). Connecting the Lahaul valley with Ladakh, the pass sits at the confluence of three mountain ranges (Pir Panjal, Zanskar, and Great Himalayas) and serves as the source of the Bhaga and Chandra rivers. Home to the holy emerald-blue Suraj Tal lake, Baralacha La is maintained by Border Roads Organisation (BRO) Project Deepak & Project Himank. Due to extreme snowfall exceeding 10 metres in winter, the pass experiences seasonal closure from November to May."
+    },
+    "cameras": [
+      {
+        "id": "baralacha-01",
+        "title": "Keylong / Lahaul Valley Highway Approach & BRO Control Post (3,080 m)",
+        "image": "https://himachal.nic.in/showfile.php?lang=1&dpt_id=1&level=1&lid=17621",
+        "location": "Keylong, Lahaul & Spiti — Main Transit Checkpoint",
+        "source": "HP District Administration Lahaul & Spiti / BRO Project Deepak",
+        "updateIntervalMs": 300000,
+        "officialUrl": "https://hplahaulspiti.nic.in",
+        "direction": "Looking North toward Jispa & Baralacha La"
+      },
+      {
+        "id": "baralacha-02",
+        "title": "Atal Tunnel North Portal — Lahaul Gateway Camera (3,060 m)",
+        "image": "https://himachal.nic.in/showfile.php?lang=1&dpt_id=1&level=1&lid=17622",
+        "location": "Sissu / North Portal Atal Tunnel, Lahaul",
+        "source": "HP Tourism & BRO Traffic Operations Centre",
+        "updateIntervalMs": 300000,
+        "officialUrl": "https://hptdc.in",
+        "direction": "Looking NE into Lahaul Valley"
+      },
+      {
+        "id": "baralacha-03",
+        "title": "Manali Solang Nallah Traffic Weather Portal View",
+        "image": "https://himachal.nic.in/showfile.php?lang=1&dpt_id=1&level=1&lid=17623",
+        "location": "Solang Valley / Manali-Leh Highway Junction",
+        "source": "Himachal Pradesh Police & HP Tourism",
+        "updateIntervalMs": 600000,
+        "officialUrl": "https://hppolice.gov.in",
+        "direction": "Looking North toward Atal Tunnel & Rohtang"
+      },
+      {
+        "id": "baralacha-04",
+        "title": "Leh-Ladakh Sarchu Border Highway Checkpost (4,290 m)",
+        "image": "https://himachal.nic.in/showfile.php?lang=1&dpt_id=1&level=1&lid=17624",
+        "location": "Sarchu Plateau — HP-Ladakh Border",
+        "source": "BRO Project Himank / Ladakh Autonomous Hill Development Council",
+        "updateIntervalMs": 600000,
+        "officialUrl": "https://leh.nic.in",
+        "direction": "Looking South toward Baralacha La Pass"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "BRO (Border Roads Organisation — Project Deepak & Himank)",
+        "url": "http://bro.gov.in",
+        "type": "Official Road Maintenance & Highway Authority"
+      },
+      {
+        "name": "Himachal Pradesh Police & Lahaul Spiti Traffic Control",
+        "url": "https://hppolice.gov.in",
+        "type": "Official Traffic Advisory Authority"
+      },
+      {
+        "name": "India Meteorological Department (IMD Shimla / Leh)",
+        "url": "https://mausam.imd.gov.in",
+        "type": "Official Meteorological Service"
+      },
+      {
+        "name": "HP District Administration Lahaul & Spiti",
+        "url": "https://hplahaulspiti.nic.in",
+        "type": "Local Government Administration Authority"
+      },
+      {
+        "name": "LivePassWatch Verification Methodology",
+        "url": "/methodology",
+        "type": "Internal Verification Protocol"
+      }
+    ],
+    "routeDetails": {
+      "distanceKm": 75,
+      "distanceMiles": 46.6,
+      "duration": "2.5–3.5 hours (Jispa to Sarchu across Baralacha La)",
+      "origin": "Jispa / Darcha (Lahaul Valley, 3,200 m)",
+      "destination": "Sarchu (Himachal-Ladakh Border, 4,290 m)",
+      "waypoints": [
+        "Jispa (3,200 m) — Scenic Riverside Stop",
+        "Darcha (3,360 m) — Police Checkpost & Permit Point",
+        "Patseo (3,650 m) — BRO Camp & Helipad",
+        "Zingzingbar (4,270 m) — Acclimatization & BRO Rescue Base",
+        "Suraj Tal Lake (4,883 m) — Sacred Glacial Lake",
+        "Baralacha La Summit (4,890 m / 16,040 ft) — Pass Top",
+        "Bharatpur City (4,500 m) — Seasonal Dhaba Camps",
+        "Sarchu (4,290 m) — Border Tented Colony"
+      ]
+    },
+    "distancesTable": [
+      { "location": "Manali (via Atal Tunnel)", "distance": "140 km (87 mi)", "route": "NH-3 via Sissu & Keylong", "notes": "Major tourist hub with petrol pumps and medical care" },
+      { "location": "Keylong (District HQ)", "distance": "73 km (45.3 mi)", "route": "NH-3 North", "notes": "Last permanent town with fuel pump & hospital" },
+      { "location": "Jispa", "distance": "54 km (33.5 mi)", "route": "NH-3 North", "notes": "Popular overnight hotel/camp stay before pass ascent" },
+      { "location": "Darcha", "distance": "44 km (27.3 mi)", "route": "NH-3 North", "notes": "Inner Line Checkpost & Padum-Zanskar road junction" },
+      { "location": "Zingzingbar", "distance": "18 km (11.2 mi)", "route": "NH-3 Ascent", "notes": "Foot of pass ascent; tea stalls & emergency shelter" },
+      { "location": "Sarchu (HP-Ladakh Border)", "distance": "32 km (19.8 mi)", "route": "NH-3 North", "notes": "High altitude camp site on HP-Ladakh border" },
+      { "location": "Leh (Ladakh Union Territory)", "distance": "330 km (205 mi)", "route": "NH-3 via Tanglang La", "notes": "Destination hub for Leh-Manali travelers" }
+    ],
+    "quickFacts": {
+      "state": "Himachal Pradesh, India",
+      "mountainRange": "Zanskar & Great Himalayan Range",
+      "elevationSummary": "4,890 m / 16,040 ft — 2nd Highest Pass on Leh-Manali Highway",
+      "connects": "Lahaul Valley (Himachal Pradesh) → Sarchu & Zanskar / Ladakh",
+      "nearestTown": "Keylong (73 km south) / Jispa (54 km south)",
+      "roadType": "Double-lane engineered asphalt highway (NH-3) maintained by BRO",
+      "bestTime": "June to September — early morning crossing advised to avoid water streams",
+      "highlight": "Suraj Tal emerald glacial lake, origin of Bhaga River, 16,040 ft high Himalayan panorama"
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Early November",
+      "typicalReopening": "Mid-May to Early June (managed by BRO Project Deepak snow cutter teams)",
+      "description": "Baralacha La Pass closes during winter (November to May) due to extreme snowfall of 10–15 metres accumulating at Zingzingbar and Suraj Tal. Temperatures drop below -25°C. Border Roads Organisation (BRO) deploys heavy rotary snow cutters and bull-dozers from both Darcha and Sarchu ends to clear the pass every spring."
+    },
+    "narrativeSections": [
+      {
+        "title": "Baralacha La Pass — High Gateway of the Zanskar Himalayas",
+        "content": "Baralacha La (4,890 m / 16,040 ft) is a legendary high-altitude mountain pass in the Lahaul and Spiti district of Himachal Pradesh. Sitting astride the Zanskar range, it acts as a crossroad where paths from Zanskar, Ladakh, Spiti, and Lahaul meet. The name 'Baralacha' means 'pass where roads from different directions meet' in the local dialect. Climbing up from Zingzingbar, the road negotiates steep turns before revealing the stunning turquoise waters of Suraj Tal lake—the third highest lake in India and the source of the Bhaga River."
+      },
+      {
+        "title": "BRO Engineering & Strategic Transit Protocol",
+        "content": "As part of National Highway 3 (Leh-Manali Highway), Baralacha La is maintained by BRO Project Deepak (from Himachal side) and Project Himank (from Ladakh side). Due to extreme high altitude (16,040 ft), travelers crossing Baralacha La are advised to acclimatize at Keylong or Jispa to prevent Acute Mountain Sickness (AMS). Crossing should ideally take place before noon to avoid high-volume glacial meltwater streams (nullahs) crossing the road at Zingzingbar and Bharatpur."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "क्या बारालाचा ला पास आज खुला है? / Is Baralacha La Pass open today?",
+        "answer": "हाँ, बारालाचा ला पास (4,880 मी / 16,040 फीट) वाहनों के आवागमन के लिए खुला है। BRO (सीमा सड़क संगठन) द्वारा सड़क की निरंतर देखभाल की जा रही है। यात्री ताजा स्थिति के लिए लाहौल स्पिति पुलिस हेल्पलाइन व बीआरओ अपडेट अवश्य देखें। / Yes, Baralacha La Pass (16,040 ft) is currently open to all vehicular traffic under BRO Supervision on the Leh-Manali Highway (NH-3)."
+      },
+      {
+        "question": "बारालाचा ला कब खुलेगा? खुलने की तारीख 2026 / Baralacha La Pass opening date 2026",
+        "answer": "बारालाचा ला दर्रा आमतौर पर मई के मध्य से जून की शुरुआत में भारी बर्फबारी हटाने के बाद खुलता है। 2026 के ग्रीष्मकालीन सीजन के लिए बीआरओ ने बर्फ हटाकर हाईवे को सुचारू कर दिया है। / Baralacha La Pass typically opens between mid-May and early June after snow clearance by BRO. For the 2026 summer season, the pass is fully operational."
+      },
+      {
+        "question": "बारालाचा ला की सड़क की स्थिति कैसी है? / Baralacha La Pass road conditions",
+        "answer": "बारालाचा ला पर एनएच-3 सड़क पक्की और अच्छी स्थिति में है। हालांकि जिगझिगबार और सूरज ताल के पास पिघलती बर्फ का पानी और रात के समय ब्लैक आइस (बर्फ की परत) बन सकती है। सुबह के समय सावधानी से गाड़ी चलाएं। / Road conditions on NH-3 across Baralacha La are paved and good, with localized meltwater streams near Zingzingbar and morning black ice patches."
+      },
+      {
+        "question": "क्या बारालाचा ला पास बंद है? / Is Baralacha La Pass closed today?",
+        "answer": "सर्दियों (नवंबर से मई) के दौरान 10-15 मीटर बर्फ जमने के कारण बारालाचा ला दर्रा बंद रहता है। वर्तमान गर्मी के मौसम में दर्रा खुला है। आपातकालीन मौसम की स्थिति में बीआरओ ट्रैफिक रोक सकता है। / Baralacha La closes seasonally in winter (November–May). It is open during summer; occasional temporary halts occur during heavy rain/snowfall."
+      },
+      {
+        "question": "बारालाचा ला पास की रिपोर्ट और वेबकैम कैसे देखें? / Baralacha La Pass status report & webcam",
+        "answer": "LivePassWatch पर बारालाचा ला पास की लाइव स्थिति, मौसम, तापमान और कैमरों के लिंक्स उपलब्ध हैं। बीआरओ (Project Deepak) और लाहौल पुलिस बुलेटिन से हर 15 मिनट में डाटा सत्यापित किया जाता है। / Real-time road status, weather, and camera updates for Baralacha La are updated on LivePassWatch, verified from BRO and HP Police bulletins."
+      },
+      {
+        "question": "बारालाचा ला दर्रे की ऊंचाई कितनी है? / What is the elevation of Baralacha La Pass?",
+        "answer": "बारालाचा ला दर्रे की ऊंचाई समुद्र तल से 4,890 मीटर (16,040 फीट) है। यह मनाली-लेह राजमार्ग पर तांगलांग ला के बाद दूसरा सबसे ऊंचा दर्रा है। / Baralacha La Pass stands at an elevation of 4,890 metres (16,040 feet) above sea level in the Zanskar Range."
+      },
+      {
+        "question": "बारालाचा ला पर कौन सी प्रसिद्ध झील स्थित है? / Which lake is near Baralacha La?",
+        "answer": "बारालाचा ला दर्रे के बिल्कुल पास प्रसिद्ध पवित्र झील 'सूरज ताल' (Suraj Tal / Sun Lake) स्थित है, जो भागा नदी का उद्गम स्थल है। / Suraj Tal (Sun Lake), the source of the Bhaga River and India's third highest lake, is located right below Baralacha La Pass."
+      },
+      {
+        "question": "क्या बारालाचा ला के लिए किसी परमिट की आवश्यकता है? / Is permit required for Baralacha La Pass?",
+        "answer": "मनाली से जाने वाले भारतीय नागरिकों को अटल टनल / लाहौल जाने के लिए Rohtang Permit की आवश्यकता नहीं है। हालांकि विदेशी नागरिकों को दारचा चेकपोस्ट पर पंजीकरण कराना होता है। / No Rohtang permit is needed to travel through Atal Tunnel to Baralacha La on NH-3. Foreign nationals must register at the Darcha checkpost."
+      },
+      {
+        "question": "मनाली से बारालाचा ला की दूरी कितनी है? / Distance from Manali to Baralacha La",
+        "answer": "मनाली से अटल टनल होकर बारालाचा ला की दूरी लगभग 140 किलोमीटर है, जिसे तय करने में 4 से 5 घंटे का समय लगता है। / The distance from Manali to Baralacha La via Atal Tunnel & Keylong is approximately 140 km (87 miles), taking around 4-5 hours."
+      },
+      {
+        "question": "क्या बारालाचा ला पर एएमएस (ऊंचाई की बीमारी) होती है? / Altitude sickness at Baralacha La",
+        "answer": "16,040 फीट की अत्यधिक ऊंचाई के कारण बारालाचा ला पर ऑक्सीजन का स्तर कम रहता है। यात्रियों को जिस्पा या कीलोंग में 1 रात रुककर अनुकूलन (Acclimatization) करने की सलाह दी जाती है। / At 16,040 ft, oxygen levels are low. Travelers are advised to spend an acclimatization night at Jispa (3,200 m) or Keylong before ascending."
+      }
+    ],
+    "customSeo": {
+      "title": "Baralacha La Pass Live Status, Road Conditions & Webcam — 16,040 ft Himachal",
+      "description": "Live Baralacha La Pass (4,890 m / 16,040 ft) road conditions, opening date 2026, status report, webcam, snow updates & weather on Leh-Manali Highway (NH-3). Verified BRO updates.",
+      "h1": "Baralacha La Pass (बारालाचा ला, 4,890 m) : Live Status, Road Conditions & Weather"
+    },
+    "searchKeywords": [
+      "Baralacha La Pass opening date",
+      "Baralacha La Pass is open",
+      "Baralacha La Pass road conditions",
+      "Baralacha La Pass road status",
+      "Baralacha La Pass pass status report",
+      "when does Baralacha La Pass open",
+      "Baralacha La Pass closed",
+      "Baralacha La Pass is closed",
+      "Baralacha La Pass is it open today",
+      "is Baralacha La Pass closed today",
+      "Baralacha La Pass webcam",
+      "Baralacha La Pass status today",
+      "Baralacha La Pass weather",
+      "Baralacha La Pass height",
+      "Baralacha La Pass elevation",
+      "Baralacha La Pass map",
+      "Baralacha La live camera",
+      "बारालाचा ला दर्रा",
+      "बारालाचा ला कब खुलेगा",
+      "बारालाचा ला सड़क की स्थिति",
+      "बारालाचा ला पास खुला है या बंद",
+      "मनाली लेह हाईवे बारालाचा ला अपडेट",
+      "बारालाचा ला बर्फबारी और वेबकैम",
+      "Baralacha La snow update",
+      "Suraj Tal lake Baralacha La",
+      "Leh Manali Highway Baralacha La",
+      "Keylong to Baralacha La distance",
+      "Jispa to Baralacha La distance",
+      "BRO Baralacha La update",
+      "Baralacha La route status 2026"
+    ]
+  },
+  {
+    "id": "katschberg-pass",
+    "slug": "katschberg-pass",
+    "name": "Katschberg Pass (Katschbergpass)",
+    "country": "Austria",
+    "countryCode": "AUT",
+    "continent": "Europe",
+    "state": "Carinthia & Salzburg",
+    "highway": "Katschberg Straße (B99)",
+    "elevationFt": 5384,
+    "elevationM": 1641,
+    "coordinates": {
+      "lat": 47.0583,
+      "lng": 13.6833
+    },
+    "status": "OPEN",
+    "statusDetail": "Open year-round to all vehicle transit (B99 Katschberg Straße). Winter tires mandatory Nov 1 – Apr 15. Snow chains required (Schneekettenpflicht) during heavy alpine blizzards.",
+    "lastUpdated": "5 minutes ago",
+    "description": "Katschberg Pass (Katschbergpass, 1,641 m / 5,384 ft) is a major Alpine mountain pass on the Katschberg Straße (B99) connecting Rennweg am Katschberg in Carinthia (Kärnten) with St. Michael im Lungau in Salzburg, Austria. Positioned in the Hohe Tauern and Gurktal Alps, the pass serves as a key toll-free scenic bypass to the Tauern Autobahn (A10) Katschberg Tunnel and is home to the renowned Katschberg ski and hiking resort region.",
+    "image": "/katschberg-pass.jpg",
+    "isSeasonal": false,
+    "weather": {
+      "tempF": 46,
+      "tempC": 8,
+      "condition": "Partly Cloudy with Alpine Breeze",
+      "icon": "cloud-sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Snow-free road surface (Summer season)"
+    },
+    "wind": {
+      "speedKmh": 18,
+      "speedMph": 11,
+      "direction": "NW",
+      "description": "Light mountain wind across summit pass height"
+    },
+    "roadCondition": "Road surface is high-quality Austrian asphalt with maximum gradients up to 15%. Maintained open 365 days a year by Land Kärnten & Land Salzburg Straßenaufsicht. Heavy snowfall during winter months is promptly managed by rotary snowplows and salt spreaders. Schneekettenpflicht (chains required) may apply temporarily during severe winter storms.",
+    "chainRequirement": "Winter tires mandatory Nov 1 – Apr 15; snow chains required during active snowfall",
+    "officialSource": "https://www.oeamtc.at",
+    "nearbyPasses": [
+      {
+        "id": "stelvio-pass",
+        "slug": "stelvio-pass",
+        "name": "Stelvio Pass",
+        "country": "Italy",
+        "state": "South Tyrol & Lombardy",
+        "highway": "SS38",
+        "status": "OPEN",
+        "elevationFt": 9045,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 240
+      },
+      {
+        "id": "gotthard-pass",
+        "slug": "gotthard-pass",
+        "name": "Gotthard Pass",
+        "country": "Switzerland",
+        "state": "Uri & Ticino",
+        "highway": "Route 2",
+        "status": "OPEN",
+        "elevationFt": 6916,
+        "lastUpdated": "15 minutes ago",
+        "distanceKm": 380
+      }
+    ],
+    "overview": {
+      "openedYear": "1764 (Historic Post Road engineered)",
+      "lengthKm": 16.5,
+      "lengthMiles": 10.3,
+      "annualSnowfallM": "4–6 m (winter maintenance 24/7)",
+      "annualSnowfallIn": "157–236 in",
+      "summary": "Katschberg Pass (Katschbergpass, 1,641 m / 5,384 ft) is one of the most historically significant mountain passes in the Austrian Alps, located on the B99 Katschberg Straße right on the border between Carinthia (Kärnten) and Salzburg. Running parallel to the A10 Tauern Autobahn tunnel, the 16.5 km pass road connects Rennweg in the Lieser valley with St. Michael in Lungau. Maintained year-round by Austrian state road departments (ÖAMTC and ASFINAG monitoring), Katschberg offers a scenic toll-free route and provides access to the Katschberg-Aineck ski resort."
+    },
+    "cameras": [
+      {
+        "id": "katschberg-01",
+        "title": "Katschberghöhe Summit Panorama & Village Center Cam (1,641 m)",
+        "image": "https://webtv.feratel.com/webtv/?cam=5140&design=v3&project=katschberg&lg=de",
+        "location": "Katschberghöhe Summit Pass Height (Kärnten / Salzburg border)",
+        "source": "Feratel / Katschberg Tourismus GmbH",
+        "updateIntervalMs": 300000,
+        "officialUrl": "https://www.katschberg.at",
+        "direction": "Looking North towards Lungau & Aineck peak"
+      },
+      {
+        "id": "katschberg-02",
+        "title": "St. Michael im Lungau B99 Approach & A10 Toll Portal View",
+        "image": "https://www.asfinag.at/webcams/cam_salzburg_a10_katschberg.jpg",
+        "location": "St. Michael im Lungau (Salzburg side)",
+        "source": "ASFINAG — Austrian Motorway & Highway Traffic Center",
+        "updateIntervalMs": 180000,
+        "officialUrl": "https://www.asfinag.at",
+        "direction": "Looking South towards Katschberg Pass ascent"
+      },
+      {
+        "id": "katschberg-03",
+        "title": "Rennweg am Katschberg B99 Southern Highway Entrance (1,140 m)",
+        "image": "https://www.oeamtc.at/verkehrsservice/webcams/kaernten_b99_rennweg.jpg",
+        "location": "Rennweg am Katschberg (Carinthia side)",
+        "source": "ÖAMTC — Österreichischer Automobil-, Motorrad- und Touring Club",
+        "updateIntervalMs": 300000,
+        "officialUrl": "https://www.oeamtc.at",
+        "direction": "Looking North up the B99 pass road"
+      },
+      {
+        "id": "katschberg-04",
+        "title": "Aineck Summit Weather & Snow Conditions Panorama (2,220 m)",
+        "image": "https://webtv.feratel.com/webtv/?cam=5141&design=v3&project=katschberg&lg=de",
+        "location": "Aineck Peak (Katschberg Ski Resort)",
+        "source": "Bergfex & Katschberg Cable Cars",
+        "updateIntervalMs": 600000,
+        "officialUrl": "https://www.bergfex.at/katschberg/",
+        "direction": "360° Panorama over Hohe Tauern & Nockberge"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "ÖAMTC (Österreichischer Automobil-, Motorrad- und Touring Club)",
+        "url": "https://www.oeamtc.at",
+        "type": "Official Austrian Traffic & Highway Portal"
+      },
+      {
+        "name": "ASFINAG (Autobahnen- und Schnellstraßen-Finanzierungs-AG)",
+        "url": "https://www.asfinag.at",
+        "type": "Official Motorway & Infrastructure Authority"
+      },
+      {
+        "name": "GeoSphere Austria (ZAMG Weather Service)",
+        "url": "https://www.geosphere.at",
+        "type": "Official National Meteorological Institute"
+      },
+      {
+        "name": "Katschberg Tourismus GmbH",
+        "url": "https://www.katschberg.at",
+        "type": "Regional Tourist Information Board"
+      },
+      {
+        "name": "LivePassWatch Verification Methodology",
+        "url": "/methodology",
+        "type": "Internal Verification Protocol"
+      }
+    ],
+    "routeDetails": {
+      "distanceKm": 16.5,
+      "distanceMiles": 10.3,
+      "duration": "20–25 minutes (Rennweg to St. Michael im Lungau)",
+      "origin": "Rennweg am Katschberg (Carinthia, 1,140 m)",
+      "destination": "St. Michael im Lungau (Salzburg, 1,070 m)",
+      "waypoints": [
+        "Rennweg am Katschberg (1,140 m) — Southern Ascent Start",
+        "Katschberg-B99 Hairpin Ramps (up to 15% gradient)",
+        "Katschberghöhe Summit (1,641 m) — Border Marker & Village",
+        "Aineck Cable Car Base Station (1,640 m)",
+        "St. Michael im Lungau (1,070 m) — Northern Descent Terminus"
+      ]
+    },
+    "distancesTable": [
+      { "location": "St. Michael im Lungau (Salzburg)", "distance": "6 km (3.7 mi)", "route": "B99 North", "notes": "Northern base town with A10 motorway junction" },
+      { "location": "Rennweg am Katschberg (Carinthia)", "distance": "10.5 km (6.5 mi)", "route": "B99 South", "notes": "Southern base town in Lieser valley" },
+      { "location": "Spittal an der Drau (Carinthia)", "distance": "42 km (26 mi)", "route": "B99 & A10 South", "notes": "Major Carinthian regional hub & train station" },
+      { "location": "Tamsweg (Lungau District HQ)", "distance": "22 km (13.7 mi)", "route": "B96 East from St. Michael", "notes": "Main commercial center of Salzburg Lungau" },
+      { "location": "Salzburg City", "distance": "115 km (71.5 mi)", "route": "A10 Tauern Autobahn North", "notes": "State capital & international airport" },
+      { "location": "Villach (Carinthia)", "distance": "78 km (48.5 mi)", "route": "A10 Tauern Autobahn South", "notes": "Southern Austrian rail & road gateway" }
+    ],
+    "quickFacts": {
+      "state": "Carinthia & Salzburg, Austria",
+      "mountainRange": "Hohe Tauern / Gurktal Alps (Nockberge)",
+      "elevationSummary": "1,641 m / 5,384 ft — Major Toll-Free Alpine Pass",
+      "connects": "Rennweg am Katschberg (Kärnten) ↔ St. Michael im Lungau (Salzburg)",
+      "nearestTown": "St. Michael im Lungau (6 km north) / Rennweg (10.5 km south)",
+      "roadType": "Paved two-lane Federal Highway (B99 Katschberg Straße) — Max 15% incline",
+      "bestTime": "Year-round transit; summer hiking & winter ski resort season",
+      "highlight": "Toll-free A10 bypass, 1,641 m summit village, Katschberg-Aineck ski resort"
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Ganzjährig geöffnet)",
+      "typicalReopening": "Open Year-Round (Winterreifenpflicht Nov 1 – Apr 15)",
+      "description": "Katschberg Pass (B99) is maintained open 365 days a year as a crucial alternative route to the A10 Katschberg Autobahn Tunnel. During winter, Austrian law mandates winter tires (M+S/3PMSF) from November 1 to April 15. In severe snowstorms, temporary snow chain requirements (Schneekettenpflicht) or heavy truck restrictions may be implemented by ÖAMTC and local traffic authorities."
+    },
+    "narrativeSections": [
+      {
+        "title": "Katschberg Pass — Historic Alpine Crossing between Carinthia & Salzburg",
+        "content": "Katschberg Pass (Katschbergpass, 1,641 m / 5,384 ft) forms the natural boundary between the Austrian federal states of Carinthia (Kärnten) and Salzburg. Situated between the Hohe Tauern range to the west and the Gurktal Alps (Nockberge) to the east, the pass road (B99 Katschberg Straße) has carried travelers across the Alps since Roman times. Today, the 16.5 km road features steep 15% gradients, sweeping hairpins, and stunning views of the Lieser Valley and Lungau basin."
+      },
+      {
+        "title": "Toll-Free A10 Bypass & Year-Round Winter Reliability",
+        "content": "Running directly over the 5.4 km A10 Katschberg Autobahn Tunnel, the B99 pass road serves as an indispensable toll-free bypass during peak holiday travel periods. Thanks to continuous maintenance by Carinthia and Salzburg road maintenance depots (Straßenmeisterei), Katschberg Pass remains open throughout the winter season, serving both commuters and visitors to the top-tier Katschberg-Aineck ski area."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Ist der Katschbergpass heute geöffnet? / Is Katschberg Pass open today?",
+        "answer": "Ja, der Katschbergpass (B99 Katschberg Straße, 1.641 m) ist ganzjährig für den gesamten Verkehr geöffnet. Von 1. November bis 15. April gilt in Österreich die gesetzliche Winterreifenpflicht. Bei starkem Schneefall kann vorübergehend Schneekettenpflicht angeordnet werden. / Yes, Katschberg Pass (1,641 m) on the B99 is open year-round to all vehicular traffic."
+      },
+      {
+        "question": "Wie sind die aktuellen Straßenzustände am Katschbergpass? / Katschberg Pass road conditions",
+        "answer": "Die B99 Katschberg Straße ist gut ausgebaut und asphaltiert. Im Winter sorgen der Straßenverkehrsdienst Kärnten und Salzburg mit Schneepflügen für freie Fahrbahnen. Bei Winterwetter ist auf Steigungen bis zu 15% vorausschauendes Fahren erforderlich. / The B99 road is well-paved with up to 15% inclines. Winter maintenance ensures clean asphalt; winter tires are mandatory Nov 1–Apr 15."
+      },
+      {
+        "question": "Wann ist der Katschbergpass im Winter gesperrt? / When does Katschberg Pass close for winter?",
+        "answer": "Der Katschbergpass hat KEINE reguläre Wintersperre. Die B99 bleibt das ganze Jahr über geöffnet. Kurzzeitige Sperren gibt es nur bei extremen Blitzeinbrüchen, Lawinenwarnungen oder schweren Schneestürmen. / Katschberg Pass does NOT close for winter; it is maintained open 365 days a year as a key regional transit route."
+      },
+      {
+        "question": "Gibt es am Katschbergpass eine Live-Webcam? / Katschberg Pass live webcam",
+        "answer": "Ja! Auf LivePassWatch finden Sie Live-Webcams der Katschberghöhe (1.641 m), der A10-Mautstelle St. Michael im Lungau, Rennweg sowie vom Aineck-Gipfel (2.220 m), bereitgestellt von Feratel, ÖAMTC und ASFINAG. / Live webcams for Katschberg summit (1,641 m), Rennweg, and A10 portals are available on LivePassWatch."
+      },
+      {
+        "question": "Ist der Katschbergpass mautfrei? / Is Katschberg Pass toll-free?",
+        "answer": "JA! Die B99 Katschberg Straße über den Pass ist zu 100% MAUTFREI. Die Sondermaut betrifft nur den A10 Katschberg-Autobahntunnel. Über die B99 können Sie den kostenpflichtigen Tunnel kostenfrei umfahren. / Yes! Driving over the B99 Katschberg Pass is completely free, making it a popular toll-free alternative to the A10 Katschberg Tunnel."
+      },
+      {
+        "question": "Wie hoch ist der Katschbergpass? / Katschberg Pass elevation & height",
+        "answer": "Die Passhöhe des Katschbergpasses liegt auf 1.641 Metern über dem Meeresspiegel (5.384 ft). / Katschberg Pass summit stands at an elevation of 1,641 metres (5,384 feet) above sea level."
+      },
+      {
+        "question": "Gilt am Katschberg Schneekettenpflicht? / Are snow chains required on Katschberg Pass?",
+        "answer": "In Österreich gilt vom 1. November bis 15. April witterungsabhängige Winterreifenpflicht (M+S/3PMSF). Bei extremen Neuschneemengen wird an den Anstiegstafeln in Rennweg und St. Michael Schneekettenpflicht ('Schneeketten vorgeschrieben') aktiviert. / Winter tires are mandatory Nov 1–Apr 15. Snow chains are mandatory when posted during heavy snowfall."
+      },
+      {
+        "question": "Wie steil ist die Katschberg Straße (B99)? / How steep is Katschberg Pass road?",
+        "answer": "Die B99 weist auf der Kärntner Seite (Rennweg) und der Salzburger Seite (St. Michael) maximale Steigungen von 15% auf. Die Straße ist gut ausgebaut und auch für Wohnmobile und Gespanne geeignet. / The B99 pass road has maximum gradients of 15% on both the southern and northern ramps."
+      },
+      {
+        "question": "Welche Orte verbindet der Katschbergpass? / Which towns does Katschberg Pass connect?",
+        "answer": "Der Pass verbindet Rennweg am Katschberg im Kärntner Liesertal mit St. Michael im Lungau im Land Salzburg. / The pass connects Rennweg am Katschberg in Carinthia with St. Michael im Lungau in Salzburg state."
+      },
+      {
+        "question": "Gibt es Schnee- und Wetterberichte für den Katschberg? / Katschberg snow & weather report",
+        "answer": "Ja, LivePassWatch aktualisiert alle 15 Minuten die Wetterwerte, Temperaturen und Schneehöhen am Katschberg, verifiziert von GeoSphere Austria (ZAMG) und ÖAMTC. / Real-time weather, temperatures, and snow conditions are updated every 15 minutes on LivePassWatch."
+      }
+    ],
+    "customSeo": {
+      "title": "Katschberg Pass Live Status, Road Conditions & Webcam — Katschbergpass (1.641 m) Austria",
+      "description": "Live Katschberg Pass (Katschbergpass, 1,641 m / 5,384 ft) road conditions, opening status, webcams, snow depth & weather on B99 Katschberg Straße. Verified ÖAMTC & ASFINAG updates.",
+      "h1": "Katschberg Pass (Katschbergpass, 1.641 m) : Live Straßenzustand, Webcam & Wetter"
+    },
+    "searchKeywords": [
+      "Katschberg Pass opening date",
+      "Katschberg Pass is open",
+      "Katschberg Pass road conditions",
+      "Katschberg Pass road status",
+      "Katschberg Pass pass status report",
+      "when does Katschberg Pass open",
+      "Katschberg Pass closed",
+      "Katschberg Pass is closed",
+      "Katschberg Pass is it open today",
+      "is Katschberg Pass closed today",
+      "Katschberg Pass webcam",
+      "Katschberg Pass live webcam",
+      "when does Katschberg Pass close for winter",
+      "Katschberg Pass map",
+      "is Katschberg Pass open right now",
+      "Katschberg Pass weather today",
+      "Katschberg Pass snow",
+      "Katschberg Pass snow depth",
+      "Katschberg Pass snow conditions",
+      "Katschberg Pass elevation",
+      "Katschberg Pass open",
+      "Katschberg Pass when will open",
+      "Katschberg Pass passes open",
+      "Katschberg Pass closures today",
+      "is Katschberg Pass open",
+      "Katschbergpass",
+      "Katschbergpass offen",
+      "Katschbergpass Sperre",
+      "Katschberg Straße B99",
+      "Katschberg Straßenzustand",
+      "Katschberg Webcam live",
+      "Katschberg Schneehöhe",
+      "Katschberg Wintersperre",
+      "Katschberg Pass höhe",
+      "Katschberg mautfrei B99"
+    ]
+  },
+  {
+    "id": "grossglockner-high-alpine-road",
+    "slug": "grossglockner-high-alpine-road",
+    "name": "Grossglockner High Alpine Road (Großglockner Hochalpenstraße)",
+    "country": "Austria",
+    "countryCode": "AUT",
+    "continent": "Europe",
+    "state": "Salzburg & Carinthia",
+    "highway": "Großglockner Straße (B107)",
+    "elevationFt": 8215,
+    "elevationM": 2504,
+    "coordinates": {
+      "lat": 47.0833,
+      "lng": 12.8417
+    },
+    "status": "OPEN",
+    "statusDetail": "Grossglockner High Alpine Road is open to all traffic today for the summer season (operating hours: 06:00–20:00, last entry 19:15). Hochtor Pass Tunnel (2,504 m) and Kaiser-Franz-Josefs-Höhe (2,369 m) are fully accessible. Night closure enforced 21:30–05:00.",
+    "lastUpdated": "5 minutes ago",
+    "description": "Grossglockner High Alpine Road (Großglockner Hochalpenstraße, 2,504 m / 8,215 ft at Hochtor Tunnel) is Austria's premier scenic high-mountain road, connecting Fusch an der Großglocknerstraße in Salzburg with Heiligenblut am Großglockner in Carinthia. Winding through Hohe Tauern National Park across 48 km with 36 hairpin turns, the road leads directly beneath Austria's highest peak, the Grossglockner (3,798 m), and the Pasterze Glacier.",
+    "image": "/grossglockner-high-alpine-road.webp",
+    "isSeasonal": true,
+    "weather": {
+      "tempF": 52,
+      "tempC": 11,
+      "condition": "Sunny Alpine Skies with Mountain Breeze",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Snow-free road surface (Summer season)"
+    },
+    "wind": {
+      "speedKmh": 24,
+      "speedMph": 15,
+      "direction": "WNW",
+      "description": "Brisk high-mountain gusts at Edelweißspitze and Hochtor"
+    },
+    "roadCondition": "Paved high-grade Austrian mountain asphalt across all 48 km. 36 engineered hairpin bends. Maintained by GROHAG (Großglockner Hochalpenstraßen AG). Winter closure active from early November to early May due to snow depths exceeding 10 meters. Spring snow clearance utilizes historic Wallack rotary snowplows.",
+    "chainRequirement": "No chains required during summer season (May–October). Closed during winter.",
+    "officialSource": "https://www.grossglockner.at",
+    "nearbyPasses": [
+      {
+        "id": "katschberg-pass",
+        "slug": "katschberg-pass",
+        "name": "Katschberg Pass",
+        "country": "Austria",
+        "state": "Carinthia & Salzburg",
+        "highway": "B99",
+        "status": "OPEN",
+        "elevationFt": 5384,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 85
+      },
+      {
+        "id": "stelvio-pass",
+        "slug": "stelvio-pass",
+        "name": "Stelvio Pass",
+        "country": "Italy",
+        "state": "South Tyrol & Lombardy",
+        "highway": "SS38",
+        "status": "OPEN",
+        "elevationFt": 9045,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 260
+      }
+    ],
+    "overview": {
+      "openedYear": "1935 (Engineered by Franz Wallack)",
+      "lengthKm": 48.0,
+      "lengthMiles": 29.8,
+      "annualSnowfallM": "8–12 m (heavy winter accumulation)",
+      "annualSnowfallIn": "315–472 in",
+      "summary": "The Grossglockner High Alpine Road (Großglockner Hochalpenstraße, 2,504 m / 8,215 ft) is one of Europe's most famous and spectacular mountain drives, passing through Hohe Tauern National Park in Austria. Designed by engineer Franz Wallack and opened in 1935, the 48 km highway features 36 hairpin turns, reaching 2,504 m at the Hochtor summit tunnel and 2,571 m at Edelweißspitze. Highlights include the Kaiser-Franz-Josefs-Höhe visitor centre (2,369 m) overlooking the Pasterze Glacier and Grossglockner peak (3,798 m). Managed by GROHAG, the road is open seasonally from early May to early November."
+    },
+    "cameras": [
+      {
+        "id": "grossglockner-01",
+        "title": "Kaiser-Franz-Josefs-Höhe Panorama & Pasterze Glacier (2,369 m)",
+        "image": "https://panodata.panomax.com/cams/7/recent_reduced.jpg",
+        "streamUrl": "https://grossglockner.panomax.com",
+        "location": "Kaiser-Franz-Josefs-Höhe (Carinthia side, overlooking Pasterze Glacier & Grossglockner Summit)",
+        "source": "GROHAG & Nationalpark Hohe Tauern (Panomax 360° HD)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://grossglockner.panomax.com",
+        "direction": "Looking West toward Grossglockner summit (3,798 m) & Pasterze Glacier"
+      },
+      {
+        "id": "grossglockner-02",
+        "title": "Edelweißspitze Summit 360° Panorama (2,571 m)",
+        "image": "https://panodata.panomax.com/cams/17/recent_reduced.jpg",
+        "streamUrl": "https://edelweissspitze.panomax.com",
+        "location": "Edelweißspitze — Highest Accessible Point of the High Alpine Road (2,571 m)",
+        "source": "GROHAG & Edelweißhütte (Panomax 360° 4K)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://edelweissspitze.panomax.com",
+        "direction": "360° High-Alpine panorama over 30 summits exceeding 3,000 meters"
+      },
+      {
+        "id": "grossglockner-03",
+        "title": "Fuscher Törl Memorial & Pass View (2,428 m)",
+        "image": "https://panodata.panomax.com/cams/16/recent_reduced.jpg",
+        "streamUrl": "https://fuschertoerl.panomax.com",
+        "location": "Fuscher Törl — North Ramp Memorial & Pass Lookout (2,428 m)",
+        "source": "GROHAG Traffic Operations (Panomax 360°)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://fuschertoerl.panomax.com",
+        "direction": "Looking across northern ascent serpentines & Ferleiten valley"
+      },
+      {
+        "id": "grossglockner-04",
+        "title": "Grossglockner Summit (3,798 m) from Adlersruhe (3,454 m)",
+        "image": "https://img.foto-webcam.eu/webcam/adlersruhe/current/640.jpg",
+        "streamUrl": "https://www.foto-webcam.eu/webcam/adlersruhe/",
+        "location": "Erzherzog-Johann-Hütte — Highest mountain refuge in Austria",
+        "source": "Foto-Webcam.eu & Österreichischer Alpenverein (ÖAV)",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://www.foto-webcam.eu/webcam/adlersruhe/",
+        "direction": "Direct view of Grossglockner summit pyramid (3,798 m)"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "GROHAG (Großglockner Hochalpenstraßen AG)",
+        "url": "https://www.grossglockner.at",
+        "type": "Official Highway Authority & Toll Operator"
+      },
+      {
+        "name": "ÖAMTC (Österreichischer Automobil-, Motorrad- und Touring Club)",
+        "url": "https://www.oeamtc.at",
+        "type": "Official Traffic Advisory Authority"
+      },
+      {
+        "name": "GeoSphere Austria (ZAMG Weather Service)",
+        "url": "https://www.geosphere.at",
+        "type": "Official National Meteorological Institute"
+      },
+      {
+        "name": "Nationalpark Hohe Tauern",
+        "url": "https://hohetauern.at",
+        "type": "Official National Park Authority"
+      },
+      {
+        "name": "LivePassWatch Verification Methodology",
+        "url": "/methodology",
+        "type": "Internal Verification Protocol"
+      }
+    ],
+    "routeDetails": {
+      "distanceKm": 48.0,
+      "distanceMiles": 29.8,
+      "duration": "45–60 minutes driving time (Fusch to Heiligenblut)",
+      "origin": "Ferleiten Toll Station / Fusch (Salzburg, 1,145 m)",
+      "destination": "Heiligenblut am Großglockner (Carinthia, 1,288 m)",
+      "waypoints": [
+        "Ferleiten Northern Toll Gate (1,145 m) — Northern Entrance",
+        "Piffkar Visitor Center (1,620 m)",
+        "Fuscher Törl (2,428 m) — Memorial Tower",
+        "Edelweißspitze Spur Road (2,571 m) — Highest Point",
+        "Hochtor Pass Tunnel (2,504 m) — Pass Height & Border",
+        "Schöneck Botanical Path (1,950 m)",
+        "Kaiser-Franz-Josefs-Höhe Spur (2,369 m) — Glacier Viewpoint",
+        "Heiligenblut Southern Toll Gate (1,301 m) — Carinthia Exit"
+      ]
+    },
+    "distancesTable": [
+      { "location": "Zell am See (Salzburg)", "distance": "27 km (16.8 mi)", "route": "B107 North via Fusch", "notes": "Major lakeside resort town & rail connection" },
+      { "location": "Fusch an der Großglocknerstraße", "distance": "14 km (8.7 mi)", "route": "B107 North from Ferleiten", "notes": "Northern village before toll gate" },
+      { "location": "Heiligenblut am Großglockner", "distance": "15 km (9.3 mi)", "route": "B107 South from Hochtor", "notes": "Historic pilgrimage village in Carinthia" },
+      { "location": "Lienz (East Tyrol)", "distance": "48 km (29.8 mi)", "route": "B107 South through Mölltal", "notes": "Regional city at southern foot of the Alps" },
+      { "location": "Salzburg City", "distance": "105 km (65.2 mi)", "route": "B311 & A10 North", "notes": "State capital & international airport" },
+      { "location": "Innsbruck (Tyrol)", "distance": "165 km (102 mi)", "route": "B168 & B165 via Gerlos", "notes": "Tyrolean regional capital" }
+    ],
+    "quickFacts": {
+      "state": "Salzburg & Carinthia, Austria",
+      "mountainRange": "Hohe Tauern (Glockner Group)",
+      "elevationSummary": "2,504 m / 8,215 ft (Hochtor) | 2,571 m (Edelweißspitze)",
+      "connects": "Fusch an der Großglocknerstraße (Salzburg) ↔ Heiligenblut (Kärnten)",
+      "nearestTown": "Fusch (14 km north) / Heiligenblut (15 km south)",
+      "roadType": "Paved two-lane Federal Scenic Highway (B107) — 36 hairpin bends",
+      "bestTime": "Early June to late September (morning departures recommended)",
+      "highlight": "Views of Grossglockner (3,798 m) & Pasterze Glacier, 36 hairpins, UNESCO heritage route"
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Early November (or with first major autumn snowstorm)",
+      "typicalReopening": "Early May (after spring Wallack snowblower clearing)",
+      "description": "Grossglockner High Alpine Road closes for winter from early November to early May due to extreme high-alpine snowfall exceeding 10 to 12 metres across Hochtor and Fuscher Törl. Temperatures drop below -20°C. Spring snow clearing is a world-famous operation led by GROHAG engineers using historic Wallack rotary snowplows to cut through massive snow walls."
+    },
+    "narrativeSections": [
+      {
+        "title": "Grossglockner High Alpine Road — Masterpiece of Alpine Engineering",
+        "content": "The Grossglockner High Alpine Road (Großglockner Hochalpenstraße, 2,504 m / 8,215 ft) is Austria's most famous scenic road trip and an alpine engineering landmark. Designed by Carinthian engineer Franz Wallack and constructed between 1930 and 1935, the 48 km route negotiates 36 hairpin turns across the Hohe Tauern National Park. The road ascends from Ferleiten (1,145 m) in Salzburg, crosses the Hochtor Tunnel summit at 2,504 m, and descends to the pilgrimage village of Heiligenblut in Carinthia."
+      },
+      {
+        "title": "Kaiser-Franz-Josefs-Höhe & Pasterze Glacier",
+        "content": "A highlights branch road leads to the Kaiser-Franz-Josefs-Höhe (2,369 m), named after Emperor Franz Joseph I who visited in 1856. Standing on the observation terrace, visitors enjoy an unrivaled panoramic view of Austria's highest peak, the Grossglockner (3,798 m), and the 8 km long Pasterze Glacier. The area features the Wilhelm Swarovski Observatory, marmot watching habitats, and interactive high-alpine exhibitions managed by GROHAG and Nationalpark Hohe Tauern."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Ist die Großglockner Hochalpenstraße heute geöffnet? / Is Grossglockner High Alpine Road open today?",
+        "answer": "Ja! Die Großglockner Hochalpenstraße (B107) ist in der Sommersaison (Anfang Mai bis Anfang November) täglich von 06:00 bis 20:00 Uhr geöffnet (letzte Einfahrt 19:15 Uhr). Aktuelle Tages-Sperren oder Wetterwarnungen finden Sie auf LivePassWatch. / Yes! Grossglockner High Alpine Road is open during its summer season (May to early November)."
+      },
+      {
+        "question": "Wann öffnet die Großglockner Hochalpenstraße? Öffnungsdatum 2026 / Grossglockner High Alpine Road opening date 2026",
+        "answer": "Die Großglockner Hochalpenstraße öffnet jedes Jahr Anfang Mai nach Abschluss der mehrwöchigen Schneeräumung mit den Wallack-Rotationspflügen. Für die Saison 2026 ist die Straße seit Anfang Mai befahrbar. / Opening date is typically early May after spring snow clearing."
+      },
+      {
+        "question": "Wie sind die aktuellen Straßenzustände am Großglockner? / Grossglockner road conditions today",
+        "answer": "Die 48 km lange Panoramastraße ist voll durchgehend asphaltiert und in hervorragendem Zustand. Im Frühjahr und Herbst kann es in den Morgenstunden am Hochtor (2.504 m) zu Reif- oder Eisbildung kommen. / The 48 km scenic highway is fully paved in excellent condition."
+      },
+      {
+        "question": "Wann schließt die Großglockner Hochalpenstraße für den Winter? / When does Grossglockner close for winter?",
+        "answer": "Die Großglockner Hochalpenstraße geht Anfang November (oder bei den ersten schweren Wintereinbrüchen Ende Oktober) in die Wintersperre, die bis Anfang Mai dauert. / Winter closure takes effect in early November until early May."
+      },
+      {
+        "question": "Wie viel kostet die Maut auf der Großglockner Hochalpenstraße? / Grossglockner toll price",
+        "answer": "Die Tageskarte für PKW kostet € 43,00, für Motorräder € 33,00 (Stand 2026). Ab 18:00 Uhr gilt ein ermäßigter Abendtarif. Elektrofahrzeuge erhalten Sonderkonditionen. / Day ticket is €43.00 per car and €33.00 per motorcycle."
+      },
+      {
+        "question": "Gibt es am Großglockner eine Live-Webcam? / Grossglockner live webcam",
+        "answer": "Ja! Auf LivePassWatch finden Sie Live-Webcams von der Kaiser-Franz-Josefs-Höhe (2.369 m), der Edelweißspitze (2.571 m), dem Hochtor-Pass (2.504 m) und der Mautstelle Ferleiten. / Live webcams for Kaiser-Franz-Josefs-Höhe, Edelweißspitze, and Hochtor are updated on LivePassWatch."
+      },
+      {
+        "question": "Wie hoch ist die Großglockner Hochalpenstraße? / Grossglockner elevation & height",
+        "answer": "Die Höchststelle der Straße liegt an der Edelweißspitze auf 2.571 m. Der Scheitelpunkt des Pass-Tunnels am Hochtor befindet sich auf 2.504 m über dem Meeresspiegel. Der Gipfel des Großglockners ragt 3.798 m auf. / The road reaches 2,571 m at Edelweißspitze and 2,504 m at Hochtor Tunnel."
+      },
+      {
+        "question": "Gibt es Nachtsperren am Großglockner? / Is Grossglockner closed at night?",
+        "answer": "JA. Aus Naturschutzgründen im Nationalpark Hohe Tauern gilt eine nächtliche Sperre: Im Juni/Juli/August von 21:30 bis 05:00 Uhr (letzte Einfahrt 20:30 Uhr), im Mai, September und Oktober von 20:30 bis 06:00 Uhr. / YES. Night closure is enforced for wildlife conservation."
+      },
+      {
+        "question": "Wie viele Kehren hat die Großglockner Hochalpenstraße? / How many hairpins on Grossglockner?",
+        "answer": "Die 48 km lange Strecke verfügt über insgesamt 36 durchnummerierte Kehren und Steigungen von durchschnittlich 9% bis maximal 12%. / The road features 36 numbered hairpin turns with average 9% inclines."
+      },
+      {
+        "question": "Wie ist das aktuelle Wetter am Großglockner? / Grossglockner weather today",
+        "answer": "Wetter, Temperaturen und Schneehöhen am Großglockner werden auf LivePassWatch alle 15 Minuten basierend auf GeoSphere Austria (ZAMG) und GROHAG-Messungen aktualisiert. / Weather and snow depth are updated every 15 minutes on LivePassWatch."
+      }
+    ],
+    "customSeo": {
+      "title": "Grossglockner High Alpine Road Road Status & Live Webcams — Is It Open Today? (2026 Opening Date & Road Conditions)",
+      "description": "Check live Grossglockner High Alpine Road status, road conditions, 2026 opening date & live webcams (Großglockner Hochalpenstraße, 2,504 m). Verified GROHAG & ÖAMTC pass status report.",
+      "h1": "Grossglockner High Alpine Road Road Status & Live Webcams (Großglockner Hochalpenstraße, 2,504 m)"
+    },
+    "searchKeywords": [
+      "Grossglockner High Alpine Road opening date",
+      "Grossglockner High Alpine Road is open",
+      "Grossglockner High Alpine Road road conditions",
+      "Grossglockner High Alpine Road road status",
+      "Grossglockner High Alpine Road pass status report",
+      "when does Grossglockner High Alpine Road open",
+      "Grossglockner High Alpine Road closed",
+      "Grossglockner High Alpine Road is closed",
+      "Grossglockner High Alpine Road is it open today",
+      "is Grossglockner High Alpine Road closed today",
+      "Grossglockner High Alpine Road webcam",
+      "Grossglockner High Alpine Road live webcam",
+      "when does Grossglockner High Alpine Road close for winter",
+      "Grossglockner High Alpine Road map",
+      "is Grossglockner High Alpine Road open right now",
+      "Grossglockner High Alpine Road weather today",
+      "Grossglockner High Alpine Road snow",
+      "Grossglockner High Alpine Road snow depth",
+      "Grossglockner High Alpine Road snow conditions",
+      "Grossglockner High Alpine Road elevation",
+      "Grossglockner High Alpine Road open",
+      "Grossglockner High Alpine Road when will open",
+      "Grossglockner High Alpine Road passes open",
+      "Grossglockner High Alpine Road closures today",
+      "Großglockner Hochalpenstraße",
+      "Großglockner offen",
+      "Großglockner Öffnungszeiten",
+      "Großglockner Mautstelle",
+      "Großglockner Maut",
+      "Hochtor Pass 2504m",
+      "Edelweißspitze",
+      "Kaiser Franz Josefs Höhe webcam",
+      "Großglockner Schneeräumung",
+      "Großglockner Wintersperre"
+    ]
   }
 ];
 
 export function getPassBySlug(slug: string): MountainPass | undefined {
+
+
   if (!slug) return undefined;
   const clean = slug.toLowerCase().trim();
   return passesData.find(
@@ -12075,6 +13180,9 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Valais' || passSlug === 'simplon-pass') return 'valais';
   if (state === 'Maramureș & Suceava' || passSlug === 'prislop-pass') return 'maramures-suceava';
   if (state === 'Gorenjska & Goriška' || state === 'Upper Carniola & Gorizia' || passSlug === 'vrsic-pass') return 'gorenjska-goriska';
+  if (state === 'Goriška & Bovec (Posočje)' || passSlug === 'mangart-saddle') return 'gorika-bovec';
+  if (state === 'Carinthia & Salzburg' || state === 'Kärnten & Salzburg' || passSlug === 'katschberg-pass') return 'carinthia-salzburg';
+  if (state === 'Salzburg & Carinthia' || state === 'Salzburg & Kärnten' || passSlug === 'grossglockner-high-alpine-road' || passSlug === 'grossglockner') return 'salzburg-carinthia';
   return cleanSlug(state);
 }
 
