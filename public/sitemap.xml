@@ -50,7 +50,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Canonical Mountain Pass Detail Pages (47 passes) -->
+  <!-- Canonical Mountain Pass Detail Pages (48 passes) -->
   <url>
     <loc>https://www.livepasswatch.info/passes/united-states/washington/snoqualmie-pass</loc>
     <lastmod>2026-09-03</lastmod>
@@ -329,6 +329,12 @@
   </url>
   <url>
     <loc>https://www.livepasswatch.info/passes/united-states/montana/lolo-pass</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/canada/british-columbia/kicking-horse-pass</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>

@@ -141,6 +141,50 @@ const baralachaHindiFaqs = [
 
 
 
+
+const kickingHorseIndigenousFaqs = [
+  {
+    question: "Is Kicking Horse Pass open today? (Kicking Horse Pass is open / Kicking Horse Pass open / is Kicking Horse Pass open right now)",
+    answer: "Yes, Kicking Horse Pass (elevation 1,627 m / 5,338 ft) on the Trans-Canada Highway (Highway 1) across the British Columbia/Alberta border is currently OPEN to all vehicular traffic. Driving lanes are bare and dry with good alpine visibility. Maintenance crews from DriveBC, 511 Alberta, and Parks Canada patrol and plow the route 24 hours a day. Check LivePassWatch for live summit webcams before traveling."
+  },
+  {
+    question: "What is the official Kicking Horse Pass opening date for 2026? (Kicking Horse Pass opening date / when does Kicking Horse Pass open / Kicking Horse Pass when will open)",
+    answer: "Kicking Horse Pass does NOT have a seasonal opening date because it is an essential transcontinental commercial corridor maintained open 365 days a year. If temporary emergency closures occur during active Rocky Mountain winter blizzards or avalanche bombing, the pass typically reopens within 2 to 6 hours once plows clear the roadway."
+  },
+  {
+    question: "What are the current Kicking Horse Pass road conditions and road status? (Kicking Horse Pass road conditions / Kicking Horse Pass road status / Kicking Horse Pass pass status report)",
+    answer: "Current road conditions across Kicking Horse Pass are bare and dry with clear travel lanes. During Rocky Mountain winter storms, conditions can quickly turn to compact snow, slush, or black ice. The newly four-laned Kicking Horse Canyon section east of Golden provides wide shoulders, viaducts, and divided barriers, significantly improving winter safety."
+  },
+  {
+    question: "When does Kicking Horse Pass close for winter? (when does Kicking Horse Pass close for winter / Kicking Horse Pass closed / Kicking Horse Pass is closed)",
+    answer: "Kicking Horse Pass does NOT close for winter. As Canada's principal Highway 1 corridor through the Rocky Mountains, road maintenance contractors and Parks Canada operate heavy snow equipment around the clock to keep the pass open. Only brief temporary safety closures occur during extreme winter blizzards or avalanche control."
+  },
+  {
+    question: "Is Kicking Horse Pass closed today or are there closures today? (is Kicking Horse Pass closed today / Kicking Horse Pass closures today / Kicking Horse Pass passes open)",
+    answer: "No, Kicking Horse Pass is NOT closed today; it is open for full travel in both directions between British Columbia and Alberta. If an incident, accident, or avalanche closure occurs, DriveBC, 511 Alberta, and LivePassWatch issue immediate travel advisories."
+  },
+  {
+    question: "Are there live webcams at Kicking Horse Pass? (Kicking Horse Pass webcam / Kicking Horse Pass live webcam / Kicking Horse Pass summit camera)",
+    answer: "Yes! LivePassWatch streams verified live webcams operated by DriveBC (BC Ministry of Transportation). Feeds include Cam 186 (Hwy 1 at BC/AB Border looking West), Cam 187 (looking East toward Lake Louise), Cam 277 (Yoho National Park near Field), and Cams 188 & 851 (Kicking Horse Canyon viaducts east of Golden). Images update automatically every minute."
+  },
+  {
+    question: "What is the elevation of Kicking Horse Pass? (Kicking Horse Pass elevation)",
+    answer: "Kicking Horse Pass sits at an official elevation of 1,627 meters (5,338 feet) above sea level on the Continental Divide, forming the provincial border between British Columbia and Alberta within Yoho and Banff National Parks."
+  },
+  {
+    question: "What is the Kicking Horse Pass weather today, snow depth, and snow conditions? (Kicking Horse Pass weather today / Kicking Horse Pass snow / Kicking Horse Pass snow depth / Kicking Horse Pass snow conditions)",
+    answer: "Current summit weather features pleasant alpine temperatures around 52°F (11°C) with dry road surfaces. The pass receives 300 to 450 inches (7.6 to 11.4 meters) of annual snowfall. Live winter snow depth telemetry and avalanche conditions are monitored continuously by Avalanche Canada and Parks Canada."
+  },
+  {
+    question: "Where can I view the Kicking Horse Pass map and route details? (Kicking Horse Pass map)",
+    answer: "Kicking Horse Pass is located on the Trans-Canada Highway 1 at GPS coordinates 51.4500° N, 116.4278° W. It is situated 83.7 km (52 miles) east of Golden, BC, and 12 km (7.5 miles) west of Lake Louise, Alberta. You can view interactive satellite maps, elevation charts, and rest area waypoints on LivePassWatch."
+  },
+  {
+    question: "Do I need winter tires or chains on Kicking Horse Pass?",
+    answer: "Yes. Under British Columbia regulations, winter-rated tires (3PMSF mountain snowflake or M+S with minimum 3.5 mm tread depth) are legally mandatory on Highway 1 from October 1 to April 30. Commercial trucks over 11,794 kg must carry tire chains and be prepared to fit them when required."
+  }
+];
+
 const loloIndigenousFaqs = [
   {
     question: "Is Lolo Pass open today? (Lolo Pass is open / Lolo Pass open / is Lolo Pass open right now)",
@@ -979,6 +1023,89 @@ export const PassDetailPage: React.FC = () => {
               >
                 <Globe size={14} />
                 <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* Bilingual Language Switcher for Kicking Horse Pass */}
+        {pass.slug === 'kicking-horse-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(37, 99, 235, 0.06) 100%)',
+            border: '1px solid rgba(239, 68, 68, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#991B1B' }}>
+              <Globe size={18} color="#DC2626" />
+              <span>
+                {pageLang === 'fr'
+                  ? '🇨🇦 Version officielle canadienne française active — Col du Cheval-qui-Rue (Transcanadienne 1, C.-B. / Alberta)'
+                  : '🇨🇦 Official Canadian Bilingual Experience Active — Kicking Horse Pass (Col du Cheval-qui-Rue) on Trans-Canada Hwy 1'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 Français
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/canada/british-columbia/kicking-horse-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#991B1B',
+                  background: '#FEF2F2',
+                  border: '1px solid #FECACA',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Google Translate"
+              >
+                Google Translate <ExternalLink size={12} />
               </a>
             </div>
           </div>

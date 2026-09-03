@@ -263,6 +263,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 1244,
                 "status": "OPEN",
                 "image": "/coquihalla-summit-pass.webp"
+              },
+              {
+                "id": "kicking-horse-pass",
+                "slug": "kicking-horse-pass",
+                "name": "Kicking Horse Pass (Col du Cheval-qui-Rue)",
+                "highway": "Trans-Canada Hwy (BC-1 / AB-1)",
+                "elevationFt": 5338,
+                "elevationM": 1627,
+                "status": "OPEN",
+                "image": "/kicking-horse-pass.webp"
               }
             ]
           }

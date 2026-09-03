@@ -732,5 +732,21 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Logan Pass (6,646 ft) & Snoqualmie Pass (3,022 ft)',
     crossLinkUrl: '/passes/united-states/montana/logan-pass',
     crossLinkText: 'Compare Montana and Pacific Northwest mountain highway road conditions with'
+  },
+  'kicking-horse-pass': {
+    nearestTowns: [
+      { name: 'Field, British Columbia', distance: '14.0 km (8.7 miles)', direction: 'West via Trans-Canada Hwy 1 (Yoho National Park Hub)' },
+      { name: 'Lake Louise, Alberta', distance: '12.0 km (7.5 miles)', direction: 'East via Trans-Canada Hwy 1 (Banff National Park Resort Village)' },
+      { name: 'Golden, British Columbia', distance: '83.7 km (52.0 miles)', direction: 'West via Trans-Canada Hwy 1 & Kicking Horse Canyon' },
+      { name: 'Banff, Alberta', distance: '68.0 km (42.3 miles)', direction: 'Southeast via Trans-Canada Hwy 1' },
+      { name: 'Canmore, Alberta', distance: '92.0 km (57.2 miles)', direction: 'Southeast via Trans-Canada Hwy 1' },
+      { name: 'Calgary, Alberta', distance: '195.0 km (121.2 miles)', direction: 'East via Trans-Canada Hwy 1 (International Airport)' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Subject to temporary blizzard & avalanche clearances)',
+    seasonalClosureDetail: 'Kicking Horse Pass (1,627 m / 5,338 ft; Col du Cheval-qui-Rue) on the Trans-Canada Highway (Highway 1) across the Continental Divide between British Columbia and Alberta is an essential all-season federal and interprovincial commercial corridor open 365 days a year. Dedicated highway maintenance crews from DriveBC, 511 Alberta, and Parks Canada plow, salt, and sand the mountain pass 24 hours a day. Unlike high alpine passes that close for winter, Kicking Horse Pass experiences only brief precautionary closures (typically lasting 2 to 6 hours) during extreme Rocky Mountain blizzards for heavy snow removal or avalanche control on Mount Stephen.',
+    aboutPass: 'Kicking Horse Pass (elevation 1,627 m / 5,338 ft) is a world-renowned mountain pass on the Continental Divide connecting British Columbia and Alberta through Yoho and Banff National Parks. Carrying the Trans-Canada Highway 1 and Canadian Pacific Railway mainline, the pass was designated a National Historic Site of Canada in 1971. It is globally famed for the CPR Spiral Tunnels engineered into Cathedral Mountain and Mount Ogden to overcome the dangerous 4.5% Big Hill grade, as well as the newly completed Kicking Horse Canyon Phase 4 four-lane divided expressway east of Golden. Motorists enjoy dramatic alpine views of Mount Stephen and Cathedral Mountain with live DriveBC webcams.',
+    crossLinkAnchor: 'Rogers Pass (1,330 m) & Coquihalla Summit Pass (1,244 m)',
+    crossLinkUrl: '/passes/canada/british-columbia/rogers-pass',
+    crossLinkText: 'Compare Canadian Rocky Mountains and British Columbia highway road conditions with'
   }
 };

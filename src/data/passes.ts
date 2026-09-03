@@ -14114,6 +14114,230 @@ export const passesData: MountainPass[] = [
         "answer": "Lolo Pass is one of the most historically significant mountain passes in North America. Used for thousands of years by the Nez Perce (Niimíipuu) as the 'Buffalo Trail', it was traversed in 1805 by the Lewis and Clark Expedition during their grueling mountain crossing, and again in 1877 during the historic retreat of Chief Joseph and the Nez Perce."
       }
     ]
+  },
+  {
+    "id": "kicking-horse-pass",
+    "slug": "kicking-horse-pass",
+    "name": "Kicking Horse Pass (Col du Cheval-qui-Rue)",
+    "alternateNames": [
+      "Kicking Horse Pass",
+      "Kicking Horse Pass BC",
+      "Kicking Horse Pass Alberta",
+      "Trans-Canada Highway Kicking Horse Pass",
+      "Highway 1 Kicking Horse Pass",
+      "Col du Cheval-qui-Rue",
+      "Paso Kicking Horse"
+    ],
+    "country": "Canada",
+    "countryCode": "CAN",
+    "continent": "North America",
+    "state": "British Columbia",
+    "highway": "Trans-Canada Highway (BC-1 / AB-1)",
+    "elevationFt": 5338,
+    "elevationM": 1627,
+    "coordinates": {
+      "lat": 51.4500,
+      "lng": -116.4278
+    },
+    "status": "OPEN",
+    "statusDetail": "Kicking Horse Pass (5,338 ft / 1,627 m) on the Trans-Canada Highway (Hwy 1) at the BC/Alberta border across the Continental Divide is OPEN. Four-lane highway corridor is bare and dry with good alpine visibility. Winter maintenance provided 24/7 by DriveBC and Parks Canada. Watch for commercial transport trucks, variable alpine weather, and wildlife.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Kicking Horse Pass (elevation 5,338 ft / 1,627 m; French: Col du Cheval-qui-Rue) is a historic high-mountain pass through the Canadian Rocky Mountains on the Continental Divide, straddling the border between British Columbia and Alberta. Carrying the Trans-Canada Highway (Highway 1) and the Canadian Pacific Railway mainline, the pass connects Yoho National Park and Golden, BC, with Banff National Park and Lake Louise, Alberta. Designated a National Historic Site of Canada, Kicking Horse Pass is globally celebrated for the legendary CPR Spiral Tunnels engineered inside Cathedral Mountain and Mount Ogden, the recently completed multi-billion-dollar Kicking Horse Canyon four-lane expressway, and continuous 24/7 all-weather transportation maintenance by DriveBC, 511 Alberta, and Parks Canada.",
+    "image": "/kicking-horse-pass.webp",
+    "officialSource": "DriveBC (BC Ministry of Transportation and Infrastructure), 511 Alberta & Parks Canada",
+    "official_source_url": "https://www.drivebc.ca",
+    "official_authority": "DriveBC / Alberta Transportation / Parks Canada",
+    "verification_status": "VERIFIED",
+    "confidence": "HIGH",
+    "weather": {
+      "tempF": 52,
+      "tempC": 11,
+      "condition": "Partly Cloudy with Alpine Sun",
+      "icon": "cloud-sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Highway Surface Bare & Dry"
+    },
+    "wind": {
+      "speedKmh": 14,
+      "speedMph": 9,
+      "direction": "W",
+      "description": "Moderate mountain valley breeze"
+    },
+    "roadCondition": "Trans-Canada Highway 1 is bare and dry with good visibility across the summit corridor. Modern four-lane divided expressway through Kicking Horse Canyon. Drivers must observe British Columbia winter tire regulations (October 1 to April 30) and watch for wildlife near Yoho and Banff National Parks.",
+    "chainRequirement": "No active chain requirements currently in effect. Commercial vehicles over 11,794 kg must carry tire chains from October 1 through April 30. Winter-rated tires (3PMSF mountain snowflake or M+S with minimum 3.5 mm tread) mandatory for all passenger vehicles during winter.",
+    "cameras": [
+      {
+        "id": "kh-cam-186",
+        "title": "DriveBC Cam 186: Kicking Horse Pass Summit (Hwy 1 at BC/AB Border, Looking West)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/186.jpg",
+        "location": "Kicking Horse Pass Crest (1,627 m / 5,338 ft)",
+        "source": "DriveBC (BC Ministry of Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking West toward Field, BC & Yoho National Park"
+      },
+      {
+        "id": "kh-cam-187",
+        "title": "DriveBC Cam 187: Kicking Horse Pass Summit (Hwy 1 at BC/AB Border, Looking East)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/187.jpg",
+        "location": "Kicking Horse Pass Continental Divide (1,627 m)",
+        "source": "DriveBC (BC Ministry of Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking East toward Lake Louise, Alberta & Banff National Park"
+      },
+      {
+        "id": "kh-cam-277",
+        "title": "DriveBC Cam 277: Hwy 1 near Field (Yoho National Park Corridor)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/277.jpg",
+        "location": "Hwy 1 West of Kicking Horse Pass near Field (1,256 m)",
+        "source": "DriveBC (BC Ministry of Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking East toward Kicking Horse Pass & Mount Stephen"
+      },
+      {
+        "id": "kh-cam-188",
+        "title": "DriveBC Cam 188: Hwy 1 Kicking Horse Canyon (East of Golden)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/188.jpg",
+        "location": "Hwy 1 Kicking Horse Canyon (Phase 4 Viaduct Section)",
+        "source": "DriveBC (BC Ministry of Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking East toward Yoho National Park & Rocky Mountains"
+      },
+      {
+        "id": "kh-cam-851",
+        "title": "DriveBC Cam 851: Hwy 1 Kicking Horse Canyon West Approach",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/851.jpg",
+        "location": "Hwy 1 East of Golden near Quartz Creek",
+        "source": "DriveBC (BC Ministry of Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking West toward Golden & Columbia Valley"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "rogers-pass",
+        "slug": "rogers-pass",
+        "name": "Rogers Pass (Selkirk Mountains)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy (BC-1)",
+        "status": "OPEN",
+        "elevationFt": 4364,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 125
+      },
+      {
+        "id": "coquihalla-summit-pass",
+        "slug": "coquihalla-summit-pass",
+        "name": "Coquihalla Summit Pass",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "BC Highway 5",
+        "status": "OPEN",
+        "elevationFt": 4081,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 480
+      },
+      {
+        "id": "logan-pass",
+        "slug": "logan-pass",
+        "name": "Logan Pass (Glacier National Park)",
+        "country": "United States",
+        "state": "Montana",
+        "highway": "Going-to-the-Sun Road",
+        "status": "OPEN",
+        "elevationFt": 6646,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 380
+      }
+    ],
+    "overview": {
+      "openedYear": 1884,
+      "lengthMiles": "52.0 miles (Golden, BC to Lake Louise, AB corridor)",
+      "lengthKm": "83.7 km (Trans-Canada Highway 1 corridor)",
+      "annualSnowfallIn": "300–450 inches",
+      "annualSnowfallM": "7.6–11.4 meters",
+      "summary": "Kicking Horse Pass (elevation 1,627 m / 5,338 ft) is the principal eastern highway and railway gateway linking British Columbia and Alberta across the Continental Divide. Carrying the Trans-Canada Highway (Highway 1) between Golden, BC and Lake Louise/Calgary, AB, the pass is designated a National Historic Site of Canada. Known worldwide for the CPR Spiral Tunnels—which tamed the treacherous 4.5% 'Big Hill' grade by looping trains through Mount Ogden and Cathedral Mountain—the highway has recently been upgraded through the landmark Kicking Horse Canyon Phase 4 project into a world-class four-lane divided mountain expressway. Operated and maintained 24/7, 365 days a year by DriveBC, 511 Alberta, and Parks Canada, Kicking Horse Pass serves as Canada's primary commercial east-west ground transportation link."
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Subject to temporary blizzard closures & avalanche control)",
+      "typicalReopening": "Continuous 24/7 all-weather operations (emergency closures typically 2 to 6 hours during severe storms)",
+      "description": "Kicking Horse Pass on the Trans-Canada Highway (Hwy 1) is maintained open 365 days a year. Because it is Canada's vital commercial transportation spine linking the Port of Vancouver with Calgary and eastern Canada, heavy rotary snowplows and avalanche control units operate continuously. However, severe Pacific-Arctic weather collisions can dump 30 to 60 cm of snow in 24 hours, triggering brief precautionary closures of 2 to 6 hours for avalanche bombing on Mount Stephen or vehicle incident clearance."
+    },
+    "travelTips": [
+      "Mandatory Winter Tire Laws: British Columbia law mandates winter tires (marked with 3PMSF mountain snowflake or M+S with minimum 3.5 mm tread) on Highway 1 from October 1 to April 30.",
+      "Commercial Chain Up Regulations: Commercial vehicles exceeding 11,794 kg GVW must carry tire chains and be prepared to chain up at designated brake-check pullouts before descending Mount Stephen.",
+      "Kicking Horse Canyon Phase 4 Expressway: The newly completed four-lane divided highway east of Golden offers higher safety margins, rockfall canopies, and wider shoulders, but winter speed limits are strictly enforced.",
+      "Parks Canada Pass Required: Because Kicking Horse Pass traverses Yoho National Park (BC) and Banff National Park (AB), motorists stopping at trailheads, viewpoints, or Spiral Tunnels must display a valid Parks Canada Discovery Pass.",
+      "Wildlife Protection & Distance Rules: Elk, moose, bighorn sheep, grizzly bears, and wolves frequently cross Highway 1. Obey the 90 km/h park speed limits and never approach or feed wildlife."
+    ],
+    "narrativeSections": [
+      {
+        "title": "Dr. James Hector & The Naming of Kicking Horse",
+        "content": "In August 1858, Scottish geologist and surgeon Dr. James Hector was exploring the Continental Divide as part of the British Palliser Expedition. While attempting to recover a runaway pack horse in the river valley, Hector was kicked severely in the chest by one of his horses. His expedition guides initially believed he had been killed and were preparing to bury him when Hector regained consciousness four hours later. In commemoration of his narrow escape from death, Hector named the river the Kicking Horse River, which subsequently lent its name to the iconic pass."
+      },
+      {
+        "title": "The CPR Spiral Tunnels: Engineering Triumph of the Rockies",
+        "content": "When the Canadian Pacific Railway crossed Kicking Horse Pass in 1884 to fulfill British Columbia's condition for joining Confederation, the railway encountered the dreaded 'Big Hill'—a lethal 4.5% descending grade into the Kicking Horse River valley that caused numerous runaway train disasters. In 1909, CPR assistant chief engineer J.E. Schwitzer devised an ingenious solution inspired by Swiss alpine railways: the Spiral Tunnels. By boring two massive spiral loops through Cathedral Mountain (Lower Spiral Tunnel, 992 m) and Mount Ogden (Upper Spiral Tunnel, 891 m), engineers doubled track length, cut the gradient in half to an easy 2.2%, and created one of the greatest civil engineering wonders in North American history."
+      },
+      {
+        "title": "Kicking Horse Canyon Highway 1 Modernization",
+        "content": "For decades, the section of the Trans-Canada Highway traversing the narrow, vertical Kicking Horse Canyon between Golden and Yoho National Park was infamous for rockslides, tight two-lane blind curves, and heavy winter avalanche hazard. Between 2002 and 2024, the Government of Canada and Province of British Columbia invested over $1 billion across four engineering phases. Phase 4 completed a monumental four-lane divided expressway featuring nine viaducts, massive retaining walls anchored into sheer cliff faces, dynamic rockfall mitigation nets, and modernized wildlife overpasses."
+      },
+      {
+        "title": "National Historic Site & Continental Divide Ecology",
+        "content": "Designated a National Historic Site of Canada in 1971, Kicking Horse Pass is an ecological crossroads. The pass sits on the Great Divide separating waters flowing east into the Bow River, Hudson Bay, and the Arctic/Atlantic oceans from waters flowing west into the Kicking Horse, Columbia, and Pacific Ocean. Surrounded by glacier-carved peaks including Mount Stephen (3,199 m) and Mount Field (2,643 m), the area is home to the world-famous Burgess Shale fossil beds, ancient Engelmann spruce forests, and protected Rocky Mountain wildlife corridors."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Kicking Horse Pass open today? (Kicking Horse Pass is open / Kicking Horse Pass open / is Kicking Horse Pass open right now)",
+        "answer": "Yes, Kicking Horse Pass (elevation 1,627 m / 5,338 ft) on the Trans-Canada Highway (Highway 1) across the BC/Alberta border is currently OPEN to all vehicular traffic. Driving lanes are bare and dry with good alpine visibility. Maintenance crews from DriveBC, 511 Alberta, and Parks Canada patrol and plow the route 24 hours a day. Check LivePassWatch for live summit webcams before traveling."
+      },
+      {
+        "question": "What is the official Kicking Horse Pass opening date for 2026? (Kicking Horse Pass opening date / when does Kicking Horse Pass open / Kicking Horse Pass when will open)",
+        "answer": "Kicking Horse Pass does NOT have a seasonal opening date because it is an essential transcontinental commercial corridor maintained open 365 days a year. If temporary emergency closures occur during active Rocky Mountain winter blizzards or avalanche bombing, the pass typically reopens within 2 to 6 hours once plows clear the roadway."
+      },
+      {
+        "question": "What are the current Kicking Horse Pass road conditions and road status? (Kicking Horse Pass road conditions / Kicking Horse Pass road status / Kicking Horse Pass pass status report)",
+        "answer": "Current road conditions across Kicking Horse Pass are bare and dry with clear travel lanes. During Rocky Mountain winter storms, conditions can quickly turn to compact snow, slush, or black ice. The newly four-laned Kicking Horse Canyon section east of Golden provides wide shoulders and divided barriers, significantly improving winter safety."
+      },
+      {
+        "question": "When does Kicking Horse Pass close for winter? (when does Kicking Horse Pass close for winter / Kicking Horse Pass closed / Kicking Horse Pass is closed)",
+        "answer": "Kicking Horse Pass does NOT close for winter. As Canada's principal Highway 1 corridor through the Rocky Mountains, road maintenance contractors and Parks Canada operate heavy snow equipment around the clock to keep the pass open. Only brief temporary safety closures occur during extreme winter blizzards or avalanche control."
+      },
+      {
+        "question": "Is Kicking Horse Pass closed today or are there closures today? (is Kicking Horse Pass closed today / Kicking Horse Pass closures today / Kicking Horse Pass passes open)",
+        "answer": "No, Kicking Horse Pass is NOT closed today; it is open for full travel in both directions between British Columbia and Alberta. If an incident, accident, or avalanche closure occurs, DriveBC and LivePassWatch issue immediate travel advisories."
+      },
+      {
+        "question": "Are there live webcams at Kicking Horse Pass? (Kicking Horse Pass webcam / Kicking Horse Pass live webcam / Kicking Horse Pass summit camera)",
+        "answer": "Yes! LivePassWatch streams verified live webcams operated by DriveBC (BC Ministry of Transportation). Feeds include Cam 186 (Hwy 1 at BC/AB Border looking West), Cam 187 (looking East toward Lake Louise), Cam 277 (Yoho National Park near Field), and Cams 188 & 851 (Kicking Horse Canyon viaducts east of Golden). Images update automatically every minute."
+      },
+      {
+        "question": "What is the elevation of Kicking Horse Pass? (Kicking Horse Pass elevation)",
+        "answer": "Kicking Horse Pass sits at an official elevation of 1,627 meters (5,338 feet) above sea level on the Continental Divide, forming the border between British Columbia and Alberta within Yoho and Banff National Parks."
+      },
+      {
+        "question": "What is the Kicking Horse Pass weather today, snow depth, and snow conditions? (Kicking Horse Pass weather today / Kicking Horse Pass snow / Kicking Horse Pass snow depth / Kicking Horse Pass snow conditions)",
+        "answer": "Current summit weather features pleasant alpine temperatures around 52°F (11°C) with dry road surfaces. The pass receives 300 to 450 inches (7.6 to 11.4 meters) of annual snowfall. Live winter snow depth telemetry and avalanche conditions are monitored continuously by Avalanche Canada and Parks Canada."
+      },
+      {
+        "question": "Where can I view the Kicking Horse Pass map and route details? (Kicking Horse Pass map)",
+        "answer": "Kicking Horse Pass is located on the Trans-Canada Highway 1 at GPS coordinates 51.4500° N, 116.4278° W. It is situated 83.7 km (52 miles) east of Golden, BC, and 12 km (7.5 miles) west of Lake Louise, Alberta. You can view interactive satellite maps, elevation charts, and rest area waypoints on LivePassWatch."
+      },
+      {
+        "question": "Do I need winter tires or chains on Kicking Horse Pass?",
+        "answer": "Yes. Under British Columbia regulations, winter-rated tires (3PMSF mountain snowflake or M+S with minimum 3.5 mm tread depth) are legally mandatory on Highway 1 from October 1 to April 30. Commercial trucks over 11,794 kg must carry tire chains and be prepared to fit them when required."
+      }
+    ]
   }
 ];
 
@@ -14204,7 +14428,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Valais & Aosta Valley' || passSlug === 'great-st-bernard-pass') return 'valais-aosta-valley';
   if (state === 'Bern & Valais' || passSlug === 'grimsel-pass') return 'bern-valais';
   if (state === 'Bern & Uri' || passSlug === 'susten-pass') return 'bern-uri';
-  if (state === 'British Columbia' || passSlug === 'rogers-pass' || passSlug === 'coquihalla-summit-pass') return 'british-columbia';
+  if (state === 'British Columbia' || passSlug === 'rogers-pass' || passSlug === 'coquihalla-summit-pass' || passSlug === 'kicking-horse-pass') return 'british-columbia';
   if (state === 'Montana' || passSlug === 'logan-pass' || passSlug === 'lolo-pass') return 'montana';
   if (state === 'Uri & Ticino' || state === 'Uri / Ticino' || passSlug === 'gotthard-pass') return 'uri-ticino';
   if (state === 'Graubünden' || state === 'Grisons' || passSlug === 'bernina-pass') return 'graubunden';

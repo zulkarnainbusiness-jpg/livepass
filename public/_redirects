@@ -108,6 +108,8 @@
 /passes/united-states/logan-pass /passes/united-states/montana/logan-pass 301
 /passes/lolo-pass /passes/united-states/montana/lolo-pass 301
 /passes/united-states/lolo-pass /passes/united-states/montana/lolo-pass 301
+/passes/kicking-horse-pass /passes/canada/british-columbia/kicking-horse-pass 301
+/passes/canada/kicking-horse-pass /passes/canada/british-columbia/kicking-horse-pass 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200
