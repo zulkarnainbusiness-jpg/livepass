@@ -716,5 +716,21 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Snoqualmie Pass (3,022 ft) & Rogers Pass (4,364 ft)',
     crossLinkUrl: '/passes/united-states/washington/snoqualmie-pass',
     crossLinkText: 'Compare Rocky Mountain and Cascade alpine highway road conditions with'
+  },
+  'lolo-pass': {
+    nearestTowns: [
+      { name: 'Lolo Hot Springs, Montana', distance: '8.0 miles (12.9 km)', direction: 'East via US-12 East (Mineral Springs & Lodging)' },
+      { name: 'Lochsa Lodge / Powell, Idaho', distance: '12.0 miles (19.3 km)', direction: 'West via US-12 West (River Outpost & Cabins)' },
+      { name: 'Lolo, Montana', distance: '34.0 miles (54.7 km)', direction: 'East via US-12 East (Bitterroot Valley Junction)' },
+      { name: 'Missoula, Montana', distance: '42.0 miles (67.6 km)', direction: 'Northeast via US-12 East & US-93 (Commercial Hub & Airport)' },
+      { name: 'Kooskia, Idaho', distance: '98.0 miles (157.7 km)', direction: 'West via US-12 West (Clearwater River Valley)' },
+      { name: 'Lewiston, Idaho', distance: '165.0 miles (265.5 km)', direction: 'West via US-12 West (Snake River Valley Gateway)' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Subject to temporary blizzard & slide clearances)',
+    seasonalClosureDetail: 'Lolo Pass (5,233 ft / 1,595 m) on US Highway 12 across the northern Bitterroot Mountains along the Idaho/Montana state line is engineered and maintained as an all-season federal highway open 365 days a year. Dedicated road crews from the Idaho Transportation Department (ITD) and Montana Department of Transportation (MDT) plow, salt, and sand the mountain corridor around the clock. Unlike high seasonal passes that close for months, Lolo Pass experiences only brief temporary emergency closures (typically lasting 2 to 6 hours) during severe winter blizzards for tree clearing, heavy avalanche plowing, or commercial vehicle recovery along the narrow Lochsa River canyon.',
+    aboutPass: 'Lolo Pass (elevation 5,233 ft / 1,595 m) is a renowned mountain gap in the Bitterroot Range linking Idaho and Montana along US Highway 12 (the Northwest Passage Scenic Byway and Lewis and Clark Highway). For thousands of years, the Nez Perce (Niimíipuu) traveled this route across the Buffalo Trail (K\'useyneiskit) to reach the Montana plains. In 1805 and 1806, the Lewis and Clark Expedition famously made their most arduous crossing over Lolo Pass guided by Toby and native scouts. Today, the pass is celebrated for its uninterrupted wilderness beauty, the famous "WINDING ROAD NEXT 99 MILES" corridor along the Lochsa River, and the USFS Lolo Pass Visitor Center offering groomed cross-country ski trails, snowshoeing, and live highway webcams.',
+    crossLinkAnchor: 'Logan Pass (6,646 ft) & Snoqualmie Pass (3,022 ft)',
+    crossLinkUrl: '/passes/united-states/montana/logan-pass',
+    crossLinkText: 'Compare Montana and Pacific Northwest mountain highway road conditions with'
   }
 };

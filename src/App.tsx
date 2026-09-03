@@ -126,7 +126,11 @@ const LegacyPassRedirect: React.FC = () => {
           (clean === 'logan' && p.slug === 'logan-pass') ||
           (clean === 'logan-pass' && p.slug === 'logan-pass') ||
           (clean === 'loganpass' && p.slug === 'logan-pass') ||
-          (clean === 'going-to-the-sun-road' && p.slug === 'logan-pass')
+          (clean === 'going-to-the-sun-road' && p.slug === 'logan-pass') ||
+          (clean === 'lolo' && p.slug === 'lolo-pass') ||
+          (clean === 'lolo-pass' && p.slug === 'lolo-pass') ||
+          (clean === 'lolopass' && p.slug === 'lolo-pass') ||
+          (clean === 'lolo-pass-us12' && p.slug === 'lolo-pass')
   );
 
   if (targetPass) {
@@ -240,6 +244,8 @@ export const App: React.FC = () => {
               <Route path="/logan-pass" element={<Navigate to="/passes/united-states/montana/logan-pass" replace />} />
               <Route path="/loganpass" element={<Navigate to="/passes/united-states/montana/logan-pass" replace />} />
               <Route path="/going-to-the-sun-road" element={<Navigate to="/passes/united-states/montana/logan-pass" replace />} />
+              <Route path="/lolo-pass" element={<Navigate to="/passes/united-states/montana/lolo-pass" replace />} />
+              <Route path="/lolopass" element={<Navigate to="/passes/united-states/montana/lolo-pass" replace />} />
 
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />

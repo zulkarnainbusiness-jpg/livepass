@@ -140,6 +140,50 @@ const baralachaHindiFaqs = [
 
 
 
+
+const loloIndigenousFaqs = [
+  {
+    question: "Is Lolo Pass open today? (Lolo Pass is open / Lolo Pass open / is Lolo Pass open right now)",
+    answer: "Yes, Lolo Pass (elevation 5,233 ft / 1,595 m) on US Highway 12 between Idaho and Montana is currently OPEN to all vehicular traffic. Road conditions are bare and dry with good alpine visibility. Maintenance crews from ITD and MDT plow and monitor the route around the clock. Check LivePassWatch for live webcam feeds and highway status before departing."
+  },
+  {
+    question: "What is the official Lolo Pass opening date for 2026? (Lolo Pass opening date / when does Lolo Pass open)",
+    answer: "Unlike high seasonal passes like Logan Pass that close completely for winter, Lolo Pass does NOT have a seasonal opening date because it is an all-season federal highway designed and maintained to remain open 365 days a year. If closed temporarily during an active winter blizzard, it typically reopens within 2 to 6 hours once plows clear the highway."
+  },
+  {
+    question: "What are current Lolo Pass road conditions and road status? (Lolo Pass road conditions / Lolo Pass road status / Lolo Pass pass status report)",
+    answer: "Current road conditions across Lolo Pass are bare and dry with good visibility. During winter months, highway conditions can transition rapidly from bare pavement to packed snow, slush, and black ice. Drivers should exercise caution on the 99 miles of continuous winding curves and watch for wildlife along the Lochsa River."
+  },
+  {
+    question: "When does Lolo Pass close for winter? (when does Lolo Pass close for winter / Lolo Pass closed / Lolo Pass is closed)",
+    answer: "Lolo Pass does NOT close for the winter season. The Idaho Transportation Department (ITD) and Montana Department of Transportation (MDT) keep US Highway 12 open year-round. Only temporary short-duration emergency closures occur during extreme winter blizzards, tree blowdowns, or vehicle recovery along the narrow river canyon."
+  },
+  {
+    question: "Is Lolo Pass closed today? (is Lolo Pass closed today)",
+    answer: "No, Lolo Pass is NOT closed today; it is open for full travel in both directions between Idaho and Montana. If a temporary incident closure occurs due to winter weather or rockslide clearance, ITD, MDT, and LivePassWatch issue immediate travel alerts."
+  },
+  {
+    question: "Are there live webcams and cameras on Lolo Pass? (Lolo Pass webcam / Lolo Pass live webcam / Lolo Pass cameras / Lolo Pass summit camera)",
+    answer: "Yes! LivePassWatch features official highway camera feeds operated by the Idaho Transportation Department (ITD 511) and Montana Department of Transportation (MDT 511). Cameras are positioned at the Lolo Pass Summit Visitor Center (US-12 MP 174.4, elevation 5,233 ft), the state line RWIS weather station, and down the Lochsa River corridor at Powell."
+  },
+  {
+    question: "Where can I find the Lolo Pass map and driving route? (Lolo Pass map)",
+    answer: "Lolo Pass is located on US Highway 12 on the Idaho/Montana border at GPS coordinates 46.6358° N, 114.5772° W. The pass is located 42 miles (68 km) southwest of Missoula, Montana, and 165 miles (265 km) east of Lewiston, Idaho. You can explore interactive terrain maps, elevation profiles, and rest areas on LivePassWatch."
+  },
+  {
+    question: "What are the winter tire and chain requirements on Lolo Pass?",
+    answer: "During winter driving conditions (October through April), winter-rated traction tires (carrying the 3PMSF snowflake or M+S symbol with minimum 3.5 mm tread) or tire chains are strongly advised for all vehicles. Commercial trucks traveling US Highway 12 must carry tire chains and be prepared to install them during heavy snowfall."
+  },
+  {
+    question: "What services are available at the Lolo Pass Visitor Center?",
+    answer: "The US Forest Service Lolo Pass Visitor Center (elevation 5,233 ft) is located directly at the summit. It provides heated restrooms, fresh drinking water, historical Lewis and Clark exhibits, snowshoe rentals, groomed cross-country ski trails, and winter parking permits. Note that there are no retail gas stations at the summit; fuel is available in Lolo, MT (42 miles east) or Lochsa Lodge / Powell (12 miles west)."
+  },
+  {
+    question: "What is the historical significance of Lolo Pass (Lewis and Clark & Nez Perce)?",
+    answer: "Lolo Pass is one of the most historically significant mountain passes in North America. Used for thousands of years by the Nez Perce (Niimíipuu) as the 'Buffalo Trail' (K'useyneiskit), it was traversed in 1805 by the Lewis and Clark Expedition during their grueling mountain crossing, and again in 1877 during the historic retreat of Chief Joseph and the Nez Perce."
+  }
+];
+
 const loganIndigenousFaqs = [
   {
     question: "Is Logan Pass open today? (Logan Pass is open / Logan Pass open / is Logan Pass open right now)",
@@ -935,6 +979,89 @@ export const PassDetailPage: React.FC = () => {
               >
                 <Globe size={14} />
                 <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* Bilingual Language Switcher for Lolo Pass */}
+        {pass.slug === 'lolo-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(16, 185, 129, 0.06) 100%)',
+            border: '1px solid rgba(37, 99, 235, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#1E3A8A' }}>
+              <Globe size={18} color="#2563EB" />
+              <span>
+                {pageLang === 'fr'
+                  ? '🇨🇦 Version régionale et traduction active — Col Lolo (Autoroute US-12, Idaho / Montana)'
+                  : '🇺🇸 Official Bitterroot Range & Indigenous Nez Perce (K\'useyneiskit) Heritage Active — Switch language or auto-translate anytime'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇺🇸 English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 Français
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/united-states/montana/lolo-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#1D4ED8',
+                  background: '#EFF6FF',
+                  border: '1px solid #93C5FD',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Google Translate"
+              >
+                Google Translate <ExternalLink size={12} />
               </a>
             </div>
           </div>

@@ -13910,6 +13910,210 @@ export const passesData: MountainPass[] = [
         "answer": "Yes, during peak summer months (typically late May through early September, between 6:00 AM and 3:00 PM), Glacier National Park requires a vehicle reservation to travel Going-to-the-Sun Road. Visitors without reservations may enter before 6:00 AM or after 3:00 PM, or access the pass via the free park shuttle system departing from Apgar or St. Mary."
       }
     ]
+  },
+  {
+    "id": "lolo-pass",
+    "slug": "lolo-pass",
+    "name": "Lolo Pass (US Highway 12)",
+    "alternateNames": [
+      "Lolo Pass Montana",
+      "Lolo Pass Idaho",
+      "Lolo Pass US-12",
+      "Lolo Pass Bitterroot Mountains",
+      "Lewis and Clark Highway Lolo Pass",
+      "Col Lolo",
+      "Paso Lolo"
+    ],
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Montana",
+    "highway": "US Highway 12 (Northwest Passage Scenic Byway)",
+    "elevationFt": 5233,
+    "elevationM": 1595,
+    "coordinates": {
+      "lat": 46.6358,
+      "lng": -114.5772
+    },
+    "status": "OPEN",
+    "statusDetail": "Lolo Pass (5,233 ft / 1,595 m) on US Highway 12 across the Idaho/Montana state line is OPEN year-round. Road surface is bare and dry with good alpine visibility. Winter maintenance provided 24/7 by ITD and MDT. Watch for winding road conditions, wild animals, and heavy commercial truck traffic.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Lolo Pass (elevation 5,233 ft / 1,595 m) is a historic high-mountain pass in the northern Bitterroot Range along the border of Idaho and Montana. Carrying US Highway 12 (the Northwest Passage Scenic Byway and Lewis and Clark Highway), the pass connects Lewiston and Kooskia, Idaho, with Lolo and Missoula, Montana. Revered for millennia by the Nez Perce (Niimíipuu) as the 'K'useyneiskit' (Buffalo Trail) and famously navigated by the Lewis and Clark Corps of Discovery in 1805 and 1806, Lolo Pass features the USFS Lolo Pass Visitor Center, 250 to 350 inches of annual snowfall, premier cross-country skiing, and 24/7 all-weather highway maintenance by the Idaho Transportation Department (ITD) and Montana Department of Transportation (MDT).",
+    "image": "/lolo-pass.webp",
+    "officialSource": "Idaho Transportation Department (ITD 511), Montana Department of Transportation (MDT 511) & USFS Clearwater National Forest",
+    "official_source_url": "https://511.idaho.gov",
+    "official_authority": "Idaho Transportation Department / Montana Department of Transportation",
+    "verification_status": "VERIFIED",
+    "confidence": "HIGH",
+    "weather": {
+      "tempF": 58,
+      "tempC": 14,
+      "condition": "Clear Skies & Mountain Sunshine",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Road Surface Bare & Dry"
+    },
+    "wind": {
+      "speedKmh": 11,
+      "speedMph": 7,
+      "direction": "NW",
+      "description": "Gentle mountain ridge breeze"
+    },
+    "roadCondition": "US Highway 12 is bare and dry with clear travel lanes across the summit corridor. Winding two-lane mountain highway with limited passing lanes. Drivers must watch for wildlife (elk, deer, moose) and sudden winter ice near the Lochsa River canyon.",
+    "chainRequirement": "No traction tire or chain requirements currently in effect. Winter-rated traction tires or chains are strongly advised for all vehicles during winter snowstorms (October to April).",
+    "cameras": [
+      {
+        "id": "lolo-cam-summit-id",
+        "title": "ITD 511 Cam: Lolo Pass Summit (US-12 MP 174.4, Idaho/Montana Border)",
+        "image": "https://511.idaho.gov",
+        "location": "Lolo Pass Visitor Center Crest (5,233 ft / 1,595 m)",
+        "source": "Idaho Transportation Department (ITD 511)",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://511.idaho.gov",
+        "direction": "Looking West/Southwest along US-12 summit corridor"
+      },
+      {
+        "id": "lolo-cam-summit-mt",
+        "title": "MDT 511 Cam: Lolo Pass State Line (US-12 RWIS Weather Station)",
+        "image": "https://511mt.net",
+        "location": "Lolo Pass Montana Boundary (5,233 ft)",
+        "source": "Montana Department of Transportation (MDT 511)",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://511mt.net",
+        "direction": "Looking East toward Lolo Hot Springs & Missoula"
+      },
+      {
+        "id": "lolo-cam-powell",
+        "title": "ITD 511 Cam: US-12 Lochsa River / Powell Corridor",
+        "image": "https://511.idaho.gov",
+        "location": "US-12 MP 162 near Powell Ranger Station (3,400 ft)",
+        "source": "Idaho Transportation Department (ITD 511)",
+        "updateIntervalMs": 120000,
+        "officialUrl": "https://511.idaho.gov",
+        "direction": "Looking Northeast up Lochsa canyon toward Lolo Pass"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "logan-pass",
+        "slug": "logan-pass",
+        "name": "Logan Pass (Glacier National Park)",
+        "country": "United States",
+        "state": "Montana",
+        "highway": "Going-to-the-Sun Road",
+        "status": "OPEN",
+        "elevationFt": 6646,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 260
+      },
+      {
+        "id": "snoqualmie-pass",
+        "slug": "snoqualmie-pass",
+        "name": "Snoqualmie Pass",
+        "country": "United States",
+        "state": "Washington",
+        "highway": "I-90",
+        "status": "OPEN",
+        "elevationFt": 3022,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 540
+      },
+      {
+        "id": "stevens-pass",
+        "slug": "stevens-pass",
+        "name": "Stevens Pass",
+        "country": "United States",
+        "state": "Washington",
+        "highway": "US 2",
+        "status": "OPEN",
+        "elevationFt": 4061,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 560
+      }
+    ],
+    "overview": {
+      "openedYear": 1962,
+      "lengthMiles": "130.0 miles (Kooskia, ID to Lolo, MT wilderness corridor)",
+      "lengthKm": "209.0 km (Lochsa River / Clearwater National Forest)",
+      "annualSnowfallIn": "250–350 inches",
+      "annualSnowfallM": "6.4–8.9 meters",
+      "summary": "Lolo Pass (elevation 5,233 ft / 1,595 m) is an iconic all-season mountain pass traversing the crest of the Bitterroot Mountains along the Idaho/Montana border. Designated as US Highway 12, the Northwest Passage Scenic Byway, and the Lewis and Clark Highway, the route cuts through the heart of the Clearwater and Lolo National Forests. Following the untamed Lochsa River before climbing to the subalpine summit pass, the highway is famed for its rugged remote beauty and the iconic roadside warning: 'WINDING ROAD NEXT 99 MILES'. Unlike seasonal passes, Lolo Pass is engineered and maintained for year-round vehicular travel, though intense Pacific Northwest winter storm systems can cause temporary closures for snowplowing and slide clearance."
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Subject to temporary blizzard closures & avalanche plowing)",
+      "typicalReopening": "Continuous 24/7 all-weather operations (closures typically 2 to 6 hours during severe storms)",
+      "description": "Lolo Pass (US-12) does not close seasonally for winter. Both the Idaho Transportation Department (ITD) and the Montana Department of Transportation (MDT) station dedicated highway maintenance crews along the corridor to plow, salt, and sand the pass 24 hours a day. However, during intense winter blizzards or heavy freeze-thaw cycles, temporary emergency closures of 2 to 6 hours may occur for avalanche mitigation, downed tree clearing, or vehicle recovery along the narrow Lochsa River canyon."
+    },
+    "travelTips": [
+      "Winding Roadway & Limited Cell Service: US-12 features over 99 miles of continuous winding curves with virtually zero cellular reception between Kooskia, ID and Lolo, MT. Fuel up and carry an emergency kit.",
+      "Year-Round Operation & Winter Tires: While the pass is open year-round, severe winter snow and black ice are frequent from October to April. Severe traction tires (3PMSF or M+S) or tire chains are strongly advised.",
+      "Lolo Pass Visitor Center Amenities: Located directly at the summit (MP 174.4), the USFS Visitor Center provides heated rest areas, drinking water, winter recreation passes, and interpretive historical displays.",
+      "Winter Recreation & Avalanche Caution: Lolo Pass is a major destination for backcountry skiing, snowmobiling, and cross-country skiing. Always check the West Central Montana Avalanche Center forecast before leaving the highway.",
+      "Watch for Heavy Wildlife: Elk, deer, moose, and bighorn sheep frequently congregate along the highway shoulder, especially at dawn, dusk, and along the Lochsa River corridor."
+    ],
+    "narrativeSections": [
+      {
+        "title": "Indigenous Nez Perce Heritage & K'useyneiskit",
+        "content": "For thousands of years prior to European contact, the Nez Perce (Niimíipuu) people utilized the ancient alpine route across Lolo Pass, known in their native language as 'K'useyneiskit' (the Buffalo Trail). Each summer and autumn, families traveled from the mild river valleys of modern Idaho across the Bitterroot Range to hunt bison on the Great Plains of Montana. In 1877, during the Nez Perce War, Chief Joseph, Looking Glass, and hundreds of non-treaty Nez Perce made their historic, grueling trek across Lolo Pass while outmaneuvering pursuing U.S. Army forces in one of the most remarkable strategic marches in American military history."
+      },
+      {
+        "title": "Lewis & Clark Expedition: The Corps of Discovery",
+        "content": "In September 1805, Meriwether Lewis and William Clark led the Corps of Discovery across Lolo Pass guided by Shoshone elder Toby. Facing early autumn blizzards, impenetrable timber, steep mountain grades, and starvation, the expedition endured what Clark described as their most desperate and perilous ordeal before reaching the Clearwater River. Returning eastward in June 1806, the expedition traversed the snowbound pass again with Nez Perce guides. Today, US Highway 12 is officially designated the Lewis and Clark Highway, commemorating this historic transcontinental journey."
+      },
+      {
+        "title": "Engineering the 99-Mile Winding Wilderness Highway",
+        "content": "Building a modern two-lane paved highway through the nearly impassable canyon of the Lochsa River and over Lolo Pass was an engineering saga spanning over four decades. Finally completed and officially opened in 1962, US Highway 12 required blasting hundreds of thousands of tons of granite along sheer river cliffs. The road is world-renowned among motorcyclists and long-distance road trippers for its breathtaking scenery, uninterrupted wilderness, and the famous sign near Kooskia and Lolo proclaiming: 'WINDING ROAD NEXT 99 MILES'—the longest uninterrupted stretch of curves on the U.S. federal highway system."
+      },
+      {
+        "title": "Subalpine Ecology & Winter Sports Haven",
+        "content": "Resting at 5,233 feet on the crest of the Bitterroot Range, Lolo Pass sits in a lush temperate rain forest-to-Rocky Mountain transition zone dominated by western red cedar, grand fir, and Engelmann spruce. The pass receives between 250 and 350 inches of annual snowfall, transforming the summit into a winter wonderland. The USFS Lolo Pass Visitor Center manages over 13 km of groomed cross-country ski and snowshoe trails, extensive snowmobile trail networks, and real-time SNOTEL automated snow telemetry monitoring the regional snowpack."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Lolo Pass open today? (Lolo Pass is open / Lolo Pass open / is Lolo Pass open right now)",
+        "answer": "Yes, Lolo Pass (elevation 5,233 ft / 1,595 m) on US Highway 12 between Idaho and Montana is currently OPEN to all vehicular traffic. Road conditions are bare and dry with good alpine visibility. Maintenance crews from ITD and MDT plow and monitor the route around the clock. Check LivePassWatch for live webcam feeds and highway status before departing."
+      },
+      {
+        "question": "What is the official Lolo Pass opening date for 2026? (Lolo Pass opening date / when does Lolo Pass open)",
+        "answer": "Unlike high seasonal passes like Logan Pass that close completely for winter, Lolo Pass does NOT have a seasonal opening date because it is an all-season federal highway designed and maintained to remain open 365 days a year. If closed temporarily during an active winter blizzard, it typically reopens within 2 to 6 hours once plows clear the highway."
+      },
+      {
+        "question": "What are current Lolo Pass road conditions and road status? (Lolo Pass road conditions / Lolo Pass road status / Lolo Pass pass status report)",
+        "answer": "Current road conditions across Lolo Pass are bare and dry with good visibility. During winter months, highway conditions can transition rapidly from bare pavement to packed snow, slush, and black ice. Drivers should exercise caution on the 99 miles of continuous winding curves and watch for wildlife along the Lochsa River."
+      },
+      {
+        "question": "When does Lolo Pass close for winter? (when does Lolo Pass close for winter / Lolo Pass closed / Lolo Pass is closed)",
+        "answer": "Lolo Pass does NOT close for the winter season. The Idaho Transportation Department (ITD) and Montana Department of Transportation (MDT) keep US Highway 12 open year-round. Only temporary short-duration emergency closures occur during extreme winter blizzards, tree blowdowns, or vehicle recovery along the narrow river canyon."
+      },
+      {
+        "question": "Is Lolo Pass closed today? (is Lolo Pass closed today)",
+        "answer": "No, Lolo Pass is NOT closed today; it is open for full travel in both directions between Idaho and Montana. If a temporary incident closure occurs due to winter weather or rockslide clearance, ITD, MDT, and LivePassWatch issue immediate travel alerts."
+      },
+      {
+        "question": "Are there live webcams and cameras on Lolo Pass? (Lolo Pass webcam / Lolo Pass live webcam / Lolo Pass cameras / Lolo Pass summit camera)",
+        "answer": "Yes! LivePassWatch features official highway camera feeds operated by the Idaho Transportation Department (ITD 511) and Montana Department of Transportation (MDT 511). Cameras are positioned at the Lolo Pass Summit Visitor Center (US-12 MP 174.4, elevation 5,233 ft), the state line RWIS weather station, and down the Lochsa River corridor at Powell."
+      },
+      {
+        "question": "Where can I find the Lolo Pass map and driving route? (Lolo Pass map)",
+        "answer": "Lolo Pass is located on US Highway 12 on the Idaho/Montana border at GPS coordinates 46.6358° N, 114.5772° W. The pass is located 42 miles (68 km) southwest of Missoula, Montana, and 165 miles (265 km) east of Lewiston, Idaho. You can explore interactive terrain maps, elevation profiles, and rest areas on LivePassWatch."
+      },
+      {
+        "question": "What are the winter tire and chain requirements on Lolo Pass?",
+        "answer": "During winter driving conditions (October through April), winter-rated traction tires (carrying the 3PMSF snowflake or M+S symbol with minimum 3.5 mm tread) or tire chains are strongly advised for all vehicles. Commercial trucks traveling US Highway 12 must carry tire chains and be prepared to install them during heavy snowfall."
+      },
+      {
+        "question": "What services are available at the Lolo Pass Visitor Center?",
+        "answer": "The US Forest Service Lolo Pass Visitor Center (elevation 5,233 ft) is located directly at the summit. It provides heated restrooms, fresh drinking water, historical Lewis and Clark exhibits, snowshoe rentals, groomed cross-country ski trails, and winter parking permits. Note that there are no retail gas stations at the summit; fuel is available in Lolo, MT (42 miles east) or Lochsa Lodge / Powell (12 miles west)."
+      },
+      {
+        "question": "What is the historical significance of Lolo Pass (Lewis and Clark & Nez Perce)?",
+        "answer": "Lolo Pass is one of the most historically significant mountain passes in North America. Used for thousands of years by the Nez Perce (Niimíipuu) as the 'Buffalo Trail', it was traversed in 1805 by the Lewis and Clark Expedition during their grueling mountain crossing, and again in 1877 during the historic retreat of Chief Joseph and the Nez Perce."
+      }
+    ]
   }
 ];
 
@@ -14001,7 +14205,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Bern & Valais' || passSlug === 'grimsel-pass') return 'bern-valais';
   if (state === 'Bern & Uri' || passSlug === 'susten-pass') return 'bern-uri';
   if (state === 'British Columbia' || passSlug === 'rogers-pass' || passSlug === 'coquihalla-summit-pass') return 'british-columbia';
-  if (state === 'Montana' || passSlug === 'logan-pass') return 'montana';
+  if (state === 'Montana' || passSlug === 'logan-pass' || passSlug === 'lolo-pass') return 'montana';
   if (state === 'Uri & Ticino' || state === 'Uri / Ticino' || passSlug === 'gotthard-pass') return 'uri-ticino';
   if (state === 'Graubünden' || state === 'Grisons' || passSlug === 'bernina-pass') return 'graubunden';
   if (state === 'Møre og Romsdal' || passSlug === 'trollstigen-pass') return 'more-og-romsdal';

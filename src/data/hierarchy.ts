@@ -219,6 +219,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 2026,
                 "status": "OPEN",
                 "image": "/logan-pass.webp"
+              },
+              {
+                "id": "lolo-pass",
+                "slug": "lolo-pass",
+                "name": "Lolo Pass (US Highway 12)",
+                "highway": "US Highway 12",
+                "elevationFt": 5233,
+                "elevationM": 1595,
+                "status": "OPEN",
+                "image": "/lolo-pass.webp"
               }
             ]
           }
