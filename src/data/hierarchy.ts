@@ -613,6 +613,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 5360,
                 "status": "OPEN",
                 "image": "/chang-la-pass-road-status-webcam.webp"
+              },
+              {
+                "id": "umling-la",
+                "slug": "umling-la",
+                "name": "Umling La Pass (उमलिंग ला)",
+                "highway": "Chisumle-Demchok Road",
+                "elevationFt": 19024,
+                "elevationM": 5798,
+                "status": "OPEN",
+                "image": "/umling-la.webp"
               }
             ]
           },

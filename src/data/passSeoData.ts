@@ -670,6 +670,22 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Katschbergpass (1.641 m) & Stelvio Pass (2.757 m)',
     crossLinkUrl: '/passes/austria/carinthia-salzburg/katschberg-pass',
     crossLinkText: 'Vergleichen Sie die Öffnungszeiten und Mautpreise der Großglockner Hochalpenstraße mit'
+  },
+  'umling-la': {
+    nearestTowns: [
+      { name: 'Demchok, Ladakh', distance: '24.0 km (14.9 miles)', direction: 'East near LAC border' },
+      { name: 'Chisumle, Ladakh', distance: '28.0 km (17.4 miles)', direction: 'West via Chisumle Bridge' },
+      { name: 'Koyul, Ladakh', distance: '45.0 km (28.0 miles)', direction: 'Northwest via Hanle-Koyul road' },
+      { name: 'Hanle, Ladakh', distance: '105.0 km (65.2 miles)', direction: 'Northwest via Photi La / Koyul (Indian Astronomical Observatory)' },
+      { name: 'Nyoma, Ladakh', distance: '145.0 km (90.1 miles)', direction: 'Northwest via Loma checkpoint' },
+      { name: 'Leh, Ladakh', distance: '310.0 km (192.6 miles)', direction: 'Northwest via Karu & Chumathang (NH-3 / Indus Valley)' }
+    ],
+    seasonalClosureWindow: 'Late May / June to Late October / November (Winter closure December to May)',
+    seasonalClosureDetail: 'Umling La Pass (19,024 ft / 5,798 m) experiences one of the harshest winter environments on Earth. Temperatures plunge below -40°C with severe blizzard drifts and permafrost freeze, closing civilian vehicular access between December and May. The Border Roads Organisation (BRO Project HIMANK) initiates intense spring snow clearing in April using high-altitude rotary cutters and bulldozers. The road typically reopens for authorized civilian and adventure travelers in late May or early June. Daily transit during the open season is permitted only between 08:00 and 17:00. An active Ladakh Inner Line Permit (ILP) is required at Loma, Nyoma, and Hanle checkpoints.',
+    aboutPass: 'Umling La Pass (उमलिंग ला, 19,024 ft / 5,798 m) in the Changthang region of Eastern Ladakh, India, is officially certified by Guinness World Records as the highest motorable road and mountain pass on planet Earth. Built by the Border Roads Organisation (BRO) under Project HIMANK, this 52 km blacktopped engineering marvel connects Chisumle with Demchok near the Line of Actual Control (LAC). Surpassing Bolivia\'s Uturuncu road (18,953 ft), Khardung La (17,582 ft), and even Mount Everest Base Camp (17,598 ft), Umling La offers sweeping vistas of Tibetan border peaks and barren high-altitude desert. Due to thin atmospheric oxygen (~50% of sea level), visitors must strictly acclimatize at Leh (3,500 m) and Hanle (4,500 m), carry supplemental medical oxygen, and limit summit stays to 15–20 minutes.',
+    crossLinkAnchor: 'Khardung La (17,582 ft) & Chang La Pass (17,590 ft)',
+    crossLinkUrl: '/passes/india/ladakh/khardung-la',
+    crossLinkText: 'Compare extreme high-altitude Himalayan passes with'
   }
 };
 

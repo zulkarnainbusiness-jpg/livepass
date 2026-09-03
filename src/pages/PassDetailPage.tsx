@@ -137,6 +137,50 @@ const baralachaHindiFaqs = [
   }
 ];
 
+
+const umlingLaHindiFaqs = [
+  {
+    question: "क्या उमलिंग ला पास आज खुला है? (Is Umling La Pass open today? / Umling La is open)",
+    answer: "हाँ! उमलिंग ला दर्रा (19,024 फीट / 5,798 मीटर) वर्तमान में ग्रीष्मकालीन सीजन में वाहनों के आवागमन के लिए खुला है। बीआरओ (प्रोजेक्ट हिमांक) की देखरेख में रोजाना सुबह 08:00 से शाम 17:00 बजे तक वाहनों को जाने की अनुमति है। यात्रा के लिए वैध लद्दाख इनर लाइन परमिट (ILP) अनिवार्य है। ताजा स्थिति के लिए LivePassWatch चेक करते रहें।"
+  },
+  {
+    question: "उमलिंग ला पास कब खुलेगा? 2026 खुलने की तारीख (Umling La opening date 2026 / when does Umling La open)",
+    answer: "उमलिंग ला दर्रा आमतौर पर सर्दियों की भारी बर्फ हटाने के बाद मई के अंत या जून की शुरुआत में खुलता है। 2026 के ग्रीष्मकालीन सीजन के लिए सीमा सड़क संगठन (BRO Project HIMANK) द्वारा बर्फ हटाने के बाद मार्ग सुचारू कर दिया गया है।"
+  },
+  {
+    question: "उमलिंग ला की सड़क की स्थिति कैसी है? (Umling La road conditions)",
+    answer: "चिसुमले से डेमचोक तक 52 किलोमीटर लंबी पूरी सड़क पर बीआरओ द्वारा बेहतरीन पक्का डामर (ब्लैकटॉप) बिछाया गया है। हालांकि 19,024 फीट की अत्यधिक ऊंचाई और खड़ी चढ़ाई (7-10% ढलान) के कारण वाहन के इंजन की शक्ति 30-40% कम हो जाती है। हाई-ग्राउंड क्लीयरेंस 4WD वाहन या अच्छी स्थिति वाली एडवेंचर मोटरसाइकिल सबसे उपयुक्त हैं।"
+  },
+  {
+    question: "उमलिंग ला पास का लाइव रोड स्टेटस क्या है? (Umling La road status / Umling La pass status report)",
+    answer: "उमलिंग ला का वर्तमान रोड स्टेटस 'खुला' (OPEN) है। बीआरओ प्रोजेक्ट हिमांक का आधिकारिक बुलेटिन चिसुमले से डेमचोक तक साफ सड़क की पुष्टि करता है। हनले से निकलने से पहले LivePassWatch पर रियल-टाइम मौसम और सड़क रिपोर्ट जरूर देखें।"
+  },
+  {
+    question: "उमलिंग ला सर्दियों में कब बंद होता है? (when does Umling La close for winter / Umling La closed)",
+    answer: "उमलिंग ला दर्रा नवंबर के अंत या दिसंबर में भीषण ठंड (-40°C तापमान) और भारी बर्फबारी के कारण बंद हो जाता है और मई तक बंद रहता है। इसके अलावा गर्मियों में भी सुरक्षा कारणों से रोजाना शाम 5 बजे से सुबह 8 बजे तक रात में आवागमन बंद रहता है।"
+  },
+  {
+    question: "क्या उमलिंग ला पर लाइव वेबकैम और कैमरा है? (Umling La webcam / Umling La live webcam / Umling La cameras)",
+    answer: "उमलिंग ला दर्रे के शिखर (19,024 फीट) पर कोई सार्वजनिक लाइव वेबकैम स्थापित नहीं है। वास्तविक नियंत्रण रेखा (LAC / भारत-चीन सीमा) के बेहद निकट सामरिक क्षेत्र होने के कारण सुरक्षा नियमों के तहत सार्वजनिक लाइव वीडियो स्ट्रीमिंग प्रतिबंधित है। इसके अलावा -40°C की अत्यधिक ठंड और शिखर पर बिजली/फाइबर इंटरनेट न होना भी कारण है। आधिकारिक बीआरओ और लद्दाख प्रशासन की रिपोर्ट LivePassWatch पर तुरंत अपडेट की जाती है।"
+  },
+  {
+    question: "उमलिंग ला का नक्शा और रूट क्या है? वहां कैसे पहुंचे? (Umling La map)",
+    answer: "उमलिंग ला पूर्वी लद्दाख के चांगथांग क्षेत्र में स्थित है (GPS: 32.9772° N, 79.2889° E)। सबसे लोकप्रिय रूट: लेह -> कारू -> चुमाथांग -> न्योमा -> लोमा चेकपोस्ट -> हनले (रात का ठहराव) -> फोटी ला या कोयल -> चिसुमले -> उमलिंग ला शिखर (19,024 फीट)। LivePassWatch पर इंटरएक्टिव नक्शा उपलब्ध है।"
+  },
+  {
+    question: "उमलिंग ला की ऊंचाई कितनी है और यह खारदुंग ला से कितना ऊंचा है?",
+    answer: "उमलिंग ला दर्रे की समुद्र तल से ऊंचाई 19,024 फीट (5,798.51 मीटर) है। गिनीज वर्ल्ड रिकॉर्ड्स द्वारा इसे दुनिया की सबसे ऊंची पक्की मोटर वाहन सड़क का प्रमाण पत्र दिया गया है। यह खारदुंग ला (17,582 फीट) से 1,442 फीट और माउंट एवरेस्ट बेस कैंप (17,598 फीट) से 1,426 फीट अधिक ऊंचा है।"
+  },
+  {
+    question: "क्या उमलिंग ला जाने के लिए परमिट जरूरी है? क्या विदेशी जा सकते हैं?",
+    answer: "हाँ, भारतीय नागरिकों के लिए लद्दाख इनर लाइन परमिट (ILP) अनिवार्य है (lahdclehpermit.in पर ऑनलाइन प्राप्त करें), जिसमें हनले और न्योमा सर्किट दर्ज होना चाहिए। वास्तविक नियंत्रण रेखा (LAC) के निकट होने के कारण विदेशी पर्यटकों (Foreigners / OCI) को वर्तमान में उमलिंग ला जाने की अनुमति नहीं है।"
+  },
+  {
+    question: "उमलिंग ला पर ऑक्सीजन और एक्यूट माउंटेन सिकनेस (AMS) से कैसे बचें?",
+    answer: "19,024 फीट पर ऑक्सीजन का स्तर समुद्र तल का लगभग 50% रह जाता है। लेह (3,500 मी) में कम से कम 2 दिन और हनले (4,500 मी) में 1-2 रात रुककर शरीर को अनुकूलित (Acclimatize) करना अत्यंत आवश्यक है। पोर्टेबल ऑक्सीजन सिलेंडर साथ रखें और शिखर पर 15-20 मिनट से अधिक न रुकें।"
+  }
+];
+
 const katschbergGermanFaqs = [
   {
     question: "Ist der Katschbergpass heute geöffnet? (Is Katschberg Pass open today?)",
@@ -808,7 +852,7 @@ export const PassDetailPage: React.FC = () => {
         )}
 
         {/* Bilingual Language Switcher for Baralacha La Pass */}
-        {pass.slug === 'baralacha-la' && (
+        {(pass.slug === 'baralacha-la' || pass.slug === 'umling-la') && (
 
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
@@ -866,7 +910,7 @@ export const PassDetailPage: React.FC = () => {
                 </button>
               </div>
               <a
-                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/india/himachal-pradesh/baralacha-la')}`}
+                href={`https://translate.google.com/translate?sl=auto&tl=${pageLang === 'hi' ? 'en' : 'hi'}&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : pass.slug === 'umling-la' ? 'https://www.livepasswatch.info/passes/india/ladakh/umling-la' : 'https://www.livepasswatch.info/passes/india/himachal-pradesh/baralacha-la')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -3560,7 +3604,7 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                {((pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
                   ((pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
 
 

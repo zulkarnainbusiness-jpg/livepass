@@ -237,6 +237,23 @@ export interface MountainPass {
   };
   searchKeywords?: string[];
   aliases?: string[];
+  elevationProfile?: {
+    minElevationFt: number;
+    maxElevationFt: number;
+    grade: string;
+    points: {
+      distanceMiles: number;
+      elevationFt: number;
+      label: string;
+    }[];
+  };
+  travelTips?: string[];
+  history?: {
+    year: string;
+    title: string;
+    description: string;
+  }[];
+  keywords?: string[];
 }
 
 export interface PassAlert {

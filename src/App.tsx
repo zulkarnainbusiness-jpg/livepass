@@ -114,7 +114,10 @@ const LegacyPassRedirect: React.FC = () => {
          (clean === 'col-angel-pass' && p.slug === 'col-agnel') ||
          (clean === 'colangel' && p.slug === 'col-agnel') ||
          (clean === 'agnello' && p.slug === 'col-agnel') ||
-         (clean === 'agnel' && p.slug === 'col-agnel')
+         (clean === 'agnel' && p.slug === 'col-agnel') ||
+         (clean === 'umling-la' && p.slug === 'umling-la') ||
+         (clean === 'umlingla' && p.slug === 'umling-la') ||
+         (clean === 'umling-la-pass' && p.slug === 'umling-la')
   );
 
   if (targetPass) {
@@ -216,6 +219,10 @@ export const App: React.FC = () => {
               <Route path="/grossglockner-pass" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
               <Route path="/hochtor-pass" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
               <Route path="/grossglockner-hochalpenstrasse" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
+              <Route path="/umling-la" element={<Navigate to="/passes/india/ladakh/umling-la" replace />} />
+              <Route path="/umlingla" element={<Navigate to="/passes/india/ladakh/umling-la" replace />} />
+              <Route path="/umling-la-pass" element={<Navigate to="/passes/india/ladakh/umling-la" replace />} />
+              <Route path="/umling-pass" element={<Navigate to="/passes/india/ladakh/umling-la" replace />} />
 
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />

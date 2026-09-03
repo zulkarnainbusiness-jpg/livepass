@@ -100,6 +100,8 @@
 /passes/austria/katschberg-pass /passes/austria/carinthia-salzburg/katschberg-pass 301
 /passes/grossglockner-high-alpine-road /passes/austria/salzburg-carinthia/grossglockner-high-alpine-road 301
 /passes/austria/grossglockner-high-alpine-road /passes/austria/salzburg-carinthia/grossglockner-high-alpine-road 301
+/passes/umling-la /passes/india/ladakh/umling-la 301
+/passes/india/umling-la /passes/india/ladakh/umling-la 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

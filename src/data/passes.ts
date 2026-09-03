@@ -13083,6 +13083,280 @@ export const passesData: MountainPass[] = [
       "Großglockner Schneeräumung",
       "Großglockner Wintersperre"
     ]
+  },
+  {
+    "id": "umling-la",
+    "slug": "umling-la",
+    "name": "Umling La Pass (उमलिंग ला)",
+    "country": "India",
+    "countryCode": "IND",
+    "continent": "Asia",
+    "state": "Ladakh",
+    "highway": "Chisumle-Demchok Road (Project HIMANK)",
+    "elevationFt": 19024,
+    "elevationM": 5798,
+    "coordinates": {
+      "lat": 32.9772,
+      "lng": 79.2889
+    },
+    "status": "OPEN",
+    "statusDetail": "Umling La Pass (19,024 ft / 5,798 m) is open to civilian vehicular traffic for the summer season (daily transit permitted 08:00–17:00). Pristine blacktopped asphalt highway constructed by the Border Roads Organisation (BRO Project HIMANK). Mandatory Ladakh Inner Line Permit (ILP) required past Loma and Hanle checkpoints. Extreme sub-zero temperatures and thin atmospheric oxygen (~50% of sea level). Carry supplemental oxygen and warm alpine gear.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Umling La (उमलिंग ला, 19,024 ft / 5,798 m) in Eastern Ladakh, India is officially certified by Guinness World Records as the highest motorable road and mountain pass on planet Earth. Built by the Border Roads Organisation (BRO) under Project HIMANK, this remarkable 52 km blacktopped highway traverses the rugged Himalayan ridge between Chisumle and Demchok near the Line of Actual Control (LAC). Surpassing Khardung La (17,582 ft) and Bolivia's Uturuncu road (18,953 ft), Umling La stands as an extraordinary triumph of extreme high-altitude civil engineering amidst the stark, windswept moonscapes of the Changthang plateau.",
+    "image": "/umling-la.webp",
+    "weather": {
+      "tempF": 23,
+      "tempC": -5,
+      "condition": "Sub-Zero Extreme Alpine Sun & Ultra-Thin Air",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 10,
+      "depthIn": 4,
+      "condition": "High-Altitude Glacial Frost & Permafrost Ridges"
+    },
+    "wind": {
+      "speedKmh": 45,
+      "speedMph": 28,
+      "direction": "NW",
+      "description": "Brisk High-Plateau Gales"
+    },
+    "roadCondition": "Paved two-lane blacktopped asphalt constructed by BRO Project HIMANK across the entire 52 km Chisumle–Demchok stretch. Steep average gradients of 7–10% with 24 sweeping alpine switchbacks. Ultra-thin oxygen thins fuel-air mixture, reducing engine output by 30–40%. High-ground-clearance 4WD vehicles and motorcycles in prime mechanical condition are recommended. Watch for morning black ice and localized gravel spill.",
+    "chainRequirement": "Anti-skid snow chains recommended in shoulder months (October–November & April–May) during sudden high-altitude snow squalls. Strict acclimatization at Leh (3,500 m) and Hanle (4,500 m) is medically vital before ascending.",
+    "cameras": [
+      {
+        "id": "umling-cam-summit",
+        "title": "Umling La Summit (19,024 ft / 5,798 m) — Project HIMANK Marker",
+        "image": "/umling-la.webp",
+        "milepost": "Chisumle-Demchok Road MP 24",
+        "direction": "Eastbound (Demchok / LAC) / Westbound (Chisumle / Hanle)",
+        "location": "Umling La Crest (Guinness World Record Site)",
+        "source": "Border Roads Organisation (BRO Project HIMANK)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://bro.gov.in"
+      },
+      {
+        "id": "umling-cam-chisumle",
+        "title": "Chisumle Military Bridge & Approach Valley",
+        "image": "/umling-la.jpg",
+        "milepost": "Chisumle Bridge Checkpoint",
+        "direction": "Northbound towards Umling La Summit",
+        "location": "Chisumle River Crossing",
+        "source": "Border Roads Organisation (Project HIMANK)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://leh.nic.in"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "chang-la-pass",
+        "slug": "chang-la-pass",
+        "name": "Chang La Pass",
+        "country": "India",
+        "state": "Ladakh",
+        "highway": "Leh–Pangong Highway",
+        "status": "OPEN",
+        "elevationFt": 17590,
+        "lastUpdated": "20 min ago",
+        "distanceKm": 260
+      },
+      {
+        "id": "khardung-la",
+        "slug": "khardung-la",
+        "name": "Khardung La",
+        "country": "India",
+        "state": "Ladakh",
+        "highway": "Leh-Nubra Road",
+        "status": "OPEN",
+        "elevationFt": 17582,
+        "lastUpdated": "12 min ago",
+        "distanceKm": 310
+      },
+      {
+        "id": "baralacha-la",
+        "slug": "baralacha-la",
+        "name": "Baralacha La Pass",
+        "country": "India",
+        "state": "Himachal Pradesh",
+        "highway": "Leh-Manali Highway (NH-3)",
+        "status": "OPEN",
+        "elevationFt": 16040,
+        "lastUpdated": "25 min ago",
+        "distanceKm": 380
+      }
+    ],
+    "overview": {
+      "openedYear": 2017,
+      "lengthMiles": 32.3,
+      "lengthKm": 52.0,
+      "annualSnowfallIn": 180,
+      "annualSnowfallM": 4.5,
+      "summary": "Constructed by the Border Roads Organisation (Project HIMANK) and certified by Guinness World Records in 2021 at 19,024 feet (5,798.51 meters), Umling La is the highest paved motorable road on planet Earth. Spanning 52 km between Chisumle and Demchok in the Changthang region of eastern Ladakh, the road was built under extraordinary logistical challenges: winter temperatures plunge to -40°C, oxygen levels hover at roughly 50% of sea level, and machine operators required supplemental oxygen tanks to carve through frozen permafrost. The road provides a vital strategic supply line along the Line of Actual Control (LAC) and has become the ultimate high-altitude pilgrimage for adventure motorists worldwide."
+    },
+    "isSeasonal": true,
+    "seasonalClosureInfo": {
+      "typicalClosure": "December to May (Winter Closure due to extreme sub-zero cold of -40°C and heavy snowpack)",
+      "typicalReopening": "Late May to early June (Cleared by BRO Project HIMANK heavy rotary snow cutters)",
+      "description": "Umling La experiences seasonal winter closure when temperatures plunge to -40°C and heavy snowdrifts isolate the 19,024 ft ridge. BRO Project HIMANK begins snow clearance in April using bulldozers and high-altitude rotary blowers, reopening the pass for summer civilian travel around late May or early June."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Sub-Zero Alpine Sun",
+        "tempHighF": 27,
+        "tempLowF": 10,
+        "icon": "sun"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "High-Altitude Gales",
+        "tempHighF": 25,
+        "tempLowF": 9,
+        "icon": "wind"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Partly Cloudy & Icy",
+        "tempHighF": 23,
+        "tempLowF": 7,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Cold Plateau Sun",
+        "tempHighF": 28,
+        "tempLowF": 12,
+        "icon": "sun"
+      }
+    ],
+    "elevationProfile": {
+      "minElevationFt": 14200,
+      "maxElevationFt": 19024,
+      "grade": "Average 7-9% (Maximum 10-12% near summit)",
+      "points": [
+        { "distanceMiles": 0, "elevationFt": 14200, "label": "Chisumle Bridge (14,200 ft)" },
+        { "distanceMiles": 8, "elevationFt": 16100, "label": "Lower Switchbacks (16,100 ft)" },
+        { "distanceMiles": 16, "elevationFt": 17800, "label": "Ridge Approach (17,800 ft)" },
+        { "distanceMiles": 24, "elevationFt": 19024, "label": "Umling La Summit (19,024 ft / 5,798 m)" },
+        { "distanceMiles": 32, "elevationFt": 17400, "label": "Demchok Descent (17,400 ft)" },
+        { "distanceMiles": 40, "elevationFt": 15800, "label": "Indus Valley Plain (15,800 ft)" },
+        { "distanceMiles": 52, "elevationFt": 14000, "label": "Demchok Village / LAC (14,000 ft)" }
+      ]
+    },
+    "routeDetails": {
+      "distanceKm": 52,
+      "distanceMiles": 32.3,
+      "duration": "2.5–3.5 hours driving time (Hanle to Umling La summit)",
+      "origin": "Chisumle Bridge & ITBP Checkpoint (14,200 ft)",
+      "destination": "Demchok Village / LAC Border (14,000 ft)",
+      "waypoints": [
+        "Chisumle Bridge & ITBP Checkpost",
+        "Lower Alpine Switchbacks",
+        "Project HIMANK Mid-Camp",
+        "Umling La Crest (19,024 ft / 5,798 m)",
+        "Guinness World Record Monument",
+        "Oxygen Medical Emergency Hut",
+        "Demchok Valley & LAC Border Zone"
+      ]
+    },
+    "travelTips": [
+      "ACCLIMATIZATION IS MANDATORY: Spend at least 48 hours in Leh (3,500 m) and at least 1–2 nights in Hanle (4,500 m) before attempting Umling La. Never ascend directly from Leh in a single day.",
+      "PORTABLE OXYGEN IS ESSENTIAL: Atmospheric oxygen is ~50% of sea level. Carry portable medical oxygen canisters (available in Leh markets) and a finger pulse oximeter.",
+      "LIMIT SUMMIT STAY TO 15–20 MINUTES: Even well-acclimatized travelers should not linger longer than 15–20 minutes at 19,024 ft to avoid acute mountain sickness (AMS) or high-altitude cerebral/pulmonary edema (HACE/HAPE).",
+      "CHECKPOINT TIMINGS: The Indian Army / ITBP checkpoint at Loma and Hanle permits transit towards Umling La typically between 08:00 and 13:00. Return before 17:00.",
+      "INNER LINE PERMIT (ILP): Indian citizens must obtain a valid Ladakh Inner Line Permit mentioning Nyoma, Hanle, and Chumur/Koyul circuits. Carry multiple printed copies and original government ID (Aadhaar / Voter ID).",
+      "FUEL UP AT NYOMA / KARU: There are no petrol pumps anywhere near Umling La. The closest fuel station is at Karu (200+ km away) or local barrel fuel at Nyoma. Carry reserve fuel in jerry cans."
+    ],
+    "history": [
+      {
+        "year": "2017",
+        "title": "Initial Cut by Project HIMANK",
+        "description": "The Border Roads Organisation (BRO) under Project HIMANK carved out the initial unpaved motorable alignment across Umling La at 19,300 ft, connecting forward border villages and military outposts near Demchok."
+      },
+      {
+        "year": "2021",
+        "title": "Blacktopping & Guinness World Record Certification",
+        "description": "BRO accomplished the unprecedented engineering feat of blacktopping the entire 52 km road using specialized asphalt mixes resistant to sub-zero permafrost. Guinness World Records officially verified Umling La at 19,024 ft (5,798.51 m) as the highest motorable road on Earth."
+      },
+      {
+        "year": "2023–2026",
+        "title": "World Record Expeditions & Civilian Tourism",
+        "description": "Umling La has become an iconic destination for global motorcycle rallies, EV high-altitude endurance trials, and extreme marathon runs, monitored and maintained 24/7 by BRO snow clearing teams."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Umling La Pass open today? (Umling La is open / Umling La is it open today)",
+        "answer": "Yes! Umling La Pass (19,024 ft / 5,798 m) is currently OPEN for vehicular traffic during its summer operating season. Transit is permitted daily from 08:00 to 17:00 under Border Roads Organisation (BRO Project HIMANK) road supervision. A valid Ladakh Inner Line Permit (ILP) and acclimatization check at Hanle are mandatory. Check LivePassWatch for real-time weather and road updates."
+      },
+      {
+        "question": "When does Umling La open? 2026 Opening Date (Umling La opening date / when does Umling La open)",
+        "answer": "Umling La Pass typically opens for the summer season between late May and early June after extensive snow clearance by BRO Project HIMANK heavy rotary blowers. For the 2026 season, the road is open to civilian vehicles following spring clearing operations. Opening dates depend heavily on winter snow accumulation and sub-zero spring storms."
+      },
+      {
+        "question": "What are the road conditions on Umling La? (Umling La road conditions)",
+        "answer": "Road conditions on Umling La are blacktopped and paved throughout the 52 km Chisumle–Demchok stretch. The road is in pristine condition with 24 smooth banked curves. However, drivers must watch for localized gravel spill, sharp switchback drop-offs, and morning black ice patches. High-ground-clearance 4WD vehicles or adventure motorcycles are recommended due to extreme gradients and thin air reducing engine power."
+      },
+      {
+        "question": "What is the road status of Umling La? (Umling La road status / Umling La pass status report)",
+        "answer": "Umling La Pass road status is currently OPEN. The BRO Project HIMANK pass status report confirms clear passage between Chisumle and Demchok. High-altitude mountain weather changes swiftly; check the latest road status report on LivePassWatch before departing from Hanle."
+      },
+      {
+        "question": "When does Umling La close for winter? (when does Umling La close for winter / Umling La closed / Umling La is closed)",
+        "answer": "Umling La closes for the winter season in late November or early December when temperatures plunge to -40°C and blizzard snowdrifts cover the 19,024 ft ridge. The pass remains closed through winter until late May. During the summer season, the road is temporarily closed at night between 17:00 and 08:00 for traveler safety."
+      },
+      {
+        "question": "Does Umling La have a live webcam? (Umling La webcam / Umling La live webcam / Umling La cameras / Umling La summit camera)",
+        "answer": "No civilian live streaming webcam is publicly operated at Umling La Pass summit (19,024 ft). Because Umling La is a sensitive strategic corridor along the Line of Actual Control (LAC) near Demchok, public live video streaming is restricted under defense and national security protocols. Furthermore, extreme sub-zero temperatures (-40°C) and the lack of permanent power grid or fiber optic broadband at the summit prevent continuous commercial webcam hardware operation. Verified road reports and official BRO advisories are updated on LivePassWatch."
+      },
+      {
+        "question": "Where is the Umling La map and how do you reach it? (Umling La map)",
+        "answer": "Umling La Pass is located in the Changthang region of Eastern Ladakh (GPS: 32.9772° N, 79.2889° E). The most popular driving route is: Leh -> Karu -> Chumathang -> Nyoma -> Loma Checkpost -> Hanle (night stay) -> Photi La or Koyul -> Chisumle -> Umling La Summit (19,024 ft). You can explore the interactive Umling La route and terrain map directly on LivePassWatch."
+      },
+      {
+        "question": "How high is Umling La compared to Khardung La and Mount Everest Base Camp?",
+        "answer": "Umling La stands at 19,024 feet (5,798.51 meters) above sea level. It is officially higher than Khardung La (17,582 ft / 5,359 m), Chang La (17,590 ft / 5,360 m), and both North and South Everest Base Camps (17,598 ft / 5,364 m in Nepal; 16,900 ft / 5,150 m in Tibet). It is recognized by Guinness World Records as the world's highest paved motorable pass."
+      },
+      {
+        "question": "Do I need a permit for Umling La? Can foreign tourists visit?",
+        "answer": "Indian citizens require a valid Ladakh Inner Line Permit (ILP) specifying Hanle, Nyoma, and Chumur/Koyul, easily obtained online via lahdclehpermit.in or at the DC office in Leh. Foreign tourists (OCI / Foreign Passports) are currently not permitted to travel to Umling La due to proximity to the Line of Actual Control (LAC); foreign travelers are typically restricted past Hanle / Nyoma."
+      }
+    ],
+    "customSeo": {
+      "title": "Umling La Road Status & Live Updates — Is It Open Today? (2026 Opening Date, Road Conditions, Cameras & Map) | LivePassWatch",
+      "description": "Check live Umling La Pass status, road conditions, 2026 opening date & high-altitude road report (19,024 ft / 5,798 m, Ladakh). Verified BRO Project Himank pass report.",
+      "h1": "Umling La Road Status & Conditions — 19,024 ft (World's Highest Motorable Pass, Ladakh)"
+    },
+    "keywords": [
+      "Umling La opening date",
+      "Umling La is open",
+      "Umling La road conditions",
+      "Umling La road status",
+      "Umling La pass status report",
+      "when does Umling La open",
+      "Umling La closed",
+      "Umling La is closed",
+      "Umling La is it open today",
+      "is Umling La closed today",
+      "Umling La webcam",
+      "Umling La live webcam",
+      "Umling La cameras",
+      "Umling La summit camera",
+      "when does Umling La close for winter",
+      "Umling La map",
+      "उमलिंग ला",
+      "उमलिंग ला दर्रा",
+      "उमलिंग ला पास कब खुलेगा",
+      "उमलिंग ला रोड स्टेटस",
+      "उमलिंग ला सड़क की स्थिति",
+      "उमलिंग ला लद्दाख",
+      "Highest motorable road in the world",
+      "19024 ft Umling La",
+      "BRO Project HIMANK",
+      "Chisumle Demchok road",
+      "Hanle to Umling La",
+      "Umling La permit"
+    ]
   }
 ];
 
