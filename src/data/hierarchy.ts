@@ -205,6 +205,22 @@ export const hierarchyData: HierarchyContinent[] = [
                 "image": "/siskiyou-summit-oregon.jpg"
               }
             ]
+          },
+          {
+            "id": "montana",
+            "name": "Montana",
+            "passes": [
+              {
+                "id": "logan-pass",
+                "slug": "logan-pass",
+                "name": "Logan Pass (Going-to-the-Sun Road)",
+                "highway": "Going-to-the-Sun Road",
+                "elevationFt": 6646,
+                "elevationM": 2026,
+                "status": "OPEN",
+                "image": "/logan-pass.webp"
+              }
+            ]
           }
         ]
       },

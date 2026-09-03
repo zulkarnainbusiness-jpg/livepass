@@ -701,13 +701,20 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Rogers Pass (1,330 m) & Allison Pass (1,342 m)',
     crossLinkUrl: '/passes/canada/british-columbia/rogers-pass',
     crossLinkText: 'Compare Canadian mountain highway road conditions and winter pass cams with'
+  },
+  'logan-pass': {
+    nearestTowns: [
+      { name: 'West Glacier, Montana', distance: '32.0 miles (51.5 km)', direction: 'West via Going-to-the-Sun Road West (Lake McDonald / Apgar)' },
+      { name: 'St. Mary, Montana', distance: '18.0 miles (29.0 km)', direction: 'East via Going-to-the-Sun Road East (St. Mary Lake / US-89)' },
+      { name: 'Columbia Falls, Montana', distance: '49.0 miles (78.8 km)', direction: 'West via US-2 West & Flathead Valley' },
+      { name: 'Whitefish, Montana', distance: '57.0 miles (91.7 km)', direction: 'West via US-2 & MT-40 (Ski & Mountain Resort)' },
+      { name: 'Kalispell, Montana', distance: '64.0 miles (103.0 km)', direction: 'Southwest via US-2 (Regional Airport & Commercial Hub)' }
+    ],
+    seasonalClosureWindow: 'Mid-to-Late October through Late June / Early July (Winter Seasonal Closure)',
+    seasonalClosureDetail: 'Logan Pass (6,646 ft / 2,026 m) is subject to one of the most severe winter alpine closures in the United States National Park system. Located on the Continental Divide in Glacier National Park, the pass accumulates between 400 and 550 inches (10 to 14 meters) of snow annually. The notorious "Big Drift" just east of the pass crest routinely stacks snowpacks 60 to 80 feet (18 to 24 meters) deep. The National Park Service closes the alpine section of Going-to-the-Sun Road between Avalanche and Jackson Glacier Overlook on the third Monday of October (or earlier upon the first major blizzard). Spring snowplowing requires up to 10 weeks of intensive pioneering with rotary snowblowers and bulldozers to achieve a late June or early July reopening. Vehicles over 21 ft long or 8 ft wide are prohibited year-round.',
+    aboutPass: 'Logan Pass (elevation 6,646 ft / 2,026 m) is the highest elevation accessible by vehicle in Glacier National Park, Montana, straddling the Continental Divide along the National Historic Landmark Going-to-the-Sun Road. Renowned for soaring glaciated peaks like Reynolds Mountain and Clements Mountain, the Logan Pass Visitor Center serves as the premier trailhead for the Highline Trail and Hidden Lake Trail. Constructed between 1921 and 1933 and dedicated by President Franklin D. Roosevelt, Going-to-the-Sun Road over Logan Pass is an internationally acclaimed Historic Civil Engineering Landmark. Live webcams provided by the Glacier National Park Conservancy and the National Park Service deliver continuous views of parking lot capacity, trailhead snow conditions, and alpine weather.',
+    crossLinkAnchor: 'Snoqualmie Pass (3,022 ft) & Rogers Pass (4,364 ft)',
+    crossLinkUrl: '/passes/united-states/washington/snoqualmie-pass',
+    crossLinkText: 'Compare Rocky Mountain and Cascade alpine highway road conditions with'
   }
 };
-
-
-
-
-
-
-
-

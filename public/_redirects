@@ -104,6 +104,8 @@
 /passes/india/umling-la /passes/india/ladakh/umling-la 301
 /passes/coquihalla-summit-pass /passes/canada/british-columbia/coquihalla-summit-pass 301
 /passes/canada/coquihalla-summit-pass /passes/canada/british-columbia/coquihalla-summit-pass 301
+/passes/logan-pass /passes/united-states/montana/logan-pass 301
+/passes/united-states/logan-pass /passes/united-states/montana/logan-pass 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

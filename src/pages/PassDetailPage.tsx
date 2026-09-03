@@ -139,6 +139,54 @@ const baralachaHindiFaqs = [
 
 
 
+
+const loganIndigenousFaqs = [
+  {
+    question: "Is Logan Pass open today? (Logan Pass is open / Logan Pass open / is Logan Pass open right now)",
+    answer: "Yes, Logan Pass (elevation 6,646 ft / 2,026 m) along the Going-to-the-Sun Road in Glacier National Park is currently OPEN to vehicular traffic. Highway lanes are bare and dry with good alpine visibility. Vehicles longer than 21 feet or wider than 8 feet are strictly prohibited between Avalanche and Rising Sun. Check LivePassWatch for live webcam feeds and official NPS updates before driving."
+  },
+  {
+    question: "What is the official Logan Pass opening date for 2026? (Logan Pass opening date / when does Logan Pass open / Logan Pass when will open)",
+    answer: "Logan Pass typically opens for the summer season between late June and early July, once NPS road crews clear the massive 60-to-80-foot 'Big Drift' snowpack east of the summit. In 2025, the pass opened on June 22; in 2024, on June 23; and in 2022, following record late snowfalls, on July 13. The 2026 opening date is projected for late June, pending spring weather and avalanche stabilization."
+  },
+  {
+    question: "What are the current Logan Pass road conditions and road status? (Logan Pass road conditions / Logan Pass road status / Logan Pass pass status report)",
+    answer: "Current road conditions across Logan Pass are bare and dry with clear travel lanes. Because weather on the Continental Divide can change in minutes, summer drivers may encounter sudden freezing rain, dense fog, or late-season snow flurries. Speeds are strictly capped at 25–15 mph along the alpine cliffside sections, and vehicle size limits are actively enforced."
+  },
+  {
+    question: "When does Logan Pass close for winter? (when does Logan Pass close for winter / Logan Pass closed / Logan Pass is closed)",
+    answer: "Logan Pass closes for the winter season on the third Monday of October (weather permitting), or earlier if the first major winter blizzard renders the high alpine road impassable. Once closed for the season, the high-elevation stretch of Going-to-the-Sun Road between Avalanche Campground and Jackson Glacier Overlook remains shut to motor vehicles until the following summer."
+  },
+  {
+    question: "Is Logan Pass closed today or are there closures today? (is Logan Pass closed today / Logan Pass closures today / Logan Pass passes open)",
+    answer: "No, Logan Pass is NOT closed today; it is open for full travel across Going-to-the-Sun Road. Temporary short-duration closures may occur during summer severe weather warnings, rockfall clearance, or wildlife mitigation (such as grizzly bear activity near the parking lot or Hidden Lake Trailhead). Check LivePassWatch for real-time status alerts."
+  },
+  {
+    question: "Are there live webcams at Logan Pass? (Logan Pass webcam / Logan Pass live webcam / cameras)",
+    answer: "Yes! LivePassWatch features verified live webcams operated by the Glacier National Park Conservancy and National Park Service. Feeds include the Logan Pass Parking Lot camera (viewing Going-to-the-Sun Mountain and parking capacity), the Hidden Lake Trailhead camera (viewing Clements Mountain), and valley views from Lake McDonald and Many Glacier. Images refresh automatically every minute."
+  },
+  {
+    question: "What is the elevation of Logan Pass? (Logan Pass elevation)",
+    answer: "Logan Pass sits at an official elevation of 6,646 feet (2,026 meters) above sea level, making it the highest point on the Going-to-the-Sun Road and the highest motor-accessible elevation in Glacier National Park, Montana. It rests directly on the Continental Divide, separating Atlantic and Pacific watersheds."
+  },
+  {
+    question: "What is the Logan Pass weather today, snow depth, and snow conditions? (Logan Pass weather today / Logan Pass snow / Logan Pass snow depth / Logan Pass snow conditions)",
+    answer: "Current Logan Pass weather features pleasant daytime temperatures around 54°F (12°C) with dry road conditions. The winter snowpack—which regularly exceeds 400 to 550 inches (10 to 14 meters) annually—has been cleared from the driving surface, though lingering snowfields remain visible around Clements Mountain and Hidden Lake well into August."
+  },
+  {
+    question: "Where can I view the Logan Pass map and route details? (Logan Pass map)",
+    answer: "Logan Pass is located at GPS coordinates 48.6961° N, 113.7186° W, at Mile 32 of the 50-mile Going-to-the-Sun Road. It is located 32 miles east of West Glacier and 18 miles west of St. Mary. You can explore interactive terrain maps, elevation profiles, waypoints, and shuttle stops directly on the LivePassWatch interactive map."
+  },
+  {
+    question: "Do I need a vehicle reservation or timed entry permit to visit Logan Pass?",
+    answer: "Yes, during peak summer months (typically late May through early September, between 6:00 AM and 3:00 PM), Glacier National Park requires a vehicle reservation to travel Going-to-the-Sun Road. Visitors without reservations may enter before 6:00 AM or after 3:00 PM, or access the pass via the free park shuttle system departing from Apgar or St. Mary."
+  },
+  {
+    question: "What is the Indigenous Blackfoot heritage of Logan Pass (Miistakis)?",
+    answer: "To the Blackfoot Confederacy (Niitsítapi: Siksiká, Kainai, and Piikani), the mountains of Glacier are known as 'Miistakis'—the 'Backbone of the World.' Logan Pass is a sacred alpine sanctuary historically used for ceremonial prayer, vision quests, and medicinal plant gathering. Prominent summits like Going-to-the-Sun Mountain, Reynolds Mountain, and Little Chief hold sacred cultural significance for the Blackfeet Nation and Kootenai and Salish peoples."
+  }
+];
+
 const coquihallaFrenchFaqs = [
   {
     question: "Le col Coquihalla est-il ouvert aujourd'hui? (Is Coquihalla Summit Pass open today?)",
@@ -892,7 +940,90 @@ export const PassDetailPage: React.FC = () => {
           </div>
         )}
 
-        {/* Bilingual Language Switcher for Passes */}
+        {/* Bilingual Language Switcher for Logan Pass */}
+        {pass.slug === 'logan-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(16, 185, 129, 0.06) 100%)',
+            border: '1px solid rgba(59, 130, 246, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#1E3A8A' }}>
+              <Globe size={18} color="#2563EB" />
+              <span>
+                {pageLang === 'fr'
+                  ? '🇨🇦 Version régionale et traduction active — Col Logan (Going-to-the-Sun Road, Parc National Glacier)'
+                  : '🇺🇸 Official Glacier National Park & Continental Divide Heritage Active — Switch language or auto-translate anytime'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇺🇸 English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 Français
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/united-states/montana/logan-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#1D4ED8',
+                  background: '#EFF6FF',
+                  border: '1px solid #93C5FD',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Google Translate"
+              >
+                Google Translate <ExternalLink size={12} />
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* Bilingual Language Switcher for Coquihalla Summit Pass */}
         {pass.slug === 'coquihalla-summit-pass' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',

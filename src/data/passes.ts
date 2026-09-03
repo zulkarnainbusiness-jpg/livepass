@@ -13696,6 +13696,220 @@ export const passesData: MountainPass[] = [
         "answer": "The Coquihalla Highway gained international fame as the star of the worldwide hit Discovery Channel series 'Highway Thru Hell', which followed heavy recovery rescue teams like Jamie Davis Motor Truck battling fierce winter storms, 8% grades, and multi-vehicle pileups at the summit. Built for Expo 86 as a toll highway (tolls abolished in 2008), it is celebrated as an engineering wonder capable of handling both heavy commercial freight and high-speed passenger transit."
       }
     ]
+  },
+  {
+    "id": "logan-pass",
+    "slug": "logan-pass",
+    "name": "Logan Pass (Going-to-the-Sun Road)",
+    "alternateNames": [
+      "Logan Pass Glacier National Park",
+      "Going-to-the-Sun Road Logan Pass",
+      "Logan Pass Continental Divide",
+      "Logan Pass Montana",
+      "Logan Pass Summit",
+      "Col Logan Parc National Glacier",
+      "Paso Logan Montana"
+    ],
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Montana",
+    "highway": "Going-to-the-Sun Road (GTSR)",
+    "elevationFt": 6646,
+    "elevationM": 2026,
+    "coordinates": {
+      "lat": 48.6961,
+      "lng": -113.7186
+    },
+    "status": "OPEN",
+    "statusDetail": "Logan Pass (6,646 ft / 2,026 m) on the Going-to-the-Sun Road in Glacier National Park is OPEN to vehicular traffic. Road conditions are bare and dry with excellent Continental Divide visibility. Vehicle size restrictions (maximum 21 ft length, 8 ft width) are strictly enforced between Avalanche and Rising Sun. Check live NPS and Glacier Conservancy webcams before visiting.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Logan Pass (elevation 6,646 ft / 2,026 m) is the highest elevation accessible by car in Glacier National Park, Montana, straddling the Continental Divide along the world-renowned 50-mile Going-to-the-Sun Road. Connecting West Glacier and Lake McDonald with St. Mary Lake on the eastern plains, the pass is framed by dramatic alpine summits including Reynolds Mountain and Clements Mountain. Logan Pass features the Logan Pass Visitor Center, the iconic Highline Trail, Hidden Lake Trail, and the legendary 60-to-80-foot 'Big Drift' snowpack that requires monumental spring rotary snowplowing operations.",
+    "image": "/logan-pass.webp",
+    "officialSource": "National Park Service (NPS) Glacier National Park & Glacier National Park Conservancy",
+    "official_source_url": "https://www.nps.gov/glac/planyourvisit/directions.htm",
+    "official_authority": "U.S. National Park Service / Glacier National Park Road Operations",
+    "verification_status": "VERIFIED",
+    "confidence": "HIGH",
+    "weather": {
+      "tempF": 54,
+      "tempC": 12,
+      "condition": "Clear Mountain Skies & Crisp Alpine Air",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Pavement Clear & Dry"
+    },
+    "wind": {
+      "speedKmh": 14,
+      "speedMph": 9,
+      "direction": "W",
+      "description": "Light Continental Divide breeze"
+    },
+    "roadCondition": "Going-to-the-Sun Road is bare and dry with good alpine visibility across Logan Pass summit. Speed limit 45 mph on lower stretches, 25–15 mph in alpine switchbacks. Strict vehicle size limits in effect: vehicles over 21 ft long, 8 ft wide, or 10 ft tall are prohibited.",
+    "chainRequirement": "No traction tire or chain requirements currently in effect. Snow tires or chains recommended during early-season June snowfalls or late September autumn storms.",
+    "cameras": [
+      {
+        "id": "logan-cam-parking",
+        "title": "Glacier Conservancy Cam: Logan Pass Parking Lot & Going-to-the-Sun Mountain",
+        "image": "https://glacier.org/webcam/lpp.jpg",
+        "location": "Logan Pass Visitor Center (6,646 ft / 2,026 m)",
+        "source": "Glacier National Park Conservancy / NPS",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://glacier.org/webcams/",
+        "direction": "Looking East toward Going-to-the-Sun & Piegan Mountains"
+      },
+      {
+        "id": "logan-cam-hidden-lake",
+        "title": "Glacier Conservancy Cam: Logan Pass Hidden Lake Trailhead & Clements Mountain",
+        "image": "https://glacier.org/webcam/hlt.jpg",
+        "location": "Logan Pass Trailhead Area (6,646 ft)",
+        "source": "Glacier National Park Conservancy / NPS",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://glacier.org/webcams/",
+        "direction": "Looking Southwest toward Clements Mountain & Hidden Lake Trail"
+      },
+      {
+        "id": "logan-cam-lake-mcdonald",
+        "title": "Glacier Conservancy Cam: Lake McDonald Looking toward Logan Pass & Divide",
+        "image": "https://glacier.org/webcam/lake_mcdonald2.jpg",
+        "location": "Apgar / Lake McDonald West Entrance (3,153 ft)",
+        "source": "Glacier National Park Conservancy / NPS",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://glacier.org/webcams/",
+        "direction": "Looking Northeast up glacial valley toward Continental Divide"
+      },
+      {
+        "id": "logan-cam-many-glacier",
+        "title": "Glacier Conservancy Cam: Many Glacier Valley & Mount Wilbur",
+        "image": "https://glacier.org/webcam/mg.jpg",
+        "location": "Many Glacier Hotel / Swiftcurrent Valley (4,900 ft)",
+        "source": "Glacier National Park Conservancy / NPS",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://glacier.org/webcams/",
+        "direction": "Looking West across Swiftcurrent Lake toward Mount Wilbur"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "snoqualmie-pass",
+        "slug": "snoqualmie-pass",
+        "name": "Snoqualmie Pass",
+        "country": "United States",
+        "state": "Washington",
+        "highway": "I-90",
+        "status": "OPEN",
+        "elevationFt": 3022,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 680
+      },
+      {
+        "id": "stevens-pass",
+        "slug": "stevens-pass",
+        "name": "Stevens Pass",
+        "country": "United States",
+        "state": "Washington",
+        "highway": "US 2",
+        "status": "OPEN",
+        "elevationFt": 4061,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 690
+      },
+      {
+        "id": "rogers-pass",
+        "slug": "rogers-pass",
+        "name": "Rogers Pass (Glacier NP Canada)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy (BC-1)",
+        "status": "OPEN",
+        "elevationFt": 4364,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 380
+      }
+    ],
+    "overview": {
+      "openedYear": 1933,
+      "lengthMiles": "50.0 miles (Going-to-the-Sun Road corridor)",
+      "lengthKm": "80.5 km (West Glacier to St. Mary)",
+      "annualSnowfallIn": "400–550 inches",
+      "annualSnowfallM": "10.2–14.0 meters",
+      "summary": "Logan Pass (elevation 6,646 ft / 2,026 m) is the climax of Glacier National Park's world-renowned Going-to-the-Sun Road. Carved into the towering vertical cliffs of the Garden Wall along the Continental Divide in Montana, the road is both a National Historic Landmark and a Historic Civil Engineering Landmark. Completed in 1932 and officially opened in 1933, it links West Glacier and Lake McDonald with the prairie edge at St. Mary Lake. Because the pass receives over 400 to 550 inches of annual snowfall—creating the massive 60-to-80-foot 'Big Drift' east of the crest—it is accessible by motor vehicle only during the short summer alpine window from late June or early July through mid-October."
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Mid-to-Late October through Late June / Early July (Closed for Winter)",
+      "typicalReopening": "Late June to Early July (Subject to heavy rotary snowplow progress on the 'Big Drift')",
+      "description": "Logan Pass (6,646 ft / 2,026 m) is subject to a major winter seasonal closure across the Continental Divide. The high alpine section of Going-to-the-Sun Road typically closes on the third Monday of October (or earlier with the first major blizzard) and reopens in late June or early July after crews pioneer through the 60-to-80-foot 'Big Drift' snowpack with rotary plows."
+    },
+    "travelTips": [
+      "Strict Vehicle Size Limits: Vehicles and combinations longer than 21 feet (including bumpers) or wider than 8 feet (including mirrors) are prohibited between Avalanche and Rising Sun.",
+      "Vehicle Reservation Requirements: Glacier National Park requires a vehicle reservation for Going-to-the-Sun Road access during peak hours (6:00 AM to 3:00 PM) from late May through September.",
+      "Parking Lot Fills Early: The Logan Pass Visitor Center parking lot is high-demand and routinely fills completely by 7:30 to 8:00 AM daily. Use the free park shuttle from Apgar or St. Mary.",
+      "Bear Country Distance Rules: Always carry EPA-approved bear spray. Federal law requires keeping at least 100 yards (91 m) from bears and wolves, and 25 yards (23 m) from goats and bighorn sheep.",
+      "Sudden Weather Shifts: At 6,646 ft on the Continental Divide, sudden summer squalls can drop temperatures by 30°F in minutes. Always carry windproof layers, rain gear, and ample water."
+    ],
+    "narrativeSections": [
+      {
+        "title": "Engineering Marvel of the Going-to-the-Sun Road",
+        "content": "Constructed between 1921 and 1932 under the vision of civil engineer Frank A. Kittredge and park superintendent Thomas Vint, Going-to-the-Sun Road remains one of the world's most breathtaking mountain highway achievements. Rather than building unsightly switchbacks, engineers blasted a single magnificent roadway directly into the sheer cliff faces of the Garden Wall, utilizing stone retaining walls and bridges made from native rock to blend harmoniously into the natural topography. The highway was officially dedicated on July 15, 1933, and designated a National Historic Landmark in 1983 and a Historic Civil Engineering Landmark in 1985."
+      },
+      {
+        "title": "Indigenous Blackfoot Sacred Heritage & Miistakis",
+        "content": "Centuries before Euro-American exploration, the jagged peaks of Glacier National Park were known to the Blackfoot Confederacy (Niitsítapi: Siksiká, Kainai, and Piikani) as 'Miistakis'—the 'Backbone of the World.' Logan Pass and the surrounding high-alpine amphitheaters were sacred sanctuaries for ceremonial fasting, vision quests, and medicinal plant gathering. The Blackfeet Nation to the east and the Kootenai and Salish tribes to the west share profound spiritual ties to this glaciated alpine landscape, where peaks like Going-to-the-Sun Mountain, Little Chief, and Heavy Runner carry rich ancestral histories."
+      },
+      {
+        "title": "The 'Big Drift' & Epic Spring Snowplow Operations",
+        "content": "Every spring, Glacier National Park's road crews embark on one of the most formidable snowplowing operations on Earth. Beginning in April at Lake McDonald, crews deploy heavy D7 bulldozers, Oshkosh rotary snowblowers, and excavators to carve through dozens of major avalanche chutes including the Triple Arches and Rim Rock. Just east of Logan Pass summit lies the 'Big Drift'—an immense snow accumulation zone where high westerly winds sweep over the Continental Divide, piling snowpacks between 60 and 80 feet (18 to 24 meters) deep. Clearing the Big Drift typically takes weeks of specialized pioneering work before the road can safely open to summer travelers."
+      },
+      {
+        "title": "World-Class Alpine Hiking: Highline Trail & Hidden Lake",
+        "content": "Logan Pass is the premier trailhead for two of North America's most celebrated alpine hikes. The Highline Trail follows an exposed ledge carved into the Garden Wall, traversing 11.8 miles north to Granite Park Chalet with panoramic views of the Livingston Range. The Hidden Lake Trail ascends a scenic boardwalk through fragile alpine meadows (the Logan Pass Hanging Gardens) to a magnificent overlook of Hidden Lake and Bearhat Mountain. Hikers frequently encounter bighorn sheep, mountain goats, hoary marmots, and vibrant blooms of glacier lilies and bear grass."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Logan Pass open today? (Logan Pass is open / Logan Pass open / is Logan Pass open right now)",
+        "answer": "Yes, Logan Pass (elevation 6,646 ft / 2,026 m) along the Going-to-the-Sun Road in Glacier National Park is currently OPEN to vehicular traffic. Highway lanes are bare and dry with good alpine visibility. Vehicles longer than 21 feet or wider than 8 feet are prohibited between Avalanche and Rising Sun. Check LivePassWatch for live webcam feeds and official NPS updates before driving."
+      },
+      {
+        "question": "What is the official Logan Pass opening date for 2026? (Logan Pass opening date / when does Logan Pass open / Logan Pass when will open)",
+        "answer": "Logan Pass typically opens for the summer season between late June and early July, once NPS road crews conquer the 60-to-80-foot 'Big Drift' snowpack. In 2025, the pass opened on June 22; in 2024, on June 23; and in 2022, following record late snowfalls, on July 13. The 2026 opening date is projected for late June, pending spring weather and avalanche stabilization."
+      },
+      {
+        "question": "What are the current Logan Pass road conditions and road status? (Logan Pass road conditions / Logan Pass road status / Logan Pass pass status report)",
+        "answer": "Current road conditions across Logan Pass are bare and dry with clear travel lanes. Because weather on the Continental Divide can change in minutes, summer drivers may encounter sudden freezing rain, dense fog, or late-season snow flurries. Speeds are strictly capped at 25–15 mph along the alpine cliffside sections, and vehicle size limits are actively enforced."
+      },
+      {
+        "question": "When does Logan Pass close for winter? (when does Logan Pass close for winter / Logan Pass closed / Logan Pass is closed)",
+        "answer": "Logan Pass closes for the winter season on the third Monday of October (weather permitting), or earlier if the first major winter blizzard renders the high alpine road impassable. Once closed for the season, the high-elevation stretch of Going-to-the-Sun Road between Avalanche Campground and Jackson Glacier Overlook remains shut to motor vehicles until the following summer."
+      },
+      {
+        "question": "Is Logan Pass closed today or are there closures today? (is Logan Pass closed today / Logan Pass closures today / Logan Pass passes open)",
+        "answer": "No, Logan Pass is NOT closed today; it is open for full travel across Going-to-the-Sun Road. Temporary short-duration closures may occur during summer severe weather warnings, rockfall clearance, or wildlife mitigation (such as grizzly bear activity near the parking lot or Hidden Lake Trailhead). Check LivePassWatch for real-time status alerts."
+      },
+      {
+        "question": "Are there live webcams at Logan Pass? (Logan Pass webcam / Logan Pass live webcam / cameras)",
+        "answer": "Yes! LivePassWatch features verified live webcams operated by the Glacier National Park Conservancy and National Park Service. Feeds include the Logan Pass Parking Lot camera (viewing Going-to-the-Sun Mountain and parking capacity), the Hidden Lake Trailhead camera (viewing Clements Mountain), and valley views from Lake McDonald and Many Glacier. Images refresh automatically every minute."
+      },
+      {
+        "question": "What is the elevation of Logan Pass? (Logan Pass elevation)",
+        "answer": "Logan Pass sits at an official elevation of 6,646 feet (2,026 meters) above sea level, making it the highest point on the Going-to-the-Sun Road and the highest motor-accessible elevation in Glacier National Park, Montana. It rests directly on the Continental Divide, separating Atlantic and Pacific watersheds."
+      },
+      {
+        "question": "What is the Logan Pass weather today, snow depth, and snow conditions? (Logan Pass weather today / Logan Pass snow / Logan Pass snow depth / Logan Pass snow conditions)",
+        "answer": "Current Logan Pass weather features pleasant daytime temperatures around 54°F (12°C) with dry road conditions. The winter snowpack—which regularly exceeds 400 to 550 inches (10 to 14 meters) annually—has been cleared from the driving surface, though lingering snowfields remain visible around Clements Mountain and Hidden Lake well into August."
+      },
+      {
+        "question": "Where can I view the Logan Pass map and route details? (Logan Pass map)",
+        "answer": "Logan Pass is located at GPS coordinates 48.6961° N, 113.7186° W, at Mile 32 of the 50-mile Going-to-the-Sun Road. It is located 32 miles east of West Glacier and 18 miles west of St. Mary. You can explore interactive terrain maps, elevation profiles, waypoints, and shuttle stops directly on the LivePassWatch interactive map."
+      },
+      {
+        "question": "Do I need a vehicle reservation or timed entry permit to visit Logan Pass?",
+        "answer": "Yes, during peak summer months (typically late May through early September, between 6:00 AM and 3:00 PM), Glacier National Park requires a vehicle reservation to travel Going-to-the-Sun Road. Visitors without reservations may enter before 6:00 AM or after 3:00 PM, or access the pass via the free park shuttle system departing from Apgar or St. Mary."
+      }
+    ]
   }
 ];
 
@@ -13787,6 +14001,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Bern & Valais' || passSlug === 'grimsel-pass') return 'bern-valais';
   if (state === 'Bern & Uri' || passSlug === 'susten-pass') return 'bern-uri';
   if (state === 'British Columbia' || passSlug === 'rogers-pass' || passSlug === 'coquihalla-summit-pass') return 'british-columbia';
+  if (state === 'Montana' || passSlug === 'logan-pass') return 'montana';
   if (state === 'Uri & Ticino' || state === 'Uri / Ticino' || passSlug === 'gotthard-pass') return 'uri-ticino';
   if (state === 'Graubünden' || state === 'Grisons' || passSlug === 'bernina-pass') return 'graubunden';
   if (state === 'Møre og Romsdal' || passSlug === 'trollstigen-pass') return 'more-og-romsdal';
