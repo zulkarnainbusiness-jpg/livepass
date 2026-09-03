@@ -402,6 +402,7 @@ export const PassDetailPage: React.FC = () => {
     if (targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard') || targetSlug.toLowerCase().includes('agnel') || targetSlug.toLowerCase().includes('angel')) return 'it';
     if (targetSlug.toLowerCase().includes('galibier') || targetSlug.toLowerCase().includes('iseran') || targetSlug.toLowerCase().includes('bonette')) return 'fr';
     if (targetSlug.toLowerCase().includes('katschberg') || targetSlug.toLowerCase().includes('grossglockner')) return 'de';
+    if (targetSlug.toLowerCase().includes('coquihalla')) return 'fr';
     return 'en';
   });
 
@@ -909,8 +910,8 @@ export const PassDetailPage: React.FC = () => {
               <Globe size={18} color="#DC2626" />
               <span>
                 {pageLang === 'fr'
-                  ? '🇨🇦 Version française active — Col de la Coquihalla (Highway 5, Colombie-Britannique)'
-                  : '🇬🇧 English Version Active — Switch to French or auto-translate anytime'}
+                  ? '🇨🇦 Contenu régional officiel (Français) — Col de la Coquihalla (Basculez à tout moment vers la traduction anglaise)'
+                  : '🇬🇧 English Auto-Translation Active (Switch to native French anytime)'}
               </span>
             </div>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
