@@ -117,7 +117,12 @@ const LegacyPassRedirect: React.FC = () => {
          (clean === 'agnel' && p.slug === 'col-agnel') ||
          (clean === 'umling-la' && p.slug === 'umling-la') ||
          (clean === 'umlingla' && p.slug === 'umling-la') ||
-         (clean === 'umling-la-pass' && p.slug === 'umling-la')
+         (clean === 'umling-la-pass' && p.slug === 'umling-la') ||
+         (clean === 'coquihalla' && p.slug === 'coquihalla-summit-pass') ||
+         (clean === 'coquihalla-summit' && p.slug === 'coquihalla-summit-pass') ||
+         (clean === 'coquihalla-pass' && p.slug === 'coquihalla-summit-pass') ||
+         (clean === 'coquihallapass' && p.slug === 'coquihalla-summit-pass') ||
+         (clean === 'coquihalla-summit-pass' && p.slug === 'coquihalla-summit-pass')
   );
 
   if (targetPass) {
@@ -223,6 +228,11 @@ export const App: React.FC = () => {
               <Route path="/umlingla" element={<Navigate to="/passes/india/ladakh/umling-la" replace />} />
               <Route path="/umling-la-pass" element={<Navigate to="/passes/india/ladakh/umling-la" replace />} />
               <Route path="/umling-pass" element={<Navigate to="/passes/india/ladakh/umling-la" replace />} />
+              <Route path="/coquihalla" element={<Navigate to="/passes/canada/british-columbia/coquihalla-summit-pass" replace />} />
+              <Route path="/coquihalla-summit" element={<Navigate to="/passes/canada/british-columbia/coquihalla-summit-pass" replace />} />
+              <Route path="/coquihalla-pass" element={<Navigate to="/passes/canada/british-columbia/coquihalla-summit-pass" replace />} />
+              <Route path="/coquihallapass" element={<Navigate to="/passes/canada/british-columbia/coquihalla-summit-pass" replace />} />
+              <Route path="/coquihalla-summit-pass" element={<Navigate to="/passes/canada/british-columbia/coquihalla-summit-pass" replace />} />
 
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />

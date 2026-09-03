@@ -227,6 +227,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 1330,
                 "status": "OPEN",
                 "image": "/rogers-pass.png"
+              },
+              {
+                "id": "coquihalla-summit-pass",
+                "slug": "coquihalla-summit-pass",
+                "name": "Coquihalla Summit Pass (Col de la Coquihalla)",
+                "highway": "BC Highway 5 (Coquihalla Hwy)",
+                "elevationFt": 4081,
+                "elevationM": 1244,
+                "status": "OPEN",
+                "image": "/coquihalla-summit-pass.webp"
               }
             ]
           }

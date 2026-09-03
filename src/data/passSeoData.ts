@@ -686,6 +686,21 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Khardung La (17,582 ft) & Chang La Pass (17,590 ft)',
     crossLinkUrl: '/passes/india/ladakh/khardung-la',
     crossLinkText: 'Compare extreme high-altitude Himalayan passes with'
+  },
+  'coquihalla-summit-pass': {
+    nearestTowns: [
+      { name: 'Hope, British Columbia', distance: '48.0 km (29.8 miles)', direction: 'Southwest via BC-5 South (Fraser Valley / Vancouver Gateway)' },
+      { name: 'Merritt, British Columbia', distance: '67.0 km (41.6 miles)', direction: 'North via BC-5 North (Nicola Valley / Kamloops connection)' },
+      { name: 'Kamloops, British Columbia', distance: '152.0 km (94.4 miles)', direction: 'North via BC-5 North & Coquihalla Phase II' },
+      { name: 'Kelowna, British Columbia', distance: '185.0 km (115.0 miles)', direction: 'Northeast via Merritt & BC-97C Okanagan Connector' },
+      { name: 'Vancouver, British Columbia', distance: '198.0 km (123.0 miles)', direction: 'West via Hope & Trans-Canada Hwy 1' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Temporary closures for avalanche blasting & vehicle recovery)',
+    seasonalClosureDetail: 'Coquihalla Summit Pass (1,244 m / 4,081 ft) is engineered and maintained by the British Columbia Ministry of Transportation and Infrastructure (MoTI) as a year-round, four-lane divided expressway. While not subject to extended seasonal winter closures like alpine passes, intense Pacific frontal storm systems can dump 30 to 75 cm of heavy mountain snow within 24 hours. Under severe weather, MoTI and maintenance contractor Yellowhead Road & Bridge (YRB) execute temporary safety closures (typically 2 to 6 hours) for explosive avalanche mitigation above the Great Bear Snowshed or heavy truck recovery. British Columbia legally mandates winter-rated tires (M+S or 3PMSF with minimum 3.5 mm tread depth) from October 1 through April 30. Commercial trucks over 11,794 kg must carry chains.',
+    aboutPass: 'Coquihalla Summit Pass (Col de la Coquihalla, 1,244 m / 4,081 ft) is the highest elevation point on British Columbia Highway 5, traversing the Bedded Rock Range of the Cascade Mountains in southwestern British Columbia, Canada. Built for the Vancouver Expo 86 world exposition to connect the Pacific Lower Mainland with the resource-rich BC Interior, the Coquihalla expressway bypassed the tortuous Fraser Canyon route (Highway 1) and reduced travel times by more than 90 minutes. World-famous as the centerpiece of the Discovery Channel documentary television series "Highway Thru Hell", the summit corridor features the 615-meter Great Bear Snowshed, high-capacity runaway truck escape lanes, the Zopkios commercial vehicle staging hub, and comprehensive DriveBC live camera networks. Supported by variable speed corridors, the pass serves as British Columbia\'s paramount commercial transportation spine.',
+    crossLinkAnchor: 'Rogers Pass (1,330 m) & Allison Pass (1,342 m)',
+    crossLinkUrl: '/passes/canada/british-columbia/rogers-pass',
+    crossLinkText: 'Compare Canadian mountain highway road conditions and winter pass cams with'
   }
 };
 

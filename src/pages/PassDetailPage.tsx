@@ -138,6 +138,46 @@ const baralachaHindiFaqs = [
 ];
 
 
+
+const coquihallaFrenchFaqs = [
+  {
+    question: "Le col Coquihalla est-il ouvert aujourd'hui? (Is Coquihalla Summit Pass open today?)",
+    answer: "Oui! Le col du sommet de la Coquihalla (1 244 m / 4 081 pi) sur l'autoroute 5 de la Colombie-Britannique (Coquihalla Highway) est actuellement OUVERT à toute la circulation. Les équipes d'entretien déneigent et surveillent l'autoroute 24 h/24. Les pneus d'hiver sont obligatoires du 1er octobre au 30 avril. Consultez LivePassWatch pour les caméras en direct DriveBC avant de partir."
+  },
+  {
+    question: "Quelles sont les conditions routières actuelles au col Coquihalla? (Coquihalla road conditions)",
+    answer: "Les voies de circulation au col Coquihalla sont actuellement dégagées avec une bonne visibilité alpine. En hiver, les conditions peuvent se détériorer rapidement avec de la neige abondante, de la pluie verglaçante et de la poudrerie près du pare-avalanche Great Bear. Les panneaux à vitesse variable adaptent automatiquement la limite de 120 km/h à 80 ou 60 km/h selon la météo."
+  },
+  {
+    question: "Quel est le rapport officiel sur l'état de la route Coquihalla? (Coquihalla road status report)",
+    answer: "Le rapport d'état officiel émis par DriveBC et le ministère des Transports de la Colombie-Britannique (MoTI) confirme une circulation fluide entre Hope (sortie 170) et Merritt (sortie 286). Les avis de chaînage obligatoire et les alertes d'incidents sont mis à jour en continu sur LivePassWatch."
+  },
+  {
+    question: "Quand le col Coquihalla ouvre-t-il et quelle est la date d'ouverture 2026?",
+    answer: "Contrairement aux cols alpins qui ferment pendant tout l'hiver, le col de la Coquihalla n'a pas de date d'ouverture saisonnière car il s'agit d'une autoroute à 4 voies ouverte toute l'année (365 jours par an). En cas de tempête extrême nécessitant du minage préventif d'avalanches, la fermeture ne dure généralement que de 2 à 6 heures."
+  },
+  {
+    question: "Quand le col Coquihalla ferme-t-il pour l'hiver? (Coquihalla closed for winter)",
+    answer: "Le col Coquihalla NE ferme PAS pour l'hiver. L'autoroute 5 est le corridor commercial le plus vital de Colombie-Britannique. Seules des fermetures d'urgence temporaires de quelques heures ont lieu lors de blizzards majeurs pour le déclenchement d'avalanches par hélicoptère ou le remorquage de poids lourds."
+  },
+  {
+    question: "Y a-t-il des caméras et webcams en direct sur le col Coquihalla? (Coquihalla webcam)",
+    answer: "Oui, LivePassWatch intègre directement les caméras officielles DriveBC du sommet de la Coquihalla : Cam 31 (sommet direction sud), Cam 32 (sommet direction nord), Cam 30 et 29 (aire de Zopkios), Cam 28 (pare-avalanche Great Bear) et Cam 34 (colline Larson). Les images sont actualisées toutes les 2 à 5 minutes."
+  },
+  {
+    question: "Quelle est la réglementation des pneus d'hiver et chaînes en Colombie-Britannique?",
+    answer: "En vertu de la loi sur les véhicules automobiles de la C.-B., les pneus d'hiver portant le symbole du flocon de montagne (3PMSF) ou M+S avec au moins 3,5 mm de bande de roulement sont obligatoires du 1er octobre au 30 avril. Les camions commerciaux de plus de 11 794 kg doivent obligatoirement transporter des chaînes et les installer quand les feux clignotent à Portia ou Box Canyon."
+  },
+  {
+    question: "Où se trouve la carte du col Coquihalla et quel est son itinéraire? (Coquihalla map)",
+    answer: "Le col Coquihalla se situe sur l'autoroute BC-5 dans la chaîne des Cascades (GPS : 49.5960° N, 121.0505° O), à 48 km au nord-est de Hope et 67 km au sud de Merritt. Retrouvez la carte interactive complète, le profil d'élévation et les aires de repos sur LivePassWatch."
+  },
+  {
+    question: "Pourquoi l'autoroute Coquihalla est-elle célèbre (Highway Thru Hell)?",
+    answer: "L'autoroute Coquihalla est mondialement célèbre grâce à la série documentaire 'Highway Thru Hell' (Autoroute de l'enfer), qui suit les opérations périlleuses de dépannage de poids lourds dans les tempêtes du sommet. Construite pour l'Exposition universelle Expo 86, cette prouesse d'ingénierie comprend le célèbre pare-avalanche Great Bear de 615 mètres."
+  }
+];
+
 const umlingLaHindiFaqs = [
   {
     question: "क्या उमलिंग ला पास आज खुला है? (Is Umling La Pass open today? / Umling La is open)",
@@ -851,7 +891,89 @@ export const PassDetailPage: React.FC = () => {
           </div>
         )}
 
-        {/* Bilingual Language Switcher for Baralacha La Pass */}
+        {/* Bilingual Language Switcher for Passes */}
+        {pass.slug === 'coquihalla-summit-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(59, 130, 246, 0.06) 100%)',
+            border: '1px solid rgba(239, 68, 68, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#991B1B' }}>
+              <Globe size={18} color="#DC2626" />
+              <span>
+                {pageLang === 'fr'
+                  ? '🇨🇦 Version française active — Col de la Coquihalla (Highway 5, Colombie-Britannique)'
+                  : '🇬🇧 English Version Active — Switch to French or auto-translate anytime'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇬🇧 English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 Français
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=${pageLang === 'fr' ? 'en' : 'fr'}&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/canada/british-columbia/coquihalla-summit-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#B91C1C',
+                  background: '#FEF2F2',
+                  border: '1px solid #FCA5A5',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                Google Translate <ExternalLink size={12} />
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* Bilingual Language Switcher for Baralacha La & Umling La */}
         {(pass.slug === 'baralacha-la' || pass.slug === 'umling-la') && (
 
           <div className="bilingual-toggle-wrap lp-card" style={{
@@ -3604,7 +3726,7 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                {((pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
                   ((pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
 
 
