@@ -19,8 +19,19 @@ if (!fs.existsSync(distDir)) {
   process.exit(1);
 }
 
-const templatePath = path.resolve(distDir, 'index.html');
-const baseTemplate = fs.readFileSync(templatePath, 'utf8');
+const templateBackupPath = path.resolve(distDir, '_template.html');
+let baseTemplate;
+
+if (fs.existsSync(templateBackupPath)) {
+  baseTemplate = fs.readFileSync(templateBackupPath, 'utf8');
+} else {
+  const templatePath = path.resolve(distDir, 'index.html');
+  if (!fs.existsSync(templatePath)) {
+    console.error('❌ dist/index.html not found. Please run vite build first.');
+    process.exit(1);
+  }
+  baseTemplate = fs.readFileSync(templatePath, 'utf8');
+}
 
 function escapeHtml(str) {
   if (!str) return '';
@@ -222,8 +233,11 @@ function generatePassSemanticHtml(pass, canonicalUrl) {
 
         <section style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
           <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a;">Official Highway Authority &amp; DOT Verification</h2>
+          <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin: 0 0 0.75rem 0;">
+            Real-time telemetry independently verified from official highway and transportation departments including <a href="${escapeHtml(pass.officialSource || pass.dataSources?.[0]?.url || '#')}" target="_blank" rel="noopener noreferrer" style="color: #1d4ed8; text-decoration: underline; font-weight: 600;">${escapeHtml(pass.dataSources?.[0]?.name || pass.officialSource || 'Regional Department of Transportation')}</a>. Always verify official DOT alerts before mountain driving.
+          </p>
           <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin: 0;">
-            Real-time telemetry independently verified from official highway and transportation departments including ${escapeHtml(pass.dataSources?.[0]?.name || pass.officialSource || 'Regional Department of Transportation')}. Always verify official DOT alerts before mountain driving.
+            Learn how LivePassWatch corroborates reports using our 3-tier <a href="/methodology" style="color: #1d4ed8; text-decoration: underline; font-weight: 600;">Multi-Source Verification Methodology</a>.
           </p>
         </section>
       </div>
@@ -442,16 +456,43 @@ function generateHomeSemanticHtml() {
   `;
 }
 
-// Clean pristine template without any residual meta tags or JSON-LD
-let cleanBaseTemplate = baseTemplate
-  .replace(/<title>[\s\S]*?<\/title>/gi, '')
-  .replace(/<meta name="description"[\s\S]*?>/gi, '')
-  .replace(/<meta name="keywords"[\s\S]*?>/gi, '')
-  .replace(/<meta name="robots"[\s\S]*?>/gi, '')
-  .replace(/<meta property="og:[\s\S]*?>/gi, '')
-  .replace(/<meta name="twitter:[\s\S]*?>/gi, '')
-  .replace(/<link rel="canonical"[\s\S]*?>/gi, '')
-  .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/gi, '');
+// Function to reliably produce a clean template without any pre-existing meta tags or body contents
+function createCleanBaseTemplate(rawHtml) {
+  // 1. Remove all page-specific metadata from <head>
+  let cleaned = rawHtml
+    .replace(/<title>[\s\S]*?<\/title>/gi, '')
+    .replace(/<meta\s+name=["']description["'][\s\S]*?>/gi, '')
+    .replace(/<meta\s+name=["']keywords["'][\s\S]*?>/gi, '')
+    .replace(/<meta\s+name=["']robots["'][\s\S]*?>/gi, '')
+    .replace(/<meta\s+property=["']og:[\s\S]*?>/gi, '')
+    .replace(/<meta\s+name=["']twitter:[\s\S]*?>/gi, '')
+    .replace(/<link\s+rel=["']canonical["'][\s\S]*?>/gi, '')
+    .replace(/<script\s+type=["']application\/ld\+json["']>[\s\S]*?<\/script>/gi, '')
+    .replace(/<!--\s*(?:Open Graph|Twitter Card)\s*-->/gi, '');
+
+  // 2. Extract any bundle <script> tags located inside <body> (if any exist)
+  const bodyMatch = cleaned.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+  let bodyScripts = '';
+  if (bodyMatch) {
+    const scripts = [...bodyMatch[1].matchAll(/<script[\s\S]*?<\/script>/gi)].map(m => m[0]);
+    if (scripts.length > 0) {
+      bodyScripts = '\n    ' + scripts.join('\n    ');
+    }
+  }
+
+  // 3. Reset <body> so it ONLY contains <div id="root"></div> and bundle scripts
+  cleaned = cleaned.replace(
+    /<body[^>]*>[\s\S]*?<\/body>/i,
+    `<body>\n    <div id="root"></div>${bodyScripts}\n  </body>`
+  );
+
+  return cleaned;
+}
+
+const cleanBaseTemplate = createCleanBaseTemplate(baseTemplate);
+
+// Cache the pristine clean template so subsequent prerender runs always use it
+fs.writeFileSync(templateBackupPath, cleanBaseTemplate, 'utf8');
 
 // -------------------------------------------------------------
 // 3. Build Full HTML Page
@@ -515,8 +556,9 @@ passesData.forEach(pass => {
   const canonicalUrl = `${DOMAIN}${canonicalPath}`;
   canonicalPassUrls.push(canonicalUrl);
 
-  const title = pass.customSeo?.title || `${pass.name} Live Webcam & Open/Closed Status – Updated Today`;
-  const description = pass.customSeo?.description || `Live ${pass.name} webcam feeds, highway conditions, and real-time open/closed status on ${pass.highway}, ${pass.state ? `${pass.state}, ` : ''}${pass.country}. Verified and updated ${pass.lastUpdated}.`;
+  const rawTitle = pass.customSeo?.title || `${pass.name} Live Status & Webcams`;
+  const title = rawTitle.toLowerCase().includes('livepasswatch') ? rawTitle : `${rawTitle} | LivePassWatch`;
+  const description = pass.customSeo?.description || `Live ${pass.name} webcams, highway conditions, and real-time open/closed status on ${pass.highway}${pass.state ? `, ${pass.state}` : ''}. Verified and updated today.`;
   const passFullImage = pass.image.startsWith('http') ? pass.image : `${DOMAIN}${pass.image.startsWith('/') ? '' : '/'}${pass.image}`;
 
   const allFaqs = [

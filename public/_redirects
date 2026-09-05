@@ -110,6 +110,14 @@
 /passes/united-states/lolo-pass /passes/united-states/montana/lolo-pass 301
 /passes/kicking-horse-pass /passes/canada/british-columbia/kicking-horse-pass 301
 /passes/canada/kicking-horse-pass /passes/canada/british-columbia/kicking-horse-pass 301
+/passes/big-sur-highway-1 /passes/united-states/california/big-sur-highway-1 301
+/passes/united-states/big-sur-highway-1 /passes/united-states/california/big-sur-highway-1 301
+/passes/red-mountain-pass /passes/united-states/colorado/red-mountain-pass 301
+/passes/united-states/red-mountain-pass /passes/united-states/colorado/red-mountain-pass 301
+/passes/disautel-pass /passes/united-states/washington/disautel-pass 301
+/passes/united-states/disautel-pass /passes/united-states/washington/disautel-pass 301
+/passes/sychnant-pass /passes/united-kingdom/wales/sychnant-pass 301
+/passes/united-kingdom/sychnant-pass /passes/united-kingdom/wales/sychnant-pass 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

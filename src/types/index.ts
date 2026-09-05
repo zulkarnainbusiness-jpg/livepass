@@ -254,6 +254,8 @@ export interface MountainPass {
     description: string;
   }[];
   keywords?: string[];
+  webcamNote?: string;
+  verificationMethod?: string;
 }
 
 export interface PassAlert {

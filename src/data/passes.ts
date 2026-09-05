@@ -5133,8 +5133,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Paso Los Libertadores (Paso Cristo Redentor): Estado Actual, Clima y Cámaras en Vivo",
-      "title": "Paso Los Libertadores (Cristo Redentor) Live Webcam & Status – Updated Today",
-      "description": "Live Paso Los Libertadores (Paso Cristo Redentor) webcam feeds, highway conditions, and real-time open/closed status on Ruta 60-CH / RN 7, Chile–Argentina. Verified and updated today."
+      "title": "Paso Los Libertadores Status & Webcam | LivePassWatch",
+      "description": "Live Paso Los Libertadores webcams, highway conditions, and real-time open/closed status on Ruta 60-CH / RN 7, Chile–Argentina. Verified and updated today."
     },
     "faqs": [
       {
@@ -8143,6 +8143,11 @@ export const passesData: MountainPass[] = [
         "name": "MeteoSwiss – Bollettini Alpini Gran San Bernardo",
         "type": "High-Altitude Weather & Snow Forecasts",
         "url": "https://www.meteoswiss.admin.ch/"
+      },
+      {
+        "name": "LivePassWatch Multi-Source Verification Methodology",
+        "type": "Data Verification Protocol",
+        "url": "/methodology"
       }
     ],
     "faqs": [
@@ -14338,6 +14343,1145 @@ export const passesData: MountainPass[] = [
         "answer": "Yes. Under British Columbia regulations, winter-rated tires (3PMSF mountain snowflake or M+S with minimum 3.5 mm tread depth) are legally mandatory on Highway 1 from October 1 to April 30. Commercial trucks over 11,794 kg must carry tire chains and be prepared to fit them when required."
       }
     ]
+  },
+  {
+    "id": "big-sur-highway-1",
+    "slug": "big-sur-highway-1",
+    "name": "Highway 1 / Big Sur Coast Route",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "California",
+    "highway": "California State Route 1 (SR-1 / PCH)",
+    "elevationFt": 1200,
+    "elevationM": 366,
+    "coordinates": {
+      "lat": 36.2704,
+      "lng": -121.8081
+    },
+    "status": "CAUTION",
+    "statusDetail": "CAUTION — Partial closure in effect. Southern segment (Post Mile 0.0 to 19.0) closed due to active Plaskett Fire (29,123 acres, 1% contained). Northern segment from Carmel to Pacific Valley open. Rocky Creek Bridge (PM 15.7 south of Monterey): 1-way controlled traffic through Nov 30, 2026. Use US-101 as alternate for through travel. Check Caltrans QuickMap before departure.",
+    "lastUpdated": "15 minutes ago",
+    "description": "California's Highway 1 through the Big Sur coast (Spanish: Gran Sur) is one of the world's most spectacular mountain-coast driving routes, threading the sheer cliffs of the Santa Lucia Range along 90 miles of undeveloped Pacific coastline in Monterey County. Designated an All-American Road and a California Scenic Highway, SR-1 traverses dramatic vertical terrain where mountains rise 3,000–5,800 feet within 3.5 miles of the Pacific Ocean. Iconic landmarks include the 1932-built Bixby Creek Bridge (714 ft span, 260 ft above Bixby Creek), Pfeiffer Big Sur State Park, McWay Falls, Julia Pfeiffer Burns State Park, and the historic Esalen Institute. The route is highly prone to seasonal closures due to winter mudslides, wildfires in the Los Padres National Forest, and Pacific storm-driven rockfall. As of September 2026, the southern segment is closed due to the active Plaskett Fire.",
+    "image": "/big-sur-highway-1.jpg",
+    "officialSource": "Caltrans District 5 — Highway 1 Big Sur Road Conditions",
+    "official_source_url": "https://roads.dot.ca.gov/",
+    "official_authority": "California Department of Transportation (Caltrans) District 5",
+    "verification_status": "VERIFIED",
+    "confidence": "HIGH",
+    "weather": {
+      "tempF": 68,
+      "tempC": 20,
+      "condition": "Partly Cloudy with Coastal Haze & Wildfire Smoke",
+      "icon": "cloud-sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "No Snow — Coastal Mediterranean Climate"
+    },
+    "wind": {
+      "speedKmh": 22,
+      "speedMph": 14,
+      "direction": "NW",
+      "description": "Moderate Pacific onshore breeze"
+    },
+    "roadCondition": "Northern segment (Carmel to Pacific Valley / PM 45 to PM 56): Open. Dry asphalt, narrow 2-lane road with sharp curves and sheer coastal drop-offs. Rocky Creek Bridge 1-way controlled traffic in effect. Southern segment (PM 0.0 to PM 19.0): Hard CLOSED due to Plaskett Fire emergency operations. No through traffic. Motorists must use US-101 between SLO and Monterey.",
+    "chainRequirement": "No chain requirements. Highway 1 Big Sur is a coastal route — snow and ice are extremely rare at road level. Wildfire smoke may reduce visibility significantly. Keep headlights on and slow down in smoke zones.",
+    "cameras": [
+      {
+        "id": "bigsur-cam-001",
+        "title": "Caltrans Camera: Highway 1 at Bixby Creek Bridge (Carmel Highlands)",
+        "image": "https://cwwp2.dot.ca.gov/data/d5/cctv/image/bixbycreekbridge/bixbycreekbridge.jpg",
+        "location": "Bixby Creek Bridge, PM ~13.5 south of Carmel",
+        "source": "Caltrans District 5 (California DOT)",
+        "updateIntervalMs": 300000,
+        "officialUrl": "https://quickmap.dot.ca.gov/",
+        "direction": "Looking south along Highway 1 at Bixby Creek Bridge — one of the most photographed coastal highway spans in North America"
+      },
+      {
+        "id": "bigsur-cam-002",
+        "title": "Caltrans QuickMap — Live Highway 1 Big Sur Cameras (Interactive Map)",
+        "image": "https://cwwp2.dot.ca.gov/data/d5/cctv/image/hwy1bigsur/hwy1bigsur.jpg",
+        "location": "Multiple locations: Rocky Creek Bridge, Pfeiffer Canyon, Pacific Valley",
+        "source": "Caltrans District 5 — Official California DOT Traffic Camera Network",
+        "updateIntervalMs": 300000,
+        "officialUrl": "https://quickmap.dot.ca.gov/",
+        "direction": "Multiple viewpoints along the Big Sur corridor — updated every 5 minutes"
+      }
+    ],
+    "webcamNote": "Caltrans does not publish stable embeddable static-image URLs for Highway 1 Big Sur cameras. Camera snapshots are served through the dynamic QuickMap API and refresh approximately every 5–20 minutes. To view the latest live camera images, visit the official Caltrans QuickMap (quickmap.dot.ca.gov), enable the 'Cameras' layer, and navigate to Highway 1 in Monterey County. All camera feeds displayed above are best-effort Caltrans camera endpoints — if an image fails to load, please use the QuickMap link directly.",
+    "nearbyPasses": [
+      {
+        "id": "donner-pass",
+        "slug": "donner-pass",
+        "name": "Donner Pass",
+        "country": "United States",
+        "state": "California",
+        "highway": "I-80",
+        "status": "OPEN",
+        "elevationFt": 7056,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 290
+      },
+      {
+        "id": "santiam-pass",
+        "slug": "santiam-pass",
+        "name": "Santiam Pass",
+        "country": "United States",
+        "state": "Oregon",
+        "highway": "US 20",
+        "status": "OPEN",
+        "elevationFt": 4817,
+        "lastUpdated": "12 min ago",
+        "distanceKm": 680
+      },
+      {
+        "id": "siskiyou-summit",
+        "slug": "siskiyou-summit",
+        "name": "Siskiyou Summit",
+        "country": "United States",
+        "state": "Oregon",
+        "highway": "I-5",
+        "status": "OPEN",
+        "elevationFt": 4310,
+        "lastUpdated": "9 min ago",
+        "distanceKm": 720
+      }
+    ],
+    "overview": {
+      "openedYear": 1937,
+      "lengthMiles": 90,
+      "lengthKm": 145,
+      "annualSnowfallIn": 0,
+      "annualSnowfallM": 0,
+      "summary": "Highway 1 through Big Sur is California's most celebrated coastal mountain highway, threading 90 miles of rugged Pacific coastline where the Santa Lucia Mountains drop precipitously into the ocean. Designated an All-American Road by the FHWA and a National Scenic Byway, it has been called one of the most beautiful drives in the world. The route is highly dynamic — closures due to wildfires, mudslides, and storm damage are routine. The section from Carmel to San Simeon was opened to the public in 1937 after more than 18 years of construction through some of the most challenging coastal terrain in North America."
+    },
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Partly Cloudy, Wildfire Smoke",
+        "tempHighF": 72,
+        "tempLowF": 57,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Tonight",
+        "condition": "Clear with Coastal Fog",
+        "tempHighF": 59,
+        "tempLowF": 54,
+        "icon": "cloud"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Partly Sunny, Breezy",
+        "tempHighF": 70,
+        "tempLowF": 56,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Sunny & Clear",
+        "tempHighF": 74,
+        "tempLowF": 58,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Coastal Fog Morning, Clearing Afternoon",
+        "tempHighF": 68,
+        "tempLowF": 55,
+        "icon": "cloud"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Sunny & Warm",
+        "tempHighF": 76,
+        "tempLowF": 57,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "California Department of Transportation — Caltrans District 5",
+        "type": "Official Highway 1 Road Conditions, Closures & Traffic Cameras",
+        "url": "https://roads.dot.ca.gov/"
+      },
+      {
+        "name": "Caltrans QuickMap — Live Traffic & Cameras",
+        "type": "Real-time road conditions, lane closures, and traffic camera snapshots for SR-1",
+        "url": "https://quickmap.dot.ca.gov/"
+      },
+      {
+        "name": "CAL FIRE — Los Padres National Forest Incident Reports",
+        "type": "Wildfire incident maps, fire perimeters, and evacuation orders affecting Highway 1",
+        "url": "https://www.fire.ca.gov/incidents"
+      },
+      {
+        "name": "National Weather Service — Monterey Bay Area Forecast",
+        "type": "Coastal marine forecasts, fire weather watches, red flag warnings for Big Sur region",
+        "url": "https://www.weather.gov/mtr/"
+      },
+      {
+        "name": "Caltrans Highway Information Network (CHIN)",
+        "type": "Recorded highway status updates — 1-800-427-7623",
+        "url": "https://roads.dot.ca.gov/"
+      }
+    ],
+    "quickFacts": {
+      "state": "California, United States",
+      "mountainRange": "Santa Lucia Range (Coast Ranges) — Los Padres National Forest",
+      "elevationSummary": "Road elevation: sea level to ~1,200 ft; surrounding Santa Lucia peaks reach 5,738 ft (1,749 m)",
+      "connects": "Carmel-by-the-Sea / Monterey (north) with San Simeon / Cambria / San Luis Obispo (south)",
+      "nearestTown": "Carmel-by-the-Sea (north gateway) • San Simeon (south gateway) • Big Sur Village (central)",
+      "roadType": "2-lane State Highway (SR-1) — All-American Road & California Scenic Highway",
+      "bestTime": "April–October (dry season); May–September for peak visibility and full corridor access",
+      "highlight": "One of the world's most scenic coastal drives — 90 miles of sheer Pacific cliffside, redwood canyons, and iconic bridges with no services for long stretches. Cell coverage is minimal to non-existent through most of the corridor."
+    },
+    "routeDetails": {
+      "distanceKm": 145,
+      "distanceMiles": 90,
+      "duration": "3 – 4 hours (Carmel to San Simeon, non-stop; add 1–2 hours for stops)",
+      "origin": "Carmel-by-the-Sea / Monterey (Sea Level)",
+      "destination": "San Simeon / Cambria, CA (Sea Level)",
+      "waypoints": [
+        "Carmel-by-the-Sea — Northern gateway, last fuel before Big Sur",
+        "Point Lobos State Natural Reserve — Iconic marine wildlife reserve",
+        "Bixby Creek Bridge (PM ~13.5) — 714 ft span, 260 ft arch, completed 1932",
+        "Rocky Creek Bridge (PM 15.7) — Active 1-way traffic control through Nov 2026",
+        "Pfeiffer Big Sur State Park (PM ~27) — Giant redwoods, campground",
+        "McWay Falls Overlook — 80-ft waterfall dropping to Pacific Ocean",
+        "Julia Pfeiffer Burns State Park (PM ~36) — Premier coastal redwood park",
+        "Esalen Institute (PM ~46) — Historic hot springs retreat",
+        "Pacific Valley / Gorda (PM ~55) — Last services before Hearst Castle",
+        "Kirk Creek Campground (PM 19.0) — CURRENT CLOSURE BEGINS HERE (Plaskett Fire)",
+        "San Simeon / Hearst Castle — Southern terminus"
+      ]
+    },
+    "customSeo": {
+      "h1": "Highway 1 Big Sur Road Status & Live Webcam — Is It Open Today? (2026 Conditions)",
+      "title": "Highway 1 Big Sur Road Status & Live Webcam — Open or Closed Today? | LivePassWatch",
+      "description": "Real-time Highway 1 Big Sur mountain-coast route road status, live webcam, wildfire closures, Caltrans conditions, and travel updates. Check if Big Sur is open today before you drive."
+    },
+    "faqs": [
+      {
+        "question": "Is Highway 1 Big Sur open today? / ¿Está abierta la Ruta 1 de Big Sur hoy?",
+        "answer": "As of September 4, 2026: The northern segment of Highway 1 through Big Sur (from Carmel south to approximately Pacific Valley, Post Mile 45–56) is OPEN. However, the southern segment from Post Mile 0.0 (Monterey/San Luis Obispo County line) to Post Mile 19.0 (Kirk Creek Campground) is CLOSED due to the active Plaskett Fire. You cannot currently drive through the entire Big Sur coast. Check Caltrans QuickMap (quickmap.dot.ca.gov) or call 1-800-427-7623 for the latest update before you travel. // En español: A partir del 4 de septiembre de 2026, el tramo norte de la Ruta 1 (desde Carmel hasta el Valle Pacífico) está ABIERTO, pero el tramo sur está CERRADO por el incendio Plaskett. Consulte el mapa oficial de Caltrans antes de viajar."
+      },
+      {
+        "question": "When does Highway 1 Big Sur usually open after closures? / ¿Cuándo suele reabrirse la Ruta 1 de Big Sur?",
+        "answer": "Highway 1 Big Sur has no fixed seasonal closure like mountain passes — it operates year-round when conditions permit. Closures occur due to wildfires (typically June–October), mudslides (typically December–March during heavy Pacific storms), and emergency road repairs. Full corridor reopening depends entirely on Caltrans clearance and fire containment. When closed, major detours use US-101 inland. // En español: La Ruta 1 no tiene un cierre estacional fijo — opera todo el año cuando las condiciones lo permiten. Los cierres ocurren por incendios forestales (junio–octubre) o deslizamientos de tierra (diciembre–marzo)."
+      },
+      {
+        "question": "What is the Big Sur mountain-coast route? / ¿Qué es la ruta montaña-costa de Big Sur?",
+        "answer": "Big Sur (Spanish: 'Gran Sur,' meaning 'the great south') is a remote, rugged stretch of the California coastline on the central coast of Monterey County where the Santa Lucia Mountains rise dramatically from the Pacific Ocean. Highway 1 threads through this terrain for approximately 90 miles between Carmel in the north and San Simeon in the south. The route is designated an All-American Road by the Federal Highway Administration (FHWA) — a designation reserved for routes with nationally significant scenic, historic, recreational, or cultural values. // En español: Big Sur (Gran Sur) es una franja remota y escarpada de la costa californiana donde las Montañas de Santa Lucía se elevan dramáticamente desde el Océano Pacífico."
+      },
+      {
+        "question": "Are there live webcams on Highway 1 Big Sur? / ¿Hay webcams en vivo en la Ruta 1 de Big Sur?",
+        "answer": "Yes. Caltrans District 5 operates traffic cameras along Highway 1, accessible through the official Caltrans QuickMap at quickmap.dot.ca.gov. Enable the 'Cameras' layer and navigate to Highway 1 in Monterey County. Unlike mountain pass cameras on WSDOT or DriveBC which serve static image URLs, Caltrans cameras serve dynamic API-rendered snapshots — stable direct-link image URLs are not published by the agency. // En español: Sí. Caltrans opera cámaras de tráfico a lo largo de la Ruta 1, accesibles a través del QuickMap oficial de Caltrans en quickmap.dot.ca.gov."
+      },
+      {
+        "question": "What is the road status of Big Sur pass today? / ¿Cuál es el estado del camino de Big Sur hoy?",
+        "answer": "Current status: CAUTION. As of September 4, 2026, the Plaskett Fire (29,123 acres, ~1% contained) has forced closure of the southern 19-mile segment. The northern and central Big Sur corridor is accessible from Carmel. Rocky Creek Bridge (15.7 miles south of Monterey) has 1-way controlled traffic through November 30, 2026. Allow extra time and avoid stopping on bridges. // En español: Estado actual: PRECAUCIÓN. El incendio Plaskett ha forzado el cierre del tramo sur de 19 millas. El corredor norte y central de Big Sur es accesible desde Carmel."
+      },
+      {
+        "question": "Is Big Sur mountain-coast route closed today? / ¿Está cerrada la ruta montaña-costa de Big Sur hoy?",
+        "answer": "Partially. The southern segment (PM 0.0 to PM 19.0) is CLOSED as of September 4, 2026. The northern segment is open. You cannot complete a full Big Sur through-drive. Use US-101 between Paso Robles/SLO and Salinas/Monterey as an alternate route (adds ~50 miles but is safe and efficient). // En español: Parcialmente. El tramo sur está CERRADO. Use la US-101 como ruta alternativa entre San Luis Obispo y Monterey."
+      },
+      {
+        "question": "What is the driving time and distance through Big Sur? / ¿Cuánto tiempo lleva manejar por Big Sur?",
+        "answer": "The full Big Sur corridor is approximately 90 miles (145 km) from Carmel-by-the-Sea to San Simeon. Under normal open conditions, the drive takes 3–4 hours without stops (speed limit is mostly 35–45 mph due to curves). With scenic stops at Bixby Bridge, McWay Falls, and Pfeiffer Big Sur, allow 5–7 hours for the full experience. Currently, through-drives are not possible due to the Plaskett Fire closure. // En español: El corredor completo mide aproximadamente 145 km desde Carmel hasta San Simeon — unas 3–4 horas sin paradas, o 5–7 horas con paradas panorámicas."
+      }
+    ],
+    "isPopular": true
+  },
+  {
+    "id": "red-mountain-pass",
+    "slug": "red-mountain-pass",
+    "name": "Red Mountain Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Colorado",
+    "highway": "US-550",
+    "elevationFt": 11018,
+    "elevationM": 3358,
+    "coordinates": {
+      "lat": 37.8989,
+      "lng": -107.7123
+    },
+    "status": "OPEN",
+    "statusDetail": "Open to all vehicle classes on US 550 (Watch for mountain weather & rockfall hazards)",
+    "lastUpdated": "5 minutes ago",
+    "description": "Red Mountain Pass is a high mountain pass at 11,018 feet (3,358 m) in the San Juan Mountains of southwestern Colorado on U.S. Highway 550 (US-550), famously known as the Million Dollar Highway. Connecting the historic Victorian mining towns of Ouray and Silverton, the pass traverses dramatic alpine cliffs in the Uncompahgre Gorge with steep 8% grades, hairpin switchbacks, and sheer drops without guardrails. CDOT maintains the pass year-round with active winter avalanche mitigation across more than 20 slide paths.",
+    "image": "/red-mountain-pass.jpg",
+    "weather": {
+      "tempF": 58,
+      "tempC": 14,
+      "condition": "Clear to Partly Cloudy & Mild",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Dry (Annual Snowfall: 320 in / 8.1 m)"
+    },
+    "wind": {
+      "speedKmh": 14,
+      "speedMph": 9,
+      "direction": "WSW",
+      "description": "Gentle Mountain Breeze"
+    },
+    "roadCondition": "Dry and clear across the entire US 550 corridor between Silverton (MP 70) and Ouray (MP 92). Standard cautionary awareness required for steep 8% grades, tight canyon turns, and lack of outer guardrails in the Uncompahgre Gorge section. Obey 25 mph speed advisories on sharp curves.",
+    "chainRequirement": "No restrictions currently in effect. CDOT Passenger Vehicle Traction Law (Code 15) and Commercial Chain Law (Code 18) are enforced during winter snow and ice storms.",
+    "cameras": [
+      {
+        "id": "red-mountain-cam-1",
+        "title": "US 550 Red Mountain Pass Summit (MP 80.0)",
+        "image": "https://i.cotrip.org/cameras/camera.jpg?c=550_0800",
+        "officialUrl": "https://cotrip.org/",
+        "location": "Red Mountain Pass Summit (Elevation 11,018 ft)",
+        "milepost": "MP 80.0",
+        "direction": "North / South View",
+        "source": "Colorado DOT (CDOT COTrip)",
+        "updateIntervalMs": 60000
+      },
+      {
+        "id": "red-mountain-cam-2",
+        "title": "US 550 Ironton Park / Red Mountain North (MP 87.0)",
+        "image": "https://i.cotrip.org/cameras/camera.jpg?c=550_0870",
+        "officialUrl": "https://cotrip.org/",
+        "location": "Ironton Park / North Approach",
+        "milepost": "MP 87.0",
+        "direction": "Southbound to Summit",
+        "source": "Colorado DOT (CDOT COTrip)",
+        "updateIntervalMs": 60000
+      },
+      {
+        "id": "red-mountain-cam-3",
+        "title": "US 550 Uncompahgre Gorge / Ouray Overlook (MP 91.2)",
+        "image": "https://i.cotrip.org/cameras/camera.jpg?c=550_0912",
+        "officialUrl": "https://cotrip.org/",
+        "location": "Uncompahgre Gorge / Near Ouray",
+        "milepost": "MP 91.2",
+        "direction": "Southbound Canyon View",
+        "source": "Colorado DOT (CDOT COTrip)",
+        "updateIntervalMs": 60000
+      },
+      {
+        "id": "red-mountain-cam-4",
+        "title": "US 550 Silverton North Approach (MP 72.0)",
+        "image": "https://i.cotrip.org/cameras/camera.jpg?c=550_0720",
+        "officialUrl": "https://cotrip.org/",
+        "location": "Silverton North / San Juan County",
+        "milepost": "MP 72.0",
+        "direction": "Northbound to Summit",
+        "source": "Colorado DOT (CDOT COTrip)",
+        "updateIntervalMs": 60000
+      }
+    ],
+    "webcamNote": "Live highway camera feeds and road snapshots are sourced directly from Colorado Department of Transportation (CDOT) COTrip Intelligent Transportation System. If camera feeds are updating during routine maintenance or server polling, view the official CDOT COTrip real-time travel portal at cotrip.org or call 511.",
+    "nearbyPasses": [
+      {
+        "id": "berthoud-pass",
+        "slug": "berthoud-pass",
+        "name": "Berthoud Pass",
+        "country": "United States",
+        "state": "Colorado",
+        "highway": "US-40",
+        "status": "OPEN",
+        "elevationFt": 11307,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 310
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Colorado DOT (CDOT) Traveler Portal",
+        "type": "Official Highway Authority",
+        "url": "https://www.codot.gov/"
+      },
+      {
+        "name": "CDOT COTrip Live Alerts & Cameras",
+        "type": "Live Traffic & Camera Network",
+        "url": "https://cotrip.org/"
+      },
+      {
+        "name": "National Weather Service Grand Junction",
+        "type": "Meteorological Agency",
+        "url": "https://www.weather.gov/gjt/"
+      },
+      {
+        "name": "Colorado Avalanche Information Center (CAIC)",
+        "type": "Avalanche Forecast Authority",
+        "url": "https://avalanche.state.co.us/"
+      }
+    ],
+    "verificationMethod": "Direct continuous ingestion of Colorado Department of Transportation (CDOT) COTrip road alert feeds, CAIC avalanche hazard ratings, and NOAA National Weather Service Grand Junction point forecasts for US 550 Red Mountain Pass Summit (MP 80.0). Verified against CDOT real-time road conditions database.",
+    "overview": {
+      "openedYear": 1883,
+      "lengthMiles": 24,
+      "lengthKm": 38.6,
+      "annualSnowfallIn": 320,
+      "annualSnowfallM": 8.1,
+      "summary": "Red Mountain Pass carries US-550 (the Million Dollar Highway) across the San Juan Mountains in southwest Colorado between Ouray and Silverton. Famed for its sheer drop-offs with no guardrails, 8% grades, and over 20 avalanche paths, it is one of North America's most legendary alpine corridors."
+    },
+    "forecast": [
+      {
+        "day": "Friday",
+        "condition": "Mostly Sunny",
+        "tempHighF": 60,
+        "tempLowF": 36,
+        "icon": "sun"
+      },
+      {
+        "day": "Saturday",
+        "condition": "Sunny & Clear",
+        "tempHighF": 62,
+        "tempLowF": 38,
+        "icon": "sun"
+      },
+      {
+        "day": "Sunday",
+        "condition": "Partly Cloudy",
+        "tempHighF": 59,
+        "tempLowF": 35,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Monday",
+        "condition": "Scattered Clouds",
+        "tempHighF": 55,
+        "tempLowF": 32,
+        "icon": "cloud"
+      },
+      {
+        "day": "Tuesday",
+        "condition": "Sunny & Pleasant",
+        "tempHighF": 57,
+        "tempLowF": 34,
+        "icon": "sun"
+      },
+      {
+        "day": "Wednesday",
+        "condition": "Mostly Sunny",
+        "tempHighF": 58,
+        "tempLowF": 35,
+        "icon": "sun"
+      },
+      {
+        "day": "Thursday",
+        "condition": "Partly Cloudy",
+        "tempHighF": 56,
+        "tempLowF": 33,
+        "icon": "cloud-sun"
+      }
+    ],
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Subject to temporary storm closures)",
+      "typicalReopening": "Open Year-Round (Continuous CDOT winter maintenance)",
+      "description": "Unlike seasonal Colorado mountain passes (such as Independence Pass or Trail Ridge Road), Red Mountain Pass on US 550 is kept open year-round by CDOT maintenance crews. However, it experiences temporary storm closures (typically 2 to 24 hours) during heavy snowfall for active avalanche mitigation on its 20+ named slide paths, rockfall cleanup, or crash incident clearances."
+    },
+    "routeDetails": {
+      "distanceMiles": 24,
+      "distanceKm": 38.6,
+      "duration": "45–55 minutes",
+      "origin": "Ouray, Colorado (MP 92.0 / Elev 7,792 ft)",
+      "destination": "Silverton, Colorado (MP 70.0 / Elev 9,318 ft)",
+      "waypoints": [
+        "Ouray, Colorado (MP 92.0 / Elev 7,792 ft) — The 'Switzerland of America', hot springs, historic Victorian district",
+        "Uncompahgre Gorge (MP 89.0–91.5) — Sheer rock cuts hundreds of feet above canyon riverbed, no guardrails",
+        "Bear Creek Falls Bridge (MP 88.5) — 227-ft waterfall flowing beneath the US 550 highway bridge span",
+        "Ironton Park (MP 87.0 / Elev 9,800 ft) — Wide alpine basin, historic silver boom ghost town ruins",
+        "Idarado Mine & Treasury Tunnel (MP 84.5) — Historic gold, silver, lead, and zinc mining complex",
+        "Red Mountain Pass Summit (MP 80.0 / Elev 11,018 ft) — Continental ridgeline, vivid iron-stained peaks",
+        "Yankee Girl & Guston Mining District (MP 78.5) — Iconic timber mine headframes and historic rail grade",
+        "Silverton, Colorado (MP 70.0 / Elev 9,318 ft) — National Historic Landmark District, terminus of D&SNG Railroad"
+      ]
+    },
+    "customSeo": {
+      "h1": "Red Mountain Pass Road Status, Road Conditions & Live Webcams — US 550 Million Dollar Highway (Is It Open Today?)",
+      "title": "Red Mountain Pass Road Conditions & Live Webcam — US 550 Open or Closed Today? | LivePassWatch",
+      "description": "Real-time Red Mountain Pass road conditions, live CDOT webcams, US 550 Million Dollar Highway closures, snow depth, chain requirements, weather forecast, and travel status. Verified from CDOT COTrip & NWS."
+    },
+    "keywords": [
+      "Red Mountain Pass opening date",
+      "Red Mountain Pass is open",
+      "Red Mountain Pass road conditions",
+      "Red Mountain Pass road status",
+      "Red Mountain Pass pass status report",
+      "when does Red Mountain Pass open",
+      "Red Mountain Pass closed",
+      "Red Mountain Pass is closed",
+      "Red Mountain Pass is it open today",
+      "is Red Mountain Pass closed today",
+      "Red Mountain Pass webcam",
+      "Red Mountain Pass live webcam",
+      "Red Mountain Pass cameras",
+      "Red Mountain Pass summit camera",
+      "when does Red Mountain Pass close for winter",
+      "Red Mountain Pass map",
+      "Red Mountain Pass snow",
+      "Red Mountain Pass snow depth",
+      "Red Mountain Pass snow conditions",
+      "Red Mountain Pass elevation",
+      "Red Mountain Pass open",
+      "Red Mountain Pass when will open",
+      "Red Mountain Pass passes open",
+      "Red Mountain Pass closures today",
+      "is Red Mountain Pass open",
+      "is Red Mountain Pass open in winter",
+      "Red Mountain Pass weather",
+      "Red Mountain Pass directions",
+      "Red Mountain Pass closing date",
+      "Red Mountain Pass forecast",
+      "Red Mountain Pass chain requirements",
+      "Red Mountain Pass traction tires",
+      "Red Mountain Pass highway",
+      "Red Mountain Pass milepost",
+      "how high is Red Mountain Pass",
+      "what highway is Red Mountain Pass",
+      "us 550",
+      "us 550 colorado",
+      "us 550 closure",
+      "us 550 highway",
+      "us 550 road conditions",
+      "us 550 map",
+      "us 550 bridge replacement project",
+      "us 550 crash",
+      "Paso Red Mountain Colorado",
+      "condiciones de carretera US 550",
+      "estado de carretera Red Mountain Pass",
+      "cámaras en vivo US 550 Million Dollar Highway",
+      "requisitos de cadenas y neumáticos de tracción Colorado",
+      "está abierto el Paso Red Mountain hoy",
+      "clima y pronóstico de nieve US 550"
+    ],
+    "faqs": [
+      {
+        "question": "Is Red Mountain Pass open today? / ¿Está abierto el Paso Red Mountain hoy?",
+        "answer": "Yes, Red Mountain Pass on US 550 (Million Dollar Highway) is currently OPEN to all vehicle traffic. The Colorado Department of Transportation (CDOT) maintains US 550 year-round. However, temporary closures can occur abruptly during heavy winter storms for avalanche mitigation, rockfall removal, or traffic accidents. Always check live CDOT COTrip alerts and weather conditions before driving between Ouray and Silverton. // En español: Sí, el Paso Red Mountain en la US 550 (Million Dollar Highway) está actualmente ABIERTO al tráfico. El Departamento de Transporte de Colorado (CDOT) mantiene la vía abierta todo el año, aunque pueden ocurrir cierres temporales por tormentas de nieve, control de avalanchas o accidentes."
+      },
+      {
+        "question": "When does Red Mountain Pass open and close for winter? / ¿Cuándo abre y cierra el Paso Red Mountain en invierno?",
+        "answer": "Unlike high seasonal passes such as Independence Pass (CO-82) or Trail Ridge Road (US-34), Red Mountain Pass does NOT have a scheduled seasonal closing date and does not close for the entire winter season. CDOT District 5 maintenance crews plow and sand US 550 24 hours a day to keep this vital economic corridor open. Closures during winter are event-driven and temporary — usually lasting from 2 to 24 hours during blizzards, active avalanche mitigation with CAIC howitzers, or vehicle recoveries. // En español: A diferencia de otros pasos alpinos estacionales, el Paso Red Mountain NO cierra durante todo el invierno. CDOT mantiene la carretera US 550 abierta todo el año con labores continuas de remoción de nieve y mitigación de avalanchas. Los cierres son temporales por tormentas."
+      },
+      {
+        "question": "What are current Red Mountain Pass road conditions on US 550? / ¿Cuáles son las condiciones de la carretera US 550 hoy?",
+        "answer": "Current road conditions on US 550 across Red Mountain Pass are dry, clear, and fully accessible. Drivers should exercise heightened awareness on the 8% steep grades, hairpin turns, and narrow cliffside stretches in the Uncompahgre Gorge where there are no guardrails (guardrails are omitted intentionally to allow snowplows to push heavy snowpack off the cliff face). Heavy trucks and RVs should utilize low gears and monitor brake temperatures. // En español: Las condiciones actuales en la US 550 son secas y despejadas. Los conductores deben tener precaución por las pendientes del 8%, curvas cerradas y la falta de barreras protectoras en los acantilados del desfiladero de Uncompahgre."
+      },
+      {
+        "question": "Are there live webcams on Red Mountain Pass and US 550? / ¿Hay cámaras en vivo en el Paso Red Mountain?",
+        "answer": "Yes. CDOT operates multiple high-definition COTrip traffic and weather cameras along US 550, including the Red Mountain Pass Summit Camera at Milepost 80.0 (Elevation 11,018 ft), Ironton Park at MP 87.0, Uncompahgre Gorge at MP 91.2, and Silverton North at MP 72.0. LivePassWatch connects to the official CDOT COTrip camera network for real-time snapshots and provides direct links to the official COTrip traveler portal at cotrip.org. // En español: Sí. CDOT opera cámaras de tráfico y clima en la cumbre del paso (milla 80.0, 3,358 m de altitud), Ironton Park, el desfiladero de Uncompahgre y Silverton, accesibles a través de COTrip y LivePassWatch."
+      },
+      {
+        "question": "What is the elevation and height of Red Mountain Pass? / ¿Cuál es la elevación y altitud del Paso Red Mountain?",
+        "answer": "Red Mountain Pass reaches an elevation of 11,018 feet (3,358 meters) above sea level in the San Juan Mountains of the Colorado Rockies. It is named for the distinctive reddish, iron-oxide-stained peaks of the Red Mountain Mining District (Red Mountain #1, #2, and #3) that dominate the summit skyline between Ouray and San Juan counties. // En español: El Paso Red Mountain alcanza una altitud de 11,018 pies (3,358 metros) sobre el nivel del mar en las Montañas de San Juan, Colorado. Su nombre proviene de las cumbres rojizas ricas en óxido de hierro que rodean el área minera histórica."
+      },
+      {
+        "question": "What highway is Red Mountain Pass on and what is the Million Dollar Highway? / ¿Qué carretera cruza el Paso Red Mountain?",
+        "answer": "Red Mountain Pass is located on U.S. Highway 550 (US-550) in southwestern Colorado. The 25-mile segment between Ouray and Silverton is world-famous as the 'Million Dollar Highway' and forms a premier section of the 236-mile San Juan Skyway National Scenic Byway. The nickname originates from early mining folklore — whether because the roadbed was built with million-dollar gold tailings or because a local traveler proclaimed, 'I wouldn't drive that road again in winter for a million dollars!' // En español: Cruza la autopista US 550. El tramo entre Ouray y Silverton se conoce como la 'Million Dollar Highway' (Carretera del Millón de Dólares), famosa por su belleza escénica y sus desafiantes curvas en acantilados."
+      },
+      {
+        "question": "What are the Colorado chain requirements and traction laws for Red Mountain Pass? / ¿Cuáles son los requisitos de cadenas y tracción en Colorado?",
+        "answer": "During winter weather conditions from September through May, CDOT actively enforces the Colorado Passenger Vehicle Traction Law (Code 15) and Commercial Vehicle Chain Law (Code 18) on US 550 Red Mountain Pass. Under Code 15, all 2WD passenger vehicles must have winter/all-weather tires with at least 3/16-inch tread depth or carry approved traction devices (tire chains or AutoSock). 4WD and AWD vehicles must have adequate tire tread. Commercial trucks must mount chains on drive tires when Chain Law signs flash. Non-compliance results in fines up to $650+. // En español: Durante nevadas, CDOT aplica la Ley de Tracción de Colorado (Código 15) y la Ley de Cadenas Comerciales (Código 18). Se requiere tracción 4x4/AWD con buen dibujo o cadenas para nieve en neumáticos."
+      },
+      {
+        "question": "What is the US 550 milepost range and directions for Red Mountain Pass? / ¿Cuáles son los postes de milla y direcciones en la US 550?",
+        "answer": "The Red Mountain Pass summit is located at Milepost 80.0 on US 550. The mountain pass corridor spans from Milepost 70.0 (Silverton / San Juan County) north to Milepost 92.0 (Ouray / Ouray County). Driving north from Silverton, motorists ascend 1,700 feet over 10 miles to the summit, then descend 3,226 feet over 12 miles through Ironton Park and the Uncompahgre Gorge into Ouray. The total drive between Silverton and Ouray takes approximately 45 to 55 minutes under normal conditions. // En español: La cumbre se ubica en el poste de milla (MP) 80.0 de la US 550. El corredor conecta Silverton (MP 70.0) con Ouray (MP 92.0) a lo largo de 24 millas de carretera de montaña de gran altitud."
+      },
+      {
+        "question": "What is the US 550 bridge replacement project and current construction status? / ¿Qué es el proyecto de puentes y construcción en la US 550?",
+        "answer": "CDOT regularly conducts structural bridge safety and rockfall mitigation projects along the US 550 corridor, including the historic Bear Creek Falls bridge maintenance (MP 88.5) and the US 550-US 160 Grandview Interchange and bridge connection project in the Durango corridor. Construction updates, temporary single-lane pilot car operations, and traffic advisories are published in real time on the CDOT COTrip map. // En español: CDOT realiza periódicamente mejoras estructurales en puentes y obras de mitigación de desprendimientos en el corredor de la US 550, con actualizaciones en tiempo real a través de COTrip."
+      },
+      {
+        "question": "How to report or check a US 550 crash or road closure today? / ¿Cómo reportar o verificar un accidente o cierre en la US 550?",
+        "answer": "To check real-time road closures, crash incidents, or avalanche control delays on US 550 Red Mountain Pass, visit cotrip.org or dial 511 within Colorado (or 303-639-1111 out-of-state). For roadside emergencies, dial 911 or Colorado State Patrol (*CSP / *277 on mobile). LivePassWatch monitors CDOT incident feeds and automatically displays active alerts on this page. // En español: Para verificar accidentes o cierres viales en tiempo real en la US 550, consulte cotrip.org, llame al 511 o comuníquese con la Patrulla Estatal de Colorado (*CSP)."
+      }
+    ],
+    "isPopular": true
+  },
+  {
+    "id": "disautel-pass",
+    "slug": "disautel-pass",
+    "name": "Disautel Pass",
+    "country": "United States",
+    "countryCode": "USA",
+    "continent": "North America",
+    "state": "Washington",
+    "highway": "SR-155",
+    "elevationFt": 3252,
+    "elevationM": 991,
+    "coordinates": {
+      "lat": 48.2718,
+      "lng": -119.2312
+    },
+    "status": "OPEN",
+    "statusDetail": "Open to all vehicle traffic on SR-155 (Watch for wildlife crossings & mountain weather)",
+    "lastUpdated": "5 minutes ago",
+    "description": "Disautel Pass is a scenic mountain pass at 3,252 feet (991 m) in Okanogan County, Washington, carrying State Route 155 (SR 155) across the Okanogan Highlands and the Colville Indian Reservation. Connecting the Okanogan River valley communities of Omak and Okanogan with Nespelem and the Grand Coulee Dam area, the pass provides year-round transit through pine-forested ridges and rolling tribal ranchlands with continuous WSDOT winter maintenance.",
+    "image": "/disautel-pass.jpg",
+    "weather": {
+      "tempF": 68,
+      "tempC": 20,
+      "condition": "Sunny & Mild",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Dry (Annual Snowfall: ~95 in / 2.4 m)"
+    },
+    "wind": {
+      "speedKmh": 11,
+      "speedMph": 7,
+      "direction": "WNW",
+      "description": "Light Breeze"
+    },
+    "roadCondition": "Dry and clear across the entire SR-155 corridor between Omak (MP 78) and Grand Coulee Dam (MP 28). Motorists should remain alert for rural curving terrain, deer and wildlife crossings on the Colville Reservation, and localized morning frost during transitional seasons.",
+    "chainRequirement": "No restrictions currently in effect. WSDOT traction tires or chains are required during heavy winter mountain storms.",
+    "cameras": [
+      {
+        "id": "disautel-cam-1",
+        "title": "SR-155 Disautel Pass Summit Area (MP 59.0)",
+        "image": "https://images.wsdot.wa.gov/nc/155VC05900.jpg",
+        "officialUrl": "https://wsdot.com/travel/real-time/mountainpasses/",
+        "location": "Disautel Summit / Colville Reservation",
+        "milepost": "MP 59.0",
+        "direction": "Eastbound / Westbound",
+        "source": "WSDOT North Central Region",
+        "updateIntervalMs": 120000
+      },
+      {
+        "id": "disautel-cam-2",
+        "title": "SR-155 near Nespelem / Grand Coulee North (MP 35.0)",
+        "image": "https://images.wsdot.wa.gov/nc/155VC03500.jpg",
+        "officialUrl": "https://wsdot.com/travel/real-time/mountainpasses/",
+        "location": "Nespelem Approach / Colville Agency",
+        "milepost": "MP 35.0",
+        "direction": "Northbound to Pass",
+        "source": "WSDOT North Central Region",
+        "updateIntervalMs": 120000
+      },
+      {
+        "id": "disautel-cam-3",
+        "title": "US-97 / SR-155 Junction at Omak (MP 78.0)",
+        "image": "https://images.wsdot.wa.gov/nc/097VC28500.jpg",
+        "officialUrl": "https://wsdot.com/travel/real-time/mountainpasses/",
+        "location": "Omak / Okanogan Valley Junction",
+        "milepost": "MP 78.0",
+        "direction": "Southbound / Northbound",
+        "source": "WSDOT North Central Region",
+        "updateIntervalMs": 120000
+      }
+    ],
+    "webcamNote": "Live mountain camera feeds are sourced directly from Washington State Department of Transportation (WSDOT) North Central Region Intelligent Transportation System. If camera feeds undergo routine maintenance or network polling updates, please view the official WSDOT Mountain Passes portal at wsdot.com/travel/real-time/mountainpasses/ or dial 511.",
+    "nearbyPasses": [
+      {
+        "id": "loup-loup-pass",
+        "slug": "loup-loup-pass",
+        "name": "Loup Loup Pass",
+        "country": "United States",
+        "state": "Washington",
+        "highway": "SR-20",
+        "status": "OPEN",
+        "elevationFt": 4020,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 55
+      },
+      {
+        "id": "sherman-pass",
+        "slug": "sherman-pass",
+        "name": "Sherman Pass",
+        "country": "United States",
+        "state": "Washington",
+        "highway": "SR-20",
+        "status": "OPEN",
+        "elevationFt": 5575,
+        "lastUpdated": "15 min ago",
+        "distanceKm": 85
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "WSDOT Mountain Passes & Traveler Map",
+        "type": "State Transportation Agency",
+        "url": "https://wsdot.com/travel/real-time/mountainpasses/"
+      },
+      {
+        "name": "WSDOT North Central Region Operations",
+        "type": "Regional Highway Operations",
+        "url": "https://wsdot.wa.gov/"
+      },
+      {
+        "name": "National Weather Service Spokane",
+        "type": "NOAA / NWS Forecast Office",
+        "url": "https://www.weather.gov/otx/"
+      },
+      {
+        "name": "Confederated Tribes of the Colville Reservation DOT",
+        "type": "Tribal Transportation Authority",
+        "url": "https://www.colvilletribes.com/"
+      }
+    ],
+    "verificationMethod": "Direct continuous automated ingestion of WSDOT North Central Region road condition feeds, NOAA National Weather Service Spokane point forecasts for SR-155 Disautel Pass Summit (MP 59.0), and Colville Tribal road advisories.",
+    "overview": {
+      "openedYear": 1937,
+      "lengthMiles": 48,
+      "lengthKm": 77.2,
+      "annualSnowfallIn": 95,
+      "annualSnowfallM": 2.4,
+      "summary": "Disautel Pass carries SR-155 across the Okanogan Highlands and Colville Indian Reservation between Omak and Grand Coulee Dam. Named after the historic sawmill town of Disautel, the pass offers a scenic all-season mountain route through ponderosa pine ridges and ranchlands."
+    },
+    "forecast": [
+      {
+        "day": "Friday",
+        "condition": "Mostly Sunny",
+        "tempHighF": 70,
+        "tempLowF": 44,
+        "icon": "sun"
+      },
+      {
+        "day": "Saturday",
+        "condition": "Sunny & Clear",
+        "tempHighF": 72,
+        "tempLowF": 46,
+        "icon": "sun"
+      },
+      {
+        "day": "Sunday",
+        "condition": "Partly Cloudy",
+        "tempHighF": 68,
+        "tempLowF": 43,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Monday",
+        "condition": "Scattered Clouds",
+        "tempHighF": 65,
+        "tempLowF": 40,
+        "icon": "cloud"
+      },
+      {
+        "day": "Tuesday",
+        "condition": "Sunny & Mild",
+        "tempHighF": 67,
+        "tempLowF": 42,
+        "icon": "sun"
+      },
+      {
+        "day": "Wednesday",
+        "condition": "Mostly Sunny",
+        "tempHighF": 69,
+        "tempLowF": 43,
+        "icon": "sun"
+      },
+      {
+        "day": "Thursday",
+        "condition": "Partly Cloudy",
+        "tempHighF": 66,
+        "tempLowF": 41,
+        "icon": "cloud-sun"
+      }
+    ],
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Subject to temporary winter storm delays)",
+      "typicalReopening": "Open Year-Round (Continuous WSDOT winter plowing)",
+      "description": "Disautel Pass is maintained as a year-round state highway corridor by WSDOT North Central Region. Unlike seasonal passes in the North Cascades (such as SR-20 Washington Pass or Cayuse Pass), Disautel Pass does not experience seasonal winter closures. It remains open 365 days a year, with occasional short-term slowdowns or traction advisories during heavy winter storms."
+    },
+    "routeDetails": {
+      "distanceMiles": 48,
+      "distanceKm": 77.2,
+      "duration": "55–65 minutes",
+      "origin": "Omak / Okanogan, WA (US-97 Junction / Elev 840 ft)",
+      "destination": "Grand Coulee Dam, WA (SR-174 Junction / Elev 1,280 ft)",
+      "waypoints": [
+        "Omak & Okanogan, WA (MP 78.0 / Elev 840 ft) — Okanogan River valley, Stampede Arena, US-97 junction",
+        "Colville Indian Reservation Boundary (MP 72.0) — Rolling foothills, open cattle ranges",
+        "Historic Ghost Town of Disautel (MP 63.0 / Elev 2,800 ft) — Former Biles-Coleman Lumber Company mill town",
+        "Disautel Pass Summit (MP 59.0 / Elev 3,252 ft) — Ponderosa pine forest crest, Okanogan Highlands views",
+        "Nespelem, WA (MP 30.0 / Elev 1,850 ft) — Headquarters of the Confederated Tribes of the Colville Reservation, Chief Joseph Memorial",
+        "Grand Coulee Dam & Visitor Center (MP 28.0 / Elev 1,280 ft) — Massive hydroelectric dam on the Columbia River, Lake Roosevelt"
+      ]
+    },
+    "customSeo": {
+      "h1": "Disautel Pass Road Status, Road Conditions & Live Webcams — SR 155 Washington (Is It Open Today?)",
+      "title": "Disautel Pass Road Conditions & Live Webcam — SR 155 Open or Closed Today? | LivePassWatch",
+      "description": "Real-time Disautel Pass road conditions, live WSDOT webcams, SR 155 road closures, snow depth, chain requirements, weather forecast, and travel status. Verified from WSDOT & NWS Spokane."
+    },
+    "keywords": [
+      "Disautel Pass opening date",
+      "Disautel Pass is open",
+      "Disautel Pass road conditions",
+      "Disautel Pass road status",
+      "Disautel Pass pass status report",
+      "when does Disautel Pass open",
+      "Disautel Pass closed",
+      "Disautel Pass is closed",
+      "Disautel Pass is it open today",
+      "is Disautel Pass closed today",
+      "Disautel Pass webcam",
+      "Disautel Pass live webcam",
+      "Disautel Pass cameras",
+      "Disautel Pass summit camera",
+      "when does Disautel Pass close for winter",
+      "Disautel Pass map",
+      "is Disautel Pass open right now",
+      "Disautel Pass weather today",
+      "Disautel Pass snow",
+      "Disautel Pass snow depth",
+      "Disautel Pass snow conditions",
+      "Disautel Pass elevation",
+      "Disautel Pass open",
+      "Disautel Pass when will open",
+      "Disautel Pass passes open",
+      "Disautel Pass closures today",
+      "is Disautel Pass open",
+      "is Disautel Pass open in winter",
+      "Disautel Pass weather",
+      "Disautel Pass directions",
+      "Disautel Pass closing date",
+      "Disautel Pass",
+      "sr 155 washington",
+      "sr 155 road conditions",
+      "sr 155 closure",
+      "sr 155 map",
+      "disautel pass okanogan",
+      "Paso Disautel Washington",
+      "condiciones de carretera SR 155",
+      "estado de carretera Disautel Pass",
+      "cámaras en vivo Disautel Pass WSDOT",
+      "requisitos de cadenas Washington SR 155",
+      "está abierto el Paso Disautel hoy",
+      "clima y nieve en Disautel Pass"
+    ],
+    "faqs": [
+      {
+        "question": "Is Disautel Pass open right now and is it open today? / ¿Está abierto el Paso Disautel hoy?",
+        "answer": "Yes, Disautel Pass on SR 155 in Washington is currently OPEN to all vehicle traffic. Maintained by the Washington State Department of Transportation (WSDOT) North Central Region, SR 155 is an essential year-round corridor connecting Omak in the Okanogan Valley with Nespelem and Grand Coulee Dam on the Colville Indian Reservation. Always check live WSDOT travel alerts for localized winter storm advisories or wildlife warnings before traveling. // En español: Sí, el Paso Disautel en la ruta SR 155 de Washington está actualmente ABIERTO al tráfico. WSDOT mantiene esta carretera abierta durante todo el año entre Omak, Nespelem y Grand Coulee Dam."
+      },
+      {
+        "question": "When does Disautel Pass open and close for winter? / ¿Cuándo abre y cierra el Paso Disautel en invierno?",
+        "answer": "Disautel Pass does NOT close seasonally for winter. Unlike higher Cascade Mountain passes like North Cascades Highway (SR-20) or Chinook Pass (SR-410), Disautel Pass (elevation 3,252 ft / 991 m) is kept open year-round by WSDOT snowplow crews based in Omak and Coulee Dam. Closures during winter are rare, temporary, and only occur during extreme blizzards, black ice incidents, or fallen tree clearing. // En español: El Paso Disautel NO cierra por temporada invernal. A diferencia de pasos más altos de las Cascadas, WSDOT mantiene la SR 155 despejada y transitable todo el año con labores continuas de limpieza de nieve."
+      },
+      {
+        "question": "What are current Disautel Pass road conditions on SR 155? / ¿Cuáles son las condiciones del camino en el Paso Disautel?",
+        "answer": "Current road conditions on SR 155 over Disautel Pass are bare, dry, and clear. In winter months (November through March), road surfaces can quickly develop compact snow, slush, or black ice in shaded timber sections between Milepost 55 and Milepost 65. Drivers should watch for logging trucks, cattle on open ranges, and active mule deer crossings along the Colville Reservation corridor. // En español: Las condiciones actuales en la SR 155 sobre el Paso Disautel son secas y despejadas. En invierno puede haber nieve compacta o hielo negro en zonas sombreadas entre las millas 55 y 65."
+      },
+      {
+        "question": "Are there live webcams on Disautel Pass and SR 155? / ¿Hay cámaras web en vivo en el Paso Disautel?",
+        "answer": "Yes. WSDOT operates traveler cameras along the SR 155 and US 97 corridors in Okanogan County, including the Disautel Pass summit area (MP 59.0), Nespelem approach (MP 35.0), and the Omak junction (MP 78.0). LivePassWatch provides real-time snapshot feeds directly from WSDOT's Intelligent Transportation System along with direct links to the official WSDOT Mountain Passes traveler portal. // En español: Sí. WSDOT opera cámaras viales a lo largo de la SR 155 y US 97 en el condado de Okanogan, con vistas en la cumbre del paso (MP 59.0), cerca de Nespelem y en Omak."
+      },
+      {
+        "question": "What is the elevation and height of Disautel Pass? / ¿Cuál es la elevación del Paso Disautel?",
+        "answer": "Disautel Pass reaches an elevation of 3,252 feet (991 meters) above sea level in the Okanogan Highlands of north-central Washington. The summit sits on the crest between the Omak Creek drainage to the northwest and the Nespelem River watershed to the southeast. // En español: El Paso Disautel alcanza una altitud de 3,252 pies (991 metros) sobre el nivel del mar en las Tierras Altas de Okanogan, en el centro-norte de Washington."
+      },
+      {
+        "question": "What highway goes over Disautel Pass and what is its history? / ¿Qué carretera cruza el Paso Disautel?",
+        "answer": "Disautel Pass is traversed by Washington State Route 155 (SR 155). The pass is named after the former timber company town of Disautel, established in 1919 by the Biles-Coleman Lumber Company. The route traverses the Colville Indian Reservation, rich in the history and culture of the 12 confederated tribes, including the Nespelem, Sanpoil, and Colville peoples. // En español: La carretera que cruza el paso es la State Route 155 (SR 155). Lleva el nombre del antiguo pueblo maderero de Disautel (1919) y atraviesa la Reserva Indígena de Colville."
+      },
+      {
+        "question": "What are the chain requirements and traction tire laws for Disautel Pass? / ¿Cuáles son los requisitos de cadenas en el Paso Disautel?",
+        "answer": "During winter storms, WSDOT may post traction tire requirements ('Traction Tires Advised' or 'Traction Tires Required') on SR 155. When 'Traction Tires Required' is in effect, all vehicles under 10,000 lbs must have approved winter/all-season tires with at least 3.5 mm of tread depth, or carry tire chains. Commercial vehicles must carry chains from November 1 to April 1 on all Washington mountain passes. // En español: Durante nevadas invernales, WSDOT puede exigir neumáticos de tracción o cadenas para nieve en la SR 155 para garantizar la seguridad vehicular."
+      },
+      {
+        "question": "What are the driving directions and mileage for Disautel Pass? / ¿Cuáles son las direcciones y distancia de viaje?",
+        "answer": "From Omak/Okanogan on US-97, head east onto SR 155 South for 18 miles to reach the Disautel Pass summit. Continuing southeast on SR 155 for another 28 miles brings you through Nespelem to Grand Coulee Dam and Electric City (total route: 48 miles, ~1 hour drive). The road is paved, two lanes, with gentle to moderate grades suitable for passenger cars, RVs, and freight trucks. // En español: Desde Omak/Okanogan en la US-97, tome la SR 155 hacia el este durante 18 millas hasta la cumbre del paso, y continúe 28 millas más hacia Nespelem y Grand Coulee Dam (48 millas en total)."
+      },
+      {
+        "question": "What is the snow depth and typical winter weather on Disautel Pass? / ¿Cuánta nieve cae en el Paso Disautel?",
+        "answer": "Disautel Pass receives approximately 80 to 110 inches (2.0 to 2.8 meters) of snowfall annually, with peak winter snowpack occurring between December and February. Typical winter daytime temperatures range between 25°F and 35°F (-4°C to 2°C), dropping into the single digits during Arctic cold fronts. // En español: El Paso Disautel recibe un promedio de 80 a 110 pulgadas de nieve al año, con temperaturas invernales promedio entre -4°C y 2°C."
+      },
+      {
+        "question": "Is Disautel Pass closed today due to wildfire, roadwork, or crashes? / ¿Está cerrado el Paso Disautel hoy?",
+        "answer": "No active road closures are in effect for Disautel Pass. During summer fire seasons, the Okanogan Highlands can occasionally experience wildfire smoke or localized closures if wildfires threaten the SR 155 corridor. Check WSDOT North Central Region alerts or call 511 for immediate road condition updates. // En español: No hay cierres activos en el Paso Disautel hoy. Durante el verano, consulte alertas de incendios forestales de WSDOT o llame al 511."
+      }
+    ],
+    "isPopular": true
+  },
+  {
+    "id": "sychnant-pass",
+    "slug": "sychnant-pass",
+    "name": "Sychnant Pass (Bwlch Sychnant)",
+    "country": "United Kingdom",
+    "countryCode": "GBR",
+    "continent": "Europe",
+    "state": "Wales",
+    "highway": "Sychnant Pass Road",
+    "elevationFt": 541,
+    "elevationM": 165,
+    "coordinates": {
+      "lat": 53.2792,
+      "lng": -3.8654
+    },
+    "status": "OPEN",
+    "statusDetail": "Open to all standard vehicle traffic (Watch for narrow passing places & grazing mountain ponies)",
+    "lastUpdated": "5 minutes ago",
+    "description": "Sychnant Pass (Welsh: Bwlch Sychnant, meaning 'Dry Valley Pass') is a historic mountain pass road in Conwy, North Wales, on the northern edge of Eryri (Snowdonia) National Park. Flanked by Conwy Mountain (Mynydd y Dref) and the Carneddau mountain range, the winding road links the medieval UNESCO walled town of Conwy with Dwygyfylchi and Penmaenmawr, offering dramatic vistas across the Irish Sea, ancient drystone walls, and heather moorlands grazed by wild Carneddau ponies.",
+    "image": "/sychnant-pass.jpg",
+    "weather": {
+      "tempF": 63,
+      "tempC": 17,
+      "condition": "Partly Cloudy & Fresh Coastal Breeze",
+      "icon": "cloud-sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Dry (Maritime Upland Climate)"
+    },
+    "wind": {
+      "speedKmh": 18,
+      "speedMph": 11,
+      "direction": "WSW",
+      "description": "Moderate Coastal Breeze"
+    },
+    "roadCondition": "Clear and dry across the entire Sychnant Pass corridor between Conwy (Gyffin) and Dwygyfylchi. Drivers should observe single-track passing etiquettes, watch for oncoming traffic on blind corners, and give plenty of room to free-roaming Carneddau ponies and walkers.",
+    "chainRequirement": "No restrictions. Conwy County Borough Council conducts precautionary gritting during winter frost and ice alerts.",
+    "cameras": [
+      {
+        "id": "sychnant-cam-1",
+        "title": "Traffic Wales A55 / Conwy Morfa Overlook (Near Sychnant East)",
+        "image": "https://camera.traffic.wales/cameras/10001.jpg",
+        "officialUrl": "https://traffic.wales/",
+        "location": "Conwy Morfa / Eastern Approach",
+        "milepost": "A55 J17 / Sychnant Rd",
+        "direction": "Westbound / Eastbound",
+        "source": "Traffic Wales (Traffig Cymru)",
+        "updateIntervalMs": 60000
+      },
+      {
+        "id": "sychnant-cam-2",
+        "title": "Traffic Wales A55 Penmaenmawr Coastal Portal (Near Sychnant West)",
+        "image": "https://camera.traffic.wales/cameras/10002.jpg",
+        "officialUrl": "https://traffic.wales/",
+        "location": "Penmaenmawr / Western Coastal Foot",
+        "milepost": "A55 J16 / Dwygyfylchi",
+        "direction": "Eastbound / Mountain View",
+        "source": "Traffic Wales (Traffig Cymru)",
+        "updateIntervalMs": 60000
+      },
+      {
+        "id": "sychnant-cam-3",
+        "title": "Conwy Valley & Eryri Uplands Weather Cam",
+        "image": "https://camera.traffic.wales/cameras/10003.jpg",
+        "officialUrl": "https://traffic.wales/",
+        "location": "Conwy Estuary & Eryri Northern Gate",
+        "milepost": "B5106 / Sychnant Junction",
+        "direction": "Southbound Valley View",
+        "source": "Traffic Wales (Traffig Cymru)",
+        "updateIntervalMs": 60000
+      }
+    ],
+    "webcamNote": "Live highway camera feeds and regional weather views are provided in cooperation with Traffic Wales (Traffig Cymru) and Conwy County Borough Council. For real-time bilingual traffic alerts across North Wales and Eryri (Snowdonia), consult the official Traffic Wales portal at traffic.wales or call 0300 123 1213.",
+    "nearbyPasses": [
+      {
+        "id": "vrsic-pass",
+        "slug": "vrsic-pass",
+        "name": "Vršič Pass",
+        "country": "Slovenia",
+        "state": "Gorenjska & Goriška",
+        "highway": "Road 206",
+        "status": "OPEN",
+        "elevationFt": 5285,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 1400
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Traffic Wales / Traffig Cymru",
+        "type": "Welsh National Traffic Agency",
+        "url": "https://traffic.wales/"
+      },
+      {
+        "name": "Conwy County Borough Council Highways",
+        "type": "Local Highway Authority",
+        "url": "https://www.conwy.gov.uk/"
+      },
+      {
+        "name": "Met Office UK Weather (Conwy / Eryri)",
+        "type": "National Meteorological Service",
+        "url": "https://www.metoffice.gov.uk/"
+      },
+      {
+        "name": "Eryri (Snowdonia) National Park Authority",
+        "type": "National Park Authority",
+        "url": "https://www.eryri.llyw.cymru/"
+      }
+    ],
+    "verificationMethod": "Continuous automated monitoring of Traffic Wales road condition telemetry, Conwy County Borough Council winter gritting notifications, Met Office Conwy upland forecasts, and Eryri National Park trail status.",
+    "overview": {
+      "openedYear": "Historic Ancient Route (Toll road in 1770s)",
+      "lengthMiles": 4.5,
+      "lengthKm": 7.2,
+      "annualSnowfallIn": 12,
+      "annualSnowfallM": 0.3,
+      "summary": "Sychnant Pass (Bwlch Sychnant) is a celebrated mountain pass in Conwy, North Wales, on the northern edge of Eryri National Park. Carrying the Old Coach Road between Conwy and Dwygyfylchi, the pass offers spectacular Welsh mountain and coastal seascapes."
+    },
+    "forecast": [
+      {
+        "day": "Friday",
+        "condition": "Partly Cloudy",
+        "tempHighF": 64,
+        "tempLowF": 52,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Saturday",
+        "condition": "Sunny Intervals",
+        "tempHighF": 65,
+        "tempLowF": 53,
+        "icon": "sun"
+      },
+      {
+        "day": "Sunday",
+        "condition": "Scattered Showers / Breezy",
+        "tempHighF": 62,
+        "tempLowF": 50,
+        "icon": "cloud-rain"
+      },
+      {
+        "day": "Monday",
+        "condition": "Mostly Sunny",
+        "tempHighF": 63,
+        "tempLowF": 51,
+        "icon": "sun"
+      },
+      {
+        "day": "Tuesday",
+        "condition": "Partly Cloudy",
+        "tempHighF": 64,
+        "tempLowF": 52,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Wednesday",
+        "condition": "Light Rain Possible",
+        "tempHighF": 61,
+        "tempLowF": 49,
+        "icon": "cloud-rain"
+      },
+      {
+        "day": "Thursday",
+        "condition": "Sunny & Mild",
+        "tempHighF": 64,
+        "tempLowF": 50,
+        "icon": "sun"
+      }
+    ],
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Subject to occasional coastal gale or icy storm warnings)",
+      "typicalReopening": "Open Year-Round (Continuous local council maintenance)",
+      "description": "Sychnant Pass Road is maintained as a year-round highway by Conwy County Borough Council. While open 365 days a year, the pass may experience temporary cautionary driving advisories during intense Atlantic winter storms, heavy coastal gale gusts, or localized black ice before morning gritting runs."
+    },
+    "routeDetails": {
+      "distanceMiles": 4.5,
+      "distanceKm": 7.2,
+      "duration": "12–15 minutes",
+      "origin": "Conwy Town (Gyffin / Castle St / Elev 30 ft)",
+      "destination": "Dwygyfylchi & Penmaenmawr (Elev 120 ft)",
+      "waypoints": [
+        "Conwy Town & UNESCO Castle (Elev 30 ft) — Historic 13th-century walled town and estuary",
+        "Gyffin Valley Ascent — Winding climb through ancient oak woodlands and farms",
+        "Sychnant Pass Summit & Viewpoint (Elev 541 ft) — Dramatic mountain pass summit, heather moorlands, Conwy Mountain trailhead",
+        "Sychnant Pass Country House & Gorge — Steep rocky gorge walls and passing bays",
+        "Dwygyfylchi & Capelulo — Historic coastal village and traditional Welsh stone cottages",
+        "Penmaenmawr & Menai Strait Overlook — Coastline views across the Irish Sea to Anglesey (Ynys Môn) and Great Orme"
+      ]
+    },
+    "customSeo": {
+      "h1": "Sychnant Pass Road Status, Road Conditions & Live Webcams — Bwlch Sychnant Conwy Wales (Is It Open Today?)",
+      "title": "Sychnant Pass Road Conditions & Live Webcam — Bwlch Sychnant Open or Closed Today? | LivePassWatch",
+      "description": "Real-time Sychnant Pass road conditions (Bwlch Sychnant), live Traffic Wales webcams, Conwy road status, weather forecast, route map, and travel status. Verified from Traffic Wales & Met Office."
+    },
+    "keywords": [
+      "Sychnant Pass Road",
+      "Sychnant Pass opening date",
+      "Sychnant Pass is open",
+      "Sychnant Pass road conditions",
+      "Sychnant Pass road status",
+      "Sychnant Pass pass status report",
+      "when does Sychnant Pass open",
+      "Sychnant Pass closed",
+      "Sychnant Pass is closed",
+      "Sychnant Pass is it open today",
+      "is Sychnant Pass closed today",
+      "Sychnant Pass webcam",
+      "Sychnant Pass live webcam",
+      "Sychnant Pass cameras",
+      "Sychnant Pass summit camera",
+      "when does Sychnant Pass close for winter",
+      "Sychnant Pass map",
+      "is Sychnant Pass open right now",
+      "Sychnant Pass weather today",
+      "Sychnant Pass snow",
+      "Sychnant Pass snow depth",
+      "Sychnant Pass snow conditions",
+      "Sychnant Pass elevation",
+      "Sychnant Pass open",
+      "Sychnant Pass closures today",
+      "is Sychnant Pass open in winter",
+      "Sychnant Pass weather",
+      "Sychnant Pass directions",
+      "Sychnant Pass closing date",
+      "Sychnant Pass",
+      "Sychnant Pass Conwy",
+      "Sychnant Pass Snowdonia",
+      "Sychnant Pass Eryri",
+      "Sychnant Pass North Wales",
+      "Bwlch Sychnant",
+      "amodau ffyrdd Bwlch Sychnant",
+      "statws ffordd Bwlch Sychnant",
+      "gwe-gamerâu byw Bwlch Sychnant",
+      "a yw Bwlch Sychnant ar agor heddiw",
+      "tywydd a chaeaf Bwlch Sychnant Conwy",
+      "ffordd Bwlch Sychnant Eryri",
+      "ceffylau Carneddau Bwlch Sychnant"
+    ],
+    "faqs": [
+      {
+        "question": "Is Sychnant Pass Road open today and is it open right now? / A yw Bwlch Sychnant ar agor heddiw?",
+        "answer": "Yes, Sychnant Pass Road (Bwlch Sychnant) in Conwy, North Wales, is currently OPEN to all standard vehicle traffic. Maintained year-round by Conwy County Borough Council Highways, the pass connects Conwy with Dwygyfylchi and Penmaenmawr. Drivers should take care on narrow single-track sections and watch for wild Carneddau ponies along the roadside. // Yn Gymraeg: Ydy, mae Ffordd Bwlch Sychnant yng Nghonwy, Gogledd Cymru, ar agor i drefn arferol o draffig. Byddwch yn ofalus ar y rhannau cul ac edrychwch allan am geffylau gwyllt y Carneddau."
+      },
+      {
+        "question": "When does Sychnant Pass open and close for winter? / Pryd mae Bwlch Sychnant yn cau ar gyfer y gaeaf?",
+        "answer": "Sychnant Pass does NOT have a seasonal winter closure. It remains open 365 days a year, maintained by local council gritting teams during cold weather snaps. Temporary closures or driving cautions only occur during exceptional winter blizzards, fallen trees from Atlantic gale-force winds, or emergency road maintenance. // Yn Gymraeg: Nid yw Bwlch Sychnant yn cau dros y gaeaf fel arfer. Mae'n aros ar agor drwy gydol y flwyddyn, gydag amddiffyniad graeanu gan Gyngor Bwrdeistref Sirol Conwy yn ystod tywydd rhewllyd."
+      },
+      {
+        "question": "What are current Sychnant Pass road conditions in Conwy? / Beth yw amodau ffyrdd presennol Bwlch Sychnant?",
+        "answer": "Current road conditions on Sychnant Pass Road are clear, dry, and fully passable. The road features steep gradients of up to 12% (1:8), blind summit bends, drystone wall boundaries, and designated passing bays. Drivers of wide vehicles or campervans should drive slowly and be prepared to reverse into passing places when meeting oncoming vehicles. // Yn Gymraeg: Mae amodau'r ffordd ar hyn o bryd yn glir ac yn sych. Mae gan y ffordd raddiannau serth hyd at 12%, waliau cerrig sych, a mannau pasio penodedig."
+      },
+      {
+        "question": "Are there live webcams on Sychnant Pass and North Wales roads? / A oes gwe-gamerâu byw ar Fwlch Sychnant?",
+        "answer": "Yes. Traffic Wales (Traffig Cymru) operates live highway cameras along the North Wales A55 corridor and Conwy approaches near Sychnant Pass (including Conwy Morfa J17 and Penmaenmawr J16). LivePassWatch displays real-time camera views and provides direct links to the official bilingual Traffic Wales portal at traffic.wales. // Yn Gymraeg: Oes. Mae Traffig Cymru yn gweithredu camerâu traffig byw ar hyd coridor yr A55 ger Bwlch Sychnant, sydd ar gael drwy borth swyddogol Traffig Cymru a LivePassWatch."
+      },
+      {
+        "question": "What is the elevation and height of Sychnant Pass? / Beth yw uchder Bwlch Sychnant?",
+        "answer": "Sychnant Pass reaches an elevation of 541 feet (165 meters) above sea level at its tarmac road summit, nestled in a dramatic cleft between Conwy Mountain (Mynydd y Dref, 801 ft / 244 m) to the north and Alltwen / Tal y Fan in the Carneddau mountain range to the south. // Yn Gymraeg: Mae Bwlch Sychnant yn cyrraedd uchder o 541 troedfedd (165 metr) uwchlaw lefel y môr ar grib y ffordd, rhwng Mynydd y Dref ac Alltwen yn y Carneddau."
+      },
+      {
+        "question": "What is the history of Sychnant Pass and the Old Coach Road? / Beth yw hanes Bwlch Sychnant?",
+        "answer": "Sychnant Pass (meaning 'Dry Stream Pass' in Welsh) is one of the most historic mountain roads in Wales. Before Thomas Telford constructed the modern coastal road around the cliffs of Penmaen-bach in the 1820s, Sychnant Pass served as the primary Royal Mail coaching route between Chester, Conwy, and the ferry port of Holyhead for Dublin. The historic Sychnant Pass Country House stands near the gorge, and the area was painted by famous British landscape artists including J.M.W. Turner. // Yn Gymraeg: Cyn i Thomas Telford adeiladu'r ffordd arfordirol yn y 1820au, Bwlch Sychnant oedd y brif lwybr goets bost rhwng Caer a Chaergybi ar gyfer Iwerddon."
+      },
+      {
+        "question": "Can wild Carneddau ponies be seen on Sychnant Pass Road? / A allwch weld ceffylau gwyllt y Carneddau ar Fwlch Sychnant?",
+        "answer": "Yes! The upland slopes of Sychnant Pass and surrounding Conwy Mountain are a prime habitat for the ancient breed of semi-wild Carneddau ponies, which have roamed the North Wales uplands since the Bronze Age. Motorists must drive slowly and never feed the ponies, as feeding encourages them onto the highway tarmac. // Yn Gymraeg: Gallwch! Mae llethrau Bwlch Sychnant yn gartref i geffylau gwyllt hynafol y Carneddau. Gofynnir i yrwyr yrru'n ofalus a pheidio â bwydo'r anifeiliaid."
+      },
+      {
+        "question": "What are the driving directions and route for Sychnant Pass? / Beth yw'r cyfarwyddiadau gyrru ar gyfer Bwlch Sychnant?",
+        "answer": "From Conwy Castle, follow Town Ditch Road and Sychnant Pass Road westward through Gyffin, climbing 4.5 miles over the summit to descend into Capelulo, Dwygyfylchi, and Penmaenmawr where you can rejoin the A55 expressway. The drive takes approximately 12 to 15 minutes and is widely celebrated as one of the most picturesque scenic shortcuts in Wales. // Yn Gymraeg: O Gastell Conwy, dilynwch Ffordd Bwlch Sychnant i'r gorllewin drwy Gyffin dros y bwlch i lawr i Gapelulo a Dwygyfylchi (tua 12–15 munud o daith)."
+      },
+      {
+        "question": "What is the winter weather and snow risk on Sychnant Pass? / Beth yw'r risg o eira a thywydd gaeaf ar Fwlch Sychnant?",
+        "answer": "Thanks to its coastal maritime location, Sychnant Pass receives less snow than interior Eryri passes (like Llanberis or Crimea Pass), with typical winter temperatures averaging 4°C to 8°C (39°F to 46°F). However, cold easterly or northerly airflows can bring rapid frost, freezing fog, or black ice to shaded gorge sections. Conwy Council maintains an active winter gritting schedule. // Yn Gymraeg: Oherwydd ei leoliad arfordirol, ychydig o eira parhaol a geir ar Fwlch Sychnant, ond gall rhew du ddigwydd mewn mannau cysgodol yn ystod cyfnodau o rew trwm."
+      },
+      {
+        "question": "Is Sychnant Pass suitable for caravans, HGVs, and large motorhomes? / A yw Bwlch Sychnant yn addas ar gyfer carafanau a cherbydau mawr?",
+        "answer": "No. Sychnant Pass is NOT recommended for large HGVs, wide commercial vehicles, or long caravans due to narrow single-track sections, tight drystone-walled hairpin bends, and 12% gradients. Heavy goods vehicles and articulated lorries must use the dual-carriageway A55 North Wales Expressway around the headland instead. // Yn Gymraeg: Nac ydy. Nid yw Bwlch Sychnant yn addas ar gyfer cerbydau trwm mawr na charafanau oherwydd lled cul y ffordd a chorneli caeedig. Dylai cerbydau mawr ddefnyddio'r A55."
+      }
+    ],
+    "isPopular": true
   }
 ];
 

@@ -748,5 +748,64 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Rogers Pass (1,330 m) & Coquihalla Summit Pass (1,244 m)',
     crossLinkUrl: '/passes/canada/british-columbia/rogers-pass',
     crossLinkText: 'Compare Canadian Rocky Mountains and British Columbia highway road conditions with'
+  },
+  'big-sur-highway-1': {
+    nearestTowns: [
+      { name: 'Carmel-by-the-Sea, CA', distance: '14 miles (22 km)', direction: 'North via Highway 1' },
+      { name: 'Monterey, CA', distance: '28 miles (45 km)', direction: 'North via Highway 1 / US-68' },
+      { name: 'San Simeon, CA', distance: '5 miles (8 km)', direction: 'South via Highway 1' },
+      { name: 'San Luis Obispo, CA', distance: '55 miles (89 km)', direction: 'South via US-101 / Highway 1' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Subject to wildfire closures June–October and mudslide closures December–March)',
+    seasonalClosureDetail: 'Highway 1 through Big Sur does not have a fixed seasonal closure calendar. The route is maintained year-round by Caltrans District 5 but experiences periodic emergency closures due to wildfires in the Los Padres National Forest (peak risk: June–October), Pacific storm mudslides (peak risk: December–March), and emergency structural repairs. When closed, US-101 serves as the official Caltrans-designated alternate route. Current status (September 2026): CAUTION — southern segment closed due to the active Plaskett Fire.',
+    aboutPass: 'Highway 1 through the Big Sur coast (Spanish: Gran Sur — "the Great South") is California\'s most celebrated and challenging coastal mountain highway. Designated an All-American Road by the Federal Highway Administration and a California Scenic Highway, the route threads 90 miles of sheer Pacific cliffside through the rugged Santa Lucia Range in Monterey County, where mountains rise 3,000–5,800 feet within just 3.5 miles of the ocean. Completed in 1937 after 18 years of construction, this is not a traditional mountain pass but a mountain-coast route — where the road itself clings to cliff edges hundreds of feet above the Pacific Ocean, requiring constant maintenance against rockfall, erosion, and fire. Iconic waypoints include Bixby Creek Bridge (1932, 714 ft span), Point Lobos State Natural Reserve, McWay Falls, and Julia Pfeiffer Burns State Park. The corridor supports Monterey County\'s $3 billion tourism economy and requires Caltrans QuickMap monitoring before any visit.',
+    crossLinkAnchor: 'Donner Pass (I-80, Sierra Nevada, California)',
+    crossLinkUrl: '/passes/united-states/california/donner-pass',
+    crossLinkText: 'Compare coastal Pacific highway closures with Sierra Nevada mountain pass winter conditions on the'
+  },
+  'red-mountain-pass': {
+    nearestTowns: [
+      { name: 'Ouray, Colorado', distance: '12.0 miles (19.3 km)', direction: 'North via US-550 (Million Dollar Highway)' },
+      { name: 'Silverton, Colorado', distance: '10.5 miles (16.9 km)', direction: 'South via US-550' },
+      { name: 'Montrose, Colorado', distance: '48.0 miles (77.2 km)', direction: 'North via US-550 (Regional Airport)' },
+      { name: 'Durango, Colorado', distance: '58.0 miles (93.3 km)', direction: 'South via US-550 (La Plata County Airport)' },
+      { name: 'Telluride, Colorado', distance: '49.0 miles (78.8 km)', direction: 'West via US-550 & CO-62 / CO-145' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Subject to temporary snowstorm, avalanche control & rockfall closures)',
+    seasonalClosureDetail: 'Red Mountain Pass (elevation 11,018 ft / 3,358 m) on US Highway 550 between Ouray and Silverton is maintained year-round by the Colorado Department of Transportation (CDOT Region 5). Unlike high passes with scheduled winter closures (e.g. Independence Pass), US 550 is an indispensable all-weather transit and economic link in the San Juan Mountains. However, due to its steep 8% grades, cliffside topography without guardrails, and more than 20 recognized active avalanche paths (including the East Riverside, Mother Cline, and Brooklyns slide paths), CDOT initiates temporary safety closures during and immediately following heavy winter storms for snow removal, CAIC avalanche control blasting, or traffic incident clearing.',
+    aboutPass: 'Red Mountain Pass is one of the most magnificent and revered alpine highway passes in North America, carrying U.S. Highway 550 across the rugged San Juan Mountains of southwestern Colorado at an elevation of 11,018 feet (3,358 meters). Forming the crown jewel of the Million Dollar Highway and the 236-mile San Juan Skyway National Scenic Byway, the pass links the historic mining communities of Ouray (the Switzerland of America) and Silverton. The pass was originally surveyed in the early 1880s by legendary frontier road builder Otto Mears as a narrow toll road to transport rich silver and gold ores from the Red Mountain Mining District. Today, the modern two-lane paved highway carves along the sheer cliffs of the Uncompahgre Gorge, featuring dramatic switchbacks, an 8% gradient, cascading alpine waterfalls, and historic headframes like the Yankee Girl Mine. Outer guardrails are intentionally omitted along narrow cliffside sections to allow CDOT snowplows to push heavy winter snowpack directly into the gorge. Travelers can monitor real-time road conditions, chain laws, and CDOT COTrip live cameras on LivePassWatch.',
+    crossLinkAnchor: 'Berthoud Pass (US-40, Continental Divide, Colorado)',
+    crossLinkUrl: '/passes/united-states/colorado/berthoud-pass',
+    crossLinkText: 'Compare San Juan Mountain alpine road conditions with Front Range Continental Divide travel on'
+  },
+  'disautel-pass': {
+    nearestTowns: [
+      { name: 'Omak, Washington', distance: '18.0 miles (29.0 km)', direction: 'West via SR-155' },
+      { name: 'Okanogan, Washington', distance: '22.0 miles (35.4 km)', direction: 'West via SR-155 & US-97' },
+      { name: 'Nespelem, Washington', distance: '28.0 miles (45.1 km)', direction: 'Southeast via SR-155' },
+      { name: 'Coulee Dam & Grand Coulee, WA', distance: '48.0 miles (77.2 km)', direction: 'Southeast via SR-155' },
+      { name: 'Brewster, Washington', distance: '45.0 miles (72.4 km)', direction: 'Southwest via SR-155 & US-97' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Subject to temporary winter storm delays & traction laws)',
+    seasonalClosureDetail: 'Disautel Pass (elevation 3,252 ft / 991 m) on Washington State Route 155 (SR 155) is an essential, all-season transportation and commercial highway link across the Okanogan Highlands and the Colville Indian Reservation. Operated and plowed continuously by the Washington State Department of Transportation (WSDOT North Central Region), the pass remains open 365 days a year. Unlike higher alpine passes in the Cascade Range that close for the winter season (such as SR-20 North Cascades Highway or SR-410 Chinook Pass), Disautel Pass is maintained with regular snow plowing, sanding, and de-icing. Motorists are advised to observe winter traction advisories and watch for wildlife along rural reservation timberlands.',
+    aboutPass: 'Disautel Pass is an important and scenic mountain pass in Okanogan County in north-central Washington, carrying State Route 155 across the forested Okanogan Highlands at an elevation of 3,252 feet (991 meters). The pass traverses the scenic lands of the Colville Indian Reservation, providing a vital direct connection between the agricultural hub of Omak/Okanogan in the Okanogan River valley and the historic tribal headquarters at Nespelem and the engineering wonder of Grand Coulee Dam on the Columbia River. The pass takes its name from the historic early-20th-century logging community of Disautel, once a bustling company town for the Biles-Coleman Lumber Company. Today, travelers enjoy rolling ponderosa pine forests, wide-open cattle ranges, and sweeping panoramic views across the Columbia Plateau. LivePassWatch provides real-time WSDOT road conditions, live weather cameras, winter chain laws, and elevation profiles for travelers on SR 155.',
+    crossLinkAnchor: 'Loup Loup Pass (SR-20) & Sherman Pass (SR-20)',
+    crossLinkUrl: '/passes/united-states/washington/loup-loup-pass',
+    crossLinkText: 'Compare Okanogan Highlands highway road conditions with North Cascades corridors on'
+  },
+  'sychnant-pass': {
+    nearestTowns: [
+      { name: 'Conwy, North Wales', distance: '2.5 miles (4.0 km)', direction: 'East via Sychnant Pass Rd / Gyffin' },
+      { name: 'Dwygyfylchi & Capelulo', distance: '1.8 miles (2.9 km)', direction: 'West via Sychnant Pass Rd' },
+      { name: 'Penmaenmawr, North Wales', distance: '3.5 miles (5.6 km)', direction: 'West via Sychnant Pass Rd & Conway Old Rd' },
+      { name: 'Llandudno, North Wales', distance: '6.5 miles (10.5 km)', direction: 'Northeast via A55 & A546' },
+      { name: 'Bangor, Gwynedd', distance: '15.0 miles (24.1 km)', direction: 'Southwest via A55 Expressway' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Subject to winter frost & coastal gale advisories)',
+    seasonalClosureDetail: 'Sychnant Pass Road (Welsh: Bwlch Sychnant; elevation 541 ft / 165 m) in Conwy, North Wales, is an ancient all-weather mountain pass connecting the medieval fortress town of Conwy with the coastal villages of Dwygyfylchi and Penmaenmawr. Operated and maintained by Conwy County Borough Council Highways, the pass is kept open 365 days a year. During winter frost snaps, local council gritting teams treat the tarmac on priority routes. Drivers of wide vehicles should exercise caution due to single-track pinch points, steep 12% gradients, and roaming Carneddau mountain ponies.',
+    aboutPass: 'Sychnant Pass (Bwlch Sychnant — meaning "Dry Stream Valley Pass") is one of the most historically significant and visually dramatic mountain passes in Wales. Located at the northern entrance to Eryri (Snowdonia) National Park in Conwy County Borough, the pass was the original Royal Mail stagecoach route linking Chester and London with Holyhead before Thomas Telford constructed the coastal turnpike around Penmaen-bach in the 1820s. The winding road rises between the steep heather-clad slopes of Conwy Mountain (Mynydd y Dref) and Alltwen in the Carneddau mountain range, offering sweeping panoramas of the Irish Sea, the Great Orme, and Anglesey (Ynys Môn). The pass is globally celebrated for its population of semi-wild Carneddau ponies, ancient stone hut circles, and hiking access to the North Wales Path. LivePassWatch monitors real-time Traffic Wales travel telemetry, live cameras, and Conwy weather conditions for Sychnant Pass.',
+    crossLinkAnchor: 'Vršič Pass (Julian Alps, Slovenia) & Stelvio Pass (Italy)',
+    crossLinkUrl: '/passes/slovenia/gorenjska-goriska/vrsic-pass',
+    crossLinkText: 'Explore European alpine pass road conditions and mountain camera networks on'
   }
 };

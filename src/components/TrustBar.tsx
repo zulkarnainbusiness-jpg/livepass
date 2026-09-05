@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Clock, ShieldCheck, Globe, AlertTriangle } from 'lucide-react';
 
 export const TrustBar: React.FC = () => {
@@ -21,7 +22,7 @@ export const TrustBar: React.FC = () => {
           </div>
           <div>
             <h4 className="trust-item-title">Verified & Trusted</h4>
-            <p className="trust-item-desc">All information is verified and sourced from official agencies.</p>
+            <p className="trust-item-desc">All information is verified and sourced from official agencies. <Link to="/methodology" style={{ color: 'var(--color-primary, #2563EB)', textDecoration: 'underline', fontWeight: 500 }}>Read Methodology &rarr;</Link></p>
           </div>
         </div>
 

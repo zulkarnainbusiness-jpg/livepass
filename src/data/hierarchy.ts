@@ -145,6 +145,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 947,
                 "status": "OPEN",
                 "image": "/status-pass.jpg"
+              },
+              {
+                "id": "disautel-pass",
+                "slug": "disautel-pass",
+                "name": "Disautel Pass",
+                "highway": "SR 155",
+                "elevationFt": 3252,
+                "elevationM": 991,
+                "status": "OPEN",
+                "image": "/disautel-pass.jpg"
               }
             ]
           },
@@ -161,6 +171,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 3446,
                 "status": "OPEN",
                 "image": "/berthoud-pass-colorado.jpg"
+              },
+              {
+                "id": "red-mountain-pass",
+                "slug": "red-mountain-pass",
+                "name": "Red Mountain Pass",
+                "highway": "US 550",
+                "elevationFt": 11018,
+                "elevationM": 3358,
+                "status": "OPEN",
+                "image": "/red-mountain-pass.jpg"
               }
             ]
           },
@@ -177,6 +197,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 2151,
                 "status": "OPEN",
                 "image": "/donner-pass.jpg"
+              },
+              {
+                "id": "big-sur-highway-1",
+                "slug": "big-sur-highway-1",
+                "name": "Highway 1 / Big Sur Coast Route",
+                "highway": "SR-1 / PCH",
+                "elevationFt": 1200,
+                "elevationM": 366,
+                "status": "CAUTION",
+                "image": "/big-sur-highway-1.jpg"
               }
             ]
           },
@@ -622,6 +652,30 @@ export const hierarchyData: HierarchyContinent[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "united-kingdom",
+        "name": "United Kingdom",
+        "code": "GBR",
+        "flagEmoji": "🇬🇧",
+        "states": [
+          {
+            "id": "wales",
+            "name": "Wales",
+            "passes": [
+              {
+                "id": "sychnant-pass",
+                "slug": "sychnant-pass",
+                "name": "Sychnant Pass (Bwlch Sychnant)",
+                "highway": "Sychnant Pass Road",
+                "elevationFt": 541,
+                "elevationM": 165,
+                "status": "OPEN",
+                "image": "/sychnant-pass.jpg"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -667,7 +721,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 "highway": "Chisumle-Demchok Road",
                 "elevationFt": 19024,
                 "elevationM": 5798,
-                "status": "OPEN",
+                "status": "CAUTION",
                 "image": "/umling-la.webp"
               }
             ]
@@ -683,7 +737,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 "highway": "NH-1",
                 "elevationFt": 11575,
                 "elevationM": 3528,
-                "status": "OPEN",
+                "status": "CAUTION",
                 "image": "/zoji-la-pass-jammu-kashmir.jpg"
               }
             ]
@@ -715,7 +769,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 "highway": "NH-310",
                 "elevationFt": 14140,
                 "elevationM": 4310,
-                "status": "OPEN",
+                "status": "CAUTION",
                 "image": "/nathu-la-pass-sikkim.jpg"
               }
             ]
@@ -739,7 +793,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 "highway": "N-5 Highway",
                 "elevationFt": 3510,
                 "elevationM": 1070,
-                "status": "OPEN",
+                "status": "CLOSED",
                 "image": "/khyber-pass-khyber-pakhtunkhwa-pakistan.webp"
               }
             ]
@@ -770,7 +824,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 "highway": "Ruta 60-CH / RN 7",
                 "elevationFt": 10499,
                 "elevationM": 3200,
-                "status": "OPEN",
+                "status": "CAUTION",
                 "image": "/paso-los-libertadores-chile-argentina.webp"
               }
             ]
@@ -825,7 +879,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 "highway": "Sani Pass Road (P318)",
                 "elevationFt": 9429,
                 "elevationM": 2874,
-                "status": "OPEN",
+                "status": "CAUTION",
                 "image": "/sani-pass-south-africa-lesotho.jpg"
               }
             ]
@@ -856,7 +910,7 @@ export const hierarchyData: HierarchyContinent[] = [
                 "highway": "State Highway 73",
                 "elevationFt": 3018,
                 "elevationM": 920,
-                "status": "OPEN",
+                "status": "CAUTION",
                 "image": "/arthurs-pass.webp"
               }
             ]

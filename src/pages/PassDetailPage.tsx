@@ -680,8 +680,9 @@ export const PassDetailPage: React.FC = () => {
                                         : `${pass.name} on ${pass.highway} in ${pass.state}`;
 
   const seoDetails = passSeoDetails[pass.slug] || passSeoDetails[pass.id];
-  const seoTitle = pass.customSeo?.title || `${pass.name} Live Webcam & Open/Closed Status – Updated Today`;
-  const seoDesc = pass.customSeo?.description || `Live ${pass.name} webcam feeds, highway conditions, and real-time open/closed status on ${pass.highway}, ${pass.state ? `${pass.state}, ` : ''}${pass.country}. Verified and updated ${pass.lastUpdated}.`;
+  const rawTitle = pass.customSeo?.title || `${pass.name} Live Status & Webcams`;
+  const seoTitle = rawTitle.toLowerCase().includes('livepasswatch') ? rawTitle : `${rawTitle} | LivePassWatch`;
+  const seoDesc = pass.customSeo?.description || `Live ${pass.name} webcams, highway conditions, and real-time open/closed status on ${pass.highway}${pass.state ? `, ${pass.state}` : ''}. Verified and updated today.`;
 
   const displayedStatus = liveDataError ? 'NEEDS_VERIFICATION' : pass.status;
   const displayedStatusDetail = liveDataError
