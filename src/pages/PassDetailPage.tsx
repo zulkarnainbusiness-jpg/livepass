@@ -142,6 +142,58 @@ const baralachaHindiFaqs = [
 
 
 
+
+const sunwaptaFrenchFaqs = [
+  {
+    question: "Le col Sunwapta est-il ouvert aujourd'hui ? (Col Sunwapta est-il ouvert / Sunwapta Pass is open / is Sunwapta Pass open right now / Sunwapta Pass is it open today)",
+    answer: "Oui, le col Sunwapta (altitude 2 035 m / 6 677 pi) sur la route 93 (Promenade des Glaciers), à la frontière entre les parcs nationaux de Banff et de Jasper en Alberta, est actuellement OUVERT à la circulation. La chaussée est sèche et dégagée avec une bonne visibilité alpine. Les équipes de Parcs Canada assurent le déneigement de jour entre 7 h 00 et 15 h 30. Consultez toujours LivePassWatch et 511 Alberta pour l'état en direct et les webcams."
+  },
+  {
+    question: "Quelle est la date d'ouverture officielle du col Sunwapta en 2026 ? (Col Sunwapta date d'ouverture / Sunwapta Pass opening date / when does Sunwapta Pass open)",
+    answer: "Le col Sunwapta ne possède pas de date d'ouverture saisonnière car il s'agit d'une route panoramique nationale entretenue 365 jours par an. Contrairement aux cols d'altitude soumis à une fermeture hivernale totale de plusieurs mois (comme le col Highwood), Parcs Canada maintient la Promenade des Glaciers ouverte en hiver, sous réserve de fermetures de sécurité temporaires lors de fortes tempêtes ou pour le déclenchement préventif d'avalanches."
+  },
+  {
+    question: "Quelles sont les conditions routières et l'état de la route au col Sunwapta ? (Col Sunwapta conditions routières / Sunwapta Pass road conditions / Sunwapta Pass road status / rapport d'état)",
+    answer: "Les conditions routières actuelles sur la route 93 au col Sunwapta sont sèches et dégagées. En saison hivernale, les conditions peuvent rapidement changer en neige durcie, glace noire et poudrerie. Parcs Canada utilise du gravier abrasif sans sel de déglaçage chimique afin de préserver l'environnement alpin et les cours d'eau. Les automobilistes doivent adapter leur vitesse et maintenir des distances de freinage sécuritaires."
+  },
+  {
+    question: "Quand le col Sunwapta ferme-t-il pour l'hiver ? (Col Sunwapta fermeture hivernale / when does Sunwapta Pass close for winter / Sunwapta Pass closed / Sunwapta Pass is closed)",
+    answer: "Le col Sunwapta ne ferme PAS pour l'hiver. Il reste ouvert toute l'année avec un déneigement actif durant les heures de clarté. Cependant, lors de tempêtes hivernales majeures ou de risques élevés d'avalanche depuis le mont Athabasca, Parcs Canada effectue des fermetures préventives temporaires (généralement de 4 à 12 heures) entre Saskatchewan River Crossing et les chutes Athabasca jusqu'au dégagement par souffleuses rotatives."
+  },
+  {
+    question: "Le col Sunwapta est-il fermé aujourd'hui ? (is Sunwapta Pass closed today / Sunwapta Pass closures today)",
+    answer: "Non, le col Sunwapta n'est PAS fermé aujourd'hui ; la Promenade des Glaciers est ouverte dans les deux sens entre Banff et Jasper. En cas d'accident, de sauvetage ou de travaux d'avalanche urgents, LivePassWatch et 511 Alberta publient immédiatement des alertes de circulation."
+  },
+  {
+    question: "Y a-t-il des webcams en direct au col Sunwapta et au champ de glace Columbia ? (Col Sunwapta webcam en direct / Sunwapta Pass webcam / Sunwapta Pass live webcam / cameras)",
+    answer: "Oui ! LivePassWatch retransmet des caméras routières et alpines vérifiées en partenariat avec 511 Alberta, Parcs Canada et la Pursuit Collection. Les flux comprennent la vue du champ de glace Columbia et du glacier Athabasca (à 5 km au nord du col, 1 980 m), Saskatchewan River Crossing (jonction route 11), l'approche sud de Jasper et Lake Louise. En raison de l'isolement en milieu sauvage et de la réserve de ciel étoilé, les caméras solaires se mettent à jour toutes les 5 à 15 minutes en journée."
+  },
+  {
+    question: "Où trouver la carte routière, le profil d'altitude et les coordonnées du col Sunwapta ? (Sunwapta Pass map / Col Sunwapta carte)",
+    answer: "Le col Sunwapta se situe sur la route 93 aux coordonnées GPS 52.2222° N, 117.1517° O à 2 035 mètres d'altitude (6 677 pi). Il est situé à 108 km au sud de Jasper, 130 km au nord de Lake Louise et 5 km au sud du Centre du champ de glace Columbia. Des cartes satellites interactives et profils altimétriques complets sont accessibles sur LivePassWatch."
+  },
+  {
+    question: "Quelle est la météo aujourd'hui et les prévisions alpines au col Sunwapta ? (Sunwapta Pass weather today / Col Sunwapta météo / Sunwapta Pass snow)",
+    answer: "La météo actuelle au sommet du col Sunwapta affiche des températures vivifiantes de 9 °C (48 °F) avec une chaussée sèche et une brise glaciaire venant du glacier Athabasca. Le secteur reçoit annuellement entre 7 et 10 mètres de neige. Les températures pouvant chuter sous le point de congélation même en été, soyez toujours équipés pour le froid alpin."
+  },
+  {
+    question: "Quelle est l'épaisseur de neige et les conditions de conduite hivernale au col Sunwapta ? (Sunwapta Pass snow depth / neige col Sunwapta)",
+    answer: "L'épaisseur de neige sur la chaussée est actuellement de 0 cm (chaussée dégagée). Durant l'hiver (de novembre à avril), les bancs de neige en bordure de route atteignent couramment 1,5 à 2,5 mètres, avec d'importantes congères sur les crêtes de Parker Ridge et du mont Athabasca surveillées par Avalanche Canada."
+  },
+  {
+    question: "Quelles sont les obligations légales pour les pneus d'hiver sur la route 93 (col Sunwapta) ?",
+    answer: "Selon les lois de l'Alberta et les règlements de Parcs Canada, les pneus d'hiver sont obligatoires du 1er novembre au 1er avril sur la route 93. Les pneus doivent comporter le symbole du flocon de neige et de la montagne (3PMSF) ou la désignation M+S avec une rainure minimale de 3,5 mm."
+  },
+  {
+    question: "Les camions commerciaux de transport lourd peuvent-ils circuler sur le col Sunwapta ?",
+    answer: "Non. Le transit des véhicules commerciaux de plus de 4 550 kg (PNBV) est interdit en permanence sur la Promenade des Glaciers. Seuls les camions de livraison locaux desservant les parcs et les autocars de passagers autorisés peuvent y circuler, garantissant un environnement de conduite plus sûr."
+  },
+  {
+    question: "Quelle est l'origine du nom 'Sunwapta' et son histoire autochtone Stoney Nakoda ?",
+    answer: "'Sunwapta' est un terme traditionnel des Premières Nations Stoney Nakoda (Îyârhe Nakoda), signifiant 'eau turbulente' ou 'eaux rayonnantes'. Ce nom décrit la force tumultueuse des torrents de fonte glaciaire qui prennent naissance au col Sunwapta et au glacier Athabasca, se déversant par les chutes Sunwapta vers le fleuve Mackenzie et l'océan Arctique."
+  }
+];
+
 const kickingHorseIndigenousFaqs = [
   {
     question: "Is Kicking Horse Pass open today? (Kicking Horse Pass is open / Kicking Horse Pass open / is Kicking Horse Pass open right now)",
@@ -1029,6 +1081,90 @@ export const PassDetailPage: React.FC = () => {
           </div>
         )}
 
+        {/* Bilingual Language Switcher for Sunwapta Pass */}
+        {pass.slug === 'sunwapta-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(37, 99, 235, 0.06) 100%)',
+            border: '1px solid rgba(239, 68, 68, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#991B1B' }}>
+              <Globe size={18} color="#DC2626" />
+              <span>
+                {pageLang === 'fr'
+                  ? '🇨🇦 Version officielle canadienne française active — Col Sunwapta (Promenade des Glaciers / Route 93, Alberta)'
+                  : '🇨🇦 Official Canadian Bilingual Experience Active — Sunwapta Pass (Col Sunwapta) on Icefields Parkway Hwy 93'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 Français
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=${pageLang === 'fr' ? 'en' : 'fr'}&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/canada/alberta/sunwapta-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#991B1B',
+                  background: '#FEF2F2',
+                  border: '1px solid #FECACA',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Google Translate (English / French)"
+              >
+                <Globe size={14} />
+                <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
         {/* Bilingual Language Switcher for Kicking Horse Pass */}
         {pass.slug === 'kicking-horse-pass' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
@@ -1877,7 +2013,55 @@ export const PassDetailPage: React.FC = () => {
           </div>
         )}
 
-        {pass.slug === 'grimsel-pass' && (
+        
+            {pass.slug === 'sunwapta-pass' && (
+              <div className="sunwapta-regulations-callout lp-card" style={{
+                borderLeft: '4px solid #DC2626',
+                padding: '20px',
+                marginBottom: '24px',
+                backgroundColor: 'rgba(239, 68, 68, 0.04)',
+                borderRadius: '6px'
+              }}>
+                <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#991B1B' }}>
+                  <ShieldCheck size={20} color="#DC2626" />
+                  <span>
+                    {pageLang === 'fr'
+                      ? 'Réglementations de la Promenade des Glaciers & Guide de Parcs Canada (Col Sunwapta 🇨🇦)'
+                      : 'Parks Canada Winter Driving Regulations & Icefields Parkway Guide (Sunwapta Pass 🇨🇦)'}
+                  </span>
+                </h3>
+                <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+                  {pageLang === 'fr' ? (
+                    <>
+                      <strong>Conditions routières &amp; Normes de sécurité en montagne :</strong> Le <strong>col Sunwapta (route 93)</strong> relie le parc national Banff et le parc national Jasper à 2 035 m d’altitude. Bien que la route soit ouverte toute l’année, il n’y a aucun réseau cellulaire sur 180 km et le déneigement par Parcs Canada s’effectue uniquement de jour (de 7 h 00 à 15 h 30).
+                    </>
+                  ) : (
+                    <>
+                      <strong>Road Conditions &amp; Mountain Safety Standard:</strong> <strong>Sunwapta Pass (Highway 93)</strong> links Banff National Park and Jasper National Park at an elevation of 2,035 m (6,677 ft). While maintained year-round, there is zero cellular service for over 180 km, and Parks Canada plowing is restricted to daylight hours only (7:00 AM to 3:30 PM).
+                    </>
+                  )}
+                </p>
+                <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+                  {pageLang === 'fr' ? (
+                    <>
+                      <li><strong>Pneus d\'hiver obligatoires (1er nov – 1er avr) :</strong> Pneus homologués 3PMSF (flocon/montagne) ou M+S avec au minimum 3,5 mm de bande de roulement exigés par la loi.</li>
+                      <li><strong>Déneigement de jour uniquement :</strong> Aucun service de salage de nuit ; Parcs Canada utilise du gravier concassé pour protéger la faune et les cours d\'eau alpins.</li>
+                      <li><strong>Interdiction des poids lourds de transit :</strong> Les camions commerciaux de plus de 4 550 kg sont strictement interdits pour préserver la sécurité et la tranquillité.</li>
+                      <li><strong>Passe de Parcs Canada requise :</strong> Tout arrêt aux belvédères du champ de glace Columbia et sentier de Parker Ridge nécessite une passe Découverte valide.</li>
+                    </>
+                  ) : (
+                    <>
+                      <li><strong>Mandatory Winter Tires (Nov 1 – Apr 1):</strong> Certified 3PMSF mountain snowflake or M+S winter tires with at least 3.5 mm tread depth legally required.</li>
+                      <li><strong>Daylight Plowing Only (7 AM – 3:30 PM):</strong> No night plowing service; coarse sand and gravel are used instead of salt to preserve alpine ecology and grizzly/elk corridors.</li>
+                      <li><strong>Commercial Heavy Truck Ban:</strong> Through-truck traffic exceeding 4,550 kg GVW is prohibited year-round across the Icefields Parkway.</li>
+                      <li><strong>Parks Canada Discovery Pass:</strong> Stopping at Parker Ridge Trailhead or Columbia Icefield Discovery Centre requires a valid national park pass displayed on dash.</li>
+                    </>
+                  )}
+                </ul>
+              </div>
+            )}
+
+            {pass.slug === 'grimsel-pass' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
             alignItems: 'center',
@@ -4113,8 +4297,8 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
-                  ((pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
+                {((pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                  ((pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
 
 
 

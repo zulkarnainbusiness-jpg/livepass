@@ -305,6 +305,22 @@ export const hierarchyData: HierarchyContinent[] = [
                 "image": "/kicking-horse-pass.webp"
               }
             ]
+          },
+          {
+            "id": "alberta",
+            "name": "Alberta",
+            "passes": [
+              {
+                "id": "sunwapta-pass",
+                "slug": "sunwapta-pass",
+                "name": "Sunwapta Pass (Col Sunwapta)",
+                "highway": "Highway 93 (Icefields Parkway)",
+                "elevationFt": 6677,
+                "elevationM": 2035,
+                "status": "OPEN",
+                "image": "/sunwapta-pass.webp"
+              }
+            ]
           }
         ]
       }

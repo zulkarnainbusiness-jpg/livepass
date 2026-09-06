@@ -134,7 +134,12 @@ const LegacyPassRedirect: React.FC = () => {
           (clean === 'kicking-horse' && p.slug === 'kicking-horse-pass') ||
           (clean === 'kicking-horse-pass' && p.slug === 'kicking-horse-pass') ||
           (clean === 'kickinghorsepass' && p.slug === 'kicking-horse-pass') ||
-          (clean === 'col-du-cheval-qui-rue' && p.slug === 'kicking-horse-pass')
+          (clean === 'col-du-cheval-qui-rue' && p.slug === 'kicking-horse-pass') ||
+          (clean === 'sunwapta' && p.slug === 'sunwapta-pass') ||
+          (clean === 'sunwapta-pass' && p.slug === 'sunwapta-pass') ||
+          (clean === 'sunwaptapass' && p.slug === 'sunwapta-pass') ||
+          (clean === 'col-sunwapta' && p.slug === 'sunwapta-pass') ||
+          (clean === 'icefields-parkway' && p.slug === 'sunwapta-pass')
   );
 
   if (targetPass) {
@@ -252,6 +257,11 @@ export const App: React.FC = () => {
               <Route path="/lolopass" element={<Navigate to="/passes/united-states/montana/lolo-pass" replace />} />
               <Route path="/kicking-horse-pass" element={<Navigate to="/passes/canada/british-columbia/kicking-horse-pass" replace />} />
               <Route path="/kickinghorsepass" element={<Navigate to="/passes/canada/british-columbia/kicking-horse-pass" replace />} />
+              <Route path="/sunwapta" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
+              <Route path="/sunwapta-pass" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
+              <Route path="/sunwaptapass" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
+              <Route path="/col-sunwapta" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
+              <Route path="/icefields-parkway" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
 
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />

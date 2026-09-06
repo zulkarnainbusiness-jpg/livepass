@@ -807,5 +807,21 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Vršič Pass (Julian Alps, Slovenia) & Stelvio Pass (Italy)',
     crossLinkUrl: '/passes/slovenia/gorenjska-goriska/vrsic-pass',
     crossLinkText: 'Explore European alpine pass road conditions and mountain camera networks on'
+  },
+  'sunwapta-pass': {
+    nearestTowns: [
+      { name: 'Columbia Icefield Discovery Centre, AB', distance: '5.0 km (3.1 miles)', direction: 'North via Hwy 93 (Glacier Center & Skywalk)' },
+      { name: 'Saskatchewan River Crossing, AB', distance: '48.0 km (29.8 miles)', direction: 'South via Hwy 93 & Hwy 11 David Thompson Hwy' },
+      { name: 'Jasper Townsite, Alberta', distance: '108.0 km (67.1 miles)', direction: 'North via Hwy 93 (Jasper National Park Hub)' },
+      { name: 'Lake Louise, Alberta', distance: '130.0 km (80.8 miles)', direction: 'South via Hwy 93 & Trans-Canada Hwy 1' },
+      { name: 'Banff, Alberta', distance: '185.0 km (115.0 miles)', direction: 'South via Hwy 93 & Trans-Canada Hwy 1' },
+      { name: 'Calgary, Alberta', distance: '310.0 km (192.6 miles)', direction: 'Southeast via Hwy 93 & Hwy 1 (International Airport)' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Subject to daylight winter plowing & temporary blizzard closures)',
+    seasonalClosureDetail: 'Sunwapta Pass (2,035 m / 6,677 ft; Col Sunwapta) on Alberta Highway 93 (Icefields Parkway) along the Banff and Jasper National Park boundary is maintained open 365 days a year by Parks Canada road crews. Because the route traverses remote wilderness, snowplowing is conducted strictly during daylight hours (7:00 AM to 3:30 PM daily). Mandatory winter tires (3PMSF or M+S with min 3.5 mm tread) are legally required from November 1 to April 1. Precautionary storm closures of 4 to 12 hours occur during severe Rocky Mountain blizzards for avalanche control on Mount Athabasca and Parker Ridge.',
+    aboutPass: 'Sunwapta Pass (elevation 2,035 m / 6,677 ft) is the spectacular alpine summit connecting Banff National Park and Jasper National Park along Highway 93 (the Icefields Parkway / Promenade des Glaciers) in Alberta, Canada. As the second-highest highway crossing in the Canadian national parks, the pass marks the great continental watershed separating waters draining east into the Atlantic/Hudson Bay from waters flowing north into the Arctic Ocean. Surrounded by towering glacier-clad peaks like Mount Athabasca and Nigel Peak, the pass lies just 5 km south of the famous Columbia Icefield. Named after the Stoney Nakoda Indigenous word for "turbulent water", the route offers hiking access to Parker Ridge and Saskatchewan Glacier. LivePassWatch monitors real-time 511 Alberta and Parks Canada travel conditions, live cameras, and weather.',
+    crossLinkAnchor: 'Kicking Horse Pass (1,627 m) & Rogers Pass (1,330 m)',
+    crossLinkUrl: '/passes/canada/british-columbia/kicking-horse-pass',
+    crossLinkText: 'Compare Canadian Rocky Mountains and national park highway road conditions with'
   }
 };

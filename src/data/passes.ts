@@ -15482,6 +15482,242 @@ export const passesData: MountainPass[] = [
       }
     ],
     "isPopular": true
+  },
+  {
+    "id": "sunwapta-pass",
+    "slug": "sunwapta-pass",
+    "name": "Sunwapta Pass (Col Sunwapta)",
+    "alternateNames": [
+      "Sunwapta Pass",
+      "Col Sunwapta",
+      "Sunwapta Pass Alberta",
+      "Icefields Parkway Sunwapta Pass",
+      "Highway 93 Sunwapta Pass",
+      "Promenade des Glaciers Col Sunwapta",
+      "Parker Ridge Pass",
+      "Paso Sunwapta"
+    ],
+    "country": "Canada",
+    "countryCode": "CAN",
+    "continent": "North America",
+    "state": "Alberta",
+    "highway": "Highway 93 (Icefields Parkway / Promenade des Glaciers)",
+    "elevationFt": 6677,
+    "elevationM": 2035,
+    "coordinates": {
+      "lat": 52.2222,
+      "lng": -117.1517
+    },
+    "status": "OPEN",
+    "statusDetail": "Sunwapta Pass (6,677 ft / 2,035 m) on Highway 93 (Icefields Parkway) straddling the Banff and Jasper National Park boundary is OPEN to vehicular traffic. Pavement is bare and dry with good alpine visibility. Winter maintenance provided by Parks Canada road crews between 7:00 AM and 3:30 PM daily (no night plowing). Winter tires (3PMSF or M+S with min 3.5 mm tread) are legally mandatory from November 1 to April 1. No commercial through-trucks permitted.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Sunwapta Pass (elevation 6,677 ft / 2,035 m; French: Col Sunwapta) is a majestic high-altitude mountain pass in the Canadian Rockies carrying Alberta Highway 93 (the renowned Icefields Parkway / Promenade des Glaciers). Straddling the boundary between Banff National Park and Jasper National Park, the pass marks the critical continental hydrological divide separating waters flowing east to the Atlantic/Hudson Bay via the North Saskatchewan River from waters flowing north to the Arctic Ocean via the Sunwapta and Athabasca rivers. Towering beneath Mount Athabasca (3,491 m) and Parker Ridge, Sunwapta Pass sits just 5 km south of the world-famous Columbia Icefield Discovery Centre and Athabasca Glacier. The pass name originates from the Stoney Nakoda Indigenous language meaning 'turbulent water'. Maintained by Parks Canada, the pass is open year-round with daylight plowing and strict winter tire mandates.",
+    "image": "/sunwapta-pass.webp",
+    "officialSource": "511 Alberta & Parks Canada (Banff & Jasper National Parks)",
+    "official_source_url": "https://511.alberta.ca",
+    "official_authority": "Parks Canada / Alberta Transportation and Economic Corridors",
+    "verification_status": "VERIFIED",
+    "confidence": "HIGH",
+    "weather": {
+      "tempF": 48,
+      "tempC": 9,
+      "condition": "Crisp Alpine Clear Sky",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Highway Surface Bare & Dry (Summit Alpine Meadows Melting)"
+    },
+    "wind": {
+      "speedKmh": 16,
+      "speedMph": 10,
+      "direction": "NW",
+      "description": "Brisk glacial breeze from Columbia Icefield"
+    },
+    "roadCondition": "Icefields Parkway (Hwy 93) is bare and dry with clear visibility across Sunwapta Pass and Parker Ridge. Parks Canada reminds motorists that the route traverses 230 km of wilderness without cell reception or gas stations between Saskatchewan River Crossing and Jasper. Winter tire laws are legally enforced from November 1 through April 1.",
+    "chainRequirement": "No active chain requirements for light passenger vehicles. Winter-rated tires (marked with 3PMSF mountain snowflake or M+S with minimum 3.5 mm tread depth) are legally mandatory on Highway 93 from November 1 to April 1. Commercial through-traffic over 4,550 kg is prohibited year-round.",
+    "cameras": [
+      {
+        "id": "sun-cam-icefield",
+        "title": "Columbia Icefield & Athabasca Glacier Alpine View (5 km North of Pass)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/186.jpg",
+        "location": "Icefields Parkway Hwy 93 (1,980 m / 6,496 ft)",
+        "source": "511 Alberta & Pursuit Collection / Parks Canada",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking South toward Sunwapta Pass & Mount Athabasca"
+      },
+      {
+        "id": "sun-cam-sask-crossing",
+        "title": "Saskatchewan River Crossing (Hwy 93 / Hwy 11 Junction)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/187.jpg",
+        "location": "Hwy 93 South Approach (1,440 m / 4,724 ft)",
+        "source": "511 Alberta (Alberta Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking North toward Sunwapta Pass Summit"
+      },
+      {
+        "id": "sun-cam-jasper-south",
+        "title": "Jasper National Park South Highway 93 Approach",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/277.jpg",
+        "location": "Hwy 93 near Athabasca Falls (1,180 m / 3,871 ft)",
+        "source": "511 Alberta & Parks Canada",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking South toward Columbia Icefield & Sunwapta Pass"
+      },
+      {
+        "id": "sun-cam-lake-louise",
+        "title": "Lake Louise Hwy 93 / Trans-Canada Hwy 1 Interchange",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/188.jpg",
+        "location": "Hwy 93 North Gateway at Lake Louise (1,540 m / 5,052 ft)",
+        "source": "511 Alberta & DriveBC",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking North toward Bow Pass & Sunwapta Pass"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "kicking-horse-pass",
+        "slug": "kicking-horse-pass",
+        "name": "Kicking Horse Pass",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy (BC-1 / AB-1)",
+        "status": "OPEN",
+        "elevationFt": 5338,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 142
+      },
+      {
+        "id": "rogers-pass",
+        "slug": "rogers-pass",
+        "name": "Rogers Pass (Selkirk Mountains)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy (BC-1)",
+        "status": "OPEN",
+        "elevationFt": 4364,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 267
+      },
+      {
+        "id": "coquihalla-summit-pass",
+        "slug": "coquihalla-summit-pass",
+        "name": "Coquihalla Summit Pass",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "BC Highway 5",
+        "status": "OPEN",
+        "elevationFt": 4081,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 620
+      },
+      {
+        "id": "logan-pass",
+        "slug": "logan-pass",
+        "name": "Logan Pass (Glacier National Park)",
+        "country": "United States",
+        "state": "Montana",
+        "highway": "Going-to-the-Sun Road",
+        "status": "OPEN",
+        "elevationFt": 6646,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 510
+      }
+    ],
+    "overview": {
+      "openedYear": 1940,
+      "lengthMiles": "144.0 miles (Lake Louise to Jasper Hwy 93 corridor)",
+      "lengthKm": "232.0 km (Icefields Parkway corridor)",
+      "annualSnowfallIn": "280–400 inches",
+      "annualSnowfallM": "7.1–10.2 meters",
+      "summary": "Sunwapta Pass (elevation 2,035 m / 6,677 ft) is the crowning geographical milestone of the Icefields Parkway (Highway 93), marking the boundary between Banff National Park and Jasper National Park in the Canadian Rocky Mountains of Alberta. Standing as the second-highest highway summit in the Canadian national park network, the pass separates the Atlantic/Hudson Bay drainage basin (North Saskatchewan River) from the Arctic Ocean drainage basin (Sunwapta and Athabasca rivers). Surrounded by glacier-draped peaks including Mount Athabasca (3,491 m), Nigel Peak (3,211 m), and Parker Ridge, Sunwapta Pass is situated just 5 km south of the legendary Columbia Icefield Discovery Centre. Named after the Stoney Nakoda First Nations term for 'turbulent water', the roadway was constructed during the Great Depression by Canadian relief workers and officially completed in 1940. Maintained open year-round by Parks Canada with specialized daylight snowplowing, the pass requires mandatory winter tires from November 1 to April 1."
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Subject to temporary blizzard & avalanche safety closures)",
+      "typicalReopening": "Continuous daylight highway maintenance (plowing operations 7:00 AM to 3:30 PM daily; emergency storm closures typically 4 to 12 hours)",
+      "description": "Unlike high seasonal passes that shut down completely for 6 to 8 months of the year, Sunwapta Pass on Highway 93 (Icefields Parkway) is engineered and maintained by Parks Canada to remain open 365 days a year. However, because Highway 93 traverses remote alpine wilderness without roadside electrical grids, snowplowing is conducted exclusively during daylight hours (roughly 7:00 AM to 3:30 PM). During major Rocky Mountain winter blizzards or high avalanche hazard conditions from Mount Athabasca, Parks Canada proactively closes the gate at Saskatchewan River Crossing (south) and Athabasca Falls (north) for explosive avalanche mitigation and rotary snow blower clearance. Winter travelers must carry emergency survival gear and verify 511 Alberta road reports before departure."
+    },
+    "travelTips": [
+      "Mandatory Winter Tire Regulation: Under Alberta provincial law and Parks Canada regulations, all passenger vehicles traveling Highway 93 over Sunwapta Pass must be equipped with certified winter tires (bearing the 3PMSF mountain snowflake symbol or M+S with minimum 3.5 mm tread depth) from November 1 to April 1.",
+      "No Night Snowplowing Operations: Parks Canada maintenance crews plow the Icefields Parkway during daylight hours only (typically 7:00 AM to 3:30 PM). Night driving during winter months is strongly discouraged due to rapid temperature drops, compact ice, and lack of emergency roadside services.",
+      "Zero Cell Service Corridor: There is virtually no cellular phone coverage for over 180 km along the Icefields Parkway between Lake Louise and Jasper, except for a localized payphone/Wi-Fi zone at Saskatchewan River Crossing. Download offline maps and notify emergency contacts prior to travel.",
+      "Commercial Truck Ban: Highway 93 is a protected scenic heritage parkway. Commercial heavy trucks exceeding 4,550 kg GVW are prohibited from traversing Sunwapta Pass, ensuring a safer driving environment for passenger cars, RVs, and tourist shuttles.",
+      "Parks Canada National Park Pass Required: All visitors traveling or stopping along Highway 93 through Banff and Jasper National Parks must display a valid Parks Canada Discovery Pass or day pass on their vehicle dashboard.",
+      "Wildlife Caution & Speed Limits: Bighorn sheep, mountain goats, elk, and grizzly bears frequent the roadside near Sunwapta Pass and Parker Ridge. Obey the 90 km/h (55 mph) maximum parkway speed limit, reduce speed around curves, and remain at least 100 meters away from bears and wolves."
+    ],
+    "narrativeSections": [
+      {
+        "title": "Indigenous Heritage: The Stoney Nakoda & 'Turbulent Water'",
+        "content": "Long before European cartographers explored the Canadian Rockies, the mountain passes and river corridors around Sunwapta Pass were utilized by Indigenous peoples, including the Stoney Nakoda (Îyârhe Nakoda), Ktunaxa, Secwépemc, and Cree nations. The word 'Sunwapta' originates directly from the Stoney Nakoda language, translating to 'turbulent water' or 'radiant water', describing the roaring glacial meltwater cascades that plummet north from Sunwapta Pass and the Athabasca Glacier through Sunwapta Falls into the mighty Athabasca River. Indigenous hunters, traders, and guides possessed profound ecological knowledge of the alpine flora, big horn sheep migratory trails across Parker Ridge, and seasonal weather patterns across the high divide."
+      },
+      {
+        "title": "The Great Continental Watershed: Atlantic to Arctic",
+        "content": "Sunwapta Pass occupies a monumental hydrologic position on the North American continent. Standing at 2,035 meters (6,677 feet), the pass acts as the primary drainage divide between two enormous oceanic watersheds. Precipitation and glacial runoff falling immediately south of the pass flow into Nigel Creek and the North Saskatchewan River, journeying through Lake Winnipeg, the Nelson River, and Hudson Bay into the North Atlantic Ocean. Conversely, precipitation falling north of the pass feeds the Sunwapta River, joining the Athabasca, Peace, Slave, and Mackenzie river systems before discharging into the icy Arctic Ocean. The nearby Snow Dome (3,456 m), towering above the Columbia Icefield, forms the rare hydrological apex of North America, where water drains into the Pacific, Arctic, and Atlantic/Hudson Bay basins."
+      },
+      {
+        "title": "Engineering the Icefields Parkway: The 1940 Triumph",
+        "content": "Prior to 1940, traveling between Lake Louise and Jasper required a grueling two-to-three-week packhorse expedition along remote pack trails. During the depths of the Great Depression in 1931, the Canadian federal government launched the construction of the single-lane gravel scenic road as an unemployment relief project. Over 600 men worked with picks, shovels, horse-drawn scrapers, and early bulldozers to carve the highway through boulder-strewn moraines, dense subalpine forests, and fragile alpine scree. On July 1, 1940, the Icefields Parkway officially opened to automobile traffic, celebrated as one of the greatest scenic highway engineering triumphs in the world. The roadway was completely paved during the 1960s, offering travelers direct access to over 100 glaciers."
+      },
+      {
+        "title": "Parker Ridge & Columbia Icefield Glaciology",
+        "content": "Located directly at the crest of Sunwapta Pass is the famous Parker Ridge Trailhead. Ascending 250 vertical meters through subalpine larch and krummholz tundra, the trail rewards hikers with an awe-inspiring, jaw-dropping panoramic vista of the Saskatchewan Glacier—the longest outlet glacier of the Columbia Icefield stretching over 13 kilometers. Just 5 km north of Sunwapta Pass lies the Athabasca Glacier and the Columbia Icefield Discovery Centre, where glaciologists and climate scientists from around the world study glacial recession, ice sheet dynamics, and alpine microclimates. The summit area remains an irreplaceable ecological sanctuary for delicate alpine vegetation, hoary marmots, pikas, and caribou."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Sunwapta Pass open today? (Sunwapta Pass is open / Sunwapta Pass open / is Sunwapta Pass open right now / Sunwapta Pass is it open today)",
+        "answer": "Yes, Sunwapta Pass (elevation 2,035 m / 6,677 ft) on Highway 93 (Icefields Parkway) on the Banff/Jasper National Park border is currently OPEN to vehicular traffic. Highway pavement across the pass is bare and dry with clear alpine visibility. Parks Canada maintenance crews patrol and clear the route daily during daylight hours (7:00 AM to 3:30 PM). Always check LivePassWatch for live road condition reports, 511 Alberta status, and webcam updates before departing."
+      },
+      {
+        "question": "What is the official Sunwapta Pass opening date for 2026? (Sunwapta Pass opening date / when does Sunwapta Pass open / Sunwapta Pass when will open)",
+        "answer": "Sunwapta Pass on Highway 93 does NOT have a seasonal opening date because it is maintained as a year-round all-weather national park highway open 365 days a year. Unlike high seasonal passes that close for winter (such as Highwood Pass on Hwy 40), Parks Canada keeps the Icefields Parkway open through winter, subject to temporary emergency safety closures during heavy blizzards and avalanche mitigation."
+      },
+      {
+        "question": "What are the current Sunwapta Pass road conditions and road status? (Sunwapta Pass road conditions / Sunwapta Pass road status / Sunwapta Pass pass status report)",
+        "answer": "Current road conditions across Sunwapta Pass on Highway 93 are bare and dry with clear driving lanes. During autumn and winter months, alpine conditions can shift rapidly to compact snow, black ice, and blowing drift. Parks Canada utilizes gravel and coarse sand rather than chemical salt to protect alpine streams and wildlife, so drivers must exercise extra caution and maintain safe following distances."
+      },
+      {
+        "question": "When does Sunwapta Pass close for winter? (when does Sunwapta Pass close for winter / Sunwapta Pass closed / Sunwapta Pass is closed)",
+        "answer": "Sunwapta Pass does NOT close for winter. It remains open 365 days a year under active daylight snowplowing by Parks Canada. However, winter storms with extreme snowfall, high winds, or elevated avalanche hazard from Mount Athabasca can trigger temporary precautionary closures between Saskatchewan River Crossing and Athabasca Falls. These winter closures typically last from 4 to 12 hours until rotary blowers reopen the highway."
+      },
+      {
+        "question": "Is Sunwapta Pass closed today or are there closures today? (is Sunwapta Pass closed today / Sunwapta Pass closures today / Sunwapta Pass is closed)",
+        "answer": "No, Sunwapta Pass is NOT closed today; the Icefields Parkway is open for full travel in both directions between Banff and Jasper National Parks. If severe alpine weather, avalanches, or vehicle recovery operations require a temporary closure, LivePassWatch and 511 Alberta issue immediate real-time alerts."
+      },
+      {
+        "question": "Are there live webcams at Sunwapta Pass and the Columbia Icefield? (Sunwapta Pass webcam / Sunwapta Pass live webcam / Sunwapta Pass cameras / Sunwapta Pass summit camera)",
+        "answer": "Yes! LivePassWatch streams verified highway and alpine camera feeds along the Icefields Parkway corridor in cooperation with 511 Alberta, Parks Canada, and the Pursuit Collection. Feeds include the Columbia Icefield & Athabasca Glacier camera (5 km north of Sunwapta Pass at 1,980 m), the Saskatchewan River Crossing camera at the Hwy 11 junction, the Jasper South highway approach near Athabasca Falls, and the Lake Louise interchange. Because the national park is a protected wilderness and Dark Sky Preserve without commercial grid power, cameras operate on daylight solar telemetry and update every 5 to 15 minutes."
+      },
+      {
+        "question": "Where can I find the Sunwapta Pass map, elevation profile, and GPS coordinates? (Sunwapta Pass map)",
+        "answer": "Sunwapta Pass is located on Highway 93 at GPS coordinates 52.2222° N, 117.1517° W at an elevation of 2,035 meters (6,677 feet) above sea level. It is situated 108 km (67 miles) south of Jasper townsite, 130 km (81 miles) north of Lake Louise, and 5 km south of the Columbia Icefield Discovery Centre. You can view high-resolution satellite terrain maps, elevation charts, and trailhead waypoints on LivePassWatch."
+      },
+      {
+        "question": "What is the Sunwapta Pass weather today, temperature, and alpine forecast? (Sunwapta Pass weather today / Sunwapta Pass snow / Sunwapta Pass weather)",
+        "answer": "Current weather at Sunwapta Pass summit features crisp alpine conditions around 48°F (9°C) with dry road pavement and brisk mountain breezes. The summit receives between 280 and 400 inches (7.1 to 10.2 meters) of snow annually. Because high-elevation weather near the Columbia Icefield can drop below freezing even during summer evenings, motorists should always prepare for sudden snow squalls."
+      },
+      {
+        "question": "What is the Sunwapta Pass snow depth, snowfall accumulation, and winter driving conditions? (Sunwapta Pass snow / Sunwapta Pass snow depth)",
+        "answer": "Current highway road surface snow depth is 0 cm (bare and dry). During winter (November through April), roadside snowpacks routinely build to 150–250 cm (60–100 inches) with alpine drift exceeding 3 meters. Avalanche Canada and Parks Canada continuously monitor snowpack stability and avalanche paths along Parker Ridge and Mount Athabasca."
+      },
+      {
+        "question": "What are the mandatory winter tire and chain requirements on Sunwapta Pass (Highway 93)?",
+        "answer": "Under Alberta law and Parks Canada regulations, winter tires are legally mandatory on Highway 93 from November 1 to April 1. Tires must bear the severe snow 3PMSF (three-peak mountain snowflake) symbol or M+S designation with a minimum tread depth of 3.5 mm. Carrying emergency traction mats and tire chains is strongly advised during winter months."
+      },
+      {
+        "question": "Are commercial heavy trucks allowed to drive over Sunwapta Pass on Highway 93?",
+        "answer": "No. Commercial through-truck traffic exceeding 4,550 kg gross vehicle weight (GVW) is prohibited year-round on the Icefields Parkway between Lake Louise and Jasper. Only local delivery trucks servicing park facilities and licensed passenger tour buses are permitted, keeping traffic calmer and safer."
+      },
+      {
+        "question": "What is the Indigenous origin and meaning of the name 'Sunwapta'?",
+        "answer": "'Sunwapta' comes directly from the Stoney Nakoda (Îyârhe Nakoda) Indigenous language, meaning 'turbulent water' or 'radiant water'. The name honors the fierce glacial rapids of the Sunwapta River that cascade from the melting alpine snowpack of Sunwapta Pass and Athabasca Glacier through Sunwapta Falls toward the Arctic Ocean."
+      }
+    ]
   }
 ];
 
@@ -15573,6 +15809,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Bern & Valais' || passSlug === 'grimsel-pass') return 'bern-valais';
   if (state === 'Bern & Uri' || passSlug === 'susten-pass') return 'bern-uri';
   if (state === 'British Columbia' || passSlug === 'rogers-pass' || passSlug === 'coquihalla-summit-pass' || passSlug === 'kicking-horse-pass') return 'british-columbia';
+  if (state === 'Alberta' || passSlug === 'sunwapta-pass') return 'alberta';
   if (state === 'Montana' || passSlug === 'logan-pass' || passSlug === 'lolo-pass') return 'montana';
   if (state === 'Uri & Ticino' || state === 'Uri / Ticino' || passSlug === 'gotthard-pass') return 'uri-ticino';
   if (state === 'Graubünden' || state === 'Grisons' || passSlug === 'bernina-pass') return 'graubunden';
