@@ -15718,6 +15718,246 @@ export const passesData: MountainPass[] = [
         "answer": "'Sunwapta' comes directly from the Stoney Nakoda (Îyârhe Nakoda) Indigenous language, meaning 'turbulent water' or 'radiant water'. The name honors the fierce glacial rapids of the Sunwapta River that cascade from the melting alpine snowpack of Sunwapta Pass and Athabasca Glacier through Sunwapta Falls toward the Arctic Ocean."
       }
     ]
+  },
+  {
+    "id": "yellowhead-pass",
+    "slug": "yellowhead-pass",
+    "name": "Yellowhead Pass (Col Tête-Jaune)",
+    "alternateNames": [
+      "Yellowhead Pass",
+      "Col Tête-Jaune",
+      "Yellowhead Pass BC",
+      "Yellowhead Pass Alberta",
+      "Highway 16 Yellowhead Pass",
+      "Trans-Canada Highway 16 Yellowhead Pass",
+      "Paso Yellowhead",
+      "Tête Jaune Pass"
+    ],
+    "country": "Canada",
+    "countryCode": "CAN",
+    "continent": "North America",
+    "state": "British Columbia",
+    "highway": "Highway 16 (Yellowhead Highway / Trans-Canada Hwy 16)",
+    "elevationFt": 3711,
+    "elevationM": 1131,
+    "coordinates": {
+      "lat": 52.8944,
+      "lng": -118.4686
+    },
+    "status": "OPEN",
+    "statusDetail": "Yellowhead Pass (3,711 ft / 1,131 m) on Highway 16 (Yellowhead Highway) at the British Columbia and Alberta border is OPEN to all vehicular traffic. Driving lanes are bare and dry with excellent visibility. Maintained 24/7 by DriveBC, 511 Alberta, and Parks Canada road crews. Winter tires (3PMSF or M+S with min 3.5 mm tread) are legally mandatory from October 1 to April 30. Watch for wildlife near Mount Robson and Jasper National Park.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Yellowhead Pass (elevation 3,711 ft / 1,131 m; French: Col Tête-Jaune) is an internationally celebrated, low-elevation mountain pass through the Canadian Rocky Mountains on the Continental Divide, straddling the provincial border between British Columbia (Mount Robson Provincial Park) and Alberta (Jasper National Park). Carrying the Yellowhead Highway (Highway 16 / Trans-Canada Highway 16) and the Canadian National Railway (CN Rail) transcontinental mainline, the pass serves as Canada's primary northern transportation corridor linking Edmonton and the Prairies with Prince George and the Pacific Port of Prince Rupert. Designated a National Historic Site of Canada in 1971, Yellowhead Pass marks the vital hydrological divide between the Pacific Ocean watershed (Fraser River) and the Arctic Ocean watershed (Miette and Athabasca rivers). Named after the legendary Iroquois-Métis fur trader Pierre Bostonais (known as 'Tête Jaune' or Yellowhead for his golden hair), the pass features remarkably gentle alpine gradients, breathtaking views of Mount Fitzwilliam and Mount Robson (the highest peak in the Canadian Rockies at 3,954 m), and year-round all-weather highway maintenance.",
+    "image": "/yellowhead-pass.webp",
+    "customSeo": {
+      "title": "Yellowhead Pass Live Status & Webcams | LivePassWatch",
+      "description": "Live Yellowhead Pass road conditions, DriveBC webcams & status on Hwy 16 (Col Tête-Jaune). Check if open today, weather & snow reports.",
+      "h1": "Yellowhead Pass (Col Tête-Jaune) Live Status, Webcams & Road Conditions"
+    },
+    "officialSource": "DriveBC (BC Ministry of Transportation), 511 Alberta & Parks Canada",
+    "official_source_url": "https://www.drivebc.ca",
+    "official_authority": "DriveBC / Alberta Transportation / Parks Canada",
+    "verification_status": "VERIFIED",
+    "confidence": "HIGH",
+    "weather": {
+      "tempF": 54,
+      "tempC": 12,
+      "condition": "Partly Cloudy with Alpine Sun",
+      "icon": "cloud-sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Highway Surface Bare & Dry"
+    },
+    "wind": {
+      "speedKmh": 12,
+      "speedMph": 7,
+      "direction": "W",
+      "description": "Gentle mountain valley breeze"
+    },
+    "roadCondition": "Yellowhead Highway 16 is bare and dry with clear visibility across the summit corridor and Yellowhead Lake. Four-lane and wide two-lane paved expressway sections provide smooth transit between Mount Robson Provincial Park and Jasper. Motorists must observe British Columbia winter tire laws (October 1 to April 30) and stay vigilant for elk, moose, and bighorn sheep.",
+    "chainRequirement": "No active chain requirements in effect for passenger cars. Commercial vehicles exceeding 11,794 kg GVW must carry tire chains from October 1 through April 30. Winter-rated tires (3PMSF mountain snowflake or M+S with minimum 3.5 mm tread) mandatory for all passenger vehicles during winter season.",
+    "cameras": [
+      {
+        "id": "yh-cam-182",
+        "title": "DriveBC Cam 182: Yellowhead Pass Summit (Hwy 16 at BC/AB Border Looking East)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/182.jpg",
+        "location": "Yellowhead Pass Summit (1,131 m / 3,711 ft), Hwy 16",
+        "source": "DriveBC (BC Ministry of Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking East toward Jasper National Park, Alberta"
+      },
+      {
+        "id": "yh-cam-183",
+        "title": "DriveBC Cam 183: Mount Robson Provincial Park (Hwy 16 Looking West)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/183.jpg",
+        "location": "Mount Robson Viewpoint (875 m / 2,871 ft)",
+        "source": "DriveBC (BC Ministry of Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking West toward Fraser River & Mount Robson Peak"
+      },
+      {
+        "id": "yh-cam-184",
+        "title": "DriveBC Cam 184: Tête Jaune Cache (Hwy 16 / Hwy 5 Junction)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/184.jpg",
+        "location": "Tête Jaune Cache Junction (735 m / 2,411 ft)",
+        "source": "DriveBC (BC Ministry of Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking East toward Yellowhead Pass & Canadian Rockies"
+      },
+      {
+        "id": "yh-cam-185",
+        "title": "DriveBC Cam 185: Valemount Gateway (Hwy 5 South of Yellowhead Corridor)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/185.jpg",
+        "location": "Hwy 5 North of Valemount (790 m / 2,592 ft)",
+        "source": "DriveBC (BC Ministry of Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking North toward Highway 16 Interchange"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "sunwapta-pass",
+        "slug": "sunwapta-pass",
+        "name": "Sunwapta Pass (Icefields Parkway)",
+        "country": "Canada",
+        "state": "Alberta",
+        "highway": "Highway 93",
+        "status": "OPEN",
+        "elevationFt": 6677,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 133
+      },
+      {
+        "id": "kicking-horse-pass",
+        "slug": "kicking-horse-pass",
+        "name": "Kicking Horse Pass",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy 1",
+        "status": "OPEN",
+        "elevationFt": 5338,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 260
+      },
+      {
+        "id": "rogers-pass",
+        "slug": "rogers-pass",
+        "name": "Rogers Pass (Selkirk Mountains)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy (BC-1)",
+        "status": "OPEN",
+        "elevationFt": 4364,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 310
+      },
+      {
+        "id": "coquihalla-summit-pass",
+        "slug": "coquihalla-summit-pass",
+        "name": "Coquihalla Summit Pass",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "BC Highway 5",
+        "status": "OPEN",
+        "elevationFt": 4081,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 490
+      }
+    ],
+    "overview": {
+      "openedYear": 1825,
+      "lengthMiles": "60.0 miles (Jasper, AB to Tête Jaune Cache, BC corridor)",
+      "lengthKm": "96.5 km (Highway 16 mountain corridor)",
+      "annualSnowfallIn": "180–280 inches",
+      "annualSnowfallM": "4.6–7.1 meters",
+      "summary": "Yellowhead Pass (elevation 1,131 m / 3,711 ft; French: Col Tête-Jaune) is the premier low-elevation gateway across the Canadian Rocky Mountains on the Continental Divide, linking British Columbia and Alberta. Standing as one of the lowest highway and railway passes across the Great Divide in North America, Yellowhead Pass carries Highway 16 (the Trans-Canada Yellowhead Highway) and the Canadian National Railway mainline between Mount Robson Provincial Park and Jasper National Park. Designated a National Historic Site of Canada in 1971, the pass was named after Pierre Bostonais ('Tête Jaune'), an Iroquois-Métis fur trader who guided North West Company and Hudson's Bay Company brigades in the 1820s. Overlanders crossed during the 1862 gold rush, and Sir Sandford Fleming originally surveyed the route for Canada's transcontinental railway. Today, Yellowhead Pass is celebrated for its gentle 2.2% highway grades, panoramic vistas of Mount Fitzwilliam and Yellowhead Lake, proximity to Mount Robson (3,954 m), and reliable 24/7 all-season highway maintenance by DriveBC, 511 Alberta, and Parks Canada."
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Subject to temporary blizzard & avalanche control clearances)",
+      "typicalReopening": "Continuous 24/7 all-weather operations (emergency closures typically 2 to 6 hours during severe storms)",
+      "description": "Unlike high-altitude alpine passes that close for winter, Yellowhead Pass (1,131 m / 3,711 ft) is an essential transcontinental interprovincial commercial highway open 365 days a year. Dedicated highway maintenance crews from DriveBC, 511 Alberta, and Parks Canada plow, salt, and sand Highway 16 around the clock. Because the pass elevation is relatively low, extreme snowfall accumulations are lower than at Rogers Pass or Coquihalla Summit. However, severe Pacific-Arctic storm systems can dump heavy wet snow along Yellowhead Lake and Mount Fitzwilliam, triggering brief precautionary closures of 2 to 6 hours for avalanche bombing, snow blower clearance, or traffic incident recovery."
+    },
+    "travelTips": [
+      "Mandatory Winter Tire Regulations: Under British Columbia regulations, winter-rated tires (3PMSF mountain snowflake symbol or M+S with minimum 3.5 mm tread depth) are legally mandatory on Highway 16 from October 1 to April 30.",
+      "Commercial Truck Chain Laws: Commercial vehicles exceeding 11,794 kg GVW must carry tire chains and be prepared to chain up at designated brake-check pullouts near the summit during winter conditions.",
+      "Gentle Mountain Gradient: With a maximum grade of only 2.2%, Yellowhead Pass is one of the easiest, safest, and most fuel-efficient routes across the Canadian Rockies for passenger cars, RVs, and commercial freight.",
+      "National & Provincial Park Passes: Because Highway 16 traverses Mount Robson Provincial Park in BC and Jasper National Park in Alberta, visitors stopping at trailheads, rest areas, or visitor centers must display a valid park pass.",
+      "Abundant Wildlife Corridors: Elk, moose, bighorn sheep, wolves, and black/grizzly bears frequently graze along the road shoulders near Yellowhead Lake. Obey the 90 km/h (55 mph) highway speed limit and never stop in active driving lanes to view wildlife."
+    ],
+    "narrativeSections": [
+      {
+        "title": "Pierre Bostonais & The Legend of Tête Jaune",
+        "content": "Yellowhead Pass takes its historic name from Pierre Bostonais (also known as Pierre Hatsinaton or Pierre Tête Jaune), a prominent Iroquois-Métis fur trader and tracker. Employed by the North West Company and later the Hudson's Bay Company in the early 19th century, Bostonais was nicknamed 'Tête Jaune' (Yellowhead) by French-Canadian voyageurs because of his distinctive golden-blonde hair. Around 1820, Bostonais established a strategic fur cache west of the pass near the confluence of the Fraser and McLennan rivers, a historic crossroads that still bears the name Tête Jaune Cache today. Bostonais was instrumental in guiding early fur brigades through the gentle alpine gap that would eventually bear his name."
+      },
+      {
+        "title": "The Overlanders of 1862 & The Cariboo Gold Rush",
+        "content": "In 1862, word of rich gold discoveries in the Cariboo region of British Columbia inspired a group of over 150 men and one woman (Catherine O'Hare Schubert, who was pregnant) to journey across Canada from Ontario and Quebec. Known in Canadian frontier lore as the 'Overlanders of 1862', the party traveled with Red River ox carts across the Prairies to Fort Edmonton, then abandoned their carts to cross Yellowhead Pass on foot and with pack horses. After crossing the summit of the pass, the party split at Tête Jaune Cache—some rafting down the treacherous, roaring rapids of the Fraser River while others descended the North Thompson River, creating one of the greatest pioneering epics in North American history."
+      },
+      {
+        "title": "Railway Engineering & Sir Sandford Fleming's Survey",
+        "content": "In the 1870s, Sir Sandford Fleming, Chief Engineer of the Canadian Pacific Railway, surveyed Yellowhead Pass as the ideal transcontinental railway crossing because of its low summit elevation and gentle gradients. Although the CPR ultimately chose the more southerly Kicking Horse Pass in 1881 to thwart American rail competition, Fleming's vision was vindicated in the early 20th century. Two competing transcontinental railways—the Grand Trunk Pacific and the Canadian Northern Railway—built rival mainlines side-by-side through Yellowhead Pass between 1911 and 1915. Later merged by the federal government into the Canadian National Railway (CNR), the corridor remains one of the busiest, most vital transcontinental freight rail lines in the world."
+      },
+      {
+        "title": "Continental Divide Hydrology & Mount Robson Majesty",
+        "content": "Designated a National Historic Site of Canada in 1971, Yellowhead Pass sits directly on the Continental Divide. Waters running off the east side of the pass feed the Miette and Athabasca rivers, flowing through Alberta toward the Mackenzie River and the Arctic Ocean. Runoff from the west side empties into Yellowhead Lake and the Fraser River, traveling 1,375 km to the Pacific Ocean at Vancouver. Just 35 km west of the summit rises Mount Robson (3,954 m / 12,972 ft), the towering monarch of the Canadian Rockies. The pass serves as a premier alpine habitat for woodland caribou, mountain goats, and boreal bird species."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Yellowhead Pass open today? (Yellowhead Pass is open / Yellowhead Pass open / is Yellowhead Pass open right now / Yellowhead Pass is it open today)",
+        "answer": "Yes, Yellowhead Pass (elevation 1,131 m / 3,711 ft) on Highway 16 (Yellowhead Highway) at the British Columbia/Alberta border is currently OPEN to all vehicular traffic. Driving lanes are bare and dry with clear alpine visibility. Highway maintenance crews from DriveBC, 511 Alberta, and Parks Canada patrol and plow the corridor 24 hours a day. Check LivePassWatch for live summit webcams, highway status, and road condition reports before departing."
+      },
+      {
+        "question": "What is the official Yellowhead Pass opening date for 2026? (Yellowhead Pass opening date / when does Yellowhead Pass open / Yellowhead Pass when will open)",
+        "answer": "Yellowhead Pass on Highway 16 does NOT have a seasonal opening date because it is a critical transcontinental commercial and passenger highway maintained open 365 days a year. If brief temporary emergency closures occur during active Rocky Mountain winter blizzards or avalanche clearances on Mount Fitzwilliam, the pass typically reopens within 2 to 6 hours once plows and rotary blowers clear the road."
+      },
+      {
+        "question": "What are the current Yellowhead Pass road conditions and road status? (Yellowhead Pass road conditions / Yellowhead Pass road status / Yellowhead Pass pass status report)",
+        "answer": "Current road conditions across Yellowhead Pass on Highway 16 are bare and dry with clear driving lanes. During autumn and winter storms, highway conditions can transition to compact snow, slush, or black ice along Yellowhead Lake. Dedicated winter maintenance teams apply sand and de-icing liquid to keep traffic moving smoothly between Jasper, AB and Mount Robson, BC."
+      },
+      {
+        "question": "When does Yellowhead Pass close for winter? (when does Yellowhead Pass close for winter / Yellowhead Pass closed / Yellowhead Pass is closed)",
+        "answer": "Yellowhead Pass does NOT close for winter. As Canada's northern Trans-Canada Highway 16 corridor across the Continental Divide, road maintenance contractors and Parks Canada operate heavy snow equipment around the clock to keep the pass open. Only short-duration emergency closures occur during severe winter blizzards or vehicle incident recovery."
+      },
+      {
+        "question": "Is Yellowhead Pass closed today or are there closures today? (is Yellowhead Pass closed today / Yellowhead Pass closures today / Yellowhead Pass is closed)",
+        "answer": "No, Yellowhead Pass is NOT closed today; Highway 16 is open for full travel in both directions between British Columbia and Alberta. If an incident, accident, or avalanche mitigation closure occurs, DriveBC, 511 Alberta, and LivePassWatch issue immediate travel advisories."
+      },
+      {
+        "question": "Are there live webcams at Yellowhead Pass and Mount Robson? (Yellowhead Pass webcam / Yellowhead Pass live webcam / Yellowhead Pass cameras / Yellowhead Pass summit camera)",
+        "answer": "Yes! LivePassWatch streams verified live highway webcams operated by DriveBC (BC Ministry of Transportation) and 511 Alberta. Feeds include Cam 182 (Highway 16 at Yellowhead Pass BC/AB Border looking East toward Jasper), Cam 183 (Mount Robson Provincial Park Viewpoint looking West), Cam 184 (Tête Jaune Cache at the Hwy 16 / Hwy 5 junction), and Cam 185 (Valemount Gateway). Camera feeds update automatically every minute."
+      },
+      {
+        "question": "Where can I view the Yellowhead Pass map, elevation profile, and driving route? (Yellowhead Pass map)",
+        "answer": "Yellowhead Pass is located on Highway 16 at GPS coordinates 52.8944° N, 118.4686° W at an elevation of 1,131 meters (3,711 feet) above sea level. It is situated 25 km (15.5 miles) west of Jasper, Alberta, and 63 km (39 miles) east of the Mount Robson Visitor Centre in British Columbia. You can explore interactive satellite terrain maps, elevation profiles, and rest area waypoints on LivePassWatch."
+      },
+      {
+        "question": "What is the Yellowhead Pass weather today, temperature, and alpine forecast? (Yellowhead Pass weather today / Yellowhead Pass weather / Yellowhead Pass snow)",
+        "answer": "Current summit weather features pleasant alpine temperatures around 54°F (12°C) with dry road surfaces and mild mountain valley winds. The summit receives between 180 and 280 inches (4.6 to 7.1 meters) of annual snowfall. Motorists should check live winter weather telemetry on LivePassWatch before traveling through the Rocky Mountain divide."
+      },
+      {
+        "question": "What is the Yellowhead Pass snow depth, snowfall accumulation, and winter driving conditions? (Yellowhead Pass snow / Yellowhead Pass snow depth)",
+        "answer": "Current highway road surface snow depth is 0 cm (bare and dry). During winter (October through April), roadside snowpacks routinely reach 100–180 cm (40–70 inches). Because Yellowhead Pass sits at a low elevation of 1,131 m, it experiences less extreme snow accumulation than higher passes like Rogers Pass (1,330 m) or Sunwapta Pass (2,035 m)."
+      },
+      {
+        "question": "Do I need winter tires or chains on Yellowhead Pass (Highway 16)?",
+        "answer": "Yes. Under British Columbia regulations, winter-rated tires (marked with the 3PMSF mountain snowflake symbol or M+S with minimum 3.5 mm tread depth) are legally mandatory on Highway 16 from October 1 to April 30. Commercial trucks exceeding 11,794 kg GVW must carry tire chains and fit them when required."
+      },
+      {
+        "question": "Are commercial trucks and semi-trailers allowed on Yellowhead Pass?",
+        "answer": "Yes. Unlike the Icefields Parkway (Hwy 93) which bans commercial through-trucks, Highway 16 over Yellowhead Pass is a designated national commercial highway corridor carrying heavy freight between Alberta and the Port of Prince Rupert. Commercial transport trucks operate 24/7 along this gentle 2.2% grade route."
+      },
+      {
+        "question": "What is the historical origin of the name 'Yellowhead Pass' and 'Tête Jaune'?",
+        "answer": "Yellowhead Pass was named after Pierre Bostonais (also known as Pierre Hatsinaton or Pierre Tête Jaune), an Iroquois-Métis fur trader and guide for the North West Company and Hudson's Bay Company in the early 1820s. Voyageurs called him 'Tête Jaune' (Yellowhead) because of his distinctive golden-blonde hair. He established a fur depot at Tête Jaune Cache, immortalizing his name in Canadian geography."
+      }
+    ]
   }
 ];
 
@@ -15808,7 +16048,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Valais & Aosta Valley' || passSlug === 'great-st-bernard-pass') return 'valais-aosta-valley';
   if (state === 'Bern & Valais' || passSlug === 'grimsel-pass') return 'bern-valais';
   if (state === 'Bern & Uri' || passSlug === 'susten-pass') return 'bern-uri';
-  if (state === 'British Columbia' || passSlug === 'rogers-pass' || passSlug === 'coquihalla-summit-pass' || passSlug === 'kicking-horse-pass') return 'british-columbia';
+  if (state === 'British Columbia' || passSlug === 'rogers-pass' || passSlug === 'coquihalla-summit-pass' || passSlug === 'kicking-horse-pass' || passSlug === 'yellowhead-pass') return 'british-columbia';
   if (state === 'Alberta' || passSlug === 'sunwapta-pass') return 'alberta';
   if (state === 'Montana' || passSlug === 'logan-pass' || passSlug === 'lolo-pass') return 'montana';
   if (state === 'Uri & Ticino' || state === 'Uri / Ticino' || passSlug === 'gotthard-pass') return 'uri-ticino';

@@ -303,6 +303,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 1627,
                 "status": "OPEN",
                 "image": "/kicking-horse-pass.webp"
+              },
+              {
+                "id": "yellowhead-pass",
+                "slug": "yellowhead-pass",
+                "name": "Yellowhead Pass (Col Tête-Jaune)",
+                "highway": "Highway 16 (Yellowhead Hwy)",
+                "elevationFt": 3711,
+                "elevationM": 1131,
+                "status": "OPEN",
+                "image": "/yellowhead-pass.webp"
               }
             ]
           },
@@ -319,6 +329,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 2035,
                 "status": "OPEN",
                 "image": "/sunwapta-pass.webp"
+              },
+              {
+                "id": "yellowhead-pass",
+                "slug": "yellowhead-pass",
+                "name": "Yellowhead Pass (Col Tête-Jaune)",
+                "highway": "Highway 16 (Yellowhead Hwy)",
+                "elevationFt": 3711,
+                "elevationM": 1131,
+                "status": "OPEN",
+                "image": "/yellowhead-pass.webp"
               }
             ]
           }

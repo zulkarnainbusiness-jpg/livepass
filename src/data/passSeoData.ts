@@ -823,5 +823,21 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Kicking Horse Pass (1,627 m) & Rogers Pass (1,330 m)',
     crossLinkUrl: '/passes/canada/british-columbia/kicking-horse-pass',
     crossLinkText: 'Compare Canadian Rocky Mountains and national park highway road conditions with'
+  },
+  'yellowhead-pass': {
+    nearestTowns: [
+      { name: 'Jasper, Alberta', distance: '25.0 km (15.5 miles)', direction: 'East via Yellowhead Hwy 16 (Jasper National Park Hub)' },
+      { name: 'Mount Robson Visitor Centre, BC', distance: '63.0 km (39.1 miles)', direction: 'West via Yellowhead Hwy 16' },
+      { name: 'Valemount, British Columbia', distance: '86.0 km (53.4 miles)', direction: 'Southwest via Hwy 16 & Hwy 5' },
+      { name: 'Hinton, Alberta', distance: '105.0 km (65.2 miles)', direction: 'East via Yellowhead Hwy 16' },
+      { name: 'Prince George, British Columbia', distance: '350.0 km (217.5 miles)', direction: 'West via Yellowhead Hwy 16' },
+      { name: 'Edmonton, Alberta', distance: '388.0 km (241.1 miles)', direction: 'East via Yellowhead Hwy 16 (International Airport)' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Subject to temporary blizzard & avalanche clearances)',
+    seasonalClosureDetail: 'Yellowhead Pass (1,131 m / 3,711 ft; Col Tête-Jaune) on Highway 16 (Yellowhead Highway) across the Continental Divide between British Columbia and Alberta is an essential all-season interprovincial commercial highway open 365 days a year. Dedicated road crews from DriveBC, 511 Alberta, and Parks Canada plow, salt, and sand the mountain corridor 24 hours a day. Unlike high alpine passes that close for winter, Yellowhead Pass experiences only brief precautionary closures (typically lasting 2 to 6 hours) during severe Rocky Mountain blizzards for snow removal or avalanche control on Mount Fitzwilliam.',
+    aboutPass: 'Yellowhead Pass (elevation 1,131 m / 3,711 ft) is a celebrated mountain pass on the Continental Divide connecting British Columbia (Mount Robson Provincial Park) and Alberta (Jasper National Park). Carrying the Yellowhead Highway (Highway 16 / Trans-Canada Highway 16) and Canadian National Railway mainline, the pass was designated a National Historic Site of Canada in 1971. As one of the lowest crossings of the Great Divide in North America, it features gentle 2.2% highway grades and separates the Pacific Ocean (Fraser River) and Arctic Ocean (Athabasca River) watersheds. Named after Iroquois-Métis guide Pierre Bostonais ("Tête Jaune"), travelers enjoy panoramic views of Mount Fitzwilliam and Mount Robson with live DriveBC webcams.',
+    crossLinkAnchor: 'Sunwapta Pass (2,035 m) & Kicking Horse Pass (1,627 m)',
+    crossLinkUrl: '/passes/canada/alberta/sunwapta-pass',
+    crossLinkText: 'Compare Canadian Rocky Mountains and national park highway road conditions with'
   }
 };

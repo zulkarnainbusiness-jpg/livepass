@@ -120,6 +120,8 @@
 /passes/united-kingdom/sychnant-pass /passes/united-kingdom/wales/sychnant-pass 301
 /passes/sunwapta-pass /passes/canada/alberta/sunwapta-pass 301
 /passes/canada/sunwapta-pass /passes/canada/alberta/sunwapta-pass 301
+/passes/yellowhead-pass /passes/canada/british-columbia/yellowhead-pass 301
+/passes/canada/yellowhead-pass /passes/canada/british-columbia/yellowhead-pass 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

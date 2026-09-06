@@ -143,6 +143,58 @@ const baralachaHindiFaqs = [
 
 
 
+
+const yellowheadFrenchFaqs = [
+  {
+    question: "Le col Yellowhead est-il ouvert aujourd'hui ? (Col Tête-Jaune est-il ouvert / Yellowhead Pass is open / is Yellowhead Pass open right now / Yellowhead Pass is it open today)",
+    answer: "Oui, le col Yellowhead (Col Tête-Jaune, altitude 1 131 m / 3 711 pi) sur la route Transcanadienne 16 à la frontière entre la Colombie-Britannique et l'Alberta est actuellement OUVERT à toute la circulation. Les voies de circulation sont dégagées et sèches avec une excellente visibilité alpine. Les équipes d'entretien de DriveBC, 511 Alberta et Parcs Canada patrouillent et déneigent le corridor 24 heures sur 24. Consultez toujours LivePassWatch pour les webcams en direct et l'état des routes avant de partir."
+  },
+  {
+    question: "Quelle est la date d'ouverture officielle du col Yellowhead en 2026 ? (Col Tête-Jaune date d'ouverture / Yellowhead Pass opening date / when does Yellowhead Pass open)",
+    answer: "Le col Yellowhead sur la route 16 ne possède pas de date d'ouverture saisonnière car il s'agit d'un axe de transport commercial et interprovincial majeur ouvert toute l'année, 365 jours par an. Contrairement aux cols de haute altitude fermés en hiver, Parcs Canada et DriveBC assurent un déneigement continu. En cas de fermeture préventive d'urgence lors d'une tempête hivernale ou pour le contrôle des avalanches au mont Fitzwilliam, la route rouvre généralement dans un délai de 2 à 6 heures."
+  },
+  {
+    question: "Quelles sont les conditions routières et l'état de la route au col Yellowhead ? (Col Tête-Jaune conditions routières / Yellowhead Pass road conditions / Yellowhead Pass road status / rapport d'état)",
+    answer: "Les conditions routières actuelles sur la route 16 au col Yellowhead sont sèches et dégagées. Durant l'automne et l'hiver, la chaussée peut devenir enneigée, boueuse ou verglacée le long du lac Yellowhead. Les équipes de viabilité hivernale épandent du sable et des liquides de déglaçage en continu pour assurer une circulation fluide et sécuritaire entre Jasper et le parc provincial du mont Robson."
+  },
+  {
+    question: "Quand le col Yellowhead ferme-t-il pour l'hiver ? (Col Tête-Jaune fermeture hivernale / when does Yellowhead Pass close for winter / Yellowhead Pass closed / Yellowhead Pass is closed)",
+    answer: "Le col Yellowhead ne ferme PAS pour l'hiver. En tant que corridor de la route Transcanadienne 16 à travers la ligne de partage des eaux continentale, la route fait l'objet d'un déneigement 24 h / 24. Seules des fermetures temporaires de courte durée ont lieu lors de violents blizzards ou pour le dégagement d'accidents de la route."
+  },
+  {
+    question: "Le col Yellowhead est-il fermé aujourd'hui ? (is Yellowhead Pass closed today / Yellowhead Pass closures today)",
+    answer: "Non, le col Yellowhead n'est PAS fermé aujourd'hui ; la route 16 est ouverte dans les deux sens entre la Colombie-Britannique et l'Alberta. En cas d'incident, DriveBC, 511 Alberta et LivePassWatch diffusent des alertes instantanées."
+  },
+  {
+    question: "Y a-t-il des webcams en direct au col Yellowhead et au mont Robson ? (Col Tête-Jaune webcam en direct / Yellowhead Pass webcam / Yellowhead Pass live webcam / cameras / summit camera)",
+    answer: "Oui ! LivePassWatch diffuse les caméras routières officielles de DriveBC (ministère des Transports de la C.-B.) et de 511 Alberta. Les flux comprennent la Cam 182 (sommet du col Yellowhead à la frontière C.-B./Alberta en direction de Jasper), la Cam 183 (belvédère du mont Robson), la Cam 184 (Tête Jaune Cache à la jonction des routes 16 et 5) et la Cam 185 (Valemount). Les images s'actualisent automatiquement chaque minute."
+  },
+  {
+    question: "Où trouver la carte routière, le profil d'altitude et l'itinéraire du col Yellowhead ? (Yellowhead Pass map / Col Tête-Jaune carte)",
+    answer: "Le col Yellowhead se situe sur la route 16 aux coordonnées GPS 52.8944° N, 118.4686° O à 1 131 mètres d'altitude (3 711 pi). Il se trouve à 25 km à l'ouest de Jasper (Alberta) et à 63 km à l'est du Centre d'accueil du mont Robson (Colombie-Britannique). Des cartes satellites interactives et profils altimétriques complets sont accessibles sur LivePassWatch."
+  },
+  {
+    question: "Quelle est la météo aujourd'hui et les prévisions au col Yellowhead ? (Yellowhead Pass weather today / Col Tête-Jaune météo / Yellowhead Pass snow)",
+    answer: "La météo actuelle au sommet du col affiche des températures agréables de 12 °C (54 °F) avec une chaussée sèche et de légères brises de vallée. Le secteur reçoit entre 4,5 et 7 mètres de neige par hiver. En raison de son altitude modérée (1 131 m), les conditions hivernales y sont nettement plus douces qu'au col Rogers ou au col Sunwapta."
+  },
+  {
+    question: "Quelle est l'épaisseur de neige et les conditions de conduite hivernale au col Yellowhead ? (Yellowhead Pass snow depth / neige col Yellowhead)",
+    answer: "L'épaisseur de neige sur la chaussée est actuellement de 0 cm (chaussée dégagée). Durant l'hiver (d'octobre à avril), le manteau neigeux le long de la route atteint habituellement de 100 à 180 cm. Le relief régulier et les faibles pentes (2,2 % maximum) rendent la traversée très accessible."
+  },
+  {
+    question: "Quelles sont les exigences obligatoires pour les pneus d'hiver sur la route 16 au col Yellowhead ?",
+    answer: "En Colombie-Britannique, les pneus d'hiver (portant le symbole 3PMSF du flocon de neige et de la montagne ou M+S avec au moins 3,5 mm de profondeur de sculpture) sont obligatoires du 1er octobre au 30 avril. Les camions commerciaux de plus de 11 794 kg doivent obligatoirement transporter des chaînes à neige."
+  },
+  {
+    question: "Les camions commerciaux et semi-remorques sont-ils autorisés sur le col Yellowhead ?",
+    answer: "Oui. Contrairement à la Promenade des Glaciers (route 93) qui interdit les poids lourds, la route 16 au col Yellowhead est un axe commercial et logistique majeur de première catégorie, accueillant le transport interprovincial vers le port de Prince Rupert 24 heures sur 24."
+  },
+  {
+    question: "Quelle est l'origine historique du nom 'Yellowhead' et 'Tête Jaune' ? (Pierre Bostonais histoire autochtone)",
+    answer: "Le col doit son nom à Pierre Bostonais (dit Pierre Hatsinaton ou Pierre Tête Jaune), un guide et trappeur iroquois-métis au service de la Compagnie du Nord-Ouest et de la Compagnie de la Baie d'Hudson au début des années 1820. Les voyageurs canadiens-français le surnommaient 'Tête Jaune' en raison de ses cheveux blond doré. Il établit une cache de fourrures devenue Tête Jaune Cache, gravant son nom dans l'histoire des Rocheuses."
+  }
+];
+
 const sunwaptaFrenchFaqs = [
   {
     question: "Le col Sunwapta est-il ouvert aujourd'hui ? (Col Sunwapta est-il ouvert / Sunwapta Pass is open / is Sunwapta Pass open right now / Sunwapta Pass is it open today)",
@@ -1081,8 +1133,147 @@ export const PassDetailPage: React.FC = () => {
           </div>
         )}
 
+        {/* Bilingual Language Switcher for Yellowhead Pass */}
+        {pass.slug === 'yellowhead-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(37, 99, 235, 0.06) 100%)',
+            border: '1px solid rgba(239, 68, 68, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#991B1B' }}>
+              <Globe size={18} color="#DC2626" />
+              <span>
+                {pageLang === 'fr'
+                  ? '🇨🇦 Version officielle canadienne française active — Col Tête-Jaune (Route Transcanadienne 16, C.-B. / Alberta)'
+                  : '🇨🇦 Official Canadian Bilingual Experience Active — Yellowhead Pass (Col Tête-Jaune) on Trans-Canada Hwy 16'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 Français
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=${pageLang === 'fr' ? 'en' : 'fr'}&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/canada/british-columbia/yellowhead-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#991B1B',
+                  background: '#FEF2F2',
+                  border: '1px solid #FECACA',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Google Translate (English / French)"
+              >
+                <Globe size={14} />
+                <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
         {/* Bilingual Language Switcher for Sunwapta Pass */}
-        {pass.slug === 'sunwapta-pass' && (
+        
+            {pass.slug === 'yellowhead-pass' && (
+              <div className="yellowhead-regulations-callout lp-card" style={{
+                borderLeft: '4px solid #DC2626',
+                padding: '20px',
+                marginBottom: '24px',
+                backgroundColor: 'rgba(239, 68, 68, 0.04)',
+                borderRadius: '6px'
+              }}>
+                <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#991B1B' }}>
+                  <ShieldCheck size={20} color="#DC2626" />
+                  <span>
+                    {pageLang === 'fr'
+                      ? 'Réglementations de la Route Yellowhead 16 & Guide de Sécurité (Col Tête-Jaune 🇨🇦)'
+                      : 'Highway 16 Yellowhead Pass Transit Regulations & Mountain Safety (Col Tête-Jaune 🇨🇦)'}
+                  </span>
+                </h3>
+                <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+                  {pageLang === 'fr' ? (
+                    <>
+                      <strong>Corridor Transcanadien &amp; Ligne de partage des eaux :</strong> Le <strong>col Yellowhead (route 16)</strong> relie le parc provincial du mont Robson (C.-B.) et le parc national Jasper (Alberta) à 1 131 m d’altitude. Bien que la pente soit très douce (2,2 % maximum), les conditions hivernales exigent des équipements conformes sur l’ensemble du tracé.
+                    </>
+                  ) : (
+                    <>
+                      <strong>Trans-Canada Commercial Corridor &amp; Great Divide:</strong> <strong>Yellowhead Pass (Highway 16)</strong> links Mount Robson Provincial Park (BC) and Jasper National Park (Alberta) at an elevation of 1,131 m (3,711 ft). Featuring gentle 2.2% grades, the highway operates 24/7 with mandatory winter equipment.
+                    </>
+                  )}
+                </p>
+                <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+                  {pageLang === 'fr' ? (
+                    <>
+                      <li><strong>Pneus d'hiver obligatoires en Colombie-Britannique (1er oct – 30 avr) :</strong> Pneus homologués 3PMSF (flocon/montagne) ou M+S avec au minimum 3,5 mm de bande de roulement obligatoires sur la route 16.</li>
+                      <li><strong>Réglementation des chaînes pour poids lourds :</strong> Tous les véhicules commerciaux de plus de 11 794 kg doivent obligatoirement transporter des chaînes à neige certifiées.</li>
+                      <li><strong>Déneigement et viabilité 24 h / 24 :</strong> Entretien continu assuré par DriveBC, 511 Alberta et Parcs Canada avec épandage de sable et de déglaçant liquide.</li>
+                      <li><strong>Corridors fauniques protégés :</strong> Élans, orignaux, mouflons et ours circulent près du lac Yellowhead. Respectez la limite de 90 km/h et restez attentifs aux animaux.</li>
+                    </>
+                  ) : (
+                    <>
+                      <li><strong>Mandatory Winter Tires in BC (Oct 1 – Apr 30):</strong> Certified 3PMSF mountain snowflake or M+S tires with at least 3.5 mm tread depth legally required on Highway 16.</li>
+                      <li><strong>Commercial Chain Requirements:</strong> Commercial transport trucks over 11,794 kg GVW must carry tire chains and fit them when winter advisories are active.</li>
+                      <li><strong>Around-the-Clock 24/7 Maintenance:</strong> Continuous plowing, sanding, and anti-icing operations by DriveBC, 511 Alberta, and Parks Canada.</li>
+                      <li><strong>Protected Wildlife Zones:</strong> Elk, moose, bighorn sheep, and bears frequent the Yellowhead Lake corridor. Obey the 90 km/h speed limit and watch for wildlife.</li>
+                    </>
+                  )}
+                </ul>
+              </div>
+            )}
+
+            
+                {pass.slug === 'yellowhead-pass' && (
+                  <div style={{ marginTop: '16px', padding: '14px 18px', backgroundColor: 'rgba(59, 130, 246, 0.05)', border: '1px solid rgba(59, 130, 246, 0.25)', borderRadius: '6px', fontSize: '13px', color: '#1E40AF', lineHeight: '1.55' }}>
+                    <strong>🇨🇦 DriveBC &amp; 511 Alberta Camera Verification Notice:</strong> Highway 16 live highway webcams at Yellowhead Pass Summit (Cam 182), Mount Robson (Cam 183), Tête Jaune Cache (Cam 184), and Valemount (Cam 185) are provided directly by the British Columbia Ministry of Transportation &amp; Infrastructure and Alberta Transportation. Images update automatically every 60 seconds. Verify real-time travel telemetry on <a href="https://www.drivebc.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>DriveBC</a>, <a href="https://511.alberta.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>511 Alberta</a>, and <a href="/verification-methodology" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>LivePassWatch Verification Methodology</a>.
+                  </div>
+                )}
+
+                {pass.slug === 'sunwapta-pass' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
             alignItems: 'center',
@@ -4297,8 +4488,8 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
-                  ((pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
+                {((pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                  ((pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
 
 
 

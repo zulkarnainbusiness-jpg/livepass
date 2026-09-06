@@ -139,7 +139,13 @@ const LegacyPassRedirect: React.FC = () => {
           (clean === 'sunwapta-pass' && p.slug === 'sunwapta-pass') ||
           (clean === 'sunwaptapass' && p.slug === 'sunwapta-pass') ||
           (clean === 'col-sunwapta' && p.slug === 'sunwapta-pass') ||
-          (clean === 'icefields-parkway' && p.slug === 'sunwapta-pass')
+          (clean === 'icefields-parkway' && p.slug === 'sunwapta-pass') ||
+          (clean === 'yellowhead' && p.slug === 'yellowhead-pass') ||
+          (clean === 'yellowhead-pass' && p.slug === 'yellowhead-pass') ||
+          (clean === 'yellowheadpass' && p.slug === 'yellowhead-pass') ||
+          (clean === 'col-tete-jaune' && p.slug === 'yellowhead-pass') ||
+          (clean === 'tete-jaune-pass' && p.slug === 'yellowhead-pass') ||
+          (clean === 'hwy-16-pass' && p.slug === 'yellowhead-pass')
   );
 
   if (targetPass) {
@@ -262,6 +268,11 @@ export const App: React.FC = () => {
               <Route path="/sunwaptapass" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
               <Route path="/col-sunwapta" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
               <Route path="/icefields-parkway" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
+              <Route path="/yellowhead" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
+              <Route path="/yellowhead-pass" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
+              <Route path="/yellowheadpass" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
+              <Route path="/col-tete-jaune" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
+              <Route path="/tete-jaune-pass" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
 
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />

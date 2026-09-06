@@ -231,13 +231,36 @@ function generatePassSemanticHtml(pass, canonicalUrl) {
         </section>
         ` : ''}
 
+        ${pass.id === 'yellowhead-pass' ? `
+        <section class="pass-regional-section" style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #dc2626; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #0f172a;">🇨🇦 Information Régionale &amp; État de la Route — Col Tête-Jaune (Yellowhead Pass)</h2>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: #334155; margin-bottom: 1rem;">
+            Consultez en direct l'<strong>état de la route</strong>, les <strong>caméras en direct</strong> (DriveBC et 511 Alberta), les prévisions <strong>météo</strong> et les <strong>conditions routières</strong> hivernales pour le Col Tête-Jaune (Route 16 Transcanadienne) reliant la Colombie-Britannique et l'Alberta.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 0.75rem;">
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">Le Col Tête-Jaune (Yellowhead Pass) est-il ouvert aujourd'hui?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">Oui, le Col Tête-Jaune est ouvert en continu sur la Route 16 Transcanadienne avec déneigement prioritaire 24 h / 24 par DriveBC et Alberta 511.</p>
+            </div>
+            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 0.75rem;">
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">Où trouver les caméras en direct du Col Tête-Jaune?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">Les webcams officielles du sommet (Cam 182) et des approches (Mont Robson, Tête Jaune Cache) sont actualisées en direct sur LivePassWatch.</p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">Quelles sont les conditions routières et la météo en hiver?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">Pneus neige homologués (3PMSF ou M+S) obligatoires du 1er octobre au 30 avril. Consultez la météo alpine et l'état de la route avant tout déplacement.</p>
+            </div>
+          </div>
+        </section>
+        ` : ''}
+
         <section style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
           <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a;">Official Highway Authority &amp; DOT Verification</h2>
           <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin: 0 0 0.75rem 0;">
             Real-time telemetry independently verified from official highway and transportation departments including <a href="${escapeHtml(pass.officialSource || pass.dataSources?.[0]?.url || '#')}" target="_blank" rel="noopener noreferrer" style="color: #1d4ed8; text-decoration: underline; font-weight: 600;">${escapeHtml(pass.dataSources?.[0]?.name || pass.officialSource || 'Regional Department of Transportation')}</a>. Always verify official DOT alerts before mountain driving.
           </p>
           <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin: 0;">
-            Learn how LivePassWatch corroborates reports using our 3-tier <a href="/methodology" style="color: #1d4ed8; text-decoration: underline; font-weight: 600;">Multi-Source Verification Methodology</a>.
+            Learn how LivePassWatch corroborates reports using our 3-tier <a href="/methodology" style="color: #1d4ed8; text-decoration: underline; font-weight: 600;">Multi-Source Verification Methodology</a>. Read our complete <a href="/verification-methodology" style="color: #1d4ed8; text-decoration: underline; font-weight: 600;">Verification Methodology Documentation</a>.
           </p>
         </section>
       </div>
