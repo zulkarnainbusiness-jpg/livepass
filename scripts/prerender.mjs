@@ -165,7 +165,7 @@ function generatePassSemanticHtml(pass, canonicalUrl) {
         <!-- About This Pass (100-150 Words Unique Narrative) -->
         <section style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
           <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #0f172a;">
-            ${pass.slug === 'paso-los-libertadores' ? 'About Paso Los Libertadores (Paso Cristo Redentor)' : `About ${escapeHtml(pass.name)}`}
+            About ${escapeHtml(pass.name)}
           </h2>
           <p style="font-size: 1rem; line-height: 1.8; color: #334155; margin-bottom: 1rem;">
             ${escapeHtml(seoDetails?.aboutPass || pass.overview?.summary || pass.description)}

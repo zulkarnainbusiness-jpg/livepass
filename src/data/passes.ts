@@ -5132,7 +5132,7 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "h1": "Paso Los Libertadores (Paso Cristo Redentor): Estado Actual, Clima y Cámaras en Vivo",
+      "h1": "Paso Los Libertadores: Estado Actual, Clima y Cámaras en Vivo",
       "title": "Paso Los Libertadores Status & Webcam | LivePassWatch",
       "description": "Live Paso Los Libertadores webcams, highway conditions, and real-time open/closed status on Ruta 60-CH / RN 7, Chile–Argentina. Verified and updated today."
     },
