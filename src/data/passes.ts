@@ -16212,7 +16212,255 @@ export const passesData: MountainPass[] = [
       }
     ]
   }
+,
+  {
+    "id": "jasper-pass",
+    "slug": "jasper-pass",
+    "name": "Jasper Pass (Col de Jasper)",
+    "alternateNames": [
+      "Jasper Pass",
+      "Col de Jasper",
+      "Jasper Pass Alberta",
+      "Jasper Pass Canada",
+      "Yellowhead Jasper Pass",
+      "Highway 16 Jasper Pass",
+      "Jasper National Park Pass",
+      "Athabasca Jasper Pass"
+    ],
+    "country": "Canada",
+    "countryCode": "CAN",
+    "continent": "North America",
+    "state": "Alberta",
+    "highway": "Highway 16 (Yellowhead Hwy) / Highway 93",
+    "elevationFt": 3711,
+    "elevationM": 1131,
+    "coordinates": {
+      "lat": 52.8737,
+      "lng": -118.0814
+    },
+    "status": "OPEN",
+    "statusDetail": "Jasper Pass is OPEN to all vehicular traffic throughout Jasper National Park and across the Continental Divide. Driving lanes along Highway 16 and Highway 93 are bare and dry with unrestricted visibility. Maintained around the clock by 511 Alberta, Parks Canada, and DriveBC. Winter tires (3PMSF mountain snowflake or M+S with minimum 3.5 mm tread depth) are legally mandatory from October 1 to April 30. Watch for roaming wildlife including elk, bighorn sheep, and deer near the Jasper townsite perimeter.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Jasper Pass (elevation 3,711 ft / 1,131 m; French: Col de Jasper; conditions routières et météo en direct) is the vital mountain highway gateway through the Canadian Rocky Mountains in Alberta, Canada. Traversing Jasper National Park along Highway 16 (Yellowhead Highway) and connecting south along Highway 93 (Icefields Parkway), Jasper Pass links the Alberta foothills and Edmonton with the Pacific gateway of British Columbia. Flanked by majestic peaks including Pyramid Mountain (2,766 m), Mount Edith Cavell (3,363 m), and Mount Robson (3,954 m), the pass marks the great continental watershed between the Arctic and Pacific drainage basins. Maintained open 365 days a year by Parks Canada and 511 Alberta with round-the-clock snowplowing and anti-icing operations, Jasper Pass offers visitors sweeping alpine vistas, verified live webcams, and full tourist amenities in the historic mountain town of Jasper.",
+    "image": "/jasper-pass.webp",
+    "customSeo": {
+      "title": "Jasper Pass Live Status & Webcams | LivePassWatch",
+      "description": "Live Jasper Pass road conditions, webcams & status in Jasper National Park, Alberta (Hwy 16 / Hwy 93). Check if open today, weather, snow & closures.",
+      "h1": "Jasper Pass (Col de Jasper) Live Status, Webcams & Road Conditions"
+    },
+    "officialSource": "Parks Canada (Jasper National Park) & 511 Alberta",
+    "official_source_url": "https://511.alberta.ca",
+    "official_authority": "Parks Canada / Alberta Transportation / DriveBC",
+    "verification_status": "VERIFIED",
+    "confidence": "HIGH",
+    "weather": {
+      "tempF": 55,
+      "tempC": 13,
+      "condition": "Clear Mountain Sunshine & Light Breeze",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Highway Pavement Bare & Dry (Summer Melt Completed)"
+    },
+    "wind": {
+      "speedKmh": 10,
+      "speedMph": 6,
+      "direction": "WNW",
+      "description": "Gentle breeze through Athabasca River valley"
+    },
+    "roadCondition": "Jasper Pass road conditions are bare and dry with clear visibility across Highway 16 and Highway 93 in Jasper National Park. Both lanes are clear through the townsite perimeter, Jasper Lake, and west toward Mount Robson. Motorists must observe Alberta winter tire laws (October 1 to April 30) and stay alert for wildlife along road shoulders.",
+    "chainRequirement": "No active chain requirements in effect for passenger cars. Commercial transport vehicles over 11,794 kg GVW must carry tire chains from October 1 to April 30. Winter-rated tires (bearing the 3PMSF mountain snowflake or M+S with minimum 3.5 mm tread depth) are legally required on all passenger vehicles during the winter season.",
+    "cameras": [
+      {
+        "id": "jp-cam-182",
+        "title": "DriveBC Cam 182: Jasper Pass / Yellowhead Summit (Hwy 16 Looking East toward Jasper)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/182.jpg",
+        "location": "Jasper Pass Summit (1,131 m / 3,711 ft), Hwy 16 at AB/BC Border",
+        "source": "DriveBC & 511 Alberta",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking East toward Jasper National Park, Alberta"
+      },
+      {
+        "id": "jp-cam-183",
+        "title": "DriveBC Cam 183: Mount Robson Viewpoint (Hwy 16 Looking East toward Jasper Pass)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/183.jpg",
+        "location": "Mount Robson Viewpoint (875 m / 2,871 ft)",
+        "source": "DriveBC & Parks Canada",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking East toward Jasper Pass & Canadian Rockies"
+      },
+      {
+        "id": "jp-cam-277",
+        "title": "511 Alberta Cam 277: Jasper South Approach (Hwy 93 near Athabasca Falls)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/277.jpg",
+        "location": "Hwy 93 South Approach (1,180 m / 3,871 ft)",
+        "source": "511 Alberta & Parks Canada",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking South toward Mount Kerkeslin & Icefields Parkway"
+      },
+      {
+        "id": "jp-cam-184",
+        "title": "DriveBC Cam 184: Tête Jaune Cache (Hwy 16 / Hwy 5 Junction Looking East)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/184.jpg",
+        "location": "Tête Jaune Cache Junction (735 m / 2,411 ft)",
+        "source": "DriveBC & Alberta Transportation",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking East toward Jasper Pass Corridor"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "yellowhead-pass",
+        "slug": "yellowhead-pass",
+        "name": "Yellowhead Pass (Col Tête-Jaune)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Highway 16 (Yellowhead Hwy)",
+        "status": "OPEN",
+        "elevationFt": 3711,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 25
+      },
+      {
+        "id": "icefields-parkway-road",
+        "slug": "icefields-parkway-road",
+        "name": "Icefields Parkway Road (Promenade des Glaciers)",
+        "country": "Canada",
+        "state": "Alberta",
+        "highway": "Highway 93N (Icefields Pkwy)",
+        "status": "OPEN",
+        "elevationFt": 6787,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 0
+      },
+      {
+        "id": "sunwapta-pass",
+        "slug": "sunwapta-pass",
+        "name": "Sunwapta Pass (Col Sunwapta)",
+        "country": "Canada",
+        "state": "Alberta",
+        "highway": "Highway 93 (Icefields Parkway)",
+        "status": "OPEN",
+        "elevationFt": 6677,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 108
+      },
+      {
+        "id": "kicking-horse-pass",
+        "slug": "kicking-horse-pass",
+        "name": "Kicking Horse Pass",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy 1",
+        "status": "OPEN",
+        "elevationFt": 5338,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 285
+      }
+    ],
+    "overview": {
+      "openedYear": 1928,
+      "lengthMiles": "115.0 miles (Mount Robson to Hinton corridor)",
+      "lengthKm": "185.0 km (Yellowhead Hwy 16 corridor)",
+      "annualSnowfallIn": "180–300 inches",
+      "annualSnowfallM": "4.5–7.6 meters",
+      "summary": "Jasper Pass (elevation 1,131 m / 3,711 ft; French: Col de Jasper) represents the world-renowned mountain highway pass corridor serving Jasper National Park in western Alberta. Carrying Highway 16 (the Yellowhead Highway / Trans-Canada Highway 16) across the Canadian Rockies and connecting directly with Highway 93 (the Icefields Parkway), Jasper Pass links Edmonton and central Canada with Prince George and the Pacific Northwest. Characterized by exceptionally gentle mountain grades (under 2.5%), wide paved expressway shoulders, and year-round 24/7 highway plowing, Jasper Pass provides reliable all-season transit beneath towering peaks like Mount Robson and Pyramid Mountain."
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Subject to winter storm plowing & avalanche safety clearances)",
+      "typicalReopening": "Continuous 24/7 highway maintenance (emergency storm clearances typically 2 to 6 hours)",
+      "description": "Jasper Pass is maintained open 365 days a year by road crews from Parks Canada, 511 Alberta, and DriveBC. Because it serves as an essential national transportation and supply artery, the pass does not experience seasonal winter closures. During extreme winter blizzards or avalanche control work near Mount Fitzwilliam, temporary safety closures lasting 2 to 6 hours may occur while rotary snowblowers and plows clear the road."
+    },
+    "travelTips": [
+      "Mandatory Winter Tire Regulation: Under Alberta provincial regulations and Parks Canada law, all passenger vehicles traveling through Jasper Pass must be equipped with certified winter tires (bearing the 3PMSF mountain snowflake symbol or M+S with minimum 3.5 mm tread depth) from October 1 to April 30.",
+      "Round-the-Clock 24/7 Maintenance: Dedicated maintenance crews plow, sand, and apply anti-icing brine to Highway 16 throughout the winter season, ensuring the pass remains passable in all weather.",
+      "Wildlife Awareness on Highway 16: Elk, bighorn sheep, wolves, and black bears frequently forage along the highway shoulders between Jasper townsite and Hinton. Obey posted 70-90 km/h speed limits.",
+      "Parks Canada Pass Required: Motorists stopping, visiting, or recreating in Jasper National Park must display a valid Parks Canada Discovery Pass on their vehicle dashboard.",
+      "Full Services in Jasper Townsite: Unlike remote wilderness corridors, Jasper Pass offers complete vehicle maintenance, fuel, EV charging, medical services, and accommodations in the town of Jasper."
+    ],
+    "history": [
+      {
+        "year": "1811",
+        "title": "David Thompson Athabasca Exploration",
+        "description": "Explorer and cartographer David Thompson maps the Athabasca Pass and Yellowhead corridor through Jasper, establishing the primary fur trade route across the Rockies."
+      },
+      {
+        "year": "1813",
+        "title": "Establishment of Jasper House",
+        "description": "The North West Company establishes Jasper House near Jasper Lake, named in honor of post manager Jasper Hawes, giving the pass and townsite its iconic name."
+      },
+      {
+        "year": "1907",
+        "title": "Jasper Forest Park Established",
+        "description": "The Canadian government officially establishes Jasper Forest Park (later Jasper National Park) to preserve the magnificent mountain landscapes and mineral springs."
+      },
+      {
+        "year": "1928",
+        "title": "Yellowhead Highway Completion",
+        "description": "The automobile highway across Jasper Pass officially opens to public traffic, integrating the transcontinental highway system between Edmonton and British Columbia."
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "Highway Corridor & Mountain Topography",
+        "content": "Jasper Pass occupies a broad, gentle valley carved by ancient glaciers along the Athabasca and Miette rivers. Unlike the steep, cliff-hugging switchbacks of Rogers Pass or Kicking Horse Pass, Jasper Pass features an easy, gradual ascent through the Rocky Mountains, making it one of the safest and most fuel-efficient alpine routes in North America. To the west, the massive bulk of Mount Robson (3,954 m / 12,972 ft) dominates the skyline, while to the east, the dramatic limestone ramparts of the Colin and Miette ranges frame the gateway to the Alberta plains."
+      },
+      {
+        "title": "Winter Road Maintenance & Snow Operations",
+        "content": "Winter operations at Jasper Pass are coordinated between Alberta Transportation, Parks Canada, and DriveBC. Maintenance depots located in Jasper, Hinton, and Mount Robson deploy fleets of tandem snowplows equipped with high-speed underbody scrapers and wing plows. Pre-wet salt and abrasive traction sand are applied ahead of forecasted winter storms to prevent ice from bonding to the asphalt. As a result, commercial trucks, buses, and passenger vehicles can travel the corridor safely even during periods of heavy snowfall."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the official Jasper pass opening date in 2026? (Jasper pass opening date / when does Jasper pass open)",
+        "answer": "Jasper Pass does not have a seasonal opening date because the highway is OPEN year-round, 365 days a year. Unlike high seasonal passes that close for 6 months each winter, Highway 16 through Jasper Pass is an essential national highway corridor maintained continuously by Parks Canada and 511 Alberta with round-the-clock snow removal."
+      },
+      {
+        "question": "Is Jasper pass open right now, and how can I verify if Jasper pass is open today? (Jasper pass is open / is Jasper pass open right now / Jasper pass is it open today)",
+        "answer": "Yes, Jasper Pass is open right now to all vehicular travel. Highway 16 driving lanes are bare and dry with clear visibility across the summit and through Jasper National Park. Motorists can verify live road status, webcams, and weather conditions directly on LivePassWatch before departure."
+      },
+      {
+        "question": "What are current Jasper pass road conditions, road status, and the official pass status report? (Jasper pass road conditions / Jasper pass road status / Jasper pass pass status report)",
+        "answer": "Current Jasper pass road conditions are reported as bare and dry across the highway corridor. Both westbound and eastbound lanes are clear with unobstructed visibility. The official Jasper pass pass status report confirms normal all-weather driving conditions with 511 Alberta and DriveBC maintenance crews actively monitoring the corridor."
+      },
+      {
+        "question": "Is Jasper pass closed today, and what causes a Jasper pass closed advisory? (is Jasper pass closed today / Jasper pass closed / Jasper pass is closed)",
+        "answer": "No, Jasper Pass is NOT closed today; traffic is flowing smoothly in both directions. A Jasper pass closed advisory is only issued during severe winter blizzards, active avalanche clearance, or major traffic collisions. Any emergency closures are temporary and typically resolved within 2 to 6 hours by heavy plowing crews."
+      },
+      {
+        "question": "Where can I view live Jasper pass webcam feeds, highway cameras, and the summit camera? (Jasper pass webcam / Jasper pass live webcam / Jasper pass cameras / Jasper pass summit camera)",
+        "answer": "You can view live Jasper pass webcam feeds and highway cameras directly on LivePassWatch. Feeds include the Jasper Pass Summit Camera (Cam 182 looking east into Jasper National Park), the Mount Robson Viewpoint Camera (Cam 183), the Jasper South Approach Camera near Athabasca Falls (Cam 277), and Tête Jaune Cache Camera (Cam 184). All webcams stream official snapshots updated every 60 seconds."
+      },
+      {
+        "question": "When does Jasper pass close for winter? (when does Jasper pass close for winter)",
+        "answer": "Jasper Pass does NOT close for winter. It is an all-season interprovincial highway designed and maintained to remain open 24 hours a day, 7 days a week, 365 days a year. Motorists are legally required to have winter-rated tires (3PMSF or M+S with at least 3.5 mm tread) from October 1 to April 30."
+      },
+      {
+        "question": "Where can I find an official Jasper pass map and elevation profile? (Jasper pass map)",
+        "answer": "An interactive Jasper pass map is available on this page, detailing Highway 16 through Jasper National Park, the connection to Highway 93 (Icefields Parkway), summit elevations (3,711 ft / 1,131 m), camera locations, fuel stations, and scenic viewpoints throughout the Canadian Rockies."
+      },
+      {
+        "question": "What is the Jasper pass weather today, current snow depth, and winter snow conditions? (Jasper pass weather today / Jasper pass snow / Jasper pass snow depth / Jasper pass snow conditions)",
+        "answer": "Jasper pass weather today features clear mountain conditions with high alpine sunshine and temperatures around 55°F (13°C). Highway snow depth is currently 0 cm (dry asphalt). During winter (November to April), roadside snowpacks average 100 to 200 cm (39 to 79 inches), with Jasper pass snow conditions maintained with regular plowing, salting, and sand application."
+      },
+      {
+        "question": "Are winter tires mandatory to drive through Jasper Pass?",
+        "answer": "Yes. Winter tires bearing the 3PMSF severe snow mountain snowflake emblem or M+S designation with a minimum tread depth of 3.5 mm are legally mandatory on all passenger vehicles in the national park corridor from October 1 to April 30. Commercial vehicles over 11,794 kg must carry tire chains."
+      },
+      {
+        "question": "What wildlife might I encounter along Jasper Pass?",
+        "answer": "The Jasper Pass highway corridor passes through protected UNESCO wilderness where elk, bighorn sheep, mule deer, moose, black bears, and grizzly bears frequently graze near the highway. Motorists must adhere strictly to posted speed limits (70-90 km/h) and avoid stopping on bridges or blind curves."
+      }
+    ]
+  }
 ];
+
 
 
 export function getPassBySlug(slug: string): MountainPass | undefined {

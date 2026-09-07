@@ -857,4 +857,20 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkUrl: '/passes/canada/alberta/sunwapta-pass',
     crossLinkText: 'Compare Canadian Rocky Mountains alpine passes and scenic highways with'
   },
+  'jasper-pass': {
+    nearestTowns: [
+      { name: 'Jasper Townsite, Alberta', distance: '0.0 km (0 miles)', direction: 'Central Hub of Jasper National Park' },
+      { name: 'Mount Robson Visitor Centre, BC', distance: '63.0 km (39.1 miles)', direction: 'West via Yellowhead Hwy 16' },
+      { name: 'Hinton, Alberta', distance: '80.0 km (49.7 miles)', direction: 'East via Yellowhead Hwy 16 (Gateway to Foothills)' },
+      { name: 'Valemount, British Columbia', distance: '86.0 km (53.4 miles)', direction: 'Southwest via Hwy 16 & Hwy 5' },
+      { name: 'Edmonton, Alberta', distance: '365.0 km (226.8 miles)', direction: 'East via Yellowhead Hwy 16 (Provincial Capital)' },
+      { name: 'Calgary, Alberta', distance: '410.0 km (254.8 miles)', direction: 'South via Hwy 93 Icefields Pkwy & Trans-Canada Hwy 1' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Subject to winter storm plowing & avalanche safety clearances)',
+    seasonalClosureDetail: 'Jasper Pass (1,131 m / 3,711 ft; Col de Jasper) carrying Highway 16 (Yellowhead Highway) and connecting with Highway 93 through Jasper National Park is maintained open 365 days a year by 511 Alberta, Parks Canada, and DriveBC road crews. Unlike high seasonal passes that close in winter, Jasper Pass stays open 24/7 with continuous plowing, sanding, and anti-icing operations. Precautionary storm closures of 2 to 6 hours occur only during major Rocky Mountain blizzards or avalanche clearances near Mount Fitzwilliam. Winter tires (3PMSF or M+S with minimum 3.5 mm tread) are legally mandatory from October 1 to April 30.',
+    aboutPass: 'Jasper Pass (elevation 1,131 m / 3,711 ft; French: Col de Jasper) is the premier mountain highway corridor traversing Jasper National Park in the Canadian Rocky Mountains of Alberta, Canada. Connecting Highway 16 (the Trans-Canada Yellowhead Highway) with Highway 93 (the Icefields Parkway), the pass links central Alberta with northern and central British Columbia. Surrounded by glacier-draped peaks including Pyramid Mountain, Mount Edith Cavell, and Mount Robson, the pass marks the great continental watershed between the Arctic Ocean and Pacific Ocean. Named in honor of fur trader Jasper Hawes and designated a UNESCO World Heritage Site, Jasper Pass features gentle highway gradients under 2.5%, full tourist infrastructure, and live travel telemetry from 511 Alberta and Parks Canada.',
+    crossLinkAnchor: 'Icefields Parkway Road (2,069 m) & Yellowhead Pass (1,131 m)',
+    crossLinkUrl: '/passes/canada/alberta/icefields-parkway-road',
+    crossLinkText: 'Compare Canadian Rocky Mountains mountain passes and national park corridors with'
+  },
 };

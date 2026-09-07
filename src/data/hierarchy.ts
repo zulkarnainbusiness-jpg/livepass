@@ -321,6 +321,16 @@ export const hierarchyData: HierarchyContinent[] = [
             "name": "Alberta",
             "passes": [
               {
+                "id": "jasper-pass",
+                "slug": "jasper-pass",
+                "name": "Jasper Pass (Col de Jasper)",
+                "highway": "Highway 16 / Hwy 93",
+                "elevationFt": 3711,
+                "elevationM": 1131,
+                "status": "OPEN",
+                "image": "/jasper-pass.webp"
+              },
+              {
                 "id": "icefields-parkway-road",
                 "slug": "icefields-parkway-road",
                 "name": "Icefields Parkway Road (Promenade des Glaciers)",

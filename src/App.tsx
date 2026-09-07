@@ -141,6 +141,9 @@ const LegacyPassRedirect: React.FC = () => {
           (clean === 'col-sunwapta' && p.slug === 'sunwapta-pass') ||
           (clean === 'icefields-parkway' && p.slug === 'icefields-parkway-road') ||
           (clean === 'icefields-parkway-road' && p.slug === 'icefields-parkway-road') ||
+          (clean === 'jasper-pass' && p.slug === 'jasper-pass') ||
+          (clean === 'jasperpass' && p.slug === 'jasper-pass') ||
+          (clean === 'col-de-jasper' && p.slug === 'jasper-pass') ||
           (clean === 'icefieldsparkway' && p.slug === 'icefields-parkway-road') ||
           (clean === 'promenade-des-glaciers' && p.slug === 'icefields-parkway-road') ||
           (clean === 'yellowhead' && p.slug === 'yellowhead-pass') ||
@@ -272,6 +275,9 @@ export const App: React.FC = () => {
               <Route path="/col-sunwapta" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
               <Route path="/icefields-parkway" element={<Navigate to="/passes/canada/alberta/icefields-parkway-road" replace />} />
               <Route path="/icefields-parkway-road" element={<Navigate to="/passes/canada/alberta/icefields-parkway-road" replace />} />
+              <Route path="/jasper-pass" element={<Navigate to="/passes/canada/alberta/jasper-pass" replace />} />
+              <Route path="/jasperpass" element={<Navigate to="/passes/canada/alberta/jasper-pass" replace />} />
+              <Route path="/col-de-jasper" element={<Navigate to="/passes/canada/alberta/jasper-pass" replace />} />
               <Route path="/promenade-des-glaciers" element={<Navigate to="/passes/canada/alberta/icefields-parkway-road" replace />} />
               <Route path="/yellowhead" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
               <Route path="/yellowhead-pass" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />

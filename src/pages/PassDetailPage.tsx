@@ -145,6 +145,50 @@ const baralachaHindiFaqs = [
 
 
 
+
+const jasperFrenchFaqs = [
+  {
+    question: "Quelle est la date d'ouverture du col de Jasper en 2026 ? (Jasper pass opening date / when does Jasper pass open / date d'ouverture col de Jasper)",
+    answer: "Le col de Jasper (Jasper Pass / route 16 et route 93) ne possède pas de date d'ouverture saisonnière car la route est OUVERTE toute l'année, 365 jours par an. Contrairement aux cols d'altitude fermés durant l'hiver, ce corridor transcanadien stratégique fait l'objet d'un déneigement et d'un salage continu 24 h / 24 par Parcs Canada et 511 Alberta."
+  },
+  {
+    question: "Le col de Jasper est-il ouvert aujourd'hui et maintenant ? (Jasper pass is open / is Jasper pass open right now / Jasper pass is it open today / col de Jasper ouvert)",
+    answer: "Oui, le col de Jasper est actuellement OUVERT à toute la circulation automobile dans le parc national Jasper. Les voies de circulation sur la route 16 et la route 93 sont sèches et dégagées avec une visibilité parfaite. Consultez LivePassWatch pour suivre en temps réel les webcams, la météo et l'état des routes."
+  },
+  {
+    question: "Quelles sont les conditions routières et l'état de la route au col de Jasper ? (conditions routières Jasper Pass / état de la route Jasper Pass / Jasper pass road conditions / Jasper pass road status / Jasper pass pass status report)",
+    answer: "Les conditions routières actuelles au col de Jasper indiquent une chaussée sèche et bien entretenue sur l'ensemble de la traversée de Jasper. La visibilité est excellente entre la ville de Jasper, le lac Jasper et le mont Robson. Les équipes de 511 Alberta et de DriveBC patrouillent la route jour et nuit pour assurer une circulation sécuritaire."
+  },
+  {
+    question: "Le col de Jasper est-il fermé aujourd'hui et quand ferme-t-il ? (is Jasper pass closed today / Jasper pass closed / Jasper pass is closed / col de Jasper fermé)",
+    answer: "Non, le col de Jasper n'est PAS fermé aujourd'hui ; la circulation est parfaitement fluide dans les deux sens. Une fermeture d'urgence n'est ordonnée que lors de tempêtes hivernales majeures, de travaux préventifs d'avalanches au mont Fitzwilliam ou d'incidents routiers. Ces fermetures exceptionnelles durent généralement entre 2 et 6 heures."
+  },
+  {
+    question: "Où regarder les webcams en direct et caméras du sommet au col de Jasper ? (caméras en direct Jasper Pass / Jasper pass webcam / Jasper pass live webcam / Jasper pass cameras / Jasper pass summit camera)",
+    answer: "LivePassWatch retransmet les flux des caméras officielles de 511 Alberta, de Parcs Canada et de DriveBC pour le col de Jasper. Vous pouvez visionner la caméra du sommet de la route 16 (Cam 182 en direction de Jasper), la caméra du belvédère du mont Robson (Cam 183), la caméra de la porte sud de Jasper près des chutes Athabasca (Cam 277) et la caméra de Tête Jaune Cache (Cam 184). Les clichés sont actualisés automatiquement toutes les 60 secondes."
+  },
+  {
+    question: "Quand le col de Jasper ferme-t-il pour l'hiver ? (when does Jasper pass close for winter / fermeture hivernale col de Jasper)",
+    answer: "Le col de Jasper ne ferme JAMAIS pour l'hiver. Il s'agit d'une route nationale interprovinciale essentielle ouverte 24 h / 24, 7 jours sur 7. Les automobilistes doivent toutefois équiper obligatoirement leur véhicule de pneus d'hiver certifiés (3PMSF ou M+S avec au minimum 3,5 mm de rainures) du 1er octobre au 30 avril."
+  },
+  {
+    question: "Où trouver une carte routière et le profil d'altitude du col de Jasper ? (Jasper pass map / carte col de Jasper)",
+    answer: "Une carte interactive complète du col de Jasper est consultable directement sur cette page. Elle détaille le tracé de la route 16 à travers le parc national Jasper, la jonction avec la Promenade des Glaciers (route 93), les altitudes culminantes (1 131 m / 3 711 pi), l'emplacement des caméras et les services de la ville de Jasper."
+  },
+  {
+    question: "Quelle est la météo aujourd'hui, l'épaisseur de neige et l'enneigement au col de Jasper ? (météo Jasper Pass / chutes de neige et déneigement / Jasper pass weather today / Jasper pass snow / Jasper pass snow depth / Jasper pass snow conditions)",
+    answer: "La météo actuelle au col de Jasper est clémente et ensoleillée avec des températures de 13 °C (55 °F) et une brise légère. L'épaisseur de neige sur la route est de 0 cm (chaussée sèche). Pendant l'hiver (novembre à avril), l'enneigement moyen le long des accotements atteint 100 à 200 cm (39 à 79 pouces), avec un déneigement mécanique constant."
+  },
+  {
+    question: "Les pneus d'hiver sont-ils légalement obligatoires pour traverser le col de Jasper ?",
+    answer: "Oui. En vertu des règlements de Parcs Canada et de la législation de l'Alberta, les pneus d'hiver arborant le pictogramme de la montagne à trois sommets avec flocon (3PMSF) ou M+S avec une bande de roulement d'au moins 3,5 mm sont obligatoires du 1er octobre au 30 avril. Les camions de plus de 11 794 kg doivent transporter des chaînes à neige."
+  },
+  {
+    question: "Quels animaux sauvages peut-on apercevoir le long du col de Jasper ?",
+    answer: "Le corridor du col de Jasper traverse un écosystème montagnard protégé où l'on observe régulièrement des wapitis, des mouflons d'Amérique, des cerfs mulets, des orignaux et des ours noirs le long de la chaussée. Respectez scrupuleusement les limitations de vitesse de 70 à 90 km/h pour la sécurité de la faune."
+  }
+];
+
 const icefieldsFrenchFaqs = [
   {
     question: "La Promenade des Glaciers (route 93 Nord) est-elle ouverte aujourd'hui ? (Promenade des Glaciers est-elle ouverte / icefields parkway road is open / is icefields parkway road open right now / icefields parkway road is it open today)",
@@ -1178,6 +1222,145 @@ export const PassDetailPage: React.FC = () => {
         )}
 
         
+        
+        {/* Bilingual Language Switcher for Jasper Pass */}
+        {pass.slug === 'jasper-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(37, 99, 235, 0.06) 100%)',
+            border: '1px solid rgba(239, 68, 68, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#991B1B' }}>
+              <Globe size={18} color="#DC2626" />
+              <span>
+                {pageLang === 'fr'
+                  ? '🇨🇦 Version officielle canadienne française active — Col de Jasper (Route 16 / Route 93, Parc national Jasper, Alberta)'
+                  : '🇨🇦 Official Canadian Bilingual Experience Active — Jasper Pass (Col de Jasper) on Hwy 16 / Hwy 93'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 Français
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=${pageLang === 'fr' ? 'en' : 'fr'}&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/canada/alberta/jasper-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#991B1B',
+                  background: '#FEF2F2',
+                  border: '1px solid #FECACA',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Google Translate (English / French)"
+              >
+                <Globe size={14} />
+                <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
+        {pass.slug === 'jasper-pass' && (
+          <div className="jasper-regulations-callout lp-card" style={{
+            borderLeft: '4px solid #DC2626',
+            padding: '20px',
+            marginBottom: '24px',
+            backgroundColor: 'rgba(239, 68, 68, 0.04)',
+            borderRadius: '6px'
+          }}>
+            <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#991B1B' }}>
+              <ShieldCheck size={20} color="#DC2626" />
+              <span>
+                {pageLang === 'fr'
+                  ? 'Réglementations du Col de Jasper & Sécurité Routière de Parcs Canada (Route 16 / 93 🇨🇦)'
+                  : 'Jasper Pass Transit Regulations & Parks Canada Mountain Safety (Hwy 16 / Hwy 93 🇨🇦)'}
+              </span>
+            </h3>
+            <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <strong>Corridor Transcanadien des Rocheuses :</strong> Le <strong>col de Jasper (route 16 / route 93)</strong> traverse le parc national Jasper à 1 131 m d’altitude. Doté de pentes douces (&lt; 2,5 %) et d’un déneigement 24 h / 24, il assure un passage fluide en toute saison.
+                </>
+              ) : (
+                <>
+                  <strong>Rocky Mountains Trans-Canada Corridor:</strong> <strong>Jasper Pass (Highway 16 / Highway 93)</strong> carries transcontinental traffic through Jasper National Park at 1,131 m (3,711 ft). Featuring gentle grades (&lt; 2.5%) and continuous 24/7 plowing, it ensures reliable all-season transit.
+                </>
+              )}
+            </p>
+            <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <li><strong>Pneus d'hiver obligatoires en Alberta (1er oct – 30 avr) :</strong> Pneus certifiés 3PMSF (flocon/montagne) ou M+S avec bande de roulement minimale de 3,5 mm obligatoires sur les routes de parcs nationaux.</li>
+                  <li><strong>Viabilité hivernale continue 24 h / 24 :</strong> Entretien ininterrompu avec chasse-neiges, épandeuses de sel et saumure de déglaçage.</li>
+                  <li><strong>Protection de la faune sauvage :</strong> Présence fréquente de hardes de wapitis, mouflons et ours près de la route. Respectez les limites de 70 à 90 km/h.</li>
+                  <li><strong>Services complets à Jasper :</strong> Carburant, bornes de recharge électrique, dépannage et hébergement disponibles dans la ville de Jasper.</li>
+                </>
+              ) : (
+                <>
+                  <li><strong>Mandatory Winter Tires in Alberta (Oct 1 – Apr 30):</strong> Certified 3PMSF mountain snowflake or M+S tires with at least 3.5 mm tread depth legally required throughout the national park.</li>
+                  <li><strong>Continuous 24/7 Winter Maintenance:</strong> Non-stop plowing, sanding, and anti-icing brine application by 511 Alberta and Parks Canada.</li>
+                  <li><strong>Wildlife Protection Zones:</strong> Elk herds, bighorn sheep, and bears frequent highway shoulders. Obey posted 70-90 km/h speed limits.</li>
+                  <li><strong>Full Services in Jasper Townsite:</strong> 24/7 fuel, fast EV charging, roadside assistance, and accommodations available in Jasper.</li>
+                </>
+              )}
+            </ul>
+          </div>
+        )}
+
+        {pass.slug === 'jasper-pass' && (
+          <div style={{ marginTop: '16px', marginBottom: '24px', padding: '14px 18px', backgroundColor: 'rgba(59, 130, 246, 0.05)', border: '1px solid rgba(59, 130, 246, 0.25)', borderRadius: '6px', fontSize: '13px', color: '#1E40AF', lineHeight: '1.55' }}>
+            <strong>🇨🇦 Parks Canada, 511 Alberta &amp; DriveBC Camera Notice:</strong> Jasper Pass live highway cameras at Jasper Pass Summit (Cam 182), Mount Robson Viewpoint (Cam 183), Jasper South Approach (Cam 277), and Tête Jaune Cache (Cam 184) stream official real-time imagery refreshing every 60 seconds. Verify live telemetry on <a href="https://511.alberta.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>511 Alberta</a>, <a href="https://www.drivebc.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>DriveBC</a>, and <a href="/methodology" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>LivePassWatch Verification Methodology</a>.
+          </div>
+        )}
+
+
         {/* Bilingual Language Switcher for Icefields Parkway Road */}
         {pass.slug === 'icefields-parkway-road' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
@@ -4673,8 +4856,8 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
-                  ((pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
+                {((pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                  ((pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
 
 
 
