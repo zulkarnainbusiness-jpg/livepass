@@ -130,6 +130,8 @@
 /passes/canada/highway-40 /passes/canada/alberta/highway-40 301
 /passes/whistler-pass /passes/canada/british-columbia/whistler-pass 301
 /passes/canada/whistler-pass /passes/canada/british-columbia/whistler-pass 301
+/passes/crowsnest-pass /passes/canada/alberta/crowsnest-pass 301
+/passes/canada/crowsnest-pass /passes/canada/alberta/crowsnest-pass 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

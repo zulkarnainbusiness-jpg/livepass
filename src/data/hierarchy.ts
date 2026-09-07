@@ -331,6 +331,16 @@ export const hierarchyData: HierarchyContinent[] = [
             "name": "Alberta",
             "passes": [
               {
+                "id": "crowsnest-pass",
+                "slug": "crowsnest-pass",
+                "name": "Crowsnest Pass (Col du Nid-de-Corbeau)",
+                "highway": "Highway 3 (Crowsnest Hwy)",
+                "elevationFt": 4453,
+                "elevationM": 1358,
+                "status": "OPEN",
+                "image": "/crowsnest-pass.jpg"
+              },
+              {
                 "id": "highway-40",
                 "slug": "highway-40",
                 "name": "Highway 40 (Highwood Pass)",

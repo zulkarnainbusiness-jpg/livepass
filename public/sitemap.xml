@@ -50,7 +50,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Canonical Mountain Pass Detail Pages (58 passes) -->
+  <!-- Canonical Mountain Pass Detail Pages (59 passes) -->
   <url>
     <loc>https://www.livepasswatch.info/passes/united-states/washington/snoqualmie-pass</loc>
     <lastmod>2026-09-07</lastmod>
@@ -395,6 +395,12 @@
   </url>
   <url>
     <loc>https://www.livepasswatch.info/passes/canada/british-columbia/whistler-pass</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/canada/alberta/crowsnest-pass</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>

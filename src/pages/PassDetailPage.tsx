@@ -148,6 +148,50 @@ const baralachaHindiFaqs = [
 
 
 
+
+const crowsnestFrenchFaqs = [
+  {
+    question: "Quelle est la date d'ouverture du col du Nid-de-Corbeau en 2026 ? (Crowsnest Pass opening date / when does Crowsnest Pass open / Crowsnest Pass open / date d'ouverture Crowsnest Pass)",
+    answer: "Le col du Nid-de-Corbeau (Crowsnest Pass) sur la route 3 (Crowsnest Highway) est OUVERT TOUTE L'ANNÉE ! Étant le col routier le plus bas des Rocheuses canadiennes (1 358 m / 4 453 pi), il ne subit aucune fermeture hivernale saisonnière. Les équipes d'entretien de 511 Alberta et de DriveBC assurent le déneigement et la surveillance 24 h sur 24, 365 jours par an."
+  },
+  {
+    question: "Le col du Nid-de-Corbeau est-il ouvert en ce moment et aujourd'hui ? (Crowsnest Pass is open / is Crowsnest Pass open right now / Crowsnest Pass is it open today / Crowsnest Pass open / état de la route 3)",
+    answer: "Oui, le col du Nid-de-Corbeau (Crowsnest Pass) est actuellement OUVERT à toute la circulation sur la route 3 dans les deux sens. La chaussée est dégagée et sèche au sommet entre Sparwood (C.-B.) et Coleman (Alberta). Vous pouvez consulter le statut en temps réel sur LivePassWatch grâce aux capteurs officiels de 511 Alberta et DriveBC."
+  },
+  {
+    question: "Quelles sont les conditions routières et le rapport d'état du col du Nid-de-Corbeau ? (Crowsnest Pass road conditions / Crowsnest Pass road status / Crowsnest Pass pass status report / conditions routières Crowsnest Pass / état de la route)",
+    answer: "L'état de la route sur le col du Nid-de-Corbeau et la route 3 indique un asphalte sec et une excellente visibilité. Le rapport d'état officiel confirme des conditions de circulation optimales. Les automobilistes doivent néanmoins surveiller les avis de vents de chinook violents fréquents à l'est du col vers Pincher Creek."
+  },
+  {
+    question: "Le col du Nid-de-Corbeau est-il fermé aujourd'hui et quelles sont les causes de fermeture ? (is Crowsnest Pass closed today / Crowsnest Pass closed / Crowsnest Pass is closed)",
+    answer: "Non, le col du Nid-de-Corbeau n'est PAS fermé aujourd'hui ; la route 3 est entièrement opérationnelle à travers la ligne de partage des eaux. Les fermetures temporaires ne surviennent que lors de violents blizzards hivernaux, d'épisodes de verglas ou de rafales de chinook extrêmes dépassant 110 km/h générant de la poudrerie et une visibilité nulle."
+  },
+  {
+    question: "Où regarder les webcams en direct et les caméras du sommet du col du Nid-de-Corbeau ? (Crowsnest Pass webcam / Crowsnest Pass live webcam / Crowsnest Pass cameras / Crowsnest Pass summit camera / caméras en direct)",
+    answer: "LivePassWatch diffuse les flux officiels de webcams de DriveBC et de 511 Alberta pour le col du Nid-de-Corbeau. Vous pouvez visionner la caméra DriveBC 131 à Sparwood (approche ouest), la caméra sommitale de 511 Alberta à la frontière AB/C.-B. (1 358 m), la caméra DriveBC 175 à Hosmer et la caméra DriveBC 60 à Morrissey. Les images s'actualisent automatiquement toutes les 60 secondes."
+  },
+  {
+    question: "Quand le col du Nid-de-Corbeau ferme-t-il pour l'hiver et quelles sont les règles pour les pneus d'hiver ? (when does Crowsnest Pass close for winter / fermeture hivernale)",
+    answer: "Le col du Nid-de-Corbeau ne ferme PAS pour l'hiver ; il demeure ouvert en continu 365 jours par an. Cependant, du côté de la Colombie-Britannique sur la route 3, les pneus d'hiver homologués (pictogramme 3PMSF ou M+S avec au moins 3,5 mm de profondeur de sculpture) sont légalement obligatoires du 1er octobre au 30 avril."
+  },
+  {
+    question: "Où trouver une carte routière et le tracé du col du Nid-de-Corbeau ? (Crowsnest Pass map / carte Crowsnest Pass)",
+    answer: "Une carte interactive complète du col du Nid-de-Corbeau est consultable directement sur LivePassWatch. Elle détaille les 145 km de la route 3 reliant Fernie et Sparwood (C.-B.) à Coleman, Blairmore, l'éboulement de Frank et Pincher Creek (Alberta), avec les dénivelés, les webcams et les aires de repos."
+  },
+  {
+    question: "Quelle est la météo aujourd'hui, l'épaisseur de neige et les conditions d'enneigement ? (Crowsnest Pass weather today / Crowsnest Pass snow / Crowsnest Pass snow depth / Crowsnest Pass snow conditions / météo Crowsnest Pass)",
+    answer: "La météo aujourd'hui au col du Nid-de-Corbeau est marquée par des éclaircies et des vents de chinook modérés avec des températures autour de 9 °C (48 °F). L'épaisseur de neige sur la chaussée est de 0 cm. En hiver, le col accumule entre 3,5 et 7 mètres de neige, souvent balayée par des vents violents qui nécessitent une conduite attentive."
+  },
+  {
+    question: "Quelle est l'altitude officielle du col du Nid-de-Corbeau sur la route 3 ? (Crowsnest Pass elevation / altitude Crowsnest Pass)",
+    answer: "L'altitude officielle du col du Nid-de-Corbeau s'élève à 1 358 mètres (4 453 pieds) au-dessus du niveau de la mer sur la ligne continentale de partage des eaux. Il s'agit du col routier et ferroviaire le plus bas de toutes les Rocheuses canadiennes."
+  },
+  {
+    question: "Pourquoi le col du Nid-de-Corbeau est-il célèbre pour l'éboulement de Frank et les vents de chinook ?",
+    answer: "Le col est mondialement connu pour l'éboulement de Frank (Frank Slide) de 1903, lorsque 82 millions de tonnes de calcaire se sont détachées du mont Turtle pour ensevelir une partie de la ville le long de l'actuelle route 3. La région est également réputée pour ses vents de chinook—des vents chauds d'aval fœhn capables de faire monter la température de 20 °C en quelques heures avec des rafales de plus de 100 km/h."
+  }
+];
+
 const whistlerFrenchFaqs = [
   {
     question: "Quelle est la date d'ouverture de Whistler Pass en 2026 ? (whistler Pass opening date / when does whistler Pass open / whistler Pass open / date d'ouverture Whistler Pass)",
@@ -1313,7 +1357,120 @@ export const PassDetailPage: React.FC = () => {
         
         
         
+        
+        {/* Bilingual Language Switcher for Crowsnest Pass */}
+        {pass.slug === 'crowsnest-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '12px 18px',
+            marginBottom: '16px',
+            backgroundColor: 'rgba(59, 130, 246, 0.05)',
+            border: '1px solid rgba(59, 130, 246, 0.25)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontSize: '18px' }}>🇨🇦</span>
+              <span style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text-primary)' }}>
+                {pageLang === 'fr'
+                  ? 'Col du Nid-de-Corbeau — Guide Bilingue & Conditions Routières de la Route 3'
+                  : 'Crowsnest Pass — Bilingual Travel Guide & Highway 3 Road Regulations'}
+              </span>
+            </div>
+            <div style={{ display: 'flex', gap: '6px' }}>
+              <button
+                type="button"
+                onClick={() => setPageLang('fr')}
+                style={{
+                  padding: '6px 14px',
+                  borderRadius: '6px',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  border: '1px solid var(--border-color)',
+                  backgroundColor: pageLang === 'fr' ? 'var(--accent-color)' : 'var(--card-bg)',
+                  color: pageLang === 'fr' ? '#fff' : 'var(--text-secondary)',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇨🇦 Français
+              </button>
+              <button
+                type="button"
+                onClick={() => setPageLang('en')}
+                style={{
+                  padding: '6px 14px',
+                  borderRadius: '6px',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  border: '1px solid var(--border-color)',
+                  backgroundColor: pageLang === 'en' ? 'var(--accent-color)' : 'var(--card-bg)',
+                  color: pageLang === 'en' ? '#fff' : 'var(--text-secondary)',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇨🇦 English
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Bilingual Language Switcher for Whistler Pass */}
+        
+        {pass.slug === 'crowsnest-pass' && (
+          <div className="lp-card" style={{
+            padding: '16px 20px',
+            marginBottom: '20px',
+            borderLeft: '4px solid #3B82F6',
+            backgroundColor: '#F8FAFC'
+          }}>
+            <h3 style={{ margin: '0 0 8px 0', fontSize: '15.5px', fontWeight: '700', color: '#1E3A8A', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span>🏔️</span>
+              <span>
+                {pageLang === 'fr'
+                  ? 'Guide de Sécurité de la Route 3 & Avis de Vents de Chinook (Plus Bas Col des Rocheuses 🇨🇦)'
+                  : 'Highway 3 Safety Guide & Chinook Wind Advisory (Lowest Rockies Crossing 🇨🇦)'}
+              </span>
+            </h3>
+            <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <strong>Col du Nid-de-Corbeau (1 358 m / 4 453 pi) :</strong> La <strong>route 3 (Crowsnest Highway)</strong> relie la vallée de l'Elk (C.-B.) aux contreforts de l'Alberta à travers la ligne continentale de partage des eaux. L'autoroute est <strong>ouverte 365 jours par an</strong> avec surveillance continue conjointe par 511 Alberta et DriveBC.
+                </>
+              ) : (
+                <>
+                  <strong>Lowest Canadian Rockies Highway Pass (1,358 m / 4,453 ft):</strong> <strong>Highway 3 (Crowsnest Highway)</strong> crosses the Continental Divide connecting British Columbia with Alberta. The corridor remains <strong>open year-round</strong> with 24/7 maintenance by 511 Alberta and DriveBC.
+                </>
+              )}
+            </p>
+            <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <li><strong>Avis de vents violents de chinook :</strong> Des rafales transversales dépassant 100 km/h surviennent fréquemment entre Blairmore et Pincher Creek. Remorques légères et véhicules récréatifs doivent faire preuve d'extrême prudence.</li>
+                  <li><strong>Pneus d'hiver obligatoires en C.-B. (1er oct – 30 avril) :</strong> Les véhicules entrant en Colombie-Britannique doivent être munis de pneus d'hiver homologués (au moins 3,5 mm de bande de roulement).</li>
+                  <li><strong>Site historique de l'éboulement de Frank :</strong> Ralentissez dans la zone de blocs rocheux du mont Turtle et visitez le centre d'interprétation.</li>
+                  <li><strong>Faune sur la chaussée :</strong> Les hardes de mouflons d'Amérique broutent fréquemment sur les accotements de la route 3 près du lac Crowsnest.</li>
+                </>
+              ) : (
+                <>
+                  <li><strong>Severe Chinook Crosswinds:</strong> Sudden gusts exceeding 100 km/h (60+ mph) are common between Blairmore and Pincher Creek. Empty trailers and tall RVs should exercise extreme caution.</li>
+                  <li><strong>Mandatory Winter Tires on BC Highway 3 (Oct 1 – Apr 30):</strong> Vehicles crossing into British Columbia must have approved winter tires (minimum 3.5 mm tread).</li>
+                  <li><strong>Historic Frank Slide Boulder Field:</strong> Observe reduced speeds through the Turtle Mountain rockslide zone on Highway 3.</li>
+                  <li><strong>Bighorn Sheep on Shoulders:</strong> Large herds of wild bighorn sheep frequently gather along Highway 3 near Crowsnest Lake.</li>
+                </>
+              )}
+            </ul>
+          </div>
+        )}
+
+        {pass.slug === 'crowsnest-pass' && (
+          <div style={{ marginTop: '16px', marginBottom: '24px', padding: '14px 18px', backgroundColor: 'rgba(59, 130, 246, 0.05)', border: '1px solid rgba(59, 130, 246, 0.25)', borderRadius: '6px', fontSize: '13px', color: '#1E40AF', lineHeight: '1.55' }}>
+            <strong>🇨🇦 511 Alberta &amp; DriveBC Camera Verification Notice:</strong> Crowsnest Pass live webcams at Sparwood (Cam 131), AB/BC Border Summit (Cam 188), Hosmer (Cam 175), and Morrissey (Cam 60) stream official real-time imagery refreshing every 60 seconds. Verify live telemetry on <a href="https://511.alberta.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>511 Alberta</a>, <a href="https://www.drivebc.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>DriveBC</a>, and <a href="/methodology" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>LivePassWatch Verification Methodology</a>.
+          </div>
+        )}
+
         {pass.slug === 'whistler-pass' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
@@ -5196,8 +5353,8 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
-                  ((pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
+                {((pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                  ((pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
 
 
 

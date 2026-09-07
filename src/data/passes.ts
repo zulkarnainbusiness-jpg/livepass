@@ -16600,7 +16600,7 @@ export const passesData: MountainPass[] = [
         "distanceKm": 185
       },
       {
-        "id": "crowsnest-pass",
+        "id": "rogers-pass",
         "slug": "rogers-pass",
         "name": "Rogers Pass (Selkirk Mountains)",
         "country": "Canada",
@@ -17050,7 +17050,344 @@ export const passesData: MountainPass[] = [
       "Lorimer Road webcam",
       "Daisy Lake summit camera"
     ]
+  },
+  {
+    "id": "crowsnest-pass",
+    "slug": "crowsnest-pass",
+    "name": "Crowsnest Pass (Highway 3)",
+    "country": "Canada",
+    "countryCode": "CAN",
+    "continent": "North America",
+    "state": "Alberta",
+    "highway": "Highway 3 (Crowsnest Highway)",
+    "elevationFt": 4453,
+    "elevationM": 1358,
+    "coordinates": {
+      "lat": 49.6333,
+      "lng": -114.6833
+    },
+    "status": "OPEN",
+    "statusDetail": "Open year-round to all vehicular traffic across the Alberta/BC Continental Divide. Bare and dry pavement. Highway 3 speed limits active. Chinook wind advisories monitored by 511 Alberta and DriveBC.",
+    "lastUpdated": "5 minutes ago",
+    "description": "Crowsnest Pass along Highway 3 (the Crowsnest Highway; French: Col du Nid-de-Corbeau / Route 3) crosses the Continental Divide of the Canadian Rocky Mountains at an elevation of 4,453 feet (1,358 m), connecting the Elk Valley in southeastern British Columbia with the Municipality of Crowsnest Pass and the ranching foothills of southern Alberta. Celebrated as the lowest-elevation highway pass traversing the Canadian Rockies, Crowsnest Pass is a vital interprovincial transportation artery maintained open 24/7, 365 days a year by 511 Alberta and DriveBC. Framed by iconic peaks such as Crowsnest Mountain and Turtle Mountain (home of the historic 1903 Frank Slide), the corridor is famous for dramatic mountain scenery, intense chinook wind events, and year-round travel access.",
+    "image": "/crowsnest-pass.jpg",
+    "isSeasonal": false,
+    "weather": {
+      "tempF": 48,
+      "tempC": 9,
+      "condition": "Partly Cloudy with Strong Chinook Mountain Breezes",
+      "icon": "cloud"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Roadway clear and dry; winter snowpack present on upper peaks"
+    },
+    "wind": {
+      "speedKmh": 38,
+      "speedMph": 24,
+      "direction": "W",
+      "description": "Brisk western chinook winds gusting through Crowsnest summit"
+    },
+    "roadCondition": "Crowsnest Pass road conditions report bare and dry asphalt in both directions along Highway 3. Visibility is good across the Alberta/BC border summit. Motorists should anticipate sudden chinook wind gusts near Pincher Creek and Cowley. Winter tire regulations are legally enforced on the BC side between October 1 and April 30.",
+    "chainRequirement": "Winter tires (3-Peak Mountain Snowflake or M+S with minimum 3.5 mm tread) mandatory on BC Highway 3 from October 1 to April 30. Chains mandatory for commercial vehicles over 11,794 kg during winter storms.",
+    "officialSource": "https://511.alberta.ca",
+    "nearbyPasses": [
+      {
+        "id": "highway-40",
+        "slug": "highway-40",
+        "name": "Highway 40 (Highwood Pass)",
+        "country": "Canada",
+        "state": "Alberta",
+        "highway": "Alberta Hwy 40",
+        "status": "OPEN",
+        "elevationFt": 7239,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 120
+      },
+      {
+        "id": "kicking-horse-pass",
+        "slug": "kicking-horse-pass",
+        "name": "Kicking Horse Pass",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy 1",
+        "status": "OPEN",
+        "elevationFt": 5338,
+        "lastUpdated": "15 minutes ago",
+        "distanceKm": 240
+      },
+      {
+        "id": "rogers-pass",
+        "slug": "rogers-pass",
+        "name": "Rogers Pass (Selkirk Mountains)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy (BC-1)",
+        "status": "OPEN",
+        "elevationFt": 4364,
+        "lastUpdated": "15 minutes ago",
+        "distanceKm": 380
+      }
+    ],
+    "cameras": [
+      {
+        "id": "crowsnest-cam-131",
+        "title": "DriveBC Cam 131: Highway 3 at Sparwood (Crowsnest Pass West Approach)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/131.jpg",
+        "location": "Highway 3 near Sparwood, BC (Elevation 1,140 m / 3,740 ft)",
+        "source": "DriveBC (BC Ministry of Transportation and Infrastructure)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking East towards Crowsnest Pass Summit & Alberta Border"
+      },
+      {
+        "id": "crowsnest-cam-border",
+        "title": "511 Alberta Cam: Highway 3 at Alberta / BC Border (Crowsnest Pass Summit)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/188.jpg",
+        "location": "Highway 3 Continental Divide Crest (Elevation 1,358 m / 4,453 ft)",
+        "source": "511 Alberta & Alberta Transportation",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking West toward Continental Divide Summit & British Columbia"
+      },
+      {
+        "id": "crowsnest-cam-175",
+        "title": "DriveBC Cam 175: Highway 3 at Hosmer (Crowsnest Highway Elk Valley)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/175.jpg",
+        "location": "Highway 3 at Hosmer, BC (North of Fernie)",
+        "source": "DriveBC Official Traffic Cameras",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking North along Highway 3 towards Sparwood & Crowsnest"
+      },
+      {
+        "id": "crowsnest-cam-60",
+        "title": "DriveBC Cam 60: Highway 3 at Morrissey (Fernie South Corridor)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/60.jpg",
+        "location": "Highway 3 at Morrissey, BC (South of Fernie)",
+        "source": "DriveBC (BC Ministry of Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking South toward Elko & Jaffray"
+      },
+      {
+        "id": "crowsnest-cam-383",
+        "title": "DriveBC Cam 383: Highway 3 at Highway 5 Hope Gateway Junction",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/383.jpg",
+        "location": "Highway 3 at Hwy 3/5 Junction, Hope, BC (Sea to Interior Gateway)",
+        "source": "DriveBC Provincial Highway Cameras",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking East along Highway 3 Crowsnest Route"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "511 Alberta (Alberta Transportation and Economic Corridors)",
+        "url": "https://511.alberta.ca",
+        "type": "Official Provincial Road & Webcam Authority"
+      },
+      {
+        "name": "DriveBC (BC Ministry of Transportation and Infrastructure)",
+        "url": "https://www.drivebc.ca",
+        "type": "Official Provincial Road & Webcam Authority"
+      },
+      {
+        "name": "Municipality of Crowsnest Pass",
+        "url": "https://www.crowsnestpass.com",
+        "type": "Local Municipal Government & Community Advisory"
+      },
+      {
+        "name": "Environment and Climate Change Canada (ECCC)",
+        "url": "https://weather.gc.ca",
+        "type": "Official National Weather Service"
+      },
+      {
+        "name": "LivePassWatch Verification Methodology",
+        "url": "/methodology",
+        "type": "Internal Telemetry & Integrity Protocol"
+      }
+    ],
+    "routeDetails": {
+      "distanceKm": 145,
+      "distanceMiles": 90.1,
+      "duration": "1 hour 45 min – 2 hours (Fernie, BC to Fort Macleod, AB)",
+      "origin": "Fernie / Sparwood, BC (Crowsnest Highway West)",
+      "destination": "Pincher Creek / Fort Macleod, AB (Highway 3 East)",
+      "waypoints": [
+        "Fernie Alpine Resort Gateway — 1,010 m",
+        "Sparwood (World's Largest Truck & Hwy 43 Junction) — 1,140 m",
+        "Crowsnest Pass Summit (Continental Divide, BC/AB Border) — 1,358 m (4,453 ft)",
+        "Coleman (National Historic Site of Canada) — 1,310 m",
+        "Blairmore & Pass Powderkeg Ski Area — 1,290 m",
+        "Frank Slide Interpretive Centre & Turtle Mountain — 1,270 m",
+        "Bellevue & Hillcrest Mines — 1,260 m",
+        "Burmis Tree & Oldman River Valley — 1,180 m",
+        "Pincher Creek (Wind Energy Capital of Canada) — 1,100 m"
+      ]
+    },
+    "distancesTable": [
+      { "location": "Coleman, AB (Crowsnest Pass)", "distance": "14 km (8.7 mi)", "route": "via Hwy 3 East", "notes": "Historic mining town with traveler services" },
+      { "location": "Sparwood, BC (Elk Valley)", "distance": "20 km (12.4 mi)", "route": "via Hwy 3 West", "notes": "Major fueling, dining & service hub" },
+      { "location": "Frank Slide Interpretive Centre, AB", "distance": "22 km (13.7 mi)", "route": "via Hwy 3 East", "notes": "Historic 1903 rock avalanche museum" },
+      { "location": "Fernie, BC (Alpine Resort)", "distance": "51 km (31.7 mi)", "route": "via Hwy 3 West", "notes": "World-class ski & mountain biking resort" },
+      { "location": "Pincher Creek, AB (Foothills Hub)", "distance": "68 km (42.3 mi)", "route": "via Hwy 3 East", "notes": "Gateway to Waterton Lakes National Park" },
+      { "location": "Lethbridge, AB (Commercial City)", "distance": "165 km (102.5 mi)", "route": "via Hwy 3 East", "notes": "Major southern Alberta commercial center" },
+      { "location": "Calgary, AB (Metro Center)", "distance": "225 km (139.8 mi)", "route": "via Hwy 3 & Hwy 2 North", "notes": "International airport & metropolitan hub" }
+    ],
+    "quickFacts": {
+      "state": "Alberta & British Columbia, Canada",
+      "mountainRange": "Southern Canadian Rocky Mountains / Crowsnest Range",
+      "elevationSummary": "1,358 m / 4,453 ft — Lowest Highway Pass across the Canadian Rockies",
+      "connects": "British Columbia (Elk Valley / Sparwood) with Alberta (Crowsnest Pass / Pincher Creek)",
+      "nearestTown": "Coleman / Blairmore, AB (14 km East), Sparwood, BC (20 km West)",
+      "roadType": "Paved two-lane and multi-lane interprovincial highway (Highway 3)",
+      "bestTime": "Year-round (Summer touring & hiking Jun–Sep; Winter skiing Nov–Apr)",
+      "highlight": "Lowest Rockies crossing (1,358 m), Frank Slide rock avalanche, strong chinook winds, and year-round heavy commercial freight corridor"
+    },
+    "overview": {
+      "openedYear": 1898,
+      "lengthMiles": "90.1 miles (Fernie to Fort Macleod)",
+      "lengthKm": "145.0 km (Elk Valley to Alberta Prairie)",
+      "annualSnowfallIn": "140–280 inches",
+      "annualSnowfallM": "3.5–7.1 meters",
+      "summary": "Crowsnest Pass along Highway 3 (the Crowsnest Highway) holds a singular place in Canadian geography as the lowest-elevation mountain pass across the Canadian Rocky Mountains, summiting at 1,358 meters (4,453 ft) along the Continental Divide on the Alberta–British Columbia border. Connecting the mining valleys of the Elk River with the ranching plains of southern Alberta, Highway 3 provides a scenic, all-weather southern alternative to the Trans-Canada Highway. The pass is steeped in Canadian industrial history, renowned for the 1903 Frank Slide disaster at Turtle Mountain, Coleman's historic coal mining heritage, and the fierce chinook winds that sweep over the pass toward Pincher Creek. Maintained open 365 days a year by 511 Alberta and DriveBC, Crowsnest Pass is supported by active winter plowing and high-definition live webcams."
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Subject to winter storm plowing & chinook wind warnings)",
+      "typicalReopening": "Continuous 365-Day Interprovincial Operation",
+      "description": "Crowsnest Pass on Highway 3 is maintained open year-round by 511 Alberta and DriveBC. Because it is the lowest pass across the Canadian Rockies, it serves as a critical all-season freight and passenger highway. Unlike high seasonal routes, it does not have an annual winter closure. Precautionary short-duration closures may occur during extreme winter blizzards, freezing rain, or high chinook windstorms with gusts topping 100 km/h causing blowing snow and zero visibility. Winter tire regulations apply on the BC side from October 1 to April 30."
+    },
+    "travelTips": [
+      "Prepare for Intense Chinook Winds: The Crowsnest Pass corridor between Blairmore and Pincher Creek is notorious for extreme crosswinds gusting over 100 km/h (60+ mph). Empty trailers and high-sided RVs should exercise extreme caution.",
+      "Mandatory Winter Tires on BC Side: If crossing into British Columbia from Alberta between October 1 and April 30, passenger vehicles must have winter tires with 3PMSF or M+S symbols and minimum 3.5 mm tread.",
+      "Visit the Frank Slide Interpretive Centre: Located on Highway 3 in Frank, Alberta, the center provides interactive exhibits explaining the tragic 1903 Turtle Mountain rockslide that buried part of the town.",
+      "Check Live 511 Alberta & DriveBC Webcams: Because Crowsnest Pass straddles two provincial highway agencies, check cameras on both sides of the summit before traveling.",
+      "Full Services Available in Pass Towns: The Municipality of Crowsnest Pass (Coleman, Blairmore, Bellevue) provides 24-hour fuel, restaurants, lodging, and mechanical services.",
+      "Bighorn Sheep & Elk on Highway: Large herds of bighorn sheep frequently congregate along the shoulders of Highway 3 near Crowsnest Lake and Coleman. Reduce speed and never approach wildlife."
+    ],
+    "history": [
+      {
+        "year": "Pre-1800s",
+        "title": "Indigenous Trading Route",
+        "description": "For centuries, the Ktunaxa (Kootenai) and Piikani (Blackfoot) nations utilized Crowsnest Pass as a primary migratory hunting and trading trail across the Rocky Mountains."
+      },
+      {
+        "year": "1898",
+        "title": "Canadian Pacific Railway Crowsnest Line",
+        "description": "The Canadian Pacific Railway constructs the historic Crowsnest Branch through the pass, linking southern Alberta's cattle country with the rich Kootenay silver and coal mines."
+      },
+      {
+        "year": "1903",
+        "title": "The Great Frank Slide Disaster",
+        "description": "On April 29, 1903, 82 million tonnes of limestone collapse from Turtle Mountain, burying the eastern edge of the town of Frank and creating the massive boulder field visible along Highway 3 today."
+      },
+      {
+        "year": "1932",
+        "title": "Crowsnest Highway (Highway 3) Paving",
+        "description": "Highway 3 is completed as a modern gravel highway and later paved, establishing the southern interprovincial lifeline between Alberta and the Pacific coast."
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "Lowest Paved Crossing of the Canadian Rockies & Continental Divide",
+        "content": "Summiting at just 1,358 meters (4,453 ft) above sea level, Crowsnest Pass is the lowest-elevation highway and railway pass through the entire Canadian Rocky Mountains. This unique geological low point allows Highway 3 to cross the Continental Divide with gentle highway grades rarely exceeding 4%, making it a favored commercial route for transport trucks seeking to avoid higher, steeper crossings like Kicking Horse Pass (1,627 m) or Coquihalla Summit (1,244 m). To the north, the sheer limestone wall of Crowsnest Mountain (2,776 m) dominates the horizon, while Crowsnest Lake mirrors the rugged peaks at the pass crest."
+      },
+      {
+        "title": "Frank Slide, Mining Heritage & The Chinook Corridor",
+        "content": "Few mountain passes in North America offer a more compelling blend of natural drama and human history. Passing through the Municipality of Crowsnest Pass along Highway 3, drivers travel directly through the eerie, colossal limestone boulder field of the 1903 Frank Slide, where Turtle Mountain broke apart in Canada's deadliest rockslide. Furthermore, the corridor is famous for the 'Chinook'—warm, dry foehn winds that descend from the Rockies onto the Alberta plains, frequently causing rapid winter temperature spikes of 20°C in a single afternoon alongside hurricane-force gusts."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the official Crowsnest Pass opening date in 2026? (Crowsnest Pass opening date / when does Crowsnest Pass open / Crowsnest Pass open / Highway 3 opening date)",
+        "answer": "Crowsnest Pass along Highway 3 (Crowsnest Highway) is OPEN YEAR-ROUND! Because Crowsnest Pass is the lowest highway crossing of the Canadian Rockies (1,358 m / 4,453 ft), there is no seasonal winter closure date. It is maintained 24/7, 365 days a year by 511 Alberta and DriveBC road crews."
+      },
+      {
+        "question": "Is Crowsnest Pass open right now, and how can I confirm if Crowsnest Pass is open today? (Crowsnest Pass is open / is Crowsnest Pass open right now / Crowsnest Pass is it open today / Crowsnest Pass open / Highway 3 status)",
+        "answer": "Yes, Crowsnest Pass is open right now to all vehicular travel in both directions on Highway 3. Pavement across the summit is bare and dry with normal highway speeds permitted. You can verify real-time road status anytime on LivePassWatch, synchronized every 15 minutes with 511 Alberta and DriveBC road sensors."
+      },
+      {
+        "question": "What are the current Crowsnest Pass road conditions, Highway 3 road status, and official pass status report? (Crowsnest Pass road conditions / Crowsnest Pass road status / Crowsnest Pass pass status report / Highway 3 road conditions / Highway 3 road status)",
+        "answer": "Current Crowsnest Pass road conditions report bare, dry asphalt and good visibility between Sparwood, BC and Pincher Creek, AB. The official Crowsnest Pass road status is OPEN with standard travel regulations. Motorists should check for sudden chinook wind advisories along open prairie stretches east of the pass."
+      },
+      {
+        "question": "Is Crowsnest Pass closed today, and what causes Crowsnest Pass closed alerts on Highway 3? (is Crowsnest Pass closed today / Crowsnest Pass closed / Crowsnest Pass is closed)",
+        "answer": "No, Crowsnest Pass is NOT closed today; Highway 3 is fully operational across the Continental Divide. Temporary Crowsnest Pass closed alerts only occur during intense winter blizzards, severe black ice, multi-vehicle winter collisions, or extreme chinook wind events with gusts over 110 km/h causing zero-visibility ground blizzards. Always check LivePassWatch before departure."
+      },
+      {
+        "question": "Where can I view live Crowsnest Pass webcam feeds, Highway 3 cameras, and the summit camera? (Crowsnest Pass webcam / Crowsnest Pass live webcam / Crowsnest Pass cameras / Crowsnest Pass summit camera / Highway 3 webcam)",
+        "answer": "LivePassWatch provides verified live Crowsnest Pass webcam feeds and Highway 3 cameras sourced directly from DriveBC and 511 Alberta. Feeds include DriveBC Cam 131 at Sparwood (Crowsnest Pass west approach), the 511 Alberta Border Summit Camera at 1,358 m, DriveBC Cam 175 at Hosmer (Elk Valley), and DriveBC Cam 60 at Morrissey. Images update automatically every 60 seconds."
+      },
+      {
+        "question": "When does Crowsnest Pass close for winter, and what are the winter tire rules? (when does Crowsnest Pass close for winter)",
+        "answer": "Crowsnest Pass does NOT close for winter; it remains open throughout all four seasons. However, on the British Columbia side of Highway 3, winter tires (marked with the 3-Peak Mountain Snowflake or M+S with minimum 3.5 mm tread) are legally mandatory from October 1 through April 30. In Alberta, winter-rated tires and emergency supplies are strongly recommended."
+      },
+      {
+        "question": "Where can I find an official Crowsnest Pass map and Highway 3 route itinerary? (Crowsnest Pass map)",
+        "answer": "You can view an interactive Crowsnest Pass map directly on LivePassWatch. The map shows all 145 km of Highway 3 from Fernie and Sparwood in BC through Crowsnest summit (1,358 m / 4,453 ft), Coleman, Blairmore, Frank Slide, and Bellevue to Pincher Creek in Alberta, including live webcam locations, elevation profiles, and traveler rest areas."
+      },
+      {
+        "question": "What is the Crowsnest Pass weather today, snow depth, and current winter snow conditions? (Crowsnest Pass weather today / Crowsnest Pass snow / Crowsnest Pass snow depth / Crowsnest Pass snow conditions)",
+        "answer": "Crowsnest Pass weather today is partly cloudy with gusty chinook winds and summit temperatures around 48°F (9°C). Highway snow depth is currently 0 cm on the road surface. In winter, the pass receives an average of 3.5 to 7 meters (140 to 280 inches) of snowfall, with high winds often causing drifting snow that requires cautious mountain driving."
+      },
+      {
+        "question": "What is the official Crowsnest Pass elevation along Highway 3? (Crowsnest Pass elevation)",
+        "answer": "The official Crowsnest Pass elevation is 1,358 meters (4,453 feet) above sea level at the Continental Divide crest on the Alberta–British Columbia border. It is famously the lowest highway mountain pass in the Canadian Rocky Mountains."
+      },
+      {
+        "question": "Why is Crowsnest Pass famous for chinook winds and the Frank Slide?",
+        "answer": "Crowsnest Pass is internationally renowned for the 1903 Frank Slide, when 82 million tonnes of rock sheared off Turtle Mountain and buried part of the town of Frank beside Highway 3. It is also famous for chinook winds—warm alpine foehn winds that sweep eastward through the pass, frequently driving temperatures up by 20°C in hours while generating powerful 100+ km/h crosswinds across Highway 3."
+      }
+    ],
+    "customSeo": {
+      "title": "Crowsnest Pass Road Conditions & Status | LivePassWatch",
+      "description": "Live Crowsnest Pass road conditions, Highway 3 webcams & status across the AB/BC border. Check if open today, elevation, opening dates & snow reports.",
+      "h1": "Crowsnest Pass Road Conditions, Live Status & Highway 3 Webcams"
+    },
+    "searchKeywords": [
+      "Crowsnest Pass opening date",
+      "Crowsnest Pass is open",
+      "Crowsnest Pass road conditions",
+      "Crowsnest Pass road status",
+      "Crowsnest Pass pass status report",
+      "when does Crowsnest Pass open",
+      "Crowsnest Pass closed",
+      "Crowsnest Pass is closed",
+      "Crowsnest Pass is it open today",
+      "is Crowsnest Pass closed today",
+      "Crowsnest Pass webcam",
+      "Crowsnest Pass live webcam",
+      "Crowsnest Pass cameras",
+      "Crowsnest Pass summit camera",
+      "when does Crowsnest Pass close for winter",
+      "Crowsnest Pass map",
+      "is Crowsnest Pass open right now",
+      "Crowsnest Pass weather today",
+      "Crowsnest Pass snow",
+      "Crowsnest Pass snow depth",
+      "Crowsnest Pass snow conditions",
+      "Crowsnest Pass elevation",
+      "Crowsnest Pass open",
+      "Highway 3 road conditions",
+      "Highway 3 webcam",
+      "Highway 3 status",
+      "Crowsnest Highway",
+      "Highway 3 Crowsnest Pass",
+      "BC Highway 3 road conditions",
+      "Alberta Highway 3 road conditions",
+      "Col du Nid-de-Corbeau",
+      "Route 3 Crowsnest",
+      "conditions routières Crowsnest Pass",
+      "caméras en direct Crowsnest Pass",
+      "météo Crowsnest Pass",
+      "état de la route Crowsnest Pass",
+      "fermeture hivernale Crowsnest",
+      "pneus d'hiver obligatoires Route 3"
+    ]
   }
+
 
 ];
 
@@ -17145,7 +17482,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Bern & Valais' || passSlug === 'grimsel-pass') return 'bern-valais';
   if (state === 'Bern & Uri' || passSlug === 'susten-pass') return 'bern-uri';
   if (state === 'British Columbia' || passSlug === 'rogers-pass' || passSlug === 'coquihalla-summit-pass' || passSlug === 'kicking-horse-pass' || passSlug === 'yellowhead-pass' || passSlug === 'whistler-pass') return 'british-columbia';
-  if (state === 'Alberta' || passSlug === 'sunwapta-pass') return 'alberta';
+  if (state === 'Alberta' || passSlug === 'sunwapta-pass' || passSlug === 'highway-40' || passSlug === 'crowsnest-pass') return 'alberta';
   if (state === 'Montana' || passSlug === 'logan-pass' || passSlug === 'lolo-pass') return 'montana';
   if (state === 'Uri & Ticino' || state === 'Uri / Ticino' || passSlug === 'gotthard-pass') return 'uri-ticino';
   if (state === 'Graubünden' || state === 'Grisons' || passSlug === 'bernina-pass') return 'graubunden';

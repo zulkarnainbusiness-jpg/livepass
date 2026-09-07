@@ -161,7 +161,14 @@ const LegacyPassRedirect: React.FC = () => {
           (clean === 'whistler' && p.slug === 'whistler-pass') ||
           (clean === 'whistlerpass' && p.slug === 'whistler-pass') ||
           (clean === 'sea-to-sky' && p.slug === 'whistler-pass') ||
-          (clean === 'col-de-whistler' && p.slug === 'whistler-pass')
+          (clean === 'col-de-whistler' && p.slug === 'whistler-pass') ||
+          (clean === 'crowsnest-pass' && p.slug === 'crowsnest-pass') ||
+          (clean === 'crowsnest' && p.slug === 'crowsnest-pass') ||
+          (clean === 'crowsnestpass' && p.slug === 'crowsnest-pass') ||
+          (clean === 'highway-3' && p.slug === 'crowsnest-pass') ||
+          (clean === 'highway3' && p.slug === 'crowsnest-pass') ||
+          (clean === 'hwy-3' && p.slug === 'crowsnest-pass') ||
+          (clean === 'col-du-nid-de-corbeau' && p.slug === 'crowsnest-pass')
   );
 
   if (targetPass) {
@@ -304,6 +311,14 @@ export const App: React.FC = () => {
               <Route path="/whistlerpass" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
               <Route path="/sea-to-sky" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
               <Route path="/col-de-whistler" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
+              <Route path="/crowsnest-pass" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
+              <Route path="/crowsnest" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
+              <Route path="/crowsnestpass" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
+              <Route path="/highway-3" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
+              <Route path="/highway3" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
+              <Route path="/hwy-3" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
+              <Route path="/col-du-nid-de-corbeau" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
+              <Route path="/passes/canada/british-columbia/crowsnest-pass" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
 
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />

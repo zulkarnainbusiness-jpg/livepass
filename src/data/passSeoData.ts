@@ -902,5 +902,21 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Coquihalla Summit Pass (1,244 m) & Rogers Pass (1,330 m)',
     crossLinkUrl: '/passes/canada/british-columbia/coquihalla-summit-pass',
     crossLinkText: 'Compare British Columbia coastal mountain highways and interior passes with'
+  },
+  'crowsnest-pass': {
+    nearestTowns: [
+      { name: 'Coleman, AB (Crowsnest Pass)', distance: '14.0 km (8.7 miles)', direction: 'East via Hwy 3 (Historic Mining Town)' },
+      { name: 'Sparwood, BC (Elk Valley)', distance: '20.0 km (12.4 miles)', direction: 'West via Hwy 3 (Commercial Hub)' },
+      { name: 'Blairmore, AB (Crowsnest Pass)', distance: '18.0 km (11.2 miles)', direction: 'East via Hwy 3 (Municipal Amenities)' },
+      { name: 'Fernie, BC (Alpine Resort)', distance: '51.0 km (31.7 miles)', direction: 'West via Hwy 3 (Ski Destination)' },
+      { name: 'Pincher Creek, AB', distance: '68.0 km (42.3 miles)', direction: 'East via Hwy 3 (Prairie Foothills)' },
+      { name: 'Calgary, AB', distance: '225.0 km (139.8 miles)', direction: 'Northeast via Hwy 3 & Hwy 2' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Subject to winter storms & severe chinook wind advisories)',
+    seasonalClosureDetail: 'Crowsnest Pass along Highway 3 (Crowsnest Highway; summit at 1,358 m / 4,453 ft) is the lowest highway crossing across the Canadian Rocky Mountains. Connecting southern British Columbia with Alberta across the Continental Divide, it is maintained open 365 days a year by 511 Alberta and DriveBC. Because it operates as an essential commercial transportation artery, it has no scheduled seasonal winter closure. Brief temporary closures of 2 to 6 hours occur only during major blizzards, freezing rain, or severe chinook wind events with gusts over 110 km/h causing zero-visibility ground blowing snow. Winter tires (3PMSF or M+S with minimum 3.5 mm tread) are legally mandatory on the BC side from October 1 to April 30.',
+    aboutPass: 'Crowsnest Pass along Highway 3 (the Crowsnest Highway; French: Col du Nid-de-Corbeau / Route 3) is a historic mountain pass traversing the southern Canadian Rockies and the Continental Divide on the Alberta–British Columbia border. At an elevation of 1,358 meters (4,453 ft), it is famously the lowest highway crossing in the Canadian Rockies, providing gentle highway grades through stunning limestone scenery dominated by Crowsnest Mountain and Turtle Mountain. Famous for the catastrophic 1903 Frank Slide rock avalanche, rich coal mining heritage in the Municipality of Crowsnest Pass, and powerful chinook foehn winds that sweep toward Pincher Creek, Highway 3 offers a reliable, scenic southern travel corridor supported by real-time 511 Alberta and DriveBC webcams.',
+    crossLinkAnchor: 'Highway 40 Highwood Pass (2,206 m) & Kicking Horse Pass (1,627 m)',
+    crossLinkUrl: '/passes/canada/alberta/highway-40',
+    crossLinkText: 'Compare Canadian Rocky Mountains Continental Divide passes and scenic highways with'
   }
 };
