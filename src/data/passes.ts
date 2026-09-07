@@ -16707,7 +16707,351 @@ export const passesData: MountainPass[] = [
         "answer": "Yes. A Kananaskis Conservation Pass is legally required for all personal and commercial vehicles parked at trailheads, day-use areas, and scenic viewpoints along Highway 40 within Kananaskis Country and Peter Lougheed Provincial Park."
       }
     ]
+  },
+  {
+    "id": "whistler-pass",
+    "slug": "whistler-pass",
+    "name": "Whistler Pass (Sea to Sky Highway 99)",
+    "country": "Canada",
+    "countryCode": "CAN",
+    "continent": "North America",
+    "state": "British Columbia",
+    "highway": "BC Highway 99 (Sea to Sky Highway)",
+    "elevationFt": 2214,
+    "elevationM": 675,
+    "coordinates": {
+      "lat": 50.1163,
+      "lng": -122.9574
+    },
+    "status": "OPEN",
+    "statusDetail": "Open year-round to all vehicular traffic. Bare and dry pavement through Whistler corridor. Mandatory winter tire regulations enforced Oct 1 – Apr 30. Continuous DriveBC highway monitoring.",
+    "lastUpdated": "5 minutes ago",
+    "description": "Whistler Pass along BC Highway 99 (the Sea to Sky Highway; French: Col de Whistler / Route 99) is world-renowned as British Columbia's premier coastal alpine highway corridor. Carving northward from Vancouver through Howe Sound and Squamish into the Coast Mountains, the highway crests near Whistler Village and Daisy Lake at an elevation of 2,214 feet (675 m), surrounded by towering peaks including Whistler Mountain (summit 7,156 ft / 2,181 m) and Blackcomb Peak. Maintained 24/7 by the BC Ministry of Transportation and Infrastructure (DriveBC), Whistler Pass stays open year-round with rapid snow plowing, avalanche mitigation galleries, and extensive variable message speed signs.",
+    "image": "/whistler-pass.jpg",
+    "isSeasonal": false,
+    "weather": {
+      "tempF": 52,
+      "tempC": 11,
+      "condition": "Partly Cloudy with Crisp Mountain Breezes",
+      "icon": "cloud"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Roadway snow-free; alpine snow base building on upper peaks"
+    },
+    "wind": {
+      "speedKmh": 14,
+      "speedMph": 9,
+      "direction": "SW",
+      "description": "Light valley breezes along Green Lake corridor"
+    },
+    "roadCondition": "Whistler Pass road conditions are bare and dry with clear travel lanes in both directions. Normal highway speeds in effect. DriveBC webcams confirm unobstructed highway views. Mandatory winter tire/chain requirement applies annually between October 1 and April 30.",
+    "chainRequirement": "Winter tires (3-Peak Mountain Snowflake or M+S with minimum 3.5 mm tread depth) or commercial tire chains legally required on Highway 99 from October 1 to April 30.",
+    "officialSource": "https://www.drivebc.ca",
+    "nearbyPasses": [
+      {
+        "id": "coquihalla-summit-pass",
+        "slug": "coquihalla-summit-pass",
+        "name": "Coquihalla Summit Pass (Hwy 5)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Coquihalla Hwy (BC-5)",
+        "status": "OPEN",
+        "elevationFt": 4081,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 220
+      },
+      {
+        "id": "rogers-pass",
+        "slug": "rogers-pass",
+        "name": "Rogers Pass (Selkirk Mountains)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy (BC-1)",
+        "status": "OPEN",
+        "elevationFt": 4364,
+        "lastUpdated": "15 minutes ago",
+        "distanceKm": 450
+      },
+      {
+        "id": "highway-40",
+        "slug": "highway-40",
+        "name": "Highway 40 (Highwood Pass)",
+        "country": "Canada",
+        "state": "Alberta",
+        "highway": "Alberta Hwy 40",
+        "status": "OPEN",
+        "elevationFt": 7239,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 720
+      }
+    ],
+    "cameras": [
+      {
+        "id": "whistler-cam-519",
+        "title": "Whistler Village Gate — Highway 99 North View (DriveBC Cam 519)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/519.jpg",
+        "location": "Whistler Village Gate at Highway 99 (Elevation 675 m / 2,214 ft)",
+        "source": "DriveBC (BC Ministry of Transportation and Infrastructure)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking North towards Whistler Village Centre & Blackcomb Way"
+      },
+      {
+        "id": "whistler-cam-522",
+        "title": "Whistler Village Gate — Highway 99 South View (DriveBC Cam 522)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/522.jpg",
+        "location": "Whistler Village Gate at Highway 99",
+        "source": "DriveBC / TranBC",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking South towards Creekside & Squamish"
+      },
+      {
+        "id": "whistler-cam-829",
+        "title": "Lake Placid Road — Highway 99 Creekside / Function Junction North (DriveBC Cam 829)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/829.jpg",
+        "location": "Highway 99 at Lake Placid Rd (Whistler Creekside, 650 m)",
+        "source": "DriveBC (British Columbia Ministry of Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking North towards Whistler Village"
+      },
+      {
+        "id": "whistler-cam-833",
+        "title": "Lorimer Road — Highway 99 North Junction (DriveBC Cam 833)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/833.jpg",
+        "location": "Highway 99 at Lorimer Rd, Whistler Upper Village",
+        "source": "DriveBC Official Traffic Cameras",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking North towards Green Lake & Pemberton"
+      },
+      {
+        "id": "whistler-cam-691",
+        "title": "Daisy Lake Corridor Summit — Highway 99 Cheakamus North (DriveBC Cam 691)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/691.jpg",
+        "location": "Highway 99 at Daisy Lake Dam / Cheakamus Canyon Approach",
+        "source": "DriveBC Provincial Camera Network",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking North towards Whistler South Valley"
+      },
+      {
+        "id": "whistler-cam-152",
+        "title": "Wedge / Riverside Drive — Highway 99 North of Whistler (DriveBC Cam 152)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/152.jpg",
+        "location": "Highway 99 at Wedge / Riverside Dr (13 km north of Whistler)",
+        "source": "DriveBC",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca",
+        "direction": "Looking North towards Pemberton & Mount Currie"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "DriveBC (BC Ministry of Transportation and Infrastructure)",
+        "url": "https://www.drivebc.ca",
+        "type": "Official Provincial Road & Webcam Authority"
+      },
+      {
+        "name": "TranBC (Ministry of Transportation Public Information)",
+        "url": "https://www.tranbc.ca",
+        "type": "Official Road Safety & Winter Regulations"
+      },
+      {
+        "name": "Resort Municipality of Whistler (RMOW)",
+        "url": "https://www.whistler.ca",
+        "type": "Municipal Government & Local Travel Advisory"
+      },
+      {
+        "name": "Environment and Climate Change Canada (ECCC)",
+        "url": "https://weather.gc.ca",
+        "type": "Official National Weather Service"
+      },
+      {
+        "name": "LivePassWatch Verification Methodology",
+        "url": "/methodology",
+        "type": "Internal Telemetry & Integrity Protocol"
+      }
+    ],
+    "routeDetails": {
+      "distanceKm": 121,
+      "distanceMiles": 75.2,
+      "duration": "1 hour 45 min – 2 hours (Vancouver/Horseshoe Bay to Whistler Village)",
+      "origin": "Horseshoe Bay / West Vancouver (Sea to Sky Highway Mile 0)",
+      "destination": "Whistler Village / Pemberton Gateway (Highway 99 North)",
+      "waypoints": [
+        "Horseshoe Bay Ferries (Hwy 1 & Hwy 99 Junction) — 10 m",
+        "Lions Bay & Porteau Cove Provincial Park — 35 m",
+        "Squamish & Stawamus Chief (Sea to Sky Gondola) — 15 m",
+        "Alice Lake & Cheakamus Canyon Grade — 320 m",
+        "Daisy Lake Corridor Summit & Black Tusk Viewpoint — 580 m",
+        "Whistler Creekside / Lake Placid Road — 650 m",
+        "Whistler Village Gate & Blackcomb Way — 675 m (2,214 ft)",
+        "Green Lake & Wedge Mountain Overlook — 660 m",
+        "Pemberton & Mount Currie — 210 m"
+      ]
+    },
+    "distancesTable": [
+      { "location": "Vancouver (Downtown / Metro)", "distance": "121 km (75.2 mi)", "route": "via Hwy 99 North (Sea to Sky Highway)", "notes": "Scenic coastal fjord & mountain expressway" },
+      { "location": "Squamish (Sea to Sky Outdoor Hub)", "distance": "58 km (36.0 mi)", "route": "via Hwy 99 North", "notes": "Major fueling, dining & service waypoint" },
+      { "location": "Pemberton (Agricultural Valley)", "distance": "32 km (19.9 mi)", "route": "via Hwy 99 North", "notes": "Gateway to Duffy Lake Road & Cariboo" },
+      { "location": "Horseshoe Bay Ferry Terminal", "distance": "102 km (63.4 mi)", "route": "via Hwy 99 South", "notes": "Ferry connections to Nanaimo & Sunshine Coast" },
+      { "location": "Vancouver International Airport (YVR)", "distance": "135 km (83.9 mi)", "route": "via Hwy 99 & Arthur Laing Bridge", "notes": "International flight arrivals corridor" },
+      { "location": "Lillooet (Fraser Canyon Gateway)", "distance": "130 km (80.8 mi)", "route": "via Hwy 99 North over Duffey Lake Pass", "notes": "Dramatic canyon & high interior crossing" }
+    ],
+    "quickFacts": {
+      "state": "British Columbia, Canada",
+      "mountainRange": "Coast Mountains / Garibaldi Ranges / Pacific Ranges",
+      "elevationSummary": "2,214 ft (675 m) Highway Corridor / 7,156 ft (2,181 m) Whistler Mountain Summit",
+      "connects": "Vancouver & Squamish with Whistler Village & Pemberton",
+      "nearestTown": "Whistler Village (on-route), Squamish (58 km South), Pemberton (32 km North)",
+      "roadType": "Four-lane & modern three-lane engineered alpine highway (BC Highway 99)",
+      "bestTime": "Year-round (Summer hiking/biking Jun–Sep; Winter skiing Nov–May)",
+      "highlight": "Sea to Sky Highway alpine corridor, 2010 Winter Olympic route, world-class ski resort access & stunning Howe Sound fjord vistas"
+    },
+    "overview": {
+      "openedYear": 1965,
+      "lengthMiles": "75.2 miles (Horseshoe Bay to Whistler)",
+      "lengthKm": "121.0 km (Metro Vancouver to Whistler Village)",
+      "annualSnowfallIn": "180–450 inches (valley to peak)",
+      "annualSnowfallM": "4.5–11.4 meters",
+      "summary": "Whistler Pass along BC Highway 99 (the Sea to Sky Highway) is one of North America's most iconic mountain corridors, surmounting the Pacific Coast Mountains to connect Vancouver and Howe Sound with Whistler Resort and Pemberton. Reconstructed to world-class safety standards for the 2010 Vancouver Winter Olympics, the highway crests at an elevation of 2,214 feet (675 m) through Whistler Village, while the surrounding ski peaks reach 7,156 ft (2,181 m) at Whistler Mountain Summit. Unlike seasonal high passes, Whistler Pass remains open year-round with continuous DriveBC plowing and avalanche control, but requires mandatory winter tires (October 1 to April 30) to negotiate severe Pacific winter storms."
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Subject to winter weather & avalanche control)",
+      "typicalReopening": "Continuous 365-Day Operation (Winter tire regulations Oct 1 – Apr 30)",
+      "description": "Whistler Pass along Highway 99 is kept open year-round as a crucial transportation lifeline for the Sea to Sky corridor. Temporary short-duration closures may occur during heavy coastal winter storms, freezing rain, rockfall clearing, or active explosive avalanche control by TranBC along Cheakamus Canyon and Daisy Lake. Winter tires (marked with the 3-Peak Mountain Snowflake or M+S with minimum 3.5 mm tread) are legally mandatory from October 1 to April 30."
+    },
+    "travelTips": [
+      "Mandatory Winter Tire Laws: Winter tires or chains are legally required on Highway 99 between Horseshoe Bay and Pemberton from October 1 to April 30. Fines apply for non-compliance.",
+      "Check DriveBC Live Webcams: Coastal atmospheric conditions can shift rapidly from rain at sea level in Squamish to heavy blizzard snow at Whistler (elevation 2,214 ft). Always inspect live cameras before departure.",
+      "Electronic Variable Speed Limits: Watch digital speed limit signs along Highway 99 through Cheakamus Canyon and Whistler, which automatically lower limits during snowstorms and slick conditions.",
+      "Peak Traffic Windows: Expect heavy weekend ski traffic heading northbound on Friday afternoons/Saturday mornings and southbound on Sunday afternoons.",
+      "Wildlife Caution: Deer, black bears, and elk frequently cross Highway 99 near Daisy Lake and Green Lake. Obey wildlife advisory signs.",
+      "Emergency Vehicle Kit: Carry windshield washer fluid rated for -40°C, warm blankets, flashlight, water, and fully charged mobile devices."
+    ],
+    "history": [
+      {
+        "year": "1965",
+        "title": "Opening of the Garibaldi Highway",
+        "description": "Highway 99 is officially extended through the Coast Mountains to Whistler and Pemberton, initially named the Garibaldi Highway."
+      },
+      {
+        "year": "1980",
+        "title": "Whistler Village Incorporation & Ski Resort Boom",
+        "description": "Whistler Village is founded, transforming the remote mountain pass into an international year-round alpine destination."
+      },
+      {
+        "year": "2006–2009",
+        "title": "$600M Olympic Sea to Sky Upgrade",
+        "description": "In preparation for the 2010 Winter Olympic Games, the BC government executes a massive highway upgrade, straightening curves, adding passing lanes, and installing debris chutes."
+      },
+      {
+        "year": "2010",
+        "title": "2010 Winter Olympic & Paralympic Games",
+        "description": "Highway 99 serves as the premier arterial corridor transporting international athletes and spectators to alpine ski events at Whistler Mountain."
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "Whistler Pass & Sea to Sky Highway 99 Engineering",
+        "content": "Rising from sea level at Howe Sound to 2,214 feet (675 m) in the Whistler valley and shadowed by alpine peaks exceeding 7,156 ft (2,181 m), Whistler Pass on Highway 99 is a masterpiece of modern civil engineering. Carved into the sheer granitic cliffs of the Coast Mountains, the route passes through varied bioclimatic zones—from coastal temperate rainforests near Squamish to subalpine evergreen forests around Daisy Lake and Whistler. Highway 99 features dedicated avalanche sheds, rockfall catch fences, and high-tech weather monitoring stations that feed real-time telemetry to DriveBC."
+      },
+      {
+        "title": "Winter Ski Season & Alpine Recreation Gateway",
+        "content": "Whistler Pass is universally recognized as the gateway to Whistler Blackcomb—consistently ranked among North America's top ski resorts with over 8,100 acres of skiable terrain, 16 alpine bowls, and three glaciers. The corridor also provides access to Garibaldi Provincial Park, the Callaghan Valley (home to the Whistler Olympic Park for Nordic skiing), and the backcountry chutes of Rainbow Mountain. Summer visitors enjoy world-class mountain biking, hiking in the Cheakamus and Black Tusk volcanic landscapes, and paddle sports on Alta Lake and Green Lake."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the official Whistler Pass opening date in 2026? (whistler Pass opening date / when does whistler Pass open / whistler Pass open)",
+        "answer": "Whistler Pass along BC Highway 99 (Sea to Sky Highway) is open year-round! There is no seasonal opening date for the highway itself, as it is maintained 24/7 by DriveBC road crews. For winter sports enthusiasts, the Whistler Mountain ski season opening date typically occurs in late November (mid-to-late November annually, weather permitting)."
+      },
+      {
+        "question": "Is Whistler Pass open right now, and how can I verify if Whistler Pass is open today? (whistler Pass is open / is whistler Pass open right now / whistler Pass is it open today / whistler Pass open)",
+        "answer": "Yes, Whistler Pass is open right now to all vehicular travel along Highway 99. The pavement is bare and dry through Whistler Village and Creekside, and normal highway traffic flows smoothly. You can verify live pass conditions anytime on LivePassWatch, cross-referenced with DriveBC official telemetry."
+      },
+      {
+        "question": "What are the current Whistler Pass road conditions, road status, and pass status report? (whistler Pass road conditions / whistler Pass road status / whistler Pass pass status report)",
+        "answer": "Current Whistler Pass road conditions report bare, dry pavement and clear visibility across all lanes between Squamish, Whistler, and Pemberton. The official Whistler Pass road status is OPEN with standard highway regulations. LivePassWatch updates this status report every 15 minutes directly from DriveBC sensors."
+      },
+      {
+        "question": "Is Whistler Pass closed today, and what can cause Whistler Pass closed alerts? (is whistler Pass closed today / whistler Pass closed / whistler Pass is closed)",
+        "answer": "No, Whistler Pass is NOT closed today; Highway 99 is fully open in both directions. Temporary Whistler Pass closed alerts only occur during extreme Pacific atmospheric rivers, heavy coastal snowstorms, or active avalanche control operations near Cheakamus Canyon or Daisy Lake. Always check LivePassWatch before travelling."
+      },
+      {
+        "question": "Where can I view live Whistler Pass webcam feeds, highway cameras, and the summit camera? (whistler Pass webcam / whistler Pass live webcam / whistler Pass cameras / whistler Pass summit camera)",
+        "answer": "LivePassWatch provides verified live Whistler Pass webcam feeds sourced from DriveBC and TranBC. You can inspect the Whistler Village Gate Camera (Cam 519 North & Cam 522 South), Lake Placid Road at Creekside (Cam 829), Lorimer Road (Cam 833), Daisy Lake Corridor Summit (Cam 691), and high alpine telemetry from the Whistler Mountain Peak summit camera (7,156 ft / 2,181 m). Images refresh automatically every 60 seconds."
+      },
+      {
+        "question": "When does Whistler Pass close for winter, and what are the winter tire rules? (when does whistler Pass close for winter)",
+        "answer": "Whistler Pass does NOT close for winter; BC Highway 99 remains open 365 days a year. However, mandatory winter tire regulations take effect on October 1 and run through April 30. All passenger vehicles must be equipped with winter tires (marked with the 3-Peak Mountain Snowflake or M+S symbol with at least 3.5 mm tread) or commercial chains."
+      },
+      {
+        "question": "Where can I find an official Whistler Pass map and route guide? (whistler Pass map)",
+        "answer": "You can explore an interactive Whistler Pass map directly on LivePassWatch. The map shows all 121 km of the Sea to Sky Highway (BC-99) from Horseshoe Bay through Squamish, Daisy Lake summit, and Whistler Village to Pemberton, complete with webcam locations, elevation markers, and rest stops."
+      },
+      {
+        "question": "What is the Whistler Pass weather today, snow depth, and current winter snow conditions? (whistler Pass weather today / whistler Pass snow / whistler Pass snow depth / whistler Pass snow conditions)",
+        "answer": "Whistler Pass weather today is partly cloudy and pleasant with valley temperatures around 52°F (11°C). Highway snow depth is currently 0 cm on the road surface. In winter, Whistler receives an average of 4.5 meters (180 inches) of valley snow and up to 11.4 meters (450 inches) at the alpine summit, creating heavy winter snow conditions that require cautious mountain driving."
+      },
+      {
+        "question": "What is the official Whistler Pass elevation? (whistler Pass elevation)",
+        "answer": "The official Whistler Pass highway corridor elevation reaches 2,214 feet (675 meters) above sea level at Whistler Village Gate and Daisy Lake summit. The towering alpine summit of Whistler Mountain reaches 7,156 feet (2,181 meters), where the famous Whistler Peak summit camera is located."
+      },
+      {
+        "question": "Do I need tire chains or winter tires to drive the Sea to Sky Highway to Whistler?",
+        "answer": "Yes. British Columbia law mandates that between October 1 and April 30, all passenger vehicles driving Highway 99 past Squamish must have winter tires with the 3-Peak Mountain Snowflake or M+S icon and at least 3.5 mm of tread depth. Commercial vehicles over 11,794 kg must carry tire chains."
+      }
+    ],
+    "customSeo": {
+      "title": "Whistler Pass Road Conditions & Status | LivePassWatch",
+      "description": "Live Whistler Pass road conditions, DriveBC webcams & status along Sea-to-Sky Highway 99. Check if open today, elevation, opening dates & snow reports.",
+      "h1": "Whistler Pass Road Conditions, Live Status & Webcams (Highway 99)"
+    },
+    "searchKeywords": [
+      "whistler Pass opening date",
+      "whistler Pass is open",
+      "whistler Pass road conditions",
+      "whistler Pass road status",
+      "whistler Pass pass status report",
+      "when does whistler Pass open",
+      "whistler Pass closed",
+      "whistler Pass is closed",
+      "whistler Pass is it open today",
+      "is whistler Pass closed today",
+      "whistler Pass webcam",
+      "whistler Pass live webcam",
+      "whistler Pass cameras",
+      "whistler Pass summit camera",
+      "when does whistler Pass close for winter",
+      "whistler Pass map",
+      "is whistler Pass open right now",
+      "whistler Pass weather today",
+      "whistler Pass snow",
+      "whistler Pass snow depth",
+      "whistler Pass snow conditions",
+      "whistler Pass elevation",
+      "whistler Pass open",
+      "Col de Whistler",
+      "Route 99 Colombie-Britannique",
+      "Sea to Sky Highway",
+      "conditions routières Whistler",
+      "caméras en direct Whistler",
+      "météo Whistler",
+      "état de la route Whistler",
+      "pneus d'hiver obligatoires Colombie-Britannique",
+      "DriveBC Whistler webcam",
+      "Whistler Village Gate camera",
+      "Lake Placid Road webcam",
+      "Lorimer Road webcam",
+      "Daisy Lake summit camera"
+    ]
   }
+
 ];
 
 
@@ -16800,7 +17144,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Valais & Aosta Valley' || passSlug === 'great-st-bernard-pass') return 'valais-aosta-valley';
   if (state === 'Bern & Valais' || passSlug === 'grimsel-pass') return 'bern-valais';
   if (state === 'Bern & Uri' || passSlug === 'susten-pass') return 'bern-uri';
-  if (state === 'British Columbia' || passSlug === 'rogers-pass' || passSlug === 'coquihalla-summit-pass' || passSlug === 'kicking-horse-pass' || passSlug === 'yellowhead-pass') return 'british-columbia';
+  if (state === 'British Columbia' || passSlug === 'rogers-pass' || passSlug === 'coquihalla-summit-pass' || passSlug === 'kicking-horse-pass' || passSlug === 'yellowhead-pass' || passSlug === 'whistler-pass') return 'british-columbia';
   if (state === 'Alberta' || passSlug === 'sunwapta-pass') return 'alberta';
   if (state === 'Montana' || passSlug === 'logan-pass' || passSlug === 'lolo-pass') return 'montana';
   if (state === 'Uri & Ticino' || state === 'Uri / Ticino' || passSlug === 'gotthard-pass') return 'uri-ticino';

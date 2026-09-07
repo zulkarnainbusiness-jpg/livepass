@@ -156,7 +156,12 @@ const LegacyPassRedirect: React.FC = () => {
           (clean === 'yellowheadpass' && p.slug === 'yellowhead-pass') ||
           (clean === 'col-tete-jaune' && p.slug === 'yellowhead-pass') ||
           (clean === 'tete-jaune-pass' && p.slug === 'yellowhead-pass') ||
-          (clean === 'hwy-16-pass' && p.slug === 'yellowhead-pass')
+          (clean === 'hwy-16-pass' && p.slug === 'yellowhead-pass') ||
+          (clean === 'whistler-pass' && p.slug === 'whistler-pass') ||
+          (clean === 'whistler' && p.slug === 'whistler-pass') ||
+          (clean === 'whistlerpass' && p.slug === 'whistler-pass') ||
+          (clean === 'sea-to-sky' && p.slug === 'whistler-pass') ||
+          (clean === 'col-de-whistler' && p.slug === 'whistler-pass')
   );
 
   if (targetPass) {
@@ -294,6 +299,11 @@ export const App: React.FC = () => {
               <Route path="/yellowheadpass" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
               <Route path="/col-tete-jaune" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
               <Route path="/tete-jaune-pass" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
+              <Route path="/whistler-pass" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
+              <Route path="/whistler" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
+              <Route path="/whistlerpass" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
+              <Route path="/sea-to-sky" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
+              <Route path="/col-de-whistler" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
 
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />

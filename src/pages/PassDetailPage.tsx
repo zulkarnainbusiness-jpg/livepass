@@ -147,6 +147,50 @@ const baralachaHindiFaqs = [
 
 
 
+
+const whistlerFrenchFaqs = [
+  {
+    question: "Quelle est la date d'ouverture de Whistler Pass en 2026 ? (whistler Pass opening date / when does whistler Pass open / whistler Pass open / date d'ouverture Whistler Pass)",
+    answer: "Whistler Pass sur l'autoroute 99 (Sea to Sky Highway / route 99) est OUVERT TOUTE L'ANNÉE ! Il n'y a pas de fermeture saisonnière pour l'autoroute elle-même, car les équipes d'entretien de DriveBC et du ministère des Transports assurent un déneigement 24 h sur 24. Pour les amateurs de sports d'hiver, la saison de ski de Whistler Blackcomb ouvre traditionnellement à la fin novembre (vers la mi-novembre selon l'enneigement)."
+  },
+  {
+    question: "Whistler Pass est-il ouvert en ce moment et aujourd'hui ? (whistler Pass is open / is whistler Pass open right now / whistler Pass is it open today / whistler Pass open)",
+    answer: "Oui, Whistler Pass est actuellement OUVERT à toute la circulation automobile sur l'autoroute 99. La chaussée est sèche et bien dégagée à travers Whistler Village et Creekside. Le trafic s'écoule normalement dans les deux sens. Vous pouvez vérifier les conditions en direct sur LivePassWatch grâce aux capteurs officiels de DriveBC."
+  },
+  {
+    question: "Quelles sont les conditions routières actuelles et le rapport d'état de Whistler Pass ? (whistler Pass road conditions / whistler Pass road status / whistler Pass pass status report / conditions routières Whistler Pass / état de la route)",
+    answer: "L'état de la route sur Whistler Pass indique un asphalte sec et une visibilité dégagée sur l'ensemble des voies entre Vancouver, Squamish, Whistler et Pemberton. Le rapport officiel de DriveBC confirme des conditions normales de circulation. LivePassWatch synchronise ces données toutes les 15 minutes."
+  },
+  {
+    question: "Whistler Pass est-il fermé aujourd'hui et quelles sont les causes de fermeture ? (is whistler Pass closed today / whistler Pass closed / whistler Pass is closed)",
+    answer: "Non, Whistler Pass n'est PAS fermé aujourd'hui ; l'autoroute Sea to Sky est totalement ouverte dans les deux sens. Des alertes temporaires de fermeture ne surviennent que lors d'épisodes de tempêtes côtières intenses (rivières atmosphériques), de fortes chutes de neige ou lors d'opérations de contrôle d'avalanches dans le canyon de Cheakamus."
+  },
+  {
+    question: "Où regarder les webcams en direct et les caméras du sommet de Whistler Pass ? (whistler Pass webcam / whistler Pass live webcam / whistler Pass cameras / whistler Pass summit camera / caméras en direct)",
+    answer: "LivePassWatch diffuse les flux officiels de webcams de DriveBC et TranBC sur Whistler Pass. Vous pouvez consulter les caméras de Whistler Village Gate (Cam 519 Nord et Cam 522 Sud), Lake Placid Road à Creekside (Cam 829), Lorimer Road (Cam 833), Daisy Lake (Cam 691) et la caméra sommitale alpine du pic de Whistler Mountain (2 181 m / 7 156 pi). Les flux sont actualisés toutes les 60 secondes."
+  },
+  {
+    question: "Quand Whistler Pass ferme-t-il pour l'hiver et quelles sont les règles pour les pneus d'hiver ? (when does whistler Pass close for winter / fermeture hivernale)",
+    answer: "Whistler Pass ne ferme PAS pour l'hiver ; l'autoroute 99 reste ouverte 365 jours par an. En revanche, la réglementation sur les pneus d'hiver est obligatoire du 1er octobre au 30 avril. Tous les véhicules de tourisme circulant au nord de Squamish doivent être munis de pneus d'hiver (portant le pictogramme du flocon de neige et de la montagne 3PMSF ou M+S avec une bande de roulement minimale de 3,5 mm) ou de chaînes à neige."
+  },
+  {
+    question: "Où trouver une carte interactive et l'itinéraire de Whistler Pass ? (whistler Pass map / carte routière Whistler Pass)",
+    answer: "Une carte interactive complète de Whistler Pass et de l'autoroute Sea to Sky (Route 99) est accessible directement sur LivePassWatch. Elle illustre les 121 km reliant Vancouver à Whistler et Pemberton, avec l'emplacement des webcams, le col de Daisy Lake, les dénivelés et les zones de repos."
+  },
+  {
+    question: "Quelle est la météo aujourd'hui, l'épaisseur de neige et les conditions d'enneigement à Whistler Pass ? (whistler Pass weather today / whistler Pass snow / whistler Pass snow depth / whistler Pass snow conditions / météo Whistler)",
+    answer: "La météo aujourd'hui sur Whistler Pass est agréable et partiellement ensoleillée avec une température en vallée d'environ 11 °C (52 °F). L'épaisseur de neige sur la route est actuellement de 0 cm. En hiver, la vallée reçoit en moyenne 4,5 mètres de neige et le sommet alpin cumule jusqu'à 11,4 mètres (450 pouces), exigeant une conduite hivernale prudente."
+  },
+  {
+    question: "Quelle est l'altitude officielle de Whistler Pass ? (whistler Pass elevation / altitude Whistler Pass)",
+    answer: "L'altitude officielle du corridor routier de Whistler Pass s'élève à 675 mètres (2 214 pieds) au-dessus du niveau de la mer à Whistler Village Gate et au lac Daisy. Le sommet alpin de Whistler Mountain culmine quant à lui à 2 181 mètres (7 156 pieds), où se trouve la caméra sommitale du pic."
+  },
+  {
+    question: "Des chaînes ou des pneus d'hiver sont-ils légalement obligatoires pour aller à Whistler ?",
+    answer: "Oui. En vertu de la loi de la Colombie-Britannique, du 1er octobre au 30 avril, tous les automobilistes empruntant l'autoroute 99 au-delà de Squamish doivent posséder des pneus d'hiver homologués avec au moins 3,5 mm de profondeur de sculpture. Les véhicules commerciaux de plus de 11 794 kg doivent obligatoirement transporter des chaînes d'acier."
+  }
+];
+
 const highway40FrenchFaqs = [
   {
     question: "Quelle est la date d'ouverture de la route 40 en 2026 ? (Highway 40 opening date / when does Highway 40 open / Highway 40 open / date d'ouverture Highway 40)",
@@ -1268,7 +1312,120 @@ export const PassDetailPage: React.FC = () => {
         
         
         
+        
+        {/* Bilingual Language Switcher for Whistler Pass */}
+        {pass.slug === 'whistler-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '12px 18px',
+            marginBottom: '16px',
+            backgroundColor: 'rgba(59, 130, 246, 0.05)',
+            border: '1px solid rgba(59, 130, 246, 0.25)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontSize: '18px' }}>🇨🇦</span>
+              <span style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text-primary)' }}>
+                {pageLang === 'fr'
+                  ? 'Col de Whistler — Contenu Bilingue & Réglementation Sécuritaire'
+                  : 'Whistler Pass — Bilingual Travel Guide & Highway 99 Winter Regulations'}
+              </span>
+            </div>
+            <div style={{ display: 'flex', gap: '6px' }}>
+              <button
+                type="button"
+                onClick={() => setPageLang('fr')}
+                style={{
+                  padding: '6px 14px',
+                  borderRadius: '6px',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  border: '1px solid var(--border-color)',
+                  backgroundColor: pageLang === 'fr' ? 'var(--accent-color)' : 'var(--card-bg)',
+                  color: pageLang === 'fr' ? '#fff' : 'var(--text-secondary)',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇨🇦 Français
+              </button>
+              <button
+                type="button"
+                onClick={() => setPageLang('en')}
+                style={{
+                  padding: '6px 14px',
+                  borderRadius: '6px',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  border: '1px solid var(--border-color)',
+                  backgroundColor: pageLang === 'en' ? 'var(--accent-color)' : 'var(--card-bg)',
+                  color: pageLang === 'en' ? '#fff' : 'var(--text-secondary)',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇨🇦 English
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Bilingual Language Switcher for Highway 40 */}
+        
+        {pass.slug === 'whistler-pass' && (
+          <div className="lp-card" style={{
+            padding: '16px 20px',
+            marginBottom: '20px',
+            borderLeft: '4px solid #3B82F6',
+            backgroundColor: '#F8FAFC'
+          }}>
+            <h3 style={{ margin: '0 0 8px 0', fontSize: '15.5px', fontWeight: '700', color: '#1E3A8A', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span>🏔️</span>
+              <span>
+                {pageLang === 'fr'
+                  ? 'Guide de Sécurité Routière de l\'Autoroute 99 & Règlements Hivernaux de la C.-B. 🇨🇦'
+                  : 'Sea to Sky Highway 99 Safety Guide & British Columbia Winter Tire Regulations 🇨🇦'}
+              </span>
+            </h3>
+            <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <strong>Corridor Alpin de Whistler (675 m / 2 214 pi) :</strong> L'<strong>autoroute 99 (Sea to Sky Highway / col de Whistler)</strong> relie Vancouver et Squamish à Whistler et Pemberton. L'autoroute est <strong>ouverte 365 jours par an</strong> avec déneigement continu. La loi provinciale exige obligatoirement des pneus d'hiver ou des chaînes du <strong>1er octobre au 30 avril</strong>.
+                </>
+              ) : (
+                <>
+                  <strong>Pacific Coast Mountains Alpine Corridor (675 m / 2,214 ft):</strong> <strong>Highway 99 (Sea to Sky Highway / Whistler Pass)</strong> connects Vancouver and Squamish with Whistler and Pemberton. The corridor remains <strong>open year-round</strong> with 24/7 DriveBC maintenance. Winter tires or chains are legally required from <strong>October 1 through April 30</strong>.
+                </>
+              )}
+            </p>
+            <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <li><strong>Loi sur les pneus d'hiver (1er oct – 30 avril) :</strong> Obligatoire au nord de Squamish (symbole 3PMSF ou M+S avec au moins 3,5 mm de sculpture).</li>
+                  <li><strong>Panneaux à vitesse variable :</strong> Ralentissez dès que les panneaux électroniques s'activent lors de chutes de neige ou de verglas dans le canyon de Cheakamus.</li>
+                  <li><strong>Contrôle d'avalanches :</strong> Fermetures de courte durée possibles après de fortes tempêtes côtières du Pacifique.</li>
+                  <li><strong>Présence faunique accrue :</strong> Chevreuils, ours et wapitis traversent fréquemment près des lacs Daisy et Green Lake.</li>
+                </>
+              ) : (
+                <>
+                  <li><strong>Mandatory Winter Tire Law (Oct 1 – Apr 30):</strong> Legally required north of Squamish (3PMSF or M+S with minimum 3.5 mm tread). Fines apply for non-compliance.</li>
+                  <li><strong>Variable Speed Limit Signs:</strong> Obey electronic digital speed limit signs through Cheakamus Canyon which reduce speed during blizzards.</li>
+                  <li><strong>Avalanche Mitigation Closures:</strong> Brief precautionary closures may occur following heavy coastal Pacific snowfalls for helicopter blasting.</li>
+                  <li><strong>Wildlife Caution:</strong> Deer, black bears, and elk frequently cross Highway 99 near Daisy Lake and Green Lake.</li>
+                </>
+              )}
+            </ul>
+          </div>
+        )}
+
+        {pass.slug === 'whistler-pass' && (
+          <div style={{ marginTop: '16px', marginBottom: '24px', padding: '14px 18px', backgroundColor: 'rgba(59, 130, 246, 0.05)', border: '1px solid rgba(59, 130, 246, 0.25)', borderRadius: '6px', fontSize: '13px', color: '#1E40AF', lineHeight: '1.55' }}>
+            <strong>🇨🇦 DriveBC &amp; TranBC Camera Verification Notice:</strong> Whistler Pass live webcams at Whistler Village Gate North (Cam 519), Village Gate South (Cam 522), Lake Placid Road (Cam 829), Lorimer Road (Cam 833), and Daisy Lake Corridor Summit (Cam 691) stream official real-time imagery refreshing every 60 seconds. Verify live telemetry on <a href="https://www.drivebc.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>DriveBC</a>, <a href="https://www.tranbc.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>TranBC</a>, and <a href="/methodology" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>LivePassWatch Verification Methodology</a>.
+          </div>
+        )}
+
         {pass.slug === 'highway-40' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
@@ -5039,8 +5196,8 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
-                  ((pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
+                {((pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                  ((pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
 
 
 

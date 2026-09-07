@@ -888,4 +888,19 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkUrl: '/passes/canada/alberta/icefields-parkway-road',
     crossLinkText: 'Compare Canadian Rocky Mountains mountain passes and scenic highways with'
   },
+  'whistler-pass': {
+    nearestTowns: [
+      { name: 'Whistler Village, BC', distance: '0 km (0 miles)', direction: 'On-route (Alpine Resort Centre)' },
+      { name: 'Pemberton, BC', distance: '32.0 km (19.9 miles)', direction: 'North via Hwy 99 (Sea to Sky Highway)' },
+      { name: 'Squamish, BC', distance: '58.0 km (36.0 miles)', direction: 'South via Hwy 99 (Sea to Sky Outdoor Hub)' },
+      { name: 'Horseshoe Bay, BC', distance: '102.0 km (63.4 miles)', direction: 'South via Hwy 99 (Ferry Terminal)' },
+      { name: 'Vancouver, BC', distance: '121.0 km (75.2 miles)', direction: 'South via Hwy 99 (Downtown Metro)' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Mandatory Winter Tires Oct 1 – Apr 30)',
+    seasonalClosureDetail: 'Whistler Pass along BC Highway 99 (Sea to Sky Highway; summit at 675 m / 2,214 ft; peaks at 2,181 m / 7,156 ft) is maintained open 365 days a year by DriveBC and the Ministry of Transportation and Infrastructure. As an essential arterial highway connecting Metro Vancouver with the Sea to Sky corridor, it does not have a seasonal winter closure. Winter tires (3PMSF or M+S with minimum 3.5 mm tread) are legally mandatory from October 1 to April 30. Short-duration precautionary closures occur only during heavy snowstorms or active avalanche control along Cheakamus Canyon.',
+    aboutPass: 'Whistler Pass along BC Highway 99 (the Sea to Sky Highway; French: Col de Whistler / Route 99) is a legendary Canadian mountain corridor cutting through the majestic Pacific Coast Mountains of British Columbia. Ascending from the sea cliffs of Howe Sound and Squamish to 2,214 ft (675 m) in the Whistler Valley, the highway provides the sole vehicular access to Whistler Blackcomb—consistently ranked among North America’s premier four-season mountain resorts. Heavily modernized and widened for the 2010 Winter Olympic Games, Highway 99 features state-of-the-art avalanche retention sheds, variable speed message signage, and real-time DriveBC traffic monitoring cameras.',
+    crossLinkAnchor: 'Coquihalla Summit Pass (1,244 m) & Rogers Pass (1,330 m)',
+    crossLinkUrl: '/passes/canada/british-columbia/coquihalla-summit-pass',
+    crossLinkText: 'Compare British Columbia coastal mountain highways and interior passes with'
+  }
 };

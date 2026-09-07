@@ -313,6 +313,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 1131,
                 "status": "OPEN",
                 "image": "/yellowhead-pass.webp"
+              },
+              {
+                "id": "whistler-pass",
+                "slug": "whistler-pass",
+                "name": "Whistler Pass (Col de Whistler)",
+                "highway": "BC Highway 99 (Sea to Sky Highway)",
+                "elevationFt": 2214,
+                "elevationM": 675,
+                "status": "OPEN",
+                "image": "/whistler-pass.jpg"
               }
             ]
           },
