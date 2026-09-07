@@ -873,4 +873,19 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkUrl: '/passes/canada/alberta/icefields-parkway-road',
     crossLinkText: 'Compare Canadian Rocky Mountains mountain passes and national park corridors with'
   },
+  'highway-40': {
+    nearestTowns: [
+      { name: 'Kananaskis Village, Alberta', distance: '42.0 km (26.1 miles)', direction: 'North via Hwy 40 (Resort & Amenities)' },
+      { name: 'Canmore, Alberta', distance: '68.0 km (42.3 miles)', direction: 'Northwest via Hwy 40 & Trans-Canada Hwy 1' },
+      { name: 'Longview, Alberta', distance: '72.0 km (44.7 miles)', direction: 'Southeast via Hwy 40 & Hwy 541 (Cowboy Trail)' },
+      { name: 'Calgary, Alberta', distance: '115.0 km (71.5 miles)', direction: 'East via Hwy 40 & Trans-Canada Hwy 1' },
+      { name: 'Banff Townsite, Alberta', distance: '92.0 km (57.2 miles)', direction: 'Northwest via Hwy 40 & Trans-Canada Hwy 1' }
+    ],
+    seasonalClosureWindow: 'December 1 through June 14 (Annual Wildlife Winter Closure; Reopens June 15)',
+    seasonalClosureDetail: 'Highway 40 (Kananaskis Trail; summit at Highwood Pass, 2,206 m / 7,239 ft) is the highest paved road in Canada. The high-altitude 54-kilometer alpine segment between Peter Lougheed Provincial Park (north gate) and Highwood Junction (south gate) closes annually from December 1 to June 14 to protect critical winter wildlife habitat for bighorn sheep and grizzly bears, and to avoid extreme avalanche hazard. The road officially reopens to all vehicular traffic on June 15.',
+    aboutPass: 'Highway 40 (Kananaskis Trail; French: Col Highwood / Route 40) is an iconic Rocky Mountain highway pass in Alberta, Canada, surmounting the Continental Divide range at Highwood Pass (elevation 2,206 m / 7,239 ft) — the highest paved highway in Canada. Connecting the Bow Valley and Trans-Canada Highway 1 with the ranching foothills of Longview on Highway 22, the highway cuts through Peter Lougheed Provincial Park and Kananaskis Country. Surrounded by towering limestone summits like Mount Rae and Mount Arethusa, Highway 40 is internationally famous for golden larch viewing in September and early-June car-free cycling before vehicle gates open on June 15. LivePassWatch monitors real-time 511 Alberta and Alberta Parks travel telemetry, live webcams, and weather conditions.',
+    crossLinkAnchor: 'Icefields Parkway Road (2,069 m) & Sunwapta Pass (2,035 m)',
+    crossLinkUrl: '/passes/canada/alberta/icefields-parkway-road',
+    crossLinkText: 'Compare Canadian Rocky Mountains mountain passes and scenic highways with'
+  },
 };

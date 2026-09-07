@@ -321,6 +321,16 @@ export const hierarchyData: HierarchyContinent[] = [
             "name": "Alberta",
             "passes": [
               {
+                "id": "highway-40",
+                "slug": "highway-40",
+                "name": "Highway 40 (Highwood Pass)",
+                "highway": "Alberta Highway 40 (Kananaskis Trail)",
+                "elevationFt": 7239,
+                "elevationM": 2206,
+                "status": "OPEN",
+                "image": "/highway-40.jpg"
+              },
+              {
                 "id": "jasper-pass",
                 "slug": "jasper-pass",
                 "name": "Jasper Pass (Col de Jasper)",

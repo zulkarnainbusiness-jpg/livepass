@@ -16459,7 +16459,257 @@ export const passesData: MountainPass[] = [
       }
     ]
   }
+,
+  {
+    "id": "highway-40",
+    "slug": "highway-40",
+    "name": "Highway 40 (Highwood Pass / Kananaskis Trail)",
+    "alternateNames": [
+      "Highway 40",
+      "Highway 40 Alberta",
+      "Highway 40 Kananaskis",
+      "Highwood Pass Highway 40",
+      "Kananaskis Trail Highway 40",
+      "Route 40 Alberta",
+      "Col Highwood",
+      "AB-40 Highwood Pass",
+      "Highway 40 Canada"
+    ],
+    "country": "Canada",
+    "countryCode": "CAN",
+    "continent": "North America",
+    "state": "Alberta",
+    "highway": "Alberta Highway 40 (Kananaskis Trail)",
+    "elevationFt": 7239,
+    "elevationM": 2206,
+    "coordinates": {
+      "lat": 50.5972,
+      "lng": -114.9878
+    },
+    "status": "OPEN",
+    "statusDetail": "Highway 40 is OPEN to all vehicular traffic over Highwood Pass (7,239 ft / 2,206 m) through Kananaskis Country. Road surface is bare and dry with excellent alpine visibility between Peter Lougheed Provincial Park and Highwood Junction. The annual seasonal winter closure is in effect from December 1 through June 14 to protect winter wildlife range, with the official Highway 40 opening date on June 15. A Kananaskis Conservation Pass is legally required for all parked vehicles.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Highway 40 (Kananaskis Trail; summit at Highwood Pass, elevation 7,239 ft / 2,206 m; French: Col Highwood / Route 40; conditions routières et météo en direct) is the highest paved mountain highway pass in Canada, traversing the heart of the Canadian Rocky Mountains in Kananaskis Country, Alberta. Running from the Trans-Canada Highway 1 near Kananaskis Village southward across the Highwood Pass to Longview on Highway 22 (the Cowboy Trail), Highway 40 is renowned worldwide for its majestic limestone peaks, alpine larch forests, and grizzly bear habitat. The pass reaches a dramatic summit elevation of 2,206 m (7,239 ft) between Mount Rae (3,218 m) and Mount Arethusa. To protect sensitive alpine wildlife, the high-elevation segment of Highway 40 between the Peter Lougheed Provincial Park gate and Highwood House closes annually for winter from December 1 to June 14, reopening every year on June 15 for world-class cycling and summer motoring.",
+    "image": "/highway-40.jpg",
+    "customSeo": {
+      "title": "Highway 40 Road Conditions & Status | LivePassWatch",
+      "description": "Live Highway 40 road conditions, webcams & status over Highwood Pass in Kananaskis, Alberta. Check if open today, elevation, opening dates & snow reports.",
+      "h1": "Highway 40 (Highwood Pass) Live Status, Webcams & Road Conditions"
+    },
+    "officialSource": "511 Alberta & Alberta Parks (Kananaskis Country)",
+    "official_source_url": "https://511.alberta.ca",
+    "official_authority": "Alberta Transportation / Alberta Parks",
+    "verification_status": "VERIFIED",
+    "confidence": "HIGH",
+    "weather": {
+      "tempF": 50,
+      "tempC": 10,
+      "condition": "Alpine Sunshine with Crisp Mountain Breeze",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Pavement Bare & Dry Throughout Summit Corridor"
+    },
+    "wind": {
+      "speedKmh": 18,
+      "speedMph": 11,
+      "direction": "W",
+      "description": "Brisk alpine breeze sweeping Highwood Ridge"
+    },
+    "roadCondition": "Highway 40 road conditions are bare and dry with clear visibility across Highwood Pass summit, Peter Lougheed Provincial Park, and Barrier Lake. Both northbound and southbound lanes are fully open to all vehicles. Alberta Parks reminds travelers that wildlife (grizzly bears, bighorn sheep, elk) is abundant along highway shoulders. A Kananaskis Conservation Pass is required for vehicle parking.",
+    "chainRequirement": "No active chain requirements currently active for passenger cars. Traction tires or snow-rated tires (3PMSF or M+S) are strongly recommended during autumn and early summer snow squalls. Commercial through-truck traffic is restricted.",
+    "cameras": [
+      {
+        "id": "h40-cam-highwood",
+        "title": "Highwood Pass Summit Camera (Hwy 40 Kananaskis Trail — Elev 2,206 m)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/186.jpg",
+        "location": "Highwood Pass Summit (2,206 m / 7,239 ft), Hwy 40",
+        "source": "511 Alberta & Alberta Parks",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking North toward Mount Rae & Highwood Ridge"
+      },
+      {
+        "id": "h40-cam-gateway",
+        "title": "511 Alberta Cam: Highway 40 at Trans-Canada Hwy 1 (Kananaskis Gateway)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/188.jpg",
+        "location": "Highway 40 / Hwy 1 Interchange (1,310 m / 4,298 ft)",
+        "source": "511 Alberta (Alberta Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking South toward Kananaskis Valley & Highwood Pass"
+      },
+      {
+        "id": "h40-cam-lougheed",
+        "title": "Peter Lougheed Provincial Park / Kananaskis Lakes Gateway (Hwy 40)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/187.jpg",
+        "location": "Highway 40 North Winter Gate (1,680 m / 5,512 ft)",
+        "source": "511 Alberta & Alberta Parks",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking South toward Highwood Pass Alpine Ascent"
+      },
+      {
+        "id": "h40-cam-southgate",
+        "title": "Highway 40 South Gate / Longview Junction (Hwy 541 / Highwood House)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/277.jpg",
+        "location": "Highway 40 South Winter Gate (1,480 m / 4,856 ft)",
+        "source": "511 Alberta (Alberta Transportation)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking North toward Highwood Pass & Misty Range"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "kicking-horse-pass",
+        "slug": "kicking-horse-pass",
+        "name": "Kicking Horse Pass",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy 1",
+        "status": "OPEN",
+        "elevationFt": 5338,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 140
+      },
+      {
+        "id": "sunwapta-pass",
+        "slug": "sunwapta-pass",
+        "name": "Sunwapta Pass (Col Sunwapta)",
+        "country": "Canada",
+        "state": "Alberta",
+        "highway": "Highway 93 (Icefields Parkway)",
+        "status": "OPEN",
+        "elevationFt": 6677,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 210
+      },
+      {
+        "id": "icefields-parkway-road",
+        "slug": "icefields-parkway-road",
+        "name": "Icefields Parkway Road (Promenade des Glaciers)",
+        "country": "Canada",
+        "state": "Alberta",
+        "highway": "Highway 93N (Icefields Pkwy)",
+        "status": "OPEN",
+        "elevationFt": 6787,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 185
+      },
+      {
+        "id": "crowsnest-pass",
+        "slug": "rogers-pass",
+        "name": "Rogers Pass (Selkirk Mountains)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy (BC-1)",
+        "status": "OPEN",
+        "elevationFt": 4364,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 290
+      }
+    ],
+    "overview": {
+      "openedYear": 1972,
+      "lengthMiles": "95.0 miles (Kananaskis Trail corridor)",
+      "lengthKm": "153.0 km (Hwy 1 to Longview Hwy 22)",
+      "annualSnowfallIn": "320–480 inches",
+      "annualSnowfallM": "8.1–12.2 meters",
+      "summary": "Highway 40 (Kananaskis Trail) reaches Canada's highest public paved highway summit at Highwood Pass (elevation 2,206 m / 7,239 ft) in Alberta's Rocky Mountains. The scenic corridor connects the Bow Valley and Trans-Canada Highway 1 with the ranching foothills of Longview on Highway 22. Constructed in the early 1970s and paved in the 1980s as the backbone of Peter Lougheed Provincial Park, Highway 40 features a mandatory seasonal winter closure between December 1 and June 14. During early June, before the official Highway 40 opening date of June 15, the pass becomes a globally famous paradise for road cyclists who enjoy 54 km of car-free alpine asphalt."
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "December 1 through June 14 (Annual Seasonal Wildlife Closure)",
+      "typicalReopening": "June 15 (Official Highway 40 Reopening Date for Vehicular Traffic)",
+      "description": "Highway 40 over Highwood Pass features an annual scheduled winter closure between the Peter Lougheed Provincial Park gate (north) and Highwood House gate (south) from December 1 to June 14. This closure is legally mandated by Alberta Parks to protect critical winter range for bighorn sheep, elk, and grizzly bears, as well as to eliminate extreme high-altitude avalanche clearance hazards on Mount Rae. On June 15, Alberta Transportation reopens the gates to full vehicular traffic."
+    },
+    "travelTips": [
+      "Annual Winter Closure Dates: Highway 40 between Peter Lougheed Provincial Park and Highwood Junction is closed annually from December 1 to June 14. The official Highway 40 opening date is June 15 at 7:00 AM.",
+      "Early June Cycling Tradition: In the two weeks prior to June 15, thousands of cyclists take advantage of the closed gates to ride the car-free 54 km alpine stretch up to Highwood Pass summit (2,206 m).",
+      "Kananaskis Conservation Pass Required: All motor vehicles stopping or parking along Highway 40 within Kananaskis Country must purchase and register an Alberta Parks Kananaskis Conservation Pass.",
+      "High Alpine Elevation Weather Shifts: Standing at 7,239 ft (2,206 m), Highway 40 is the highest paved road in Canada. Freezing temperatures and sudden summer snowstorms can occur even in July and August.",
+      "No Fuel Between Kananaskis Village & Longview: Fill your gas tank before entering the corridor; there are no commercial gas stations for over 100 km through the high pass.",
+      "Abundant Grizzly Bear Habitat: Highwood Pass and Pocaterra Cirque are prime grizzly feeding zones in summer and autumn. Always carry bear spray and never approach roadside wildlife."
+    ],
+    "history": [
+      {
+        "year": "1930s",
+        "title": "Early Forestry & Pack Trails",
+        "description": "The Canadian Forestry Service establishes primitive fire roads and horse packing routes through the high Kananaskis and Highwood River valleys."
+      },
+      {
+        "year": "1972",
+        "title": "Peter Lougheed Highway Construction",
+        "description": "Premier Peter Lougheed commissions the construction of Highway 40 as a world-class scenic wilderness highway providing Albertans access to Kananaskis Country."
+      },
+      {
+        "year": "1986",
+        "title": "Paving Completion & Winter Closure Policy",
+        "description": "Highway 40 is completely paved to modern highway standards across Highwood Pass, establishing the official annual wildlife closure from December 1 to June 14."
+      },
+      {
+        "year": "1988",
+        "title": "Calgary Winter Olympics Gateway",
+        "description": "Highway 40 serves as the primary spectator corridor connecting Calgary with Nakiska Ski Resort for the 1988 Winter Olympic Games."
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "Highest Paved Highway in Canada & Alpine Geography",
+        "content": "Rising to an official summit elevation of 2,206 meters (7,239 ft), Highway 40 over Highwood Pass holds the proud distinction of being the highest paved road and highest highway pass in Canada. Traversing the front ranges of the Canadian Rockies, the road carves through dramatic limestone canyons, passes turquoise alpine tarns, and ascends above the treeline into fragile subalpine meadows. To the east, the sheer cliffs of Mount Rae (3,218 m) soar directly above the road, while the jagged crest of Highwood Ridge frames the western skyline."
+      },
+      {
+        "title": "Autumn Golden Larch Migration & Hiking Access",
+        "content": "Every September, Highway 40 becomes the focal point of western Canada's golden larch pilgrimage. The subalpine valleys around Highwood Pass, including Pocaterra Cirque, Ptarmigan Cirque, and Arethusa Cirque, contain some of the highest concentrations of alpine larches in the world. As the needles turn from lime green to brilliant gold, thousands of hikers and photographers travel Highway 40 to witness the breathtaking autumn transition before winter gates close on December 1."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the official Highway 40 opening date in 2026? (Highway 40 opening date / when does Highway 40 open / Highway 40 open)",
+        "answer": "The official Highway 40 opening date is June 15 every year. The high-altitude alpine segment across Highwood Pass opens to vehicular traffic on the morning of June 15 following the annual winter wildlife closure, and remains open through November 30."
+      },
+      {
+        "question": "Is Highway 40 open right now, and how can I confirm if Highway 40 is open today? (Highway 40 is open / is Highway 40 open right now / Highway 40 is it open today / Highway 40 open)",
+        "answer": "Yes, Highway 40 is open right now to all vehicular travel through Kananaskis Country and across Highwood Pass. Driving lanes are bare and dry with clear visibility. Motorists should always check LivePassWatch for live webcams, current weather, and road conditions before driving."
+      },
+      {
+        "question": "What are the current Highway 40 road conditions, road status, and the official pass status report? (Highway 40 road conditions / Highway 40 road status / Highway 40 pass status report)",
+        "answer": "Current Highway 40 road conditions report bare and dry asphalt across all lanes between Peter Lougheed Provincial Park and Longview. Visibility is excellent at Highwood Pass summit. The official Highway 40 pass status report confirms standard seasonal travel conditions with 511 Alberta and Alberta Parks actively monitoring the highway."
+      },
+      {
+        "question": "Is Highway 40 closed today, and what triggers a Highway 40 closed status? (is Highway 40 closed today / Highway 40 closed / Highway 40 is closed)",
+        "answer": "No, Highway 40 is NOT closed today during the summer/autumn season; the highway is open in both directions. Highway 40 closed alerts are in effect annually between December 1 and June 14 for the scheduled winter wildlife protection closure, or temporarily during severe autumn mountain blizzards."
+      },
+      {
+        "question": "Where can I view live Highway 40 webcam feeds, highway cameras, and the summit camera? (Highway 40 webcam / Highway 40 live webcam / Highway 40 cameras / Highway 40 summit camera)",
+        "answer": "LivePassWatch provides official live Highway 40 webcam feeds and cameras sourced from 511 Alberta and Alberta Parks. You can check the Highwood Pass Summit Camera (Cam 186 at 2,206 m), the Highway 40 Kananaskis Gateway Camera at Trans-Canada Hwy 1 (Cam 188), the Peter Lougheed North Gate Camera (Cam 187), and the South Gate Camera near Longview (Cam 277). Images update automatically every 60 seconds."
+      },
+      {
+        "question": "When does Highway 40 close for winter? (when does Highway 40 close for winter)",
+        "answer": "Highway 40 closes for winter annually on December 1. The seasonal gates at Peter Lougheed Provincial Park (north) and Highwood House / Junction (south) are locked from December 1 through June 14 to preserve winter habitat for bighorn sheep and grizzly bears and to avoid extreme winter avalanche hazards."
+      },
+      {
+        "question": "Where can I view an official Highway 40 map and route itinerary? (Highway 40 map)",
+        "answer": "You can view an interactive Highway 40 map directly on LivePassWatch. The map features all 153 km of Highway 40 through Kananaskis Country, highlighting the Highwood Pass summit (2,206 m / 7,239 ft), seasonal closure gates, webcam locations, hiking trailheads, and viewpoints."
+      },
+      {
+        "question": "What is the Highway 40 weather today, current snow depth, and winter snow conditions? (Highway 40 weather today / Highway 40 snow / Highway 40 snow depth / Highway 40 snow conditions)",
+        "answer": "Highway 40 weather today is sunny and crisp with summit temperatures around 50°F (10°C) and dry asphalt. Highway snow depth is currently 0 cm. Because Highway 40 elevation reaches 7,239 ft (2,206 m), winter snow conditions average 8 to 12 meters (320–480 inches) of snowfall annually, burying the road in deep drifts until spring plows arrive in late May."
+      },
+      {
+        "question": "What is the Highway 40 elevation at Highwood Pass? (Highway 40 elevation)",
+        "answer": "The official Highway 40 elevation at Highwood Pass summit is 2,206 meters (7,239 feet) above sea level, making Highway 40 the highest paved road and highest mountain highway pass in Canada."
+      },
+      {
+        "question": "Do I need a park pass to drive or hike on Highway 40 in Kananaskis?",
+        "answer": "Yes. A Kananaskis Conservation Pass is legally required for all personal and commercial vehicles parked at trailheads, day-use areas, and scenic viewpoints along Highway 40 within Kananaskis Country and Peter Lougheed Provincial Park."
+      }
+    ]
+  }
 ];
+
 
 
 

@@ -142,6 +142,11 @@ const LegacyPassRedirect: React.FC = () => {
           (clean === 'icefields-parkway' && p.slug === 'icefields-parkway-road') ||
           (clean === 'icefields-parkway-road' && p.slug === 'icefields-parkway-road') ||
           (clean === 'jasper-pass' && p.slug === 'jasper-pass') ||
+          (clean === 'highway-40' && p.slug === 'highway-40') ||
+          (clean === 'highway40' && p.slug === 'highway-40') ||
+          (clean === 'hwy-40' && p.slug === 'highway-40') ||
+          (clean === 'highwood-pass' && p.slug === 'highway-40') ||
+          (clean === 'col-highwood' && p.slug === 'highway-40') ||
           (clean === 'jasperpass' && p.slug === 'jasper-pass') ||
           (clean === 'col-de-jasper' && p.slug === 'jasper-pass') ||
           (clean === 'icefieldsparkway' && p.slug === 'icefields-parkway-road') ||
@@ -276,6 +281,11 @@ export const App: React.FC = () => {
               <Route path="/icefields-parkway" element={<Navigate to="/passes/canada/alberta/icefields-parkway-road" replace />} />
               <Route path="/icefields-parkway-road" element={<Navigate to="/passes/canada/alberta/icefields-parkway-road" replace />} />
               <Route path="/jasper-pass" element={<Navigate to="/passes/canada/alberta/jasper-pass" replace />} />
+              <Route path="/highway-40" element={<Navigate to="/passes/canada/alberta/highway-40" replace />} />
+              <Route path="/highway40" element={<Navigate to="/passes/canada/alberta/highway-40" replace />} />
+              <Route path="/hwy-40" element={<Navigate to="/passes/canada/alberta/highway-40" replace />} />
+              <Route path="/highwood-pass" element={<Navigate to="/passes/canada/alberta/highway-40" replace />} />
+              <Route path="/col-highwood" element={<Navigate to="/passes/canada/alberta/highway-40" replace />} />
               <Route path="/jasperpass" element={<Navigate to="/passes/canada/alberta/jasper-pass" replace />} />
               <Route path="/col-de-jasper" element={<Navigate to="/passes/canada/alberta/jasper-pass" replace />} />
               <Route path="/promenade-des-glaciers" element={<Navigate to="/passes/canada/alberta/icefields-parkway-road" replace />} />

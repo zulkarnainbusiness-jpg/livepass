@@ -146,6 +146,50 @@ const baralachaHindiFaqs = [
 
 
 
+
+const highway40FrenchFaqs = [
+  {
+    question: "Quelle est la date d'ouverture de la route 40 en 2026 ? (Highway 40 opening date / when does Highway 40 open / Highway 40 open / date d'ouverture Highway 40)",
+    answer: "La date d'ouverture officielle de la route 40 (Highway 40 / col Highwood) est fixée au 15 juin de chaque année. Le tronçon alpin de haute altitude à travers le pays de Kananaskis rouvre à la circulation automobile le 15 juin au matin après la fermeture hivernale annuelle pour la faune, et demeure ouvert jusqu'au 30 novembre."
+  },
+  {
+    question: "La route 40 est-elle ouverte en ce moment et aujourd'hui ? (Highway 40 is open / is Highway 40 open right now / Highway 40 is it open today / Highway 40 open)",
+    answer: "Oui, la route 40 est actuellement OUVERTE à toute la circulation automobile à travers le pays de Kananaskis et sur le col Highwood. La chaussée est sèche et dégagée avec une excellente visibilité alpine. Vérifiez en direct les webcams, la météo et l'état des routes sur LivePassWatch avant votre voyage."
+  },
+  {
+    question: "Quelles sont les conditions routières et le rapport d'état de la route 40 ? (Highway 40 road conditions / Highway 40 road status / Highway 40 pass status report / conditions routières Highway 40 / état de la route Highway 40)",
+    answer: "L'état de la route sur la route 40 indique une chaussée sèche et bien dégagée entre le parc provincial Peter Lougheed et Longview. La visibilité est excellente au sommet du col Highwood. Le rapport d'état officiel confirme des conditions de circulation saisonnières optimales surveillées par 511 Alberta et Alberta Parks."
+  },
+  {
+    question: "La route 40 est-elle fermée aujourd'hui et quand ferme-t-elle ? (is Highway 40 closed today / Highway 40 closed / Highway 40 is closed)",
+    answer: "Non, la route 40 n'est PAS fermée aujourd'hui durant la saison estivale et automnale ; la circulation s'effectue dans les deux sens. Une fermeture annuelle programmée prend effet du 1er décembre au 14 juin pour protéger l'habitat hivernal des mouflons et des grizzlis, ainsi que pour éliminer les risques d'avalanches au mont Rae."
+  },
+  {
+    question: "Où regarder les webcams en direct et les caméras du sommet de la route 40 ? (Highway 40 webcam / Highway 40 live webcam / Highway 40 cameras / Highway 40 summit camera / caméras en direct Highway 40)",
+    answer: "LivePassWatch diffuse les caméras officielles de 511 Alberta et d'Alberta Parks sur la route 40. Vous pouvez observer la caméra du sommet du col Highwood (Cam 186 à 2 206 m), la caméra de la porte d'entrée de Kananaskis à la route Transcanadienne 1 (Cam 188), la caméra de la barrière nord du parc Peter Lougheed (Cam 187) et la barrière sud près de Longview (Cam 277). Les images s'actualisent toutes les 60 secondes."
+  },
+  {
+    question: "Quand la route 40 ferme-t-elle pour l'hiver ? (when does Highway 40 close for winter / fermeture hivernale Highway 40)",
+    answer: "La route 40 ferme pour l'hiver le 1er décembre de chaque année. Les barrières saisonnières au parc provincial Peter Lougheed (nord) et à Highwood Junction (sud) sont verrouillées du 1er décembre jusqu'au 14 juin afin de préserver la faune alpine et d'éviter les opérations de déneigement périlleuses."
+  },
+  {
+    question: "Où trouver la carte interactive et le tracé de la route 40 ? (Highway 40 map / carte route 40)",
+    answer: "Une carte interactive complète de la route 40 dans le pays de Kananaskis est disponible sur LivePassWatch. Elle met en valeur les 153 km de tracé, le sommet du col Highwood (2 206 m / 7 239 pi), les barrières de fermeture saisonnière, les webcams et les départs de sentiers de randonnée."
+  },
+  {
+    question: "Quelle est la météo aujourd'hui, l'épaisseur de neige et l'enneigement sur la route 40 ? (Highway 40 weather today / Highway 40 snow / Highway 40 snow depth / Highway 40 snow conditions / météo Highway 40 / chutes de neige)",
+    answer: "La météo actuelle sur la route 40 affiche un soleil radieux avec des températures alpines autour de 10 °C (50 °F) et une chaussée sèche. L'épaisseur de neige sur la route est actuellement de 0 cm. En hiver, le sommet reçoit entre 8 et 12 mètres de neige (320 à 480 pouces), recouvrant la route sous d'immenses congères jusqu'au printemps."
+  },
+  {
+    question: "Quelle est l'altitude de la route 40 au col Highwood ? (Highway 40 elevation / altitude Highway 40)",
+    answer: "L'altitude officielle de la route 40 au sommet du col Highwood s'élève à 2 206 mètres (7 239 pieds) au-dessus du niveau de la mer. Cela fait de la route 40 la plus haute route pavée et le plus haut col routier du Canada."
+  },
+  {
+    question: "Un laissez-passer est-il nécessaire pour circuler ou stationner sur la route 40 à Kananaskis ?",
+    answer: "Oui. Le Kananaskis Conservation Pass (laissez-passer de conservation de Kananaskis) d'Alberta Parks est légalement requis pour tous les véhicules arrêtés ou stationnés le long de la route 40, aux belvédères et aux départs de sentiers dans le pays de Kananaskis."
+  }
+];
+
 const jasperFrenchFaqs = [
   {
     question: "Quelle est la date d'ouverture du col de Jasper en 2026 ? (Jasper pass opening date / when does Jasper pass open / date d'ouverture col de Jasper)",
@@ -1223,6 +1267,145 @@ export const PassDetailPage: React.FC = () => {
 
         
         
+        
+        {/* Bilingual Language Switcher for Highway 40 */}
+        {pass.slug === 'highway-40' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(37, 99, 235, 0.06) 100%)',
+            border: '1px solid rgba(239, 68, 68, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#991B1B' }}>
+              <Globe size={18} color="#DC2626" />
+              <span>
+                {pageLang === 'fr'
+                  ? '🇨🇦 Version officielle canadienne française active — Route 40 / Col Highwood (Pays de Kananaskis, Alberta)'
+                  : '🇨🇦 Official Canadian Bilingual Experience Active — Highway 40 (Highwood Pass / Kananaskis Trail)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 Français
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=${pageLang === 'fr' ? 'en' : 'fr'}&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/canada/alberta/highway-40')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#991B1B',
+                  background: '#FEF2F2',
+                  border: '1px solid #FECACA',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Google Translate (English / French)"
+              >
+                <Globe size={14} />
+                <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
+        {pass.slug === 'highway-40' && (
+          <div className="highway40-regulations-callout lp-card" style={{
+            borderLeft: '4px solid #DC2626',
+            padding: '20px',
+            marginBottom: '24px',
+            backgroundColor: 'rgba(239, 68, 68, 0.04)',
+            borderRadius: '6px'
+          }}>
+            <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#991B1B' }}>
+              <ShieldCheck size={20} color="#DC2626" />
+              <span>
+                {pageLang === 'fr'
+                  ? 'Réglementations de la Route 40 & Guide d’Alberta Parks (Col Highwood 🇨🇦)'
+                  : 'Highway 40 Regulations & Alberta Parks Highwood Safety Guide (Canada\'s Highest Paved Pass 🇨🇦)'}
+              </span>
+            </h3>
+            <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <strong>Plus Haut Col Routier du Canada (2 206 m) :</strong> La <strong>route 40 (col Highwood)</strong> relie la vallée de la Bow et Longview à travers le pays de Kananaskis. La fermeture hivernale annuelle pour la protection de la faune est en vigueur du <strong>1er décembre au 14 juin</strong>, avec une réouverture officielle le <strong>15 juin</strong>.
+                </>
+              ) : (
+                <>
+                  <strong>Canada\'s Highest Paved Mountain Pass (2,206 m / 7,239 ft):</strong> <strong>Highway 40 (Highwood Pass)</strong> traverses Kananaskis Country between the Bow Valley and Longview. The mandatory winter wildlife closure is enforced from <strong>December 1 through June 14</strong>, with the official Highway 40 reopening on <strong>June 15</strong>.
+                </>
+              )}
+            </p>
+            <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <li><strong>Fermeture hivernale annuelle (1er déc – 14 juin) :</strong> Les barrières de haute altitude sont verrouillées pour protéger les hardes de mouflons et les grizzlis. Réouverture officielle le 15 juin.</li>
+                  <li><strong>Tradition cycliste début juin :</strong> Durant les deux semaines précédant le 15 juin, des milliers de cyclistes profitent des 54 km d\'asphalte interdits aux voitures.</li>
+                  <li><strong>Laissez-passer de Kananaskis obligatoire :</strong> Un Kananaskis Conservation Pass est obligatoire pour tout véhicule stationné dans le parc.</li>
+                  <li><strong>Zone de présence de grizzlis :</strong> Pocaterra et le col Highwood abritent une importante population d\'ours. Ayez toujours du répulsif à ours à portée de main.</li>
+                </>
+              ) : (
+                <>
+                  <li><strong>Annual Wildlife Winter Closure (Dec 1 – Jun 14):</strong> High-elevation gates are locked to protect winter wildlife ranges. Official reopening on June 15 at 7:00 AM.</li>
+                  <li><strong>Early June Cycling Tradition:</strong> Thousands of road cyclists enjoy 54 km of car-free alpine asphalt before motor vehicles are permitted on June 15.</li>
+                  <li><strong>Kananaskis Conservation Pass Required:</strong> Vehicles parked at trailheads and viewpoints must register an Alberta Parks pass.</li>
+                  <li><strong>Active Grizzly Habitat:</strong> Highwood Pass and Pocaterra Cirque are prime grizzly foraging grounds. Carry bear spray and observe wildlife from distance.</li>
+                </>
+              )}
+            </ul>
+          </div>
+        )}
+
+        {pass.slug === 'highway-40' && (
+          <div style={{ marginTop: '16px', marginBottom: '24px', padding: '14px 18px', backgroundColor: 'rgba(59, 130, 246, 0.05)', border: '1px solid rgba(59, 130, 246, 0.25)', borderRadius: '6px', fontSize: '13px', color: '#1E40AF', lineHeight: '1.55' }}>
+            <strong>🇨🇦 511 Alberta &amp; Alberta Parks Camera Notice:</strong> Highway 40 live cameras at Highwood Pass Summit (Cam 186), Trans-Canada Gateway (Cam 188), Peter Lougheed North Gate (Cam 187), and Highwood South Gate (Cam 277) stream official real-time imagery refreshing every 60 seconds. Verify live telemetry on <a href="https://511.alberta.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>511 Alberta</a>, <a href="https://albertaparks.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>Alberta Parks</a>, and <a href="/methodology" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>LivePassWatch Verification Methodology</a>.
+          </div>
+        )}
+
+
         {/* Bilingual Language Switcher for Jasper Pass */}
         {pass.slug === 'jasper-pass' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
@@ -4856,8 +5039,8 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
-                  ((pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
+                {((pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                  ((pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
 
 
 

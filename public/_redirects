@@ -126,6 +126,8 @@
 /passes/canada/icefields-parkway-road /passes/canada/alberta/icefields-parkway-road 301
 /passes/jasper-pass /passes/canada/alberta/jasper-pass 301
 /passes/canada/jasper-pass /passes/canada/alberta/jasper-pass 301
+/passes/highway-40 /passes/canada/alberta/highway-40 301
+/passes/canada/highway-40 /passes/canada/alberta/highway-40 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200
