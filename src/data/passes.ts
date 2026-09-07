@@ -15959,7 +15959,261 @@ export const passesData: MountainPass[] = [
       }
     ]
   }
+,
+  {
+    "id": "icefields-parkway-road",
+    "slug": "icefields-parkway-road",
+    "name": "Icefields Parkway Road (Promenade des Glaciers)",
+    "alternateNames": [
+      "Icefields Parkway Road",
+      "Icefields Parkway",
+      "Highway 93 North",
+      "Hwy 93N Alberta",
+      "Promenade des Glaciers",
+      "Route des Glaciers",
+      "Icefields Parkway Alberta",
+      "Banff Jasper Highway",
+      "Icefields Parkway Road Canada"
+    ],
+    "country": "Canada",
+    "countryCode": "CAN",
+    "continent": "North America",
+    "state": "Alberta",
+    "highway": "Highway 93 North (Icefields Parkway)",
+    "elevationFt": 6787,
+    "elevationM": 2069,
+    "coordinates": {
+      "lat": 51.7136,
+      "lng": -116.4988
+    },
+    "status": "OPEN",
+    "statusDetail": "Icefields Parkway Road is OPEN to all vehicular traffic between Lake Louise and Jasper. Highway 93 North driving lanes are bare and dry with unrestricted visibility across Bow Pass (6,787 ft / 2,069 m) and Sunwapta Pass (6,677 ft / 2,035 m). Maintained daily by Parks Canada daylight plowing crews and 511 Alberta. Winter tires (3PMSF mountain snowflake or M+S with minimum 3.5 mm tread) are legally mandatory from November 1 to April 1. Watch for wildlife (elk, bears, bighorn sheep) and remember there is zero cellular reception along most of the 232 km corridor.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Icefields Parkway Road (Highway 93 North; French: Promenade des Glaciers; conditions routières et météo alpines; length 232 km / 144 miles) is globally celebrated as one of the most awe-inspiring high-altitude alpine highways on Earth, winding through the Canadian Rocky Mountain Parks UNESCO World Heritage Site in Alberta, Canada. Connecting Lake Louise in Banff National Park with the mountain town of Jasper in Jasper National Park, the parkway runs parallel to the Continental Divide, showcasing over 100 ancient valley glaciers, turquoise glacial lakes including Bow Lake, Peyto Lake, and Lake Louise, roaring waterfalls at Athabasca Falls and Sunwapta Falls, and the sprawling Columbia Icefield. The highway crests at Bow Pass (elevation 2,069 m / 6,787 ft) and crosses the inter-park boundary at Sunwapta Pass (2,035 m / 6,677 ft). Built during the Great Depression by Canadian relief workers and opened to travelers in 1940, Icefields Parkway Road offers unforgettable mountain scenery with year-round highway maintenance, real-time 511 Alberta travel reports, and live highway webcams.",
+    "image": "/icefields-parkway-road.webp",
+    "customSeo": {
+      "title": "Icefields Parkway Road Status & Webcams | LivePassWatch",
+      "description": "Live Icefields Parkway road conditions, webcams & status on Hwy 93N (Promenade des Glaciers). Check if open today, weather, snow & closures.",
+      "h1": "Icefields Parkway Road (Promenade des Glaciers) Live Status, Webcams & Road Conditions"
+    },
+    "officialSource": "Parks Canada (Jasper & Banff National Parks) & 511 Alberta",
+    "official_source_url": "https://511.alberta.ca",
+    "official_authority": "Parks Canada / Alberta Transportation",
+    "verification_status": "VERIFIED",
+    "confidence": "HIGH",
+    "weather": {
+      "tempF": 52,
+      "tempC": 11,
+      "condition": "Clear Alpine Sky with Glacial Breeze",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Highway Surface Bare & Dry (Glacial Runoff Channels Clear)"
+    },
+    "wind": {
+      "speedKmh": 14,
+      "speedMph": 9,
+      "direction": "WNW",
+      "description": "Moderate breeze blowing off Columbia Icefield"
+    },
+    "roadCondition": "Icefields Parkway Road road conditions are bare and dry throughout the 232 km alpine corridor between Lake Louise and Jasper. Excellent pavement conditions at Bow Summit, Saskatchewan River Crossing, and the Columbia Icefield. Parks Canada plows operate during daylight hours only (7:00 AM to 3:30 PM). Travelers are advised that gas is only available at Saskatchewan River Crossing (summer/fall only) and there is no cellular service. Obey the 90 km/h speed limit and 70 km/h parkway scenic zones.",
+    "chainRequirement": "No active traction chain requirements for light passenger vehicles. Winter-rated tires (marked with 3PMSF mountain snowflake or M+S with minimum 3.5 mm tread depth) are legally mandatory on Highway 93 North from November 1 to April 1. Commercial through-traffic over 4,550 kg GVW is prohibited year-round to protect the scenic national park corridor.",
+    "cameras": [
+      {
+        "id": "ipr-cam-186",
+        "title": "Columbia Icefield & Athabasca Glacier Summit Camera (Hwy 93 Alpine View)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/186.jpg",
+        "location": "Columbia Icefield / Sunwapta Pass (1,980 m / 6,496 ft)",
+        "source": "511 Alberta & Pursuit Collection / Parks Canada",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking South toward Mount Athabasca, Parker Ridge & Icefields Parkway Road"
+      },
+      {
+        "id": "ipr-cam-187",
+        "title": "Saskatchewan River Crossing Webcam (Hwy 93 / Hwy 11 Junction)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/187.jpg",
+        "location": "Saskatchewan River Crossing (1,440 m / 4,724 ft)",
+        "source": "511 Alberta & Alberta Transportation",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking North toward Columbia Icefield & Bow Summit"
+      },
+      {
+        "id": "ipr-cam-277",
+        "title": "Jasper National Park South Gateway Camera (Hwy 93 near Athabasca Falls)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/277.jpg",
+        "location": "Hwy 93 South Approach (1,180 m / 3,871 ft)",
+        "source": "511 Alberta & Parks Canada",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking South toward Mount Kerkeslin & Icefields Parkway Road"
+      },
+      {
+        "id": "ipr-cam-188",
+        "title": "Lake Louise Icefields Parkway Gateway Camera (Hwy 93N / Hwy 1 Interchange)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/188.jpg",
+        "location": "Lake Louise Junction (1,540 m / 5,052 ft)",
+        "source": "511 Alberta & DriveBC",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://511.alberta.ca",
+        "direction": "Looking North toward Bow Pass & Peyto Lake"
+      }
+    ],
+    "nearbyPasses": [
+      {
+        "id": "sunwapta-pass",
+        "slug": "sunwapta-pass",
+        "name": "Sunwapta Pass (Col Sunwapta)",
+        "country": "Canada",
+        "state": "Alberta",
+        "highway": "Highway 93 (Icefields Parkway)",
+        "status": "OPEN",
+        "elevationFt": 6677,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 0
+      },
+      {
+        "id": "yellowhead-pass",
+        "slug": "yellowhead-pass",
+        "name": "Yellowhead Pass (Col Tête-Jaune)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Highway 16 (Yellowhead Hwy)",
+        "status": "OPEN",
+        "elevationFt": 3711,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 105
+      },
+      {
+        "id": "kicking-horse-pass",
+        "slug": "kicking-horse-pass",
+        "name": "Kicking Horse Pass",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy 1",
+        "status": "OPEN",
+        "elevationFt": 5338,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 65
+      },
+      {
+        "id": "rogers-pass",
+        "slug": "rogers-pass",
+        "name": "Rogers Pass (Selkirk Mountains)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy (BC-1)",
+        "status": "OPEN",
+        "elevationFt": 4364,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 195
+      }
+    ],
+    "overview": {
+      "openedYear": 1940,
+      "lengthMiles": "144.0 miles (Lake Louise to Jasper)",
+      "lengthKm": "232.0 km (Icefields Parkway corridor)",
+      "annualSnowfallIn": "300–450 inches",
+      "annualSnowfallM": "7.6–11.4 meters",
+      "summary": "Icefields Parkway Road (Highway 93 North; French: Promenade des Glaciers) spans 232 kilometers (144 miles) between Lake Louise in Banff National Park and Jasper in Jasper National Park, Alberta. Revered as one of the top ten scenic drives in the world, the road traverses towering glaciated peaks, pristine subalpine valleys, and ancient ice fields. The highest highway summit is Bow Pass at 2,069 meters (6,787 ft), closely followed by Sunwapta Pass at 2,035 meters (6,677 ft) at the boundary between Banff and Jasper National Parks. Completed in 1940 through depression-era employment relief programs, the parkway remains open year-round with daytime daylight plowing by Parks Canada, requiring mandatory winter tires from November 1 to April 1."
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Subject to daylight winter plowing & temporary blizzard closures)",
+      "typicalReopening": "Continuous daylight highway maintenance (plowing operations 7:00 AM to 3:30 PM daily; emergency storm closures typically 4 to 24 hours)",
+      "description": "Unlike high seasonal passes that close entirely during the winter, Icefields Parkway Road (Highway 93 North) is maintained open 365 days a year by Parks Canada. However, because the highway winds through 232 kilometers of unpopulated Rocky Mountain wilderness without electrical infrastructure or roadside cell towers, snowplowing is carried out exclusively during daylight hours (typically 7:00 AM to 3:30 PM). Severe winter blizzards, zero-visibility blowing snow, or elevated avalanche hazard from Mount Athabasca and Cirrus Mountain can prompt temporary precautionary closures between Saskatchewan River Crossing and Athabasca Falls until heavy rotary blowers clear the roadway."
+    },
+    "travelTips": [
+      "Mandatory Winter Tire Regulation: Under Alberta provincial law and Parks Canada regulations, all passenger vehicles traveling Icefields Parkway Road must be equipped with certified winter tires (bearing the 3PMSF mountain snowflake symbol or M+S with minimum 3.5 mm tread depth) from November 1 to April 1.",
+      "Daylight Snowplowing Operations Only: Parks Canada maintenance crews plow the Icefields Parkway during daylight hours only (typically 7:00 AM to 3:30 PM). Night driving during winter months is strongly discouraged due to extreme sub-zero temperatures, black ice, and absence of emergency roadside dispatch.",
+      "Zero Cellular Phone Reception: There is virtually no cellular phone coverage for over 180 km along Highway 93 North between Lake Louise and Jasper, except for a payphone and limited Wi-Fi at Saskatchewan River Crossing. Download offline navigation maps, carry a satellite messenger, and notify family before departure.",
+      "Single Remote Fuel Station: The only gas station along the entire 232 km corridor is located at Saskatchewan River Crossing (operating from April/May through October only). In winter, vehicles must depart Lake Louise or Jasper with a completely full tank of fuel.",
+      "Commercial Heavy Truck Ban: Highway 93 North is a protected national park heritage corridor. Commercial freight trucks exceeding 4,550 kg GVW are prohibited year-round, ensuring a serene, low-stress driving environment for cars, campers, and RVs.",
+      "Valid National Park Pass Required: All visitors traveling, parking, or hiking along Icefields Parkway Road through Banff and Jasper National Parks must display a valid Parks Canada Discovery Pass on their vehicle windshield."
+    ],
+    "history": [
+      {
+        "year": "1931",
+        "title": "Depression-Era Relief Construction",
+        "description": "Construction begins as a Canadian unemployment relief project during the Great Depression, employing over 600 workers who hand-built roadbeds through dense subalpine forests and rocky glacial scree."
+      },
+      {
+        "year": "1940",
+        "title": "Official Opening to Motorists",
+        "description": "The 232-kilometer highway officially opens to public motor vehicles, linking Banff and Jasper National Parks across Bow Pass and Sunwapta Pass."
+      },
+      {
+        "year": "1960",
+        "title": "Corridor Paving & Modernization",
+        "description": "Highway 93 North is fully paved with modern asphalt, bridges, and scenic pullouts to safely accommodate growing national park eco-tourism."
+      },
+      {
+        "year": "1984",
+        "title": "UNESCO World Heritage Inscription",
+        "description": "The Canadian Rocky Mountain Parks, encompassing the entire Icefields Parkway corridor, are designated a UNESCO World Heritage Site for outstanding universal natural value."
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "Highway 93 North Alpine Geography & Double Summit Profile",
+        "content": "Icefields Parkway Road follows the deep glacial trough parallel to the Continental Divide. Traveling northbound from Lake Louise (elevation 1,540 m), the highway ascends past Herbert Lake and Bow Lake to its highest elevation at Bow Pass (2,069 m / 6,787 ft), which overlooks the world-famous turquoise waters of Peyto Lake. The route then descends to the North Saskatchewan River basin at Saskatchewan River Crossing (1,440 m) before mounting a sustained climb through the Weeping Wall to Sunwapta Pass (2,035 m / 6,677 ft), the official boundary separating Banff National Park from Jasper National Park. From Sunwapta Pass, the road sweeps past the Athabasca Glacier, Athabasca Falls, and along the Athabasca River into the town of Jasper (1,060 m)."
+      },
+      {
+        "title": "Columbia Icefield & Ancient Valley Glaciers",
+        "content": "The undisputed crown jewel of Icefields Parkway Road is the Columbia Icefield, the largest ice mass in the Rocky Mountains south of Alaska. Spanning approximately 325 square kilometers (125 sq mi) and reaching depths of up to 365 meters (1,200 ft), the icefield feeds eight major glaciers including Athabasca, Dome, Stutfield, and Columbia glaciers. Waters melting from the icefield flow into three different oceans: the Arctic via the Mackenzie River, the Atlantic via the Nelson River/Hudson Bay, and the Pacific via the Columbia River—forming the hydrological apex of North America."
+      },
+      {
+        "title": "Winter Travel Logistics & Parks Canada Safety Protocol",
+        "content": "Winter driving on Icefields Parkway Road is an unforgettable wilderness experience that demands serious preparation. With temperatures frequently dropping below -30°C (-22°F), heavy daylight snow, and localized whiteout conditions, travelers must equip their vehicles with rated 3PMSF snow tires, warm sleeping bags, extra food, water, a snow shovel, and flashlights. Parks Canada avalanche safety teams continuously monitor snowpack stability on high mountain bowls, employing helicopter-delivered explosives to release unstable cornices before opening gates to public travel."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Icefields Parkway Road open right now, and how do I verify if Icefields Parkway Road is open today? (icefields parkway road is open / is icefields parkway road open right now / icefields parkway road is it open today)",
+        "answer": "Yes, Icefields Parkway Road is open right now to all vehicular travel between Lake Louise and Jasper. Highway 93 North driving lanes are bare and dry with clear visibility across Bow Pass and Sunwapta Pass. Parks Canada daylight plowing crews and 511 Alberta maintain real-time telemetry updates. Before traveling, motorists should check LivePassWatch for live webcams, current weather, and road conditions."
+      },
+      {
+        "question": "What are the current Icefields Parkway Road road conditions and pass status report today? (icefields parkway road road conditions / icefields parkway road road status / icefields parkway road pass status report)",
+        "answer": "Current Icefields Parkway Road road conditions are reported as bare and dry across the entire 232-kilometer highway corridor. The asphalt surface is clear at Lake Louise, Bow Summit, Saskatchewan River Crossing, and the Columbia Icefield. The official Icefields Parkway Road pass status report confirms standard daylight travel conditions with 511 Alberta and Parks Canada monitoring highway safety."
+      },
+      {
+        "question": "Is Icefields Parkway Road closed today, and what triggers an Icefields Parkway Road closed status? (is icefields parkway road closed today / icefields parkway road closed / icefields parkway road is closed)",
+        "answer": "No, Icefields Parkway Road is NOT closed today; the highway is completely open in both directions. An Icefields Parkway Road closed advisory is only issued during severe Rocky Mountain blizzards, active avalanche control near Mount Athabasca, or major vehicle recoveries. Temporary emergency storm closures typically last between 4 and 24 hours until Parks Canada rotary snowblowers clear the roadway."
+      },
+      {
+        "question": "Where can I view live Icefields Parkway Road webcam feeds and summit cameras? (icefields parkway road webcam / icefields parkway road live webcam / icefields parkway road cameras / icefields parkway road summit camera)",
+        "answer": "LivePassWatch provides official live camera feeds for Icefields Parkway Road sourced from 511 Alberta and DriveBC. You can view live snapshots from the Columbia Icefield & Athabasca Glacier Summit Camera (Cam 186 at 1,980 m), Saskatchewan River Crossing Camera (Cam 187), Jasper South Approach Camera (Cam 277 near Athabasca Falls), and Lake Louise Gateway Camera (Cam 188). All webcams refresh automatically every 60 seconds."
+      },
+      {
+        "question": "When does Icefields Parkway Road open and when does Icefields Parkway Road close for winter? (when does icefields parkway road open / when does icefields parkway road close for winter)",
+        "answer": "Icefields Parkway Road does not have a seasonal opening date because it does NOT close for the winter. Unlike high alpine passes like Trail Ridge Road or Going-to-the-Sun Road that shut down for 6 to 8 months, Highway 93 North is maintained open 365 days a year by Parks Canada with specialized daylight snowplowing (7:00 AM to 3:30 PM). The highway only shuts temporarily during active blizzard conditions or avalanche clearance operations."
+      },
+      {
+        "question": "Where can I view an interactive Icefields Parkway Road map, elevation profile, and route itinerary? (icefields parkway road map)",
+        "answer": "You can view an interactive Icefields Parkway Road map right here on LivePassWatch. The map features the entire 232 km highway alignment between Lake Louise and Jasper, highlighting summit elevations at Bow Pass (2,069 m / 6,787 ft) and Sunwapta Pass (2,035 m / 6,677 ft), camera locations, fuel points at Saskatchewan River Crossing, and natural landmarks like Athabasca Glacier, Peyto Lake, and Sunwapta Falls."
+      },
+      {
+        "question": "What is the Icefields Parkway Road weather today and what is the current snow depth along Highway 93 North? (icefields parkway road weather today / icefields parkway road snow / icefields parkway road snow depth)",
+        "answer": "Icefields Parkway Road weather today is pleasant and clear with high alpine sunshine, summit temperatures of 52°F (11°C), and moderate westerly breezes. Current snow depth on the highway road surface is 0 cm (bare and dry pavement). During winter (November to April), roadside snow depth along the corridor commonly ranges from 100 cm to over 300 cm (39 to 118 inches), requiring mandatory winter tires."
+      },
+      {
+        "question": "Are winter tires legally mandatory on Icefields Parkway Road (Highway 93 North)?",
+        "answer": "Yes. Under Alberta provincial law and Parks Canada regulations, winter tires marked with the 3PMSF mountain snowflake pictogram or M+S with a minimum tread depth of 3.5 mm are legally mandatory for all passenger vehicles traveling Highway 93 North between November 1 and April 1. Failure to comply can result in substantial fines and travel prohibitions."
+      },
+      {
+        "question": "Is there gas, food, or cell service on Icefields Parkway Road?",
+        "answer": "Cellular phone service is completely non-existent along nearly the entire 232 km corridor between Lake Louise and Jasper. The only service station with fuel, seasonal dining, and payphone access is Saskatchewan River Crossing (located 76 km north of Lake Louise), which operates only from spring to autumn. In winter, you must depart Lake Louise or Jasper with a full gas tank and emergency supplies."
+      },
+      {
+        "question": "Are commercial transport trucks allowed on Icefields Parkway Road?",
+        "answer": "No. Commercial through-trucks and heavy transport vehicles exceeding 4,550 kg Gross Vehicle Weight (GVW) are strictly prohibited on Highway 93 North. Commercial freight traveling between Calgary, Edmonton, and British Columbia must use Trans-Canada Highway 1 or Yellowhead Highway 16."
+      }
+    ]
+  }
 ];
+
 
 export function getPassBySlug(slug: string): MountainPass | undefined {
 

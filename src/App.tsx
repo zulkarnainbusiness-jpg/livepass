@@ -139,7 +139,10 @@ const LegacyPassRedirect: React.FC = () => {
           (clean === 'sunwapta-pass' && p.slug === 'sunwapta-pass') ||
           (clean === 'sunwaptapass' && p.slug === 'sunwapta-pass') ||
           (clean === 'col-sunwapta' && p.slug === 'sunwapta-pass') ||
-          (clean === 'icefields-parkway' && p.slug === 'sunwapta-pass') ||
+          (clean === 'icefields-parkway' && p.slug === 'icefields-parkway-road') ||
+          (clean === 'icefields-parkway-road' && p.slug === 'icefields-parkway-road') ||
+          (clean === 'icefieldsparkway' && p.slug === 'icefields-parkway-road') ||
+          (clean === 'promenade-des-glaciers' && p.slug === 'icefields-parkway-road') ||
           (clean === 'yellowhead' && p.slug === 'yellowhead-pass') ||
           (clean === 'yellowhead-pass' && p.slug === 'yellowhead-pass') ||
           (clean === 'yellowheadpass' && p.slug === 'yellowhead-pass') ||
@@ -267,7 +270,9 @@ export const App: React.FC = () => {
               <Route path="/sunwapta-pass" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
               <Route path="/sunwaptapass" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
               <Route path="/col-sunwapta" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
-              <Route path="/icefields-parkway" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
+              <Route path="/icefields-parkway" element={<Navigate to="/passes/canada/alberta/icefields-parkway-road" replace />} />
+              <Route path="/icefields-parkway-road" element={<Navigate to="/passes/canada/alberta/icefields-parkway-road" replace />} />
+              <Route path="/promenade-des-glaciers" element={<Navigate to="/passes/canada/alberta/icefields-parkway-road" replace />} />
               <Route path="/yellowhead" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
               <Route path="/yellowhead-pass" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
               <Route path="/yellowheadpass" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />

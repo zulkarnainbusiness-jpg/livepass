@@ -321,6 +321,16 @@ export const hierarchyData: HierarchyContinent[] = [
             "name": "Alberta",
             "passes": [
               {
+                "id": "icefields-parkway-road",
+                "slug": "icefields-parkway-road",
+                "name": "Icefields Parkway Road (Promenade des Glaciers)",
+                "highway": "Highway 93N (Icefields Pkwy)",
+                "elevationFt": 6787,
+                "elevationM": 2069,
+                "status": "OPEN",
+                "image": "/icefields-parkway-road.webp"
+              },
+              {
                 "id": "sunwapta-pass",
                 "slug": "sunwapta-pass",
                 "name": "Sunwapta Pass (Col Sunwapta)",

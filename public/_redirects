@@ -122,6 +122,8 @@
 /passes/canada/sunwapta-pass /passes/canada/alberta/sunwapta-pass 301
 /passes/yellowhead-pass /passes/canada/british-columbia/yellowhead-pass 301
 /passes/canada/yellowhead-pass /passes/canada/british-columbia/yellowhead-pass 301
+/passes/icefields-parkway-road /passes/canada/alberta/icefields-parkway-road 301
+/passes/canada/icefields-parkway-road /passes/canada/alberta/icefields-parkway-road 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

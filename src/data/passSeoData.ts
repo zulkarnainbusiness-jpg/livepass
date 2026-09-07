@@ -839,5 +839,22 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Sunwapta Pass (2,035 m) & Kicking Horse Pass (1,627 m)',
     crossLinkUrl: '/passes/canada/alberta/sunwapta-pass',
     crossLinkText: 'Compare Canadian Rocky Mountains and national park highway road conditions with'
-  }
+  },
+  'icefields-parkway-road': {
+    nearestTowns: [
+      { name: 'Lake Louise, Alberta', distance: '0.0 km (0 miles)', direction: 'Southern Terminus at Trans-Canada Hwy 1' },
+      { name: 'Saskatchewan River Crossing, AB', distance: '76.0 km (47.2 miles)', direction: 'North via Hwy 93 & Hwy 11 David Thompson Hwy' },
+      { name: 'Columbia Icefield Discovery Centre, AB', distance: '128.0 km (79.5 miles)', direction: 'North via Hwy 93 (Athabasca Glacier Hub)' },
+      { name: 'Sunwapta Falls / Athabasca Falls, AB', distance: '175.0 km (108.7 miles)', direction: 'North via Hwy 93' },
+      { name: 'Jasper Townsite, Alberta', distance: '232.0 km (144.2 miles)', direction: 'Northern Terminus at Yellowhead Hwy 16' },
+      { name: 'Banff Townsite, Alberta', distance: '58.0 km (36.0 miles)', direction: 'Southeast from Lake Louise via Trans-Canada Hwy 1' },
+      { name: 'Calgary, Alberta', distance: '185.0 km (115.0 miles)', direction: 'East from Lake Louise via Trans-Canada Hwy 1' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Subject to temporary winter storm closures & daylight snowplowing)',
+    seasonalClosureDetail: 'Icefields Parkway (Highway 93 North / Promenade des Glaciers; length 232 km / 144 miles) between Lake Louise and Jasper is maintained open year-round by Parks Canada, but operates under strict wilderness conditions. Snowplowing is conducted exclusively during daylight hours (7:00 AM to 3:30 PM). Severe Rocky Mountain blizzards, blowing snow, or avalanche control work at Bow Pass (2,069 m) and Sunwapta Pass (2,035 m) can prompt precautionary closures of 4 to 24 hours. Winter tires (marked with 3PMSF snowflake or M+S with minimum 3.5 mm tread) are legally mandatory from November 1 through April 1.',
+    aboutPass: 'The Icefields Parkway Road (Highway 93 North; French: Promenade des Glaciers) is globally celebrated as one of the most magnificent scenic alpine highway journeys on Earth. Traversing 232 kilometers (144 miles) through the heart of the Canadian Rocky Mountain Parks UNESCO World Heritage site, the highway connects Lake Louise in Banff National Park with the mountain townsite of Jasper in Jasper National Park. Paralleling the Continental Divide, the road passes more than 100 glaciers, turquoise glacial lakes including Lake Louise, Herbert Lake, Bow Lake, and Peyto Lake, thundering waterfalls at Sunwapta and Athabasca falls, and the immense Columbia Icefield. The parkway reaches its highest summit at Bow Pass (2,069 m / 6,787 ft) and crosses the provincial national park divide at Sunwapta Pass (2,035 m / 6,677 ft). Built during the Great Depression and opened in 1940, the route offers travelers unprecedented access to untouched alpine wilderness with live road telemetry from 511 Alberta and Parks Canada.',
+    crossLinkAnchor: 'Sunwapta Pass (2,035 m) & Yellowhead Pass (1,131 m)',
+    crossLinkUrl: '/passes/canada/alberta/sunwapta-pass',
+    crossLinkText: 'Compare Canadian Rocky Mountains alpine passes and scenic highways with'
+  },
 };

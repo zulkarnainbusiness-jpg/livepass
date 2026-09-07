@@ -144,6 +144,50 @@ const baralachaHindiFaqs = [
 
 
 
+
+const icefieldsFrenchFaqs = [
+  {
+    question: "La Promenade des Glaciers (route 93 Nord) est-elle ouverte aujourd'hui ? (Promenade des Glaciers est-elle ouverte / icefields parkway road is open / is icefields parkway road open right now / icefields parkway road is it open today)",
+    answer: "Oui, la Promenade des Glaciers (Icefields Parkway Road / route 93 Nord) est actuellement OUVERTE à toute la circulation automobile entre Lake Louise et Jasper. Les voies de circulation sont sèches et bien dégagées avec une excellente visibilité sur les cols Bow (2 069 m / 6 787 pi) et Sunwapta (2 035 m / 6 677 pi). Les équipes de déneigement de Parcs Canada assurent la viabilité hivernale durant le jour. Consultez LivePassWatch pour connaître les webcams en direct, la météo et l'état des routes avant de prendre le départ."
+  },
+  {
+    question: "Quelles sont les conditions routières et le rapport d'état actuel sur la Promenade des Glaciers ? (état de la route Promenade des Glaciers / icefields parkway road road conditions / icefields parkway road road status / icefields parkway road pass status report)",
+    answer: "L'état de la route actuel sur la Promenade des Glaciers indique une chaussée sèche et dégagée sur l'ensemble des 232 kilomètres. Les conditions de conduite sont optimales au col Bow, à Saskatchewan River Crossing et au champ de glace Columbia. Durant l'hiver (novembre à avril), la chaussée devient compacte de neige et de glace, exigeant une grande prudence et des pneus homologués pour l'hiver."
+  },
+  {
+    question: "La Promenade des Glaciers est-elle fermée aujourd'hui ou quand est-elle déclarée fermée ? (is icefields parkway road closed today / icefields parkway road closed / icefields parkway road is closed)",
+    answer: "Non, la Promenade des Glaciers n'est PAS fermée aujourd'hui ; la route 93 Nord est ouverte dans les deux sens. Une fermeture préventive d'urgence n'est décrétée que lors de violentes tempêtes hivernales, de blizzards avec poudrerie aveuglante ou d'opérations de déclenchement d'avalanches au mont Athabasca. Ces fermetures temporaires durent généralement de 4 à 24 heures."
+  },
+  {
+    question: "Où peut-on visionner les caméras en direct et webcams de la Promenade des Glaciers ? (caméras en direct Promenade des Glaciers / icefields parkway road webcam / icefields parkway road live webcam / icefields parkway road cameras / icefields parkway road summit camera)",
+    answer: "LivePassWatch diffuse les caméras routières officielles de 511 Alberta et de Parcs Canada le long de la Promenade des Glaciers. Vous pouvez regarder la caméra du sommet au champ de glace Columbia et glacier Athabasca (Cam 186 à 1 980 m), la caméra de Saskatchewan River Crossing (Cam 187), la caméra de la porte sud de Jasper près des chutes Athabasca (Cam 277) et la caméra de Lake Louise (Cam 188). Les images s'actualisent automatiquement toutes les 60 secondes."
+  },
+  {
+    question: "Quand la Promenade des Glaciers ouvre-t-elle et ferme-t-elle pour l'hiver ? (when does icefields parkway road open / when does icefields parkway road close for winter / fermeture hivernale Promenade des Glaciers)",
+    answer: "La Promenade des Glaciers ne ferme PAS pour l'hiver de façon permanente. Contrairement aux cols saisonniers fermés plusieurs mois consécutifs, la route 93 Nord est entretenue toute l'année, 365 jours par an, par Parcs Canada avec des équipes de déneigement de jour (de 7 h 00 à 15 h 30). Seules des fermetures ponctuelles de sécurité ont lieu lors d'épisodes de tempête majeure."
+  },
+  {
+    question: "Où trouver la carte interactive, les coordonnées GPS et l'itinéraire de la Promenade des Glaciers ? (icefields parkway road map / carte Promenade des Glaciers)",
+    answer: "Une carte interactive complète de la Promenade des Glaciers (route 93 Nord) est accessible sur LivePassWatch. Elle illustre les 232 km d'itinéraire entre Lake Louise et Jasper, les deux points culminants au col Bow (2 069 m) et au col Sunwapta (2 035 m), ainsi que les points d'intérêt majeurs (lac Peyto, glacier Athabasca, chutes Sunwapta et poste de Saskatchewan River Crossing)."
+  },
+  {
+    question: "Quelle est la météo aujourd'hui et l'enneigement sur la Promenade des Glaciers ? (icefields parkway road weather today / icefields parkway road snow / icefields parkway road snow depth / météo Promenade des Glaciers)",
+    answer: "La météo actuelle sur la Promenade des Glaciers est claire et ensoleillée avec des températures de 11 °C (52 °F) et une brise glaciaire modérée. L'épaisseur de neige sur la chaussée est de 0 cm (chaussée sèche). En hiver, l'accumulation de neige le long du corridor varie habituellement entre 100 cm et 300 cm (39 à 118 pouces)."
+  },
+  {
+    question: "Les pneus d'hiver sont-ils légalement obligatoires sur la Promenade des Glaciers (route 93 Nord) ?",
+    answer: "Oui. En vertu de la législation de l'Alberta et des règlements de Parcs Canada, les pneus d'hiver certifiés portant le pictogramme 3PMSF (flocon de neige et montagne) ou M+S avec une profondeur de sculpture minimale de 3,5 mm sont obligatoires pour tous les véhicules de tourisme du 1er novembre au 1er avril. Des contrôles stricts sont effectués par les gardes de parc."
+  },
+  {
+    question: "Y a-t-il du réseau cellulaire ou des stations-service sur la Promenade des Glaciers ?",
+    answer: "Il n'y a AUCUNE couverture cellulaire sur la quasi-totalité des 232 kilomètres de la Promenade des Glaciers entre Lake Louise et Jasper. L'unique station-service avec restauration et téléphone public se trouve à Saskatchewan River Crossing (à 76 km au nord de Lake Louise), ouverte uniquement du printemps à l'automne. En hiver, prévoyez un plein complet au départ."
+  },
+  {
+    question: "Les camions poids lourds et véhicules commerciaux sont-ils autorisés sur la Promenade des Glaciers ?",
+    answer: "Non. Le transit de véhicules commerciaux et de camions lourds de plus de 4 550 kg est formellement interdit sur la route 93 Nord afin de préserver la quiétude et l'environnement sauvage des parcs nationaux de Banff et Jasper. Les transporteurs doivent emprunter la route 1 ou la route 16."
+  }
+];
+
 const yellowheadFrenchFaqs = [
   {
     question: "Le col Yellowhead est-il ouvert aujourd'hui ? (Col Tête-Jaune est-il ouvert / Yellowhead Pass is open / is Yellowhead Pass open right now / Yellowhead Pass is it open today)",
@@ -1132,6 +1176,147 @@ export const PassDetailPage: React.FC = () => {
             </div>
           </div>
         )}
+
+        
+        {/* Bilingual Language Switcher for Icefields Parkway Road */}
+        {pass.slug === 'icefields-parkway-road' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(37, 99, 235, 0.06) 100%)',
+            border: '1px solid rgba(239, 68, 68, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#991B1B' }}>
+              <Globe size={18} color="#DC2626" />
+              <span>
+                {pageLang === 'fr'
+                  ? '🇨🇦 Version officielle canadienne française active — Promenade des Glaciers (Route 93 Nord, Parcs nationaux Banff & Jasper, Alberta)'
+                  : '🇨🇦 Official Canadian Bilingual Experience Active — Icefields Parkway Road (Promenade des Glaciers) on Hwy 93N'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#DC2626' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 Français
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=${pageLang === 'fr' ? 'en' : 'fr'}&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/canada/alberta/icefields-parkway-road')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#991B1B',
+                  background: '#FEF2F2',
+                  border: '1px solid #FECACA',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Google Translate (English / French)"
+              >
+                <Globe size={14} />
+                <span>Google Translate ↗</span>
+              </a>
+            </div>
+          </div>
+        )}
+
+        {pass.slug === 'icefields-parkway-road' && (
+          <div className="icefields-regulations-callout lp-card" style={{
+            borderLeft: '4px solid #DC2626',
+            padding: '20px',
+            marginBottom: '24px',
+            backgroundColor: 'rgba(239, 68, 68, 0.04)',
+            borderRadius: '6px'
+          }}>
+            <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px', color: '#991B1B' }}>
+              <ShieldCheck size={20} color="#DC2626" />
+              <span>
+                {pageLang === 'fr'
+                  ? 'Réglementations de la Promenade des Glaciers & Guide de Sécurité de Parcs Canada (Route 93 Nord 🇨🇦)'
+                  : 'Icefields Parkway Road Transit Regulations & Parks Canada Mountain Safety (Highway 93N 🇨🇦)'}
+              </span>
+            </h3>
+            <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <strong>Corridor Alpin Sauvage &amp; Cols Majeurs :</strong> La <strong>Promenade des Glaciers (route 93 Nord)</strong> relie Lake Louise et Jasper sur 232 km, traversant le <strong>col Bow (2 069 m)</strong> et le <strong>col Sunwapta (2 035 m)</strong>. La route est entièrement isolée et sans réseau cellulaire ; le respect des consignes de sécurité hivernale est indispensable.
+                </>
+              ) : (
+                <>
+                  <strong>Wilderness Alpine Corridor &amp; Mountain Summits:</strong> <strong>Icefields Parkway Road (Highway 93N)</strong> links Lake Louise and Jasper across 232 km (144 miles), surmounting <strong>Bow Pass (2,069 m / 6,787 ft)</strong> and <strong>Sunwapta Pass (2,035 m / 6,677 ft)</strong>. The corridor has zero cellular reception; winter readiness is mandatory.
+                </>
+              )}
+            </p>
+            <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <li><strong>Pneus d'hiver obligatoires en Alberta (1er nov – 1er avr) :</strong> Pneus certifiés 3PMSF (flocon/montagne) ou M+S avec bande de roulement minimale de 3,5 mm obligatoires sur l'ensemble de la route 93 Nord.</li>
+                  <li><strong>Déneigement de jour exclusivement (7 h 00 à 15 h 30) :</strong> Les équipes de Parcs Canada n'opèrent pas la nuit. Les déplacements nocturnes en hiver sont fortement déconseillés.</li>
+                  <li><strong>Zone blanche sans réseau cellulaire (180 km+) :</strong> Aucun signal téléphonique entre Lake Louise et Jasper, hormis un téléphone public à Saskatchewan River Crossing. Prévoyez une carte hors-ligne et un émetteur satellite.</li>
+                  <li><strong>Carburant limité :</strong> Une seule station-service à Saskatchewan River Crossing (fermée l'hiver). Faites obligatoirement le plein complet à Lake Louise ou Jasper avant de vous engager.</li>
+                  <li><strong>Interdiction des camions poids lourds (+4 550 kg) :</strong> Les poids lourds de transit commercial sont interdits sur la route patrimoniale.</li>
+                </>
+              ) : (
+                <>
+                  <li><strong>Mandatory Winter Tires in Alberta (Nov 1 – Apr 1):</strong> Certified 3PMSF mountain snowflake or M+S tires with at least 3.5 mm tread depth legally required on Highway 93 North.</li>
+                  <li><strong>Daylight Plowing Operations Only (7:00 AM – 3:30 PM):</strong> Parks Canada maintenance crews do not plow overnight. Night driving in winter is strongly discouraged.</li>
+                  <li><strong>Zero Cell Service Wilderness Corridor (180 km+):</strong> No mobile phone coverage between Lake Louise and Jasper except for a payphone at Saskatchewan River Crossing. Carry offline maps and satellite communicators.</li>
+                  <li><strong>Single Remote Fuel Stop:</strong> Only one seasonal gas station at Saskatchewan River Crossing (closed in winter). Vehicles must depart Lake Louise or Jasper with a full tank of fuel.</li>
+                  <li><strong>Commercial Heavy Freight Ban (+4,550 kg):</strong> Commercial through-trucking is strictly prohibited to protect the national park scenic environment.</li>
+                </>
+              )}
+            </ul>
+          </div>
+        )}
+
+        {pass.slug === 'icefields-parkway-road' && (
+          <div style={{ marginTop: '16px', marginBottom: '24px', padding: '14px 18px', backgroundColor: 'rgba(59, 130, 246, 0.05)', border: '1px solid rgba(59, 130, 246, 0.25)', borderRadius: '6px', fontSize: '13px', color: '#1E40AF', lineHeight: '1.55' }}>
+            <strong>🇨🇦 Parks Canada &amp; 511 Alberta Camera Verification Notice:</strong> Highway 93 North live highway webcams at Columbia Icefield (Cam 186), Saskatchewan River Crossing (Cam 187), Jasper South / Athabasca Falls (Cam 277), and Lake Louise (Cam 188) are provided in partnership with Alberta Transportation and DriveBC. Images update automatically every 60 seconds. Verify real-time travel telemetry on <a href="https://511.alberta.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>511 Alberta</a>, <a href="https://parks.canada.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>Parks Canada</a>, and <a href="/methodology" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>LivePassWatch Verification Methodology</a>.
+          </div>
+        )}
+
 
         {/* Bilingual Language Switcher for Yellowhead Pass */}
         {pass.slug === 'yellowhead-pass' && (
@@ -4488,8 +4673,8 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
-                  ((pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
+                {((pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                  ((pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
 
 
 
