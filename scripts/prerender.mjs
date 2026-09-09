@@ -520,16 +520,22 @@ fs.writeFileSync(templateBackupPath, cleanBaseTemplate, 'utf8');
 // -------------------------------------------------------------
 // 3. Build Full HTML Page
 // -------------------------------------------------------------
-function buildHtmlPage({ title, description, canonicalUrl, ogImage, jsonLd, bodyContent, noIndex = false }) {
+function buildHtmlPage({ title, description, keywords, canonicalUrl, ogImage, jsonLd, bodyContent, noIndex = false }) {
   const absoluteOgImage = ogImage
     ? (ogImage.startsWith('http') ? ogImage : `${DOMAIN}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`)
     : `${DOMAIN}/hero-bg.webp`;
 
+  const safeKeywords = keywords || 'mountain pass status, mountain pass road conditions, live webcams, pass closures, snow depth, highway chain laws, mountain pass weather, LivePassWatch';
+
   const headElements = `
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}" />
+    <meta name="keywords" content="${escapeHtml(safeKeywords)}" />
+    <meta name="publisher" content="LivePassWatch" />
+    <meta name="author" content="LivePassWatch" />
     <meta name="robots" content="${noIndex ? 'noindex, nofollow' : 'index, follow'}" />
     <link rel="canonical" href="${escapeHtml(canonicalUrl)}" />
+    <link rel="publisher" href="${DOMAIN}" />
     
     <!-- Open Graph -->
     <meta property="og:title" content="${escapeHtml(title)}" />
@@ -579,9 +585,10 @@ passesData.forEach(pass => {
   const canonicalUrl = `${DOMAIN}${canonicalPath}`;
   canonicalPassUrls.push(canonicalUrl);
 
-  const rawTitle = pass.customSeo?.title || `${pass.name} Live Status & Webcams`;
+  const cleanName = pass.name.includes('(') ? pass.name.split('(')[0].trim() : pass.name;
+  const rawTitle = pass.customSeo?.title || `${cleanName} Road Status & Webcams`;
   const title = rawTitle.toLowerCase().includes('livepasswatch') ? rawTitle : `${rawTitle} | LivePassWatch`;
-  const description = pass.customSeo?.description || `Live ${pass.name} webcams, highway conditions, and real-time open/closed status on ${pass.highway}${pass.state ? `, ${pass.state}` : ''}. Verified and updated today.`;
+  const description = pass.customSeo?.description || `Live ${cleanName} road status, webcams, mountain weather & closures on ${pass.highway}${pass.state ? `, ${pass.state}` : ''}. Verified today.`;
   const passFullImage = pass.image.startsWith('http') ? pass.image : `${DOMAIN}${pass.image.startsWith('/') ? '' : '/'}${pass.image}`;
 
   const allFaqs = [
@@ -650,10 +657,15 @@ passesData.forEach(pass => {
     ]
   };
 
+  const keywords = (pass.searchKeywords && pass.searchKeywords.length > 0)
+    ? pass.searchKeywords.join(', ')
+    : `${pass.name}, ${pass.name} road conditions, ${pass.name} road status, ${pass.name} webcam, ${pass.name} camera, is ${pass.name} open today, ${pass.name} snow depth, ${pass.name} weather today, ${pass.name} chain requirements, ${pass.highway}, ${pass.state ? `${pass.state} mountain passes, ` : ''}${pass.country} mountain pass, LivePassWatch`;
+
   const bodyContent = generatePassSemanticHtml(pass, canonicalUrl);
   const html = buildHtmlPage({
     title,
     description,
+    keywords,
     canonicalUrl,
     ogImage: pass.image,
     jsonLd,
@@ -802,7 +814,7 @@ const homepageJsonLd = {
 const staticPages = [
   {
     path: '/',
-    title: 'Live Mountain Pass Status, Road Conditions & Webcams | LivePassWatch',
+    title: 'Mountain Pass Road Status & Conditions | LivePassWatch',
     description: 'Check real-time mountain pass status, live webcams, snow depth, road conditions, and closures worldwide. Know before you go with LivePassWatch.',
     canonicalUrl: `${DOMAIN}/`,
     jsonLd: homepageJsonLd,
@@ -893,7 +905,7 @@ const staticPages = [
   {
     path: '/methodology',
     title: 'Multi-Source Verification Methodology | LivePassWatch',
-    description: 'Explore the 3-Tier Multi-Source Verification Methodology used by LivePassWatch to validate real-time mountain pass status, road closures, and community reports.',
+    description: 'Explore the 3-Tier Multi-Source Verification Methodology used by LivePassWatch to validate real-time mountain pass status, road closures & reports.',
     canonicalUrl: `${DOMAIN}/methodology`,
     bodyContent: `<main class="app-container" style="padding: 2.5rem 1rem; max-width: 950px; margin: 0 auto;">
       <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a;">Multi-Source Verification Methodology (MTVM)</h1>

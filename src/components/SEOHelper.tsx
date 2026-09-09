@@ -3,6 +3,9 @@ import React, { useEffect } from 'react';
 interface SEOHelperProps {
   title: string;
   description: string;
+  keywords?: string;
+  publisher?: string;
+  author?: string;
   canonicalUrl?: string;
   jsonLd?: object;
   ogImage?: string;
@@ -15,6 +18,9 @@ const DEFAULT_DOMAIN = 'https://www.livepasswatch.info';
 export const SEOHelper: React.FC<SEOHelperProps> = ({
   title,
   description,
+  keywords,
+  publisher = 'LivePassWatch',
+  author = 'LivePassWatch',
   canonicalUrl,
   jsonLd,
   ogImage = '/hero-bg.webp',
@@ -44,7 +50,24 @@ export const SEOHelper: React.FC<SEOHelperProps> = ({
     // 2. Meta Description
     setMeta('name', 'description', description);
 
-    // 3. Robots Tag (index / noindex)
+    // 3. Keywords
+    if (keywords) {
+      setMeta('name', 'keywords', keywords);
+    }
+
+    // 4. Publisher & Author
+    setMeta('name', 'publisher', publisher);
+    setMeta('name', 'author', author);
+
+    let linkPublisher = document.querySelector('link[rel="publisher"]');
+    if (!linkPublisher) {
+      linkPublisher = document.createElement('link');
+      linkPublisher.setAttribute('rel', 'publisher');
+      document.head.appendChild(linkPublisher);
+    }
+    linkPublisher.setAttribute('href', DEFAULT_DOMAIN);
+
+    // 5. Robots Tag (index / noindex)
     setMeta('name', 'robots', noIndex ? 'noindex, nofollow' : 'index, follow');
 
     // 4. Open Graph Metadata
@@ -93,7 +116,7 @@ export const SEOHelper: React.FC<SEOHelperProps> = ({
       script.innerHTML = JSON.stringify(jsonLd);
       document.head.appendChild(script);
     }
-  }, [title, description, canonicalUrl, jsonLd, ogImage, twitterCard, noIndex]);
+  }, [title, description, keywords, publisher, author, canonicalUrl, jsonLd, ogImage, twitterCard, noIndex]);
 
   return null;
 };

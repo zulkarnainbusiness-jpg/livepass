@@ -21,6 +21,25 @@
   text-decoration: none;
 }
 
+.footer-brand-logo .brand-logo-icon {
+  width: 34px;
+  height: 34px;
+  background-color: #FB542B;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(251, 84, 43, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex-shrink: 0;
+}
+
+.footer-brand-logo:hover .brand-logo-icon {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(251, 84, 43, 0.5);
+}
+
 .footer-desc {
   font-size: 13.5px;
   line-height: 1.6;

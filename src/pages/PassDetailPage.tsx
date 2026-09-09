@@ -1049,9 +1049,13 @@ export const PassDetailPage: React.FC = () => {
                                         : `${pass.name} on ${pass.highway} in ${pass.state}`;
 
   const seoDetails = passSeoDetails[pass.slug] || passSeoDetails[pass.id];
-  const rawTitle = pass.customSeo?.title || `${pass.name} Live Status & Webcams`;
+  const cleanName = pass.name.includes('(') ? pass.name.split('(')[0].trim() : pass.name;
+  const rawTitle = pass.customSeo?.title || `${cleanName} Road Status & Webcams`;
   const seoTitle = rawTitle.toLowerCase().includes('livepasswatch') ? rawTitle : `${rawTitle} | LivePassWatch`;
-  const seoDesc = pass.customSeo?.description || `Live ${pass.name} webcams, highway conditions, and real-time open/closed status on ${pass.highway}${pass.state ? `, ${pass.state}` : ''}. Verified and updated today.`;
+  const seoDesc = pass.customSeo?.description || `Live ${cleanName} road status, webcams, mountain weather & closures on ${pass.highway}${pass.state ? `, ${pass.state}` : ''}. Verified today.`;
+  const passKeywords = (pass.searchKeywords && pass.searchKeywords.length > 0)
+    ? pass.searchKeywords.join(', ')
+    : `${pass.name}, ${pass.name} road conditions, ${pass.name} webcam, ${pass.name} live status, ${pass.name} weather, ${pass.highway}, ${pass.state ? `${pass.state} mountain passes, ` : ''}${pass.country} mountain pass, LivePassWatch`;
 
   const displayedStatus = liveDataError ? 'NEEDS_VERIFICATION' : pass.status;
   const displayedStatusDetail = liveDataError
@@ -1138,6 +1142,7 @@ export const PassDetailPage: React.FC = () => {
       <SEOHelper
         title={seoTitle}
         description={seoDesc}
+        keywords={passKeywords}
         canonicalUrl={canonicalUrl}
         jsonLd={jsonLdGraph}
         ogImage={passFullImage}

@@ -934,5 +934,21 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Coquihalla Summit Pass (1,244 m) & Crowsnest Pass (1,358 m)',
     crossLinkUrl: '/passes/canada/british-columbia/coquihalla-summit-pass',
     crossLinkText: 'Compare British Columbia Cascade and Rocky Mountain passes with'
+  },
+  'monashee-pass': {
+    nearestTowns: [
+      { name: 'Cherryville, BC (North Okanagan)', distance: '47.0 km (29.2 miles)', direction: 'West via Hwy 6 (Nearest fuel stop west of summit)' },
+      { name: 'Vernon, BC (Okanagan Valley)', distance: '83.0 km (51.6 miles)', direction: 'West via Hwy 6 (Major city — hospital, airport, all services)' },
+      { name: 'Lumby, BC', distance: '70.0 km (43.5 miles)', direction: 'West via Hwy 6 (North Okanagan service village)' },
+      { name: 'Needles Ferry Terminal, BC', distance: '40.0 km (24.9 miles)', direction: 'East via Hwy 6 (Free Arrow Lake ferry crossing)' },
+      { name: 'Nakusp, BC (West Kootenay)', distance: '84.0 km (52.2 miles)', direction: 'East via Hwy 6 (Arrow Lakes & Kootenay hub)' },
+      { name: 'Kelowna, BC (Okanagan)', distance: '130.0 km (80.8 miles)', direction: 'West via Hwy 6 & 97 (Regional airport & metro centre)' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Mandatory Winter Tires Oct 1 – Apr 30)',
+    seasonalClosureDetail: 'Monashee Pass along BC Highway 6 (the Monashee Highway connecting Vernon to Nakusp; summit at 1,189 m / 3,901 ft) is maintained open 365 days a year by DriveBC and TranBC road maintenance contractors. As an essential inter-regional provincial highway linking the North Okanagan with the Arrow Lakes and West Kootenay communities, it does not have a seasonal winter closure. Winter tires (3-Peak Mountain Snowflake or M+S with minimum 3.5 mm tread) are legally mandatory from October 1 to April 30 under BC Motor Vehicle Act regulations. Commercial trucks over 11,794 kg must carry tire chains. Precautionary short-duration closures of 1 to 4 hours occur only during extreme winter blizzards, ice storms, avalanche clearance, or vehicle recovery operations. The DriveBC summit camera (Cam 250) is solar-powered with battery backup to maintain live CCTV imagery through winter.',
+    aboutPass: 'Monashee Pass (elevation 1,189 m / 3,901 ft; French: Col Monashee / Route 6) is a vital mountain pass carrying British Columbia Highway 6 (the Monashee Highway) across the Monashee Mountains, connecting Vernon in the North Okanagan Valley with Nakusp and the West Kootenay via the Arrow Lakes. Named from the Scottish Gaelic monadh sìth — meaning "Mountains of Peace" — after prospector Donald McIntyre staked the first mining claims in 1881, the pass traverses dense old-growth cedar forests, subalpine wildflower meadows, and the remote wilderness of Monashee Provincial Park. After descending the eastern slope, Highway 6 reaches Lower Arrow Lake, where the free BC Ferries Needles–Fauquier cable ferry provides the only crossing to continue east toward Nakusp. The corridor is served by DriveBC solar-powered highway webcams and RWIS (Road Weather Information System) sensors delivering real-time road conditions data.',
+    crossLinkAnchor: 'Allison Pass (1,342 m) & Rogers Pass (1,330 m)',
+    crossLinkUrl: '/passes/canada/british-columbia/allison-pass',
+    crossLinkText: 'Compare British Columbia Monashee Mountain passes with other scenic BC alpine corridors like'
   }
 };

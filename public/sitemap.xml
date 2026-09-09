@@ -50,7 +50,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Canonical Mountain Pass Detail Pages (60 passes) -->
+  <!-- Canonical Mountain Pass Detail Pages (61 passes) -->
   <url>
     <loc>https://www.livepasswatch.info/passes/united-states/washington/snoqualmie-pass</loc>
     <lastmod>2026-09-09</lastmod>
@@ -407,6 +407,12 @@
   </url>
   <url>
     <loc>https://www.livepasswatch.info/passes/canada/british-columbia/allison-pass</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/canada/british-columbia/monashee-pass</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>

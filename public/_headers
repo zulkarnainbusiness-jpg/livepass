@@ -5,6 +5,7 @@
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(self)
+  X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
@@ -18,11 +19,38 @@
 /*.png
   Cache-Control: public, max-age=31536000, immutable
 
-/*.svg
-  Cache-Control: public, max-age=31536000, immutable
+/favicon.ico
+  Cache-Control: public, max-age=3600, must-revalidate
 
-/*.ico
-  Cache-Control: public, max-age=31536000, immutable
+/favicon-v2.ico
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/mountain-logo.svg
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/mountain-logo-v2.svg
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/favicon-*.png
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/favicon.png
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/apple-touch-icon.png
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/apple-touch-icon-v2.png
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/logo.png
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/logo-v2.webp
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/logo.webp
+  Cache-Control: public, max-age=3600, must-revalidate
 
 /sitemap.xml
   Content-Type: application/xml; charset=utf-8

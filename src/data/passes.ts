@@ -279,7 +279,12 @@ export const passesData: MountainPass[] = [
         "answer": "You can view real-time webcam feeds directly on this page under the Live Camera section, updated every 2-5 minutes from official WSDOT camera feeds."
       }
     ],
-    "isPopular": true
+    "isPopular": true,
+    "customSeo": {
+      "title": "Snoqualmie Pass Road Status & Webcams",
+      "description": "Live Snoqualmie Pass webcams, highway conditions, and real-time open/closed status on I-90, Washington. Verified and updated today.",
+      "h1": "Snoqualmie Pass Road Status & Live Webcams"
+    }
   },
   {
     "id": "north-cascades-pass",
@@ -577,8 +582,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "North Cascades Pass Road Conditions, Open/Closed Status & Webcams | SR 20",
-      "description": "Check live North Cascades Pass / Highway (SR 20) road conditions, open/closed status, WSDOT webcams, weather, snow depth, opening dates, elevation, and map for Washington Pass.",
+      "title": "North Cascades Pass Status & Webcams | LivePassWatch",
+      "description": "Check North Cascades Pass (SR 20) road conditions, open/closed status, WSDOT webcams, snow depth, opening dates, and weather for Washington Pass.",
       "h1": "North Cascades Pass Road Conditions, Open/Closed Status & Live Webcams"
     },
     "searchKeywords": [
@@ -871,7 +876,7 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Stevens Pass Road Conditions, Weather & Live Camera | US 2",
+      "title": "Stevens Pass Road Conditions & Webcams",
       "description": "Check current Stevens Pass road conditions, pass status, weather, snow conditions and live cameras for US 2 in Washington before you travel."
     },
     "faqs": [
@@ -1060,8 +1065,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Donner Pass Road Conditions, Donner Summit Elevation & Live Camera | I-80",
-      "description": "Where is Donner Pass? Check Donner Summit elevation (7,056 ft), how long Donner Pass is, live I-80 road conditions, Caltrans webcams, and weather in California.",
+      "title": "Donner Pass Road Conditions & Webcams",
+      "description": "Live Donner Pass road conditions, Donner Summit elevation (7,056 ft), I-80 Caltrans webcams, snowpack & California weather. Know before you go.",
       "h1": "Donner Pass – Road Conditions, Donner Summit Elevation & Live Camera"
     },
     "searchKeywords": [
@@ -1200,7 +1205,12 @@ export const passesData: MountainPass[] = [
         "answer": "During winter weather events, CDOT enforces Code 15 (Passenger Vehicle Traction Law), requiring 4WD/AWD with adequate tread or chains/snow socks."
       }
     ],
-    "isPopular": true
+    "isPopular": true,
+    "customSeo": {
+      "title": "Berthoud Pass Road Status & Webcams",
+      "description": "Live Berthoud Pass webcams, highway conditions, snow depth, and real-time open/closed status on US-40, Colorado. Verified and updated today.",
+      "h1": "Berthoud Pass Road Status & Live Webcams"
+    }
   },
   {
     "id": "blewett-pass",
@@ -1288,14 +1298,16 @@ export const passesData: MountainPass[] = [
       "summary": "Blewett Pass (elevation 4,102 ft / 1,250 m) carries US Route 97 across the Wenatchee Mountains in Washington State. It provides a scenic and vital north-south link connecting Ellensburg and Interstate 90 in Kittitas County with Peshastin, Leavenworth, and Wenatchee in Chelan County through the Okanogan-Wenatchee National Forest."
     },
     "customSeo": {
-      "title": "Blewett Pass Camera, Road Conditions & Weather | US-97 WSDOT",
-      "description": "Check Blewett Pass camera live feeds, real-time US-97 road conditions, weather, elevation (4,102 ft), and travel alerts between Ellensburg and Wenatchee, WA.",
+      "title": "Blewett Pass Road Conditions & Webcams | LivePassWatch",
+      "description": "Check Blewett Pass live cameras, real-time US-97 road conditions, weather, elevation (4,102 ft), and travel alerts between Ellensburg and Wenatchee, WA.",
       "h1": "Blewett Pass – Live Camera, Road Conditions & Weather"
     },
     "searchKeywords": [
       "blewett pass camera",
       "blewett pass webcam",
       "blewett pass road conditions",
+      "blewett pass road status",
+      "is blewett pass open today",
       "us 97 blewett pass weather",
       "blewett pass summit camera",
       "blewett pass elevation",
@@ -1516,8 +1528,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "White Pass Road Conditions Camera Live, Weather & Status | US 12",
-      "description": "Check live White Pass road conditions camera live feeds, weather, snow report, elevation (4,500 ft), and real-time US 12 highway alerts.",
+      "title": "White Pass US 12 Road Status & Webcams",
+      "description": "Check live White Pass road conditions, live summit cameras, weather forecast, snow report, and real-time US 12 highway alerts in Washington.",
       "h1": "White Pass – Road Conditions, Camera Live & Weather"
     },
     "searchKeywords": [
@@ -1765,8 +1777,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Chinook Pass Webcam, Road Conditions & Weather | SR 410 WSDOT",
-      "description": "View live Chinook Pass webcam feeds, current road conditions, snow depth, seasonal opening status, and weather on SR 410 in Washington.",
+      "title": "Chinook Pass Webcams & Road Status | LivePassWatch",
+      "description": "View live Chinook Pass webcams, current road conditions, snow depth, seasonal opening dates, and highway status for SR 410 in Mount Rainier, WA.",
       "h1": "Chinook Pass – Webcam, Road Conditions & Seasonal Status"
     },
     "searchKeywords": [
@@ -1776,7 +1788,12 @@ export const passesData: MountainPass[] = [
       "chinook pass road conditions",
       "sr 410 webcam",
       "wsdot chinook pass webcam",
-      "chinook pass summit webcam"
+      "chinook pass summit webcam",
+      "chinook pass road status",
+      "is chinook pass open today",
+      "chinook pass opening date",
+      "chinook pass snow depth",
+      "chinook pass weather today"
     ],
     "aliases": [
       "SR 410 Chinook Pass",
@@ -2110,8 +2127,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Cayuse Pass Road Conditions, Open/Closed Status & Webcam | SR 123",
-      "description": "Check live Cayuse Pass road conditions, current open/closed status, WSDOT webcam, weather, snow, opening dates, elevation, directions and more for SR 123 in Washington.",
+      "title": "Cayuse Pass Road Conditions & Status | LivePassWatch",
+      "description": "Check live Cayuse Pass road conditions, open/closed status, WSDOT webcam, snow depth, opening dates, and elevation for SR 123 in Mount Rainier, WA.",
       "h1": "Cayuse Pass Road Conditions, Open/Closed Status & Live Webcam"
     },
     "searchKeywords": [
@@ -2501,7 +2518,7 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Sherman Pass Road Conditions, Opening Date & Live Webcam | SR 20",
+      "title": "Sherman Pass SR 20 Road Status & Webcams",
       "description": "Check Sherman Pass road conditions, current open/closed status, opening dates, live webcams, weather, snow and travel alerts before driving.",
       "h1": "Sherman Pass Road Conditions, Open/Closed Status & Live Webcams"
     },
@@ -2927,8 +2944,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Zoji La Pass – Live Road Status, Weather & Travel Guide (NH-1)",
-      "title": "Zoji La Pass: Live Road Status, Weather, Map & Travel Guide | NH-1",
-      "description": "Check Zoji La Pass live road status, current conditions, BRO convoy times, weather, map, and complete travel guide for NH-1 Srinagar–Leh highway in Jammu & Kashmir."
+      "title": "Zoji La Pass Live Road Status & Weather",
+      "description": "Check Zoji La Pass live road status, BRO convoy times, snow depth, mountain weather, and travel guidance for NH-1 Srinagar–Leh Highway in J&K."
     },
     "faqs": [
       {
@@ -3142,7 +3159,7 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Khardung La: Weather, Road Status, Altitude & Live Camera",
-      "title": "Khardung La Weather, Road Status, Altitude & Live Camera",
+      "title": "Khardung La Road Status & Weather",
       "description": "Check Khardung La weather, temperature, road status, altitude, map and live camera updates before traveling from Leh to Nubra Valley."
     },
     "faqs": [
@@ -3373,8 +3390,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Chang La Pass Live Road Status, Opening Date & Conditions",
-      "title": "Chang La Pass Live Road Status, Opening Date & Conditions – Updated Today",
-      "description": "Check real-time Chang La pass status today, opening date, road conditions, Pangong Lake travel advisories, and weather on Leh–Pangong Highway. Verified and updated today."
+      "title": "Chang La Pass Road Status & Conditions",
+      "description": "Check real-time Chang La pass status, opening date, road conditions, Pangong Lake travel advisories, and weather on Leh–Pangong Highway today."
     },
     "searchKeywords": [
       "Chang La opening date",
@@ -3699,7 +3716,7 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Rohtang Pass – Weather, Road Status, Permit & Live Camera",
-      "title": "Rohtang Pass Weather, Road Status, Permit & Live Camera",
+      "title": "Rohtang Pass Road Status & Weather",
       "description": "Check Rohtang Pass weather, temperature, road status, permit information, opening date, map and live camera updates before traveling."
     },
     "faqs": [
@@ -4019,8 +4036,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Nathu La Pass Opening Date, Road Status, Webcams & Conditions",
-      "title": "Nathu La Pass Opening Date, Road Status & Live Conditions | LivePassWatch",
-      "description": "Check the latest Nathu La Pass opening date, road status, and current conditions in Sikkim. Permits, snow depth, weather forecast, elevation guide & access rules."
+      "title": "Nathu La Pass Road Status & Weather",
+      "description": "Check latest Nathu La Pass road status, opening date, snow depth, Sikkim weather forecast, permits, and elevation guide before you travel."
     },
     "searchKeywords": [
       "nathu la pass opening date",
@@ -4259,7 +4276,7 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Furka Pass Road Conditions, Weather & Live Webcam | Switzerland",
+      "title": "Furka Pass Road Conditions & Webcams",
       "description": "Check Furka Pass road conditions, weather, open status, snow and live webcams before traveling through the Swiss Alps between Valais and Uri."
     },
     "faqs": [
@@ -4655,7 +4672,7 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Stelvio Pass – Webcam, Weather, Road Conditions & Opening Status",
-      "title": "Stelvio Pass: Webcam, Weather, Road Conditions & Opening Status",
+      "title": "Stelvio Pass Road Status & Webcams",
       "description": "Check live Stelvio Pass road conditions, opening status, current weather, webcam feeds, and cycling routes for Passo dello Stelvio (SS38) in Italy."
     },
     "faqs": [
@@ -4896,8 +4913,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Trollstigen Pass Live Webcam & Road Conditions (Fv63)",
-      "title": "Trollstigen Pass Live Webcam & Open/Closed Status – Updated Today",
-      "description": "Se live Fv63 Trollstigen webkamera, kjøreforhold, åpningstider og sanntids veistatus på Fylkesvei 63 i Møre og Romsdal, Norge. Verifisert og oppdatert i dag."
+      "title": "Trollstigen Pass Road Status & Webcams",
+      "description": "Se live Trollstigen Fv63 webkamera, kjøreforhold, åpningstider og sanntids veistatus i Møre og Romsdal, Norge. Verifisert og oppdatert i dag."
     },
     "searchKeywords": [
       "Trollstigen Pass opening date",
@@ -5322,8 +5339,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Arthur's Pass Road Conditions & Status — Is It Open Today? | SH 73",
-      "description": "Check whether Arthur's Pass is open today, current road conditions, weather, snow, closures, restrictions and official travel updates for SH 73 in New Zealand."
+      "title": "Arthur's Pass Road Status & Webcams",
+      "description": "Check whether Arthur's Pass is open today: SH 73 road conditions, Southern Alps weather, snow reports, chain restrictions & NZTA travel updates."
     },
     "faqs": [
       {
@@ -5716,8 +5733,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Sani Pass – Weather, Road Conditions, Border Status & Live Camera",
-      "title": "Sani Pass Weather, Road Conditions, Border Status & Live Camera",
-      "description": "Check Sani Pass weather, road conditions, border status, tours, accommodation and live camera information before travelling between South Africa and Lesotho."
+      "title": "Sani Pass Road Conditions & Border Status",
+      "description": "Check Sani Pass 4x4 road conditions, Drakensberg weather, South Africa–Lesotho border post status, snow updates, and travel advisories today."
     },
     "faqs": [
       {
@@ -5890,6 +5907,25 @@ export const passesData: MountainPass[] = [
       "typicalReopening": "Year-Round Operation",
       "description": "Unlike the seasonal section of SR 20 over the North Cascades Highway (Rainy/Washington passes) which closes for winter, Loup Loup Pass is maintained by WSDOT for year-round travel. Short-term closures occur only for active snow removal, avalanche control, or major traffic incidents during severe winter blizzards."
     },
+    "customSeo": {
+      "title": "Loup Loup Pass Road Status & Webcams | LivePassWatch",
+      "description": "Check Loup Loup Pass road conditions, open/closed status, live webcams, summit weather, snowpack, and travel alerts on SR 20 in Okanogan, WA.",
+      "h1": "Loup Loup Pass Road Conditions, Open/Closed Status & Webcams"
+    },
+    "searchKeywords": [
+      "loup loup pass road conditions",
+      "loup loup pass road status",
+      "loup loup pass webcam",
+      "loup loup pass live webcam",
+      "is loup loup pass open today",
+      "loup loup pass opening date",
+      "sr 20 road conditions",
+      "loup loup pass snow conditions",
+      "loup loup pass weather today",
+      "wsdot loup loup pass",
+      "loup loup pass elevation",
+      "okanogan pass conditions"
+    ],
     "forecast": [
       {
         "day": "Today",
@@ -5911,11 +5947,6 @@ export const passesData: MountainPass[] = [
         "url": "https://www.weather.gov/otx/"
       }
     ],
-    "customSeo": {
-      "title": "Loup Loup Pass Opening Date, Road Conditions & Webcams — LivePassWatch",
-      "description": "Loup Loup Pass opening date, current road conditions, open/closed status, webcams, weather, snow conditions and travel alerts on SR 20 in Washington.",
-      "h1": "Loup Loup Pass Road Conditions, Open/Closed Status & Webcams"
-    },
     "quickFacts": {
       "state": "Washington, United States",
       "mountainRange": "Okanogan Highlands",
@@ -6222,7 +6253,7 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Status Pass Road Conditions, Webcam & Weather",
+      "title": "Status Pass Road Status & Webcams",
       "description": "Check Status Pass road conditions, opening status, live webcams, weather, snow and winter travel information before you drive.",
       "h1": "Status Pass Road Conditions, Opening Status, Webcams & Weather"
     },
@@ -6383,7 +6414,7 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Khyber Pass: Road Status, Weather, Map & Travel Guide",
+      "title": "Khyber Pass Road Status & Travel Guide",
       "description": "Explore Khyber Pass in Khyber Pakhtunkhwa, Pakistan, with location, map, elevation, weather, road information and practical travel guidance.",
       "h1": "Khyber Pass: Road Status, Location, Weather & Travel Information"
     },
@@ -6558,8 +6589,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Santiam Pass opening date Road Conditions, Live Status & Webcams | LivePassWatch",
-      "description": "Check real-time Santiam Pass opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "title": "Santiam Pass Road Status & Live Webcams",
+      "description": "Check real-time Santiam Pass road conditions, open/closed status, ODOT 24/7 webcams, snow depth, and Oregon mountain weather before traveling.",
       "h1": "Santiam Pass opening date Road Status, Webcams & Conditions"
     },
     "searchKeywords": [
@@ -6742,8 +6773,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Siskiyou Summit opening date Road Conditions, Live Status & Webcams | LivePassWatch",
-      "description": "Check real-time Siskiyou Summit opening date road conditions, open/closed status, 24/7 webcams, snow depth, and weather forecast before traveling.",
+      "title": "Siskiyou Summit Road Status & Webcams",
+      "description": "Check real-time Siskiyou Summit I-5 road conditions, open/closed status, ODOT 24/7 webcams, snow depth, and mountain weather before traveling.",
       "h1": "Siskiyou Summit opening date Road Status, Webcams & Conditions"
     },
     "searchKeywords": [
@@ -7199,8 +7230,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Col du Galibier : État de la Route, Webcam Live, Météo & Date d'Ouverture",
-      "title": "Col du Galibier Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
-      "description": "Consultez l'état d'ouverture en direct du Col du Galibier (D902), webcams live HD de Valloire, météo, hauteur de neige, conditions de circulation, réglementation du tunnel et Loi Montagne."
+      "title": "Col du Galibier État de la Route & Webcams",
+      "description": "Consultez en direct l'état d'ouverture du Col du Galibier (D902), webcams live HD de Valloire, météo alpine, enneigement et accès au tunnel."
     },
     "searchKeywords": [
       "Col du Galibier Pass opening date",
@@ -7385,7 +7416,7 @@ export const passesData: MountainPass[] = [
     "overview": {
       "openedYear": 1937,
       "lengthMiles": 29.8,
-      "lengthKm": 48.0,
+      "lengthKm": 48,
       "annualSnowfallIn": 420,
       "annualSnowfallM": 10.7,
       "summary": "Le Col de l'Iseran (2 770 m / 9 088 ft — altitude IGN 2 764 m) est le plus haut col routier goudronné des Alpes et d'Europe, reliant la Tarentaise (Bourg-Saint-Maurice et Val-d'Isère) à la Maurienne (Bonneval-sur-Arc et Lanslebourg) en Savoie sur la mythique D902. Inauguré en 1937 par le président Albert Lebrun, le col est un monument mondial du cyclisme (Tour de France) et le point culminant absolu de la Route des Grandes Alpes."
@@ -7415,7 +7446,7 @@ export const passesData: MountainPass[] = [
       "highlight": "Plus haut col des Alpes, Chapelle Notre-Dame de Toute Prudence, Glacier du Pisaillas"
     },
     "routeDetails": {
-      "distanceKm": 48.0,
+      "distanceKm": 48,
       "distanceMiles": 29.8,
       "duration": "1h15 en voiture (3h30–4h30 à vélo)",
       "origin": "Bourg-Saint-Maurice (810 m) / Val-d'Isère (1 850 m)",
@@ -7440,7 +7471,7 @@ export const passesData: MountainPass[] = [
         {
           "name": "Versant Nord complet (depuis Bourg-Saint-Maurice)",
           "origin": "Bourg-Saint-Maurice (810 m)",
-          "distanceKm": 48.0,
+          "distanceKm": 48,
           "distanceMiles": 29.8,
           "elevationGainM": 1955,
           "elevationGainFt": 6414,
@@ -7452,7 +7483,7 @@ export const passesData: MountainPass[] = [
         {
           "name": "Versant Nord direct (depuis Val-d'Isère)",
           "origin": "Val-d'Isère (1 850 m)",
-          "distanceKm": 16.0,
+          "distanceKm": 16,
           "distanceMiles": 9.9,
           "elevationGainM": 920,
           "elevationGainFt": 3018,
@@ -7465,7 +7496,7 @@ export const passesData: MountainPass[] = [
           "name": "Versant Sud direct (depuis Bonneval-sur-Arc)",
           "origin": "Bonneval-sur-Arc (1 850 m)",
           "distanceKm": 12.9,
-          "distanceMiles": 8.0,
+          "distanceMiles": 8,
           "elevationGainM": 977,
           "elevationGainFt": 3205,
           "avgGradient": "7.6%",
@@ -7702,8 +7733,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Col de l'Iseran : État de la Route, Webcam Live, Météo & Date d'Ouverture",
-      "title": "Col de l'Iseran Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
-      "description": "Consultez l'état d'ouverture en direct du Col de l'Iseran (2 770 m, D902), webcams live HD Val d'Isère & Bonneval, météo, hauteur de neige, conditions de circulation et Loi Montagne."
+      "title": "Col de l'Iseran État de la Route & Webcams",
+      "description": "Consultez l'état d'ouverture du Col de l'Iseran (2 770 m, D902), webcams live Val d'Isère et Bonneval, météo Savoie, neige et Loi Montagne."
     },
     "searchKeywords": [
       "Col de l'Iseran Pass opening date",
@@ -7892,7 +7923,7 @@ export const passesData: MountainPass[] = [
       "lengthMiles": 28.5,
       "lengthKm": 45.8,
       "annualSnowfallIn": 590,
-      "annualSnowfallM": 15.0,
+      "annualSnowfallM": 15,
       "summary": "Il Colle del Gran San Bernardo (2.469 m / 8.100 ft) è il terzo valico stradale più alto della Svizzera e un punto di passaggio transalpino strategico fin dall'epoca romana (Mons Jovis). Ospita il celebre Ospizio del Gran San Bernardo fondato nel 1049 da San Bernardo di Mentone. La strada panoramica del colle è aperta in estate (da giugno a metà ottobre), mentre il Traforo stradale del Gran San Bernardo (5,8 km a 1.918 m) garantisce il transito tutto l'anno 24 ore su 24 con pedaggio."
     },
     "narrativeSections": [
@@ -7944,7 +7975,7 @@ export const passesData: MountainPass[] = [
         {
           "name": "Versante Sud Italiano (da Aosta)",
           "origin": "Aosta (583 m)",
-          "distanceKm": 34.0,
+          "distanceKm": 34,
           "distanceMiles": 21.1,
           "elevationGainM": 1886,
           "elevationGainFt": 6188,
@@ -7957,7 +7988,7 @@ export const passesData: MountainPass[] = [
           "name": "Versante Sud diretto (da Saint-Rhémy-en-Bosses)",
           "origin": "Saint-Rhémy-en-Bosses (1.519 m)",
           "distanceKm": 14.5,
-          "distanceMiles": 9.0,
+          "distanceMiles": 9,
           "elevationGainM": 950,
           "elevationGainFt": 3117,
           "avgGradient": "6.6%",
@@ -7981,7 +8012,7 @@ export const passesData: MountainPass[] = [
           "name": "Versante Nord diretto (da Bourg-Saint-Pierre)",
           "origin": "Bourg-Saint-Pierre (1.632 m)",
           "distanceKm": 12.8,
-          "distanceMiles": 8.0,
+          "distanceMiles": 8,
           "elevationGainM": 837,
           "elevationGainFt": 2746,
           "avgGradient": "6.5%",
@@ -8202,8 +8233,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Colle del Gran San Bernardo : Stato della Strada, Webcam Live, Meteo & Apertura",
-      "title": "Great St Bernard Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
-      "description": "Consulta lo stato di apertura in tempo reale del Colle del Gran San Bernardo (SS27 / Route 21), webcam live HD dell'Ospizio, meteo, altezza neve, viabilità e informazioni del Traforo transalpino."
+      "title": "Great St Bernard Pass Status & Webcams",
+      "description": "Stato apertura Colle del Gran San Bernardo (SS27/Route 21), webcam live Ospizio, meteo Alpi, transito del Traforo e condizioni neve in tempo reale."
     },
     "searchKeywords": [
       "Great St Bernard Pass opening date",
@@ -8389,9 +8420,9 @@ export const passesData: MountainPass[] = [
     "overview": {
       "openedYear": 1894,
       "lengthMiles": 23.6,
-      "lengthKm": 38.0,
+      "lengthKm": 38,
       "annualSnowfallIn": 550,
-      "annualSnowfallM": 14.0,
+      "annualSnowfallM": 14,
       "summary": "Der Grimselpass (2.164 m ü. M. / 7.100 ft) ist eine der spektakulärsten Passstrassen der Schweizer Alpen. Er überquert die Wasserscheide zwischen Nordsee (Aare/Rhein) und Mittelmeer (Rhône) und verbindet Innertkirchen und Meiringen im Kanton Bern mit Gletsch und Oberwald im Kanton Wallis auf der Hauptstrasse 6. Die 1894 erbaute Kunststrasse führt vorbei an imposanten Wasserkraftanlagen der KWO, kühnen Staumauern und dem gletschergeschliffenen Totensee auf der Passhöhe. Der Pass ist ein internationaler Hotspot für Automobil- und Motorrad-Touren sowie eine ikonische Königsetappe im europäischen Strassenradsport."
     },
     "narrativeSections": [
@@ -8415,7 +8446,7 @@ export const passesData: MountainPass[] = [
       "highlight": "Grimsel Hospiz, Totensee, KWO-Stauseen, Gelmerbahn, Big 3 Alpenpass-Runde"
     },
     "routeDetails": {
-      "distanceKm": 38.0,
+      "distanceKm": 38,
       "distanceMiles": 23.6,
       "duration": "45–55 min in auto (2h30–3h30 in bici)",
       "origin": "Innertkirchen (625 m) / Oberwald (1.368 m)",
@@ -8437,7 +8468,7 @@ export const passesData: MountainPass[] = [
         {
           "name": "Nordrampe ab Innertkirchen (Haslital)",
           "origin": "Innertkirchen (625 m)",
-          "distanceKm": 33.0,
+          "distanceKm": 33,
           "distanceMiles": 20.5,
           "elevationGainM": 1539,
           "elevationGainFt": 5049,
@@ -8449,7 +8480,7 @@ export const passesData: MountainPass[] = [
         {
           "name": "Südrampe ab Oberwald / Gletsch (Wallis)",
           "origin": "Oberwald (1.368 m) / Gletsch (1.759 m)",
-          "distanceKm": 16.0,
+          "distanceKm": 16,
           "distanceMiles": 9.9,
           "elevationGainM": 796,
           "elevationGainFt": 2611,
@@ -8461,7 +8492,7 @@ export const passesData: MountainPass[] = [
         {
           "name": "Die «Grossen Drei» Alpenpass-Runde (Grimsel - Furka - Susten)",
           "origin": "Innertkirchen / Meiringen",
-          "distanceKm": 120.0,
+          "distanceKm": 120,
           "distanceMiles": 74.5,
           "elevationGainM": 3750,
           "elevationGainFt": 12303,
@@ -8663,8 +8694,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Grimselpass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten",
-      "title": "Grimsel Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
-      "description": "Prüfen Sie den aktuellen Strassenzustand und Öffnungsstatus des Grimselpasses (Hauptstrasse 6), Live-Webcams am Grimsel Hospiz und Totensee, Wetter, Schneehöhen und Wintersperre-Infos."
+      "title": "Grimsel Pass Strassenzustand & Webcams",
+      "description": "Aktueller Strassenzustand und Öffnungsstatus Grimselpass (H6): Live-Webcams Grimsel Hospiz, Wetter, Schneehöhen und Wintersperre im Berner Oberland."
     },
     "searchKeywords": [
       "Grimsel Pass opening date",
@@ -8930,7 +8961,7 @@ export const passesData: MountainPass[] = [
         {
           "name": "The 'Big 3' Swiss Alpine Loop (Susten - Grimsel - Furka)",
           "origin": "Innertkirchen / Meiringen / Andermatt",
-          "distanceKm": 120.0,
+          "distanceKm": 120,
           "distanceMiles": 74.5,
           "elevationGainM": 3750,
           "elevationGainFt": 12303,
@@ -9149,8 +9180,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Susten Pass Road Status, Live Webcams, Weather & Conditions 2026",
-      "title": "Susten Pass Road Status & Live Webcams 2026 — Switzerland H11 | LivePassWatch",
-      "description": "Live Susten Pass (2,224m) road status, real-time webcams, opening dates, weather & conditions on Hauptstrasse 11 (Bern-Uri, Switzerland). Verified official DOT."
+      "title": "Susten Pass Road Status & Live Webcams",
+      "description": "Live Susten Pass (2,224 m) road status, webcams, opening dates, and driving conditions on Hauptstrasse 11, Switzerland. Verified official DOT."
     },
     "searchKeywords": [
       "Susten Pass opening date",
@@ -9306,7 +9337,7 @@ export const passesData: MountainPass[] = [
     "overview": {
       "openedYear": 1830,
       "lengthMiles": 16.2,
-      "lengthKm": 26.0,
+      "lengthKm": 26,
       "annualSnowfallIn": 350,
       "annualSnowfallM": 8.9,
       "summary": "Gotthard Pass (elevation 2,106 m / 6,909 ft), known in Italian as Passo del San Gottardo and in German as Gotthardpass, is the geographic, cultural, and transportation heart of the Swiss Alps. For centuries the most important transalpine axis between Northern Europe and Italy, the pass connects the German-speaking Canton of Uri with the Italian-speaking Canton of Ticino. Motorists and cyclists can experience two distinct routes on the southern flank: the modern paved Route 2 mountain highway with wide protective avalanche galleries, or the world-famous historic Tremola—a protected Swiss engineering monument featuring 24 cobblestone switchbacks descending 300 vertical meters into the Val Tremola. On the pass summit, travelers discover the historic Gotthard Hospice (dating to 1237), the National St. Gotthard Museum, pristine glacial lakes (Lago della Piazza and Lago dei Basso), and the underground fortress of Sasso San Gottardo."
@@ -9336,7 +9367,7 @@ export const passesData: MountainPass[] = [
       "highlight": "Historic Tremola cobblestones (24 hairpins), Gotthard Hospice (1237), Devil's Bridge, Sasso San Gottardo fortress, National St. Gotthard Museum"
     },
     "routeDetails": {
-      "distanceKm": 26.0,
+      "distanceKm": 26,
       "distanceMiles": 16.2,
       "duration": "35–45 min by car (1h45–2h30 by road bike)",
       "origin": "Hospental (1,452 m) / Airolo (1,175 m)",
@@ -9358,7 +9389,7 @@ export const passesData: MountainPass[] = [
           "name": "South Approach via Tremola Cobblestones (from Airolo)",
           "origin": "Airolo (1,175 m)",
           "distanceKm": 12.8,
-          "distanceMiles": 8.0,
+          "distanceMiles": 8,
           "elevationGainM": 931,
           "elevationGainFt": 3054,
           "avgGradient": "7.3%",
@@ -9382,7 +9413,7 @@ export const passesData: MountainPass[] = [
           "name": "North Approach (from Hospental / Andermatt)",
           "origin": "Hospental (1,452 m) / Andermatt (1,444 m)",
           "distanceKm": 11.2,
-          "distanceMiles": 7.0,
+          "distanceMiles": 7,
           "elevationGainM": 654,
           "elevationGainFt": 2146,
           "avgGradient": "5.8%",
@@ -9612,8 +9643,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Gotthard Pass: Live Webcam, Road Conditions, Opening Date & Status",
-      "title": "Gotthard Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
-      "description": "Real-time Gotthard Pass road conditions, live summit webcams, open/closed status, snow depth, opening date, Tremola traffic, and weather in the Swiss Alps."
+      "title": "Gotthard Pass Road Status & Webcams",
+      "description": "Real-time Gotthard Pass road conditions, live summit webcams, open/closed status, snow depth, Tremola traffic, and Swiss Alps mountain weather."
     },
     "searchKeywords": [
       "Gotthard Pass opening date",
@@ -9766,7 +9797,7 @@ export const passesData: MountainPass[] = [
     "overview": {
       "openedYear": 1865,
       "lengthMiles": 23.6,
-      "lengthKm": 38.0,
+      "lengthKm": 38,
       "annualSnowfallIn": 380,
       "annualSnowfallM": 9.6,
       "summary": "Bernina Pass (elevation 2,328 m / 7,638 ft), known in Italian as Passo del Bernina, in German as Berninapass, and in Romansh as Pass dal Bernina, is a world-renowned mountain pass in the Bernina Range of the Alps in the Canton of Graubünden, Switzerland. Connecting the Upper Engadin valley (Pontresina, St. Moritz, and Samedan) with the Italian-speaking Val Poschiavo and Tirano in Lombardy, Italy, the pass carries Hauptstrasse 29 across the continental divide. Uniquely among high Swiss alpine passes above 2,000 meters, Bernina Pass is kept open throughout the winter 365 days a year by heavy rotary snowplow crews from Tiefbauamt Graubünden. Alongside the highway lies the turquoise glacial lake of Lago Bianco, the historic Ospizio Bernina, and the UNESCO World Heritage-listed Bernina Railway."
@@ -9796,7 +9827,7 @@ export const passesData: MountainPass[] = [
       "highlight": "Maintained open year-round 365 days, Lago Bianco glacial lake, Piz Bernina (4,049 m) views, Ospizio Bernina (2,328 m), UNESCO World Heritage Bernina Railway"
     },
     "routeDetails": {
-      "distanceKm": 38.0,
+      "distanceKm": 38,
       "distanceMiles": 23.6,
       "duration": "40–50 min by car (2h15–3h00 by road bike)",
       "origin": "Pontresina (1,774 m) / Poschiavo (1,014 m)",
@@ -10061,8 +10092,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Bernina Pass: Live Webcam, Road Conditions, Opening Status & Weather",
-      "title": "Bernina Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
-      "description": "Real-time Bernina Pass road conditions, live summit webcams, open/closed status, snow depth, winter opening status, route directions, and weather in Switzerland."
+      "title": "Bernina Pass Road Status & Webcams",
+      "description": "Real-time Bernina Pass road conditions, live summit webcams, open/closed status, snow depth, winter driving alerts, and Swiss alpine weather."
     },
     "searchKeywords": [
       "Bernina Pass opening date",
@@ -10124,8 +10155,8 @@ export const passesData: MountainPass[] = [
     "elevationFt": 4364,
     "elevationM": 1330,
     "coordinates": {
-      "lat": 51.3000,
-      "lng": -117.5200
+      "lat": 51.3,
+      "lng": -117.52
     },
     "status": "OPEN",
     "statusDetail": "Trans-Canada Highway 1 is OPEN through Glacier National Park. Road surface bare & dry. Operation PALFISH mobile avalanche mitigation on standby.",
@@ -10242,9 +10273,9 @@ export const passesData: MountainPass[] = [
     "overview": {
       "openedYear": 1962,
       "lengthMiles": 43.5,
-      "lengthKm": 70.0,
+      "lengthKm": 70,
       "annualSnowfallIn": 550,
-      "annualSnowfallM": 14.0,
+      "annualSnowfallM": 14,
       "summary": "Rogers Pass (1,330 m / 4,364 ft) is one of North America's most vital and dramatic high-mountain transit corridors. Traversing the heart of Glacier National Park in the Selkirk Mountains of British Columbia, it links the interior city of Revelstoke with Golden in the Columbia River valley along the Trans-Canada Highway (Highway 1). The pass is globally celebrated for its heroic railway heritage, massive concrete avalanche snow sheds, stunning glaciated peaks like Mount Sir Donald, and the world's most sophisticated mobile avalanche forecasting and artillery control system operated jointly by Parks Canada and the Canadian Armed Forces."
     },
     "narrativeSections": [
@@ -10268,7 +10299,7 @@ export const passesData: MountainPass[] = [
       "highlight": "Glacier National Park, Avalanche Snow Sheds, Operation PALFISH Artillery, Mount Sir Donald"
     },
     "routeDetails": {
-      "distanceKm": 70.0,
+      "distanceKm": 70,
       "distanceMiles": 43.5,
       "duration": "50–60 min driving time",
       "origin": "Revelstoke, BC (458 m)",
@@ -10292,7 +10323,7 @@ export const passesData: MountainPass[] = [
         {
           "name": "Westbound Approach from Golden",
           "origin": "Golden, BC (800 m)",
-          "distanceKm": 80.0,
+          "distanceKm": 80,
           "distanceMiles": 49.7,
           "elevationGainM": 850,
           "elevationGainFt": 2788,
@@ -10304,7 +10335,7 @@ export const passesData: MountainPass[] = [
         {
           "name": "Eastbound Approach from Revelstoke",
           "origin": "Revelstoke, BC (458 m)",
-          "distanceKm": 70.0,
+          "distanceKm": 70,
           "distanceMiles": 43.5,
           "elevationGainM": 920,
           "elevationGainFt": 3018,
@@ -10518,8 +10549,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Rogers Pass : Road Conditions, Live Webcams, Weather & Open/Closed Status",
-      "title": "Rogers Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
-      "description": "Real-time Rogers Pass road status (1,330 m, Trans-Canada Hwy 1), DriveBC live summit webcams, Glacier National Park weather, snow depth, avalanche alerts & opening report."
+      "title": "Rogers Pass Road Status & Live Webcams",
+      "description": "Real-time Rogers Pass road status (Trans-Canada Hwy 1), DriveBC live summit webcams, Glacier National Park weather, snow depth & avalanche alerts."
     },
     "searchKeywords": [
       "Rogers Pass opening date",
@@ -10706,8 +10737,8 @@ export const passesData: MountainPass[] = [
     ],
     "overview": {
       "openedYear": 1805,
-      "lengthMiles": 28.0,
-      "lengthKm": 45.0,
+      "lengthMiles": 28,
+      "lengthKm": 45,
       "annualSnowfallIn": 320,
       "annualSnowfallM": 8.1,
       "summary": "Simplon Pass (elevation 2,005 m / 6,578 ft), known in German as Simplonpass and in Italian as Passo del Sempione, is a major international transalpine highway corridor linking the German-speaking Upper Valais (Brig-Glis) in Switzerland with the Italian-speaking Val Divedro and Domodossola in Piedmont, Italy. Operating along Swiss National Road A9 and European route E62, it is world-renowned for its remarkable year-round accessibility across a 2,000-meter alpine summit. First developed into a paved carriage road by Napoleon Bonaparte between 1801 and 1805 to transport his artillery into Italy, the pass has been continuously upgraded with monumental civil engineering works—including the award-winning Ganter Bridge (Ganterbrücke), over thirty avalanche galleries and rockfall shelters, and the historic Simplon Hospice administered by the Canons Regular of Saint Augustine. Today, it serves as an indispensable year-round transit artery for international freight, tourists, road cyclists, and transalpine motorists."
@@ -10822,8 +10853,8 @@ export const passesData: MountainPass[] = [
     ],
     "customSeo": {
       "h1": "Simplon Pass : Live Webcams, Road Conditions, Weather & Open/Closed Status",
-      "title": "Simplon Pass Live Webcam, Road Conditions & Opening Status | LivePassWatch",
-      "description": "Real-time Simplon Pass road conditions (2,005 m, National Road A9), live summit webcams, Swiss Alps weather, snow depth, chain laws & transalpine status report."
+      "title": "Simplon Pass Road Status & Live Webcams",
+      "description": "Real-time Simplon Pass road conditions (2,005 m, National Road A9), live summit webcams, Swiss Alps weather, snow depth & transalpine road status."
     },
     "searchKeywords": [
       "Simplon Pass",
@@ -10997,8 +11028,8 @@ export const passesData: MountainPass[] = [
     ],
     "overview": {
       "openedYear": "Deschis Tot Anul (Modernizat 2021)",
-      "lengthMiles": 31.0,
-      "lengthKm": 50.0,
+      "lengthMiles": 31,
+      "lengthKm": 50,
       "annualSnowfallIn": 180,
       "annualSnowfallM": 4.5,
       "summary": "Pasul Prislop (1.416 m / 4.646 ft) este cea mai înaltă trecătoare montană rutieră din Carpații Orientali din România, purtând Drumul Național 18 (DN18) peste granița istorică dintre județul Maramureș (Borșa) și județul Suceava (Bucovina / Cârlibaba și Iacobeni). Flancat de piscurile semețe ale Munților Rodnei (Vârful Pietrosu 2.303 m) și Munților Maramureșului, drumul a fost complet reabilitat și modernizat cu asfalt de calitate superioară, două benzi late de circulație și parapeți noi. Pe platoul somital se află Mănăstirea Prislop (Schitul Sfânta Treime), Hanul Prislop și Monumentul Eroilor, iar în fiecare lună august are loc festivalul folcloric «Hora de la Prislop»."
@@ -11078,8 +11109,8 @@ export const passesData: MountainPass[] = [
     "officialSource": "https://www.cnadnr.ro/ro/starea-drumurilor-si-trafic",
     "official_authority": "CNAIR (Compania Națională de Administrare a Infrastructurii Rutiere) / DRDP Cluj & DRDP Iași",
     "customSeo": {
-      "title": "Pasul Prislop (1.416 m) Starea Drumului DN18, Webcam Live, Meteo & Deschidere — LivePassWatch",
-      "description": "Starea în timp real a drumului DN18 prin Pasul Prislop (1.416 m), camere webcam live, prognoza meteo, condiții de iarnă și informații turistice Maramureș - Bucovina.",
+      "title": "Pasul Prislop Starea Drumului & Webcams",
+      "description": "Starea drumului DN18 prin Pasul Prislop (1.416 m), camere webcam live, prognoza meteo, condiții de iarnă și ninsori în Maramureș și Bucovina.",
       "h1": "Pasul Prislop (1.416 m) DN18 : Starea Drumului, Webcam Live, Meteo & Ghid Rutier"
     },
     "searchKeywords": [
@@ -11236,10 +11267,10 @@ export const passesData: MountainPass[] = [
     ],
     "overview": {
       "openedYear": 1916,
-      "lengthMiles": 15.0,
-      "lengthKm": 24.0,
+      "lengthMiles": 15,
+      "lengthKm": 24,
       "annualSnowfallIn": 240,
-      "annualSnowfallM": 6.0,
+      "annualSnowfallM": 6,
       "summary": "Prelaz Vršič (1.611 m / 5.285 ft) je najvišji gorski cestni prelaz v Sloveniji in celotnih Vzhodnih Julijskih Alpah. Cesta R206, znana kot Ruska cesta, povezuje Gorenjsko (Kranjska Gora) s Primorsko in dolino reke Soče (Trenta / Bovec). Trasa ima natanko 50 oštevilčenih serpentin (1–24 na kranjskogorski strani s tlakovci in 25–50 na trentarski strani z asfaltom). Cesto so med prvo svetovno vojno leta 1915–1916 zgradili ruski vojni ujetniki za oskrbo avstro-ogrske soške fronte. Na poti stojijo Ruska kapelica, Erjavčeva koča (1.525 m), Tičarjev dom (1.620 m) in Poštarski dom (1.688 m), obkrožajo pa ga mogočni vrhovi Mojstrovke, Prisanka in Jalovca v Triglavskem narodnem parku."
     },
     "historicalSections": [
@@ -11345,8 +11376,8 @@ export const passesData: MountainPass[] = [
     "officialSource": "https://www.promet.si",
     "official_authority": "Promet.si / DARS (Družba za avtoceste v Republiki Sloveniji) & AMZS",
     "customSeo": {
-      "title": "Prelaz Vršič (1.611 m) Stanje Ceste R206, Spletne Kamere v Živo, Vreme & Odprtost — LivePassWatch",
-      "description": "Stanje ceste v živo čez prelaz Vršič (1.611 m, Cesta 206), spletne kamere pri Erjavčevi koči in Tičarjevem domu, vreme, sneg, 50 serpentin in prevoznost v realnem času.",
+      "title": "Prelaz Vršič Stanje Ceste & Kamere v Živo",
+      "description": "Stanje ceste v živo čez prelaz Vršič (1.611 m, R206), spletne kamere pri Erjavčevi koči in Tičarjevem domu, vreme, sneg in prevoznost serpentin.",
       "h1": "Prelaz Vršič (1.611 m) : Stanje Ceste R206, Spletne Kamere v Živo, Vreme & Odprtost"
     },
     "searchKeywords": [
@@ -11539,8 +11570,8 @@ export const passesData: MountainPass[] = [
     ],
     "overview": {
       "openedYear": 1961,
-      "lengthMiles": 31.0,
-      "lengthKm": 50.0,
+      "lengthMiles": 31,
+      "lengthKm": 50,
       "annualSnowfallIn": 380,
       "annualSnowfallM": 9.6,
       "summary": "Le Col de la Bonette culmine à 2 715 m, mais c'est sa boucle sommitale contournant la Cime de la Bonette à 2 802 mètres qui en fait la plus haute route asphaltée de France et la plus haute boucle traversante d'Europe. Située au cœur du Parc National du Mercantour sur la Route départementale D64 (Route des Grandes Alpes), elle relie Jausiers dans la Vallée de l'Ubaye à Saint-Étienne-de-Tinée. Construite sous Napoléon III et aménagée dans sa configuration moderne en 1960–1961, elle est bordée par le village militaire historique du Camp des Fourches (1896–1910) et les casemates d'altitude de la Ligne Maginot."
@@ -11636,8 +11667,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Col de la Bonette (2 802 m) État de la Route D64, Webcam Live, Météo & Ouverture – LivePassWatch",
-      "description": "État en direct de la route D64 du Col de la Bonette (2 802 m Cime), webcams live, météo du Mercantour, Camp des Fourches, conditions d'ouverture et enneigement.",
+      "title": "Col de la Bonette État de la Route & Webcams",
+      "description": "État en direct de la route D64 du Col de la Bonette (2 802 m), webcams live, météo Mercantour, Camp des Fourches, ouverture et enneigement.",
       "h1": "Col de la Bonette (2 802 m) : État de la Route D64, Webcam Live, Météo & Date d'Ouverture"
     },
     "searchKeywords": [
@@ -11707,7 +11738,7 @@ export const passesData: MountainPass[] = [
     "elevationFt": 9003,
     "elevationM": 2744,
     "coordinates": {
-      "lat": 44.6840,
+      "lat": 44.684,
       "lng": 6.9794
     },
     "status": "OPEN",
@@ -11837,9 +11868,9 @@ export const passesData: MountainPass[] = [
     "overview": {
       "openedYear": 1970,
       "lengthMiles": 34.8,
-      "lengthKm": 56.0,
+      "lengthKm": 56,
       "annualSnowfallIn": 395,
-      "annualSnowfallM": 10.0,
+      "annualSnowfallM": 10,
       "summary": "Il Colle dell'Agnello (Col Agnel) a quota 2 744 metri (9 003 ft) è il 3° valico stradale più alto d'Europa e il valico internazionale transfrontaliero più elevato delle Alpi, situato nelle Alpi Cozie tra il massiccio del Monviso e il Queyras. Collega Pontechianale (Valle Varaita, Cuneo, Piemonte) a Molines-en-Queyras e Ville-Vieille (Hautes-Alpes, Francia). Aperto nella sua configurazione asfaltata moderna nel 1970, il passo è celebre per le sue micidiali pendenze ciclistiche fino al 15% sul versante italiano e per le memorabili imprese al Giro d'Italia e al Tour de France."
     },
     "historicalSections": [
@@ -11933,8 +11964,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Colle dell'Agnello / Col Agnel (2 744 m) Stato Strada SP251/D205, Webcam Live, Meteo & Apertura – LivePassWatch",
-      "description": "Stato in tempo reale della strada del Colle dell'Agnello (Col Agnel 2 744 m SP251/D205), webcam live sommitale, meteo Monviso, date di apertura, chiusura invernale e condizioni transito.",
+      "title": "Col Agnel / Colle dell'Agnello Status",
+      "description": "Stato in tempo reale Colle dell'Agnello (Col Agnel 2 744 m SP251/D205), webcam live sommitale, meteo Monviso, date apertura e transito alpino.",
       "h1": "Colle dell'Agnello / Col Agnel (2 744 m) : Stato Strada, Webcam Live, Meteo & Apertura"
     },
     "searchKeywords": [
@@ -11998,7 +12029,7 @@ export const passesData: MountainPass[] = [
     "elevationFt": 6798,
     "elevationM": 2072,
     "coordinates": {
-      "lat": 46.4400,
+      "lat": 46.44,
       "lng": 13.6539
     },
     "status": "CAUTION",
@@ -12123,12 +12154,42 @@ export const passesData: MountainPass[] = [
       ]
     },
     "distancesTable": [
-      { "location": "Bovec (Soča Valley gateway)", "distance": "26 km (16.2 mi)", "route": "via Road 203 → Predil → Mangart Road", "notes": "Nearest large town with fuel & accommodation" },
-      { "location": "Log pod Mangartom (nearest village)", "distance": "9 km (5.6 mi)", "route": "via Predil Road 203", "notes": "Closest settlement; limited facilities" },
-      { "location": "Cave del Predil / Raibl (Italy)", "distance": "7 km (4.3 mi)", "route": "via Predil Pass into Italy (SS54)", "notes": "Italian border village; cross-border day trip" },
-      { "location": "Tarvisio, Friuli-Venezia Giulia (Italy)", "distance": "24 km (14.9 mi)", "route": "via Predil Pass / SS54 into Italy", "notes": "Italian rail hub & Friuli gateway" },
-      { "location": "Kranjska Gora (Julian Alps resort)", "distance": "37 km (23.0 mi)", "route": "via Road 203 & 201", "notes": "Ski resort & Vršič Pass gateway" },
-      { "location": "Trieste / Udine (Italian cities)", "distance": "90–110 km (56–68 mi)", "route": "via A23 motorway (Italy)", "notes": "Nearest major Italian urban centers" }
+      {
+        "location": "Bovec (Soča Valley gateway)",
+        "distance": "26 km (16.2 mi)",
+        "route": "via Road 203 → Predil → Mangart Road",
+        "notes": "Nearest large town with fuel & accommodation"
+      },
+      {
+        "location": "Log pod Mangartom (nearest village)",
+        "distance": "9 km (5.6 mi)",
+        "route": "via Predil Road 203",
+        "notes": "Closest settlement; limited facilities"
+      },
+      {
+        "location": "Cave del Predil / Raibl (Italy)",
+        "distance": "7 km (4.3 mi)",
+        "route": "via Predil Pass into Italy (SS54)",
+        "notes": "Italian border village; cross-border day trip"
+      },
+      {
+        "location": "Tarvisio, Friuli-Venezia Giulia (Italy)",
+        "distance": "24 km (14.9 mi)",
+        "route": "via Predil Pass / SS54 into Italy",
+        "notes": "Italian rail hub & Friuli gateway"
+      },
+      {
+        "location": "Kranjska Gora (Julian Alps resort)",
+        "distance": "37 km (23.0 mi)",
+        "route": "via Road 203 & 201",
+        "notes": "Ski resort & Vršič Pass gateway"
+      },
+      {
+        "location": "Trieste / Udine (Italian cities)",
+        "distance": "90–110 km (56–68 mi)",
+        "route": "via A23 motorway (Italy)",
+        "notes": "Nearest major Italian urban centers"
+      }
     ],
     "quickFacts": {
       "state": "Goriška & Bovec (Posočje), Slovenia",
@@ -12206,8 +12267,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Mangart Saddle Live Webcam & Road Status — Mangartsko sedlo (2,072 m) Slovenia",
-      "description": "Live Mangart Saddle (Mangartsko sedlo) road status, webcam, eco-toll €10, 90-vehicle limit, 2026 rockfall closure update & weather. Verified from promet.si & Triglav National Park.",
+      "title": "Mangart Saddle Road Status & Webcams",
+      "description": "Live Mangart Saddle (Mangartsko sedlo) road status, webcams, eco-toll info, rockfall updates & Julian Alps weather. Verified from promet.si.",
       "h1": "Mangartsko sedlo (Mangart Saddle, 2,072 m) : Stanje ceste, Webcam, Vreme & Datum odprtja"
     },
     "searchKeywords": [
@@ -12418,13 +12479,48 @@ export const passesData: MountainPass[] = [
       ]
     },
     "distancesTable": [
-      { "location": "Manali (via Atal Tunnel)", "distance": "140 km (87 mi)", "route": "NH-3 via Sissu & Keylong", "notes": "Major tourist hub with petrol pumps and medical care" },
-      { "location": "Keylong (District HQ)", "distance": "73 km (45.3 mi)", "route": "NH-3 North", "notes": "Last permanent town with fuel pump & hospital" },
-      { "location": "Jispa", "distance": "54 km (33.5 mi)", "route": "NH-3 North", "notes": "Popular overnight hotel/camp stay before pass ascent" },
-      { "location": "Darcha", "distance": "44 km (27.3 mi)", "route": "NH-3 North", "notes": "Inner Line Checkpost & Padum-Zanskar road junction" },
-      { "location": "Zingzingbar", "distance": "18 km (11.2 mi)", "route": "NH-3 Ascent", "notes": "Foot of pass ascent; tea stalls & emergency shelter" },
-      { "location": "Sarchu (HP-Ladakh Border)", "distance": "32 km (19.8 mi)", "route": "NH-3 North", "notes": "High altitude camp site on HP-Ladakh border" },
-      { "location": "Leh (Ladakh Union Territory)", "distance": "330 km (205 mi)", "route": "NH-3 via Tanglang La", "notes": "Destination hub for Leh-Manali travelers" }
+      {
+        "location": "Manali (via Atal Tunnel)",
+        "distance": "140 km (87 mi)",
+        "route": "NH-3 via Sissu & Keylong",
+        "notes": "Major tourist hub with petrol pumps and medical care"
+      },
+      {
+        "location": "Keylong (District HQ)",
+        "distance": "73 km (45.3 mi)",
+        "route": "NH-3 North",
+        "notes": "Last permanent town with fuel pump & hospital"
+      },
+      {
+        "location": "Jispa",
+        "distance": "54 km (33.5 mi)",
+        "route": "NH-3 North",
+        "notes": "Popular overnight hotel/camp stay before pass ascent"
+      },
+      {
+        "location": "Darcha",
+        "distance": "44 km (27.3 mi)",
+        "route": "NH-3 North",
+        "notes": "Inner Line Checkpost & Padum-Zanskar road junction"
+      },
+      {
+        "location": "Zingzingbar",
+        "distance": "18 km (11.2 mi)",
+        "route": "NH-3 Ascent",
+        "notes": "Foot of pass ascent; tea stalls & emergency shelter"
+      },
+      {
+        "location": "Sarchu (HP-Ladakh Border)",
+        "distance": "32 km (19.8 mi)",
+        "route": "NH-3 North",
+        "notes": "High altitude camp site on HP-Ladakh border"
+      },
+      {
+        "location": "Leh (Ladakh Union Territory)",
+        "distance": "330 km (205 mi)",
+        "route": "NH-3 via Tanglang La",
+        "notes": "Destination hub for Leh-Manali travelers"
+      }
     ],
     "quickFacts": {
       "state": "Himachal Pradesh, India",
@@ -12494,8 +12590,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Baralacha La Pass Live Status, Road Conditions & Webcam — 16,040 ft Himachal",
-      "description": "Live Baralacha La Pass (4,890 m / 16,040 ft) road conditions, opening date 2026, status report, webcam, snow updates & weather on Leh-Manali Highway (NH-3). Verified BRO updates.",
+      "title": "Baralacha La Pass Road Status & Weather",
+      "description": "Live Baralacha La Pass (16,040 ft / 4,890 m) road conditions, opening date, snow updates & weather on Leh-Manali Highway (NH-3). Verified BRO.",
       "h1": "Baralacha La Pass (बारालाचा ला, 4,890 m) : Live Status, Road Conditions & Weather"
     },
     "searchKeywords": [
@@ -12690,12 +12786,42 @@ export const passesData: MountainPass[] = [
       ]
     },
     "distancesTable": [
-      { "location": "St. Michael im Lungau (Salzburg)", "distance": "6 km (3.7 mi)", "route": "B99 North", "notes": "Northern base town with A10 motorway junction" },
-      { "location": "Rennweg am Katschberg (Carinthia)", "distance": "10.5 km (6.5 mi)", "route": "B99 South", "notes": "Southern base town in Lieser valley" },
-      { "location": "Spittal an der Drau (Carinthia)", "distance": "42 km (26 mi)", "route": "B99 & A10 South", "notes": "Major Carinthian regional hub & train station" },
-      { "location": "Tamsweg (Lungau District HQ)", "distance": "22 km (13.7 mi)", "route": "B96 East from St. Michael", "notes": "Main commercial center of Salzburg Lungau" },
-      { "location": "Salzburg City", "distance": "115 km (71.5 mi)", "route": "A10 Tauern Autobahn North", "notes": "State capital & international airport" },
-      { "location": "Villach (Carinthia)", "distance": "78 km (48.5 mi)", "route": "A10 Tauern Autobahn South", "notes": "Southern Austrian rail & road gateway" }
+      {
+        "location": "St. Michael im Lungau (Salzburg)",
+        "distance": "6 km (3.7 mi)",
+        "route": "B99 North",
+        "notes": "Northern base town with A10 motorway junction"
+      },
+      {
+        "location": "Rennweg am Katschberg (Carinthia)",
+        "distance": "10.5 km (6.5 mi)",
+        "route": "B99 South",
+        "notes": "Southern base town in Lieser valley"
+      },
+      {
+        "location": "Spittal an der Drau (Carinthia)",
+        "distance": "42 km (26 mi)",
+        "route": "B99 & A10 South",
+        "notes": "Major Carinthian regional hub & train station"
+      },
+      {
+        "location": "Tamsweg (Lungau District HQ)",
+        "distance": "22 km (13.7 mi)",
+        "route": "B96 East from St. Michael",
+        "notes": "Main commercial center of Salzburg Lungau"
+      },
+      {
+        "location": "Salzburg City",
+        "distance": "115 km (71.5 mi)",
+        "route": "A10 Tauern Autobahn North",
+        "notes": "State capital & international airport"
+      },
+      {
+        "location": "Villach (Carinthia)",
+        "distance": "78 km (48.5 mi)",
+        "route": "A10 Tauern Autobahn South",
+        "notes": "Southern Austrian rail & road gateway"
+      }
     ],
     "quickFacts": {
       "state": "Carinthia & Salzburg, Austria",
@@ -12765,8 +12891,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Katschberg Pass Live Status, Road Conditions & Webcam — Katschbergpass (1.641 m) Austria",
-      "description": "Live Katschberg Pass (Katschbergpass, 1,641 m / 5,384 ft) road conditions, opening status, webcams, snow depth & weather on B99 Katschberg Straße. Verified ÖAMTC & ASFINAG updates.",
+      "title": "Katschberg Pass Road Status & Webcams",
+      "description": "Live Katschberg Pass (Katschbergpass, 1,641 m) road conditions, opening status, webcams, snow depth & weather on B99 Austria. Verified ÖAMTC.",
       "h1": "Katschberg Pass (Katschbergpass, 1.641 m) : Live Straßenzustand, Webcam & Wetter"
     },
     "searchKeywords": [
@@ -12876,7 +13002,7 @@ export const passesData: MountainPass[] = [
     ],
     "overview": {
       "openedYear": "1935 (Engineered by Franz Wallack)",
-      "lengthKm": 48.0,
+      "lengthKm": 48,
       "lengthMiles": 29.8,
       "annualSnowfallM": "8–12 m (heavy winter accumulation)",
       "annualSnowfallIn": "315–472 in",
@@ -12956,7 +13082,7 @@ export const passesData: MountainPass[] = [
       }
     ],
     "routeDetails": {
-      "distanceKm": 48.0,
+      "distanceKm": 48,
       "distanceMiles": 29.8,
       "duration": "45–60 minutes driving time (Fusch to Heiligenblut)",
       "origin": "Ferleiten Toll Station / Fusch (Salzburg, 1,145 m)",
@@ -12973,12 +13099,42 @@ export const passesData: MountainPass[] = [
       ]
     },
     "distancesTable": [
-      { "location": "Zell am See (Salzburg)", "distance": "27 km (16.8 mi)", "route": "B107 North via Fusch", "notes": "Major lakeside resort town & rail connection" },
-      { "location": "Fusch an der Großglocknerstraße", "distance": "14 km (8.7 mi)", "route": "B107 North from Ferleiten", "notes": "Northern village before toll gate" },
-      { "location": "Heiligenblut am Großglockner", "distance": "15 km (9.3 mi)", "route": "B107 South from Hochtor", "notes": "Historic pilgrimage village in Carinthia" },
-      { "location": "Lienz (East Tyrol)", "distance": "48 km (29.8 mi)", "route": "B107 South through Mölltal", "notes": "Regional city at southern foot of the Alps" },
-      { "location": "Salzburg City", "distance": "105 km (65.2 mi)", "route": "B311 & A10 North", "notes": "State capital & international airport" },
-      { "location": "Innsbruck (Tyrol)", "distance": "165 km (102 mi)", "route": "B168 & B165 via Gerlos", "notes": "Tyrolean regional capital" }
+      {
+        "location": "Zell am See (Salzburg)",
+        "distance": "27 km (16.8 mi)",
+        "route": "B107 North via Fusch",
+        "notes": "Major lakeside resort town & rail connection"
+      },
+      {
+        "location": "Fusch an der Großglocknerstraße",
+        "distance": "14 km (8.7 mi)",
+        "route": "B107 North from Ferleiten",
+        "notes": "Northern village before toll gate"
+      },
+      {
+        "location": "Heiligenblut am Großglockner",
+        "distance": "15 km (9.3 mi)",
+        "route": "B107 South from Hochtor",
+        "notes": "Historic pilgrimage village in Carinthia"
+      },
+      {
+        "location": "Lienz (East Tyrol)",
+        "distance": "48 km (29.8 mi)",
+        "route": "B107 South through Mölltal",
+        "notes": "Regional city at southern foot of the Alps"
+      },
+      {
+        "location": "Salzburg City",
+        "distance": "105 km (65.2 mi)",
+        "route": "B311 & A10 North",
+        "notes": "State capital & international airport"
+      },
+      {
+        "location": "Innsbruck (Tyrol)",
+        "distance": "165 km (102 mi)",
+        "route": "B168 & B165 via Gerlos",
+        "notes": "Tyrolean regional capital"
+      }
     ],
     "quickFacts": {
       "state": "Salzburg & Carinthia, Austria",
@@ -13048,8 +13204,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Grossglockner High Alpine Road Road Status & Live Webcams — Is It Open Today? (2026 Opening Date & Road Conditions)",
-      "description": "Check live Grossglockner High Alpine Road status, road conditions, 2026 opening date & live webcams (Großglockner Hochalpenstraße, 2,504 m). Verified GROHAG & ÖAMTC pass status report.",
+      "title": "Grossglockner Road Status & Live Webcams",
+      "description": "Check live Grossglockner High Alpine Road status, conditions, 2026 opening date & webcams (Großglockner, 2,504 m). Verified GROHAG & ÖAMTC.",
       "h1": "Grossglockner High Alpine Road Road Status & Live Webcams (Großglockner Hochalpenstraße, 2,504 m)"
     },
     "searchKeywords": [
@@ -13193,7 +13349,7 @@ export const passesData: MountainPass[] = [
     "overview": {
       "openedYear": 2017,
       "lengthMiles": 32.3,
-      "lengthKm": 52.0,
+      "lengthKm": 52,
       "annualSnowfallIn": 180,
       "annualSnowfallM": 4.5,
       "summary": "Constructed by the Border Roads Organisation (Project HIMANK) and certified by Guinness World Records in 2021 at 19,024 feet (5,798.51 meters), Umling La is the highest paved motorable road on planet Earth. Spanning 52 km between Chisumle and Demchok in the Changthang region of eastern Ladakh, the road was built under extraordinary logistical challenges: winter temperatures plunge to -40°C, oxygen levels hover at roughly 50% of sea level, and machine operators required supplemental oxygen tanks to carve through frozen permafrost. The road provides a vital strategic supply line along the Line of Actual Control (LAC) and has become the ultimate high-altitude pilgrimage for adventure motorists worldwide."
@@ -13239,13 +13395,41 @@ export const passesData: MountainPass[] = [
       "maxElevationFt": 19024,
       "grade": "Average 7-9% (Maximum 10-12% near summit)",
       "points": [
-        { "distanceMiles": 0, "elevationFt": 14200, "label": "Chisumle Bridge (14,200 ft)" },
-        { "distanceMiles": 8, "elevationFt": 16100, "label": "Lower Switchbacks (16,100 ft)" },
-        { "distanceMiles": 16, "elevationFt": 17800, "label": "Ridge Approach (17,800 ft)" },
-        { "distanceMiles": 24, "elevationFt": 19024, "label": "Umling La Summit (19,024 ft / 5,798 m)" },
-        { "distanceMiles": 32, "elevationFt": 17400, "label": "Demchok Descent (17,400 ft)" },
-        { "distanceMiles": 40, "elevationFt": 15800, "label": "Indus Valley Plain (15,800 ft)" },
-        { "distanceMiles": 52, "elevationFt": 14000, "label": "Demchok Village / LAC (14,000 ft)" }
+        {
+          "distanceMiles": 0,
+          "elevationFt": 14200,
+          "label": "Chisumle Bridge (14,200 ft)"
+        },
+        {
+          "distanceMiles": 8,
+          "elevationFt": 16100,
+          "label": "Lower Switchbacks (16,100 ft)"
+        },
+        {
+          "distanceMiles": 16,
+          "elevationFt": 17800,
+          "label": "Ridge Approach (17,800 ft)"
+        },
+        {
+          "distanceMiles": 24,
+          "elevationFt": 19024,
+          "label": "Umling La Summit (19,024 ft / 5,798 m)"
+        },
+        {
+          "distanceMiles": 32,
+          "elevationFt": 17400,
+          "label": "Demchok Descent (17,400 ft)"
+        },
+        {
+          "distanceMiles": 40,
+          "elevationFt": 15800,
+          "label": "Indus Valley Plain (15,800 ft)"
+        },
+        {
+          "distanceMiles": 52,
+          "elevationFt": 14000,
+          "label": "Demchok Village / LAC (14,000 ft)"
+        }
       ]
     },
     "routeDetails": {
@@ -13328,8 +13512,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Umling La Road Status & Live Updates — Is It Open Today? (2026 Opening Date, Road Conditions, Cameras & Map) | LivePassWatch",
-      "description": "Check live Umling La Pass status, road conditions, 2026 opening date & high-altitude road report (19,024 ft / 5,798 m, Ladakh). Verified BRO Project Himank pass report.",
+      "title": "Umling La Pass Road Status & Conditions",
+      "description": "Check live Umling La Pass status, road conditions, opening dates & high-altitude road report (19,024 ft / 5,798 m, Ladakh). Verified BRO updates.",
       "h1": "Umling La Road Status & Conditions — 19,024 ft (World's Highest Motorable Pass, Ladakh)"
     },
     "keywords": [
@@ -13627,8 +13811,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Coquihalla Summit Pass Road Status & Live Webcams — Is It Open Today? (Highway 5 Road Conditions, Opening Date & Map) | LivePassWatch",
-      "description": "Check live Coquihalla Summit Pass road conditions, DriveBC live webcams, Highway 5 open/closed status, winter closures & road reports (1,244 m / 4,081 ft, BC Canada). Verified MoTI reports.",
+      "title": "Coquihalla Summit Pass Road Status & Webcams",
+      "description": "Check live Coquihalla Summit Pass road conditions, DriveBC webcams, Highway 5 open/closed status, winter tire rules & weather (1,244 m, BC).",
       "h1": "Coquihalla Summit Pass Road Status, Live Webcams & Highway 5 Conditions (1,244 m / 4,081 ft)"
     },
     "searchKeywords": [
@@ -13914,7 +14098,12 @@ export const passesData: MountainPass[] = [
         "question": "Do I need a vehicle reservation or timed entry permit to visit Logan Pass?",
         "answer": "Yes, during peak summer months (typically late May through early September, between 6:00 AM and 3:00 PM), Glacier National Park requires a vehicle reservation to travel Going-to-the-Sun Road. Visitors without reservations may enter before 6:00 AM or after 3:00 PM, or access the pass via the free park shuttle system departing from Apgar or St. Mary."
       }
-    ]
+    ],
+    "customSeo": {
+      "title": "Logan Pass Live Status & Webcams",
+      "description": "Live Logan Pass webcams, Going-to-the-Sun Road conditions, opening status & Big Drift snowpack report in Glacier National Park, Montana.",
+      "h1": "Logan Pass (Going-to-the-Sun Road) Live Status & Webcams"
+    }
   },
   {
     "id": "lolo-pass",
@@ -14118,7 +14307,12 @@ export const passesData: MountainPass[] = [
         "question": "What is the historical significance of Lolo Pass (Lewis and Clark & Nez Perce)?",
         "answer": "Lolo Pass is one of the most historically significant mountain passes in North America. Used for thousands of years by the Nez Perce (Niimíipuu) as the 'Buffalo Trail', it was traversed in 1805 by the Lewis and Clark Expedition during their grueling mountain crossing, and again in 1877 during the historic retreat of Chief Joseph and the Nez Perce."
       }
-    ]
+    ],
+    "customSeo": {
+      "title": "Lolo Pass US 12 Road Status & Webcams",
+      "description": "Live Lolo Pass webcams, US Highway 12 road conditions, open/closed status, and mountain weather on Northwest Passage Scenic Byway, Montana.",
+      "h1": "Lolo Pass (US Highway 12) Live Status & Webcams"
+    }
   },
   {
     "id": "kicking-horse-pass",
@@ -14141,7 +14335,7 @@ export const passesData: MountainPass[] = [
     "elevationFt": 5338,
     "elevationM": 1627,
     "coordinates": {
-      "lat": 51.4500,
+      "lat": 51.45,
       "lng": -116.4278
     },
     "status": "OPEN",
@@ -14342,7 +14536,12 @@ export const passesData: MountainPass[] = [
         "question": "Do I need winter tires or chains on Kicking Horse Pass?",
         "answer": "Yes. Under British Columbia regulations, winter-rated tires (3PMSF mountain snowflake or M+S with minimum 3.5 mm tread depth) are legally mandatory on Highway 1 from October 1 to April 30. Commercial trucks over 11,794 kg must carry tire chains and be prepared to fit them when required."
       }
-    ]
+    ],
+    "customSeo": {
+      "title": "Kicking Horse Pass Road Status & Webcams",
+      "description": "Live Kicking Horse Pass webcams, Trans-Canada Highway (BC-1 / AB-1) road conditions, opening status & Canadian Rockies weather updates today.",
+      "h1": "Kicking Horse Pass (Col du Cheval-qui-Rue) Live Status & Webcams"
+    }
   },
   {
     "id": "big-sur-highway-1",
@@ -14560,8 +14759,8 @@ export const passesData: MountainPass[] = [
     },
     "customSeo": {
       "h1": "Highway 1 Big Sur Road Status & Live Webcam — Is It Open Today? (2026 Conditions)",
-      "title": "Highway 1 Big Sur Road Status & Live Webcam — Open or Closed Today? | LivePassWatch",
-      "description": "Real-time Highway 1 Big Sur mountain-coast route road status, live webcam, wildfire closures, Caltrans conditions, and travel updates. Check if Big Sur is open today before you drive."
+      "title": "Highway 1 Big Sur Road Status & Webcams",
+      "description": "Real-time Highway 1 Big Sur road status, Caltrans webcams, wildfire closures & mountain-coast driving conditions. Verified travel updates."
     },
     "faqs": [
       {
@@ -14801,8 +15000,8 @@ export const passesData: MountainPass[] = [
     },
     "customSeo": {
       "h1": "Red Mountain Pass Road Status, Road Conditions & Live Webcams — US 550 Million Dollar Highway (Is It Open Today?)",
-      "title": "Red Mountain Pass Road Conditions & Live Webcam — US 550 Open or Closed Today? | LivePassWatch",
-      "description": "Real-time Red Mountain Pass road conditions, live CDOT webcams, US 550 Million Dollar Highway closures, snow depth, chain requirements, weather forecast, and travel status. Verified from CDOT COTrip & NWS."
+      "title": "Red Mountain Pass Road Status & Webcams",
+      "description": "Real-time Red Mountain Pass road conditions, CDOT webcams, US 550 Million Dollar Highway closures & snow report. Verified from CDOT COTrip."
     },
     "keywords": [
       "Red Mountain Pass opening date",
@@ -15106,10 +15305,10 @@ export const passesData: MountainPass[] = [
     },
     "customSeo": {
       "h1": "Disautel Pass Road Status, Road Conditions & Live Webcams — SR 155 Washington (Is It Open Today?)",
-      "title": "Disautel Pass Road Conditions & Live Webcam — SR 155 Open or Closed Today? | LivePassWatch",
-      "description": "Real-time Disautel Pass road conditions, live WSDOT webcams, SR 155 road closures, snow depth, chain requirements, weather forecast, and travel status. Verified from WSDOT & NWS Spokane."
+      "title": "Disautel Pass Road Conditions & Webcams | LivePassWatch",
+      "description": "Live Disautel Pass road conditions, WSDOT webcams, SR 155 road closures, snow depth, chain laws, and weather between Omak and Grand Coulee, WA."
     },
-    "keywords": [
+    "searchKeywords": [
       "Disautel Pass opening date",
       "Disautel Pass is open",
       "Disautel Pass road conditions",
@@ -15392,8 +15591,8 @@ export const passesData: MountainPass[] = [
     },
     "customSeo": {
       "h1": "Sychnant Pass Road Status, Road Conditions & Live Webcams — Bwlch Sychnant Conwy Wales (Is It Open Today?)",
-      "title": "Sychnant Pass Road Conditions & Live Webcam — Bwlch Sychnant Open or Closed Today? | LivePassWatch",
-      "description": "Real-time Sychnant Pass road conditions (Bwlch Sychnant), live Traffic Wales webcams, Conwy road status, weather forecast, route map, and travel status. Verified from Traffic Wales & Met Office."
+      "title": "Sychnant Pass Road Status & Live Webcams",
+      "description": "Real-time Sychnant Pass (Bwlch Sychnant) road conditions, live Traffic Wales webcams, Conwy road status & North Wales weather forecast today."
     },
     "keywords": [
       "Sychnant Pass Road",
@@ -15482,7 +15681,7 @@ export const passesData: MountainPass[] = [
       }
     ],
     "isPopular": true
-  },
+  },
   {
     "id": "sunwapta-pass",
     "slug": "sunwapta-pass",
@@ -15729,7 +15928,12 @@ export const passesData: MountainPass[] = [
         "question": "What is the Indigenous origin and meaning of the name 'Sunwapta'?",
         "answer": "'Sunwapta' comes directly from the Stoney Nakoda (Îyârhe Nakoda) Indigenous language, meaning 'turbulent water' or 'radiant water'. The name honors the fierce glacial rapids of the Sunwapta River that cascade from the melting alpine snowpack of Sunwapta Pass and Athabasca Glacier through Sunwapta Falls toward the Arctic Ocean."
       }
-    ]
+    ],
+    "customSeo": {
+      "title": "Sunwapta Pass Road Status & Webcams",
+      "description": "Live Sunwapta Pass webcams, Highway 93 Icefields Parkway conditions, open/closed status & Columbia Icefield weather in Alberta, Canada.",
+      "h1": "Sunwapta Pass (Col Sunwapta) Live Status & Webcams"
+    }
   },
   {
     "id": "yellowhead-pass",
@@ -15970,8 +16174,7 @@ export const passesData: MountainPass[] = [
         "answer": "Yellowhead Pass was named after Pierre Bostonais (also known as Pierre Hatsinaton or Pierre Tête Jaune), an Iroquois-Métis fur trader and guide for the North West Company and Hudson's Bay Company in the early 1820s. Voyageurs called him 'Tête Jaune' (Yellowhead) because of his distinctive golden-blonde hair. He established a fur depot at Tête Jaune Cache, immortalizing his name in Canadian geography."
       }
     ]
-  }
-,
+  },
   {
     "id": "icefields-parkway-road",
     "slug": "icefields-parkway-road",
@@ -16223,8 +16426,7 @@ export const passesData: MountainPass[] = [
         "answer": "No. Commercial through-trucks and heavy transport vehicles exceeding 4,550 kg Gross Vehicle Weight (GVW) are strictly prohibited on Highway 93 North. Commercial freight traveling between Calgary, Edmonton, and British Columbia must use Trans-Canada Highway 1 or Yellowhead Highway 16."
       }
     ]
-  }
-,
+  },
   {
     "id": "jasper-pass",
     "slug": "jasper-pass",
@@ -16470,8 +16672,7 @@ export const passesData: MountainPass[] = [
         "answer": "The Jasper Pass highway corridor passes through protected UNESCO wilderness where elk, bighorn sheep, mule deer, moose, black bears, and grizzly bears frequently graze near the highway. Motorists must adhere strictly to posted speed limits (70-90 km/h) and avoid stopping on bridges or blind curves."
       }
     ]
-  }
-,
+  },
   {
     "id": "highway-40",
     "slug": "highway-40",
@@ -16907,12 +17108,42 @@ export const passesData: MountainPass[] = [
       ]
     },
     "distancesTable": [
-      { "location": "Vancouver (Downtown / Metro)", "distance": "121 km (75.2 mi)", "route": "via Hwy 99 North (Sea to Sky Highway)", "notes": "Scenic coastal fjord & mountain expressway" },
-      { "location": "Squamish (Sea to Sky Outdoor Hub)", "distance": "58 km (36.0 mi)", "route": "via Hwy 99 North", "notes": "Major fueling, dining & service waypoint" },
-      { "location": "Pemberton (Agricultural Valley)", "distance": "32 km (19.9 mi)", "route": "via Hwy 99 North", "notes": "Gateway to Duffy Lake Road & Cariboo" },
-      { "location": "Horseshoe Bay Ferry Terminal", "distance": "102 km (63.4 mi)", "route": "via Hwy 99 South", "notes": "Ferry connections to Nanaimo & Sunshine Coast" },
-      { "location": "Vancouver International Airport (YVR)", "distance": "135 km (83.9 mi)", "route": "via Hwy 99 & Arthur Laing Bridge", "notes": "International flight arrivals corridor" },
-      { "location": "Lillooet (Fraser Canyon Gateway)", "distance": "130 km (80.8 mi)", "route": "via Hwy 99 North over Duffey Lake Pass", "notes": "Dramatic canyon & high interior crossing" }
+      {
+        "location": "Vancouver (Downtown / Metro)",
+        "distance": "121 km (75.2 mi)",
+        "route": "via Hwy 99 North (Sea to Sky Highway)",
+        "notes": "Scenic coastal fjord & mountain expressway"
+      },
+      {
+        "location": "Squamish (Sea to Sky Outdoor Hub)",
+        "distance": "58 km (36.0 mi)",
+        "route": "via Hwy 99 North",
+        "notes": "Major fueling, dining & service waypoint"
+      },
+      {
+        "location": "Pemberton (Agricultural Valley)",
+        "distance": "32 km (19.9 mi)",
+        "route": "via Hwy 99 North",
+        "notes": "Gateway to Duffy Lake Road & Cariboo"
+      },
+      {
+        "location": "Horseshoe Bay Ferry Terminal",
+        "distance": "102 km (63.4 mi)",
+        "route": "via Hwy 99 South",
+        "notes": "Ferry connections to Nanaimo & Sunshine Coast"
+      },
+      {
+        "location": "Vancouver International Airport (YVR)",
+        "distance": "135 km (83.9 mi)",
+        "route": "via Hwy 99 & Arthur Laing Bridge",
+        "notes": "International flight arrivals corridor"
+      },
+      {
+        "location": "Lillooet (Fraser Canyon Gateway)",
+        "distance": "130 km (80.8 mi)",
+        "route": "via Hwy 99 North over Duffey Lake Pass",
+        "notes": "Dramatic canyon & high interior crossing"
+      }
     ],
     "quickFacts": {
       "state": "British Columbia, Canada",
@@ -17241,13 +17472,48 @@ export const passesData: MountainPass[] = [
       ]
     },
     "distancesTable": [
-      { "location": "Coleman, AB (Crowsnest Pass)", "distance": "14 km (8.7 mi)", "route": "via Hwy 3 East", "notes": "Historic mining town with traveler services" },
-      { "location": "Sparwood, BC (Elk Valley)", "distance": "20 km (12.4 mi)", "route": "via Hwy 3 West", "notes": "Major fueling, dining & service hub" },
-      { "location": "Frank Slide Interpretive Centre, AB", "distance": "22 km (13.7 mi)", "route": "via Hwy 3 East", "notes": "Historic 1903 rock avalanche museum" },
-      { "location": "Fernie, BC (Alpine Resort)", "distance": "51 km (31.7 mi)", "route": "via Hwy 3 West", "notes": "World-class ski & mountain biking resort" },
-      { "location": "Pincher Creek, AB (Foothills Hub)", "distance": "68 km (42.3 mi)", "route": "via Hwy 3 East", "notes": "Gateway to Waterton Lakes National Park" },
-      { "location": "Lethbridge, AB (Commercial City)", "distance": "165 km (102.5 mi)", "route": "via Hwy 3 East", "notes": "Major southern Alberta commercial center" },
-      { "location": "Calgary, AB (Metro Center)", "distance": "225 km (139.8 mi)", "route": "via Hwy 3 & Hwy 2 North", "notes": "International airport & metropolitan hub" }
+      {
+        "location": "Coleman, AB (Crowsnest Pass)",
+        "distance": "14 km (8.7 mi)",
+        "route": "via Hwy 3 East",
+        "notes": "Historic mining town with traveler services"
+      },
+      {
+        "location": "Sparwood, BC (Elk Valley)",
+        "distance": "20 km (12.4 mi)",
+        "route": "via Hwy 3 West",
+        "notes": "Major fueling, dining & service hub"
+      },
+      {
+        "location": "Frank Slide Interpretive Centre, AB",
+        "distance": "22 km (13.7 mi)",
+        "route": "via Hwy 3 East",
+        "notes": "Historic 1903 rock avalanche museum"
+      },
+      {
+        "location": "Fernie, BC (Alpine Resort)",
+        "distance": "51 km (31.7 mi)",
+        "route": "via Hwy 3 West",
+        "notes": "World-class ski & mountain biking resort"
+      },
+      {
+        "location": "Pincher Creek, AB (Foothills Hub)",
+        "distance": "68 km (42.3 mi)",
+        "route": "via Hwy 3 East",
+        "notes": "Gateway to Waterton Lakes National Park"
+      },
+      {
+        "location": "Lethbridge, AB (Commercial City)",
+        "distance": "165 km (102.5 mi)",
+        "route": "via Hwy 3 East",
+        "notes": "Major southern Alberta commercial center"
+      },
+      {
+        "location": "Calgary, AB (Metro Center)",
+        "distance": "225 km (139.8 mi)",
+        "route": "via Hwy 3 & Hwy 2 North",
+        "notes": "International airport & metropolitan hub"
+      }
     ],
     "quickFacts": {
       "state": "Alberta & British Columbia, Canada",
@@ -17355,8 +17621,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Crowsnest Pass (Highway 3) Road Conditions, Status & Live Webcams",
-      "description": "Live Crowsnest Pass (Highway 3) road conditions, road status, opening date & live webcams across the AB/BC border. Real-time pass status report & cameras.",
+      "title": "Crowsnest Pass Highway 3 Status & Webcams",
+      "description": "Live Crowsnest Pass (Highway 3) road conditions, open/closed status, DriveBC & Alberta 511 webcams across the AB/BC border. Verified today.",
       "h1": "Crowsnest Pass (Highway 3) Road Conditions, Status & Live Webcams"
     },
     "searchKeywords": [
@@ -17613,13 +17879,48 @@ export const passesData: MountainPass[] = [
       ]
     },
     "distancesTable": [
-      { "location": "Manning Park Resort, BC", "distance": "10 km (6.2 mi)", "route": "via Hwy 3 East", "notes": "Full lodging, restaurant, ski area & fuel services" },
-      { "location": "Sunshine Valley, BC", "distance": "32 km (19.9 mi)", "route": "via Hwy 3 West", "notes": "Mountain community & RV resort amenities" },
-      { "location": "Hope, BC (Fraser Valley)", "distance": "56 km (34.8 mi)", "route": "via Hwy 3 West", "notes": "Major junction for Hwy 1 (Trans-Canada) & Hwy 5 (Coquihalla)" },
-      { "location": "Princeton, BC (Similkameen)", "distance": "78 km (48.5 mi)", "route": "via Hwy 3 East", "notes": "Services, hospital, motels & gateway to South Okanagan" },
-      { "location": "Keremeos, BC (Fruit Stands)", "distance": "145 km (90.1 mi)", "route": "via Hwy 3 East", "notes": "Famous orchards and Similkameen wine country" },
-      { "location": "Penticton, BC (Okanagan Valley)", "distance": "190 km (118.0 mi)", "route": "via Hwy 3 & Hwy 3A", "notes": "Okanagan Lake commercial hub and regional airport" },
-      { "location": "Vancouver, BC (Downtown)", "distance": "205 km (127.4 mi)", "route": "via Hwy 3 & Hwy 1 West", "notes": "Metropolitan center & international airport (YVR)" }
+      {
+        "location": "Manning Park Resort, BC",
+        "distance": "10 km (6.2 mi)",
+        "route": "via Hwy 3 East",
+        "notes": "Full lodging, restaurant, ski area & fuel services"
+      },
+      {
+        "location": "Sunshine Valley, BC",
+        "distance": "32 km (19.9 mi)",
+        "route": "via Hwy 3 West",
+        "notes": "Mountain community & RV resort amenities"
+      },
+      {
+        "location": "Hope, BC (Fraser Valley)",
+        "distance": "56 km (34.8 mi)",
+        "route": "via Hwy 3 West",
+        "notes": "Major junction for Hwy 1 (Trans-Canada) & Hwy 5 (Coquihalla)"
+      },
+      {
+        "location": "Princeton, BC (Similkameen)",
+        "distance": "78 km (48.5 mi)",
+        "route": "via Hwy 3 East",
+        "notes": "Services, hospital, motels & gateway to South Okanagan"
+      },
+      {
+        "location": "Keremeos, BC (Fruit Stands)",
+        "distance": "145 km (90.1 mi)",
+        "route": "via Hwy 3 East",
+        "notes": "Famous orchards and Similkameen wine country"
+      },
+      {
+        "location": "Penticton, BC (Okanagan Valley)",
+        "distance": "190 km (118.0 mi)",
+        "route": "via Hwy 3 & Hwy 3A",
+        "notes": "Okanagan Lake commercial hub and regional airport"
+      },
+      {
+        "location": "Vancouver, BC (Downtown)",
+        "distance": "205 km (127.4 mi)",
+        "route": "via Hwy 3 & Hwy 1 West",
+        "notes": "Metropolitan center & international airport (YVR)"
+      }
     ],
     "quickFacts": {
       "state": "British Columbia, Canada",
@@ -17736,8 +18037,8 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Allison Pass (Highway 3) Road Conditions, Status & Live Webcams",
-      "description": "Live Allison Pass (Highway 3) road conditions, road status, opening date & live webcams in Manning Park, BC. Real-time pass status report, cameras & weather.",
+      "title": "Allison Pass Highway 3 Status & Webcams",
+      "description": "Live Allison Pass (Highway 3) road conditions, road status, opening date & DriveBC live webcams in Manning Park, BC. Real-time pass status.",
       "h1": "Allison Pass (Highway 3) Road Conditions, Status & Live Webcams"
     },
     "searchKeywords": [
@@ -17786,10 +18087,390 @@ export const passesData: MountainPass[] = [
       "Col Allison est-il ouvert aujourd'hui"
     ]
   },
+  {
+    "id": "monashee-pass",
+    "slug": "monashee-pass",
+    "isPopular": true,
+    "name": "Monashee Pass (Highway 6)",
+    "country": "Canada",
+    "countryCode": "CAN",
+    "continent": "North America",
+    "state": "British Columbia",
+    "highway": "Highway 6 (Vernon–Nakusp / Monashee Highway)",
+    "elevationFt": 3901,
+    "elevationM": 1189,
+    "coordinates": {
+      "lat": 50.0997,
+      "lng": -118.5178
+    },
+    "status": "OPEN",
+    "statusDetail": "Open year-round to all vehicular travel across the Monashee Mountains. Pavement is bare and dry with normal highway speeds in effect between Vernon and Nakusp. Maintained by DriveBC and TranBC road crews 24/7.",
+    "lastUpdated": "5 minutes ago",
+    "description": "Monashee Pass (elevation 3,901 ft / 1,189 m; French: Col Monashee / Route 6) is a mountain pass in the Monashee Mountains of the Southern Interior of British Columbia, Canada. Located on British Columbia Highway 6 (the Monashee Highway), the pass connects the Okanagan Valley city of Vernon with Nakusp and the West Kootenay region via Arrow Lake. The name 'Monashee' derives from the Scottish Gaelic words monadh (mountain) and sìth (peace), meaning 'Mountains of Peace'—a name bestowed around 1881 by prospector Donald McIntyre, one of the first to stake claims in the Monashee mines. Highway 6 through Monashee Pass serves as the primary east-west corridor linking the North Okanagan with the Arrow Lakes and West Kootenay communities. Monitored by DriveBC, the pass provides live highway webcams, real-time road weather information, and year-round road maintenance.",
+    "image": "/monashee-pass.jpg",
+    "imageAttribution": {
+      "creator": "Doviende",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Allison_pass_summit.jpg",
+      "license": "CC BY-SA 2.5",
+      "attribution": "Required",
+      "date": "2026"
+    },
+    "isSeasonal": false,
+    "weather": {
+      "tempF": 52,
+      "tempC": 11,
+      "condition": "Partly Cloudy with Cool Mountain Air",
+      "icon": "cloud-sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Roadway bare and dry; zero snowpack on highway surface (autumn conditions)"
+    },
+    "wind": {
+      "speedKmh": 16,
+      "speedMph": 10,
+      "direction": "NW",
+      "description": "Light alpine breeze through the Monashee valleys"
+    },
+    "roadCondition": "Monashee Pass (Highway 6) road conditions report bare, dry asphalt with normal highway speed limits in effect in both directions between Vernon and Nakusp through the Monashee Mountains. Visibility is excellent across the 1,189 m summit. Drivers are reminded that British Columbia mandatory winter tire regulations take effect annually from October 1 to April 30.",
+    "chainRequirement": "No chain restrictions currently in effect. Winter tires (3-Peak Mountain Snowflake or M+S rated with minimum 3.5 mm tread depth) are legally required on Highway 6 through Monashee Pass from October 1 to April 30 under BC Motor Vehicle Act regulations.",
+    "nearbyPasses": [
+      {
+        "id": "allison-pass",
+        "slug": "allison-pass",
+        "name": "Allison Pass (Highway 3)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "BC Highway 3",
+        "status": "OPEN",
+        "elevationFt": 4403,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 210
+      },
+      {
+        "id": "rogers-pass",
+        "slug": "rogers-pass",
+        "name": "Rogers Pass (Trans-Canada)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "Trans-Canada Hwy 1",
+        "status": "OPEN",
+        "elevationFt": 4396,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 185
+      },
+      {
+        "id": "crowsnest-pass",
+        "slug": "crowsnest-pass",
+        "name": "Crowsnest Pass (Highway 3)",
+        "country": "Canada",
+        "state": "Alberta",
+        "highway": "Hwy 3 / AB Hwy 3",
+        "status": "OPEN",
+        "elevationFt": 4455,
+        "lastUpdated": "15 minutes ago",
+        "distanceKm": 280
+      }
+    ],
+    "cameras": [
+      {
+        "id": "monashee-cam-250-summit",
+        "title": "DriveBC Cam 250: Highway 6 at Monashee Pass Summit (Looking West)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/250.jpg",
+        "location": "Highway 6 at Monashee Pass Summit (Elevation 1,189 m / 3,901 ft), 83 km east of Vernon",
+        "source": "DriveBC (BC Ministry of Transportation and Infrastructure)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca/cameras/250",
+        "direction": "Looking West towards Vernon & Okanagan Valley"
+      },
+      {
+        "id": "monashee-cam-251-shuswap",
+        "title": "DriveBC Cam 251: Highway 6 at Shuswap Hill (East of Cherryville)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/251.jpg",
+        "location": "Highway 6 at Shuswap Hill, east of Cherryville (Elevation ~900 m), 60 km east of Vernon",
+        "source": "DriveBC Highway Cameras",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca/cameras/251",
+        "direction": "Looking East towards Monashee Pass Summit"
+      },
+      {
+        "id": "monashee-cam-252-needles",
+        "title": "DriveBC Cam 252: Highway 6 at Needles Ferry (Lower Arrow Lake)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/252.jpg",
+        "location": "Highway 6 at Needles Ferry Terminal, Lower Arrow Lake (West descent from Monashee Pass)",
+        "source": "DriveBC Provincial Highway Cameras",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca/cameras/252",
+        "direction": "Looking West towards Nakusp & Arrow Lakes"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "DriveBC (BC Ministry of Transportation and Infrastructure)",
+        "url": "https://www.drivebc.ca",
+        "type": "Official Provincial Road & Webcam Authority"
+      },
+      {
+        "name": "TranBC (Ministry of Transportation & Infrastructure)",
+        "url": "https://tranbc.ca",
+        "type": "Official Highway Operations & Winter Advisory Agency"
+      },
+      {
+        "name": "Environment and Climate Change Canada (ECCC)",
+        "url": "https://weather.gc.ca",
+        "type": "Official National Meteorological Service"
+      },
+      {
+        "name": "BC Geographical Names Information System (BCGNIS)",
+        "url": "https://www2.gov.bc.ca/gov/content/data/geographic-data-services/bc-geographic-names",
+        "type": "Official BC Place Names Registry"
+      },
+      {
+        "name": "LivePassWatch Verification Methodology",
+        "url": "/methodology",
+        "type": "Internal Telemetry & Integrity Protocol"
+      }
+    ],
+    "verification": {
+      "official_authority": "DriveBC (BC Ministry of Transportation and Infrastructure)",
+      "official_source_url": "https://www.drivebc.ca/cameras/250",
+      "verification_status": "VERIFIED",
+      "confidence": "HIGH",
+      "last_checked_at": "2026-09-09T06:00:00Z",
+      "last_status_change_at": "2026-09-01T08:00:00Z",
+      "source_evidence": "DriveBC Official Status Report: Highway 6 through Monashee Pass (1,189 m) is OPEN in both directions. Pavement is bare and dry with normal highway speeds permitted. Routine 24/7 road patrol active. No winter tire or chain restrictions currently in effect."
+    },
+    "webcamNote": "Live webcam feeds for Monashee Pass Summit (Cam 250), Shuswap Hill (Cam 251), and Needles Ferry (Cam 252) are provided directly by DriveBC (British Columbia Ministry of Transportation and Infrastructure). These solar-powered roadside CCTV cameras refresh every 60 seconds and include RWIS (Road Weather Information System) data for air temperature, pavement temperature, and wind conditions.",
+    "routeDetails": {
+      "distanceKm": 167,
+      "distanceMiles": 103.8,
+      "duration": "2 hours 15 min – 2 hours 45 min (Vernon, BC to Nakusp, BC)",
+      "origin": "Vernon, BC (North Okanagan — Elevation 430 m)",
+      "destination": "Nakusp, BC (Arrow Lakes / West Kootenay — Elevation 470 m)",
+      "waypoints": [
+        "Vernon City Centre (Hwy 6 / 97 Junction) — 430 m",
+        "Lumby (Village Services & North Okanagan Hub) — 534 m",
+        "Cherryville (Shuswap River Valley Community) — 590 m",
+        "Shuswap Hill (DriveBC Cam 251 Viewpoint) — ~900 m",
+        "Monashee Pass Summit (Highway 6 Alpine Crest) — 1,189 m (3,901 ft)",
+        "Monashee Provincial Park West Boundary — 1,050 m",
+        "Needles Ferry Terminal (Lower Arrow Lake Crossing) — 420 m",
+        "Fauquier (Arrow Lake Service Community) — 430 m",
+        "Nakusp (West Kootenay Hub & Highway 23 Junction) — 470 m"
+      ]
+    },
+    "distancesTable": [
+      {
+        "location": "Cherryville, BC",
+        "distance": "47 km (29.2 mi)",
+        "route": "via Hwy 6 West",
+        "notes": "Nearest community with fuel west of summit"
+      },
+      {
+        "location": "Lumby, BC",
+        "distance": "70 km (43.5 mi)",
+        "route": "via Hwy 6 West",
+        "notes": "North Okanagan service centre"
+      },
+      {
+        "location": "Vernon, BC (Okanagan)",
+        "distance": "83 km (51.6 mi)",
+        "route": "via Hwy 6 West",
+        "notes": "Major city with all services, hospital & airport"
+      },
+      {
+        "location": "Needles Ferry Terminal",
+        "distance": "40 km (24.9 mi)",
+        "route": "via Hwy 6 East",
+        "notes": "Free BC Ferries crossing to Fauquier"
+      },
+      {
+        "location": "Nakusp, BC (Arrow Lakes)",
+        "distance": "84 km (52.2 mi)",
+        "route": "via Hwy 6 East",
+        "notes": "West Kootenay hub, Hot Springs & Arrow Lakes"
+      },
+      {
+        "location": "Kelowna, BC (Okanagan)",
+        "distance": "130 km (80.8 mi)",
+        "route": "via Hwy 6 & 97",
+        "notes": "Regional airport & Okanagan metropolitan centre"
+      },
+      {
+        "location": "Revelstoke, BC",
+        "distance": "185 km (115.0 mi)",
+        "route": "via Hwy 6, 23 & Trans-Canada",
+        "notes": "Rogers Pass gateway & mountain resort hub"
+      }
+    ],
+    "quickFacts": {
+      "state": "British Columbia, Canada",
+      "mountainRange": "Monashee Mountains",
+      "elevationSummary": "1,189 m / 3,901 ft — Summit of BC Highway 6 between Vernon and Nakusp",
+      "connects": "North Okanagan (Vernon) with the Arrow Lakes and West Kootenay (Nakusp)",
+      "nearestTown": "Cherryville, BC (47 km West), Needles, BC (40 km East), Vernon, BC (83 km West)",
+      "roadType": "Paved two-lane provincial highway with pullouts (Highway 6 / Monashee Highway)",
+      "bestTime": "Year-round (Summer wildflower meadows Jun–Sep; Winter ski touring & snowmobiling Nov–Apr)",
+      "highlight": "Remote alpine crossing through Monashee Provincial Park, Solar-powered DriveBC cameras, Gateway to Arrow Lake ferry & West Kootenay hot springs"
+    },
+    "overview": {
+      "openedYear": 1954,
+      "lengthMiles": "103.8 miles (Vernon to Nakusp)",
+      "lengthKm": "167.0 km (North Okanagan to West Kootenay)",
+      "annualSnowfallIn": "180–260 inches",
+      "annualSnowfallM": "4.5–6.5 meters",
+      "summary": "Monashee Pass at 1,189 meters (3,901 ft) carries British Columbia Highway 6 across the Monashee Mountains, providing the principal southern highway link between the North Okanagan Valley and the Arrow Lakes / West Kootenay region. The 167-kilometre corridor traverses dense cedar and hemlock forests, subalpine wildflower meadows, and the Shuswap River valley before cresting at the remote summit within Monashee Provincial Park. Named after the Scottish Gaelic term for 'Mountains of Peace,' the pass is served by solar-powered DriveBC webcams and RWIS weather sensors that deliver real-time road conditions data year-round. Winter travelers rely on mandatory winter tire regulations (October 1–April 30) and live DriveBC camera feeds to navigate heavy mountain snowfall, which averages 4.5 to 6.5 meters at the summit annually."
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Mandatory Winter Tires Oct 1 – Apr 30)",
+      "typicalReopening": "Continuous 365-Day Provincial Highway Operation",
+      "description": "Monashee Pass on Highway 6 is maintained open year-round by DriveBC and TranBC road maintenance contractors. As an essential inter-regional highway connecting the Okanagan with the Arrow Lakes and West Kootenay, it does not have a scheduled winter closure. Winter tires (3-Peak Mountain Snowflake or M+S with minimum 3.5 mm tread) are legally mandatory from October 1 to April 30 under BC Motor Vehicle Act regulations. Temporary precautionary closures of 1 to 4 hours occur only during extreme blizzards, avalanche clearance, or vehicle recovery events. The DriveBC cam at the summit (Cam 250) uses solar power with battery backup to maintain live imagery even during winter."
+    },
+    "travelTips": [
+      "Mandatory Winter Tires (Oct 1 – Apr 30): Under BC Motor Vehicle Act regulations, all passenger vehicles traveling Highway 6 through Monashee Pass must be equipped with approved winter tires (3PMSF or M+S with minimum 3.5 mm tread). Commercial trucks must carry tire chains.",
+      "Free Arrow Lake Ferry Crossing: After descending the eastern side of the pass, Highway 6 connects to the free BC Ferries Needles–Fauquier crossing across Lower Arrow Lake. Check BC Ferries for current sailing schedules before departure.",
+      "Fuel Up in Vernon or Nakusp: There are very limited fuel and service facilities between Cherryville and Nakusp — a span of approximately 120 km. Ensure a full tank before departing from either direction.",
+      "Solar-Powered Remote Webcams: The DriveBC summit camera (Cam 250) is solar-powered with satellite data transmission. On overcast winter days, image refresh intervals may be longer than 60 seconds. Use LivePassWatch to monitor camera status.",
+      "Wildlife Alert Through Monashee Provincial Park: Black bears, moose, deer, and mountain goats frequently cross Highway 6, particularly at dawn and dusk near the summit. Observe posted speed limits and watch for animals on the roadway.",
+      "Cellular Coverage Gaps: Mobile phone reception is unreliable between Cherryville and the Needles Ferry. Download offline maps and carry an emergency roadside kit including water, extra fuel, and warm clothing in winter."
+    ],
+    "history": [
+      {
+        "year": "Pre-1860s",
+        "title": "Syilx and Secwépemc Indigenous Territory",
+        "description": "For thousands of years, the Monashee Mountains were traversed by Syilx (Okanagan) and Secwépemc (Shuswap) First Nations peoples along ancient trade routes connecting the Okanagan Valley with the Arrow Lakes and Columbia River basin."
+      },
+      {
+        "year": "1881",
+        "title": "Naming of the Monashee Mountains",
+        "description": "Scottish-born prospector Donald McIntyre, one of the first to stake mining claims in the area, names the mountain range 'Monashee' from the Scottish Gaelic monadh sìth, meaning 'Mountains of Peace.' The pass takes its name from the range."
+      },
+      {
+        "year": "1915",
+        "title": "Monashee Internment Camp",
+        "description": "During the First World War, the Canadian government establishes an internment camp in the Monashee area. Internees, classified as 'enemy aliens,' perform forced labour on early road and infrastructure projects in the mountain corridor."
+      },
+      {
+        "year": "1954",
+        "title": "Highway 6 Paved Connection Completed",
+        "description": "British Columbia completes the paved highway link across Monashee Pass on Highway 6, formally opening the first all-season automobile connection between the Okanagan Valley and the West Kootenay via the Arrow Lakes."
+      },
+      {
+        "year": "1980s",
+        "title": "Monashee Provincial Park Established",
+        "description": "The BC Government creates Monashee Provincial Park adjacent to the Highway 6 corridor, protecting over 99,000 hectares of remote wilderness including the high alpine zones near the pass summit."
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "The Mountains of Peace — Connecting Okanagan to Kootenay",
+        "content": "Monashee Pass rises to 1,189 meters (3,901 ft) on British Columbia Highway 6, threading through the heart of the Monashee Mountains between the sun-drenched Okanagan Valley and the glacier-carved Arrow Lakes. Named by Scottish prospector Donald McIntyre in 1881 from the Gaelic for 'Mountains of Peace,' the pass embodies both a physical and philosophical boundary — where Interior dry forests on the western slopes give way to the wetter, cooler ecosystems characteristic of the Kootenay Range. Highway 6, often called the 'Monashee Highway,' remains one of BC's most remote and scenic provincial highways, seeing far less traffic than the Trans-Canada or Coquihalla corridors."
+      },
+      {
+        "title": "Monashee Provincial Park & Wilderness Ecology",
+        "content": "Highway 6 through Monashee Pass borders the edge of Monashee Provincial Park — an expansive 99,000-hectare wilderness protecting intact stands of old-growth western red cedar and hemlock, subalpine fir parkland, and fragile alpine meadows. The pass summit serves as an ecological transition zone: to the west, Okanagan semi-arid pine and fir forests dominate, while to the east, heavier precipitation supports lush coastal-interior mixed forests. The remote park interior — accessible only by float plane or extended backcountry trail — is home to mountain goats, grizzly bears, wolverines, and rare alpine wildflower communities. Seasonal wildflower blooms near the summit in July and August attract hikers and photographers from across BC."
+      },
+      {
+        "title": "Remote Highway Engineering & Solar DriveBC Monitoring",
+        "content": "One of the defining engineering challenges of Highway 6 through Monashee Pass is its remote location, more than 80 km from the nearest major service centre. The DriveBC surveillance camera at the summit (Cam 250) uses solar panels and battery backup with satellite data transmission — making it one of the most isolated highway cameras in British Columbia's monitoring network. TranBC road maintenance crews stationed in Cherryville and Nakusp are dispatched to plow, sand, and apply anti-icing brine to the entire 167-km route during winter storm events, often working through the night to maintain safe passage."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the official Monashee Pass opening date in 2026? (Monashee Pass opening date / when does Monashee Pass open / Monashee Pass is open)",
+        "answer": "Monashee Pass on Highway 6 (the Monashee Highway connecting Vernon to Nakusp) is OPEN YEAR-ROUND with no seasonal winter closure date. As a primary inter-regional provincial highway linking the North Okanagan with the Arrow Lakes and West Kootenay, it is maintained and plowed 24 hours a day, 365 days a year by DriveBC and TranBC road maintenance contractors."
+      },
+      {
+        "question": "Is Monashee Pass open right now, and how can I confirm if Monashee Pass is open today? (Monashee Pass is open / is Monashee Pass open right now / Monashee Pass is it open today)",
+        "answer": "Yes, Monashee Pass (Highway 6) is open right now to all vehicular travel in both directions between Vernon and Nakusp. Pavement across the 1,189 m summit is bare and dry with normal highway speeds permitted. You can verify real-time road status anytime on LivePassWatch, synchronized directly with DriveBC highway sensors and camera feeds."
+      },
+      {
+        "question": "What are the current Monashee Pass road conditions, road status, and pass status report? (Monashee Pass road conditions / Monashee Pass road status / Monashee Pass pass status report)",
+        "answer": "Current Monashee Pass (Highway 6) road conditions report bare, dry asphalt with clear visibility across the 1,189 m summit. The official Monashee Pass road status is OPEN with standard travel regulations in effect between Vernon and Nakusp. Always monitor DriveBC's highway cam at the summit and roadside weather sensors before winter travel."
+      },
+      {
+        "question": "Is Monashee Pass closed today, and what causes Monashee Pass closed alerts? (is Monashee Pass closed today / Monashee Pass closed / Monashee Pass is closed)",
+        "answer": "No, Monashee Pass (Highway 6) is NOT closed today; the highway is fully operational. Monashee Pass closed alerts occur only during severe winter blizzards, freezing rain events, avalanche clearance, or vehicle recovery operations on the remote mountain corridor. Always check LivePassWatch or DriveBC before departing, especially in winter."
+      },
+      {
+        "question": "Where can I view live Monashee Pass webcam feeds, cameras, and the summit camera? (Monashee Pass webcam / Monashee Pass live webcam / Monashee Pass cameras / Monashee Pass summit camera)",
+        "answer": "LivePassWatch provides verified live Monashee Pass webcam feeds sourced directly from DriveBC (BC Ministry of Transportation and Infrastructure). Active cameras include DriveBC Cam 250 at Monashee Pass Summit (1,189 m) looking West toward Vernon, Cam 251 at Shuswap Hill east of Cherryville, and Cam 252 at the Needles Ferry terminal. Images refresh automatically every 60 seconds via DriveBC's solar-powered CCTV network."
+      },
+      {
+        "question": "When does Monashee Pass close for winter, and what are the BC winter tire regulations? (when does Monashee Pass close for winter)",
+        "answer": "Monashee Pass does NOT close for winter; it remains open throughout all four seasons. However, under British Columbia law, winter tires (marked with the 3-Peak Mountain Snowflake or M+S rated with minimum 3.5 mm tread depth) are legally mandatory on Highway 6 through Monashee Pass from October 1 through April 30. Commercial trucks over 11,794 kg must carry tire chains."
+      },
+      {
+        "question": "Where can I find an official Monashee Pass map and route itinerary? (Monashee Pass map)",
+        "answer": "You can explore an interactive Monashee Pass map on LivePassWatch. The map details all 167 km of Highway 6 from Vernon through Cherryville, Shuswap Hill, Monashee Pass Summit (1,189 m / 3,901 ft), Needles Ferry, and Nakusp, highlighting live DriveBC webcam locations, elevation profiles, and rest areas."
+      },
+      {
+        "question": "What is the Monashee Pass weather today, snow depth, and current winter snow conditions? (Monashee Pass weather today / Monashee Pass snow / Monashee Pass snow depth / Monashee Pass snow conditions)",
+        "answer": "Monashee Pass weather today is partly cloudy with cool autumn temperatures around 52°F (11°C) and light northwest winds. Snow depth on the highway is currently 0 cm. In winter, Monashee Pass receives 4.5 to 6.5 meters (180 to 260 inches) of snowfall annually, with active TranBC snowplow operations and salt/sand application ensuring continuous safe passage."
+      },
+      {
+        "question": "What is the official Monashee Pass elevation along Highway 6?",
+        "answer": "The official Monashee Pass elevation is 1,189 meters (3,901 feet) above sea level. It is the highest point on British Columbia Highway 6 between Vernon in the North Okanagan and Nakusp in the West Kootenay region, sitting within the heart of the Monashee Mountains."
+      },
+      {
+        "question": "Why is the Needles Ferry essential for crossing Monashee Pass and reaching Nakusp?",
+        "answer": "After descending the eastern slope of Monashee Pass on Highway 6, travelers reach Lower Arrow Lake — a fjord-like reservoir created by the Keenleyside Dam on the Columbia River. The free BC Ferries Needles–Fauquier cable ferry provides the only crossing, connecting the Monashee descent to Highway 6 continuing east toward Nakusp and the West Kootenay. The ferry operates year-round and is included in BC's public transportation network at no charge."
+      }
+    ],
+    "customSeo": {
+      "title": "Monashee Pass Highway 6 Status & Webcams",
+      "description": "Live Monashee Pass (Highway 6) road conditions, road status, DriveBC live webcams & BC mountain weather between Vernon and Nakusp, Canada.",
+      "h1": "Monashee Pass (Highway 6) Road Conditions, Status & Live Webcams"
+    },
+    "searchKeywords": [
+      "Monashee Pass opening date",
+      "Monashee Pass is open",
+      "Monashee Pass road conditions",
+      "Monashee Pass road status",
+      "Monashee Pass pass status report",
+      "when does Monashee Pass open",
+      "Monashee Pass closed",
+      "Monashee Pass is closed",
+      "Monashee Pass is it open today",
+      "is Monashee Pass closed today",
+      "Monashee Pass webcam",
+      "Monashee Pass live webcam",
+      "Monashee Pass cameras",
+      "Monashee Pass summit camera",
+      "when does Monashee Pass close for winter",
+      "Monashee Pass map",
+      "is Monashee Pass open right now",
+      "Monashee Pass weather today",
+      "Monashee Pass snow",
+      "Monashee Pass snow depth",
+      "Monashee Pass snow conditions",
+      "Monashee Pass elevation",
+      "Monashee Pass open",
+      "Highway 6 road conditions",
+      "Highway 6 webcam",
+      "Highway 6 status BC",
+      "Vernon to Nakusp road conditions",
+      "Monashee Highway conditions",
+      "DriveBC Monashee Pass",
+      "DriveBC Highway 6",
+      "Needles Ferry webcam",
+      "Shuswap Hill camera",
+      "Col Monashee",
+      "Route 6 Vernon Nakusp",
+      "conditions routières Col Monashee",
+      "caméras en direct Col Monashee",
+      "météo Col Monashee",
+      "état de la route Col Monashee",
+      "fermeture hivernale Col Monashee",
+      "pneus d'hiver obligatoires Route 6",
+      "webcam sommet Col Monashee",
+      "Col Monashee est-il ouvert aujourd'hui",
+      "Montagnes de la Paix Route 6"
+    ]
+  }
 ];
-
-
-
 
 export function getPassBySlug(slug: string): MountainPass | undefined {
 

@@ -113,6 +113,7 @@ export const PassesPage: React.FC = () => {
       <SEOHelper
         title="Mountain Passes Directory & Status"
         description="Comprehensive global directory of mountain passes with real-time status, snow conditions, elevations, and road camera feeds."
+        keywords="mountain passes directory, global mountain passes, pass status, alpine highway conditions, summit webcams, chain laws, snow depth"
         canonicalUrl="https://www.livepasswatch.info/passes"
       />
 

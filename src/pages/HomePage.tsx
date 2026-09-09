@@ -72,6 +72,7 @@ export const HomePage: React.FC = () => {
       <SEOHelper
         title="Live Mountain Pass Status, Road Conditions & Webcams | LivePassWatch"
         description="Check real-time mountain pass status, live webcams, snow depth, road conditions, and closures worldwide. Know before you go with LivePassWatch."
+        keywords="mountain pass status, mountain pass road conditions, live webcams, pass closures, snow depth, highway chain laws, mountain pass weather, LivePassWatch"
         canonicalUrl="https://www.livepasswatch.info/"
         jsonLd={jsonLdWebsite}
       />
