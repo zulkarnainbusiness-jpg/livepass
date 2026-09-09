@@ -884,9 +884,9 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     seasonalClosureWindow: 'December 1 through June 14 (Annual Wildlife Winter Closure; Reopens June 15)',
     seasonalClosureDetail: 'Highway 40 (Kananaskis Trail; summit at Highwood Pass, 2,206 m / 7,239 ft) is the highest paved road in Canada. The high-altitude 54-kilometer alpine segment between Peter Lougheed Provincial Park (north gate) and Highwood Junction (south gate) closes annually from December 1 to June 14 to protect critical winter wildlife habitat for bighorn sheep and grizzly bears, and to avoid extreme avalanche hazard. The road officially reopens to all vehicular traffic on June 15.',
     aboutPass: 'Highway 40 (Kananaskis Trail; French: Col Highwood / Route 40) is an iconic Rocky Mountain highway pass in Alberta, Canada, surmounting the Continental Divide range at Highwood Pass (elevation 2,206 m / 7,239 ft) — the highest paved highway in Canada. Connecting the Bow Valley and Trans-Canada Highway 1 with the ranching foothills of Longview on Highway 22, the highway cuts through Peter Lougheed Provincial Park and Kananaskis Country. Surrounded by towering limestone summits like Mount Rae and Mount Arethusa, Highway 40 is internationally famous for golden larch viewing in September and early-June car-free cycling before vehicle gates open on June 15. LivePassWatch monitors real-time 511 Alberta and Alberta Parks travel telemetry, live webcams, and weather conditions.',
-    crossLinkAnchor: 'Icefields Parkway Road (2,069 m) & Sunwapta Pass (2,035 m)',
-    crossLinkUrl: '/passes/canada/alberta/icefields-parkway-road',
-    crossLinkText: 'Compare Canadian Rocky Mountains mountain passes and scenic highways with'
+    crossLinkAnchor: 'Crowsnest Pass Highway 3 (1,358 m) & Sunwapta Pass (2,035 m)',
+    crossLinkUrl: '/passes/canada/alberta/crowsnest-pass',
+    crossLinkText: 'Compare southern Alberta Rocky Mountains passes and Continental Divide highway conditions with'
   },
   'whistler-pass': {
     nearestTowns: [
@@ -918,5 +918,21 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Highway 40 Highwood Pass (2,206 m) & Kicking Horse Pass (1,627 m)',
     crossLinkUrl: '/passes/canada/alberta/highway-40',
     crossLinkText: 'Compare Canadian Rocky Mountains Continental Divide passes and scenic highways with'
+  },
+  'allison-pass': {
+    nearestTowns: [
+      { name: 'Manning Park Resort, BC', distance: '10.0 km (6.2 miles)', direction: 'East via Hwy 3 (Resort & Visitor Hub)' },
+      { name: 'Sunshine Valley, BC', distance: '32.0 km (19.9 miles)', direction: 'West via Hwy 3 (Mountain Recreation)' },
+      { name: 'Hope, BC (Fraser Valley Gateway)', distance: '56.0 km (34.8 miles)', direction: 'West via Hwy 3 (Major Junction Hwy 1 & 5)' },
+      { name: 'Princeton, BC (Similkameen Hub)', distance: '78.0 km (48.5 miles)', direction: 'East via Hwy 3 (Services & Hospital)' },
+      { name: 'Keremeos, BC (Orchard Country)', distance: '145.0 km (90.1 miles)', direction: 'East via Hwy 3' },
+      { name: 'Vancouver, BC (Metro Hub)', distance: '205.0 km (127.4 miles)', direction: 'West via Hwy 3 & Hwy 1' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Mandatory Winter Tires Oct 1 – Apr 30)',
+    seasonalClosureDetail: 'Allison Pass along BC Highway 3 (Hope-Princeton Highway; summit at 1,342 m / 4,403 ft) is maintained open 365 days a year by DriveBC and the Ministry of Transportation and Infrastructure. As an essential inter-regional lifeline connecting the Lower Mainland with the Southern Interior, it does not have a seasonal winter closure. Winter tires (3PMSF or M+S with minimum 3.5 mm tread) are legally mandatory from October 1 to April 30. Commercial trucks over 11,794 kg must carry tire chains. Precautionary short-duration closures of 1 to 4 hours occur only during extreme winter storms, avalanche clearance, or vehicle recovery operations.',
+    aboutPass: 'Allison Pass (elevation 1,342 m / 4,403 ft; French: Col Allison / Route 3) is a vital mountain pass carrying British Columbia Highway 3 (the Hope-Princeton Highway segment of the Crowsnest Highway) across the Cascade Mountains within E.C. Manning Provincial Park. Connecting Hope in the Fraser Valley with Princeton in the Similkameen Valley, Allison Pass serves as British Columbia’s premier southern four-season highway corridor. Named in honor of pioneer John Fall Allison who surveyed the trail in 1860, the highway winds past the historic 1965 Hope Slide viewpoint, dense coastal cedar forests, and subalpine wildflower meadows. When severe winter conditions force closures on the higher Coquihalla Highway (Highway 5), Allison Pass serves as the province’s primary heavy transport and passenger detour, equipped with live DriveBC traffic webcams and 24/7 road maintenance crews.',
+    crossLinkAnchor: 'Coquihalla Summit Pass (1,244 m) & Crowsnest Pass (1,358 m)',
+    crossLinkUrl: '/passes/canada/british-columbia/coquihalla-summit-pass',
+    crossLinkText: 'Compare British Columbia Cascade and Rocky Mountain passes with'
   }
 };

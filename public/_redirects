@@ -132,6 +132,8 @@
 /passes/canada/whistler-pass /passes/canada/british-columbia/whistler-pass 301
 /passes/crowsnest-pass /passes/canada/alberta/crowsnest-pass 301
 /passes/canada/crowsnest-pass /passes/canada/alberta/crowsnest-pass 301
+/passes/allison-pass /passes/canada/british-columbia/allison-pass 301
+/passes/canada/allison-pass /passes/canada/british-columbia/allison-pass 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

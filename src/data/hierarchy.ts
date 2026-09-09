@@ -323,6 +323,16 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 675,
                 "status": "OPEN",
                 "image": "/whistler-pass.jpg"
+              },
+              {
+                "id": "allison-pass",
+                "slug": "allison-pass",
+                "name": "Allison Pass (Col Allison)",
+                "highway": "Highway 3 (Hope-Princeton Hwy)",
+                "elevationFt": 4403,
+                "elevationM": 1342,
+                "status": "OPEN",
+                "image": "/allison-pass.jpg"
               }
             ]
           },

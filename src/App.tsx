@@ -319,6 +319,13 @@ export const App: React.FC = () => {
               <Route path="/hwy-3" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
               <Route path="/col-du-nid-de-corbeau" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
               <Route path="/passes/canada/british-columbia/crowsnest-pass" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
+              <Route path="/allison-pass" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
+              <Route path="/allison" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
+              <Route path="/allisonpass" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
+              <Route path="/col-allison" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
+              <Route path="/allison-summit" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
+              <Route path="/manning-park-pass" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
+              <Route path="/hope-princeton-highway" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
 
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />

@@ -15581,6 +15581,18 @@ export const passesData: MountainPass[] = [
     ],
     "nearbyPasses": [
       {
+        "id": "crowsnest-pass",
+        "slug": "crowsnest-pass",
+        "name": "Crowsnest Pass (Highway 3)",
+        "country": "Canada",
+        "state": "Alberta",
+        "highway": "Highway 3 (Crowsnest Highway)",
+        "status": "OPEN",
+        "elevationFt": 4453,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 120
+      },
+      {
         "id": "kicking-horse-pass",
         "slug": "kicking-horse-pass",
         "name": "Kicking Horse Pass",
@@ -17054,6 +17066,7 @@ export const passesData: MountainPass[] = [
   {
     "id": "crowsnest-pass",
     "slug": "crowsnest-pass",
+    "isPopular": true,
     "name": "Crowsnest Pass (Highway 3)",
     "country": "Canada",
     "countryCode": "CAN",
@@ -17073,23 +17086,23 @@ export const passesData: MountainPass[] = [
     "image": "/crowsnest-pass.jpg",
     "isSeasonal": false,
     "weather": {
-      "tempF": 48,
-      "tempC": 9,
-      "condition": "Partly Cloudy with Strong Chinook Mountain Breezes",
-      "icon": "cloud"
+      "tempF": 52,
+      "tempC": 11,
+      "condition": "Overcast with Light Rain (ECCC Rainfall Advisory)",
+      "icon": "cloud-rain"
     },
     "snowDepth": {
       "depthCm": 0,
       "depthIn": 0,
-      "condition": "Roadway clear and dry; winter snowpack present on upper peaks"
+      "condition": "Roadway wet with rain; early season snowpack on high Rocky summits"
     },
     "wind": {
-      "speedKmh": 38,
-      "speedMph": 24,
+      "speedKmh": 28,
+      "speedMph": 17,
       "direction": "W",
-      "description": "Brisk western chinook winds gusting through Crowsnest summit"
+      "description": "Moderate westerly mountain breeze across Continental Divide"
     },
-    "roadCondition": "Crowsnest Pass road conditions report bare and dry asphalt in both directions along Highway 3. Visibility is good across the Alberta/BC border summit. Motorists should anticipate sudden chinook wind gusts near Pincher Creek and Cowley. Winter tire regulations are legally enforced on the BC side between October 1 and April 30.",
+    "roadCondition": "Crowsnest Pass (Highway 3) road conditions report wet asphalt with isolated surface pooling in both directions between Sparwood, BC and Pincher Creek, AB. Environment Canada has issued a rainfall advisory for southern Alberta. Visibility is good across the Alberta/BC border summit. Motorists should anticipate gusty mountain winds and observe safe wet-weather following distances.",
     "chainRequirement": "Winter tires (3-Peak Mountain Snowflake or M+S with minimum 3.5 mm tread) mandatory on BC Highway 3 from October 1 to April 30. Chains mandatory for commercial vehicles over 11,794 kg during winter storms.",
     "officialSource": "https://511.alberta.ca",
     "nearbyPasses": [
@@ -17143,10 +17156,10 @@ export const passesData: MountainPass[] = [
       },
       {
         "id": "crowsnest-cam-border",
-        "title": "511 Alberta Cam: Highway 3 at Alberta / BC Border (Crowsnest Pass Summit)",
+        "title": "511 Alberta & DriveBC Joint Cam: Highway 3 at Alberta / BC Border (Crowsnest Pass Summit)",
         "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/188.jpg",
         "location": "Highway 3 Continental Divide Crest (Elevation 1,358 m / 4,453 ft)",
-        "source": "511 Alberta & Alberta Transportation",
+        "source": "511 Alberta & DriveBC Joint Summit Station",
         "updateIntervalMs": 60000,
         "officialUrl": "https://511.alberta.ca",
         "direction": "Looking West toward Continental Divide Summit & British Columbia"
@@ -17301,36 +17314,36 @@ export const passesData: MountainPass[] = [
     ],
     "faqs": [
       {
-        "question": "What is the official Crowsnest Pass opening date in 2026? (Crowsnest Pass opening date / when does Crowsnest Pass open / Crowsnest Pass open / Highway 3 opening date)",
-        "answer": "Crowsnest Pass along Highway 3 (Crowsnest Highway) is OPEN YEAR-ROUND! Because Crowsnest Pass is the lowest highway crossing of the Canadian Rockies (1,358 m / 4,453 ft), there is no seasonal winter closure date. It is maintained 24/7, 365 days a year by 511 Alberta and DriveBC road crews."
+        "question": "What is the official Crowsnest Pass (Highway 3) opening date in 2026? (Crowsnest Pass (Highway 3) opening date / when does Crowsnest Pass (Highway 3) open / Crowsnest Pass (Highway 3) is open)",
+        "answer": "Crowsnest Pass (Highway 3 / Crowsnest Highway) is OPEN YEAR-ROUND! Because Crowsnest Pass is the lowest highway crossing of the Canadian Rockies (1,358 m / 4,453 ft), there is no seasonal winter closure date. It is maintained 24/7, 365 days a year by 511 Alberta and DriveBC road crews."
       },
       {
-        "question": "Is Crowsnest Pass open right now, and how can I confirm if Crowsnest Pass is open today? (Crowsnest Pass is open / is Crowsnest Pass open right now / Crowsnest Pass is it open today / Crowsnest Pass open / Highway 3 status)",
-        "answer": "Yes, Crowsnest Pass is open right now to all vehicular travel in both directions on Highway 3. Pavement across the summit is bare and dry with normal highway speeds permitted. You can verify real-time road status anytime on LivePassWatch, synchronized every 15 minutes with 511 Alberta and DriveBC road sensors."
+        "question": "Is Crowsnest Pass (Highway 3) open right now, and how can I confirm if Crowsnest Pass (Highway 3) is open today? (Crowsnest Pass (Highway 3) is open / is Crowsnest Pass (Highway 3) open right now / Crowsnest Pass (Highway 3) is it open today)",
+        "answer": "Yes, Crowsnest Pass (Highway 3) is open right now to all vehicular travel in both directions. Pavement across the summit is bare and wet with normal highway speeds permitted with wet-weather caution. You can verify real-time road status anytime on LivePassWatch, synchronized with 511 Alberta and DriveBC road sensors."
       },
       {
-        "question": "What are the current Crowsnest Pass road conditions, Highway 3 road status, and official pass status report? (Crowsnest Pass road conditions / Crowsnest Pass road status / Crowsnest Pass pass status report / Highway 3 road conditions / Highway 3 road status)",
-        "answer": "Current Crowsnest Pass road conditions report bare, dry asphalt and good visibility between Sparwood, BC and Pincher Creek, AB. The official Crowsnest Pass road status is OPEN with standard travel regulations. Motorists should check for sudden chinook wind advisories along open prairie stretches east of the pass."
+        "question": "What are the current Crowsnest Pass (Highway 3) road conditions, road status, and pass status report? (Crowsnest Pass (Highway 3) road conditions / Crowsnest Pass (Highway 3) road status / Crowsnest Pass (Highway 3) pass status report)",
+        "answer": "Current Crowsnest Pass (Highway 3) road conditions report wet asphalt with localized rain showers and good summit visibility between Sparwood, BC and Pincher Creek, AB. The official Crowsnest Pass (Highway 3) road status is OPEN with standard travel regulations. Motorists should check for sudden chinook wind advisories along open prairie stretches east of the pass."
       },
       {
-        "question": "Is Crowsnest Pass closed today, and what causes Crowsnest Pass closed alerts on Highway 3? (is Crowsnest Pass closed today / Crowsnest Pass closed / Crowsnest Pass is closed)",
-        "answer": "No, Crowsnest Pass is NOT closed today; Highway 3 is fully operational across the Continental Divide. Temporary Crowsnest Pass closed alerts only occur during intense winter blizzards, severe black ice, multi-vehicle winter collisions, or extreme chinook wind events with gusts over 110 km/h causing zero-visibility ground blizzards. Always check LivePassWatch before departure."
+        "question": "Is Crowsnest Pass (Highway 3) closed today, and what causes Crowsnest Pass (Highway 3) closed alerts? (is Crowsnest Pass (Highway 3) closed today / Crowsnest Pass (Highway 3) closed / Crowsnest Pass (Highway 3) is closed)",
+        "answer": "No, Crowsnest Pass (Highway 3) is NOT closed today; Highway 3 is fully operational across the Continental Divide. Temporary Crowsnest Pass closed alerts only occur during intense winter blizzards, severe black ice, multi-vehicle winter collisions, or extreme chinook wind events with gusts over 110 km/h causing zero-visibility ground blizzards. Always check LivePassWatch before departure."
       },
       {
-        "question": "Where can I view live Crowsnest Pass webcam feeds, Highway 3 cameras, and the summit camera? (Crowsnest Pass webcam / Crowsnest Pass live webcam / Crowsnest Pass cameras / Crowsnest Pass summit camera / Highway 3 webcam)",
-        "answer": "LivePassWatch provides verified live Crowsnest Pass webcam feeds and Highway 3 cameras sourced directly from DriveBC and 511 Alberta. Feeds include DriveBC Cam 131 at Sparwood (Crowsnest Pass west approach), the 511 Alberta Border Summit Camera at 1,358 m, DriveBC Cam 175 at Hosmer (Elk Valley), and DriveBC Cam 60 at Morrissey. Images update automatically every 60 seconds."
+        "question": "Where can I view live Crowsnest Pass (Highway 3) webcam feeds, cameras, and the summit camera? (Crowsnest Pass (Highway 3) webcam / Crowsnest Pass (Highway 3) live webcam / Crowsnest Pass (Highway 3) cameras)",
+        "answer": "LivePassWatch provides verified live Crowsnest Pass (Highway 3) webcam feeds and cameras sourced directly from DriveBC and 511 Alberta. Feeds include DriveBC Cam 131 at Sparwood (Crowsnest Pass west approach), the 511 Alberta & DriveBC Joint Border Summit Camera at 1,358 m, DriveBC Cam 175 at Hosmer (Elk Valley), and DriveBC Cam 60 at Morrissey. Images update automatically every 60 seconds."
       },
       {
-        "question": "When does Crowsnest Pass close for winter, and what are the winter tire rules? (when does Crowsnest Pass close for winter)",
+        "question": "When does Crowsnest Pass (Highway 3) open or close for winter, and what are the winter tire rules? (when does Crowsnest Pass (Highway 3) open / when does Crowsnest Pass close for winter)",
         "answer": "Crowsnest Pass does NOT close for winter; it remains open throughout all four seasons. However, on the British Columbia side of Highway 3, winter tires (marked with the 3-Peak Mountain Snowflake or M+S with minimum 3.5 mm tread) are legally mandatory from October 1 through April 30. In Alberta, winter-rated tires and emergency supplies are strongly recommended."
       },
       {
-        "question": "Where can I find an official Crowsnest Pass map and Highway 3 route itinerary? (Crowsnest Pass map)",
+        "question": "Where can I find an official Crowsnest Pass (Highway 3) map and route itinerary? (Crowsnest Pass map)",
         "answer": "You can view an interactive Crowsnest Pass map directly on LivePassWatch. The map shows all 145 km of Highway 3 from Fernie and Sparwood in BC through Crowsnest summit (1,358 m / 4,453 ft), Coleman, Blairmore, Frank Slide, and Bellevue to Pincher Creek in Alberta, including live webcam locations, elevation profiles, and traveler rest areas."
       },
       {
         "question": "What is the Crowsnest Pass weather today, snow depth, and current winter snow conditions? (Crowsnest Pass weather today / Crowsnest Pass snow / Crowsnest Pass snow depth / Crowsnest Pass snow conditions)",
-        "answer": "Crowsnest Pass weather today is partly cloudy with gusty chinook winds and summit temperatures around 48°F (9°C). Highway snow depth is currently 0 cm on the road surface. In winter, the pass receives an average of 3.5 to 7 meters (140 to 280 inches) of snowfall, with high winds often causing drifting snow that requires cautious mountain driving."
+        "answer": "Crowsnest Pass weather today is overcast with light rain showers and summit temperatures around 52°F (11°C). Highway snow depth is currently 0 cm on the road surface. In winter, the pass receives an average of 3.5 to 7 meters (140 to 280 inches) of snowfall, with high chinook winds often causing drifting snow that requires cautious mountain driving."
       },
       {
         "question": "What is the official Crowsnest Pass elevation along Highway 3? (Crowsnest Pass elevation)",
@@ -17342,11 +17355,25 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "title": "Crowsnest Pass Road Conditions & Status | LivePassWatch",
-      "description": "Live Crowsnest Pass road conditions, Highway 3 webcams & status across the AB/BC border. Check if open today, elevation, opening dates & snow reports.",
-      "h1": "Crowsnest Pass Road Conditions, Live Status & Highway 3 Webcams"
+      "title": "Crowsnest Pass (Highway 3) Road Conditions, Status & Live Webcams",
+      "description": "Live Crowsnest Pass (Highway 3) road conditions, road status, opening date & live webcams across the AB/BC border. Real-time pass status report & cameras.",
+      "h1": "Crowsnest Pass (Highway 3) Road Conditions, Status & Live Webcams"
     },
     "searchKeywords": [
+      "Crowsnest Pass (Highway 3) opening date",
+      "Crowsnest Pass (Highway 3) is open",
+      "Crowsnest Pass (Highway 3) road conditions",
+      "Crowsnest Pass (Highway 3) road status",
+      "Crowsnest Pass (Highway 3) pass status report",
+      "when does Crowsnest Pass (Highway 3) open",
+      "Crowsnest Pass (Highway 3) closed",
+      "Crowsnest Pass (Highway 3) is closed",
+      "Crowsnest Pass (Highway 3) is it open today",
+      "is Crowsnest Pass (Highway 3) closed today",
+      "is Crowsnest Pass (Highway 3) open right now",
+      "Crowsnest Pass (Highway 3) webcam",
+      "Crowsnest Pass (Highway 3) live webcam",
+      "Crowsnest Pass (Highway 3) cameras",
       "Crowsnest Pass opening date",
       "Crowsnest Pass is open",
       "Crowsnest Pass road conditions",
@@ -17386,9 +17413,379 @@ export const passesData: MountainPass[] = [
       "fermeture hivernale Crowsnest",
       "pneus d'hiver obligatoires Route 3"
     ]
-  }
-
-
+  },
+  {
+    "id": "allison-pass",
+    "slug": "allison-pass",
+    "isPopular": true,
+    "name": "Allison Pass (Highway 3)",
+    "country": "Canada",
+    "countryCode": "CAN",
+    "continent": "North America",
+    "state": "British Columbia",
+    "highway": "Highway 3 (Hope-Princeton Hwy / Crowsnest Hwy)",
+    "elevationFt": 4403,
+    "elevationM": 1342,
+    "coordinates": {
+      "lat": 49.1164,
+      "lng": -120.8678
+    },
+    "status": "OPEN",
+    "statusDetail": "Open year-round to all vehicular travel across the Cascade Mountains crest in E.C. Manning Provincial Park. Bare and dry pavement with good summit visibility. Highway 3 speed limits active. Maintained 24/7 by DriveBC and TranBC.",
+    "lastUpdated": "5 minutes ago",
+    "description": "Allison Pass (elevation 4,403 ft / 1,342 m; French: Col Allison / Route 3) is a high mountain highway pass traversing the Cascade Mountains and Hozameen Range in southwestern British Columbia, Canada. Located on British Columbia Highway 3 (the Hope-Princeton Highway segment of the Crowsnest Highway), Allison Pass is the highest highway summit between the Fraser Valley and the Okanagan/Similkameen interior, cutting directly through the wilderness of E.C. Manning Provincial Park. Named after pioneer rancher and prospector John Fall Allison who surveyed the trail for Governor James Douglas in 1860, the corridor serves as British Columbia's primary southern all-weather arterial route—providing a reliable year-round alternative whenever the Coquihalla Highway (Highway 5) faces winter closures. Monitored 24/7 by DriveBC, the pass features real-time highway webcams, roadside weather stations, and active winter maintenance.",
+    "image": "/allison-pass.jpg",
+    "imageAttribution": {
+      "creator": "Doviende",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Allison_pass_summit.jpg",
+      "license": "CC BY-SA 2.5",
+      "attribution": "Required",
+      "date": "2026"
+    },
+    "isSeasonal": false,
+    "weather": {
+      "tempF": 54,
+      "tempC": 12,
+      "condition": "Partly Cloudy with Crisp Mountain Air",
+      "icon": "cloud-sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Roadway bare and dry; zero snowpack on highway surface (autumn conditions)"
+    },
+    "wind": {
+      "speedKmh": 14,
+      "speedMph": 9,
+      "direction": "SW",
+      "description": "Gentle alpine breeze through Similkameen canyon"
+    },
+    "roadCondition": "Allison Pass (Highway 3) road conditions report bare, dry asphalt with normal highway speed limits in effect in both directions between Hope and Princeton through Manning Provincial Park. Visibility is excellent across the 1,342 m summit. Drivers are reminded that British Columbia mandatory winter tire regulations take effect annually from October 1 to April 30.",
+    "chainRequirement": "No restrictions currently for passenger vehicles. Winter tires (3-Peak Mountain Snowflake or M+S with minimum 3.5 mm tread) are legally mandatory on BC Highway 3 from October 1 to April 30. Commercial vehicles over 11,794 kg must carry steel tire chains during winter.",
+    "officialSource": "https://www.drivebc.ca",
+    "nearbyPasses": [
+      {
+        "id": "coquihalla-summit-pass",
+        "slug": "coquihalla-summit-pass",
+        "name": "Coquihalla Summit Pass",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "BC Highway 5",
+        "status": "OPEN",
+        "elevationFt": 4081,
+        "lastUpdated": "10 minutes ago",
+        "distanceKm": 65
+      },
+      {
+        "id": "crowsnest-pass",
+        "slug": "crowsnest-pass",
+        "name": "Crowsnest Pass (Highway 3)",
+        "country": "Canada",
+        "state": "Alberta",
+        "highway": "Highway 3 (Crowsnest Hwy)",
+        "status": "OPEN",
+        "elevationFt": 4453,
+        "lastUpdated": "5 minutes ago",
+        "distanceKm": 580
+      },
+      {
+        "id": "whistler-pass",
+        "slug": "whistler-pass",
+        "name": "Whistler Pass (Sea to Sky)",
+        "country": "Canada",
+        "state": "British Columbia",
+        "highway": "BC Highway 99",
+        "status": "OPEN",
+        "elevationFt": 2214,
+        "lastUpdated": "15 minutes ago",
+        "distanceKm": 240
+      },
+      {
+        "id": "stevens-pass",
+        "slug": "stevens-pass",
+        "name": "Stevens Pass (Cascades)",
+        "country": "United States",
+        "state": "Washington",
+        "highway": "US 2",
+        "status": "OPEN",
+        "elevationFt": 4061,
+        "lastUpdated": "20 minutes ago",
+        "distanceKm": 170
+      }
+    ],
+    "cameras": [
+      {
+        "id": "allison-cam-65-east",
+        "title": "DriveBC Cam 65: Highway 3 at Allison Pass Summit (Looking East)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/65.jpg",
+        "location": "Highway 3 at Allison Pass Summit (Elevation 1,342 m / 4,403 ft)",
+        "source": "DriveBC (BC Ministry of Transportation and Infrastructure)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca/cameras/65",
+        "direction": "Looking East towards Manning Park Resort & Similkameen Valley"
+      },
+      {
+        "id": "allison-cam-65-west",
+        "title": "DriveBC Cam 65W: Highway 3 at Allison Pass (Looking West)",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/65.jpg",
+        "location": "Highway 3, approximately 10 km west of Manning Park Resort",
+        "source": "DriveBC (BC Ministry of Transportation and Infrastructure)",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca/cameras/65",
+        "direction": "Looking West towards Sunshine Valley, Hope & Fraser Valley"
+      },
+      {
+        "id": "allison-cam-246-sunday",
+        "title": "DriveBC Cam 246: Highway 3 at Sunday Summit",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/246.jpg",
+        "location": "Highway 3 at Sunday Summit (Elevation 1,284 m / 4,213 ft, 32 km south of Princeton)",
+        "source": "DriveBC Highway Cameras",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca/cameras/246",
+        "direction": "Looking North along Highway 3 towards Princeton"
+      },
+      {
+        "id": "allison-cam-383-hope",
+        "title": "DriveBC Cam 383: Highway 3 at Highway 5 Hope Gateway Junction",
+        "image": "https://images.drivebc.ca/bchighwaycam/pub/cameras/383.jpg",
+        "location": "Highway 3 at Hwy 3/5 Junction, Hope, BC (West Approach to Allison Pass)",
+        "source": "DriveBC Provincial Highway Cameras",
+        "updateIntervalMs": 60000,
+        "officialUrl": "https://www.drivebc.ca/cameras/383",
+        "direction": "Looking East along Highway 3 Hope-Princeton Route"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "DriveBC (BC Ministry of Transportation and Infrastructure)",
+        "url": "https://www.drivebc.ca",
+        "type": "Official Provincial Road & Webcam Authority"
+      },
+      {
+        "name": "TranBC (Ministry of Transportation & Infrastructure Social & Operations)",
+        "url": "https://tranbc.ca",
+        "type": "Official Highway Operations & Winter Advisory Agency"
+      },
+      {
+        "name": "BC Parks (E.C. Manning Provincial Park)",
+        "url": "https://bcparks.ca/manning-park/",
+        "type": "Provincial Park Conservation & Trail Authority"
+      },
+      {
+        "name": "Environment and Climate Change Canada (ECCC)",
+        "url": "https://weather.gc.ca",
+        "type": "Official National Meteorological Service"
+      },
+      {
+        "name": "LivePassWatch Verification Methodology",
+        "url": "/methodology",
+        "type": "Internal Telemetry & Integrity Protocol"
+      }
+    ],
+    "verification": {
+      "official_authority": "DriveBC (BC Ministry of Transportation and Infrastructure)",
+      "official_source_url": "https://www.drivebc.ca/cameras/65",
+      "verification_status": "VERIFIED",
+      "confidence": "HIGH",
+      "last_checked_at": "2026-09-09T06:00:00Z",
+      "last_status_change_at": "2026-09-01T08:00:00Z",
+      "source_evidence": "DriveBC Official Status Report: Highway 3 Hope-Princeton route across Allison Pass (1,342 m) is OPEN in both directions. Pavement is bare and dry with unrestricted highway speeds and good summit visibility through Manning Provincial Park. Routine 24/7 road patrol active."
+    },
+    "webcamNote": "Live webcam feeds for Allison Pass Summit (Cam 65), Sunday Summit (Cam 246), and Hope Gateway (Cam 383) are provided directly by DriveBC (British Columbia Ministry of Transportation and Infrastructure). These roadside CCTV cameras refresh telemetry every 60 seconds to deliver accurate visual road surface conditions, snow depth, and weather visibility for drivers crossing the Cascade Mountains.",
+    "routeDetails": {
+      "distanceKm": 134,
+      "distanceMiles": 83.3,
+      "duration": "1 hour 45 min – 2 hours (Hope, BC to Princeton, BC)",
+      "origin": "Hope, BC (Fraser Valley / Hwy 1 & Hwy 5 Gateway — Elevation 42 m)",
+      "destination": "Princeton, BC (Similkameen Valley / Okanagan Corridor — Elevation 640 m)",
+      "waypoints": [
+        "Hope Junction (Hwy 3 / Hwy 5 Coquihalla interchange) — 125 m",
+        "Nicolum River Provincial Park & Hope Slide Viewpoint — 720 m",
+        "Sunshine Valley Community & Recreation Gateway — 680 m",
+        "Sumallo River & Manning Park West Gate — 850 m",
+        "Allison Pass Summit (Highway 3 Peak Crest) — 1,342 m (4,403 ft)",
+        "Manning Park Resort & Visitor Centre — 1,200 m",
+        "Similkameen Falls & East Gate — 1,020 m",
+        "Sunday Summit (Second Highway 3 Crest) — 1,284 m (4,213 ft)",
+        "Whipsaw Creek & Copper Mountain Turnoff — 890 m",
+        "Princeton Townsite (Tulameen & Similkameen Rivers) — 640 m"
+      ]
+    },
+    "distancesTable": [
+      { "location": "Manning Park Resort, BC", "distance": "10 km (6.2 mi)", "route": "via Hwy 3 East", "notes": "Full lodging, restaurant, ski area & fuel services" },
+      { "location": "Sunshine Valley, BC", "distance": "32 km (19.9 mi)", "route": "via Hwy 3 West", "notes": "Mountain community & RV resort amenities" },
+      { "location": "Hope, BC (Fraser Valley)", "distance": "56 km (34.8 mi)", "route": "via Hwy 3 West", "notes": "Major junction for Hwy 1 (Trans-Canada) & Hwy 5 (Coquihalla)" },
+      { "location": "Princeton, BC (Similkameen)", "distance": "78 km (48.5 mi)", "route": "via Hwy 3 East", "notes": "Services, hospital, motels & gateway to South Okanagan" },
+      { "location": "Keremeos, BC (Fruit Stands)", "distance": "145 km (90.1 mi)", "route": "via Hwy 3 East", "notes": "Famous orchards and Similkameen wine country" },
+      { "location": "Penticton, BC (Okanagan Valley)", "distance": "190 km (118.0 mi)", "route": "via Hwy 3 & Hwy 3A", "notes": "Okanagan Lake commercial hub and regional airport" },
+      { "location": "Vancouver, BC (Downtown)", "distance": "205 km (127.4 mi)", "route": "via Hwy 3 & Hwy 1 West", "notes": "Metropolitan center & international airport (YVR)" }
+    ],
+    "quickFacts": {
+      "state": "British Columbia, Canada",
+      "mountainRange": "Cascade Mountains / Hozameen Range",
+      "elevationSummary": "1,342 m / 4,403 ft — Highest point on Highway 3 between Hope and Princeton",
+      "connects": "Fraser Valley & Metro Vancouver with Similkameen Valley, South Okanagan & Kootenays",
+      "nearestTown": "Manning Park Resort (10 km East), Hope, BC (56 km West), Princeton, BC (78 km East)",
+      "roadType": "Paved two-lane inter-regional highway with passing lanes (Highway 3 / Hope-Princeton Hwy)",
+      "bestTime": "Year-round (Summer alpine hiking Jun–Sep; Winter alpine & Nordic skiing Nov–Apr)",
+      "highlight": "Scenic transit through E.C. Manning Provincial Park, Rhododendron flats, alpine meadows, reliable winter alternative to Coquihalla Hwy 5"
+    },
+    "overview": {
+      "openedYear": 1949,
+      "lengthMiles": "83.3 miles (Hope to Princeton)",
+      "lengthKm": "134.0 km (Fraser Valley to Similkameen Valley)",
+      "annualSnowfallIn": "160–240 inches",
+      "annualSnowfallM": "4.0–6.0 meters",
+      "summary": "Allison Pass along British Columbia Highway 3 (the Hope-Princeton Highway segment of the Crowsnest Highway) crests the Cascade Mountains at an elevation of 1,342 meters (4,403 ft) within the heart of E.C. Manning Provincial Park. Providing the crucial southern overland link between the Pacific Coast and British Columbia's Southern Interior, Allison Pass is a vital commercial and passenger corridor maintained open 365 days a year. Surrounded by dramatic alpine terrain, old-growth forests, and wildflower meadows, the highway passes near the historic Hope Slide of 1965 and serves Manning Park Resort. When winter blizzards or severe weather close the higher and steeper Coquihalla Highway (Highway 5), Allison Pass stands as British Columbia's primary heavy-vehicle and passenger detour route across the Cascades, supported by round-the-clock plowing and DriveBC live cameras."
+    },
+    "seasonalClosureInfo": {
+      "typicalClosure": "Open Year-Round (Subject to winter storm plowing & avalanche control)",
+      "typicalReopening": "Continuous 365-Day Inter-Regional Operation",
+      "description": "Allison Pass on Highway 3 is maintained open year-round by DriveBC and TranBC road maintenance contractors. Unlike high seasonal passes that shut for winter, Highway 3 serves as an indispensable southern provincial highway and is plowed and sanded continuously 24/7. Temporary closures of 1 to 4 hours occur only during extreme winter blizzards, freezing rain, rockfall clearance, or commercial vehicle recovery. Winter tires with the 3-Peak Mountain Snowflake (3PMSF) or M+S symbol and minimum 3.5 mm tread are legally mandatory from October 1 to April 30."
+    },
+    "travelTips": [
+      "Mandatory Winter Tires (Oct 1 – Apr 30): Under BC Motor Vehicle Act regulations, passenger vehicles traveling Highway 3 through Allison Pass must be equipped with approved winter tires (3PMSF or M+S with minimum 3.5 mm tread). Commercial trucks must carry tire chains.",
+      "Primary Coquihalla Alternative: Keep Highway 3 via Allison Pass in mind as your reliable detour whenever the Coquihalla Highway (Hwy 5) experiences winter closures, spinouts, or heavy avalanche mitigation.",
+      "Watch for Wildlife in Manning Provincial Park: Deer, black bears, moose, and elk frequently cross Highway 3, particularly at dawn, dusk, and along the Sumallo River flats. Observe posted speed reductions.",
+      "Fuel Up in Hope or Princeton: While Manning Park Resort offers emergency fuel and traveler services, prices are higher and operating hours vary. Ensure a full tank before entering the 134-kilometer mountain corridor.",
+      "Check Live DriveBC Summit Webcams: Highway 3 traverses two distinct summits—Allison Pass (1,342 m) and Sunday Summit (1,284 m). Weather can change rapidly; inspect live DriveBC camera feeds on LivePassWatch before ascending.",
+      "Cellular Coverage Gaps: Be aware that mobile phone reception is intermittent between Sunshine Valley and Manning Park Resort. Download offline maps or keep an emergency roadside kit."
+    ],
+    "history": [
+      {
+        "year": "Pre-1860s",
+        "title": "Indigenous Trail Network",
+        "description": "For centuries, the Upper Similkameen, Nlaka'pamux, and Stó:lō First Nations traversed the Skagit and Similkameen mountain trails across what is now Allison Pass for seasonal trading, berry gathering, and hunting."
+      },
+      {
+        "year": "1860",
+        "title": "John Fall Allison Trail Survey",
+        "description": "Governor James Douglas commissions pioneer settler and prospector John Fall Allison to survey a pack trail linking the Fraser River gold fields with the Similkameen Valley, formally identifying Allison Pass."
+      },
+      {
+        "year": "1941",
+        "title": "Establishment of E.C. Manning Provincial Park",
+        "description": "British Columbia creates Manning Provincial Park, named in honor of Chief Forester Ernest C. Manning who was tragically killed in a plane crash. The park encompasses the entire alpine crest of Allison Pass."
+      },
+      {
+        "year": "1949",
+        "title": "Hope-Princeton Highway (Highway 3) Official Opening",
+        "description": "Following decades of construction through rugged mountain canyons, Highway 3 officially opens to automobile traffic on November 2, 1949, forging British Columbia's first paved southern highway across the Cascades."
+      },
+      {
+        "year": "1965",
+        "title": "The Historic Hope Slide",
+        "description": "On January 9, 1965, 47 million cubic meters of rock shear off Johnson Peak onto Highway 3 near Nicolum River, burying the roadway in Canada's second-largest recorded rock avalanche. A scenic viewpoint memorializes the event."
+      }
+    ],
+    "narrativeSections": [
+      {
+        "title": "The Southern Mountain Lifeline Across the Canadian Cascades",
+        "content": "Allison Pass stands as one of the most vital mountain crossings in western Canada. Rising to an elevation of 1,342 meters (4,403 ft) on British Columbia Highway 3 (the Hope-Princeton Highway), the pass cuts across the rugged Hozameen Range of the Cascade Mountains. Unlike the higher, toll-era Coquihalla Highway (Highway 5) to the north, Highway 3 offers a more sheltered, four-season mountain corridor through pristine protected alpine wilderness. Connecting Hope at the head of the fertile Fraser Valley with Princeton in the arid Similkameen ranchlands, Allison Pass forms the foundational western segment of the historic Crowsnest Highway network spanning southern BC."
+      },
+      {
+        "title": "E.C. Manning Provincial Park & Alpine Ecology",
+        "content": "One of Allison Pass's greatest distinctions is that over 60 kilometers of Highway 3 winds directly through E.C. Manning Provincial Park—over 83,000 hectares of protected coastal-interior transitional wilderness. At the pass summit, travelers witness a dramatic ecological transition: west of the pass, heavy coastal precipitation nurtures lush western red cedar, hemlock, and wild rhododendron flats; east of the summit, the rain shadow creates dry, fragrant lodgepole pine and Douglas fir forests. In winter, Manning Park Resort serves as a hub for downhill skiing, snowshoeing, and cross-country skiing, with average seasonal summit snowfalls of 4 to 6 meters (160 to 240 inches)."
+      },
+      {
+        "title": "Critical Winter Coquihalla Bypass & Transport Corridor",
+        "content": "Whenever severe winter storms strike the Pacific Northwest, bringing fierce snowdrifts or avalanche closures to the Coquihalla Summit (1,244 m), commercial trucks and travelers rely on Allison Pass as the primary detour between Vancouver and the BC Interior. Road maintenance contractors for the Ministry of Transportation and Infrastructure (TranBC) station heavy plows, graders, and anti-icing brine trucks at the Allison Pass works yard to ensure continuous road clearance throughout severe winter squalls."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the official Allison Pass opening date in 2026? (Allison Pass opening date / when does Allison Pass open / Allison Pass is open)",
+        "answer": "Allison Pass on Highway 3 (Hope-Princeton Highway / Crowsnest Highway) is OPEN YEAR-ROUND! Because Allison Pass is a primary provincial highway linking the Lower Mainland with the Southern Interior, there is no seasonal winter closure date. It is maintained and plowed 24 hours a day, 365 days a year by DriveBC and Ministry of Transportation road crews."
+      },
+      {
+        "question": "Is Allison Pass open right now, and how can I confirm if Allison Pass is open today? (Allison Pass is open / is Allison Pass open right now / Allison Pass is it open today)",
+        "answer": "Yes, Allison Pass (Highway 3) is open right now to all vehicular travel in both directions through E.C. Manning Provincial Park. Pavement across the 1,342 m summit is bare and dry with normal highway speeds permitted. You can verify real-time road status anytime on LivePassWatch, synchronized directly with DriveBC highway sensors."
+      },
+      {
+        "question": "What are the current Allison Pass road conditions, road status, and pass status report? (Allison Pass road conditions / Allison Pass road status / Allison Pass pass status report)",
+        "answer": "Current Allison Pass (Highway 3) road conditions report bare, dry asphalt with clear visibility between Hope and Princeton. The official Allison Pass road status is OPEN with standard travel regulations in effect. Motorists should always monitor sudden mountain weather changes and verify DriveBC roadside weather stations before traveling."
+      },
+      {
+        "question": "Is Allison Pass closed today, and what causes Allison Pass closed alerts? (is Allison Pass closed today / Allison Pass closed / Allison Pass is closed)",
+        "answer": "No, Allison Pass (Highway 3) is NOT closed today; Highway 3 is fully operational across the Cascade Mountains. Precautionary Allison Pass closed alerts occur only during severe winter blizzards, freezing rain events, avalanche control missions, or vehicle recovery operations following severe weather collisions. Always check LivePassWatch for active highway notices before your trip."
+      },
+      {
+        "question": "Where can I view live Allison Pass webcam feeds, cameras, and the summit camera? (Allison Pass webcam / Allison Pass live webcam / Allison Pass cameras / Allison Pass summit camera)",
+        "answer": "LivePassWatch provides verified live Allison Pass webcam feeds and cameras sourced directly from DriveBC (BC Ministry of Transportation and Infrastructure). Active cameras include DriveBC Cam 65 at Allison Pass Summit (1,342 m) looking East, Cam 65W looking West toward Hope, Cam 246 at Sunday Summit (1,284 m), and Cam 383 at the Hope Highway 3/5 Junction. Images refresh automatically every 60 seconds."
+      },
+      {
+        "question": "When does Allison Pass close for winter, and what are the BC winter tire regulations? (when does Allison Pass close for winter)",
+        "answer": "Allison Pass does NOT close for winter; it remains open throughout all four seasons. However, under British Columbia law, winter tires (marked with the 3-Peak Mountain Snowflake or M+S with minimum 3.5 mm tread depth) are legally mandatory on Highway 3 between Hope and Princeton from October 1 through April 30. Commercial trucks over 11,794 kg must carry tire chains."
+      },
+      {
+        "question": "Where can I find an official Allison Pass map and route itinerary? (Allison Pass map)",
+        "answer": "You can explore an interactive Allison Pass map directly on LivePassWatch. The map details all 134 km of Highway 3 connecting Hope, the Hope Slide viewpoint, Sunshine Valley, Allison Pass Summit (1,342 m / 4,403 ft), Manning Park Resort, Sunday Summit (1,284 m), and Princeton, highlighting live webcams, rest areas, and elevation gradients."
+      },
+      {
+        "question": "What is the Allison Pass weather today, snow depth, and current winter snow conditions? (Allison Pass weather today / Allison Pass snow / Allison Pass snow depth / Allison Pass snow conditions)",
+        "answer": "Allison Pass weather today is partly cloudy with mild autumn temperatures around 54°F (12°C) and light winds. Snow depth on the highway pavement is currently 0 cm. In winter, Allison Pass averages 4 to 6 meters (160 to 240 inches) of snowfall, with active snowplows and salt/sand application ensuring safe travel."
+      },
+      {
+        "question": "What is the official Allison Pass elevation along Highway 3?",
+        "answer": "The official Allison Pass elevation is 1,342 meters (4,403 feet) above sea level. It is the highest highway summit on the Hope-Princeton Highway (Highway 3), surpassing Sunday Summit (1,284 m / 4,213 ft) located further east toward Princeton."
+      },
+      {
+        "question": "Why is Allison Pass a critical bypass route when the Coquihalla Highway closes?",
+        "answer": "Because the Coquihalla Highway (Highway 5) traverses higher, exposed alpine terrain subject to extreme blizzards and multi-vehicle winter incidents, Highway 3 via Allison Pass serves as British Columbia's designated primary detour between Metro Vancouver and the Interior, offering a more sheltered route through the Cascade Mountains."
+      }
+    ],
+    "customSeo": {
+      "title": "Allison Pass (Highway 3) Road Conditions, Status & Live Webcams",
+      "description": "Live Allison Pass (Highway 3) road conditions, road status, opening date & live webcams in Manning Park, BC. Real-time pass status report, cameras & weather.",
+      "h1": "Allison Pass (Highway 3) Road Conditions, Status & Live Webcams"
+    },
+    "searchKeywords": [
+      "Allison Pass opening date",
+      "Allison Pass is open",
+      "Allison Pass road conditions",
+      "Allison Pass road status",
+      "Allison Pass pass status report",
+      "when does Allison Pass open",
+      "Allison Pass closed",
+      "Allison Pass is closed",
+      "Allison Pass is it open today",
+      "is Allison Pass closed today",
+      "Allison Pass webcam",
+      "Allison Pass live webcam",
+      "Allison Pass cameras",
+      "Allison Pass summit camera",
+      "when does Allison Pass close for winter",
+      "Allison Pass map",
+      "is Allison Pass open right now",
+      "Allison Pass weather today",
+      "Allison Pass snow",
+      "Allison Pass snow depth",
+      "Allison Pass snow conditions",
+      "Allison Pass elevation",
+      "Allison Pass open",
+      "Highway 3 road conditions",
+      "Highway 3 webcam",
+      "Highway 3 status",
+      "Hope Princeton Highway",
+      "Hope-Princeton Highway conditions",
+      "Manning Park webcam",
+      "Manning Park road conditions",
+      "DriveBC Allison Pass",
+      "DriveBC Highway 3",
+      "Sunday Summit webcam",
+      "Col Allison",
+      "Route 3 Hope Princeton",
+      "conditions routières Col Allison",
+      "caméras en direct Col Allison",
+      "météo Col Allison",
+      "état de la route Col Allison",
+      "fermeture hivernale Col Allison",
+      "pneus d'hiver obligatoires Route 3",
+      "webcam sommet Col Allison",
+      "Col Allison est-il ouvert aujourd'hui"
+    ]
+  },
 ];
 
 

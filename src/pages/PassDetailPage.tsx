@@ -149,6 +149,49 @@ const baralachaHindiFaqs = [
 
 
 
+const allisonFrenchFaqs = [
+  {
+    question: "Quelle est la date d'ouverture du col Allison en 2026 ? (Allison Pass opening date / when does Allison Pass open / Allison Pass is open / date d'ouverture Col Allison)",
+    answer: "Le col Allison (Allison Pass) sur la route 3 (Highway 3 / route Hope-Princeton) est OUVERT TOUTE L'ANNÉE ! Étant l'artère provinciale principale reliant la vallée du Fraser à l'intérieur sud de la Colombie-Britannique, il n'y a aucune fermeture hivernale saisonnière. Les équipes d'entretien de DriveBC et du ministère des Transports (TranBC) assurent le déneigement et la surveillance 24 h sur 24, 365 jours par an."
+  },
+  {
+    question: "Le col Allison est-il ouvert en ce moment et aujourd'hui ? (Allison Pass is open / is Allison Pass open right now / Allison Pass is it open today / Col Allison ouvert)",
+    answer: "Oui, le col Allison (Highway 3) est actuellement OUVERT à toute la circulation dans les deux sens à travers le parc provincial E.C. Manning. La chaussée est dégagée et sèche au sommet (1 342 m / 4 403 pi) entre Hope et Princeton. Vous pouvez vérifier le statut en temps réel sur LivePassWatch, synchronisé avec les capteurs routiers officiels de DriveBC."
+  },
+  {
+    question: "Quelles sont les conditions routières actuelles et le rapport d'état du col Allison ? (Allison Pass road conditions / Allison Pass road status / Allison Pass pass status report / conditions routières)",
+    answer: "Le rapport d'état officiel sur le col Allison et la route 3 indique un asphalte sec et une excellente visibilité au sommet. La vitesse autorisée est en vigueur avec une circulation fluide. Les automobilistes doivent néanmoins rester vigilants face aux changements météo soudains en montagne et vérifier les stations météo routières de DriveBC avant d'entamer la traversée."
+  },
+  {
+    question: "Le col Allison est-il fermé aujourd'hui et quelles sont les causes de fermeture ? (is Allison Pass closed today / Allison Pass closed / Allison Pass is closed)",
+    answer: "Non, le col Allison n'est PAS fermé aujourd'hui ; la route 3 est entièrement ouverte à travers la chaîne des Cascades. Les fermetures temporaires préventives ne surviennent que lors de blizzards hivernaux extrêmes, d'épisodes de pluie verglaçante, d'opérations de minage d'avalanches ou de dégagement de véhicules accidentés."
+  },
+  {
+    question: "Où regarder les webcams en direct et la caméra du sommet du col Allison ? (Allison Pass webcam / Allison Pass live webcam / Allison Pass cameras / Allison Pass summit camera / caméras en direct)",
+    answer: "LivePassWatch diffuse les flux officiels de webcams de DriveBC pour le col Allison. Vous pouvez visionner la caméra DriveBC 65 au sommet du col Allison (1 342 m) vers l'est, la caméra 65W vers l'ouest (direction Hope), la caméra DriveBC 246 au Sunday Summit (1 284 m) et la caméra DriveBC 383 à la jonction Hope (Hwy 3/5). Les images s'actualisent automatiquement toutes les 60 secondes."
+  },
+  {
+    question: "Quand le col Allison ferme-t-il pour l'hiver et quelles sont les lois sur les pneus d'hiver en Colombie-Britannique ? (when does Allison Pass close for winter / fermeture hivernale)",
+    answer: "Le col Allison ne ferme PAS pour l'hiver ; il reste ouvert 365 jours par an. Toutefois, selon la législation de la Colombie-Britannique, les pneus d'hiver homologués (portant le symbole du flocon/montagne 3PMSF ou M+S avec au minimum 3,5 mm de bande de roulement) sont obligatoires sur la route 3 du 1er octobre au 30 avril. Les camions de plus de 11 794 kg doivent détenir des chaînes d'acier."
+  },
+  {
+    question: "Où trouver une carte routière et l'itinéraire du col Allison ? (Allison Pass map / carte Allison Pass)",
+    answer: "Une carte interactive détaillée du col Allison est disponible sur LivePassWatch. Elle illustre l'ensemble des 134 km de la route 3 reliant Hope, le point de vue du Hope Slide, Sunshine Valley, le sommet du col Allison (1 342 m), le complexe récréatif de Manning Park, le Sunday Summit (1 284 m) et Princeton, avec les altitudes et les emplacements des webcams."
+  },
+  {
+    question: "Quelle est la météo aujourd'hui, l'épaisseur de neige et les conditions de neige au col Allison ? (Allison Pass weather today / Allison Pass snow / Allison Pass snow depth / Allison Pass snow conditions / météo Col Allison)",
+    answer: "La météo actuelle au col Allison est caractérisée par des passages nuageux et un air montagnard frais avec des températures autour de 12 °C (54 °F). La chaussée est exempte de neige (0 cm au sol). En hiver, le col reçoit entre 4 et 6 mètres (160 à 240 pouces) de neige, activement déblayée par les chasse-neige de TranBC."
+  },
+  {
+    question: "Quelle est l'altitude officielle du col Allison sur la route 3 ? (Allison Pass elevation / altitude Col Allison)",
+    answer: "L'altitude officielle du col Allison est de 1 342 mètres (4 403 pieds) au-dessus du niveau de la mer. C'est le point culminant de la route 3 entre Hope et Princeton, surpassant le Sunday Summit (1 284 m / 4 213 pi) situé plus à l'est."
+  },
+  {
+    question: "Pourquoi le col Allison est-il l'itinéraire de contournement vital quand la Coquihalla (Route 5) ferme ?",
+    answer: "Parce que l'autoroute Coquihalla (Route 5) franchit des cols plus élevés et plus exposés aux violentes tempêtes hivernales et accidents multiples, la route 3 par le col Allison constitue le détour officiel prioritaire désigné par la province entre le Grand Vancouver et l'Intérieur britanno-colombien."
+  }
+];
+
 const crowsnestFrenchFaqs = [
   {
     question: "Quelle est la date d'ouverture du col du Nid-de-Corbeau en 2026 ? (Crowsnest Pass opening date / when does Crowsnest Pass open / Crowsnest Pass open / date d'ouverture Crowsnest Pass)",
@@ -961,7 +1004,9 @@ export const PassDetailPage: React.FC = () => {
   const canonicalUrl = `https://www.livepasswatch.info${canonicalPath}`;
   const passFullImage = pass.image.startsWith('http') ? pass.image : `https://www.livepasswatch.info${pass.image.startsWith('/') ? '' : '/'}${pass.image}`;
 
-  const imageAltText = (pass.slug === 'bernina-pass')
+  const imageAltText = (pass.slug === 'allison-pass')
+    ? 'Allison Pass summit sign (1,342 m / 4,403 ft) on Highway 3 in E.C. Manning Provincial Park, British Columbia'
+    : (pass.slug === 'bernina-pass')
     ? 'Bernina Pass mountain road in the Swiss Alps'
     : (pass.slug === 'gotthard-pass')
       ? 'Gotthard Pass mountain road in the Swiss Alps'
@@ -1358,7 +1403,141 @@ export const PassDetailPage: React.FC = () => {
         
         
         
-        {/* Bilingual Language Switcher for Crowsnest Pass */}
+                {/* Bilingual Language Switcher for Allison Pass */}
+        {pass.slug === 'allison-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(220, 38, 38, 0.05) 100%)',
+            border: '1px solid rgba(37, 99, 235, 0.3)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#1E40AF', fontWeight: '600' }}>
+              <Globe size={18} color="#2563EB" />
+              <span>
+                {pageLang === 'fr'
+                  ? '🇨🇦 Contenu régional officiel (Français) — Col Allison / Route 3 (Manning Park)'
+                  : '🇨🇦 English Version Active — Allison Pass (Highway 3 Hope-Princeton)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇬🇧 English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 Français
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=${pageLang === 'fr' ? 'en' : 'fr'}&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/canada/british-columbia/allison-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#1D4ED8',
+                  background: '#EFF6FF',
+                  border: '1px solid #BFDBFE',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                Google Translate <ExternalLink size={12} />
+              </a>
+            </div>
+          </div>
+        )}
+
+        {pass.slug === 'allison-pass' && (
+          <div className="lp-card" style={{
+            padding: '16px 20px',
+            marginBottom: '20px',
+            borderLeft: '4px solid #3B82F6',
+            backgroundColor: '#F8FAFC'
+          }}>
+            <h3 style={{ margin: '0 0 8px 0', fontSize: '15.5px', fontWeight: '700', color: '#1E3A8A', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span>🏔️</span>
+              <span>
+                {pageLang === 'fr'
+                  ? 'Guide de Sécurité de la Route 3 & Règlements du Parc Manning (Col Allison 🇨🇦)'
+                  : 'Highway 3 Travel Guide & E.C. Manning Provincial Park Safety (Allison Pass 🇨🇦)'}
+              </span>
+            </h3>
+            <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <strong>Col Allison (1 342 m / 4 403 pi) :</strong> La <strong>route 3 (Hope-Princeton Highway / Crowsnest Highway)</strong> relie la vallée du Fraser à la vallée de la Similkameen à travers les monts Cascades. L'itinéraire est <strong>maintenu ouvert toute l'année</strong> et sert de détour principal lorsque l'autoroute Coquihalla (Route 5) est perturbée par des blizzards ou des avalanches.
+                </>
+              ) : (
+                <>
+                  <strong>Allison Pass Summit (1,342 m / 4,403 ft):</strong> <strong>Highway 3 (Hope-Princeton Highway / Crowsnest Highway)</strong> crosses the Cascade Mountains within E.C. Manning Provincial Park. The highway remains <strong>open year-round</strong> and operates as the primary all-weather detour whenever the Coquihalla Highway (Hwy 5) experiences severe winter closures.
+                </>
+              )}
+            </p>
+            <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <li><strong>Pneus d'hiver obligatoires (1er oct – 30 avril) :</strong> Les véhicules empruntant la route 3 doivent être munis de pneus d'hiver arborant le symbole 3PMSF (flocon/montagne) ou M+S avec une bande de roulement minimale de 3,5 mm.</li>
+                  <li><strong>Présence fréquente de faune dans le parc Manning :</strong> Cerfs, ours noirs, orignaux et wapitis traversent fréquemment la chaussée, particulièrement près des zones riveraines de la rivière Sumallo. Respectez les limitations de vitesse.</li>
+                  <li><strong>Deux sommets routiers à franchir :</strong> La route 3 franchit le col Allison (1 342 m) puis le Sunday Summit (1 284 m) au sud de Princeton. Consultez les webcams DriveBC aux deux crêtes.</li>
+                  <li><strong>Zones sans réseau cellulaire :</strong> La couverture cellulaire est intermittente entre Sunshine Valley et Manning Park Resort. Prévoyez une trousse de secours routière.</li>
+                </>
+              ) : (
+                <>
+                  <li><strong>Mandatory Winter Tires (Oct 1 – Apr 30):</strong> All passenger vehicles on BC Highway 3 must have approved winter tires (3PMSF mountain snowflake or M+S with minimum 3.5 mm tread). Commercial vehicles must carry chains.</li>
+                  <li><strong>Wildlife in E.C. Manning Provincial Park:</strong> Deer, moose, black bears, and elk frequently cross Highway 3, especially near dawn and dusk along the Sumallo River flats. Observe posted speed limits.</li>
+                  <li><strong>Two Successive Mountain Crests:</strong> Highway 3 crosses Allison Pass (1,342 m) and Sunday Summit (1,284 m) before descending to Princeton. Monitor live DriveBC cameras at both summits.</li>
+                  <li><strong>Limited Cellular Reception:</strong> Mobile phone service is intermittent between Sunshine Valley and Manning Park Resort. Ensure your vehicle is fully fueled in Hope or Princeton.</li>
+                </>
+              )}
+            </ul>
+          </div>
+        )}
+
+        {pass.slug === 'allison-pass' && (
+          <div style={{ marginTop: '16px', marginBottom: '24px', padding: '14px 18px', backgroundColor: 'rgba(59, 130, 246, 0.05)', border: '1px solid rgba(59, 130, 246, 0.25)', borderRadius: '6px', fontSize: '13px', color: '#1E40AF', lineHeight: '1.55' }}>
+            <strong>🇨🇦 DriveBC Camera Telemetry Notice:</strong> Allison Pass live highway webcams at Allison Pass Summit (Cam 65), Sunday Summit (Cam 246), and Hope Junction (Cam 383) are streamed directly from DriveBC (BC Ministry of Transportation and Infrastructure), updating every 60 seconds with real-time roadside telemetry. Verify official feeds at <a href="https://www.drivebc.ca/cameras/65" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>DriveBC Cam 65</a> and <a href="/methodology" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>LivePassWatch Verification Methodology</a>.
+          </div>
+        )}
+
+{/* Bilingual Language Switcher for Crowsnest Pass */}
         {pass.slug === 'crowsnest-pass' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
@@ -5353,8 +5532,8 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
-                  ((pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
+                {((pass.slug === 'allison-pass' && pageLang === 'fr') ? allisonFrenchFaqs : (pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                  ((pass.slug === 'allison-pass' && pageLang === 'fr') ? allisonFrenchFaqs : (pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
 
 
 

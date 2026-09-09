@@ -58,6 +58,14 @@ export interface MountainPass {
   lastUpdated: string;
   description: string;
   image: string;
+  imageAttribution?: {
+    creator: string;
+    source: string;
+    sourceUrl?: string;
+    license: string;
+    attribution?: string;
+    date?: string;
+  };
   officialSource?: string;
   official_source_url?: string;
   official_authority?: string;
