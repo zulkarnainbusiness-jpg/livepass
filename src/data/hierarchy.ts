@@ -333,6 +333,26 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 1342,
                 "status": "OPEN",
                 "image": "/allison-pass.jpg"
+              },
+              {
+                "id": "monashee-pass",
+                "slug": "monashee-pass",
+                "name": "Monashee Pass (Col Monashee)",
+                "highway": "Highway 6 (Monashee Hwy)",
+                "elevationFt": 3901,
+                "elevationM": 1189,
+                "status": "OPEN",
+                "image": "/monashee-pass.jpg"
+              },
+              {
+                "id": "kootenay-pass",
+                "slug": "kootenay-pass",
+                "name": "Kootenay Pass (Col Kootenay)",
+                "highway": "Highway 3 (Salmo-Creston Hwy)",
+                "elevationFt": 5823,
+                "elevationM": 1775,
+                "status": "OPEN",
+                "image": "/kootenay-pass.jpg"
               }
             ]
           },

@@ -254,6 +254,29 @@ function generatePassSemanticHtml(pass, canonicalUrl) {
         </section>
         ` : ''}
 
+        ${pass.id === 'kootenay-pass' ? `
+        <section class="pass-regional-section" style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #1d4ed8; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #0f172a;">🇨🇦 Information Régionale &amp; État de la Route — Col Kootenay (Route 3 Salmo-Creston)</h2>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: #334155; margin-bottom: 1rem;">
+            Consultez en temps réel l'<strong>état de la route</strong>, les <strong>webcams en direct</strong> de DriveBC au sommet (1 775 m), les <strong>conditions routières</strong> hivernales et les rapports de contrôle d'avalanches pour le Col Kootenay (Route 3 Salmo-Creston) à travers le parc provincial Stagleap en Colombie-Britannique.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 0.75rem;">
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">Le Col Kootenay (Highway 3) est-il ouvert aujourd'hui?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">Oui, le Col Kootenay est le plus haut col routier asphalté au Canada ouvert à l'année. Les déneigeuses de TranBC et le réseau d'exploseurs Gazex maintiennent la route ouverte 24 h / 24, sous réserve de courtes fermetures de 1 à 3 heures lors de déclenchements d'avalanches.</p>
+            </div>
+            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 0.75rem;">
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">Où regarder les webcams en direct du Col Kootenay?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">La caméra officielle DriveBC Cam 5 au sommet du col Kootenay (lac Bridal, 1 775 m), Cam 334 au sommet Bombi et Cam 1152 à Creston sont actualisées toutes les 60 secondes sur LivePassWatch.</p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">Quelles sont les obligations de pneus d'hiver sur la Route 3?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">Pneus d'hiver légaux (3PMSF flocon/montagne ou M+S avec 3,5 mm de bande) obligatoires du 1er octobre au 30 avril. Les poids lourds doivent détenir des chaînes en acier d'hiver.</p>
+            </div>
+          </div>
+        </section>
+        ` : ''}
+
         <section style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
           <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a;">Official Highway Authority &amp; DOT Verification</h2>
           <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin: 0 0 0.75rem 0;">

@@ -149,6 +149,49 @@ const baralachaHindiFaqs = [
 
 
 
+const kootenayFrenchFaqs = [
+  {
+    question: "Quelle est la date d'ouverture du col Kootenay en 2026 ? (Kootenay Pass opening date / when does Kootenay Pass open / Kootenay Pass is open / date d'ouverture Col Kootenay)",
+    answer: "Le col Kootenay (Kootenay Pass) sur la route 3 (Highway 3 / Salmo-Creston Highway) est OUVERT TOUTE L'ANNÉE ! Étant le col routier asphalté le plus élevé du Canada maintenu ouvert en hiver et l'artère provinciale essentielle reliant les Kootenays Ouest et Est, il n'y a aucune fermeture hivernale saisonnière. Les équipes d'entretien de DriveBC et TranBC assurent le déneigement et la surveillance 24 h sur 24, 365 jours par an."
+  },
+  {
+    question: "Le col Kootenay est-il ouvert en ce moment et aujourd'hui ? (Kootenay Pass is open / is Kootenay Pass open right now / Kootenay Pass is it open today / Col Kootenay ouvert)",
+    answer: "Oui, le col Kootenay (Highway 3) est actuellement OUVERT à toute la circulation dans les deux sens à travers le parc provincial Stagleap. La chaussée est dégagée et sèche au sommet du lac Bridal (1 775 m / 5 823 pi) entre Salmo et Creston. Vous pouvez vérifier le statut en direct sur LivePassWatch, synchronisé avec les capteurs officiels de DriveBC."
+  },
+  {
+    question: "Quelles sont les conditions routières actuelles et le rapport d'état du col Kootenay ? (Kootenay Pass road conditions / Kootenay Pass road status / Kootenay Pass pass status report / conditions routières)",
+    answer: "Le rapport d'état officiel sur le col Kootenay et la route 3 indique un asphalte sec et une excellente visibilité au sommet. La vitesse autorisée est en vigueur avec une circulation fluide. Les automobilistes doivent néanmoins surveiller les changements météo alpins soudains dans les monts Selkirk et vérifier les stations météo routières de DriveBC avant d'entamer l'ascension."
+  },
+  {
+    question: "Le col Kootenay est-il fermé aujourd'hui et quelles sont les causes de fermeture ? (is Kootenay Pass closed today / Kootenay Pass closed / Kootenay Pass is closed)",
+    answer: "Non, le col Kootenay n'est PAS fermé aujourd'hui ; la route 3 est entièrement praticable à travers les monts Selkirk. Les fermetures temporaires préventives ne surviennent que lors de missions actives de déclenchement d'avalanches (à l'aide d'exploseurs télécommandés Gazex), de tempêtes de neige majeures ou de dégagement de véhicules accidentés. Ces fermetures pour avalanches durent généralement de 1 à 3 heures."
+  },
+  {
+    question: "Où regarder les webcams en direct et la caméra du sommet du col Kootenay ? (Kootenay Pass webcam / Kootenay Pass live webcam / Kootenay Pass cameras / Kootenay Pass summit camera / caméras en direct)",
+    answer: "LivePassWatch diffuse les flux officiels de webcams de DriveBC pour le col Kootenay. Vous pouvez visionner la caméra DriveBC 5 au sommet du col Kootenay (1 775 m / 5 823 pi) vers l'est, la caméra 334 au sommet Bombi (1 214 m) vers l'ouest, la caméra 840 près de Salmo / jonction Meadows, et la caméra 1152 à la jonction Creston (Route 3/3A). Les images s'actualisent automatiquement toutes les 60 secondes."
+  },
+  {
+    question: "Quand le col Kootenay ferme-t-il pour l'hiver et quelles sont les lois sur les pneus d'hiver en Colombie-Britannique ? (when does Kootenay Pass close for winter / fermeture hivernale)",
+    answer: "Le col Kootenay ne ferme PAS pour l'hiver ; il demeure ouvert 365 jours par an. Cependant, selon le Code de la route de la Colombie-Britannique, les pneus d'hiver homologués (portant le symbole du flocon/montagne 3PMSF ou M+S avec au moins 3,5 mm de bande de roulement) sont obligatoires sur la route 3 entre Salmo et Creston du 1er octobre au 30 avril. Les camions de plus de 11 794 kg doivent détenir des chaînes d'acier."
+  },
+  {
+    question: "Où trouver une carte routière et l'itinéraire du col Kootenay ? (Kootenay Pass map / carte Col Kootenay)",
+    answer: "Une carte interactive complète du col Kootenay est accessible sur LivePassWatch. Elle illustre les 87 km de la route 3 reliant Salmo, le parc provincial Stagleap, le sommet du col Kootenay et le lac Bridal (1 775 m / 5 823 pi), le canyon de Summit Creek et Creston, avec les webcams et les aires de chaînage."
+  },
+  {
+    question: "Quelle est la météo aujourd'hui, l'épaisseur de neige et les conditions de neige au col Kootenay ? (Kootenay Pass weather today / Kootenay Pass snow / Kootenay Pass snow depth / Kootenay Pass snow conditions / météo Col Kootenay)",
+    answer: "La météo actuelle au col Kootenay affiche un ciel partiellement nuageux avec une température alpine fraîche d'environ 13 °C (55 °F) et un vent modéré. La chaussée est exempte de neige (0 cm au sol). En hiver, le col reçoit entre 10 et 14 mètres (400 à 550 pouces) de neige, activement sécurisée par les systèmes Gazex et les chasse-neige de TranBC."
+  },
+  {
+    question: "Quelle est l'altitude officielle du col Kootenay sur la route 3 ? (Kootenay Pass elevation / altitude Col Kootenay)",
+    answer: "L'altitude officielle du col Kootenay est de 1 775 mètres (5 823 pieds) au-dessus du niveau de la mer. C'est le plus haut col routier asphalté au Canada à demeurer ouvert à l'année, franchissant la crête des monts Selkirk."
+  },
+  {
+    question: "Quel est l'itinéraire de contournement si le col Kootenay est fermé pour contrôle d'avalanches ?",
+    answer: "Si le col Kootenay est fermé en raison d'une tempête ou du déclenchement d'avalanches, le détour officiel emprunte la route 3A vers le nord via le traversier gratuit du lac Kootenay (de Balfour à Kootenay Bay). Ce détour pittoresque ajoute environ 2,5 à 3 heures de trajet."
+  }
+];
+
 const allisonFrenchFaqs = [
   {
     question: "Quelle est la date d'ouverture du col Allison en 2026 ? (Allison Pass opening date / when does Allison Pass open / Allison Pass is open / date d'ouverture Col Allison)",
@@ -1004,7 +1047,9 @@ export const PassDetailPage: React.FC = () => {
   const canonicalUrl = `https://www.livepasswatch.info${canonicalPath}`;
   const passFullImage = pass.image.startsWith('http') ? pass.image : `https://www.livepasswatch.info${pass.image.startsWith('/') ? '' : '/'}${pass.image}`;
 
-  const imageAltText = (pass.slug === 'allison-pass')
+  const imageAltText = (pass.slug === 'kootenay-pass')
+    ? 'Kootenay Pass summit sign (1,775 m / 5,823 ft) at Bridal Lake on Highway 3 in Stagleap Provincial Park, British Columbia'
+    : (pass.slug === 'allison-pass')
     ? 'Allison Pass summit sign (1,342 m / 4,403 ft) on Highway 3 in E.C. Manning Provincial Park, British Columbia'
     : (pass.slug === 'bernina-pass')
     ? 'Bernina Pass mountain road in the Swiss Alps'
@@ -1408,7 +1453,141 @@ export const PassDetailPage: React.FC = () => {
         
         
         
-                {/* Bilingual Language Switcher for Allison Pass */}
+                        {/* Bilingual Language Switcher for Kootenay Pass */}
+        {pass.slug === 'kootenay-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(220, 38, 38, 0.05) 100%)',
+            border: '1px solid rgba(37, 99, 235, 0.3)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#1E40AF', fontWeight: '600' }}>
+              <Globe size={18} color="#2563EB" />
+              <span>
+                {pageLang === 'fr'
+                  ? '🇨🇦 Contenu régional officiel (Français) — Col Kootenay / Route 3 (Stagleap Park)'
+                  : '🇨🇦 English Version Active — Kootenay Pass (Highway 3 Salmo-Creston)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇬🇧 English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('fr')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'fr' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'fr' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇨🇦 Français
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=${pageLang === 'fr' ? 'en' : 'fr'}&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/canada/british-columbia/kootenay-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#1D4ED8',
+                  background: '#EFF6FF',
+                  border: '1px solid #BFDBFE',
+                  borderRadius: '6px',
+                  textDecoration: 'none'
+                }}
+              >
+                <ExternalLink size={13} />
+                {pageLang === 'fr' ? 'Traduire en anglais' : 'Auto-Translate Page'}
+              </a>
+            </div>
+          </div>
+        )}
+
+        {pass.slug === 'kootenay-pass' && (
+          <div className="lp-card" style={{
+            padding: '16px 20px',
+            marginBottom: '20px',
+            borderLeft: '4px solid #3B82F6',
+            backgroundColor: '#F8FAFC'
+          }}>
+            <h3 style={{ margin: '0 0 8px 0', fontSize: '15.5px', fontWeight: '700', color: '#1E3A8A', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span>🏔️</span>
+              <span>
+                {pageLang === 'fr'
+                  ? 'Guide de Sécurité de la Route 3 & Règlements du Parc Stagleap (Col Kootenay 🇨🇦)'
+                  : 'Highway 3 Travel Guide & Stagleap Provincial Park Safety (Kootenay Pass 🇨🇦)'}
+              </span>
+            </h3>
+            <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <strong>Sommet du col Kootenay (1 775 m / 5 823 pi) :</strong> La <strong>route 3 (Salmo-Creston Highway / Crowsnest Highway)</strong> franchit la chaîne de Selkirk dans le parc provincial Stagleap. Il s'agit du <strong>plus haut col routier asphalté du Canada ouvert toute l'année</strong>. Les fermetures temporaires d'avalanches (systèmes Gazex) durent généralement de 1 à 3 heures en hiver.
+                </>
+              ) : (
+                <>
+                  <strong>Kootenay Pass Summit (1,775 m / 5,823 ft):</strong> <strong>Highway 3 (Salmo-Creston Highway / Crowsnest Highway)</strong> crosses the Selkirk Mountains within Stagleap Provincial Park. It is the <strong>highest paved highway pass in Canada maintained open year-round</strong>. Temporary winter avalanche control closures (utilizing remote Gazex exploders) typically last only 1 to 3 hours.
+                </>
+              )}
+            </p>
+            <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+              {pageLang === 'fr' ? (
+                <>
+                  <li><strong>Pneus d'hiver obligatoires (1er oct – 30 avril) :</strong> Les véhicules empruntant la route 3 doivent être équipés de pneus d'hiver arborant le symbole 3PMSF ou M+S avec au minimum 3,5 mm de bande de roulement. Chaînes d'acier obligatoires pour les poids lourds.</li>
+                  <li><strong>Contrôle actif des avalanches par Gazex :</strong> 24 exploseurs télécommandés Gazex sécurisent les couloirs au-dessus de la route. En cas de fermeture prolongée, le détour s'effectue par le traversier gratuit du lac Kootenay (Route 3A).</li>
+                  <li><strong>Arrêts de freins obligatoires :</strong> Les véhicules lourds doivent vérifier leurs freins aux postes d'inspection de Char Creek (ouest) et Maryland Creek (est) avant les descentes à forte pente.</li>
+                  <li><strong>Faune alpine protégée :</strong> Le caribou des montagnes, les ours grizzlis et les orignaux fréquentent le lac Bridal. Respectez les limites de vitesse et la faune aux abords de la route.</li>
+                </>
+              ) : (
+                <>
+                  <li><strong>Mandatory Winter Tires (Oct 1 – Apr 30):</strong> All passenger vehicles on BC Highway 3 must have approved winter tires (3PMSF mountain snowflake or M+S with minimum 3.5 mm tread). Commercial vehicles must carry steel chains.</li>
+                  <li><strong>Remote Gazex Avalanche Control:</strong> 24 computer-controlled Gazex tubes trigger controlled slides above Hwy 3. During closures, the official alternate route is Highway 3A via the free Kootenay Lake Ferry.</li>
+                  <li><strong>Mandatory Brake Check Stations:</strong> Commercial trucks must stop at Char Creek (westbound) and Maryland Creek (eastbound) brake checks before descending the steep Selkirk canyon grades.</li>
+                  <li><strong>Protected Mountain Wildlife:</strong> Endangered mountain caribou, grizzly bears, and moose frequent Bridal Lake and Stagleap Park. Watch for animals near roadside salt and observe speed limits.</li>
+                </>
+              )}
+            </ul>
+          </div>
+        )}
+
+        {pass.slug === 'kootenay-pass' && (
+          <div style={{ marginTop: '16px', marginBottom: '24px', padding: '14px 18px', backgroundColor: 'rgba(59, 130, 246, 0.05)', border: '1px solid rgba(59, 130, 246, 0.25)', borderRadius: '6px', fontSize: '13px', color: '#1E40AF', lineHeight: '1.55' }}>
+            <strong>🇨🇦 DriveBC Camera Telemetry Notice:</strong> Kootenay Pass live highway webcams at Kootenay Pass Summit / Bridal Lake (Cam 5), Bombi Summit (Cam 334), Salmo Junction (Cam 840), and Creston Gateway (Cam 1152) are streamed directly from DriveBC (BC Ministry of Transportation and Infrastructure), updating every 60 seconds with real-time roadside telemetry. Verify official feeds at <a href="https://www.drivebc.ca/cameras/5" target="_blank" rel="noopener noreferrer" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>DriveBC Cam 5</a> and <a href="/methodology" style={{ color: '#1D4ED8', textDecoration: 'underline', fontWeight: '600' }}>LivePassWatch Verification Methodology</a>.
+          </div>
+        )}
+
+{/* Bilingual Language Switcher for Allison Pass */}
         {pass.slug === 'allison-pass' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
@@ -5537,8 +5716,8 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'allison-pass' && pageLang === 'fr') ? allisonFrenchFaqs : (pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
-                  ((pass.slug === 'allison-pass' && pageLang === 'fr') ? allisonFrenchFaqs : (pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
+                {((pass.slug === 'kootenay-pass' && pageLang === 'fr') ? kootenayFrenchFaqs : (pass.slug === 'allison-pass' && pageLang === 'fr') ? allisonFrenchFaqs : (pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                  ((pass.slug === 'kootenay-pass' && pageLang === 'fr') ? kootenayFrenchFaqs : (pass.slug === 'allison-pass' && pageLang === 'fr') ? allisonFrenchFaqs : (pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
 
 
 

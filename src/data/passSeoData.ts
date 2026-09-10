@@ -950,5 +950,22 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Allison Pass (1,342 m) & Rogers Pass (1,330 m)',
     crossLinkUrl: '/passes/canada/british-columbia/allison-pass',
     crossLinkText: 'Compare British Columbia Monashee Mountain passes with other scenic BC alpine corridors like'
+  },
+  'kootenay-pass': {
+    nearestTowns: [
+      { name: 'Creston, BC (Kootenay Valley)', distance: '42.0 km (26.1 miles)', direction: 'East via Hwy 3 (Town amenities, hospital, orchards & US border)' },
+      { name: 'Salmo, BC (West Kootenay)', distance: '45.0 km (28.0 miles)', direction: 'West via Hwy 3 (Highway 6 junction north to Nelson)' },
+      { name: 'Nelson, BC (Heritage City)', distance: '75.0 km (46.6 miles)', direction: 'Northwest via Hwy 3 & Hwy 6 (West Kootenay cultural & dining hub)' },
+      { name: 'Trail, BC (Industrial Hub)', distance: '78.0 km (48.5 miles)', direction: 'West via Hwy 3 & Hwy 3B (Regional hospital & Columbia River valley)' },
+      { name: 'Castlegar, BC (Regional Airport)', distance: '82.0 km (51.0 miles)', direction: 'West via Hwy 3 (West Kootenay Regional Airport YCG)' },
+      { name: 'Cranbrook, BC (East Kootenay)', distance: '148.0 km (92.0 miles)', direction: 'East via Hwy 3 (Canadian Rockies International Airport YXC)' },
+      { name: 'Spokane, Washington, USA', distance: '210.0 km (130.5 miles)', direction: 'South via Hwy 3 & US-395 / WA-31 (International airport GEG)' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Subject to winter avalanche control closures; Mandatory Winter Tires Oct 1 – Apr 30)',
+    seasonalClosureDetail: 'Kootenay Pass along BC Highway 3 (the Salmo-Creston Highway; summit at Bridal Lake in Stagleap Provincial Park, 1,775 m / 5,823 ft) is the highest paved highway pass in Canada maintained open throughout the winter. Because it serves as the essential southern inter-regional transportation lifeline between the West and East Kootenays, it does not have a seasonal winter closure. Winter tires (3-Peak Mountain Snowflake or M+S with minimum 3.5 mm tread depth) are legally mandatory from October 1 to April 30 under the BC Motor Vehicle Act. Commercial trucks over 11,794 kg must carry steel tire chains. Short-duration precautionary closures of 1 to 3 hours occur frequently during winter storms for active avalanche control using 24 remote computer-operated Gazex exploders stationed above the highway.',
+    aboutPass: 'Kootenay Pass (elevation 1,775 m / 5,823 ft; French: Col Kootenay / Route 3) is a legendary alpine pass carrying British Columbia Highway 3 (the Salmo-Creston Highway segment of the Crowsnest Highway) across the Selkirk Mountains within Stagleap Provincial Park. Connecting Salmo and the West Kootenay region with Creston and the East Kootenay valley, Kootenay Pass holds the distinction of being the highest paved highway summit in Canada that is kept open all winter. Officially opened in 1963 to replace the historical Kootenay Lake ferry crossing, the pass receives colossal annual snowfalls often exceeding 10 to 14 meters (33 to 45 feet). To safeguard travelers, the Ministry of Transportation and Infrastructure (TranBC) operates North America’s most sophisticated avalanche mitigation system, utilizing remote Gazex exploder cannons, dedicated avalanche forecasters, and round-the-clock road clearing supported by live DriveBC highway webcams and RWIS sensors.',
+    crossLinkAnchor: 'Allison Pass (1,342 m) & Crowsnest Pass (1,358 m)',
+    crossLinkUrl: '/passes/canada/british-columbia/allison-pass',
+    crossLinkText: 'Compare high-altitude British Columbia mountain passes with other southern Highway 3 corridors like'
   }
 };

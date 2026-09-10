@@ -324,8 +324,17 @@ export const App: React.FC = () => {
               <Route path="/allisonpass" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
               <Route path="/col-allison" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
               <Route path="/allison-summit" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
-              <Route path="/manning-park-pass" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
               <Route path="/hope-princeton-highway" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
+              <Route path="/monashee-pass" element={<Navigate to="/passes/canada/british-columbia/monashee-pass" replace />} />
+              <Route path="/monashee" element={<Navigate to="/passes/canada/british-columbia/monashee-pass" replace />} />
+              <Route path="/col-monashee" element={<Navigate to="/passes/canada/british-columbia/monashee-pass" replace />} />
+              <Route path="/kootenay-pass" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
+              <Route path="/kootenay" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
+              <Route path="/kootenaypass" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
+              <Route path="/col-kootenay" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
+              <Route path="/salmo-creston" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
+              <Route path="/salmo-creston-highway" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
+              <Route path="/stagleap-pass" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
 
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />

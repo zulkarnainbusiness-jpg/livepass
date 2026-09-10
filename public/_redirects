@@ -136,6 +136,8 @@
 /passes/canada/allison-pass /passes/canada/british-columbia/allison-pass 301
 /passes/monashee-pass /passes/canada/british-columbia/monashee-pass 301
 /passes/canada/monashee-pass /passes/canada/british-columbia/monashee-pass 301
+/passes/kootenay-pass /passes/canada/british-columbia/kootenay-pass 301
+/passes/canada/kootenay-pass /passes/canada/british-columbia/kootenay-pass 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200
