@@ -277,6 +277,29 @@ function generatePassSemanticHtml(pass, canonicalUrl) {
         </section>
         ` : ''}
 
+        ${pass.id === 'dolomiti-superski-pass' ? `
+        <section class="pass-regional-section" style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #16a34a; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #0f172a;">🇮🇹 Informazioni Regionali &amp; Viabilità — Passi Dolomitici e Circuito Sellaronda</h2>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: #334155; margin-bottom: 1rem;">
+            Consulta in tempo reale lo <strong>stato delle strade</strong>, le <strong>webcam in diretta Panomax e RAS</strong> sui passi dolomitici (Passo Pordoi 2.239 m, Passo Sella 2.240 m, Passo Gardena 2.121 m, Passo Campolongo 1.875 m), il bollettino <strong>meteo</strong> e le ordinanze sulle <strong>dotazioni invernali obbligatorie</strong> (Art. 6 Codice della Strada) per Trentino-Alto Adige e Veneto.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 0.75rem;">
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">I passi del Dolomiti Superski e del Sellaronda sono aperti oggi?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">Sì, le strade dei quattro passi del Sellaronda (SS48, SS242, SS243, SP32) sono aperte e regolarmente transitabili tutto l'anno con costante monitoraggio da parte della Centrale Viabilità Bolzano, Viabilità Trentino e Veneto Strade.</p>
+            </div>
+            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 0.75rem;">
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">Dove guardare le webcam in diretta e telecamere panoramiche?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">Le telecamere ufficiali Panomax 360° di Passo Pordoi (Cam 1293 a 2.239 m), Passo Sella (Cam 1291 a 2.240 m), Porta Vescovo (Cam 1065 a 2.478 m), Arabba (Cam 1064) e RAS Passo Gardena (2.121 m) sono trasmesse e aggiornate ogni 60 secondi su LivePassWatch.</p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">Quali sono le regole per pneumatici invernali e catene da neve?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">Ai sensi dell'Art. 6 comma 4 let. e del Codice della Strada, dal 15 novembre al 15 aprile vige l'obbligo inderogabile di montare pneumatici invernali omologati (3PMSF o M+S) o di avere a bordo catene da neve per tutti i veicoli a motore sui passi dolomitici.</p>
+            </div>
+          </div>
+        </section>
+        ` : ''}
+
         <section style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
           <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a;">Official Highway Authority &amp; DOT Verification</h2>
           <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin: 0 0 0.75rem 0;">

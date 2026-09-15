@@ -624,6 +624,22 @@ export const hierarchyData: HierarchyContinent[] = [
         "flagEmoji": "🇮🇹",
         "states": [
           {
+            "id": "trentino-alto-adige-veneto",
+            "name": "Trentino-Alto Adige & Veneto",
+            "passes": [
+              {
+                "id": "dolomiti-superski-pass",
+                "slug": "dolomiti-superski-pass",
+                "name": "Dolomiti Superski Pass (Passi Dolomitici & Sellaronda)",
+                "highway": "SS242 / SS243 / SS48 / SP32 (Sellaronda Circuit)",
+                "elevationFt": 7346,
+                "elevationM": 2239,
+                "status": "OPEN",
+                "image": "/dolomiti-superski-pass.jpg"
+              }
+            ]
+          },
+          {
             "id": "south-tyrol",
             "name": "South Tyrol",
             "passes": [

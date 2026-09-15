@@ -168,7 +168,15 @@ const LegacyPassRedirect: React.FC = () => {
           (clean === 'highway-3' && p.slug === 'crowsnest-pass') ||
           (clean === 'highway3' && p.slug === 'crowsnest-pass') ||
           (clean === 'hwy-3' && p.slug === 'crowsnest-pass') ||
-          (clean === 'col-du-nid-de-corbeau' && p.slug === 'crowsnest-pass')
+          (clean === 'col-du-nid-de-corbeau' && p.slug === 'crowsnest-pass') ||
+          (clean === 'dolomiti-superski-pass' && p.slug === 'dolomiti-superski-pass') ||
+          (clean === 'dolomiti-superski' && p.slug === 'dolomiti-superski-pass') ||
+          (clean === 'dolomitisuperski' && p.slug === 'dolomiti-superski-pass') ||
+          (clean === 'dolomiti-pass' && p.slug === 'dolomiti-superski-pass') ||
+          (clean === 'passi-dolomitici' && p.slug === 'dolomiti-superski-pass') ||
+          (clean === 'sellaronda' && p.slug === 'dolomiti-superski-pass') ||
+          (clean === 'sellaronda-pass' && p.slug === 'dolomiti-superski-pass') ||
+          (clean === 'passo-pordoi' && p.slug === 'dolomiti-superski-pass')
   );
 
   if (targetPass) {
@@ -335,6 +343,18 @@ export const App: React.FC = () => {
               <Route path="/salmo-creston" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
               <Route path="/salmo-creston-highway" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
               <Route path="/stagleap-pass" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
+              <Route path="/dolomiti-superski-pass" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
+              <Route path="/dolomiti-superski" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
+              <Route path="/dolomitisuperski" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
+              <Route path="/dolomiti-pass" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
+              <Route path="/passi-dolomitici" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
+              <Route path="/sellaronda" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
+              <Route path="/sellaronda-pass" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
+              <Route path="/passo-pordoi" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
+              <Route path="/passo-sella" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
+              <Route path="/passo-gardena" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
+              <Route path="/passo-campolongo" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
+              <Route path="/passes/italy/dolomiti-superski-pass" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
 
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />

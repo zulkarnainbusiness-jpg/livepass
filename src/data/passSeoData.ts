@@ -967,5 +967,22 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkAnchor: 'Allison Pass (1,342 m) & Crowsnest Pass (1,358 m)',
     crossLinkUrl: '/passes/canada/british-columbia/allison-pass',
     crossLinkText: 'Compare high-altitude British Columbia mountain passes with other southern Highway 3 corridors like'
-  }
+  },
+  'dolomiti-superski-pass': {
+    nearestTowns: [
+      { name: 'Canazei, Val di Fassa (Trentino)', distance: '12.0 km (7.5 miles)', direction: 'West via SS48 (Val di Fassa amenities & Belvedere gondola)' },
+      { name: 'Arabba, Livinallongo (Belluno, Veneto)', distance: '9.5 km (5.9 miles)', direction: 'East via SS48 (Porta Vescovo & Marmolada glacier access)' },
+      { name: 'Selva di Val Gardena / Wolkenstein', distance: '14.5 km (9.0 miles)', direction: 'Northwest via SS242 / SS243 (Saslong slope & Val Gardena)' },
+      { name: 'Corvara in Badia (Alta Badia)', distance: '16.0 km (9.9 miles)', direction: 'Northeast via SP32 (Gran Risa & gourmet Ladin dining)' },
+      { name: 'Cortina d\'Ampezzo (Veneto)', distance: '38.0 km (23.6 miles)', direction: 'East via SS48 & Passo Falzarego (2026 Winter Olympics venue)' },
+      { name: 'Bolzano / Bozen (South Tyrol Capital)', distance: '58.0 km (36.0 miles)', direction: 'West via SS242 & SS12 / A22 (High-speed train & regional airport)' },
+      { name: 'Venice Marco Polo Airport (VCE)', distance: '168.0 km (104.4 miles)', direction: 'South via SS48 & A27 Autostrada (International gateway)' }
+    ],
+    seasonalClosureWindow: 'Roads Open Year-Round (Subject to winter storm clearance); Ski Season Early Dec – Mid Apr',
+    seasonalClosureDetail: 'The four high-altitude mountain passes forming the Dolomiti Superski Sellaronda pass loop (Passo Pordoi at 2,239 m, Passo Sella at 2,240 m, Passo Gardena at 2,121 m, and Passo Campolongo at 1,875 m) are maintained open year-round by provincial road maintenance agencies (Centrale Viabilità Bolzano, Viabilità Trentino, and Veneto Strade). Under Italian Highway Code Art. 6, winter tires (3PMSF or M+S) or approved snow chains on board are legally mandatory for all vehicles from November 15 to April 15. Temporary short-duration closures may occur during active avalanche control or severe blizzards. The winter ski season operates from December 4–5, 2026 through mid-April 2027.',
+    aboutPass: 'Dolomiti Superski Pass (elevation 2,239 m / 7,346 ft; Italian: Passi Dolomitici e Dolomiti Superski) encompasses the premier high-altitude mountain highway pass circuit and world-famous ski carousel circling the majestic Sella Massif in the Italian Dolomites UNESCO World Heritage site. Connecting four valleys across Trentino-Alto Adige (Bolzano and Trento) and Veneto (Belluno)—Val Gardena, Val di Fassa, Arabba/Livinallongo, and Alta Badia—the Sellaronda pass loop provides vital inter-provincial connectivity alongside unparalleled alpine scenery. Paved throughout and monitored 24/7 by live Panomax 360° and RAS cameras, the passes welcome motorists, cyclists, and winter sports enthusiasts from across the globe.',
+    crossLinkAnchor: 'Stelvio Pass (2,757 m) & Col Agnel (2,744 m)',
+    crossLinkUrl: '/passes/italy/south-tyrol/stelvio-pass',
+    crossLinkText: 'Compare high-altitude Italian alpine mountain passes with other iconic crossings like'
+  },
 };

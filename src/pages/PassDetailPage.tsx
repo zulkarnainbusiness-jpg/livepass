@@ -149,6 +149,49 @@ const baralachaHindiFaqs = [
 
 
 
+const dolomitiItalianFaqs = [
+  {
+    question: "Qual è la data di apertura del Dolomiti Superski Pass nel 2026? (data apertura Dolomiti Superski Pass / quando apre Dolomiti Superski Pass / Dolomiti Superski Pass è aperto / Dolomiti Superski Pass opening date)",
+    answer: "Le strade dei passi dolomitici del Sellaronda (Passo Pordoi, Passo Sella, Passo Gardena e Passo Campolongo) sono APERTE TUTTO L'ANNO! Per la stagione sciistica invernale 2026/2027, gli impianti di risalita e i collegamenti del Dolomiti Superski aprono ufficialmente il 4–5 dicembre 2026 (Val Gardena, Arabba, Alta Badia e Val di Fassa) fino a metà aprile 2027. Sia la viabilità stradale che il comprensorio sciistico sono pienamente operativi secondo i calendari stagionali."
+  },
+  {
+    question: "Il Dolomiti Superski Pass è aperto oggi e in questo momento? (Dolomiti Superski Pass è aperto / Dolomiti Superski Pass aperto oggi / is Dolomiti Superski Pass open right now / Dolomiti Superski Pass is open / quando apre)",
+    answer: "Sì, le strade del Dolomiti Superski e del circuito Sellaronda sono APERTE oggi a tutta la circolazione veicolare. Il fondo stradale su Passo Pordoi (2.239 m), Passo Sella (2.240 m), Passo Gardena (2.121 m) e Passo Campolongo (1.875 m) è asciutto e pulito. È possibile verificare la situazione in tempo reale su LivePassWatch, sincronizzato con la Centrale Viabilità Bolzano, Viabilità Trentino e Veneto Strade."
+  },
+  {
+    question: "Quali sono le condizioni stradali attuali e lo stato delle strade del Dolomiti Superski Pass? (condizioni stradali Dolomiti Superski Pass / stato delle strade Dolomiti Superski Pass / Dolomiti Superski Pass road conditions / road status / rapporto stato)",
+    answer: "Le condizioni stradali attuali sul Dolomiti Superski riportano asfalto asciutto e ottima visibilità sul Gruppo del Sella. Lo stato del traffico è regolare in entrambe le direzioni tra Canazei, Selva di Val Gardena, Corvara e Arabba. In inverno, i mezzi spazzaneve garantiscono la transitabilità continua e vige l'obbligo di dotazioni invernali (pneumatici invernali o catene a bordo ai sensi dell'Art. 6 CdS)."
+  },
+  {
+    question: "Il Dolomiti Superski Pass è chiuso oggi e quando scattano le chiusure? (Dolomiti Superski Pass chiuso / is Dolomiti Superski Pass closed today / Dolomiti Superski Pass is closed / chiusure passi dolomiti oggi)",
+    answer: "No, il Dolomiti Superski Pass NON è chiuso oggi; tutti e quattro i passi del circuito Sellaronda sono pienamente percorribili. Chiusure temporanee precauzionali possono verificarsi durante forti bufere di neve, operazioni di bonifica valanghe sui versanti ripidi o soccorso stradale, con riaperture rapide grazie alle frese provinciali."
+  },
+  {
+    question: "Dove vedere le webcam in diretta e la telecamera di vetta del Dolomiti Superski Pass? (webcam Dolomiti Superski Pass / webcam in diretta Dolomiti Superski Pass / telecamere Dolomiti Superski Pass / telecamera vetta Dolomiti Superski Pass / Dolomiti Superski Pass live webcam)",
+    answer: "LivePassWatch trasmette i flussi live ufficiali delle stazioni Panomax 360° e RAS Südtirol. È possibile visionare Panomax 1293 a Passo Pordoi Vetta e Sass Pordoi (2.239 m / 2.950 m), Panomax 1291 a Passo Sella / Sellaronda (2.240 m), Panomax 1065 a Porta Vescovo e Marmolada (2.478 m), Panomax 1064 ad Arabba e Passo Campolongo (1.602 m), e RAS Cam 2 a Passo Gardena (2.121 m). I fotogrammi si aggiornano ogni 60 secondi."
+  },
+  {
+    question: "Quando chiude il Dolomiti Superski Pass per l'inverno e quali sono le regole sulle gomme termiche? (quando chiude Dolomiti Superski Pass per inverno / when does Dolomiti Superski Pass close for winter)",
+    answer: "Le strade del Dolomiti Superski non chiudono per l'inverno; rimangono aperte 365 giorni l'anno. Tuttavia, ai sensi dell'Art. 6 comma 4 let. e del Codice della Strada, dal 15 novembre al 15 aprile vige l'obbligo inderogabile di circolare con pneumatici invernali omologati (3PMSF o M+S) o di avere a bordo catene da neve omologate su tutti i passi dolomitici."
+  },
+  {
+    question: "Dove trovare una mappa interattiva e l'itinerario del Dolomiti Superski Pass? (mappa Dolomiti Superski Pass / Dolomiti Superski Pass map)",
+    answer: "Una mappa interattiva dettagliata del Dolomiti Superski è consultabile direttamente su LivePassWatch. Include i 53 km del circuito automobilistico del Sellaronda tra Canazei, Passo Pordoi (2.239 m), Arabba, Passo Campolongo (1.875 m), Corvara in Badia, Passo Gardena (2.121 m), Passo Sella (2.240 m) e Selva di Val Gardena, con punti panoramici e webcams live."
+  },
+  {
+    question: "Qual è il meteo oggi, l'altezza neve e le condizioni della neve sul Dolomiti Superski Pass? (meteo Dolomiti Superski Pass oggi / neve Dolomiti Superski Pass / altezza neve Dolomiti Superski Pass / Dolomiti Superski Pass weather today / snow depth / snow conditions)",
+    answer: "Il meteo attuale sul Dolomiti Superski presenta cielo sereno con temperature alpine di circa 11 °C (52 °F) e brezza leggera. L'altezza neve sul piano stradale è di 0 cm con carreggiata asciutta. Durante la stagione sciistica invernale, precipitazioni nevose da 6,5 a 10 metri e innevamento programmato garantiscono piste impeccabili per sci e snowboard."
+  },
+  {
+    question: "Qual è l'altitudine ufficiale del Dolomiti Superski Pass? (altitudine Dolomiti Superski Pass / Dolomiti Superski Pass elevation)",
+    answer: "L'altitudine del Dolomiti Superski Pass raggiunge i 2.239 metri a Passo Pordoi e i 2.240 metri a Passo Sella. I passi vicini sul Sellaronda toccano i 2.121 m a Passo Gardena e i 1.875 m a Passo Campolongo. La funivia del Sass Pordoi sale fino alla Terrazza delle Dolomiti a 2.950 metri, mentre il ghiacciaio della Marmolada culmina a 3.265 metri."
+  },
+  {
+    question: "Quali percorsi alternativi esistono se un passo dolomitico è temporaneamente bloccato?",
+    answer: "In caso di chiusura temporanea per bufera di Passo Pordoi o Passo Sella, il transito tra le valli può avvenire attraverso fondovalle a quote inferiori, quali la Val Cordevole (SS203) o la Val d'Ega (SS241) via Passo Costalunga (1.752 m), che presentano pendenze più dolci e rapido sgombero neve."
+  }
+];
+
 const kootenayFrenchFaqs = [
   {
     question: "Quelle est la date d'ouverture du col Kootenay en 2026 ? (Kootenay Pass opening date / when does Kootenay Pass open / Kootenay Pass is open / date d'ouverture Col Kootenay)",
@@ -945,7 +988,7 @@ export const PassDetailPage: React.FC = () => {
     if (targetSlug.toLowerCase().includes('vrsic')) return 'sl';
     if (targetSlug.toLowerCase().includes('prislop')) return 'ro';
     if (targetSlug.toLowerCase().includes('grimsel')) return 'de';
-    if (targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard') || targetSlug.toLowerCase().includes('agnel') || targetSlug.toLowerCase().includes('angel')) return 'it';
+    if (targetSlug.toLowerCase().includes('dolomiti') || targetSlug.toLowerCase().includes('great-st-bernard') || targetSlug.toLowerCase().includes('grand-saint-bernard') || targetSlug.toLowerCase().includes('agnel') || targetSlug.toLowerCase().includes('angel')) return 'it';
     if (targetSlug.toLowerCase().includes('galibier') || targetSlug.toLowerCase().includes('iseran') || targetSlug.toLowerCase().includes('bonette')) return 'fr';
     if (targetSlug.toLowerCase().includes('katschberg') || targetSlug.toLowerCase().includes('grossglockner')) return 'de';
     if (targetSlug.toLowerCase().includes('coquihalla')) return 'fr';
@@ -971,7 +1014,7 @@ export const PassDetailPage: React.FC = () => {
       setPageLang('en');
     } else if (pass.slug === 'bernina-pass') {
       setPageLang('de');
-    } else if (pass.slug === 'great-st-bernard-pass' || pass.slug === 'col-agnel') {
+    } else if (pass.slug === 'great-st-bernard-pass' || pass.slug === 'col-agnel' || pass.slug === 'dolomiti-superski-pass') {
       setPageLang('it');
     } else if (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') {
       setPageLang('fr');
@@ -1453,7 +1496,141 @@ export const PassDetailPage: React.FC = () => {
         
         
         
-                        {/* Bilingual Language Switcher for Kootenay Pass */}
+                        {/* Bilingual Language Switcher for Dolomiti Superski Pass */}
+        {pass.slug === 'dolomiti-superski-pass' && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(22, 163, 74, 0.06) 100%)',
+            border: '1px solid rgba(37, 99, 235, 0.3)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#1E40AF', fontWeight: '600' }}>
+              <Globe size={18} color="#2563EB" />
+              <span>
+                {pageLang === 'it'
+                  ? '🇮🇹 Contenuto regionale ufficiale (Italiano) — Passi Dolomitici & Circuito Sellaronda'
+                  : '🇬🇧 English Version Active — Dolomiti Superski Pass & Sellaronda Circuit'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('en')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'en' ? '#2563EB' : 'transparent',
+                    color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇬🇧 English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPageLang('it')}
+                  style={{
+                    padding: '6px 14px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    border: 'none',
+                    backgroundColor: pageLang === 'it' ? '#16A34A' : 'transparent',
+                    color: pageLang === 'it' ? '#FFFFFF' : '#475569',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  🇮🇹 Italiano
+                </button>
+              </div>
+              <a
+                href={`https://translate.google.com/translate?sl=auto&tl=${pageLang === 'it' ? 'en' : 'it'}&u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://www.livepasswatch.info/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '6px 12px',
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#1D4ED8',
+                  background: '#EFF6FF',
+                  border: '1px solid #BFDBFE',
+                  borderRadius: '6px',
+                  textDecoration: 'none'
+                }}
+              >
+                <ExternalLink size={13} />
+                {pageLang === 'it' ? 'Traduci in inglese' : 'Auto-Translate Page'}
+              </a>
+            </div>
+          </div>
+        )}
+
+        {pass.slug === 'dolomiti-superski-pass' && (
+          <div className="lp-card" style={{
+            padding: '16px 20px',
+            marginBottom: '20px',
+            borderLeft: '4px solid #16A34A',
+            backgroundColor: '#F8FAFC'
+          }}>
+            <h3 style={{ margin: '0 0 8px 0', fontSize: '15.5px', fontWeight: '700', color: '#14532D', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span>🏔️</span>
+              <span>
+                {pageLang === 'it'
+                  ? 'Guida di Viaggio Passi Dolomitici & Norme Invernali (Circuito Sellaronda 🇮🇹)'
+                  : 'Dolomite Passes Travel Guide & Winter Regulations (Sellaronda Circuit 🇮🇹)'}
+              </span>
+            </h3>
+            <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6', color: '#374151' }}>
+              {pageLang === 'it' ? (
+                <>
+                  <strong>Vetta Passo Pordoi (2.239 m) & Anello Sellaronda (53 km) :</strong> Le strade statali <strong>SS48, SS242, SS243 e la provinciale SP32</strong> collegano Val di Fassa, Val Gardena, Alta Badia e Arabba. I quattro passi sono <strong>aperti tutto l'anno</strong> con manutenzione costante da parte delle province di Bolzano, Trento e Veneto Strade.
+                </>
+              ) : (
+                <>
+                  <strong>Passo Pordoi Summit (2,239 m) & Sellaronda Circuit (53 km):</strong> Highways <strong>SS48, SS242, SS243, and SP32</strong> interconnect Val di Fassa, Val Gardena, Alta Badia, and Arabba around the Sella Massif. All four passes are <strong>maintained open year-round</strong> with 24/7 winter snow clearance by Bolzano, Trento, and Veneto Strade highway authorities.
+                </>
+              )}
+            </p>
+            <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', fontSize: '13.5px', color: '#4B5563', lineHeight: '1.6' }}>
+              {pageLang === 'it' ? (
+                <>
+                  <li><strong>Dotazioni invernali obbligatorie (15 nov – 15 apr) :</strong> Ai sensi dell'Art. 6 del Codice della Strada, tutti i veicoli sui passi dolomitici devono montare pneumatici invernali (3PMSF o M+S) o avere catene da neve a bordo. Sanzioni rigorose da parte della Polizia Stradale.</li>
+                  <li><strong>Funivia del Sass Pordoi (Terrazza delle Dolomiti 2.950 m) :</strong> Dalla vetta del Pordoi, la funivia sale in 4 minuti al Sass Pordoi offrendo un panorama a 360° su Marmolada, Sassolungo e Tofane.</li>
+                  <li><strong>Senso di percorrenza Sellaronda :</strong> Il giro dei quattro passi può essere percorso in senso orario (segnaletica arancione) o antiorario (verde). Calcolare 2–3 ore per completare l'anello in sicurezza.</li>
+                  <li><strong>Patrimonio Mondiale UNESCO :</strong> Rispettate la natura alpina, i limiti di velocità e i numerosi ciclisti che percorrono i tornanti nei mesi estivi.</li>
+                </>
+              ) : (
+                <>
+                  <li><strong>Mandatory Winter Equipment (Nov 15 – Apr 15):</strong> Under Italian Highway Code Art. 6, all vehicles must have winter tires (3PMSF or M+S) or carry approved snow chains on board. Fines are strictly enforced by highway police.</li>
+                  <li><strong>Sass Pordoi Cableway (Terrace of the Dolomites 2,950 m):</strong> Direct aerial tram from Passo Pordoi summit reaches 2,950 m in 4 minutes with 360° panoramas over the Marmolada glacier and Sella towers.</li>
+                  <li><strong>Sellaronda Driving Direction:</strong> The 53 km loop can be driven clockwise (orange signs) or counter-clockwise (green signs). Allow 2 to 3 hours to navigate switchbacks and take in viewpoints.</li>
+                  <li><strong>UNESCO World Heritage Site:</strong> Observe mountain speed limits, protect fragile alpine meadows, and yield to cyclists sharing narrow mountain hairpins.</li>
+                </>
+              )}
+            </ul>
+          </div>
+        )}
+
+        {pass.slug === 'dolomiti-superski-pass' && (
+          <div style={{ marginTop: '16px', marginBottom: '24px', padding: '14px 18px', backgroundColor: 'rgba(22, 163, 74, 0.05)', border: '1px solid rgba(22, 163, 74, 0.25)', borderRadius: '6px', fontSize: '13px', color: '#166534', lineHeight: '1.55' }}>
+            <strong>🇮🇹 Panomax 360° & RAS Südtirol Camera Telemetry Notice:</strong> Live high-definition mountain pass webcams at Passo Pordoi Summit & Sass Pordoi (Cam 1293), Passo Sella / Sellaronda (Cam 1291), Porta Vescovo Summit & Marmolada (Cam 1065), Arabba Valley (Cam 1064), and Passo Gardena (RAS Cam 2) are streamed directly from official Panomax and Rundfunkanstalt Südtirol stations, updating live imagery every 60 seconds with real-time roadside telemetry. Verify official feeds at <a href="https://pordoi.panomax.com" target="_blank" rel="noopener noreferrer" style={{ color: '#15803D', textDecoration: 'underline', fontWeight: '600' }}>Panomax Passo Pordoi</a>, <a href="https://traffico.provincia.bz.it" target="_blank" rel="noopener noreferrer" style={{ color: '#15803D', textDecoration: 'underline', fontWeight: '600' }}>Centrale Viabilità Bolzano</a>, and <a href="/methodology" style={{ color: '#15803D', textDecoration: 'underline', fontWeight: '600' }}>LivePassWatch Verification Methodology</a>.
+          </div>
+        )}
+
+        {/* Bilingual Language Switcher for Kootenay Pass */}
         {pass.slug === 'kootenay-pass' && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
@@ -5716,7 +5893,7 @@ export const PassDetailPage: React.FC = () => {
                             : `Frequently Asked Questions about ${pass.name.split('(')[0].trim()}`}
               </h2>
               <div className="faqs-accordion-container lp-card">
-                {((pass.slug === 'kootenay-pass' && pageLang === 'fr') ? kootenayFrenchFaqs : (pass.slug === 'allison-pass' && pageLang === 'fr') ? allisonFrenchFaqs : (pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
+                {((pass.slug === 'dolomiti-superski-pass' && pageLang === 'it') ? dolomitiItalianFaqs : (pass.slug === 'dolomiti-superski-pass' && pageLang === 'it') ? dolomitiItalianFaqs : (pass.slug === 'kootenay-pass' && pageLang === 'fr') ? kootenayFrenchFaqs : (pass.slug === 'allison-pass' && pageLang === 'fr') ? allisonFrenchFaqs : (pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'umling-la' && pageLang === 'hi') ? umlingLaHindiFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).length > 0 ? (
                   ((pass.slug === 'kootenay-pass' && pageLang === 'fr') ? kootenayFrenchFaqs : (pass.slug === 'allison-pass' && pageLang === 'fr') ? allisonFrenchFaqs : (pass.slug === 'crowsnest-pass' && pageLang === 'fr') ? crowsnestFrenchFaqs : (pass.slug === 'whistler-pass' && pageLang === 'fr') ? whistlerFrenchFaqs : (pass.slug === 'highway-40' && pageLang === 'fr') ? highway40FrenchFaqs : (pass.slug === 'jasper-pass' && pageLang === 'fr') ? jasperFrenchFaqs : (pass.slug === 'icefields-parkway-road' && pageLang === 'fr') ? icefieldsFrenchFaqs : (pass.slug === 'yellowhead-pass' && pageLang === 'fr') ? yellowheadFrenchFaqs : (pass.slug === 'sunwapta-pass' && pageLang === 'fr') ? sunwaptaFrenchFaqs : (pass.slug === 'coquihalla-summit-pass' && pageLang === 'fr') ? coquihallaFrenchFaqs : (pass.slug === 'grossglockner-high-alpine-road' && pageLang === 'de') ? grossglocknerGermanFaqs : (pass.slug === 'katschberg-pass' && pageLang === 'de') ? katschbergGermanFaqs : (pass.slug === 'baralacha-la' && pageLang === 'hi') ? baralachaHindiFaqs : (pass.slug === 'susten-pass' && pageLang === 'hi') ? sustenHindiFaqs : (pass.faqs || [])).map((faq, idx) => (
 
 

@@ -138,6 +138,8 @@
 /passes/canada/monashee-pass /passes/canada/british-columbia/monashee-pass 301
 /passes/kootenay-pass /passes/canada/british-columbia/kootenay-pass 301
 /passes/canada/kootenay-pass /passes/canada/british-columbia/kootenay-pass 301
+/passes/dolomiti-superski-pass /passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass 301
+/passes/italy/dolomiti-superski-pass /passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200
