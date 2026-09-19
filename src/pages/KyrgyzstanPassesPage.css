@@ -1,0 +1,1319 @@
+/* KYRGYZSTAN PASSES HUB PAGE - STYLING */
+
+.kg-hub-page {
+  background-color: var(--bg-page);
+  min-height: 100vh;
+  color: var(--text-primary);
+  font-family: inherit;
+}
+
+/* 1. Breadcrumbs Bar */
+.kg-breadcrumb-wrapper {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.75rem 0;
+  font-size: 0.85rem;
+}
+
+.kg-breadcrumb-trail {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  color: var(--text-muted);
+}
+
+.kg-breadcrumb-trail a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.kg-breadcrumb-trail a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.kg-breadcrumb-sep {
+  color: var(--text-light);
+  font-size: 0.75rem;
+}
+
+.kg-breadcrumb-current {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* 2. Hero Section */
+.kg-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center 38%;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  padding: 3.5rem 0 3rem 0;
+  overflow: hidden;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
+}
+
+.kg-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(10, 25, 47, 0.65) 0%, rgba(10, 25, 47, 0.82) 100%);
+  z-index: 1;
+}
+
+.kg-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+}
+
+.kg-country-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(220, 38, 38, 0.9);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.4);
+}
+
+.kg-country-flag {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.kg-hero-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #FFFFFF;
+  margin-bottom: 0.85rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.kg-hero-subtitle {
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  line-height: 1.5;
+  color: #E2E8F0;
+  margin-bottom: 2rem;
+  max-width: 820px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.kg-hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.kg-hero-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.55rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  color: #F8FAFC;
+}
+
+.kg-chip-icon {
+  color: #38BDF8;
+  display: flex;
+  align-items: center;
+}
+
+.kg-chip-text strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.kg-chip-text span {
+  font-size: 0.75rem;
+  color: #94A3B8;
+}
+
+.kg-hero-credit {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0.75rem;
+  z-index: 2;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.65);
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+/* 3. Quick Navigation Tabs */
+.kg-tabs-nav {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: var(--header-height);
+  z-index: 20;
+  box-shadow: var(--shadow-sm);
+}
+
+.kg-tabs-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+  scrollbar-width: none;
+}
+
+.kg-tabs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.kg-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.kg-tab-btn:hover {
+  background-color: var(--bg-surface-subtle);
+  color: var(--text-primary);
+}
+
+.kg-tab-btn.active {
+  background-color: var(--primary);
+  color: #FFFFFF;
+}
+
+/* 4. Page Main Layout */
+.kg-main-layout {
+  padding: 2rem 0 3.5rem 0;
+}
+
+.kg-grid-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 1080px) {
+  .kg-grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Left Content Column */
+.kg-content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+/* About Box */
+.kg-section-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.kg-section-title {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.kg-editorial-p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.kg-editorial-p:last-child {
+  margin-bottom: 0;
+}
+
+/* Dynamic Status Cards */
+.kg-status-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .kg-status-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.kg-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.kg-stat-card.open {
+  border-color: var(--status-open-border);
+  background-color: var(--status-open-bg);
+}
+
+.kg-stat-card.restricted {
+  border-color: var(--status-caution-border);
+  background-color: var(--status-caution-bg);
+}
+
+.kg-stat-card.closed {
+  border-color: var(--status-closed-border);
+  background-color: var(--status-closed-bg);
+}
+
+.kg-stat-card.updated {
+  border-color: var(--border-color);
+  background-color: var(--bg-surface-subtle);
+}
+
+.kg-stat-icon-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.kg-stat-card.open .kg-stat-icon-box {
+  background: #10B981;
+  color: #FFFFFF;
+}
+
+.kg-stat-card.restricted .kg-stat-icon-box {
+  background: #F59E0B;
+  color: #FFFFFF;
+}
+
+.kg-stat-card.closed .kg-stat-icon-box {
+  background: #EF4444;
+  color: #FFFFFF;
+}
+
+.kg-stat-card.updated .kg-stat-icon-box {
+  background: var(--text-muted);
+  color: #FFFFFF;
+}
+
+.kg-stat-number {
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.kg-stat-card.open .kg-stat-number {
+  color: var(--status-open-text);
+}
+
+.kg-stat-card.restricted .kg-stat-number {
+  color: var(--status-caution-text);
+}
+
+.kg-stat-card.closed .kg-stat-number {
+  color: var(--status-closed-text);
+}
+
+.kg-stat-card.updated .kg-stat-number {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.kg-stat-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* 5. Passes Table Section */
+.kg-table-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.kg-table-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.kg-filter-chip {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.kg-filter-chip:hover {
+  background: var(--bg-surface-subtle);
+  color: var(--text-primary);
+}
+
+.kg-filter-chip.active {
+  background: var(--primary);
+  color: #FFFFFF;
+  border-color: var(--primary);
+}
+
+.kg-table-search {
+  position: relative;
+  min-width: 240px;
+}
+
+.kg-table-search input {
+  width: 100%;
+  padding: 0.5rem 0.85rem 0.5rem 2.2rem;
+  font-size: 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.kg-table-search input:focus {
+  border-color: var(--border-focus);
+}
+
+.kg-table-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  pointer-events: none;
+}
+
+/* Responsive Table Styling */
+.kg-table-container {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+}
+
+.kg-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+.kg-table th {
+  background: var(--bg-surface-subtle);
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.kg-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  vertical-align: middle;
+}
+
+.kg-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.kg-table tbody tr:hover td {
+  background-color: var(--bg-surface-hover);
+}
+
+.kg-pass-name-cell {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.kg-pass-name-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+  display: block;
+}
+
+.kg-pass-name-link:hover {
+}
+
+.kg-pass-name-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  transition: color 0.15s ease;
+  display: block;
+}
+
+.kg-pass-name-button:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.kg-card-highlight {
+  outline: 2px solid var(--primary) !important;
+  box-shadow: 0 0 0 4px rgba(29, 100, 242, 0.25) !important;
+  transition: all 0.3s ease;
+}
+
+.kg-pass-subtext {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+.kg-elevation-badge {
+  font-family: monospace;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--bg-surface-subtle);
+  padding: 0.2rem 0.45rem;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+
+.kg-weather-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.kg-btn-view {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid var(--primary-border);
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.kg-btn-view:hover {
+  background: var(--primary);
+  color: #FFFFFF;
+}
+
+/* Table Footer Action */
+.kg-table-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.kg-btn-all-passes {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-full);
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid var(--primary-border);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.kg-btn-all-passes:hover {
+  background: var(--primary);
+  color: #FFFFFF;
+}
+
+/* 6. Featured Pass Card */
+.kg-featured-pass-card {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+@media (max-width: 860px) {
+  .kg-featured-pass-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kg-featured-img-col {
+  position: relative;
+  min-height: 240px;
+}
+
+.kg-featured-img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.kg-featured-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #F59E0B;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.kg-featured-caption {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(4px);
+}
+
+.kg-featured-content {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kg-featured-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.kg-featured-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.kg-featured-meta {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.kg-featured-desc {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.kg-featured-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius-md);
+  background: var(--primary);
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: background-color 0.15s ease;
+}
+
+.kg-featured-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+/* 7. Detailed Pass Cards Grid */
+.kg-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .kg-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kg-detail-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kg-detail-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.kg-detail-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.kg-detail-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.kg-spec-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  background: var(--bg-surface-subtle);
+  padding: 0.85rem;
+  border-radius: var(--radius-md);
+  font-size: 0.82rem;
+}
+
+.kg-spec-item strong {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 0.15rem;
+}
+
+.kg-detail-desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.kg-detail-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.85rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* 8. Remote Passes Notice */
+.kg-remote-section {
+  background-color: var(--bg-surface);
+  border: 1px dashed #F59E0B;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.kg-remote-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #D97706;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* 9. Sidebar Widgets */
+.kg-sidebar-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.kg-widget-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.kg-widget-header {
+  padding: 1.15rem 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.kg-widget-body {
+  padding: 1.25rem;
+}
+
+/* Map Widget */
+.kg-map-wrapper {
+  height: 280px;
+  width: 100%;
+  position: relative;
+  background: #E2E8F0;
+}
+
+.kg-widget-link-btn {
+  display: block;
+  text-align: center;
+  padding: 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  transition: background-color 0.15s ease;
+}
+
+.kg-widget-link-btn:hover {
+  background: var(--bg-surface-subtle);
+}
+
+/* Webcam Widget */
+.kg-webcam-preview {
+  position: relative;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.kg-live-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: #DC2626;
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.kg-live-pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.kg-webcam-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.6rem 0.85rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.kg-webcam-notice {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  padding: 1rem 1.25rem;
+  background: var(--bg-surface-subtle);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Quick Information Card */
+.kg-quick-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kg-quick-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+}
+
+.kg-qi-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.kg-qi-title {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
+}
+
+.kg-qi-desc {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.kg-external-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.kg-external-link:hover {
+  text-decoration: underline;
+}
+
+/* Travel Safely Banner (matching screenshot) */
+.kg-travel-safely-banner {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.kg-safely-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex: 1;
+  min-width: 280px;
+}
+
+.kg-safely-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: #EFF6FF;
+  border: 1px solid #DBEAFE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--primary);
+}
+
+.kg-safely-text h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 0.25rem 0;
+}
+
+.kg-safely-text p {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.kg-safely-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.35rem;
+  border-radius: var(--radius-md);
+  background: var(--primary);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.kg-safely-btn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* Clustered Pass Deep-Dive Cards */
+.kg-clustered-pass-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  background: var(--bg-surface);
+  margin-bottom: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s ease;
+}
+
+.kg-clustered-pass-card:hover {
+  border-color: var(--primary-border);
+}
+
+.kg-cluster-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.kg-cluster-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 0.35rem 0;
+  line-height: 1.25;
+}
+
+.kg-cluster-meta {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.kg-qa-callout {
+  background: #F0FDF4;
+  border-left: 4px solid #16A34A;
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1.15rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.92rem;
+  color: #166534;
+}
+
+.kg-qa-callout strong {
+  display: block;
+  font-size: 0.96rem;
+  font-weight: 800;
+  color: #14532D;
+  margin-bottom: 0.25rem;
+}
+
+.kg-qa-callout p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.kg-qa-callout.warning {
+  background: #FFFBEB;
+  border-left-color: #D97706;
+  color: #92400E;
+}
+
+.kg-qa-callout.warning strong {
+  color: #78350F;
+}
+
+.kg-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.kg-spec-box {
+  background: var(--bg-surface-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.kg-sb-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+}
+
+.kg-sb-val {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.kg-cluster-desc {
+  font-size: 0.94rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* 10. Travel Safety / Emergency Section */
+.kg-safety-banner {
+  background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 100%);
+  border-radius: var(--radius-xl);
+  color: #FFFFFF;
+  padding: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-shadow: var(--shadow-md);
+  margin-top: 2rem;
+}
+
+.kg-safety-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 780px;
+}
+
+.kg-safety-shield {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #38BDF8;
+}
+
+.kg-safety-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+  color: #FFFFFF;
+}
+
+.kg-safety-text {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #CBD5E1;
+}
+
+.kg-safety-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius-full);
+  background: var(--primary);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.kg-safety-btn:hover {
+  background: var(--primary-hover);
+}
+
+/* 11. FAQ Accordion */
+.kg-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+.kg-faq-item {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  overflow: hidden;
+  transition: border-color 0.15s ease;
+}
+
+.kg-faq-item.active {
+  border-color: var(--border-focus);
+}
+
+.kg-faq-question {
+  width: 100%;
+  padding: 1.15rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: left;
+  cursor: pointer;
+}
+
+.kg-faq-icon {
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.kg-faq-item.active .kg-faq-icon {
+  transform: rotate(180deg);
+  color: var(--primary);
+}
+
+.kg-faq-answer {
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* 12. E-E-A-T Transparency & Verification Box */
+.kg-eeat-box {
+  background: var(--bg-surface-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.kg-eeat-box strong {
+  color: var(--text-primary);
+}
+
+.kg-eeat-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+  .kg-hero {
+    padding: 2.5rem 0 2rem 0;
+  }
+  
+  .kg-section-card {
+    padding: 1.25rem;
+  }
+
+  .kg-table th, .kg-table td {
+    padding: 0.75rem 0.6rem;
+  }
+
+  .kg-safety-banner {
+    padding: 1.5rem;
+  }
+}

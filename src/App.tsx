@@ -12,6 +12,7 @@ const PassesPage = lazy(() => import('./pages/PassesPage').then(m => ({ default:
 const MapPage = lazy(() => import('./pages/MapPage').then(m => ({ default: m.MapPage })));
 const AlertsPage = lazy(() => import('./pages/AlertsPage').then(m => ({ default: m.AlertsPage })));
 const HierarchicalPage = lazy(() => import('./pages/HierarchicalPage').then(m => ({ default: m.HierarchicalPage })));
+const KyrgyzstanPassesPage = lazy(() => import('./pages/KyrgyzstanPassesPage').then(m => ({ default: m.KyrgyzstanPassesPage })));
 const PassDetailPage = lazy(() => import('./pages/PassDetailPage').then(m => ({ default: m.PassDetailPage })));
 const ResourcesPage = lazy(() => import('./pages/ResourcesPage').then(m => ({ default: m.ResourcesPage })));
 const SeoResearchPage = lazy(() => import('./pages/SeoResearchPage').then(m => ({ default: m.SeoResearchPage })));
@@ -64,10 +65,14 @@ const ScrollToTop: React.FC = () => {
 
 // Client-side 301/permanent redirect for non-canonical pass URLs
 const LegacyPassRedirect: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
-  if (!slug) return <NotFoundPage />;
+  const { slug, country } = useParams<{ slug?: string; country?: string }>();
+  const clean = (slug || country || '').toLowerCase().trim();
 
-  const clean = slug.toLowerCase().trim();
+  if (clean === 'kyrgyzstan' || slug?.toLowerCase() === 'kyrgyzstan' || country?.toLowerCase() === 'kyrgyzstan') {
+    return <Navigate to="/passes/kyrgyzstan" replace />;
+  }
+
+  if (!slug) return <NotFoundPage />;
   const targetPass = passesData.find(
     p => p.slug.toLowerCase() === clean || 
          p.id.toLowerCase() === clean || 
@@ -187,6 +192,32 @@ const LegacyPassRedirect: React.FC = () => {
   return <NotFoundPage />;
 };
 
+class RouteErrorBoundary extends React.Component<{ children: React.ReactNode }, { hasError: boolean; error: any }> {
+  constructor(props: any) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+  static getDerivedStateFromError(error: any) {
+    return { hasError: true, error };
+  }
+  componentDidCatch(error: any, errorInfo: any) {
+    console.error('>>> [RouteErrorBoundary caught error]:', error, errorInfo);
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{ padding: '3rem', maxWidth: '800px', margin: '0 auto', color: '#b91c1c' }}>
+          <h2>Something went wrong loading this view:</h2>
+          <pre style={{ background: '#fef2f2', padding: '1rem', borderRadius: '8px', overflowX: 'auto', whiteSpace: 'pre-wrap' }}>
+            {String(this.state.error?.stack || this.state.error?.message || this.state.error)}
+          </pre>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 export const App: React.FC = () => {
   return (
     <PassesProvider>
@@ -194,13 +225,17 @@ export const App: React.FC = () => {
         <ScrollToTop />
         <Header />
         <div className="main-content">
-          <Suspense fallback={<PageLoadingFallback />}>
-            <Routes>
+          <RouteErrorBoundary>
+            <Suspense fallback={<PageLoadingFallback />}>
+              <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/passes" element={<PassesPage />} />
               <Route path="/map" element={<MapPage />} />
               <Route path="/alerts" element={<AlertsPage />} />
               <Route path="/hierarchical" element={<HierarchicalPage />} />
+              
+              {/* Kyrgyzstan Country Hub Page */}
+              <Route path="/passes/kyrgyzstan" element={<KyrgyzstanPassesPage />} />
               
               {/* Canonical 3-tier Pass URL */}
               <Route path="/passes/:country/:state/:slug" element={<PassDetailPage />} />
@@ -369,7 +404,8 @@ export const App: React.FC = () => {
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>
-        </div>
+        </RouteErrorBoundary>
+      </div>
         <Footer />
       </BrowserRouter>
     </PassesProvider>

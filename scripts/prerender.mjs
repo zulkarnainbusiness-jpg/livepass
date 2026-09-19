@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { passesData, getPassUrl, getCountrySlug, getStateSlug, cleanSlug } from '../src/data/passes.ts';
+import { kyrgyzstanPasses } from '../src/data/kyrgyzstanPasses.ts';
 import { passSeoDetails } from '../src/data/passSeoData.ts';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -995,6 +996,30 @@ const staticPages = [
     </main>`
   },
   {
+    path: '/passes/kyrgyzstan',
+    title: 'Kyrgyzstan Mountain Pass Status: Road Conditions & Closures | LivePassWatch',
+    description: 'Live Kyrgyzstan mountain pass status, road conditions, weather, winter closures and webcams for Too-Ashuu, Ala-Bel, Torugart, Taldyk and 18+ Tien Shan passes.',
+    canonicalUrl: `${DOMAIN}/passes/kyrgyzstan`,
+    bodyContent: `<main class="kg-hub-page" style="padding: 2.5rem 1rem; max-width: 1200px; margin: 0 auto;">
+      <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a;">Kyrgyzstan Mountain Pass Status</h1>
+      <p style="font-size: 1.1rem; line-height: 1.6; color: #475569; margin-bottom: 2rem;">Real-time road conditions, winter closures, alpine weather observations, and highway travel intelligence for major mountain passes across the Tien Shan and Pamir-Alay ranges in Kyrgyzstan.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
+        ${kyrgyzstanPasses.map(p => `
+          <div id="pass-${p.id}" style="border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem; background: #ffffff;">
+            <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.25rem;">
+              <span style="color: #1d4ed8; font-weight: 700;">${p.name} (${p.elevationM} m / ${p.elevationFt} ft)</span>
+            </h2>
+            <p style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.75rem;">${p.highway} • ${p.state}</p>
+            <span style="display: inline-block; padding: 0.25rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; background: ${p.status === 'OPEN' ? '#16a34a' : p.status === 'CLOSED' ? '#dc2626' : '#d97706'}; color: white;">
+              ${p.status}
+            </span>
+            <p style="font-size: 0.85rem; color: #334155; margin-top: 0.75rem;">${p.roadCondition}</p>
+          </div>
+        `).join('')}
+      </div>
+    </main>`
+  },
+  {
     path: '/privacy',
     title: 'Privacy Policy | LivePassWatch',
     description: 'LivePassWatch privacy policy: how we handle user data, local storage preferences, and website analytics.',
@@ -1038,6 +1063,7 @@ const todayDate = new Date().toISOString().split('T')[0];
 const coreSitemapUrls = [
   'https://www.livepasswatch.info/',
   'https://www.livepasswatch.info/passes',
+  'https://www.livepasswatch.info/passes/kyrgyzstan',
   'https://www.livepasswatch.info/map',
   'https://www.livepasswatch.info/alerts',
   'https://www.livepasswatch.info/resources',

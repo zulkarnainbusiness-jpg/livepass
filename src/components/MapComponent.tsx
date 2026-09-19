@@ -15,6 +15,7 @@ interface MapComponentProps {
   zoomLevel?: number;
   center?: [number, number];
   showGlobalClusters?: boolean;
+  onViewPassClick?: (pass: MountainPass) => void;
 }
 
 // Global cluster mock points matching Screenshot 2
@@ -38,7 +39,8 @@ export const MapComponent: React.FC<MapComponentProps> = ({
   height = '560px',
   zoomLevel = 2,
   center = [25, 0],
-  showGlobalClusters = true
+  showGlobalClusters = true,
+  onViewPassClick
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
@@ -159,7 +161,11 @@ export const MapComponent: React.FC<MapComponentProps> = ({
 
       // Attach click handler for button inside popup
       popupContent.querySelector(`#btn-view-pass-${pass.id}`)?.addEventListener('click', () => {
-        navigate(getPassUrl(pass));
+        if (onViewPassClick) {
+          onViewPassClick(pass);
+        } else {
+          navigate(getPassUrl(pass));
+        }
       });
 
       marker.bindPopup(popupContent, { maxWidth: 280, className: 'custom-leaflet-popup' });
