@@ -792,6 +792,30 @@ passesData.forEach(pass => {
   });
 });
 
+// Custom country hub redirects
+[
+  { from: '/kyrgyzstan', to: '/passes/kyrgyzstan' },
+  { from: '/kyrgyzstan-passes', to: '/passes/kyrgyzstan' },
+  { from: '/kyrgyzstan-roads', to: '/passes/kyrgyzstan' }
+].forEach(r => {
+  redirectRules.push(r);
+  const redirectHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0;url=${r.to}">
+  <link rel="canonical" href="${DOMAIN}${r.to}">
+  <title>Redirecting to Kyrgyzstan Mountain Pass Status...</title>
+  <script>window.location.replace("${r.to}");</script>
+</head>
+<body>
+  <p>Redirecting to <a href="${r.to}">Kyrgyzstan Mountain Pass Status</a>...</p>
+</body>
+</html>`;
+  writeHtml(`${r.from}/index.html`, redirectHtml);
+  writeHtml(`${r.from}.html`, redirectHtml);
+});
+
 // -------------------------------------------------------------
 // 5. Prerender Core Static Pages (Including Rich Homepage)
 // -------------------------------------------------------------

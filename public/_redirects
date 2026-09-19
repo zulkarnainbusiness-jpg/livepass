@@ -140,6 +140,9 @@
 /passes/canada/kootenay-pass /passes/canada/british-columbia/kootenay-pass 301
 /passes/dolomiti-superski-pass /passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass 301
 /passes/italy/dolomiti-superski-pass /passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass 301
+/kyrgyzstan /passes/kyrgyzstan 301
+/kyrgyzstan-passes /passes/kyrgyzstan 301
+/kyrgyzstan-roads /passes/kyrgyzstan 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

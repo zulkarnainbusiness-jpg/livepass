@@ -53,6 +53,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/map">Interactive Map</Link></li>
               <li><Link to="/alerts">Pass Alerts & Closures</Link></li>
               <li><Link to="/submit-report">Submit Road Report</Link></li>
+              <li><Link to="/passes/kyrgyzstan">Kyrgyzstan Passes</Link></li>
               <li><Link to="/resources">Resources & Chain Laws</Link></li>
               <li><Link to="/about">About LivePassWatch</Link></li>
             </ul>
@@ -67,6 +68,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/passes/united-states/california/donner-pass">Donner Pass (I-80)</Link></li>
               <li><Link to="/passes/united-states/colorado/berthoud-pass">Berthoud Pass (US-40)</Link></li>
               <li><Link to="/passes/united-states/colorado/red-mountain-pass">Red Mountain Pass (US-550)</Link></li>
+              <li><Link to="/passes/kyrgyzstan">Too-Ashuu Pass (Kyrgyzstan)</Link></li>
               <li><Link to="/passes/switzerland/valais-uri/furka-pass">Furka Pass (Alps)</Link></li>
               <li><Link to="/passes/italy/south-tyrol-lombardy/stelvio-pass">Stelvio Pass (SS38)</Link></li>
               <li><Link to="/passes/india/ladakh/khardung-la">Khardung La (Ladakh)</Link></li>

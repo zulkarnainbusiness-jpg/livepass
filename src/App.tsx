@@ -236,6 +236,9 @@ export const App: React.FC = () => {
               
               {/* Kyrgyzstan Country Hub Page */}
               <Route path="/passes/kyrgyzstan" element={<KyrgyzstanPassesPage />} />
+              <Route path="/kyrgyzstan" element={<Navigate to="/passes/kyrgyzstan" replace />} />
+              <Route path="/kyrgyzstan-passes" element={<Navigate to="/passes/kyrgyzstan" replace />} />
+              <Route path="/kyrgyzstan-roads" element={<Navigate to="/passes/kyrgyzstan" replace />} />
               
               {/* Canonical 3-tier Pass URL */}
               <Route path="/passes/:country/:state/:slug" element={<PassDetailPage />} />
