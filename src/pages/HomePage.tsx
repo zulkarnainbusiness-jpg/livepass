@@ -213,6 +213,15 @@ export const HomePage: React.FC = () => {
               <span className="explorer-link">View Resources →</span>
             </div>
           </Link>
+
+          <Link to="/passes/kyrgyzstan" className="explorer-card lp-card lp-card-hover" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <div className="explorer-card-content">
+              <span className="explorer-tag">Central Asia Hub</span>
+              <h3>Kyrgyzstan Mountain Passes</h3>
+              <p>Live road conditions, winter closures, and travel guides for Too-Ashuu, Ala-Bel, and 18+ Tien Shan passes.</p>
+              <span className="explorer-link">Explore Kyrgyzstan Passes →</span>
+            </div>
+          </Link>
         </section>
 
         {/* Trust & Safety Features Bar */}

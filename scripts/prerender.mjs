@@ -361,6 +361,22 @@ function generateHomeSemanticHtml() {
       ]
     },
     {
+      country: 'Kyrgyzstan',
+      flag: '🇰🇬',
+      states: [
+        {
+          name: 'Tien Shan & Pamir-Alay (Too-Ashuu, Ala-Bel, Torugart, Kyzyl-Art)',
+          passes: [
+            { name: 'Too-Ashuu Pass', highway: 'M41 / E010', url: '/passes/kyrgyzstan#pass-too-ashuu-pass' },
+            { name: 'Ala-Bel Pass', highway: 'M41', url: '/passes/kyrgyzstan#pass-ala-bel-pass' },
+            { name: 'Torugart Pass', highway: 'A365 / Silk Road', url: '/passes/kyrgyzstan#pass-torugart-pass' },
+            { name: 'Kyzyl-Art Pass', highway: 'M41 Pamir Hwy', url: '/passes/kyrgyzstan#pass-kyzyl-art-pass' },
+            { name: 'Explore All 18+ Kyrgyzstan Passes', highway: 'Live Hub', url: '/passes/kyrgyzstan' }
+          ]
+        }
+      ]
+    },
+    {
       country: 'International Corridors',
       flag: '🌐',
       states: [
@@ -445,7 +461,7 @@ function generateHomeSemanticHtml() {
                     <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.4rem;">
                       ${s.passes.map(p => `
                         <li>
-                          <a href="${getPassUrl(p)}" style="color: #1d4ed8; text-decoration: none; font-size: 0.925rem; font-weight: 500;">
+                          <a href="${p.url || getPassUrl(p)}" style="color: #1d4ed8; text-decoration: none; font-size: 0.925rem; font-weight: 500;">
                             ${escapeHtml(p.name)} (${escapeHtml(p.highway)})
                           </a>
                         </li>
