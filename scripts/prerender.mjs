@@ -21,18 +21,12 @@ if (!fs.existsSync(distDir)) {
 }
 
 const templateBackupPath = path.resolve(distDir, '_template.html');
-let baseTemplate;
-
-if (fs.existsSync(templateBackupPath)) {
-  baseTemplate = fs.readFileSync(templateBackupPath, 'utf8');
-} else {
-  const templatePath = path.resolve(distDir, 'index.html');
-  if (!fs.existsSync(templatePath)) {
-    console.error('❌ dist/index.html not found. Please run vite build first.');
-    process.exit(1);
-  }
-  baseTemplate = fs.readFileSync(templatePath, 'utf8');
+const templatePath = path.resolve(distDir, 'index.html');
+if (!fs.existsSync(templatePath)) {
+  console.error('❌ dist/index.html not found. Please run vite build first.');
+  process.exit(1);
 }
+let baseTemplate = fs.readFileSync(templatePath, 'utf8');
 
 function escapeHtml(str) {
   if (!str) return '';
@@ -1167,6 +1161,10 @@ if (fs.existsSync(path.resolve(publicDir, '_headers'))) {
 if (fs.existsSync(path.resolve(publicDir, 'robots.txt'))) {
   fs.copyFileSync(path.resolve(publicDir, 'robots.txt'), path.resolve(distDir, 'robots.txt'));
   console.log('  ✓ Synced robots.txt to dist');
+}
+if (fs.existsSync(path.resolve(publicDir, 'ads.txt'))) {
+  fs.copyFileSync(path.resolve(publicDir, 'ads.txt'), path.resolve(distDir, 'ads.txt'));
+  console.log('  ✓ Synced ads.txt to dist');
 }
 
 console.log('\n✨ LivePassWatch SSG Prerendering Complete!\n');
