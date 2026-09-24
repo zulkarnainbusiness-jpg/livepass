@@ -1251,71 +1251,13 @@ export const PassDetailPage: React.FC = () => {
         <nav className="detail-breadcrumbs" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <ChevronRight size={14} className="crumb-sep" />
-          {pass.slug === 'bernina-pass' ? (
+          <Link to="/passes">Passes</Link>
+          <ChevronRight size={14} className="crumb-sep" />
+          <Link to={`/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}`}>{pass.country.split('/')[0].trim()}</Link>
+          {pass.state && (
             <>
-              <Link to="/passes">Passes</Link>
               <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes?country=Switzerland">Switzerland</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes?country=Switzerland">Graubünden</Link>
-            </>
-          ) : pass.slug === 'gotthard-pass' ? (
-            <>
-              <Link to="/passes">Passes</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes?country=Switzerland">Switzerland</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes?country=Switzerland">Uri &amp; Ticino</Link>
-            </>
-          ) : pass.slug === 'great-st-bernard-pass' ? (
-            <>
-              <Link to="/passes">Passes</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes?country=Switzerland">Switzerland</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes?state=Valais">Valais</Link>
-            </>
-          ) : pass.slug === 'col-du-galibier' ? (
-            <>
-              <Link to="/passes">Passes</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes?country=France">France</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes?state=Hautes-Alpes%20%26%20Savoie">Hautes-Alpes &amp; Savoie</Link>
-            </>
-          ) : pass.slug === 'col-de-l-iseran' ? (
-            <>
-              <Link to="/passes">Passes</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes?country=France">France</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes?state=Savoie">Savoie</Link>
-            </>
-          ) : (pass.slug === 'chang-la-pass' || pass.slug === 'chang-la') ? (
-            <>
-              <Link to="/passes?country=India">India</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes?state=Ladakh">Ladakh</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes">Mountain Passes</Link>
-            </>
-          ) : pass.slug === 'trollstigen-pass' ? (
-            <>
-              <Link to={`/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}`}>{pass.country.split('/')[0].trim()}</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to="/passes">Mountain Passes</Link>
-            </>
-          ) : (
-            <>
-              <Link to="/passes">Passes</Link>
-              <ChevronRight size={14} className="crumb-sep" />
-              <Link to={`/passes?country=${encodeURIComponent(pass.country.split('/')[0].trim())}`}>{pass.country.split('/')[0].trim()}</Link>
-              {pass.state && (
-                <>
-                  <ChevronRight size={14} className="crumb-sep" />
-                  <Link to={`/passes?state=${encodeURIComponent(pass.state.split('/')[0].trim())}`}>{pass.state.split('/')[0].trim()}</Link>
-                </>
-              )}
+              <Link to={`/passes?state=${encodeURIComponent(pass.state.split('/')[0].trim())}`}>{pass.state.split('/')[0].trim()}</Link>
             </>
           )}
           <ChevronRight size={14} className="crumb-sep" />

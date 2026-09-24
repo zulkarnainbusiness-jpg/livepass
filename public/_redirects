@@ -143,6 +143,9 @@
 /kyrgyzstan /passes/kyrgyzstan 301
 /kyrgyzstan-passes /passes/kyrgyzstan 301
 /kyrgyzstan-roads /passes/kyrgyzstan 301
+/passes/nepal/* /passes 301
+/passes/nepal /passes 301
+/nepal /passes 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

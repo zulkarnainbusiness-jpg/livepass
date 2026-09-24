@@ -4,7 +4,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
 import { PassesProvider } from './context/PassesContext';
-import { passesData, getPassUrl } from './data/passes';
+import { passesData, getPassUrl, getCountrySlug, getStateSlug, cleanSlug } from './data/passes';
 import './styles/index.css';
 
 // Lazy-loaded pages for fast initial page load & code-splitting
@@ -187,6 +187,31 @@ const LegacyPassRedirect: React.FC = () => {
   if (targetPass) {
     const canonicalUrl = getPassUrl(targetPass);
     return <Navigate to={canonicalUrl} replace />;
+  }
+
+  // 1. Check if clean matches a known country
+  const matchingCountry = passesData.find(
+    p => getCountrySlug(p.country) === clean || cleanSlug(p.country) === clean
+  );
+  if (matchingCountry) {
+    return <Navigate to={`/passes?country=${encodeURIComponent(matchingCountry.country)}`} replace />;
+  }
+
+  // 2. Check if clean matches a known state/province
+  const matchingState = passesData.find(
+    p => getStateSlug(p.state, p.slug) === clean || (p.state && cleanSlug(p.state) === clean)
+  );
+  if (matchingState && matchingState.state) {
+    return <Navigate to={`/passes?state=${encodeURIComponent(matchingState.state)}`} replace />;
+  }
+
+  // 3. Fallback for legacy country paths (e.g. /passes/united-states/unknown)
+  if (country) {
+    const countryClean = cleanSlug(country);
+    const countryMatch = passesData.find(p => getCountrySlug(p.country) === countryClean || cleanSlug(p.country) === countryClean);
+    if (countryMatch) {
+      return <Navigate to={`/passes?country=${encodeURIComponent(countryMatch.country)}`} replace />;
+    }
   }
 
   return <NotFoundPage />;

@@ -6508,108 +6508,41 @@ export const passesData: MountainPass[] = [
     ],
     "faqs": [
       {
-        "question": "Is Santiam Pass open today?",
-        "answer": "Yes, Santiam Pass is open today. The pass is maintained year-round by the Oregon Department of Transportation (ODOT) using snowplows and de-icers to ensure continuous access across the Cascade Range. However, winter storms can bring sudden traction requirements or short temporary closures for accident clearance."
+        "question": "Is Santiam Pass open today on Highway 20?",
+        "answer": "Yes, Santiam Pass is open today. The pass is maintained year-round by the Oregon Department of Transportation (ODOT) using high-capacity rotary snowplows and de-icing materials to ensure reliable access across the Cascade Range between the Willamette Valley and Central Oregon."
       },
       {
-        "question": "Is Santiam Pass open right now?",
-        "answer": "Yes, Santiam Pass is open right now with no general closures in place. Check the live status panel and active ODOT webcams on this page to confirm current road conditions and any active chain restrictions before departing."
+        "question": "What are current road conditions on Santiam Pass?",
+        "answer": "Road conditions on Santiam Pass are currently bare and wet with light mountain flurries. Because weather near Hoodoo Summit changes rapidly, carrying winter chains and checking live camera feeds is strongly advised."
       },
       {
-        "question": "What are the current road conditions on Santiam Pass?",
-        "answer": "The current road conditions on Santiam Pass are bare and wet with light flurries. Carrying chains or traction tires is highly recommended as conditions can deteriorate rapidly during winter weather cycles."
+        "question": "Where can I view live ODOT webcams for Santiam Pass?",
+        "answer": "Official live ODOT TripCheck summit webcams are integrated directly on LivePassWatch, providing real-time views of highway surface snowpack, visibility, and traffic flow."
       },
       {
-        "question": "What is the Santiam Pass opening date?",
-        "answer": "Santiam Pass does not have a seasonal opening date because it remains open year-round. Unlike McKenzie Pass (OR 242) which closes annually for winter, U.S. Route 20 over Santiam Pass is a primary commercial corridor and is kept clear of snow by ODOT crews all winter."
+        "question": "Does Santiam Pass close for the winter?",
+        "answer": "No. Santiam Pass (US 20) does not have a seasonal winter closure and remains open 365 days a year. Nearby scenic McKenzie Pass (OR 242) closes seasonally, but Santiam Pass is continuously plowed as an essential freight corridor."
       },
       {
-        "question": "Is Santiam Pass closed today?",
-        "answer": "No, Santiam Pass is not closed today. It is currently open to traffic. If severe winter blizzards or traffic incidents occur, short-term closures may be implemented by ODOT. You can verify live closure status on TripCheck.com."
+        "question": "What are the traction tire and chain requirements on Santiam Pass?",
+        "answer": "During active winter storms, ODOT activates electronic roadside signs requiring traction tires or chains for all vehicles. Even when unposted, Oregon law requires winter travelers to carry approved chains in mountain passes."
       },
       {
-        "question": "When does Santiam Pass close for winter?",
-        "answer": "Santiam Pass does not close for the winter. It is maintained as a year-round highway. While nearby scenic route McKenzie Pass (OR 242) closes from November to June, U.S. 20 over Santiam Pass is plowed continuously and remains open."
-      },
-      {
-        "question": "Where can I see a Santiam Pass live webcam?",
-        "answer": "You can view the official live ODOT TripCheck webcam feeds directly on this page or by visiting TripCheck.com to check the summit camera views showing current snow depth and road visibility."
-      },
-      {
-        "question": "What is the Santiam Pass elevation?",
-        "answer": "Santiam Pass is located at an elevation of 4,817 feet (1,468 meters) above sea level in the Oregon Cascades."
-      },
-      {
-        "question": "What highway goes through Santiam Pass?",
-        "answer": "Santiam Pass is traversed by U.S. Route 20 (US 20), which connects the Willamette Valley with Central Oregon."
-      },
-      {
-        "question": "Are there chain requirements on Santiam Pass?",
-        "answer": "Currently, there are no mandatory chain requirements for passenger vehicles, but drivers are advised to carry chains or traction tires. ODOT enforces traction requirements dynamically during heavy snowstorms."
-      },
-      {
-        "question": "Is Santiam Pass open in winter?",
-        "answer": "Yes, Santiam Pass is open in winter. Road crews plow and sand the pass 24/7 during snowstorms, but drivers should be prepared for winter conditions and carry snow chains."
-      },
-      {
-        "question": "How do I check the Santiam Pass forecast?",
-        "answer": "You can check the weather forecast for the pass summit on this page or by visiting the National Weather Service (NWS) forecast page for the Oregon Cascades."
-      },
-      {
-        "question": "Where is Santiam Pass located?",
-        "answer": "Santiam Pass is located in the Cascade Range in Oregon, along the boundary between Linn and Jefferson counties."
-      },
-      {
-        "question": "Is Santiam Pass closed right now?",
-        "answer": "No, Santiam Pass is currently open. If emergency conditions require a temporary closure, it will be posted instantly on TripCheck and updated in our status monitor."
-      },
-      {
-        "question": "How much snow is at Santiam Pass?",
-        "answer": "The current snow depth at the summit is 6 inches. Snow depth varies throughout the winter, and Hoodoo Ski Area (located at the summit) tracks seasonal snowpack averages."
-      },
-      {
-        "question": "What is the Santiam Pass closing date?",
-        "answer": "There is no closing date for Santiam Pass. The highway remains open all winter, unlike seasonally closed routes in the Cascades."
-      },
-      {
-        "question": "Does Santiam Pass require traction tires?",
-        "answer": "When winter storms hit, ODOT signs will show \"Traction Tires Required\" or \"Chains Required\" for all vehicles. Check current conditions before travel."
-      },
-      {
-        "question": "How high is Santiam Pass?",
-        "answer": "The summit elevation of Santiam Pass is 4,817 feet (1,468 meters) above sea level."
-      },
-      {
-        "question": "What is the closest town to Santiam Pass?",
-        "answer": "The closest town to the east is Sisters, Oregon (about 22 miles), and to the west is Sweet Home, Oregon (about 47 miles)."
-      },
-      {
-        "question": "How do I get to Santiam Pass?",
-        "answer": "You can reach Santiam Pass by driving U.S. Route 20 east from Albany/Sweet Home, or west from Bend/Sisters."
+        "question": "What is the elevation and location of Santiam Pass?",
+        "answer": "Santiam Pass sits at an elevation of 4,817 feet (1,468 meters) in the Oregon Cascade Range, approximately 22 miles west of Sisters and 47 miles east of Sweet Home."
       }
     ],
     "customSeo": {
       "title": "Santiam Pass Road Status & Live Webcams",
       "description": "Check real-time Santiam Pass road conditions, open/closed status, ODOT 24/7 webcams, snow depth, and Oregon mountain weather before traveling.",
-      "h1": "Santiam Pass opening date Road Status, Webcams & Conditions"
+      "h1": "Santiam Pass Highway 20 Road Status, Conditions & Live Webcams"
     },
     "searchKeywords": [
       "Santiam Pass road conditions",
-      "Santiam Pass open",
-      "Santiam Pass closed",
-      "Santiam Pass status",
-      "is Santiam Pass open today",
-      "is Santiam Pass open right now",
+      "Santiam Pass road status",
       "Santiam Pass webcam",
-      "Santiam Pass live webcam",
-      "Santiam Pass weather today",
-      "Santiam Pass snow",
-      "Santiam Pass snow depth",
-      "Santiam Pass opening date",
-      "when does Santiam Pass close",
-      "Santiam Pass elevation",
-      "Santiam Pass map",
-      "is Santiam Pass closed today"
+      "Santiam Pass live camera",
+      "is Santiam Pass open today"
     ],
     "aliases": [
       "Santiam Pass Summit",
@@ -6692,97 +6625,41 @@ export const passesData: MountainPass[] = [
     ],
     "faqs": [
       {
-        "question": "Is Siskiyou Summit open today?",
-        "answer": "Yes, Siskiyou Summit (Interstate 5) is open today. It is a major interstate route and is plowed continuously."
+        "question": "Is Siskiyou Summit open today on Interstate 5?",
+        "answer": "Yes, Siskiyou Summit is open today. As the highest point on Interstate 5 (4,310 ft / 1,314 m) between Oregon and California, it is maintained year-round by ODOT road crews with continuous plowing, sanding, and anti-icing operations during winter storms."
       },
       {
-        "question": "Is Siskiyou Summit open right now?",
-        "answer": "Yes, Siskiyou Summit is currently open."
+        "question": "What are current road conditions and weather on Siskiyou Summit?",
+        "answer": "Road conditions on Siskiyou Summit are currently bare and wet with light mountain breezes. During active winter storms, heavy snowfall and sudden black ice can occur rapidly; drivers should always verify the live cameras before ascending."
       },
       {
-        "question": "What are the current road conditions on Siskiyou Summit?",
-        "answer": "Road conditions are bare and wet. Heavy snow can occur during winter storms."
+        "question": "Where can I view live ODOT webcams for Siskiyou Summit?",
+        "answer": "Live ODOT TripCheck cameras are embedded directly on LivePassWatch, providing continuous 24/7 summit viewpoints at the Oregon-California border boundary and Milepost 0.5."
       },
       {
-        "question": "What is the Siskiyou Summit opening date?",
-        "answer": "Siskiyou Summit is open year-round and does not have a seasonal opening date."
+        "question": "Are tire chains required over Siskiyou Summit?",
+        "answer": "Currently, no emergency chain restrictions are in effect for passenger cars. However, Oregon and California chain laws require all commercial freight vehicles and passenger cars to carry approved traction chains during winter travel."
       },
       {
-        "question": "Is Siskiyou Summit closed today?",
-        "answer": "No, Siskiyou Summit is open today."
+        "question": "Does Siskiyou Summit close for the winter?",
+        "answer": "No. Siskiyou Summit does not have a seasonal winter closure. It remains open 365 days a year, closing only briefly during severe multi-vehicle incidents or extreme blizzard mitigation."
       },
       {
-        "question": "When does Siskiyou Summit close for winter?",
-        "answer": "Siskiyou Summit does not close for winter. It remains open year-round except for temporary emergency storm closures."
-      },
-      {
-        "question": "Where is the Siskiyou Summit webcam?",
-        "answer": "Live cameras are available on TripCheck at the Siskiyou Summit boundary and MP 0.5."
-      },
-      {
-        "question": "What is the elevation of Siskiyou Summit?",
-        "answer": "Siskiyou Summit has an elevation of 4,310 feet (1,314 meters), making it the highest point on Interstate 5."
-      },
-      {
-        "question": "What highway goes through Siskiyou Summit?",
-        "answer": "Interstate 5 (I-5) passes through Siskiyou Summit."
-      },
-      {
-        "question": "Are tire chains required on Siskiyou Summit?",
-        "answer": "Chains are not required currently, but carrying them is mandatory for all vehicles during winter months."
-      },
-      {
-        "question": "Is Siskiyou Summit open in winter?",
-        "answer": "Yes, Siskiyou Summit is open in winter, backed by ODOT's winter response crews."
-      },
-      {
-        "question": "How do I check Siskiyou Summit forecast?",
-        "answer": "Check the NWS Medford forecast for the Siskiyou Mountains."
-      },
-      {
-        "question": "Where is Siskiyou Summit located?",
-        "answer": "Siskiyou Summit is located on I-5 at the Oregon-California border, south of Ashland."
-      },
-      {
-        "question": "Is Siskiyou Summit closed right now?",
-        "answer": "No, Siskiyou Summit is currently open."
-      },
-      {
-        "question": "How much snow is at Siskiyou Summit?",
-        "answer": "Snow depth varies. During winter storms, several inches to feet of snow can fall rapidly."
-      },
-      {
-        "question": "What is the Siskiyou Summit closing date?",
-        "answer": "The summit remains open year-round."
-      },
-      {
-        "question": "Does Siskiyou Summit require traction tires?",
-        "answer": "During active winter weather, ODOT will display chain and traction tire requirements on roadside signs."
-      },
-      {
-        "question": "How high is Siskiyou Summit?",
-        "answer": "Siskiyou Summit is 4,310 feet high."
-      },
-      {
-        "question": "What is the closest town to Siskiyou Summit?",
-        "answer": "Ashland, Oregon is the closest major town to the north (about 15 miles)."
-      },
-      {
-        "question": "How do I get to Siskiyou Summit?",
-        "answer": "Drive I-5 south from Ashland, Oregon, or north from Yreka, California."
+        "question": "What is the elevation and location of Siskiyou Summit?",
+        "answer": "Siskiyou Summit reaches 4,310 feet (1,314 meters) above sea level in the Siskiyou Mountains along Interstate 5, located approximately 15 miles south of Ashland, Oregon and north of Yreka, California."
       }
     ],
     "customSeo": {
       "title": "Siskiyou Summit Road Status & Webcams",
       "description": "Check real-time Siskiyou Summit I-5 road conditions, open/closed status, ODOT 24/7 webcams, snow depth, and mountain weather before traveling.",
-      "h1": "Siskiyou Summit opening date Road Status, Webcams & Conditions"
+      "h1": "Siskiyou Summit I-5 Road Status, Conditions & Live Webcams"
     },
     "searchKeywords": [
       "Siskiyou Summit road conditions",
-      "Siskiyou Summit open",
-      "Siskiyou Summit closed",
-      "Siskiyou Summit status",
-      "Siskiyou Summit opening date"
+      "Siskiyou Summit road status",
+      "Siskiyou Summit webcam",
+      "Siskiyou Summit I-5 weather",
+      "is Siskiyou Summit open today"
     ]
   },
   {
@@ -8693,9 +8570,9 @@ export const passesData: MountainPass[] = [
       }
     ],
     "customSeo": {
-      "h1": "Grimselpass : Strassenzustand, Live Webcam, Wetter & Öffnungszeiten",
-      "title": "Grimsel Pass Strassenzustand & Webcams",
-      "description": "Aktueller Strassenzustand und Öffnungsstatus Grimselpass (H6): Live-Webcams Grimsel Hospiz, Wetter, Schneehöhen und Wintersperre im Berner Oberland."
+      "h1": "Grimsel Pass Live Road Status, Webcams & Conditions (Grimselpass)",
+      "title": "Grimsel Pass Road Status & Live Webcams (Grimselpass)",
+      "description": "Live Grimsel Pass (Grimselpass H6) road status, real-time Hospiz webcams, snow depth, mountain weather, and seasonal opening dates in Switzerland."
     },
     "searchKeywords": [
       "Grimsel Pass opening date",

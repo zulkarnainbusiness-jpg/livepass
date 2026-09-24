@@ -22,11 +22,17 @@ if (!fs.existsSync(distDir)) {
 
 const templateBackupPath = path.resolve(distDir, '_template.html');
 const templatePath = path.resolve(distDir, 'index.html');
-if (!fs.existsSync(templatePath)) {
-  console.error('❌ dist/index.html not found. Please run vite build first.');
-  process.exit(1);
+let baseTemplate;
+if (fs.existsSync(templateBackupPath)) {
+  baseTemplate = fs.readFileSync(templateBackupPath, 'utf8');
+} else {
+  if (!fs.existsSync(templatePath)) {
+    console.error('❌ dist/index.html not found. Please run vite build first.');
+    process.exit(1);
+  }
+  baseTemplate = fs.readFileSync(templatePath, 'utf8');
+  fs.writeFileSync(templateBackupPath, baseTemplate, 'utf8');
 }
-let baseTemplate = fs.readFileSync(templatePath, 'utf8');
 
 function escapeHtml(str) {
   if (!str) return '';
@@ -806,7 +812,10 @@ passesData.forEach(pass => {
 [
   { from: '/kyrgyzstan', to: '/passes/kyrgyzstan' },
   { from: '/kyrgyzstan-passes', to: '/passes/kyrgyzstan' },
-  { from: '/kyrgyzstan-roads', to: '/passes/kyrgyzstan' }
+  { from: '/kyrgyzstan-roads', to: '/passes/kyrgyzstan' },
+  { from: '/passes/nepal/*', to: '/passes' },
+  { from: '/passes/nepal', to: '/passes' },
+  { from: '/nepal', to: '/passes' }
 ].forEach(r => {
   redirectRules.push(r);
   const redirectHtml = `<!DOCTYPE html>
@@ -822,8 +831,10 @@ passesData.forEach(pass => {
   <p>Redirecting to <a href="${r.to}">Kyrgyzstan Mountain Pass Status</a>...</p>
 </body>
 </html>`;
-  writeHtml(`${r.from}/index.html`, redirectHtml);
-  writeHtml(`${r.from}.html`, redirectHtml);
+  if (!r.from.includes('*')) {
+    writeHtml(`${r.from}/index.html`, redirectHtml);
+    writeHtml(`${r.from}.html`, redirectHtml);
+  }
 });
 
 // -------------------------------------------------------------
@@ -1165,6 +1176,10 @@ if (fs.existsSync(path.resolve(publicDir, 'robots.txt'))) {
 if (fs.existsSync(path.resolve(publicDir, 'ads.txt'))) {
   fs.copyFileSync(path.resolve(publicDir, 'ads.txt'), path.resolve(distDir, 'ads.txt'));
   console.log('  ✓ Synced ads.txt to dist');
+}
+if (fs.existsSync(path.resolve(publicDir, '404.html'))) {
+  fs.copyFileSync(path.resolve(publicDir, '404.html'), path.resolve(distDir, '404.html'));
+  console.log('  ✓ Synced 404.html to dist');
 }
 
 console.log('\n✨ LivePassWatch SSG Prerendering Complete!\n');
