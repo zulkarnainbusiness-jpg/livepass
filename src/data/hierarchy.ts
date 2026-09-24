@@ -960,6 +960,22 @@ export const hierarchyData: HierarchyContinent[] = [
                 "image": "/paso-los-libertadores-chile-argentina.webp"
               }
             ]
+          },
+          {
+            "id": "antofagasta",
+            "name": "Antofagasta",
+            "passes": [
+              {
+                "id": "paso-jama",
+                "slug": "paso-jama",
+                "name": "Paso de Jama",
+                "highway": "CH-27 / RN 52",
+                "elevationFt": 13780,
+                "elevationM": 4200,
+                "status": "OPEN",
+                "image": "/paso-jama-argentina-chile.jpg"
+              }
+            ]
           }
         ]
       },
@@ -982,6 +998,22 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 3200,
                 "status": "OPEN",
                 "image": "/paso-los-libertadores-chile-argentina.webp"
+              }
+            ]
+          },
+          {
+            "id": "jujuy",
+            "name": "Jujuy",
+            "passes": [
+              {
+                "id": "paso-jama",
+                "slug": "paso-jama",
+                "name": "Paso de Jama",
+                "highway": "RN 52 / CH-27",
+                "elevationFt": 13780,
+                "elevationM": 4200,
+                "status": "OPEN",
+                "image": "/paso-jama-argentina-chile.jpg"
               }
             ]
           }

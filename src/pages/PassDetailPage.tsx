@@ -984,7 +984,7 @@ export const PassDetailPage: React.FC = () => {
   const [isRefreshingCam, setIsRefreshingCam] = useState(false);
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
   const [isUserCamModalOpen, setIsUserCamModalOpen] = useState(false);
-  const [pageLang, setPageLang] = useState<'de' | 'fr' | 'it' | 'ro' | 'sl' | 'hi' | 'en'>(() => {
+  const [pageLang, setPageLang] = useState<'de' | 'fr' | 'it' | 'ro' | 'sl' | 'hi' | 'es' | 'en'>(() => {
     if (targetSlug.toLowerCase().includes('vrsic')) return 'sl';
     if (targetSlug.toLowerCase().includes('prislop')) return 'ro';
     if (targetSlug.toLowerCase().includes('grimsel')) return 'de';
@@ -992,6 +992,7 @@ export const PassDetailPage: React.FC = () => {
     if (targetSlug.toLowerCase().includes('galibier') || targetSlug.toLowerCase().includes('iseran') || targetSlug.toLowerCase().includes('bonette')) return 'fr';
     if (targetSlug.toLowerCase().includes('katschberg') || targetSlug.toLowerCase().includes('grossglockner')) return 'de';
     if (targetSlug.toLowerCase().includes('coquihalla')) return 'fr';
+    if (targetSlug.toLowerCase().includes('jama') || targetSlug.toLowerCase().includes('libertadores')) return 'es';
     return 'en';
   });
 
@@ -1018,6 +1019,8 @@ export const PassDetailPage: React.FC = () => {
       setPageLang('it');
     } else if (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') {
       setPageLang('fr');
+    } else if (pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores') {
+      setPageLang('es');
     }
   }, [pass.slug]);
 
@@ -3910,6 +3913,65 @@ export const PassDetailPage: React.FC = () => {
           </div>
         )}
 
+        {/* Bilingual Language Switcher for Paso Jama & Andean Passes */}
+        {(pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores') && (
+          <div className="bilingual-toggle-wrap lp-card" style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '12px',
+            padding: '12px 18px',
+            marginBottom: '18px',
+            background: 'linear-gradient(135deg, rgba(56, 189, 248, 0.08) 0%, rgba(37, 99, 235, 0.06) 100%)',
+            border: '1px solid rgba(56, 189, 248, 0.35)',
+            borderRadius: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: '#0369a1' }}>
+              <Globe size={18} color="#0284c7" />
+              <span>
+                {pageLang === 'es'
+                  ? '🇦🇷🇨🇱 Contenido oficial en español (Jujuy, Argentina / Antofagasta, Chile)'
+                  : '🇬🇧 English Portal (Switch to Spanish anytime / Cambiar a español en cualquier momento)'}
+              </span>
+            </div>
+            <div style={{ display: 'inline-flex', borderRadius: '6px', overflow: 'hidden', border: '1px solid #CBD5E1', background: '#FFFFFF' }}>
+              <button
+                type="button"
+                onClick={() => setPageLang('es')}
+                style={{
+                  padding: '6px 14px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'es' ? '#0284c7' : 'transparent',
+                  color: pageLang === 'es' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇦🇷🇨🇱 Español
+              </button>
+              <button
+                type="button"
+                onClick={() => setPageLang('en')}
+                style={{
+                  padding: '6px 14px',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  backgroundColor: pageLang === 'en' ? '#0284c7' : 'transparent',
+                  color: pageLang === 'en' ? '#FFFFFF' : '#475569',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                🇬🇧 English
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Pass Header & Action Bar */}
         <header className="pass-detail-header-row">
           <div className="pass-title-group">
@@ -4198,7 +4260,7 @@ export const PassDetailPage: React.FC = () => {
         <nav className="detail-quick-nav-bar lp-card" aria-label="Page Sections">
           <a href="#status" className="quick-nav-link">Live Status</a>
           {verificationMeta && <a href="#verification" className="quick-nav-link">Verification</a>}
-          {(pass.cameras && pass.cameras.length > 0 || pass.id === 'khyber-pass' || pass.slug === 'chang-la-pass' || pass.slug === 'chang-la') && <a href="#cameras" className="quick-nav-link">Webcam Status</a>}
+          {(pass.cameras && pass.cameras.length > 0 || pass.id === 'khyber-pass' || pass.slug === 'chang-la-pass' || pass.slug === 'chang-la' || pass.slug === 'paso-jama' || pass.webcamNote) && <a href="#cameras" className="quick-nav-link">Webcam Status</a>}
           <a href="#road-conditions" className="quick-nav-link">Road Conditions</a>
           {pass.openingDateInfo && <a href="#opening-dates" className="quick-nav-link">Opening Dates</a>}
           {pass.seasonalClosureInfo && <a href="#winter-closure" className="quick-nav-link">Winter Closure</a>}
@@ -5161,6 +5223,86 @@ export const PassDetailPage: React.FC = () => {
                     >
                       Check National Highway Authority for Traffic Updates <ExternalLink size={14} />
                     </a>
+                  </div>
+                </div>
+              </section>
+            ) : pass.slug === 'paso-jama' || pass.id === 'paso-jama' || (pass.webcamNote && !pass.cameras?.length) ? (
+              <section id="cameras" className="detail-section-block">
+                <h2 className="section-title-heading">
+                  {pageLang === 'es' ? 'Cámaras y Webcam en Vivo de Paso de Jama' : 'Paso de Jama Live Webcam & Cameras'}
+                </h2>
+                <div className="camera-showcase-container lp-card" style={{ padding: '28px 24px', textAlign: 'center' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '14px' }}>
+                    <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(239, 68, 68, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <Camera size={32} color="#EF4444" />
+                    </div>
+                    <h3 style={{ fontSize: '1.25rem', margin: 0, fontWeight: '700', color: 'var(--text-dark)' }}>
+                      {pageLang === 'es' ? 'Disponibilidad de Cámara en Vivo — Paso de Jama' : 'Live Camera Availability & Status Report — Paso de Jama'}
+                    </h3>
+                    <div style={{ maxWidth: '720px', textAlign: 'left', background: 'var(--bg-subtle, #f8fafc)', padding: '18px 22px', borderRadius: '10px', border: '1px solid var(--border-color, #e2e8f0)', fontSize: '0.925rem', color: 'var(--text-muted, #475569)', lineHeight: '1.65' }}>
+                      <p style={{ margin: '0 0 10px 0', fontWeight: '700', color: 'var(--text-main, #0f172a)' }}>
+                        {pageLang === 'es' ? '¿Por qué no hay cámara web en vivo para el Paso de Jama?' : 'Why is there no official live webcam stream for Paso de Jama?'}
+                      </p>
+                      <p style={{ margin: '0 0 10px 0' }}>
+                        {pageLang === 'es'
+                          ? 'Ni Vialidad Nacional Argentina ni la Unidad de Pasos Fronterizos de Chile publican una transmisión de cámara web en vivo orientada al público general para este cruce. A continuación se detallan las razones técnicas y de seguridad:'
+                          : 'Neither Vialidad Nacional Argentina nor the Chilean Pasos Fronterizos authority publishes a public-facing live road camera stream for the Jama border crossing. The primary reasons include:'}
+                      </p>
+                      <ul style={{ margin: '0 0 12px 0', paddingLeft: '20px' }}>
+                        <li style={{ marginBottom: '6px' }}>
+                          <strong>{pageLang === 'es' ? 'Altitud Extrema y Aislamiento en la Puna:' : 'Extreme High Altitude & Remote Puna Desert:'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'Ubicado a 4,200 m (13,780 pies) en la meseta de la Puna de Atacama, el complejo carece de red de fibra óptica comercial de alta capacidad para streaming público continuo.'
+                            : 'Sitting at 4,200 m (13,780 ft) on the arid Atacama plateau, extreme temperature fluctuations and limited high-bandwidth terrestrial links prevent continuous public video broadcasting.'}
+                        </li>
+                        <li style={{ marginBottom: '6px' }}>
+                          <strong>{pageLang === 'es' ? 'Protocolo de Seguridad Fronteriza Internacional:' : 'International Border Security Protocols:'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'Las cámaras de circuito cerrado existentes en el Complejo Fronterizo Jama son de uso exclusivo de Gendarmería Nacional Argentina, Carabineros de Chile, Aduana (AFIP) y el SAG chileno.'
+                            : 'Closed-circuit monitoring cameras operated at the Complejo Fronterizo Jama are reserved exclusively for law enforcement and customs agencies (Gendarmería, Carabineros, AFIP, SAG).'}
+                        </li>
+                        <li>
+                          <strong>{pageLang === 'es' ? 'Reportes Oficiales de Tránsito en Vivo:' : 'Official Live Road Reports:'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'El estado de apertura/cierre y las condiciones de la calzada en RN 52 y CH-27 son publicados diariamente por los portales oficiales de ambos gobiernos.'
+                            : 'Real-time open/closed status and pavement conditions on RN 52 and CH-27 are reported daily directly by Argentine and Chilean transportation authorities.'}
+                        </li>
+                      </ul>
+                      <p style={{ margin: 0, fontSize: '0.875rem' }}>
+                        📞 <em>{pageLang === 'es' ? 'Atención Telefónica Directa:' : 'Direct Border Verification Hotline:'}</em>{' '}
+                        {pageLang === 'es' ? 'Complejo Jama: ' : 'Complejo Jama Control: '}
+                        <strong>+54 (3887) 483-001</strong>
+                      </p>
+                    </div>
+                    <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', marginTop: '6px' }}>
+                      <a
+                        href="https://www.argentina.gob.ar/interior/pasosinternacionales/paso-jama"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        {pageLang === 'es' ? 'Estado Oficial Pasos Argentina' : 'Official Argentina Border Status'} <ExternalLink size={14} />
+                      </a>
+                      <a
+                        href="https://www.pasosfronterizos.gov.cl/complejos_fronterizos/jama/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        {pageLang === 'es' ? 'Reporte Pasos Fronterizos Chile' : 'Chile Border Authority Status'} <ExternalLink size={14} />
+                      </a>
+                      <a
+                        href="https://www.vialidad.gob.ar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        Vialidad Nacional (RN 52) <ExternalLink size={14} />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </section>

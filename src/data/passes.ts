@@ -19217,6 +19217,240 @@ export const passesData: MountainPass[] = [
       "Dolomitenpässe Wintersperre",
       "Pordoijoch Grödnerjoch Sellajoch offen"
     ]
+  },
+  {
+    "id": "paso-jama",
+    "slug": "paso-jama",
+    "name": "Paso de Jama",
+    "alternateNames": [
+      "Jama Pass",
+      "Paso Jama",
+      "Paso Internacional Jama",
+      "Complejo Fronterizo Jama",
+      "Ruta 52 Jama",
+      "CH-27 Jama",
+      "Jama Border Crossing",
+      "Paso de Jama Argentina Chile"
+    ],
+    "country": "Argentina-Chile",
+    "countryCode": "ARG / CHL",
+    "continent": "South America",
+    "state": "Jujuy / Antofagasta",
+    "highway": "RN 52 (Argentina) / CH-27 (Chile)",
+    "elevationFt": 13780,
+    "elevationM": 4200,
+    "coordinates": {
+      "lat": -23.2375,
+      "lng": -67.0764
+    },
+    "status": "OPEN",
+    "statusDetail": "Habilitado. Paso operativo 09:00–19:15 hs. Condiciones normales de tránsito. Verifique con Vialidad Nacional Argentina antes de salir / Check argentina.gob.ar for live border status",
+    "lastUpdated": "10 minutes ago",
+    "description": "Paso de Jama (Jama Pass) is a high-altitude international mountain crossing at 4,200 m (13,780 ft) on the Puna de Atacama plateau, connecting Argentina's Jujuy Province (Ruta Nacional 52) with Chile's Antofagasta Region (Ruta CH-27) via San Pedro de Atacama. It is the northernmost road border crossing between Argentina and Chile and the highest fully paved Andean international route, carrying significant freight, tourism, and trans-oceanic corridor traffic. The joint Argentine-Chilean border processing complex at Jama is operated by Gendarmería Nacional Argentina and Carabineros de Chile at the same facility.",
+    "image": "/paso-jama-argentina-chile.jpg",
+    "weather": {
+      "tempF": 55,
+      "tempC": 13,
+      "condition": "Arid & Sunny High-Altitude Desert",
+      "icon": "sun"
+    },
+    "snowDepth": {
+      "depthCm": 0,
+      "depthIn": 0,
+      "condition": "Bare pavement — arid Puna conditions, ice possible at night in winter"
+    },
+    "wind": {
+      "speedKmh": 24,
+      "speedMph": 15,
+      "direction": "SW",
+      "description": "Moderate Andean Puna Winds (Viento Zonda)"
+    },
+    "roadCondition": "Ruta Nacional 52 and CH-27 are fully paved along the entire international route. Road is open and passable for all vehicle types. High-altitude conditions (4,200 m+) require preparation for rapid temperature drops, UV exposure, and thin air. Some sections of RN 52 at km 50–55 may have ice patches in winter mornings.",
+    "chainRequirement": "Snow chains are required during winter snowfall events. Argentine authorities (Gendarmería Nacional) enforce mandatory chain carriage during adverse weather. Verify current requirements on argentina.gob.ar before departure.",
+    "cameras": [],
+    "webcamNote": "No official public live webcam feed exists for Paso de Jama. Neither Vialidad Nacional Argentina nor the Chilean Pasos Fronterizos authority publishes a public-facing road camera stream for this crossing. This is common for high-altitude Andean border crossings in the Puna region, where remote infrastructure limits camera deployment. For real-time status, check the official Argentina.gob.ar border status page or call the Complejo Jama directly at +54 (3887) 483-001.",
+    "nearbyPasses": [
+      {
+        "id": "paso-los-libertadores",
+        "slug": "paso-los-libertadores",
+        "name": "Paso Los Libertadores",
+        "country": "Argentina-Chile",
+        "state": "Valparaíso / Mendoza",
+        "highway": "Ruta 60-CH / RN 7",
+        "status": "OPEN",
+        "elevationFt": 10499,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 1450
+      }
+    ],
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Sunny & Arid Puna",
+        "tempHighF": 57,
+        "tempLowF": 28,
+        "icon": "sun"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Clear High-Altitude Sky",
+        "tempHighF": 55,
+        "tempLowF": 25,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Partly Cloudy Andes",
+        "tempHighF": 50,
+        "tempLowF": 22,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Zonda Gusts",
+        "tempHighF": 48,
+        "tempLowF": 20,
+        "icon": "wind"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Sunny & Clear",
+        "tempHighF": 54,
+        "tempLowF": 26,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Argentina.gob.ar — Pasos Internacionales (Paso Jama)",
+        "type": "Official Argentine Federal Government Border Status & Operating Hours",
+        "url": "https://www.argentina.gob.ar/interior/pasosinternacionales/paso-jama"
+      },
+      {
+        "name": "Pasos Fronterizos Chile (Paso Jama)",
+        "type": "Official Chilean Border Authority Status & Road Reports",
+        "url": "https://www.pasosfronterizos.gov.cl/complejos_fronterizos/jama/"
+      },
+      {
+        "name": "Vialidad Nacional Argentina (DNV) — RN 52",
+        "type": "Road Conditions & Maintenance Reports for Ruta Nacional 52",
+        "url": "https://www.vialidad.gob.ar/"
+      },
+      {
+        "name": "Servicio Meteorológico Nacional Argentina (SMN)",
+        "type": "High-Altitude Puna & Andes Mountain Weather Forecasts",
+        "url": "https://www.smn.gob.ar/"
+      },
+      {
+        "name": "Dirección Meteorológica de Chile (DMC)",
+        "type": "Andean Weather & Wind Bulletins for Antofagasta Region",
+        "url": "https://www.meteochile.gob.cl/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Jujuy, Argentina — Antofagasta, Chile",
+      "mountainRange": "Andes Mountains — Puna de Atacama",
+      "elevationSummary": "4,200 m / 13,780 ft above sea level (border crossing) — Route peaks at ~4,830 m / 15,845 ft",
+      "connects": "Susques & Jujuy (Argentina) with San Pedro de Atacama (Chile)",
+      "nearestTown": "Susques, Argentina (60 km east) • San Pedro de Atacama, Chile (50 km west)",
+      "roadType": "Ruta Nacional 52 (Argentina) / Ruta CH-27 (Chile) — Fully Paved International Highway",
+      "bestTime": "April–October (dry season — lowest risk of weather closures; avoid June–August nights due to freezing temperatures)",
+      "highlight": "Northernmost road border crossing between Argentina and Chile. One of the highest fully paved international highway crossings in South America at 4,200 m altitude."
+    },
+    "routeDetails": {
+      "distanceKm": 310,
+      "distanceMiles": 193,
+      "duration": "3.5 – 5 hours (Jujuy, Argentina to San Pedro de Atacama, Chile including border crossing)",
+      "origin": "San Salvador de Jujuy, Argentina (Elevation: 1,259 m)",
+      "destination": "San Pedro de Atacama, Chile (Elevation: 2,407 m)",
+      "waypoints": [
+        "San Salvador de Jujuy (1,259 m) — Provincial capital and route start",
+        "Purmamarca (2,192 m) — Famous Cerro de los Siete Colores landmark",
+        "Susques (3,675 m) — Last town with fuel & services before the pass; fill up here",
+        "Corte Blanco (4,100 m) — Argentine border zone approach",
+        "Complejo Fronterizo Jama (4,200 m) — Joint Argentina-Chile border control facility",
+        "High Point Sector (4,830 m) — Highest point on the route (CH-27 side)",
+        "Socaire junction (3,700 m) — Chilean side descent",
+        "San Pedro de Atacama, Chile (2,407 m) — Atacama Desert gateway & destination"
+      ]
+    },
+    "overview": {
+      "openedYear": 1991,
+      "lengthMiles": 193,
+      "lengthKm": 310,
+      "annualSnowfallIn": 35,
+      "annualSnowfallM": 0.9,
+      "summary": "Paso de Jama (Jama Pass) is an international Andean highway crossing located at 4,200 m (13,780 ft) above sea level on the high-altitude Puna de Atacama plateau, linking Jujuy Province in northwestern Argentina with the Antofagasta Region in northern Chile. Fully paved since 2005 via Argentine RN 52 and Chilean CH-27, it serves as the key northern commercial corridor between the Atlantic and Pacific oceans. Operating year-round with single-facility border control at Complejo Jama, the pass is celebrated for its surreal volcanic landscapes, salt flats, and extreme high-desert environment."
+    },
+    "faqs": [
+      {
+        "question": "¿Está abierto el Paso de Jama hoy? / Is Paso Jama open today?",
+        "answer": "El Paso de Jama opera normalmente de 09:00 a 19:15 horas los 7 días de la semana. El complejo fronterizo conjunto (Argentina-Chile) funciona en la misma instalación. Para el estado en tiempo real, consulte argentina.gob.ar/interior/pasosinternacionales/paso-jama antes de viajar. // Paso de Jama typically operates daily from 09:00 to 19:15 local time. Check the official Argentine government portal for real-time open/closed status before departure."
+      },
+      {
+        "question": "¿Cuál es el estado actual de la ruta en Paso Jama? / What is the current road status of Paso Jama?",
+        "answer": "La Ruta Nacional 52 (Argentina) y la Ruta CH-27 (Chile) están completamente asfaltadas a lo largo de todo el recorrido. En condiciones normales, la vía está transitable para todo tipo de vehículos. Durante el invierno (junio–agosto) pueden presentarse heladas nocturnas y nevadas que causan cierres temporales con corto aviso. // Both RN 52 and CH-27 are fully paved. The route is generally passable year-round but subject to temporary closures due to snow and ice, particularly during winter months (June–August)."
+      },
+      {
+        "question": "¿Cuándo está cerrado el Paso de Jama? / When is Paso Jama closed?",
+        "answer": "El Paso de Jama puede cerrarse temporalmente en cualquier momento del año cuando las condiciones meteorológicas sean adversas: nevadas intensas, hielo en la calzada o vientos blancos. Los cierres más frecuentes ocurren en el invierno andino (junio a agosto). También cierra fuera del horario de operación (19:15 a 09:00 hs). // Paso Jama closes outside operating hours (19:15 to 09:00) and temporarily during severe weather events. Most common closures occur June–August due to heavy snowfall and icy road conditions."
+      },
+      {
+        "question": "¿Cuánto tiempo tarda cruzar el Paso de Jama? / How long does it take to cross Paso Jama?",
+        "answer": "El cruce fronterizo en sí demora entre 30 minutos y 2 horas, dependiendo del flujo de vehículos y la temporada. Los camiones de carga pueden esperar más tiempo. El trayecto completo desde Jujuy hasta San Pedro de Atacama es de aproximadamente 3.5 a 5 horas. // The border crossing itself takes 30 minutes to 2 hours depending on traffic volume. The full journey from Jujuy, Argentina to San Pedro de Atacama, Chile is approximately 3.5 to 5 hours."
+      },
+      {
+        "question": "¿Qué documentos necesito para cruzar el Paso de Jama? / What documents do I need to cross Paso Jama?",
+        "answer": "Documentos requeridos: DNI o Pasaporte vigente; título del vehículo (cédula verde o azul); seguro internacional Mercosur (Seguro RCI); formulario de declaración SAG (Chile) obligatorio para productos alimenticios y agropecuarios; autorización notarial si el vehículo no es propio o para menores sin ambos padres. // Required documents: Valid passport or Mercosur ID card; vehicle registration; international Mercosur insurance; SAG agricultural declaration form (Chile); notarial authorization for third-party vehicles or minors traveling without both parents."
+      },
+      {
+        "question": "¿Hay cámara en vivo del Paso de Jama? / Is there a live webcam for Paso Jama?",
+        "answer": "Actualmente no existe una cámara en vivo pública oficial para el Paso de Jama. Ni Vialidad Nacional Argentina ni el gobierno chileno publican transmisiones de cámara en tiempo real para este cruce. Para el estado actual, consulte argentina.gob.ar o llame al Complejo Jama al +54 (3887) 483-001. // No official public live webcam currently exists for Paso de Jama. For real-time status, use the official Argentine government status page at argentina.gob.ar or contact the border complex directly at +54 (3887) 483-001."
+      },
+      {
+        "question": "¿A qué altura está el Paso de Jama? / What is the elevation of Paso Jama?",
+        "answer": "El punto de control fronterizo del Paso de Jama se encuentra a 4,200 metros (13,780 pies) sobre el nivel del mar. Sin embargo, ciertas secciones de la ruta en el lado chileno superan los 4,830 metros (15,845 pies), lo que lo convierte en uno de los cruces internacionales de carretera más altos de Sudamérica. // The Paso de Jama border crossing facility sits at 4,200 m (13,780 ft) above sea level. Some sections of the route on the Chilean side reach above 4,830 m (15,845 ft), making it one of the highest paved international highway crossings in South America."
+      },
+      {
+        "question": "¿Dónde está el Paso de Jama? / Where is Paso Jama located?",
+        "answer": "El Paso de Jama está ubicado en los Andes, en la Puna de Atacama, en el límite entre la Provincia de Jujuy (Argentina) y la Región de Antofagasta (Chile), coordenadas aproximadas: 23°14'S, 67°04'O. Conecta la localidad de Susques (Argentina) con San Pedro de Atacama (Chile) y es el paso fronterizo terrestre más al norte entre ambos países. // Paso de Jama is located in the Andes on the Puna de Atacama plateau, at the border of Jujuy Province (Argentina) and Antofagasta Region (Chile), at approximately 23°14'S, 67°04'W. It connects Susques (Argentina) with San Pedro de Atacama (Chile)."
+      }
+    ],
+    "customSeo": {
+      "title": "Paso de Jama Road Status, Conditions & Live Updates",
+      "h1": "Paso de Jama Road Status, Conditions & Live Updates (Jama Pass Argentina–Chile)",
+      "description": "Live Paso de Jama (Jama Pass) road status, border crossing conditions, weather, and official open/closed updates for Ruta Nacional 52 Argentina & Ruta CH-27 Chile. Check before you travel."
+    },
+    "searchKeywords": [
+      "Paso Jama pass opening date",
+      "Paso Jama pass is open",
+      "Paso Jama pass road conditions",
+      "Paso Jama pass road status",
+      "Paso Jama pass status report",
+      "when does Paso Jama pass open",
+      "Paso Jama closed",
+      "Paso Jama pass is closed",
+      "Paso Jama pass is it open today",
+      "is Paso Jama pass closed today",
+      "Paso Jama pass webcam",
+      "Paso Jama pass live webcam",
+      "Paso Jama cameras",
+      "Paso de Jama estado actual",
+      "Paso de Jama abierto hoy",
+      "Paso de Jama cerrado",
+      "Paso de Jama condiciones de ruta",
+      "estado del paso Jama",
+      "Ruta 52 Jama estado",
+      "Jama paso fronterizo horario",
+      "paso Jama Jujuy Chile",
+      "paso Jama San Pedro de Atacama",
+      "Paso Jama cuándo abre",
+      "Paso Jama nieve hielo",
+      "Paso de Jama cámara en vivo",
+      "Paso Jama altura altitud",
+      "Paso Jama tiempo clima"
+    ],
+    "isPopular": true
   }
 ];
 
@@ -19322,6 +19556,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Goriška & Bovec (Posočje)' || passSlug === 'mangart-saddle') return 'gorika-bovec';
   if (state === 'Carinthia & Salzburg' || state === 'Kärnten & Salzburg' || passSlug === 'katschberg-pass') return 'carinthia-salzburg';
   if (state === 'Salzburg & Carinthia' || state === 'Salzburg & Kärnten' || passSlug === 'grossglockner-high-alpine-road' || passSlug === 'grossglockner') return 'salzburg-carinthia';
+  if (state === 'Jujuy / Antofagasta' || passSlug === 'paso-jama') return 'jujuy-antofagasta';
   return cleanSlug(state);
 }
 

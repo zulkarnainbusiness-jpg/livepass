@@ -56,7 +56,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Canonical Mountain Pass Detail Pages (63 passes) -->
+  <!-- Canonical Mountain Pass Detail Pages (64 passes) -->
   <url>
     <loc>https://www.livepasswatch.info/passes/united-states/washington/snoqualmie-pass</loc>
     <lastmod>2026-09-24</lastmod>
@@ -431,6 +431,12 @@
   </url>
   <url>
     <loc>https://www.livepasswatch.info/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/passes/argentina-chile/jujuy-antofagasta/paso-jama</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>

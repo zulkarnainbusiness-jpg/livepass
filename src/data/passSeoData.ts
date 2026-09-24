@@ -985,4 +985,20 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkUrl: '/passes/italy/south-tyrol/stelvio-pass',
     crossLinkText: 'Compare high-altitude Italian alpine mountain passes with other iconic crossings like'
   },
+  'paso-jama': {
+    nearestTowns: [
+      { name: 'Susques, Jujuy (Argentina)', distance: '60 km (37 miles)', direction: 'East via RN 52 (Last fuel, medical clinic, and supplies in Argentina)' },
+      { name: 'Purmamarca, Jujuy (Argentina)', distance: '160 km (99 miles)', direction: 'East via RN 52 (Seven Colors Mountain & Quebrada de Humahuaca)' },
+      { name: 'San Salvador de Jujuy (Capital)', distance: '215 km (134 miles)', direction: 'East via RN 52 & RN 9 (Provincial capital & major hospitals)' },
+      { name: 'San Pedro de Atacama (Chile)', distance: '160 km (99 miles)', direction: 'West via CH-27 (Tourism center, lodging, gas stations, Atacama Desert)' },
+      { name: 'Calama, Antofagasta (Chile)', distance: '260 km (162 miles)', direction: 'West via CH-27 & Route 23 (El Loa Airport CJC & commercial hub)' },
+      { name: 'Antofagasta Port City (Chile)', distance: '475 km (295 miles)', direction: 'West via Route 25 & Route 5 Panamericana (Pacific seaport)' }
+    ],
+    seasonalClosureWindow: 'Open Year-Round (Daily Operating Hours: 09:00 – 19:15 Local Time)',
+    seasonalClosureDetail: 'Paso de Jama operates year-round with unified border control (Gendarmería Nacional Argentina and Carabineros de Chile / PDI) at Complejo Fronterizo Jama (4,200 m). Standard crossing hours are 09:00 to 19:15 daily. Short-term closures (12 to 48 hours) occur primarily during Southern Hemisphere winter (June–August) due to Andean snowstorms (temporales cordilleranos), high-velocity Zonda winds, or black ice on high passes reaching 4,830 m on the Chilean approach. Mandatory snow chains are enforced during storm alerts.',
+    aboutPass: 'Paso de Jama (Jama Pass, elevation 4,200 m / 13,780 ft; route summit 4,830 m / 15,845 ft) is the premier high-altitude international highway pass crossing the central Andes and the vast Puna de Atacama plateau, linking Jujuy Province in northwest Argentina with Chile\'s Antofagasta Region. Paved entirely along Argentina’s Ruta Nacional 52 and Chile’s Ruta CH-27, it serves as the strategic Capricorn Bioceanic Highway axis connecting Pacific ports (Antofagasta, Iquique, Mejillones) with Atlantic markets in Argentina, Brazil, and Paraguay. The route showcases dramatic volcanic vistas, the Salinas Grandes salt flats, Lipán Slope switchbacks, and flamingos in high Andean lagoons.',
+    crossLinkAnchor: 'Paso Los Libertadores (RN 7 / Ruta 60-CH)',
+    crossLinkUrl: '/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores',
+    crossLinkText: 'Compare northern Andean high-desert transit through Jama with the central crossing at'
+  },
 };

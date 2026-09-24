@@ -815,7 +815,13 @@ passesData.forEach(pass => {
   { from: '/kyrgyzstan-roads', to: '/passes/kyrgyzstan' },
   { from: '/passes/nepal/*', to: '/passes' },
   { from: '/passes/nepal', to: '/passes' },
-  { from: '/nepal', to: '/passes' }
+  { from: '/nepal', to: '/passes' },
+  { from: '/paso-jama', to: '/passes/argentina-chile/jujuy-antofagasta/paso-jama' },
+  { from: '/jama-pass', to: '/passes/argentina-chile/jujuy-antofagasta/paso-jama' },
+  { from: '/paso-de-jama', to: '/passes/argentina-chile/jujuy-antofagasta/paso-jama' },
+  { from: '/ruta-52-jama', to: '/passes/argentina-chile/jujuy-antofagasta/paso-jama' },
+  { from: '/jama-border-crossing', to: '/passes/argentina-chile/jujuy-antofagasta/paso-jama' },
+  { from: '/paso-internacional-jama', to: '/passes/argentina-chile/jujuy-antofagasta/paso-jama' }
 ].forEach(r => {
   redirectRules.push(r);
   const redirectHtml = `<!DOCTYPE html>

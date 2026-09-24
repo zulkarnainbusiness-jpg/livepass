@@ -419,6 +419,14 @@ export const App: React.FC = () => {
               <Route path="/passo-campolongo" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
               <Route path="/passes/italy/dolomiti-superski-pass" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
 
+              {/* Paso de Jama (Jama Pass) — Argentina-Chile Alternate Routes */}
+              <Route path="/paso-jama" element={<Navigate to="/passes/argentina-chile/jujuy-antofagasta/paso-jama" replace />} />
+              <Route path="/jama-pass" element={<Navigate to="/passes/argentina-chile/jujuy-antofagasta/paso-jama" replace />} />
+              <Route path="/paso-de-jama" element={<Navigate to="/passes/argentina-chile/jujuy-antofagasta/paso-jama" replace />} />
+              <Route path="/ruta-52-jama" element={<Navigate to="/passes/argentina-chile/jujuy-antofagasta/paso-jama" replace />} />
+              <Route path="/jama-border-crossing" element={<Navigate to="/passes/argentina-chile/jujuy-antofagasta/paso-jama" replace />} />
+              <Route path="/paso-internacional-jama" element={<Navigate to="/passes/argentina-chile/jujuy-antofagasta/paso-jama" replace />} />
+
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />
               <Route path="/resources" element={<ResourcesPage />} />

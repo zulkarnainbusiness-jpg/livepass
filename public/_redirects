@@ -140,12 +140,20 @@
 /passes/canada/kootenay-pass /passes/canada/british-columbia/kootenay-pass 301
 /passes/dolomiti-superski-pass /passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass 301
 /passes/italy/dolomiti-superski-pass /passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass 301
+/passes/paso-jama /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
+/passes/argentina-chile/paso-jama /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
 /kyrgyzstan /passes/kyrgyzstan 301
 /kyrgyzstan-passes /passes/kyrgyzstan 301
 /kyrgyzstan-roads /passes/kyrgyzstan 301
 /passes/nepal/* /passes 301
 /passes/nepal /passes 301
 /nepal /passes 301
+/paso-jama /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
+/jama-pass /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
+/paso-de-jama /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
+/ruta-52-jama /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
+/jama-border-crossing /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
+/paso-internacional-jama /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200
