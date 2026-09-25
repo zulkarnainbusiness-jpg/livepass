@@ -992,7 +992,7 @@ export const PassDetailPage: React.FC = () => {
     if (targetSlug.toLowerCase().includes('galibier') || targetSlug.toLowerCase().includes('iseran') || targetSlug.toLowerCase().includes('bonette')) return 'fr';
     if (targetSlug.toLowerCase().includes('katschberg') || targetSlug.toLowerCase().includes('grossglockner')) return 'de';
     if (targetSlug.toLowerCase().includes('coquihalla')) return 'fr';
-    if (targetSlug.toLowerCase().includes('jama') || targetSlug.toLowerCase().includes('libertadores')) return 'es';
+    if (targetSlug.toLowerCase().includes('jama') || targetSlug.toLowerCase().includes('libertadores') || targetSlug.toLowerCase().includes('agua-negra') || targetSlug.toLowerCase().includes('san-francisco')) return 'es';
     return 'en';
   });
 
@@ -1019,7 +1019,7 @@ export const PassDetailPage: React.FC = () => {
       setPageLang('it');
     } else if (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') {
       setPageLang('fr');
-    } else if (pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores' || pass.slug === 'paso-agua-negra') {
+    } else if (pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores' || pass.slug === 'paso-agua-negra' || pass.slug === 'paso-san-francisco') {
       setPageLang('es');
     }
   }, [pass.slug]);
@@ -3914,7 +3914,7 @@ export const PassDetailPage: React.FC = () => {
         )}
 
         {/* Bilingual Language Switcher for Paso Jama & Andean Passes */}
-        {(pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores' || pass.slug === 'paso-agua-negra') && (
+        {(pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores' || pass.slug === 'paso-agua-negra' || pass.slug === 'paso-san-francisco') && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
             alignItems: 'center',
@@ -5225,6 +5225,101 @@ export const PassDetailPage: React.FC = () => {
                     >
                       Check National Highway Authority for Traffic Updates <ExternalLink size={14} />
                     </a>
+                  </div>
+                </div>
+              </section>
+            ) : pass.slug === 'paso-san-francisco' ? (
+              <section id="cameras" className="detail-section-block">
+                <h2 className="section-title-heading">
+                  {pageLang === 'es' ? 'Cámaras y Webcam en Vivo de Paso San Francisco' : 'Paso San Francisco Live Webcam & Cameras'}
+                </h2>
+                <div className="camera-showcase-container lp-card" style={{ padding: '28px 24px', textAlign: 'center' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '14px' }}>
+                    <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(239, 68, 68, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <Camera size={32} color="#EF4444" />
+                    </div>
+                    <h3 style={{ fontSize: '1.25rem', margin: 0, fontWeight: '700', color: 'var(--text-dark)' }}>
+                      {pageLang === 'es' ? 'Disponibilidad de Cámara en Vivo — Paso de San Francisco (4.726 m)' : 'Live Camera Availability & Status Report — Paso San Francisco (15,505 ft)'}
+                    </h3>
+                    <div style={{ maxWidth: '750px', textAlign: 'left', background: 'var(--bg-subtle, #f8fafc)', padding: '20px 24px', borderRadius: '10px', border: '1px solid var(--border-color, #e2e8f0)', fontSize: '0.925rem', color: 'var(--text-muted, #475569)', lineHeight: '1.65' }}>
+                      <p style={{ margin: '0 0 10px 0', fontWeight: '700', color: 'var(--text-main, #0f172a)' }}>
+                        {pageLang === 'es' ? '¿Por qué no hay cámara web en vivo para el Paso San Francisco?' : 'Why is there no official live webcam stream for Paso San Francisco?'}
+                      </p>
+                      <p style={{ margin: '0 0 10px 0' }}>
+                        {pageLang === 'es'
+                          ? 'Ni Vialidad Nacional Argentina (Distrito 11 Catamarca) ni la Unidad de Pasos Fronterizos de Chile transmiten video en directo al público desde la cumbre del Paso San Francisco (4.726 m). Las razones técnicas, climáticas y de seguridad nacional son las siguientes:'
+                          : 'Neither Vialidad Nacional Argentina (Catamarca District 11) nor the Chilean Pasos Fronterizos authority operates a public streaming camera at the summit of Paso de San Francisco (4,726 m / 15,505 ft). Key technical, climatic, and security reasons include:'}
+                      </p>
+                      <ul style={{ margin: '0 0 14px 0', paddingLeft: '20px' }}>
+                        <li style={{ marginBottom: '8px' }}>
+                          <strong>{pageLang === 'es' ? 'Condiciones Climáticas Extremas en la Puna (4.726 m):' : 'Extreme High-Altitude Puna Climate (4,726 m / 15,505 ft):'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'En la alta cordillera de Catamarca y Atacama, las temperaturas invernales caen hasta los -30 °C, acompañadas de temporales de «viento blanco» con ráfagas superiores a 130 km/h que congelan los domos ópticos y destruyen los componentes mecánicos externos.'
+                            : 'In the high Andes along the border of Catamarca and Atacama, winter temperatures plunge below -30°C (-22°F) alongside gale-force "viento blanco" (whiteout) windstorms exceeding 130 km/h, which freeze optical lenses and damage exposed camera hardware.'}
+                        </li>
+                        <li style={{ marginBottom: '8px' }}>
+                          <strong>{pageLang === 'es' ? 'Aislamiento Energético y Telecomunicaciones Inexistentes:' : 'Absence of Commercial Power Grid & Broadband Infrastructure:'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'A lo largo de los casi 200 km deshabitados entre Fiambalá y Copiapó no existe red eléctrica comercial ni fibra óptica terrestre. El Complejo Las Grutas (4.020 m) y el Complejo Maricunga (3.780 m) operan con paneles solares y generadores diésel dedicados exclusivamente a funciones esenciales de control aduanero y migratorio.'
+                            : 'Across the 200-kilometer unpopulated desert corridor between Fiambalá and Copiapó, there is no electrical power grid or terrestrial fiber optic telecom. Las Grutas (4,020 m) and Maricunga (3,780 m) border posts run on isolated solar and generator systems reserved strictly for vital border administration.'}
+                        </li>
+                        <li style={{ marginBottom: '8px' }}>
+                          <strong>{pageLang === 'es' ? 'Seguridad Fronteriza y Cámaras de Circuito Cerrado:' : 'Border Security & Military Closed-Circuit Systems:'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'Las cámaras operativas instaladas en los puestos aduaneros de Las Grutas y Maricunga pertenecen a los sistemas de seguridad interna de Gendarmería Nacional Escuadrón 23 y Carabineros de Chile, por lo que su señal está restringida y no se transmite públicamente por internet.'
+                            : 'CCTV surveillance cameras at Las Grutas and Maricunga checkpoints are closed-circuit networks operated by Gendarmería Nacional Argentina and Carabineros de Chile, strictly restricted to official customs and border security protocols.'}
+                        </li>
+                        <li>
+                          <strong>{pageLang === 'es' ? 'Partes Oficiales de Tránsito Diarios:' : 'Official Daily Road Transitability Bulletins:'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'El Gobierno de Catamarca, Defensa Civil y Vialidad Nacional emiten comunicados oficiales diarios en tiempo real con el estado de calzada en RN 60 y Ruta 31-CH.'
+                            : 'The Catamarca Provincial Government, Civil Defense, and Vialidad Nacional publish verified daily road condition bulletins for RN 60 and Route 31-CH.'}
+                        </li>
+                      </ul>
+                      <p style={{ margin: 0, fontSize: '0.875rem' }}>
+                        📞 <em>{pageLang === 'es' ? 'Contactos Oficiales de Guardia:' : 'Official Dispatch & Checkpoint Contacts:'}</em>{' '}
+                        {pageLang === 'es' ? 'Gendarmería Nacional Escuadrón 23 Tinogasta / Las Grutas: ' : 'Gendarmería Nacional Escuadrón 23 Tinogasta: '}
+                        <strong>+54 (3837) 42-0056 / 0800-555-5065</strong>
+                      </p>
+                    </div>
+                    <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', marginTop: '6px' }}>
+                      <a
+                        href="https://redes.catamarca.gob.ar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        {pageLang === 'es' ? 'Gobierno de Catamarca — Estado Oficial' : 'Gobierno de Catamarca — Official Status'} <ExternalLink size={14} />
+                      </a>
+                      <a
+                        href="https://www.argentina.gob.ar/interior/pasosinternacionales/paso-san-francisco"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        {pageLang === 'es' ? 'Pasos Internacionales Argentina (San Francisco)' : 'Argentina Federal Border Portal'} <ExternalLink size={14} />
+                      </a>
+                      <a
+                        href="https://www.pasosfronterizos.gov.cl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        {pageLang === 'es' ? 'Pasos Fronterizos Chile (Maricunga)' : 'Chile Border Authority Status'} <ExternalLink size={14} />
+                      </a>
+                      <a
+                        href="https://www.vialidad.gob.ar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        Vialidad Nacional (RN 60) <ExternalLink size={14} />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </section>

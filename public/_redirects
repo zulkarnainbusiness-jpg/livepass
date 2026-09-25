@@ -144,6 +144,8 @@
 /passes/argentina-chile/paso-jama /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
 /passes/paso-agua-negra /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
 /passes/argentina-chile/paso-agua-negra /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
+/passes/paso-san-francisco /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
+/passes/argentina-chile/paso-san-francisco /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
 /kyrgyzstan /passes/kyrgyzstan 301
 /kyrgyzstan-passes /passes/kyrgyzstan 301
 /kyrgyzstan-roads /passes/kyrgyzstan 301
@@ -162,6 +164,12 @@
 /ruta-150-agua-negra /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
 /agua-negra-border-crossing /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
 /paso-internacional-agua-negra /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
+/paso-san-francisco /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
+/san-francisco-pass /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
+/paso-de-san-francisco /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
+/ruta-60-san-francisco /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
+/san-francisco-border-crossing /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
+/paso-internacional-san-francisco /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

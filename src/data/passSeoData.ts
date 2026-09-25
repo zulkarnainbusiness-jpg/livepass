@@ -1046,4 +1046,44 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     "crossLinkUrl": "/passes/argentina-chile/jujuy-antofagasta/paso-jama",
     "crossLinkText": "Compare central high-Andean transit through Agua Negra with the northern year-round paved corridor at"
   },
+  'paso-san-francisco': {
+    "nearestTowns": [
+      {
+        "name": "Fiambalá, Catamarca (Argentina)",
+        "distance": "200 km (124 miles)",
+        "direction": "East via RN 60 (Primary service hub, fuel stations, hotels, Termas de Fiambalá hot springs, Adobe Route)"
+      },
+      {
+        "name": "Complejo Fronterizo Las Grutas (Argentina)",
+        "distance": "20 km (12 miles)",
+        "direction": "East via RN 60 (Argentine customs, immigration, AFIP, medical aid post, altitude 4,020 m)"
+      },
+      {
+        "name": "Tinogasta, Catamarca (Argentina)",
+        "distance": "250 km (155 miles)",
+        "direction": "Southeast via RN 60 (Departmental capital, hospital, regional banking, mechanical assistance)"
+      },
+      {
+        "name": "Complejo Fronterizo Maricunga (Chile)",
+        "distance": "110 km (68 miles)",
+        "direction": "West via Ruta 31-CH (Chilean customs, Carabineros, SAG agricultural quarantine, PDI, altitude 3,780 m)"
+      },
+      {
+        "name": "Copiapó, Región de Atacama (Chile)",
+        "distance": "270 km (168 miles)",
+        "direction": "West via Ruta 31-CH (Regional capital city, major hospitals, Desierto de Atacama Airport CPO)"
+      },
+      {
+        "name": "Caldera & Bahía Inglesa (Chile)",
+        "distance": "345 km (214 miles)",
+        "direction": "West via Ruta 31-CH & Ruta 5 (Pacific coastal beaches, turquoise bays, seafood dining, commercial port)"
+      }
+    ],
+    "seasonalClosureWindow": "Subject to Periodic Winter Closures (Typically Open for Full Transit Nov – Apr; Scheduled Convoys in Shoulder Seasons)",
+    "seasonalClosureDetail": "At an extreme elevation of 4,726 m (15,505 ft) across the high Puna plateau of the Andes, Paso de San Francisco experiences severe sub-zero cold (-25°C to -30°C), heavy snowfall, and violent 'viento blanco' (whiteout) windstorms exceeding 130 km/h between May and October. Both Argentina and Chile coordinate regular winter maintenance and scheduled convoy transits. Snow clearing crews from Vialidad Nacional Distrito 11 Catamarca (operating heavy machinery stationed at Las Grutas) and Dirección de Vialidad de Atacama constantly monitor highway sections between Cortaderas, Las Grutas, and Maricunga before authorizing public transit.",
+    "aboutPass": "Paso de San Francisco (San Francisco Pass, elevation 4,726 m / 15,505 ft) is an extraordinary high-altitude international highway pass uniting the Argentine Province of Catamarca with the Chilean Region of Atacama. Traversed via Argentina's fully paved Ruta Nacional 60 and Chile's scenic Ruta 31-CH, the corridor cuts straight through the legendary 'Ruta de los Seis Miles'—the highest volcanic corridor on Earth, surrounded by fourteen peaks exceeding 6,000 meters, including Nevado Ojos del Salado (6,893 m, the world's highest active volcano), Monte Pissis (6,795 m), and Volcán San Francisco (6,018 m). On the Chilean western slope, travelers pass hypersaline alpine lakes of striking emerald and sapphire hues, including Laguna Verde and Laguna Santa Rosa inside Parque Nacional Nevado Tres Cruces. Complejo Fronterizo Las Grutas (4,020 m) on the Argentine side and Complejo Fronterizo Maricunga (3,780 m) on the Chilean side provide coordinated customs, immigration, and agricultural quarantine inspections.",
+    "crossLinkAnchor": "Paso de Agua Negra (RN 150 / Ruta 41-CH)",
+    "crossLinkUrl": "/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra",
+    "crossLinkText": "Compare high-Andean transit through Paso San Francisco with the neighboring summer crossing at"
+  },
 };

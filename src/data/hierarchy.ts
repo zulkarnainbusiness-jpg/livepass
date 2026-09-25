@@ -992,6 +992,22 @@ export const hierarchyData: HierarchyContinent[] = [
                 "image": "/paso-agua-negra.jpg"
               }
             ]
+          },
+          {
+            "id": "atacama",
+            "name": "Atacama",
+            "passes": [
+              {
+                "id": "paso-san-francisco",
+                "slug": "paso-san-francisco",
+                "name": "Paso de San Francisco",
+                "highway": "Ruta 31-CH / RN 60",
+                "elevationFt": 15505,
+                "elevationM": 4726,
+                "status": "CLOSED",
+                "image": "/paso-san-francisco.jpg"
+              }
+            ]
           }
         ]
       },
@@ -1046,6 +1062,22 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 4780,
                 "status": "CLOSED",
                 "image": "/paso-agua-negra.jpg"
+              }
+            ]
+          },
+          {
+            "id": "catamarca",
+            "name": "Catamarca",
+            "passes": [
+              {
+                "id": "paso-san-francisco",
+                "slug": "paso-san-francisco",
+                "name": "Paso de San Francisco",
+                "highway": "RN 60 / Ruta 31-CH",
+                "elevationFt": 15505,
+                "elevationM": 4726,
+                "status": "CLOSED",
+                "image": "/paso-san-francisco.jpg"
               }
             ]
           }

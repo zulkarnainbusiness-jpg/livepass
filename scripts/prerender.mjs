@@ -854,7 +854,13 @@ passesData.forEach(pass => {
   { from: '/paso-de-agua-negra', to: '/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra' },
   { from: '/ruta-150-agua-negra', to: '/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra' },
   { from: '/agua-negra-border-crossing', to: '/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra' },
-  { from: '/paso-internacional-agua-negra', to: '/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra' }
+  { from: '/paso-internacional-agua-negra', to: '/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra' },
+  { from: '/paso-san-francisco', to: '/passes/argentina-chile/catamarca-atacama/paso-san-francisco' },
+  { from: '/san-francisco-pass', to: '/passes/argentina-chile/catamarca-atacama/paso-san-francisco' },
+  { from: '/paso-de-san-francisco', to: '/passes/argentina-chile/catamarca-atacama/paso-san-francisco' },
+  { from: '/ruta-60-san-francisco', to: '/passes/argentina-chile/catamarca-atacama/paso-san-francisco' },
+  { from: '/san-francisco-border-crossing', to: '/passes/argentina-chile/catamarca-atacama/paso-san-francisco' },
+  { from: '/paso-internacional-san-francisco', to: '/passes/argentina-chile/catamarca-atacama/paso-san-francisco' }
 ].forEach(r => {
   redirectRules.push(r);
   const redirectHtml = `<!DOCTYPE html>

@@ -435,6 +435,14 @@ export const App: React.FC = () => {
               <Route path="/agua-negra-border-crossing" element={<Navigate to="/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra" replace />} />
               <Route path="/paso-internacional-agua-negra" element={<Navigate to="/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra" replace />} />
 
+              {/* Paso de San Francisco (San Francisco Pass) — Argentina-Chile Alternate Routes */}
+              <Route path="/paso-san-francisco" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
+              <Route path="/san-francisco-pass" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
+              <Route path="/paso-de-san-francisco" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
+              <Route path="/ruta-60-san-francisco" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
+              <Route path="/san-francisco-border-crossing" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
+              <Route path="/paso-internacional-san-francisco" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
+
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />
               <Route path="/resources" element={<ResourcesPage />} />

@@ -19708,8 +19708,278 @@ export const passesData: MountainPass[] = [
       "Paso Internacional Agua Negra San Juan Coquimbo"
     ],
     "isPopular": true
+  },
+  {
+    "id": "paso-san-francisco",
+    "slug": "paso-san-francisco",
+    "name": "Paso de San Francisco",
+    "alternateNames": [
+      "Paso San Francisco",
+      "Paso Internacional San Francisco",
+      "San Francisco Pass",
+      "Ruta Nacional 60 Paso San Francisco",
+      "Ruta CH-31 Paso San Francisco",
+      "Complejo Fronterizo Las Grutas - Maricunga",
+      "Paso San Francisco Argentina Chile",
+      "San Francisco Border Crossing"
+    ],
+    "country": "Argentina-Chile",
+    "countryCode": "ARG / CHL",
+    "continent": "South America",
+    "state": "Catamarca / Atacama",
+    "highway": "RN 60 (Argentina) / Ruta 31-CH (Chile)",
+    "elevationFt": 15505,
+    "elevationM": 4726,
+    "coordinates": {
+      "lat": -26.8736,
+      "lng": -68.2989
+    },
+    "status": "CLOSED",
+    "statusDetail": "CERRADO POR ACUMULACIÓN DE NIEVE Y VIENTO BLANCO. Tránsito suspendido preventivamente en RN 60 (tramo Las Grutas - Límite) y Ruta 31-CH (Maricunga - Límite). Personal de Vialidad Nacional Distrito 11 Catamarca y Vialidad Atacama realizan despeje con maquinaria pesada. / CLOSED DUE TO HIGH-ALTITUDE SNOW ACCUMULATION & SEVERE WINDS. Transit temporarily suspended between Las Grutas and Chilean border. Snow clearance crews operating on RN 60 and Route 31-CH.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Paso de San Francisco (San Francisco Pass) is a high-altitude Andean international mountain pass crossing the border at 4,726 m (15,505 ft) above sea level, connecting Argentina's Catamarca Province (via Ruta Nacional 60) with Chile's Atacama Region and Copiapó (via Ruta 31-CH). Traversing the legendary 'Ruta de los Seis Miles' amidst the highest cluster of active volcanoes on Earth—including Ojos del Salado, Monte Pissis, and Volcán San Francisco—the pass is an extraordinary high-desert trans-cordilleran corridor. Border processing operates at Complejo Fronterizo Las Grutas (4,020 m) on the Argentine side and Complejo Fronterizo Maricunga (3,780 m) on the Chilean side.",
+    "image": "/paso-san-francisco.jpg",
+    "weather": {
+      "tempF": 25,
+      "tempC": -4,
+      "condition": "Clear Alpine Ridge & Freezing Cordillera Winds",
+      "icon": "cloud-sun"
+    },
+    "snowDepth": {
+      "depthCm": 45,
+      "depthIn": 18,
+      "condition": "Snowdrifts and icy patches across RN 60 summit sector and Ruta 31-CH high pass"
+    },
+    "wind": {
+      "speedKmh": 48,
+      "speedMph": 30,
+      "direction": "WNW",
+      "description": "High-Velocity Puna Gale Gusts (Viento Blanco / Whiteout Risk)"
+    },
+    "roadCondition": "CLOSED to general traffic due to snow drifts and ice on high-altitude segments between Complejo Las Grutas (km 1530) and the Argentine-Chilean international milestone. Vialidad Nacional (Distrito 11 Catamarca) snowplows and salt spreaders are actively clearing the paved corridor of RN 60. On the Chilean side, Dirección de Vialidad de Atacama is clearing the gravel and macadam sections of Ruta 31-CH. When reopened, the pass typically operates during daylight hours (08:30 to 17:00 / 18:00) with mandatory vehicle checks at Las Grutas and Maricunga.",
+    "chainRequirement": "Mandatory carriage of snow chains is legally required for all operational and authorized vehicles traversing Ruta Nacional 60 above Fiambalá / Cortaderas and Ruta 31-CH above Paipote / Maricunga. Drivers must carry high-altitude emergency fuel, thermal insulation, antifreeze, and satellite communication or emergency rations due to the absence of roadside services for over 180 km.",
+    "cameras": [],
+    "webcamNote": "No official public live webcam feed exists at the summit of Paso de San Francisco (4,726 m / 15,505 ft). Technical constraints prevent permanent streaming: extreme subzero temperatures down to -30°C, destructive high-Andean gale winds exceeding 130 km/h, complete lack of commercial electrical infrastructure, and absence of cellular or fiber telecom backhauls across the uninhabited 200 km cordillera. Closed-circuit monitoring cameras at Complejo Fronterizo Las Grutas (Gendarmería Nacional Escuadrón 23) and Complejo Maricunga (Carabineros / PDI Chile) are restricted to military and customs security networks. Travelers can verify daily live transitability reports via the Gobierno de Catamarca, Vialidad Nacional Distrito 11 Catamarca, and Pasos Fronterizos Chile.",
+    "nearbyPasses": [
+      {
+        "id": "paso-agua-negra",
+        "slug": "paso-agua-negra",
+        "name": "Paso de Agua Negra",
+        "country": "Argentina-Chile",
+        "state": "San Juan / Coquimbo",
+        "highway": "RN 150 / Ruta 41-CH",
+        "status": "CLOSED",
+        "elevationFt": 15682,
+        "lastUpdated": "15 min ago",
+        "distanceKm": 410
+      },
+      {
+        "id": "paso-jama",
+        "slug": "paso-jama",
+        "name": "Paso de Jama",
+        "country": "Argentina-Chile",
+        "state": "Jujuy / Antofagasta",
+        "highway": "RN 52 / CH-27",
+        "status": "OPEN",
+        "elevationFt": 13780,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 520
+      },
+      {
+        "id": "paso-los-libertadores",
+        "slug": "paso-los-libertadores",
+        "name": "Paso Los Libertadores",
+        "country": "Argentina-Chile",
+        "state": "Valparaíso / Mendoza",
+        "highway": "Ruta 60-CH / RN 7",
+        "status": "OPEN",
+        "elevationFt": 10499,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 690
+      }
+    ],
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "High-Desert Sun & Frigid Ridge Winds",
+        "tempHighF": 28,
+        "tempLowF": 12,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Clear Blue Andean Skies",
+        "tempHighF": 31,
+        "tempLowF": 14,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Partly Cloudy & Sharp Gusts",
+        "tempHighF": 29,
+        "tempLowF": 10,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Brisk High-Altitude Winds",
+        "tempHighF": 27,
+        "tempLowF": 9,
+        "icon": "wind"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Sunny & Crisp Cordillera Weather",
+        "tempHighF": 33,
+        "tempLowF": 15,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Gobierno de Catamarca — Estado Oficial Paso San Francisco",
+        "type": "Official Catamarca Provincial Border Status & Daily Road Bulletins",
+        "url": "https://redes.catamarca.gob.ar/"
+      },
+      {
+        "name": "Dirección Nacional de Vialidad Argentina (Distrito 11 Catamarca) — RN 60",
+        "type": "Official Road Clearance & Transitability Reports for Ruta Nacional 60",
+        "url": "https://www.vialidad.gob.ar/"
+      },
+      {
+        "name": "Argentina.gob.ar — Pasos Internacionales (Paso San Francisco)",
+        "type": "Official Argentine Federal Border Authority Status & Operating Hours",
+        "url": "https://www.argentina.gob.ar/interior/pasosinternacionales/paso-san-francisco"
+      },
+      {
+        "name": "Gendarmería Nacional Argentina (Escuadrón 23 Tinogasta / Las Grutas)",
+        "type": "Argentine Border Security & Mountain Rescue Operations",
+        "url": "https://www.argentina.gob.ar/gendarmeria"
+      },
+      {
+        "name": "Pasos Fronterizos Chile (Complejo Fronterizo Maricunga — Ruta 31-CH)",
+        "type": "Official Chilean Border Authority Status & Road Reports",
+        "url": "https://www.pasosfronterizos.gov.cl"
+      },
+      {
+        "name": "Dirección de Vialidad de Chile (MOP Región de Atacama)",
+        "type": "Chilean Ministry of Public Works High-Altitude Road Reports",
+        "url": "https://vialidad.mop.gob.cl/"
+      },
+      {
+        "name": "Servicio Meteorológico Nacional Argentina (SMN)",
+        "type": "High-Altitude Cordillera Weather Forecasts & Extreme Weather Alerts",
+        "url": "https://www.smn.gob.ar/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Catamarca, Argentina — Atacama, Chile",
+      "mountainRange": "Andes Mountains — Cordillera de San Francisco (Ruta de los Seis Miles)",
+      "elevationSummary": "4,726 m / 15,505 ft above sea level — Iconic high-altitude Andean pass among the world's tallest volcanoes",
+      "connects": "Fiambalá & Tinogasta (Catamarca, Argentina) with Copiapó, Caldera & Bahía Inglesa (Atacama, Chile)",
+      "nearestTown": "Fiambalá, Catamarca (200 km east) • Complejo Las Grutas (20 km east) • Copiapó, Chile (270 km west) • Laguna Verde (35 km west)",
+      "roadType": "Ruta Nacional 60 (Argentina, fully paved) / Ruta 31-CH (Chile, paved & consolidated gravel/macadam)",
+      "bestTime": "November through April (Southern Hemisphere late spring & summer; winter subject to heavy snow closures)",
+      "highlight": "Traverses the breathtaking 'Ruta de los Seis Miles', skirting turquoise hypersaline lagoons (Laguna Verde, Laguna Santa Rosa) and legendary Andean giants including Ojos del Salado (6,893 m) and Volcán San Francisco (6,018 m)."
+    },
+    "routeDetails": {
+      "distanceKm": 475,
+      "distanceMiles": 295,
+      "duration": "7 – 9 hours driving time (Fiambalá/Tinogasta to Copiapó via RN 60 & Ruta 31-CH, including border inspection and customs formalities)",
+      "origin": "Fiambalá / Tinogasta, Catamarca, Argentina (Elevation: 1,505 m)",
+      "destination": "Copiapó, Atacama Region, Chile (Elevation: 391 m / Pacific Coast 450 km)",
+      "waypoints": [
+        "Tinogasta & Fiambalá (1,505 m) — Starting point, historic adobe route, hot springs (Termas de Fiambalá), and primary fuel station",
+        "Quebrada de las Angosturas (2,200 m) — Dramatic multi-colored geological canyon on RN 60",
+        "Chaschuil & Cortaderas (3,300 m) — High-desert plateau, Hotel de Cortaderas, and Gendarmería pre-checkpoint",
+        "Complejo Fronterizo Las Grutas (4,020 m) — Argentine integrated customs, immigration, AFIP & medical post",
+        "Cumbre Paso de San Francisco (4,726 m / 15,505 ft) — International frontier border marker between Argentina & Chile",
+        "Laguna Verde (4,325 m) — Stunning hypersaline turquoise alpine lake beneath Volcán San Francisco",
+        "Salar de Maricunga & Laguna Santa Rosa (3,760 m) — Parque Nacional Nevado Tres Cruces, flamingo nesting reserve",
+        "Complejo Fronterizo Maricunga (3,780 m) — Chilean border control (Carabineros, SAG, PDI, Aduanas)",
+        "Quebrada de Paipote (1,800 m) — Descent through mineral-rich Atacama desert canyons",
+        "Copiapó (391 m) — Capital of the Atacama Region, connection to Pan-American Highway (Ruta 5) and Pacific beaches of Caldera & Bahía Inglesa"
+      ]
+    },
+    "overview": {
+      "openedYear": 1999,
+      "lengthMiles": 295,
+      "lengthKm": 475,
+      "annualSnowfallIn": 110,
+      "annualSnowfallM": 2.8,
+      "summary": "Paso de San Francisco (San Francisco Pass) is one of the highest and most awe-inspiring paved mountain crossings in the Andes, ascending to 4,726 meters (15,505 feet) above sea level between the Argentine Province of Catamarca and the Chilean Region of Atacama. Traveling along Argentine Ruta Nacional 60 and Chilean Ruta 31-CH, motorists enter the famed 'Ruta de los Seis Miles'—a legendary corridor flanked by the greatest cluster of volcanic peaks exceeding 6,000 meters anywhere in the world, including Ojos del Salado (6,893 m), Monte Pissis (6,795 m), and Volcán San Francisco (6,018 m). While the Argentine side is paved up to the summit, extreme winter temperatures, ice storms, and Andean 'viento blanco' blizzard conditions cause frequent seasonal closures between May and October. In late September 2026, the pass remains closed to general traffic while road crews from Vialidad Nacional Distrito 11 and Dirección de Vialidad de Atacama clear snow drifts and ice along the high-cordillera summit sector."
+    },
+    "faqs": [
+      {
+        "question": "¿Está abierto el Paso San Francisco hoy o está cerrado? / Is Paso San Francisco open today or is it closed?",
+        "answer": "Actualmente el Paso Internacional San Francisco se encuentra CERRADO para el tránsito del público general y turistas debido a la acumulación de nieve, hielo en calzada y fuertes ráfagas de viento blanco en la alta cordillera. Personal de Vialidad Nacional Distrito 11 Catamarca (RN 60) y Vialidad Chile (Ruta 31-CH) realizan tareas de despeje. // Paso San Francisco is currently CLOSED to general motorist traffic due to snow accumulation, ice on the roadway, and severe high-altitude wind gusts. Road crews from Argentina and Chile are conducting clearance operations."
+      },
+      {
+        "question": "¿Cuál es el estado de la ruta y reporte de transitabilidad del Paso San Francisco? / What are the current Paso San Francisco road conditions and pass status report?",
+        "answer": "El reporte oficial de transitabilidad emitido por Vialidad Nacional y el Gobierno de Catamarca indica que la Ruta Nacional 60 está transitable con extrema precaución hasta el Complejo Fronterizo Las Grutas (km 1530), pero INTRANSITABLE desde Las Grutas hasta el límite internacional por acumulación de nieve y banquinas inestables. En territorio chileno, la Ruta 31-CH presenta sectores de calzada congelada y desvíos por maquinaria en la cuesta de Maricunga. // The official pass status report confirms that RN 60 is passable with caution up to Complejo Las Grutas (km 1530) but impassable between Las Grutas and the border summit due to snowdrifts. On the Chilean side, Route 31-CH has ice patches and active maintenance equipment."
+      },
+      {
+        "question": "¿Cuándo abre el Paso San Francisco y cuál es la fecha de apertura? / When does Paso San Francisco open and what is the opening date?",
+        "answer": "La fecha de reapertura completa para la temporada estival 2026-2027 está programada hacia principios de noviembre de 2026, sujeta a la finalización de los trabajos de conservación vial y condiciones meteorológicas estables. Durante los períodos de transición, las autoridades binacionales suelen habilitar cruces parciales semanales (por ejemplo, días específicos con convoy escoltado). Consulte los comunicados diarios oficiales antes de iniciar el viaje. // When does Paso San Francisco open? The full summer season reopening is targeted for early November 2026, contingent on weather stability and the completion of highway clearance. During transitional shoulder periods, partial weekly transit windows may be scheduled."
+      },
+      {
+        "question": "¿Por qué está cerrado el Paso San Francisco en invierno y primavera? / Why is Paso San Francisco closed during winter and spring?",
+        "answer": "A 4.726 metros de altitud, el Paso San Francisco se ve afectado por severas tormentas invernales de la alta Puna andina con temperaturas de -20 °C a -30 °C, intensos temporales de viento blanco (whiteout) con ráfagas superiores a 130 km/h y formación de placas de hielo negro que hacen inviable el tránsito seguro de vehículos particulares sin asistencia mecánica pesada. // The pass closes periodically during winter and early spring due to extreme subzero temperatures (-25°C to -30°C), blinding whiteout windstorms (viento blanco) with gusts exceeding 130 km/h, and dangerous black ice."
+      },
+      {
+        "question": "¿Existe cámara en vivo o webcam en la cumbre del Paso San Francisco? / Is there a Paso San Francisco live webcam or summit camera?",
+        "answer": "No existe una cámara web en vivo pública continua en la cumbre del Paso San Francisco (4.726 m). Las condiciones climáticas extremas (-30 °C, vientos huracanados), la ausencia de tendido eléctrico en 200 km y la falta de conectividad de fibra óptica impiden la transmisión de video por internet en tiempo real. Los sistemas de cámaras en los complejos Las Grutas y Maricunga son de circuito cerrado para control fronterizo y militar de Gendarmería Nacional y Carabineros. // No public live streaming summit camera is operational at 4,726 m due to extreme subzero temperatures, hurricane-force winds, lack of power grid, and no commercial fiber telecom. Check daily official bulletins for verified visual status."
+      },
+      {
+        "question": "¿Cuáles son los horarios de atención y complejos aduaneros de Las Grutas y Maricunga? / What are the operating hours for Las Grutas and Maricunga border complexes?",
+        "answer": "Cuando el paso está habilitado, el horario habitual de atención en el Complejo Fronterizo Las Grutas (lado argentino, km 1530 de RN 60, altitud 4.020 m) y en el Complejo Fronterizo Maricunga (lado chileno, altitud 3.780 m) es de 08:30 a 17:00 / 18:00 horas, permitiéndose la salida del último vehículo hacia la cumbre hasta las 15:30 horas por seguridad en alta montaña. // When open, operating hours at Complejo Las Grutas (Argentina, 4,020 m) and Complejo Maricunga (Chile, 3,780 m) are typically 08:30 to 17:00 / 18:00, with last vehicle dispatch allowed up to 15:30."
+      },
+      {
+        "question": "¿Qué requisitos de vehículos y equipamiento se exigen para cruzar el Paso San Francisco? / What vehicle requirements and precautions are required for Paso San Francisco?",
+        "answer": "Es obligatorio portar cadenas para nieve en el vehículo, anticongelante adecuado para -30 °C, rueda de auxilio en óptimas condiciones, combustible suficiente para al menos 400 km (no hay estaciones de servicio entre Fiambalá y Copiapó), ropa térmica de alta montaña, alimentos de emergencia y agua. Se recomienda circular en vehículos 4x4 o de despeje alto y consultar previamente sobre el mal de altura (apunamiento o soroche). // Drivers must carry tire chains, -30°C antifreeze, a full-size spare tire, fuel reserves for at least 400 km (no service stations between Fiambalá and Copiapó), thermal clothing, emergency food/water, and high-clearance or 4WD vehicles."
+      },
+      {
+        "question": "¿Qué atractivos turísticos se encuentran a lo largo del Paso San Francisco? / What scenic attractions are located along the Paso San Francisco route?",
+        "answer": "El Paso San Francisco recorre la famosa 'Ruta de los Seis Miles', rodeada por los volcanes más altos del planeta: Nevado Ojos del Salado (6.893 m), Monte Pissis (6.795 m) y Volcán Incahuasi (6.638 m). Además, se visitan la Quebrada de las Angosturas, las Termas de Fiambalá, la sobrecogedora Laguna Verde (4.325 m) de aguas turquesas y el Parque Nacional Nevado Tres Cruces con la Laguna Santa Rosa y sus flamencos andinos. // The route traverses the 'Ruta de los Seis Miles' flanked by the planet's highest volcanoes: Ojos del Salado, Monte Pissis, and Incahuasi. Highlights also include Quebrada de las Angosturas, Fiambalá hot springs, turquoise hypersaline Laguna Verde (4,325 m), and Nevado Tres Cruces National Park."
+      }
+    ],
+    "searchKeywords": [
+      "Paso San Francisco opening date",
+      "Paso San Francisco is open",
+      "Paso San Francisco road conditions",
+      "Paso San Francisco road status",
+      "Paso San Francisco pass status report",
+      "when does Paso San Francisco open",
+      "Paso San Francisco closed",
+      "Paso San Francisco is closed",
+      "Paso San Francisco is it open today",
+      "is Paso San Francisco closed today",
+      "Paso San Francisco webcam",
+      "Paso San Francisco live webcam",
+      "Paso San Francisco cameras",
+      "Paso San Francisco summit camera",
+      "Paso San Francisco estado de la ruta",
+      "Paso San Francisco estado del paso hoy",
+      "Paso de San Francisco está abierto hoy",
+      "Paso San Francisco cerrado hoy",
+      "Paso San Francisco cámaras en vivo",
+      "fecha de apertura Paso San Francisco 2026",
+      "Paso Internacional San Francisco Catamarca Atacama",
+      "Ruta Nacional 60 Catamarca estado hoy",
+      "Ruta 31-CH Atacama transitabilidad",
+      "Complejo Fronterizo Las Grutas horarios",
+      "Complejo Maricunga paso san francisco",
+      "Vialidad Nacional Catamarca Paso San Francisco",
+      "Ruta de los Seis Miles Catamarca",
+      "Paso San Francisco Ojos del Salado Laguna Verde"
+    ],
+    "customSeo": {
+      "title": "Paso San Francisco Road Status & Webcams | LivePassWatch",
+      "description": "Live Paso San Francisco road status, opening date, road conditions & webcam updates on RN 60 / Ruta 31-CH. Verified daily with Catamarca and Chile."
+    },
+    "isPopular": true
   }
-];;
+];
 
 
 
@@ -19815,6 +20085,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Salzburg & Carinthia' || state === 'Salzburg & Kärnten' || passSlug === 'grossglockner-high-alpine-road' || passSlug === 'grossglockner') return 'salzburg-carinthia';
   if (state === 'Jujuy / Antofagasta' || passSlug === 'paso-jama') return 'jujuy-antofagasta';
   if (state === 'San Juan / Coquimbo' || passSlug === 'paso-agua-negra') return 'san-juan-coquimbo';
+  if (state === 'Catamarca / Atacama' || passSlug === 'paso-san-francisco') return 'catamarca-atacama';
   return cleanSlug(state);
 }
 
