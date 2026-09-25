@@ -19451,8 +19451,265 @@ export const passesData: MountainPass[] = [
       "Paso Jama tiempo clima"
     ],
     "isPopular": true
+  },
+  {
+    "id": "paso-agua-negra",
+    "slug": "paso-agua-negra",
+    "name": "Paso de Agua Negra",
+    "alternateNames": [
+      "Agua Negra Pass",
+      "Paso Agua Negra",
+      "Paso Internacional por Agua Negra",
+      "Paso Internacional Agua Negra",
+      "Complejo Fronterizo Las Flores - Juntas del Toro",
+      "Ruta Nacional 150 Agua Negra",
+      "Ruta CH-41 Agua Negra",
+      "Agua Negra Border Crossing",
+      "Paso de Agua Negra Argentina Chile"
+    ],
+    "country": "Argentina-Chile",
+    "countryCode": "ARG / CHL",
+    "continent": "South America",
+    "state": "San Juan / Coquimbo",
+    "highway": "RN 150 (Argentina) / CH-41 (Chile)",
+    "elevationFt": 15682,
+    "elevationM": 4780,
+    "coordinates": {
+      "lat": -30.3344,
+      "lng": -69.8322
+    },
+    "status": "CLOSED",
+    "statusDetail": "CERRADO POR TEMPORADA INVERNAL / ACUMULACIÓN DE NIEVE. Trabajos de despeje en curso por Vialidad Nacional San Juan (RN 150) y Vialidad Chile (Ruta 41-CH). Tránsito prohibido más allá de Guardia Vieja. Reapertura estival estimada diciembre 2026. / CLOSED FOR WINTER SEASON. Snow clearing operations underway. Passage prohibited beyond Guardia Vieja checkpoint. Reopening anticipated December 2026.",
+    "lastUpdated": "15 minutes ago",
+    "description": "Paso de Agua Negra (Agua Negra Pass) is an extreme high-altitude international mountain pass traversing the Andes at 4,780 m (15,682 ft) above sea level, connecting Argentina's San Juan Province (Ruta Nacional 150) with Chile's Coquimbo Region (Ruta CH-41) through the scenic Elqui Valley. Operating strictly as a seasonal summer crossing (typically December through April), the pass closes throughout winter and spring due to severe Andean snowdrifts, freezing conditions (-25°C), and avalanche activity. The Argentine border complex is situated at Las Flores with the Guardia Vieja control post, while Chilean processing operates at Juntas del Toro.",
+    "image": "/paso-agua-negra.jpg",
+    "weather": {
+      "tempF": 27,
+      "tempC": -3,
+      "condition": "Freezing High-Cordillera Alpine Cold & Snow Patches",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 85,
+      "depthIn": 33,
+      "condition": "Heavy winter snowpack, snowdrifts, and avalanche clearance operations active on RN 150 upper sectors"
+    },
+    "wind": {
+      "speedKmh": 42,
+      "speedMph": 26,
+      "direction": "WNW",
+      "description": "Strong High-Andean Ridge Winds (Viento Blanco Risk)"
+    },
+    "roadCondition": "CLOSED to the general public. Vialidad Nacional (Distrito 9 San Juan) and Dirección de Vialidad de Chile are carrying out snow and avalanche clearing operations on the upper unpaved sectors of RN 150 (El Arenal, Arroyo San Javier) and Ruta CH-41. Strict travel ban in effect beyond the Guardia Vieja police and customs checkpoint. In summer operating season, standard passenger vehicles and 4x4s can transit; high ground clearance recommended for the gravel/macadam section across the 4,780 m summit.",
+    "chainRequirement": "Mandatory carriage of snow chains is legally required for all operational and authorized service vehicles transiting above Las Flores / Guardia Vieja and Juntas del Toro. When open in summer, drivers must carry tire chains, antifreeze, and high-altitude emergency kits.",
+    "cameras": [],
+    "webcamNote": "No official public live webcam feed exists for the summit of Paso de Agua Negra. Neither Vialidad Nacional Argentina nor the Chilean Unidad de Pasos Fronterizos operates a public-facing streaming video camera at the 4,780 m (15,682 ft) summit due to extreme sub-zero weather (-25°C), lack of electrical grid, and absence of commercial high-bandwidth telecommunications infrastructure in the deserted high Andes cordillera. Internal closed-circuit cameras are restricted to Gendarmería Nacional and Carabineros at the border complexes. Daily official road clearance bulletins and status updates are issued directly by the Gobierno de San Juan (sanjuan.gob.ar), Vialidad Nacional Distrito San Juan, and Pasos Fronterizos Chile (pasosfronterizos.gov.cl). For direct inquiries, contact Complejo Las Flores or Guardia Vieja.",
+    "nearbyPasses": [
+      {
+        "id": "paso-los-libertadores",
+        "slug": "paso-los-libertadores",
+        "name": "Paso Los Libertadores",
+        "country": "Argentina-Chile",
+        "state": "Valparaíso / Mendoza",
+        "highway": "Ruta 60-CH / RN 7",
+        "status": "OPEN",
+        "elevationFt": 10499,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 320
+      },
+      {
+        "id": "paso-jama",
+        "slug": "paso-jama",
+        "name": "Paso de Jama",
+        "country": "Argentina-Chile",
+        "state": "Jujuy / Antofagasta",
+        "highway": "RN 52 / CH-27",
+        "status": "OPEN",
+        "elevationFt": 13780,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 820
+      }
+    ],
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "High-Altitude Sun & Frigid Winds",
+        "tempHighF": 32,
+        "tempLowF": 14,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Clear Cordillera Ridge",
+        "tempHighF": 34,
+        "tempLowF": 16,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Partly Cloudy Alpine Highs",
+        "tempHighF": 30,
+        "tempLowF": 12,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Gusty Andean Winds (Zonda Warning)",
+        "tempHighF": 28,
+        "tempLowF": 10,
+        "icon": "wind"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Sunny & Crisp High Desert",
+        "tempHighF": 35,
+        "tempLowF": 15,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Gobierno de San Juan — Estado Oficial Paso Agua Negra",
+        "type": "Official San Juan Provincial Government Border & Weather Bulletins",
+        "url": "https://sanjuan.gob.ar"
+      },
+      {
+        "name": "Argentina.gob.ar — Pasos Internacionales (Paso Agua Negra)",
+        "type": "Official Argentine Federal Government Border Status & Hours",
+        "url": "https://www.argentina.gob.ar/interior/pasosinternacionales"
+      },
+      {
+        "name": "Vialidad Nacional Argentina (DNV Distrito 9 San Juan) — RN 150",
+        "type": "Road Conditions, Snow Clearance & Maintenance Reports for RN 150",
+        "url": "https://www.vialidad.gob.ar/"
+      },
+      {
+        "name": "Pasos Fronterizos Chile (Complejo Juntas del Toro — Ruta 41-CH)",
+        "type": "Official Chilean Border Authority Status & Road Reports",
+        "url": "https://www.pasosfronterizos.gov.cl"
+      },
+      {
+        "name": "Dirección de Vialidad de Chile (MOP Región de Coquimbo)",
+        "type": "Chilean Ministry of Public Works High-Altitude Road Reports",
+        "url": "https://vialidad.mop.gob.cl/"
+      },
+      {
+        "name": "Servicio Meteorológico Nacional Argentina (SMN)",
+        "type": "High-Altitude Cordillera Weather Forecasts & Extreme Weather Alerts",
+        "url": "https://www.smn.gob.ar/"
+      }
+    ],
+    "quickFacts": {
+      "state": "San Juan, Argentina — Coquimbo, Chile",
+      "mountainRange": "Andes Mountains — Cordillera de Agua Negra",
+      "elevationSummary": "4,780 m / 15,682 ft above sea level — One of the highest international motorable passes in South America",
+      "connects": "Las Flores, Rodeo & San Juan (Argentina) with Vicuña & La Serena (Chile)",
+      "nearestTown": "Las Flores & Rodeo, San Juan (75 km east) • Vicuña, Elqui Valley (110 km west) • La Serena / Coquimbo (170 km west)",
+      "roadType": "Ruta Nacional 150 (Argentina) / Ruta CH-41 (Chile) — Paved lower sections with consolidated gravel/macadam at summit",
+      "bestTime": "December through April (Southern Hemisphere summer season — strictly closed in winter/spring)",
+      "highlight": "Extreme 4,780 m (15,682 ft) altitude pass linking the Cuyo wine valleys of San Juan with the Pacific beaches and astronomical observatories of Chile's Elqui Valley and La Serena."
+    },
+    "routeDetails": {
+      "distanceKm": 505,
+      "distanceMiles": 314,
+      "duration": "6 – 8 hours total drive (San Juan, Argentina to La Serena, Chile including customs and mountain driving)",
+      "origin": "San Juan Capital, Argentina (Elevation: 640 m)",
+      "destination": "La Serena / Coquimbo, Chile (Elevation: 25 m, Pacific Ocean)",
+      "waypoints": [
+        "San Juan Capital (640 m) — Provincial capital of San Juan, starting point via RN 40 & RN 150",
+        "Talacasto & Huaco (1,000 m) — Desert canyons and historic Cuyo geological routes",
+        "San José de Jáchal & Rodeo (1,600 m) — Windsurfing lake Cuesta del Viento and oasis valley",
+        "Las Flores (1,900 m) — Complejo Fronterizo Las Flores (Argentine Customs, Migrations, AFIP & Gendarmería Escuadrón 25)",
+        "Guardia Vieja Checkpoint (2,600 m) — Last police checkpoint before high altitude; entry prohibited when closed",
+        "El Arenal & Arroyo San Javier (3,800 m) — Avalanche clearing zone and high mountain stream crossings",
+        "Cumbre Paso de Agua Negra (4,780 m) — Argentine-Chilean international boundary & summit monument",
+        "Juntas del Toro (2,100 m) — Chilean Border Control Complex (Carabineros, PDI, SAG, Aduanas de Chile)",
+        "Vicuña (620 m) — Heart of the Elqui Valley, birthplace of Gabriela Mistral & pisco distilleries",
+        "La Serena & Coquimbo (25 m) — Pacific coastal port city and regional capital"
+      ]
+    },
+    "overview": {
+      "openedYear": 1965,
+      "lengthMiles": 314,
+      "lengthKm": 505,
+      "annualSnowfallIn": 140,
+      "annualSnowfallM": 3.5,
+      "summary": "Paso de Agua Negra (Agua Negra Pass) is one of the highest international motorable mountain passes in the world, crossing the crest of the Andes Mountains at an astounding 4,780 meters (15,682 feet) above sea level. It connects Argentina's Province of San Juan (via Ruta Nacional 150) with Chile's Región de Coquimbo (via Ruta 41-CH), uniting the agricultural and mining heartlands of central Argentina directly with Pacific shipping ports and tourist resorts in La Serena. Due to heavy Andean winter storms, avalanches, sub-zero temperatures, and high-altitude penitentes ice fields, the pass operates strictly as a summer seasonal crossing (typically opening from December to April). In late September 2026, the pass remains closed for the winter season while road crews from Vialidad Nacional and Dirección de Vialidad de Chile carry out snow clearance operations."
+    },
+    "faqs": [
+      {
+        "question": "¿Cuándo abre el Paso Agua Negra y cuál es la fecha de apertura? / When does Paso Agua Negra open and what is the opening date?",
+        "answer": "El Paso de Agua Negra opera estacionalmente y suele abrir en diciembre para la temporada de verano (diciembre a abril). Para la temporada 2026-2027, las autoridades de la Región de Coquimbo y la Provincia de San Juan proyectan la apertura hacia el 1 de diciembre de 2026, sujeta a la finalización de los trabajos de despeje de nieve y aludes en la Ruta Nacional 150 y Ruta 41-CH. // Paso Agua Negra opens seasonally for the Southern Hemisphere summer, typically opening in early December and operating through April. For the 2026-2027 season, authorities target December 1, 2026 for reopening, contingent on snow clearance and weather conditions."
+      },
+      {
+        "question": "¿Está abierto el Paso Agua Negra hoy o está cerrado? / Is Paso Agua Negra open today or is it closed?",
+        "answer": "Actualmente el Paso de Agua Negra se encuentra CERRADO por temporada invernal y acumulación de nieve. El tránsito para el público general, turistas y ciclistas está estrictamente prohibido más allá del puesto de control aduanero y de seguridad de Guardia Vieja (Argentina). // Paso Agua Negra is currently CLOSED for the winter/spring season due to heavy snow accumulation. Motorist transit is strictly prohibited beyond the Guardia Vieja customs post."
+      },
+      {
+        "question": "¿Por qué está cerrado el Paso Agua Negra por invierno? / Why is Paso Agua Negra closed for winter?",
+        "answer": "El paso cierra anualmente entre mayo y noviembre/diciembre debido a condiciones climáticas extremas en los 4.780 metros de altitud: nevadas intensas, temperaturas de hasta -25 °C, formación de penitentes de hielo y aludes en zonas críticas como El Arenal y Arroyo San Javier. Vialidad Nacional San Juan mantiene equipos viales de alta montaña trabajando en el despeje antes de la reapertura estival. // The pass closes each winter (May–November) due to severe Andean snowstorms, sub-zero temperatures (-25°C), ice penitentes, and avalanches at 4,780 m altitude."
+      },
+      {
+        "question": "¿Cuál es el estado de la ruta y reporte de tránsito en Paso Agua Negra? / What are the road conditions and pass status report for Paso Agua Negra?",
+        "answer": "La Ruta Nacional 150 (lado argentino) está pavimentada desde San Juan hasta el sector de Guardia Vieja; los tramos superiores hacia la cumbre y la bajada por la Ruta 41-CH en Chile consisten en ripio consolidado de alta montaña. Actualmente la vía se encuentra intransitable por nieve y trabajos de maquinaria pesada. En verano, está habilitada para todo tipo de vehículos, recomendándose precaución en curvas y tramos sin pavimentar. // RN 150 is paved on lower sections with consolidated gravel on the upper 4,780 m pass and Chilean Ruta 41-CH. Road is currently impassable due to winter snowpack."
+      },
+      {
+        "question": "¿Hay cámaras en vivo o webcam en el Paso Agua Negra? / Is there a live webcam or cameras for Paso Agua Negra?",
+        "answer": "No existe una cámara web en vivo pública oficial en la cumbre del Paso de Agua Negra. La altitud extrema (4.780 m), el clima hostil bajo cero y la falta de tendido eléctrico y fibra óptica comercial impiden transmisiones continuas de streaming público. El estado en tiempo real se verifica a través de los partes diarios del Gobierno de San Juan (sanjuan.gob.ar) y Pasos Fronterizos Chile (pasosfronterizos.gov.cl). // No public live webcam is operated at the 4,780 m summit due to extreme weather, lack of power grid, and no commercial fiber optics. Real-time conditions are published daily by San Juan and Chilean authorities."
+      },
+      {
+        "question": "¿Cuándo cierra el Paso Agua Negra por invierno? / When does Paso Agua Negra close for winter?",
+        "answer": "El Paso de Agua Negra normalmente cierra sus operaciones a finales de abril o principios de mayo, coincidiendo con las primeras tormentas de nieve del otoño andino. Permanece cerrado durante todo el invierno austral hasta la primavera avanzada (diciembre). // Paso Agua Negra typically closes in late April or early May with the onset of autumn snowstorms, staying closed until early December."
+      },
+      {
+        "question": "¿Dónde está ubicado el Paso Agua Negra en el mapa y qué altitud tiene? / Where is Paso Agua Negra on the map and what is its elevation?",
+        "answer": "El Paso de Agua Negra se sitúa en la cresta de la Cordillera de los Andes a 4.780 metros (15.682 pies) sobre el nivel del mar, en las coordenadas 30°20' S, 69°50' O. Une el Departamento Iglesia (San Juan, Argentina) con la Provincia de Elqui (Región de Coquimbo, Chile), constituyendo uno de los pasos carreteros internacionales más elevados del planeta. // Located at 30°20' S, 69°50' W at 4,780 m (15,682 ft) in the Andes, connecting San Juan Province (Argentina) with the Coquimbo Region (Chile)."
+      },
+      {
+        "question": "¿Qué documentos se exigen para cruzar el Paso Agua Negra? / What documents are required to cross Paso Agua Negra?",
+        "answer": "Documentación obligatoria: DNI o pasaporte vigente para todos los viajeros; cédula verde o azul del vehículo; seguro automotor internacional Mercosur (Seguro RCI); declaración jurada SAG (Servicio Agrícola y Ganadero de Chile); y autorización notarial legalizada si viajan menores sin ambos padres o si el vehículo no está a nombre del conductor. // Mandatory documents: Valid passport or Mercosur ID card; vehicle title and registration; international Mercosur insurance; Chilean SAG agricultural declaration form; and notarized parental authorization for minors traveling without both parents."
+      }
+    ],
+    "customSeo": {
+      "title": "Paso Agua Negra Road Status, Opening Date & Conditions",
+      "h1": "Paso Agua Negra Road Status, Conditions & Opening Updates (Argentina–Chile)",
+      "description": "Real-time Paso Agua Negra road status, opening date, winter closure updates, webcam availability, and weather for RN 150 Argentina & Ruta CH-41 Chile. Check live."
+    },
+    "searchKeywords": [
+      "Paso Agua Negra opening date",
+      "Paso Agua Negra is open",
+      "Paso Agua Negra road conditions",
+      "Paso Agua Negra road status",
+      "Paso Agua Negra pass status report",
+      "when does Paso Agua Negra open",
+      "Paso Agua Negra closed",
+      "Paso Agua Negra is closed",
+      "Paso Agua Negra is it open today",
+      "is Paso Agua Negra closed today",
+      "Paso Agua Negra webcam",
+      "Paso Agua Negra live webcam",
+      "Paso Agua Negra cameras",
+      "Paso Agua Negra summit camera",
+      "when does Paso Agua Negra close for winter",
+      "Paso Agua Negra map",
+      "is Paso Agua Negra open right now",
+      "Paso Agua Negra weather today",
+      "Paso Agua Negra snow",
+      "Paso Agua Negra estado actual",
+      "Paso Agua Negra abierto o cerrado",
+      "Paso de Agua Negra cuando abre 2026",
+      "Paso de Agua Negra estado de ruta RN 150",
+      "Paso de Agua Negra Ruta 41-CH",
+      "Paso Agua Negra habilitado hoy",
+      "Paso Agua Negra camaras en vivo",
+      "Paso Agua Negra Vialidad Nacional San Juan",
+      "Paso de Agua Negra nieve hielo temporal",
+      "Complejo Fronterizo Las Flores Juntas del Toro",
+      "Paso Internacional Agua Negra San Juan Coquimbo"
+    ],
+    "isPopular": true
   }
-];
+];;
 
 
 
@@ -19557,6 +19814,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Carinthia & Salzburg' || state === 'Kärnten & Salzburg' || passSlug === 'katschberg-pass') return 'carinthia-salzburg';
   if (state === 'Salzburg & Carinthia' || state === 'Salzburg & Kärnten' || passSlug === 'grossglockner-high-alpine-road' || passSlug === 'grossglockner') return 'salzburg-carinthia';
   if (state === 'Jujuy / Antofagasta' || passSlug === 'paso-jama') return 'jujuy-antofagasta';
+  if (state === 'San Juan / Coquimbo' || passSlug === 'paso-agua-negra') return 'san-juan-coquimbo';
   return cleanSlug(state);
 }
 

@@ -142,6 +142,8 @@
 /passes/italy/dolomiti-superski-pass /passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass 301
 /passes/paso-jama /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
 /passes/argentina-chile/paso-jama /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
+/passes/paso-agua-negra /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
+/passes/argentina-chile/paso-agua-negra /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
 /kyrgyzstan /passes/kyrgyzstan 301
 /kyrgyzstan-passes /passes/kyrgyzstan 301
 /kyrgyzstan-roads /passes/kyrgyzstan 301
@@ -154,6 +156,12 @@
 /ruta-52-jama /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
 /jama-border-crossing /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
 /paso-internacional-jama /passes/argentina-chile/jujuy-antofagasta/paso-jama 301
+/paso-agua-negra /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
+/agua-negra-pass /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
+/paso-de-agua-negra /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
+/ruta-150-agua-negra /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
+/agua-negra-border-crossing /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
+/paso-internacional-agua-negra /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

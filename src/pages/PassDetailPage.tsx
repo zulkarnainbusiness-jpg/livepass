@@ -1019,7 +1019,7 @@ export const PassDetailPage: React.FC = () => {
       setPageLang('it');
     } else if (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') {
       setPageLang('fr');
-    } else if (pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores') {
+    } else if (pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores' || pass.slug === 'paso-agua-negra') {
       setPageLang('es');
     }
   }, [pass.slug]);
@@ -3914,7 +3914,7 @@ export const PassDetailPage: React.FC = () => {
         )}
 
         {/* Bilingual Language Switcher for Paso Jama & Andean Passes */}
-        {(pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores') && (
+        {(pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores' || pass.slug === 'paso-agua-negra') && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
             alignItems: 'center',
@@ -3931,7 +3931,9 @@ export const PassDetailPage: React.FC = () => {
               <Globe size={18} color="#0284c7" />
               <span>
                 {pageLang === 'es'
-                  ? '🇦🇷🇨🇱 Contenido oficial en español (Jujuy, Argentina / Antofagasta, Chile)'
+                  ? pass.slug === 'paso-agua-negra'
+                    ? '🇦🇷🇨🇱 Contenido oficial en español (San Juan, Argentina / Coquimbo, Chile)'
+                    : '🇦🇷🇨🇱 Contenido oficial en español (Jujuy, Argentina / Antofagasta, Chile)'
                   : '🇬🇧 English Portal (Switch to Spanish anytime / Cambiar a español en cualquier momento)'}
               </span>
             </div>
@@ -5223,6 +5225,92 @@ export const PassDetailPage: React.FC = () => {
                     >
                       Check National Highway Authority for Traffic Updates <ExternalLink size={14} />
                     </a>
+                  </div>
+                </div>
+              </section>
+            ) : pass.slug === 'paso-agua-negra' ? (
+              <section id="cameras" className="detail-section-block">
+                <h2 className="section-title-heading">
+                  {pageLang === 'es' ? 'Cámaras y Webcam en Vivo de Paso Agua Negra' : 'Paso Agua Negra Live Webcam & Cameras'}
+                </h2>
+                <div className="camera-showcase-container lp-card" style={{ padding: '28px 24px', textAlign: 'center' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '14px' }}>
+                    <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(239, 68, 68, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <Camera size={32} color="#EF4444" />
+                    </div>
+                    <h3 style={{ fontSize: '1.25rem', margin: 0, fontWeight: '700', color: 'var(--text-dark)' }}>
+                      {pageLang === 'es' ? 'Disponibilidad de Cámara en Vivo — Paso de Agua Negra (4.780 m)' : 'Live Camera Availability & Status Report — Paso Agua Negra (15,682 ft)'}
+                    </h3>
+                    <div style={{ maxWidth: '720px', textAlign: 'left', background: 'var(--bg-subtle, #f8fafc)', padding: '18px 22px', borderRadius: '10px', border: '1px solid var(--border-color, #e2e8f0)', fontSize: '0.925rem', color: 'var(--text-muted, #475569)', lineHeight: '1.65' }}>
+                      <p style={{ margin: '0 0 10px 0', fontWeight: '700', color: 'var(--text-main, #0f172a)' }}>
+                        {pageLang === 'es' ? '¿Por qué no hay cámara web en vivo para el Paso Agua Negra?' : 'Why is there no official live webcam stream for Paso Agua Negra?'}
+                      </p>
+                      <p style={{ margin: '0 0 10px 0' }}>
+                        {pageLang === 'es'
+                          ? 'Ni Vialidad Nacional Argentina (Distrito San Juan) ni la Unidad de Pasos Fronterizos de Chile operan cámaras de transmisión pública en tiempo real en la cumbre del Paso de Agua Negra. Las razones técnicas y geográficas son las siguientes:'
+                          : 'Neither Vialidad Nacional Argentina (San Juan District) nor the Chilean Pasos Fronterizos authority operates a public streaming camera at the summit of Paso de Agua Negra. The key technical and environmental reasons include:'}
+                      </p>
+                      <ul style={{ margin: '0 0 12px 0', paddingLeft: '20px' }}>
+                        <li style={{ marginBottom: '6px' }}>
+                          <strong>{pageLang === 'es' ? 'Altitud Andina Extrema (4.780 m):' : 'Extreme Andean Altitude (4,780 m / 15,682 ft):'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'A casi 4.800 metros de altura en la alta cordillera de los Andes, las temperaturas descienden a -25 °C en invierno con vientos huracanados que imposibilitan el mantenimiento de equipos de videovigilancia pública continua.'
+                            : 'At nearly 4,800 meters elevation in the high Andes, winter temperatures plunge below -25°C with hurricane-force gale winds, rendering year-round public video streaming equipment inoperable without regular on-site maintenance.'}
+                        </li>
+                        <li style={{ marginBottom: '6px' }}>
+                          <strong>{pageLang === 'es' ? 'Ausencia de Red Eléctrica y Telecomunicaciones Comerciales:' : 'Absence of Commercial Power Grid & High-Speed Telecom:'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'El tramo de alta montaña carece de tendido eléctrico y conectividad de fibra óptica de banda ancha. La comunicación entre los puestos fronterizos (Guardia Vieja en Argentina y Juntas del Toro en Chile) se realiza mediante enlaces satelitales y radio VHF dedicados.'
+                            : 'The high-altitude mountain corridor has no electrical power lines or commercial fiber optic cables. Cross-border communication between checkpoints (Guardia Vieja in Argentina and Juntas del Toro in Chile) operates via dedicated satellite and VHF radio systems.'}
+                        </li>
+                        <li style={{ marginBottom: '6px' }}>
+                          <strong>{pageLang === 'es' ? 'Cierre Estacional Prolongado por Nieve y Aludes:' : 'Extended Seasonal Winter Closure (Snow & Avalanches):'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'El paso permanece totalmente cerrado al tránsito general desde mayo hasta noviembre/diciembre. Durante este período, Vialidad Nacional opera maquinaria pesada para el despeje de aludes en sectores críticos como El Arenal y Arroyo San Javier.'
+                            : 'The crossing remains completely closed to general motorists from May through November/December. During this timeframe, Vialidad Nacional operates heavy equipment clearing snow drifts and avalanches in high-altitude sectors.'}
+                        </li>
+                        <li>
+                          <strong>{pageLang === 'es' ? 'Reportes Oficiales de Tránsito en Vivo:' : 'Official Daily Road & Status Bulletins:'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'El Gobierno de San Juan y Vialidad Nacional emiten partes diarios de transitabilidad y estado de calzada en RN 150 y Ruta 41-CH.'
+                            : 'The Government of San Juan and Vialidad Nacional publish official daily transitability bulletins and road condition reports for RN 150 and Route 41-CH.'}
+                        </li>
+                      </ul>
+                      <p style={{ margin: 0, fontSize: '0.875rem' }}>
+                        📞 <em>{pageLang === 'es' ? 'Contactos Oficiales y Guardia:' : 'Official Contact & Emergency Dispatch:'}</em>{' '}
+                        {pageLang === 'es' ? 'Gendarmería Nacional Escuadrón 25 Jáchal / Guardia Vieja: ' : 'Gendarmería Nacional Escuadrón 25 Jáchal: '}
+                        <strong>+54 (264) 421-1450 / 0800-122-3783</strong>
+                      </p>
+                    </div>
+                    <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', marginTop: '6px' }}>
+                      <a
+                        href="https://sanjuan.gob.ar"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        {pageLang === 'es' ? 'Gobierno de San Juan — Estado Oficial' : 'Gobierno de San Juan — Official Status'} <ExternalLink size={14} />
+                      </a>
+                      <a
+                        href="https://www.pasosfronterizos.gov.cl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        {pageLang === 'es' ? 'Pasos Fronterizos Chile (Juntas del Toro)' : 'Chile Border Authority Status'} <ExternalLink size={14} />
+                      </a>
+                      <a
+                        href="https://www.vialidad.gob.ar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        Vialidad Nacional (RN 150) <ExternalLink size={14} />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </section>

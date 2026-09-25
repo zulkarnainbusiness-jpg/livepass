@@ -976,6 +976,22 @@ export const hierarchyData: HierarchyContinent[] = [
                 "image": "/paso-jama-argentina-chile.jpg"
               }
             ]
+          },
+          {
+            "id": "coquimbo",
+            "name": "Coquimbo",
+            "passes": [
+              {
+                "id": "paso-agua-negra",
+                "slug": "paso-agua-negra",
+                "name": "Paso de Agua Negra",
+                "highway": "Ruta 41-CH / RN 150",
+                "elevationFt": 15682,
+                "elevationM": 4780,
+                "status": "CLOSED",
+                "image": "/paso-agua-negra.jpg"
+              }
+            ]
           }
         ]
       },
@@ -1014,6 +1030,22 @@ export const hierarchyData: HierarchyContinent[] = [
                 "elevationM": 4200,
                 "status": "OPEN",
                 "image": "/paso-jama-argentina-chile.jpg"
+              }
+            ]
+          },
+          {
+            "id": "san-juan",
+            "name": "San Juan",
+            "passes": [
+              {
+                "id": "paso-agua-negra",
+                "slug": "paso-agua-negra",
+                "name": "Paso de Agua Negra",
+                "highway": "RN 150 / Ruta 41-CH",
+                "elevationFt": 15682,
+                "elevationM": 4780,
+                "status": "CLOSED",
+                "image": "/paso-agua-negra.jpg"
               }
             ]
           }

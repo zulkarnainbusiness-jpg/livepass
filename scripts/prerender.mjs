@@ -301,6 +301,33 @@ function generatePassSemanticHtml(pass, canonicalUrl) {
         </section>
         ` : ''}
 
+        ${pass.id === 'paso-agua-negra' ? `
+        <section class="pass-regional-section" style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #0284c7; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #0f172a;">🇦🇷🇨🇱 Información Oficial &amp; Estado de Ruta — Paso de Agua Negra (RN 150 / Ruta CH-41)</h2>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: #334155; margin-bottom: 1rem;">
+            Consulte en tiempo real el <strong>estado de apertura</strong>, fecha estimada de inauguración, <strong>reporte de tránsito y condiciones de ruta</strong> en la Ruta Nacional 150 (San Juan, Argentina) y Ruta 41-CH (Coquimbo, Chile), avisos de <strong>nieve y aludes</strong> en alta montaña, y verificación oficial por Vialidad Nacional y Pasos Fronterizos Chile.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 0.75rem;">
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">¿Está abierto o cerrado el Paso de Agua Negra hoy?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">Actualmente se encuentra CERRADO por temporada invernal y acumulación de nieve. El tránsito está prohibido para particulares más allá del puesto Guardia Vieja.</p>
+            </div>
+            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 0.75rem;">
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">¿Cuándo abre el Paso Agua Negra y cuál es la fecha estimada de apertura?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">Las autoridades proyectan la reapertura hacia principios de diciembre de 2026 para la temporada de verano 2026-2027, una vez concluidos los trabajos de despeje de nieve y aludes en RN 150 por Vialidad Nacional San Juan.</p>
+            </div>
+            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 0.75rem;">
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">¿Hay cámaras web o webcam en vivo en la cumbre a 4.780 m?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">No existen cámaras públicas en la cumbre debido a las condiciones climáticas extremas (-25 °C) y falta de fibra óptica. El estado se corrobora con los partes diarios de Vialidad Nacional y el Gobierno de San Juan.</p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 0.35rem;">¿Cuáles son los requisitos de viaje y documentación para cruzar a Chile?</h3>
+              <p style="font-size: 0.925rem; line-height: 1.6; color: #475569; margin: 0;">DNI/Pasaporte vigente, seguro Mercosur RCI del vehículo, cédula del automotor, declaración jurada SAG y portación obligatoria de cadenas para nieve en sectores autorizados.</p>
+            </div>
+          </div>
+        </section>
+        ` : ''}
+
         <section style="background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
           <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a;">Official Highway Authority &amp; DOT Verification</h2>
           <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin: 0 0 0.75rem 0;">
@@ -821,7 +848,13 @@ passesData.forEach(pass => {
   { from: '/paso-de-jama', to: '/passes/argentina-chile/jujuy-antofagasta/paso-jama' },
   { from: '/ruta-52-jama', to: '/passes/argentina-chile/jujuy-antofagasta/paso-jama' },
   { from: '/jama-border-crossing', to: '/passes/argentina-chile/jujuy-antofagasta/paso-jama' },
-  { from: '/paso-internacional-jama', to: '/passes/argentina-chile/jujuy-antofagasta/paso-jama' }
+  { from: '/paso-internacional-jama', to: '/passes/argentina-chile/jujuy-antofagasta/paso-jama' },
+  { from: '/paso-agua-negra', to: '/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra' },
+  { from: '/agua-negra-pass', to: '/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra' },
+  { from: '/paso-de-agua-negra', to: '/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra' },
+  { from: '/ruta-150-agua-negra', to: '/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra' },
+  { from: '/agua-negra-border-crossing', to: '/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra' },
+  { from: '/paso-internacional-agua-negra', to: '/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra' }
 ].forEach(r => {
   redirectRules.push(r);
   const redirectHtml = `<!DOCTYPE html>

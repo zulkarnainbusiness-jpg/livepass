@@ -1001,4 +1001,49 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     crossLinkUrl: '/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores',
     crossLinkText: 'Compare northern Andean high-desert transit through Jama with the central crossing at'
   },
+  'paso-agua-negra': {
+    "nearestTowns": [
+      {
+        "name": "Las Flores, San Juan (Argentina)",
+        "distance": "75 km (47 miles)",
+        "direction": "East via RN 150 (Complejo Fronterizo Las Flores, Customs, Gendarmería Escuadrón 25, fuel & services)"
+      },
+      {
+        "name": "Rodeo & Iglesia, San Juan (Argentina)",
+        "distance": "90 km (56 miles)",
+        "direction": "East via RN 150 (Cuesta del Viento windsurfing reservoir, hotels, mechanical assistance)"
+      },
+      {
+        "name": "San José de Jáchal (Argentina)",
+        "distance": "135 km (84 miles)",
+        "direction": "East via RN 150 (Regional hospital, banking, supply hub)"
+      },
+      {
+        "name": "San Juan Capital (Argentina)",
+        "distance": "295 km (183 miles)",
+        "direction": "Southeast via RN 150 & RN 40 (Provincial capital, Domingo Faustino Sarmiento Airport UAQ)"
+      },
+      {
+        "name": "Juntas del Toro (Chile)",
+        "distance": "80 km (50 miles)",
+        "direction": "West via Ruta 41-CH (Complejo Fronterizo Juntas del Toro, SAG quarantine inspection, Carabineros)"
+      },
+      {
+        "name": "Vicuña, Valle del Elqui (Chile)",
+        "distance": "110 km (68 miles)",
+        "direction": "West via Ruta 41-CH (Pisco distilleries, Gabriela Mistral museum, Mamalluca astronomical observatory)"
+      },
+      {
+        "name": "La Serena & Coquimbo (Chile)",
+        "distance": "170 km (106 miles)",
+        "direction": "West via Ruta 41-CH (Pacific coastal beaches, seaport, La Florida Airport LSC)"
+      }
+    ],
+    "seasonalClosureWindow": "Closed for Winter & Spring (Seasonal Summer Crossing: Typically Opens Dec – Apr)",
+    "seasonalClosureDetail": "Paso de Agua Negra is a strictly seasonal summer crossing operating at 4,780 m (15,682 ft) above sea level in the high Andes. The pass closes annually from late April/May through November or early December due to intense snowfall, freezing temperatures (-25°C), high-velocity Andean winds (viento blanco), and avalanche accumulation. During the closure period, all civilian travel is prohibited past the Guardia Vieja control checkpoint in San Juan and Juntas del Toro in Chile. Road crews from Vialidad Nacional Distrito San Juan (RN 150) and Dirección de Vialidad de Chile (Ruta 41-CH) conduct heavy machine snow clearance operations each spring to prepare the corridor for summer reopening around December 1.",
+    "aboutPass": "Paso de Agua Negra (Agua Negra Pass, elevation 4,780 m / 15,682 ft) is one of the highest motorable international highway mountain passes on Earth, traversing the central Andean divide between the Province of San Juan, Argentina, and the Region of Coquimbo, Chile. Linking Argentine Ruta Nacional 150 with Chilean Ruta 41-CH, it provides a vital cross-cordillera connection between the Cuyo agricultural heartland and the Pacific port of Coquimbo and the Elqui Valley. The pass is renowned worldwide among adventure drivers for its breathtaking high-altitude moonscapes, vibrant mineral-rich mountain peaks, and natural penitentes (blade-like ice formations sculpted by sublimation under extreme Andean solar radiation). An ambitious binational megaproject, the Agua Negra Deep Tunnel (Túnel Binacional de Agua Negra), is planned to provide a low-altitude 14-kilometer year-round twin-tube tunnel beneath the pass, complementing the high-mountain summer highway.",
+    "crossLinkAnchor": "Paso de Jama (RN 52 / CH-27)",
+    "crossLinkUrl": "/passes/argentina-chile/jujuy-antofagasta/paso-jama",
+    "crossLinkText": "Compare central high-Andean transit through Agua Negra with the northern year-round paved corridor at"
+  },
 };
