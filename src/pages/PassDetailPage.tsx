@@ -992,7 +992,7 @@ export const PassDetailPage: React.FC = () => {
     if (targetSlug.toLowerCase().includes('galibier') || targetSlug.toLowerCase().includes('iseran') || targetSlug.toLowerCase().includes('bonette')) return 'fr';
     if (targetSlug.toLowerCase().includes('katschberg') || targetSlug.toLowerCase().includes('grossglockner')) return 'de';
     if (targetSlug.toLowerCase().includes('coquihalla')) return 'fr';
-    if (targetSlug.toLowerCase().includes('jama') || targetSlug.toLowerCase().includes('libertadores') || targetSlug.toLowerCase().includes('agua-negra') || targetSlug.toLowerCase().includes('san-francisco')) return 'es';
+    if (targetSlug.toLowerCase().includes('jama') || targetSlug.toLowerCase().includes('libertadores') || targetSlug.toLowerCase().includes('agua-negra') || targetSlug.toLowerCase().includes('san-francisco') || targetSlug.toLowerCase().includes('pehuenche')) return 'es';
     return 'en';
   });
 
@@ -1019,7 +1019,7 @@ export const PassDetailPage: React.FC = () => {
       setPageLang('it');
     } else if (pass.slug === 'col-du-galibier' || pass.slug === 'col-de-l-iseran' || pass.slug === 'col-de-la-bonette') {
       setPageLang('fr');
-    } else if (pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores' || pass.slug === 'paso-agua-negra' || pass.slug === 'paso-san-francisco') {
+    } else if (pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores' || pass.slug === 'paso-agua-negra' || pass.slug === 'paso-san-francisco' || pass.slug === 'paso-pehuenche') {
       setPageLang('es');
     }
   }, [pass.slug]);
@@ -3914,7 +3914,7 @@ export const PassDetailPage: React.FC = () => {
         )}
 
         {/* Bilingual Language Switcher for Paso Jama & Andean Passes */}
-        {(pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores' || pass.slug === 'paso-agua-negra' || pass.slug === 'paso-san-francisco') && (
+        {(pass.slug === 'paso-jama' || pass.slug === 'paso-los-libertadores' || pass.slug === 'paso-agua-negra' || pass.slug === 'paso-san-francisco' || pass.slug === 'paso-pehuenche') && (
           <div className="bilingual-toggle-wrap lp-card" style={{
             display: 'flex',
             alignItems: 'center',
@@ -4179,6 +4179,14 @@ export const PassDetailPage: React.FC = () => {
                             ? (pageLang === 'it'
                               ? "Il Colle del Gran San Bernardo (2.469 m / 8.100 ft) è un leggendario valico alpino che collega Martigny nel Cantone Vallese (Svizzera) con Saint-Rhémy-en-Bosses e la Valle d'Aosta (Italia) tramite la Route 21 / SS27. Famoso in tout le monde per il millenario Ospizio fondato nel 1049 da San Bernardo, i leggendari cani San Bernardo da soccorso e la storica traversata di Napoleone nel maggio 1800, la strada panoramica costeggia uno spettacolare lago glaciale di confine."
                               : "Great St Bernard Pass (2,469 m / 8,100 ft) is a legendary transalpine mountain pass connecting Martigny & Val d'Entremont in Valais (Switzerland) with Saint-Rhémy-en-Bosses & Aosta Valley (Italy) on Route 21 / SS27. Renowned for its millennium-old Hospice founded in 1049, iconic St. Bernard rescue dogs, and Napoleon's 1800 army crossing, the scenic road skirts an alpine border lake of extraordinary beauty.")
+                            : pass.slug === 'paso-san-francisco'
+                              ? (pageLang === 'es'
+                                ? "El Paso de San Francisco (4.726 m / 15.505 ft) es un imponente cruce fronterizo internacional andino que conecta la Provincia de Catamarca (Argentina) a través de la Ruta Nacional 60 con la Región de Atacama y la ciudad de Copiapó (Chile) mediante la Ruta 31-CH. Enclavado en la emblemática «Ruta de los Seis Miles» —la mayor concentración de volcanes activos y cumbres de más de 6.000 metros del planeta, como el Nevado Ojos del Salado, Monte Pissis e Incahuasi—, el paso constituye un corredor transcordillerano de alta montaña de impactante belleza paisajística entre lagunas turquesas y salares andinos."
+                                : "Paso de San Francisco (San Francisco Pass, 4,726 m / 15,505 ft) is a high-altitude Andean international mountain pass crossing the border between Argentina's Catamarca Province (via Ruta Nacional 60) and Chile's Atacama Region and Copiapó (via Ruta 31-CH). Traversing the legendary 'Ruta de los Seis Miles' amidst the highest cluster of active volcanoes on Earth—including Ojos del Salado, Monte Pissis, and Volcán San Francisco—the pass is an extraordinary high-desert trans-cordilleran corridor flanking turquoise hypersaline lagoons and vast Andean salars.")
+                            : pass.slug === 'paso-pehuenche'
+                              ? (pageLang === 'es'
+                                ? "El Paso de Pehuenche (2.553 m / 8.376 ft) es un moderno y panorámico cruce fronterizo internacional asfaltado en la cordillera de los Andes que conecta el Departamento Malargüe en la Provincia de Mendoza (Argentina) a través de la Ruta Nacional 145 con la Región del Maule y la ciudad de Talca (Chile) mediante la Ruta 115-CH. Bordeando la deslumbrante caldera volcánica de la Laguna del Maule y el cañón del Río Grande, el paso ofrece una estratégica alternativa de menor altitud frente a la congestión del Paso Cristo Redentor / Los Libertadores."
+                                : "Paso de Pehuenche (Pehuenche Pass, 2,553 m / 8,376 ft) is a modern, fully paved international mountain crossing traversing the Andes between Argentina's Mendoza Province (Malargüe via Ruta Nacional 145) and Chile's Maule Region and Talca (via Ruta 115-CH). Skirting the spectacular turquoise volcanic caldera of Laguna del Maule and the scenic Rio Grande canyon, the pass provides a vital lower-altitude trans-Andean alternative to Paso Los Libertadores.")
                             : pass.description}
             </p>
           </div>
@@ -5225,6 +5233,101 @@ export const PassDetailPage: React.FC = () => {
                     >
                       Check National Highway Authority for Traffic Updates <ExternalLink size={14} />
                     </a>
+                  </div>
+                </div>
+              </section>
+            ) : pass.slug === 'paso-pehuenche' ? (
+              <section id="cameras" className="detail-section-block">
+                <h2 className="section-title-heading">
+                  {pageLang === 'es' ? 'Cámaras y Webcam en Vivo de Paso Pehuenche' : 'Paso Pehuenche Live Webcam & Cameras'}
+                </h2>
+                <div className="camera-showcase-container lp-card" style={{ padding: '28px 24px', textAlign: 'center' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '14px' }}>
+                    <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(239, 68, 68, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <Camera size={32} color="#EF4444" />
+                    </div>
+                    <h3 style={{ fontSize: '1.25rem', margin: 0, fontWeight: '700', color: 'var(--text-dark)' }}>
+                      {pageLang === 'es' ? 'Disponibilidad de Cámara en Vivo — Paso de Pehuenche (2.553 m)' : 'Live Camera Availability & Status Report — Paso Pehuenche (8,376 ft)'}
+                    </h3>
+                    <div style={{ maxWidth: '750px', textAlign: 'left', background: 'var(--bg-subtle, #f8fafc)', padding: '20px 24px', borderRadius: '10px', border: '1px solid var(--border-color, #e2e8f0)', fontSize: '0.925rem', color: 'var(--text-muted, #475569)', lineHeight: '1.65' }}>
+                      <p style={{ margin: '0 0 10px 0', fontWeight: '700', color: 'var(--text-main, #0f172a)' }}>
+                        {pageLang === 'es' ? '¿Por qué no hay cámara web en vivo para el Paso Pehuenche?' : 'Why is there no official live webcam stream for Paso Pehuenche?'}
+                      </p>
+                      <p style={{ margin: '0 0 10px 0' }}>
+                        {pageLang === 'es'
+                          ? 'Ni Vialidad Nacional Argentina (Distrito 4 Mendoza) ni la Unidad de Pasos Fronterizos de Chile disponen de cámaras de transmisión pública continua en tiempo real en la cumbre del Paso Pehuenche (2.553 m). Las razones técnicas, climáticas e institucionales son las siguientes:'
+                          : 'Neither Vialidad Nacional Argentina (Mendoza District 4) nor the Chilean Pasos Fronterizos authority operates a continuous public video stream at the summit of Paso de Pehuenche (2,553 m / 8,376 ft). The key technical, environmental, and administrative reasons include:'}
+                      </p>
+                      <ul style={{ margin: '0 0 14px 0', paddingLeft: '20px' }}>
+                        <li style={{ marginBottom: '8px' }}>
+                          <strong>{pageLang === 'es' ? 'Condiciones Climáticas Invernales y Nieve Extrema:' : 'Severe Winter Snowstorms & High-Altitude Freezing:'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'Los temporales frontales provenientes del Océano Pacífico descargan intensas nevadas y bancos de hielo en la zona de Laguna del Maule y la cumbre, provocando acumulación de nieve de varios metros que inhabilita y escarcha los equipos ópticos exteriores.'
+                            : 'Frontal storms from the Pacific Ocean bring heavy snowfall, severe ice sheets, and blizzards around Laguna del Maule, burying outdoor optical housings under deep snowdrifts during winter and early spring.'}
+                        </li>
+                        <li style={{ marginBottom: '8px' }}>
+                          <strong>{pageLang === 'es' ? 'Monitoreo Volcánico Científico (Laguna del Maule):' : 'Volcanic Geological Monitoring (Laguna del Maule):'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'Las estaciones de captura visual activas en el complejo volcánico Laguna del Maule son gestionadas por el SEGEMAR-OAVV (Argentina) y Sernageomin (Chile) para investigación sismológica y geológica, no como cámaras viales de acceso público general.'
+                            : 'Camera installations near the Laguna del Maule caldera are scientific monitoring stations operated by SEGEMAR-OAVV (Argentina) and Sernageomin (Chile) for geological research, rather than public tourist traffic feeds.'}
+                        </li>
+                        <li style={{ marginBottom: '8px' }}>
+                          <strong>{pageLang === 'es' ? 'Protocolo de Seguridad Fronteriza (Las Loicas y Maule):' : 'Border Security & Customs Closed-Circuit Systems:'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'Los sistemas de videovigilancia en el Complejo Fronterizo Las Loicas (Gendarmería Nacional Escuadrón 29 Malargüe) y en el Complejo Pehuenche (Carabineros / PDI) pertenecen a redes internas de seguridad del Estado y no son de acceso abierto.'
+                            : 'CCTV surveillance at Complejo Fronterizo Las Loicas and Complejo Pehuenche are internal state security networks operated by Gendarmería Nacional and Carabineros de Chile, restricted from public internet broadcasting.'}
+                        </li>
+                        <li>
+                          <strong>{pageLang === 'es' ? 'Reportes Oficiales de Tránsito en Tiempo Real:' : 'Verified Daily Road Transitability Bulletins:'}</strong>{' '}
+                          {pageLang === 'es'
+                            ? 'Vialidad Nacional Mendoza, Defensa Civil y Pasos Fronterizos Chile publican partes diarios actualizados con el estado de calzada en RN 145 y Ruta 115-CH.'
+                            : 'Vialidad Nacional Mendoza and Chilean Border Authorities publish official daily road condition bulletins for RN 145 and Route 115-CH.'}
+                        </li>
+                      </ul>
+                      <p style={{ margin: 0, fontSize: '0.875rem' }}>
+                        📞 <em>{pageLang === 'es' ? 'Contactos Oficiales de Guardia:' : 'Official Dispatch & Checkpoint Contacts:'}</em>{' '}
+                        {pageLang === 'es' ? 'Gendarmería Nacional Escuadrón 29 Malargüe / Las Loicas: ' : 'Gendarmería Nacional Escuadrón 29 Malargüe: '}
+                        <strong>+54 (260) 447-1063 / 0800-555-5065</strong>
+                      </p>
+                    </div>
+                    <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', marginTop: '6px' }}>
+                      <a
+                        href="https://www.argentina.gob.ar/interior/pasosinternacionales/pehuenche"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        {pageLang === 'es' ? 'Argentina.gob.ar — Estado Oficial Pehuenche' : 'Argentina Federal Border Portal (Pehuenche)'} <ExternalLink size={14} />
+                      </a>
+                      <a
+                        href="https://www.pasosfronterizos.gov.cl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        {pageLang === 'es' ? 'Pasos Fronterizos Chile (Complejo Pehuenche)' : 'Chile Border Authority (Pehuenche)'} <ExternalLink size={14} />
+                      </a>
+                      <a
+                        href="https://www.vialidad.gob.ar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        Vialidad Nacional (RN 145) <ExternalLink size={14} />
+                      </a>
+                      <a
+                        href="https://vialidad.mop.gob.cl/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        Vialidad Maule (Ruta 115-CH) <ExternalLink size={14} />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </section>

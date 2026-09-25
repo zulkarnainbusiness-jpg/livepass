@@ -146,6 +146,8 @@
 /passes/argentina-chile/paso-agua-negra /passes/argentina-chile/san-juan-coquimbo/paso-agua-negra 301
 /passes/paso-san-francisco /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
 /passes/argentina-chile/paso-san-francisco /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
+/passes/paso-pehuenche /passes/argentina-chile/mendoza-maule/paso-pehuenche 301
+/passes/argentina-chile/paso-pehuenche /passes/argentina-chile/mendoza-maule/paso-pehuenche 301
 /kyrgyzstan /passes/kyrgyzstan 301
 /kyrgyzstan-passes /passes/kyrgyzstan 301
 /kyrgyzstan-roads /passes/kyrgyzstan 301
@@ -170,6 +172,12 @@
 /ruta-60-san-francisco /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
 /san-francisco-border-crossing /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
 /paso-internacional-san-francisco /passes/argentina-chile/catamarca-atacama/paso-san-francisco 301
+/paso-pehuenche /passes/argentina-chile/mendoza-maule/paso-pehuenche 301
+/pehuenche-pass /passes/argentina-chile/mendoza-maule/paso-pehuenche 301
+/paso-de-pehuenche /passes/argentina-chile/mendoza-maule/paso-pehuenche 301
+/ruta-145-pehuenche /passes/argentina-chile/mendoza-maule/paso-pehuenche 301
+/pehuenche-border-crossing /passes/argentina-chile/mendoza-maule/paso-pehuenche 301
+/paso-internacional-pehuenche /passes/argentina-chile/mendoza-maule/paso-pehuenche 301
 
 # SPA Fallback for Dynamic Routes
 /* /index.html 200

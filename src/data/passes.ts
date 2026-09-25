@@ -19978,8 +19978,275 @@ export const passesData: MountainPass[] = [
       "description": "Live Paso San Francisco road status, opening date, road conditions & webcam updates on RN 60 / Ruta 31-CH. Verified daily with Catamarca and Chile."
     },
     "isPopular": true
+  },
+  {
+    "id": "paso-pehuenche",
+    "slug": "paso-pehuenche",
+    "name": "Paso de Pehuenche",
+    "alternateNames": [
+      "Paso Pehuenche",
+      "Paso Internacional Pehuenche",
+      "Pehuenche Pass",
+      "Ruta Nacional 145 Paso Pehuenche",
+      "Ruta CH-115 Paso Pehuenche",
+      "Complejo Fronterizo Las Loicas - Maule",
+      "Paso Pehuenche Argentina Chile",
+      "Pehuenche Border Crossing"
+    ],
+    "country": "Argentina-Chile",
+    "countryCode": "ARG / CHL",
+    "continent": "South America",
+    "state": "Mendoza / Maule",
+    "highway": "RN 145 (Argentina) / Ruta 115-CH (Chile)",
+    "elevationFt": 8376,
+    "elevationM": 2553,
+    "coordinates": {
+      "lat": -35.9861,
+      "lng": -70.3956
+    },
+    "status": "CLOSED",
+    "statusDetail": "CERRADO PARA TODO TIPO DE VEHÍCULOS. Corte total en RN 145 (Argentina) y corte preventivo en Ruta 115-CH (Chile, km 134 sector Lo Aguirre) por temporal de nieve, viento blanco y acumulación de hielo en la alta cordillera. Personal de Vialidad Nacional Distrito 4 Mendoza y Vialidad MOP Maule realizan tareas de despeje. / CLOSED TO ALL VEHICLES. Total closure on RN 145 and preventive closure on Route 115-CH due to heavy mountain snow, whiteouts, and road ice. Snow clearance machinery active.",
+    "lastUpdated": "10 minutes ago",
+    "description": "Paso de Pehuenche (Pehuenche Pass) is a scenic, fully paved international mountain crossing traversing the Andes at an elevation of 2,553 meters (8,376 feet) above sea level, connecting Argentina's Mendoza Province (Malargüe Department via Ruta Nacional 145) with Chile's Maule Region and Talca (via Ruta 115-CH). Skirting the spectacular turquoise volcanic caldera of Laguna del Maule and the scenic Rio Grande canyon, the pass provides a vital lower-altitude trans-Andean alternative to Paso Los Libertadores. Customs and immigration are integrated at Complejo Fronterizo Las Loicas (Argentina) and Complejo Fronterizo Pehuenche (Chile).",
+    "image": "/paso-pehuenche.jpg",
+    "weather": {
+      "tempF": 28,
+      "tempC": -2,
+      "condition": "Alpine Freezing Cold & Cordillera Snow Squalls",
+      "icon": "cloud-snow"
+    },
+    "snowDepth": {
+      "depthCm": 65,
+      "depthIn": 26,
+      "condition": "Heavy snowpack, ice sheets, and drift accumulation across summit and Lo Aguirre / Las Loicas corridors"
+    },
+    "wind": {
+      "speedKmh": 52,
+      "speedMph": 32,
+      "direction": "WSW",
+      "description": "Gale-Force Andean Ridge Winds (Viento Blanco / Whiteout Warning)"
+    },
+    "roadCondition": "CLOSED to all vehicular traffic. Severe winter/early spring snowstorms and drifting snow have blocked highway corridors on both sides of the frontier. Vialidad Nacional (Distrito 4 Mendoza) rotary snowplows and motor graders are operating between Bardas Blancas, Las Loicas, and the international summit milestone on RN 145. In Chile, Dirección de Vialidad Región del Maule maintains a preventative transit roadblock at Lo Aguirre (km 134) while clearing rockslides and snowdrifts along Ruta 115-CH near Laguna del Maule. Strict transit ban enforced by Gendarmería Nacional and Carabineros.",
+    "chainRequirement": "Mandatory carriage and use of steel snow chains is legally required for all authorized emergency and maintenance vehicles transiting RN 145 above Bardas Blancas / Las Loicas and Ruta 115-CH above Armerillo / La Mina. Drivers must carry high-altitude antifreeze, emergency fuel reserves, thermal blankets, and tow straps.",
+    "cameras": [],
+    "webcamNote": "No official public live video webcam feed operates at the 2,553 m (8,376 ft) summit of Paso de Pehuenche. High-altitude subzero temperatures (-20°C), heavy winter snowdrifts, and lack of continuous commercial broadband infrastructure along the international divide prevent 24/7 public video streaming. Specialized volcanic monitoring cameras overlooking the adjacent Laguna del Maule caldera are operated by SEGEMAR-OAVV and Sernageomin exclusively for geological research. Internal CCTV cameras at Complejo Las Loicas and Complejo Pehuenche are restricted border security systems. Verified daily road status and transitability bulletins are published directly by Vialidad Nacional Mendoza, Pasos Fronterizos Chile, and Gendarmería Nacional Escuadrón 29 Malargüe.",
+    "nearbyPasses": [
+      {
+        "id": "paso-los-libertadores",
+        "slug": "paso-los-libertadores",
+        "name": "Paso Los Libertadores",
+        "country": "Argentina-Chile",
+        "state": "Valparaíso / Mendoza",
+        "highway": "Ruta 60-CH / RN 7",
+        "status": "OPEN",
+        "elevationFt": 10499,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 380
+      },
+      {
+        "id": "paso-agua-negra",
+        "slug": "paso-agua-negra",
+        "name": "Paso de Agua Negra",
+        "country": "Argentina-Chile",
+        "state": "San Juan / Coquimbo",
+        "highway": "RN 150 / Ruta 41-CH",
+        "status": "CLOSED",
+        "elevationFt": 15682,
+        "lastUpdated": "15 min ago",
+        "distanceKm": 620
+      },
+      {
+        "id": "paso-san-francisco",
+        "slug": "paso-san-francisco",
+        "name": "Paso de San Francisco",
+        "country": "Argentina-Chile",
+        "state": "Catamarca / Atacama",
+        "highway": "RN 60 / Ruta 31-CH",
+        "status": "CLOSED",
+        "elevationFt": 15505,
+        "lastUpdated": "10 min ago",
+        "distanceKm": 940
+      }
+    ],
+    "forecast": [
+      {
+        "day": "Today",
+        "condition": "Freezing Snow Squalls & High Winds",
+        "tempHighF": 30,
+        "tempLowF": 16,
+        "icon": "cloud-snow"
+      },
+      {
+        "day": "Tomorrow",
+        "condition": "Cold Mountain Sun & Clearing Snowdrifts",
+        "tempHighF": 34,
+        "tempLowF": 18,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 3",
+        "condition": "Partly Cloudy Cordillera Skies",
+        "tempHighF": 37,
+        "tempLowF": 21,
+        "icon": "cloud-sun"
+      },
+      {
+        "day": "Day 4",
+        "condition": "Sunny Alpine Weather",
+        "tempHighF": 41,
+        "tempLowF": 24,
+        "icon": "sun"
+      },
+      {
+        "day": "Day 5",
+        "condition": "Mild High-Valley Conditions",
+        "tempHighF": 45,
+        "tempLowF": 26,
+        "icon": "sun"
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "Argentina.gob.ar — Pasos Internacionales (Paso Pehuenche)",
+        "type": "Official Argentine Federal Border Authority Status & Operating Hours",
+        "url": "https://www.argentina.gob.ar/interior/pasosinternacionales/pehuenche"
+      },
+      {
+        "name": "Dirección Nacional de Vialidad Argentina (Distrito 4 Mendoza) — RN 145",
+        "type": "Official Road Clearance & Transitability Reports for Ruta Nacional 145",
+        "url": "https://www.vialidad.gob.ar/"
+      },
+      {
+        "name": "Gendarmería Nacional Argentina (Escuadrón 29 Malargüe / Las Loicas)",
+        "type": "Border Security, Search & Rescue, and Escort Operations",
+        "url": "https://www.argentina.gob.ar/gendarmeria"
+      },
+      {
+        "name": "Pasos Fronterizos de Chile (Complejo Fronterizo Pehuenche — Ruta 115-CH)",
+        "type": "Official Chilean Border Authority Status & Road Reports",
+        "url": "https://www.pasosfronterizos.gov.cl"
+      },
+      {
+        "name": "Dirección de Vialidad de Chile (MOP Región del Maule)",
+        "type": "Chilean Ministry of Public Works High-Altitude Road Reports",
+        "url": "https://vialidad.mop.gob.cl/"
+      },
+      {
+        "name": "Servicio Meteorológico Nacional Argentina (SMN) — Alta Montaña Mendoza",
+        "type": "High-Altitude Cordillera Weather Forecasts & Extreme Weather Alerts",
+        "url": "https://www.smn.gob.ar/"
+      }
+    ],
+    "quickFacts": {
+      "state": "Mendoza, Argentina — Maule, Chile",
+      "mountainRange": "Andes Mountains — Cordillera de Pehuenche",
+      "elevationSummary": "2,553 m / 8,376 ft above sea level — Modern fully paved trans-Andean route bypassing Los Libertadores",
+      "connects": "Malargüe & Bardas Blancas (Mendoza, Argentina) with San Clemente, Talca & Maule Valley (Chile)",
+      "nearestTown": "Las Loicas, Mendoza (35 km east) • Malargüe, Mendoza (140 km east) • San Clemente & Talca, Chile (130 km west)",
+      "roadType": "Ruta Nacional 145 (Argentina, 100% paved) / Ruta 115-CH (Chile, 100% paved)",
+      "bestTime": "November through April (Southern Hemisphere late spring & summer; frequent winter closures due to heavy snow)",
+      "highlight": "Traverses beside the spectacular turquoise waters of Laguna del Maule volcanic caldera, surrounded by dramatic basalt towers and pristine glacial rivers."
+    },
+    "routeDetails": {
+      "distanceKm": 310,
+      "distanceMiles": 193,
+      "duration": "4.5 – 6 hours driving time (Malargüe to Talca via RN 145 & Ruta 115-CH, including border customs processing)",
+      "origin": "Malargüe, Mendoza Province, Argentina (Elevation: 1,416 m)",
+      "destination": "Talca, Región del Maule, Chile (Elevation: 102 m / Route 5 Pan-American Highway)",
+      "waypoints": [
+        "Malargüe (1,416 m) — Major travel hub, hotel lodging, fuel stations, and tourism departure point",
+        "Bardas Blancas (1,430 m) — Junction of Ruta Nacional 40 with Ruta Nacional 145 along Rio Grande",
+        "Las Loicas (1,480 m) — Complejo Fronterizo Pehuenche (Argentine customs, migrations, AFIP & Gendarmería Escuadrón 29)",
+        "Portezuelo de Las Choicas & Real de la Cruz (~2,000 m) — Scenic basalt canyon and mountain stream crossings",
+        "Cumbre Paso Pehuenche (2,553 m / 8,376 ft) — International boundary monument between Argentina and Chile",
+        "Laguna del Maule (2,160 m) — Enormous azure alpine volcanic lake and caldera viewpoint",
+        "Complejo Fronterizo Pehuenche (Chile) — Chilean border control facility (Carabineros, SAG, PDI, Aduanas)",
+        "Armerillo & Los Cipreses (700 m) — Verdant pre-cordilleran forested valleys and waterfalls",
+        "San Clemente (135 m) — Agricultural hub and gateway to the Maule wine country",
+        "Talca (102 m) — Regional capital of Maule, junction with Route 5 (Pan-American Highway)"
+      ]
+    },
+    "overview": {
+      "openedYear": 1961,
+      "lengthMiles": 193,
+      "lengthKm": 310,
+      "annualSnowfallIn": 180,
+      "annualSnowfallM": 4.5,
+      "summary": "Paso de Pehuenche (Pehuenche Pass) is one of the premier paved international mountain highway crossings between Argentina and Chile, ascending to 2,553 meters (8,376 feet) above sea level through the southern central Andes. Linking Argentine Ruta Nacional 145 (from Malargüe and Bardas Blancas) with Chilean Ruta 115-CH (heading down to San Clemente and Talca), the pass provides an essential low-altitude alternative to the heavily congested Paso Cristo Redentor / Los Libertadores corridor. Celebrated for its gentle gradient, smooth asphalt, and breathtaking passage along the turquoise caldera of Laguna del Maule, the route is favored by both commercial logistics and scenic road-trippers. However, intense Pacific weather systems frequently dump deep snowdrifts from May to October. In late September 2026, the pass remains closed to all vehicles while road maintenance crews from Vialidad Nacional Distrito 4 Mendoza and Vialidad MOP Maule clear snow and ice from the high pass."
+    },
+    "faqs": [
+      {
+        "question": "¿Está abierto el Paso Pehuenche hoy o está cerrado? / Is Paso Pehuenche open today or is it closed?",
+        "answer": "Actualmente el Paso Internacional Pehuenche se encuentra CERRADO para todo tipo de vehículos debido a la acumulación de nieve, formación de placas de hielo y fuertes ráfagas de viento blanco en la alta cordillera. Vialidad Nacional (RN 145 en Argentina) y Vialidad de Chile (Ruta 115-CH) realizan tareas de despeje. // Paso Pehuenche is currently CLOSED to all vehicle traffic due to heavy snow accumulation, black ice, and severe whiteout conditions across the high Andes divide. Maintenance crews from both countries are actively clearing the highway."
+      },
+      {
+        "question": "¿Cuál es el estado de la ruta y reporte de transitabilidad del Paso Pehuenche? / What are the current Paso Pehuenche road conditions and pass status report?",
+        "answer": "El reporte oficial de transitabilidad de Vialidad Nacional y Pasos Fronterizos indica que la Ruta Nacional 145 presenta corte total en el tramo Las Loicas - Límite Internacional por nieve en calzada. En el lado chileno, la Ruta 115-CH mantiene un corte preventivo en el sector de Lo Aguirre (km 134) por hielo y riesgo de desprendimientos. // The official pass status report confirms that RN 145 has a complete closure from Las Loicas to the international boundary due to heavy snow. In Chile, Route 115-CH is blocked at Lo Aguirre (km 134) with snow clearance underway."
+      },
+      {
+        "question": "¿Cuándo abre el Paso Pehuenche y cuál es la fecha de apertura? / When does Paso Pehuenche open and what is the opening date?",
+        "answer": "La fecha de reapertura completa para la temporada estival está estimada hacia fines de octubre o principios de noviembre de 2026, sujeta a la estabilidad meteorológica y la finalización de los trabajos de limpieza vial. Durante la primavera, las autoridades binacionales habilitan el paso por franjas horarias cuando las condiciones de seguridad lo permiten. // When does Paso Pehuenche open? Full seasonal reopening is targeted for late October to early November 2026, depending on snowpack clearance and weather stability. Early spring openings often feature daylight-only transit windows."
+      },
+      {
+        "question": "¿Cuándo cierra el Paso Pehuenche por invierno? / When does Paso Pehuenche close for winter?",
+        "answer": "El Paso Pehuenche suele cerrar por temporada invernal entre mayo y junio de cada año, cuando los primeros temporales del Pacífico provocan nevadas masivas de varios metros de altura en el sector de Laguna del Maule y la cumbre. Permanece cerrado o con aperturas intermitentes hasta mediados o fines de primavera. // When does Paso Pehuenche close for winter? The pass typically closes for winter between May and June, when major Pacific frontal storms dump several meters of snow around Laguna del Maule."
+      },
+      {
+        "question": "¿Existe cámara en vivo o webcam en la cumbre del Paso Pehuenche? / Is there a Paso Pehuenche live webcam or summit camera?",
+        "answer": "No existe una cámara web en vivo continua en la cumbre del Paso Pehuenche (2.553 m). Las condiciones subcero extremas (-20 °C), la acumulación de nieve y la falta de tendido de fibra óptica en la línea fronteriza impiden el streaming público continuo. Las cámaras de vigilancia geológica en Laguna del Maule pertenecen al SEGEMAR y Sernageomin para monitoreo volcánico técnico. Consulte los partes oficiales diarios para verificar el estado visual. // No public live webcam streams 24/7 from the summit due to subzero cold, snowdrifts, and telecommunication limits. Geological cameras at Laguna del Maule are operated by volcano monitoring agencies (SEGEMAR / Sernageomin)."
+      },
+      {
+        "question": "¿Cuáles son los horarios de atención y complejos aduaneros de Las Loicas y Maule? / What are the operating hours for Pehuenche border complexes?",
+        "answer": "Cuando el paso se encuentra habilitado, los horarios de atención habituales son de 09:00 a 18:00 / 19:00 horas (con salida del último vehículo hacia la cumbre a las 16:30 o 17:00 horas). El control argentino se realiza en el Complejo Fronterizo Las Loicas (km 42 de RN 145) y el chileno en el Complejo Pehuenche (cerca de Laguna del Maule). // When open, operating hours are generally 09:00 to 18:00 / 19:00 (with the last vehicle departure permitted until 16:30 or 17:00). Argentine processing is at Complejo Las Loicas and Chilean processing is at Complejo Pehuenche."
+      },
+      {
+        "question": "¿Qué requisitos de vehículos y documentación se exigen para cruzar el Paso Pehuenche? / What vehicle requirements and precautions are required for Paso Pehuenche?",
+        "answer": "Es obligatorio portar cadenas para nieve en el vehículo, DNI o pasaporte vigente, seguro internacional Mercosur para el auto, cédula verde/azul, y formulario SAG/Aduana. Se recomienda tanque de combustible lleno (no hay estaciones de servicio entre Bardas Blancas y San Clemente) y abrigo térmico. // Drivers must carry approved tire chains, valid passports/IDs, international vehicle insurance (Mercosur/Chile), and full fuel reserves (no service stations between Bardas Blancas and San Clemente)."
+      },
+      {
+        "question": "¿Qué atractivos turísticos se encuentran en la ruta del Paso Pehuenche? / What attractions are located along the Paso Pehuenche route?",
+        "answer": "La ruta destaca por la impresionante Laguna del Maule (un lago volcánico turquesa en una caldera activa), las formaciones rocosas de la Cuesta de los Cóndores, las cascadas del Río Maule, las Termas de Medano y las opciones de pesca deportiva y trekking en la alta cordillera. // Key attractions include the stunning turquoise Laguna del Maule crater lake, Cuesta de los Cóndores basalt cliffs, Maule River waterfalls, natural thermal hot springs, and alpine trout fishing."
+      }
+    ],
+    "searchKeywords": [
+      "Paso Pehuenche opening date",
+      "Paso Pehuenche is open",
+      "Paso Pehuenche road conditions",
+      "Paso Pehuenche road status",
+      "Paso Pehuenche pass status report",
+      "when does Paso Pehuenche open",
+      "Paso Pehuenche closed",
+      "Paso Pehuenche is closed",
+      "Paso Pehuenche is it open today",
+      "is Paso Pehuenche closed today",
+      "Paso Pehuenche webcam",
+      "Paso Pehuenche live webcam",
+      "Paso Pehuenche cameras",
+      "Paso Pehuenche summit camera",
+      "when does Paso Pehuenche close for winter",
+      "Paso Pehuenche map",
+      "is Paso Pehuenche open right now",
+      "Paso Pehuenche weather today",
+      "Paso Pehuenche snow",
+      "Paso Pehuenche estado de la ruta",
+      "Paso Pehuenche estado del paso hoy",
+      "Paso Pehuenche está abierto hoy",
+      "Paso Pehuenche cerrado hoy",
+      "Paso Pehuenche cámaras en vivo",
+      "fecha de apertura Paso Pehuenche 2026",
+      "Ruta Nacional 145 Mendoza estado",
+      "Ruta CH-115 Maule transitabilidad",
+      "Complejo Fronterizo Las Loicas horarios",
+      "Paso Internacional Pehuenche Malargüe Talca",
+      "Laguna del Maule volcán estado ruta"
+    ],
+    "customSeo": {
+      "title": "Paso Pehuenche Road Status & Webcams | LivePassWatch",
+      "description": "Live Paso Pehuenche road status, opening date, road conditions & webcam updates on RN 145 / Ruta 115-CH. Verified daily with Mendoza and Maule authorities."
+    },
+    "isPopular": true
   }
-];
+];;
 
 
 
@@ -20086,6 +20353,7 @@ export function getStateSlug(state?: string, passSlug?: string): string {
   if (state === 'Jujuy / Antofagasta' || passSlug === 'paso-jama') return 'jujuy-antofagasta';
   if (state === 'San Juan / Coquimbo' || passSlug === 'paso-agua-negra') return 'san-juan-coquimbo';
   if (state === 'Catamarca / Atacama' || passSlug === 'paso-san-francisco') return 'catamarca-atacama';
+  if (state === 'Mendoza / Maule' || passSlug === 'paso-pehuenche') return 'mendoza-maule';
   return cleanSlug(state);
 }
 

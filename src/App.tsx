@@ -443,6 +443,14 @@ export const App: React.FC = () => {
               <Route path="/san-francisco-border-crossing" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
               <Route path="/paso-internacional-san-francisco" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
 
+              {/* Paso de Pehuenche (Pehuenche Pass) — Argentina-Chile Alternate Routes */}
+              <Route path="/paso-pehuenche" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
+              <Route path="/pehuenche-pass" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
+              <Route path="/paso-de-pehuenche" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
+              <Route path="/ruta-145-pehuenche" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
+              <Route path="/pehuenche-border-crossing" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
+              <Route path="/paso-internacional-pehuenche" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
+
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />
               <Route path="/resources" element={<ResourcesPage />} />

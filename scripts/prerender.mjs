@@ -860,7 +860,13 @@ passesData.forEach(pass => {
   { from: '/paso-de-san-francisco', to: '/passes/argentina-chile/catamarca-atacama/paso-san-francisco' },
   { from: '/ruta-60-san-francisco', to: '/passes/argentina-chile/catamarca-atacama/paso-san-francisco' },
   { from: '/san-francisco-border-crossing', to: '/passes/argentina-chile/catamarca-atacama/paso-san-francisco' },
-  { from: '/paso-internacional-san-francisco', to: '/passes/argentina-chile/catamarca-atacama/paso-san-francisco' }
+  { from: '/paso-internacional-san-francisco', to: '/passes/argentina-chile/catamarca-atacama/paso-san-francisco' },
+  { from: '/paso-pehuenche', to: '/passes/argentina-chile/mendoza-maule/paso-pehuenche' },
+  { from: '/pehuenche-pass', to: '/passes/argentina-chile/mendoza-maule/paso-pehuenche' },
+  { from: '/paso-de-pehuenche', to: '/passes/argentina-chile/mendoza-maule/paso-pehuenche' },
+  { from: '/ruta-145-pehuenche', to: '/passes/argentina-chile/mendoza-maule/paso-pehuenche' },
+  { from: '/pehuenche-border-crossing', to: '/passes/argentina-chile/mendoza-maule/paso-pehuenche' },
+  { from: '/paso-internacional-pehuenche', to: '/passes/argentina-chile/mendoza-maule/paso-pehuenche' }
 ].forEach(r => {
   redirectRules.push(r);
   const redirectHtml = `<!DOCTYPE html>

@@ -1086,4 +1086,44 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     "crossLinkUrl": "/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra",
     "crossLinkText": "Compare high-Andean transit through Paso San Francisco with the neighboring summer crossing at"
   },
+  'paso-pehuenche': {
+    "nearestTowns": [
+      {
+        "name": "Las Loicas, Mendoza (Argentina)",
+        "distance": "35 km (22 miles)",
+        "direction": "East via RN 145 (Complejo Fronterizo Las Loicas, Gendarmería Escuadrón 29, basic groceries & emergency medical aid)"
+      },
+      {
+        "name": "Bardas Blancas, Mendoza (Argentina)",
+        "distance": "75 km (47 miles)",
+        "direction": "East via RN 145 (Junction with Ruta Nacional 40, Rio Grande bridge, roadside dining)"
+      },
+      {
+        "name": "Malargüe, Mendoza (Argentina)",
+        "distance": "140 km (87 miles)",
+        "direction": "Northeast via RN 145 & RN 40 (Departmental capital, full hospital, airport, hotels, gas stations, Pierre Auger Observatory)"
+      },
+      {
+        "name": "Complejo Fronterizo Pehuenche (Chile)",
+        "distance": "22 km (14 miles)",
+        "direction": "West via Ruta 115-CH (Chilean integrated customs, Carabineros, SAG quarantine, PDI, near Laguna del Maule)"
+      },
+      {
+        "name": "San Clemente, Región del Maule (Chile)",
+        "distance": "110 km (68 miles)",
+        "direction": "West via Ruta 115-CH (Gateway city to Maule valley, dining, mechanical assistance, fuel stations)"
+      },
+      {
+        "name": "Talca, Región del Maule (Chile)",
+        "distance": "130 km (81 miles)",
+        "direction": "West via Ruta 115-CH (Regional capital city, major hospitals, universities, connection to Pan-American Highway Route 5)"
+      }
+    ],
+    "seasonalClosureWindow": "Subject to Seasonal Winter Closures (Typically Open for Transit Nov – Apr; Weather Permitting in Spring)",
+    "seasonalClosureDetail": "At 2,553 m (8,376 ft) across the central Andes, Paso de Pehuenche experiences significant winter snowfall and freezing winds from Pacific weather fronts between May and October. Road maintenance crews from Vialidad Nacional Distrito 4 Mendoza (RN 145) and Dirección de Vialidad de Chile (Ruta 115-CH) operate rotary plows and salt spreaders to clear deep drifts, particularly in the Laguna del Maule and Lo Aguirre sectors, before authorizing bi-national transit.",
+    "aboutPass": "Paso de Pehuenche (Pehuenche Pass, elevation 2,553 m / 8,376 ft) is a modern, fully paved international trans-Andean mountain highway connecting the Province of Mendoza, Argentina (via Ruta Nacional 145) with the Region of Maule, Chile (via Ruta 115-CH). As one of the lowest and gentlest paved mountain passes across the central Andes, it serves as a vital strategic alternative to the heavily congested Paso Los Libertadores / Cristo Redentor. The pass is renowned for its magnificent scenic journey bordering Laguna del Maule—an extraordinary turquoise volcanic lake filling an active caldera—and traversing the rugged canyon of the Rio Grande. Integrated border processing facilities at Las Loicas (Argentina) and Complejo Pehuenche (Chile) ensure streamlined customs and immigration inspections.",
+    "crossLinkAnchor": "Paso Los Libertadores (Ruta 60-CH / RN 7)",
+    "crossLinkUrl": "/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores",
+    "crossLinkText": "Compare southern Mendoza transit through Paso Pehuenche with the central trans-Andean corridor at"
+  },
 };
