@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && tsx scripts/prerender.mjs",
-    "prerender": "vite build && tsx scripts/prerender.mjs",
+    "build": "tsc && vite build && npx -y tsx scripts/prerender.mjs",
+    "prerender": "vite build && npx -y tsx scripts/prerender.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
