@@ -74,7 +74,11 @@ export const PassesPage: React.FC = () => {
         const matchesState = pass.state.toLowerCase().includes(q);
         const matchesCountry = pass.country.toLowerCase().includes(q);
         const matchesHwy = pass.highway.toLowerCase().includes(q);
-        if (!matchesName && !matchesState && !matchesCountry && !matchesHwy) return false;
+        const matchesSlug = pass.slug.toLowerCase().includes(q);
+        const matchesAliases = pass.aliases?.some(a => a.toLowerCase().includes(q));
+        const matchesKeywords = pass.searchKeywords?.some(k => k.toLowerCase().includes(q));
+        const matchesAlternate = pass.alternateNames?.some(a => a.toLowerCase().includes(q));
+        if (!matchesName && !matchesState && !matchesCountry && !matchesHwy && !matchesSlug && !matchesAliases && !matchesKeywords && !matchesAlternate) return false;
       }
       if (selectedCountry !== 'All Countries' && pass.country !== selectedCountry) return false;
       if (selectedState !== 'All States/Provinces' && pass.state !== selectedState) return false;
@@ -88,7 +92,7 @@ export const PassesPage: React.FC = () => {
       if (sortBy === 'elevation-asc') return a.elevationFt - b.elevationFt;
       return 0;
     });
-  }, [searchQuery, selectedCountry, selectedState, selectedStatus, maxElevation, sortBy]);
+  }, [searchQuery, selectedCountry, selectedState, selectedStatus, maxElevation, sortBy, passes]);
 
   const totalPages = Math.ceil(filteredPasses.length / itemsPerPage) || 1;
   const paginatedPasses = filteredPasses.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
@@ -111,9 +115,9 @@ export const PassesPage: React.FC = () => {
   return (
     <div className="passes-page-container">
       <SEOHelper
-        title="Mountain Passes Directory & Status"
-        description="Comprehensive global directory of mountain passes with real-time status, snow conditions, elevations, and road camera feeds."
-        keywords="mountain passes directory, global mountain passes, pass status, alpine highway conditions, summit webcams, chain laws, snow depth"
+        title="Mountain Passes Directory & Road Conditions | LivePassWatch"
+        description="Comprehensive global directory of mountain passes with real-time road conditions, live summit webcams, Washington & Cascade pass reports, snow depths, and closures."
+        keywords="mountain pass, mountain passes directory, washington mountain pass conditions, cascade mountain pass conditions, french alpine pass status today, italy regional road closures mountain passes official, mountain pass road conditions, live webcams, pass closures, snow depth, LivePassWatch"
         canonicalUrl="https://www.livepasswatch.info/passes"
       />
 

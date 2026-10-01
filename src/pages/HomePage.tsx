@@ -44,7 +44,7 @@ export const HomePage: React.FC = () => {
       {
         "@type": "WebSite",
         "@id": "https://www.livepasswatch.info/#website",
-        "name": "LIVEPASSWATCH",
+        "name": "LivePassWatch",
         "url": "https://www.livepasswatch.info/",
         "description": "Global real-time mountain pass tracking, live webcams, snow depth, road conditions, and closures worldwide.",
         "potentialAction": {
@@ -63,6 +63,35 @@ export const HomePage: React.FC = () => {
         "url": "https://www.livepasswatch.info/",
         "logo": "https://www.livepasswatch.info/mountain-logo.svg",
         "sameAs": []
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Has it snowed in any mountain road passes yet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LivePassWatch monitors real-time snowfall, temperature, and automated weather stations across North America, the Alps, and the Himalayas. Check our live pass status cards and cameras to see active snow depths and early-season accumulations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the official mountain pass road closure update source on LivePassWatch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LivePassWatch syncs directly with verified state and national transportation departments including WSDOT (Washington), ODOT (Oregon), Caltrans (California), CDOT (Colorado), DriveBC (Canada), Swiss Astra / TCS (Switzerland), and the Border Roads Organisation (India)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can I view an interactive peak map today for mountain roads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Visit our Interactive Map page for a global peak map today with roads and mountain passes, elevation profiles, color-coded open/closed status, and live summit camera locations worldwide."
+            }
+          }
+        ]
       }
     ]
   };
@@ -72,7 +101,7 @@ export const HomePage: React.FC = () => {
       <SEOHelper
         title="Live Mountain Pass Status, Road Conditions & Webcams | LivePassWatch"
         description="Check real-time mountain pass status, live webcams, snow depth, road conditions, and closures worldwide. Know before you go with LivePassWatch."
-        keywords="mountain pass status, mountain pass road conditions, live webcams, pass closures, snow depth, highway chain laws, mountain pass weather, LivePassWatch"
+        keywords="mountain pass, mountain pass road conditions, snoqualmie pass conditions, stevens pass webcam, peak map today, has it snowed in any mountain road passes yet, mountain pass road closure update source, cascade mountain pass conditions, washington mountain pass conditions, live webcams, pass closures, snow depth, highway chain laws, mountain pass weather, LivePassWatch"
         canonicalUrl="https://www.livepasswatch.info/"
         jsonLd={jsonLdWebsite}
       />
@@ -199,7 +228,7 @@ export const HomePage: React.FC = () => {
           <Link to="/map" className="explorer-card lp-card lp-card-hover" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="explorer-card-content">
               <span className="explorer-tag">Interactive Tool</span>
-              <h3>Global Mountain Pass Map</h3>
+              <h3>Peak Map Today &amp; Global Road Map</h3>
               <p>Explore real-time pass markers, cluster overlays, and elevation profiles worldwide.</p>
               <span className="explorer-link">Open Live Map →</span>
             </div>
@@ -213,15 +242,50 @@ export const HomePage: React.FC = () => {
               <span className="explorer-link">View Resources →</span>
             </div>
           </Link>
+        </section>
 
-          <Link to="/passes/kyrgyzstan" className="explorer-card lp-card lp-card-hover" style={{ textDecoration: 'none', color: 'inherit' }}>
-            <div className="explorer-card-content">
-              <span className="explorer-tag">Central Asia Hub</span>
-              <h3>Kyrgyzstan Mountain Passes</h3>
-              <p>Live road conditions, winter closures, and travel guides for Too-Ashuu, Ala-Bel, and 18+ Tien Shan passes.</p>
-              <span className="explorer-link">Explore Kyrgyzstan Passes →</span>
+        {/* Mountain Pass Travel & Weather Insights */}
+        <section className="lp-card" style={{ padding: '2rem', marginBottom: '2.5rem', background: '#FFFFFF', borderRadius: '12px', border: '1px solid #E2E8F0' }}>
+          <div style={{ marginBottom: '1.25rem' }}>
+            <span style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: '#1d64f2' }}>
+              Travel Knowledge &amp; Live Reports
+            </span>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#0f172a', margin: '0.25rem 0 0.5rem 0' }}>
+              Mountain Pass Road Conditions &amp; Weather Insights
+            </h2>
+            <p style={{ color: '#475569', fontSize: '0.95rem', margin: 0 }}>
+              Answers to frequent seasonal travel questions across Cascade, Rocky, Alpine, and Himalayan highway routes.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginTop: '1.5rem' }}>
+            <div style={{ background: '#F8FAFC', padding: '1.25rem', borderRadius: '8px', border: '1px solid #E2E8F0' }}>
+              <h4 style={{ fontSize: '1rem', fontWeight: 700, color: '#1E293B', marginBottom: '0.5rem' }}>
+                Has it snowed in any mountain road passes yet?
+              </h4>
+              <p style={{ fontSize: '0.88rem', color: '#64748B', lineHeight: '1.5', margin: 0 }}>
+                LivePassWatch tracks early season snow flurries and winter storm accumulations at high elevations. Check our live snow depth data, summit temperature sensors, and webcams on major routes like Snoqualmie Pass, Stevens Pass, Donner Pass, and Furka Pass.
+              </p>
             </div>
-          </Link>
+
+            <div style={{ background: '#F8FAFC', padding: '1.25rem', borderRadius: '8px', border: '1px solid #E2E8F0' }}>
+              <h4 style={{ fontSize: '1rem', fontWeight: 700, color: '#1E293B', marginBottom: '0.5rem' }}>
+                Official Mountain Pass Road Closure Update Source
+              </h4>
+              <p style={{ fontSize: '0.88rem', color: '#64748B', lineHeight: '1.5', margin: 0 }}>
+                All road closures, avalanche mitigation reports, and traction advisories are sourced continuously from verified DOT authorities including WSDOT, ODOT, Caltrans, CDOT, DriveBC, Swiss Astra/TCS, and India’s Border Roads Organisation.
+              </p>
+            </div>
+
+            <div style={{ background: '#F8FAFC', padding: '1.25rem', borderRadius: '8px', border: '1px solid #E2E8F0' }}>
+              <h4 style={{ fontSize: '1rem', fontWeight: 700, color: '#1E293B', marginBottom: '0.5rem' }}>
+                Peak Map Today &amp; Roads with Mountain Passes
+              </h4>
+              <p style={{ fontSize: '0.88rem', color: '#64748B', lineHeight: '1.5', margin: 0 }}>
+                Looking for a live peak map today? Our global interactive map plots roads with mountain passes worldwide, displaying live weather icons, elevation gain, camera snapshots, and open/closed travel status at a glance.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Trust & Safety Features Bar */}

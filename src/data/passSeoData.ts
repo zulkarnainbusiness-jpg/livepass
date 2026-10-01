@@ -1126,4 +1126,104 @@ export const passSeoDetails: Record<string, PassSeoDetails> = {
     "crossLinkUrl": "/passes/argentina-chile/valparaiso-mendoza/paso-los-libertadores",
     "crossLinkText": "Compare southern Mendoza transit through Paso Pehuenche with the central trans-Andean corridor at"
   },
+  'guanella-pass': {
+  "nearestTowns": [
+    {
+      "name": "Georgetown, CO",
+      "distance": "11 miles (18 km)",
+      "direction": "North via Guanella Pass Rd"
+    },
+    {
+      "name": "Grant, CO",
+      "distance": "13 miles (21 km)",
+      "direction": "South via Guanella Pass Rd / US 285"
+    },
+    {
+      "name": "Denver, CO",
+      "distance": "55 miles (88 km)",
+      "direction": "East via I-70"
+    }
+  ],
+  "seasonalClosureWindow": "Late November through Late May (High Altitude Winter Closure)",
+  "seasonalClosureDetail": "Closes annually between Naylor Lake and Geneva Park due to heavy snowdrifts and avalanche control across the 11,670 ft crest. Plowed and reopened by Clear Creek and Park County road crews in late spring.",
+  "aboutPass": "Guanella Pass (often searched by motorists as Guatemala Pass Colorado) is a designated National Forest Scenic Byway ascending to 11,670 feet (3,557 m) in the Colorado Rockies. It links Georgetown on I-70 with Grant on US-285, offering sweeping views of Mount Bierstadt and Mount Blue Sky (Evans). During summer and early fall, the pass is celebrated for vibrant golden aspen groves and high alpine hiking.",
+  "crossLinkAnchor": "Berthoud Pass (US-40 Continental Divide)",
+  "crossLinkUrl": "/passes/united-states/colorado/berthoud-pass",
+  "crossLinkText": "Compare Front Range scenic byways with year-round Continental Divide crossings like"
+},
+  'garcia-pass': {
+  "nearestTowns": [
+    {
+      "name": "Riversdale, Western Cape",
+      "distance": "14 km (9 miles)",
+      "direction": "South via R323"
+    },
+    {
+      "name": "Ladismith, Western Cape",
+      "distance": "72 km (45 miles)",
+      "direction": "North via R323"
+    },
+    {
+      "name": "Mossel Bay, Western Cape",
+      "distance": "90 km (56 miles)",
+      "direction": "East via N2"
+    }
+  ],
+  "seasonalClosureWindow": "Open Year-Round (Subject to flash flooding or rockfalls during heavy coastal rains)",
+  "seasonalClosureDetail": "Paved provincial route maintained by Western Cape Government. Open year-round; caution advised for falling rock after winter storms.",
+  "aboutPass": "Garcia's Pass (Garcia Pass) is a historic pass carrying the R323 through the Langeberg mountains in the Western Cape of South Africa. Built between 1872 and 1877 by legendary engineer Thomas Bain, the route winds through dramatic sandstone gorges, connecting the coastal wheat and dairy belt of Riversdale with the semi-arid Klein Karoo.",
+  "crossLinkAnchor": "Sani Pass (Drakensberg Escarpment)",
+  "crossLinkUrl": "/passes/south-africa-lesotho/kwazulu-natal-mokhotlong/sani-pass",
+  "crossLinkText": "Explore other iconic southern African mountain crossings including the famous"
+},
+  'flint-creek-pass': {
+  "nearestTowns": [
+    {
+      "name": "Philipsburg, MT",
+      "distance": "14 miles (22 km)",
+      "direction": "North via MT-1"
+    },
+    {
+      "name": "Anaconda, MT",
+      "distance": "16 miles (26 km)",
+      "direction": "Southeast via MT-1"
+    },
+    {
+      "name": "Georgetown Lake, MT",
+      "distance": "2 miles (3 km)",
+      "direction": "Northwest via MT-1"
+    }
+  ],
+  "seasonalClosureWindow": "Open Year-Round (Subject to winter snow plowing by MDT)",
+  "seasonalClosureDetail": "Maintained 24/7 by Montana Department of Transportation. Frequent snow plowing, sanding, and de-icing along Georgetown Lake curves.",
+  "aboutPass": "Flint Creek Pass carries Montana Highway 1 (the Pintler Veterans Memorial Scenic Highway) through southwest Montana’s Pintler Range at an elevation of 6,400 feet (1,951 m). Connecting Anaconda and Philipsburg, it provides primary access to Georgetown Lake and Discovery Ski Area with picturesque alpine scenery and year-round recreation.",
+  "crossLinkAnchor": "Lolo Pass (US-12 Montana-Idaho)",
+  "crossLinkUrl": "/passes/united-states/montana/lolo-pass",
+  "crossLinkText": "Compare Montana scenic highway passes with Rocky Mountain crossings like"
+},
+  'gannaga-pass': {
+  "nearestTowns": [
+    {
+      "name": "Middelpos, Northern Cape",
+      "distance": "28 km (17 miles)",
+      "direction": "East via gravel road"
+    },
+    {
+      "name": "Calvinia, Northern Cape",
+      "distance": "110 km (68 miles)",
+      "direction": "Northeast via R355"
+    },
+    {
+      "name": "Ceres, Western Cape",
+      "distance": "180 km (112 miles)",
+      "direction": "South via R355"
+    }
+  ],
+  "seasonalClosureWindow": "Open Year-Round (Weather permitting; impassable to 2WD in wet conditions)",
+  "seasonalClosureDetail": "Unpaved gravel pass descending the Roggeveld Escarpment. High-clearance vehicle required; flash floods and loose rock can cause temporary closures.",
+  "aboutPass": "Gannaga Pass is a rugged, unpaved mountain pass traversing the dramatic Roggeveld Escarpment in the Northern Cape of South Africa, dropping into Tankwa Karoo National Park. Reaching an elevation of 1,410 meters (4,626 ft), the pass features steep single-lane gravel switchbacks, breathtaking arid desert vistas, and absolute wilderness seclusion.",
+  "crossLinkAnchor": "Sani Pass (Drakensberg Escarpment)",
+  "crossLinkUrl": "/passes/south-africa-lesotho/kwazulu-natal-mokhotlong/sani-pass",
+  "crossLinkText": "Compare South African wilderness 4x4 gravel passes with the"
+},
 };

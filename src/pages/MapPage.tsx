@@ -52,8 +52,9 @@ export const MapPage: React.FC = () => {
   return (
     <div className="map-page-container">
       <SEOHelper
-        title="Interactive Mountain Pass Map & Overview"
-        description="Explore live mountain pass status across North America, Europe, the Himalayas, Andes, and Southern Alps with real-time road conditions and webcam markers."
+        title="Peak Map Today & Mountain Pass Road Map | LivePassWatch"
+        description="Explore our interactive peak map today and global roads with mountain passes map. Real-time road status markers, elevations, live webcams, and weather."
+        keywords="peak map today, roads with mountain passes map, roads wth mountain passes map, mountain pass map, mountain road map, live pass map, global pass conditions map, peak conditions map, LivePassWatch"
         canonicalUrl="https://www.livepasswatch.info/map"
       />
 
@@ -62,11 +63,11 @@ export const MapPage: React.FC = () => {
         <div className="page-header-title-section">
           <div className="page-title-banner">
             <span className="title-dash" />
-            <h1>MAP & PASS OVERVIEW</h1>
+            <h1>PEAK MAP TODAY & PASS OVERVIEW</h1>
             <span className="title-dash" />
           </div>
           <p className="page-header-subtitle">
-            Explore mountain passes around the world. Use filters to find the information you need.
+            Explore roads with mountain passes map worldwide. View real-time open/closed status, elevation profiles, and summit webcams.
           </p>
         </div>
 

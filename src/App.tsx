@@ -12,7 +12,6 @@ const PassesPage = lazy(() => import('./pages/PassesPage').then(m => ({ default:
 const MapPage = lazy(() => import('./pages/MapPage').then(m => ({ default: m.MapPage })));
 const AlertsPage = lazy(() => import('./pages/AlertsPage').then(m => ({ default: m.AlertsPage })));
 const HierarchicalPage = lazy(() => import('./pages/HierarchicalPage').then(m => ({ default: m.HierarchicalPage })));
-const KyrgyzstanPassesPage = lazy(() => import('./pages/KyrgyzstanPassesPage').then(m => ({ default: m.KyrgyzstanPassesPage })));
 const PassDetailPage = lazy(() => import('./pages/PassDetailPage').then(m => ({ default: m.PassDetailPage })));
 const ResourcesPage = lazy(() => import('./pages/ResourcesPage').then(m => ({ default: m.ResourcesPage })));
 const SeoResearchPage = lazy(() => import('./pages/SeoResearchPage').then(m => ({ default: m.SeoResearchPage })));
@@ -68,9 +67,6 @@ const LegacyPassRedirect: React.FC = () => {
   const { slug, country } = useParams<{ slug?: string; country?: string }>();
   const clean = (slug || country || '').toLowerCase().trim();
 
-  if (clean === 'kyrgyzstan' || slug?.toLowerCase() === 'kyrgyzstan' || country?.toLowerCase() === 'kyrgyzstan') {
-    return <Navigate to="/passes/kyrgyzstan" replace />;
-  }
 
   if (!slug) return <NotFoundPage />;
   const targetPass = passesData.find(
@@ -259,11 +255,6 @@ export const App: React.FC = () => {
               <Route path="/alerts" element={<AlertsPage />} />
               <Route path="/hierarchical" element={<HierarchicalPage />} />
               
-              {/* Kyrgyzstan Country Hub Page */}
-              <Route path="/passes/kyrgyzstan" element={<KyrgyzstanPassesPage />} />
-              <Route path="/kyrgyzstan" element={<Navigate to="/passes/kyrgyzstan" replace />} />
-              <Route path="/kyrgyzstan-passes" element={<Navigate to="/passes/kyrgyzstan" replace />} />
-              <Route path="/kyrgyzstan-roads" element={<Navigate to="/passes/kyrgyzstan" replace />} />
               
               {/* Canonical 3-tier Pass URL */}
               <Route path="/passes/:country/:state/:slug" element={<PassDetailPage />} />
@@ -450,6 +441,14 @@ export const App: React.FC = () => {
               <Route path="/ruta-145-pehuenche" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
               <Route path="/pehuenche-border-crossing" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
               <Route path="/paso-internacional-pehuenche" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
+
+              {/* Keyword Aliases & Additional Mountain Passes */}
+              <Route path="/satus-pass" element={<Navigate to="/passes/united-states/washington/status-pass" replace />} />
+              <Route path="/guanella-pass" element={<Navigate to="/passes/united-states/colorado/guanella-pass" replace />} />
+              <Route path="/guatemala-pass" element={<Navigate to="/passes/united-states/colorado/guanella-pass" replace />} />
+              <Route path="/garcia-pass" element={<Navigate to="/passes/south-africa/western-cape/garcia-pass" replace />} />
+              <Route path="/flint-creek-pass" element={<Navigate to="/passes/united-states/montana/flint-creek-pass" replace />} />
+              <Route path="/gannaga-pass" element={<Navigate to="/passes/south-africa/northern-cape/gannaga-pass" replace />} />
 
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/seo-research" element={<SeoResearchPage />} />

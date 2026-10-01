@@ -59,6 +59,14 @@ export const ResourcesPage: React.FC = () => {
       a: '"Traction Tires Advised" means vehicles should have approved all-season (M+S) or 3-peak mountain snowflake tires. "Chains Required" is a legally binding state mandate requiring tire chains installed on drive tires (or AWD/4WD with approved snow tires, depending on the severity level).'
     },
     {
+      q: 'What is the official mountain pass road closure update source on LivePassWatch?',
+      a: 'LivePassWatch pulls official road closures, avalanche mitigation reports, and traction chain requirements directly from verified primary transportation agencies: WSDOT (Washington), ODOT (Oregon), Caltrans (California), CDOT (Colorado), DriveBC (Canada), Swiss Astra / TCS (Switzerland), ANAS (Italy), Bison Futé (France), Mobilitat (Andorra), GDDKiA (Poland), and the Border Roads Organisation (India).'
+    },
+    {
+      q: 'How can I check French, Italian, Andorra, or Poland mountain pass status and road closures today?',
+      a: 'For French alpine passes (Galibier, Iseran, Bonette, Agnel), official status is coordinated via Bison Futé and departmental road councils. For Italy, ANAS regional bulletins govern alpine passes (Stelvio, Dolomiti, Gavia). For Andorra, Mobilitat Andorra provides official road status for Port d\'Envalira. For Poland, GDDKiA manages Tatra and Carpathian mountain pass transit.'
+    },
+    {
       q: 'Can I view road conditions on a map for entire travel corridors?',
       a: 'Yes! Visit our Interactive Map page to see global clusters, individual pass markers with color-coded status badges, and elevation profiles across entire mountain ranges.'
     },
@@ -84,8 +92,9 @@ export const ResourcesPage: React.FC = () => {
   return (
     <div className="resources-page-container">
       <SEOHelper
-        title="Mountain Pass Travel Resources & Safety Guides"
-        description="Comprehensive mountain travel resources: winter driving guides, state chain laws, emergency contacts, pre-trip checklists, and pass FAQs."
+        title="Mountain Pass Road Closure Update Source & Travel Guides | LivePassWatch"
+        description="Official mountain pass road closure update source, winter chain laws, French & Italian alpine pass status, Andorra road reports, and safety checklists."
+        keywords="mountain pass road closure update source, french alpine pass status today, italy regional road closures mountain passes official, 2026 andorra mountain passes road status september official, poland mountain pass closed, réouverture de mountain pass, mountain pass road conditions, winter driving guides, state chain laws, LivePassWatch"
         canonicalUrl="https://www.livepasswatch.info/resources"
         jsonLd={jsonLdFaq}
       />

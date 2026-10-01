@@ -26,8 +26,9 @@ export const VerificationMethodologyPage: React.FC = () => {
   return (
     <div className="app-container" style={{ padding: '40px 20px', maxWidth: '1000px', margin: '0 auto' }}>
       <SEOHelper
-        title="Multi-Source Verification Methodology | LivePassWatch"
-        description="Explore the 3-Tier Multi-Source Verification Methodology used by LivePassWatch to validate real-time mountain pass status, road closures, and community reports."
+        title="Multi-Source Verification Methodology | Mountain Pass Road Closure Update Source"
+        description="Explore the 3-Tier Multi-Source Verification Methodology used by LivePassWatch as the official mountain pass road closure update source to validate road conditions."
+        keywords="mountain pass road closure update source, official DOT status verification, real-time mountain pass validation, livepasswatch, mountain pass road conditions, multi-source verification"
         canonicalUrl="https://www.livepasswatch.info/methodology"
       />
 
