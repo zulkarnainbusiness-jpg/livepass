@@ -936,161 +936,11 @@ const homepageJsonLd = {
 const staticPages = [
   {
     path: '/',
-    title: 'Mountain Pass Road Status & Conditions | LivePassWatch',
-    description: 'Check real-time mountain pass status, live webcams, snow depth, road conditions, and closures worldwide. Know before you go with LivePassWatch.',
+    title: 'Site Offline | LivePassWatch',
+    description: 'LivePassWatch is currently offline for scheduled maintenance.',
     canonicalUrl: `${DOMAIN}/`,
-    jsonLd: homepageJsonLd,
-    bodyContent: generateHomeSemanticHtml()
-  },
-  {
-    path: '/passes',
-    title: 'Mountain Pass Directory & Live Status | LivePassWatch',
-    description: 'Browse global mountain pass road conditions, live weather, webcams, and chain laws across the US, Swiss Alps, Himalayas, and worldwide.',
-    canonicalUrl: `${DOMAIN}/passes`,
-    bodyContent: `<main class="app-container" style="padding: 2.5rem 1rem; max-width: 1200px; margin: 0 auto;">
-      <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem; color: #0f172a;">Mountain Passes Directory &amp; Live Status</h1>
-      <p style="color: #64748b; margin-bottom: 2rem; font-size: 1.1rem;">Real-time road conditions, closures, and webcams for ${passesData.length} mountain passes worldwide.</p>
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem;">
-        ${passesData.map(p => `
-          <div style="border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem; background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-            <h2 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.35rem;">
-              <a href="${getPassUrl(p)}" style="color: #0f172a; text-decoration: none;">${escapeHtml(p.name)}</a>
-            </h2>
-            <p style="color: #64748b; font-size: 0.875rem; margin-bottom: 0.75rem;">📍 ${escapeHtml(p.state)}, ${escapeHtml(p.country)} • 🛣️ ${escapeHtml(p.highway)}</p>
-            <span style="display: inline-block; padding: 0.25rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; background: ${p.status === 'OPEN' ? '#16a34a' : p.status === 'CLOSED' ? '#dc2626' : '#d97706'}; color: white;">${escapeHtml(p.status)}</span>
-          </div>
-        `).join('')}
-      </div>
-    </main>`
-  },
-  {
-    path: '/map',
-    title: 'Live Mountain Pass Map & Status Pins | LivePassWatch',
-    description: 'Explore interactive global mountain pass maps with real-time open/closed status pins, weather alerts, and highway conditions.',
-    canonicalUrl: `${DOMAIN}/map`,
-    bodyContent: `<main class="app-container" style="padding: 2.5rem 1rem; max-width: 1200px; margin: 0 auto;">
-      <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem; color: #0f172a;">Interactive Mountain Pass Map &amp; Overview</h1>
-      <p style="color: #64748b; font-size: 1.1rem; line-height: 1.6;">
-        Explore live mountain pass status across North America, Europe, the Himalayas, Andes, and Southern Alps with interactive highway pins and road condition overlays.
-      </p>
-      <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/passes" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">Browse Passes Directory &rarr;</a>
-        <a href="/alerts" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">View Active Alerts &rarr;</a>
-      </div>
-    </main>`
-  },
-  {
-    path: '/alerts',
-    title: 'Mountain Pass Closures & Active Road Alerts | LivePassWatch',
-    description: 'Stay informed with real-time mountain pass road closures, severe winter weather warnings, chain requirements, and avalanche advisories.',
-    canonicalUrl: `${DOMAIN}/alerts`,
-    bodyContent: `<main class="app-container" style="padding: 2.5rem 1rem; max-width: 1200px; margin: 0 auto;">
-      <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem; color: #0f172a;">Mountain Pass Alerts, Closures &amp; Travel Advisories</h1>
-      <p style="color: #64748b; font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
-        Real-time mountain pass road closures, winter storm warnings, avalanche advisories, and emergency travel restrictions.
-      </p>
-      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/passes" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">View Mountain Passes &rarr;</a>
-        <a href="/resources" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">State Chain Laws &rarr;</a>
-      </div>
-    </main>`
-  },
-  {
-    path: '/resources',
-    title: 'Mountain Driving Resources & Chain Laws | LivePassWatch',
-    description: 'Essential mountain driving guides, state tire chain requirements, winter vehicle safety checklists, and official DOT road condition links.',
-    canonicalUrl: `${DOMAIN}/resources`,
-    bodyContent: `<main class="app-container" style="padding: 2.5rem 1rem; max-width: 1200px; margin: 0 auto;">
-      <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem; color: #0f172a;">Mountain Pass Travel Resources &amp; Safety Guides</h1>
-      <p style="color: #64748b; font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
-        Comprehensive mountain travel resources: winter driving guides, state tire chain laws, vehicle emergency checklists, and official DOT emergency links.
-      </p>
-      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/passes" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">View All Mountain Passes &rarr;</a>
-        <a href="/alerts" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">Check Active Alerts &rarr;</a>
-      </div>
-    </main>`
-  },
-  {
-    path: '/submit-report',
-    title: 'Submit Mountain Pass Road Report | LivePassWatch Community',
-    description: 'Share live mountain pass road conditions, snowpack observations, chain restrictions, and travel delays directly with the LivePassWatch research team.',
-    canonicalUrl: `${DOMAIN}/submit-report`,
-    bodyContent: `<main class="app-container" style="padding: 2.5rem 1rem; max-width: 850px; margin: 0 auto;">
-      <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a;">Submit a Mountain Pass Road Report</h1>
-      <p style="line-height: 1.7; color: #334155; margin-bottom: 1.5rem; font-size: 1.05rem;">
-        Help fellow travelers stay safe across alpine corridors. Share your first-hand observations, road conditions, chain restrictions, delays, or weather conditions directly with our editorial and verification team.
-      </p>
-      <p><a href="/methodology" style="color: #1d4ed8; font-weight: 600;">Learn about our Multi-Source Verification Methodology &rarr;</a></p>
-    </main>`
-  },
-  {
-    path: '/methodology',
-    title: 'Multi-Source Verification Methodology | LivePassWatch',
-    description: 'Explore the 3-Tier Multi-Source Verification Methodology used by LivePassWatch to validate real-time mountain pass status, road closures & reports.',
-    canonicalUrl: `${DOMAIN}/methodology`,
-    bodyContent: `<main class="app-container" style="padding: 2.5rem 1rem; max-width: 950px; margin: 0 auto;">
-      <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a;">Multi-Source Verification Methodology (MTVM)</h1>
-      <p style="line-height: 1.75; color: #334155; margin-bottom: 1.5rem; font-size: 1.05rem;">
-        How LivePassWatch ingests, cross-corroborates, and validates live mountain pass road conditions, hazard alerts, snowpack observations, and community-submitted reports through an empirical, 3-tier evidentiary triangulation framework.
-      </p>
-    </main>`
-  },
-  {
-    path: '/about',
-    title: 'About LivePassWatch - Meet the Founder, Our Mission & Team',
-    description: 'Meet founder Zulkarnain, learn the Himalayan story behind LivePassWatch, and discover our dedicated team tracking live mountain pass conditions.',
-    canonicalUrl: `${DOMAIN}/about`,
-    bodyContent: `<main class="app-container" style="padding: 2.5rem 1rem; max-width: 850px; margin: 0 auto;">
-      <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a;">About LIVEPASSWATCH</h1>
-      <p style="line-height: 1.75; color: #334155; margin-bottom: 1.5rem; font-size: 1.05rem;">
-        <strong>LIVEPASSWATCH (<a href="https://www.livepasswatch.info">www.livepasswatch.info</a>)</strong> is a real-time mountain pass tracking platform. Our mission is simple: <em>Know Before You Go</em>. We empower travelers, commercial freight operators, motorcyclists, and mountain commuters with verified, live road conditions across critical mountain passes globally.
-      </p>
-
-      <h2 style="font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem; color: #0f172a;">Meet the Founder</h2>
-      <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
-        Hi, I'm Zulkarnain. I was born and raised in the Himalayas, and I've spent years travelling across high mountain passes — for work, for family visits, and honestly just because I love the mountains.
-      </p>
-      <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
-        That experience is also where the frustration came from. More times than I can count, I'd set out for a pass with no real idea whether it was even open — no clear updates, no reliable source, just word of mouth from other drivers or a WhatsApp forward that turned out to be three days old. I've been stuck at closed passes, turned back halfway, and seen other travellers do the same. It's not just inconvenient — on some of these roads, it can genuinely be dangerous.
-      </p>
-      <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
-        That's the problem LivePassWatch is built to solve. I wanted a place where anyone heading into the mountains — a tourist, a biker, a truck driver, a local commuting between towns — could check a pass before leaving and actually trust what they saw.
-      </p>
-      <p style="font-style: italic; font-weight: 600; color: #0f172a; margin-top: 1rem; margin-bottom: 2rem;">
-        — Zulkarnain (zulkarnainbusiness@gmail.com)
-      </p>
-
-      <h2 style="font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem; color: #0f172a;">The Team Behind LivePassWatch</h2>
-      <p style="line-height: 1.75; color: #334155; margin-bottom: 1rem;">
-        We're a small team: five of us right now, three web developers and two dedicated researchers who spend their time tracking conditions, cross-checking reports, and keeping the information on the site current. We're not a big company — just people who care about getting this right, because we've felt what it's like when the information isn't there.
-      </p>
-      <p style="line-height: 1.75; color: #334155;">
-        If you spot outdated info on a pass, or you've got local knowledge that could help other travellers, reach out at <a href="mailto:zulkarnainbusiness@gmail.com" style="color: #1d4ed8;">zulkarnainbusiness@gmail.com</a>. This site works better with more eyes on the road.
-      </p>
-    </main>`
-  },
-  {
-    path: '/privacy',
-    title: 'Privacy Policy | LivePassWatch',
-    description: 'LivePassWatch privacy policy: how we handle user data, local storage preferences, and website analytics.',
-    canonicalUrl: `${DOMAIN}/privacy`,
     noIndex: true,
-    bodyContent: `<main class="app-container" style="padding: 2.5rem 1rem; max-width: 800px; margin: 0 auto;">
-      <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a;">Privacy Policy</h1>
-      <p style="line-height: 1.7; color: #334155;">At LivePassWatch, we respect your privacy. We do not sell your personal information. We use anonymous analytics solely to improve mountain driving safety tools.</p>
-    </main>`
-  },
-  {
-    path: '/terms',
-    title: 'Terms of Service | LivePassWatch',
-    description: 'Terms and conditions for using LivePassWatch mountain pass status and road condition tracking services.',
-    canonicalUrl: `${DOMAIN}/terms`,
-    noIndex: true,
-    bodyContent: `<main class="app-container" style="padding: 2.5rem 1rem; max-width: 800px; margin: 0 auto;">
-      <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a;">Terms &amp; Safety Disclaimer</h1>
-      <p style="line-height: 1.7; color: #334155;">Mountain weather and alpine road conditions can change unpredictably in minutes. Always verify official DOT advisories and carry appropriate emergency gear before mountain travel.</p>
-    </main>`
+    bodyContent: `<main style="min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #0b1120; color: #fff; text-align: center; font-family: sans-serif; padding: 2rem 1rem;"><div style="padding: 3rem 2rem; background: #1e293b; border-radius: 1.25rem; border: 1px solid rgba(255,255,255,0.1); max-width: 520px; width: 100%;"><div style="font-size: 2.5rem; margin-bottom: 1rem;">🏔️</div><h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.75rem;">Site Offline</h1><p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem;">LivePassWatch is currently offline for scheduled maintenance. All services and pass telemetry are currently unavailable.</p><span style="display: inline-block; padding: 0.4rem 0.85rem; border-radius: 9999px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: #64748b;">livepasswatch.info</span></div></main>`
   }
 ];
 
@@ -1111,16 +961,7 @@ console.log('\n🗺️  Regenerating sitemap.xml with canonical URLs...');
 
 const todayDate = new Date().toISOString().split('T')[0];
 
-const coreSitemapUrls = [
-  'https://www.livepasswatch.info/',
-  'https://www.livepasswatch.info/passes',
-  'https://www.livepasswatch.info/map',
-  'https://www.livepasswatch.info/alerts',
-  'https://www.livepasswatch.info/resources',
-  'https://www.livepasswatch.info/submit-report',
-  'https://www.livepasswatch.info/methodology',
-  'https://www.livepasswatch.info/about'
-];
+const coreSitemapUrls = [];
 
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

@@ -1,475 +1,75 @@
-import React, { useEffect, Suspense, lazy } from 'react';
-import { BrowserRouter, Routes, Route, useLocation, useParams, Navigate } from 'react-router-dom';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { HomePage } from './pages/HomePage';
-import { PassesProvider } from './context/PassesContext';
-import { passesData, getPassUrl, getCountrySlug, getStateSlug, cleanSlug } from './data/passes';
+import React from 'react';
 import './styles/index.css';
-
-// Lazy-loaded pages for fast initial page load & code-splitting
-const PassesPage = lazy(() => import('./pages/PassesPage').then(m => ({ default: m.PassesPage })));
-const MapPage = lazy(() => import('./pages/MapPage').then(m => ({ default: m.MapPage })));
-const AlertsPage = lazy(() => import('./pages/AlertsPage').then(m => ({ default: m.AlertsPage })));
-const HierarchicalPage = lazy(() => import('./pages/HierarchicalPage').then(m => ({ default: m.HierarchicalPage })));
-const PassDetailPage = lazy(() => import('./pages/PassDetailPage').then(m => ({ default: m.PassDetailPage })));
-const ResourcesPage = lazy(() => import('./pages/ResourcesPage').then(m => ({ default: m.ResourcesPage })));
-const SeoResearchPage = lazy(() => import('./pages/SeoResearchPage').then(m => ({ default: m.SeoResearchPage })));
-const SubmitReportPage = lazy(() => import('./pages/SubmitReportPage').then(m => ({ default: m.SubmitReportPage })));
-const VerificationMethodologyPage = lazy(() => import('./pages/VerificationMethodologyPage').then(m => ({ default: m.VerificationMethodologyPage })));
-const AdminDashboard = lazy(() => import('./pages/AdminDashboard').then(m => ({ default: m.AdminDashboard })));
-const AboutPage = lazy(() => import('./pages/StaticPages').then(m => ({ default: m.AboutPage })));
-const PrivacyPage = lazy(() => import('./pages/StaticPages').then(m => ({ default: m.PrivacyPage })));
-const TermsPage = lazy(() => import('./pages/StaticPages').then(m => ({ default: m.TermsPage })));
-const NotFoundPage = lazy(() => import('./pages/StaticPages').then(m => ({ default: m.NotFoundPage })));
-
-// Loading skeleton fallback
-const PageLoadingFallback: React.FC = () => (
-  <div style={{
-    minHeight: '60vh',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '3rem 1rem'
-  }}>
-    <div style={{
-      display: 'inline-flex',
-      alignItems: 'center',
-      gap: '0.75rem',
-      color: '#64748b',
-      fontSize: '0.95rem',
-      fontWeight: 500
-    }}>
-      <div style={{
-        width: '20px',
-        height: '20px',
-        border: '2px solid #e2e8f0',
-        borderTopColor: '#1d64f2',
-        borderRadius: '50%',
-        animation: 'spin 0.8s linear infinite'
-      }} />
-      <span>Loading...</span>
-    </div>
-  </div>
-);
-
-// Scroll to top on navigation
-const ScrollToTop: React.FC = () => {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return null;
-};
-
-// Client-side 301/permanent redirect for non-canonical pass URLs
-const LegacyPassRedirect: React.FC = () => {
-  const { slug, country } = useParams<{ slug?: string; country?: string }>();
-  const clean = (slug || country || '').toLowerCase().trim();
-
-
-  if (!slug) return <NotFoundPage />;
-  const targetPass = passesData.find(
-    p => p.slug.toLowerCase() === clean || 
-         p.id.toLowerCase() === clean || 
-         p.slug.toLowerCase() === `${clean}-pass` || 
-         p.id.toLowerCase() === `${clean}-pass` ||
-         (clean === 'galibier' && p.slug === 'col-du-galibier') ||
-         (clean === 'col-du-galibier' && p.slug === 'col-du-galibier') ||
-         (clean === 'great-st-bernard' && p.slug === 'great-st-bernard-pass') ||
-         (clean === 'grand-saint-bernard' && p.slug === 'great-st-bernard-pass') ||
-         (clean === 'col-du-grand-saint-bernard' && p.slug === 'great-st-bernard-pass') ||
-         (clean === 'gotthard' && p.slug === 'gotthard-pass') ||
-         (clean === 'gotthardpass' && p.slug === 'gotthard-pass') ||
-         (clean === 'passo-del-san-gottardo' && p.slug === 'gotthard-pass') ||
-         (clean === 'san-gottardo' && p.slug === 'gotthard-pass') ||
-         (clean === 'st-gotthard-pass' && p.slug === 'gotthard-pass') ||
-         (clean === 'simplon' && p.slug === 'simplon-pass') ||
-         (clean === 'simplonpass' && p.slug === 'simplon-pass') ||
-         (clean === 'passo-del-sempione' && p.slug === 'simplon-pass') ||
-         (clean === 'col-du-simplon' && p.slug === 'simplon-pass') ||
-         (clean === 'prislop' && p.slug === 'prislop-pass') ||
-         (clean === 'pasul-prislop' && p.slug === 'prislop-pass') ||
-         (clean === 'pasulprislop' && p.slug === 'prislop-pass') ||
-         (clean === 'vrsic' && p.slug === 'vrsic-pass') ||
-         (clean === 'vrsic-pass' && p.slug === 'vrsic-pass') ||
-         (clean === 'prelaz-vrsic' && p.slug === 'vrsic-pass') ||
-         (clean === 'prelazvrsic' && p.slug === 'vrsic-pass') ||
-         (clean === 'ruska-cesta' && p.slug === 'vrsic-pass') ||
-         (clean === 'bonette' && p.slug === 'col-de-la-bonette') ||
-         (clean === 'col-de-la-bonette' && p.slug === 'col-de-la-bonette') ||
-         (clean === 'coldelabonette' && p.slug === 'col-de-la-bonette') ||
-         (clean === 'cime-de-la-bonette' && p.slug === 'col-de-la-bonette') ||
-         (clean === 'cimedelabonette' && p.slug === 'col-de-la-bonette') ||
-         (clean === 'cime-bonette' && p.slug === 'col-de-la-bonette') ||
-         (clean === 'col-de-bonette' && p.slug === 'col-de-la-bonette') ||
-         (clean === 'la-bonette' && p.slug === 'col-de-la-bonette') ||
-         (clean === 'col-agnel' && p.slug === 'col-agnel') ||
-         (clean === 'col-agnel-pass' && p.slug === 'col-agnel') ||
-         (clean === 'colagnel' && p.slug === 'col-agnel') ||
-         (clean === 'colle-dell-agnello' && p.slug === 'col-agnel') ||
-         (clean === 'colledellagnello' && p.slug === 'col-agnel') ||
-         (clean === 'colle-dellagnello' && p.slug === 'col-agnel') ||
-         (clean === 'passo-dell-agnello' && p.slug === 'col-agnel') ||
-         (clean === 'col-angel' && p.slug === 'col-agnel') ||
-         (clean === 'col-angel-pass' && p.slug === 'col-agnel') ||
-         (clean === 'colangel' && p.slug === 'col-agnel') ||
-         (clean === 'agnello' && p.slug === 'col-agnel') ||
-         (clean === 'agnel' && p.slug === 'col-agnel') ||
-         (clean === 'umling-la' && p.slug === 'umling-la') ||
-         (clean === 'umlingla' && p.slug === 'umling-la') ||
-         (clean === 'umling-la-pass' && p.slug === 'umling-la') ||
-         (clean === 'coquihalla' && p.slug === 'coquihalla-summit-pass') ||
-         (clean === 'coquihalla-summit' && p.slug === 'coquihalla-summit-pass') ||
-         (clean === 'coquihalla-pass' && p.slug === 'coquihalla-summit-pass') ||
-         (clean === 'coquihallapass' && p.slug === 'coquihalla-summit-pass') ||
-         (clean === 'coquihalla-summit-pass' && p.slug === 'coquihalla-summit-pass') ||
-          (clean === 'logan' && p.slug === 'logan-pass') ||
-          (clean === 'logan-pass' && p.slug === 'logan-pass') ||
-          (clean === 'loganpass' && p.slug === 'logan-pass') ||
-          (clean === 'going-to-the-sun-road' && p.slug === 'logan-pass') ||
-          (clean === 'lolo' && p.slug === 'lolo-pass') ||
-          (clean === 'lolo-pass' && p.slug === 'lolo-pass') ||
-          (clean === 'lolopass' && p.slug === 'lolo-pass') ||
-          (clean === 'lolo-pass-us12' && p.slug === 'lolo-pass') ||
-          (clean === 'kicking-horse' && p.slug === 'kicking-horse-pass') ||
-          (clean === 'kicking-horse-pass' && p.slug === 'kicking-horse-pass') ||
-          (clean === 'kickinghorsepass' && p.slug === 'kicking-horse-pass') ||
-          (clean === 'col-du-cheval-qui-rue' && p.slug === 'kicking-horse-pass') ||
-          (clean === 'sunwapta' && p.slug === 'sunwapta-pass') ||
-          (clean === 'sunwapta-pass' && p.slug === 'sunwapta-pass') ||
-          (clean === 'sunwaptapass' && p.slug === 'sunwapta-pass') ||
-          (clean === 'col-sunwapta' && p.slug === 'sunwapta-pass') ||
-          (clean === 'icefields-parkway' && p.slug === 'icefields-parkway-road') ||
-          (clean === 'icefields-parkway-road' && p.slug === 'icefields-parkway-road') ||
-          (clean === 'jasper-pass' && p.slug === 'jasper-pass') ||
-          (clean === 'highway-40' && p.slug === 'highway-40') ||
-          (clean === 'highway40' && p.slug === 'highway-40') ||
-          (clean === 'hwy-40' && p.slug === 'highway-40') ||
-          (clean === 'highwood-pass' && p.slug === 'highway-40') ||
-          (clean === 'col-highwood' && p.slug === 'highway-40') ||
-          (clean === 'jasperpass' && p.slug === 'jasper-pass') ||
-          (clean === 'col-de-jasper' && p.slug === 'jasper-pass') ||
-          (clean === 'icefieldsparkway' && p.slug === 'icefields-parkway-road') ||
-          (clean === 'promenade-des-glaciers' && p.slug === 'icefields-parkway-road') ||
-          (clean === 'yellowhead' && p.slug === 'yellowhead-pass') ||
-          (clean === 'yellowhead-pass' && p.slug === 'yellowhead-pass') ||
-          (clean === 'yellowheadpass' && p.slug === 'yellowhead-pass') ||
-          (clean === 'col-tete-jaune' && p.slug === 'yellowhead-pass') ||
-          (clean === 'tete-jaune-pass' && p.slug === 'yellowhead-pass') ||
-          (clean === 'hwy-16-pass' && p.slug === 'yellowhead-pass') ||
-          (clean === 'whistler-pass' && p.slug === 'whistler-pass') ||
-          (clean === 'whistler' && p.slug === 'whistler-pass') ||
-          (clean === 'whistlerpass' && p.slug === 'whistler-pass') ||
-          (clean === 'sea-to-sky' && p.slug === 'whistler-pass') ||
-          (clean === 'col-de-whistler' && p.slug === 'whistler-pass') ||
-          (clean === 'crowsnest-pass' && p.slug === 'crowsnest-pass') ||
-          (clean === 'crowsnest' && p.slug === 'crowsnest-pass') ||
-          (clean === 'crowsnestpass' && p.slug === 'crowsnest-pass') ||
-          (clean === 'highway-3' && p.slug === 'crowsnest-pass') ||
-          (clean === 'highway3' && p.slug === 'crowsnest-pass') ||
-          (clean === 'hwy-3' && p.slug === 'crowsnest-pass') ||
-          (clean === 'col-du-nid-de-corbeau' && p.slug === 'crowsnest-pass') ||
-          (clean === 'dolomiti-superski-pass' && p.slug === 'dolomiti-superski-pass') ||
-          (clean === 'dolomiti-superski' && p.slug === 'dolomiti-superski-pass') ||
-          (clean === 'dolomitisuperski' && p.slug === 'dolomiti-superski-pass') ||
-          (clean === 'dolomiti-pass' && p.slug === 'dolomiti-superski-pass') ||
-          (clean === 'passi-dolomitici' && p.slug === 'dolomiti-superski-pass') ||
-          (clean === 'sellaronda' && p.slug === 'dolomiti-superski-pass') ||
-          (clean === 'sellaronda-pass' && p.slug === 'dolomiti-superski-pass') ||
-          (clean === 'passo-pordoi' && p.slug === 'dolomiti-superski-pass')
-  );
-
-  if (targetPass) {
-    const canonicalUrl = getPassUrl(targetPass);
-    return <Navigate to={canonicalUrl} replace />;
-  }
-
-  // 1. Check if clean matches a known country
-  const matchingCountry = passesData.find(
-    p => getCountrySlug(p.country) === clean || cleanSlug(p.country) === clean
-  );
-  if (matchingCountry) {
-    return <Navigate to={`/passes?country=${encodeURIComponent(matchingCountry.country)}`} replace />;
-  }
-
-  // 2. Check if clean matches a known state/province
-  const matchingState = passesData.find(
-    p => getStateSlug(p.state, p.slug) === clean || (p.state && cleanSlug(p.state) === clean)
-  );
-  if (matchingState && matchingState.state) {
-    return <Navigate to={`/passes?state=${encodeURIComponent(matchingState.state)}`} replace />;
-  }
-
-  // 3. Fallback for legacy country paths (e.g. /passes/united-states/unknown)
-  if (country) {
-    const countryClean = cleanSlug(country);
-    const countryMatch = passesData.find(p => getCountrySlug(p.country) === countryClean || cleanSlug(p.country) === countryClean);
-    if (countryMatch) {
-      return <Navigate to={`/passes?country=${encodeURIComponent(countryMatch.country)}`} replace />;
-    }
-  }
-
-  return <NotFoundPage />;
-};
-
-class RouteErrorBoundary extends React.Component<{ children: React.ReactNode }, { hasError: boolean; error: any }> {
-  constructor(props: any) {
-    super(props);
-    this.state = { hasError: false, error: null };
-  }
-  static getDerivedStateFromError(error: any) {
-    return { hasError: true, error };
-  }
-  componentDidCatch(error: any, errorInfo: any) {
-    console.error('>>> [RouteErrorBoundary caught error]:', error, errorInfo);
-  }
-  render() {
-    if (this.state.hasError) {
-      return (
-        <div style={{ padding: '3rem', maxWidth: '800px', margin: '0 auto', color: '#b91c1c' }}>
-          <h2>Something went wrong loading this view:</h2>
-          <pre style={{ background: '#fef2f2', padding: '1rem', borderRadius: '8px', overflowX: 'auto', whiteSpace: 'pre-wrap' }}>
-            {String(this.state.error?.stack || this.state.error?.message || this.state.error)}
-          </pre>
-        </div>
-      );
-    }
-    return this.props.children;
-  }
-}
 
 export const App: React.FC = () => {
   return (
-    <PassesProvider>
-      <BrowserRouter>
-        <ScrollToTop />
-        <Header />
-        <div className="main-content">
-          <RouteErrorBoundary>
-            <Suspense fallback={<PageLoadingFallback />}>
-              <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/passes" element={<PassesPage />} />
-              <Route path="/map" element={<MapPage />} />
-              <Route path="/alerts" element={<AlertsPage />} />
-              <Route path="/hierarchical" element={<HierarchicalPage />} />
-              
-              
-              {/* Canonical 3-tier Pass URL */}
-              <Route path="/passes/:country/:state/:slug" element={<PassDetailPage />} />
-              
-              {/* Legacy 1-tier and 2-tier Pass URL Redirects */}
-              <Route path="/passes/:country/:slug" element={<LegacyPassRedirect />} />
-              <Route path="/passes/:slug" element={<LegacyPassRedirect />} />
-              <Route path="/col-agnel" element={<Navigate to="/passes/italy-france/piedmont-hautes-alpes/col-agnel" replace />} />
-              <Route path="/col-agnel-pass" element={<Navigate to="/passes/italy-france/piedmont-hautes-alpes/col-agnel" replace />} />
-              <Route path="/colle-dell-agnello" element={<Navigate to="/passes/italy-france/piedmont-hautes-alpes/col-agnel" replace />} />
-              <Route path="/passo-dell-agnello" element={<Navigate to="/passes/italy-france/piedmont-hautes-alpes/col-agnel" replace />} />
-              <Route path="/col-angel" element={<Navigate to="/passes/italy-france/piedmont-hautes-alpes/col-agnel" replace />} />
-              <Route path="/col-angel-pass" element={<Navigate to="/passes/italy-france/piedmont-hautes-alpes/col-agnel" replace />} />
-              <Route path="/col-du-galibier" element={<Navigate to="/passes/france/hautes-alpes-savoie/col-du-galibier" replace />} />
-              <Route path="/galibier" element={<Navigate to="/passes/france/hautes-alpes-savoie/col-du-galibier" replace />} />
-              <Route path="/col-de-l-iseran" element={<Navigate to="/passes/france/savoie/col-de-l-iseran" replace />} />
-              <Route path="/col-de-liseran" element={<Navigate to="/passes/france/savoie/col-de-l-iseran" replace />} />
-              <Route path="/iseran" element={<Navigate to="/passes/france/savoie/col-de-l-iseran" replace />} />
-              <Route path="/col-de-la-bonette" element={<Navigate to="/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette" replace />} />
-              <Route path="/cime-de-la-bonette" element={<Navigate to="/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette" replace />} />
-              <Route path="/cime-bonette" element={<Navigate to="/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette" replace />} />
-              <Route path="/bonette" element={<Navigate to="/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette" replace />} />
-              <Route path="/la-bonette" element={<Navigate to="/passes/france/alpes-maritimes-alpes-de-haute-provence/col-de-la-bonette" replace />} />
-              <Route path="/great-st-bernard-pass" element={<Navigate to="/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass" replace />} />
-              <Route path="/col-du-grand-saint-bernard" element={<Navigate to="/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass" replace />} />
-              <Route path="/grand-saint-bernard" element={<Navigate to="/passes/switzerland-italy/valais-aosta-valley/great-st-bernard-pass" replace />} />
-              <Route path="/grimsel-pass" element={<Navigate to="/passes/switzerland/bern-valais/grimsel-pass" replace />} />
-              <Route path="/grimselpass" element={<Navigate to="/passes/switzerland/bern-valais/grimsel-pass" replace />} />
-              <Route path="/grimsel" element={<Navigate to="/passes/switzerland/bern-valais/grimsel-pass" replace />} />
-              <Route path="/susten-pass" element={<Navigate to="/passes/switzerland/bern-uri/susten-pass" replace />} />
-              <Route path="/sustenpass" element={<Navigate to="/passes/switzerland/bern-uri/susten-pass" replace />} />
-              <Route path="/susten" element={<Navigate to="/passes/switzerland/bern-uri/susten-pass" replace />} />
-              <Route path="/gotthard-pass" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />
-              <Route path="/gotthardpass" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />
-              <Route path="/gotthard" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />
-              <Route path="/passo-del-san-gottardo" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />
-              <Route path="/san-gottardo" element={<Navigate to="/passes/switzerland/uri-ticino/gotthard-pass" replace />} />
-              <Route path="/rogers-pass" element={<Navigate to="/passes/canada/british-columbia/rogers-pass" replace />} />
-              <Route path="/rogerspass" element={<Navigate to="/passes/canada/british-columbia/rogers-pass" replace />} />
-              <Route path="/rogers" element={<Navigate to="/passes/canada/british-columbia/rogers-pass" replace />} />
-              <Route path="/simplon-pass" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
-              <Route path="/simplonpass" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
-              <Route path="/simplon" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
-              <Route path="/passo-del-simplon" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
-              <Route path="/col-du-simplon" element={<Navigate to="/passes/switzerland/valais/simplon-pass" replace />} />
-              <Route path="/prislop-pass" element={<Navigate to="/passes/romania/maramures-suceava/prislop-pass" replace />} />
-              <Route path="/pasul-prislop" element={<Navigate to="/passes/romania/maramures-suceava/prislop-pass" replace />} />
-              <Route path="/pasulprislop" element={<Navigate to="/passes/romania/maramures-suceava/prislop-pass" replace />} />
-              <Route path="/prislop" element={<Navigate to="/passes/romania/maramures-suceava/prislop-pass" replace />} />
-              <Route path="/vrsic-pass" element={<Navigate to="/passes/slovenia/gorenjska-goriska/vrsic-pass" replace />} />
-              <Route path="/vrsic" element={<Navigate to="/passes/slovenia/gorenjska-goriska/vrsic-pass" replace />} />
-              <Route path="/prelaz-vrsic" element={<Navigate to="/passes/slovenia/gorenjska-goriska/vrsic-pass" replace />} />
-              <Route path="/prelazvrsic" element={<Navigate to="/passes/slovenia/gorenjska-goriska/vrsic-pass" replace />} />
-              <Route path="/ruska-cesta" element={<Navigate to="/passes/slovenia/gorenjska-goriska/vrsic-pass" replace />} />
-              <Route path="/mangart-saddle" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
-              <Route path="/mangart-pass" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
-              <Route path="/mangart" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
-              <Route path="/mangartsko-sedlo" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
-              <Route path="/mangartskosedlo" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
-              <Route path="/passo-del-mangart" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
-              <Route path="/passomangart" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
-              <Route path="/cesta-na-mangart" element={<Navigate to="/passes/slovenia/gorika-bovec/mangart-saddle" replace />} />
-              <Route path="/baralacha-la" element={<Navigate to="/passes/india/himachal-pradesh/baralacha-la" replace />} />
-              <Route path="/baralacha-pass" element={<Navigate to="/passes/india/himachal-pradesh/baralacha-la" replace />} />
-              <Route path="/baralacha" element={<Navigate to="/passes/india/himachal-pradesh/baralacha-la" replace />} />
-              <Route path="/baralachalapass" element={<Navigate to="/passes/india/himachal-pradesh/baralacha-la" replace />} />
-              <Route path="/bara-lacha-la" element={<Navigate to="/passes/india/himachal-pradesh/baralacha-la" replace />} />
-              <Route path="/katschberg-pass" element={<Navigate to="/passes/austria/carinthia-salzburg/katschberg-pass" replace />} />
-              <Route path="/katschbergpass" element={<Navigate to="/passes/austria/carinthia-salzburg/katschberg-pass" replace />} />
-              <Route path="/katschberg" element={<Navigate to="/passes/austria/carinthia-salzburg/katschberg-pass" replace />} />
-              <Route path="/katschberg-strasse" element={<Navigate to="/passes/austria/carinthia-salzburg/katschberg-pass" replace />} />
-              <Route path="/passo-katschberg" element={<Navigate to="/passes/austria/carinthia-salzburg/katschberg-pass" replace />} />
-              <Route path="/grossglockner-high-alpine-road" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
-              <Route path="/grossglockner" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
-              <Route path="/grossglockner-pass" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
-              <Route path="/hochtor-pass" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
-              <Route path="/grossglockner-hochalpenstrasse" element={<Navigate to="/passes/austria/salzburg-carinthia/grossglockner-high-alpine-road" replace />} />
-              <Route path="/umling-la" element={<Navigate to="/passes/india/ladakh/umling-la" replace />} />
-              <Route path="/umlingla" element={<Navigate to="/passes/india/ladakh/umling-la" replace />} />
-              <Route path="/umling-la-pass" element={<Navigate to="/passes/india/ladakh/umling-la" replace />} />
-              <Route path="/umling-pass" element={<Navigate to="/passes/india/ladakh/umling-la" replace />} />
-              <Route path="/coquihalla" element={<Navigate to="/passes/canada/british-columbia/coquihalla-summit-pass" replace />} />
-              <Route path="/coquihalla-summit" element={<Navigate to="/passes/canada/british-columbia/coquihalla-summit-pass" replace />} />
-              <Route path="/coquihalla-pass" element={<Navigate to="/passes/canada/british-columbia/coquihalla-summit-pass" replace />} />
-              <Route path="/coquihallapass" element={<Navigate to="/passes/canada/british-columbia/coquihalla-summit-pass" replace />} />
-              <Route path="/coquihalla-summit-pass" element={<Navigate to="/passes/canada/british-columbia/coquihalla-summit-pass" replace />} />
-              <Route path="/logan-pass" element={<Navigate to="/passes/united-states/montana/logan-pass" replace />} />
-              <Route path="/loganpass" element={<Navigate to="/passes/united-states/montana/logan-pass" replace />} />
-              <Route path="/going-to-the-sun-road" element={<Navigate to="/passes/united-states/montana/logan-pass" replace />} />
-              <Route path="/lolo-pass" element={<Navigate to="/passes/united-states/montana/lolo-pass" replace />} />
-              <Route path="/lolopass" element={<Navigate to="/passes/united-states/montana/lolo-pass" replace />} />
-              <Route path="/kicking-horse-pass" element={<Navigate to="/passes/canada/british-columbia/kicking-horse-pass" replace />} />
-              <Route path="/kickinghorsepass" element={<Navigate to="/passes/canada/british-columbia/kicking-horse-pass" replace />} />
-              <Route path="/sunwapta" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
-              <Route path="/sunwapta-pass" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
-              <Route path="/sunwaptapass" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
-              <Route path="/col-sunwapta" element={<Navigate to="/passes/canada/alberta/sunwapta-pass" replace />} />
-              <Route path="/icefields-parkway" element={<Navigate to="/passes/canada/alberta/icefields-parkway-road" replace />} />
-              <Route path="/icefields-parkway-road" element={<Navigate to="/passes/canada/alberta/icefields-parkway-road" replace />} />
-              <Route path="/jasper-pass" element={<Navigate to="/passes/canada/alberta/jasper-pass" replace />} />
-              <Route path="/highway-40" element={<Navigate to="/passes/canada/alberta/highway-40" replace />} />
-              <Route path="/highway40" element={<Navigate to="/passes/canada/alberta/highway-40" replace />} />
-              <Route path="/hwy-40" element={<Navigate to="/passes/canada/alberta/highway-40" replace />} />
-              <Route path="/highwood-pass" element={<Navigate to="/passes/canada/alberta/highway-40" replace />} />
-              <Route path="/col-highwood" element={<Navigate to="/passes/canada/alberta/highway-40" replace />} />
-              <Route path="/jasperpass" element={<Navigate to="/passes/canada/alberta/jasper-pass" replace />} />
-              <Route path="/col-de-jasper" element={<Navigate to="/passes/canada/alberta/jasper-pass" replace />} />
-              <Route path="/promenade-des-glaciers" element={<Navigate to="/passes/canada/alberta/icefields-parkway-road" replace />} />
-              <Route path="/yellowhead" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
-              <Route path="/yellowhead-pass" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
-              <Route path="/yellowheadpass" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
-              <Route path="/col-tete-jaune" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
-              <Route path="/tete-jaune-pass" element={<Navigate to="/passes/canada/british-columbia/yellowhead-pass" replace />} />
-              <Route path="/whistler-pass" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
-              <Route path="/whistler" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
-              <Route path="/whistlerpass" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
-              <Route path="/sea-to-sky" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
-              <Route path="/col-de-whistler" element={<Navigate to="/passes/canada/british-columbia/whistler-pass" replace />} />
-              <Route path="/crowsnest-pass" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
-              <Route path="/crowsnest" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
-              <Route path="/crowsnestpass" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
-              <Route path="/highway-3" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
-              <Route path="/highway3" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
-              <Route path="/hwy-3" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
-              <Route path="/col-du-nid-de-corbeau" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
-              <Route path="/passes/canada/british-columbia/crowsnest-pass" element={<Navigate to="/passes/canada/alberta/crowsnest-pass" replace />} />
-              <Route path="/allison-pass" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
-              <Route path="/allison" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
-              <Route path="/allisonpass" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
-              <Route path="/col-allison" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
-              <Route path="/allison-summit" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
-              <Route path="/hope-princeton-highway" element={<Navigate to="/passes/canada/british-columbia/allison-pass" replace />} />
-              <Route path="/monashee-pass" element={<Navigate to="/passes/canada/british-columbia/monashee-pass" replace />} />
-              <Route path="/monashee" element={<Navigate to="/passes/canada/british-columbia/monashee-pass" replace />} />
-              <Route path="/col-monashee" element={<Navigate to="/passes/canada/british-columbia/monashee-pass" replace />} />
-              <Route path="/kootenay-pass" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
-              <Route path="/kootenay" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
-              <Route path="/kootenaypass" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
-              <Route path="/col-kootenay" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
-              <Route path="/salmo-creston" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
-              <Route path="/salmo-creston-highway" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
-              <Route path="/stagleap-pass" element={<Navigate to="/passes/canada/british-columbia/kootenay-pass" replace />} />
-              <Route path="/dolomiti-superski-pass" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
-              <Route path="/dolomiti-superski" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
-              <Route path="/dolomitisuperski" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
-              <Route path="/dolomiti-pass" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
-              <Route path="/passi-dolomitici" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
-              <Route path="/sellaronda" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
-              <Route path="/sellaronda-pass" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
-              <Route path="/passo-pordoi" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
-              <Route path="/passo-sella" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
-              <Route path="/passo-gardena" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
-              <Route path="/passo-campolongo" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
-              <Route path="/passes/italy/dolomiti-superski-pass" element={<Navigate to="/passes/italy/trentino-alto-adige-veneto/dolomiti-superski-pass" replace />} />
-
-              {/* Paso de Jama (Jama Pass) — Argentina-Chile Alternate Routes */}
-              <Route path="/paso-jama" element={<Navigate to="/passes/argentina-chile/jujuy-antofagasta/paso-jama" replace />} />
-              <Route path="/jama-pass" element={<Navigate to="/passes/argentina-chile/jujuy-antofagasta/paso-jama" replace />} />
-              <Route path="/paso-de-jama" element={<Navigate to="/passes/argentina-chile/jujuy-antofagasta/paso-jama" replace />} />
-              <Route path="/ruta-52-jama" element={<Navigate to="/passes/argentina-chile/jujuy-antofagasta/paso-jama" replace />} />
-              <Route path="/jama-border-crossing" element={<Navigate to="/passes/argentina-chile/jujuy-antofagasta/paso-jama" replace />} />
-              <Route path="/paso-internacional-jama" element={<Navigate to="/passes/argentina-chile/jujuy-antofagasta/paso-jama" replace />} />
-
-              {/* Paso de Agua Negra (Agua Negra Pass) — Argentina-Chile Alternate Routes */}
-              <Route path="/paso-agua-negra" element={<Navigate to="/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra" replace />} />
-              <Route path="/agua-negra-pass" element={<Navigate to="/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra" replace />} />
-              <Route path="/paso-de-agua-negra" element={<Navigate to="/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra" replace />} />
-              <Route path="/ruta-150-agua-negra" element={<Navigate to="/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra" replace />} />
-              <Route path="/agua-negra-border-crossing" element={<Navigate to="/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra" replace />} />
-              <Route path="/paso-internacional-agua-negra" element={<Navigate to="/passes/argentina-chile/san-juan-coquimbo/paso-agua-negra" replace />} />
-
-              {/* Paso de San Francisco (San Francisco Pass) — Argentina-Chile Alternate Routes */}
-              <Route path="/paso-san-francisco" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
-              <Route path="/san-francisco-pass" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
-              <Route path="/paso-de-san-francisco" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
-              <Route path="/ruta-60-san-francisco" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
-              <Route path="/san-francisco-border-crossing" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
-              <Route path="/paso-internacional-san-francisco" element={<Navigate to="/passes/argentina-chile/catamarca-atacama/paso-san-francisco" replace />} />
-
-              {/* Paso de Pehuenche (Pehuenche Pass) — Argentina-Chile Alternate Routes */}
-              <Route path="/paso-pehuenche" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
-              <Route path="/pehuenche-pass" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
-              <Route path="/paso-de-pehuenche" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
-              <Route path="/ruta-145-pehuenche" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
-              <Route path="/pehuenche-border-crossing" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
-              <Route path="/paso-internacional-pehuenche" element={<Navigate to="/passes/argentina-chile/mendoza-maule/paso-pehuenche" replace />} />
-
-              {/* Keyword Aliases & Additional Mountain Passes */}
-              <Route path="/satus-pass" element={<Navigate to="/passes/united-states/washington/status-pass" replace />} />
-              <Route path="/guanella-pass" element={<Navigate to="/passes/united-states/colorado/guanella-pass" replace />} />
-              <Route path="/guatemala-pass" element={<Navigate to="/passes/united-states/colorado/guanella-pass" replace />} />
-              <Route path="/garcia-pass" element={<Navigate to="/passes/south-africa/western-cape/garcia-pass" replace />} />
-              <Route path="/flint-creek-pass" element={<Navigate to="/passes/united-states/montana/flint-creek-pass" replace />} />
-              <Route path="/gannaga-pass" element={<Navigate to="/passes/south-africa/northern-cape/gannaga-pass" replace />} />
-
-              <Route path="/admin" element={<AdminDashboard />} />
-              <Route path="/seo-research" element={<SeoResearchPage />} />
-              <Route path="/resources" element={<ResourcesPage />} />
-              <Route path="/submit-report" element={<SubmitReportPage />} />
-              <Route path="/report" element={<Navigate to="/submit-report" replace />} />
-              <Route path="/methodology" element={<VerificationMethodologyPage />} />
-              <Route path="/verification-methodology" element={<Navigate to="/methodology" replace />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/privacy" element={<PrivacyPage />} />
-              <Route path="/terms" element={<TermsPage />} />
-              <Route path="*" element={<NotFoundPage />} />
-            </Routes>
-          </Suspense>
-        </RouteErrorBoundary>
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      background: 'linear-gradient(135deg, #0b1120 0%, #0f172a 50%, #1e293b 100%)',
+      color: '#f8fafc',
+      fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      padding: '2rem 1rem',
+      textAlign: 'center'
+    }}>
+      <div style={{
+        maxWidth: '520px',
+        width: '100%',
+        background: 'rgba(30, 41, 59, 0.7)',
+        backdropFilter: 'blur(16px)',
+        border: '1px solid rgba(255, 255, 255, 0.1)',
+        borderRadius: '1.25rem',
+        padding: '3rem 2rem',
+        boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)'
+      }}>
+        <div style={{
+          width: '64px',
+          height: '64px',
+          margin: '0 auto 1.5rem',
+          background: 'rgba(239, 68, 68, 0.15)',
+          border: '1px solid rgba(239, 68, 68, 0.3)',
+          borderRadius: '50%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          fontSize: '2rem'
+        }}>
+          🏔️
+        </div>
+        <h1 style={{
+          fontSize: '2rem',
+          fontWeight: 800,
+          letterSpacing: '-0.025em',
+          marginBottom: '0.75rem',
+          color: '#ffffff'
+        }}>
+          Site Offline
+        </h1>
+        <p style={{
+          fontSize: '1.05rem',
+          lineHeight: '1.6',
+          color: '#94a3b8',
+          margin: '0 0 1.5rem 0'
+        }}>
+          LivePassWatch is currently offline for scheduled maintenance. All services and pass telemetry are currently unavailable.
+        </p>
+        <div style={{
+          display: 'inline-block',
+          padding: '0.5rem 1rem',
+          borderRadius: '9999px',
+          background: 'rgba(255, 255, 255, 0.05)',
+          border: '1px solid rgba(255, 255, 255, 0.1)',
+          fontSize: '0.85rem',
+          color: '#64748b'
+        }}>
+          livepasswatch.info
+        </div>
       </div>
-        <Footer />
-      </BrowserRouter>
-    </PassesProvider>
+    </div>
   );
 };
 
 export default App;
-
