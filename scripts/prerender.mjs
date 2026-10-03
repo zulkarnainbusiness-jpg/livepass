@@ -26,12 +26,22 @@ htmlFiles.forEach(file => {
   fs.copyFileSync(srcPath, destPath);
 });
 
-// Copy sitemap.xml and robots.txt if present
-['sitemap.xml', 'robots.txt'].forEach(file => {
+// Copy sitemap.xml, robots.txt, homepage_bg.jpg, etc. if present
+['sitemap.xml', 'robots.txt', 'homepage_bg.jpg', 'HOMEPAGE BG.jpg'].forEach(file => {
   const srcPath = path.resolve(rootDir, file);
   if (fs.existsSync(srcPath)) {
     fs.copyFileSync(srcPath, path.resolve(distDir, file));
   }
 });
 
-console.log('✅ SSG Prerendering completed successfully! All pass pages and sitemap bundled into dist/.');
+// Copy IMAGE directory recursively to dist/IMAGE
+const imageSrcDir = path.resolve(rootDir, 'IMAGE');
+const imageDestDir = path.resolve(distDir, 'IMAGE');
+
+if (fs.existsSync(imageSrcDir)) {
+  fs.cpSync(imageSrcDir, imageDestDir, { recursive: true });
+  console.log(`🖼️  Copied IMAGE/ folder to dist/IMAGE/`);
+}
+
+console.log('✅ SSG Prerendering completed successfully! All pass pages, images, and sitemap bundled into dist/.');
+
