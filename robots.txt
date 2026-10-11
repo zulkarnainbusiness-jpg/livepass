@@ -1,0 +1,6 @@
+# LivePassWatch Search Engine Crawler Instructions
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://www.livepasswatch.info/sitemap.xml
