@@ -1,2 +1,10 @@
+# LivePassWatch Search Engine Crawler Instructions
 User-agent: *
-Disallow: /
+Allow: /
+
+# Disallow internal assets or private directories
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemap Location
+Sitemap: https://www.livepasswatch.info/sitemap.xml
