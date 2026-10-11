@@ -13,44 +13,44 @@
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/norway.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/norway</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/innlandet.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/innlandet</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/vestland.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/vestland</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/moreogromsdal.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/moreogromsdal</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/trondelag.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/trondelag</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/finnmark.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/finnmark</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/aargau.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/aargau</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
@@ -61,92 +61,98 @@
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/alaska.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/alaska</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/alberta.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/alberta</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/aostavalley.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/aostavalley</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/aquitaine.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/aquitaine</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/arizona.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/arizona</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/arunachal.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/arunachal</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/arica.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/arica</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/auvergne.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/atacama</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.livepasswatch.info/country/auvergne</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/bern.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/bern</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/bourgogne.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/bourgogne</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/britishcolumbia.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/britishcolumbia</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/california.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/california</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/canada.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/canada</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/chile.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/chile</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/colorado.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/colorado</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
@@ -157,62 +163,62 @@
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/cuneo.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/cuneo</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/emilia.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/emilia</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/france.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/france</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/fribourg.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/fribourg</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/fvg.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/fvg</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/glarus.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/glarus</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/grandest.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/grandest</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/graubunden.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/graubunden</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/himachal.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/himachal</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/idaho.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/idaho</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
@@ -223,146 +229,146 @@
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/india.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/india</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/italy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/italy</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/jk.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/jk</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/ladakh.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/ladakh</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/lombardy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/lombardy</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/lucerne.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/lucerne</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/maritimes.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/maritimes</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/maryland.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/maryland</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/montana.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/montana</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/nagaland.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/nagaland</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/nevada.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/nevada</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/newhampshire.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/newhampshire</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/newmexico.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/newmexico</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/nidwalden.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/nidwalden</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/nl.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/nl</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/northcarolina.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/northcarolina</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/nwt.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/nwt</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/obwalden.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/obwalden</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/occitanie.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/occitanie</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/oregon.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/oregon</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/ossola.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/ossola</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/paca.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/paca</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/pennsylvania.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/pennsylvania</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/piedmont.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/piedmont</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
@@ -373,38 +379,38 @@
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/quebec.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/quebec</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/schwyz.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/schwyz</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/sikkim.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/sikkim</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/stgallen.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/stgallen</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/switzerland.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/switzerland</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/tennessee.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/tennessee</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
@@ -415,164 +421,164 @@
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/ticino.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/ticino</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/turin.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/turin</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/tuscany.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/tuscany</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/uri.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/uri</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/usa.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/usa</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/utah.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/utah</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/uttarakhand.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/uttarakhand</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/valais.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/valais</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/vaud.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/vaud</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/veneto.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/veneto</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/virginia.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/virginia</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/washington.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/washington</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/westvirginia.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/westvirginia</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/wyoming.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/wyoming</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/yukon.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://www.livepasswatch.info/country/yukon</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/gilgit.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/gilgit</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/kp.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/kp</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/khyber.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/khyber</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/balochistan.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/balochistan</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/tyrol.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/tyrol</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/salzburg.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/salzburg</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/carinthia.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/carinthia</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/styria.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/styria</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/vorarlberg.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/vorarlberg</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/lower-austria.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/lower-austria</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/austria.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/austria</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.livepasswatch.info/pakistan.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.livepasswatch.info/country/pakistan</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>

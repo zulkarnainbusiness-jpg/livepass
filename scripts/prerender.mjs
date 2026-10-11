@@ -43,5 +43,15 @@ if (fs.existsSync(imageSrcDir)) {
   console.log(`🖼️  Copied IMAGE/ folder to dist/IMAGE/`);
 }
 
+// Copy country/ directory recursively to dist/country (clean URL pass pages)
+const countrySrcDir = path.resolve(rootDir, 'country');
+const countryDestDir = path.resolve(distDir, 'country');
+
+if (fs.existsSync(countrySrcDir)) {
+  fs.cpSync(countrySrcDir, countryDestDir, { recursive: true });
+  const countryDirs = fs.readdirSync(countrySrcDir).length;
+  console.log(`🗺️  Copied country/ folder to dist/country/ (${countryDirs} pass pages)`);
+}
+
 console.log('✅ SSG Prerendering completed successfully! All pass pages, images, and sitemap bundled into dist/.');
 
