@@ -27,7 +27,7 @@ htmlFiles.forEach(file => {
 });
 
 // Copy sitemap.xml, robots.txt, homepage_bg.jpg, etc. if present
-['sitemap.xml', 'robots.txt', 'homepage_bg.jpg', 'HOMEPAGE BG.jpg'].forEach(file => {
+['sitemap.xml', 'robots.txt', 'homepage_bg.jpg', 'HOMEPAGE BG.jpg', '_redirects'].forEach(file => {
   const srcPath = path.resolve(rootDir, file);
   if (fs.existsSync(srcPath)) {
     fs.copyFileSync(srcPath, path.resolve(distDir, file));
@@ -43,15 +43,37 @@ if (fs.existsSync(imageSrcDir)) {
   console.log(`🖼️  Copied IMAGE/ folder to dist/IMAGE/`);
 }
 
-// Copy country/ directory recursively to dist/country (clean URL pass pages)
+// Copy country/ directory recursively to dist/country
 const countrySrcDir = path.resolve(rootDir, 'country');
 const countryDestDir = path.resolve(distDir, 'country');
 
 if (fs.existsSync(countrySrcDir)) {
   fs.cpSync(countrySrcDir, countryDestDir, { recursive: true });
-  const countryDirs = fs.readdirSync(countrySrcDir).length;
-  console.log(`🗺️  Copied country/ folder to dist/country/ (${countryDirs} pass pages)`);
+  console.log(`🗺️  Copied country/ folder to dist/country/`);
 }
 
-console.log('✅ SSG Prerendering completed successfully! All pass pages, images, and sitemap bundled into dist/.');
+// Copy individual country hierarchy folders to dist/ (e.g. dist/india, dist/france, dist/italy, etc.)
+const countries = [
+  'france',
+  'india',
+  'italy',
+  'usa',
+  'switzerland',
+  'canada',
+  'norway',
+  'austria',
+  'pakistan',
+  'chile'
+];
 
+countries.forEach(c => {
+  const cSrcDir = path.resolve(rootDir, c);
+  const cDestDir = path.resolve(distDir, c);
+  if (fs.existsSync(cSrcDir)) {
+    fs.cpSync(cSrcDir, cDestDir, { recursive: true });
+    const subDirs = fs.readdirSync(cSrcDir).filter(f => fs.statSync(path.join(cSrcDir, f)).isDirectory()).length;
+    console.log(`🌍 Copied ${c}/ hierarchy to dist/${c}/ (${subDirs} sub-regions)`);
+  }
+});
+
+console.log('✅ SSG Prerendering completed successfully! All pass pages, images, and sitemap bundled into dist/.');
