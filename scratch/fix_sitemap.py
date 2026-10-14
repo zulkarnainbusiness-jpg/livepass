@@ -30,8 +30,8 @@ with open(sitemap_path, "r", encoding="utf-8") as fh:
 # First: update all loc URLs from old -> new
 for filename in html_files:
     slug = filename.replace(".html", "")
-    old_loc = f"https://www.livepasswatch.info/{filename}"
-    new_loc = f"https://www.livepasswatch.info/country/{slug}"
+    old_loc = f"https://livepasswatch.info/{filename}"
+    new_loc = f"https://livepasswatch.info/country/{slug}"
     sitemap = sitemap.replace(f"<loc>{old_loc}</loc>", f"<loc>{new_loc}</loc>")
 
 # Second: fix duplicate lastmod lines - remove the PLACEHOLDER ones
@@ -57,7 +57,7 @@ if os.path.exists(pub_sitemap):
 print("Sitemap fixed and saved!")
 
 # Verify: count /country/ entries
-count = sitemap.count("https://www.livepasswatch.info/country/")
+count = sitemap.count("https://livepasswatch.info/country/")
 print(f"Found {count} /country/ URLs in sitemap")
 
 # Verify: no PLACEHOLDER left
